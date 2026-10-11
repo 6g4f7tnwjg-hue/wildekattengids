@@ -2,6 +2,8 @@
 <html lang="nl">
 <head>
 <meta charset="UTF-8">
+<script>window.__W3F={key:"9494e3c0-9342-4457-a5d6-b795793b9ce4",land:"Nederland"};</script>
+
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Wilde katachtigen in Nederland – welke wilde katten in welke dierentuin?</title>
 <meta name="description" content="Welke wilde katten zie je in Nederlandse dierentuinen, dierenparken en opvangcentra? Leeuw, tijger, luipaard, lynx, serval, manoel en meer, per park, met kaart, routeplanner en recente geboortes.">
@@ -790,7 +792,7 @@ window.__LANG=l;document.documentElement.classList.toggle("en",l==="en");documen
     <button type="button" class="rp-go" id="rp-go"><span class="l-nl">Plaats melding</span><span class="l-en">Submit report</span></button>
     <p class="rp-msg" id="rp-msg" aria-live="polite"></p>
   </div>
-  <p class="prose" style="font-size:14.5px;color:var(--muted)"><span class="l-nl">Na het klikken opent een reactievenster met je melding erbij. Verstuur het daar; je kunt er ook nog iets aan toevoegen. Je melding is zichtbaar voor andere bezoekers die kunnen reageren. Zet er dus geen persoonlijke gegevens in. Om te melden moet je ingelogd zijn op claude.ai.</span><span class="l-en">After clicking, a comment window opens with your report attached. Send it from there; you can also add something. Your report is visible to other visitors who can comment, so do not include personal details. To report, you need to be logged in to claude.ai.</span></p>
+  <p class="prose" style="font-size:14.5px;color:var(--muted)"><span class="l-nl">Je melding gaat rechtstreeks naar de maker van de gids en is niet openbaar. Wil je een reactie, zet dan je e-mailadres bij Opmerkingen.</span><span class="l-en">Your report goes straight to the guide’s author and is not public. If you would like a reply, add your email address under Comments.</span></p>
 </section>
 
 <footer><span class="l-nl">Stand 28 september 2026.</span><span class="l-en">Updated 28 September 2026.</span></footer>
@@ -1385,7 +1387,7 @@ function rpInit(){
   rpEl("rp-go").addEventListener("click",rpGo);
   try{ if(window.claude&&window.claude.use){
       window.claude.use("comments").then(c=>{COMMENTS=c;if(!c)rpUit();},()=>{COMMENTS=null;rpUit();});
-    } else {COMMENTS=null;rpUit();} }catch(e){COMMENTS=null;rpUit();}
+    } else if(window.__W3F){COMMENTS={};} else {COMMENTS=null;rpUit();} }catch(e){COMMENTS=null;rpUit();}
 }
 function rpFillSpecies(){const sEl=rpEl("rp-soort"),v=sEl.value;sEl.innerHTML="";
   const o0=document.createElement("option");o0.value="Soort onbekend";o0.textContent=T("Weet ik niet","I don’t know");sEl.appendChild(o0);
@@ -1398,6 +1400,22 @@ function rpRelabel(){
   rpEl("rp-opm").placeholder=T("Bijvoorbeeld: twee dieren, in het nieuwe verblijf bij de ingang","For example: two animals, in the new enclosure near the entrance");
   rpFillSpecies();rpUpdate();
   if(COMMENTS===null)rpUit();else rpMsg("");
+}
+async function rpWeb(d){
+  const btn=rpEl("rp-go");btn.disabled=true;rpMsg(T("Bezig met versturen…","Sending…","Envoi en cours…"));
+  const body={access_key:window.__W3F.key,subject:"Melding gids "+window.__W3F.land+": "+d.type+" – "+d.loc,from_name:"Wilde katachtigen-gids",
+    Melding:rpEl("rp-sum").textContent.trim(),Soort_melding:d.type,Locatie:d.loc,Soort:d.soort,Datum_bezoek:d.datum||"-",Opmerkingen:d.opm||"-",
+    Gids:window.__W3F.land,Pagina:location.href,Taal:(typeof LANG!=="undefined"?LANG:"nl"),botcheck:""};
+  try{
+    const r=await fetch("https://api.web3forms.com/submit",{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify(body)});
+    const j=await r.json().catch(()=>({}));
+    if(!(r.ok&&j.success))throw new Error("mislukt");
+    rpEl("rp-opm").value="";rpUpdate();
+    rpMsg(T("Bedankt! Je melding is verstuurd.","Thank you! Your report has been sent.","Merci ! Votre signalement a été envoyé."));
+  }catch(e){
+    rpMsg(T("Versturen is niet gelukt. Probeer het later opnieuw.","Sending failed. Please try again later.","L’envoi a échoué. Veuillez réessayer plus tard."),true);
+  }
+  btn.disabled=false;
 }
 function rpUit(){
   rpEl("rp-go").disabled=true;
@@ -1434,6 +1452,7 @@ async function rpGo(){
   const d=rpData();
   if(!d.type){rpMsg(T("Kies eerst wat je wilt melden.","First choose what you want to report."),true);return;}
   if(!d.loc){rpMsg(rpEl("rp-loc").value==="anders"?T("Vul de naam van de locatie in.","Enter the name of the location."):T("Kies eerst een locatie.","First choose a location."),true);return;}
+  if(window.__W3F){rpUpdate();return rpWeb(d);}
   if(COMMENTS===undefined){rpMsg(T("Het meldvenster wordt nog geladen. Probeer het zo opnieuw.","The report window is still loading. Please try again in a moment."));return;}
   if(!COMMENTS){rpUit();return;}
   rpUpdate();

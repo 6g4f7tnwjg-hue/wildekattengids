@@ -1,0 +1,33 @@
+{
+  "_uitleg": "Vaste lijst van locatietypes en labels. Elke locatie heeft precies één type (LOCINFO[naam].type) en nul of meer labels (LOCINFO[naam].labels, met de sleutels hieronder). Dierentuin of dierenpark: lid van EAZA of een landelijke zoobond (NVD, VdZ) = dierentuin, anders dierenpark. Regel voor opnemen: kun je de katten als bezoeker zien, dan tellen ze mee.",
+  "types": [
+    {"key": "dierentuin", "nl": "Dierentuin", "en": "Zoo", "fr": "Parc zoologique", "de": "Zoo",
+     "uitleg": "Wetenschappelijk geleide dierentuin, lid van EAZA of een landelijke zoobond (NVD, VdZ)."},
+    {"key": "dierenpark", "nl": "Dierenpark", "en": "Animal park", "fr": "Parc animalier", "de": "Tierpark",
+     "uitleg": "Kleinere dierentuin of Tierpark die niet bij zo'n bond is aangesloten, ook als het park bij een winkel of kinderboerderij hoort."},
+    {"key": "wildpark", "nl": "Wildpark", "en": "Wildlife park", "fr": "Parc à gibier", "de": "Wildpark",
+     "uitleg": "Vooral inheemse dieren, vaak in een bos of op een groot terrein. Hier zie je de meeste lynxen en wilde katten."},
+    {"key": "safaripark", "nl": "Safaripark", "en": "Safari park", "fr": "Parc safari", "de": "Safaripark",
+     "uitleg": "Je rijdt of vaart langs de dieren, met je eigen auto, een bus of een boot."},
+    {"key": "attractiepark", "nl": "Attractiepark met dieren", "en": "Theme park with animals", "fr": "Parc d'attractions avec animaux", "de": "Freizeitpark mit Tieren",
+     "uitleg": "Pretpark waar de dieren een deel van het aanbod zijn."},
+    {"key": "natuurcentrum", "nl": "Natuur- en fokcentrum", "en": "Conservation centre", "fr": "Centre de conservation", "de": "Artenschutzzentrum",
+     "uitleg": "Werkt aan het behoud van een soort, bijvoorbeeld met kweek voor uitzetting of voorlichting over de wilde kat."},
+    {"key": "opvang", "nl": "Opvang of sanctuary", "en": "Rescue centre or sanctuary", "fr": "Refuge ou sanctuaire", "de": "Auffangstation",
+     "uitleg": "Neemt afgestane of in beslag genomen katten op. Welke dieren er zitten, wisselt, en vaak is het maar beperkt open."},
+    {"key": "particulier", "nl": "Particuliere houder", "en": "Private keeper", "fr": "Détenteur privé", "de": "Privathalter",
+     "uitleg": "Circus, artiest of privépersoon die bezoekers ontvangt, bijvoorbeeld bij voorstellingen of op open dagen."}
+  ],
+  "labels": [
+    {"key": "overnachten", "nl": "Overnachten in het park", "en": "Overnight stay in the park", "icoon": "🌙"},
+    {"key": "rondleiding", "nl": "Alleen met rondleiding of op afspraak", "en": "Guided tour or appointment only", "icoon": "🧭"},
+    {"key": "leden", "nl": "Alleen voor leden", "en": "Members only", "icoon": "🎫"},
+    {"key": "bezoekdagen", "nl": "Alleen op bezoekdagen", "en": "Open days only", "icoon": "📅"},
+    {"key": "seizoen", "nl": "Seizoenspark, in de winter dicht", "en": "Seasonal, closed in winter", "icoon": "🍂"},
+    {"key": "nietdagelijks", "nl": "Niet elke dag open", "en": "Not open every day", "icoon": "🗓️"},
+    {"key": "gratis", "nl": "Gratis toegang", "en": "Free entry", "icoon": "🆓"},
+    {"key": "reistrond", "nl": "Reist rond", "en": "Travelling", "icoon": "🎪"}
+  ],
+  "uit_route": ["opvang", "particulier"],
+  "uit_route_labels": ["rondleiding", "leden", "bezoekdagen"]
+}

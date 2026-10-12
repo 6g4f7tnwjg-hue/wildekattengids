@@ -1112,7 +1112,7 @@ function showLoc(i){
 function buildMap(){
   const svg=document.getElementById("nlmap"), NS="http://www.w3.org/2000/svg";
   let h=`<polygon class="land" points="${poly(MAIN)}"/>`+ISLANDS.map(a=>`<polygon class="land" points="${poly(a)}"/>`).join("")+WATER.map(a=>`<polygon class="water" points="${poly(a)}"/>`).join("");
-  LOCS.forEach((l,i)=>{if(l[0]==="FELIDA")return;let [x,y]=PX(l[2],l[3]).map(Number);if(l[5]){x+=l[5][0];y+=l[5][1];}
+  LOCS.forEach((l,i)=>{let [x,y]=PX(l[2],l[3]).map(Number);if(l[5]){x+=l[5][0];y+=l[5][1];}
     h+=`<g class="mk ${locClass(l)}" data-i="${i}" tabindex="0" role="button" aria-label="${esc(l[0])}, ${esc(l[1])}"><circle class="hit" cx="${x}" cy="${y}" r="11"/><circle class="ring" cx="${x}" cy="${y}" r="10"/><circle class="dot" cx="${x}" cy="${y}" r="6.5"/><title>${esc(l[0])} (${esc(l[1])})</title></g>`;});
   svg.innerHTML=h;
   svg.querySelectorAll(".mk").forEach(m=>{
@@ -1121,7 +1121,7 @@ function buildMap(){
     m.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();go();}});
   });
   const sel=document.getElementById("locsel");
-  LOCS.map((l,i)=>[l,i]).filter(([l])=>l[0]!=="FELIDA").sort((a,b)=>a[0][0].localeCompare(b[0][0],"nl")).forEach(([l,i])=>{const o=document.createElement("option");o.value=i;o.textContent=`${l[0]} (${l[1]})`;sel.appendChild(o);});
+  LOCS.map((l,i)=>[l,i]).sort((a,b)=>a[0][0].localeCompare(b[0][0],"nl")).forEach(([l,i])=>{const o=document.createElement("option");o.value=i;o.textContent=`${l[0]} (${l[1]})`;sel.appendChild(o);});
   sel.addEventListener("change",()=>{if(sel.value!=="")showLoc(+sel.value);});
 }
 
@@ -1305,7 +1305,7 @@ function locHTML(i){
   const earlier=EARLIER_LOC[l[0]];
   const k=LOCORDER.indexOf(i), prev=LOCS[LOCORDER[(k-1+LOCORDER.length)%LOCORDER.length]], next=LOCS[LOCORDER[(k+1)%LOCORDER.length]];
   const sw=LANGSW.replace(/aria-pressed="(true|false)"(>NL)/,`aria-pressed="${LANG==="nl"}"$2`).replace(/aria-pressed="(true|false)"(>EN)/,`aria-pressed="${LANG==="en"}"$2`);
-  const onMap=l[0]!=="FELIDA";
+  const onMap=true;
   return `<div class="ip-top">${onMap?`<a class="ip-back" href="#locaties" data-map-loc="${i}">${T("Terug naar de kaart","Back to the map")}</a>`:`<a class="ip-back" href="#locaties">${T("Terug naar de locaties","Back to the locations")}</a>`}${sw}${PAWSVG.replace('<svg','<svg style="width:42px;height:42px"')}</div>
   <div class="ip-head">
     <div class="ip-tags">${inf.type?`<span class="ip-tag dark">${esc(inf.type[L])}</span>`:""}<span class="ip-tag">${esc(l[1])}</span></div>

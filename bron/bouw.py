@@ -87,12 +87,15 @@ def plaats_kort(p):
 PATHS = [BASE + "img/" + f for f in imgs]
 def fotos(t):
     return re.sub(r"@@IMG(\d+)@@", lambda mm: PATHS[int(mm.group(1))], t)
+# bezoekersteller (GoatCounter, zonder cookies) – alleen op de website
+GOATCOUNTER = '<script data-goatcounter="https://wildekattengids.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>\n'
 def seo(title, desc, url, image=SITE + "voorbeeld.jpg", soort="website"):
     return (f'<meta name="description" content="{esc(desc)}">\n<meta name="author" content="J. Gelens">\n'
             f'<link rel="canonical" href="{url}">\n<meta property="og:type" content="{soort}">\n'
             f'<meta property="og:site_name" content="Wilde katachtigen-gids">\n<meta property="og:title" content="{esc(title)}">\n'
             f'<meta property="og:description" content="{esc(desc)}">\n<meta property="og:url" content="{url}">\n'
             f'<meta property="og:image" content="{image}">\n<meta property="og:locale" content="nl_NL">\n'
+            + GOATCOUNTER +
             '<meta name="twitter:card" content="summary_large_image">\n')
 
 # meldformulier via Web3Forms (alleen op de website; de Claude-pagina gebruikt reacties)

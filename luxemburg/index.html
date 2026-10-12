@@ -1116,7 +1116,7 @@ function infoHTML(a){
     :`<p>${T("Deze soort is op dit moment niet te zien in Luxemburg.","This species is currently not on view in Luxembourg.")}</p>`;
   const i=SPECIES.indexOf(a), prev=SPECIES[(i-1+SPECIES.length)%SPECIES.length], next=SPECIES[(i+1)%SPECIES.length];
   const ph=PHOTOS[n], photo=ph?`<img src="${ph.src}" alt="${esc(spName(n))}" loading="lazy"><p class="ip-cap">${ph.cap?esc(ph.cap):`${T("Foto","Photo")}${ph.zoo?T(" (dierentuin)"," (zoo)"):""}: ${esc(ph.who)}, via <a href="${ph.url}" target="_blank" rel="noopener">${ph.site||"iNaturalist"}</a> · ${ph.lic==="CC0"?T("publiek domein (CC0)","public domain (CC0)"):esc(ph.lic)}`}</p>`
-    :`<div class="ip-ph"><div>${PAWSVG}${T("Ruimte voor een foto","Photo coming soon")}</div></div>`;
+    :"";
   const altTxt=E?E[1]:alt;
   const earlier=LANG==="fr"?(EARLIER_FR[n]||EARLIER_EN[n]||EARLIER[n]):LANG==="en"?(EARLIER_EN[n]||EARLIER[n]):EARLIER[n];
   const sw=langSwHTML();
@@ -1126,7 +1126,7 @@ function infoHTML(a){
     <h1>${esc(spName(n))}</h1>
     <p class="ip-sci">${esc(sci)}</p>
     ${altTxt?`<p class="ip-alt">${T("Ook bekend als","Also known as")}: ${esc(altTxt)}</p>`:""}
-    <div class="ip-photo">${photo}</div>
+    ${photo?`<div class="ip-photo">${photo}</div>`:""}
   </div>
   <div class="ip-sec"><h2>${T("Kenmerken","Key facts")}</h2><div class="ip-facts">
     <div class="ip-fact"><span>${T("Lengte (zonder staart)","Length (without tail)")}</span><b>${esc(numL(len))}</b></div>
@@ -1151,7 +1151,7 @@ function infoHTML(a){
 const LOCINFO={"Parc Merveilleux": {"type": ["Attractiepark met dieren", "Theme park with animals", "Parc d’attractions avec animaux"], "hours": ["Van eind maart tot half oktober elke dag open (seizoen 2026: 21 maart t/m 11 oktober). Kassa’s 9.30–18.00 uur, het park sluit om 19.00 uur. De tropische huizen zijn open van 11.00 tot 17.00 uur.", "Open every day from late March to mid-October (2026 season: 21 March to 11 October). Ticket offices 9:30–18:00, the park closes at 19:00. The tropical houses are open from 11:00 to 17:00.", "Ouvert tous les jours de fin mars à mi-octobre (saison 2026 : du 21 mars au 11 octobre). Caisses de 9 h 30 à 18 h, le parc ferme à 19 h. Les serres tropicales sont ouvertes de 11 h à 17 h."], "url": "https://www.parc-merveilleux.lu", "checked": "28-09-2026", "about": ["Attractiepark voor kinderen met sprookjesbos, speeltuinen en een dierenpark met bijna 200 diersoorten van vijf continenten, geopend op 17 juli 1956. Het enige dierenpark van Luxemburg met exotische dieren, met twee tropische huizen (Amazonia en Mahajanga) en sinds 2025 een roedel Iberische wolven.", "Children’s theme park with a fairy-tale forest, playgrounds and an animal park with almost 200 species from five continents, opened on 17 July 1956. The only animal park in Luxembourg with exotic animals, with two tropical houses (Amazonia and Mahajanga) and, since 2025, a pack of Iberian wolves.", "Parc d’attractions pour enfants avec forêt des contes de fées, aires de jeux et parc animalier de près de 200 espèces issues de cinq continents, ouvert le 17 juillet 1956. Le seul parc animalier du Luxembourg avec des animaux exotiques, avec deux serres tropicales (Amazonia et Mahajanga) et, depuis 2025, une meute de loups ibériques."]}};
 const EARLIER_LOC={};
 
-const LOCPHOTOS={}; /* bijv. "Faunapark Flakkee":{src:"data:..."} → bijschrift "foto: J. Gelens" */
+const LOCPHOTOS={"Parc Merveilleux": {"src": "/wildekattengids/img/105.webp", "who": "MMFE", "lic": "CC BY-SA 3.0", "url": "https://commons.wikimedia.org/wiki/File:Eingang_Park_Bettembourg_01.jpg", "alt": "Ingang van het park"}}; /* bijv. "Faunapark Flakkee":{src:"data:..."} → bijschrift "foto: J. Gelens" */
 const lslug=n=>slug(n);
 const LOCBYSLUG={};LOCS.forEach((l,i)=>{LOCBYSLUG[lslug(l[0])]=i;});
 const LOCORDER=LOCS.map((l,i)=>i).sort((a,b)=>LOCS[a][0].localeCompare(LOCS[b][0],"nl"));
@@ -1164,7 +1164,7 @@ function locHTML(i){
     const sub=[...new Set(rs.map(r=>r[1]).filter(x=>x&&x!=="—"&&x!=="onbekend"))].map(x=>trMap(R1EN,x).replace(/^(onbekend|unknown),\s*/i,"")).join("; ");
     const notes=[...new Set(rs.map(r=>r[5]).filter(Boolean))].map(x=>trMap(R5EN,x)).join("; ");
     return `<li><span><b>${SP[sp]?`<a href="#soort/${slug(sp)}" data-loc="${i}">${esc(spName(sp))}</a>`:esc(spName(sp))}</b>${hasYoung(l[0],sp)?YTAG():""}${sub?` <small style="color:var(--muted)">· ${esc(sub).replace(/\b([A-Z]\. [a-z]\. [a-z]{3,})\b/g,"<i>$1</i>")}</small>`:""}${notes?`<br><small style="color:var(--muted)">${esc(notes)}</small>`:""}</span><span>${codes.map(c=>`<span class="st st-${c}"><i></i>${LBL(c)}</span>`).join(" ")}</span></li>`;}).join("");
-  const ph=LOCPHOTOS[l[0]], photo=ph?`<img src="${ph.src}" alt="${esc(l[0])}" loading="lazy"><p class="ip-cap">${T("foto: J. Gelens","photo: J. Gelens")}</p>`:`<div class="ip-ph"><div>${PAWSVG}${T("Ruimte voor een foto","Photo coming soon")}</div></div>`;
+  const ph=LOCPHOTOS[l[0]], photo=ph?`<img src="${ph.src}" alt="${esc(ph.alt||l[0])}" loading="lazy"><p class="ip-cap">${ph.who?`${T("Foto","Photo")}: ${esc(ph.who)}, via <a href="${ph.url}" target="_blank" rel="noopener">Wikimedia Commons</a> · ${ph.lic==="publiek domein"?T("publiek domein","public domain"):esc(ph.lic)}`:T("foto: J. Gelens","photo: J. Gelens")}</p>`:"";
   const earlier=EARLIER_LOC[l[0]];
   const k=LOCORDER.indexOf(i), prev=LOCS[LOCORDER[(k-1+LOCORDER.length)%LOCORDER.length]], next=LOCS[LOCORDER[(k+1)%LOCORDER.length]];
   const sw=langSwHTML();
@@ -1174,7 +1174,7 @@ function locHTML(i){
     <div class="ip-tags">${inf.type?`<span class="ip-tag dark">${esc(inf.type[L]||inf.type[0])}</span>`:""}<span class="ip-tag">${esc(l[1])}</span></div>
     <h1>${esc(l[0])}</h1>
     <p class="ip-alt">${bySp.size} ${bySp.size===1?T("soort katachtige","cat species","espèce de félin"):T("soorten katachtigen","cat species","espèces de félins")}</p>
-    <div class="ip-photo">${photo}</div>
+    ${photo?`<div class="ip-photo">${photo}</div>`:""}
   </div>
   ${inf.about?`<div class="ip-sec"><h2>${T("Over deze locatie","About this location")}</h2><p>${esc(inf.about[L]||inf.about[0])}</p></div>`:""}
   <div class="ip-sec"><h2>${T("Katten hier","Cats here")}</h2><ul class="ip-where">${cats}</ul></div>

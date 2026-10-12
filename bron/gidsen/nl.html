@@ -1206,7 +1206,7 @@ function infoHTML(a){
     :`<p>${T("Deze soort is op dit moment niet te zien in Nederland.","This species is currently not on view in the Netherlands.")}</p>`;
   const i=SPECIES.indexOf(a), prev=SPECIES[(i-1+SPECIES.length)%SPECIES.length], next=SPECIES[(i+1)%SPECIES.length];
   const ph=PHOTOS[n], photo=ph?`<img src="${ph.src}" alt="${esc(spName(n))}" loading="lazy"><p class="ip-cap">${ph.cap?esc(ph.cap):`${T("Foto","Photo")}${ph.zoo?T(" (dierentuin)"," (zoo)"):""}: ${esc(ph.who)}, via <a href="${ph.url}" target="_blank" rel="noopener">${ph.site||"iNaturalist"}</a> · ${ph.lic==="CC0"?T("publiek domein (CC0)","public domain (CC0)"):esc(ph.lic)}`}</p>`
-    :`<div class="ip-ph"><div>${PAWSVG}${T("Ruimte voor een foto","Photo coming soon")}</div></div>`;
+    :"";
   const altTxt=E?E[1]:alt;
   const earlier=E?(EARLIER_EN[n]||EARLIER[n]):EARLIER[n];
   const sw=LANGSW.replace(/aria-pressed="(true|false)"(>NL)/,`aria-pressed="${LANG==="nl"}"$2`).replace(/aria-pressed="(true|false)"(>EN)/,`aria-pressed="${LANG==="en"}"$2`);
@@ -1216,7 +1216,7 @@ function infoHTML(a){
     <h1>${esc(spName(n))}</h1>
     <p class="ip-sci">${esc(sci)}</p>
     ${altTxt?`<p class="ip-alt">${T("Ook bekend als","Also known as")}: ${esc(altTxt)}</p>`:""}
-    <div class="ip-photo">${photo}</div>
+    ${photo?`<div class="ip-photo">${photo}</div>`:""}
   </div>
   <div class="ip-sec"><h2>${T("Kenmerken","Key facts")}</h2><div class="ip-facts">
     <div class="ip-fact"><span>${T("Lengte (zonder staart)","Length (without tail)")}</span><b>${esc(numL(len))}</b></div>
@@ -1273,7 +1273,7 @@ const EARLIER_LOC={
 "Kasteelpark Born":["lynx Spinner (januari 2026 naar Bern voor het fokprogramma Linking Lynx)","lynx Spinner (moved to Bern in January 2026 for the Linking Lynx breeding programme)"],
 "Faunapark Flakkee":["jaguarundi (waarschijnlijk tot 2024)","jaguarundi (probably until 2024)"]
 };
-const LOCPHOTOS={}; /* bijv. "Faunapark Flakkee":{src:"data:..."} → bijschrift "foto: J. Gelens" */
+const LOCPHOTOS={"ARTIS": {"src": "@@IMG80@@", "who": "Floris Looijesteijn", "lic": "CC BY 2.0", "url": "https://commons.wikimedia.org/wiki/File:Lion_in_Artis_%289545852131%29.jpg", "alt": "Leeuw in het verblijf"}, "Burgers’ Zoo": {"src": "@@IMG81@@", "who": "Frank Vincentz", "lic": "CC BY-SA 3.0", "url": "https://commons.wikimedia.org/wiki/File:Panthera_leo_-_Lion_BZ_ies.jpg", "alt": "Leeuwin met welpen in het verblijf"}, "Diergaarde Blijdorp": {"src": "@@IMG82@@", "who": "Tim Strater from Rotterdam, Nederland", "lic": "CC BY 2.0", "url": "https://commons.wikimedia.org/wiki/File:Sumatran_tiger_-_Diergaarde_Blijdorp_%28zoo%29_-_Rotterdam.jpg", "alt": "Sumatraanse tijger in het verblijf"}, "Ouwehands Dierenpark": {"src": "@@IMG83@@", "who": "B. Geurts, upload by Erik1980", "lic": "CC BY-SA 3.0", "url": "https://commons.wikimedia.org/wiki/File:Lion_stretching_at_Ouwehands_2010.JPG", "alt": "Witte leeuw in het verblijf"}, "DierenPark Amersfoort": {"src": "@@IMG84@@", "who": "Andrew Lorien from Sydney, Australia", "lic": "CC BY-SA 2.0", "url": "https://commons.wikimedia.org/wiki/File:A_white_tiger_in_the_Dierenpark_Amersfoort_zoo.jpg", "alt": "Witte tijger in het verblijf"}, "Safaripark Beekse Bergen": {"src": "@@IMG85@@", "who": "Tim Strater from Rotterdam, Nederland", "lic": "CC BY-SA 2.0", "url": "https://commons.wikimedia.org/wiki/File:Jachtluipaard_%285964537849%29_%283%29.jpg", "alt": "Jachtluipaard in het verblijf"}, "ZooParc Overloon": {"src": "@@IMG86@@", "who": "FakirNL", "lic": "CC BY-SA 3.0", "url": "https://commons.wikimedia.org/wiki/File:Acinonyx_jubatus_in_Zoo_Parc_Overloon.JPG", "alt": "Jachtluipaard in het verblijf"}, "GaiaZOO": {"src": "@@IMG87@@", "who": "Donarreiskoffer", "lic": "CC BY-SA 4.0", "url": "https://commons.wikimedia.org/wiki/File:Animals_in_GaiaPark_Kerkrade_Zoo_10.jpg", "alt": "Lynx in het verblijf"}, "WILDLANDS": {"src": "@@IMG88@@", "who": "Sijtze Reurich", "lic": "CC BY-SA 4.0", "url": "https://commons.wikimedia.org/wiki/File:Leeuwen_in_Wildlands.jpg", "alt": "Leeuwen in het verblijf"}, "AquaZoo Friesland": {"src": "@@IMG89@@", "who": "Otter", "lic": "CC BY-SA 4.0", "url": "https://commons.wikimedia.org/wiki/File:Leeuwarden_-_AquaZoo_20240604_entree.jpg", "alt": "Ingang van het park"}, "De Oliemeulen": {"src": "@@IMG90@@", "who": "Ron Maijen", "lic": "CC BY-SA 3.0", "url": "https://commons.wikimedia.org/wiki/File:Oliemeulen.jpg", "alt": "Hoofdgebouw van het dierenpark"}, "Kasteelpark Born": {"src": "@@IMG91@@", "who": "Paul Hermans", "lic": "CC BY-SA 4.0", "url": "https://commons.wikimedia.org/wiki/File:Kasteelpark_Born_22-06-2024_15-33-08.jpg", "alt": "Ingang van het park"}, "Wereldtuinen Mondo Verde": {"src": "@@IMG92@@", "who": "E v Schoonhoven", "lic": "CC BY 3.0", "url": "https://commons.wikimedia.org/wiki/File:Mondo_Verde_Landgraaf_-_panoramio_%281%29.jpg", "alt": "Japanse tuin in het park"}, "Van Blanckendaell Park": {"src": "@@IMG93@@", "who": "Rene Cortin", "lic": "CC BY-SA 4.0", "url": "https://commons.wikimedia.org/wiki/File:Windmill_in_Van_Blanckendaell.jpg", "alt": "Molen en hoofdgebouw van het park"}, "Zie-ZOO": {"src": "@@IMG94@@", "who": "Johnniebravo007", "lic": "CC BY-SA 4.0", "url": "https://commons.wikimedia.org/wiki/File:Nieuwe_entree_2021.jpg", "alt": "Ingang van het park"}, "FELIDA": {"src": "@@IMG95@@", "who": "Jeanine Noordermeer", "lic": "CC BY 4.0", "url": "https://commons.wikimedia.org/wiki/File:Nijeberkoop_The_Netherlands_Tigress_Kenya_at_FELIDA_Big_Cat_Sanctuary.jpg", "alt": "Tijgerin Kenya in het verblijf"}}; /* bijv. "Faunapark Flakkee":{src:"data:..."} → bijschrift "foto: J. Gelens" */
 const lslug=n=>slug(n);
 const LOCBYSLUG={};LOCS.forEach((l,i)=>{LOCBYSLUG[lslug(l[0])]=i;});
 const LOCORDER=LOCS.map((l,i)=>i).sort((a,b)=>LOCS[a][0].localeCompare(LOCS[b][0],"nl"));
@@ -1286,7 +1286,7 @@ function locHTML(i){
     const sub=[...new Set(rs.map(r=>r[1]).filter(x=>x&&x!=="—"&&x!=="onbekend"))].map(x=>trMap(R1EN,x).replace(/^(onbekend|unknown),\s*/i,"")).join("; ");
     const notes=[...new Set(rs.map(r=>r[5]).filter(Boolean))].map(x=>trMap(R5EN,x)).join("; ");
     return `<li><span><b>${SP[sp]?`<a href="#soort/${slug(sp)}" data-loc="${i}">${esc(spName(sp))}</a>`:esc(spName(sp))}</b>${hasYoung(l[0],sp)?YTAG():""}${sub?` <small style="color:var(--muted)">· ${esc(sub).replace(/\b([A-Z]\. [a-z]\. [a-z]{3,})\b/g,"<i>$1</i>")}</small>`:""}${notes?`<br><small style="color:var(--muted)">${esc(notes)}</small>`:""}</span><span>${codes.map(c=>`<span class="st st-${c}"><i></i>${LBL(c)}</span>`).join(" ")}</span></li>`;}).join("");
-  const ph=LOCPHOTOS[l[0]], photo=ph?`<img src="${ph.src}" alt="${esc(l[0])}" loading="lazy"><p class="ip-cap">${T("foto: J. Gelens","photo: J. Gelens")}</p>`:`<div class="ip-ph"><div>${PAWSVG}${T("Ruimte voor een foto","Photo coming soon")}</div></div>`;
+  const ph=LOCPHOTOS[l[0]], photo=ph?`<img src="${ph.src}" alt="${esc(ph.alt||l[0])}" loading="lazy"><p class="ip-cap">${ph.who?`${T("Foto","Photo")}: ${esc(ph.who)}, via <a href="${ph.url}" target="_blank" rel="noopener">Wikimedia Commons</a> · ${ph.lic==="publiek domein"?T("publiek domein","public domain"):esc(ph.lic)}`:T("foto: J. Gelens","photo: J. Gelens")}</p>`:"";
   const earlier=EARLIER_LOC[l[0]];
   const k=LOCORDER.indexOf(i), prev=LOCS[LOCORDER[(k-1+LOCORDER.length)%LOCORDER.length]], next=LOCS[LOCORDER[(k+1)%LOCORDER.length]];
   const sw=LANGSW.replace(/aria-pressed="(true|false)"(>NL)/,`aria-pressed="${LANG==="nl"}"$2`).replace(/aria-pressed="(true|false)"(>EN)/,`aria-pressed="${LANG==="en"}"$2`);
@@ -1296,7 +1296,7 @@ function locHTML(i){
     <div class="ip-tags">${inf.type?`<span class="ip-tag dark">${esc(inf.type[L])}</span>`:""}<span class="ip-tag">${esc(l[1])}</span></div>
     <h1>${esc(l[0])}</h1>
     <p class="ip-alt">${bySp.size} ${bySp.size===1?T("soort katachtige","cat species"):T("soorten katachtigen","cat species")}</p>
-    <div class="ip-photo">${photo}</div>
+    ${photo?`<div class="ip-photo">${photo}</div>`:""}
   </div>
   ${inf.about?`<div class="ip-sec"><h2>${T("Over deze locatie","About this location")}</h2><p>${esc(inf.about[L]||inf.about[0])}</p></div>`:""}
   <div class="ip-sec"><h2>${T("Katten hier","Cats here")}</h2><ul class="ip-where">${cats}</ul></div>

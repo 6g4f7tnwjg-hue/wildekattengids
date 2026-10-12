@@ -1,7 +1,7 @@
 # Bron van de Wilde katachtigen-gids
 
 Alles wordt uit deze map gebouwd. Pas nooit de gegenereerde bestanden in de hoofdmap aan
-(`index.html`, `nederland/`, `belgie/`, `luxemburg/`, `duitsland/`, `sitemap.xml`): die worden bij elke bouw overschreven.
+(`index.html`, `soort/`, `nederland/`, `belgie/`, `luxemburg/`, `duitsland/`, `sitemap.xml`): die worden bij elke bouw overschreven.
 
 ## Wat staat waar
 
@@ -27,5 +27,6 @@ Alleen de Claude-pagina bouwen: `python3 bron/bouw.py --geen-web`.
 ## Verschillen tussen de twee versies (worden door de bouw toegevoegd)
 
 - Website: elk land en elke deelstaat heeft een eigen adres, met zoektitel, beschrijving en deelvoorbeeld; elke soort en locatie heeft een eigen, vaste pagina (momentopname van de gids); foto's als losse bestanden; sitemap.
+- Website: elke soort heeft ook een pagina voor alle landen samen (`/soort/<naam>/`); in de Claude-pagina opent die binnen de startpagina (`#kat/<naam>`). De gegevens staan in `D.sp` (berekend door `startdata.soorten`).
 - Website: het meldformulier verstuurt via Web3Forms naar de mail van de maker. De Claude-pagina gebruikt de reacties van Claude.
 - Claude-pagina: één bestand; de landen worden binnen de pagina geopend.

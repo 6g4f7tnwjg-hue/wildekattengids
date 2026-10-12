@@ -23,7 +23,7 @@ from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 BRON = os.path.dirname(os.path.abspath(__file__)) + "/"
 ROOT = os.path.dirname(BRON.rstrip("/")) + "/"
 sys.path.insert(0, BRON)
-from startdata import bereken, slug
+from startdata import bereken, slug, soorten
 
 BASE = "/wildekattengids/"
 SITE = "https://yeetkitty.github.io" + BASE
@@ -62,6 +62,7 @@ fr = json.load(open(BRON + "franse_namen.json", encoding="utf8"))
 today = datetime.date.today()
 for c in F:
     D[c] = bereken(DATA[c], D[c], today, fr)
+D["sp"] = soorten(DATA, fr, today)
 START = START[:m.start(1)] + json.dumps(D, ensure_ascii=False, separators=(",", ":")) + START[m.end(1):]
 wr(BRON + "start.html", START)
 
@@ -76,6 +77,13 @@ if "--geen-web" in sys.argv:
     sys.exit(0)
 
 # ------------------------------------------------------------------ website: hulpjes
+def opsomming(xs):
+    xs = list(xs)
+    return xs[0] if len(xs) == 1 else ", ".join(xs[:-1]) + " en " + xs[-1]
+def kort(t, n=158):
+    return t if len(t) <= n else t[:n - 1].rsplit(" ", 1)[0] + "…"
+def plaats_kort(p):
+    return re.sub(r"^([^()]*) \(([^()]*)\)$", r"\1, \2", p)
 PATHS = [BASE + "img/" + f for f in imgs]
 def fotos(t):
     return re.sub(r"@@IMG(\d+)@@", lambda mm: PATHS[int(mm.group(1))], t)
@@ -181,16 +189,42 @@ DESC = ("Gids van J. Gelens: welke wilde katten – leeuw, tijger, luipaard, lyn
 st = sub1(st, "<title>Wilde katachtigen in de Benelux en Duitsland</title>",
           f"<title>{TITLE}</title>\n" + seo("Wilde katachtigen in de Benelux en Duitsland", DESC, SITE)
           + '<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n')
-wr(ROOT + "index.html", st.replace("<html>", '<html lang="nl">', 1))
+st = sub1(st, '<meta charset="utf-8">', '<meta charset="utf-8"><script>window.__KATBASE="' + BASE + 'soort/";window.__HOMEURL="' + BASE
+          + '";window.__IMGP=' + json.dumps(PATHS) + ';</script>')
+st = st.replace("<html>", '<html lang="nl">', 1)
+wr(ROOT + "index.html", st)
+
+# ------------------------------------------------------------------ website: één soortpagina voor alle landen (/soort/<naam>/)
+shutil.rmtree(ROOT + "soort", ignore_errors=True)
+CONFC = set("gybr")
+KATS = []
+for s in D["sp"]:
+    al = {s[0]} | set(s[5])
+    locs = [(c, l, x[3]) for c in F for l in D[c]["locs"] for x in l[5] if x[4] in al]
+    if locs:
+        KATS.append((s, locs))
+def kat_page(s, locs, inhoud=""):
+    conf = [(c, l) for c, l, x in locs if x in CONFC]
+    landen = [LAND[c] for c in F if any(cc == c for cc, l in conf)]
+    title = f"{s[1]} in Nederland, België, Luxemburg en Duitsland: waar zie je hem? – Wilde katachtigen-gids"
+    if conf:
+        desc = kort(f"Waar zie je een {s[1].lower() if s[1] != 'Geoffroy’s kat' else s[1]}? In {opsomming(landen)} op {len(conf)} {'locatie' if len(conf) == 1 else 'locaties'}: "
+                    + ", ".join(l[0] for c, l in conf[:6]) + ". Met kaart en recente geboortes.")
+    else:
+        desc = kort(f"{s[1]} ({s[4]}): vermeldingen in dierentuinen en dierenparken in de Benelux en Duitsland, met kaart en recente geboortes.")
+    url = SITE + "soort/" + s[0] + "/"
+    img = SITE + PATHS[s[6]][len(BASE):] if s[6] is not None else SITE + "voorbeeld.jpg"
+    doc = re.sub(r"<title>.*?</title>.*?<meta name=\"twitter:card\"[^>]*>\n", "", st, count=1, flags=re.S)
+    doc = re.sub(r'<meta property="og:image:width"[^>]*>\n<meta property="og:image:height"[^>]*>\n', "", doc, count=1)
+    head = (f"<title>{esc(title)}</title>\n" + seo(title.split(" – ")[0], desc, url, image=img, soort="article")
+            + f'<script>window.__KAT="{s[0]}";document.documentElement.classList.add("katmode");</script>\n')
+    i = doc.index("<meta charset"); j = doc.index(">", i) + 1
+    doc = doc[:j] + "\n" + head + doc[j:]
+    return sub1(doc, '<section id="katview"></section>', f'<section id="katview">{inhoud}</section>')
+for s, locs in KATS:
+    wr(ROOT + "soort/" + s[0] + "/index.html", kat_page(s, locs))
 
 # ------------------------------------------------------------------ website: losse soort- en locatiepagina's
-def opsomming(xs):
-    xs = list(xs)
-    return xs[0] if len(xs) == 1 else ", ".join(xs[:-1]) + " en " + xs[-1]
-def kort(t, n=158):
-    return t if len(t) <= n else t[:n - 1].rsplit(" ", 1)[0] + "…"
-def plaats_kort(p):
-    return re.sub(r"^([^()]*) \(([^()]*)\)$", r"\1, \2", p)
 
 routes = []
 for c in ["nl", "be", "lu"]:
@@ -297,6 +331,13 @@ async def snapshots():
                 i.querySelectorAll('.langsw,[data-setlang]').forEach(e=>{(e.closest('.langsw')||e).remove();});
                 i.querySelectorAll('script').forEach(e=>e.remove());
                 return {html:i.innerHTML,h1:i.querySelector('h1').textContent.trim()};}""")
+        for s, locs in KATS:
+            await pg.goto(local + "soort/" + s[0] + "/")
+            await pg.wait_for_timeout(300)
+            h1 = await pg.evaluate("()=>{const e=document.querySelector('#katview h1');return e?e.textContent.trim():''}")
+            if h1 != s[1]:
+                sys.exit(f"bouw gestopt: soortpagina {s[0]} niet goed ({h1!r})")
+            res[("kat", s[0])] = await pg.evaluate("()=>document.getElementById('katview').innerHTML")
         await br.close()
     srv.shutdown()
     shutil.rmtree(tmp)
@@ -305,6 +346,9 @@ async def snapshots():
 import asyncio
 res = asyncio.run(snapshots())
 urls = [SITE] + [SITE + f + "/" for f in F.values()] + [SITE + "duitsland/" + s + "/" for s in STATES]
+for s, locs in KATS:
+    wr(ROOT + "soort/" + s[0] + "/index.html", kat_page(s, locs, res[("kat", s[0])]))
+    urls.append(SITE + "soort/" + s[0] + "/")
 for r in routes:
     key = r[:4]
     if key not in res:

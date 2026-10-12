@@ -62,3 +62,39 @@ def bereken(parts, oud, today, frnames):
     nieuw = dict(oud)
     nieuw.update({"counts": [len(conf), len(locs)], "locs": locs, "young": young})
     return nieuw
+
+def soorten(DATA, frnames, today):
+    """Eén lijst van alle soorten over alle landen heen (sleutel: wetenschappelijke naam).
+    Per soort: [slug, nl, en, fr, wetenschappelijk, aliassen, fotonummer, foto-info, recente geboortes]."""
+    nl = DATA["nl"]["main"]
+    spen = nl.get("SPEN") or {}
+    out, bysci = [], {}
+    for s in nl["SPECIES"]:
+        en = (spen.get(s[0]) or [s[0]])[0] or s[0]
+        e = {"slug": slug(s[0]), "nl": s[0], "en": en, "fr": frnames.get(s[0], ""), "sci": s[2], "al": [], "img": None, "foto": None, "young": []}
+        bysci[s[2]] = e
+        out.append(e)
+    for c, parts in DATA.items():
+        for deel, o in parts.items():
+            pre = None if deel == "main" else deel + "/"
+            loc2sci = {s[0]: s[2] for s in o["SPECIES"]}
+            for s in o["SPECIES"]:
+                e = bysci.get(s[2])
+                if e and slug(s[0]) != e["slug"] and slug(s[0]) not in e["al"]:
+                    e["al"].append(slug(s[0]))
+            for naam, p in (o.get("PHOTOS") or {}).items():
+                e = bysci.get(loc2sci.get(naam))
+                m = re.match(r"@@IMG(\d+)@@", p.get("src", ""))
+                if e and m and e["img"] is None:
+                    e["img"] = int(m.group(1))
+                    e["foto"] = {k: p[k] for k in ("who", "lic", "url", "cap", "site", "zoo") if p.get(k)}
+            sp_en = lambda n: n
+            for d, y in _young(o, sp_en, lambda n, en: en, today, pre):
+                e = bysci.get(loc2sci.get(y["sp"][0]))
+                if e:
+                    e["young"].append((d, {"c": c, "pre": pre or "", "loc": y["loc"], "born": y["born"], "approx": y["approx"], "n": y["n"][:2]}))
+    res = []
+    for e in out:
+        ys = [y for d, y in sorted(e["young"], key=lambda t: t[0], reverse=True)]
+        res.append([e["slug"], e["nl"], e["en"], e["fr"], e["sci"], e["al"], e["img"], e["foto"] or {}, ys])
+    return res

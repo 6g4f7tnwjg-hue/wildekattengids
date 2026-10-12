@@ -361,5 +361,14 @@ for r in routes:
     urls.append("https://yeetkitty.github.io" + u)
 wr(ROOT + "sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
    + "".join(f"  <url><loc>{u}</loc><lastmod>{today.isoformat()}</lastmod></url>\n" for u in urls) + "</urlset>\n")
+# oude adressen na hernoemen van soorten in de Duitse gids (okt 2026) → doorverwijzen
+OUD = {"cheeta": "cheetah", "luipaardkat": "bengaalse-kat", "pampakat": "colocolo", "andeskat": "andesbergkat"}
+for st_ in STATES:
+    for o, n in OUD.items():
+        doel = BASE + "duitsland/" + st_ + "/soort/" + n + "/"
+        if os.path.exists(ROOT + doel[len(BASE):] + "index.html") and not os.path.exists(ROOT + "duitsland/" + st_ + "/soort/" + o + "/index.html"):
+            wr(ROOT + "duitsland/" + st_ + "/soort/" + o + "/index.html",
+               f'<!DOCTYPE html><html lang="nl"><head><meta charset="UTF-8"><title>Doorverwijzing</title><link rel="canonical" href="https://yeetkitty.github.io{doel}">'
+               f'<meta name="robots" content="noindex"><meta http-equiv="refresh" content="0; url={doel}"></head><body><a href="{doel}">Ga verder</a></body></html>\n')
 wr(ROOT + "robots.txt", f"User-agent: *\nAllow: /\nSitemap: {SITE}sitemap.xml\n")
 print("Website:", len(urls), "pagina's")

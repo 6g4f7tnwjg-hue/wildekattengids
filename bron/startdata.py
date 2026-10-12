@@ -30,7 +30,7 @@ def _young(o, sp_en, fr, today, pre):
 
 def bereken(parts, oud, today, frnames):
     """parts: {deel: extract-uitvoer}; oud: huidige D-invoer van dit land (kaartvorm, notitie blijven)."""
-    locs, conf, ys = [], set(), []
+    locs, conf, ys, lt = [], set(), [], []
     for deel, o in parts.items():
         pre = None if deel == "main" else deel + "/"
         spen = o.get("SPEN") or {}
@@ -49,6 +49,8 @@ def bereken(parts, oud, today, frnames):
             if pre:
                 e.append(pre)
             locs.append(e)
+            inf = (o.get("LOCINFO") or {}).get(l[0]) or {}
+            lt.append([(inf.get("type") or [""])[0], inf.get("labels") or []])
         ys += _young(o, sp_en, fr, today, pre)
     seen, young = set(), []
     for d, y in sorted(ys, key=lambda t: t[0], reverse=True):
@@ -60,7 +62,7 @@ def bereken(parts, oud, today, frnames):
         if len(young) == 3:
             break
     nieuw = dict(oud)
-    nieuw.update({"counts": [len(conf), len(locs)], "locs": locs, "young": young})
+    nieuw.update({"counts": [len(conf), len(locs)], "locs": locs, "young": young, "lt": lt})
     return nieuw
 
 def soorten(DATA, frnames, today):

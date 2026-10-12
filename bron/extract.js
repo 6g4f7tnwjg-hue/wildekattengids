@@ -21,7 +21,7 @@ function lit(js, name) {
   if (v instanceof Set) v = [...v];
   return v;
 }
-const NAMES = ["SPECIES", "R", "LOCS", "YOUNG", "SPEN", "PANTH", "NOROUTE", "PHOTOS"];
+const NAMES = ["SPECIES", "R", "LOCS", "YOUNG", "SPEN", "PANTH", "NOROUTE", "PHOTOS", "LOCINFO"];
 function grab(js) { const o = {}; for (const n of NAMES) o[n] = lit(js, n); return o; }
 const html = fs.readFileSync(process.argv[2], "utf8");
 const out = {};

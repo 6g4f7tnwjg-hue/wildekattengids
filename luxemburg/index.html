@@ -1149,7 +1149,7 @@ function infoHTML(a){
   <nav class="ip-nav" aria-label="${T("Andere soorten","Other species")}"><a href="#soort/${slug(prev[0])}">${T("Vorige","Previous")}: ${esc(spName(prev[0]))}</a><a href="#soort/${slug(next[0])}">${T("Volgende","Next")}: ${esc(spName(next[0]))}</a></nav>`;
 }
 /* ===== Locatiepagina's ===== */
-const LOCINFO={"Parc Merveilleux": {"type": ["Attractiepark met dieren", "Theme park with animals", "Parc d’attractions avec animaux"], "hours": ["Van eind maart tot half oktober elke dag open (seizoen 2026: 21 maart t/m 11 oktober). Kassa’s 9.30–18.00 uur, het park sluit om 19.00 uur. De tropische huizen zijn open van 11.00 tot 17.00 uur.", "Open every day from late March to mid-October (2026 season: 21 March to 11 October). Ticket offices 9:30–18:00, the park closes at 19:00. The tropical houses are open from 11:00 to 17:00.", "Ouvert tous les jours de fin mars à mi-octobre (saison 2026 : du 21 mars au 11 octobre). Caisses de 9 h 30 à 18 h, le parc ferme à 19 h. Les serres tropicales sont ouvertes de 11 h à 17 h."], "url": "https://www.parc-merveilleux.lu", "checked": "28-09-2026", "about": ["Attractiepark voor kinderen met sprookjesbos, speeltuinen en een dierenpark met bijna 200 diersoorten van vijf continenten, geopend op 17 juli 1956. Het enige dierenpark van Luxemburg met exotische dieren, met twee tropische huizen (Amazonia en Mahajanga) en sinds 2025 een roedel Iberische wolven.", "Children’s theme park with a fairy-tale forest, playgrounds and an animal park with almost 200 species from five continents, opened on 17 July 1956. The only animal park in Luxembourg with exotic animals, with two tropical houses (Amazonia and Mahajanga) and, since 2025, a pack of Iberian wolves.", "Parc d’attractions pour enfants avec forêt des contes de fées, aires de jeux et parc animalier de près de 200 espèces issues de cinq continents, ouvert le 17 juillet 1956. Le seul parc animalier du Luxembourg avec des animaux exotiques, avec deux serres tropicales (Amazonia et Mahajanga) et, depuis 2025, une meute de loups ibériques."]}};
+const LOCINFO={"Parc Merveilleux": {"type": ["Attractiepark met dieren", "Theme park with animals", "Parc d’attractions avec animaux"], "labels": ["seizoen"], "hours": ["Van eind maart tot half oktober elke dag open (seizoen 2026: 21 maart t/m 11 oktober). Kassa’s 9.30–18.00 uur, het park sluit om 19.00 uur. De tropische huizen zijn open van 11.00 tot 17.00 uur.", "Open every day from late March to mid-October (2026 season: 21 March to 11 October). Ticket offices 9:30–18:00, the park closes at 19:00. The tropical houses are open from 11:00 to 17:00.", "Ouvert tous les jours de fin mars à mi-octobre (saison 2026 : du 21 mars au 11 octobre). Caisses de 9 h 30 à 18 h, le parc ferme à 19 h. Les serres tropicales sont ouvertes de 11 h à 17 h."], "url": "https://www.parc-merveilleux.lu", "checked": "28-09-2026", "about": ["Attractiepark voor kinderen met sprookjesbos, speeltuinen en een dierenpark met bijna 200 diersoorten van vijf continenten, geopend op 17 juli 1956. Het enige dierenpark van Luxemburg met exotische dieren, met twee tropische huizen (Amazonia en Mahajanga) en sinds 2025 een roedel Iberische wolven.", "Children’s theme park with a fairy-tale forest, playgrounds and an animal park with almost 200 species from five continents, opened on 17 July 1956. The only animal park in Luxembourg with exotic animals, with two tropical houses (Amazonia and Mahajanga) and, since 2025, a pack of Iberian wolves.", "Parc d’attractions pour enfants avec forêt des contes de fées, aires de jeux et parc animalier de près de 200 espèces issues de cinq continents, ouvert le 17 juillet 1956. Le seul parc animalier du Luxembourg avec des animaux exotiques, avec deux serres tropicales (Amazonia et Mahajanga) et, depuis 2025, une meute de loups ibériques."]}};
 const EARLIER_LOC={};
 
 const LOCPHOTOS={"Parc Merveilleux": {"src": "/wildekattengids/img/105.webp", "who": "MMFE", "lic": "CC BY-SA 3.0", "url": "https://commons.wikimedia.org/wiki/File:Eingang_Park_Bettembourg_01.jpg", "alt": "Ingang van het park"}}; /* bijv. "Faunapark Flakkee":{src:"data:..."} → bijschrift "foto: J. Gelens" */
@@ -1386,6 +1386,82 @@ document.addEventListener("click",e=>{const b=e.target.closest("[data-setlang]")
 applyLang(LANG,false);
 window.addEventListener("hashchange",route);
 route();
+/* ---- locatietypes ---- */
+const LT={"types": [{"key": "dierentuin", "nl": "Dierentuin", "en": "Zoo", "fr": "Parc zoologique", "de": "Zoo", "uitleg": "Wetenschappelijk geleide dierentuin, lid van EAZA of een landelijke zoobond (NVD, VdZ).", "uitleg_en": "Scientifically managed zoo, member of EAZA or a national zoo association (NVD, VdZ)."}, {"key": "dierenpark", "nl": "Dierenpark", "en": "Animal park", "fr": "Parc animalier", "de": "Tierpark", "uitleg": "Kleinere dierentuin of Tierpark die niet bij zo'n bond is aangesloten, ook als het park bij een winkel of kinderboerderij hoort.", "uitleg_en": "Smaller zoo or Tierpark that is not a member of such an association, also when the park belongs to a shop or a children's farm."}, {"key": "wildpark", "nl": "Wildpark", "en": "Wildlife park", "fr": "Parc à gibier", "de": "Wildpark", "uitleg": "Vooral inheemse dieren, vaak in een bos of op een groot terrein. Hier zie je de meeste lynxen en wilde katten.", "uitleg_en": "Mostly native animals, often in a forest or on a large site. This is where you see most lynxes and wildcats."}, {"key": "safaripark", "nl": "Safaripark", "en": "Safari park", "fr": "Parc safari", "de": "Safaripark", "uitleg": "Je rijdt of vaart langs de dieren, met je eigen auto, een bus of een boot.", "uitleg_en": "You drive or sail past the animals, in your own car, a bus or a boat."}, {"key": "attractiepark", "nl": "Attractiepark met dieren", "en": "Theme park with animals", "fr": "Parc d’attractions avec animaux", "de": "Freizeitpark mit Tieren", "uitleg": "Pretpark waar de dieren een deel van het aanbod zijn.", "uitleg_en": "Theme park where the animals are part of what's on offer."}, {"key": "natuurcentrum", "nl": "Natuur- en fokcentrum", "en": "Conservation centre", "fr": "Centre de conservation", "de": "Artenschutzzentrum", "uitleg": "Werkt aan het behoud van een soort, bijvoorbeeld met kweek voor uitzetting of voorlichting over de wilde kat.", "uitleg_en": "Works to conserve a species, for example by breeding for release or teaching about the wildcat."}, {"key": "opvang", "nl": "Opvang of sanctuary", "en": "Rescue centre or sanctuary", "fr": "Refuge ou sanctuaire", "de": "Auffangstation", "uitleg": "Neemt afgestane of in beslag genomen katten op. Welke dieren er zitten, wisselt, en vaak is het maar beperkt open.", "uitleg_en": "Takes in surrendered or confiscated cats. The animals change, and it is often only open on a limited basis."}, {"key": "particulier", "nl": "Particuliere houder", "en": "Private keeper", "fr": "Détenteur privé", "de": "Privathalter", "uitleg": "Circus, artiest of privépersoon die bezoekers ontvangt, bijvoorbeeld bij voorstellingen of op open dagen.", "uitleg_en": "Circus, performer or private person who receives visitors, for example at shows or on open days."}], "labels": [{"key": "overnachten", "nl": "Overnachten in het park", "en": "Overnight stay in the park", "icoon": "🌙", "fr": "Nuit dans le parc"}, {"key": "rondleiding", "nl": "Alleen met rondleiding of op afspraak", "en": "Guided tour or appointment only", "icoon": "🧭", "fr": "Uniquement en visite guidée ou sur rendez-vous"}, {"key": "leden", "nl": "Alleen voor leden", "en": "Members only", "icoon": "🎫", "fr": "Réservé aux membres"}, {"key": "bezoekdagen", "nl": "Alleen op bezoekdagen", "en": "Open days only", "icoon": "📅", "fr": "Uniquement les jours de visite"}, {"key": "seizoen", "nl": "Seizoenspark, in de winter dicht", "en": "Seasonal, closed in winter", "icoon": "🍂", "fr": "Parc saisonnier, fermé en hiver"}, {"key": "nietdagelijks", "nl": "Niet elke dag open", "en": "Not open every day", "icoon": "🗓️", "fr": "Pas ouvert tous les jours"}, {"key": "gratis", "nl": "Gratis toegang", "en": "Free entry", "icoon": "🆓", "fr": "Entrée gratuite"}, {"key": "reistrond", "nl": "Reist rond", "en": "Travelling", "icoon": "🎪", "fr": "Itinérant"}], "beperkt": ["rondleiding", "leden", "bezoekdagen"]};
+/* Locatietypes en labels. Wordt door bron/bouw.py achter het script van elke gids (en elke deelstaat) gezet,
+   zodat het bij de gegevens en functies van die gids kan. LT komt uit bron/locatietypes.json. */
+const LT_I=()=>LANG==="en"?1:LANG==="fr"?2:0;
+const LT_TX=(nl,en,fr)=>[nl,en,fr!==undefined?fr:en][LT_I()];
+const LT_KEY=nm=>{const i=LOCINFO[nm];return i&&i.type?i.type[0]:"";};
+const LT_NAME=nm=>{const i=LOCINFO[nm];if(!i||!i.type)return "";const t=LT.types.find(x=>x.nl===i.type[0]);return t?LT_TX(t.nl,t.en,t.fr):(i.type[LT_I()]||i.type[0]);};
+const LT_LABS=nm=>(((LOCINFO[nm]||{}).labels)||[]).map(k=>LT.labels.find(l=>l.key===k)).filter(Boolean);
+const LT_LTXT=l=>LT_TX(l.nl,l.en,l.fr);
+const LT_BEP=nm=>LT_LABS(nm).filter(l=>LT.beperkt.includes(l.key));
+const LT_IDX=a=>{const m=(a.getAttribute("href")||"").match(/^#(?:[a-z-]+\/)?locatie\/(.+)$/);return m&&LOCBYSLUG[m[1]]!==undefined?LOCBYSLUG[m[1]]:-1;};
+let LT_F="";
+if(!document.getElementById("lt-css")){const s=document.createElement("style");s.id="lt-css";s.textContent=
+`.lt-bar{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 6px}
+.lt-chip{font:inherit;font-size:14px;line-height:1.3;padding:4px 11px;border-radius:999px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
+.lt-chip[aria-pressed="true"]{background:var(--ink);color:var(--card);border-color:var(--ink)}
+.lt-chip:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.lt-chip .n{opacity:.7;font-variant-numeric:tabular-nums;margin-left:2px}
+.lt-count{font-size:13.5px;color:var(--muted);margin:0 0 12px}
+.map .mk.lt-off{display:none}
+.lt-ty{white-space:nowrap}
+.lt-labs{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 8px;padding:0;list-style:none}
+.lt-lab{font-size:13px;line-height:1.35;border:1px solid var(--line);border-radius:999px;padding:1px 9px;background:var(--card)}
+.lt-warn{display:inline-block;margin-top:2px;color:var(--w);font-style:normal}`;
+document.head.appendChild(s);}
+
+function LT_DECOR(){
+  const sec=document.getElementById("locaties"); if(!sec)return;
+  /* type achter de plaatsnaam in de lijsten per regio */
+  sec.querySelectorAll(".loclist li").forEach(li=>{const a=li.querySelector('a[href*="locatie/"]');if(!a)return;const i=LT_IDX(a);if(i<0)return;
+    const nm=LOCS[i][0];let s=li.querySelector(".lt-ty");
+    if(!s){const p=li.querySelector(".plc");if(!p)return;s=document.createElement("span");s.className="lt-ty";p.appendChild(s);}
+    s.textContent=" · "+LT_NAME(nm);li.dataset.ltType=LT_KEY(nm);});
+  /* filterknoppen boven de kaart, alleen voor types die hier voorkomen */
+  const cnt={};LOCS.forEach(l=>{const k=LT_KEY(l[0]);if(k)cnt[k]=(cnt[k]||0)+1;});
+  const present=LT.types.filter(t=>cnt[t.nl]);
+  let bar=document.getElementById("lt-bar");
+  if(present.length<2){if(bar)bar.remove();return;}
+  if(!bar){const mw=sec.querySelector(".mapwrap");if(!mw)return;
+    mw.insertAdjacentHTML("beforebegin",'<div class="lt-bar" id="lt-bar" role="group"><\/div><p class="lt-count" id="lt-count" aria-live="polite"><\/p>');
+    bar=document.getElementById("lt-bar");
+    bar.addEventListener("click",e=>{const b=e.target.closest(".lt-chip");if(!b)return;LT_F=b.dataset.t;LT_DECOR();});}
+  bar.setAttribute("aria-label",LT_TX("Soort locatie","Type of location","Type de lieu"));
+  bar.innerHTML=[["",LOCS.length,LT_TX("Alle","All","Tous")]].concat(present.map(t=>[t.nl,cnt[t.nl],LT_TX(t.nl,t.en,t.fr)]))
+    .map(([k,n,l])=>`<button type="button" class="lt-chip" data-t="${esc(k)}" aria-pressed="${k===LT_F}">${esc(l)} <span class="n">${n}<\/span><\/button>`).join("");
+  LT_APPLY();
+}
+function LT_APPLY(){
+  const off=nm=>!!LT_F&&LT_KEY(nm)!==LT_F;
+  document.querySelectorAll("#nlmap .mk").forEach(m=>{const l=LOCS[+m.dataset.i];if(l)m.classList.toggle("lt-off",off(l[0]));});
+  const sel=document.getElementById("locsel");
+  if(sel)[...sel.options].forEach(o=>{if(o.value==="")return;const l=LOCS[+o.value];if(!l)return;const h=off(l[0]);o.hidden=h;o.disabled=h;});
+  const sec=document.getElementById("locaties");
+  sec.querySelectorAll(".loclist li[data-lt-type]").forEach(li=>{li.hidden=!!LT_F&&li.dataset.ltType!==LT_F;});
+  sec.querySelectorAll(".loclist").forEach(ul=>{const items=[...ul.querySelectorAll("li[data-lt-type]")];if(!items.length)return;
+    const none=items.every(li=>li.hidden);ul.hidden=none;const g=ul.previousElementSibling;if(g&&g.classList.contains("group-title"))g.hidden=none;});
+  const c=document.getElementById("lt-count");
+  if(c){const n=LOCS.filter(l=>!off(l[0])).length;
+    c.textContent=LT_F?LT_TX(`${n} van de ${LOCS.length} locaties getoond.`,`Showing ${n} of ${LOCS.length} locations.`,`${n} lieux sur ${LOCS.length} affichés.`):"";c.hidden=!LT_F;}
+}
+{const o=locHTML;locHTML=function(i){const h=o.apply(this,arguments);const t=LT_LABS(LOCS[i][0]).map(l=>`<span class="ip-tag">${l.icoon} ${esc(LT_LTXT(l))}<\/span>`).join("");
+  return t?h.replace(/(<div class="ip-tags">[\s\S]*?)(<\/div>)/,(m,a,b)=>a+t+b):h;};}
+{const o=showLoc;showLoc=function(i){const r=o.apply(this,arguments);const box=document.getElementById("mapinfo");const l=LOCS[i];
+  if(box&&l){const p=box.querySelector(".pl");const labs=LT_LABS(l[0]);
+    if(p&&labs.length&&!box.querySelector(".lt-labs"))p.insertAdjacentHTML("afterend",`<ul class="lt-labs">${labs.map(x=>`<li class="lt-lab">${x.icoon} ${esc(LT_LTXT(x))}<\/li>`).join("")}<\/ul>`);}
+  LT_APPLY();return r;};}
+{const o=buildRoute;buildRoute=function(){const r=o.apply(this,arguments);
+  document.querySelectorAll("#rt-list .rt-row").forEach(row=>{const inp=row.querySelector("input");const sm=row.querySelector("small");if(!inp||!sm||sm.querySelector(".lt-warn"))return;
+    const bep=LT_BEP(inp.value);if(bep.length)sm.insertAdjacentHTML("beforeend",`<br><span class="lt-warn">${bep.map(x=>`${x.icoon} ${esc(LT_LTXT(x))}`).join(" · ")}<\/span>`);});
+  return r;};}
+{const o=infoHTML;infoHTML=function(){const h=o.apply(this,arguments);
+  return h.replace(/(<a href="#locatie\/([^"]+)">[^<]*<\/a><\/b> <span style="color:var\(--muted\)">\([^<]*\))(<\/span>)/g,(m,a,s,b)=>{const i=LOCBYSLUG[s];return i===undefined?m:a+" · "+esc(LT_NAME(LOCS[i][0]))+b;});};}
+{const o=applyLang;applyLang=function(){const r=o.apply(this,arguments);LT_DECOR();return r;};}
+applyLang(LANG,false);
+
 
 
 

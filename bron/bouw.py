@@ -51,6 +51,21 @@ def esc(x):
 # ------------------------------------------------------------------ bron inlezen
 G = {c: rd(BRON + f"gidsen/{c}.html") for c in F}
 START = rd(BRON + "start.html")
+
+# ------------------------------------------------------------------ locatietypes en labels in elke gids zetten
+LTJ = json.load(open(BRON + "locatietypes.json", encoding="utf8"))
+LT_JS = ("\n/* ---- locatietypes ---- */\nconst LT=" + js({"types": LTJ["types"], "labels": LTJ["labels"], "beperkt": LTJ["beperkt_toegankelijk"]})
+         + ";\n" + rd(BRON + "locatietypes.js"))
+LT_HOOK = 'window.addEventListener("hashchange",route);\nroute();'
+def met_types(t):
+    if '<script type="application/json" id="ds-' in t:
+        def fix(mm):
+            d = json.loads(mm.group(2))
+            d["js"] = sub1(d["js"], LT_HOOK, LT_HOOK + LT_JS.replace("</", "<\\/"))
+            return mm.group(1) + json.dumps(d, ensure_ascii=False).replace("</", "<\\/") + mm.group(3)
+        return re.sub(r'(<script type="application/json" id="ds-[a-z-]+">)(.*?)(</script>)', fix, t, flags=re.S)
+    return sub1(t, LT_HOOK, LT_HOOK + LT_JS.replace("</", "<\\/"))
+G = {c: met_types(t) for c, t in G.items()}
 imgs = sorted((f for f in os.listdir(ROOT + "img") if re.match(r"^\d+\.\w+$", f)), key=lambda f: int(f.split(".")[0]))
 assert [int(f.split(".")[0]) for f in imgs] == list(range(len(imgs))), "fotonummers moeten aaneengesloten zijn"
 
@@ -63,6 +78,8 @@ today = datetime.date.today()
 for c in F:
     D[c] = bereken(DATA[c], D[c], today, fr)
 D["sp"] = soorten(DATA, fr, today)
+D["lt"] = {"types": [{k: t[k] for k in ("nl", "en", "uitleg", "uitleg_en")} for t in LTJ["types"]],
+           "labels": [{k: l[k] for k in ("key", "nl", "en", "icoon")} for l in LTJ["labels"]]}
 START = START[:m.start(1)] + json.dumps(D, ensure_ascii=False, separators=(",", ":")) + START[m.end(1):]
 wr(BRON + "start.html", START)
 

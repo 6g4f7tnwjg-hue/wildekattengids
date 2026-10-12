@@ -29,7 +29,7 @@ BASE = "/wildekattengids/"
 SITE = "https://yeetkitty.github.io" + BASE
 F = {"nl": "nederland", "be": "belgie", "lu": "luxemburg", "de": "duitsland"}
 LAND = {"nl": "Nederland", "be": "België", "lu": "Luxemburg", "de": "Duitsland"}
-STATES = {"nedersaksen": "Nedersaksen", "nrw": "Noordrijn-Westfalen", "saksen": "Saksen", "berlijn": "Berlijn"}
+STATES = {"bayern": "Bayern", "nedersaksen": "Nedersaksen", "nrw": "Noordrijn-Westfalen", "saksen": "Saksen", "berlijn": "Berlijn"}
 W3F_KEY = "9494e3c0-9342-4457-a5d6-b795793b9ce4"
 MIME = {"webp": "image/webp", "jpg": "image/jpeg", "png": "image/png", "gif": "image/gif"}
 

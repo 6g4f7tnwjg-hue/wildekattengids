@@ -81,6 +81,13 @@ D["sp"] = soorten(DATA, fr, today)
 D["lt"] = {"types": [{k: t[k] for k in ("nl", "en", "uitleg", "uitleg_en")} for t in LTJ["types"]],
            "labels": [{k: l[k] for k in ("key", "nl", "en", "icoon")} for l in LTJ["labels"]]}
 START = START[:m.start(1)] + json.dumps(D, ensure_ascii=False, separators=(",", ":")) + START[m.end(1):]
+# datum "Bijgewerkt …" op de startpagina: de dag van de bouw
+_MNL = ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december"]
+_MEN = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+START, _n = re.subn(r'<p class="stamp">.*?</p>',
+    f'<p class="stamp"><span class="l-nl">Bijgewerkt {today.day} {_MNL[today.month-1]} {today.year}</span><span class="l-en">Updated {today.day} {_MEN[today.month-1]} {today.year}</span></p>',
+    START, count=1)
+assert _n == 1, "datum op de startpagina niet gevonden"
 wr(BRON + "start.html", START)
 
 # ------------------------------------------------------------------ Claude-pagina

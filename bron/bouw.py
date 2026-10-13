@@ -84,21 +84,24 @@ START = START[:m.start(1)] + json.dumps(D, ensure_ascii=False, separators=(",", 
 wr(BRON + "start.html", START)
 
 # ------------------------------------------------------------------ Claude-pagina
-def claude_img(f):
-    """Foto voor de Claude-pagina (max. 16 MB in totaal): grote foto's worden kleiner opnieuw opgeslagen; de website houdt het origineel."""
-    raw = open(ROOT + "img/" + f, "rb").read()
-    mime = MIME[f.split(".")[1]]
-    if len(raw) > 20000:
-        try:
-            import io
-            from PIL import Image
-            im = Image.open(io.BytesIO(raw)).convert("RGB"); im.thumbnail((640, 640))
-            b = io.BytesIO(); im.save(b, "WEBP", quality=62)
-            if b.tell() < len(raw): raw, mime = b.getvalue(), "image/webp"
-        except Exception:
-            pass
+def b64(raw, mime):
     return "data:%s;base64,%s" % (mime, base64.b64encode(raw).decode())
-IMG = [claude_img(f) for f in imgs]
+def kleiner(f):
+    """Kleinere versie van een foto (alleen voor de Claude-pagina als die te groot wordt)."""
+    import io
+    from PIL import Image
+    im = Image.open(ROOT + "img/" + f).convert("RGB"); im.thumbnail((640, 640))
+    b = io.BytesIO(); im.save(b, "WEBP", quality=72); return b.getvalue()
+IMG = [b64(open(ROOT + "img/" + f, "rb").read(), MIME[f.split(".")[1]]) for f in imgs]
+# Een Claude-pagina mag niet groter zijn dan 16 MB. Is de pagina te groot, dan worden de grootste
+# dierentuinfoto's (niet de voorpagina- en soortfoto's 0–43) voor dit bestand verkleind; de website houdt het origineel.
+RUIMTE = 15.6e6 - len(js(G)) - len(START) - 200000
+for n in sorted(range(44, len(imgs)), key=lambda n: -len(IMG[n])):
+    if sum(map(len, IMG)) <= RUIMTE:
+        break
+    k = b64(kleiner(imgs[n]), "image/webp")
+    if len(k) < len(IMG[n]):
+        IMG[n] = k
 k = START.index("<script>\n(function(){")
 claude = (rd(BRON + "artifact_kop.html") + "<script>window.__IMG=" + json.dumps(IMG) + ";\nwindow.__G=" + js(G)
           + ";\nwindow.__START=" + js(START) + ";</script>\n" + START[k:])
@@ -184,6 +187,14 @@ CTRY = {
     "de": ("Wilde katachtigen in Duitsland – welke wilde katten in welke dierentuin?",
            "Welke wilde katten zie je in Duitse dierentuinen, Tierparks en Wildparks? Per deelstaat, per soort en per park, met kaart, routeplanner en recente geboortes."),
 }
+# Duitse gids op de website: elke pagina krijgt alleen de gegevens van zijn eigen deelstaat (de Claude-pagina houdt alles in één bestand)
+DSKR = {st: [[r[0], "", r[2], r[3], r[4]] for r in DATA["de"][st]["R"]] for st in DATA["de"]}
+def alleen_ds(doc, keep):
+    doc = re.sub(r'<script type="application/json" id="ds-([a-z-]+)">.*?</script>\n?',
+                 lambda mm: mm.group(0) if mm.group(1) == keep else "", doc, flags=re.S)
+    i = doc.index("<meta charset"); j = doc.index(">", i) + 1
+    extra = f'\n<script>window.__DSBASE="{BASE}duitsland/";' + ("window.__DSKR=" + js(DSKR) + ";" if keep is None else "") + "</script>"
+    return doc[:j] + extra + doc[j:]
 HOME_JS = 'if(window.__home){window.__home();}else{location.reload();}'
 WEB = {}
 for c, doc in G.items():
@@ -193,8 +204,11 @@ for c, doc in G.items():
     t, d = CTRY[c]
     doc = re.sub(r"<title>[^<]*</title>", lambda mm: f"<title>{t}</title>\n" + seo(t, d, SITE + F[c] + "/"), doc, count=1)
     WEB[c] = doc   # zonder meldformulier-aanpassing (voor de stijl en momentopnames)
-    wr(ROOT + F[c] + "/index.html", meld(doc, LAND[c]))
-de_web = rd(ROOT + "duitsland/index.html")
+    if c == "de":
+        de_web = meld(doc, LAND[c])
+        wr(ROOT + F[c] + "/index.html", alleen_ds(de_web, None))
+    else:
+        wr(ROOT + F[c] + "/index.html", meld(doc, LAND[c]))
 for st, nm in STATES.items():
     o = DATA["de"][st]
     cats = []
@@ -205,11 +219,14 @@ for st, nm in STATES.items():
     d = f"Welke wilde katten zie je in {nm}? {len(o['LOCS'])} dierentuinen, Tierparks en Wildparks met o.a. {', '.join(x.lower() for x in cats[:4])}. Met kaart, routeplanner en recente geboortes."
     url = SITE + "duitsland/" + st + "/"
     doc = re.sub(r'<title>.*?</title>.*?<meta name="twitter:card"[^>]*>\n', "", de_web, count=1, flags=re.S)
-    force = ('<script>(function(){var h=decodeURIComponent(location.hash.slice(1));if(!/^' + st + '(\\/|$)/.test(h)){try{history.replaceState(null,"","#'
-             + st + '"+(h&&h!=="de"?"/"+h:""));}catch(e){}}})();</script>\n')
+    # adres vastzetten op deze deelstaat; een link naar een andere deelstaat of naar de Duitse startpagina gaat naar die pagina
+    force = ('<script>(function(){var h=decodeURIComponent(location.hash.slice(1)),s=h.split("/")[0],A=' + json.dumps(list(STATES))
+             + ',B="' + BASE + 'duitsland/";if(s==="de"){location.replace(B+"#"+h);return;}if(s!=="' + st
+             + '"&&A.indexOf(s)>=0){location.replace(B+s+"/#"+h);return;}if(!/^' + st + '(\\/|$)/.test(h)){try{history.replaceState(null,"","#'
+             + st + '"+(h?"/"+h:""));}catch(e){}}})();</script>\n')
     head = f"<title>{t}</title>\n" + seo(f"Wilde katachtigen in {nm}", d, url) + force
     i = doc.index("<meta charset"); j = doc.index(">", i) + 1
-    wr(ROOT + f"duitsland/{st}/index.html", doc[:j] + "\n" + head + doc[j:])
+    wr(ROOT + f"duitsland/{st}/index.html", alleen_ds(doc[:j] + "\n" + head + doc[j:], st))
 
 # ------------------------------------------------------------------ website: startpagina
 st = START

@@ -32,4 +32,4 @@ Alleen de Claude-pagina bouwen: `python3 bron/bouw.py --geen-web`.
 - Website: elke soort heeft ook een pagina voor alle landen samen (`/soort/<naam>/`); in de Claude-pagina opent die binnen de startpagina (`#kat/<naam>`). De gegevens staan in `D.sp` (berekend door `startdata.soorten`).
 - Website: het meldformulier verstuurt via Web3Forms naar de mail van de maker. De Claude-pagina gebruikt de reacties van Claude.
 - Claude-pagina: één bestand; de landen worden binnen de pagina geopend.
-- Claude-pagina: foto's boven 20 kB worden voor dit bestand verkleind (max. 640 px, webp), zodat het onder de 16 MB van een Claude-pagina blijft. De website gebruikt de originele foto's.
+- Claude-pagina: de foto's staan er op volle kwaliteit in. Wordt het bestand groter dan 15,6 MB (een Claude-pagina mag maximaal 16 MB zijn), dan verkleint de bouw alleen voor dit bestand de grootste dierentuinfoto's; voorpagina- en soortfoto's (0–43) blijven altijd origineel.

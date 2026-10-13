@@ -29,7 +29,7 @@ BASE = "/wildekattengids/"
 SITE = "https://yeetkitty.github.io" + BASE
 F = {"nl": "nederland", "be": "belgie", "lu": "luxemburg", "de": "duitsland"}
 LAND = {"nl": "Nederland", "be": "België", "lu": "Luxemburg", "de": "Duitsland"}
-STATES = {"bayern": "Bayern", "nedersaksen": "Nedersaksen", "nrw": "Noordrijn-Westfalen", "saksen": "Saksen", "berlijn": "Berlijn"}
+STATES = {"bayern": "Bayern", "nedersaksen": "Nedersaksen", "nrw": "Noordrijn-Westfalen", "saksen": "Saksen", "berlijn": "Berlijn", "hamburg": "Hamburg", "bremen": "Bremen", "saarland": "Saarland", "sleeswijk-holstein": "Sleeswijk-Holstein", "hessen": "Hessen", "brandenburg": "Brandenburg", "mecklenburg-voor-pommeren": "Mecklenburg-Voor-Pommeren", "rijnland-palts": "Rijnland-Palts", "thueringen": "Thüringen", "saksen-anhalt": "Saksen-Anhalt", "baden-wuerttemberg": "Baden-Württemberg"}
 W3F_KEY = "9494e3c0-9342-4457-a5d6-b795793b9ce4"
 MIME = {"webp": "image/webp", "jpg": "image/jpeg", "png": "image/png", "gif": "image/gif"}
 
@@ -84,7 +84,21 @@ START = START[:m.start(1)] + json.dumps(D, ensure_ascii=False, separators=(",", 
 wr(BRON + "start.html", START)
 
 # ------------------------------------------------------------------ Claude-pagina
-IMG = ["data:%s;base64,%s" % (MIME[f.split(".")[1]], base64.b64encode(open(ROOT + "img/" + f, "rb").read()).decode()) for f in imgs]
+def claude_img(f):
+    """Foto voor de Claude-pagina (max. 16 MB in totaal): grote foto's worden kleiner opnieuw opgeslagen; de website houdt het origineel."""
+    raw = open(ROOT + "img/" + f, "rb").read()
+    mime = MIME[f.split(".")[1]]
+    if len(raw) > 20000:
+        try:
+            import io
+            from PIL import Image
+            im = Image.open(io.BytesIO(raw)).convert("RGB"); im.thumbnail((640, 640))
+            b = io.BytesIO(); im.save(b, "WEBP", quality=62)
+            if b.tell() < len(raw): raw, mime = b.getvalue(), "image/webp"
+        except Exception:
+            pass
+    return "data:%s;base64,%s" % (mime, base64.b64encode(raw).decode())
+IMG = [claude_img(f) for f in imgs]
 k = START.index("<script>\n(function(){")
 claude = (rd(BRON + "artifact_kop.html") + "<script>window.__IMG=" + json.dumps(IMG) + ";\nwindow.__G=" + js(G)
           + ";\nwindow.__START=" + js(START) + ";</script>\n" + START[k:])

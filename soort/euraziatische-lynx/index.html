@@ -54,7 +54,7 @@
   if(m){window.__OPEN=[m[1].toLowerCase(),m[2]?m[2].toLowerCase()+"/"+m[3]:""];}
   else if(dm){window.__OPEN=["de",dm[1]==="de"?"":h.slice(1)];}
   else if(fm){window.__OPEN=["fr",fm[1]==="fr"?"":h.slice(1)];}
-  else if(last&&/^(nl|be|lu)$/.test(last)&&/^#(soort|locatie|[a-z])/.test(h)&&!/^#(kat\/|top10$|top$|soorten$|landen$|kaart$|overzicht$|over$|typen$)/.test(h)){window.__OPEN=[last,h.slice(1)];}
+  else if(last&&/^(nl|be|lu)$/.test(last)&&/^#(soort|locatie|[a-z])/.test(h)&&!/^#(kat\/|top10$|top$|perpark$|soorten$|landen$|kaart$|overzicht$|over$|typen$)/.test(h)){window.__OPEN=[last,h.slice(1)];}
   var l=null;try{l=localStorage.getItem("lang");}catch(e){}
   if(!/^(nl|en|fr|de)$/.test(l||"")){var a=(navigator.languages&&navigator.languages[0])||navigator.language||"en";l=/^nl\b/i.test(a)?"nl":/^fr\b/i.test(a)?"fr":/^de\b/i.test(a)?"de":"en";}
   window.__LANG=l;["en","fr","de"].forEach(function(x){document.documentElement.classList.toggle(x,l===x);});document.documentElement.lang=l;
@@ -245,6 +245,32 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:14px;bac
 .top-hoe h2{font-size:22px;margin:0 0 6px}
 .top-hoe p{font-size:15.5px}
 
+/* parken op aantal soorten */
+.cnt{border:1.5px solid var(--line);border-radius:14px;background:var(--card);overflow:hidden}
+.cnt-r{border-bottom:1px solid var(--line)}
+.cnt-r:last-child{border-bottom:0}
+.cnt-b{all:unset;box-sizing:border-box;cursor:pointer;display:grid;grid-template-columns:3.2em minmax(0,1fr) auto 14px;align-items:center;gap:10px;width:100%;padding:9px 14px;font-family:var(--display)}
+.cnt-b:hover{background:var(--paper)}
+.cnt-b:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
+.cnt-n{font-weight:800;font-size:22px;color:var(--deep);text-align:right;font-variant-numeric:tabular-nums}
+.cnt-n small{display:block;font-size:11px;font-weight:600;color:var(--muted);line-height:1}
+.cnt-bar{height:10px;border-radius:5px;background:var(--line);overflow:hidden}
+.cnt-bar i{display:block;height:100%;background:var(--gold);border-radius:5px;min-width:6px}
+.cnt-k{font-size:14px;color:var(--bark);font-weight:600;white-space:nowrap;font-variant-numeric:tabular-nums}
+.cnt-b::after{content:"";width:8px;height:8px;border-right:2px solid var(--bark);border-bottom:2px solid var(--bark);transform:rotate(45deg);margin-top:-4px;transition:transform .2s}
+.cnt-b[aria-expanded="true"]::after{transform:rotate(-135deg);margin-top:4px}
+.cnt-p{padding:4px 14px 14px;background:var(--paper)}
+.cnt-p h3{font-size:15px;margin:12px 0 4px;display:flex;align-items:center;gap:6px}
+.cnt-p h3 svg{width:21px;height:14px;border-radius:2px;box-shadow:0 0 0 1px rgba(30,41,34,.2)}
+.cnt-p ul{list-style:none;margin:0;padding:0}
+.cnt-p li.pk{padding:8px 0;border-bottom:1px dashed var(--line)}
+.cnt-p li.pk:last-child{border-bottom:0}
+.cnt-p li.pk>a{font-family:var(--display);font-weight:600;color:var(--deep);text-decoration:none;border-bottom:1px solid var(--gold)}
+.cnt-p .plc{display:block;font-family:var(--display);font-size:13px;color:var(--muted);margin:1px 0 4px}
+.cnt-p .cats{display:flex;flex-wrap:wrap;gap:4px;margin:0;padding:0;list-style:none}
+.cnt-p .cats li{border:1px solid var(--tan-deep);border-radius:999px;padding:0 8px;font-family:var(--display);font-size:12.5px;color:var(--bark)}
+.cnt-p .chips{margin:10px 0 2px}
+
 /* soortweergave (alle landen) */
 html.katmode section:not(#katview),html.katmode header h1,html.katmode header .lede{display:none}
 html.katmode header{padding-bottom:6px}
@@ -358,6 +384,12 @@ html.katmode #katview{display:block}
   <h2 id="h-soorten"><span class="l-nl">Alle soorten</span><span class="l-en">All species</span><span class="l-fr">Toutes les espèces</span><span class="l-de">Alle Arten</span></h2>
   <p class="hint"><span class="l-nl">Per soort zie je in één keer waar hij in alle landen te zien is.</span><span class="l-en">For each species, see at a glance where it can be seen in every country.</span><span class="l-fr">Pour chaque espèce, voyez d’un coup d’œil où elle est visible dans chaque pays.</span><span class="l-de">Sieh für jede Art auf einen Blick, wo sie in allen Ländern zu sehen ist.</span></p>
   <ul class="splist" id="splist"></ul>
+</section>
+
+<section id="perpark" aria-labelledby="h-perpark">
+  <h2 id="h-perpark"><span class="l-nl">Parken op aantal soorten</span><span class="l-en">Parks by number of species</span><span class="l-fr">Parcs par nombre d’espèces</span><span class="l-de">Parks nach Zahl der Arten</span></h2>
+  <p class="hint"><span class="l-nl">Hoeveel parken hebben hoeveel kattensoorten? Tik op een regel om de parken te zien. Alleen bevestigde soorten tellen mee.</span><span class="l-en">How many parks have how many cat species? Tap a row to see the parks. Only confirmed species count.</span><span class="l-fr">Combien de parcs ont combien d’espèces de félins ? Touchez une ligne pour voir les parcs. Seules les espèces confirmées comptent.</span><span class="l-de">Wie viele Parks haben wie viele Katzenarten? Tippe auf eine Zeile, um die Parks zu sehen. Nur bestätigte Arten zählen.</span></p>
+  <div class="cnt" id="cnt"></div>
 </section>
 
 <section id="overzicht" aria-labelledby="h-overzicht">
@@ -663,6 +695,33 @@ function showTop(push){
 document.addEventListener("click",e=>{const b=e.target.closest("[data-topf]");if(b){TOPF=b.dataset.topf;renderTop();return;}
   const a=e.target.closest('a[href="#top10"]');if(a&&!KB){e.preventDefault();showTop(true);}});
 
+/* ---------- parken op aantal soorten ---------- */
+let CNT_OPEN=null,CNT_F="";
+const CNT=(()=>{const g={};ORDER.forEach(c=>D[c].locs.forEach((l,i)=>{const sp=[...new Set(l[5].filter(x=>CONF.includes(x[3])).map(x=>x[4]))];
+  const n=sp.length;if(!n)return;(g[n]=g[n]||[]).push({c,i,l});}));
+  const nl={};ORDER.forEach(c=>D[c].locs.forEach(l=>{new Set(l[5].filter(x=>CONF.includes(x[3])).map(x=>CANON[x[4]]||x[4])).forEach(k=>{nl[k]=(nl[k]||0)+1;});}));
+  const rare=p=>p.l[5].filter(x=>CONF.includes(x[3])&&nl[CANON[x[4]]||x[4]]<=3).length;
+  Object.values(g).forEach(a=>a.sort((p,q)=>rare(q)-rare(p)||p.l[0].localeCompare(q.l[0])));
+  return Object.keys(g).map(Number).sort((a,b)=>b-a).map(n=>({n,ps:g[n]}));})();
+function cntPark(p){const c=p.c,l=p.l;
+  const cats=l[5].filter(x=>CONF.includes(x[3])).map(x=>spn(x,x[4]));
+  return `<li class="pk"><a href="${window.__F[c]}#${l[6]||""}locatie/${l[4]}">${esc(l[0])}</a><span class="plc">${esc(l[1])}${l[6]?" · "+esc(stName(l[6])):""} · ${esc(cname(c))}</span>
+    <ul class="cats">${[...new Set(cats)].map(x=>`<li>${esc(x)}</li>`).join("")}</ul></li>`;}
+function renderCnt(){const el=document.getElementById("cnt");if(!el)return;
+  const max=Math.max(...CNT.map(r=>r.ps.length));
+  el.innerHTML=CNT.map(r=>{const open=CNT_OPEN===r.n;let body="";
+    if(open){const groot=r.ps.length>12;const landen=ORDER.filter(c=>r.ps.some(p=>p.c===c));
+      const ps=r.ps.filter(p=>!CNT_F||p.c===CNT_F);
+      body=`<div class="cnt-p" id="cnt-p-${r.n}">${groot?`<div class="chips" role="group" aria-label="${T("Land","Country","Pays","Land")}"><button type="button" class="chip" data-cntf="" aria-pressed="${CNT_F===""}">${T("Alle landen","All countries","Tous les pays","Alle Länder")} <span class="n">${r.ps.length}</span></button>${landen.map(c=>`<button type="button" class="chip" data-cntf="${c}" aria-pressed="${CNT_F===c}">${flag(c,"")}${esc(cname(c))} <span class="n">${r.ps.filter(p=>p.c===c).length}</span></button>`).join("")}</div>`:""}
+        ${groot?ORDER.filter(c=>ps.some(p=>p.c===c)).map(c=>`<h3>${flag(c,"")}${esc(cname(c))}</h3><ul>${ps.filter(p=>p.c===c).map(cntPark).join("")}</ul>`).join(""):`<ul>${ps.map(cntPark).join("")}</ul>`}</div>`;}
+    return `<div class="cnt-r"><button type="button" class="cnt-b" data-cnt="${r.n}" aria-expanded="${open}" aria-controls="cnt-p-${r.n}">
+      <span class="cnt-n">${r.n}<small>${T(r.n===1?"soort":"soorten",r.n===1?"species":"species",r.n===1?"espèce":"espèces",r.n===1?"Art":"Arten")}</small></span>
+      <span class="cnt-bar" aria-hidden="true"><i style="width:${(100*r.ps.length/max).toFixed(1)}%"></i></span>
+      <span class="cnt-k">${num(r.ps.length,T("park","park","parc","Park"),T("parken","parks","parcs","Parks"))}</span></button>${body}</div>`;}).join("");}
+document.addEventListener("click",e=>{const b=e.target.closest("[data-cnt]");
+  if(b){const n=+b.dataset.cnt;CNT_OPEN=CNT_OPEN===n?null:n;CNT_F="";renderCnt();const nb=document.querySelector(`[data-cnt="${n}"]`);if(nb)nb.focus({preventScroll:true});return;}
+  const f=e.target.closest("[data-cntf]");if(f){CNT_F=f.dataset.cntf;renderCnt();}});
+
 /* ---------- zoeken ---------- */
 const norm=s=>String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[\u2018\u2019\u00b4'`]/g,"").replace(/[^a-z0-9]+/g," ").trim();
 const IDX=[];
@@ -715,7 +774,7 @@ function applyLang(l,save){LANG=l;
   ["en","fr","de"].forEach(x=>document.documentElement.classList.toggle(x,l===x));document.documentElement.lang=l;
   document.querySelectorAll("[data-setlang]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.setlang===l)));
   document.title=T("Wilde katachtigen in de Benelux, Duitsland en Frankrijk","Wild cats in the Benelux, Germany and France","Félins sauvages au Benelux, en Allemagne et en France","Wilde Katzen in den Benelux-Ländern, Deutschland und Frankreich");
-  tiles();renderTop3();renderZoom();renderLtf();renderTypes();renderInfo();countries();speciesList();
+  tiles();renderTop3();renderCnt();renderZoom();renderLtf();renderTypes();renderInfo();countries();speciesList();
   const zi=document.getElementById("zoek-in");if(zi){zi.placeholder=T("Bijv. manoel, Pairi Daiza of Leipzig","E.g. Pallas’s cat, Pairi Daiza or Leipzig","Ex. chat de Pallas, Pairi Daiza ou Leipzig","Z. B. Manul, Pairi Daiza oder Leipzig");if(!document.getElementById("zoek-res").hidden)doSearch();}
   if(KAT)renderKat();
   if(TOPV)renderTop();

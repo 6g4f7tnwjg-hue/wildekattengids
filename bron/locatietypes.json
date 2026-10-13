@@ -80,56 +80,64 @@
       "nl": "Overnachten in het park",
       "en": "Overnight stay in the park",
       "icoon": "🌙",
-      "fr": "Nuit dans le parc"
+      "fr": "Nuit dans le parc",
+      "de": "Übernachtung im Park"
     },
     {
       "key": "rondleiding",
       "nl": "Alleen met rondleiding of op afspraak",
       "en": "Guided tour or appointment only",
       "icoon": "🧭",
-      "fr": "Uniquement en visite guidée ou sur rendez-vous"
+      "fr": "Uniquement en visite guidée ou sur rendez-vous",
+      "de": "Nur mit Führung oder nach Anmeldung"
     },
     {
       "key": "leden",
       "nl": "Alleen voor leden",
       "en": "Members only",
       "icoon": "🎫",
-      "fr": "Réservé aux membres"
+      "fr": "Réservé aux membres",
+      "de": "Nur für Mitglieder"
     },
     {
       "key": "bezoekdagen",
       "nl": "Alleen op bezoekdagen",
       "en": "Open days only",
       "icoon": "📅",
-      "fr": "Uniquement les jours de visite"
+      "fr": "Uniquement les jours de visite",
+      "de": "Nur an Besuchstagen"
     },
     {
       "key": "seizoen",
       "nl": "Seizoenspark, in de winter dicht",
       "en": "Seasonal, closed in winter",
       "icoon": "🍂",
-      "fr": "Parc saisonnier, fermé en hiver"
+      "fr": "Parc saisonnier, fermé en hiver",
+      "de": "Saisonpark, im Winter geschlossen"
     },
     {
       "key": "nietdagelijks",
       "nl": "Niet elke dag open",
       "en": "Not open every day",
       "icoon": "🗓️",
-      "fr": "Pas ouvert tous les jours"
+      "fr": "Pas ouvert tous les jours",
+      "de": "Nicht täglich geöffnet"
     },
     {
       "key": "gratis",
       "nl": "Gratis toegang",
       "en": "Free entry",
       "icoon": "🆓",
-      "fr": "Entrée gratuite"
+      "fr": "Entrée gratuite",
+      "de": "Eintritt frei"
     },
     {
       "key": "reistrond",
       "nl": "Reist rond",
       "en": "Travelling",
       "icoon": "🎪",
-      "fr": "Itinérant"
+      "fr": "Itinérant",
+      "de": "Reisend"
     }
   ],
   "beperkt_toegankelijk": [

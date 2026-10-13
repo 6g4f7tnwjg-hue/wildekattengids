@@ -142,7 +142,8 @@ def seo(title, desc, url, image=SITE + "voorbeeld.jpg", soort="website"):
 # meldformulier via Web3Forms (alleen op de website; de Claude-pagina gebruikt reacties)
 NOTE = {"nl": "Je melding gaat rechtstreeks naar de maker van de gids en is niet openbaar. Wil je een reactie, zet dan je e-mailadres bij Opmerkingen.",
         "en": "Your report goes straight to the guide’s author and is not public. If you would like a reply, add your email address under Comments.",
-        "fr": "Votre signalement est envoyé directement à l’auteur du guide et n’est pas public. Si vous souhaitez une réponse, indiquez votre adresse e-mail dans les commentaires."}
+        "fr": "Votre signalement est envoyé directement à l’auteur du guide et n’est pas public. Si vous souhaitez une réponse, indiquez votre adresse e-mail dans les commentaires.",
+        "de": "Deine Meldung geht direkt an den Macher des Leitfadens und ist nicht öffentlich. Wenn du eine Antwort möchtest, gib deine E-Mail-Adresse unter Anmerkungen an."}
 RPWEB = r'''async function rpWeb(d){
   const btn=rpEl("rp-go");btn.disabled=true;rpMsg(T("Bezig met versturen…","Sending…","Envoi en cours…"));
   const body={access_key:window.__W3F.key,subject:"Melding gids "+window.__W3F.land+": "+d.type+" – "+d.loc,from_name:"Wilde katachtigen-gids",
@@ -160,10 +161,15 @@ RPWEB = r'''async function rpWeb(d){
   btn.disabled=false;
 }
 '''
-def meld_js(t):
+# Duitse gids: derde taal is Duits in plaats van Frans
+RPWEB_DE = (RPWEB.replace('"Envoi en cours…"', '"Wird gesendet…"')
+            .replace('"Merci ! Votre signalement a été envoyé."', '"Danke! Deine Meldung wurde gesendet."')
+            .replace('"L’envoi a échoué. Veuillez réessayer plus tard."', '"Senden fehlgeschlagen. Bitte versuche es später noch einmal."'))
+assert "Envoi" not in RPWEB_DE and "Merci" not in RPWEB_DE and "échoué" not in RPWEB_DE
+def meld_js(t, rp=RPWEB):
     t = sub1(t, "} else {COMMENTS=null;rpUit();} }", "} else if(window.__W3F){COMMENTS={};} else {COMMENTS=null;rpUit();} }")
     t = sub1(t, "  if(COMMENTS===undefined){", "  if(window.__W3F){rpUpdate();return rpWeb(d);}\n  if(COMMENTS===undefined){")
-    return sub1(t, "function rpUit(){", RPWEB + "function rpUit(){")
+    return sub1(t, "function rpUit(){", rp + "function rpUit(){")
 def meld_note(h):
     mm = re.search(r'(<p class="prose" style="font-size:14.5px;color:var\(--muted\)">)(<span class="l-nl">Na het klikken opent een reactievenster.*?)(</p>)', h, re.S)
     assert mm, "uitleg meldformulier niet gevonden"
@@ -175,7 +181,7 @@ def meld(doc, land):
     if "ds-" in doc and '<script type="application/json" id="ds-' in doc:
         def fix(mm):
             d = json.loads(mm.group(2))
-            d["js"] = meld_js(d["js"]); d["html"] = meld_note(d["html"])
+            d["js"] = meld_js(d["js"], RPWEB_DE); d["html"] = meld_note(d["html"])
             return mm.group(1) + json.dumps(d, ensure_ascii=False).replace("</", "<\\/") + mm.group(3)
         doc = re.sub(r'(<script type="application/json" id="ds-[a-z-]+">)(.*?)(</script>)', fix, doc, flags=re.S)
         return doc

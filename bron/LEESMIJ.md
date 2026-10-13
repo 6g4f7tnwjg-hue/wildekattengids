@@ -7,7 +7,7 @@ Alles wordt uit deze map gebouwd. Pas nooit de gegenereerde bestanden in de hoof
 
 | Bestand | Inhoud |
 |---|---|
-| `gidsen/nl.html`, `be.html`, `lu.html`, `de.html` | De landengidsen. Alle gegevens (soorten, waarnemingen `R`, locaties `LOCS`, jongen `YOUNG`) staan in het script van de gids; de Duitse gids heeft één blok per deelstaat. Foto's staan erin als `@@IMGn@@`. |
+| `gidsen/nl.html`, `be.html`, `lu.html`, `de.html` | De landengidsen. Alle gegevens (soorten, waarnemingen `R`, locaties `LOCS`, jongen `YOUNG`) staan in het script van de gids; de Duitse gids heeft één blok per deelstaat. Talen: Nederlands en Engels; België en Luxemburg ook Frans, Duitsland ook Duits (`T(nl,en,de)` en `l-de`-elementen). Foto's staan erin als `@@IMGn@@`. |
 | `start.html` | De startpagina. De gegevens in `const D` (kaartstippen, aantallen, recente geboortes) worden bij elke bouw opnieuw berekend uit de gidsen. Kaartvormen en de deelstaat-notitie blijven staan. |
 | `../img/` | Alle foto's; `n.webp` hoort bij `@@IMGn@@`. Nieuwe foto: volgend nummer toevoegen. |
 | `artifact_kop.html`, `web_kop.html` | Vaste kopjes voor de Claude-pagina en de website. |

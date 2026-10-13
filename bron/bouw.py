@@ -95,29 +95,17 @@ assert _n == 1, "datum op de startpagina niet gevonden"
 wr(BRON + "start.html", START)
 
 # ------------------------------------------------------------------ Claude-pagina
-def b64(raw, mime):
-    return "data:%s;base64,%s" % (mime, base64.b64encode(raw).decode())
-def kleiner(f):
-    """Kleinere versie van een foto (alleen voor de Claude-pagina als die te groot wordt)."""
-    import io
-    from PIL import Image
-    im = Image.open(ROOT + "img/" + f).convert("RGB"); im.thumbnail((640, 640))
-    b = io.BytesIO(); im.save(b, "WEBP", quality=72); return b.getvalue()
-IMG = [b64(open(ROOT + "img/" + f, "rb").read(), MIME[f.split(".")[1]]) for f in imgs]
-# Een Claude-pagina mag niet groter zijn dan 16 MB. Is de pagina te groot, dan worden de grootste
-# dierentuinfoto's (niet de voorpagina- en soortfoto's 0–43) voor dit bestand verkleind; de website houdt het origineel.
-RUIMTE = 15.6e6 - len(js(G)) - len(START) - 200000
-for n in sorted(range(44, len(imgs)), key=lambda n: -len(IMG[n])):
-    if sum(map(len, IMG)) <= RUIMTE:
-        break
-    k = b64(kleiner(imgs[n]), "image/webp")
-    if len(k) < len(IMG[n]):
-        IMG[n] = k
+# De foto's staan niet in de pagina zelf maar als losse bestanden ernaast (img/n.webp). Publiceren met
+# Artifact: file_path _claude/claude.html en files = de inhoud van _claude/bestanden.json.
+# Zo telt voor de 16 MB-grens alleen de tekst en de gegevens.
+IMG = ["img/" + f for f in imgs]
+wr(ROOT + "_claude/bestanden.json", json.dumps({"img/" + f: "img/" + f for f in imgs}, indent=0) + "\n")
 k = START.index("<script>\n(function(){")
 claude = (rd(BRON + "artifact_kop.html") + "<script>window.__IMG=" + json.dumps(IMG) + ";\nwindow.__G=" + js(G)
           + ";\nwindow.__START=" + js(START) + ";</script>\n" + START[k:])
 wr(ROOT + "_claude/claude.html", claude)
 print("Claude-pagina:", ROOT + "_claude/claude.html", round(len(claude.encode()) / 1e6, 1), "MB")
+assert len(claude.encode()) < 15.8e6, "Claude-pagina te groot (grens 16 MB)"
 if "--geen-web" in sys.argv:
     sys.exit(0)
 

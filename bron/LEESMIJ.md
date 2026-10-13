@@ -22,7 +22,8 @@ Alles wordt uit deze map gebouwd. Pas nooit de gegenereerde bestanden in de hoof
 2. Bouw: `python3 bron/bouw.py` (vereist node en Python met playwright; duurt een paar minuten door de losse pagina's).
 3. Controleer `git diff`, commit en push → de website (https://yeetkitty.github.io/wildekattengids/) is binnen een paar minuten bij.
 4. Publiceer `_claude/claude.html` als update van de Claude-pagina
-   (https://claude.ai/code/artifact/6d4b4553-65b1-4dc3-82b1-41c087dcc110).
+   (https://claude.ai/code/artifact/6d4b4553-65b1-4dc3-82b1-41c087dcc110), met als `files` de inhoud van
+   `_claude/bestanden.json` (de foto's, `img/n.webp`). Alleen gewijzigde of nieuwe foto's hoeven mee; de rest blijft staan.
 
 Alleen de Claude-pagina bouwen: `python3 bron/bouw.py --geen-web`.
 
@@ -31,5 +32,5 @@ Alleen de Claude-pagina bouwen: `python3 bron/bouw.py --geen-web`.
 - Website: elk land en elke deelstaat heeft een eigen adres, met zoektitel, beschrijving en deelvoorbeeld; elke soort en locatie heeft een eigen, vaste pagina (momentopname van de gids); foto's als losse bestanden; sitemap.
 - Website: elke soort heeft ook een pagina voor alle landen samen (`/soort/<naam>/`); in de Claude-pagina opent die binnen de startpagina (`#kat/<naam>`). De gegevens staan in `D.sp` (berekend door `startdata.soorten`).
 - Website: het meldformulier verstuurt via Web3Forms naar de mail van de maker. De Claude-pagina gebruikt de reacties van Claude.
-- Claude-pagina: één bestand; de landen worden binnen de pagina geopend.
-- Claude-pagina: de foto's staan er op volle kwaliteit in. Wordt het bestand groter dan 15,6 MB (een Claude-pagina mag maximaal 16 MB zijn), dan verkleint de bouw alleen voor dit bestand de grootste dierentuinfoto's; voorpagina- en soortfoto's (0–43) blijven altijd origineel.
+- Claude-pagina: één pagina; de landen worden binnen de pagina geopend.
+- Claude-pagina: de foto's staan er niet in, maar worden als losse bestanden (`img/n.webp`, op volle kwaliteit) met de pagina meegepubliceerd. De pagina zelf mag maximaal 16 MB zijn; daar telt nu alleen tekst en gegevens mee (de bouw stopt boven 15,8 MB).

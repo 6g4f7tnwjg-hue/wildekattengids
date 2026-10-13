@@ -95,6 +95,7 @@ header{position:relative;padding-block:40px 30px}
 .langsw button{all:unset;cursor:pointer;padding:4px 11px;color:var(--deep);font-weight:600;line-height:1.3}
 .langsw button[aria-pressed="true"]{background:var(--deep);color:var(--tan)}
 .langsw button:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
+@media (max-width:640px){.top{row-gap:16px}.top::before{content:"";order:2;flex-basis:100%;height:0}.top .stamp{order:3}}
 h1{font-size:clamp(36px,7vw,72px);line-height:.96;font-weight:800;letter-spacing:-.02em;margin:22px 0 16px}
 h1 .m2{display:block;font-weight:600;font-size:.52em;letter-spacing:-.01em;color:var(--bark);margin-top:8px}
 .lede{font-size:19px;max-width:60ch;margin:0}

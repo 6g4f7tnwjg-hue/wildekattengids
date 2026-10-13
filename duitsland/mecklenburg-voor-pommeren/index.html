@@ -397,6 +397,33 @@ h1.mast .m2{display:block;margin-top:10px;font-family:"Literata",Georgia,serif;f
     <ul class="loclist cards ds-list"><li class="ds-on"><b><a href="#baden-wuerttemberg">Baden-Württemberg</a></b>12 soorten bevestigd op 12 locaties · stand 13 oktober 2026</li><li class="ds-on"><b><a href="#bayern">Bayern</a></b>10 soorten bevestigd op 19 locaties · stand 12 oktober 2026</li><li class="ds-on"><b><a href="#berlijn">Berlijn</a></b><span class="plc">Berlin</span>10 soorten bevestigd op 2 locaties · stand 10 oktober 2026</li><li class="ds-on"><b><a href="#brandenburg">Brandenburg</a></b>16 soorten bevestigd op 12 locaties · stand 13 oktober 2026</li><li class="ds-on"><b><a href="#bremen">Bremen</a></b>1 soorten bevestigd op 1 locaties · stand 13 oktober 2026</li><li class="ds-on"><b><a href="#hamburg">Hamburg</a></b>3 soorten bevestigd op 1 locaties · stand 13 oktober 2026</li><li class="ds-on"><b><a href="#hessen">Hessen</a></b>8 soorten bevestigd op 9 locaties · stand 13 oktober 2026</li><li class="ds-on"><b><a href="#mecklenburg-voor-pommeren">Mecklenburg-Voor-Pommeren</a></b><span class="plc">Mecklenburg-Vorpommern</span>10 soorten bevestigd op 8 locaties · stand 13 oktober 2026</li><li class="ds-on"><b><a href="#nedersaksen">Nedersaksen</a></b><span class="plc">Niedersachsen</span>13 soorten bevestigd op 23 locaties · stand 10 oktober 2026</li><li class="ds-on"><b><a href="#nrw">Noordrijn-Westfalen</a></b><span class="plc">Nordrhein-Westfalen</span>13 soorten bevestigd op 30 locaties · stand 10 oktober 2026</li><li class="ds-on"><b><a href="#rijnland-palts">Rijnland-Palts</a></b><span class="plc">Rheinland-Pfalz</span>9 soorten bevestigd op 13 locaties · stand 13 oktober 2026</li><li class="ds-on"><b><a href="#saarland">Saarland</a></b>8 soorten bevestigd op 3 locaties · stand 13 oktober 2026</li><li class="ds-on"><b><a href="#saksen-anhalt">Saksen-Anhalt</a></b><span class="plc">Sachsen-Anhalt</span>15 soorten bevestigd op 17 locaties · stand 13 oktober 2026</li><li class="ds-on"><b><a href="#saksen">Saksen</a></b><span class="plc">Sachsen</span>15 soorten bevestigd op 18 locaties · stand 11 oktober 2026</li><li class="ds-on"><b><a href="#sleeswijk-holstein">Sleeswijk-Holstein</a></b><span class="plc">Schleswig-Holstein</span>4 soorten bevestigd op 3 locaties · stand 13 oktober 2026</li><li class="ds-on"><b><a href="#thueringen">Thüringen</a></b>4 soorten bevestigd op 7 locaties · stand 13 oktober 2026</li></ul>
   </div>
 </section>
+<section id="dsoorten">
+  <h2>Alle soorten</h2>
+  <p class="prose" style="margin-top:0">Per soort zie je in één keer in welke deelstaten en parken hij in Duitsland te zien is. Tik op een soort.</p>
+  <style>
+  .dsp{list-style:none;padding:0;margin:0;display:grid;gap:8px;grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr))}
+  .dsp a{display:flex;align-items:center;gap:10px;background:var(--card);border:1.5px solid var(--line);border-radius:999px;padding:5px 14px 5px 5px;text-decoration:none;color:var(--ink);transition:border-color .15s}
+  .dsp a:hover,.dsp a:focus-visible{border-color:var(--bark)}
+  .dsp img,.dsp .noimg{flex:none;width:38px;height:38px;border-radius:50%;object-fit:cover;background:var(--tan)}
+  .dsp b{display:block;font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:600;font-size:15.5px;color:#2A1C12;line-height:1.2}
+  .dsp small{display:block;font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+  .dsk-terug{display:inline-block;margin:0 0 12px;font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:600;color:var(--bark)}
+  .dsk-h{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-bottom:6px}
+  .dsk-h img{width:88px;height:88px;border-radius:50%;object-fit:cover;background:var(--tan)}
+  .dsk-h h3{margin:0;font-size:24px}
+  .dsk-h p{margin:2px 0 0;color:var(--muted)}
+  .dsk-st{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr));margin-top:12px}
+  .dsk-st article{background:var(--card);border:1.5px solid var(--line);border-radius:14px;padding:10px 14px}
+  .dsk-st h4{margin:0 0 4px;font-family:"Bricolage Grotesque",system-ui,sans-serif;font-size:17px}
+  .dsk-st ul{list-style:none;margin:0;padding:0}
+  .dsk-st li{padding:5px 0;border-bottom:1px dashed var(--line)}
+  .dsk-st li:last-child{border:0}
+  .dsk-st li small{display:block;color:var(--muted);font-size:13px}
+  .dsk-st li.unc a{color:var(--w)}
+  .dsk-st .gl{margin:6px 0 0;font-size:14px}
+  </style>
+  <div id="dsk"></div>
+</section>
 <section id="over-de">
   <h2>Over deze gids</h2>
   <div class="prose">
@@ -443,8 +470,52 @@ function load(ds){
   CUR=ds;bar(true);document.title=DS[ds];
   const s=document.createElement("script");s.textContent="(function(){\n"+d.js+"\n})();";document.body.appendChild(s);
 }
+
+/* ---------- alle soorten in Duitsland ---------- */
+const DSK_SL=x=>String(x).normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/\(.*?\)/g,"").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
+const DSK_CONF="gybr", DSK_ST={y:"tijdelijk niet zichtbaar",b:"vertrek aangekondigd",p:"gepland",w:"onzeker",r:"alleen met rondleiding",n:"niet open voor publiek"};
+const DSK_ESC=x=>String(x).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+let DSK=null;
+function dskData(){
+  if(DSK)return DSK;
+  const names={};document.querySelectorAll('.ds-list a[href^="#"]').forEach(a=>{names[a.getAttribute("href").slice(1)]=a.textContent;});
+  const sp={};
+  document.querySelectorAll('script[type="application/json"][id^="ds-"]').forEach(el=>{
+    const ds=el.id.slice(3);let R;
+    try{const js=JSON.parse(el.textContent).js;const m=js.match(/(?:^|\n)const R=(\[.*?\]);\n/);R=m?JSON.parse(m[1]):[];}catch(e){R=[];}
+    R.forEach(r=>{const k=ds+"|"+r[2];const s=sp[r[0]]=sp[r[0]]||{};const codes=r[4].split("+");
+      const o=s[k]=s[k]||{ds,loc:r[2],plc:r[3],conf:false,codes:new Set()};
+      codes.forEach(c=>o.codes.add(c));if(codes.some(c=>DSK_CONF.includes(c)))o.conf=true;});
+  });
+  const list=Object.keys(sp).map(n=>{const xs=Object.values(sp[n]);return {n,slug:DSK_SL(n),xs,conf:xs.filter(x=>x.conf).length,unc:xs.filter(x=>!x.conf).length};});
+  list.sort((a,b)=>a.n.localeCompare(b.n,"nl"));
+  return DSK={list,names};
+}
+function dskImg(n){const p=(window.__PHOTOS||{})[n];return p&&p.src?p.src:"";}
+function dskRender(){
+  const box=document.getElementById("dsk");if(!box)return;
+  const D=dskData(), m=decodeURIComponent(location.hash||"").match(/^#de\/soorten\/([a-z0-9-]+)/);
+  const it=m&&D.list.find(x=>x.slug===m[1]);
+  if(!it){
+    box.innerHTML='<ul class="dsp">'+D.list.map(x=>{const src=dskImg(x.n);
+      return `<li><a href="#de/soorten/${x.slug}">${src?`<img src="${src}" alt="" loading="lazy">`:'<span class="noimg"></span>'}<span><b>${DSK_ESC(x.n)}</b><small>${x.conf?`${x.conf} ${x.conf===1?"locatie":"locaties"}`:"alleen onzeker of gepland"}${x.conf&&x.unc?` · ${x.unc} onzeker`:""}</small></span></a></li>`;}).join("")+'</ul>';
+    return;
+  }
+  const by={};it.xs.forEach(x=>(by[x.ds]=by[x.ds]||[]).push(x));
+  const sts=Object.keys(by).sort((a,b)=>(D.names[a]||a).localeCompare(D.names[b]||b,"nl"));
+  const nst=sts.filter(k=>by[k].some(x=>x.conf)).length, src=dskImg(it.n);
+  box.innerHTML=`<a class="dsk-terug" href="#de/soorten">← Alle soorten</a>
+    <div class="dsk-h">${src?`<img src="${src}" alt="${DSK_ESC(it.n)}">`:""}<div><h3>${DSK_ESC(it.n)}</h3>
+    <p>${it.conf?`Te zien op ${it.conf} ${it.conf===1?"locatie":"locaties"} in ${nst} ${nst===1?"deelstaat":"deelstaten"}.`:"Alleen onzekere of geplande vermeldingen."}${it.unc?` Daarnaast ${it.unc} onzeker of gepland.`:""}</p></div></div>
+    <div class="dsk-st">${sts.map(k=>{const xs=by[k].slice().sort((a,b)=>(b.conf-a.conf)||a.loc.localeCompare(b.loc,"nl"));
+      return `<article><h4>${DSK_ESC(D.names[k]||k)}</h4><ul>${xs.map(x=>{const lab=x.conf?[...x.codes].filter(c=>c!=="g"&&DSK_ST[c]).map(c=>DSK_ST[c]):[...x.codes].map(c=>DSK_ST[c]).filter(Boolean);
+        return `<li${x.conf?"":' class="unc"'}><a href="#${k}/locatie/${DSK_SL(x.loc)}">${DSK_ESC(x.loc)}</a><small>${DSK_ESC(x.plc)}${lab.length?" · "+lab.join(", "):""}</small></li>`;}).join("")}</ul>
+        <p class="gl"><a href="#${k}/soort/${it.slug}">Soortpagina in de gids van ${DSK_ESC(D.names[k]||k)} →</a></p></article>`;}).join("")}</div>`;
+}
+function dskShow(){showStart();dskRender();const t=document.getElementById("dsoorten");if(t)t.scrollIntoView();}
 window.addEventListener("hashchange",e=>{
   const p=parse(), raw=decodeURIComponent(location.hash||"");
+  if(!p&&/^#de\/soorten(\/|$)/.test(raw)){e.stopImmediatePropagation();if(CUR!==null){location.reload();return;}dskShow();return;}
   if(p){
     if(CUR===null){e.stopImmediatePropagation();load(p.ds);window.scrollTo(0,0);return;}
     if(p.ds!==CUR){e.stopImmediatePropagation();location.reload();return;}
@@ -457,7 +528,7 @@ window.addEventListener("hashchange",e=>{
 document.querySelectorAll('#start img[src="data:,"]').forEach(i=>i.src=window.__HERO);
 try{history.scrollRestoration="manual";}catch(e){}
 const p=parse();
-if(p)load(p.ds);else showStart();
+if(p)load(p.ds);else{showStart();dskRender();if(/^#de\/soorten/.test(decodeURIComponent(location.hash||""))){const t=document.getElementById("dsoorten");if(t)setTimeout(()=>t.scrollIntoView(),0);}}
 })();
 </script>
 </body></html>

@@ -32,7 +32,7 @@ const WINPHOTOS = wp ? lit("const P=" + wp[1], "P") : undefined;
 while ((m = re.exec(html))) { any = true; out[m[1]] = grab(JSON.parse(m[2]).js); }
 if (!any) {
   const s = [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].map(x => x[1]).find(x => /const SPECIES\s*=/.test(x));
-  out.main = grab(s);
+  if (s) out.main = grab(s);   // Franse gids zonder regio's: leeg
 }
 for (const k in out) if (!out[k].PHOTOS && WINPHOTOS) out[k].PHOTOS = WINPHOTOS;
 process.stdout.write(JSON.stringify(out));

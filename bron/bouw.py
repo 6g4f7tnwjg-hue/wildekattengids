@@ -27,9 +27,12 @@ from startdata import bereken, slug, soorten
 
 BASE = "/wildekattengids/"
 SITE = "https://yeetkitty.github.io" + BASE
-F = {"nl": "nederland", "be": "belgie", "lu": "luxemburg", "de": "duitsland"}
-LAND = {"nl": "Nederland", "be": "België", "lu": "Luxemburg", "de": "Duitsland"}
+F = {"nl": "nederland", "be": "belgie", "lu": "luxemburg", "de": "duitsland", "fr": "frankrijk"}
+LAND = {"nl": "Nederland", "be": "België", "lu": "Luxemburg", "de": "Duitsland", "fr": "Frankrijk"}
 STATES = {"bayern": "Bayern", "nedersaksen": "Nedersaksen", "nrw": "Noordrijn-Westfalen", "saksen": "Saksen", "berlijn": "Berlijn", "hamburg": "Hamburg", "bremen": "Bremen", "saarland": "Saarland", "sleeswijk-holstein": "Sleeswijk-Holstein", "hessen": "Hessen", "brandenburg": "Brandenburg", "mecklenburg-voor-pommeren": "Mecklenburg-Voor-Pommeren", "rijnland-palts": "Rijnland-Palts", "thueringen": "Thüringen", "saksen-anhalt": "Saksen-Anhalt", "baden-wuerttemberg": "Baden-Württemberg"}
+REGIOS = {"auvergne-rhone-alpes": "Auvergne-Rhône-Alpes", "bourgogne-franche-comte": "Bourgogne-Franche-Comté", "bretagne": "Bretagne", "centre-val-de-loire": "Centre-Val de Loire", "corsica": "Corsica", "grand-est": "Grand Est", "hauts-de-france": "Hauts-de-France", "ile-de-france": "Île-de-France", "normandie": "Normandië", "nouvelle-aquitaine": "Nouvelle-Aquitaine", "occitanie": "Occitanie", "pays-de-la-loire": "Pays de la Loire", "provence-alpes-cote-dazur": "Provence-Alpes-Côte d’Azur"}
+# landen met één blok per deelstaat of regio (alleen de blokken die in de gids staan tellen)
+DEEL = {"de": STATES, "fr": REGIOS}
 W3F_KEY = "9494e3c0-9342-4457-a5d6-b795793b9ce4"
 MIME = {"webp": "image/webp", "jpg": "image/jpeg", "png": "image/png", "gif": "image/gif"}
 
@@ -58,7 +61,7 @@ LT_JS = ("\n/* ---- locatietypes ---- */\nconst LT=" + js({"types": LTJ["types"]
          + ";\n" + rd(BRON + "locatietypes.js"))
 LT_HOOK = 'window.addEventListener("hashchange",route);\nroute();'
 def met_types(t):
-    if '<script type="application/json" id="ds-' in t:
+    if '<script type="application/json" id="ds-' in t or 'id="dsmap"' in t:
         def fix(mm):
             d = json.loads(mm.group(2))
             d["js"] = sub1(d["js"], LT_HOOK, LT_HOOK + LT_JS.replace("</", "<\\/"))
@@ -167,13 +170,13 @@ def meld_note(h):
     assert mm, "uitleg meldformulier niet gevonden"
     spans = re.findall(r'<span class="l-(\w\w)">', mm.group(2))
     return h[:mm.start(2)] + "".join(f'<span class="l-{l}">{NOTE[l]}</span>' for l in spans) + h[mm.end(2):]
-def meld(doc, land):
+def meld(doc, land, rp=RPWEB):
     i = doc.index("<meta charset"); j = doc.index(">", i) + 1
     doc = doc[:j] + f'\n<script>window.__W3F={{key:"{W3F_KEY}",land:"{land}"}};</script>\n' + doc[j:]
-    if "ds-" in doc and '<script type="application/json" id="ds-' in doc:
+    if '<script type="application/json" id="ds-' in doc or 'id="dsmap"' in doc:
         def fix(mm):
             d = json.loads(mm.group(2))
-            d["js"] = meld_js(d["js"], RPWEB_DE); d["html"] = meld_note(d["html"])
+            d["js"] = meld_js(d["js"], rp); d["html"] = meld_note(d["html"])
             return mm.group(1) + json.dumps(d, ensure_ascii=False).replace("</", "<\\/") + mm.group(3)
         doc = re.sub(r'(<script type="application/json" id="ds-[a-z-]+">)(.*?)(</script>)', fix, doc, flags=re.S)
         return doc
@@ -189,19 +192,22 @@ CTRY = {
            "Welke wilde katten zie je in Belgische dierentuinen en dierenparken, van Pairi Daiza en Planckendael tot Pakawi? Per soort en per park, met kaart, routeplanner en recente geboortes."),
     "lu": ("Wilde katachtigen in Luxemburg – welke wilde katten zie je waar?",
            "Welke wilde katten zie je in Luxemburgse dierenparken? Met bezoekinformatie, kaart en soortpagina’s."),
+    "fr": ("Wilde katachtigen in Frankrijk – welke wilde katten in welke dierentuin?",
+           "Welke wilde katten zie je in Franse dierentuinen, dierenparken en opvangcentra? Per regio, per soort en per park, met kaart, routeplanner en recente geboortes."),
     "de": ("Wilde katachtigen in Duitsland – welke wilde katten in welke dierentuin?",
            "Welke wilde katten zie je in Duitse dierentuinen, Tierparks en Wildparks? Per deelstaat, per soort en per park, met kaart, routeplanner en recente geboortes."),
 }
 # Duitse gids op de website: elke pagina krijgt alleen de gegevens van zijn eigen deelstaat (de Claude-pagina houdt alles in één bestand)
-DSKR = {st: [[r[0], "", r[2], r[3], r[4]] for r in DATA["de"][st]["R"]] for st in DATA["de"]}
-def alleen_ds(doc, keep):
+DSKR = {c: {st: [[r[0], "", r[2], r[3], r[4]] for r in DATA[c][st]["R"]] for st in DATA[c]} for c in DEEL}
+def alleen_ds(doc, keep, c="de"):
     doc = re.sub(r'<script type="application/json" id="ds-([a-z-]+)">.*?</script>\n?',
                  lambda mm: mm.group(0) if mm.group(1) == keep else "", doc, flags=re.S)
     i = doc.index("<meta charset"); j = doc.index(">", i) + 1
-    extra = f'\n<script>window.__DSBASE="{BASE}duitsland/";' + ("window.__DSKR=" + js(DSKR) + ";" if keep is None else "") + "</script>"
+    extra = f'\n<script>window.__DSBASE="{BASE}{F[c]}/";' + ("window.__DSKR=" + js(DSKR[c]) + ";" if keep is None else "") + "</script>"
     return doc[:j] + extra + doc[j:]
 HOME_JS = 'if(window.__home){window.__home();}else{location.reload();}'
 WEB = {}
+DEEL_WEB = {}
 for c, doc in G.items():
     doc = fotos(doc)
     doc = sub1(doc, HOME_JS, f'location.href="{BASE}";')
@@ -209,29 +215,30 @@ for c, doc in G.items():
     t, d = CTRY[c]
     doc = re.sub(r"<title>[^<]*</title>", lambda mm: f"<title>{t}</title>\n" + seo(t, d, SITE + F[c] + "/"), doc, count=1)
     WEB[c] = doc   # zonder meldformulier-aanpassing (voor de stijl en momentopnames)
-    if c == "de":
-        de_web = meld(doc, LAND[c])
-        wr(ROOT + F[c] + "/index.html", alleen_ds(de_web, None))
+    if c in DEEL:
+        DEEL_WEB[c] = meld(doc, LAND[c], RPWEB_DE if c == "de" else RPWEB)
+        wr(ROOT + F[c] + "/index.html", alleen_ds(DEEL_WEB[c], None, c))
     else:
         wr(ROOT + F[c] + "/index.html", meld(doc, LAND[c]))
-for st, nm in STATES.items():
-    o = DATA["de"][st]
+DEELPAG = [(c, st, nm) for c in DEEL for st, nm in DEEL[c].items() if st in DATA[c]]
+for c, st, nm in DEELPAG:
+    o = DATA[c][st]
     cats = []
     for r in o["R"]:
         if r[0] not in cats:
             cats.append(r[0])
     t = f"Wilde katachtigen in {nm} – welke wilde katten in welke dierentuin?"
-    d = f"Welke wilde katten zie je in {nm}? {len(o['LOCS'])} dierentuinen, Tierparks en Wildparks met o.a. {', '.join(x.lower() for x in cats[:4])}. Met kaart, routeplanner en recente geboortes."
-    url = SITE + "duitsland/" + st + "/"
-    doc = re.sub(r'<title>.*?</title>.*?<meta name="twitter:card"[^>]*>\n', "", de_web, count=1, flags=re.S)
+    d = f"Welke wilde katten zie je in {nm}? {len(o['LOCS'])} {'dierentuinen, Tierparks en Wildparks' if c == 'de' else 'dierentuinen, dierenparken en opvangcentra'} met o.a. {', '.join(x.lower() for x in cats[:4])}. Met kaart, routeplanner en recente geboortes."
+    url = SITE + F[c] + "/" + st + "/"
+    doc = re.sub(r'<title>.*?</title>.*?<meta name="twitter:card"[^>]*>\n', "", DEEL_WEB[c], count=1, flags=re.S)
     # adres vastzetten op deze deelstaat; een link naar een andere deelstaat of naar de Duitse startpagina gaat naar die pagina
-    force = ('<script>(function(){var h=decodeURIComponent(location.hash.slice(1)),s=h.split("/")[0],A=' + json.dumps(list(STATES))
-             + ',B="' + BASE + 'duitsland/";if(s==="de"){location.replace(B+"#"+h);return;}if(s!=="' + st
+    force = ('<script>(function(){var h=decodeURIComponent(location.hash.slice(1)),s=h.split("/")[0],A=' + json.dumps(list(DEEL[c]))
+             + ',B="' + BASE + F[c] + '/";if(s==="' + c + '"){location.replace(B+"#"+h);return;}if(s!=="' + st
              + '"&&A.indexOf(s)>=0){location.replace(B+s+"/#"+h);return;}if(!/^' + st + '(\\/|$)/.test(h)){try{history.replaceState(null,"","#'
              + st + '"+(h?"/"+h:""));}catch(e){}}})();</script>\n')
     head = f"<title>{t}</title>\n" + seo(f"Wilde katachtigen in {nm}", d, url) + force
     i = doc.index("<meta charset"); j = doc.index(">", i) + 1
-    wr(ROOT + f"duitsland/{st}/index.html", alleen_ds(doc[:j] + "\n" + head + doc[j:], st))
+    wr(ROOT + f"{F[c]}/{st}/index.html", alleen_ds(doc[:j] + "\n" + head + doc[j:], st, c))
 
 # ------------------------------------------------------------------ website: startpagina
 st = START
@@ -239,11 +246,11 @@ fmap = "{" + ",".join(f'{c}:"{BASE}{v}/"' for c, v in F.items()) + "}"
 st = sub1(st, "window.openCountry=function(c,h){",
           f"window.__F={fmap};\n  window.openCountry=function(c,h){{location.replace(window.__F[c]+(h?\"#\"+h:\"\"));return;")
 st = st.replace("${c}.html", "${window.__F[c]}").replace("${ZOOM}.html", "${window.__F[ZOOM]}")
-TITLE = "Wilde katachtigen in de Benelux en Duitsland – waar zie je welke wilde kat?"
+TITLE = "Wilde katachtigen in de Benelux, Duitsland en Frankrijk – waar zie je welke wilde kat?"
 DESC = ("Gids van J. Gelens: welke wilde katten – leeuw, tijger, luipaard, lynx, serval, manoel en meer – je in dierentuinen, "
-        "dierenparken en opvangcentra in Nederland, België, Luxemburg en Duitsland kunt zien. Met kaart, routeplanner en recente geboortes.")
-st = sub1(st, "<title>Wilde katachtigen in de Benelux en Duitsland</title>",
-          f"<title>{TITLE}</title>\n" + seo("Wilde katachtigen in de Benelux en Duitsland", DESC, SITE)
+        "dierenparken en opvangcentra in Nederland, België, Luxemburg, Duitsland en Frankrijk kunt zien. Met kaart, routeplanner en recente geboortes.")
+st = sub1(st, "<title>Wilde katachtigen in de Benelux, Duitsland en Frankrijk</title>",
+          f"<title>{TITLE}</title>\n" + seo("Wilde katachtigen in de Benelux, Duitsland en Frankrijk", DESC, SITE)
           + '<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n')
 st = sub1(st, '<meta charset="utf-8">', '<meta charset="utf-8"><script>window.__KATBASE="' + BASE + 'soort/";window.__HOMEURL="' + BASE
           + '";window.__IMGP=' + json.dumps(PATHS) + ';</script>')
@@ -262,12 +269,12 @@ for s in D["sp"]:
 def kat_page(s, locs, inhoud=""):
     conf = [(c, l) for c, l, x in locs if x in CONFC]
     landen = [LAND[c] for c in F if any(cc == c for cc, l in conf)]
-    title = f"{s[1]} in Nederland, België, Luxemburg en Duitsland: waar zie je hem? – Wilde katachtigen-gids"
+    title = f"{s[1]} in Nederland, België, Luxemburg, Duitsland en Frankrijk: waar zie je hem? – Wilde katachtigen-gids"
     if conf:
         desc = kort(f"Waar zie je een {s[1].lower() if s[1] != 'Geoffroy’s kat' else s[1]}? In {opsomming(landen)} op {len(conf)} {'locatie' if len(conf) == 1 else 'locaties'}: "
                     + ", ".join(l[0] for c, l in conf[:6]) + ". Met kaart en recente geboortes.")
     else:
-        desc = kort(f"{s[1]} ({s[4]}): vermeldingen in dierentuinen en dierenparken in de Benelux en Duitsland, met kaart en recente geboortes.")
+        desc = kort(f"{s[1]} ({s[4]}): vermeldingen in dierentuinen en dierenparken in de Benelux, Duitsland en Frankrijk, met kaart en recente geboortes.")
     url = SITE + "soort/" + s[0] + "/"
     img = SITE + PATHS[s[6]][len(BASE):] if s[6] is not None else SITE + "voorbeeld.jpg"
     doc = re.sub(r"<title>.*?</title>.*?<meta name=\"twitter:card\"[^>]*>\n", "", st, count=1, flags=re.S)
@@ -290,7 +297,7 @@ for c in ["nl", "be", "lu"]:
         for s in l[5]:
             sp.setdefault(s[4], {"naam": s[0], "locs": []})["locs"].append(f"{l[0]} ({l[1]})")
     routes += [(c, None, "soort", k2, v["naam"], {"locs": v["locs"]}) for k2, v in sp.items()]
-for stt, o in DATA["de"].items():
+for c_, stt, o in [(c, st, DATA[c][st]) for c in DEEL for st in DATA[c]]:
     sp = {}
     for l in o["LOCS"]:
         cats = []
@@ -298,8 +305,8 @@ for stt, o in DATA["de"].items():
             if r[2] in l[4] and r[0] not in cats:
                 cats.append(r[0])
                 sp.setdefault(slug(r[0]), {"naam": r[0], "locs": []})["locs"].append(f"{l[0]} ({l[1]})")
-        routes.append(("de", stt, "locatie", slug(l[0]), l[0], {"plaats": l[1], "katten": cats}))
-    routes += [("de", stt, "soort", k2, v["naam"], {"locs": v["locs"]}) for k2, v in sp.items()]
+        routes.append((c_, stt, "locatie", slug(l[0]), l[0], {"plaats": l[1], "katten": cats}))
+    routes += [(c_, stt, "soort", k2, v["naam"], {"locs": v["locs"]}) for k2, v in sp.items()]
 
 PART = {}
 for c, f in F.items():
@@ -326,7 +333,7 @@ def rewrite(frag, c, st_):
     return re.sub(r'href="(#[^"]*)"', fix, frag)
 
 def page(c, st_, kind, s, naam, extra, frag):
-    plek = (STATES[st_] + " (Duitsland)") if st_ else LAND[c]
+    plek = (DEEL[c][st_] + " (" + LAND[c] + ")") if st_ else LAND[c]
     if kind == "soort":
         title = f"{naam} in {plek}: in welke dierentuinen te zien? – Wilde katachtigen-gids"
         desc = kort(f"{naam} is in {plek} te zien bij {opsomming(extra['locs'])}. Met status, aantallen en bezoekinformatie per park.")
@@ -374,7 +381,7 @@ async def snapshots():
             h = (st_ + "/" if st_ else "") + kind + "/" + s
             if cur != (c, st_):
                 await pg.goto(local + F[c] + "/#" + h)
-                await pg.wait_for_timeout(1800 if c == "de" else 900)
+                await pg.wait_for_timeout(1800 if c in DEEL else 900)
                 cur = (c, st_)
             else:
                 await pg.evaluate(f"location.hash={json.dumps('#' + h)}")
@@ -401,7 +408,7 @@ async def snapshots():
 
 import asyncio
 res = asyncio.run(snapshots())
-urls = [SITE] + [SITE + f + "/" for f in F.values()] + [SITE + "duitsland/" + s + "/" for s in STATES]
+urls = [SITE] + [SITE + f + "/" for f in F.values()] + [SITE + F[c] + "/" + s + "/" for c, s, _ in DEELPAG]
 for s, locs in KATS:
     wr(ROOT + "soort/" + s[0] + "/index.html", kat_page(s, locs, res[("kat", s[0])]))
     urls.append(SITE + "soort/" + s[0] + "/")

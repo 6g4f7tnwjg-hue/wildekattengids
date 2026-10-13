@@ -10,6 +10,21 @@ def slug(s):
     s = re.sub(r"\(.*?\)", "", s)
     return re.sub(r"[^a-z0-9]+", "-", s).strip("-")
 
+# aantal jongen in het Frans en Duits, als de gids het niet zelf heeft (Nederlandse gids)
+_N_FR = [(r"^Drieling$", "Triplés"), (r"\bin twee nesten\b", "en deux portées"), (r"\b(\d+) in leven\b", r"\1 en vie"),
+         (r"^1 zwarte welp\b", "1 petit noir"), (r"^1 (?:welp|jong|kitten)\b", "1 petit"), (r"^(\d+) (?:welpen|jongen|kittens)\b", r"\1 petits")]
+_N_DE = [(r"^Drieling$", "Drillinge"), (r"\bin twee nesten\b", "in zwei Würfen"), (r"\b(\d+) in leven\b", r"\1 leben"),
+         (r"^1 zwarte welp\b", "1 schwarzes Jungtier"), (r"^1 (?:welp|jong|kitten)\b", "1 Jungtier"), (r"^(\d+) (?:welpen|jongen|kittens)\b", r"\1 Jungtiere")]
+def _vert(nl, regels):
+    for a, b in regels:
+        nl = re.sub(a, b, nl)
+    return nl
+def n4(n, land):
+    """[nl, en, fr, de] voor 'aantal jongen'; de derde taal van een gids is Frans (België, Luxemburg) of Duits (Duitsland)."""
+    fr = (n[2] if len(n) > 2 and land in ("be", "lu") else "") or _vert(n[0], _N_FR)
+    de = (n[2] if len(n) > 2 and land == "de" else "") or _vert(n[0], _N_DE)
+    return [n[0], n[1], fr, de]
+
 def _young(o, sp_en, fr, today, pre):
     SP = {a[0]: a for a in o["SPECIES"]}
     out = []
@@ -28,7 +43,7 @@ def _young(o, sp_en, fr, today, pre):
         out.append((d, e))
     return out
 
-def bereken(parts, oud, today, frnames):
+def bereken(parts, oud, today, frnames, land="", denames=None):
     """parts: {deel: extract-uitvoer}; oud: huidige D-invoer van dit land (kaartvorm, notitie blijven)."""
     locs, conf, ys, lt = [], set(), [], []
     for deel, o in parts.items():
@@ -44,14 +59,14 @@ def bereken(parts, oud, today, frnames):
             for r in o["R"]:
                 if r[2] in l[4]:
                     bysp.setdefault(r[0], set()).update(r[4].split("+"))
-            sps = [[sp, sp_en(sp), fr(sp, sp_en(sp)), next(c for c in PRIO if c in codes), slug(sp)] for sp, codes in bysp.items()]
+            sps = [[sp, sp_en(sp), fr(sp, sp_en(sp)), next(c for c in PRIO if c in codes), slug(sp), (denames or {}).get(sp, sp_en(sp))] for sp, codes in bysp.items()]
             e = [l[0], l[1], l[2], l[3], slug(l[0]), sps]
             if pre:
                 e.append(pre)
             locs.append(e)
             inf = (o.get("LOCINFO") or {}).get(l[0]) or {}
             lt.append([(inf.get("type") or [""])[0], inf.get("labels") or []])
-        ys += _young(o, sp_en, fr, today, pre)
+        ys += [(d, dict(y, n=n4(y["n"], land))) for d, y in _young(o, sp_en, fr, today, pre)]
     seen, young = set(), []
     for d, y in sorted(ys, key=lambda t: t[0], reverse=True):
         k = (y["sp"][0], y["loc"])
@@ -65,15 +80,15 @@ def bereken(parts, oud, today, frnames):
     nieuw.update({"counts": [len(conf), len(locs)], "locs": locs, "young": young, "lt": lt})
     return nieuw
 
-def soorten(DATA, frnames, today):
+def soorten(DATA, frnames, today, denames=None):
     """Eén lijst van alle soorten over alle landen heen (sleutel: wetenschappelijke naam).
-    Per soort: [slug, nl, en, fr, wetenschappelijk, aliassen, fotonummer, foto-info, recente geboortes]."""
+    Per soort: [slug, nl, en, fr, wetenschappelijk, aliassen, fotonummer, foto-info, recente geboortes, de]."""
     nl = DATA["nl"]["main"]
     spen = nl.get("SPEN") or {}
     out, bysci = [], {}
     for s in nl["SPECIES"]:
         en = (spen.get(s[0]) or [s[0]])[0] or s[0]
-        e = {"slug": slug(s[0]), "nl": s[0], "en": en, "fr": frnames.get(s[0], ""), "sci": s[2], "al": [], "img": None, "foto": None, "young": []}
+        e = {"slug": slug(s[0]), "nl": s[0], "en": en, "fr": frnames.get(s[0], ""), "sci": s[2], "de": (denames or {}).get(s[0], ""), "al": [], "img": None, "foto": None, "young": []}
         bysci[s[2]] = e
         out.append(e)
     for c, parts in DATA.items():
@@ -94,9 +109,9 @@ def soorten(DATA, frnames, today):
             for d, y in _young(o, sp_en, lambda n, en: en, today, pre):
                 e = bysci.get(loc2sci.get(y["sp"][0]))
                 if e:
-                    e["young"].append((d, {"c": c, "pre": pre or "", "loc": y["loc"], "born": y["born"], "approx": y["approx"], "n": y["n"][:2]}))
+                    e["young"].append((d, {"c": c, "pre": pre or "", "loc": y["loc"], "born": y["born"], "approx": y["approx"], "n": n4(y["n"], c)}))
     res = []
     for e in out:
         ys = [y for d, y in sorted(e["young"], key=lambda t: t[0], reverse=True)]
-        res.append([e["slug"], e["nl"], e["en"], e["fr"], e["sci"], e["al"], e["img"], e["foto"] or {}, ys])
+        res.append([e["slug"], e["nl"], e["en"], e["fr"], e["sci"], e["al"], e["img"], e["foto"] or {}, ys, e["de"]])
     return res

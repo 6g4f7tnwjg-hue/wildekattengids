@@ -6,7 +6,7 @@ Bron (map bron/):
   start.html                                  – de startpagina (de gegevens in "const D" worden hier opnieuw berekend)
   ../img/                                     – alle foto's (n.webp / n.jpg …), nummer = n in @@IMGn@@
   artifact_kop.html, web_kop.html             – vaste kopjes voor de Claude-pagina en de website
-  franse_namen.json                           – Franse soortnamen voor de startgegevens
+  franse_namen.json, duitse_namen.json        – Franse en Duitse soortnamen voor de startgegevens
 
 Uitvoer:
   _claude/claude.html  – één bestand voor de Claude-pagina (publiceren via Artifact)
@@ -74,18 +74,22 @@ DATA = {c: json.loads(subprocess.check_output(["node", BRON + "extract.js", BRON
 m = re.search(r"const D=(\{.*?\});\n", START)
 D = json.loads(m.group(1))
 fr = json.load(open(BRON + "franse_namen.json", encoding="utf8"))
+de_namen = json.load(open(BRON + "duitse_namen.json", encoding="utf8"))
 today = datetime.date.today()
 for c in F:
-    D[c] = bereken(DATA[c], D[c], today, fr)
-D["sp"] = soorten(DATA, fr, today)
-D["lt"] = {"types": [{k: t[k] for k in ("nl", "en", "uitleg", "uitleg_en")} for t in LTJ["types"]],
-           "labels": [{k: l[k] for k in ("key", "nl", "en", "icoon")} for l in LTJ["labels"]]}
+    D[c] = bereken(DATA[c], D[c], today, fr, c, de_namen)
+D["sp"] = soorten(DATA, fr, today, de_namen)
+D["lt"] = {"types": [{k: t[k] for k in ("nl", "en", "fr", "de", "uitleg", "uitleg_en", "uitleg_fr", "uitleg_de")} for t in LTJ["types"]],
+           "labels": [{k: l[k] for k in ("key", "nl", "en", "fr", "de", "icoon")} for l in LTJ["labels"]]}
 START = START[:m.start(1)] + json.dumps(D, ensure_ascii=False, separators=(",", ":")) + START[m.end(1):]
 # datum "Bijgewerkt …" op de startpagina: de dag van de bouw
 _MNL = ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december"]
+_MFR = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"]
+_MDE = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
 _MEN = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 START, _n = re.subn(r'<p class="stamp">.*?</p>',
-    f'<p class="stamp"><span class="l-nl">Bijgewerkt {today.day} {_MNL[today.month-1]} {today.year}</span><span class="l-en">Updated {today.day} {_MEN[today.month-1]} {today.year}</span></p>',
+    f'<p class="stamp"><span class="l-nl">Bijgewerkt {today.day} {_MNL[today.month-1]} {today.year}</span><span class="l-en">Updated {today.day} {_MEN[today.month-1]} {today.year}</span>'
+    f'<span class="l-fr">Mis à jour le {today.day} {_MFR[today.month-1]} {today.year}</span><span class="l-de">Aktualisiert am {today.day}. {_MDE[today.month-1]} {today.year}</span></p>',
     START, count=1)
 assert _n == 1, "datum op de startpagina niet gevonden"
 wr(BRON + "start.html", START)

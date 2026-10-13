@@ -1,7 +1,7 @@
 # Bron van de Wilde katachtigen-gids
 
 Alles wordt uit deze map gebouwd. Pas nooit de gegenereerde bestanden in de hoofdmap aan
-(`index.html`, `soort/`, `nederland/`, `belgie/`, `luxemburg/`, `duitsland/`, `frankrijk/`, `sitemap.xml`): die worden bij elke bouw overschreven.
+(`index.html`, `soort/`, `top10/`, `nederland/`, `belgie/`, `luxemburg/`, `duitsland/`, `frankrijk/`, `sitemap.xml`): die worden bij elke bouw overschreven.
 
 ## Wat staat waar
 
@@ -11,6 +11,7 @@ Alles wordt uit deze map gebouwd. Pas nooit de gegenereerde bestanden in de hoof
 | `start.html` | De startpagina. De gegevens in `const D` (kaartstippen, aantallen, recente geboortes) worden bij elke bouw opnieuw berekend uit de gidsen. Kaartvormen en de deelstaat-notitie blijven staan. Talen: Nederlands, Engels, Frans en Duits (`T(nl,en,fr,de)` en `l-fr`/`l-de`-elementen). |
 | `../img/` | Alle foto's; `n.webp` hoort bij `@@IMGn@@`. Nieuwe foto: volgend nummer toevoegen. |
 | `artifact_kop.html`, `web_kop.html` | Vaste kopjes voor de Claude-pagina en de website. |
+| `top10.json` | De top 10 om te bezoeken (blok op de startpagina en pagina `/top10/`, op de Claude-pagina `#top10`). `vast` staat in die volgorde bovenaan, met de uitleg in vier talen; is de lijst korter dan 10 of verdwijnt een park uit de gids, dan vult de bouw aan op score. Volgorde of uitleg veranderen: alleen dit bestand aanpassen. |
 | `franse_namen.json`, `duitse_namen.json` | Franse en Duitse soortnamen voor de startgegevens. |
 | `locatietypes.json` | De vaste lijst van locatietypes en labels. Elke locatie heeft in `LOCINFO` één `type` (de namen uit deze lijst) en `labels` (sleutels uit deze lijst). Dierentuin = lid van EAZA, NVD of VdZ; anders dierenpark. |
 | `locatietypes.js` | Filterknoppen, labels en types in de gidsen; de bouw zet dit achter het script van elke gids en deelstaat. |

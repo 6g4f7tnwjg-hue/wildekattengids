@@ -84,6 +84,37 @@ for c in F:
 D["sp"] = soorten(DATA, fr, today, de_namen)
 D["lt"] = {"types": [{k: t[k] for k in ("nl", "en", "fr", "de", "uitleg", "uitleg_en", "uitleg_fr", "uitleg_de")} for t in LTJ["types"]],
            "labels": [{k: l[k] for k in ("key", "nl", "en", "fr", "de", "icoon")} for l in LTJ["labels"]]}
+# top 10 om te bezoeken (bron/top10.json): vaste plaatsen, aangevuld met de hoogste score
+def top10(D):
+    cfg = json.load(open(BRON + "top10.json", encoding="utf8"))
+    CONFS = set("gybr"); landen = [c for c in F]
+    nloc = {}
+    for c in landen:
+        for l in D[c]["locs"]:
+            for x in {x[4] for x in l[5] if x[3] in CONFS}: nloc[x] = nloc.get(x, 0) + 1
+    def score(c, i):
+        l = D[c]["locs"][i]; lt = (D[c].get("lt") or [])[i] if i < len(D[c].get("lt") or []) else ["", []]
+        conf = {x[4] for x in l[5] if x[3] in CONFS}; onz = [x for x in l[5] if x[3] not in CONFS]
+        sc = len(conf) * 10 + sum(4 for x in conf if nloc[x] <= 3)
+        sc += 3 * ("overnachten" in lt[1]) + 3 * (lt[0] == "Safaripark")
+        sc -= 8 * bool(set(lt[1]) & {"rondleiding", "leden", "bezoekdagen"}) + 2 * len(onz)
+        return sc
+    out, per = [], {}
+    def zoek(c, naam):
+        return next((i for i, l in enumerate(D[c]["locs"]) if l[0] == naam), None)
+    for v in cfg["vast"]:
+        i = zoek(v["land"], v["naam"])
+        if i is None:
+            print("top 10: niet (meer) in de gids:", v["naam"]); continue
+        out.append({"c": v["land"], "i": i, "uitleg": v.get("uitleg") or []}); per[v["land"]] = per.get(v["land"], 0) + 1
+    kand = sorted(((score(c, i), c, i) for c in landen for i in range(len(D[c]["locs"]))), reverse=True)
+    for sc, c, i in kand:
+        if len(out) >= 10: break
+        if D[c]["locs"][i][0] in cfg.get("uitsluiten", []) or any(o["c"] == c and o["i"] == i for o in out): continue
+        if per.get(c, 0) >= cfg.get("max_per_land", 4): continue
+        out.append({"c": c, "i": i, "uitleg": []}); per[c] = per.get(c, 0) + 1
+    return out[:10]
+D["top10"] = top10(D)
 START = START[:m.start(1)] + json.dumps(D, ensure_ascii=False, separators=(",", ":")) + START[m.end(1):]
 # datum "Bijgewerkt …" op de startpagina: de dag van de bouw
 _MNL = ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december"]
@@ -286,6 +317,18 @@ def kat_page(s, locs, inhoud=""):
     return sub1(doc, '<section id="katview"></section>', f'<section id="katview">{inhoud}</section>')
 for s, locs in KATS:
     wr(ROOT + "soort/" + s[0] + "/index.html", kat_page(s, locs))
+# top 10 om te bezoeken (/top10/)
+def top_page():
+    title = "Top 10 dierentuinen om wilde katten te zien – Benelux, Duitsland en Frankrijk"
+    namen = [D[t["c"]]["locs"][t["i"]][0] for t in D["top10"]]
+    desc = kort("De tien parken waar je de meeste en de bijzonderste wilde katten ziet: " + ", ".join(namen) + ".")
+    doc = re.sub(r"<title>.*?</title>.*?<meta name=\"twitter:card\"[^>]*>\n", "", st, count=1, flags=re.S)
+    doc = re.sub(r'<meta property="og:image:width"[^>]*>\n<meta property="og:image:height"[^>]*>\n', "", doc, count=1)
+    head = (f"<title>{esc(title)}</title>\n" + seo(title.split(" – ")[0], desc, SITE + "top10/", soort="article")
+            + '<script>window.__TOP=1;document.documentElement.classList.add("katmode");</script>\n')
+    i = doc.index("<meta charset"); j = doc.index(">", i) + 1
+    return doc[:j] + "\n" + head + doc[j:]
+wr(ROOT + "top10/index.html", top_page())
 
 # ------------------------------------------------------------------ website: losse soort- en locatiepagina's
 
@@ -408,7 +451,7 @@ async def snapshots():
 
 import asyncio
 res = asyncio.run(snapshots())
-urls = [SITE] + [SITE + f + "/" for f in F.values()] + [SITE + F[c] + "/" + s + "/" for c, s, _ in DEELPAG]
+urls = [SITE, SITE + "top10/"] + [SITE + f + "/" for f in F.values()] + [SITE + F[c] + "/" + s + "/" for c, s, _ in DEELPAG]
 for s, locs in KATS:
     wr(ROOT + "soort/" + s[0] + "/index.html", kat_page(s, locs, res[("kat", s[0])]))
     urls.append(SITE + "soort/" + s[0] + "/")

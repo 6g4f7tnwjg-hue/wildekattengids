@@ -1,5 +1,5 @@
 {
-  "_uitleg": "Vaste lijst van locatietypes en labels. Elke locatie heeft precies één type (LOCINFO[naam].type) en nul of meer labels (LOCINFO[naam].labels, met de sleutels hieronder). Dierentuin of dierenpark: lid van EAZA of een landelijke zoobond (NVD, VdZ) = dierentuin, anders dierenpark. Regel voor opnemen: kun je de katten als bezoeker zien, dan tellen ze mee. Locaties met een label uit beperkt_toegankelijk krijgen in de routeplanner een waarschuwing.",
+  "_uitleg": "Vaste lijst van locatietypes en labels. Elke locatie heeft precies één type (LOCINFO[naam].type) en nul of meer labels (LOCINFO[naam].labels, met de sleutels hieronder). Dierentuin of dierenpark: lid van EAZA of een landelijke zoobond (NVD, VdZ, UIZA) = dierentuin, anders dierenpark. Regel voor opnemen: kun je de katten als bezoeker zien, dan tellen ze mee. Locaties met een label uit beperkt_toegankelijk krijgen in de routeplanner een waarschuwing.",
   "types": [
     {
       "key": "dierentuin",
@@ -8,11 +8,11 @@
       "fr": "Parc zoologique",
       "de": "Zoo",
       "it": "Zoo",
-      "uitleg": "Wetenschappelijk geleide dierentuin, lid van EAZA of een landelijke zoobond (NVD, VdZ).",
-      "uitleg_en": "Scientifically managed zoo, member of EAZA or a national zoo association (NVD, VdZ).",
-      "uitleg_fr": "Zoo à gestion scientifique, membre de l’EAZA ou d’une association nationale de zoos (NVD, VdZ).",
-      "uitleg_de": "Wissenschaftlich geführter Zoo, Mitglied der EAZA oder eines nationalen Zooverbands (NVD, VdZ).",
-      "uitleg_it": "Zoo a gestione scientifica, membro dell’EAZA o di un’associazione nazionale di zoo (NVD, VdZ)."
+      "uitleg": "Wetenschappelijk geleide dierentuin, lid van EAZA of een landelijke zoobond (NVD, VdZ, UIZA).",
+      "uitleg_en": "Scientifically managed zoo, member of EAZA or a national zoo association (NVD, VdZ, UIZA).",
+      "uitleg_fr": "Zoo à gestion scientifique, membre de l’EAZA ou d’une association nationale de zoos (NVD, VdZ, UIZA).",
+      "uitleg_de": "Wissenschaftlich geführter Zoo, Mitglied der EAZA oder eines nationalen Zooverbands (NVD, VdZ, UIZA).",
+      "uitleg_it": "Zoo a gestione scientifica, membro dell’EAZA o di un’associazione nazionale di zoo (NVD, VdZ, UIZA)."
     },
     {
       "key": "dierenpark",

@@ -8,7 +8,8 @@ Bijgehouden door Claude. Bijwerken als een punt is opgelost.
 - **Overzeese gebieden van Frankrijk** (bijv. Zoo de Guyane: jaguar, ocelot, margay): nog beslissen of ze erbij komen.
 - **Foto's van Franse parken**: veel locaties hebben nog geen foto (Commons gaf een limiet). Een rustige extra ronde.
 - **Maandelijkse controle**: een geplande taak die nieuws over geboortes, vertrek en aankomst zoekt en voorstellen doet.
-- **Volgend land**: Oostenrijk en Zwitserland staan erin (14-10-2026). Daarna voorstel: het Verenigd Koninkrijk. De Claude-pagina laadt de landgidsen nu als losse bestanden (grens 16 MB per gids; Duitsland ±5 MB). Als de website sneller moet: de vaste JS van de deelstaatblokken één keer delen in plaats van per blok (scheelt ±4 MB).
+- **Volgend land**: het Verenigd Koninkrijk staat erin (14-10-2026, NL/EN/DE). Keuze voor daarna volgt. Als de website sneller moet: de vaste JS van de deelstaatblokken één keer delen in plaats van per blok (scheelt ±4 MB).
+- **VK nagaan**: Longleat (eigen site geblokkeerd; alles uit nieuws), Whipsnade (eigen site geblokkeerd), Amazon World (Isle of Wight: oude pagina noemt ocelot en Geoffroy’s kat), Green Dragon Eco Farm (alleen Zootierliste: lynx en wilde kat; niet opgenomen), Mole Hall en Galloway Wildlife Park (mogelijk dicht), Borth Wild Animal Kingdom (katten 2020–2021 weg). Een officiële landelijke lijst van vergunde dierentuinen is niet openbaar; de nieuwste volledige lijst is een FOI-antwoord van APHA uit 2018–2019.
 - **Zwitserland in het Frans**: de gids is nu NL/EN/DE. Frans erbij kan met een tweede versie van elk regioblok (NL/EN/FR) die de pagina laadt bij de taalknop FR.
 - **Oostenrijk/Zwitserland nagaan**: Tiger’s World (Judenau, NÖ) — alleen op een toeristische site, eigen site niet te openen, niet opgenomen; Luchsgehege Loipersdorf (ligging en publiek onbekend); Parc animalier de Prêles (BE) niet nagelopen; Bioparc Genève houdt ook hybride wilde katten en savannahkatten (niet meegeteld).
 - **Fréjus (Var)**: dierentuin dicht sinds 30-8-2026; na eind november 2026 nagaan waar de katten zijn gebleven.
@@ -28,7 +29,7 @@ Bijgehouden door Claude. Bijwerken als een punt is opgelost.
 
 ## Twijfelgevallen in de gidsen
 
-Status w = onzeker (telt niet als bevestigd), p = gepland, y = tijdelijk niet zichtbaar. Stand 14 oktober 2026.
+Status w = onzeker (telt niet als bevestigd), p = gepland, y = tijdelijk niet zichtbaar, b = vertrek aangekondigd. Stand 14 oktober 2026.
 
 Regel (voor alle landen, 14-10-2026): bevestigd alleen met een recente bron (2025–2026); onzeker alleen met een concrete aanwijzing van na 2024; is de laatste aanwijzing van vóór 2024 of is het dier aantoonbaar weg, dan naar “Eerder hier”; zonder betrouwbare bron geschrapt.
 
@@ -144,3 +145,46 @@ Regel (voor alle landen, 14-10-2026): bevestigd alleen met een recente bron (202
 - [w] Toni's Zoo – Cheetah: Alleen een bezoekverslag 6/2025 en oudere toeristische teksten; geen bevestiging op de eigen site.
 - [w] Toni's Zoo – Serval: Alleen Zootierliste-bezoekverslag 6/2025; geen eigen bron.
 - [w] Toni's Zoo – Caracal: Alleen Zootierliste meldt een paar caracals sinds 2026; niet bevestigd.
+
+### Verenigd Koninkrijk
+
+**Zuidoost-Engeland**
+
+- [w] Cotswold Wildlife Park – Nevelpanter: De FAQ (bijgewerkt juni 2026) en de toegankelijkheidspagina gebruiken 'by the Leopards' als oriëntatiepunt en Zootierliste noemt nevelpanters, maar de dierenlijst en het nieuws noemen ze niet.
+- [w] Crocodiles of the World – Nevelpanter: De zoogdierpagina (bijgewerkt september 2026) noemt 'Clouded Leopard' alleen bij de adopties, niet in de tekst. Bij de inzamelactie voor nevelpanters in Nepal (2024) staat een foto 'Bao'. Zootierliste noemt de Indochinese nevelpanter.
+- [b] Marwell Zoo – Tijger: alleen tijdelijk: Luca blijft ongeveer zes maanden terwijl zijn verblijf in The Big Cat Sanctuary (Kent) wordt verbouwd
+- [b] The Big Cat Sanctuary – Aziatische goudkat: enige in het VK; vertrekt naar Tierpark Berlin (EEP)
+- [w] Wingham Wildlife Park – Nevelpanter: Blog uit 2025 noemt de soort algemeen; geen recente bevestiging dat er nog nevelpanters te zien zijn.
+- [w] Wingham Wildlife Park – Bengaalse kat: Alleen Zootierliste meldt een kater sinds 2024; niet op de eigen site gevonden.
+- [w] Port Lympne Hotel & Reserve – Luipaard: Geen eigen soortpagina meer; alleen een bezoekverslag van feb. 2026 meldt nog één Amoerluipaard.
+- [w] Hemsley Conservation Centre – Ocelot: Alleen genoemd als buurverblijf in een forumbericht van jan. 2026; geen eigen bron gevonden.
+
+**Zuidwest-Engeland**
+
+- [w] Exmoor Zoo – Vissende kat: Niet op de eigen site. Volgens Zootierliste in 2025 een paar uit de zoo van Colombo; forumpost noemde komst in najaar 2025. Niet bevestigd.
+- [b] Combe Martin Wildlife & Dinosaur Park – Luipaard: ♂ Kazimir achter de schermen; vertrekt naar Zuid-Korea (fokprogramma)
+
+**Oost-Engeland**
+
+- [w] ZSL Whipsnade Zoo – Tijger: Alleen Wikipedia en Zootierliste melden komst van Crispin uit London Zoo in 2026; zoo-site was niet bereikbaar.
+- [w] Hamerton Zoo Park – Luipaard: Volgens Zootierliste kwam in 2025 een zwart luipaardvrouwtje uit Lumigny (Frankrijk); niet in de sponsorlijst op de eigen site.
+- [w] Jimmy's Farm & Wildlife Park – Jaguar: Alleen Zootierliste meldt een jaguar in bruikleen van Dartmoor Zoo (2026); niet op eigen site gevonden.
+
+**West Midlands**
+
+- [w] Hoo Zoo and Dinosaur World – Vissende kat: De pagina 'Fishing Cats' is in jan. 2026 opnieuw opgeslagen, maar heeft (anders dan de andere katten) geen tekst over het eigen dier en Zootierliste noemt geen vissende kat. Niet bevestigd.
+- [w] Hoo Zoo and Dinosaur World – Bengaalse kat: Pagina 'Leopard Cat' in nov. 2025 bijgewerkt, maar alleen met algemene tekst; Zootierliste noemt geen bengaalse kat. Niet bevestigd.
+- [w] Drayton Manor Zoo – Manoel: Volgens Zootierliste kwamen in 2026 twee vrouwtjes uit Port Lympne; niet op de dierenlijst van het park gevonden en geen nieuwsbericht.
+
+**Yorkshire en de Humber**
+
+- [w] Bridlington Animal Park – Caracal: Alleen Zootierliste (bezoek 10-2026, 'gesehen'); niet op de dierenlijst van het park. Op ZooChat is sprake van een lynx; mogelijk verwisseling.
+- [y] Yorkshire Wildlife Park – Tijger: park na dodelijk incident (10-10-2026) gesloten; Altai wordt niet afgemaakt
+
+**Schotland**
+
+- [w] Calderglen Zoo – Europese wilde kat: Een reisgids (bijgewerkt juni 2025) noemt wilde katten; de eigen site noemt geen katten en er is geen recent bericht.
+
+**Noord-Ierland**
+
+- [y] Belfast Zoo – Cheetah: poes Mia tijdelijk in Fota Wildlife Park (EEP); terugkeer verwacht

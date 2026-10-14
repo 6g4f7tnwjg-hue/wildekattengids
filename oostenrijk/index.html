@@ -555,7 +555,7 @@ if(p)load(p.ds);else{showStart();dskRender();if(/^#at\/soorten/.test(decodeURICo
 (function(){
 if(window.__TAALMENU)return;window.__TAALMENU=1;
 var NAMEN={nl:"Nederlands",en:"English",fr:"Français",de:"Deutsch",it:"Italiano"};
-var css=".langsw.lm{position:relative;display:inline-block;border:0;border-radius:0;overflow:visible;flex:none}"+
+var css=".langsw.lm{display:inline-block;border:0;border-radius:0;overflow:visible;flex:none}"+
 ".lm .lm-btn{all:unset;box-sizing:border-box;cursor:pointer;display:inline-flex;align-items:center;gap:5px;font-family:\"Bricolage Grotesque\",system-ui,sans-serif;font-size:13px;font-weight:600;line-height:1.3;color:#2A1C12;border:1.5px solid #2A1C12;border-radius:999px;padding:3px 10px;white-space:nowrap;background:transparent}"+
 ".lm .lm-btn:hover,.lm .lm-btn[aria-expanded=\"true\"]{background:#2A1C12;color:#EAD9B3}"+
 ".lm .lm-btn:focus-visible{outline:2px solid #B97A12;outline-offset:2px}"+
@@ -582,6 +582,8 @@ function maak(g){
   var pop=document.createElement("div");pop.className="lm-pop";pop.hidden=true;pop.setAttribute("role","group");pop.setAttribute("aria-label",naam);
   knoppen.forEach(function(b){var c=b.dataset.setlang;b.textContent=NAMEN[c]||c.toUpperCase();b.setAttribute("lang",c);pop.appendChild(b);});
   g.textContent="";g.appendChild(btn);g.appendChild(pop);
+  /* de lijst hangt onder de knop: de groep moet een referentiepunt zijn (de gids zet hem soms zelf absoluut) */
+  if(getComputedStyle(g).position==="static")g.style.position="relative";
   label();
 }
 function alles(r){(r||document).querySelectorAll(".langsw:not(.lm)").forEach(maak);}

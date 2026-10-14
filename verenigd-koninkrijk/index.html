@@ -434,10 +434,6 @@ h1.mast .m2{display:block;margin-top:10px;font-family:"Literata",Georgia,serif;f
   <p>In the United Kingdom every zoo needs a licence from the local authority (Zoo Licensing Act 1981; in Northern Ireland the Zoos Licensing Regulations 2003). No public national list of licensed zoos was found. That is why, for each region, a list of animal locations is first compiled from public sources, such as the members of the British zoo association BIAZA and of EAZA, Wikipedia and tourist listings. Then each location is checked to see which wild cats live there.</p>
   <p>For each location the park’s own website was used first, then recent British news. Zoo databases were only used as a supplement. Every entry shows its source and date. How this was done per region and where gaps may remain is explained under “About this overview” on that region’s page.</p>
   <p>The guide is only about wild cats in zoos, animal parks, wildlife parks and rescue centres, not about domestic cats and not about cats in the wild. Spotted something that isn’t right? Report it via “Report” on the region’s page.</p>
-  </div><div class="l-de">
-  <p>Im Vereinigten Königreich braucht jeder Zoo eine Lizenz der Gemeinde (Zoo Licensing Act 1981; in Nordirland die Zoos Licensing Regulations 2003). Eine landesweite öffentliche Liste lizenzierter Zoos wurde nicht gefunden. Deshalb wird pro Region zuerst eine Liste der Tierhaltungen aus öffentlichen Quellen erstellt, etwa den Mitgliedern des britischen Zooverbands BIAZA und der EAZA, Wikipedia und touristischen Verzeichnissen. Danach wird für jeden Ort geprüft, welche wilden Katzen dort leben.</p>
-  <p>Für jeden Ort wurde zuerst die eigene Website des Parks genutzt, danach aktuelle britische Nachrichten. Zoo-Datenbanken wurden nur ergänzend verwendet. Bei jedem Eintrag stehen Quelle und Datum. Wie das pro Region gemacht wurde und wo noch Lücken sein können, steht unter „Über diese Übersicht“ auf der Seite der Region.</p>
-  <p>Der Guide behandelt nur wilde Katzen in Zoos, Tierparks, Wildparks und Auffangstationen, nicht die Hauskatze und nicht Katzen in freier Wildbahn. Stimmt etwas nicht? Melde es über „Melden“ auf der Seite der Region.</p>
   </div></div>
 </section>
 <footer><span class="l-nl">Stand 14 oktober 2026. Alle 12 regio’s zijn uitgezocht.</span><span class="l-en">Updated 14 October 2026. All 12 regions have been covered.</span></footer>
@@ -555,7 +551,7 @@ if(p)load(p.ds);else{showStart();dskRender();if(/^#uk\/soorten/.test(decodeURICo
 (function(){
 if(window.__TAALMENU)return;window.__TAALMENU=1;
 var NAMEN={nl:"Nederlands",en:"English",fr:"Français",de:"Deutsch",it:"Italiano"};
-var css=".langsw.lm{position:relative;display:inline-block;border:0;border-radius:0;overflow:visible;flex:none}"+
+var css=".langsw.lm{display:inline-block;border:0;border-radius:0;overflow:visible;flex:none}"+
 ".lm .lm-btn{all:unset;box-sizing:border-box;cursor:pointer;display:inline-flex;align-items:center;gap:5px;font-family:\"Bricolage Grotesque\",system-ui,sans-serif;font-size:13px;font-weight:600;line-height:1.3;color:#2A1C12;border:1.5px solid #2A1C12;border-radius:999px;padding:3px 10px;white-space:nowrap;background:transparent}"+
 ".lm .lm-btn:hover,.lm .lm-btn[aria-expanded=\"true\"]{background:#2A1C12;color:#EAD9B3}"+
 ".lm .lm-btn:focus-visible{outline:2px solid #B97A12;outline-offset:2px}"+
@@ -582,6 +578,8 @@ function maak(g){
   var pop=document.createElement("div");pop.className="lm-pop";pop.hidden=true;pop.setAttribute("role","group");pop.setAttribute("aria-label",naam);
   knoppen.forEach(function(b){var c=b.dataset.setlang;b.textContent=NAMEN[c]||c.toUpperCase();b.setAttribute("lang",c);pop.appendChild(b);});
   g.textContent="";g.appendChild(btn);g.appendChild(pop);
+  /* de lijst hangt onder de knop: de groep moet een referentiepunt zijn (de gids zet hem soms zelf absoluut) */
+  if(getComputedStyle(g).position==="static")g.style.position="relative";
   label();
 }
 function alles(r){(r||document).querySelectorAll(".langsw:not(.lm)").forEach(maak);}

@@ -87,7 +87,9 @@ Regel (voor alle landen, 14-10-2026): bevestigd alleen met een recente bron (202
 
 **Hauts-de-France**
 
-- [?] Parc Saint-Léger – Parc animalier (Saint-Léger-en-Bray), ex-Les Grands Félins – panter, serval, lynx: eigen plattegrond 2026 noemt geen katten, een gidsfiche (parcsetloisirs.fr, 2026) wel. Staat in de gids onder ‘geen katachtigen’. Niet nabellen (14-10-2026); opnieuw bekijken bij een nieuwe bron of als het park in april 2027 weer opengaat.
+- [w] Parc Saint-Léger – Parc animalier – luipaard: Vroeger ‘Parc Les Grands Félins’ van de dompteurfamilie Bauer (in 2024 nog leeuwen, tijgers, cheeta’s, panters en poema’s aangeboden). Een gidsfiche (parcsetloisirs.fr, 2026) noemt panter, serval en lynx, maar de eigen plattegrond van 2026 noemt geen katten. Niet bevestigd dat er katten voor bezoekers te zien zijn. Niet nabellen (14-10-2026); opnieuw bekijken bij een nieuwe bron of als het park in april 2027 weer opengaat.
+- [w] Parc Saint-Léger – Parc animalier – serval: Vroeger ‘Parc Les Grands Félins’ van de dompteurfamilie Bauer (in 2024 nog leeuwen, tijgers, cheeta’s, panters en poema’s aangeboden). Een gidsfiche (parcsetloisirs.fr, 2026) noemt panter, serval en lynx, maar de eigen plattegrond van 2026 noemt geen katten. Niet bevestigd dat er katten voor bezoekers te zien zijn. Niet nabellen (14-10-2026); opnieuw bekijken bij een nieuwe bron of als het park in april 2027 weer opengaat.
+- [w] Parc Saint-Léger – Parc animalier – Euraziatische lynx: Vroeger ‘Parc Les Grands Félins’ van de dompteurfamilie Bauer (in 2024 nog leeuwen, tijgers, cheeta’s, panters en poema’s aangeboden). Een gidsfiche (parcsetloisirs.fr, 2026) noemt panter, serval en lynx, maar de eigen plattegrond van 2026 noemt geen katten. Niet bevestigd dat er katten voor bezoekers te zien zijn. Niet nabellen (14-10-2026); opnieuw bekijken bij een nieuwe bron of als het park in april 2027 weer opengaat.
 
 **Auvergne-Rhône-Alpes**
 

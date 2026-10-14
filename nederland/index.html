@@ -1403,7 +1403,7 @@ function rpRelabel(){
   if(COMMENTS===null)rpUit();else rpMsg("");
 }
 async function rpWeb(d){
-  const btn=rpEl("rp-go");btn.disabled=true;rpMsg(T("Bezig met versturen…","Sending…","Envoi en cours…"));
+  const btn=rpEl("rp-go");btn.disabled=true;rpMsg(T("Bezig met versturen…","Sending…"));
   const body={access_key:window.__W3F.key,subject:"Melding gids "+window.__W3F.land+": "+d.type+" – "+d.loc,from_name:"Wilde katachtigen-gids",
     Melding:rpEl("rp-sum").textContent.trim(),Soort_melding:d.type,Locatie:d.loc,Soort:d.soort,Datum_bezoek:d.datum||"-",Opmerkingen:d.opm||"-",
     Gids:window.__W3F.land,Pagina:location.href,Taal:(typeof LANG!=="undefined"?LANG:"nl"),botcheck:""};
@@ -1412,9 +1412,9 @@ async function rpWeb(d){
     const j=await r.json().catch(()=>({}));
     if(!(r.ok&&j.success))throw new Error("mislukt");
     rpEl("rp-opm").value="";rpUpdate();
-    rpMsg(T("Bedankt! Je melding is verstuurd.","Thank you! Your report has been sent.","Merci ! Votre signalement a été envoyé."));
+    rpMsg(T("Bedankt! Je melding is verstuurd.","Thank you! Your report has been sent."));
   }catch(e){
-    rpMsg(T("Versturen is niet gelukt. Probeer het later opnieuw.","Sending failed. Please try again later.","L’envoi a échoué. Veuillez réessayer plus tard."),true);
+    rpMsg(T("Versturen is niet gelukt. Probeer het later opnieuw.","Sending failed. Please try again later."),true);
   }
   btn.disabled=false;
 }
@@ -1531,15 +1531,15 @@ applyLang(LANG,false);
 window.addEventListener("hashchange",route);
 route();
 /* ---- locatietypes ---- */
-const LT={"types": [{"key": "dierentuin", "nl": "Dierentuin", "en": "Zoo", "fr": "Parc zoologique", "de": "Zoo", "uitleg": "Wetenschappelijk geleide dierentuin, lid van EAZA of een landelijke zoobond (NVD, VdZ).", "uitleg_en": "Scientifically managed zoo, member of EAZA or a national zoo association (NVD, VdZ).", "uitleg_fr": "Zoo à gestion scientifique, membre de l’EAZA ou d’une association nationale de zoos (NVD, VdZ).", "uitleg_de": "Wissenschaftlich geführter Zoo, Mitglied der EAZA oder eines nationalen Zooverbands (NVD, VdZ)."}, {"key": "dierenpark", "nl": "Dierenpark", "en": "Animal park", "fr": "Parc animalier", "de": "Tierpark", "uitleg": "Kleinere dierentuin of Tierpark die niet bij zo'n bond is aangesloten, ook als het park bij een winkel of kinderboerderij hoort.", "uitleg_en": "Smaller zoo or Tierpark that is not a member of such an association, also when the park belongs to a shop or a children's farm.", "uitleg_fr": "Petit zoo ou Tierpark qui n’est pas membre d’une telle association, même lorsque le parc dépend d’un magasin ou d’une ferme pour enfants.", "uitleg_de": "Kleinerer Zoo oder Tierpark, der keinem solchen Verband angehört, auch wenn der Park zu einem Geschäft oder einem Kinderbauernhof gehört."}, {"key": "wildpark", "nl": "Wildpark", "en": "Wildlife park", "fr": "Parc à gibier", "de": "Wildpark", "uitleg": "Vooral inheemse dieren, vaak in een bos of op een groot terrein. Hier zie je de meeste lynxen en wilde katten.", "uitleg_en": "Mostly native animals, often in a forest or on a large site. This is where you see most lynxes and wildcats.", "uitleg_fr": "Surtout des animaux indigènes, souvent en forêt ou sur un grand terrain. C’est là que l’on voit le plus de lynx et de chats sauvages.", "uitleg_de": "Vor allem heimische Tiere, oft im Wald oder auf einem großen Gelände. Hier siehst du die meisten Luchse und Wildkatzen."}, {"key": "safaripark", "nl": "Safaripark", "en": "Safari park", "fr": "Parc safari", "de": "Safaripark", "uitleg": "Je rijdt of vaart langs de dieren, met je eigen auto, een bus of een boot.", "uitleg_en": "You drive or sail past the animals, in your own car, a bus or a boat.", "uitleg_fr": "On passe devant les animaux en voiture, en bus ou en bateau.", "uitleg_de": "Du fährst mit dem eigenen Auto, einem Bus oder einem Boot an den Tieren vorbei."}, {"key": "attractiepark", "nl": "Attractiepark met dieren", "en": "Theme park with animals", "fr": "Parc d’attractions avec animaux", "de": "Freizeitpark mit Tieren", "uitleg": "Pretpark waar de dieren een deel van het aanbod zijn.", "uitleg_en": "Theme park where the animals are part of what's on offer.", "uitleg_fr": "Parc d’attractions où les animaux font partie de l’offre.", "uitleg_de": "Freizeitpark, in dem die Tiere Teil des Angebots sind."}, {"key": "natuurcentrum", "nl": "Natuur- en fokcentrum", "en": "Conservation centre", "fr": "Centre de conservation", "de": "Artenschutzzentrum", "uitleg": "Werkt aan het behoud van een soort, bijvoorbeeld met kweek voor uitzetting of voorlichting over de wilde kat.", "uitleg_en": "Works to conserve a species, for example by breeding for release or teaching about the wildcat.", "uitleg_fr": "Œuvre à la conservation d’une espèce, par exemple par l’élevage en vue de réintroductions ou la sensibilisation au chat sauvage.", "uitleg_de": "Setzt sich für den Erhalt einer Art ein, zum Beispiel durch Zucht für die Auswilderung oder Aufklärung über die Wildkatze."}, {"key": "opvang", "nl": "Opvang of sanctuary", "en": "Rescue centre or sanctuary", "fr": "Refuge ou sanctuaire", "de": "Auffangstation", "uitleg": "Neemt afgestane of in beslag genomen katten op. Welke dieren er zitten, wisselt, en vaak is het maar beperkt open.", "uitleg_en": "Takes in surrendered or confiscated cats. The animals change, and it is often only open on a limited basis.", "uitleg_fr": "Accueille des félins cédés ou saisis. Les animaux changent et l’accès est souvent limité.", "uitleg_de": "Nimmt abgegebene oder beschlagnahmte Katzen auf. Die Tiere wechseln, und oft ist nur eingeschränkt geöffnet."}, {"key": "particulier", "nl": "Particuliere houder", "en": "Private keeper", "fr": "Détenteur privé", "de": "Privathalter", "uitleg": "Circus, artiest of privépersoon die bezoekers ontvangt, bijvoorbeeld bij voorstellingen of op open dagen.", "uitleg_en": "Circus, performer or private person who receives visitors, for example at shows or on open days.", "uitleg_fr": "Cirque, dresseur ou particulier qui reçoit des visiteurs, par exemple lors de spectacles ou de journées portes ouvertes.", "uitleg_de": "Zirkus, Dompteur oder Privatperson, die Besucher empfängt, zum Beispiel bei Vorstellungen oder an Tagen der offenen Tür."}], "labels": [{"key": "overnachten", "nl": "Overnachten in het park", "en": "Overnight stay in the park", "icoon": "🌙", "fr": "Nuit dans le parc", "de": "Übernachtung im Park"}, {"key": "rondleiding", "nl": "Alleen met rondleiding of op afspraak", "en": "Guided tour or appointment only", "icoon": "🧭", "fr": "Uniquement en visite guidée ou sur rendez-vous", "de": "Nur mit Führung oder nach Anmeldung"}, {"key": "leden", "nl": "Alleen voor leden", "en": "Members only", "icoon": "🎫", "fr": "Réservé aux membres", "de": "Nur für Mitglieder"}, {"key": "bezoekdagen", "nl": "Alleen op bezoekdagen", "en": "Open days only", "icoon": "📅", "fr": "Uniquement les jours de visite", "de": "Nur an Besuchstagen"}, {"key": "seizoen", "nl": "Seizoenspark, in de winter dicht", "en": "Seasonal, closed in winter", "icoon": "🍂", "fr": "Parc saisonnier, fermé en hiver", "de": "Saisonpark, im Winter geschlossen"}, {"key": "nietdagelijks", "nl": "Niet elke dag open", "en": "Not open every day", "icoon": "🗓️", "fr": "Pas ouvert tous les jours", "de": "Nicht täglich geöffnet"}, {"key": "gratis", "nl": "Gratis toegang", "en": "Free entry", "icoon": "🆓", "fr": "Entrée gratuite", "de": "Eintritt frei"}, {"key": "reistrond", "nl": "Reist rond", "en": "Travelling", "icoon": "🎪", "fr": "Itinérant", "de": "Reisend"}], "beperkt": ["rondleiding", "leden", "bezoekdagen"]};
+const LT={"types": [{"key": "dierentuin", "nl": "Dierentuin", "en": "Zoo", "fr": "Parc zoologique", "de": "Zoo", "it": "Zoo", "uitleg": "Wetenschappelijk geleide dierentuin, lid van EAZA of een landelijke zoobond (NVD, VdZ).", "uitleg_en": "Scientifically managed zoo, member of EAZA or a national zoo association (NVD, VdZ).", "uitleg_fr": "Zoo à gestion scientifique, membre de l’EAZA ou d’une association nationale de zoos (NVD, VdZ).", "uitleg_de": "Wissenschaftlich geführter Zoo, Mitglied der EAZA oder eines nationalen Zooverbands (NVD, VdZ).", "uitleg_it": "Zoo a gestione scientifica, membro dell’EAZA o di un’associazione nazionale di zoo (NVD, VdZ)."}, {"key": "dierenpark", "nl": "Dierenpark", "en": "Animal park", "fr": "Parc animalier", "de": "Tierpark", "it": "Parco faunistico", "uitleg": "Kleinere dierentuin of Tierpark die niet bij zo'n bond is aangesloten, ook als het park bij een winkel of kinderboerderij hoort.", "uitleg_en": "Smaller zoo or Tierpark that is not a member of such an association, also when the park belongs to a shop or a children's farm.", "uitleg_fr": "Petit zoo ou Tierpark qui n’est pas membre d’une telle association, même lorsque le parc dépend d’un magasin ou d’une ferme pour enfants.", "uitleg_de": "Kleinerer Zoo oder Tierpark, der keinem solchen Verband angehört, auch wenn der Park zu einem Geschäft oder einem Kinderbauernhof gehört.", "uitleg_it": "Zoo più piccolo o Tierpark non associato a un’associazione di questo tipo, anche quando il parco appartiene a un negozio o a una fattoria didattica."}, {"key": "wildpark", "nl": "Wildpark", "en": "Wildlife park", "fr": "Parc à gibier", "de": "Wildpark", "it": "Parco della fauna selvatica", "uitleg": "Vooral inheemse dieren, vaak in een bos of op een groot terrein. Hier zie je de meeste lynxen en wilde katten.", "uitleg_en": "Mostly native animals, often in a forest or on a large site. This is where you see most lynxes and wildcats.", "uitleg_fr": "Surtout des animaux indigènes, souvent en forêt ou sur un grand terrain. C’est là que l’on voit le plus de lynx et de chats sauvages.", "uitleg_de": "Vor allem heimische Tiere, oft im Wald oder auf einem großen Gelände. Hier siehst du die meisten Luchse und Wildkatzen.", "uitleg_it": "Soprattutto animali autoctoni, spesso in un bosco o su un vasto terreno. Qui vedi la maggior parte delle linci e dei gatti selvatici."}, {"key": "safaripark", "nl": "Safaripark", "en": "Safari park", "fr": "Parc safari", "de": "Safaripark", "it": "Safari park", "uitleg": "Je rijdt of vaart langs de dieren, met je eigen auto, een bus of een boot.", "uitleg_en": "You drive or sail past the animals, in your own car, a bus or a boat.", "uitleg_fr": "On passe devant les animaux en voiture, en bus ou en bateau.", "uitleg_de": "Du fährst mit dem eigenen Auto, einem Bus oder einem Boot an den Tieren vorbei.", "uitleg_it": "Passi accanto agli animali con la tua auto, un autobus o una barca."}, {"key": "attractiepark", "nl": "Attractiepark met dieren", "en": "Theme park with animals", "fr": "Parc d’attractions avec animaux", "de": "Freizeitpark mit Tieren", "it": "Parco divertimenti con animali", "uitleg": "Pretpark waar de dieren een deel van het aanbod zijn.", "uitleg_en": "Theme park where the animals are part of what's on offer.", "uitleg_fr": "Parc d’attractions où les animaux font partie de l’offre.", "uitleg_de": "Freizeitpark, in dem die Tiere Teil des Angebots sind.", "uitleg_it": "Parco divertimenti in cui gli animali fanno parte dell’offerta."}, {"key": "natuurcentrum", "nl": "Natuur- en fokcentrum", "en": "Conservation centre", "fr": "Centre de conservation", "de": "Artenschutzzentrum", "it": "Centro di conservazione e riproduzione", "uitleg": "Werkt aan het behoud van een soort, bijvoorbeeld met kweek voor uitzetting of voorlichting over de wilde kat.", "uitleg_en": "Works to conserve a species, for example by breeding for release or teaching about the wildcat.", "uitleg_fr": "Œuvre à la conservation d’une espèce, par exemple par l’élevage en vue de réintroductions ou la sensibilisation au chat sauvage.", "uitleg_de": "Setzt sich für den Erhalt einer Art ein, zum Beispiel durch Zucht für die Auswilderung oder Aufklärung über die Wildkatze.", "uitleg_it": "Lavora alla conservazione di una specie, ad esempio con la riproduzione per il rilascio in natura o con la divulgazione sul gatto selvatico."}, {"key": "opvang", "nl": "Opvang of sanctuary", "en": "Rescue centre or sanctuary", "fr": "Refuge ou sanctuaire", "de": "Auffangstation", "it": "Centro di recupero o santuario", "uitleg": "Neemt afgestane of in beslag genomen katten op. Welke dieren er zitten, wisselt, en vaak is het maar beperkt open.", "uitleg_en": "Takes in surrendered or confiscated cats. The animals change, and it is often only open on a limited basis.", "uitleg_fr": "Accueille des félins cédés ou saisis. Les animaux changent et l’accès est souvent limité.", "uitleg_de": "Nimmt abgegebene oder beschlagnahmte Katzen auf. Die Tiere wechseln, und oft ist nur eingeschränkt geöffnet.", "uitleg_it": "Accoglie felini ceduti o sequestrati. Gli animali presenti cambiano, e spesso è aperto solo in modo limitato."}, {"key": "particulier", "nl": "Particuliere houder", "en": "Private keeper", "fr": "Détenteur privé", "de": "Privathalter", "it": "Detentore privato", "uitleg": "Circus, artiest of privépersoon die bezoekers ontvangt, bijvoorbeeld bij voorstellingen of op open dagen.", "uitleg_en": "Circus, performer or private person who receives visitors, for example at shows or on open days.", "uitleg_fr": "Cirque, dresseur ou particulier qui reçoit des visiteurs, par exemple lors de spectacles ou de journées portes ouvertes.", "uitleg_de": "Zirkus, Dompteur oder Privatperson, die Besucher empfängt, zum Beispiel bei Vorstellungen oder an Tagen der offenen Tür.", "uitleg_it": "Circo, artista o privato che riceve visitatori, ad esempio durante spettacoli o giornate aperte."}], "labels": [{"key": "overnachten", "nl": "Overnachten in het park", "en": "Overnight stay in the park", "icoon": "🌙", "fr": "Nuit dans le parc", "de": "Übernachtung im Park", "it": "Pernottamento nel parco"}, {"key": "rondleiding", "nl": "Alleen met rondleiding of op afspraak", "en": "Guided tour or appointment only", "icoon": "🧭", "fr": "Uniquement en visite guidée ou sur rendez-vous", "de": "Nur mit Führung oder nach Anmeldung", "it": "Solo con visita guidata o su appuntamento"}, {"key": "leden", "nl": "Alleen voor leden", "en": "Members only", "icoon": "🎫", "fr": "Réservé aux membres", "de": "Nur für Mitglieder", "it": "Solo per i soci"}, {"key": "bezoekdagen", "nl": "Alleen op bezoekdagen", "en": "Open days only", "icoon": "📅", "fr": "Uniquement les jours de visite", "de": "Nur an Besuchstagen", "it": "Solo nei giorni di visita"}, {"key": "seizoen", "nl": "Seizoenspark, in de winter dicht", "en": "Seasonal, closed in winter", "icoon": "🍂", "fr": "Parc saisonnier, fermé en hiver", "de": "Saisonpark, im Winter geschlossen", "it": "Parco stagionale, chiuso in inverno"}, {"key": "nietdagelijks", "nl": "Niet elke dag open", "en": "Not open every day", "icoon": "🗓️", "fr": "Pas ouvert tous les jours", "de": "Nicht täglich geöffnet", "it": "Non aperto tutti i giorni"}, {"key": "gratis", "nl": "Gratis toegang", "en": "Free entry", "icoon": "🆓", "fr": "Entrée gratuite", "de": "Eintritt frei", "it": "Ingresso gratuito"}, {"key": "reistrond", "nl": "Reist rond", "en": "Travelling", "icoon": "🎪", "fr": "Itinérant", "de": "Reisend", "it": "Itinerante"}], "beperkt": ["rondleiding", "leden", "bezoekdagen"]};
 /* Locatietypes en labels. Wordt door bron/bouw.py achter het script van elke gids (en elke deelstaat) gezet,
    zodat het bij de gegevens en functies van die gids kan. LT komt uit bron/locatietypes.json. */
-const LT_I=()=>LANG==="en"?1:LANG==="fr"?2:LANG==="de"?3:0;
-const LT_TX=(nl,en,fr,de)=>[nl,en,fr!==undefined?fr:en,de!==undefined?de:en][LT_I()];
+const LT_I=()=>({en:1,fr:2,de:3,it:4})[LANG]||0;
+const LT_TX=(nl,en,fr,de,it)=>[nl,en,fr!==undefined?fr:en,de!==undefined?de:en,it!==undefined?it:en][LT_I()];
 const LT_KEY=nm=>{const i=LOCINFO[nm];return i&&i.type?i.type[0]:"";};
-const LT_NAME=nm=>{const i=LOCINFO[nm];if(!i||!i.type)return "";const t=LT.types.find(x=>x.nl===i.type[0]);return t?LT_TX(t.nl,t.en,t.fr,t.de):(i.type[LT_I()]||i.type[0]);};
+const LT_NAME=nm=>{const i=LOCINFO[nm];if(!i||!i.type)return "";const t=LT.types.find(x=>x.nl===i.type[0]);return t?LT_TX(t.nl,t.en,t.fr,t.de,t.it):(i.type[LT_I()]||i.type[0]);};
 const LT_LABS=nm=>(((LOCINFO[nm]||{}).labels)||[]).map(k=>LT.labels.find(l=>l.key===k)).filter(Boolean);
-const LT_LTXT=l=>LT_TX(l.nl,l.en,l.fr,l.de);
+const LT_LTXT=l=>LT_TX(l.nl,l.en,l.fr,l.de,l.it);
 const LT_BEP=nm=>LT_LABS(nm).filter(l=>LT.beperkt.includes(l.key));
 const LT_IDX=a=>{const m=(a.getAttribute("href")||"").match(/^#(?:[a-z-]+\/)?locatie\/(.+)$/);return m&&LOCBYSLUG[m[1]]!==undefined?LOCBYSLUG[m[1]]:-1;};
 let LT_F="";
@@ -1573,8 +1573,8 @@ function LT_DECOR(){
     mw.insertAdjacentHTML("beforebegin",'<div class="lt-bar" id="lt-bar" role="group"><\/div><p class="lt-count" id="lt-count" aria-live="polite"><\/p>');
     bar=document.getElementById("lt-bar");
     bar.addEventListener("click",e=>{const b=e.target.closest(".lt-chip");if(!b)return;LT_F=b.dataset.t;LT_DECOR();});}
-  bar.setAttribute("aria-label",LT_TX("Soort locatie","Type of location","Type de lieu","Art des Ortes"));
-  bar.innerHTML=[["",LOCS.length,LT_TX("Alle","All","Tous","Alle")]].concat(present.map(t=>[t.nl,cnt[t.nl],LT_TX(t.nl,t.en,t.fr,t.de)]))
+  bar.setAttribute("aria-label",LT_TX("Soort locatie","Type of location","Type de lieu","Art des Ortes","Tipo di luogo"));
+  bar.innerHTML=[["",LOCS.length,LT_TX("Alle","All","Tous","Alle","Tutti")]].concat(present.map(t=>[t.nl,cnt[t.nl],LT_TX(t.nl,t.en,t.fr,t.de,t.it)]))
     .map(([k,n,l])=>`<button type="button" class="lt-chip" data-t="${esc(k)}" aria-pressed="${k===LT_F}">${esc(l)} <span class="n">${n}<\/span><\/button>`).join("");
   LT_APPLY();
 }
@@ -1589,7 +1589,7 @@ function LT_APPLY(){
     const none=items.every(li=>li.hidden);ul.hidden=none;const g=ul.previousElementSibling;if(g&&g.classList.contains("group-title"))g.hidden=none;});
   const c=document.getElementById("lt-count");
   if(c){const n=LOCS.filter(l=>!off(l[0])).length;
-    c.textContent=LT_F?LT_TX(`${n} van de ${LOCS.length} locaties getoond.`,`Showing ${n} of ${LOCS.length} locations.`,`${n} lieux sur ${LOCS.length} affichés.`,`${n} von ${LOCS.length} Orten angezeigt.`):"";c.hidden=!LT_F;}
+    c.textContent=LT_F?LT_TX(`${n} van de ${LOCS.length} locaties getoond.`,`Showing ${n} of ${LOCS.length} locations.`,`${n} lieux sur ${LOCS.length} affichés.`,`${n} von ${LOCS.length} Orten angezeigt.`,`${n} luoghi su ${LOCS.length} mostrati.`):"";c.hidden=!LT_F;}
 }
 {const o=locHTML;locHTML=function(i){const h=o.apply(this,arguments);const t=LT_LABS(LOCS[i][0]).map(l=>`<span class="ip-tag">${l.icoon} ${esc(LT_LTXT(l))}<\/span>`).join("");
   return t?h.replace(/(<div class="ip-tags">[\s\S]*?)(<\/div>)/,(m,a,b)=>a+t+b):h;};}
@@ -1609,6 +1609,61 @@ applyLang(LANG,false);
 
 
 
+})();
+</script>
+<script>
+/* Taalmenu: maakt van elke rij taalknoppen (.langsw met [data-setlang]-knoppen) één knop met een wereldbol en de
+   huidige taalcode ("🌐 NL"). Tikken opent een lijst met de talen in hun eigen naam. De lijst bevat alleen de talen
+   van de knoppen die de pagina zelf heeft, dus op een landpagina alleen de talen van dat land.
+   De bestaande knoppen blijven dezelfde [data-setlang]-knoppen; de taalwissel zelf doet de pagina zoals altijd.
+   Wordt door bron/bouw.py in de startpagina en in elke gids gezet. */
+(function(){
+if(window.__TAALMENU)return;window.__TAALMENU=1;
+var NAMEN={nl:"Nederlands",en:"English",fr:"Français",de:"Deutsch",it:"Italiano"};
+var css=".langsw.lm{position:relative;display:inline-block;border:0;border-radius:0;overflow:visible;flex:none}"+
+".lm .lm-btn{all:unset;box-sizing:border-box;cursor:pointer;display:inline-flex;align-items:center;gap:5px;font-family:\"Bricolage Grotesque\",system-ui,sans-serif;font-size:13px;font-weight:600;line-height:1.3;color:#2A1C12;border:1.5px solid #2A1C12;border-radius:999px;padding:3px 10px;white-space:nowrap;background:transparent}"+
+".lm .lm-btn:hover,.lm .lm-btn[aria-expanded=\"true\"]{background:#2A1C12;color:#EAD9B3}"+
+".lm .lm-btn:focus-visible{outline:2px solid #B97A12;outline-offset:2px}"+
+".lm .lm-glb{font-size:15px;line-height:1}"+
+".lm .lm-pop{position:absolute;right:0;top:calc(100% + 6px);z-index:50;min-width:150px;margin:0;padding:6px;list-style:none;background:#FBF7EE;border:1.5px solid #2A1C12;border-radius:12px;box-shadow:0 6px 18px rgba(42,28,18,.18);display:flex;flex-direction:column;gap:2px}"+
+".lm .lm-pop[hidden]{display:none}"+
+".lm .lm-pop button{all:unset;box-sizing:border-box;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;width:100%;padding:7px 10px;border-radius:8px;font-family:\"Bricolage Grotesque\",system-ui,sans-serif;font-size:15px;font-weight:600;line-height:1.3;color:#2A1C12;background:transparent}"+
+".lm .lm-pop button:hover,.lm .lm-pop button:focus-visible{background:#F2DFB6}"+
+".lm .lm-pop button[aria-pressed=\"true\"]{background:#2A1C12;color:#EAD9B3}"+
+".lm .lm-pop button[aria-pressed=\"true\"]::after{content:\"\\2713\"}"+
+".lm .lm-pop button .lm-c{font-size:12px;opacity:.6;font-weight:600}";
+function stijl(){if(document.getElementById("lm-css"))return;var s=document.createElement("style");s.id="lm-css";s.textContent=css;(document.head||document.documentElement).appendChild(s);}
+function huidig(){var l=(document.documentElement.lang||"nl").slice(0,2).toLowerCase();return NAMEN[l]?l:"nl";}
+function label(){var l=huidig();document.querySelectorAll(".lm .lm-cur").forEach(function(e){e.textContent=l.toUpperCase();});
+  document.querySelectorAll(".lm .lm-pop [data-setlang]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.setlang===l));});}
+function maak(g){
+  if(g.classList.contains("lm"))return;
+  var knoppen=[].slice.call(g.querySelectorAll("[data-setlang]"));if(!knoppen.length)return;
+  g.classList.add("lm");g.removeAttribute("role");
+  var naam=g.getAttribute("aria-label")||"Taal / Language";
+  var btn=document.createElement("button");btn.type="button";btn.className="lm-btn";btn.setAttribute("aria-haspopup","true");btn.setAttribute("aria-expanded","false");
+  btn.setAttribute("aria-label",naam);
+  btn.innerHTML='<span class="lm-glb" aria-hidden="true">\uD83C\uDF10<\/span><span class="lm-cur"><\/span>';
+  var pop=document.createElement("div");pop.className="lm-pop";pop.hidden=true;pop.setAttribute("role","group");pop.setAttribute("aria-label",naam);
+  knoppen.forEach(function(b){var c=b.dataset.setlang;b.textContent=NAMEN[c]||c.toUpperCase();b.setAttribute("lang",c);pop.appendChild(b);});
+  g.textContent="";g.appendChild(btn);g.appendChild(pop);
+  label();
+}
+function alles(r){(r||document).querySelectorAll(".langsw:not(.lm)").forEach(maak);}
+function dicht(behalve){document.querySelectorAll(".lm .lm-pop").forEach(function(p){if(p===behalve)return;p.hidden=true;var b=p.parentNode.querySelector(".lm-btn");if(b)b.setAttribute("aria-expanded","false");});}
+document.addEventListener("click",function(e){
+  var b=e.target.closest&&e.target.closest(".lm .lm-btn");
+  if(b){e.preventDefault();var p=b.parentNode.querySelector(".lm-pop");var open=p.hidden;dicht(p);p.hidden=!open;b.setAttribute("aria-expanded",String(open));
+    if(open){var a=p.querySelector('[aria-pressed="true"]')||p.querySelector("button");if(a)a.focus();}return;}
+  if(e.target.closest&&e.target.closest(".lm [data-setlang]")){setTimeout(function(){dicht();label();},0);return;}
+  if(!(e.target.closest&&e.target.closest(".lm")))dicht();
+});
+document.addEventListener("keydown",function(e){if(e.key==="Escape"){var o=document.querySelector(".lm .lm-pop:not([hidden])");if(o){dicht();var b=o.parentNode.querySelector(".lm-btn");if(b)b.focus();}}});
+function start(){stijl();alles();
+  new MutationObserver(function(ms){var nieuw=false;ms.forEach(function(m){m.addedNodes.forEach(function(n){if(n.nodeType===1&&(n.matches(".langsw:not(.lm)")||n.querySelector(".langsw:not(.lm)")))nieuw=true;});});if(nieuw)alles();})
+    .observe(document.body,{childList:true,subtree:true});
+  new MutationObserver(label).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});}
+if(document.body)start();else document.addEventListener("DOMContentLoaded",start);
 })();
 </script>
 </body>

@@ -222,7 +222,7 @@ details > summary{border-radius:10px}
 .jsrc{display:block;font-size:13px;color:var(--muted);margin-top:6px}
 #actueel h3{margin-top:26px}
 /* ===== tweetaligheid ===== */
-html.en .l-nl,html.fr .l-nl,html:not(.en) .l-en,html:not(.fr) .l-fr{display:none!important}
+html.en .l-nl,html.fr .l-nl,html.de .l-nl,html:not(.en) .l-en,html:not(.fr) .l-fr,html:not(.de) .l-de{display:none!important}
 .langsw{position:absolute;top:16px;right:62px;display:inline-flex;border:1.5px solid #2A1C12;border-radius:999px;overflow:hidden;font-family:"Bricolage Grotesque",sans-serif;font-size:13px;z-index:3}
 .langsw button{all:unset;cursor:pointer;padding:4px 11px;color:#2A1C12;font-weight:600;line-height:1.3}
 .langsw button[aria-pressed="true"]{background:#2A1C12;color:var(--tan)}

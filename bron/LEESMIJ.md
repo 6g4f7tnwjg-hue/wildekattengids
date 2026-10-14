@@ -24,7 +24,7 @@ Alles wordt uit deze map gebouwd. Pas nooit de gegenereerde bestanden in de hoof
 3. Controleer `git diff`, commit en push → de website (https://yeetkitty.github.io/wildekattengids/) is binnen een paar minuten bij.
 4. Publiceer `_claude/claude.html` als update van de Claude-pagina
    (https://claude.ai/code/artifact/6d4b4553-65b1-4dc3-82b1-41c087dcc110), met als `files` de inhoud van
-   `_claude/bestanden.json` (de foto's `img/n.webp` en de landgidsen `g/<land>.json`). Alleen gewijzigde of nieuwe bestanden hoeven mee; de rest blijft staan. Een gewijzigde gids moet altijd mee.
+   `_claude/bestanden.json` (de foto's, `img/n.webp`). Alleen gewijzigde of nieuwe foto's hoeven mee; de rest blijft staan.
 
 Alleen de Claude-pagina bouwen: `python3 bron/bouw.py --geen-web`.
 
@@ -35,4 +35,4 @@ Alleen de Claude-pagina bouwen: `python3 bron/bouw.py --geen-web`.
 - Website: het meldformulier verstuurt via Web3Forms naar de mail van de maker. De Claude-pagina gebruikt de reacties van Claude.
 - Claude-pagina: één pagina; de landen worden binnen de pagina geopend.
 - Claude-pagina: de foto's staan er niet in, maar worden als losse bestanden (`img/n.webp`, op volle kwaliteit) met de pagina meegepubliceerd. De pagina zelf mag maximaal 16 MB zijn; daar telt nu alleen tekst en gegevens mee (de bouw stopt boven 15,8 MB).
-- Claude-pagina: ook elke landgids staat als los bestand ernaast (`g/<land>.json`, alleen ASCII; via fetch geladen, want eigen scriptbestanden worden door de Claude-omgeving geblokkeerd) en wordt pas geladen als je dat land opent. De grens van 16 MB geldt daardoor per bestand: de pagina zelf is ongeveer 0,5 MB, de grootste gids (Duitsland) ongeveer 5 MB.
+- Claude-pagina: de landgidsen staan gecomprimeerd (gzip) in de pagina en worden pas uitgepakt als je een land opent (DecompressionStream). Losse bestanden ernaast laden werkt niet: de Claude-omgeving blokkeert eigen scripts en het ophalen van bestanden. Zo blijft de pagina ruim onder 16 MB.

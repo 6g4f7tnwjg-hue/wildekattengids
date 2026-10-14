@@ -21,8 +21,13 @@
     /* Claude-pagina: elke gids staat als los bestand ernaast (g/<land>.json) en wordt pas geladen als je het land opent */
     window.__G=window.__G||{};
     if(window.__G[c]!==undefined){setTimeout(toon,30);return;}
-    fetch("g/"+c+".json").then(function(r){if(!r.ok)throw new Error(r.status);return r.text();})
-      .then(function(t){window.__G[c]=JSON.parse(t);toon();}).catch(fout);
+    /* gecomprimeerd in de pagina (window.__GZ): uitpakken in de browser, zonder netwerk */
+    try{
+      var z=window.__GZ&&window.__GZ[c];if(!z)throw new Error("geen gids");
+      var bin=atob(z),u=new Uint8Array(bin.length);for(var i=0;i<bin.length;i++)u[i]=bin.charCodeAt(i);
+      new Response(new Blob([u]).stream().pipeThrough(new DecompressionStream("gzip"))).text()
+        .then(function(t){window.__G[c]=t;toon();}).catch(fout);
+    }catch(e){fout();}
   };
   /* foto's één keer als blob-adres klaarzetten (korter en sneller dan telkens de volledige foto in de pagina schrijven) */
   if(!window.__URLS&&window.__IMG&&/^data:/.test(window.__IMG[0]||"")&&!window.__urlTry){window.__urlTry=1;

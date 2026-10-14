@@ -8,7 +8,9 @@ Bijgehouden door Claude. Bijwerken als een punt is opgelost.
 - **Overzeese gebieden van Frankrijk** (bijv. Zoo de Guyane: jaguar, ocelot, margay): nog beslissen of ze erbij komen.
 - **Foto's van Franse parken**: veel locaties hebben nog geen foto (Commons gaf een limiet). Een rustige extra ronde.
 - **Maandelijkse controle**: een geplande taak die nieuws over geboortes, vertrek en aankomst zoekt en voorstellen doet.
-- **Volgend land**: keuze volgt (voorstel: eerst Zwitserland en Oostenrijk, daarna het Verenigd Koninkrijk; Spanje kan ook).
+- **Volgend land**: Oostenrijk en Zwitserland staan erin (14-10-2026). Daarna voorstel: het Verenigd Koninkrijk. Let op: de Claude-pagina is nu 13,4 MB (grens ±16 MB); vóór een groot land eerst de pagina lichter maken (bijv. de vaste JS van de deelstaatblokken één keer delen in plaats van per blok).
+- **Zwitserland in het Frans**: de gids is nu NL/EN/DE. Frans erbij kan met een tweede versie van elk regioblok (NL/EN/FR) die de pagina laadt bij de taalknop FR.
+- **Oostenrijk/Zwitserland nagaan**: Tiger’s World (Judenau, NÖ) — alleen op een toeristische site, eigen site niet te openen, niet opgenomen; Luchsgehege Loipersdorf (ligging en publiek onbekend); Parc animalier de Prêles (BE) niet nagelopen; Bioparc Genève houdt ook hybride wilde katten en savannahkatten (niet meegeteld).
 - **Fréjus (Var)**: dierentuin dicht sinds 30-8-2026; na eind november 2026 nagaan waar de katten zijn gebleven.
 - **Onderzoeksagenten**: in de opdracht zetten dat ze geen persoonlijke gegevens meesturen (ook niet als contact in een User-Agent).
 
@@ -110,3 +112,35 @@ Regel (voor alle landen, 14-10-2026): bevestigd alleen met een recente bron (202
 **Pays de la Loire**
 
 - [w] Zoo de La Flèche – luipaard: Volgens een Facebookbericht van Zoo Hoyerswerda (28-4-2026) ging er een ♀ (geb. 2020) naar La Flèche, maar ze staat niet op de eigen site; of ze te zien is, is onbekend.
+
+### Oostenrijk
+
+**Opper-Oostenrijk**
+
+- [w] Welser Tiergarten – Euraziatische lynx: Na de dood van Burli (aug. 2025) bleef alleen de zieke kat Fuchur over; niet bevestigd dat zij in okt. 2026 nog leeft. Dierenlijst noemt de lynx nog.
+
+**Salzburg**
+
+- [y] Zoo Salzburg (Hellbrunn) – Leeuw: nieuw paar in gewenning; leeuwenhuis nog dicht, nog niet te zien (sept. 2026)
+
+**Stiermarken**
+
+- [p] Tierpark Tragöß – Euraziatische lynx: site: 'Coming Soon'; volgens Facebook (via Zootierliste) sept. 2026 2 lynxen uit Wenen
+
+**Karinthië**
+
+- [w] Tierpark Rosegg – Euraziatische lynx: Geen dierenlijst op de eigen site; lynx alleen op foto's (2021) en in actuele toeristische beschrijvingen. Geen gedateerde bevestiging na 2024 gevonden.
+
+
+### Zwitserland
+
+**Mittelland**
+
+- [w] Sikypark – Schweizer Tierrettungspark – Rode lynx: Alleen Zootierliste/Instagram 2025; niet op de eigen site of in de peterschapslijst.
+- [w] Sikypark – Schweizer Tierrettungspark – Serval: Staat op de persoonlijkhedenpagina en volgens ZTL 2025 nog aanwezig, maar niet in de huidige peterschapslijst.
+
+**Centraal-Zwitserland**
+
+- [w] Toni's Zoo – Cheetah: Alleen een bezoekverslag 6/2025 en oudere toeristische teksten; geen bevestiging op de eigen site.
+- [w] Toni's Zoo – Serval: Alleen Zootierliste-bezoekverslag 6/2025; geen eigen bron.
+- [w] Toni's Zoo – Caracal: Alleen Zootierliste meldt een paar caracals sinds 2026; niet bevestigd.

@@ -27,14 +27,15 @@ from startdata import bereken, slug, soorten
 
 BASE = "/wildekattengids/"
 SITE = "https://yeetkitty.github.io" + BASE
-F = {"nl": "nederland", "be": "belgie", "lu": "luxemburg", "de": "duitsland", "fr": "frankrijk", "at": "oostenrijk", "ch": "zwitserland"}
-LAND = {"nl": "Nederland", "be": "België", "lu": "Luxemburg", "de": "Duitsland", "fr": "Frankrijk", "at": "Oostenrijk", "ch": "Zwitserland"}
+F = {"nl": "nederland", "be": "belgie", "lu": "luxemburg", "de": "duitsland", "fr": "frankrijk", "at": "oostenrijk", "ch": "zwitserland", "uk": "verenigd-koninkrijk"}
+LAND = {"nl": "Nederland", "be": "België", "lu": "Luxemburg", "de": "Duitsland", "fr": "Frankrijk", "at": "Oostenrijk", "ch": "Zwitserland", "uk": "Verenigd Koninkrijk"}
 STATES = {"bayern": "Bayern", "nedersaksen": "Nedersaksen", "nrw": "Noordrijn-Westfalen", "saksen": "Saksen", "berlijn": "Berlijn", "hamburg": "Hamburg", "bremen": "Bremen", "saarland": "Saarland", "sleeswijk-holstein": "Sleeswijk-Holstein", "hessen": "Hessen", "brandenburg": "Brandenburg", "mecklenburg-voor-pommeren": "Mecklenburg-Voor-Pommeren", "rijnland-palts": "Rijnland-Palts", "thueringen": "Thüringen", "saksen-anhalt": "Saksen-Anhalt", "baden-wuerttemberg": "Baden-Württemberg"}
 REGIOS = {"auvergne-rhone-alpes": "Auvergne-Rhône-Alpes", "bourgogne-franche-comte": "Bourgogne-Franche-Comté", "bretagne": "Bretagne", "centre-val-de-loire": "Centre-Val de Loire", "corsica": "Corsica", "grand-est": "Grand Est", "hauts-de-france": "Hauts-de-France", "ile-de-france": "Île-de-France", "normandie": "Normandië", "nouvelle-aquitaine": "Nouvelle-Aquitaine", "occitanie": "Occitanie", "pays-de-la-loire": "Pays de la Loire", "provence-alpes-cote-dazur": "Provence-Alpes-Côte d’Azur"}
 # landen met één blok per deelstaat of regio (alleen de blokken die in de gids staan tellen)
 AT_ST = {"wien": "Wenen", "niederoesterreich": "Neder-Oostenrijk", "burgenland": "Burgenland", "oberoesterreich": "Opper-Oostenrijk", "salzburg": "Salzburg", "steiermark": "Stiermarken", "kaernten": "Karinthië", "tirol": "Tirol", "vorarlberg": "Vorarlberg"}
 CH_RG = {"genfermeergebied": "Genèvemeerregio", "mittelland": "Mittelland", "noordwest-zwitserland": "Noordwest-Zwitserland", "zuerich": "Zürich", "oost-zwitserland": "Oost-Zwitserland", "centraal-zwitserland": "Centraal-Zwitserland", "ticino": "Ticino"}
-DEEL = {"de": STATES, "fr": REGIOS, "at": AT_ST, "ch": CH_RG}
+UK_RG = {"londen": "Londen", "zuidoost-engeland": "Zuidoost-Engeland", "zuidwest-engeland": "Zuidwest-Engeland", "oost-engeland": "Oost-Engeland", "oost-midlands": "East Midlands", "west-midlands": "West Midlands", "noordwest-engeland": "Noordwest-Engeland", "yorkshire": "Yorkshire en de Humber", "noordoost-engeland": "Noordoost-Engeland", "schotland": "Schotland", "wales": "Wales", "noord-ierland": "Noord-Ierland"}
+DEEL = {"de": STATES, "fr": REGIOS, "at": AT_ST, "ch": CH_RG, "uk": UK_RG}
 W3F_KEY = "9494e3c0-9342-4457-a5d6-b795793b9ce4"
 MIME = {"webp": "image/webp", "jpg": "image/jpeg", "png": "image/png", "gif": "image/gif"}
 
@@ -240,6 +241,8 @@ CTRY = {
            "Welke wilde katten zie je in Oostenrijkse dierentuinen, Tierparks en Wildparks, van Schönbrunn tot de Alpenzoo? Per deelstaat, per soort en per park, met kaart, routeplanner en recente geboortes."),
     "ch": ("Wilde katachtigen in Zwitserland – welke wilde katten in welke dierentuin?",
            "Welke wilde katten zie je in Zwitserse dierentuinen, Tierparks en Wildparks, van Zoo Zürich tot de Sikypark? Per regio, per soort en per park, met kaart, routeplanner en recente geboortes."),
+    "uk": ("Wilde katachtigen in het Verenigd Koninkrijk – welke wilde katten in welke dierentuin?",
+           "Welke wilde katten zie je in Britse dierentuinen, safariparken en wildlife parks? Per regio, per soort en per park, met kaart, routeplanner en recente geboortes."),
     "de": ("Wilde katachtigen in Duitsland – welke wilde katten in welke dierentuin?",
            "Welke wilde katten zie je in Duitse dierentuinen, Tierparks en Wildparks? Per deelstaat, per soort en per park, met kaart, routeplanner en recente geboortes."),
 }
@@ -262,7 +265,7 @@ for c, doc in G.items():
     doc = re.sub(r"<title>[^<]*</title>", lambda mm: f"<title>{t}</title>\n" + seo(t, d, SITE + F[c] + "/"), doc, count=1)
     WEB[c] = doc   # zonder meldformulier-aanpassing (voor de stijl en momentopnames)
     if c in DEEL:
-        DEEL_WEB[c] = meld(doc, LAND[c], RPWEB_DE if c in ("de", "at", "ch") else RPWEB)
+        DEEL_WEB[c] = meld(doc, LAND[c], RPWEB_DE if c in ("de", "at", "ch", "uk") else RPWEB)
         wr(ROOT + F[c] + "/index.html", alleen_ds(DEEL_WEB[c], None, c))
     else:
         wr(ROOT + F[c] + "/index.html", meld(doc, LAND[c]))
@@ -274,7 +277,7 @@ for c, st, nm in DEELPAG:
         if r[0] not in cats:
             cats.append(r[0])
     t = f"Wilde katachtigen in {nm} – welke wilde katten in welke dierentuin?"
-    d = f"Welke wilde katten zie je in {nm}? {len(o['LOCS'])} {'dierentuinen, Tierparks en Wildparks' if c in ('de', 'at', 'ch') else 'dierentuinen, dierenparken en opvangcentra'} met o.a. {', '.join(x.lower() for x in cats[:4])}. Met kaart, routeplanner en recente geboortes."
+    d = f"Welke wilde katten zie je in {nm}? {len(o['LOCS'])} {'dierentuinen, Tierparks en Wildparks' if c in ('de', 'at', 'ch') else 'dierentuinen, safariparken en wildlife parks' if c == 'uk' else 'dierentuinen, dierenparken en opvangcentra'} met o.a. {', '.join(x.lower() for x in cats[:4])}. Met kaart, routeplanner en recente geboortes."
     url = SITE + F[c] + "/" + st + "/"
     doc = re.sub(r'<title>.*?</title>.*?<meta name="twitter:card"[^>]*>\n', "", DEEL_WEB[c], count=1, flags=re.S)
     # adres vastzetten op deze deelstaat; een link naar een andere deelstaat of naar de Duitse startpagina gaat naar die pagina
@@ -292,11 +295,11 @@ fmap = "{" + ",".join(f'{c}:"{BASE}{v}/"' for c, v in F.items()) + "}"
 st = sub1(st, "window.openCountry=function(c,h){",
           f"window.__F={fmap};\n  window.openCountry=function(c,h){{location.replace(window.__F[c]+(h?\"#\"+h:\"\"));return;")
 st = st.replace("${c}.html", "${window.__F[c]}").replace("${ZOOM}.html", "${window.__F[ZOOM]}")
-TITLE = "Wilde katachtigen in de Benelux, Duitsland, Frankrijk, Oostenrijk en Zwitserland – waar zie je welke wilde kat?"
+TITLE = "Wilde katachtigen in de Benelux, Duitsland, Frankrijk, Oostenrijk, Zwitserland en het Verenigd Koninkrijk – waar zie je welke wilde kat?"
 DESC = ("Gids van J. Gelens: welke wilde katten – leeuw, tijger, luipaard, lynx, serval, manoel en meer – je in dierentuinen, "
-        "dierenparken en opvangcentra in Nederland, België, Luxemburg, Duitsland, Frankrijk, Oostenrijk en Zwitserland kunt zien. Met kaart, routeplanner en recente geboortes.")
-st = sub1(st, "<title>Wilde katachtigen in de Benelux, Duitsland, Frankrijk, Oostenrijk en Zwitserland</title>",
-          f"<title>{TITLE}</title>\n" + seo("Wilde katachtigen in de Benelux, Duitsland, Frankrijk, Oostenrijk en Zwitserland", DESC, SITE)
+        "dierenparken en opvangcentra in Nederland, België, Luxemburg, Duitsland, Frankrijk, Oostenrijk, Zwitserland en het Verenigd Koninkrijk kunt zien. Met kaart, routeplanner en recente geboortes.")
+st = sub1(st, "<title>Wilde katachtigen in de Benelux, Duitsland, Frankrijk, Oostenrijk, Zwitserland en het Verenigd Koninkrijk</title>",
+          f"<title>{TITLE}</title>\n" + seo("Wilde katachtigen in de Benelux, Duitsland, Frankrijk, Oostenrijk, Zwitserland en het Verenigd Koninkrijk", DESC, SITE)
           + '<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n')
 st = sub1(st, '<meta charset="utf-8">', '<meta charset="utf-8"><script>window.__KATBASE="' + BASE + 'soort/";window.__HOMEURL="' + BASE
           + '";window.__IMGP=' + json.dumps(PATHS) + ';</script>')
@@ -315,12 +318,12 @@ for s in D["sp"]:
 def kat_page(s, locs, inhoud=""):
     conf = [(c, l) for c, l, x in locs if x in CONFC]
     landen = [LAND[c] for c in F if any(cc == c for cc, l in conf)]
-    title = f"{s[1]} in Nederland, België, Luxemburg, Duitsland, Frankrijk, Oostenrijk en Zwitserland: waar zie je hem? – Wilde katachtigen-gids"
+    title = f"{s[1]} in Nederland, België, Luxemburg, Duitsland, Frankrijk, Oostenrijk, Zwitserland en het Verenigd Koninkrijk: waar zie je hem? – Wilde katachtigen-gids"
     if conf:
         desc = kort(f"Waar zie je een {s[1].lower() if s[1] != 'Geoffroy’s kat' else s[1]}? In {opsomming(landen)} op {len(conf)} {'locatie' if len(conf) == 1 else 'locaties'}: "
                     + ", ".join(l[0] for c, l in conf[:6]) + ". Met kaart en recente geboortes.")
     else:
-        desc = kort(f"{s[1]} ({s[4]}): vermeldingen in dierentuinen en dierenparken in de Benelux, Duitsland, Frankrijk, Oostenrijk en Zwitserland, met kaart en recente geboortes.")
+        desc = kort(f"{s[1]} ({s[4]}): vermeldingen in dierentuinen en dierenparken in de Benelux, Duitsland, Frankrijk, Oostenrijk, Zwitserland en het Verenigd Koninkrijk, met kaart en recente geboortes.")
     url = SITE + "soort/" + s[0] + "/"
     img = SITE + PATHS[s[6]][len(BASE):] if s[6] is not None else SITE + "voorbeeld.jpg"
     doc = re.sub(r"<title>.*?</title>.*?<meta name=\"twitter:card\"[^>]*>\n", "", st, count=1, flags=re.S)
@@ -334,7 +337,7 @@ for s, locs in KATS:
     wr(ROOT + "soort/" + s[0] + "/index.html", kat_page(s, locs))
 # top 10 om te bezoeken (/top10/)
 def top_page():
-    title = "Top 10 dierentuinen om wilde katten te zien – Benelux, Duitsland, Frankrijk, Oostenrijk en Zwitserland"
+    title = "Top 10 dierentuinen om wilde katten te zien – Benelux, Duitsland, Frankrijk, Oostenrijk, Zwitserland en het Verenigd Koninkrijk"
     namen = [D[t["c"]]["locs"][t["i"]][0] for t in D["top10"]]
     desc = kort("De tien parken waar je de meeste en de bijzonderste wilde katten ziet: " + ", ".join(namen) + ".")
     doc = re.sub(r"<title>.*?</title>.*?<meta name=\"twitter:card\"[^>]*>\n", "", st, count=1, flags=re.S)

@@ -72,6 +72,11 @@ def met_types(t):
         return re.sub(r'(<script type="application/json" id="ds-[a-z-]+">)(.*?)(</script>)', fix, t, flags=re.S)
     return sub1(t, LT_HOOK, LT_HOOK + LT_JS.replace("</", "<\\/"))
 G = {c: met_types(t) for c, t in G.items()}
+# taalmenu (wereldbol met de huidige taal) in de startpagina en elke gids: zie bron/taalmenu.js
+TM_JS = "<script>\n" + rd(BRON + "taalmenu.js").replace("</", "<\\/") + "</script>\n"
+def met_taalmenu(t):
+    return sub1(t, "</body>", TM_JS + "</body>")
+G = {c: met_taalmenu(t) for c, t in G.items()}
 imgs = sorted((f for f in os.listdir(ROOT + "img") if re.match(r"^\d+\.\w+$", f)), key=lambda f: int(f.split(".")[0]))
 assert [int(f.split(".")[0]) for f in imgs] == list(range(len(imgs))), "fotonummers moeten aaneengesloten zijn"
 
@@ -81,12 +86,13 @@ m = re.search(r"const D=(\{.*?\});\n", START)
 D = json.loads(m.group(1))
 fr = json.load(open(BRON + "franse_namen.json", encoding="utf8"))
 de_namen = json.load(open(BRON + "duitse_namen.json", encoding="utf8"))
+it_namen = json.load(open(BRON + "italiaanse_namen.json", encoding="utf8"))
 today = datetime.date.today()
 for c in F:
-    D[c] = bereken(DATA[c], D[c], today, fr, c, de_namen)
-D["sp"] = soorten(DATA, fr, today, de_namen)
-D["lt"] = {"types": [{k: t[k] for k in ("nl", "en", "fr", "de", "uitleg", "uitleg_en", "uitleg_fr", "uitleg_de")} for t in LTJ["types"]],
-           "labels": [{k: l[k] for k in ("key", "nl", "en", "fr", "de", "icoon")} for l in LTJ["labels"]]}
+    D[c] = bereken(DATA[c], D[c], today, fr, c, de_namen, it_namen)
+D["sp"] = soorten(DATA, fr, today, de_namen, it_namen)
+D["lt"] = {"types": [{k: t[k] for k in ("nl", "en", "fr", "de", "it", "uitleg", "uitleg_en", "uitleg_fr", "uitleg_de", "uitleg_it")} for t in LTJ["types"]],
+           "labels": [{k: l[k] for k in ("key", "nl", "en", "fr", "de", "it", "icoon")} for l in LTJ["labels"]]}
 # top 10 om te bezoeken (bron/top10.json): vaste plaatsen, aangevuld met de hoogste score
 def top10(D):
     cfg = json.load(open(BRON + "top10.json", encoding="utf8"))
@@ -123,13 +129,16 @@ START = START[:m.start(1)] + json.dumps(D, ensure_ascii=False, separators=(",", 
 _MNL = ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december"]
 _MFR = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"]
 _MDE = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
+_MIT = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"]
 _MEN = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 START, _n = re.subn(r'<p class="stamp">.*?</p>',
     f'<p class="stamp"><span class="l-nl">Bijgewerkt {today.day} {_MNL[today.month-1]} {today.year}</span><span class="l-en">Updated {today.day} {_MEN[today.month-1]} {today.year}</span>'
-    f'<span class="l-fr">Mis à jour le {today.day} {_MFR[today.month-1]} {today.year}</span><span class="l-de">Aktualisiert am {today.day}. {_MDE[today.month-1]} {today.year}</span></p>',
+    f'<span class="l-fr">Mis à jour le {today.day} {_MFR[today.month-1]} {today.year}</span><span class="l-de">Aktualisiert am {today.day}. {_MDE[today.month-1]} {today.year}</span>'
+    f'<span class="l-it">Aggiornato al {today.day} {_MIT[today.month-1]} {today.year}</span></p>',
     START, count=1)
 assert _n == 1, "datum op de startpagina niet gevonden"
 wr(BRON + "start.html", START)
+START = met_taalmenu(START)
 
 # ------------------------------------------------------------------ Claude-pagina
 # De foto's staan niet in de pagina zelf maar als losse bestanden ernaast (img/n.webp). Publiceren met
@@ -178,9 +187,10 @@ def seo(title, desc, url, image=SITE + "voorbeeld.jpg", soort="website"):
 NOTE = {"nl": "Je melding gaat rechtstreeks naar de maker van de gids en is niet openbaar. Wil je een reactie, zet dan je e-mailadres bij Opmerkingen.",
         "en": "Your report goes straight to the guide’s author and is not public. If you would like a reply, add your email address under Comments.",
         "fr": "Votre signalement est envoyé directement à l’auteur du guide et n’est pas public. Si vous souhaitez une réponse, indiquez votre adresse e-mail dans les commentaires.",
-        "de": "Deine Meldung geht direkt an den Macher des Leitfadens und ist nicht öffentlich. Wenn du eine Antwort möchtest, gib deine E-Mail-Adresse unter Anmerkungen an."}
-RPWEB = r'''async function rpWeb(d){
-  const btn=rpEl("rp-go");btn.disabled=true;rpMsg(T("Bezig met versturen…","Sending…","Envoi en cours…"));
+        "de": "Deine Meldung geht direkt an den Macher des Leitfadens und ist nicht öffentlich. Wenn du eine Antwort möchtest, gib deine E-Mail-Adresse unter Anmerkungen an.",
+        "it": "La tua segnalazione arriva direttamente all’autore della guida e non è pubblica. Se desideri una risposta, aggiungi il tuo indirizzo e-mail nelle osservazioni."}
+RPWEB0 = r'''async function rpWeb(d){
+  const btn=rpEl("rp-go");btn.disabled=true;rpMsg(T("Bezig met versturen…","Sending…"@@SEND@@));
   const body={access_key:window.__W3F.key,subject:"Melding gids "+window.__W3F.land+": "+d.type+" – "+d.loc,from_name:"Wilde katachtigen-gids",
     Melding:rpEl("rp-sum").textContent.trim(),Soort_melding:d.type,Locatie:d.loc,Soort:d.soort,Datum_bezoek:d.datum||"-",Opmerkingen:d.opm||"-",
     Gids:window.__W3F.land,Pagina:location.href,Taal:(typeof LANG!=="undefined"?LANG:"nl"),botcheck:""};
@@ -189,18 +199,24 @@ RPWEB = r'''async function rpWeb(d){
     const j=await r.json().catch(()=>({}));
     if(!(r.ok&&j.success))throw new Error("mislukt");
     rpEl("rp-opm").value="";rpUpdate();
-    rpMsg(T("Bedankt! Je melding is verstuurd.","Thank you! Your report has been sent.","Merci ! Votre signalement a été envoyé."));
+    rpMsg(T("Bedankt! Je melding is verstuurd.","Thank you! Your report has been sent."@@OK@@));
   }catch(e){
-    rpMsg(T("Versturen is niet gelukt. Probeer het later opnieuw.","Sending failed. Please try again later.","L’envoi a échoué. Veuillez réessayer plus tard."),true);
+    rpMsg(T("Versturen is niet gelukt. Probeer het later opnieuw.","Sending failed. Please try again later."@@FOUT@@),true);
   }
   btn.disabled=false;
 }
 '''
-# Duitse gids: derde taal is Duits in plaats van Frans
-RPWEB_DE = (RPWEB.replace('"Envoi en cours…"', '"Wird gesendet…"')
-            .replace('"Merci ! Votre signalement a été envoyé."', '"Danke! Deine Meldung wurde gesendet."')
-            .replace('"L’envoi a échoué. Veuillez réessayer plus tard."', '"Senden fehlgeschlagen. Bitte versuche es später noch einmal."'))
-assert "Envoi" not in RPWEB_DE and "Merci" not in RPWEB_DE and "échoué" not in RPWEB_DE
+RPTXT = {"SEND": {"fr": "Envoi en cours…", "de": "Wird gesendet…", "it": "Invio in corso…"},
+         "OK": {"fr": "Merci ! Votre signalement a été envoyé.", "de": "Danke! Deine Meldung wurde gesendet.", "it": "Grazie! La tua segnalazione è stata inviata."},
+         "FOUT": {"fr": "L’envoi a échoué. Veuillez réessayer plus tard.", "de": "Senden fehlgeschlagen. Bitte versuche es später noch einmal.", "it": "Invio non riuscito. Riprova più tardi."}}
+# talen van elke gids na Nederlands en Engels, in de volgorde van T(nl,en,…) in die gids
+GTAAL = {"nl": [], "be": ["fr"], "lu": ["fr", "de"], "de": ["de"], "fr": ["fr"], "at": ["de"], "ch": ["de", "fr", "it"], "uk": [], "it": ["it"]}
+def rpweb(c):
+    t = RPWEB0
+    for k, v in RPTXT.items():
+        t = t.replace("@@" + k + "@@", "".join("," + json.dumps(v[l], ensure_ascii=False) for l in GTAAL[c]))
+    return t
+RPWEB = rpweb("be")
 def meld_js(t, rp=RPWEB):
     t = sub1(t, "} else {COMMENTS=null;rpUit();} }", "} else if(window.__W3F){COMMENTS={};} else {COMMENTS=null;rpUit();} }")
     t = sub1(t, "  if(COMMENTS===undefined){", "  if(window.__W3F){rpUpdate();return rpWeb(d);}\n  if(COMMENTS===undefined){")
@@ -210,7 +226,7 @@ def meld_note(h):
     assert mm, "uitleg meldformulier niet gevonden"
     spans = re.findall(r'<span class="l-(\w\w)">', mm.group(2))
     return h[:mm.start(2)] + "".join(f'<span class="l-{l}">{NOTE[l]}</span>' for l in spans) + h[mm.end(2):]
-def meld(doc, land, rp=RPWEB):
+def meld(doc, land, rp):
     i = doc.index("<meta charset"); j = doc.index(">", i) + 1
     doc = doc[:j] + f'\n<script>window.__W3F={{key:"{W3F_KEY}",land:"{land}"}};</script>\n' + doc[j:]
     if '<script type="application/json" id="ds-' in doc or 'id="dsmap"' in doc:
@@ -220,7 +236,7 @@ def meld(doc, land, rp=RPWEB):
             return mm.group(1) + json.dumps(d, ensure_ascii=False).replace("</", "<\\/") + mm.group(3)
         doc = re.sub(r'(<script type="application/json" id="ds-[a-z-]+">)(.*?)(</script>)', fix, doc, flags=re.S)
         return doc
-    return meld_note(meld_js(doc))
+    return meld_note(meld_js(doc, rp))
 
 # ------------------------------------------------------------------ website: landen- en deelstaatpagina's
 for d in list(F.values()):
@@ -262,10 +278,10 @@ for c, doc in G.items():
     doc = re.sub(r"<title>[^<]*</title>", lambda mm: f"<title>{t}</title>\n" + seo(t, d, SITE + F[c] + "/"), doc, count=1)
     WEB[c] = doc   # zonder meldformulier-aanpassing (voor de stijl en momentopnames)
     if c in DEEL:
-        DEEL_WEB[c] = meld(doc, LAND[c], RPWEB_DE if c in ("de", "at", "ch", "uk") else RPWEB)
+        DEEL_WEB[c] = meld(doc, LAND[c], rpweb(c))
         wr(ROOT + F[c] + "/index.html", alleen_ds(DEEL_WEB[c], None, c))
     else:
-        wr(ROOT + F[c] + "/index.html", meld(doc, LAND[c]))
+        wr(ROOT + F[c] + "/index.html", meld(doc, LAND[c], rpweb(c)))
 DEELPAG = [(c, st, nm) for c in DEEL for st, nm in DEEL[c].items() if st in DATA[c]]
 for c, st, nm in DEELPAG:
     o = DATA[c][st]

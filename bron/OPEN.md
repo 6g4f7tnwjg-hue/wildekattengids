@@ -8,7 +8,7 @@ Bijgehouden door Claude. Bijwerken als een punt is opgelost.
 - **Overzeese gebieden van Frankrijk** (bijv. Zoo de Guyane: jaguar, ocelot, margay): nog beslissen of ze erbij komen.
 - **Foto's van Franse parken**: veel locaties hebben nog geen foto (Commons gaf een limiet). Een rustige extra ronde.
 - **Maandelijkse controle**: een geplande taak die nieuws over geboortes, vertrek en aankomst zoekt en voorstellen doet.
-- **Volgend land**: Oostenrijk en Zwitserland staan erin (14-10-2026). Daarna voorstel: het Verenigd Koninkrijk. Let op: de Claude-pagina is nu 13,4 MB (grens ±16 MB); vóór een groot land eerst de pagina lichter maken (bijv. de vaste JS van de deelstaatblokken één keer delen in plaats van per blok).
+- **Volgend land**: Oostenrijk en Zwitserland staan erin (14-10-2026). Daarna voorstel: het Verenigd Koninkrijk. De Claude-pagina laadt de landgidsen nu als losse bestanden (grens 16 MB per gids; Duitsland ±5 MB). Als de website sneller moet: de vaste JS van de deelstaatblokken één keer delen in plaats van per blok (scheelt ±4 MB).
 - **Zwitserland in het Frans**: de gids is nu NL/EN/DE. Frans erbij kan met een tweede versie van elk regioblok (NL/EN/FR) die de pagina laadt bij de taalknop FR.
 - **Oostenrijk/Zwitserland nagaan**: Tiger’s World (Judenau, NÖ) — alleen op een toeristische site, eigen site niet te openen, niet opgenomen; Luchsgehege Loipersdorf (ligging en publiek onbekend); Parc animalier de Prêles (BE) niet nagelopen; Bioparc Genève houdt ook hybride wilde katten en savannahkatten (niet meegeteld).
 - **Fréjus (Var)**: dierentuin dicht sinds 30-8-2026; na eind november 2026 nagaan waar de katten zijn gebleven.

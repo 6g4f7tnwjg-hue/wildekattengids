@@ -134,13 +134,22 @@ wr(BRON + "start.html", START)
 # De foto's staan niet in de pagina zelf maar als losse bestanden ernaast (img/n.webp). Publiceren met
 # Artifact: file_path _claude/claude.html en files = de inhoud van _claude/bestanden.json.
 # Zo telt voor de 16 MB-grens alleen de tekst en de gegevens.
+# Ook elke landgids staat als los bestand ernaast (g/<land>.js); de pagina laadt die pas als je het land opent.
+# Zo geldt de grens van 16 MB per gids in plaats van voor alles samen.
 IMG = ["img/" + f for f in imgs]
-wr(ROOT + "_claude/bestanden.json", json.dumps({"img/" + f: "img/" + f for f in imgs}, indent=0) + "\n")
+shutil.rmtree(ROOT + "_claude/g", ignore_errors=True)
+for c, t_ in G.items():
+    # alleen ASCII (é als \\u00e9): dan maakt de tekencodering waarmee het bestand wordt geserveerd niet uit
+    gj = "window.__G=window.__G||{};window.__G[" + json.dumps(c) + "]=" + json.dumps(t_, ensure_ascii=True).replace("</", "<\\/").replace("<!--", "<\\!--") + ";\n"
+    wr(ROOT + f"_claude/g/{c}.js", gj)
+    assert len(gj.encode()) < 15.8e6, f"gids {c} te groot voor de Claude-pagina (grens 16 MB per bestand)"
+wr(ROOT + "_claude/bestanden.json", json.dumps({**{"img/" + f: "img/" + f for f in imgs}, **{f"g/{c}.js": f"_claude/g/{c}.js" for c in G}}, indent=0) + "\n")
 k = START.index("<script>\n(function(){")
-claude = (rd(BRON + "artifact_kop.html") + "<script>window.__IMG=" + json.dumps(IMG) + ";\nwindow.__G=" + js(G)
-          + ";\nwindow.__START=" + js(START) + ";</script>\n" + START[k:])
+claude = (rd(BRON + "artifact_kop.html") + "<script>window.__IMG=" + json.dumps(IMG) + ";\nwindow.__G={};"
+          + "\nwindow.__START=" + js(START) + ";</script>\n" + START[k:])
 wr(ROOT + "_claude/claude.html", claude)
-print("Claude-pagina:", ROOT + "_claude/claude.html", round(len(claude.encode()) / 1e6, 1), "MB")
+print("Claude-pagina:", ROOT + "_claude/claude.html", round(len(claude.encode()) / 1e6, 1), "MB; gidsen:",
+      ", ".join(f"{c} {round(os.path.getsize(ROOT + f'_claude/g/{c}.js') / 1e6, 1)}" for c in G), "MB")
 assert len(claude.encode()) < 15.8e6, "Claude-pagina te groot (grens 16 MB)"
 if "--geen-web" in sys.argv:
     sys.exit(0)

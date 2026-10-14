@@ -10,7 +10,6 @@ Bijgehouden door Claude. Bijwerken als een punt is opgelost.
 - **Maandelijkse controle**: een geplande taak die nieuws over geboortes, vertrek en aankomst zoekt en voorstellen doet.
 - **Volgend land**: keuze volgt (voorstel: eerst Zwitserland en Oostenrijk, daarna het Verenigd Koninkrijk; Spanje kan ook).
 - **Fréjus (Var)**: dierentuin dicht sinds 30-8-2026; na eind november 2026 nagaan waar de katten zijn gebleven.
-- **Parc Saint-Léger (Oise)**, ex-Les Grands Félins: zijn er nog katten te zien? Bellen: 03 44 84 42 76.
 - **Onderzoeksagenten**: in de opdracht zetten dat ze geen persoonlijke gegevens meesturen (ook niet als contact in een User-Agent).
 
 - **Controle op gemiste parken in Frankrijk (13-10-2026)**: vergeleken met de officiële lijst (ICPE-rubriek 2140, Géorisques: 196 vergunde dierenparken), Zootierliste en Nature et Zoo; geen gemiste locaties met katten. Nog onduidelijk, mogelijk navragen bij de DDPP: een vergunning op naam van een particulier in Grignols (Gironde) en de vereniging Gaia in Allennes-les-Marais (Nord); van geen van beide is een site of bezoekinformatie gevonden.
@@ -19,6 +18,7 @@ Bijgehouden door Claude. Bijwerken als een punt is opgelost.
 
 ## Bewust niet in de gids (opnieuw bekijken als er iets verandert)
 
+- **Parc Saint-Léger (Saint-Léger-en-Bray, Oise)**, ex-Les Grands Félins: eigen plattegrond 2026 noemt geen katten, een gidsfiche (parcsetloisirs.fr) wel panter, serval en lynx. Staat onder ‘geen katachtigen’; niet nabellen (besluit 14-10-2026). Opnieuw bekijken als er een nieuwe bron opduikt (park weer open april 2027).
 - **ROAAR (Trets)**: opvang van ex-circustijgers en -leeuwen; alleen bezoek voor peters (500 euro per jaar).
 - **Caresse de tigre (Seine-Maritime)**: omstreden opvang; geen bezoekinformatie, geen nieuws na 2023.
 - **Big Cats (Mézos, Landes)**: opening door de prefectuur geweigerd (2025).

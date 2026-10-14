@@ -18,7 +18,6 @@ Bijgehouden door Claude. Bijwerken als een punt is opgelost.
 
 ## Bewust niet in de gids (opnieuw bekijken als er iets verandert)
 
-- **Parc Saint-Léger (Saint-Léger-en-Bray, Oise)**, ex-Les Grands Félins: eigen plattegrond 2026 noemt geen katten, een gidsfiche (parcsetloisirs.fr) wel panter, serval en lynx. Staat onder ‘geen katachtigen’; niet nabellen (besluit 14-10-2026). Opnieuw bekijken als er een nieuwe bron opduikt (park weer open april 2027).
 - **ROAAR (Trets)**: opvang van ex-circustijgers en -leeuwen; alleen bezoek voor peters (500 euro per jaar).
 - **Caresse de tigre (Seine-Maritime)**: omstreden opvang; geen bezoekinformatie, geen nieuws na 2023.
 - **Big Cats (Mézos, Landes)**: opening door de prefectuur geweigerd (2025).
@@ -85,6 +84,10 @@ Regel (voor alle landen, 14-10-2026): bevestigd alleen met een recente bron (202
 - [w] Zoo Berlin – Zuidelijke tijgerkat: Er hangt nog een bord (4-2025, 6-2026) en het bestand eind 2024 was 1 kater, maar laatst gezien 7-2024.
 
 ### Frankrijk
+
+**Hauts-de-France**
+
+- [?] Parc Saint-Léger – Parc animalier (Saint-Léger-en-Bray), ex-Les Grands Félins – panter, serval, lynx: eigen plattegrond 2026 noemt geen katten, een gidsfiche (parcsetloisirs.fr, 2026) wel. Staat in de gids onder ‘geen katachtigen’. Niet nabellen (14-10-2026); opnieuw bekijken bij een nieuwe bron of als het park in april 2027 weer opengaat.
 
 **Auvergne-Rhône-Alpes**
 

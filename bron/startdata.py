@@ -22,7 +22,7 @@ def _vert(nl, regels):
 def n4(n, land):
     """[nl, en, fr, de] voor 'aantal jongen'; de derde taal van een gids is Frans (België, Luxemburg, Frankrijk) of Duits (Duitsland)."""
     fr = (n[2] if len(n) > 2 and land in ("be", "lu", "fr") else "") or _vert(n[0], _N_FR)
-    de = (n[2] if len(n) > 2 and land == "de" else "") or _vert(n[0], _N_DE)
+    de = (n[2] if len(n) > 2 and land in ("de", "at", "ch") else "") or _vert(n[0], _N_DE)
     return [n[0], n[1], fr, de]
 
 def _young(o, sp_en, fr, today, pre):

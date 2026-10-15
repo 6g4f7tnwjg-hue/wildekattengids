@@ -1,0 +1,223 @@
+{
+ "no": 39,
+ "intro_nl": "Het is ijskoud op het grasland van Ruoergai, ruim 3400 meter hoog. In de lichtbundel licht een paar ogen op. Het blijkt een gedrongen, zandgrijze kat met pluimpjes op de oren en een geringde staart, die rustig op een rots blijft zitten en je aankijkt. Dit is de Chinese bergkat, de minst bekende wilde kat van Azië en alleen te vinden op het oosten van het Tibetaans Plateau. Met een goede lokale gids en een paar nachten de tijd zien de meeste recente bezoekers hem, maar er zijn ook groepen die met lege handen vertrekken. Kans: 3 – reële kans, als je genoeg nachten uittrekt.",
+ "intro_en": "It is bitterly cold on the Ruoergai grassland, well over 3,400 metres up. A pair of eyes flares in the spotlight. It turns out to be a stocky, sandy-grey cat with tufted ears and a ringed tail, sitting calmly on a rock and staring back at you. This is the Chinese mountain cat, the least known wild cat in Asia, found only on the eastern Tibetan Plateau. With a good local guide and a few nights to spare, most recent visitors find one, but some groups go home empty-handed. Chance: 3 – a fair chance, if you allow enough nights.",
+ "spots": [
+  {
+   "id": "cn-ruoergai",
+   "name_nl": "Ruoergai (Zoige)",
+   "name_en": "Ruoergai (Zoige)",
+   "area_nl": "Graslanden van Ruoergai rond Zoige, incl. de Zasage-vallei, Ngawa (Noord-Sichuan)",
+   "area_en": "Ruoergai grasslands around Zoige, incl. the Zasage valley, Ngawa (northern Sichuan)",
+   "country_nl": "China",
+   "country_en": "China",
+   "cont": "asia",
+   "lat": 33.6,
+   "lon": 102.9,
+   "score": 3,
+   "why_nl": "Veel groepen zagen hier de bergkat (o.a. 2016, 2018, maart 2025 en augustus 2026, vaak na één tot drie nachten zoeken), maar in december 2024 en februari 2025 werd hij gemist en gidsen melden dat hij sinds corona lastiger te vinden is.",
+   "why_en": "Many groups have seen the cat here (including 2016, 2018, March 2025 and August 2026, often after one to three nights of searching), but it was missed in December 2024 and February 2025 and guides report it has become harder to find since COVID.",
+   "season_nl": "Het hele jaar mogelijk; zomer en najaar zijn prettiger, in de winter kunnen sneeuw, ijzel en kou van -15 °C nachttochten onmogelijk maken.",
+   "season_en": "Possible year-round; summer and autumn are more comfortable, while in winter snow, ice and -15 °C cold can make night drives impossible.",
+   "time_nl": "Vooral 's nachts met lamp en warmtebeeldkijker; soms in de schemering of overdag in gebieden met veel pika's.",
+   "time_en": "Mainly at night with a spotlight and thermal scope; sometimes at dusk or by day in areas with many pikas.",
+   "trip_nl": "Nachtelijke spotlighttochten per auto met een gespecialiseerde lokale zoogdiergids vanuit Zoige, minimaal 3 à 4 nachten; vaak gecombineerd met Tangjiahe of het Baxi-bos.",
+   "trip_en": "Night spotlighting drives by car with a specialist local mammal guide from Zoige, at least 3 to 4 nights; often combined with Tangjiahe or the Baxi forest.",
+   "sources": [
+    6,
+    7,
+    8,
+    9,
+    11,
+    12
+   ]
+  },
+  {
+   "id": "cn-langmusi",
+   "name_nl": "Langmusi",
+   "name_en": "Langmusi",
+   "area_nl": "Graslanden en struweel rond Langmusi, op de grens van Sichuan en Gansu",
+   "area_en": "Grasslands and scrub around Langmusi, on the Sichuan–Gansu border",
+   "country_nl": "China",
+   "country_en": "China",
+   "cont": "asia",
+   "lat": 34.1,
+   "lon": 102.6,
+   "score": 3,
+   "why_nl": "Een groep in maart 2025 vond de bergkat hier 'gemakkelijk', met twee keer zicht overdag vlak bij het hotel, en een andere groep zag er dezelfde maand een bij nachtelijk spotlighten tussen Langmusi en Zasage.",
+   "why_en": "A group in March 2025 found the cat here 'easily', including two daylight views close to their hotel, and another group saw one the same month while spotlighting between Langmusi and Zasage.",
+   "season_nl": "Het hele jaar; de verslagen komen vooral uit maart.",
+   "season_en": "Year-round; the reports mostly date from March.",
+   "time_nl": "'s Nachts langs velden met lang gras en struiken; soms overdag.",
+   "time_en": "At night along fields of long grass and shrubs; sometimes by day.",
+   "trip_nl": "Overnachten in Langmusi en 's avonds spotlighten en overdag rondrijden met een lokale gids, 2 à 3 nachten.",
+   "trip_en": "Stay in Langmusi, spotlighting in the evening and driving around by day with a local guide, 2 to 3 nights.",
+   "sources": [
+    6,
+    10
+   ]
+  },
+  {
+   "id": "cn-qilian-menyuan",
+   "name_nl": "Qilian-gebergte (Noordoost-Qinghai)",
+   "name_en": "Qilian Mountains (north-eastern Qinghai)",
+   "area_nl": "Berggraslanden in het Qinghai-deel van het Qilian-gebergte en Nationaal Park Qilian Mountain, o.a. rond Menyuan",
+   "area_en": "Montane grasslands in the Qinghai part of the Qilian Mountains and Qilian Mountain National Park, including around Menyuan",
+   "country_nl": "China",
+   "country_en": "China",
+   "cont": "asia",
+   "lat": 37.6,
+   "lon": 101.0,
+   "score": 3,
+   "why_nl": "Een bezoeker zag hier in mei 2026 in één avond twee keer een bergkat (voor zonsondergang en bij spotlighten), en onderzoekers noemen Menyuan een bolwerk van de soort; maar er is nog maar weinig ervaring van spotters.",
+   "why_en": "One visitor saw a mountain cat twice in a single evening here in May 2026 (before sunset and while spotlighting), and researchers call Menyuan a stronghold of the species; but spotter experience is still limited.",
+   "season_nl": "Late lente tot herfst is het prettigst; jongen worden vooral in mei geboren.",
+   "season_en": "Late spring to autumn is most pleasant; kittens are mostly born in May.",
+   "time_nl": "Late middag tot zonsondergang en 's nachts; onderzoek in Menyuan toont activiteit overdag met een piek in de avond.",
+   "time_en": "Late afternoon to sunset and at night; research in Menyuan shows daytime activity with an evening peak.",
+   "trip_nl": "Rondrijden en 's nachts spotlighten in het berggrasland met een lokale zoogdiergids, enkele uren rijden vanuit Xining; reken op 1 à 3 nachten.",
+   "trip_en": "Driving and night spotlighting in the montane grassland with a local mammal guide, a few hours' drive from Xining; allow 1 to 3 nights.",
+   "sources": [
+    2,
+    13,
+    14
+   ]
+  },
+  {
+   "id": "cn-sanjiangyuan-golog",
+   "name_nl": "Sanjiangyuan (Golog)",
+   "name_en": "Sanjiangyuan (Golog)",
+   "area_nl": "Hoogvlakte van Sanjiangyuan in de prefectuur Golog, langs de route Jiuzhi–Maduo–Xiangride (Zuidoost-Qinghai)",
+   "area_en": "Sanjiangyuan high plateau in Golog prefecture, along the Jiuzhi–Maduo–Xiangride route (south-eastern Qinghai)",
+   "country_nl": "China",
+   "country_en": "China",
+   "cont": "asia",
+   "lat": 34.5,
+   "lon": 99.0,
+   "score": 2,
+   "why_nl": "Onderzoekers vonden in deze regio broedholen, en een groep zag in februari 2025 bij toeval overdag een jagende bergkat in de sneeuw, maar gericht zoeken hier is nauwelijks beschreven.",
+   "why_en": "Researchers found breeding dens in this region, and a group chanced on a mountain cat hunting in the snow by day in February 2025, but targeted searches here are barely documented.",
+   "season_nl": "Het hele jaar; in de winter zijn wegen vaak glad.",
+   "season_en": "Year-round; roads are often icy in winter.",
+   "time_nl": "Overdag scannen van graslanden met pika's en 's avonds spotlighten.",
+   "time_en": "Scanning pika-rich grassland by day and spotlighting in the evening.",
+   "trip_nl": "Meestal een bonus onderweg naar de Gouli-dalen (lynx, manoel, sneeuwpanter); lange autoritten met een lokale gids.",
+   "trip_en": "Usually a bonus on the way to the Gouli valleys (lynx, Pallas's cat, snow leopard); long drives with a local guide.",
+   "sources": [
+    2,
+    5,
+    7
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Een warmtebeeldkijker is je beste wapen: bezoekers die hem vonden, zagen de kat vaak eerst als warmtevlek vanuit de rijdende auto.",
+  "Zoek waar pika's in grote kolonies leven, bij lang gras, struweel en rotsblokken; daar jaagt hij, en in pikarijke gebieden ook overdag.",
+  "Scan in de late middag en schemering hellingen, rotsen en oude groeves vanaf een vast punt; zo vond een groep in 2018 een moeder met jong.",
+  "Let op het kenmerkende uiterlijk: zandgrijze vacht, pluimpjes op de oren en een geringde staart met donkere punt. Er lopen ook bastaarden met huiskatten rond.",
+  "Plan ruim: sneeuw, ijzel en wind kunnen nachten kosten. Reken op minimaal drie à vier nachten en acclimatiseer, want je zit boven 3000 meter.",
+  "Hij rust en werpt in oude marmot- of dassenholen. Blijf altijd op afstand van holen en zoek ze niet bewust op."
+ ],
+ "tips_en": [
+  "A thermal scope is your best tool: visitors who found one often first picked up the cat as a heat signature from the moving car.",
+  "Search where pikas live in big colonies, near long grass, scrub and boulders; that is where it hunts, and in pika-rich areas also by day.",
+  "In the late afternoon and at dusk, scan slopes, rocks and old quarries from a fixed point; that is how one group found a mother and kitten in 2018.",
+  "Learn the look: sandy-grey coat, tufted ears and a ringed tail with a dark tip. Hybrids with domestic cats also occur.",
+  "Plan generously: snow, ice and wind can cost you nights. Allow at least three to four nights and acclimatise, as you will be above 3,000 m.",
+  "It rests and gives birth in old marmot or badger burrows. Always keep your distance from burrows and never seek them out on purpose."
+ ],
+ "threats_nl": [
+  "Vergiftigingscampagnes tegen pika's en woelmuizen: minder prooi en doorvergiftiging.",
+  "Kruising met huiskatten, waardoor de soort genetisch kan 'verwateren'.",
+  "Jacht en illegale handel in pelzen voor traditionele mutsen en kleding.",
+  "Overbegrazing, wegen en infrastructuur die het leefgebied versnipperen; verkeersslachtoffers.",
+  "Loslopende honden, die in Sanjiangyuan jonge bergkatten doodden."
+ ],
+ "threats_en": [
+  "Poisoning campaigns against pikas and voles: less prey and secondary poisoning.",
+  "Hybridisation with domestic cats, which may dilute the species genetically.",
+  "Hunting and illegal trade in pelts for traditional hats and clothing.",
+  "Overgrazing, roads and infrastructure fragmenting the habitat; road kills.",
+  "Free-roaming dogs, which killed young mountain cats in Sanjiangyuan."
+ ],
+ "status_note_nl": "Op de Rode Lijst van de IUCN staat de Chinese bergkat als Kwetsbaar, met naar schatting minder dan 10.000 volwassen dieren en een dalende trend. Op de nationale Rode Lijst van China geldt hij zelfs als Ernstig bedreigd.",
+ "status_note_en": "The IUCN Red List classifies the Chinese mountain cat as Vulnerable, with an estimated fewer than 10,000 mature individuals and a decreasing trend. China's national Red List even lists it as Critically Endangered.",
+ "sources": [
+  {
+   "id": 1,
+   "title": "Chinese mountain cat – species account (IUCN SSC Cat Specialist Group)",
+   "url": "https://www.catsg.org/living-species-chinesemountaincat"
+  },
+  {
+   "id": 2,
+   "title": "Easy to catch yet little known: meet the Chinese mountain cat (Mongabay, 2024)",
+   "url": "https://news.mongabay.com/2024/11/easy-to-catch-yet-little-known-meet-the-chinese-mountain-cat/"
+  },
+  {
+   "id": 3,
+   "title": "Distribution and conservation status of the endemic Chinese mountain cat Felis bieti (Oryx, 2004)",
+   "url": "https://core-cms.cambridgecore.org/core/services/aop-cambridge-core/content/view/8C58ADA7323400F469550239A3FD34E3/S0030605304000092a.pdf/distribution-and-conservation-status-of-the-endemic-chinese-mountain-cat-felis-bieti.pdf"
+  },
+  {
+   "id": 4,
+   "title": "Review of Chinese mountain cat taxonomy and hybridisation (Biodiversity Science, 2022)",
+   "url": "https://www.biodiversity-science.net/EN/Y2022/V30/I9/22396"
+  },
+  {
+   "id": 5,
+   "title": "By their foes and by their kins – threats to Chinese mountain cats in Sanjiangyuan (preprint, 2023)",
+   "url": "https://essopenarchive.org/doi/full/10.22541/au.169685367.72461484/v1"
+  },
+  {
+   "id": 6,
+   "title": "Trip report Sichuan & Qinghai, March 2025 (mammalwatching.com)",
+   "url": "https://mammalwatching.com/wp-content/uploads/2025/03/China-Trip-Report_20250316.pdf"
+  },
+  {
+   "id": 7,
+   "title": "Trip report Sichuan–Qinghai winter mammal watching, Feb–Mar 2025 (mammalwatching.com)",
+   "url": "https://mammalwatching.com/wp-content/uploads/2025/02/China-Winter-Mammal-Watching.pdf"
+  },
+  {
+   "id": 8,
+   "title": "Trip report Sichuan, December 2024 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/community-post/sichuan-and-quick-stops-in-lijiang-and-nanjing-december-2024/"
+  },
+  {
+   "id": 9,
+   "title": "Trip report Tibetan Plateau & Ruoergai, July–August 2026 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2026/08/My-Big-Cat-Year-Trip-Report-China-260726-to-130826.pdf"
+  },
+  {
+   "id": 10,
+   "title": "Sightings log Sichuan mammals tour, March 2025 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2025/11/Sichuan-Mammals-Tour-Mar-2025.pdf"
+  },
+  {
+   "id": 11,
+   "title": "Trip report China, September 2018 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/JW-China-2018.pdf"
+  },
+  {
+   "id": 12,
+   "title": "Trip report Sichuan & Qinghai, 2016 (mammalwatching.com)",
+   "url": "http://mammalwatching.com/Palearctic/Otherreports/NG%20Qinghai%202016.pdf"
+  },
+  {
+   "id": 13,
+   "title": "Trip report Qinghai: Gouli Valley, Qilian Mountains and Xining, 2026 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/community-post/qinghais-gouli-valley-qilian-mountains-and-xining-china2026/"
+  },
+  {
+   "id": 14,
+   "title": "Rare animals caught on camera in Qilian Mountain National Park (China Daily, 2021)",
+   "url": "https://www.chinadailyhk.com/article/160832"
+  },
+  {
+   "id": 15,
+   "title": "Trip report Shiqu County, Sichuan, September 2021 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/TJ-Sichuan-2021.pdf"
+  }
+ ],
+ "doubts": "Ruoergai krijgt kans 3 en niet 4: veel groepen slagen, maar in december 2024 en februari 2025 werd hij gemist, en een gids en een bezoeker (2026) zeggen dat hij 'regelmatig gemist' wordt en sinds corona lastiger is. Langmusi ligt vlak bij Ruoergai (Sichuan/Gansu-grens); als aparte spot gehouden omdat een groep er in 2025 de bergkat 'gemakkelijk' vond, en het is de enige spot aan de Gansu-kant. Voor Gansu zelf (bijv. Lianhuashan) vond ik geen spottersverslagen; weggelaten. Qilian/Menyuan: kans 3 steunt op slechts één spottersverslag (mei 2026, één nacht, twee waarnemingen) plus onderzoek dat Menyuan een bolwerk noemt; de exacte plek in het verslag (4 uur van Xining) is niet genoemd, dus coördinaat is een ruwe schatting van het Qinghai-deel van het Qilian-gebergte. Rond Xining/Huzhu en Yushu/Nangqian vond ik geen betrouwbare spotterswaarnemingen. Het verslag uit Shiqu/Yushu (2021, bron 15) betrof expliciet een 'mix-blooded' bergkat (bastaard met huiskat) die via een lokale bewoner werd getoond; daarom geen spot, alleen genoemd als illustratie van hybridisatie. Bron 3 (Oryx 2004) en 14 (China Daily) zag ik alleen in zoekresultaten, niet volledig geopend. Taxonomie: een review uit 2022 (bron 4) noemt dat genetisch onderzoek de bergkat dicht bij de Aziatische wilde kat plaatst en dat hij mogelijk een ondersoort is; dat heb ik buiten de tekst gelaten. Controleer eventueel de soortnaam 'manoel' voor Pallas' kat in deze gids. Tourbedrijven en gidsnamen uit de verslagen zijn bewust weggelaten."
+}

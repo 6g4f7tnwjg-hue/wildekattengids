@@ -543,6 +543,35 @@
     44,
     45
    ]
+  },
+  {
+   "id": "mn-mongolian-steppe",
+   "species": [
+    36
+   ],
+   "name_nl": "Mongoolse steppe",
+   "name_en": "Mongolian steppe",
+   "area_nl": "Graslandsteppe van Centraal- en Oost-Mongolië",
+   "area_en": "Grassland steppe of central and eastern Mongolia",
+   "country_nl": "Mongolië",
+   "country_en": "Mongolia",
+   "cont": "asia",
+   "lat": 47.5,
+   "lon": 108.0,
+   "score": 5,
+   "why_nl": "Gespecialiseerde manulexcursies zagen in 2022–2025 elk jaar meerdere katten, in 2023 zestien verschillende dieren en in 2025 op elke velddag een manul.",
+   "why_en": "Specialist Pallas's cat excursions saw several cats every year in 2022–2025, sixteen different animals in 2023 and a Pallas's cat on every field day in 2025.",
+   "season_nl": "Eind juni t/m augustus, als de jongen buiten komen; in de winter wordt het ook geprobeerd.",
+   "season_en": "Late June to August, when the kittens emerge; winter trips are also tried.",
+   "time_nl": "Vroege ochtend en avondschemering.",
+   "time_en": "Early morning and dusk.",
+   "trip_nl": "Gespecialiseerde manulexcursie met lokale spotters, kamperend op de steppe, 6 à 10 dagen; er zijn ook fotoreizen van enkele weken.",
+   "trip_en": "Specialist Pallas's cat excursion with local spotters, camping on the steppe, 6 to 10 days; multi-week photo tours also run.",
+   "sources": [
+    37,
+    38,
+    39
+   ]
   }
  ],
  "sources": [
@@ -740,6 +769,21 @@
    "id": 45,
    "title": "Point Reyes and Monterey Bay report March 2023 – no bobcat (mammalwatching.com)",
    "url": "https://www.mammalwatching.com/wp-content/uploads/2023/03/Point-Reyes-and-Monterey-Bay-Report-March-2023.pdf"
+  },
+  {
+   "id": 37,
+   "title": "Manul of Mongolia photo tour, trip report 2025 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2025/10/Cat-Expeditions-Manul-of-Mongolia-Tour-1-Trip-Report-2025.pdf"
+  },
+  {
+   "id": 38,
+   "title": "Manul / Pallas's cat trip reports 2022–2025 (mammalwatching.com tag page)",
+   "url": "https://www.mammalwatching.com/tag/manul/"
+  },
+  {
+   "id": 39,
+   "title": "Trip report: Mongolia 2022 – Pallas's cat near Hustai (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/?p=41755"
   }
  ]
 }

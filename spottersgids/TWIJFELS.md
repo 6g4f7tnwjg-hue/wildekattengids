@@ -1,6 +1,6 @@
 # Spottersgids – twijfels en keuzes uit het bronnenonderzoek (ronde 1: Europa)
 
-Aangepast bij de eindredactie: Lahemaa (lynx) van 4 naar 3; Kruger/Satara (Afrikaanse wilde kat) van 3 naar 2; bronnen van reisorganisaties en lodges verwijderd; Mongoolse steppe (manoel) en Jhalana uit de topspots gehaald (manoelreizen kijken bij holen met jongen; regio onduidelijk; Jhalana nog niet op de luipaardpagina).
+Aangepast bij de eindredactie: Lahemaa (lynx) van 4 naar 3; Kruger/Satara (Afrikaanse wilde kat) van 3 naar 2; bronnen van reisorganisaties en lodges verwijderd; Jhalana uit de topspots gehaald (nog niet op de luipaardpagina). Mongoolse steppe (manoel) op verzoek wél als topspot opgenomen; de reisverslagen noemen Oost-Mongolië (2025) en de omgeving van Hustai (2022), daarom staat de marker globaal op de steppe van Centraal- en Oost-Mongolië.
 
 ## Euraziatische lynx (nr. 24)
 

@@ -1,27 +1,27 @@
 # Bron van de Wilde katachtigen-gids
 
 Alles wordt uit deze map gebouwd. Pas nooit de gegenereerde bestanden in de hoofdmap aan
-(`index.html`, `soort/`, `top10/`, `nederland/`, `belgie/`, `luxemburg/`, `duitsland/`, `frankrijk/`, `oostenrijk/`, `zwitserland/`, `verenigd-koninkrijk/`, `italie/`, `sitemap.xml`): die worden bij elke bouw overschreven.
+(`index.html`, `soort/`, `top10/`, `nederland/`, `belgie/`, `luxemburg/`, `duitsland/`, `frankrijk/`, `oostenrijk/`, `zwitserland/`, `verenigd-koninkrijk/`, `italie/`, `spanje/`, `sitemap.xml`): die worden bij elke bouw overschreven.
 
 ## Wat staat waar
 
 | Bestand | Inhoud |
 |---|---|
-| `gidsen/nl.html`, `be.html`, `lu.html`, `de.html`, `fr.html`, `at.html`, `ch.html`, `uk.html`, `it.html` | De landengidsen. Alle gegevens (soorten, waarnemingen `R`, locaties `LOCS`, jongen `YOUNG`) staan in het script van de gids; Duitsland, Frankrijk, Oostenrijk, Zwitserland en het VK hebben één blok per deelstaat of regio, Italië is één pagina met een filter per regio (`REGIO`, `REGN`). Talen (regel: Nederlands, Engels en de landstaal of -talen): NL/EN (Nederland, VK), NL/EN/FR (België, Frankrijk), NL/EN/DE (Duitsland, Oostenrijk), NL/EN/FR/DE (Luxemburg), NL/EN/DE/FR/IT (Zwitserland), NL/EN/IT (Italië). Een gids met één derde taal gebruikt `T(nl,en,x)` en `l-x`-elementen; Zwitserland en Luxemburg gebruiken de taaltabel `LGS` (`T(nl,en,...)` in de volgorde van `LGS`, woordenlijsten per taal zoals `SPFR`, `R5IT`, `ITD`). Foto's staan erin als `@@IMGn@@`. |
-| `start.html` | De startpagina. De gegevens in `const D` (kaartstippen, aantallen, recente geboortes) worden bij elke bouw opnieuw berekend uit de gidsen. Kaartvormen en de deelstaat-notitie blijven staan. Talen: Nederlands, Engels, Frans, Duits en Italiaans (`T(nl,en,fr,de,it)` en `l-fr`/`l-de`/`l-it`-elementen). Onder de titel staat een regel met aantallen (landen · locaties · soorten), berekend uit `D`. |
+| `gidsen/nl.html`, `be.html`, `lu.html`, `de.html`, `fr.html`, `at.html`, `ch.html`, `uk.html`, `it.html`, `es.html` | De landengidsen. Alle gegevens (soorten, waarnemingen `R`, locaties `LOCS`, jongen `YOUNG`) staan in het script van de gids; Duitsland, Frankrijk, Oostenrijk, Zwitserland en het VK hebben één blok per deelstaat of regio, Italië en Spanje zijn één pagina met een filter per regio (`REGIO`, `REGN`; Spanje per autonome gemeenschap). Talen (regel: Nederlands, Engels en de landstaal of -talen): NL/EN (Nederland, VK), NL/EN/FR (België, Frankrijk), NL/EN/DE (Duitsland, Oostenrijk), NL/EN/FR/DE (Luxemburg), NL/EN/DE/FR/IT (Zwitserland), NL/EN/IT (Italië), NL/EN/ES (Spanje). Een gids met één derde taal gebruikt `T(nl,en,x)` en `l-x`-elementen; Zwitserland en Luxemburg gebruiken de taaltabel `LGS` (`T(nl,en,...)` in de volgorde van `LGS`, woordenlijsten per taal zoals `SPFR`, `R5IT`, `ITD`). Foto's staan erin als `@@IMGn@@`. |
+| `start.html` | De startpagina. De gegevens in `const D` (kaartstippen, aantallen, recente geboortes) worden bij elke bouw opnieuw berekend uit de gidsen. Kaartvormen en de deelstaat-notitie blijven staan. Talen: Nederlands, Engels, Frans, Duits, Italiaans en Spaans (`T(nl,en,fr,de,it,es)` en `l-fr`/`l-de`/`l-it`/`l-es`-elementen). Onder de titel staat een regel met aantallen (landen · locaties · soorten), berekend uit `D`. |
 | `../img/` | Alle foto's; `n.webp` hoort bij `@@IMGn@@`. Nieuwe foto: volgend nummer toevoegen. |
 | `artifact_kop.html`, `web_kop.html` | Vaste kopjes voor de Claude-pagina en de website. |
-| `top10.json` | De top 10 om te bezoeken (blok op de startpagina en pagina `/top10/`, op de Claude-pagina `#top10`). `vast` staat in die volgorde bovenaan, met de uitleg in vier talen; is de lijst korter dan 10 of verdwijnt een park uit de gids, dan vult de bouw aan op score. Volgorde of uitleg veranderen: alleen dit bestand aanpassen. |
-| `franse_namen.json`, `duitse_namen.json`, `italiaanse_namen.json` | Franse, Duitse en Italiaanse soortnamen voor de startgegevens. |
+| `top10.json` | De top 10 om te bezoeken (blok op de startpagina en pagina `/top10/`, op de Claude-pagina `#top10`). `vast` staat in die volgorde bovenaan, met de uitleg in zes talen (nl, en, fr, de, it, es); is de lijst korter dan 10 of verdwijnt een park uit de gids, dan vult de bouw aan op score. Volgorde of uitleg veranderen: alleen dit bestand aanpassen. |
+| `franse_namen.json`, `duitse_namen.json`, `italiaanse_namen.json`, `spaanse_namen.json` | Franse, Duitse, Italiaanse en Spaanse soortnamen voor de startgegevens. |
 | `taalmenu.js` | Het taalmenu (wereldbol met de taalcode; de lijst toont de talen van de pagina in hun eigen naam). De bouw zet het in de startpagina en in elke gids. |
-| `locatietypes.json` | De vaste lijst van locatietypes en labels. Elke locatie heeft in `LOCINFO` één `type` (de namen uit deze lijst) en `labels` (sleutels uit deze lijst). Dierentuin = lid van EAZA, NVD, VdZ of UIZA; anders dierenpark. |
+| `locatietypes.json` | De vaste lijst van locatietypes en labels. Elke locatie heeft in `LOCINFO` één `type` (de namen uit deze lijst) en `labels` (sleutels uit deze lijst). Dierentuin = lid van EAZA, NVD, VdZ, UIZA of AIZA; anders dierenpark. |
 | `locatietypes.js` | Filterknoppen, labels en types in de gidsen; de bouw zet dit achter het script van elke gids en deelstaat. |
 | `bouw.py`, `startdata.py`, `extract.js` | De bouw. Deelstaten en regio’s staan in `STATES` en `REGIOS` in `bouw.py` (samen `DEEL`). |
 
 ## Bijwerken
 
 1. Pas de gids aan in `bron/gidsen/…`.
-2. Bouw: `python3 bron/bouw.py` (vereist node en Python met playwright; duurt een paar minuten door de losse pagina's).
+2. Bouw: `python3 bron/bouw.py` (vereist node en Python met playwright; duurt een paar minuten door de losse pagina's). In de Claude-cloudomgeving: `pip install playwright==1.56.0`, want die versie past bij de Chromium in `/opt/pw-browsers` (chromium-1194); de nieuwste Playwright zoekt een andere browser.
 3. Controleer `git diff`, commit en push → de website (https://yeetkitty.github.io/wildekattengids/) is binnen een paar minuten bij.
 4. Publiceer `_claude/claude.html` als update van de Claude-pagina
    (https://claude.ai/code/artifact/6d4b4553-65b1-4dc3-82b1-41c087dcc110), met als `files` de inhoud van
@@ -47,3 +47,11 @@ Alleen de Claude-pagina bouwen: `python3 bron/bouw.py --geen-web`.
 - **Nieuw land met één pagina en regio’s** (zoals Italië): neem de Belgische gids als basis (één pagina met groepen per provincie) en voeg een regiofilter toe. Locaties zonder vaste plek (reizende circussen) krijgen geen coördinaten; de kaart van de gids en van de startpagina slaan ze over.
 - **Startpagina en een nieuw land**: landcode in `F`/`LAND` (bouw.py) en in `C`, `ORDER`, `FLAG`, de kleuren (`--c-xx`, `--t-xx`), de kaartlijsten en de routeringsregels van `start.html`; een kaartvorm in `D[xx].poly`; en het kaartkader (`FULL`) groter maken als het land buiten het kader valt. Ook de landenlijsten in titels en beschrijvingen (in vijf talen) aanpassen.
 - **Onderzoek met meerdere agenten.** Geef elke agent een eigen naamvoorvoegsel voor zijn bestanden; parallelle agenten overschreven elkaars bestanden met dezelfde naam. Agenten lopen tegen de grens van 200 zoekopdrachten aan: verdeel het land in kleinere regio’s en start een vervolgagent voor wat is blijven liggen.
+
+## Spanje toevoegen: lessen (oktober 2026)
+
+- **Een gids afleiden van een bestaande gids.** De Spaanse gids is gemaakt door de Italiaanse gids om te zetten met een script: eerst de taal (alle `l-it`-teksten, de taaltabellen `SPIT`→`SPES`, `ITD`→`ESD` enz., en het derde argument van `T()` naar het Spaans), daarna de gegevens (`R`, `LOCS`, `LOCINFO`, `REGIO`, `REGN`, `TWX`, `YOUNG` …) en tot slot de vaste tekstblokken (In het kort, lijsten, aanbevelingen, kleurvarianten, uitleg). Let op: hele tekstblokken (`<div class="l-xx">`) worden niet door een vertaaltabel geraakt en moeten allemaal opnieuw geschreven worden.
+- **Franse resten in de Italiaanse gids**: het derde argument van `T()` bevatte op een paar plekken Frans. Controleer bij een nieuwe taal alle `T()`-aanroepen met drie of meer argumenten.
+- **Zesde taal op de hoofdpagina**: alle 87 `T()`-aanroepen kregen een zesde argument, plus `l-es`-teksten, `C[land].es`, `STAT`, `kname` (soortnaam index 11), `MND.es` en de datumnotatie (“15 de octubre de 2026”). `startdata.py` levert de Spaanse soortnamen op index 7 (per locatie) en 11 (per soort).
+- **Kaart zonder eilanden**: op verzoek staan de Balearen en de Canarische Eilanden niet op de kaarten; die locaties hebben geen coördinaten in `LOCS` (zoals reizende circussen) en staan wel in de lijst en het regiofilter. Kaartvorm en regiogrenzen komen uit Natural Earth (50m) en de grenzen van de comunidades (click_that_hood), vereenvoudigd.
+- **Onderzoek**: zes regio-agenten plus vier vervolgagenten. Elke agent schreef een eigen bestand (`and_`, `cat_`, `val_`, `mad_`, `nrd_`, `can_`, `vv1_`–`vv4_`) in hetzelfde JSON-formaat; een samenvoegscript koppelde ze op naam en coördinaten. Daarna redactie en vertaling (NL/EN/ES) door twee agenten, met de Nederlandse tekst als sleutel van de vertaaltabellen.

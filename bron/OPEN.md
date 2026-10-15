@@ -21,11 +21,34 @@ Bijgehouden door Claude. Bijwerken als een punt is opgelost.
   - **Circussen**: 13 reizende circussen, momentopnames (dompteurs wisselen van circus). Het volledige verbod op wilde dieren in circussen is uitgesteld tot eind 2026: begin 2027 opnieuw nagaan.
   - **Nagaan**: Bioparco di Roma (site gaf 403; leeuw en luipaard nu onzeker, verblijf in verbouwing), Simba Little Wild Park (sloopbevel kooien augustus 2025), Le Cornelle (Amoertijger), Valcorba (Amoer-luipaardkat), Zoo delle Star (leeuw, luipaard), de Area faunistica della Lince in Civitella Alfedena (nieuwe lynx?).
   - **Foto's**: geen eigen foto's van Italiaanse parken (afspraak: geen foto's van dierentuinen zoeken).
+- **Spanje (15-10-2026)**:
+  - **Top 10**: Spanje staat er niet in. Beste Spaanse kandidaten volgens de score van de bouw: Zoo Koki (66; 7 soorten, waaronder Geoffroy’s kat, Amoer-luipaardkat en Afrikaanse wilde kat; alleen do–zo open), Safari Madrid (63; 6 soorten, o.a. rode lynx, in de eigen auto) en Terra Natura Benidorm (60; nevelpanter, margay met eerste kweek 2026). Ze scoren hoger dan Zoo Leipzig (58), Landgoed Hoenderdaell (60) en Beekse Bergen (46). Beslissen of er een Spaans park in moet.
+  - **Nagaan**: Zoo de Barcelona (jaguar en Sri Lanka-luipaard nog te zien?), Cabárceno (tweede Perzische luipaard sinds 2025 niet gezien), Zoo Municipal de Guadalajara (Iberische lynx “Granito”: bord in 2025, geen dier; eigen site onbereikbaar, geen openingstijden), Tierra Rapaz (serval, laatst 03/2024), BBK Karpin Fauna (serval of savannahkat?), Zoo de Lillo (alles alleen Zootierliste), El Bosque (leven de tijgerinnen Asia en Kaya nog?), CR Los Hornos in Extremadura (twee Iberische lynxen, geen bron na 2018), Santillana (sneeuwluipaard), Safari Aitana (houdt ook huiskathybriden).
+  - **Twijfelachtige “bevestigd”**: Zoo de Castellar, MundoPark, Natura Parc, Cocodrilo Park en Safari Mallorca rusten op ongedateerde eigen lijsten of een plattegrond plus een Zootierliste-bezoek in 2025 (zie `TWIJFELGEVALLEN.md`).
+  - **Registers**: geen openbare lijst behalve Castilië en León (open data 2023). Particuliere houders zijn daardoor niet volledig na te gaan.
+  - **Kaart**: de Balearen en de Canarische Eilanden staan op verzoek niet op de kaarten (alleen in de lijst en het regiofilter).
+- **Italiaanse gids**: in de Italiaanse taalstand staan nog een paar Franse resten (“espèce(s)”, “Filtrer par statut”, “Tick the locations…”, voetregel “État au 28 septembre 2026”). In de Spaanse gids opgelost; in de Italiaanse nog niet.
 - **Onderzoeksagenten**: in de opdracht zetten dat ze geen persoonlijke gegevens meesturen (ook niet als contact in een User-Agent).
 
 - **Controle op gemiste parken in Frankrijk (13-10-2026)**: vergeleken met de officiële lijst (ICPE-rubriek 2140, Géorisques: 196 vergunde dierenparken), Zootierliste en Nature et Zoo; geen gemiste locaties met katten. Nog onduidelijk, mogelijk navragen bij de DDPP: een vergunning op naam van een particulier in Grignols (Gironde) en de vereniging Gaia in Allennes-les-Marais (Nord); van geen van beide is een site of bezoekinformatie gevonden.
 - **Sigean**: Nature et Zoo noemt een serval (sinds 2023), de eigen site en het persdossier 2026 niet. Niet opgenomen.
 - **Citadelle van Besançon**: in februari 2024 kwam er een in beslag genomen serval binnen (tijdelijke opvang?); niet op de eigen site. Niet opgenomen.
+
+## Bronnen en valkuilen (geleerd bij Spanje, oktober 2026)
+
+**Bronnen Spanje**
+- **Geen landelijke lijst.** Ley 31/2003 art. 10 schrijft een nationale inventaris van parques zoológicos voor, maar alleen een MITECO-versie van 2012 is bekend (veel parken ontbreken). Vergunningen en registers van núcleos zoológicos lopen per autonome gemeenschap; alleen **Castilla y León** publiceert het register als open data (“Núcleos zoológicos de Castilla y León”, 8.356 regels, april 2023). Galicië (REGANUZ), Baskenland (per Diputación Foral) en de rest: geen openbare lijst.
+- **AIZA**: volledige ledenlijst op aiza.org.es/lista-de-miembros (met adres per lid; ook Portugese leden). **EAZA**: dezelfde JSON als bij Italië; let op de soorten lidmaatschap (full, conditional, temporary, associate).
+- **Circussen**: Ley 7/2023 (art. 25 e) verbiedt wilde dieren in circussen sinds 29-09-2023 (overgang ca. 6 maanden); art. 32.1 verbiedt particulier houden van wilde dieren. Ex-circuskatten gaan naar AAP Primadomus (Villena; alleen rondleiding op afspraak, niet in de zomer).
+- **Iberische lynx**: de fokcentra (El Acebuche, La Olivilla, Zarza de Granadilla, Silves in Portugal) zijn niet te bezoeken; bij El Acebuche kan het observatorium alleen met een parkgids (meld je in het bezoekerscentrum). Niet-fokbare lynxen staan in Zoo Aquarium de Madrid, Selwo Aventura, Jerez, Córdoba, Terra Natura Murcia en La Maleza (Teruel).
+- **Sites die curl/WebFetch blokkeren** (Cloudflare): Loro Parque, Cabárceno, Santillana, Sendaviva. Met Playwright lukt het wel. Ongedateerde soortpagina’s: kijk in de sitemap (lastmod) of de WordPress-API voor een datum.
+
+**Valkuilen**
+- **Spaanse namen:** *lince boreal/europeo* = Euraziatische lynx, *gato montés* = wilde kat, *pantera negra* = zwart luipaard, *gato leopardo* = luipaardkat (niet de huiskat *bengalí*), *guepardo* = cheetah. “Lince” zonder meer kan elke lynxsoort zijn (Molló Parc, Karpin).
+- **Huiskathybriden**: Safari Aitana en BBK Karpin houden savannah- en bengaalkatten; Zootierliste noemt die soms als serval.
+- **Zootierliste loopt achter of vooruit**: cheetah Oasis Fuerteventura en poema Rancho Texas waren al weg; Natura Parc had volgens de eerste agent geen katten, maar Zootierliste en de sitemap wel. Vergelijk altijd beide kanten.
+- **Eén eigenaar, meerdere parken**: Parques Reunidos (Zoo Madrid, Faunia, Selwo), Rain Forest/Bioparc (Valencia, Fuengirola, Safari Mallorca), Terra Natura (Benidorm, Murcia), Loro Parque-groep. Luipaarden van Terra Natura Murcia zitten tijdelijk in Bioparc Valencia.
+- **Zoeklimiet**: de onderzoeksagenten liepen allemaal tegen de grens van zoekopdrachten aan. Vervolgagenten met een gerichte lijst open punten en eigen sites direct ophalen werkte goed.
 
 ## Bronnen en valkuilen (geleerd bij Italië, oktober 2026)
 

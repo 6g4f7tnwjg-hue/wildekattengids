@@ -1,20 +1,20 @@
 # Bron van de Wilde katachtigen-gids
 
 Alles wordt uit deze map gebouwd. Pas nooit de gegenereerde bestanden in de hoofdmap aan
-(`index.html`, `soort/`, `top10/`, `nederland/`, `belgie/`, `luxemburg/`, `duitsland/`, `frankrijk/`, `oostenrijk/`, `zwitserland/`, `verenigd-koninkrijk/`, `italie/`, `spanje/`, `sitemap.xml`): die worden bij elke bouw overschreven.
+(`index.html`, `soort/`, `top10/`, `nederland/`, `belgie/`, `luxemburg/`, `duitsland/`, `frankrijk/`, `oostenrijk/`, `zwitserland/`, `verenigd-koninkrijk/`, `italie/`, `spanje/`, `ierland/`, `sitemap.xml`): die worden bij elke bouw overschreven.
 
 ## Wat staat waar
 
 | Bestand | Inhoud |
 |---|---|
-| `gidsen/nl.html`, `be.html`, `lu.html`, `de.html`, `fr.html`, `at.html`, `ch.html`, `uk.html`, `it.html`, `es.html` | De landengidsen. Alle gegevens (soorten, waarnemingen `R`, locaties `LOCS`, jongen `YOUNG`) staan in het script van de gids; Duitsland, Frankrijk, Oostenrijk, Zwitserland en het VK hebben één blok per deelstaat of regio, Italië en Spanje zijn één pagina met een filter per regio (`REGIO`, `REGN`; Spanje per autonome gemeenschap). Talen (regel: Nederlands, Engels en de landstaal of -talen): NL/EN (Nederland, VK), NL/EN/FR (België, Frankrijk), NL/EN/DE (Duitsland, Oostenrijk), NL/EN/FR/DE (Luxemburg), NL/EN/DE/FR/IT (Zwitserland), NL/EN/IT (Italië), NL/EN/ES (Spanje). Een gids met één derde taal gebruikt `T(nl,en,x)` en `l-x`-elementen; Zwitserland en Luxemburg gebruiken de taaltabel `LGS` (`T(nl,en,...)` in de volgorde van `LGS`, woordenlijsten per taal zoals `SPFR`, `R5IT`, `ITD`). Foto's staan erin als `@@IMGn@@`. |
+| `gidsen/nl.html`, `be.html`, `lu.html`, `de.html`, `fr.html`, `at.html`, `ch.html`, `uk.html`, `it.html`, `es.html`, `ie.html` | De landengidsen. Alle gegevens (soorten, waarnemingen `R`, locaties `LOCS`, jongen `YOUNG`) staan in het script van de gids; Duitsland, Frankrijk, Oostenrijk, Zwitserland en het VK hebben één blok per deelstaat of regio, Italië, Spanje en Ierland zijn één pagina met een filter per regio (`REGIO`, `REGN`; Spanje per autonome gemeenschap, Ierland per provincie). Talen (regel: Nederlands, Engels en de landstaal of -talen): NL/EN (Nederland, VK, Ierland), NL/EN/FR (België, Frankrijk), NL/EN/DE (Duitsland, Oostenrijk), NL/EN/FR/DE (Luxemburg), NL/EN/DE/FR/IT (Zwitserland), NL/EN/IT (Italië), NL/EN/ES (Spanje). Een gids met één derde taal gebruikt `T(nl,en,x)` en `l-x`-elementen; Zwitserland en Luxemburg gebruiken de taaltabel `LGS` (`T(nl,en,...)` in de volgorde van `LGS`, woordenlijsten per taal zoals `SPFR`, `R5IT`, `ITD`). Foto's staan erin als `@@IMGn@@`. |
 | `start.html` | De startpagina. De gegevens in `const D` (kaartstippen, aantallen, recente geboortes) worden bij elke bouw opnieuw berekend uit de gidsen. Kaartvormen en de deelstaat-notitie blijven staan. Talen: Nederlands, Engels, Frans, Duits, Italiaans en Spaans (`T(nl,en,fr,de,it,es)` en `l-fr`/`l-de`/`l-it`/`l-es`-elementen). Onder de titel staat een regel met aantallen (landen · locaties · soorten), berekend uit `D`. |
 | `../img/` | Alle foto's; `n.webp` hoort bij `@@IMGn@@`. Nieuwe foto: volgend nummer toevoegen. |
 | `artifact_kop.html`, `web_kop.html` | Vaste kopjes voor de Claude-pagina en de website. |
 | `top10.json` | De top 10 om te bezoeken (blok op de startpagina en pagina `/top10/`, op de Claude-pagina `#top10`). `vast` staat in die volgorde bovenaan, met de uitleg in zes talen (nl, en, fr, de, it, es); is de lijst korter dan 10 of verdwijnt een park uit de gids, dan vult de bouw aan op score. Volgorde of uitleg veranderen: alleen dit bestand aanpassen. |
 | `franse_namen.json`, `duitse_namen.json`, `italiaanse_namen.json`, `spaanse_namen.json` | Franse, Duitse, Italiaanse en Spaanse soortnamen voor de startgegevens. |
 | `taalmenu.js` | Het taalmenu (wereldbol met de taalcode; de lijst toont de talen van de pagina in hun eigen naam). De bouw zet het in de startpagina en in elke gids. |
-| `locatietypes.json` | De vaste lijst van locatietypes en labels. Elke locatie heeft in `LOCINFO` één `type` (de namen uit deze lijst) en `labels` (sleutels uit deze lijst). Dierentuin = lid van EAZA, NVD, VdZ, UIZA of AIZA; anders dierenpark. |
+| `locatietypes.json` | De vaste lijst van locatietypes en labels. Elke locatie heeft in `LOCINFO` één `type` (de namen uit deze lijst) en `labels` (sleutels uit deze lijst). Dierentuin = lid van EAZA, NVD, VdZ, UIZA, AIZA of BIAZA; anders dierenpark. |
 | `locatietypes.js` | Filterknoppen, labels en types in de gidsen; de bouw zet dit achter het script van elke gids en deelstaat. |
 | `bouw.py`, `startdata.py`, `extract.js` | De bouw. Deelstaten en regio’s staan in `STATES` en `REGIOS` in `bouw.py` (samen `DEEL`). |
 
@@ -55,3 +55,14 @@ Alleen de Claude-pagina bouwen: `python3 bron/bouw.py --geen-web`.
 - **Zesde taal op de hoofdpagina**: alle 87 `T()`-aanroepen kregen een zesde argument, plus `l-es`-teksten, `C[land].es`, `STAT`, `kname` (soortnaam index 11), `MND.es` en de datumnotatie (“15 de octubre de 2026”). `startdata.py` levert de Spaanse soortnamen op index 7 (per locatie) en 11 (per soort).
 - **Kaart zonder eilanden**: op verzoek staan de Balearen en de Canarische Eilanden niet op de kaarten; die locaties hebben geen coördinaten in `LOCS` (zoals reizende circussen) en staan wel in de lijst en het regiofilter. Kaartvorm en regiogrenzen komen uit Natural Earth (50m) en de grenzen van de comunidades (click_that_hood), vereenvoudigd.
 - **Onderzoek**: zes regio-agenten plus vier vervolgagenten. Elke agent schreef een eigen bestand (`and_`, `cat_`, `val_`, `mad_`, `nrd_`, `can_`, `vv1_`–`vv4_`) in hetzelfde JSON-formaat; een samenvoegscript koppelde ze op naam en coördinaten. Daarna redactie en vertaling (NL/EN/ES) door twee agenten, met de Nederlandse tekst als sleutel van de vertaaltabellen.
+
+## Ierland toevoegen: lessen (oktober 2026)
+
+- **Een derde taal eruit halen.** De Ierse gids (NL/EN) is met een script afgeleid van de Spaanse: eerst alle `l-es`-elementen en `-es`-blokken weg (met een tellende verwijderfunctie, want blokken zijn genest), `LGS` naar `["nl","en"]` en de Spaanse tabellen (`SPES`, `ESD`, `R1ES` …) leeg. Daarna de gegevens (`R`, `LOCS`, `LOCINFO`, `REGIO`, `REGN`, `TWX`, `YOUNG` …) en de vaste tekstblokken. Het script en de gegevens staan niet in de repo; zie de werkwijze in `VOORTGANG.md`.
+- **Een buurland op de kaart.** Noord-Ierland staat grijs op de kaart van de gids (`NI`, klasse `buur`), zodat de grens duidelijk is; het kaartkader (`viewBox`) moet dan ook Noord-Ierland omvatten. Op de startpagina hoort Noord-Ierland bij de vorm van het VK.
+- **Lege provincie.** Een provincie zonder locaties met katten (Connacht) krijgt geen kop in de lijst en geen chip in het filter; zet de locaties zonder katten wel in “Geen katachtigen gevonden”.
+- **Link naar een andere landgids.** Binnen een gids werkt een relatieve link naar een ander land niet in de Claude-pagina; gebruik de volledige website-URL met `target="_blank"`.
+- **Kaartkader op de startpagina.** Bij een land verder naar het westen: `LON0` in `start.html` lager zetten en `FULL[2]` met hetzelfde aantal pixels vergroten (`(oud−nieuw)·K`, K = 0,623·60).
+- **Welpennamen in `YOUNG.n`.** Zet in `n` alleen het aantal (“2 welpen”); namen en geslacht in `x`. De startpagina vertaalt `n` met vaste regels naar FR/DE/IT/ES, en een zin met namen wordt half vertaald.
+- **Weinig locaties, veel “geen katten”.** In Ierland zijn er 7 locaties met katten en 73 zonder. De officiële lijst (2022) bestond vooral uit roofvogelcentra, open farms en aquaria; ook die zijn allemaal nagelopen en in de lijst gezet.
+

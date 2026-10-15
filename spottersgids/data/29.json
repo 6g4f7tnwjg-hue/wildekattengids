@@ -1,0 +1,313 @@
+{
+ "no": 29,
+ "intro_nl": "Het is negen uur 's ochtends en de zon staat al hoog boven de akkers en bosranden. Over de zandweg voor je glipt een donker, langgerekt dier. Het lijkt meer op een otter dan op een kat: kleine kop, korte poten, lange staart. Twee tellen later is de jaguarundi weg in het struikgewas. Deze kat jaagt overdag, en toch zien maar weinig mensen hem goed. Kans: 3 – met geduld en veel kilometers op de zandwegen is het haalbaar.",
+ "intro_en": "It is nine in the morning and the sun is already high above the fields and forest edges. A dark, elongated animal slips across the dirt road in front of you. It looks more like an otter than a cat: small head, short legs, long tail. Two seconds later the jaguarundi has vanished into the scrub. This cat hunts by day, yet few people ever get a good look at one. Chance: 3 – with patience and plenty of kilometres on the dirt tracks, it is doable.",
+ "spots": [
+  {
+   "id": "bo-santa-cruz-northern-lowlands",
+   "name_nl": "Laagland ten noorden van Santa Cruz",
+   "name_en": "Lowlands north of Santa Cruz",
+   "area_nl": "Mozaïek van landbouwgrond, bosstroken, pampa en moeras in het noorden van het departement Santa Cruz",
+   "area_en": "Mosaic of farmland, forest strips, pampas and marsh in the north of Santa Cruz department",
+   "country_nl": "Bolivia",
+   "country_en": "Bolivia",
+   "cont": "sam",
+   "lat": -16.3,
+   "lon": -63.0,
+   "score": 3,
+   "why_nl": "In drie mammalwatching-verslagen van korte kattentrips naar een groot particulier terrein in dit gebied (2019, 2020 en 2021) werd telkens een jaguarundi gezien, onder meer in de schemering, langs een kanaal en in de koplampen.",
+   "why_en": "Three mammalwatching reports of short cat trips to a large private estate in this area (2019, 2020 and 2021) each recorded a jaguarundi, including at dusk, along a canal bank and in the headlights.",
+   "season_nl": "Droge tijd, ongeveer juli t/m oktober; de wegen zijn dan begaanbaar.",
+   "season_en": "Dry season, roughly July to October, when the tracks are passable.",
+   "time_nl": "Vroege ochtend en schemering zijn het meest beschreven; overdag rijden en scannen langs bosranden en akkers.",
+   "time_en": "Early morning and dusk are most often described; drive and scan forest edges and fields during the day.",
+   "trip_nl": "Gespecialiseerde kattenexpeditie met kamperen op een particulier terrein (alleen met toestemming en begeleiding), 3 à 4 dagen, met dag- en nachtritten.",
+   "trip_en": "Specialised cat expedition with camping on a private estate (only with permission and a guide), 3 to 4 days, with day and night drives.",
+   "sources": [
+    6,
+    7,
+    8
+   ]
+  },
+  {
+   "id": "py-chaco-agua-dulce",
+   "name_nl": "Paraguayaanse Chaco",
+   "name_en": "Paraguayan Chaco",
+   "area_nl": "Droog Chacobos rond Agua Dulce (Alto Paraguay) en andere delen van de Chaco",
+   "area_en": "Dry Chaco forest around Agua Dulce (Alto Paraguay) and other parts of the Chaco",
+   "country_nl": "Paraguay",
+   "country_en": "Paraguay",
+   "cont": "sam",
+   "lat": -20.0,
+   "lon": -59.9,
+   "score": 2,
+   "why_nl": "Een verslag van een reis van bijna vier weken in 2025 noemt drie jaguarundi's, maar op één na waren het katten die in een flits de weg overstaken.",
+   "why_en": "A report of a nearly four-week trip in 2025 lists three jaguarundis, but all except one were cats dashing across the road in a flash.",
+   "season_nl": "Hele jaar; het voorjaar (oktober–november) is in het verslag beschreven. Na zware regen worden de zandwegen lastig.",
+   "season_en": "Year-round; spring (October–November) is described in the report. After heavy rain the dirt roads become difficult.",
+   "time_nl": "Ochtend en late middag, rijdend over rustige zandwegen.",
+   "time_en": "Morning and late afternoon, driving quiet dirt roads.",
+   "trip_nl": "Zelfrijdende reis met een stevige 4x4 door de Chaco, met overnachtingen in eenvoudige verblijven; reken op een week of meer.",
+   "trip_en": "Self-drive trip with a sturdy 4x4 through the Chaco, staying in simple lodgings; allow a week or more.",
+   "sources": [
+    9
+   ]
+  },
+  {
+   "id": "br-transpantaneira-northern-pantanal",
+   "name_nl": "Transpantaneira (noordelijke Pantanal)",
+   "name_en": "Transpantaneira (northern Pantanal)",
+   "area_nl": "Weidegebieden en bosjes langs de Transpantaneira tussen Poconé en Porto Jofre, Mato Grosso",
+   "area_en": "Pastures and woodland patches along the Transpantaneira between Poconé and Porto Jofre, Mato Grosso",
+   "country_nl": "Brazilië",
+   "country_en": "Brazil",
+   "cont": "sam",
+   "lat": -16.6,
+   "lon": -56.7,
+   "score": 2,
+   "why_nl": "De jaguarundi duikt af en toe op in Pantanal-verslagen (in 2023 kort gezien bij een verblijf langs de weg), maar in de meeste verslagen ontbreekt hij.",
+   "why_en": "The jaguarundi turns up now and then in Pantanal reports (briefly seen in 2023 at a stay along the road), but most reports lack it.",
+   "season_nl": "Droge tijd, juli t/m oktober.",
+   "season_en": "Dry season, July to October.",
+   "time_nl": "Overdag; let tijdens de ritten op bosranden en de berm.",
+   "time_en": "Daytime; watch forest edges and road verges while driving.",
+   "trip_nl": "Combineer met een jaguarreis: game drives en wandelingen vanuit pousadas langs de Transpantaneira, 2 à 3 dagen, vóór of na de boottochten vanaf Porto Jofre.",
+   "trip_en": "Combine with a jaguar trip: drives and walks from pousadas along the Transpantaneira, 2 to 3 days, before or after the boat trips from Porto Jofre.",
+   "sources": [
+    10
+   ]
+  },
+  {
+   "id": "bz-rio-bravo",
+   "name_nl": "Rio Bravo",
+   "name_en": "Rio Bravo",
+   "area_nl": "Rio Bravo Conservation and Management Area, Orange Walk",
+   "area_en": "Rio Bravo Conservation and Management Area, Orange Walk",
+   "country_nl": "Belize",
+   "country_en": "Belize",
+   "cont": "sam",
+   "lat": 17.8,
+   "lon": -89.0,
+   "score": 2,
+   "why_nl": "Een verslag uit 2016 meldt een jaguarundi die 's ochtends vroeg over het terrein van het veldstation rende; een andere gast zag er een op de toegangsweg.",
+   "why_en": "A 2016 report describes a jaguarundi running across the field-station grounds early in the morning; another guest saw one on the access road.",
+   "season_nl": "Droge tijd, februari t/m mei; in de regentijd zijn de wegen slecht.",
+   "season_en": "Dry season, February to May; roads are poor in the rainy season.",
+   "time_nl": "Vroege ochtend.",
+   "time_en": "Early morning.",
+   "trip_nl": "Verblijf van een paar nachten bij een veldstation in het reservaat (vooraf toestemming regelen), met wandelingen en ritten op de toegangswegen.",
+   "trip_en": "Stay a few nights at a field station in the reserve (arrange permission in advance), with walks and drives on the access roads.",
+   "sources": [
+    12
+   ]
+  },
+  {
+   "id": "cr-arenal",
+   "name_nl": "Arenal",
+   "name_en": "Arenal",
+   "area_nl": "Arenal Volcano National Park en omliggende bossen, Alajuela",
+   "area_en": "Arenal Volcano National Park and surrounding forests, Alajuela",
+   "country_nl": "Costa Rica",
+   "country_en": "Costa Rica",
+   "cont": "sam",
+   "lat": 10.5,
+   "lon": -84.7,
+   "score": 2,
+   "why_nl": "Een reisverslag uit 2019 beschrijft een jaguarundi die om negen uur 's ochtends de weg overstak, en een gids zag er de dag ervoor een in de buurt; de soort is de enige katachtige van Costa Rica die vooral overdag actief is.",
+   "why_en": "A 2019 trip report describes a jaguarundi crossing the road at nine in the morning, and a guide saw one nearby the day before; it is Costa Rica's only cat that is mainly active by day.",
+   "season_nl": "Hele jaar; de drogere maanden (januari–april) zijn prettiger.",
+   "season_en": "Year-round; the drier months (January–April) are more pleasant.",
+   "time_nl": "Ochtend.",
+   "time_en": "Morning.",
+   "trip_nl": "Zelf rijden en wandelen in en rond het nationale park vanuit La Fortuna, 2 à 3 dagen; combineer met een vogelreis.",
+   "trip_en": "Drive and walk in and around the national park from La Fortuna, 2 to 3 days; combine with a birding trip.",
+   "sources": [
+    11,
+    15
+   ]
+  },
+  {
+   "id": "mx-sierra-de-tamaulipas",
+   "name_nl": "Sierra de Tamaulipas",
+   "name_en": "Sierra de Tamaulipas",
+   "area_nl": "Doornstruweel en droog loofbos in het noorden van de Sierra de Tamaulipas",
+   "area_en": "Thornscrub and dry deciduous forest in the northern Sierra de Tamaulipas",
+   "country_nl": "Mexico",
+   "country_en": "Mexico",
+   "cont": "nam",
+   "lat": 23.3,
+   "lon": -98.3,
+   "score": 1,
+   "why_nl": "Cameravallen op particulier ranchland legden hier 126 keer een jaguarundi vast; voor bezoekers zijn er geen bekende, toegankelijke kijkplekken.",
+   "why_en": "Camera traps on private ranchland recorded jaguarundis here 126 times; there are no known, accessible viewing spots for visitors.",
+   "season_nl": "Hele jaar.",
+   "season_en": "Year-round.",
+   "time_nl": "Overdag.",
+   "time_en": "Daytime.",
+   "trip_nl": "Geen gangbare excursies; vooral het terrein van onderzoekers en cameravallen.",
+   "trip_en": "No regular excursions; mainly the domain of researchers and camera traps.",
+   "sources": [
+    3
+   ]
+  },
+  {
+   "id": "mx-calakmul-southern-quintana-roo",
+   "name_nl": "Calakmul en zuidelijk Quintana Roo",
+   "name_en": "Calakmul and southern Quintana Roo",
+   "area_nl": "Biosfeerreservaat Calakmul (Campeche) en de bossen van zuidelijk Quintana Roo, schiereiland Yucatán",
+   "area_en": "Calakmul Biosphere Reserve (Campeche) and the forests of southern Quintana Roo, Yucatán Peninsula",
+   "country_nl": "Mexico",
+   "country_en": "Mexico",
+   "cont": "nam",
+   "lat": 18.4,
+   "lon": -89.5,
+   "score": 1,
+   "why_nl": "De soort leeft hier, maar in de mammalwatching-verslagen uit Calakmul komt hij niet voor en een natuurfotograaf noemde zijn waarneming in 2026 'heel zeldzaam'.",
+   "why_en": "The species lives here, but it does not appear in the mammalwatching reports from Calakmul, and a nature photographer called his 2026 sighting 'very rare'.",
+   "season_nl": "Droge tijd, december t/m april.",
+   "season_en": "Dry season, December to April.",
+   "time_nl": "Overdag, langs bosranden en wegen.",
+   "time_en": "Daytime, along forest edges and roads.",
+   "trip_nl": "Rondrit langs de Maya-ruïnes met wandelingen en ritten in het reservaat, 2 à 3 dagen; de jaguarundi is dan een toevalstreffer.",
+   "trip_en": "Road trip to the Maya ruins with walks and drives in the reserve, 2 to 3 days; a jaguarundi is a lucky bonus.",
+   "sources": [
+    13,
+    14
+   ]
+  },
+  {
+   "id": "us-lower-rio-grande-valley",
+   "name_nl": "Lower Rio Grande Valley",
+   "name_en": "Lower Rio Grande Valley",
+   "area_nl": "Zuidpunt van Texas rond Brownsville (o.a. Laguna Atascosa National Wildlife Refuge)",
+   "area_en": "Southern tip of Texas around Brownsville (including Laguna Atascosa National Wildlife Refuge)",
+   "country_nl": "Verenigde Staten",
+   "country_en": "United States",
+   "cont": "nam",
+   "lat": 26.2,
+   "lon": -97.4,
+   "score": 1,
+   "why_nl": "Eerlijk gezegd: vrijwel kansloos, want de laatste bevestigde jaguarundi in de VS was een verkeersslachtoffer bij Brownsville in 1986 en onderzoekers vonden in bijna twintig jaar cameravallen niets; de soort is er waarschijnlijk uitgestorven.",
+   "why_en": "Honestly: virtually hopeless, because the last confirmed jaguarundi in the US was a roadkill near Brownsville in 1986 and researchers found nothing in almost twenty years of camera trapping; the species is probably extirpated there.",
+   "season_nl": "N.v.t.",
+   "season_en": "N/a.",
+   "time_nl": "N.v.t.",
+   "time_en": "N/a.",
+   "trip_nl": "Niet als doelsoort plannen; meldingen van het publiek zijn tot nu toe nooit bevestigd.",
+   "trip_en": "Do not plan for it as a target; reports from the public have never been confirmed so far.",
+   "sources": [
+    3,
+    4,
+    5
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Zoek overdag. De jaguarundi is een van de weinige katten die vooral bij daglicht jaagt; rij langzaam over rustige zandwegen en scan bosranden, ruigte en akkerranden.",
+  "Ken het silhouet: kleine, platte kop, lang lijf, korte poten en een lange staart. Hij lijkt op een tayra of otter. Er zijn grijze, bruine en roodachtige exemplaren.",
+  "Wees snel met de camera. De meeste waarnemingen zijn katten die in een paar seconden de weg oversteken; zet je camera aan en klaar op de stoel naast je.",
+  "Stop bij kruisingen en kijk beide kanten op. Katten lopen graag over wegen en paden langs dichte begroeiing.",
+  "Let op alarmerende vogels en vluchtende kleine dieren langs ruige randen; de jaguarundi jaagt op knaagdieren, vogels en reptielen.",
+  "Wil je hem op een cameraval: zet de camera in een ruige open plek of op een pad door struikgewas, niet midden in gesloten bos."
+ ],
+ "tips_en": [
+  "Search by day. The jaguarundi is one of the few cats that hunts mainly in daylight; drive slowly along quiet dirt roads and scan forest edges, scrub and field margins.",
+  "Know the silhouette: small, flat head, long body, short legs and a long tail. It resembles a tayra or an otter. There are grey, brown and reddish animals.",
+  "Be quick with the camera. Most sightings are cats crossing the road in a few seconds; keep your camera switched on and ready on the seat next to you.",
+  "Stop at junctions and look both ways. Cats like to walk along roads and trails beside dense vegetation.",
+  "Watch for alarm-calling birds and fleeing small animals along scrubby edges; the jaguarundi hunts rodents, birds and reptiles.",
+  "If you want it on a camera trap: place the camera in a brushy clearing or on a trail through scrub, not in the middle of closed forest."
+ ],
+ "threats_nl": [
+  "Verlies en versnippering van leefgebied, vooral waar kleine boerderijen plaatsmaken voor grootschalige landbouw.",
+  "Verkeer: omdat hij overdag actief is, steekt hij wegen over als het druk is.",
+  "Vergeldingsdoding door boeren na roof van kippen.",
+  "Honden: aanvallen en ziektes zoals hondenziekte, schurft en hondsdolheid."
+ ],
+ "threats_en": [
+  "Habitat loss and fragmentation, especially where small farms give way to large-scale agriculture.",
+  "Traffic: because it is active by day, it crosses roads when traffic is heavy.",
+  "Retaliatory killing by farmers after poultry losses.",
+  "Dogs: attacks and diseases such as distemper, mange and rabies."
+ ],
+ "status_note_nl": "In 2026 is de jaguarundi op de IUCN Rode Lijst opgeschoven van 'niet bedreigd' naar 'gevoelig' (Near Threatened); men schat ongeveer 13.000 volwassen dieren en op sommige plekken gaan ze achteruit (Mongabay, 2026). In de VS is de soort waarschijnlijk uitgestorven (Lombardi et al., 2022).",
+ "status_note_en": "In 2026 the jaguarundi moved from Least Concern to Near Threatened on the IUCN Red List; about 13,000 mature individuals are estimated and some populations are declining (Mongabay, 2026). In the US the species is probably extirpated (Lombardi et al., 2022).",
+ "sources": [
+  {
+   "id": 1,
+   "title": "Increasingly rare jaguarundi moves up a notch on the endangered species list (Mongabay, 2026)",
+   "url": "https://news.mongabay.com/2026/08/increasingly-rare-jaguarundi-moves-up-a-notch-on-the-endangered-species-list/"
+  },
+  {
+   "id": 2,
+   "title": "Elusive jaguarundi inspires biologists to share data across Latin America (Mongabay, 2024)",
+   "url": "https://news.mongabay.com/2024/05/elusive-jaguarundi-inspires-biologists-to-share-data-across-latin-america/amp"
+  },
+  {
+   "id": 3,
+   "title": "Lombardi et al. – Jaguarundi status and distribution in Texas and northeastern Mexico (Ecology and Evolution, 2022)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8937848/"
+  },
+  {
+   "id": 4,
+   "title": "Jaguarundi species account (Texas Parks and Wildlife Department)",
+   "url": "https://tpwd.texas.gov/huntwild/wild/species/jag"
+  },
+  {
+   "id": 5,
+   "title": "Jaguarundi – The Mammals of Texas, online edition (Texas Tech University)",
+   "url": "https://www.depts.ttu.edu/nsrl/mammals-of-texas-online-edition/Accounts_Extinct_Carnivora/Puma_yagouaroundi.php"
+  },
+  {
+   "id": 6,
+   "title": "Trip report Bolivia, Santa Cruz lowlands, October 2019 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/NAT-JAGUAR-LAND-RESERVE-Oct-2019.pdf"
+  },
+  {
+   "id": 7,
+   "title": "Trip report Bolivia, Santa Cruz lowlands, October 2020 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/NAB-JAGUARLAND-RESERVE-BOLIVIA-OCT-8-10-2020.pdf"
+  },
+  {
+   "id": 8,
+   "title": "Trip report Bolivia, Santa Cruz lowlands and Kaa-Iya, August 2021 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/GE-Bolivia-August-2021-Jaguar-Land-and-Kaa-Iya.pdf"
+  },
+  {
+   "id": 9,
+   "title": "Trip report Paraguay, October–November 2025 (mammalwatching.com, 2026)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2026/03/Paraguay-Trip-Report-FINAL.pdf"
+  },
+  {
+   "id": 10,
+   "title": "Trip report Brazil, northern Pantanal and Trijunção, 2023 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2023/11/Brazil-Panatanl-Trijuncao-2023-Trip-Report.pdf"
+  },
+  {
+   "id": 11,
+   "title": "Bird and mammal trip report Costa Rica 2019 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/RJ-Costa-Rica-2019.pdf"
+  },
+  {
+   "id": 12,
+   "title": "Trip report Belize, March 2016 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2017/01/RF-Belize-2016.pdf"
+  },
+  {
+   "id": 13,
+   "title": "Avistan jaguarundi en el sur de Quintana Roo (Por Esto, 2026)",
+   "url": "https://www.poresto.com/quintana-roo/chetumal/2026/1/8/avistan-jaguarundi-en-el-sur-de-quintana-roo.amp.html"
+  },
+  {
+   "id": 14,
+   "title": "Mexico: Yucatán Peninsula, January 2019 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/2019/01/18/mexico-yucatan-peninsula-jan-2019/"
+  },
+  {
+   "id": 15,
+   "title": "Inusual avistamiento de jaguarundi en Acosta (CRHoy, Costa Rica)",
+   "url": "https://crhoy.com/inusual-avistamiento-de-jaguarundi-en-acosta/"
+  }
+ ],
+ "doubts": "Er bestaat geen echt betrouwbare kijkplek voor de jaguarundi; alle scores zijn daarom laag en gebaseerd op losse waarnemingen in reisverslagen. De Boliviaanse plek (score 3) is een groot particulier landbouw- en natuurterrein ten noorden van Santa Cruz dat alleen via één gespecialiseerde reisorganisatie toegankelijk is; de exacte ligging wordt geheim gehouden, dus het coördinaat is een ruwe schatting van de regio. De drie verslagen daar zijn deels door de organisator zelf geschreven (kans op selectie van succesvolle trips). Geen voedering of lokaas vermeld bij de jaguarundiwaarnemingen. Bewust weggelaten: Emas en Serra da Canastra (cerrado) – ik vond geen enkel mammalwatching-verslag met een jaguarundi daar (wel Pampaskat, manenwolf); Iberá/Chaco in Argentinië – geen verslagen gevonden; Venezolaanse llanos – geen bronnen met jaguarundi-waarnemingen gevonden, en de veiligheidssituatie is onzeker. De Pantanal-plek heb ik een eigen id gegeven (Transpantaneira) i.p.v. br-porto-jofre-pantanal, omdat de waarneming bij een verblijf halverwege de weg was en niet bij de rivier. De Mexicaanse waarnemingen in Tamaulipas komen van particuliere ranches; die heb ik niet bij naam genoemd. De IUCN-pagina zelf kon ik niet openen; de nieuwe status (Near Threatened, 2026) komt uit Mongabay. Losse meldingen in Florida (mammalwatching-forum) gaan waarschijnlijk over ontsnapte dieren en zijn weggelaten."
+}

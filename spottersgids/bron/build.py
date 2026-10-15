@@ -28,6 +28,13 @@ for c in cats:
         if x not in c['cont']:
             c['cont'].append(x)
 
+# Foto's als data-URI in de pagina: losse bestanden laden niet in elke viewer (o.a. de Claude-app)
+import base64
+for c in cats:
+    for ph in c['photos']:
+        if not ph['src'].startswith('data:'):
+            ph['src'] = 'data:image/jpeg;base64,' + base64.b64encode(open(J(ph['src']), 'rb').read()).decode()
+
 sources, src_idx = [], {}
 def add_source(s):
     url = s['url'].strip()

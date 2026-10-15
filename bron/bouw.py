@@ -27,8 +27,8 @@ from startdata import bereken, slug, soorten
 
 BASE = "/wildekattengids/"
 SITE = "https://yeetkitty.github.io" + BASE
-F = {"nl": "nederland", "be": "belgie", "lu": "luxemburg", "de": "duitsland", "fr": "frankrijk", "at": "oostenrijk", "ch": "zwitserland", "uk": "verenigd-koninkrijk", "it": "italie"}
-LAND = {"nl": "Nederland", "be": "België", "lu": "Luxemburg", "de": "Duitsland", "fr": "Frankrijk", "at": "Oostenrijk", "ch": "Zwitserland", "uk": "Verenigd Koninkrijk", "it": "Italië"}
+F = {"nl": "nederland", "be": "belgie", "lu": "luxemburg", "de": "duitsland", "fr": "frankrijk", "at": "oostenrijk", "ch": "zwitserland", "uk": "verenigd-koninkrijk", "it": "italie", "es": "spanje"}
+LAND = {"nl": "Nederland", "be": "België", "lu": "Luxemburg", "de": "Duitsland", "fr": "Frankrijk", "at": "Oostenrijk", "ch": "Zwitserland", "uk": "Verenigd Koninkrijk", "it": "Italië", "es": "Spanje"}
 STATES = {"bayern": "Bayern", "nedersaksen": "Nedersaksen", "nrw": "Noordrijn-Westfalen", "saksen": "Saksen", "berlijn": "Berlijn", "hamburg": "Hamburg", "bremen": "Bremen", "saarland": "Saarland", "sleeswijk-holstein": "Sleeswijk-Holstein", "hessen": "Hessen", "brandenburg": "Brandenburg", "mecklenburg-voor-pommeren": "Mecklenburg-Voor-Pommeren", "rijnland-palts": "Rijnland-Palts", "thueringen": "Thüringen", "saksen-anhalt": "Saksen-Anhalt", "baden-wuerttemberg": "Baden-Württemberg"}
 REGIOS = {"auvergne-rhone-alpes": "Auvergne-Rhône-Alpes", "bourgogne-franche-comte": "Bourgogne-Franche-Comté", "bretagne": "Bretagne", "centre-val-de-loire": "Centre-Val de Loire", "corsica": "Corsica", "grand-est": "Grand Est", "hauts-de-france": "Hauts-de-France", "ile-de-france": "Île-de-France", "normandie": "Normandië", "nouvelle-aquitaine": "Nouvelle-Aquitaine", "occitanie": "Occitanie", "pays-de-la-loire": "Pays de la Loire", "provence-alpes-cote-dazur": "Provence-Alpes-Côte d’Azur"}
 # landen met één blok per deelstaat of regio (alleen de blokken die in de gids staan tellen)
@@ -87,12 +87,13 @@ D = json.loads(m.group(1))
 fr = json.load(open(BRON + "franse_namen.json", encoding="utf8"))
 de_namen = json.load(open(BRON + "duitse_namen.json", encoding="utf8"))
 it_namen = json.load(open(BRON + "italiaanse_namen.json", encoding="utf8"))
+es_namen = json.load(open(BRON + "spaanse_namen.json", encoding="utf8"))
 today = datetime.date.today()
 for c in F:
-    D[c] = bereken(DATA[c], D[c], today, fr, c, de_namen, it_namen)
-D["sp"] = soorten(DATA, fr, today, de_namen, it_namen)
-D["lt"] = {"types": [{k: t[k] for k in ("nl", "en", "fr", "de", "it", "uitleg", "uitleg_en", "uitleg_fr", "uitleg_de", "uitleg_it")} for t in LTJ["types"]],
-           "labels": [{k: l[k] for k in ("key", "nl", "en", "fr", "de", "it", "icoon")} for l in LTJ["labels"]]}
+    D[c] = bereken(DATA[c], D[c], today, fr, c, de_namen, it_namen, es_namen)
+D["sp"] = soorten(DATA, fr, today, de_namen, it_namen, es_namen)
+D["lt"] = {"types": [{k: t[k] for k in ("nl", "en", "fr", "de", "it", "es", "uitleg", "uitleg_en", "uitleg_fr", "uitleg_de", "uitleg_it", "uitleg_es")} for t in LTJ["types"]],
+           "labels": [{k: l[k] for k in ("key", "nl", "en", "fr", "de", "it", "es", "icoon")} for l in LTJ["labels"]]}
 # top 10 om te bezoeken (bron/top10.json): vaste plaatsen, aangevuld met de hoogste score
 def top10(D):
     cfg = json.load(open(BRON + "top10.json", encoding="utf8"))
@@ -130,11 +131,12 @@ _MNL = ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustu
 _MFR = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"]
 _MDE = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
 _MIT = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"]
+_MES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"]
 _MEN = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 START, _n = re.subn(r'<p class="stamp">.*?</p>',
     f'<p class="stamp"><span class="l-nl">Bijgewerkt {today.day} {_MNL[today.month-1]} {today.year}</span><span class="l-en">Updated {today.day} {_MEN[today.month-1]} {today.year}</span>'
     f'<span class="l-fr">Mis à jour le {today.day} {_MFR[today.month-1]} {today.year}</span><span class="l-de">Aktualisiert am {today.day}. {_MDE[today.month-1]} {today.year}</span>'
-    f'<span class="l-it">Aggiornato al {today.day} {_MIT[today.month-1]} {today.year}</span></p>',
+    f'<span class="l-it">Aggiornato al {today.day} {_MIT[today.month-1]} {today.year}</span><span class="l-es">Actualizado el {today.day} de {_MES[today.month-1]} de {today.year}</span></p>',
     START, count=1)
 assert _n == 1, "datum op de startpagina niet gevonden"
 wr(BRON + "start.html", START)
@@ -188,7 +190,8 @@ NOTE = {"nl": "Je melding gaat rechtstreeks naar de maker van de gids en is niet
         "en": "Your report goes straight to the guide’s author and is not public. If you would like a reply, add your email address under Comments.",
         "fr": "Votre signalement est envoyé directement à l’auteur du guide et n’est pas public. Si vous souhaitez une réponse, indiquez votre adresse e-mail dans les commentaires.",
         "de": "Deine Meldung geht direkt an den Macher des Leitfadens und ist nicht öffentlich. Wenn du eine Antwort möchtest, gib deine E-Mail-Adresse unter Anmerkungen an.",
-        "it": "La tua segnalazione arriva direttamente all’autore della guida e non è pubblica. Se desideri una risposta, aggiungi il tuo indirizzo e-mail nelle osservazioni."}
+        "it": "La tua segnalazione arriva direttamente all’autore della guida e non è pubblica. Se desideri una risposta, aggiungi il tuo indirizzo e-mail nelle osservazioni.",
+        "es": "Tu aviso llega directamente al autor de la guía y no es público. Si quieres una respuesta, añade tu dirección de correo electrónico en las observaciones."}
 RPWEB0 = r'''async function rpWeb(d){
   const btn=rpEl("rp-go");btn.disabled=true;rpMsg(T("Bezig met versturen…","Sending…"@@SEND@@));
   const body={access_key:window.__W3F.key,subject:"Melding gids "+window.__W3F.land+": "+d.type+" – "+d.loc,from_name:"Wilde katachtigen-gids",
@@ -206,11 +209,11 @@ RPWEB0 = r'''async function rpWeb(d){
   btn.disabled=false;
 }
 '''
-RPTXT = {"SEND": {"fr": "Envoi en cours…", "de": "Wird gesendet…", "it": "Invio in corso…"},
-         "OK": {"fr": "Merci ! Votre signalement a été envoyé.", "de": "Danke! Deine Meldung wurde gesendet.", "it": "Grazie! La tua segnalazione è stata inviata."},
-         "FOUT": {"fr": "L’envoi a échoué. Veuillez réessayer plus tard.", "de": "Senden fehlgeschlagen. Bitte versuche es später noch einmal.", "it": "Invio non riuscito. Riprova più tardi."}}
+RPTXT = {"SEND": {"fr": "Envoi en cours…", "de": "Wird gesendet…", "it": "Invio in corso…", "es": "Enviando…"},
+         "OK": {"fr": "Merci ! Votre signalement a été envoyé.", "de": "Danke! Deine Meldung wurde gesendet.", "it": "Grazie! La tua segnalazione è stata inviata.", "es": "¡Gracias! Tu aviso se ha enviado."},
+         "FOUT": {"fr": "L’envoi a échoué. Veuillez réessayer plus tard.", "de": "Senden fehlgeschlagen. Bitte versuche es später noch einmal.", "it": "Invio non riuscito. Riprova più tardi.", "es": "No se ha podido enviar. Inténtalo de nuevo más tarde."}}
 # talen van elke gids na Nederlands en Engels, in de volgorde van T(nl,en,…) in die gids
-GTAAL = {"nl": [], "be": ["fr"], "lu": ["fr", "de"], "de": ["de"], "fr": ["fr"], "at": ["de"], "ch": ["de", "fr", "it"], "uk": [], "it": ["it"]}
+GTAAL = {"nl": [], "be": ["fr"], "lu": ["fr", "de"], "de": ["de"], "fr": ["fr"], "at": ["de"], "ch": ["de", "fr", "it"], "uk": [], "it": ["it"], "es": ["es"]}
 def rpweb(c):
     t = RPWEB0
     for k, v in RPTXT.items():
@@ -258,6 +261,8 @@ CTRY = {
            "Welke wilde katten zie je in Britse dierentuinen, safariparken en wildlife parks? Per regio, per soort en per park, met kaart, routeplanner en recente geboortes."),
     "it": ("Wilde katachtigen in Italië – welke wilde katten in welke dierentuin?",
            "Welke wilde katten zie je in Italiaanse dierentuinen, dierenparken, safariparken, opvangcentra en circussen? Per regio, per soort en per park, met kaart, routeplanner en recente geboortes."),
+    "es": ("Wilde katachtigen in Spanje – welke wilde katten in welke dierentuin?",
+           "Welke wilde katten zie je in Spaanse dierentuinen, dierenparken, safariparken en opvangcentra? Per regio, per soort en per park, met kaart, routeplanner en recente geboortes."),
     "de": ("Wilde katachtigen in Duitsland – welke wilde katten in welke dierentuin?",
            "Welke wilde katten zie je in Duitse dierentuinen, Tierparks en Wildparks? Per deelstaat, per soort en per park, met kaart, routeplanner en recente geboortes."),
 }
@@ -310,11 +315,11 @@ fmap = "{" + ",".join(f'{c}:"{BASE}{v}/"' for c, v in F.items()) + "}"
 st = sub1(st, "window.openCountry=function(c,h){",
           f"window.__F={fmap};\n  window.openCountry=function(c,h){{location.replace(window.__F[c]+(h?\"#\"+h:\"\"));return;")
 st = st.replace("${c}.html", "${window.__F[c]}").replace("${ZOOM}.html", "${window.__F[ZOOM]}")
-TITLE = "Wilde katachtigen in de Benelux, Duitsland, Frankrijk, Oostenrijk, Zwitserland, Italië en het Verenigd Koninkrijk – waar zie je welke wilde kat?"
+TITLE = "Wilde katachtigen in de Benelux, Duitsland, Frankrijk, Oostenrijk, Zwitserland, Italië, Spanje en het Verenigd Koninkrijk – waar zie je welke wilde kat?"
 DESC = ("Gids van J. Gelens: welke wilde katten – leeuw, tijger, luipaard, lynx, serval, manoel en meer – je in dierentuinen, "
-        "dierenparken en opvangcentra in Nederland, België, Luxemburg, Duitsland, Frankrijk, Oostenrijk, Zwitserland, Italië en het Verenigd Koninkrijk kunt zien. Met kaart, routeplanner en recente geboortes.")
-st = sub1(st, "<title>Wilde katachtigen in de Benelux, Duitsland, Frankrijk, Oostenrijk, Zwitserland, Italië en het Verenigd Koninkrijk</title>",
-          f"<title>{TITLE}</title>\n" + seo("Wilde katachtigen in de Benelux, Duitsland, Frankrijk, Oostenrijk, Zwitserland, Italië en het Verenigd Koninkrijk", DESC, SITE)
+        "dierenparken en opvangcentra in Nederland, België, Luxemburg, Duitsland, Frankrijk, Oostenrijk, Zwitserland, Italië, Spanje en het Verenigd Koninkrijk kunt zien. Met kaart, routeplanner en recente geboortes.")
+st = sub1(st, "<title>Wilde katachtigen in de Benelux, Duitsland, Frankrijk, Oostenrijk, Zwitserland, Italië, Spanje en het Verenigd Koninkrijk</title>",
+          f"<title>{TITLE}</title>\n" + seo("Wilde katachtigen in de Benelux, Duitsland, Frankrijk, Oostenrijk, Zwitserland, Italië, Spanje en het Verenigd Koninkrijk", DESC, SITE)
           + '<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n')
 st = sub1(st, '<meta charset="utf-8">', '<meta charset="utf-8"><script>window.__KATBASE="' + BASE + 'soort/";window.__HOMEURL="' + BASE
           + '";window.__IMGP=' + json.dumps(PATHS) + ';</script>')
@@ -333,12 +338,12 @@ for s in D["sp"]:
 def kat_page(s, locs, inhoud=""):
     conf = [(c, l) for c, l, x in locs if x in CONFC]
     landen = [LAND[c] for c in F if any(cc == c for cc, l in conf)]
-    title = f"{s[1]} in Nederland, België, Luxemburg, Duitsland, Frankrijk, Oostenrijk, Zwitserland, Italië en het Verenigd Koninkrijk: waar zie je hem? – Wilde katachtigen-gids"
+    title = f"{s[1]} in Nederland, België, Luxemburg, Duitsland, Frankrijk, Oostenrijk, Zwitserland, Italië, Spanje en het Verenigd Koninkrijk: waar zie je hem? – Wilde katachtigen-gids"
     if conf:
         desc = kort(f"Waar zie je een {s[1].lower() if s[1] != 'Geoffroy’s kat' else s[1]}? In {opsomming(landen)} op {len(conf)} {'locatie' if len(conf) == 1 else 'locaties'}: "
                     + ", ".join(l[0] for c, l in conf[:6]) + ". Met kaart en recente geboortes.")
     else:
-        desc = kort(f"{s[1]} ({s[4]}): vermeldingen in dierentuinen en dierenparken in de Benelux, Duitsland, Frankrijk, Oostenrijk, Zwitserland, Italië en het Verenigd Koninkrijk, met kaart en recente geboortes.")
+        desc = kort(f"{s[1]} ({s[4]}): vermeldingen in dierentuinen en dierenparken in de Benelux, Duitsland, Frankrijk, Oostenrijk, Zwitserland, Italië, Spanje en het Verenigd Koninkrijk, met kaart en recente geboortes.")
     url = SITE + "soort/" + s[0] + "/"
     img = SITE + PATHS[s[6]][len(BASE):] if s[6] is not None else SITE + "voorbeeld.jpg"
     doc = re.sub(r"<title>.*?</title>.*?<meta name=\"twitter:card\"[^>]*>\n", "", st, count=1, flags=re.S)
@@ -352,7 +357,7 @@ for s, locs in KATS:
     wr(ROOT + "soort/" + s[0] + "/index.html", kat_page(s, locs))
 # top 10 om te bezoeken (/top10/)
 def top_page():
-    title = "Top 10 dierentuinen om wilde katten te zien – Benelux, Duitsland, Frankrijk, Oostenrijk, Zwitserland, Italië en het Verenigd Koninkrijk"
+    title = "Top 10 dierentuinen om wilde katten te zien – Benelux, Duitsland, Frankrijk, Oostenrijk, Zwitserland, Italië, Spanje en het Verenigd Koninkrijk"
     namen = [D[t["c"]]["locs"][t["i"]][0] for t in D["top10"]]
     desc = kort("De tien parken waar je de meeste en de bijzonderste wilde katten ziet: " + ", ".join(namen) + ".")
     doc = re.sub(r"<title>.*?</title>.*?<meta name=\"twitter:card\"[^>]*>\n", "", st, count=1, flags=re.S)
@@ -366,7 +371,7 @@ wr(ROOT + "top10/index.html", top_page())
 # ------------------------------------------------------------------ website: losse soort- en locatiepagina's
 
 routes = []
-for c in ["nl", "be", "lu", "it"]:
+for c in ["nl", "be", "lu", "it", "es"]:
     sp = {}
     for l in D[c]["locs"]:
         routes.append((c, None, "locatie", l[4], l[0], {"plaats": l[1], "katten": [s[0] for s in l[5]]}))

@@ -17,19 +17,22 @@ _N_DE = [(r"^Drieling$", "Drillinge"), (r"\bin twee nesten\b", "in zwei Würfen"
          (r"^1 zwarte welp\b", "1 schwarzes Jungtier"), (r"^1 (?:welp|jong|kitten)\b", "1 Jungtier"), (r"^(\d+) (?:welpen|jongen|kittens)\b", r"\1 Jungtiere")]
 _N_IT = [(r"^Drieling$", "Tre gemelli"), (r"\bin twee nesten\b", "in due cucciolate"), (r"\b(\d+) in leven\b", r"\1 in vita"),
          (r"^1 zwarte welp\b", "1 cucciolo nero"), (r"^1 (?:welp|jong|kitten)\b", "1 cucciolo"), (r"^(\d+) (?:welpen|jongen|kittens)\b", r"\1 cuccioli")]
+_N_ES = [(r"^Drieling$", "Trillizos"), (r"\bin twee nesten\b", "en dos camadas"), (r"\b(\d+) in leven\b", r"\1 con vida"),
+         (r"^1 zwarte welp\b", "1 cría negra"), (r"^1 (?:welp|jong|kitten)\b", "1 cría"), (r"^(\d+) (?:welpen|jongen|kittens)\b", r"\1 crías")]
 def _vert(nl, regels):
     for a, b in regels:
         nl = re.sub(a, b, nl)
     return nl
 # talen van elke gids na Nederlands en Engels (zelfde volgorde als de vakken in de gids)
-GTAAL = {"nl": [], "be": ["fr"], "lu": ["fr", "de"], "de": ["de"], "fr": ["fr"], "at": ["de"], "ch": ["de", "fr", "it"], "uk": [], "it": ["it"]}
+GTAAL = {"nl": [], "be": ["fr"], "lu": ["fr", "de"], "de": ["de"], "fr": ["fr"], "at": ["de"], "ch": ["de", "fr", "it"], "uk": [], "it": ["it"], "es": ["es"]}
 def n4(n, land):
-    """[nl, en, fr, de, it] voor 'aantal jongen': uit de gids zelf als die de taal heeft, anders vertaald met vaste regels."""
+    """[nl, en, fr, de, it, es] voor 'aantal jongen': uit de gids zelf als die de taal heeft, anders vertaald met vaste regels."""
     vak = lambda l: (n[2 + GTAAL.get(land, []).index(l)] if l in GTAAL.get(land, []) and len(n) > 2 + GTAAL[land].index(l) else "")
     fr = vak("fr") or _vert(n[0], _N_FR)
     de = vak("de") or _vert(n[0], _N_DE)
     it = vak("it") or _vert(n[0], _N_IT)
-    return [n[0], n[1], fr, de, it]
+    es = vak("es") or _vert(n[0], _N_ES)
+    return [n[0], n[1], fr, de, it, es]
 
 def _young(o, sp_en, fr, today, pre):
     SP = {a[0]: a for a in o["SPECIES"]}
@@ -49,7 +52,7 @@ def _young(o, sp_en, fr, today, pre):
         out.append((d, e))
     return out
 
-def bereken(parts, oud, today, frnames, land="", denames=None, itnames=None):
+def bereken(parts, oud, today, frnames, land="", denames=None, itnames=None, esnames=None):
     """parts: {deel: extract-uitvoer}; oud: huidige D-invoer van dit land (kaartvorm, notitie blijven)."""
     locs, conf, ys, lt = [], set(), [], []
     for deel, o in parts.items():
@@ -65,7 +68,7 @@ def bereken(parts, oud, today, frnames, land="", denames=None, itnames=None):
             for r in o["R"]:
                 if r[2] in l[4]:
                     bysp.setdefault(r[0], set()).update(r[4].split("+"))
-            sps = [[sp, sp_en(sp), fr(sp, sp_en(sp)), next(c for c in PRIO if c in codes), slug(sp), (denames or {}).get(sp, sp_en(sp)), (itnames or {}).get(sp, sp_en(sp))] for sp, codes in bysp.items()]
+            sps = [[sp, sp_en(sp), fr(sp, sp_en(sp)), next(c for c in PRIO if c in codes), slug(sp), (denames or {}).get(sp, sp_en(sp)), (itnames or {}).get(sp, sp_en(sp)), (esnames or {}).get(sp, sp_en(sp))] for sp, codes in bysp.items()]
             e = [l[0], l[1], l[2], l[3], slug(l[0]), sps]
             if pre:
                 e.append(pre)
@@ -86,15 +89,15 @@ def bereken(parts, oud, today, frnames, land="", denames=None, itnames=None):
     nieuw.update({"counts": [len(conf), len(locs)], "locs": locs, "young": young, "lt": lt})
     return nieuw
 
-def soorten(DATA, frnames, today, denames=None, itnames=None):
+def soorten(DATA, frnames, today, denames=None, itnames=None, esnames=None):
     """Eén lijst van alle soorten over alle landen heen (sleutel: wetenschappelijke naam).
-    Per soort: [slug, nl, en, fr, wetenschappelijk, aliassen, fotonummer, foto-info, recente geboortes, de, it]."""
+    Per soort: [slug, nl, en, fr, wetenschappelijk, aliassen, fotonummer, foto-info, recente geboortes, de, it, es]."""
     nl = DATA["nl"]["main"]
     spen = nl.get("SPEN") or {}
     out, bysci = [], {}
     for s in nl["SPECIES"]:
         en = (spen.get(s[0]) or [s[0]])[0] or s[0]
-        e = {"slug": slug(s[0]), "nl": s[0], "en": en, "fr": frnames.get(s[0], ""), "sci": s[2], "de": (denames or {}).get(s[0], ""), "it": (itnames or {}).get(s[0], ""), "al": [], "img": None, "foto": None, "young": []}
+        e = {"slug": slug(s[0]), "nl": s[0], "en": en, "fr": frnames.get(s[0], ""), "sci": s[2], "de": (denames or {}).get(s[0], ""), "it": (itnames or {}).get(s[0], ""), "es": (esnames or {}).get(s[0], ""), "al": [], "img": None, "foto": None, "young": []}
         bysci[s[2]] = e
         out.append(e)
     for c, parts in DATA.items():
@@ -119,5 +122,5 @@ def soorten(DATA, frnames, today, denames=None, itnames=None):
     res = []
     for e in out:
         ys = [y for d, y in sorted(e["young"], key=lambda t: t[0], reverse=True)]
-        res.append([e["slug"], e["nl"], e["en"], e["fr"], e["sci"], e["al"], e["img"], e["foto"] or {}, ys, e["de"], e["it"]])
+        res.append([e["slug"], e["nl"], e["en"], e["fr"], e["sci"], e["al"], e["img"], e["foto"] or {}, ys, e["de"], e["it"], e["es"]])
     return res

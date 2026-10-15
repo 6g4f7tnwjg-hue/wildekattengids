@@ -1,0 +1,475 @@
+{
+ "no": 2,
+ "intro_nl": "Een chital blaft schel. Even later krijst een langoer vanuit een boom, en dan is het stil. Je chauffeur zet de motor af. Op het stoffige pad, honderd meter verderop, stapt een tijgerin uit het bamboe, kijkt je jeep even aan en loopt dan rustig naar de waterpoel. In Tadoba en Bandhavgarh gebeurt dit in het hete voorjaar op de meeste safaridagen. Kans: 5 – met drie à vier dagen in een topreservaat zie je hem bijna zeker.",
+ "intro_en": "A chital barks sharply. A moment later a langur shrieks from a tree, and then everything goes quiet. Your driver cuts the engine. On the dusty track a hundred metres ahead, a tigress steps out of the bamboo, glances at your jeep and strolls down to the waterhole. In Tadoba and Bandhavgarh this happens on most safari days in the hot spring months. Chance: 5 – with three or four days in a top reserve you will almost certainly see one.",
+ "spots": [
+  {
+   "id": "in-tadoba",
+   "name_nl": "Tadoba",
+   "name_en": "Tadoba",
+   "area_nl": "Tadoba-Andhari Tiger Reserve, Chandrapur (Maharashtra)",
+   "area_en": "Tadoba-Andhari Tiger Reserve, Chandrapur (Maharashtra)",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 20.2,
+   "lon": 79.4,
+   "score": 5,
+   "why_nl": "Een bezoeker zag in maart 2025 op 7 van de 8 safari's minstens twee tijgers, en ook andere recente verslagen op mammalwatching.com melden meerdere tijgers per verblijf.",
+   "why_en": "A visitor in March 2025 saw at least two tigers on 7 of 8 safaris, and other recent mammalwatching.com reports also log several tigers per stay.",
+   "season_nl": "februari t/m mei (droge tijd); in april–mei concentreren tijgers zich bij waterpoelen. Kerngebied dicht tijdens de moesson (ca. juli–september).",
+   "season_en": "February to May (dry season); in April–May tigers concentrate at waterholes. Core zone closed in the monsoon (roughly July–September).",
+   "time_nl": "vroege ochtend en late middag (vaste safaritijden van het park)",
+   "time_en": "early morning and late afternoon (fixed park safari slots)",
+   "trip_nl": "jeepsafari's (ochtend en middag) in kern- en bufferzone vanaf de poorten rond het reservaat, 3 à 4 dagen; vaak gecombineerd met Pench",
+   "trip_en": "jeep safaris (morning and afternoon) in core and buffer zones from the gates around the reserve, 3–4 days; often combined with Pench",
+   "sources": [
+    2,
+    3,
+    4,
+    7
+   ]
+  },
+  {
+   "id": "in-bandhavgarh",
+   "name_nl": "Bandhavgarh",
+   "name_en": "Bandhavgarh",
+   "area_nl": "Bandhavgarh Tiger Reserve, Umaria (Madhya Pradesh)",
+   "area_en": "Bandhavgarh Tiger Reserve, Umaria (Madhya Pradesh)",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 23.7,
+   "lon": 81.0,
+   "score": 5,
+   "why_nl": "Met ruim honderd tijgers (telling 2022) is een dag zonder tijger hier volgens een groep uit 2024 'vrij ongewoon'; die groep telde 18 tijgerwaarnemingen in Bandhavgarh en Kanha samen.",
+   "why_en": "With over a hundred tigers (2022 estimate), a tigerless day here was 'rather unusual' according to a 2024 group, which logged 18 tiger sightings across Bandhavgarh and Kanha.",
+   "season_nl": "februari t/m mei (droge tijd); in april–mei concentreren tijgers zich bij waterpoelen. Kerngebied dicht tijdens de moesson (ca. juli–september).",
+   "season_en": "February to May (dry season); in April–May tigers concentrate at waterholes. Core zone closed in the monsoon (roughly July–September).",
+   "time_nl": "vroege ochtend en late middag (vaste safaritijden van het park)",
+   "time_en": "early morning and late afternoon (fixed park safari slots)",
+   "trip_nl": "jeepsafari's per zone vanaf Tala en de andere poorten, 3 à 4 dagen; een dure dagvergunning geeft meer tijd in het park",
+   "trip_en": "zone-based jeep safaris from Tala and the other gates, 3–4 days; a pricey full-day permit buys extra time in the park",
+   "sources": [
+    5,
+    8,
+    7
+   ]
+  },
+  {
+   "id": "in-kanha",
+   "name_nl": "Kanha",
+   "name_en": "Kanha",
+   "area_nl": "Kanha Tiger Reserve, Mandla/Balaghat (Madhya Pradesh)",
+   "area_en": "Kanha Tiger Reserve, Mandla/Balaghat (Madhya Pradesh)",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 22.3,
+   "lon": 80.6,
+   "score": 4,
+   "why_nl": "Kanha levert regelmatig tijgers op, maar een stel zag er in maart 2020 in drie dagen maar één, en dan pas op de laatste rit.",
+   "why_en": "Kanha regularly produces tigers, but one couple in March 2020 saw just one in three days, and only on their final drive.",
+   "season_nl": "februari t/m mei (droge tijd); in april–mei concentreren tijgers zich bij waterpoelen. Kerngebied dicht tijdens de moesson (ca. juli–september). Februari–maart ook goed voor barasingha en dhole.",
+   "season_en": "February to May (dry season); in April–May tigers concentrate at waterholes. Core zone closed in the monsoon (roughly July–September). February–March is also good for barasingha and dhole.",
+   "time_nl": "vroege ochtend en late middag (vaste safaritijden van het park)",
+   "time_en": "early morning and late afternoon (fixed park safari slots)",
+   "trip_nl": "jeepsafari's vanaf de poorten Mukki, Kisli en Khatia, 3 à 4 dagen",
+   "trip_en": "jeep safaris from the Mukki, Kisli and Khatia gates, 3–4 days",
+   "sources": [
+    4,
+    5,
+    7
+   ]
+  },
+  {
+   "id": "in-pench",
+   "name_nl": "Pench",
+   "name_en": "Pench",
+   "area_nl": "Pench Tiger Reserve, Seoni (Madhya Pradesh) en Pench (Maharashtra)",
+   "area_en": "Pench Tiger Reserve, Seoni (Madhya Pradesh) and Pench (Maharashtra)",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 21.7,
+   "lon": 79.3,
+   "score": 4,
+   "why_nl": "Een groep zag in maart 2019 in zeven ritten in Pench en zeven in Tadoba samen elf verschillende tijgers, en een mammalwatcher noemt Pench zijn beste tijgerpark dankzij de rustige wegen.",
+   "why_en": "A group saw eleven different tigers in seven drives in Pench and seven in Tadoba in March 2019, and one mammalwatcher calls Pench his best tiger park thanks to its quiet tracks.",
+   "season_nl": "januari t/m mei; januari–februari is rustiger, april–mei geeft de beste kansen bij water",
+   "season_en": "January to May; January–February is quieter, April–May gives the best chances at water",
+   "time_nl": "vroege ochtend en late middag (vaste safaritijden van het park)",
+   "time_en": "early morning and late afternoon (fixed park safari slots)",
+   "trip_nl": "jeepsafari's vanaf de poorten rond het reservaat, 3 dagen; makkelijk te combineren met Tadoba (beide via Nagpur)",
+   "trip_en": "jeep safaris from the gates around the reserve, 3 days; easy to combine with Tadoba (both via Nagpur)",
+   "sources": [
+    2,
+    7
+   ]
+  },
+  {
+   "id": "in-nagarhole-kabini",
+   "name_nl": "Nagarhole (Kabini)",
+   "name_en": "Nagarhole (Kabini)",
+   "area_nl": "Nationaal Park Nagarhole (Rajiv Gandhi NP), zuidkant bij het Kabini-stuwmeer (Karnataka)",
+   "area_en": "Nagarhole (Rajiv Gandhi) National Park, southern side at the Kabini reservoir (Karnataka)",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 12.0,
+   "lon": 76.1,
+   "score": 4,
+   "why_nl": "Een groep telde eind januari 2023 in zeven dagen samen zo'n vijftien tijgerwaarnemingen (op één dag na elke dag raak); het park telde 127 tijgers in 2022.",
+   "why_en": "One group logged around fifteen tiger sightings in seven days in late January 2023 (tigers on all but one day); the park held 127 tigers in 2022.",
+   "season_nl": "januari t/m mei; in januari staan de bomen kaal en zie je verder, in april–mei trekt het wild naar het Kabini-stuwmeer",
+   "season_en": "January to May; in January the trees are bare and you see further, in April–May game gathers at the Kabini reservoir",
+   "time_nl": "vroege ochtend en late middag (vaste safaritijden van het park)",
+   "time_en": "early morning and late afternoon (fixed park safari slots)",
+   "trip_nl": "jeep- en bussafari's van de bosdienst vanuit de zuidkant van het park (Kabini), 3 à 4 dagen; ook kans op luipaard en dhole",
+   "trip_en": "forest-department jeep and bus safaris from the park's southern (Kabini) side, 3–4 days; leopard and dhole possible too",
+   "sources": [
+    6,
+    8
+   ]
+  },
+  {
+   "id": "in-ranthambore",
+   "name_nl": "Ranthambore",
+   "name_en": "Ranthambore",
+   "area_nl": "Ranthambhore Tiger Reserve, Sawai Madhopur (Rajasthan)",
+   "area_en": "Ranthambhore Tiger Reserve, Sawai Madhopur (Rajasthan)",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 26.0,
+   "lon": 76.5,
+   "score": 4,
+   "why_nl": "Ranthambore is beroemd om tijgers in open, droog bos bij meren en oude ruïnes, en mammalwatchers melden er tijgers, maar de drukte is groot en je zone krijg je toegewezen.",
+   "why_en": "Ranthambore is famous for tigers in open dry forest around lakes and old ruins, and mammalwatchers do report them, but crowds are big and your zone is assigned to you.",
+   "season_nl": "oktober t/m juni; maart–juni het heetst en meestal het beste bij water. Kernzones dicht in de moesson.",
+   "season_en": "October to June; March–June is hottest and usually best at water. Core zones closed in the monsoon.",
+   "time_nl": "vroege ochtend en late middag (vaste safaritijden van het park)",
+   "time_en": "early morning and late afternoon (fixed park safari slots)",
+   "trip_nl": "jeep- of kantersafari's (open truck) per toegewezen zone, online te boeken bij de bosdienst van Rajasthan, 3 dagen (6 ritten)",
+   "trip_en": "jeep or 'canter' (open truck) safaris in an assigned zone, booked online with the Rajasthan forest department, 3 days (6 drives)",
+   "sources": [
+    19,
+    7,
+    4
+   ]
+  },
+  {
+   "id": "in-corbett",
+   "name_nl": "Corbett",
+   "name_en": "Corbett",
+   "area_nl": "Corbett Tiger Reserve (o.a. zones Dhikala en Bijrani), Uttarakhand",
+   "area_en": "Corbett Tiger Reserve (incl. Dhikala and Bijrani zones), Uttarakhand",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 29.5,
+   "lon": 78.9,
+   "score": 3,
+   "why_nl": "Corbett heeft het grootste tijgeraantal van alle Indiase reservaten (231 in 2022), maar hoog gras en dicht salbos maken ze lastiger te zien; een gids zag er in februari 2020 in twee zones geen.",
+   "why_en": "Corbett has the most tigers of any Indian reserve (231 in 2022), but tall grass and dense sal forest make them harder to see; one guide saw none in two zones in February 2020.",
+   "season_nl": "half november t/m juni (Dhikala); april–juni het beste, als het gras is afgebrand en het warm is",
+   "season_en": "mid-November to June (Dhikala); April–June is best, when the grass has been burnt and it is hot",
+   "time_nl": "vroege ochtend en late middag (vaste safaritijden van het park)",
+   "time_en": "early morning and late afternoon (fixed park safari slots)",
+   "trip_nl": "jeepsafari's per zone, liefst met overnachting in de bosbungalows van de bosdienst in Dhikala, 3 à 4 dagen",
+   "trip_en": "zone-based jeep safaris, ideally staying in the forest department's rest houses inside Dhikala, 3–4 days",
+   "sources": [
+    8,
+    19,
+    7
+   ]
+  },
+  {
+   "id": "np-bardia",
+   "name_nl": "Bardia",
+   "name_en": "Bardia",
+   "area_nl": "Nationaal Park Bardiya, Karnali-rivier (West-Nepal)",
+   "area_en": "Bardiya National Park, Karnali River (western Nepal)",
+   "country_nl": "Nepal",
+   "country_en": "Nepal",
+   "cont": "asia",
+   "lat": 28.4,
+   "lon": 81.5,
+   "score": 3,
+   "why_nl": "Drie ervaren spoorzoekers zagen in mei 2024 'bijna dagelijks' tijgers, deels te voet langs de rivieren, maar dat vergt geduld, conditie en een goede gids.",
+   "why_en": "Three experienced trackers saw tigers 'almost daily' in May 2024, partly on foot along the rivers, but it takes patience, fitness and a good guide.",
+   "season_nl": "maart t/m mei: laag water, kort gras en hitte drijven tijgers naar de rivieren",
+   "season_en": "March to May: low water, short grass and heat push tigers to the rivers",
+   "time_nl": "de hele dag; tijgers rusten graag in of bij water",
+   "time_en": "all day; tigers like to rest in or near water",
+   "trip_nl": "voettochten met een erkende natuurgids en jeepsafari's, vaak hele dagen posten bij de Karnali en Babai, 4 à 6 dagen",
+   "trip_en": "guided walks with a licensed nature guide plus jeep safaris, often full days waiting along the Karnali and Babai rivers, 4–6 days",
+   "sources": [
+    9,
+    11
+   ]
+  },
+  {
+   "id": "np-chitwan",
+   "name_nl": "Chitwan",
+   "name_en": "Chitwan",
+   "area_nl": "Nationaal Park Chitwan (Sauraha en omgeving), Centraal-Nepal",
+   "area_en": "Chitwan National Park (around Sauraha), central Nepal",
+   "country_nl": "Nepal",
+   "country_en": "Nepal",
+   "cont": "asia",
+   "lat": 27.5,
+   "lon": 84.3,
+   "score": 2,
+   "why_nl": "Chitwan telt 145 tijgers (2026), maar een bezoeker zag er in negen dagen maar twee, kort, en een andere groep in 2018 geen enkele.",
+   "why_en": "Chitwan holds 145 tigers (2026), yet one visitor saw just two, briefly, in nine days, and another group in 2018 saw none.",
+   "season_nl": "februari t/m mei (gras gemaaid of afgebrand); december–januari koel en ook mogelijk",
+   "season_en": "February to May (grass cut or burnt); December–January is cool and also possible",
+   "time_nl": "vroege ochtend en avondschemer, vanaf uitkijktorens bij de rivier",
+   "time_en": "early morning and dusk, from watchtowers by the river",
+   "trip_nl": "jeepsafari's en begeleide voettochten vanuit Sauraha, eventueel met overnachting bij een uitkijktoren; 3 à 5 dagen",
+   "trip_en": "jeep safaris and guided walks from Sauraha, optionally a night at a watchtower; 3–5 days",
+   "sources": [
+    10,
+    11
+   ]
+  },
+  {
+   "id": "in-sundarbans",
+   "name_nl": "Sundarbans",
+   "name_en": "Sundarbans",
+   "area_nl": "Sundarban Tiger Reserve, Zuid-24 Parganas (West-Bengalen); ook Sundarbans in Bangladesh",
+   "area_en": "Sundarban Tiger Reserve, South 24 Parganas (West Bengal); also the Bangladesh Sundarbans",
+   "country_nl": "India / Bangladesh",
+   "country_en": "India / Bangladesh",
+   "cont": "asia",
+   "lat": 21.9,
+   "lon": 88.8,
+   "score": 2,
+   "why_nl": "Ongeveer honderd tijgers leven hier in mangrove, maar je ziet ze alleen vanaf de boot en de meeste bezoekers zien sporen, geen tijger, al zou de kans aan Indiase zijde de laatste jaren gestegen zijn.",
+   "why_en": "Around a hundred tigers live in the mangroves, but you can only look from a boat and most visitors see tracks rather than a tiger, though chances on the Indian side reportedly improved in recent years.",
+   "season_nl": "november t/m februari (koel); kies dagen met laagwater rond de ochtend",
+   "season_en": "November to February (cool); pick days with low tide around the morning",
+   "time_nl": "bij laagwater, als de modderbanken droogvallen",
+   "time_en": "at low tide, when the mudbanks are exposed",
+   "trip_nl": "meerdaagse boottochten door de kreken vanaf Godkhali/Sajnekhali (India) of vanuit Mongla/Khulna (Bangladesh), 2 à 4 dagen",
+   "trip_en": "multi-day boat trips through the creeks from Godkhali/Sajnekhali (India) or from Mongla/Khulna (Bangladesh), 2–4 days",
+   "sources": [
+    12,
+    13
+   ]
+  },
+  {
+   "id": "ru-bikin-sikhote-alin",
+   "name_nl": "Bikin en de Sikhote-Alin",
+   "name_en": "Bikin and the Sikhote-Alin",
+   "area_nl": "Nationaal Park Bikin en de Sikhote-Alin-bossen, Primorje en Chabarovsk (Russisch Verre Oosten)",
+   "area_en": "Bikin National Park and the Sikhote-Alin forests, Primorye and Khabarovsk (Russian Far East)",
+   "country_nl": "Rusland",
+   "country_en": "Russia",
+   "cont": "asia",
+   "lat": 46.8,
+   "lon": 135.5,
+   "score": 1,
+   "why_nl": "De Amoertijger is in de taiga zeer schuw; bezoekers volgen vooral sporen in de sneeuw en zien de kat meestal alleen op cameravallen, een directe waarneming is een uitzondering.",
+   "why_en": "The Amur tiger is extremely shy in the taiga; visitors mainly follow tracks in the snow and usually see the cat only on camera traps, a direct sighting is exceptional.",
+   "season_nl": "november t/m maart: sporen in de sneeuw, maar strenge vorst",
+   "season_en": "November to March: tracks in the snow, but severe frost",
+   "time_nl": "overdag sporen zoeken; tijgers zelf zijn vooral in de schemer actief",
+   "time_en": "track by day; the tigers themselves are mostly active at dusk",
+   "trip_nl": "gespecialiseerde winterexpedities met spoorzoeken en cameravallen; in Bikin alleen met vergunning en via het bezoekerscentrum in Krasny Jar, 7 à 10 dagen",
+   "trip_en": "specialist winter expeditions with tracking and camera traps; in Bikin only with a permit via the visitor centre in Krasny Yar, 7–10 days",
+   "sources": [
+    14,
+    15
+   ]
+  },
+  {
+   "id": "th-huai-kha-khaeng",
+   "name_nl": "Huai Kha Khaeng",
+   "name_en": "Huai Kha Khaeng",
+   "area_nl": "Wildreservaat Huai Kha Khaeng (Western Forest Complex), Uthai Thani",
+   "area_en": "Huai Kha Khaeng Wildlife Sanctuary (Western Forest Complex), Uthai Thani",
+   "country_nl": "Thailand",
+   "country_en": "Thailand",
+   "cont": "asia",
+   "lat": 15.5,
+   "lon": 99.2,
+   "score": 1,
+   "why_nl": "De Indochinese tijger herstelt hier (94 dieren gefotografeerd in 2023), maar alle kennis komt van cameravallen; waarnemingen door toeristen zijn niet gedocumenteerd.",
+   "why_en": "The Indochinese tiger is recovering here (94 individuals photographed in 2023), but everything known comes from camera traps; sightings by tourists are not documented.",
+   "season_nl": "november t/m april (droge tijd)",
+   "season_en": "November to April (dry season)",
+   "time_nl": "schemer en nacht",
+   "time_en": "dusk and night",
+   "trip_nl": "bezoek aan het hoofdkwartier en de uitkijktoren langs de Huai Kha Khaeng-rivier, 1 à 2 dagen; het binnenland is grotendeels afgesloten",
+   "trip_en": "a visit to the headquarters area and the watchtower along the Huai Kha Khaeng river, 1–2 days; the interior is largely off-limits",
+   "sources": [
+    16
+   ]
+  },
+  {
+   "id": "id-kerinci-seblat",
+   "name_nl": "Kerinci Seblat",
+   "name_en": "Kerinci Seblat",
+   "area_nl": "Nationaal Park Kerinci Seblat, West- en Midden-Sumatra",
+   "area_en": "Kerinci Seblat National Park, western and central Sumatra",
+   "country_nl": "Indonesië",
+   "country_en": "Indonesia",
+   "cont": "asia",
+   "lat": -2.2,
+   "lon": 101.6,
+   "score": 1,
+   "why_nl": "De Sumatraanse tijger komt in alle habitattypen van het park voor, maar het bergregenwoud is dicht en mammalwatchers op Sumatra zien hem vrijwel nooit.",
+   "why_en": "The Sumatran tiger occurs in every habitat type of the park, but the montane rainforest is dense and mammalwatchers in Sumatra almost never see one.",
+   "season_nl": "mei t/m september (droogste maanden)",
+   "season_en": "May to September (driest months)",
+   "time_nl": "vroege ochtend en schemer",
+   "time_en": "early morning and dusk",
+   "trip_nl": "meerdaagse jungletrektochten met lokale gids en drager vanuit Sungai Penuh/Kersik Tuo, 4 à 7 dagen; sporen en cameravallen zijn het realistische doel",
+   "trip_en": "multi-day jungle treks with a local guide and porter from Sungai Penuh/Kersik Tuo, 4–7 days; tracks and camera-trap images are the realistic goal",
+   "sources": [
+    17,
+    18,
+    1
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Luister naar alarmroepen: het schelle blaffen van chital, het 'bellen' van sambar en het gekrijs van langoeren verraden vaak een tijger. Zet de motor af en wacht.",
+  "Kijk naar pootafdrukken (pugmarks) op de zandwegen: verse sporen in de ochtend vertellen je gids welke kant de tijger op ging.",
+  "Ga in het hete voorjaar (april–mei): dan liggen tijgers overdag in of bij waterpoelen en zie je ze veel makkelijker.",
+  "Boek je safari's maanden vooruit en let op de zone: je krijgt per rit een zone toegewezen, en de ene zone kan op dat moment veel beter zijn dan de andere. Kern- en bufferzones verschillen per seizoen.",
+  "Plan meerdere ritten: drie à vier dagen (6–8 ritten) geeft veel meer kans dan één snelle rit. Rustigere parken zoals Pench geven vaak betere, minder drukke waarnemingen.",
+  "In Nepal kun je met een erkende gids te voet zoeken en uren posten bij de rivier; blijf altijd bij je gids en houd afstand.",
+  "In de Sundarbans en het Russische Verre Oosten draait het om sporen: laagwater in de mangrove, verse sneeuw in de taiga."
+ ],
+ "tips_en": [
+  "Listen for alarm calls: the sharp bark of chital, the honking 'bell' of sambar and the shrieks of langurs often give a tiger away. Switch off the engine and wait.",
+  "Look for pugmarks on the dirt tracks: fresh prints in the morning tell your guide which way the tiger went.",
+  "Go in the hot spring months (April–May): tigers then lie in or near waterholes during the day and are far easier to see.",
+  "Book your safaris months ahead and mind the zone: each drive is assigned a zone, and one zone can be much better than another at that moment. Core and buffer zones differ by season.",
+  "Plan several drives: three to four days (6–8 drives) gives a far better chance than one quick visit. Quieter parks such as Pench often give better, less crowded sightings.",
+  "In Nepal you can search on foot with a licensed guide and wait for hours by the river; always stay with your guide and keep your distance.",
+  "In the Sundarbans and the Russian Far East it is all about tracks: low tide in the mangroves, fresh snow in the taiga."
+ ],
+ "threats_nl": [
+  "Stroperij voor huid, botten en andere lichaamsdelen voor de (illegale) handel en traditionele medicijnen.",
+  "Verlies en versnippering van leefgebied door landbouw, plantages, houtkap, wegen en mijnbouw.",
+  "Uitputting van prooidieren door jacht en strikken, en concurrentie met vee.",
+  "Conflicten tussen mens en tijger, met vergeldingsdoden als gevolg; in Nepal stierven in 2025–26 tien mensen door tijgers.",
+  "Kleine, geïsoleerde populaties met risico op inteelt; in de Sundarbans bovendien zeespiegelstijging."
+ ],
+ "threats_en": [
+  "Poaching for skins, bones and other body parts for the (illegal) trade and traditional medicine.",
+  "Habitat loss and fragmentation from agriculture, plantations, logging, roads and mining.",
+  "Prey depletion through hunting and snaring, and competition with livestock.",
+  "Human–tiger conflict leading to retaliatory killing; in Nepal ten people were killed by tigers in 2025–26.",
+  "Small, isolated populations at risk of inbreeding; in the Sundarbans also sea-level rise."
+ ],
+ "status_note_nl": "De tijger staat als Bedreigd (Endangered) op de Rode Lijst van de IUCN; de beoordeling van 2022 schat 3726–5578 wilde tijgers (zonder welpen). Het verspreidingsgebied is sterk gekrompen, maar in India, Nepal en West-Thailand nemen de aantallen toe.",
+ "status_note_en": "The tiger is listed as Endangered on the IUCN Red List; the 2022 assessment estimates 3,726–5,578 wild tigers (excluding cubs). Its range has shrunk dramatically, but numbers are rising in India, Nepal and western Thailand.",
+ "sources": [
+  {
+   "id": 1,
+   "title": "Tiger – living species account (IUCN SSC Cat Specialist Group)",
+   "url": "https://www.catsg.org/living-species-tiger"
+  },
+  {
+   "id": 2,
+   "title": "India Tigers trip report: Tadoba and Pench, March 2019 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/India-Tigers-Trip-Report-V1.0.pdf"
+  },
+  {
+   "id": 3,
+   "title": "Kaziranga and Tadoba trip report, March 2025 (mammalwatching.com)",
+   "url": "https://mammalwatching.com/wp-content/uploads/2025/03/Kaziranga-and-Tadoba-Trip-Report-March-2025.pdf"
+  },
+  {
+   "id": 4,
+   "title": "India, February–March 2020: Kaziranga, Tadoba, Kanha, Satpura (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/JW-INDIA-2020.pdf"
+  },
+  {
+   "id": 5,
+   "title": "Tigers of India: Bandhavgarh and Kanha, Feb–Mar 2024 (mammalwatching.com)",
+   "url": "https://mammalwatching.com/wp-content/uploads/2024/06/Trip_Report-TigersofIndia_2024.pdf"
+  },
+  {
+   "id": 6,
+   "title": "Kabini (Nagarhole) tour report, Jan–Feb 2023 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/community-post/kabini-tour-report-27th-january-to-3rd-february-2023/"
+  },
+  {
+   "id": 7,
+   "title": "The perfect Indian itinerary? – discussion with tiger experiences (mammalwatching.com, 2020)",
+   "url": "https://www.mammalwatching.com/2020/03/31/the-perfect-indian-itinerary/"
+  },
+  {
+   "id": 8,
+   "title": "India's uneven tiger tale – analysis of NTCA Status of Tigers 2022 (Down To Earth)",
+   "url": "https://www.downtoearth.org.in/amp/story/wildlife-biodiversity/indias-uneven-tiger-tale-22-reserves-host-fewer-than-10-big-cats-and-3-of-them-have-none-at-all-finds-dte-analysis"
+  },
+  {
+   "id": 9,
+   "title": "Tigers on foot in Nepal's lowland forests, May 2024 (mammalwatching.com, 2025)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2025/08/Tigers-on-foot-in-Nepals-lowland-forests-1.pdf"
+  },
+  {
+   "id": 10,
+   "title": "Chitwan National Park trip report, Dec 2025–Jan 2026 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2026/02/Napal-Trip-Report-2025.pdf"
+  },
+  {
+   "id": 11,
+   "title": "Habitat concerns grow as Nepal counts a record 429 tigers (Kathmandu Post, 2026)",
+   "url": "https://kathmandupost.com/national/2026/07/30/habitat-concerns-grow-as-nepal-counts-a-record-429-tigers"
+  },
+  {
+   "id": 12,
+   "title": "Sundarbans tiger census begins; 2022 count of 101 tigers (Morung Express, 2025)",
+   "url": "https://morungexpress.com/sundarbans-tiger-census-begins-more-than-1400-cameras-to-be-installed-for-scientific-count"
+  },
+  {
+   "id": 13,
+   "title": "Sundarbans is on fire – trip report winter and monsoon 2024 (Safaritalk forum)",
+   "url": "https://safaritalk.net/topic/23020-sundarbans-is-on-fire-winter-and-monsoon-2024"
+  },
+  {
+   "id": 14,
+   "title": "Siberian tiger tracking in winter, Russian Far East (mammalwatching.com, 2016)",
+   "url": "https://www.mammalwatching.com/?p=11773"
+  },
+  {
+   "id": 15,
+   "title": "Bikin National Park – visitor information (Visit Primorye, official tourism portal)",
+   "url": "https://visit-primorye.ru/en/what-to-do/nacionalnyj-park-bikin"
+  },
+  {
+   "id": 16,
+   "title": "Thai tiger numbers swell as prey populations stabilize in western forests (Mongabay, 2024)",
+   "url": "https://news.mongabay.com/2024/07/thai-tiger-numbers-swell-as-prey-populations-stabilize-in-western-forests/"
+  },
+  {
+   "id": 17,
+   "title": "Linkie et al. – Habitat destruction and poaching threaten the Sumatran tiger in Kerinci Seblat NP (Oryx, 2003)",
+   "url": "https://core-cms.cambridgecore.org/core/services/aop-cambridge-core/content/view/1A849BD4E999F0FB1894DB208F103AE5/S0030605303000103a.pdf/habitat-destruction-and-poaching-threaten-the-sumatran-tiger-in-kerinci-seblat-national-park-sumatra.pdf"
+  },
+  {
+   "id": 18,
+   "title": "Way Kambas, Sumatra – 4-day trip report, Nov 2024 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/11/Bennett-Gardner-Way-Kambas-2024-Trip-Report-1.pdf"
+  },
+  {
+   "id": 19,
+   "title": "India – overview of trip reports incl. Ranthambore and Corbett (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/gd_place/india/"
+  },
+  {
+   "id": 20,
+   "title": "Global tiger population stable and potentially increasing (Panthera, 2022)",
+   "url": "https://panthera.org/newsroom/global-tiger-population-stable-and-potentially-increasing-despite-extreme-threats"
+  }
+ ],
+ "doubts": "Aantal spots (13) is wat meer dan gevraagd; Kaziranga bewust weggelaten: veel tijgers (ca. 106 volgens een verslag) maar twee mammalwatching-verslagen (2020, 2025) zagen er geen en noemen het 'geen goede optie voor tijgers' – eventueel toevoegen met kans 2. Ranthambore: kans 4 is gebaseerd op algemene reputatie en een oud verslag (2014) plus forumcommentaren; geen recent kwantitatief verslag gevonden. Corbett: aantallen 2022 verschillen per bron (231 in DTE-analyse, 260 elders); ik gebruik 231. Bandhavgarh-tijgeraantal 104 (DTE). Bardia: kans 3 berust op één verslag van ervaren spoorzoekers (mei 2024, 'bijna dagelijks'); Bardia daalde in 2026 naar 112 tijgers. Rusland: Durminskoye (Chabarovsk) bewust niet als aparte spot – vrijwel alle info komt van reisorganisaties (niet toegestaan als bron); ik heb gekozen voor de regio Bikin/Sikhote-Alin met kans 1. Een mammalwatching-bericht (2019) meldt een jonge tijger vanuit een fotohut in het Verre Oosten, maar daar werd met lokaas gewerkt – niet opgenomen. Land of the Leopard heeft ook tijgers (bestaande id ru-land-of-the-leopard) maar ik vond geen recente aantallen. Thailand: Huai Kha Khaeng is Werelderfgoed; toegang voor toeristen beperkt, kans in de praktijk vrijwel nul (alleen cameravallen). Sumatra: geen enkel verslag met een tijgerwaarneming gevonden (ook niet Way Kambas). De IUCN/Cat Specialist Group-pagina noemt de trend nog 'afnemend' over drie generaties, terwijl Panthera (2022) spreekt van 'stabiel en mogelijk toenemend'; daarom de formulering 'gekrompen, maar toenemend in India, Nepal en West-Thailand'. Safaritalk-pagina gaf bij openen 403; inhoud alleen uit zoekresultaat. Coördinaten Pench, Nagarhole, Corbett, Bardia, Chitwan, Sundarbans, Bikin, HKK en Kerinci zijn ruwe centra (0,1°)."
+}

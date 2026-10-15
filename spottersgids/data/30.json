@@ -1,0 +1,395 @@
+{
+ "no": 30,
+ "intro_nl": "Het is zeven uur 's ochtends op de vlaktes van Ndutu. Een groepje Thomsongazellen staat stokstijf en staart allemaal dezelfde kant op. Dan zie je hem: een slanke, gevlekte kat op een termietenheuvel, ogen op de kudde. Een paar minuten later barst de sprint los, sneller dan je camera kan volgen. Tussen december en maart is dit in de zuidelijke Serengeti geen zeldzaamheid. Kans: 5 – in het kalfseizoen zie je ze bijna altijd.",
+ "intro_en": "It is seven in the morning on the plains of Ndutu. A group of Thomson's gazelles stands frozen, all staring the same way. Then you see it: a slender, spotted cat on a termite mound, eyes fixed on the herd. A few minutes later the sprint explodes, faster than your camera can follow. Between December and March this is no rarity in the southern Serengeti. Chance: 5 – in calving season you almost always see them.",
+ "spots": [
+  {
+   "id": "tz-ndutu-southern-serengeti",
+   "name_nl": "Ndutu en zuidelijke Serengeti",
+   "name_en": "Ndutu and southern Serengeti",
+   "area_nl": "Ndutu-gebied (Ngorongoro Conservation Area) en de zuidelijke vlaktes van Serengeti National Park",
+   "area_en": "Ndutu area (Ngorongoro Conservation Area) and the southern plains of Serengeti National Park",
+   "country_nl": "Tanzania",
+   "country_en": "Tanzania",
+   "cont": "afr",
+   "lat": -3.0,
+   "lon": 34.9,
+   "score": 5,
+   "why_nl": "In het kalfseizoen trekken de grazers naar de korte-grasvlaktes en de cheetahs volgen; een mammalwatching-verslag uit februari beschrijft een jacht op een gnoekalf binnen een kwartier en daarna meerdere groepjes cheetahs rond Ndutu, zelfs in een droog jaar.",
+   "why_en": "In calving season the grazers move onto the short-grass plains and the cheetahs follow; a February mammalwatching report describes a hunt on a wildebeest calf within fifteen minutes and then several groups of cheetahs around Ndutu, even in a dry year.",
+   "season_nl": "December t/m maart, tijdens het kalfseizoen van de gnoes (februari is de piek); valt de regen tegen, dan zijn de vlaktes leger.",
+   "season_en": "December to March, during the wildebeest calving season (February is the peak); if the rains fail, the plains are emptier.",
+   "time_nl": "Vroege ochtend en late middag; cheetahs jagen ook midden op de dag.",
+   "time_en": "Early morning and late afternoon; cheetahs also hunt in the middle of the day.",
+   "trip_nl": "Game drives vanuit kampen en lodges in het Ndutu-gebied en de zuidelijke Serengeti, 3 à 4 dagen.",
+   "trip_en": "Game drives from camps and lodges in the Ndutu area and southern Serengeti, 3 to 4 days.",
+   "sources": [
+    7
+   ]
+  },
+  {
+   "id": "ke-masai-mara",
+   "name_nl": "Masai Mara",
+   "name_en": "Masai Mara",
+   "area_nl": "Masai Mara National Reserve en aangrenzende conservancies, Narok",
+   "area_en": "Masai Mara National Reserve and adjoining conservancies, Narok",
+   "country_nl": "Kenia",
+   "country_en": "Kenya",
+   "cont": "afr",
+   "lat": -1.5,
+   "lon": 35.1,
+   "score": 4,
+   "why_nl": "Recente mammalwatching-verslagen zagen cheetahs op een kort bezoek van drie à vier dagen, maar de vaste populatie is klein (16 zelfstandige volwassenen in 2025) en sommige vondsten lukten pas via tips van rangers.",
+   "why_en": "Recent mammalwatching reports saw cheetahs on short visits of three to four days, but the resident population is small (16 independent adults in 2025) and some finds only came via tips from rangers.",
+   "season_nl": "Het hele jaar; in juli–oktober (de grote trek) is er veel wild, maar ook veel verkeer rond elke cheetah.",
+   "season_en": "Year-round; in July–October (the great migration) there is plenty of game, but also heavy vehicle traffic around every cheetah.",
+   "time_nl": "Vroege ochtend en late middag; cheetahs jagen overdag.",
+   "time_en": "Early morning and late afternoon; cheetahs hunt by day.",
+   "trip_nl": "Game drives vanuit kampen in het reservaat of in de conservancies, minstens 3 à 4 dagen; in de conservancies rijden minder voertuigen.",
+   "trip_en": "Game drives from camps in the reserve or the conservancies, at least 3 to 4 days; the conservancies have fewer vehicles.",
+   "sources": [
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "id": "tz-serengeti",
+   "name_nl": "Serengeti (centraal en oost)",
+   "name_en": "Serengeti (central and east)",
+   "area_nl": "Serengeti National Park, vooral de vlaktes rond Seronera en de korte-grasvlaktes in het zuidoosten",
+   "area_en": "Serengeti National Park, especially the plains around Seronera and the short-grass plains in the south-east",
+   "country_nl": "Tanzania",
+   "country_en": "Tanzania",
+   "cont": "afr",
+   "lat": -2.3,
+   "lon": 34.8,
+   "score": 4,
+   "why_nl": "Trip reports noemen cheetahs langs de route door de centrale Serengeti, al stond er in juli 2024 een rij van twintig auto's bij één dier.",
+   "why_en": "Trip reports mention cheetahs along the route through central Serengeti, although in July 2024 a line of twenty vehicles stood around a single animal.",
+   "season_nl": "Het hele jaar; in de natte tijd zitten veel cheetahs op de zuidelijke en oostelijke vlaktes, in de droge tijd meer in het centrum.",
+   "season_en": "Year-round; in the wet season many cheetahs are on the southern and eastern plains, in the dry season more in the centre.",
+   "time_nl": "Vroege ochtend en late middag; ook midden op de dag op open vlaktes.",
+   "time_en": "Early morning and late afternoon; also at midday on open plains.",
+   "trip_nl": "Game drives vanuit kampen rond Seronera, 2 à 4 dagen.",
+   "trip_en": "Game drives from camps around Seronera, 2 to 4 days.",
+   "sources": [
+    6,
+    7
+   ]
+  },
+  {
+   "id": "za-bw-kgalagadi",
+   "name_nl": "Kgalagadi Transfrontier Park",
+   "name_en": "Kgalagadi Transfrontier Park",
+   "area_nl": "Kgalagadi Transfrontier Park (rivierbeddingen van de Auob en Nossob)",
+   "area_en": "Kgalagadi Transfrontier Park (Auob and Nossob riverbeds)",
+   "country_nl": "Zuid-Afrika / Botswana",
+   "country_en": "South Africa / Botswana",
+   "cont": "afr",
+   "lat": -25.5,
+   "lon": 20.6,
+   "score": 4,
+   "why_nl": "Een verslag uit mei 2026 noemt het 'een van de beste parken voor cheetah' met meerdere waarnemingen, en een verslag uit 2016 zag een moeder met jongen en een geslaagde jacht.",
+   "why_en": "A May 2026 report calls it 'one of the best parks to see cheetah' with several sightings, and a 2016 report saw a mother with cubs and a successful hunt.",
+   "season_nl": "Het hele jaar; na de eerste regens komen springbokken met lammeren naar de rivierbeddingen en jagen de cheetahs daar.",
+   "season_en": "Year-round; after the first rains springbok with lambs move into the riverbeds and the cheetahs hunt there.",
+   "time_nl": "Vroege ochtend; maar jachten worden ook in de hitte van de middag gezien.",
+   "time_en": "Early morning; but hunts are also seen in the heat of the afternoon.",
+   "trip_nl": "Zelf rijden langs de rivierbeddingen vanaf de ruststations, aangevuld met geleide ritten van het park; reken op 4 à 7 dagen.",
+   "trip_en": "Self-drive along the riverbeds from the rest camps, plus the park's guided drives; allow 4 to 7 days.",
+   "sources": [
+    8,
+    9,
+    25
+   ]
+  },
+  {
+   "id": "za-zululand-reserves",
+   "name_nl": "Wildreservaten van Zululand",
+   "name_en": "Zululand game reserves",
+   "area_nl": "Omheinde privé-wildreservaten in het noorden van KwaZulu-Natal (Zululand)",
+   "area_en": "Fenced private game reserves in northern KwaZulu-Natal (Zululand)",
+   "country_nl": "Zuid-Afrika",
+   "country_en": "South Africa",
+   "cont": "afr",
+   "lat": -27.8,
+   "lon": 32.3,
+   "score": 4,
+   "why_nl": "In deze kleine, omheinde reservaten worden cheetahs als metapopulatie beheerd en goed gevolgd; een mammalwatching-verslag zag ze al op de eerste rit, al is het wel een 'beheerde' wildheid.",
+   "why_en": "In these small fenced reserves cheetahs are managed as a metapopulation and closely monitored; a mammalwatching report saw them on the very first drive, although this is a 'managed' kind of wild.",
+   "season_nl": "Het hele jaar; in de droge winter (mei–september) is de begroeiing lager.",
+   "season_en": "Year-round; in the dry winter (May–September) the vegetation is lower.",
+   "time_nl": "Vroege ochtend en late middag.",
+   "time_en": "Early morning and late afternoon.",
+   "trip_nl": "Geleide game drives in open voertuigen vanuit lodges in het reservaat, 2 à 3 dagen.",
+   "trip_en": "Guided game drives in open vehicles from lodges in the reserve, 2 to 3 days.",
+   "sources": [
+    12,
+    13
+   ]
+  },
+  {
+   "id": "na-etosha",
+   "name_nl": "Etosha National Park",
+   "name_en": "Etosha National Park",
+   "area_nl": "Etosha National Park, vooral de open vlaktes in het oosten rond Namutoni",
+   "area_en": "Etosha National Park, especially the open plains in the east around Namutoni",
+   "country_nl": "Namibië",
+   "country_en": "Namibia",
+   "cont": "afr",
+   "lat": -18.9,
+   "lon": 16.3,
+   "score": 3,
+   "why_nl": "Een verslag uit maart 2025 zag een moeder met jong dat op een termietenheuvel klom, maar de meeste Namibische cheetahs leven buiten parken op boerenland, dus een waarneming is niet gegarandeerd.",
+   "why_en": "A March 2025 report saw a mother with a cub that climbed a termite mound, but most Namibian cheetahs live outside parks on farmland, so a sighting is not guaranteed.",
+   "season_nl": "Het hele jaar; in de droge tijd (mei–oktober) is het zicht beter en concentreert het wild zich bij de waterpoelen.",
+   "season_en": "Year-round; in the dry season (May–October) visibility is better and game gathers at the waterholes.",
+   "time_nl": "Vroege ochtend, zodra de poorten opengaan.",
+   "time_en": "Early morning, as soon as the gates open.",
+   "trip_nl": "Zelf rijden vanuit de ruststations in het park, 3 à 4 dagen.",
+   "trip_en": "Self-drive from the rest camps in the park, 3 to 4 days.",
+   "sources": [
+    10,
+    24
+   ]
+  },
+  {
+   "id": "bw-okavango-linyanti",
+   "name_nl": "Okavango en Linyanti",
+   "name_en": "Okavango and Linyanti",
+   "area_nl": "Concessies in de Okavangodelta en het Linyanti-gebied, Noord-Botswana",
+   "area_en": "Concessions in the Okavango Delta and the Linyanti area, northern Botswana",
+   "country_nl": "Botswana",
+   "country_en": "Botswana",
+   "cont": "afr",
+   "lat": -19.0,
+   "lon": 23.5,
+   "score": 3,
+   "why_nl": "Cheetahs zitten er, maar dun gezaaid; een verslag uit augustus 2025 zag na een lange rit één moeder met drie jongen op een prooi, en noemde de waarneming onverwacht.",
+   "why_en": "Cheetahs are present but thin on the ground; an August 2025 report saw one mother with three cubs on a kill after a long drive, and called the sighting unexpected.",
+   "season_nl": "Droge tijd, juni t/m oktober.",
+   "season_en": "Dry season, June to October.",
+   "time_nl": "Vroege ochtend en late middag op de open graslanden.",
+   "time_en": "Early morning and late afternoon on the open grasslands.",
+   "trip_nl": "Game drives vanuit kampen in privéconcessies, 3 à 6 dagen.",
+   "trip_en": "Game drives from camps in private concessions, 3 to 6 days.",
+   "sources": [
+    11
+   ]
+  },
+  {
+   "id": "in-kuno",
+   "name_nl": "Kuno National Park",
+   "name_en": "Kuno National Park",
+   "area_nl": "Kuno National Park, Sheopur (Madhya Pradesh)",
+   "area_en": "Kuno National Park, Sheopur (Madhya Pradesh)",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 25.7,
+   "lon": 77.3,
+   "score": 2,
+   "why_nl": "Sinds 2022 uitgezette Afrikaanse cheetahs; in 2026 liepen er zo'n 17 vrij rond en in oktober 2025 opende een speciale cheetah-safari, maar begin 2025 werden ze nog maar ongeveer eens per week door toeristen gezien.",
+   "why_en": "African cheetahs released since 2022; in 2026 around 17 roamed free and a dedicated cheetah safari opened in October 2025, but in early 2025 tourists were seeing them only about once a week.",
+   "season_nl": "Oktober t/m juni; in de moesson (juli–september) is het park dicht.",
+   "season_en": "October to June; the park closes during the monsoon (July–September).",
+   "time_nl": "Ochtend- en middagsafari's.",
+   "time_en": "Morning and afternoon safari slots.",
+   "trip_nl": "Jeepsafari's in de toeristische zones vanaf de poorten Ahera en Peepalbaodi, 2 à 3 dagen.",
+   "trip_en": "Jeep safaris in the tourism zones from the Ahera and Peepalbaodi gates, 2 to 3 days.",
+   "sources": [
+    14,
+    15,
+    16
+   ]
+  },
+  {
+   "id": "ir-touran",
+   "name_nl": "Touran (Iran)",
+   "name_en": "Touran (Iran)",
+   "area_nl": "Biosfeerreservaat Touran, provincie Semnan; daarnaast het Miandasht-wildreservaat (Noord-Khorasan)",
+   "area_en": "Touran Biosphere Reserve, Semnan Province; also Miandasht Wildlife Refuge (North Khorasan)",
+   "country_nl": "Iran",
+   "country_en": "Iran",
+   "cont": "asia",
+   "lat": 35.8,
+   "lon": 56.0,
+   "score": 1,
+   "why_nl": "Er leven nog maar enkele tientallen Aziatische cheetahs in het wild; Touran is het enige gebied met recente voortplanting, en in Miandasht legden 2021–2023 de cameravallen zelfs geen enkele cheetah vast.",
+   "why_en": "Only a few dozen Asiatic cheetahs survive in the wild; Touran is the only area with recent breeding, and in Miandasht the camera traps did not record a single cheetah in 2021–2023.",
+   "season_nl": "Herfst tot voorjaar (oktober–april), als de woestijnhitte minder is.",
+   "season_en": "Autumn to spring (October–April), when the desert heat is less intense.",
+   "time_nl": "Vroege ochtend en avond.",
+   "time_en": "Early morning and evening.",
+   "trip_nl": "Alleen met vergunning en een lokale gids of ranger; reken op meerdere dagen en vooral op sporen en cameravalbeelden.",
+   "trip_en": "Only with permits and a local guide or ranger; plan several days and expect tracks and camera-trap images rather than the cat itself.",
+   "sources": [
+    17,
+    18,
+    19
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Scan de open vlaktes vroeg in de ochtend met je verrekijker; een cheetah zit vaak rechtop in het korte gras.",
+  "Kijk naar termietenheuvels, omgevallen bomen en kleine heuveltjes: cheetahs gebruiken ze als uitkijkpost.",
+  "Let op gazellen of springbokken die allemaal dezelfde kant op staren of alarmsnuiven. Dat wijst vaak op een roofdier.",
+  "Cheetahs jagen overdag, ook midden op de dag. Geef het dus niet op als het warm wordt.",
+  "Sporen: cheetahs kunnen hun klauwen niet helemaal intrekken, dus anders dan bij andere katten zie je meestal klauwafdrukken in het zand.",
+  "Blijf op afstand bij een jagende cheetah. Een kring auto's kan een jacht verstoren of leeuwen en hyena's lokken."
+ ],
+ "tips_en": [
+  "Scan open plains early in the morning with binoculars; a cheetah often sits upright in the short grass.",
+  "Check termite mounds, fallen trees and low rises: cheetahs use them as lookout posts.",
+  "Watch for gazelles or springbok all staring the same way or snorting in alarm. That often means a predator.",
+  "Cheetahs hunt by day, even at midday. So don't give up when it gets hot.",
+  "Tracks: cheetahs cannot fully retract their claws, so unlike other cats you usually see claw marks in the sand.",
+  "Keep your distance from a hunting cheetah. A ring of vehicles can spoil a hunt or attract lions and hyenas."
+ ],
+ "threats_nl": [
+  "Verlies en versnippering van leefgebied: de cheetah is uit ongeveer 91% van zijn oorspronkelijke verspreidingsgebied verdwenen en leeft grotendeels buiten beschermde gebieden.",
+  "Conflict met boeren: in landen als Namibië leven de meeste cheetahs op boerenland en worden ze gedood als vermeende veedieven.",
+  "Illegale handel in huisdieren: welpen worden in de Hoorn van Afrika weggevangen en via Somaliland naar de Golfstaten gesmokkeld.",
+  "Zeer lage genetische diversiteit, wat de soort kwetsbaar maakt voor ziekte en voortplantingsproblemen.",
+  "Concurrentie met leeuwen en hyena's, die prooien stelen en welpen doden. In Iran komen daar verkeersslachtoffers bij."
+ ],
+ "threats_en": [
+  "Habitat loss and fragmentation: the cheetah has vanished from about 91% of its historic range and lives largely outside protected areas.",
+  "Conflict with farmers: in countries such as Namibia most cheetahs live on farmland and are killed as alleged livestock thieves.",
+  "Illegal pet trade: cubs are taken in the Horn of Africa and smuggled via Somaliland to the Gulf states.",
+  "Very low genetic diversity, which makes the species vulnerable to disease and reproductive problems.",
+  "Competition with lions and hyenas, which steal kills and kill cubs. In Iran, road deaths add to the toll."
+ ],
+ "status_note_nl": "De IUCN beschouwt de cheetah als Kwetsbaar, met zo'n 6.500 volwassen dieren en een dalende trend. De Aziatische cheetah in Iran is er veel slechter aan toe: naar schatting minder dan 50 dieren, met alleen in Touran recente voortplanting.",
+ "status_note_en": "The IUCN lists the cheetah as Vulnerable, with about 6,500 mature individuals and a decreasing trend. The Asiatic cheetah in Iran is in far worse shape: an estimated fewer than 50 animals, with recent breeding only in Touran.",
+ "sources": [
+  {
+   "id": 1,
+   "title": "IUCN Red List assessment Acinonyx jubatus (Durant et al.), Vulnerable – copy hosted by CMS (CITES/CMS, 2022)",
+   "url": "https://www.cms.int/sites/default/files/document/cites-cms_aci2_inf.10_cheetah-iucn-red-list_e.pdf"
+  },
+  {
+   "id": 2,
+   "title": "Cheetah range drops 90 percent – on Durant et al., PNAS 2017 (The Scientist, 2016)",
+   "url": "https://www.the-scientist.com/cheetah-range-drops-90-percent-32304"
+  },
+  {
+   "id": 3,
+   "title": "Q1 2026 technical report: updated lion and cheetah figures for the Maasai Mara (Mara Predator Conservation Programme, 2026)",
+   "url": "https://www.marapredatorconservation.org/wp-content/uploads/2026/07/MPCP-Q1-2026-Technical-Report-web-02.06.2026.pdf"
+  },
+  {
+   "id": 4,
+   "title": "Counting cats: spatially explicit population estimates of cheetah in the Maasai Mara (Broekhuis & Gopalaswamy, PLoS ONE, 2016)",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4852905/"
+  },
+  {
+   "id": 5,
+   "title": "Maasai Mara National Reserve, 25–28 May 2023 – trip report (mammalwatching.com, 2024)",
+   "url": "https://mammalwatching.com/wp-content/uploads/2024/07/May-25-28-2023-Maasi-Mara-National-Reserve.pdf"
+  },
+  {
+   "id": 6,
+   "title": "Kenya and Tanzania, July 2024 – trip report (mammalwatching.com, 2024)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/10/Kenya_Tanzania-2024-1.pdf"
+  },
+  {
+   "id": 7,
+   "title": "Tanzania trip report, February 2013 – Serengeti and Ndutu (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/TBY-Tanzania-2013.pdf"
+  },
+  {
+   "id": 8,
+   "title": "Kgalagadi trip report, May 2026 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2026/05/Kgalagadi-Trip-Report-May-2026.pdf"
+  },
+  {
+   "id": 9,
+   "title": "South Africa, Northern Cape incl. Kgalagadi, November 2016 – trip report (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2017/11/SO-South-Africa-2016.pdf"
+  },
+  {
+   "id": 10,
+   "title": "Namibia mammal safari, March 2025 – trip report incl. Etosha (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2025/04/Namibia-Mammal-Trip-M-Cronje-March-2025.pdf"
+  },
+  {
+   "id": 11,
+   "title": "Botswana & Zambia, August 2025 – trip report incl. Okavango Delta (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2025/12/CR-Botswana-Zambia-2025.pdf"
+  },
+  {
+   "id": 12,
+   "title": "South Africa 2009 trip report – incl. a private reserve in northern KwaZulu-Natal (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/2009/09/06/south-africa-2009-trip-report/"
+  },
+  {
+   "id": 13,
+   "title": "Spots of hope: some good news for South Africa's cheetahs – EWT cheetah metapopulation project (Mongabay, 2020)",
+   "url": "https://news.mongabay.com/2020/09/spots-of-hope-some-good-news-for-south-africas-cheetahs/"
+  },
+  {
+   "id": 14,
+   "title": "Cheetah tourism slow to take off at Kuno park (Free Press Journal, January 2025)",
+   "url": "https://www.freepressjournal.in/bhopal/cheetah-tourism-slow-to-take-off-at-kuno-park"
+  },
+  {
+   "id": 15,
+   "title": "India's first cheetah safari opens at Kuno National Park (Outlook Traveller, 2025)",
+   "url": "https://www.outlooktraveller.com/News/indias-first-cheetah-safari-opens-at-kuno-national-park"
+  },
+  {
+   "id": 16,
+   "title": "India's cheetah population in 2026 – status summary Kuno and Gandhi Sagar (Shankar IAS current affairs, 2026)",
+   "url": "https://www.shankariasparliament.com/current-affairs/indias-cheetah-population-in-2026"
+  },
+  {
+   "id": 17,
+   "title": "Asiatic cheetah population monitoring in northern habitats of Iran, 2021–2023 (IUCN Engage, 2025)",
+   "url": "https://engage.iucn.org/system/files/2025-01/Asiatic%20Cheetah%20Population%20Monitoring%20in%20Northern%20Habitats.pdf"
+  },
+  {
+   "id": 18,
+   "title": "The current status of Asiatic cheetah in Iran (Cat News special issue, WCS library, 2017)",
+   "url": "https://library.wcs.org/en-us/doi/ctl/view/mid/33065/pubid/PUB22375.aspx"
+  },
+  {
+   "id": 19,
+   "title": "War on Iran disrupts efforts to save the Asiatic cheetah (The Wire, 2026)",
+   "url": "https://thewire.in/environment/war-on-iran-disrupts-efforts-to-save-the-asiatic-cheetah-worlds-rarest-big-cat"
+  },
+  {
+   "id": 20,
+   "title": "Cheetah Conservation Fund receives three more cubs intercepted from the illegal pet trade, Somaliland (CCF press release)",
+   "url": "https://cheetah.org/press-releases/cheetah-conservation-fund-receives-three-more-sick-cubs-intercepted-from-illegal-pet-trade-raises-total-to-14-at-cheetah-safe-house-in-somaliland/"
+  },
+  {
+   "id": 21,
+   "title": "Cheetah numbers decreasing fast in the Horn of Africa (ENACT / ISS Africa, 2025)",
+   "url": "https://issafrica.org/enactafrica/enact-observer/cheetah-numbers-decreasing-fast-in-the-horn-of-africa"
+  },
+  {
+   "id": 22,
+   "title": "Genomic legacy of the African cheetah, Acinonyx jubatus (Dobrynin et al., Genome Biology, 2015)",
+   "url": "https://genomebiology.biomedcentral.com/track/pdf/10.1186/s13059-015-0837-4"
+  },
+  {
+   "id": 23,
+   "title": "Lions get a break: Kalahari study on cheetah cub mortality vs. Serengeti (ScienceDaily, 2013)",
+   "url": "https://sciencedaily.com/releases/2013/12/131202121308.htm"
+  },
+  {
+   "id": 24,
+   "title": "Cheetah conservation strategies in Namibia: a model for the future (Cheetah Conservation Fund)",
+   "url": "https://cheetah.org/cheetah-2019/wp-content/uploads/2019/05/cheetah-conservation-strategies-in-namibia-a-model-for-the-future.pdf"
+  },
+  {
+   "id": 25,
+   "title": "Kgalagadi Transfrontier Park – mammals (SANParks)",
+   "url": "https://www.sanparks.org/parks/kgalagadi/explore/fauna-flora/mammals"
+  }
+ ],
+ "doubts": "Kuno: de cijfers voor 2026 (circa 17 vrij rondlopende cheetahs, totaal 49–57 in Kuno) komen uit Indiase examen-/nieuwsblogs, niet uit een officiële NTCA-publicatie; de kans op een waarneming per safari in seizoen 2025/26 kon ik niet vinden (begin 2025: ongeveer eens per week). Score 2 is daarom voorzichtig. Iran: The Wire (2026) meldt 27 dieren in het wild volgens de projectleider, maar dat heb ik niet kunnen openen (alleen in zoekresultaten); de IUCN-rapportage 2021–2023 vond 6 vrouwtjes, 4 mannetjes en 17 welpen in Touran en geen cheetahs op de cameravallen in Miandasht. Toerisme naar cheetahs in Iran is nauwelijks gedocumenteerd; ook de oorlog van 2026 maakt reizen onzeker. Masai Mara: de vaste populatie is volgens het Mara Predator Conservation Programme zorgwekkend laag (16 zelfstandige volwassenen in 2025, weinig vrouwtjes); bezoekers zien ze nog wel geregeld, maar ik gaf daarom 4 i.p.v. 5. Zululand: bewust geen reservaatnamen (Phinda e.d. zijn tevens lodgemerken); de bron is een oud verslag (2009) plus het EWT-metapopulatieproject. Namibië buiten Etosha (boerenland, privéreservaten) heb ik niet als aparte spot opgenomen: de meeste cheetahs leven daar, maar ik vond geen eerlijke slagingspercentages voor wilde (niet-opvang) dieren. Okavango/Linyanti: alleen één recent verslag (Kwai-concessie, Okavango); voor Linyanti specifiek vond ik geen bron. Coördinaten van Zululand, Etosha, Okavango/Linyanti, Kuno en Touran zijn ruwe middelpunten."
+}

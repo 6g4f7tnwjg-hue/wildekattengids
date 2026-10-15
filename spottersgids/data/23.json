@@ -1,0 +1,105 @@
+{
+ "no": 23,
+ "intro_nl": "Mist hangt tussen de boomvarens en het druppelt van elk blad. Ergens in dit nevelwoud op de oostflank van de Boliviaanse Andes sluipt een gevlekt katje van anderhalve kilo, kleiner dan een huiskat. Pas in september 2026 kreeg het een eigen naam: Leopardus tilcayo, de eerste nieuwe kattensoort in meer dan honderd jaar. De wetenschap kent tot nu toe precies twee levende dieren en een handvol cameravalbeelden. Hier ga je niet heen om hem te zien, maar om in zijn wereld te lopen. Kans: 1 – vrijwel niemand heeft hem ooit in het wild gezien.",
+ "intro_en": "Mist hangs between the tree ferns and every leaf is dripping. Somewhere in this cloud forest on the eastern flank of the Bolivian Andes slinks a spotted cat of one and a half kilos, smaller than a house cat. Only in September 2026 did it get its own name: Leopardus tilcayo, the first new cat species in more than a hundred years. So far science knows exactly two live animals and a handful of camera-trap images. You don't come here to see it, but to walk in its world. Chance: 1 – almost nobody has ever seen one in the wild.",
+ "spots": [
+  {
+   "id": "bo-yungas-la-paz",
+   "name_nl": "Yungas van La Paz",
+   "name_en": "Yungas of La Paz",
+   "area_nl": "Nevelwouden van de Yungas op de oostflank van de Andes, departement La Paz",
+   "area_en": "Yungas cloud forests on the eastern Andean slope, La Paz department",
+   "country_nl": "Bolivia",
+   "country_en": "Bolivia",
+   "cont": "sam",
+   "lat": -16.2,
+   "lon": -67.7,
+   "score": 1,
+   "why_nl": "De soort is alleen bekend uit de Boliviaanse Yungas, van twee levende dieren en enkele cameravalbeelden; er zijn geen waarnemingen door bezoekers bekend.",
+   "why_en": "The species is known only from the Bolivian Yungas, from two live animals and a few camera-trap images; no sightings by visitors are known.",
+   "season_nl": "Droge tijd (ongeveer mei–oktober) maakt wegen en paden beter begaanbaar; een beste seizoen voor de kat is onbekend",
+   "season_en": "The dry season (roughly May–October) makes roads and trails easier; a best season for the cat is unknown",
+   "time_nl": "Vermoedelijk vooral 's nachts, volgens cameravalbeelden",
+   "time_en": "Probably mainly at night, according to camera-trap images",
+   "trip_nl": "Verblijf een paar dagen in de Yungas (bijvoorbeeld rond Coroico, op een paar uur rijden van La Paz) en maak nachtwandelingen langs bosranden met een lokale natuurgids; reken op ander wild en vogels, niet op deze kat",
+   "trip_en": "Spend a few days in the Yungas (for example around Coroico, a few hours' drive from La Paz) and take night walks along forest edges with a local nature guide; expect other wildlife and birds, not this cat",
+   "sources": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Realistisch blijven: de wetenschap kent tot nu toe twee levende tilcayo's. Elke waarneming is waardevol.",
+  "Zie je een klein gevlekt katje in de Yungas, maak dan foto's van flank, staart en kop: kleine gevlekte katten zijn zelfs op cameravalbeelden moeilijk uit elkaar te houden.",
+  "Meld een waarneming met foto, plaats en datum bij onderzoekers of de Boliviaanse natuurbeschermingsinstanties in plaats van op sociale media met exacte locatie.",
+  "Het is een nachtdier dat waarschijnlijk vooral kleine knaagdieren eet: nachtwandelingen langs bosranden en open plekken zijn de enige zinnige aanpak.",
+  "Koop of houd nooit een 'wild katje': het eerste bekende exemplaar werd als kitten van de weg geplukt en als huisdier gehouden."
+ ],
+ "tips_en": [
+  "Keep it real: so far science knows two live tilcayos. Every sighting is valuable.",
+  "If you see a small spotted cat in the Yungas, photograph its flank, tail and head: small spotted cats are hard to tell apart even on camera-trap images.",
+  "Report a sighting with photo, place and date to researchers or the Bolivian conservation authorities rather than posting the exact location on social media.",
+  "It is nocturnal and probably eats mainly small rodents: night walks along forest edges and clearings are the only sensible approach.",
+  "Never buy or keep a 'wild kitten': the first known individual was picked up from a road as a kitten and kept as a pet."
+ ],
+ "threats_nl": [
+  "Ontbossing en uitbreiding van landbouw in de Yungas",
+  "Bosbranden door mensen en mijnbouw",
+  "Vervolging: een van de twee bekende dieren werd door mensen aangevallen",
+  "Wegvangst als huisdier",
+  "Waarschijnlijk een klein verspreidingsgebied en kleine populatie, wat het risico vergroot"
+ ],
+ "threats_en": [
+  "Deforestation and agricultural expansion in the Yungas",
+  "Human-caused fires and mining",
+  "Persecution: one of the two known animals had been attacked by people",
+  "Being taken from the wild as a pet",
+  "Probably a small range and small population, which increases the risk"
+ ],
+ "status_note_nl": "De tilcayo is nog niet apart beoordeeld door de IUCN: tijgerkatten staan nu als twee kwetsbare (Vulnerable) soorten met dalende aantallen op de Rode Lijst. Bij de komende herbeoordeling worden de vijf afstammingslijnen apart bekeken; de tilcayo zou dan als bedreigd (Endangered) kunnen uitkomen.",
+ "status_note_en": "The tilcayo has not yet been assessed separately by the IUCN: tiger cats are currently on the Red List as two Vulnerable species with declining numbers. The upcoming review will assess the five lineages separately, and the tilcayo could then be rated Endangered.",
+ "sources": [
+  {
+   "id": 1,
+   "title": "Meet the newest living cat species, the first described in 100 years – Lescroart et al., Current Biology (Science News, 2026)",
+   "url": "https://www.sciencenews.org/article/new-living-tiger-cat-species-100-years"
+  },
+  {
+   "id": 2,
+   "title": "Meet the first new cat species discovered in 100 years (National Geographic, 2026)",
+   "url": "https://www.nationalgeographic.com/animals/article/meet-the-first-new-cat-species-discovered-in-100-years"
+  },
+  {
+   "id": 3,
+   "title": "New tiger cat species identified in Bolivia, first in over a century (Al Jazeera, 2026)",
+   "url": "https://www.aljazeera.com/amp/news/2026/9/18/new-tiger-cat-species-identified-in-bolivia-first-in-over-a-century"
+  },
+  {
+   "id": 4,
+   "title": "Say hello to the Tilcayo, the first new cat species identified in over a century (The Star, 2026)",
+   "url": "https://www.thestar.com.my/lifestyle/living/2026/09/23/say-hello-to-the-tilcayo-the-first-new-cat-species-identified-in-over-a-century"
+  },
+  {
+   "id": 5,
+   "title": "New species of wild cat discovered for first time in more than a century (CBS News, 2026)",
+   "url": "https://www.cbsnews.com/news/wild-cat-species-discovered-bolivia/"
+  },
+  {
+   "id": 6,
+   "title": "Lescroart et al. – Phylogenomics and museomics reveal five distinct species of tiger cats in South America (Current Biology, 2026)",
+   "url": "https://doi.org/10.1016/j.cub.2026.08.059"
+  },
+  {
+   "id": 7,
+   "title": "Tilcayo: Bolivia's new tiger cat is first to be discovered in 100 years (Scroll.in, 2026)",
+   "url": "https://amp.scroll.in/article/1096051/how-new-is-the-tilcayo-the-first-cat-species-to-be-discovered-in-a-100-years"
+  }
+ ],
+ "doubts": "Let op: de tilcayo is géén pampaskat/colocolo maar een tijgerkat (oncilla-groep); de opdracht vermoedde het colocolo-complex. Beschreven in september 2026 (Lescroart, Nogales-Ascarrunz et al., Current Biology, doi 10.1016/j.cub.2026.08.059); ik kon het artikel zelf niet openen (paywall/redirect), alles komt uit nieuwsberichten die het artikel samenvatten. Verspreiding: alle bronnen zeggen 'Yungas van Bolivia'; CBS noemt 'de bergachtige Yungas bij La Paz'. Exacte vindplaatsen, hoogte en of de soort ook in Peru voorkomt, heb ik niet gevonden (in de Peruaanse Yungas werd juist een nieuwe ondersoort Leopardus tigrinus antisuyo beschreven). De coördinaat (-16.2, -67.7) is een grof midden van de Yungas van La Paz rond Coroico, niet een bekende vindplaats. Ik noemde Coroico alleen als uitvalsbasis. Bekend zijn twee levende dieren: een mannetje ('Tigrino') dat sinds ca. 2017 in een opvangcentrum in de Yungas leeft (als kitten bij een weg gevonden, eerst huisdier) en een vrouwtje dat gewond werd opgevangen en weer is vrijgelaten (volgens CBS na een aanval door mensen). Het opvangcentrum heb ik niet als 'spot' opgenomen omdat de gids over wilde dieren gaat; eventueel wel noemenswaard voor de site. Gewicht: de meeste bronnen zeggen ca. 1,4 kg, Science News zegt ongeveer 2 kg. CBS schrijft dat de soort 'als kwetsbaar geclassificeerd is'; volgens The Star/GMA is er nog geen aparte IUCN-beoordeling, ik volgde die laatste lezing. Science News schrijft '38 Leopardus species', bedoeld is 38 individuen. Scroll.in spreekt van 'minstens vier soorten', de rest van vijf. Geen mammalwatching-verslagen gevonden."
+}

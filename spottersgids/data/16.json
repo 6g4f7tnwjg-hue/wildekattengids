@@ -1,0 +1,162 @@
+{
+ "no": 16,
+ "intro_nl": "Het is nacht in de caatinga. De doornstruiken ritselen in de warme wind, en ergens tussen de cactussen sluipt een kat ter grootte van een huiskat, bezaaid met kleine rozetten. Morgen ziet een onderzoeker hem op de cameraval; jij ziet hem vannacht vrijwel zeker niet. De savannetijgerkat is een van de minst geziene katten van Zuid-Amerika, en echte waarnemingen door reizigers zijn zeldzaam. Kans: 1 – alleen met heel veel geluk, of via de cameraval.",
+ "intro_en": "It is night in the caatinga. Thorn scrub rustles in the warm wind, and somewhere among the cacti slinks a cat the size of a house cat, sprinkled with small rosettes. Tomorrow a researcher will find it on a camera trap; you, tonight, almost certainly will not. The northern tiger cat is one of South America's least-seen cats, and genuine sightings by travellers are rare. Chance: 1 – only with a great deal of luck, or by camera trap.",
+ "spots": [
+  {
+   "id": "br-mirador",
+   "name_nl": "Parque Estadual do Mirador",
+   "name_en": "Mirador State Park",
+   "area_nl": "Parque Estadual do Mirador, cerrado van centraal Maranhão",
+   "area_en": "Mirador State Park, cerrado of central Maranhão",
+   "country_nl": "Brazilië",
+   "country_en": "Brazil",
+   "cont": "sam",
+   "lat": -6.6,
+   "lon": -45.5,
+   "score": 1,
+   "why_nl": "Onderzoekers noemen dit park het belangrijkste gebied ter wereld voor de soort, met een geschatte 287 dieren, maar alle gegevens komen van cameravallen en er zijn geen reizigerswaarnemingen bekend.",
+   "why_en": "Researchers call this park the most important area in the world for the species, with an estimated 287 animals, but all data come from camera traps and no traveller sightings are known.",
+   "season_nl": "Droge tijd (ongeveer mei tot september): onverharde wegen zijn dan beter begaanbaar.",
+   "season_en": "Dry season (roughly May to September), when dirt roads are easier to travel.",
+   "time_nl": "Vooral 's nachts en in de schemering.",
+   "time_en": "Mainly at night and at dusk.",
+   "trip_nl": "Afgelegen park zonder toeristische infrastructuur; alleen haalbaar als zelf georganiseerde expeditie met 4x4 en lokale begeleiding, minimaal een week.",
+   "trip_en": "Remote park without tourist infrastructure; only feasible as a self-organised expedition by 4x4 with local help, at least a week.",
+   "sources": [
+    2,
+    1
+   ]
+  },
+  {
+   "id": "br-furna-feia",
+   "name_nl": "Furna Feia en de caatinga van Rio Grande do Norte",
+   "name_en": "Furna Feia and the caatinga of Rio Grande do Norte",
+   "area_nl": "Parque Nacional da Furna Feia en omliggende caatinga, Rio Grande do Norte",
+   "area_en": "Furna Feia National Park and surrounding caatinga, Rio Grande do Norte",
+   "country_nl": "Brazilië",
+   "country_en": "Brazil",
+   "cont": "sam",
+   "lat": -5.0,
+   "lon": -37.5,
+   "score": 1,
+   "why_nl": "Cameravalonderzoek vond de soort in bijna de helft van de onderzochte caatinga-locaties, vooral in dicht bos ver van dorpen, maar zichtwaarnemingen door bezoekers zijn er niet gedocumenteerd.",
+   "why_en": "Camera-trap research found the species at nearly half the caatinga sites surveyed, especially in dense forest far from settlements, but sightings by visitors have not been documented.",
+   "season_nl": "Het hele jaar; in de regentijd (ongeveer februari tot mei) is de caatinga groen en de hitte iets minder fel.",
+   "season_en": "Year-round; in the rainy season (roughly February to May) the caatinga turns green and the heat is a little less fierce.",
+   "time_nl": "Vooral 's nachts, met een piek vlak voor zonsopkomst; een deel van de activiteit valt overdag.",
+   "time_en": "Mainly at night, peaking just before sunrise; some activity falls in daytime.",
+   "trip_nl": "Nachtwandelingen of nachtritten langs bosranden, vanuit Mossoró of omliggende dorpen; reken op meerdere nachten en een kleine kans.",
+   "trip_en": "Night walks or night drives along forest edges, from Mossoró or nearby villages; plan several nights and expect a small chance.",
+   "sources": [
+    3,
+    5,
+    4
+   ]
+  },
+  {
+   "id": "gy-rupununi",
+   "name_nl": "Rupununi-savanne",
+   "name_en": "Rupununi savannas",
+   "area_nl": "Savannes van de Rupununi, zuidwest-Guyana",
+   "area_en": "Rupununi savannas, south-western Guyana",
+   "country_nl": "Guyana",
+   "country_en": "Guyana",
+   "cont": "sam",
+   "lat": 3.0,
+   "lon": -59.5,
+   "score": 1,
+   "why_nl": "Dit is de enige plek in Amazonië-Guianas waar de soort ooit op een cameraval verscheen; verder zijn er vooral oude museumvondsten, dus zien is hier puur geluk.",
+   "why_en": "This is the only place in Amazonia and the Guianas where the species has ever turned up on a camera trap; otherwise there are mainly old museum records, so seeing one here is pure luck.",
+   "season_nl": "Droge tijd (ongeveer september tot april).",
+   "season_en": "Dry season (roughly September to April).",
+   "time_nl": "'s Nachts en in de schemering, langs bosjes en galerijbos in de savanne.",
+   "time_en": "At night and at dusk, along forest islands and gallery forest in the savanna.",
+   "trip_nl": "Nachtritten met spotlight vanuit dorpen en ranches in de savanne, gecombineerd met ander zoogdierwerk (bijv. reuzenmiereneter); meerdere nachten.",
+   "trip_en": "Spotlighting night drives from villages and ranches in the savanna, combined with other mammal watching (e.g. giant anteater); several nights.",
+   "sources": [
+    6
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Verwacht geen gerichte waarneming: de soort is 'wijdverbreid maar zeldzaam' en zelfs onderzoekers kennen hem vooral van cameravallen.",
+  "De soort wordt makkelijk verward met de margay. Maak altijd een foto, zodat kenners kunnen meekijken.",
+  "Zoek in dichte caatinga en bosranden ver van dorpen: daar is de kans op aanwezigheid het grootst.",
+  "Plekken zonder ocelotten zijn gunstiger: waar de grotere ocelot veel voorkomt, is de tijgerkat schaars.",
+  "Overweeg een eigen wildcamera (met toestemming van de terreinbeheerder) langs paden en droge beddingen; dat levert meer op dan uren spotlighten.",
+  "Rijd 's nachts langzaam en scan berm en bosrand met een warmtebeeldkijker of lamp; de soort loopt meestal over de grond."
+ ],
+ "tips_en": [
+  "Do not expect a targeted sighting: the species is 'widespread but rare', and even researchers know it mainly from camera traps.",
+  "The species is easily confused with the margay. Always try to get a photo so experts can check it.",
+  "Search dense caatinga and forest edges far from villages: that is where the species is most likely to occur.",
+  "Places without ocelots are better: where the larger ocelot is common, tiger cats are scarce.",
+  "Consider your own trail camera (with the land manager's permission) along tracks and dry stream beds; it yields more than hours of spotlighting.",
+  "Drive slowly at night and scan verges and forest edges with a thermal scope or lamp; the species mostly moves on the ground."
+ ],
+ "threats_nl": [
+  "Verlies van cerrado en caatinga door landbouw, vooral soja en vee",
+  "Ziektes en predatie door loslopende honden en huiskatten",
+  "Vervolging na verlies van kippen, plus jacht en vangst",
+  "Verkeersslachtoffers",
+  "Klimaatverandering: modellen voorspellen een sterke afname van geschikt leefgebied"
+ ],
+ "threats_en": [
+  "Loss of cerrado and caatinga to agriculture, especially soy and cattle",
+  "Disease and predation from free-ranging dogs and domestic cats",
+  "Persecution after poultry losses, plus hunting and capture",
+  "Road deaths",
+  "Climate change: models predict a steep loss of suitable habitat"
+ ],
+ "status_note_nl": "Op de Rode Lijst van de IUCN staat de soort als Kwetsbaar, maar die beoordeling dateert van vóór de taxonomische splitsingen van 2013 en 2024; in Brazilië geldt hij als Bedreigd, en onderzoekers pleiten voor een zwaardere internationale status.",
+ "status_note_en": "The IUCN Red List lists the species as Vulnerable, but that assessment predates the 2013 and 2024 taxonomic splits; in Brazil it is considered Endangered, and researchers argue it may deserve a higher international threat category.",
+ "sources": [
+  {
+   "id": 1,
+   "title": "Northern tiger cat – species account (IUCN SSC Cat Specialist Group)",
+   "url": "https://www.catsg.org/living-species-northerntigercat"
+  },
+  {
+   "id": 2,
+   "title": "A refined population and conservation assessment of the northern tiger cat in Mirador State Park (Oliveira et al., Global Ecology and Conservation, 2020)",
+   "url": "https://procarnivoros.org.br/?p=5458"
+  },
+  {
+   "id": 3,
+   "title": "Estimating occupancy of the northern tiger cat in Caatinga drylands (Marinho et al., Mammal Research, 2018)",
+   "url": "https://link.springer.com/doi/10.1007/s13364-017-0330-4"
+  },
+  {
+   "id": 4,
+   "title": "Interspecific patterns of small cats in an intraguild-killer free area of the Caatinga (Fox-Rosales & de Oliveira, PLoS One, 2023)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10121031/"
+  },
+  {
+   "id": 5,
+   "title": "Ecology and conservation of the northern tiger cat in Furna Feia National Park (Mohamed bin Zayed Species Conservation Fund project report, 2019)",
+   "url": "https://files.speciesconservation.org/grant-files/documents/document-2086.pdf"
+  },
+  {
+   "id": 6,
+   "title": "The dominant mesopredator and savanna formations shape the distribution of the northern tiger cat in the Amazon (de Oliveira et al., Scientific Reports, 2022)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9636236/"
+  },
+  {
+   "id": 7,
+   "title": "A tiger cat gains new species designation, but conservation challenges remain (Mongabay, 2024)",
+   "url": "https://news.mongabay.com/2024/04/a-tiger-cat-gains-new-species-designation-but-conservation-challenges-remain/"
+  },
+  {
+   "id": 8,
+   "title": "Ecological modeling, biogeography and phenotypic analyses reveal a new tiger cat species (de Oliveira et al., Scientific Reports, 2024)",
+   "url": "https://doaj.org/article/48c3bbb9767a422ba6e5328698a76efd"
+  },
+  {
+   "id": 9,
+   "title": "Molecular data reveal a cryptic species of Neotropical wild cat (Trigo et al., Current Biology, 2013 – ScienceDaily summary)",
+   "url": "https://sciencedaily.com/releases/2013/11/131127122411.htm"
+  }
+ ],
+ "doubts": "Ik heb op mammalwatching.com geen enkele zichtwaarneming van de savannetijgerkat (L. tigrinus s.s.) in Brazilië gevonden; alle drie de spots zijn gebaseerd op cameravalonderzoek en hebben daarom score 1. Chapada dos Veadeiros, Emas, Serra da Canastra en Chapada Diamantina heb ik bewust weggelaten: ik vond geen betrouwbare bron met een recente waarneming of cameravalregistratie daar (de zoogdierchecklist van Chapada Diamantina, Pereira & Geise 2009, noemt de soort niet; een nieuwsbericht dat Emas noemt kon ik niet openen). Serra da Canastra ligt bovendien in of bij de overgangszone met L. guttulus, dus welke soort daar zit is onzeker. Guianas: de soort is alleen in de Rupununi (Guyana) ooit op een cameraval vastgelegd; in Suriname leverde >20.000 cameravaldagen niets op. Voor Mirador is het middelpunt (-6.6, -45.5) een ruwe schatting; het park is ca. 500.000 ha groot. Een private ranch in Paraíba (Fox-Rosales & de Oliveira 2023) met veel cameravalregistraties heb ik niet bij naam genoemd (specifieke boerderij). De IUCN-status Kwetsbaar dateert van 2016 en geldt nog voor het oude, bredere soortbegrip."
+}

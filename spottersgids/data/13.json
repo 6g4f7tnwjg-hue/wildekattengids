@@ -1,0 +1,305 @@
+{
+ "no": 13,
+ "intro_nl": "Mist hangt tussen de reuzenbomen van Kibale. Je rijdt stapvoets over een rode bosweg, ogen op de berm. Dan steekt er iets roodbruins over, laag en stevig, en weg is het. Zo kort duurt een ontmoeting met de Afrikaanse goudkat meestal, als je al geluk hebt. Zelfs onderzoekers zagen hem pas na jaren veldwerk met eigen ogen. Kans: 2 – alleen met veel geduld en een flinke dosis geluk.",
+ "intro_en": "Mist hangs between the giant trees of Kibale. You crawl along a red forest track, eyes on the verge. Then something reddish-brown crosses, low and sturdy, and it is gone. That is how long an encounter with an African golden cat usually lasts, if you are lucky at all. Even researchers only saw one with their own eyes after years of fieldwork. Chance: 2 – only with a lot of patience and a good dose of luck.",
+ "spots": [
+  {
+   "id": "ug-kibale",
+   "name_nl": "Kibale",
+   "name_en": "Kibale",
+   "area_nl": "Nationaal Park Kibale, West-Oeganda",
+   "area_en": "Kibale National Park, western Uganda",
+   "country_nl": "Oeganda",
+   "country_en": "Uganda",
+   "cont": "afr",
+   "lat": 0.5,
+   "lon": 30.4,
+   "score": 2,
+   "why_nl": "Gerichte zoektochten op goudkat hadden hier de laatste jaren een paar keer succes (o.a. 2022 en een groepsreis in 2025 met twee waarnemingen), en cameravallen leggen de soort hier al sinds 2010 honderden keren vast – maar gewone bezoekers zien hem zelden.",
+   "why_en": "Dedicated golden cat searches have succeeded here a few times in recent years (e.g. 2022, and a 2025 group trip with two sightings), and camera traps have recorded the species hundreds of times since 2010 – but ordinary visitors rarely see one.",
+   "season_nl": "Het hele jaar; de gemelde succesvolle zoektochten vonden plaats in mei.",
+   "season_en": "Year-round; the reported successful searches took place in May.",
+   "time_nl": "Vroege ochtend en late middag langs bosranden en wegen; de kat is hier ook overdag actief (cameravallen filmden hem zelfs overdag op jacht naar franjeapen). Ook nachtelijk spotten met een lamp is geprobeerd.",
+   "time_en": "Early morning and late afternoon along forest edges and roads; here the cat is also active by day (camera traps even filmed one hunting red colobus monkeys in daylight). Night spotlighting has also been tried.",
+   "trip_nl": "Gespecialiseerde goudkat-reis met lokale gids: meerdere dagen langzaam rijden over bospaden en wegen door en langs het park, vaak gecombineerd met chimpansee-tracking; reken op minstens 4 à 5 dagen.",
+   "trip_en": "Specialised golden cat trip with a local guide: several days of slow driving along forest tracks and roads through and around the park, often combined with chimpanzee tracking; allow at least 4–5 days.",
+   "sources": [
+    2,
+    3,
+    9,
+    10,
+    1
+   ]
+  },
+  {
+   "id": "ug-bwindi",
+   "name_nl": "Bwindi",
+   "name_en": "Bwindi",
+   "area_nl": "Bwindi Impenetrable National Park, Zuidwest-Oeganda",
+   "area_en": "Bwindi Impenetrable National Park, south-western Uganda",
+   "country_nl": "Oeganda",
+   "country_en": "Uganda",
+   "cont": "afr",
+   "lat": -1.0,
+   "lon": 29.7,
+   "score": 1,
+   "why_nl": "Er zijn losse waarnemingen overdag op de openbare onverharde weg door het park (2009, 2017, de laatste door een bezoeker terug van gorillatracking), maar met zoveel bezoekers en een gids die er in 25 jaar nooit een zag, is de kans heel klein.",
+   "why_en": "There are scattered daytime sightings on the public dirt road through the park (2009, 2017, the latter by a visitor returning from a gorilla trek), but given the many visitors and a driver-guide who never saw one in 25 years, the odds are very low.",
+   "season_nl": "Het hele jaar; de waarneming van 2017 was in november.",
+   "season_en": "Year-round; the 2017 sighting was in November.",
+   "time_nl": "Overdag tijdens ritten door het bos; de waarneming van 2017 was midden op de middag bij bewolkt weer.",
+   "time_en": "During the day while driving through the forest; the 2017 sighting was mid-afternoon on an overcast day.",
+   "trip_nl": "Gorillatracking-reis; houd tijdens de ritten over de bosweg (o.a. richting Ruhija) steeds de berm in de gaten.",
+   "trip_en": "Gorilla trekking trip; keep scanning the verges while driving the forest road (e.g. towards Ruhija).",
+   "sources": [
+    4,
+    1,
+    2
+   ]
+  },
+  {
+   "id": "ug-queen-elizabeth",
+   "name_nl": "Queen Elizabeth NP",
+   "name_en": "Queen Elizabeth NP",
+   "area_nl": "Nationaal Park Queen Elizabeth, West-Oeganda",
+   "area_en": "Queen Elizabeth National Park, western Uganda",
+   "country_nl": "Oeganda",
+   "country_en": "Uganda",
+   "cont": "afr",
+   "lat": -0.2,
+   "lon": 29.9,
+   "score": 1,
+   "why_nl": "Een fotograaf meldde in 2022 goudkatten in Kibale én Queen Elizabeth NP na veel nachtelijk zoeken in dicht bos; verder zijn er nauwelijks gepubliceerde waarnemingen.",
+   "why_en": "A photographer reported golden cats in both Kibale and Queen Elizabeth NP in 2022 after much night searching in dense forest; beyond that there are hardly any published sightings.",
+   "season_nl": "Het hele jaar; de melding van 2022 was in mei.",
+   "season_en": "Year-round; the 2022 report was from May.",
+   "time_nl": "Vooral 's nachts met een lamp in de bosgedeelten van het park.",
+   "time_en": "Mainly at night with a spotlight in the forested parts of the park.",
+   "trip_nl": "Meestal als extra dagen binnen een goudkat- of primatenreis door West-Oeganda; nachtelijk spotten alleen waar het park dat toestaat, met lokale gids.",
+   "trip_en": "Usually as extra days within a golden cat or primate trip through western Uganda; night spotlighting only where the park allows it, with a local guide.",
+   "sources": [
+    3,
+    2
+   ]
+  },
+  {
+   "id": "ga-ivindo",
+   "name_nl": "Ivindo",
+   "name_en": "Ivindo",
+   "area_nl": "Nationaal Park Ivindo, Noordoost-Gabon",
+   "area_en": "Ivindo National Park, north-eastern Gabon",
+   "country_nl": "Gabon",
+   "country_en": "Gabon",
+   "cont": "afr",
+   "lat": 0.0,
+   "lon": 12.6,
+   "score": 1,
+   "why_nl": "Cameravallen in Ivindo leggen de soort vast, en in 2023 zag een reisgroep er een goudkat 's nachts aan de voet van een uitkijkplatform bij een bai – een zeldzame meevaller.",
+   "why_en": "Camera traps in Ivindo record the species, and in 2023 a tour group saw a golden cat at night at the foot of a viewing platform at a bai – a rare stroke of luck.",
+   "season_nl": "De gemelde waarneming viel in juni–juli (droge seizoen).",
+   "season_en": "The reported sighting was in June–July (dry season).",
+   "time_nl": "Nacht en schemer, op de paden naar en rond de bai-platforms.",
+   "time_en": "Night and twilight, on the trails to and around the bai platforms.",
+   "trip_nl": "Meerdaagse expeditie naar een bai-kamp in het park, met nachten op of bij een verhoogd uitkijkplatform; reken op minimaal 3 à 4 nachten.",
+   "trip_en": "Multi-day expedition to a bai camp in the park, with nights on or near a raised viewing platform; allow at least 3–4 nights.",
+   "sources": [
+    6,
+    8,
+    5
+   ]
+  },
+  {
+   "id": "ga-lope",
+   "name_nl": "Lopé",
+   "name_en": "Lopé",
+   "area_nl": "Nationaal Park Lopé, Centraal-Gabon",
+   "area_en": "Lopé National Park, central Gabon",
+   "country_nl": "Gabon",
+   "country_en": "Gabon",
+   "cont": "afr",
+   "lat": -0.5,
+   "lon": 11.5,
+   "score": 1,
+   "why_nl": "Op mammalwatching.com wordt gemeld dat goudkatten af en toe gezien worden op de weg het park in en richting het onderzoeksstation Mikongo, maar dat zijn tweedehands verhalen zonder details.",
+   "why_en": "On mammalwatching.com golden cats are said to be seen now and then on the road into the park and towards Mikongo research station, but these are second-hand reports without details.",
+   "season_nl": "Het hele jaar; het droge seizoen (grofweg juni–augustus) maakt reizen makkelijker.",
+   "season_en": "Year-round; the dry season (roughly June–August) makes travel easier.",
+   "time_nl": "Vroege ochtend en schemer tijdens ritten langs bosranden.",
+   "time_en": "Early morning and dusk on drives along forest edges.",
+   "trip_nl": "Wildritten en wandelingen vanuit het dorp Lopé, vaak met mandrils als hoofddoel; 3 à 4 dagen.",
+   "trip_en": "Wildlife drives and walks from Lopé village, often with mandrills as the main target; 3–4 days.",
+   "sources": [
+    5,
+    7,
+    1
+   ]
+  },
+  {
+   "id": "ga-loango",
+   "name_nl": "Loango",
+   "name_en": "Loango",
+   "area_nl": "Nationaal Park Loango, kust van Gabon",
+   "area_en": "Loango National Park, Gabon coast",
+   "country_nl": "Gabon",
+   "country_en": "Gabon",
+   "cont": "afr",
+   "lat": -2.2,
+   "lon": 9.6,
+   "score": 1,
+   "why_nl": "Volgens tweedehands meldingen zien gidsen er af en toe een goudkat bij nachtelijk spotten in savanne die grenst aan bos – onbevestigd, dus reken er niet op.",
+   "why_en": "Second-hand reports say guides occasionally see a golden cat while spotlighting in savanna bordering forest – unconfirmed, so don't count on it.",
+   "season_nl": "Het hele jaar; droge seizoen grofweg juni–september.",
+   "season_en": "Year-round; dry season roughly June–September.",
+   "time_nl": "'s Nachts met een lamp langs de overgang van savanne naar bos.",
+   "time_en": "At night with a spotlight along the savanna–forest edge.",
+   "trip_nl": "Wildritten en nachtritten vanuit kampen in en rond het park, 3 à 5 dagen.",
+   "trip_en": "Game drives and night drives from camps in and around the park, 3–5 days.",
+   "sources": [
+    5
+   ]
+  },
+  {
+   "id": "cd-salonga",
+   "name_nl": "Salonga",
+   "name_en": "Salonga",
+   "area_nl": "Nationaal Park Salonga (zuidelijk blok), Centraal-Congobekken",
+   "area_en": "Salonga National Park (southern block), central Congo Basin",
+   "country_nl": "Democratische Republiek Congo",
+   "country_en": "Democratic Republic of the Congo",
+   "cont": "afr",
+   "lat": -2.3,
+   "lon": 21.4,
+   "score": 1,
+   "why_nl": "Een groot cameravalonderzoek (160 camera's) legde hier goudkatten vast, maar het gebied is extreem afgelegen en zien lukt vrijwel alleen via cameravallen.",
+   "why_en": "A large camera-trap survey (160 cameras) recorded golden cats here, but the area is extremely remote and sightings happen almost only via camera traps.",
+   "season_nl": "Het hele jaar.",
+   "season_en": "Year-round.",
+   "time_nl": "Dag en nacht; vooral cameravallen.",
+   "time_en": "Day and night; mainly camera traps.",
+   "trip_nl": "Alleen via onderzoeks- of bonobo-expedities over de rivier; dit is avontuur, geen kattensafari.",
+   "trip_en": "Only via research or bonobo expeditions by river; this is adventure, not a cat safari.",
+   "sources": [
+    12,
+    1
+   ]
+  },
+  {
+   "id": "ci-tai",
+   "name_nl": "Taï",
+   "name_en": "Taï",
+   "area_nl": "Nationaal Park Taï, Zuidwest-Ivoorkust",
+   "area_en": "Taï National Park, south-western Côte d'Ivoire",
+   "country_nl": "Ivoorkust",
+   "country_en": "Côte d'Ivoire",
+   "cont": "afr",
+   "lat": 5.6,
+   "lon": -7.3,
+   "score": 1,
+   "why_nl": "Taï is het beste bekende West-Afrikaanse bolwerk – Panthera zette er zo'n 100 cameravallen uit voor luipaard en goudkat – maar waarnemingen door bezoekers zijn niet gedocumenteerd.",
+   "why_en": "Taï is the best-known West African stronghold – Panthera deployed some 100 camera traps there for leopards and golden cats – but sightings by visitors are not documented.",
+   "season_nl": "Het hele jaar; droge seizoen grofweg december–februari.",
+   "season_en": "Year-round; dry season roughly December–February.",
+   "time_nl": "Vooral cameravallen; West-Afrikaanse dieren zijn vaker gevlekt.",
+   "time_en": "Mainly camera traps; West African animals are more often spotted.",
+   "trip_nl": "Meerdaagse boswandelingen vanuit de ecotoerisme-kampen aan de rand van het park, vaak met chimpansees of dwergnijlpaarden als doel.",
+   "trip_en": "Multi-day forest walks from the ecotourism camps on the park edge, often targeting chimpanzees or pygmy hippos.",
+   "sources": [
+    11,
+    1
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Rij langzaam over bospaden en wegen langs bosranden, vooral bij zonsopkomst en in de late middag, en scan de berm: de meeste echte waarnemingen zijn een kat die de weg oversteekt.",
+  "Waar geen luipaarden meer zijn (zoals in Kibale) is de goudkat ook overdag actief; houd dus ook tijdens primatentochten je ogen open.",
+  "Ken de kleurvormen: roodbruin, grijs en soms zwart (ongeveer 5%), gevlekt of bijna egaal. Een grijze en een rode kat kunnen samen lopen.",
+  "Let op het formaat: twee keer zo groot als een huiskat, met een korte staart en kleine ronde oren – denk niet meteen aan een civetkat of een genetkat.",
+  "Cameravallen zijn verreweg de betrouwbaarste manier: onderzoekers in Gabon en Oeganda legden de soort honderden keren vast, terwijl ze hem zelf haast nooit zagen.",
+  "Maak foto's door het autoraam en blijf zitten: een goudkat die zich niet bedreigd voelt, loopt rustig terug het struikgewas in in plaats van weg te rennen."
+ ],
+ "tips_en": [
+  "Drive slowly along forest tracks and roads bordering forest, especially at dawn and in the late afternoon, and scan the verges: most real sightings are of a cat crossing the road.",
+  "Where leopards are gone (as in Kibale) the golden cat is also active by day, so keep your eyes open during primate treks too.",
+  "Know the colour morphs: reddish-brown, grey and occasionally black (about 5%), spotted or almost plain. A grey and a red cat may even be together.",
+  "Mind the size: twice as big as a house cat, with a short tail and small rounded ears – don't mistake it for a civet or genet.",
+  "Camera traps are by far the most reliable way: researchers in Gabon and Uganda recorded the species hundreds of times while hardly ever seeing it themselves.",
+  "Photograph through the car window and stay put: a golden cat that does not feel threatened walks calmly back into the undergrowth instead of bolting."
+ ],
+ "threats_nl": [
+  "Strikken voor bushmeat: draadstrikken voor duikers vangen ook goudkatten, en jacht put hun prooi uit.",
+  "Ontbossing en versnippering door landbouw, palmolieplantages en mijnbouw; de soort verloor zo'n 44% van zijn bekende verspreidingsgebied.",
+  "Aanleg van wegen en onduurzame houtkap die jagers diep het bos in brengen (duurzaam beheerde concessies houden wel redelijke aantallen).",
+  "Handel in vlees, vacht en lichaamsdelen; huiden duiken op lokale markten op."
+ ],
+ "threats_en": [
+  "Bushmeat snaring: wire snares set for duikers also catch golden cats, and hunting depletes their prey.",
+  "Deforestation and fragmentation from farming, oil palm plantations and mining; the species has lost about 44% of its known range.",
+  "Road building and unsustainable logging that open up the forest to hunters (well-managed concessions do still hold fair numbers).",
+  "Trade in meat, fur and body parts; skins turn up in local markets."
+ ],
+ "status_note_nl": "De IUCN zette de Afrikaanse goudkat in 2015 van Gevoelig naar Kwetsbaar; de populatie zou in 15 jaar met naar schatting 30% zijn afgenomen en verder dalen. Op de nationale Rode Lijst van Oeganda staat hij als Bedreigd.",
+ "status_note_en": "IUCN uplisted the African golden cat from Near Threatened to Vulnerable in 2015; the population is estimated to have declined by about 30% over 15 years and is expected to keep falling. Uganda's national Red List classes it as Endangered.",
+ "sources": [
+  {
+   "id": 1,
+   "title": "African golden cat – species account (IUCN SSC Cat Specialist Group)",
+   "url": "https://www.catsg.org/living-species-africangoldencat"
+  },
+  {
+   "id": 2,
+   "title": "Trip report: African golden cat expedition, Uganda, May 2025 (mammalwatching.com, 2025)",
+   "url": "https://www.mammalwatching.com/community-post/trip-report-african-golden-cat-expedition-royle-safaris-may-2025/"
+  },
+  {
+   "id": 3,
+   "title": "New trip report: African golden cats in Uganda – Kibale & Queen Elizabeth NP (mammalwatching.com, 2022)",
+   "url": "https://www.mammalwatching.com/2022/08/20/new-trip-report-african-golden-cats-in-uganda/"
+  },
+  {
+   "id": 4,
+   "title": "African golden cat sighting from 2017: Bwindi, Uganda (mammalwatching.com, 2019)",
+   "url": "https://www.mammalwatching.com/2019/09/22/african-golden-cat-sighting-from-2017-bwindi-uganda/"
+  },
+  {
+   "id": 5,
+   "title": "New trip report – Central African Republic, with reader comments on golden cats in Gabon (mammalwatching.com, 2013)",
+   "url": "https://www.mammalwatching.com/2013/05/02/new-trip-report-central-african-republic/"
+  },
+  {
+   "id": 6,
+   "title": "Gabon wildlife trip report, June–July 2023 (mammalwatching.com, 2024)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/02/Gabon-Wildlife-Adventure-2-GROUPS-Jun-Jul-2023.pdf"
+  },
+  {
+   "id": 7,
+   "title": "Bahaa-el-din et al. – Effects of human land-use on Africa's only forest-dependent felid, the African golden cat (Biological Conservation, 2016; FAO AGRIS record)",
+   "url": "https://agris.fao.org/search/en/records/65df85b790674e46e653cc7b"
+  },
+  {
+   "id": 8,
+   "title": "Feline unseen: the African golden cat (Mongabay, 2015)",
+   "url": "https://news.mongabay.com/2015/08/feline-unseen-the-african-golden-cat/"
+  },
+  {
+   "id": 9,
+   "title": "Scientists capture first photos of African golden cat kittens – Kibale camera surveys (Mongabay, 2015)",
+   "url": "https://news.mongabay.com/2015/01/adorbs-scientists-capture-first-photos-of-african-golden-cat-kittens/"
+  },
+  {
+   "id": 10,
+   "title": "Rare cat caught on camera attacking a monkey (Smithsonian Magazine, 2015)",
+   "url": "https://www.smithsonianmag.com/smart-news/rare-cat-caught-cameraattacking-monkey-180954116/"
+  },
+  {
+   "id": 11,
+   "title": "A tale of hide and seek in Taï National Park (Panthera)",
+   "url": "https://panthera.org/blog-post/tale-hide-and-seek-tai-national-park"
+  },
+  {
+   "id": 12,
+   "title": "Camera traps reveal hidden treasures of the rainforest – Bessone et al. 2020, Salonga (Applied Ecologists blog, 2020)",
+   "url": "https://appliedecologistsblog.com/2020/04/02/camera-traps-reveal-hidden-treasures-of-the-rainforest/"
+  }
+ ],
+ "doubts": "Alle scores zijn bewust laag. Kibale kreeg een 2 omdat gerichte meerdaagse zoektochten daar de laatste jaren een paar keer succes hadden (2022, 2025); voor gewone toeristen is het eerder een 1. Bronnen 2 en 6 zijn verslagen van een reisorganisatie op mammalwatching.com; de bedrijfsnaam is weggelaten. De 'unieke techniek' uit het verslag van 2025 wordt niet beschreven. Het verslag van Jens Hauser (2022) kon ik niet volledig lezen (PDF onleesbaar); 'Kibale en Queen Elizabeth NP' komt uit de titel van de post, details (nachtelijk spotten) uit een samenvatting – controleer dit eventueel. Lopé en Loango berusten alleen op tweedehands lezerscommentaren uit 2013. Over chimpansee-trekkers die in Kibale overdag een goudkat zagen vond ik geen concrete bron; alleen de Bwindi-waarneming na gorillatracking (2017). De daglichtvideo van de jacht op franjeapen: Smithsonian noemt 'een park in Zuid-Oeganda', andere media (WCS/Mongabay) noemen Kibale. Voor Odzala-Kokoua (Congo), Dzanga-Sangha (CAR), Kameroen (camerastudies o.a. Deng-Deng, Lobéké) en Ghana vond ik geen bruikbare waarnemingen door bezoekers, dus die heb ik weggelaten. Coördinaten van Ivindo, Salonga (zuidblok) en Taï zijn ruwe schattingen van het parkcentrum. Seizoensindicaties voor droge seizoenen in Gabon en Ivoorkust zijn algemene kennis, niet uit de bronnen. Status 'naar Kwetsbaar in 2015' en '30% afname' komen uit Mongabay (op basis van IUCN); de IUCN-pagina zelf heb ik niet geopend."
+}

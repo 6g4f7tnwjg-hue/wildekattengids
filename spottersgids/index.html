@@ -376,6 +376,7 @@ SPOTS.forEach(s => s.recs.forEach(r => { if (!BEST[r.no] || r.score > BEST[r.no]
 const spotMax = s => Math.max(...s.recs.map(r => r.score));
 const isTop = s => s.recs.some(r => r.top);
 let FILTER = 'all', TAB = 'topspots', SEL = null, SHOWALL = false, Q = '', CAT = null, ALSO = null;
+TAB = 'kaart';   // de kaart is de pagina die opent
 try { const f = localStorage.getItem('sg-cont'); if (f && (f === 'all' || CONTS.includes(f))) FILTER = f; } catch(e) {}
 const narrow = () => window.innerWidth < 600;
 
@@ -556,7 +557,7 @@ function tabBody(){
   return `<p class="note" style="margin-bottom:14px">${esc(T(U.topSub))}</p><div id="tops">${topsHtml()}</div>`;
 }
 function renderBar(){
-  const tabs = [['topspots','navTop'],['kaart','navMap'],['soorten','navSpecies']];
+  const tabs = [['kaart','navMap'],['topspots','navTop'],['soorten','navSpecies']];
   return `<div class="chips" role="group" aria-label="${esc(L==='nl'?'Filter per werelddeel':'Filter by continent')}">
     ${['all',...CONTS].map(c => `<button type="button" class="chip" data-f="${c}" aria-pressed="${FILTER===c}">${esc(c==='all'?T(U.all):contName(c))}</button>`).join('')}</div>
     <div class="tabs" role="tablist">${tabs.map(([t,k]) => `<button type="button" class="tab" role="tab" data-t="${t}" aria-selected="${TAB===t}">${esc(T(U[k]))}<small>${tabCount(t)}</small></button>`).join('')}</div>`;

@@ -139,6 +139,8 @@ main{display:block;min-height:70vh}
 .catbtn{flex:none;width:76px;display:flex;flex-direction:column;align-items:center;gap:4px;border:0;background:none;padding:4px 2px;cursor:pointer;border-radius:10px;font-size:.8rem;line-height:1.15;text-align:center}
 .catbtn .av{width:54px;height:54px;border-radius:50%;overflow:hidden;border:2px solid var(--line);background:var(--land);display:flex;align-items:center;justify-content:center;font-family:var(--label);font-weight:600;color:var(--paper)}
 .catbtn img{width:100%;height:100%;object-fit:cover;display:block}
+.catbtn.grey .av{filter:grayscale(1);opacity:.55}
+.catbtn.grey{color:var(--muted)}
 .catbtn[aria-pressed="true"]{background:color-mix(in srgb,var(--olive) 14%,transparent);font-weight:700}
 .catbtn[aria-pressed="true"] .av{border-color:var(--olive);box-shadow:0 0 0 2px var(--olive)}
 .catnote{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;margin:0 0 12px}
@@ -326,8 +328,10 @@ const U = {
   showAll:{nl:'Toon alle topspots',en:'Show all top spots'}, showLess:{nl:'Toon minder',en:'Show fewer'},
   mapSub:{nl:'Markers staan op het midden van een reservaat of gebied, nooit op een hol of vaste rustplek.',en:'Markers sit at the centre of a reserve or area, never on a den or regular resting place.'},
   allCats:{nl:'Alle katten',en:'All cats'},
+  noSpot:{nl:'Nog geen spotplek; volgt binnenkort',en:'No spotting site yet; coming soon'},
   catMap:{nl:'Waar zit welke kat? Kies een soort:',en:'Which cat lives where? Pick a species:'},
   catShown:{nl:'plekken op de kaart',en:'places on the map'},
+  catShown1:{nl:'plek op de kaart',en:'place on the map'},
   alsoLbl:{nl:'Ook te zien op deze plekken:',en:'Also seen at these places:'},
   alsoNone:{nl:'— kies een kat —',en:'— pick a cat —'},
   alsoAt:{nl:'zie je ook bij:',en:'can also be seen at:'},
@@ -476,7 +480,7 @@ function topspotList(){
 function catsInFilter(){ return CATS.filter(c => FILTER === 'all' || c.cont.includes(FILTER)); }
 function tabCount(t){
   if (t === 'topspots') return topspotList().length;
-  if (t === 'kaart') return CAT ? SPOTS.filter(s => s.recs.some(r => r.no === CAT)).length : SPOTS.filter(s => inFilter(s.cont)).length;
+  if (t === 'kaart') return CAT ? catSpots(CAT).length : SPOTS.filter(s => inFilter(s.cont)).length;
   return catsInFilter().length;
 }
 function topsHtml(){
@@ -504,12 +508,22 @@ function panelHtml(){
       <p>${esc(T(g[0].why))}</p>${factsHtml(g[0])}
       ${g.map(r => `<p>${PAGES[r.no] ? `<a class="btnlink" href="#soort-${r.no}">${esc(catName(BY[r.no]))}: ${esc(T(U.toPage).toLowerCase())} →</a>` : `<span class="soon">${esc(catName(BY[r.no]))} · ${esc(T(U.soonPage))}</span>`}</p>`).join('')}</div>`).join('')}`;
 }
-const CATS_WITH_SPOTS = CATS.filter(c => SPOTS.some(s => s.recs.some(r => r.no === c.no)));
+// plekken van één kat binnen het gekozen werelddeel
+const catSpots = no => SPOTS.filter(s => inFilter(s.cont) && s.recs.some(r => r.no === no));
+// katten in de fotorij: met plek in dit werelddeel (kleur) en zonder plek maar wel levend hier (grijs)
+function rowCats(){
+  const lives = CATS.filter(c => FILTER === 'all' || c.cont.includes(FILTER) || catSpots(c.no).length);
+  const withSpot = lives.filter(c => catSpots(c.no).length), grey = lives.filter(c => !catSpots(c.no).length);
+  return {withSpot, grey, total: lives.length};
+}
 function catRowHtml(){
+  const {withSpot, grey, total} = rowCats();
+  const btn = (c, g) => `<button type="button" class="catbtn${g?' grey':''}" data-cat="${c.no}" aria-pressed="${CAT===c.no}"><span class="av">${img(c.photos[0], '')}</span>${esc(catName(c))}</button>`;
+  const n = CAT ? catSpots(CAT).length : 0;
   return `<p class="lbl" style="margin-bottom:6px">${esc(T(U.catMap))}</p><div class="catrow" id="catrow">
-    <button type="button" class="catbtn" data-cat="" aria-pressed="${!CAT}"><span class="av" style="background:var(--olive)">42</span>${esc(T(U.allCats))}</button>
-    ${CATS_WITH_SPOTS.map(c => `<button type="button" class="catbtn" data-cat="${c.no}" aria-pressed="${CAT===c.no}"><span class="av">${img(c.photos[0], '')}</span>${esc(catName(c))}</button>`).join('')}</div>
-    ${CAT ? `<div class="catnote"><b>${esc(catName(BY[CAT]))}</b><span class="lat">${esc(BY[CAT].la)}</span><span class="note">${SPOTS.filter(s => s.recs.some(r => r.no === CAT)).length} ${esc(T(U.catShown))}</span>${PAGES[CAT] ? `<a class="btnlink" href="#soort-${CAT}">${esc(T(U.toPage))} →</a>` : `<span class="soon">${esc(T(U.soonPage))}</span>`}</div>` : ''}`;
+    <button type="button" class="catbtn" data-cat="" aria-pressed="${!CAT}"><span class="av" style="background:var(--olive)">${total}</span>${esc(T(U.allCats))}</button>
+    ${withSpot.map(c => btn(c, false)).join('')}${grey.map(c => btn(c, true)).join('')}</div>
+    ${CAT ? `<div class="catnote"><b>${esc(catName(BY[CAT]))}</b><span class="lat">${esc(BY[CAT].la)}</span>${n ? `<span class="note">${n} ${esc(n === 1 ? T(U.catShown1) : T(U.catShown))}</span>` : `<span class="soon">${esc(T(U.noSpot))}</span>`}${PAGES[CAT] ? `<a class="btnlink" href="#soort-${CAT}">${esc(T(U.toPage))} →</a>` : (n ? `<span class="soon">${esc(T(U.soonPage))}</span>` : '')}</div>` : ''}`;
 }
 function mapTabHtml(){
   return `${catRowHtml()}<p class="note" style="margin-bottom:12px">${esc(T(U.mapSub))}</p>
@@ -522,11 +536,11 @@ function drawHomeMap(){
   const cw = world && narrow() ? 680 : (mw.clientWidth || 360);
   let markers, box = BOX[FILTER], range = null;
   if (CAT) {   // één kat: alleen zijn plekken, kleur = kans voor die kat, met leefgebied
-    markers = SPOTS.map(s => ({s, r:s.recs.find(r => r.no === CAT)})).filter(x => x.r).map(({s,r}) => ({id:s.id, lat:s.lat, lon:s.lon, score:r.score, star:r.top, sel:SEL===s.id, label:`${T(s.name)}, ${T(s.country)}`}));
+    markers = catSpots(CAT).map(s => ({s, r:s.recs.find(r => r.no === CAT)})).map(({s,r}) => ({id:s.id, lat:s.lat, lon:s.lon, score:r.score, star:r.top, sel:SEL===s.id, label:`${T(s.name)}, ${T(s.country)}`}));
     range = BY[CAT].range || null;
     let [x0,y0,x1,y1] = range ? bboxOfPath(range) : [720,284,0,0];
     markers.forEach(m => { const [x,y] = proj(m.lat, m.lon); x0=Math.min(x0,x); x1=Math.max(x1,x); y0=Math.min(y0,y); y1=Math.max(y1,y); });
-    box = [x0-12, y0-12, Math.max(60, x1-x0+24), Math.max(36, y1-y0+24)];
+    box = FILTER === 'all' ? [x0-12, y0-12, Math.max(60, x1-x0+24), Math.max(36, y1-y0+24)] : BOX[FILTER];
   } else {
     markers = SPOTS.filter(s => inFilter(s.cont)).map(s => ({id:s.id, lat:s.lat, lon:s.lon, score:spotMax(s), star:isTop(s), sel:SEL===s.id, label:`${T(s.name)}, ${T(s.country)}`}));
   }
@@ -588,7 +602,7 @@ function bindHome(){
     refreshHome(); renderChrome({nav:''}); window.scrollTo(0, $('.intro').offsetHeight);
   });
   $$('.catbtn').forEach(b => b.onclick = () => {
-    CAT = b.dataset.cat ? +b.dataset.cat : null; if (CAT) FILTER = 'all';
+    CAT = b.dataset.cat ? +b.dataset.cat : null;
     if (SEL && CAT && !SPOT[SEL].recs.some(r => r.no === CAT)) SEL = null;
     const x = $('#catrow').scrollLeft; refreshHome(); const cr = $('#catrow'); if (cr) cr.scrollLeft = x;
   });

@@ -135,6 +135,20 @@ main{display:block;min-height:70vh}
 .btn{border:1px solid var(--ink);background:none;border-radius:99px;padding:9px 18px;font-weight:700;cursor:pointer}
 .btn:hover{background:var(--ink);color:var(--paper)}
 .empty{color:var(--muted);font-style:italic;padding:12px 0}
+.catrow{display:flex;gap:6px;overflow-x:auto;padding:2px 2px 12px;margin:0 0 4px;scrollbar-width:thin}
+.catbtn{flex:none;width:76px;display:flex;flex-direction:column;align-items:center;gap:4px;border:0;background:none;padding:4px 2px;cursor:pointer;border-radius:10px;font-size:.8rem;line-height:1.15;text-align:center}
+.catbtn .av{width:54px;height:54px;border-radius:50%;overflow:hidden;border:2px solid var(--line);background:var(--land);display:flex;align-items:center;justify-content:center;font-family:var(--label);font-weight:600;color:var(--paper)}
+.catbtn img{width:100%;height:100%;object-fit:cover;display:block}
+.catbtn[aria-pressed="true"]{background:color-mix(in srgb,var(--olive) 14%,transparent);font-weight:700}
+.catbtn[aria-pressed="true"] .av{border-color:var(--olive);box-shadow:0 0 0 2px var(--olive)}
+.catnote{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;margin:0 0 12px}
+.catnote b{font-family:var(--display);font-size:1.15rem}
+.map .mk.dim{opacity:.35}
+.also{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;padding:12px 14px;border-bottom:1px solid var(--line)}
+.also label{font-weight:700}
+.also select{font:inherit;font-size:16px;padding:6px 10px;border-radius:8px;border:1px solid var(--line);background:var(--paper);color:var(--ink);max-width:100%}
+.alsolist{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:6px}
+.alsolist li{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:center}
 
 /* kaart */
 .mapbox{background:var(--paper);border:1px solid var(--line);border-radius:12px;overflow:hidden}
@@ -311,6 +325,12 @@ const U = {
   topSub:{nl:'Plekken waar je een soort (bijna) zeker ziet, mits je de tijd neemt en in het goede seizoen gaat.',en:'Places where you will (almost) certainly see a species, as long as you take your time and go in the right season.'},
   showAll:{nl:'Toon alle topspots',en:'Show all top spots'}, showLess:{nl:'Toon minder',en:'Show fewer'},
   mapSub:{nl:'Markers staan op het midden van een reservaat of gebied, nooit op een hol of vaste rustplek.',en:'Markers sit at the centre of a reserve or area, never on a den or regular resting place.'},
+  allCats:{nl:'Alle katten',en:'All cats'},
+  catMap:{nl:'Waar zit welke kat? Kies een soort:',en:'Which cat lives where? Pick a species:'},
+  catShown:{nl:'plekken op de kaart',en:'places on the map'},
+  alsoLbl:{nl:'Ook te zien op deze plekken:',en:'Also seen at these places:'},
+  alsoNone:{nl:'— kies een kat —',en:'— pick a cat —'},
+  alsoAt:{nl:'zie je ook bij:',en:'can also be seen at:'},
   mapHint:{nl:'Tik op een marker om te zien welke katten je daar kunt vinden.',en:'Tap a marker to see which cats you can find there.'},
   search:{nl:'Zoek een soort (NL, Engels of Latijn)',en:'Search a species (Dutch, English or Latin)'},
   ready:{nl:'Klaar om te spotten',en:'Ready to spot'},
@@ -355,7 +375,7 @@ const BEST = {};                 // hoogste score per soort (alleen uit onderzoc
 SPOTS.forEach(s => s.recs.forEach(r => { if (!BEST[r.no] || r.score > BEST[r.no]) BEST[r.no] = r.score; }));
 const spotMax = s => Math.max(...s.recs.map(r => r.score));
 const isTop = s => s.recs.some(r => r.top);
-let FILTER = 'all', TAB = 'topspots', SEL = null, SHOWALL = false, Q = '';
+let FILTER = 'all', TAB = 'topspots', SEL = null, SHOWALL = false, Q = '', CAT = null, ALSO = null;
 try { const f = localStorage.getItem('sg-cont'); if (f && (f === 'all' || CONTS.includes(f))) FILTER = f; } catch(e) {}
 const narrow = () => window.innerWidth < 600;
 
@@ -400,7 +420,7 @@ function mapSvg(opts){
     const r = (m.num ? 10 : 6.5) * u;
     const shape = m.star ? `<path class="dot" d="${starPath(x, y, r*1.7)}" fill="var(--s${m.score})" stroke-width="${sw}"/>`
                          : `<circle class="dot" cx="${x}" cy="${y}" r="${r}" fill="var(--s${m.score})" stroke-width="${sw}"/>`;
-    return `<g class="mk${m.sel?' sel':''}" data-id="${esc(m.id)}" tabindex="0" role="button" aria-label="${esc(m.label)}">
+    return `<g class="mk${m.sel?' sel':''}${m.dim?' dim':''}" data-id="${esc(m.id)}" tabindex="0" role="button" aria-label="${esc(m.label)}">
       <circle cx="${x}" cy="${y}" r="${16*u}" fill="transparent"/>${shape}
       ${m.num?`<text x="${x}" y="${y}" font-size="${13*u}">${m.num}</text>`:''}</g>`;
   }).join('');
@@ -455,7 +475,7 @@ function topspotList(){
 function catsInFilter(){ return CATS.filter(c => FILTER === 'all' || c.cont.includes(FILTER)); }
 function tabCount(t){
   if (t === 'topspots') return topspotList().length;
-  if (t === 'kaart') return SPOTS.filter(s => inFilter(s.cont)).length;
+  if (t === 'kaart') return CAT ? SPOTS.filter(s => s.recs.some(r => r.no === CAT)).length : SPOTS.filter(s => inFilter(s.cont)).length;
   return catsInFilter().length;
 }
 function topsHtml(){
@@ -483,18 +503,34 @@ function panelHtml(){
       <p>${esc(T(g[0].why))}</p>${factsHtml(g[0])}
       ${g.map(r => `<p>${PAGES[r.no] ? `<a class="btnlink" href="#soort-${r.no}">${esc(catName(BY[r.no]))}: ${esc(T(U.toPage).toLowerCase())} →</a>` : `<span class="soon">${esc(catName(BY[r.no]))} · ${esc(T(U.soonPage))}</span>`}</p>`).join('')}</div>`).join('')}`;
 }
+const CATS_WITH_SPOTS = CATS.filter(c => SPOTS.some(s => s.recs.some(r => r.no === c.no)));
+function catRowHtml(){
+  return `<p class="lbl" style="margin-bottom:6px">${esc(T(U.catMap))}</p><div class="catrow" id="catrow">
+    <button type="button" class="catbtn" data-cat="" aria-pressed="${!CAT}"><span class="av" style="background:var(--olive)">42</span>${esc(T(U.allCats))}</button>
+    ${CATS_WITH_SPOTS.map(c => `<button type="button" class="catbtn" data-cat="${c.no}" aria-pressed="${CAT===c.no}"><span class="av">${img(c.photos[0], '')}</span>${esc(catName(c))}</button>`).join('')}</div>
+    ${CAT ? `<div class="catnote"><b>${esc(catName(BY[CAT]))}</b><span class="lat">${esc(BY[CAT].la)}</span><span class="note">${SPOTS.filter(s => s.recs.some(r => r.no === CAT)).length} ${esc(T(U.catShown))}</span>${PAGES[CAT] ? `<a class="btnlink" href="#soort-${CAT}">${esc(T(U.toPage))} →</a>` : `<span class="soon">${esc(T(U.soonPage))}</span>`}</div>` : ''}`;
+}
 function mapTabHtml(){
-  return `<p class="note" style="margin-bottom:12px">${esc(T(U.mapSub))}</p>
+  return `${catRowHtml()}<p class="note" style="margin-bottom:12px">${esc(T(U.mapSub))}</p>
     <div class="mapbox"><div id="mapwrap"></div>${legendHtml(true)}<div class="panel" id="panel" aria-live="polite">${panelHtml()}</div></div>`;
 }
 function drawHomeMap(){
   const mw = $('#mapwrap'); if (!mw) return;
-  const keep = mw.scrollLeft, world = FILTER === 'all';
+  const keep = mw.scrollLeft, world = FILTER === 'all' && !CAT;
   mw.className = 'mapscroll' + (world ? ' world' : '');
   const cw = world && narrow() ? 680 : (mw.clientWidth || 360);
-  const markers = SPOTS.filter(s => inFilter(s.cont)).map(s => ({id:s.id, lat:s.lat, lon:s.lon, score:spotMax(s), star:isTop(s), sel:SEL===s.id,
-    label:`${T(s.name)}, ${T(s.country)}`})).sort((a,b) => (a.sel - b.sel) || (a.score - b.score));
-  mw.innerHTML = mapSvg({box:BOX[FILTER], world, cw, markers, label:T(U.navMap)});
+  let markers, box = BOX[FILTER], range = null;
+  if (CAT) {   // één kat: alleen zijn plekken, kleur = kans voor die kat, met leefgebied
+    markers = SPOTS.map(s => ({s, r:s.recs.find(r => r.no === CAT)})).filter(x => x.r).map(({s,r}) => ({id:s.id, lat:s.lat, lon:s.lon, score:r.score, star:r.top, sel:SEL===s.id, label:`${T(s.name)}, ${T(s.country)}`}));
+    range = BY[CAT].range || null;
+    let [x0,y0,x1,y1] = range ? bboxOfPath(range) : [720,284,0,0];
+    markers.forEach(m => { const [x,y] = proj(m.lat, m.lon); x0=Math.min(x0,x); x1=Math.max(x1,x); y0=Math.min(y0,y); y1=Math.max(y1,y); });
+    box = [x0-12, y0-12, Math.max(60, x1-x0+24), Math.max(36, y1-y0+24)];
+  } else {
+    markers = SPOTS.filter(s => inFilter(s.cont)).map(s => ({id:s.id, lat:s.lat, lon:s.lon, score:spotMax(s), star:isTop(s), sel:SEL===s.id, label:`${T(s.name)}, ${T(s.country)}`}));
+  }
+  markers.sort((a,b) => (a.sel - b.sel) || (a.score - b.score));
+  mw.innerHTML = mapSvg({box, world, cw, markers, range, label:T(U.navMap)});
   if (world && mw.scrollWidth > mw.clientWidth) mw.scrollLeft = keep || (mw.scrollWidth - mw.clientWidth) * .55;
   bindMarkers(mw, id => { SEL = id; drawHomeMap(); const p = $('#panel'); p.innerHTML = panelHtml(); p.scrollIntoView({block:'nearest', behavior:'smooth'}); });
 }
@@ -535,7 +571,7 @@ function renderHome(){
 function refreshHome(){ $('#bar').innerHTML = renderBar(); $('#tabbody').innerHTML = tabBody(); bindHome(); }
 function bindHome(){
   $$('.chip[data-f]').forEach(b => b.onclick = () => {
-    FILTER = b.dataset.f; try { localStorage.setItem('sg-cont', FILTER); } catch(e) {}
+    FILTER = b.dataset.f; CAT = null; try { localStorage.setItem('sg-cont', FILTER); } catch(e) {}
     if (SEL && SPOT[SEL] && !inFilter(SPOT[SEL].cont)) SEL = null;
     refreshHome();
   });
@@ -549,6 +585,11 @@ function bindHome(){
     if (PAGES[no]) { location.hash = 'soort-' + no; return; }
     SEL = b.dataset.spot; TAB = 'kaart'; try { history.replaceState(null, '', '#kaart'); } catch(e) {}
     refreshHome(); renderChrome({nav:''}); window.scrollTo(0, $('.intro').offsetHeight);
+  });
+  $$('.catbtn').forEach(b => b.onclick = () => {
+    CAT = b.dataset.cat ? +b.dataset.cat : null; if (CAT) FILTER = 'all';
+    if (SEL && CAT && !SPOT[SEL].recs.some(r => r.no === CAT)) SEL = null;
+    const x = $('#catrow').scrollLeft; refreshHome(); const cr = $('#catrow'); if (cr) cr.scrollLeft = x;
   });
   const sa = $('#showAll'); if (sa) sa.onclick = () => { SHOWALL = !SHOWALL; $('#tops').innerHTML = topsHtml(); bindHome(); };
   const q = $('#q'); if (q) q.oninput = () => { Q = q.value; $('#splist').innerHTML = speciesListHtml(); };
@@ -606,7 +647,7 @@ function renderSpecies(no){
       <div class="body"><p class="where">${esc(T(s.area))}</p>${scoreHtml(r.score)}
       <p class="why">${esc(T(r.why))}${cite(r.src)}</p>${factsHtml(r)}</div></details></li>`).join('')}</ol></section>
   <section class="sec anchor" id="kaartsec"><div class="sechead"><h2>${esc(T(U.habitat))}</h2></div>
-    <div class="mapbox"><div id="spmap"></div>${legendHtml(false)}<div class="panel"><p class="note">${esc(T(U.habitatNote))}</p></div></div></section>
+    <div class="mapbox">${alsoHtml(no, recs)}<div id="spmap"></div>${legendHtml(false)}<div class="panel"><p class="note">${esc(T(U.habitatNote))}</p></div></div></section>
   <section class="sec two">
     <div class="anchor" id="tipssec"><h2>${esc(T(U.tips))}</h2><ul class="tips" style="margin-top:14px">${T(P.tips).map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>
     <div class="anchor" id="statussec"><h2>${esc(T(U.status))}</h2><div class="box" style="margin-top:14px;display:grid;gap:12px">
@@ -618,10 +659,34 @@ function renderSpecies(no){
     <ol class="sources">${P.sources.map((g,i) => `<li id="bron-${no}-${i+1}"><a href="${esc(SRC[g].url)}" target="_blank" rel="noopener">${esc(T(SRC[g].title))}</a></li>`).join('')}</ol>
     <p class="note" style="margin-top:14px">${esc(L==='nl'?'Foto’s, leefgebied en IUCN-status: De KATalogue.':'Photos, range and IUCN status: De KATalogue.')}</p></section>
   </div>`;
-  drawSpeciesMap();
+  drawSpeciesMap(); bindAlso(no, recs);
   $$('.jump button').forEach(b => b.onclick = () => { const el = document.getElementById(b.dataset.go); if (el) el.scrollIntoView({block:'start', behavior:'smooth'}); });
   $$('.cite').forEach(a => a.onclick = e => { e.preventDefault(); const el = document.getElementById(a.getAttribute('href').slice(1)); if (el) { el.scrollIntoView({block:'center', behavior:'smooth'}); el.style.background='color-mix(in srgb,var(--accent) 18%,transparent)'; setTimeout(()=>el.style.background='',1600); } });
   return catName(c);
+}
+// andere katten die op dezelfde plekken voorkomen
+function alsoCats(no, recs){
+  const set = {};
+  recs.forEach(({s}) => s.recs.forEach(r => { if (r.no !== no) set[r.no] = true; }));
+  return Object.keys(set).map(Number).sort((a,b) => a - b);
+}
+function alsoHtml(no, recs){
+  const list = alsoCats(no, recs); if (!list.length) return '';
+  return `<div class="also"><label for="alsoSel">${esc(T(U.alsoLbl))}</label><select id="alsoSel"><option value="">${esc(T(U.alsoNone))}</option>${list.map(n => `<option value="${n}"${ALSO===n?' selected':''}>${esc(catName(BY[n]))}</option>`).join('')}</select><div id="alsoOut" style="flex-basis:100%"></div></div>`;
+}
+function bindAlso(no, recs){
+  const sel = $('#alsoSel'); if (!sel) return;
+  const base = SPMAP.markers.map(m => ({...m}));
+  const apply = () => {
+    const a = sel.value ? +sel.value : null; ALSO = a;
+    if (!a) { SPMAP.markers = base; $('#alsoOut').innerHTML = ''; drawSpeciesMap(); return; }
+    SPMAP.markers = base.map(m => { const r = SPOT[m.id].recs.find(x => x.no === a); return r ? {...m, score:r.score} : {...m, dim:true}; });
+    const shared = recs.map(({s}) => ({s, r:s.recs.find(x => x.no === a)})).filter(x => x.r);
+    $('#alsoOut').innerHTML = `<p class="note" style="margin-top:6px">${esc(catName(BY[a]))} ${esc(T(U.alsoAt))}</p><ul class="alsolist">${shared.map(({s,r}) => `<li><b>${esc(T(s.name))}</b>${scoreHtml(r.score, false, true)}</li>`).join('')}</ul>
+      <p style="margin-top:8px">${PAGES[a] ? `<a class="btnlink" href="#soort-${a}">${esc(catName(BY[a]))}: ${esc(T(U.toPage).toLowerCase())} →</a>` : `<span class="soon">${esc(T(U.soonPage))}</span>`}</p>`;
+    drawSpeciesMap();
+  };
+  sel.onchange = apply; if (ALSO && alsoCats(no, recs).includes(ALSO)) apply(); else ALSO = null;
 }
 function renderMissing(c){
   $('#main').innerHTML = `<div class="wrap sec read"><h1>${esc(c ? catName(c) : '404')}</h1><p style="margin-top:12px">${esc(c ? T(U.soonPage) + '.' : T(U.notFound))}</p><p style="margin-top:16px"><a class="btnlink" href="#soorten">← ${esc(T(U.back))}</a></p></div>`;

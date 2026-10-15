@@ -20,7 +20,6 @@ cats = load('bron/katalogue.json')
 for c in cats:
     c['cont'] = [CONT_MAP[x] for x in c['cont']]
     if c['no'] not in PAGES:
-        c.pop('range', None)          # kaart alleen nodig op afgeronde soortpagina's
         c['photos'] = c['photos'][:1]
 extra_cont = load('data/extra_cont.json') if os.path.exists(J('data', 'extra_cont.json')) else {}
 for c in cats:

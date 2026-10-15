@@ -27,6 +27,22 @@ Bijgehouden door Claude. Bijwerken als een punt is opgelost.
 - **Sigean**: Nature et Zoo noemt een serval (sinds 2023), de eigen site en het persdossier 2026 niet. Niet opgenomen.
 - **Citadelle van Besançon**: in februari 2024 kwam er een in beslag genomen serval binnen (tijdelijke opvang?); niet op de eigen site. Niet opgenomen.
 
+## Bronnen en valkuilen (geleerd bij Italië, oktober 2026)
+
+**Bronnen Italië**
+- **Ministeriële lijst:** “Elenco strutture licenziate” van het ministerie van Milieu (MASE, wet D.Lgs. 73/2005), via mase.gov.it/pagina/giardini-zoologici. Versie oktober 2025: 37 instellingen plus het regionaal erkende park van Introd; ook aquaria en vlindertuinen.
+- **UIZA:** geen openbare ledenlijst; alleen de lijst van aangesloten parken op uiza.org/link-utili (januari 2022).
+- **EAZA:** de ledenpagina geeft een 404; de ledenkaart haalt de gegevens uit `https://www.eaza.net/page-data/sq/d/2685603474.json`.
+- **Zootierliste:** geen landpagina met alle instellingen; bouw de lijst per soort op, met de filters “Aktuelle” en “Ehemalige”.
+- **Circussen:** de katten horen bij dompteurs en hun stallen (o.a. Montico, Vassallo, Martini, Berosini, Caroli, Nicolay) en wisselen vaak van circus. Beste bronnen: circusfans.eu (ook de rss-zoekfunctie) en PassioneCirco. Geen officieel register.
+- **Sardinië:** de wilde kat daar (*Felis lybica sarda*) is een Afrikaanse wilde kat; opvangcentra (zoals Bonassai) laten ze weer vrij, er is er geen te bezoeken.
+
+**Valkuilen**
+- **Italiaanse namen:** *gattopardo africano* = serval, *lince del deserto* = caracal, *leopardo melanico* = zwarte panter, *gatto leopardo* = luipaardkat (niet de huiskat Bengal), *ghepardo* = cheetah, *gatto di Pallas* = manoel.
+- **Oude soortpagina’s:** een soortpagina op de eigen site bewijst niet dat het dier er nog is (Le Cornelle: Amoertijger, Romeo overleden in 2024). Vergelijk met de parkkaart (Valcorba: luipaardkat niet meer op de kaart van 2026) en let op verwijderde pagina’s die een 404 geven (Cappeller: caracal).
+- **Eén eigenaar, meerdere parken:** dieren verhuizen tussen parken van dezelfde eigenaar (groep De Rocchi: Pombia, Le Cornelle, Zoosafari Fasano, Safari Ravenna). Een “nieuwe” kat in het ene park is vaak een vertrokken kat uit het andere.
+- **Dierentuin of dierenpark:** een park met EEP-dieren is niet automatisch lid van EAZA (Zoo di Napoli). Controleer het lidmaatschap altijd in de ledenlijst.
+
 ## Bewust niet in de gids (opnieuw bekijken als er iets verandert)
 
 - **ROAAR (Trets)**: opvang van ex-circustijgers en -leeuwen; alleen bezoek voor peters (500 euro per jaar).

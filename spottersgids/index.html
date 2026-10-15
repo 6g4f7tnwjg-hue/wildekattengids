@@ -26,11 +26,11 @@
   --label:"Barlow Condensed","Arial Narrow","Roboto Condensed",sans-serif;
   --gut:max(16px,env(safe-area-inset-left,0px));
   --gutr:max(16px,env(safe-area-inset-right,0px));
+  --head:57px;
   color-scheme:light;
 }
 *,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55;-webkit-text-size-adjust:100%}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--paper)}
 a{color:inherit;text-decoration-color:color-mix(in srgb,var(--accent) 60%,transparent);text-underline-offset:3px}
@@ -54,37 +54,51 @@ p{margin:0}
 .brand svg{flex:none;width:30px;height:30px;color:var(--accent)}
 .brand b{font-family:var(--display);font-weight:800;font-size:1.15rem;line-height:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .brand small{display:block;font-family:var(--label);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:2px}
-.nav{display:flex;gap:2px;margin-left:auto}
-.nav a{text-decoration:none;font-weight:500;font-size:.95rem;padding:8px 10px;border-radius:6px;white-space:nowrap}
-.nav a[aria-current="page"]{color:var(--accent);background:color-mix(in srgb,var(--accent) 10%,transparent)}
+.nav{display:flex;gap:2px;margin-left:auto;align-items:center}
+.nav a,.morebtn{text-decoration:none;font-weight:500;font-size:.98rem;padding:8px 11px;border-radius:6px;white-space:nowrap;border:0;background:none;cursor:pointer}
+.nav a[aria-current="page"],.morebtn.cur{color:var(--accent);background:color-mix(in srgb,var(--accent) 10%,transparent)}
+.more{position:relative}
+.morebtn svg{width:10px;height:10px;margin-left:5px;vertical-align:1px}
+.moremenu{position:absolute;right:0;top:calc(100% + 6px);background:var(--paper);border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow);padding:6px;min-width:220px;display:none;flex-direction:column}
+.more.open .moremenu{display:flex}
+.moremenu .mlbl{display:none}
 .lang{display:flex;border:1px solid var(--line);border-radius:99px;padding:2px;flex:none}
 .lang button{border:0;background:none;padding:4px 10px;border-radius:99px;font-family:var(--label);font-weight:600;letter-spacing:.06em;cursor:pointer;color:var(--muted)}
 .lang button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
 .menubtn{display:none;border:1px solid var(--line);background:none;border-radius:8px;padding:6px 9px;cursor:pointer;flex:none}
 .menubtn svg{display:block;width:20px;height:20px}
-@media (max-width:920px){
+@media (max-width:820px){
   .menubtn{display:block}
-  .nav{position:absolute;left:0;right:0;top:100%;flex-direction:column;background:var(--paper);border-bottom:1px solid var(--line);padding:8px var(--gutr) 14px var(--gut);margin:0;display:none}
+  .nav{position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;background:var(--paper);border-bottom:1px solid var(--line);padding:6px var(--gutr) 14px var(--gut);margin:0;display:none;box-shadow:var(--shadow)}
   .nav.open{display:flex}
-  .nav a{padding:12px 6px;font-size:1.05rem;border-bottom:1px solid var(--line);border-radius:0}
+  .nav a{padding:12px 6px;font-size:1.08rem;border-bottom:1px solid var(--line);border-radius:0}
+  .morebtn{display:none}
+  .moremenu{display:flex;position:static;border:0;box-shadow:none;background:none;padding:0;min-width:0}
+  .moremenu .mlbl{display:block;padding:14px 6px 2px}
+  .moremenu a{font-size:1rem;color:var(--muted)}
   .lang{margin-left:auto}
 }
 
 /* sections */
 main{display:block;min-height:70vh}
-.sec{padding-block:36px}
+.sec{padding-block:30px}
 .sec + .sec{padding-top:8px}
-.sechead{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.sechead{display:flex;align-items:baseline;justify-content:space-between;gap:8px 16px;flex-wrap:wrap;margin-bottom:16px}
 .sechead p{color:var(--muted);max-width:40rem}
-.intro{padding-block:32px 8px}
-.intro p.sub{font-size:1.2rem;color:var(--muted);margin-top:10px;max-width:40rem}
+.intro{padding-block:26px 6px}
+.intro p.sub{font-size:1.15rem;color:var(--muted);margin-top:8px;max-width:40rem}
 
-/* filter */
-.filters{position:sticky;top:calc(env(safe-area-inset-top,0px) + 57px);z-index:10;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
-.filters .wrap{display:flex;gap:8px;overflow-x:auto;padding-block:10px;scrollbar-width:none}
-.filters .wrap::-webkit-scrollbar{display:none}
-.chip{flex:none;border:1px solid var(--line);background:var(--paper);border-radius:99px;padding:6px 14px;font-weight:500;cursor:pointer;white-space:nowrap;font-size:.95rem}
+/* filter + tabbladen */
+.bar{position:sticky;top:calc(env(safe-area-inset-top,0px) + var(--head));z-index:10;background:color-mix(in srgb,var(--bg) 94%,transparent);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.chips{display:flex;gap:8px;overflow-x:auto;padding-block:10px 6px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;border:1px solid var(--line);background:var(--paper);border-radius:99px;padding:5px 13px;font-weight:500;cursor:pointer;white-space:nowrap;font-size:.95rem}
 .chip[aria-pressed="true"]{background:var(--olive);border-color:var(--olive);color:var(--paper)}
+.tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-bottom:10px;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--paper);max-width:520px}
+.tab{border:0;background:none;padding:9px 6px;font-weight:700;cursor:pointer;font-size:1rem;border-left:1px solid var(--line)}
+.tab:first-child{border-left:0}
+.tab[aria-selected="true"]{background:var(--ink);color:var(--paper)}
+.tab small{font-family:var(--label);font-weight:600;font-size:.8rem;opacity:.75;margin-left:4px}
 
 /* score */
 .score{display:inline-flex;align-items:center;gap:8px;white-space:nowrap}
@@ -102,7 +116,7 @@ main{display:block;min-height:70vh}
 .tcard .ph{position:relative;aspect-ratio:16/10;background:var(--land);overflow:hidden}
 .tcard img{width:100%;height:100%;object-fit:cover;display:block}
 .tcard .tag{position:absolute;left:8px;top:8px;background:var(--paper);color:var(--ink);border-radius:4px;padding:2px 7px;font-family:var(--label);font-weight:600;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase}
-.tcard .bd{padding:12px 14px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.tcard .bd{padding:12px 14px 14px;display:flex;flex-direction:column;gap:5px;flex:1;min-width:0}
 .tcard h3{font-size:1.15rem}
 .tcard .where{color:var(--muted);font-size:.95rem}
 .tcard .sp{font-weight:700}
@@ -111,47 +125,55 @@ main{display:block;min-height:70vh}
 @media (max-width:600px){
   .tops{grid-template-columns:1fr;gap:10px}
   .tcard{flex-direction:row}
-  .tcard .ph{flex:none;width:112px;aspect-ratio:auto}
+  .tcard .ph{flex:none;width:108px;aspect-ratio:auto}
   .tcard .tag{display:none}
   .tcard .bd{padding:10px 12px;gap:3px}
   .tcard h3{font-size:1.05rem}
   .tcard .ssn{display:none}
 }
+.morewrap{display:flex;justify-content:center;margin-top:16px}
+.btn{border:1px solid var(--ink);background:none;border-radius:99px;padding:9px 18px;font-weight:700;cursor:pointer}
+.btn:hover{background:var(--ink);color:var(--paper)}
 .empty{color:var(--muted);font-style:italic;padding:12px 0}
 
-/* map */
+/* kaart */
 .mapbox{background:var(--paper);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.mapscroll{overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin}
+@media (max-width:600px){.mapscroll.world .map{width:680px;max-width:none}}
 .map{display:block;width:100%;height:auto;background:var(--sea);touch-action:manipulation}
 .map .land{fill:var(--land)}
 .map .grat{stroke:color-mix(in srgb,var(--ink) 7%,transparent);fill:none}
 .map .rng{fill:var(--range);fill-opacity:.32;stroke:var(--range);stroke-opacity:.7;stroke-linejoin:round}
 .map .mk{cursor:pointer}
-.map .mk circle.dot{stroke:var(--paper)}
-.map .mk circle.ring{fill:none;stroke:var(--ink)}
-.map .mk.sel circle.dot{stroke:var(--ink)}
+.map .mk .dot{stroke:var(--paper);stroke-linejoin:round}
+.map .mk.sel .dot{stroke:var(--ink)}
 .map .mk text{font-family:var(--label);font-weight:600;fill:var(--paper);text-anchor:middle;dominant-baseline:central;pointer-events:none}
-.mapscroll{overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin}
-@media (max-width:600px){.mapscroll.world .map{width:660px;max-width:none}}
-.maplegend{display:flex;flex-wrap:wrap;gap:6px 16px;padding:10px 14px;border-top:1px solid var(--line);font-size:.88rem;color:var(--muted);align-items:center}
-.maplegend span{display:inline-flex;align-items:center;gap:6px}
+.maplegend{display:flex;flex-wrap:wrap;gap:6px 14px;padding:10px 14px;border-top:1px solid var(--line);font-size:.9rem;color:var(--muted);align-items:center}
+.maplegend span{display:inline-flex;align-items:center;gap:5px}
 .maplegend i{width:11px;height:11px;border-radius:50%;background:var(--c);display:inline-block}
-.panel{border-top:1px solid var(--line);padding:16px 14px 18px}
+.maplegend svg{width:14px;height:14px}
+.panel{border-top:1px solid var(--line);padding:16px 14px 18px;scroll-margin-top:170px}
 .panel .hint{color:var(--muted)}
 .panel h3{font-size:1.35rem}
 .panel .meta{color:var(--muted);margin:2px 0 10px}
 .rec{border-top:1px dashed var(--line);padding-top:10px;margin-top:10px;display:grid;gap:4px}
 .rec:first-of-type{border-top:0;margin-top:0;padding-top:0}
 .rec .sp{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;font-weight:700;font-size:1.05rem}
-.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px 18px;margin-top:6px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px 18px;margin:6px 0 0}
 .facts div{min-width:0}
 .facts dd{margin:0}
 .facts dt{font-family:var(--label);font-weight:600;font-size:.75rem;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
-.soon{display:inline-block;font-family:var(--label);font-weight:600;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line);border-radius:4px;padding:1px 7px;color:var(--muted)}
+.soon{display:inline-block;font-family:var(--label);font-weight:600;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line);border-radius:4px;padding:1px 7px;color:var(--muted);width:max-content}
 .btnlink{display:inline-flex;align-items:center;gap:6px;font-weight:700;color:var(--accent);text-decoration:none}
 .btnlink:hover{text-decoration:underline}
 
-/* species grid */
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px}
+/* soorten */
+.search{width:100%;max-width:420px;padding:10px 14px;border-radius:99px;border:1px solid var(--line);background:var(--paper);font:inherit;font-size:16px;color:var(--ink);margin-bottom:18px}
+.search:focus{outline:2px solid var(--accent);outline-offset:1px}
+.grouph{display:flex;align-items:baseline;gap:10px;margin:6px 0 12px}
+.grouph h3{font-size:1.25rem}
+.grouph span{font-family:var(--label);font-weight:600;color:var(--muted);letter-spacing:.06em}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px;margin-bottom:28px}
 .scard{display:flex;flex-direction:column;text-decoration:none;background:var(--paper);border:1px solid var(--line);border-radius:10px;overflow:hidden}
 .scard .ph{aspect-ratio:4/3;background:var(--land);overflow:hidden}
 .scard img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}
@@ -159,15 +181,20 @@ main{display:block;min-height:70vh}
 .scard .bd{padding:9px 11px 12px;display:flex;flex-direction:column;gap:3px;flex:1}
 .scard .nm{font-family:var(--display);font-weight:700;font-size:1.08rem;line-height:1.15}
 .scard .la{font-size:.85rem;color:var(--muted)}
-.scard .ft{margin-top:auto;padding-top:6px;display:flex;flex-direction:column;gap:4px}
-.scard.off .ph img{filter:grayscale(.55) contrast(.95);opacity:.85}
-.scard .no{font-family:var(--label);font-weight:600;color:var(--muted);font-size:.78rem;letter-spacing:.06em}
+.scard .ft{margin-top:auto;padding-top:6px}
+.no{font-family:var(--label);font-weight:600;color:var(--muted);font-size:.78rem;letter-spacing:.06em}
+.soonlist{list-style:none;margin:0 0 10px;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:0 22px}
+.soonlist li{display:grid;grid-template-columns:52px 1fr auto;gap:10px;align-items:center;padding:7px 0;border-bottom:1px solid var(--line)}
+.soonlist img{width:52px;height:39px;object-fit:cover;border-radius:5px;display:block;filter:saturate(.75)}
+.soonlist li > div{min-width:0;line-height:1.25}
+.soonlist b{display:block;font-family:var(--display);font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.soonlist .la{font-size:.82rem;color:var(--muted);display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 
-/* species page */
-.crumbs{padding-top:18px;font-size:.92rem;color:var(--muted)}
+/* soortpagina */
+.crumbs{padding-top:16px;font-size:.92rem;color:var(--muted)}
 .crumbs a{color:var(--muted)}
-.sphead{display:grid;gap:22px;padding-block:14px 30px;align-items:start}
-@media (min-width:860px){.sphead{grid-template-columns:1.15fr 1fr}}
+.sphead{display:grid;gap:20px;padding-block:12px 18px;align-items:start}
+@media (min-width:860px){.sphead{grid-template-columns:1.1fr 1fr}}
 .hero{margin:0}
 .hero .ph{aspect-ratio:4/3;max-width:100%;border-radius:12px;overflow:hidden;background:var(--land)}
 .hero img{width:100%;height:100%;object-fit:cover;display:block}
@@ -175,17 +202,37 @@ figcaption{font-size:.82rem;color:var(--muted);margin-top:6px;overflow-wrap:anyw
 .idblock{display:flex;flex-direction:column;gap:10px;min-width:0}
 .idblock .en{font-size:1.1rem;color:var(--muted)}
 .badges{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
-.iucn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:99px;padding:3px 10px 3px 4px;font-size:.92rem}
+.iucn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:99px;padding:3px 10px 3px 4px;font-size:.92rem;width:max-content;max-width:100%}
 .iucn b{font-family:var(--label);font-weight:600;letter-spacing:.05em;border-radius:99px;padding:1px 7px;color:#fff;background:var(--ic)}
-.lead{font-family:var(--display);font-size:1.28rem;line-height:1.5;font-weight:500}
+.summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;background:var(--paper);border:1px solid var(--line);border-radius:12px;margin:0}
+.summary > div{padding:12px 14px;border-left:1px solid var(--line);min-width:0;display:grid;gap:4px;align-content:start}
+.summary > div:first-child{border-left:0}
+.summary dt{font-family:var(--label);font-weight:600;font-size:.75rem;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.summary dd{margin:0;font-weight:700;line-height:1.3}
+.summary dd small{display:block;font-weight:400;color:var(--muted)}
+@media (max-width:520px){.summary{grid-template-columns:1fr 1fr}.summary > div:nth-child(3){grid-column:1/-1;border-left:0;border-top:1px solid var(--line)}}
+.lead{font-family:var(--display);font-size:1.22rem;line-height:1.5;font-weight:500}
 .lead .kans{display:block;margin-top:10px;font-family:var(--label);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:1rem;color:var(--accent)}
-.spots{list-style:none;margin:0;padding:0;display:grid;gap:14px;counter-reset:spot}
-.spot{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px 16px 14px;display:grid;gap:8px;position:relative}
-.spot .hd{display:flex;gap:12px;align-items:flex-start}
-.spot .rank{flex:none;width:34px;height:34px;border-radius:50%;background:var(--c);color:var(--paper);display:flex;align-items:center;justify-content:center;font-family:var(--label);font-weight:600;font-size:1.05rem}
-.spot .hd > div{min-width:0}
-.spot h3{font-size:1.25rem}
-.spot .where{color:var(--muted);font-size:.95rem}
+.jump{position:sticky;top:calc(env(safe-area-inset-top,0px) + var(--head));z-index:9;background:color-mix(in srgb,var(--bg) 94%,transparent);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-block:1px solid var(--line)}
+.jump .wrap{display:flex;gap:6px;overflow-x:auto;padding-block:8px;scrollbar-width:none}
+.jump .wrap::-webkit-scrollbar{display:none}
+.jump button{flex:none;border:1px solid var(--line);background:var(--paper);border-radius:99px;padding:5px 13px;font-weight:500;cursor:pointer;white-space:nowrap}
+.jump button:hover{border-color:var(--ink)}
+.anchor{scroll-margin-top:calc(env(safe-area-inset-top,0px) + var(--head) + 60px)}
+.spots{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.spot{background:var(--paper);border:1px solid var(--line);border-radius:12px;scroll-margin-top:calc(env(safe-area-inset-top,0px) + var(--head) + 60px)}
+.spot summary{list-style:none;display:flex;gap:12px;align-items:center;padding:12px 14px;cursor:pointer}
+.spot summary::-webkit-details-marker{display:none}
+.spot .rank{flex:none;width:32px;height:32px;border-radius:50%;background:var(--c);color:var(--paper);display:flex;align-items:center;justify-content:center;font-family:var(--label);font-weight:600;font-size:1.02rem}
+.spot .tt{min-width:0;flex:1;display:grid;gap:2px}
+.spot h3{font-size:1.18rem}
+.spot .where{color:var(--muted);font-size:.93rem}
+.spot .chev{flex:none;width:14px;height:14px;color:var(--muted);transition:transform .2s}
+.spot[open] .chev{transform:rotate(180deg)}
+.spot .sc-sum{flex:none}
+.spot[open] .sc-sum{display:none}
+.spot .body{padding:0 14px 14px 58px;display:grid;gap:8px}
+@media (max-width:520px){.spot .body{padding-left:14px}.spot .sc-sum b{display:none}}
 .spot .why{font-size:1rem}
 .cite{font-size:.75rem;vertical-align:super;line-height:0;margin-left:2px;color:var(--muted);text-decoration:none}
 .cite:hover{color:var(--accent)}
@@ -200,7 +247,6 @@ figcaption{font-size:.82rem;color:var(--muted);margin-top:6px;overflow-wrap:anyw
 .gallery .ph{aspect-ratio:4/3;border-radius:10px;overflow:hidden;background:var(--land)}
 .gallery img{width:100%;height:100%;object-fit:cover;display:block}
 .sources{margin:0;padding-left:1.6em;display:grid;gap:6px;font-size:.95rem;overflow-wrap:anywhere}
-.sources li:target{background:color-mix(in srgb,var(--accent) 15%,transparent)}
 .note{font-size:.92rem;color:var(--muted)}
 .box{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:18px}
 .prose{display:grid;gap:14px}
@@ -220,6 +266,8 @@ figcaption{font-size:.82rem;color:var(--muted);margin-top:6px;overflow-wrap:anyw
 .check{list-style:none;padding:0;margin:0;display:grid;gap:8px}
 .check li{display:grid;grid-template-columns:22px 1fr;gap:8px}
 .check li::before{content:"";width:14px;height:14px;border:1.5px solid var(--olive);border-radius:3px;margin-top:.3em}
+.scale{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:8px}
+.scale li{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center}
 </style>
 
 <header class="top">
@@ -245,6 +293,7 @@ figcaption{font-size:.82rem;color:var(--muted);margin-top:6px;overflow-wrap:anyw
 const D = JSON.parse(document.getElementById('data').textContent);
 const KOFI_URL = 'https://ko-fi.com/PLAATSHOUDER'; // ← vul hier je eigen Ko-fi-link in
 const $ = s => document.querySelector(s);
+const $$ = s => Array.from(document.querySelectorAll(s));
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let L = 'nl';
 try { const s = localStorage.getItem('sg-lang'); if (s === 'en' || s === 'nl') L = s; else if (!/^nl/i.test(navigator.language || 'nl')) L = 'en'; } catch(e) {}
@@ -254,25 +303,26 @@ const T = o => o == null ? '' : (typeof o === 'string' ? o : (o[L] != null ? o[L
 const U = {
   title:{nl:'Spottersgids voor wilde katten',en:"Wild Cat Spotter's Guide"},
   brandSub:{nl:'wilde katten · J. Gelens',en:'wild cats · J. Gelens'},
-  navHome:{nl:'Start',en:'Home'}, navSpecies:{nl:'Soorten',en:'Species'}, navTop:{nl:'Topspots',en:'Top spots'},
+  navSpecies:{nl:'Soorten',en:'Species'}, navTop:{nl:'Topspots',en:'Top spots'}, navMap:{nl:'Kaart',en:'Map'},
   navResp:{nl:'Verantwoord spotten',en:'Responsible spotting'}, navEur:{nl:'Katten in Europa',en:'Cats in Europe'},
-  navPack:{nl:'Paklijst',en:'Packing list'}, navAbout:{nl:'Over mij',en:'About me'},
+  navPack:{nl:'Paklijst',en:'Packing list'}, navAbout:{nl:'Over mij',en:'About me'}, navMore:{nl:'Meer',en:'More'},
   sub:{nl:'Waar je alle 42 wilde kattensoorten in het wild kunt zien, hoe groot je kans is en hoe je ze vindt.',en:'Where to see all 42 wild cat species in the wild, how good your chances are and how to find them.'},
   all:{nl:'Hele wereld',en:'Whole world'},
-  topTitle:{nl:'Topspots',en:'Top spots'},
   topSub:{nl:'Plekken waar je een soort (bijna) zeker ziet, mits je de tijd neemt en in het goede seizoen gaat.',en:'Places where you will (almost) certainly see a species, as long as you take your time and go in the right season.'},
-  mapTitle:{nl:'Alle spotplekken',en:'All spotting sites'},
-  mapSub:{nl:'Markers staan op het midden van een reservaat of gebied, nooit op een hol of vaste rustplek. Tik op een marker.',en:'Markers sit at the centre of a reserve or area, never on a den or regular resting place. Tap a marker.'},
-  mapHint:{nl:'Tik op een marker op de kaart om te zien welke katten je daar kunt vinden.',en:'Tap a marker on the map to see which cats you can find there.'},
-  spTitle:{nl:'Alle 42 soorten',en:'All 42 species'},
-  spSub:{nl:'Met de hoogste kansscore per soort. Soorten zonder score krijgen binnenkort hun eigen pagina.',en:'With the highest chance score per species. Species without a score will get their own page soon.'},
+  showAll:{nl:'Toon alle topspots',en:'Show all top spots'}, showLess:{nl:'Toon minder',en:'Show fewer'},
+  mapSub:{nl:'Markers staan op het midden van een reservaat of gebied, nooit op een hol of vaste rustplek.',en:'Markers sit at the centre of a reserve or area, never on a den or regular resting place.'},
+  mapHint:{nl:'Tik op een marker om te zien welke katten je daar kunt vinden.',en:'Tap a marker to see which cats you can find there.'},
+  search:{nl:'Zoek een soort (NL, Engels of Latijn)',en:'Search a species (Dutch, English or Latin)'},
+  ready:{nl:'Klaar om te spotten',en:'Ready to spot'},
   soon:{nl:'Volgt binnenkort',en:'Coming soon'},
+  noHits:{nl:'Geen soort gevonden.',en:'No species found.'},
   soonPage:{nl:'Soortpagina volgt binnenkort',en:'Species page coming soon'},
   toPage:{nl:'Naar de soortpagina',en:'Go to the species page'},
-  best:{nl:'Beste kans',en:'Best chance'},
   season:{nl:'Seizoen',en:'Season'}, time:{nl:'Tijdstip',en:'Time of day'}, trip:{nl:'Soort tocht',en:'Type of trip'},
+  bestPlace:{nl:'Beste plek',en:'Best place'}, bestTime:{nl:'Beste tijd',en:'Best time'},
+  jPlaces:{nl:'Plekken',en:'Places'}, jMap:{nl:'Kaart',en:'Map'}, jTips:{nl:'Tips',en:'Tips'}, jStatus:{nl:'Status',en:'Status'}, jSources:{nl:'Bronnen',en:'Sources'},
   bestSpots:{nl:'De beste plekken',en:'The best places'},
-  bestSpotsSub:{nl:'Op volgorde van kans.',en:'In order of chance.'},
+  bestSpotsSub:{nl:'Op volgorde van kans. Tik op een plek voor alle details.',en:'In order of chance. Tap a place for all details.'},
   tips:{nl:'Spottips',en:'Spotting tips'},
   habitat:{nl:'Leefgebied en spotplekken',en:'Range and spotting sites'},
   habitatNote:{nl:'Gekleurd: leefgebied bij benadering (bron: De KATalogue, op basis van openbare verspreidingskaarten). Cijfers: de plekken hierboven.',en:'Shaded: approximate range (source: De KATalogue, based on public range maps). Numbers: the places listed above.'},
@@ -282,12 +332,12 @@ const U = {
   sources:{nl:'Bronnen',en:'Sources'},
   back:{nl:'Alle soorten',en:'All species'},
   chance:{nl:'Kans',en:'Chance'},
-  legend:{nl:'Hoogste kans op de plek:',en:'Best chance at the site:'},
-  topRing:{nl:'Ring = topspot',en:'Ring = top spot'},
+  legend:{nl:'Kans:',en:'Chance:'},
+  topStar:{nl:'topspot',en:'top spot'},
   cont:{eur:{nl:'Europa',en:'Europe'},afr:{nl:'Afrika',en:'Africa'},asia:{nl:'Azië',en:'Asia'},nam:{nl:'Noord-Amerika',en:'North America'},sam:{nl:'Midden- en Zuid-Amerika',en:'Central & South America'}},
   sc:{5:{nl:'bijna zeker',en:'almost certain'},4:{nl:'grote kans',en:'good chance'},3:{nl:'redelijke kans',en:'fair chance'},2:{nl:'kleine kans',en:'small chance'},1:{nl:'veel geluk nodig',en:'needs a lot of luck'}},
   scaleTitle:{nl:'Zo lees je de kansscore',en:'How to read the chance score'},
-  scale:{5:{nl:'bijna zeker: de meeste bezoekers met een goed geplande reis zien de soort',en:'almost certain: most visitors on a well-planned trip see the species'},4:{nl:'grote kans',en:'good chance'},3:{nl:'redelijke kans',en:'fair chance'},2:{nl:'kleine kans',en:'small chance'},1:{nl:'alleen met veel geluk of via cameravallen',en:'only with a lot of luck or via camera traps'}},
+  scale:{5:{nl:'de meeste bezoekers met een goed geplande reis zien de soort',en:'most visitors on a well-planned trip see the species'},4:{nl:'grote kans',en:'good chance'},3:{nl:'redelijke kans',en:'fair chance'},2:{nl:'kleine kans',en:'small chance'},1:{nl:'alleen met veel geluk of via cameravallen',en:'only with a lot of luck or via camera traps'}},
   iucn:{LC:{nl:'Niet bedreigd',en:'Least Concern'},NT:{nl:'Gevoelig',en:'Near Threatened'},VU:{nl:'Kwetsbaar',en:'Vulnerable'},EN:{nl:'Bedreigd',en:'Endangered'},CR:{nl:'Ernstig bedreigd',en:'Critically Endangered'},NE:{nl:'Niet beoordeeld',en:'Not Evaluated'},DD:{nl:'Onvoldoende gegevens',en:'Data Deficient'}},
   footMade:{nl:'Een gids van J. Gelens. Soortgegevens, foto’s en verspreidingskaarten: De KATalogue. Plekken en kansen: zie de bronnen per soort.',en:'A guide by J. Gelens. Species data, photos and range maps: De KATalogue. Places and chances: see the sources on each species page.'},
   photoPre:{nl:'foto:',en:'photo:'},
@@ -301,13 +351,13 @@ const CATS = D.cats, BY = {}; CATS.forEach(c => BY[c.no] = c);
 const SPOTS = D.spots, SPOT = {}; SPOTS.forEach(s => SPOT[s.id] = s);
 const PAGES = D.pages;           // soortpagina's die af zijn
 const SRC = D.sources;           // globale bronnenlijst
-// hoogste score per soort (alleen uit onderzochte plekken)
-const BEST = {};
+const BEST = {};                 // hoogste score per soort (alleen uit onderzochte plekken)
 SPOTS.forEach(s => s.recs.forEach(r => { if (!BEST[r.no] || r.score > BEST[r.no]) BEST[r.no] = r.score; }));
 const spotMax = s => Math.max(...s.recs.map(r => r.score));
 const isTop = s => s.recs.some(r => r.top);
-let FILTER = 'all';
+let FILTER = 'all', TAB = 'topspots', SEL = null, SHOWALL = false, Q = '';
 try { const f = localStorage.getItem('sg-cont'); if (f && (f === 'all' || CONTS.includes(f))) FILTER = f; } catch(e) {}
+const narrow = () => window.innerWidth < 600;
 
 /* ---------- kleine bouwstenen ---------- */
 const scoreHtml = (n, big, compact) => `<span class="score${big?' big':''}" style="--c:var(--s${n})" title="${esc(T(U.chance))} ${n}/5 · ${esc(T(U.sc[n]))}"><span class="pips" aria-hidden="true">${[1,2,3,4,5].map(i=>`<i class="${i<=n?'on':''}"></i>`).join('')}</span><b>${compact ? `${n}/5` : `${esc(T(U.chance))} ${n} · ${esc(T(U.sc[n]))}`}</b></span>`;
@@ -321,30 +371,38 @@ const factsHtml = r => `<dl class="facts">
   ${T(r.time)?`<div><dt>${esc(T(U.time))}</dt><dd>${esc(T(r.time))}</dd></div>`:''}
   ${T(r.trip)?`<div><dt>${esc(T(U.trip))}</dt><dd>${esc(T(r.trip))}</dd></div>`:''}</dl>`;
 const placeLine = s => [T(s.area), T(s.country)].filter(Boolean).join(' · ');
+const STAR = '<svg viewBox="-10 -10 20 20" aria-hidden="true"><path d="M0,-9 2.6,-3.2 8.6,-2.8 4,1.2 5.3,7.3 0,4.1 -5.3,7.3 -4,1.2 -8.6,-2.8 -2.6,-3.2Z" fill="currentColor"/></svg>';
+const CHEV = '<svg class="chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>';
 
 /* ---------- kaart ---------- */
 const W = 720, H = 284;
 const proj = (lat, lon) => [(lon + 180) * 2, (84 - lat) * 2];
-const BOX = { all:[0,0,720,284], eur:[300,18,170,96], afr:[300,80,200,170], asia:[400,30,300,170], nam:[10,10,270,140], sam:[100,110,230,175] };
-function fit(b){ // houd de verhouding van de kaart vast
-  let [x,y,w,h] = b; const r = W/H;
+const BOX = { all:[0,0,720,284], eur:[330,22,140,82], afr:[318,70,162,174], asia:[404,34,290,164], nam:[8,12,262,130], sam:[108,110,206,176] };
+// maakt een uitsnede met verhouding r (breedte/hoogte) rond een kader
+function fit(b, r){
+  let [x,y,w,h] = b;
   if (w/h > r){ const nh = w/r; y -= (nh-h)/2; h = nh; } else { const nw = h*r; x -= (nw-w)/2; w = nw; }
-  if (w > W){ w = W; h = H; } x = Math.max(0, Math.min(W-w, x)); y = Math.max(0, Math.min(H-h, y));
+  if (w > W){ w = W; h = w/r; } if (h > H){ h = H; w = Math.min(W, h*r); }
+  x = Math.max(0, Math.min(W-w, x)); y = Math.max(0, Math.min(H-h, y));
   return [x,y,w,h];
 }
+// op een telefoon mag een werelddeel hoger worden, zodat het het scherm vult
+const ratioFor = b => Math.max(narrow() ? 1.05 : 1.9, Math.min(W/H, b[2]/b[3]));
 const GRAT = (() => { let g=''; for(let lon=-150; lon<180; lon+=30) g+=`M${(lon+180)*2},0V284`; for(let lat=60; lat>-60; lat-=30) g+=`M0,${(84-lat)*2}H720`; return g; })();
+const starPath = (x, y, R) => { let d=''; for (let i=0;i<10;i++){ const a = -Math.PI/2 + i*Math.PI/5, rr = i%2 ? R*.48 : R; d += (i?'L':'M') + (x+rr*Math.cos(a)).toFixed(2) + ',' + (y+rr*Math.sin(a)).toFixed(2); } return d + 'Z'; };
 function mapSvg(opts){
-  const vb = fit(opts.box), k = vb[2]/W;
-  const r = Math.max(1.8, 4.4*k), sw = Math.max(.3, .9*k);
+  const vb = opts.world ? [0,0,W,H] : fit(opts.box, ratioFor(opts.box));
+  const u = vb[2] / opts.cw;                       // kaarteenheden per schermpixel
+  const sw = 1.6*u, k = vb[2]/W;
   const rng = opts.range ? `<path class="rng" d="${opts.range}" stroke-width="${.6*k}"/>` : '';
   const mks = opts.markers.map(m => {
     const [x,y] = proj(m.lat, m.lon);
-    const rr = m.num ? r*1.25 : r;
+    const r = (m.num ? 10 : 6.5) * u;
+    const shape = m.star ? `<path class="dot" d="${starPath(x, y, r*1.7)}" fill="var(--s${m.score})" stroke-width="${sw}"/>`
+                         : `<circle class="dot" cx="${x}" cy="${y}" r="${r}" fill="var(--s${m.score})" stroke-width="${sw}"/>`;
     return `<g class="mk${m.sel?' sel':''}" data-id="${esc(m.id)}" tabindex="0" role="button" aria-label="${esc(m.label)}">
-      <circle cx="${x}" cy="${y}" r="${rr*2.2}" fill="transparent"/>
-      ${m.ring?`<circle class="ring" cx="${x}" cy="${y}" r="${rr+1.6*sw+ .8*k}" stroke-width="${sw}"/>`:''}
-      <circle class="dot" cx="${x}" cy="${y}" r="${rr}" fill="var(--s${m.score})" stroke-width="${sw}"/>
-      ${m.num?`<text x="${x}" y="${y}" font-size="${rr*1.25}">${m.num}</text>`:''}</g>`;
+      <circle cx="${x}" cy="${y}" r="${16*u}" fill="transparent"/>${shape}
+      ${m.num?`<text x="${x}" y="${y}" font-size="${13*u}">${m.num}</text>`:''}</g>`;
   }).join('');
   return `<svg class="map" viewBox="${vb.join(' ')}" role="img" aria-label="${esc(opts.label)}">
     <path class="grat" d="${GRAT}" stroke-width="${.5*k}"/><path class="land" d="${D.land}"/>${rng}${mks}</svg>`;
@@ -354,29 +412,38 @@ function bboxOfPath(p){
   for (let i=0;i+1<n.length;i+=2){ x0=Math.min(x0,n[i]); x1=Math.max(x1,n[i]); y0=Math.min(y0,n[i+1]); y1=Math.max(y1,n[i+1]); }
   return [x0,y0,x1,y1];
 }
+function legendHtml(withStar){
+  return `<div class="maplegend"><span>${esc(T(U.legend))}</span>${[5,4,3,2,1].map(n=>`<span><i style="--c:var(--s${n})"></i>${n}</span>`).join('')}${withStar?`<span style="color:var(--ink)">${STAR}<span style="color:var(--muted)">${esc(T(U.topStar))}</span></span>`:''}</div>`;
+}
+function bindMarkers(root, fn){
+  root.querySelectorAll('.mk').forEach(g => { g.onclick = () => fn(g.dataset.id); g.onkeydown = e => { if (e.key==='Enter'||e.key===' ') { e.preventDefault(); fn(g.dataset.id); } }; });
+}
 
 /* ---------- navigatie ---------- */
-const NAV = [['start','navHome'],['soorten','navSpecies'],['topspots','navTop'],['verantwoord','navResp'],['europa','navEur'],['paklijst','navPack'],['over','navAbout']];
+const NAV = [['soorten','navSpecies'],['topspots','navTop'],['europa','navEur']];
+const MORE = [['verantwoord','navResp'],['paklijst','navPack'],['over','navAbout']];
 function renderChrome(route){
   document.documentElement.lang = L;
   document.title = route.title ? `${route.title} · ${T(U.title)}` : T(U.title);
   $('#brandName').textContent = L === 'nl' ? 'Spottersgids' : "Spotter's Guide";
   $('#brandSub').textContent = T(U.brandSub);
-  $('#nav').innerHTML = NAV.map(([id,k]) => `<a href="#${id}"${route.nav===id?' aria-current="page"':''}>${esc(T(U[k]))}</a>`).join('');
+  const link = ([id,k]) => `<a href="#${id}"${route.nav===id?' aria-current="page"':''}>${esc(T(U[k]))}</a>`;
+  const inMore = MORE.some(([id]) => id === route.nav);
+  $('#nav').innerHTML = NAV.map(link).join('') +
+    `<div class="more" id="more"><button type="button" class="morebtn${inMore?' cur':''}" id="moreBtn" aria-expanded="false" aria-haspopup="true">${esc(T(U.navMore))}<svg viewBox="0 0 10 10"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+     <div class="moremenu"><span class="lbl mlbl">${esc(T(U.navMore))}</span>${MORE.map(link).join('')}</div></div>`;
+  $('#moreBtn').onclick = e => { e.stopPropagation(); const o = $('#more').classList.toggle('open'); $('#moreBtn').setAttribute('aria-expanded', o); };
   $('#langNl').setAttribute('aria-pressed', L==='nl'); $('#langEn').setAttribute('aria-pressed', L==='en');
-  $('#foot').innerHTML = `<p style="max-width:36rem">${esc(T(U.footMade))}</p><nav>${NAV.slice(3).map(([id,k])=>`<a href="#${id}">${esc(T(U[k]))}</a>`).join('')}</nav>`;
+  $('#foot').innerHTML = `<p style="max-width:36rem">${esc(T(U.footMade))}</p><nav>${[...NAV, ...MORE].map(([id,k])=>`<a href="#${id}">${esc(T(U[k]))}</a>`).join('')}</nav>`;
+  const h = $('.top').offsetHeight; if (h) document.documentElement.style.setProperty('--head', h + 'px');
 }
+document.addEventListener('click', e => { const m = $('#more'); if (m && !m.contains(e.target)) { m.classList.remove('open'); } });
 $('#menuBtn').onclick = () => { const o = $('#nav').classList.toggle('open'); $('#menuBtn').setAttribute('aria-expanded', o); };
 $('#nav').addEventListener('click', e => { if (e.target.closest('a')) { $('#nav').classList.remove('open'); $('#menuBtn').setAttribute('aria-expanded', false); } });
-document.querySelectorAll('.lang button').forEach(b => b.onclick = () => { L = b.dataset.l; try { localStorage.setItem('sg-lang', L); } catch(e) {} route(true); });
+$$('.lang button').forEach(b => b.onclick = () => { L = b.dataset.l; try { localStorage.setItem('sg-lang', L); } catch(e) {} route(true); });
 
 /* ---------- startpagina ---------- */
-let SEL = null;
 function inFilter(cont){ return FILTER === 'all' || cont === FILTER; }
-function filtersHtml(){
-  return `<div class="filters"><div class="wrap" role="group" aria-label="${esc(L==='nl'?'Filter per werelddeel':'Filter by continent')}">
-    ${['all',...CONTS].map(c => `<button type="button" class="chip" data-f="${c}" aria-pressed="${FILTER===c}">${esc(c==='all'?T(U.all):contName(c))}</button>`).join('')}</div></div>`;
-}
 function topspotList(){
   const list = [];
   SPOTS.forEach(s => { if (!inFilter(s.cont)) return;
@@ -385,95 +452,133 @@ function topspotList(){
   list.sort((a,b) => b.r.score - a.r.score || CONTS.indexOf(a.s.cont) - CONTS.indexOf(b.s.cont) || a.r.no - b.r.no);
   return list;
 }
-function homeTopsHtml(){
+function catsInFilter(){ return CATS.filter(c => FILTER === 'all' || c.cont.includes(FILTER)); }
+function tabCount(t){
+  if (t === 'topspots') return topspotList().length;
+  if (t === 'kaart') return SPOTS.filter(s => inFilter(s.cont)).length;
+  return catsInFilter().length;
+}
+function topsHtml(){
   const list = topspotList();
   if (!list.length) return `<p class="empty">${esc(L==='nl'?'Geen topspots in dit werelddeel.':'No top spots on this continent.')}</p>`;
-  return `<div class="tops">${list.map(({s,r,recs}) => { const c = BY[r.no];
+  const shown = SHOWALL ? list : list.slice(0, 6);
+  return `<div class="tops">${shown.map(({s,r,recs}) => { const c = BY[r.no];
     return `<button type="button" class="tcard" data-spot="${esc(s.id)}" data-no="${r.no}">
       <div class="ph">${img(c.photos[0], catName(c))}<span class="tag">${esc(contName(s.cont))}</span></div>
       <div class="bd"><span class="sp">${recs.map(x => esc(catName(BY[x.no]))).join(' · ')}</span><h3>${esc(T(s.name))}</h3><span class="where">${esc(T(s.country))}</span>
-      ${scoreHtml(r.score)}<span class="ssn">${esc(T(r.season))}</span></div></button>`; }).join('')}</div>`;
-}
-function homeMarkers(){
-  return SPOTS.filter(s => inFilter(s.cont)).map(s => ({id:s.id, lat:s.lat, lon:s.lon, score:spotMax(s), ring:isTop(s), sel:SEL===s.id,
-    label:`${T(s.name)}, ${T(s.country)}`})).sort((a,b)=>a.score-b.score);
+      ${scoreHtml(r.score)}<span class="ssn">${esc(T(r.season))}</span></div></button>`; }).join('')}</div>
+    ${list.length > 6 ? `<div class="morewrap"><button type="button" class="btn" id="showAll">${esc(SHOWALL ? T(U.showLess) : `${T(U.showAll)} (${list.length})`)}</button></div>` : ''}
+    <details class="box" style="margin-top:22px"><summary style="cursor:pointer;font-weight:700">${esc(T(U.scaleTitle))}</summary>
+    <ul class="scale">${[5,4,3,2,1].map(n=>`<li>${scoreHtml(n)}<span>${esc(T(U.scale[n]))}</span></li>`).join('')}</ul></details>`;
 }
 function panelHtml(){
   const s = SEL && SPOT[SEL];
   if (!s) return `<p class="hint">${esc(T(U.mapHint))}</p>`;
   const recs = s.recs.slice().sort((a,b)=>b.score-a.score);
+  // soorten met precies dezelfde uitleg (uit één topspot) samen tonen
+  const groups = [];
+  recs.forEach(r => { const g = groups.find(x => T(x[0].why) === T(r.why)); if (g) g.push(r); else groups.push([r]); });
   return `<h3>${esc(T(s.name))}</h3><p class="meta">${esc(placeLine(s))}</p>
-    ${recs.map(r => { const c = BY[r.no], page = PAGES[r.no];
-      return `<div class="rec"><div class="sp">${esc(catName(c))} ${scoreHtml(r.score)}</div>
-      <p>${esc(T(r.why))}</p>${factsHtml(r)}
-      <p>${page ? `<a class="btnlink" href="#soort-${r.no}">${esc(T(U.toPage))} →</a>` : `<span class="soon">${esc(T(U.soonPage))}</span>`}</p></div>`; }).join('')}`;
+    ${groups.map(g => `<div class="rec">${g.map(r => `<div class="sp">${esc(catName(BY[r.no]))} ${scoreHtml(r.score)}</div>`).join('')}
+      <p>${esc(T(g[0].why))}</p>${factsHtml(g[0])}
+      ${g.map(r => `<p>${PAGES[r.no] ? `<a class="btnlink" href="#soort-${r.no}">${esc(catName(BY[r.no]))}: ${esc(T(U.toPage).toLowerCase())} →</a>` : `<span class="soon">${esc(catName(BY[r.no]))} · ${esc(T(U.soonPage))}</span>`}</p>`).join('')}</div>`).join('')}`;
 }
-function legendHtml(){
-  return `<div class="maplegend"><span>${esc(T(U.legend))}</span>${[5,4,3,2,1].map(n=>`<span><i style="--c:var(--s${n})"></i>${n}</span>`).join('')}<span>◯ ${esc(T(U.topRing))}</span></div>`;
-}
-function speciesGridHtml(){
-  const cats = CATS.filter(c => FILTER === 'all' || c.cont.includes(FILTER));
-  return `<div class="grid">${cats.map(c => { const page = PAGES[c.no], best = BEST[c.no];
-    const inner = `<div class="ph">${img(c.photos[0], catName(c))}</div><div class="bd"><span class="no">№ ${c.no}</span><span class="nm">${esc(catName(c))}</span><span class="la lat">${esc(c.la)}</span>
-      <span class="ft">${best ? scoreHtml(best, false, true) : ''}${page ? '' : `<span class="soon">${esc(T(U.soon))}</span>`}</span></div>`;
-    return page ? `<a class="scard" href="#soort-${c.no}">${inner}</a>` : `<div class="scard off">${inner}</div>`; }).join('')}</div>`;
-}
-function scaleHtml(){
-  return `<details class="box" style="margin-top:16px"><summary style="cursor:pointer;font-weight:700">${esc(T(U.scaleTitle))}</summary>
-  <ul class="check" style="margin-top:12px;list-style:none">${[5,4,3,2,1].map(n=>`<li style="display:flex;gap:10px;align-items:center;grid-template-columns:none">${scoreHtml(n)}<span>${esc(T(U.scale[n]))}</span></li>`).join('')}</ul></details>`;
-}
-function renderHome(focus){
-  $('#main').innerHTML = `
-  <section class="intro"><div class="wrap"><h1>${esc(T(U.title))}</h1><p class="sub">${esc(T(U.sub))}</p></div></section>
-  ${filtersHtml()}
-  <section class="sec" id="topspots"><div class="wrap"><div class="sechead"><h2>${esc(T(U.topTitle))}</h2><p>${esc(T(U.topSub))}</p></div><div id="tops">${homeTopsHtml()}</div>${scaleHtml()}</div></section>
-  <section class="sec" id="kaart"><div class="wrap"><div class="sechead"><h2>${esc(T(U.mapTitle))}</h2><p>${esc(T(U.mapSub))}</p></div>
-    <div class="mapbox"><div id="mapwrap"></div>${legendHtml()}<div class="panel" id="panel" aria-live="polite"></div></div></div></section>
-  <section class="sec" id="soorten"><div class="wrap"><div class="sechead"><h2>${esc(T(U.spTitle))}</h2><p>${esc(T(U.spSub))}</p></div><div id="grid">${speciesGridHtml()}</div></div></section>`;
-  drawHomeMap(); $('#panel').innerHTML = panelHtml();
-  document.querySelectorAll('.chip[data-f]').forEach(b => b.onclick = () => {
-    FILTER = b.dataset.f; try { localStorage.setItem('sg-cont', FILTER); } catch(e) {}
-    if (SEL && SPOT[SEL] && !inFilter(SPOT[SEL].cont)) SEL = null;
-    document.querySelectorAll('.chip[data-f]').forEach(x => x.setAttribute('aria-pressed', x.dataset.f === FILTER));
-    $('#tops').innerHTML = homeTopsHtml(); $('#grid').innerHTML = speciesGridHtml(); drawHomeMap(); $('#panel').innerHTML = panelHtml(); bindTops();
-  });
-  bindTops();
-  if (focus) { const el = document.getElementById(focus); if (el) requestAnimationFrame(() => el.scrollIntoView({block:'start'})); }
-  else window.scrollTo(0,0);
-}
-function bindTops(){
-  document.querySelectorAll('.tcard').forEach(b => b.onclick = () => {
-    const no = +b.dataset.no;
-    if (PAGES[no]) { location.hash = 'soort-' + no; return; }
-    SEL = b.dataset.spot; drawHomeMap(); $('#panel').innerHTML = panelHtml();
-    $('#kaart').scrollIntoView({block:'start'});
-  });
+function mapTabHtml(){
+  return `<p class="note" style="margin-bottom:12px">${esc(T(U.mapSub))}</p>
+    <div class="mapbox"><div id="mapwrap"></div>${legendHtml(true)}<div class="panel" id="panel" aria-live="polite">${panelHtml()}</div></div>`;
 }
 function drawHomeMap(){
-  const mw = $('#mapwrap'), keep = mw.scrollLeft;
-  mw.className = 'mapscroll' + (FILTER === 'all' ? ' world' : '');
-  mw.innerHTML = mapSvg({box:BOX[FILTER], markers:homeMarkers(), label:T(U.mapTitle)});
-  if (FILTER === 'all' && mw.scrollWidth > mw.clientWidth) mw.scrollLeft = keep || (mw.scrollWidth - mw.clientWidth) * .55;
-  bindMarkers($('#mapwrap'), id => { SEL = id; drawHomeMap(); $('#panel').innerHTML = panelHtml(); });
+  const mw = $('#mapwrap'); if (!mw) return;
+  const keep = mw.scrollLeft, world = FILTER === 'all';
+  mw.className = 'mapscroll' + (world ? ' world' : '');
+  const cw = world && narrow() ? 680 : (mw.clientWidth || 360);
+  const markers = SPOTS.filter(s => inFilter(s.cont)).map(s => ({id:s.id, lat:s.lat, lon:s.lon, score:spotMax(s), star:isTop(s), sel:SEL===s.id,
+    label:`${T(s.name)}, ${T(s.country)}`})).sort((a,b) => (a.sel - b.sel) || (a.score - b.score));
+  mw.innerHTML = mapSvg({box:BOX[FILTER], world, cw, markers, label:T(U.navMap)});
+  if (world && mw.scrollWidth > mw.clientWidth) mw.scrollLeft = keep || (mw.scrollWidth - mw.clientWidth) * .55;
+  bindMarkers(mw, id => { SEL = id; drawHomeMap(); const p = $('#panel'); p.innerHTML = panelHtml(); p.scrollIntoView({block:'nearest', behavior:'smooth'}); });
 }
-function bindMarkers(root, fn){
-  root.querySelectorAll('.mk').forEach(g => { g.onclick = () => fn(g.dataset.id); g.onkeydown = e => { if (e.key==='Enter'||e.key===' ') { e.preventDefault(); fn(g.dataset.id); } }; });
+function speciesTabHtml(){
+  return `<input class="search" id="q" type="search" placeholder="${esc(T(U.search))}" value="${esc(Q)}" autocomplete="off" spellcheck="false" enterkeyhint="search"><div id="splist">${speciesListHtml()}</div>`;
 }
+function speciesListHtml(){
+  const q = Q.trim().toLowerCase();
+  const cats = catsInFilter().filter(c => !q || [c.nl, c.en, c.la].some(x => x.toLowerCase().includes(q)));
+  if (!cats.length) return `<p class="empty">${esc(T(U.noHits))}</p>`;
+  const ready = cats.filter(c => PAGES[c.no]), later = cats.filter(c => !PAGES[c.no]);
+  let h = '';
+  if (ready.length) h += `<div class="grouph"><h3>${esc(T(U.ready))}</h3><span>${ready.length}</span></div><div class="grid">${ready.map(c => `<a class="scard" href="#soort-${c.no}">
+      <div class="ph">${img(c.photos[0], catName(c))}</div><div class="bd"><span class="no">№ ${c.no}</span><span class="nm">${esc(catName(c))}</span><span class="la lat">${esc(c.la)}</span>
+      <span class="ft">${BEST[c.no] ? scoreHtml(BEST[c.no], false, true) : ''}</span></div></a>`).join('')}</div>`;
+  if (later.length) h += `<div class="grouph"><h3>${esc(T(U.soon))}</h3><span>${later.length}</span></div><ul class="soonlist">${later.map(c => `<li>
+      ${img(c.photos[0], catName(c))}<div><b>${esc(catName(c))}</b><span class="la lat">${esc(c.la)}</span></div>${BEST[c.no] ? scoreHtml(BEST[c.no], false, true) : '<span></span>'}</li>`).join('')}</ul>`;
+  return h;
+}
+function tabBody(){
+  if (TAB === 'kaart') return mapTabHtml();
+  if (TAB === 'soorten') return speciesTabHtml();
+  return `<p class="note" style="margin-bottom:14px">${esc(T(U.topSub))}</p><div id="tops">${topsHtml()}</div>`;
+}
+function renderBar(){
+  const tabs = [['topspots','navTop'],['kaart','navMap'],['soorten','navSpecies']];
+  return `<div class="chips" role="group" aria-label="${esc(L==='nl'?'Filter per werelddeel':'Filter by continent')}">
+    ${['all',...CONTS].map(c => `<button type="button" class="chip" data-f="${c}" aria-pressed="${FILTER===c}">${esc(c==='all'?T(U.all):contName(c))}</button>`).join('')}</div>
+    <div class="tabs" role="tablist">${tabs.map(([t,k]) => `<button type="button" class="tab" role="tab" data-t="${t}" aria-selected="${TAB===t}">${esc(T(U[k]))}<small>${tabCount(t)}</small></button>`).join('')}</div>`;
+}
+function renderHome(){
+  $('#main').innerHTML = `
+  <section class="intro"><div class="wrap"><h1>${esc(T(U.title))}</h1><p class="sub">${esc(T(U.sub))}</p></div></section>
+  <div class="bar"><div class="wrap" id="bar">${renderBar()}</div></div>
+  <section class="sec" style="padding-top:18px"><div class="wrap" id="tabbody">${tabBody()}</div></section>`;
+  bindHome();
+}
+function refreshHome(){ $('#bar').innerHTML = renderBar(); $('#tabbody').innerHTML = tabBody(); bindHome(); }
+function bindHome(){
+  $$('.chip[data-f]').forEach(b => b.onclick = () => {
+    FILTER = b.dataset.f; try { localStorage.setItem('sg-cont', FILTER); } catch(e) {}
+    if (SEL && SPOT[SEL] && !inFilter(SPOT[SEL].cont)) SEL = null;
+    refreshHome();
+  });
+  $$('.tab').forEach(b => b.onclick = () => {
+    TAB = b.dataset.t; try { history.replaceState(null, '', '#' + TAB); } catch(e) {}
+    refreshHome(); renderChrome({nav: TAB === 'kaart' ? '' : TAB});
+    const bar = $('.bar'); if (bar && bar.getBoundingClientRect().top < 0) window.scrollTo(0, $('.intro').offsetHeight);
+  });
+  $$('.tcard').forEach(b => b.onclick = () => {
+    const no = +b.dataset.no;
+    if (PAGES[no]) { location.hash = 'soort-' + no; return; }
+    SEL = b.dataset.spot; TAB = 'kaart'; try { history.replaceState(null, '', '#kaart'); } catch(e) {}
+    refreshHome(); renderChrome({nav:''}); window.scrollTo(0, $('.intro').offsetHeight);
+  });
+  const sa = $('#showAll'); if (sa) sa.onclick = () => { SHOWALL = !SHOWALL; $('#tops').innerHTML = topsHtml(); bindHome(); };
+  const q = $('#q'); if (q) q.oninput = () => { Q = q.value; $('#splist').innerHTML = speciesListHtml(); };
+  drawHomeMap();
+}
+let rsz; window.addEventListener('resize', () => { clearTimeout(rsz); rsz = setTimeout(() => { if ($('#mapwrap')) drawHomeMap(); if ($('#spmap')) drawSpeciesMap(); }, 200); });
 
 /* ---------- soortpagina ---------- */
+let SPMAP = null;
+function drawSpeciesMap(){
+  const el = $('#spmap'); if (!el || !SPMAP) return;
+  el.innerHTML = mapSvg({...SPMAP, cw: el.clientWidth || 360});
+  bindMarkers(el, id => { const d = document.getElementById('plek-' + id); if (d) { d.open = true; d.scrollIntoView({block:'start', behavior:'smooth'}); } });
+}
 function renderSpecies(no){
   const c = BY[no], P = PAGES[no];
   if (!c || !P) return renderMissing(c);
   const recs = P.spots.map(id => { const s = SPOT[id]; return {s, r:s.recs.find(r => r.no === no)}; });
   const local = {}; P.sources.forEach((g,i) => local[g] = i+1);
-  const cite = ids => (ids||[]).filter(g => local[g]).map(g => `<a class="cite" href="#bron-${no}-${local[g]}" data-src="${local[g]}">[${local[g]}]</a>`).join('');
-  const best = Math.max(...recs.map(x => x.r.score));
-  // kaartuitsnede: leefgebied + plekken
+  const cite = ids => (ids||[]).filter(g => local[g]).map(g => `<a class="cite" href="#bron-${no}-${local[g]}">[${local[g]}]</a>`).join('');
+  const top = recs[0], best = top.r.score;
   let [x0,y0,x1,y1] = c.range ? bboxOfPath(c.range) : [720,284,0,0];
   recs.forEach(({s}) => { const [x,y] = proj(s.lat, s.lon); x0=Math.min(x0,x); x1=Math.max(x1,x); y0=Math.min(y0,y); y1=Math.max(y1,y); });
-  const pad = 14, box = [x0-pad, y0-pad, Math.max(60, x1-x0+2*pad), Math.max(30, y1-y0+2*pad)];
-  const markers = recs.map(({s,r},i) => ({id:s.id, lat:s.lat, lon:s.lon, score:r.score, num:i+1, label:`${i+1}. ${T(s.name)}`})).reverse();
-  const intro = T(P.intro);
+  const pad = 12;
+  SPMAP = {box:[x0-pad, y0-pad, Math.max(50, x1-x0+2*pad), Math.max(30, y1-y0+2*pad)], range:c.range,
+    markers: recs.map(({s,r},i) => ({id:s.id, lat:s.lat, lon:s.lon, score:r.score, num:i+1, label:`${i+1}. ${T(s.name)}`})).reverse(),
+    label: T(U.habitat)+': '+catName(c)};
+  const intro = T(P.intro), km = intro.match(/(Kans|Chance):\s*\d.*$/s);
+  const story = km ? intro.slice(0, km.index).trim() : intro;
+  const season1 = T(top.r.season).split(/;\s*|\s\(/)[0];
   $('#main').innerHTML = `
   <div class="wrap"><p class="crumbs"><a href="#soorten">← ${esc(T(U.back))}</a></p>
   <section class="sphead">
@@ -482,36 +587,44 @@ function renderSpecies(no){
       <span class="lbl">№ ${c.no} · ${c.cont.map(contName).join(' · ')}</span>
       <h1>${esc(catName(c))}</h1>
       <p class="en">${esc(L==='nl'?c.en:c.nl)} · <span class="lat">${esc(c.la)}</span></p>
-      <div class="badges">${iucnHtml(c.iucn)} ${scoreHtml(best, true)}</div>
-      <p class="lead">${esc(intro.replace(/\s*(Kans|Chance):\s*\d.*$/s,''))}${(intro.match(/(Kans|Chance):\s*\d.*$/s)||[''])[0] ? `<span class="kans">${esc((intro.match(/(Kans|Chance):\s*\d.*$/s))[0])}</span>` : ''}</p>
+      <div class="badges">${iucnHtml(c.iucn)}</div>
+      <dl class="summary">
+        <div><dt>${esc(T(U.bestPlace))}</dt><dd>${esc(T(top.s.name))}<small>${esc(T(top.s.country))}</small></dd></div>
+        <div><dt>${esc(T(U.bestTime))}</dt><dd>${esc(season1)}</dd></div>
+        <div><dt>${esc(T(U.chance))}</dt><dd>${scoreHtml(best)}</dd></div>
+      </dl>
+      <p class="lead">${esc(story)}${km ? `<span class="kans">${esc(km[0])}</span>` : ''}</p>
     </div>
-  </section>
-  <section class="sec" style="padding-top:0"><div class="sechead"><h2>${esc(T(U.bestSpots))}</h2><p>${esc(T(U.bestSpotsSub))}</p></div>
-    <ol class="spots">${recs.map(({s,r},i) => `<li class="spot" id="plek-${esc(s.id)}" style="--c:var(--s${r.score})">
-      <div class="hd"><span class="rank">${i+1}</span><div><h3>${esc(T(s.name))}</h3><p class="where">${esc(placeLine(s))}</p></div></div>
-      ${scoreHtml(r.score)}
-      <p class="why">${esc(T(r.why))}${cite(r.src)}</p>${factsHtml(r)}</li>`).join('')}</ol></section>
-  <section class="sec"><div class="sechead"><h2>${esc(T(U.habitat))}</h2></div>
-    <div class="mapbox"><div id="spmap">${mapSvg({box, range:c.range, markers, label:T(U.habitat)+': '+catName(c)})}</div>${legendHtml().replace(/<span>◯[^<]*<\/span>/,'')}<div class="panel"><p class="note">${esc(T(U.habitatNote))}</p></div></div></section>
+  </section></div>
+  <nav class="jump" aria-label="${esc(L==='nl'?'Snel naar':'Jump to')}"><div class="wrap">
+    ${[['plekken','jPlaces'],['kaartsec','jMap'],['tipssec','jTips'],['statussec','jStatus'],['bronnen','jSources']].map(([id,k]) => `<button type="button" data-go="${id}">${esc(T(U[k]))}</button>`).join('')}
+  </div></nav>
+  <div class="wrap">
+  <section class="sec anchor" id="plekken"><div class="sechead"><h2>${esc(T(U.bestSpots))}</h2><p>${esc(T(U.bestSpotsSub))}</p></div>
+    <ol class="spots">${recs.map(({s,r},i) => `<li><details class="spot" id="plek-${esc(s.id)}" style="--c:var(--s${r.score})"${i<3?' open':''}>
+      <summary><span class="rank">${i+1}</span><span class="tt"><h3>${esc(T(s.name))}</h3><span class="where">${esc(T(s.country))}</span></span><span class="sc-sum">${scoreHtml(r.score, false, true)}</span>${CHEV}</summary>
+      <div class="body"><p class="where">${esc(T(s.area))}</p>${scoreHtml(r.score)}
+      <p class="why">${esc(T(r.why))}${cite(r.src)}</p>${factsHtml(r)}</div></details></li>`).join('')}</ol></section>
+  <section class="sec anchor" id="kaartsec"><div class="sechead"><h2>${esc(T(U.habitat))}</h2></div>
+    <div class="mapbox"><div id="spmap"></div>${legendHtml(false)}<div class="panel"><p class="note">${esc(T(U.habitatNote))}</p></div></div></section>
   <section class="sec two">
-    <div><h2>${esc(T(U.tips))}</h2><ul class="tips" style="margin-top:14px">${T(P.tips).map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>
-    <div><h2>${esc(T(U.status))}</h2><div class="box" style="margin-top:14px;display:grid;gap:12px">
+    <div class="anchor" id="tipssec"><h2>${esc(T(U.tips))}</h2><ul class="tips" style="margin-top:14px">${T(P.tips).map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>
+    <div class="anchor" id="statussec"><h2>${esc(T(U.status))}</h2><div class="box" style="margin-top:14px;display:grid;gap:12px">
       <div>${iucnHtml(c.iucn)}</div><p>${esc(T(P.status))}${cite(P.statusSrc)}</p>
       <h3>${esc(T(U.threats))}</h3><ul class="tips">${T(P.threats).map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div></div>
   </section>
   ${c.photos.length > 1 ? `<section class="sec"><h2 style="margin-bottom:14px">${esc(T(U.photos))}</h2><div class="gallery">${c.photos.slice(1).map(p => `<figure><div class="ph">${img(p, catName(c))}</div><figcaption>${credit(p.cr)}</figcaption></figure>`).join('')}</div></section>` : ''}
-  <section class="sec read"><h2 style="margin-bottom:14px">${esc(T(U.sources))}</h2>
+  <section class="sec read anchor" id="bronnen"><h2 style="margin-bottom:14px">${esc(T(U.sources))}</h2>
     <ol class="sources">${P.sources.map((g,i) => `<li id="bron-${no}-${i+1}"><a href="${esc(SRC[g].url)}" target="_blank" rel="noopener">${esc(T(SRC[g].title))}</a></li>`).join('')}</ol>
     <p class="note" style="margin-top:14px">${esc(L==='nl'?'Foto’s, leefgebied en IUCN-status: De KATalogue.':'Photos, range and IUCN status: De KATalogue.')}</p></section>
   </div>`;
-  bindMarkers($('#spmap'), id => { const el = document.getElementById('plek-' + id); if (el) el.scrollIntoView({block:'center'}); });
-  document.querySelectorAll('.cite').forEach(a => a.onclick = e => { e.preventDefault(); const el = document.getElementById(a.getAttribute('href').slice(1)); if (el) { el.scrollIntoView({block:'center'}); el.style.background='color-mix(in srgb,var(--accent) 18%,transparent)'; setTimeout(()=>el.style.background='',1600); } });
-  window.scrollTo(0,0);
+  drawSpeciesMap();
+  $$('.jump button').forEach(b => b.onclick = () => { const el = document.getElementById(b.dataset.go); if (el) el.scrollIntoView({block:'start', behavior:'smooth'}); });
+  $$('.cite').forEach(a => a.onclick = e => { e.preventDefault(); const el = document.getElementById(a.getAttribute('href').slice(1)); if (el) { el.scrollIntoView({block:'center', behavior:'smooth'}); el.style.background='color-mix(in srgb,var(--accent) 18%,transparent)'; setTimeout(()=>el.style.background='',1600); } });
   return catName(c);
 }
 function renderMissing(c){
   $('#main').innerHTML = `<div class="wrap sec read"><h1>${esc(c ? catName(c) : '404')}</h1><p style="margin-top:12px">${esc(c ? T(U.soonPage) + '.' : T(U.notFound))}</p><p style="margin-top:16px"><a class="btnlink" href="#soorten">← ${esc(T(U.back))}</a></p></div>`;
-  window.scrollTo(0,0);
   return c ? catName(c) : '';
 }
 
@@ -523,7 +636,7 @@ function renderText(id){
   if (id === 'over') html += `<p><a class="kofi" href="${esc(KOFI_URL)}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 6h13a4 4 0 0 1 0 8h-1.1A6 6 0 0 1 10 19H9a5 5 0 0 1-5-5V6zm12 2v4h1a2 2 0 0 0 0-4h-1z"/></svg>${esc(L==='nl'?'Trakteer me op een koffie (Ko-fi)':'Buy me a coffee (Ko-fi)')}</a></p>`;
   if (pg.sources && pg.sources.length) html += `<h2>${esc(T(U.sources))}</h2><ol class="sources">${pg.sources.map(g => `<li><a href="${esc(SRC[g].url)}" target="_blank" rel="noopener">${esc(T(SRC[g].title))}</a></li>`).join('')}</ol>`;
   html += `</div></div>`;
-  $('#main').innerHTML = html; window.scrollTo(0,0);
+  $('#main').innerHTML = html;
   return T(pg.title);
 }
 function europaList(){
@@ -533,17 +646,20 @@ function europaList(){
 }
 
 /* ---------- router ---------- */
-function route(keepScroll){
+function route(keep){
   const h = (location.hash || '#start').slice(1);
-  let title = '', nav = 'start';
+  let title = '', nav = '';
   const y = window.scrollY;
-  if (h === 'start' || h === '' ) { renderHome(); }
-  else if (h === 'topspots' || h === 'soorten' || h === 'kaart') { nav = h === 'kaart' ? 'start' : h; renderHome(keepScroll ? null : h); }
+  if (h === 'start' || h === '' || h === 'topspots' || h === 'kaart' || h === 'soorten') {
+    if (h !== 'start' && h !== '') TAB = h;
+    nav = TAB === 'kaart' ? '' : TAB; renderHome();
+  }
   else if (/^soort-\d+$/.test(h)) { nav = 'soorten'; title = renderSpecies(+h.slice(6)); }
   else if (D.text[h]) { nav = h; title = renderText(h); }
   else { title = renderMissing(null); }
   renderChrome({title, nav});
-  if (keepScroll) window.scrollTo(0, y);
+  window.scrollTo(0, keep ? y : 0);
+  if (keep) { drawHomeMap(); drawSpeciesMap(); }
 }
 window.addEventListener('hashchange', () => route(false));
 route(false);

@@ -1,0 +1,745 @@
+{
+ "topspots": [
+  {
+   "id": "br-porto-jofre-pantanal",
+   "species": [
+    3
+   ],
+   "name_nl": "Porto Jofre (noordelijke Pantanal)",
+   "name_en": "Porto Jofre (northern Pantanal)",
+   "area_nl": "Rivieren rond Porto Jofre en Staatspark Encontro das Águas, Mato Grosso",
+   "area_en": "Rivers around Porto Jofre and Encontro das Águas State Park, Mato Grosso",
+   "country_nl": "Brazilië",
+   "country_en": "Brazil",
+   "cont": "sam",
+   "lat": -17.3,
+   "lon": -56.8,
+   "score": 5,
+   "why_nl": "Onderzoek naar het jaguartoerisme rond Porto Jofre noemt een kans op een waarneming van meer dan 94% in het hoogseizoen, en tripverslagen melden jaguars op elke dag op de rivier.",
+   "why_en": "Research on jaguar tourism around Porto Jofre puts the high-season sighting probability above 94%, and trip reports log jaguars on every day spent on the river.",
+   "season_nl": "Droge tijd, juli t/m oktober (de katten jagen dan langs de oevers).",
+   "season_en": "Dry season, July to October, when the cats hunt along the riverbanks.",
+   "time_nl": "De hele dag; vroege ochtend en late middag zijn het actiefst.",
+   "time_en": "All day; early morning and late afternoon are most active.",
+   "trip_nl": "Boottochten vanaf Porto Jofre over de rivieren, minstens 3 volle dagen.",
+   "trip_en": "Boat trips from Porto Jofre along the rivers, at least 3 full days.",
+   "sources": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "ke-masai-mara",
+   "species": [
+    1,
+    30,
+    4
+   ],
+   "name_nl": "Masai Mara",
+   "name_en": "Masai Mara",
+   "area_nl": "Masai Mara National Reserve en aangrenzende conservancies, Narok",
+   "area_en": "Masai Mara National Reserve and adjoining conservancies, Narok",
+   "country_nl": "Kenia",
+   "country_en": "Kenya",
+   "cont": "afr",
+   "lat": -1.5,
+   "lon": 35.1,
+   "score": 5,
+   "why_nl": "Met ruim 17 leeuwen per 100 km² zie je hier vrijwel zeker leeuwen; cheeta en luipaard zijn ook goed te zien, en een tripverslag uit 2023 vond alle drie de grote katten binnen een uur.",
+   "why_en": "With over 17 lions per 100 km² you are all but certain to see lions; cheetah and leopard are also seen regularly, and a 2023 trip report found all three big cats within an hour.",
+   "season_nl": "Het hele jaar; juli t/m oktober (grote trek) en januari–februari zijn het droogst.",
+   "season_en": "Year-round; July to October (the great migration) and January–February are driest.",
+   "time_nl": "Ochtend- en middagritten; de katten zijn bij zonsopkomst het actiefst.",
+   "time_en": "Morning and afternoon drives; the cats are most active around sunrise.",
+   "trip_nl": "Gamedrives in het reservaat of de conservancies, 3 à 4 dagen.",
+   "trip_en": "Game drives in the reserve or conservancies, 3–4 days.",
+   "sources": [
+    3,
+    4
+   ],
+   "scores": {
+    "30": 4
+   }
+  },
+  {
+   "id": "tz-ndutu-southern-serengeti",
+   "species": [
+    30,
+    1
+   ],
+   "name_nl": "Ndutu en zuidelijke Serengeti",
+   "name_en": "Ndutu and southern Serengeti",
+   "area_nl": "Ndutu-gebied (Ngorongoro Conservation Area) en de zuidelijke vlaktes van Serengeti National Park",
+   "area_en": "Ndutu area (Ngorongoro Conservation Area) and the southern plains of Serengeti National Park",
+   "country_nl": "Tanzania",
+   "country_en": "Tanzania",
+   "cont": "afr",
+   "lat": -3.0,
+   "lon": 34.9,
+   "score": 5,
+   "why_nl": "Tijdens het kalverseizoen trekken de kuddes en hun jagers naar de korte grasvlaktes, waar leeuwen en cheeta's in tripverslagen steeds terugkomen, vaak met jongen.",
+   "why_en": "During the calving season the herds and their hunters gather on the short-grass plains, where lions and cheetahs feature in trip report after trip report, often with cubs.",
+   "season_nl": "December t/m maart (kalverseizoen, piek februari).",
+   "season_en": "December to March (calving season, peak in February).",
+   "time_nl": "Vroege ochtend en late middag; cheeta's jagen vooral overdag.",
+   "time_en": "Early morning and late afternoon; cheetahs mainly hunt by day.",
+   "trip_nl": "Gamedrives vanuit kampen in het Ndutu-gebied, 3 à 4 dagen.",
+   "trip_en": "Game drives from camps in the Ndutu area, 3–4 days.",
+   "sources": [
+    5
+   ]
+  },
+  {
+   "id": "tz-ngorongoro-crater",
+   "species": [
+    1,
+    11
+   ],
+   "name_nl": "Ngorongorokrater",
+   "name_en": "Ngorongoro Crater",
+   "area_nl": "Krater van de Ngorongoro Conservation Area, Arusha",
+   "area_en": "Crater floor of the Ngorongoro Conservation Area, Arusha",
+   "country_nl": "Tanzania",
+   "country_en": "Tanzania",
+   "cont": "afr",
+   "lat": -3.2,
+   "lon": 35.6,
+   "score": 5,
+   "why_nl": "Op de open kraterbodem zijn leeuwen bijna altijd te vinden, en het is een van de beste plekken ter wereld voor de serval: één bezoeker telde negen servals in twee dagen.",
+   "why_en": "Lions are almost always found on the open crater floor, and it is one of the best places in the world for serval: one visitor counted nine servals in two days.",
+   "season_nl": "Het hele jaar; in de droge tijd (juni–oktober) is het gras korter en zie je servals makkelijker.",
+   "season_en": "Year-round; in the dry season (June–October) the grass is shorter and servals are easier to spot.",
+   "time_nl": "Overdag (de krater is alleen overdag open); servals jagen vaak in de ochtend.",
+   "time_en": "Daytime (the crater is open by day only); servals often hunt in the morning.",
+   "trip_nl": "Een of twee dagtochten naar de kraterbodem; vraag je gids expliciet naar servals te zoeken.",
+   "trip_en": "One or two day trips to the crater floor; ask your guide explicitly to look for servals.",
+   "sources": [
+    5,
+    7
+   ],
+   "scores": {
+    "11": 4
+   }
+  },
+  {
+   "id": "za-sabi-sand",
+   "species": [
+    4
+   ],
+   "name_nl": "Sabi Sand",
+   "name_en": "Sabi Sand",
+   "area_nl": "Sabi Sand Game Reserve, grenzend aan het Krugerpark, Mpumalanga",
+   "area_en": "Sabi Sand Game Reserve, bordering Kruger National Park, Mpumalanga",
+   "country_nl": "Zuid-Afrika",
+   "country_en": "South Africa",
+   "cont": "afr",
+   "lat": -24.8,
+   "lon": 31.5,
+   "score": 5,
+   "why_nl": "De luipaarden zijn hier al decennia gewend aan voertuigen en worden door gidsen en spoorzoekers op honderden ritten per week gevolgd, zodat vrijwel elke bezoeker van een paar dagen luipaard ziet.",
+   "why_en": "The leopards here have been used to vehicles for decades and are followed by guides and trackers on hundreds of drives a week, so nearly every visitor staying a few days sees one.",
+   "season_nl": "Het hele jaar; mei t/m september (droog, kale struiken) is het makkelijkst.",
+   "season_en": "Year-round; May to September (dry, sparse bush) is easiest.",
+   "time_nl": "Ochtend- en avondritten, vaak tot na zonsondergang.",
+   "time_en": "Morning and evening drives, often continuing after sunset.",
+   "trip_nl": "Gamedrives met gids en spoorzoeker vanuit lodges in het reservaat, 2 à 3 nachten.",
+   "trip_en": "Game drives with guide and tracker from lodges in the reserve, 2–3 nights.",
+   "sources": [
+    8
+   ]
+  },
+  {
+   "id": "zm-south-luangwa",
+   "species": [
+    4
+   ],
+   "name_nl": "South Luangwa",
+   "name_en": "South Luangwa",
+   "area_nl": "South Luangwa National Park, Oost-Zambia",
+   "area_en": "South Luangwa National Park, eastern Zambia",
+   "country_nl": "Zambia",
+   "country_en": "Zambia",
+   "cont": "afr",
+   "lat": -13.1,
+   "lon": 31.6,
+   "score": 4,
+   "why_nl": "Cameravalonderzoek bevestigt een hoge luipaarddichtheid in het park, en de nachtritten (in Afrikaanse parken een uitzondering) geven je extra kansen, al is een waarneming niet gegarandeerd.",
+   "why_en": "Camera-trap research confirms a high leopard density inside the park, and night drives (rare in African parks) give you extra chances, though a sighting is not guaranteed.",
+   "season_nl": "Droge tijd, juni t/m oktober.",
+   "season_en": "Dry season, June to October.",
+   "time_nl": "Late middag tot een paar uur na zonsondergang.",
+   "time_en": "Late afternoon until a few hours after sunset.",
+   "trip_nl": "Gecombineerde middag- en nachtritten vanuit lodges bij het park, 3 à 4 dagen.",
+   "trip_en": "Combined afternoon and night drives from lodges near the park, 3–4 days.",
+   "sources": [
+    9
+   ]
+  },
+  {
+   "id": "za-bw-kgalagadi",
+   "species": [
+    38
+   ],
+   "name_nl": "Kgalagadi",
+   "name_en": "Kgalagadi",
+   "area_nl": "Kgalagadi Transfrontier Park (droge rivierbeddingen van Auob en Nossob)",
+   "area_en": "Kgalagadi Transfrontier Park (dry Auob and Nossob riverbeds)",
+   "country_nl": "Zuid-Afrika / Botswana",
+   "country_en": "South Africa / Botswana",
+   "cont": "afr",
+   "lat": -25.8,
+   "lon": 20.6,
+   "score": 4,
+   "why_nl": "In deze open halfwoestijn is de Afrikaanse wilde kat opvallend goed te zien: één tripverslag noemt zeven verschillende wilde katten en een ander 5+ op één avondrit; leeuw en cheeta zijn bonus.",
+   "why_en": "In this open semi-desert the African wildcat is unusually easy to see: one trip report counted seven different wildcats and 5+ on a single sunset drive; lion and cheetah are a bonus.",
+   "season_nl": "Het hele jaar; de koele maanden (mei–september) zijn het prettigst.",
+   "season_en": "Year-round; the cooler months (May–September) are most pleasant.",
+   "time_nl": "Zonsopkomst, zonsondergang en begeleide avondritten.",
+   "time_en": "Sunrise, sunset and guided evening drives.",
+   "trip_nl": "Zelfrijden door de rivierbeddingen plus begeleide avondritten vanuit de parkkampen, 4 à 5 dagen.",
+   "trip_en": "Self-drive along the riverbeds plus guided evening drives from the park camps, 4–5 days.",
+   "sources": [
+    10,
+    11
+   ]
+  },
+  {
+   "id": "za-northern-cape-kimberley",
+   "species": [
+    41
+   ],
+   "name_nl": "Noord-Kaap bij Kimberley",
+   "name_en": "Northern Cape near Kimberley",
+   "area_nl": "Karoo-graslanden rond Kimberley, Noord-Kaap",
+   "area_en": "Karoo grasslands around Kimberley, Northern Cape",
+   "country_nl": "Zuid-Afrika",
+   "country_en": "South Africa",
+   "cont": "afr",
+   "lat": -28.7,
+   "lon": 24.8,
+   "score": 4,
+   "why_nl": "Dit is wereldwijd hét gebied voor de zwartvoetkat: een groepsreis zag er zeven in drie nachten, maar de dichtheid is sinds de jaren negentig gehalveerd en elke nacht is een gok.",
+   "why_en": "This is the world's go-to area for black-footed cat: one group saw seven in three nights, but density has halved since the 1990s and every night is a gamble.",
+   "season_nl": "Het hele jaar; in de winter (juni–augustus) is de begroeiing lager, maar zijn de nachten koud.",
+   "season_en": "Year-round; in winter (June–August) the vegetation is lower, but nights are cold.",
+   "time_nl": "Nacht, vooral de eerste uren na zonsondergang.",
+   "time_en": "Night, especially the first hours after dark.",
+   "trip_nl": "Nachtritten met schijnwerper op wildfarms en reservaten in de omgeving, minstens 3 nachten.",
+   "trip_en": "Spotlighting night drives on game farms and reserves in the area, at least 3 nights.",
+   "sources": [
+    10,
+    12,
+    13,
+    14
+   ]
+  },
+  {
+   "id": "lk-yala",
+   "species": [
+    4
+   ],
+   "name_nl": "Yala",
+   "name_en": "Yala",
+   "area_nl": "Yala National Park (Blok 1), Zuid-Sri Lanka",
+   "area_en": "Yala National Park (Block 1), southern Sri Lanka",
+   "country_nl": "Sri Lanka",
+   "country_en": "Sri Lanka",
+   "cont": "asia",
+   "lat": 6.4,
+   "lon": 81.5,
+   "score": 4,
+   "why_nl": "Blok 1 heeft een van de hoogste luipaarddichtheden die ooit gemeten zijn (ca. 0,5 per km²), maar bezoekers met maar één of twee ritten missen hem geregeld.",
+   "why_en": "Block 1 has one of the highest leopard densities ever measured (about 0.5 per km²), but visitors with only one or two drives regularly miss out.",
+   "season_nl": "Februari t/m juni (droog); het park gaat meestal rond september een tijd dicht.",
+   "season_en": "February to June (dry); the park usually closes for a period around September.",
+   "time_nl": "Ochtend- en middagritten; zo vroeg mogelijk bij de poort.",
+   "time_en": "Morning and afternoon drives; be at the gate as early as possible.",
+   "trip_nl": "Jeepsafari's in Blok 1, plan minstens 4 à 6 ritten.",
+   "trip_en": "Jeep safaris in Block 1, plan at least 4–6 drives.",
+   "sources": [
+    15,
+    16,
+    17
+   ]
+  },
+  {
+   "id": "in-bandhavgarh",
+   "species": [
+    2
+   ],
+   "name_nl": "Bandhavgarh (en Kanha)",
+   "name_en": "Bandhavgarh (and Kanha)",
+   "area_nl": "Bandhavgarh Tiger Reserve, Madhya Pradesh (vaak gecombineerd met Kanha)",
+   "area_en": "Bandhavgarh Tiger Reserve, Madhya Pradesh (often combined with Kanha)",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 23.7,
+   "lon": 81.0,
+   "score": 5,
+   "why_nl": "Een groepsreis in 2024 telde 18 tijgerwaarnemingen in Bandhavgarh en Kanha en noemde een rit zonder tijger 'vrij ongewoon voor Bandhavgarh'.",
+   "why_en": "A 2024 group trip logged 18 tiger sightings in Bandhavgarh and Kanha and called a drive without a tiger 'rather unusual for Bandhavgarh'.",
+   "season_nl": "Februari t/m juni (in de hitte van april–juni komen tijgers naar het water); kernzones dicht van juli t/m september.",
+   "season_en": "February to June (in the April–June heat tigers come to water); core zones closed July to September.",
+   "time_nl": "Ochtend- en middagsafari's.",
+   "time_en": "Morning and afternoon safaris.",
+   "trip_nl": "Jeepsafari's in de kernzones, 6 à 8 ritten.",
+   "trip_en": "Jeep safaris in the core zones, 6–8 drives.",
+   "sources": [
+    19,
+    20
+   ]
+  },
+  {
+   "id": "in-tadoba",
+   "species": [
+    2
+   ],
+   "name_nl": "Tadoba",
+   "name_en": "Tadoba",
+   "area_nl": "Tadoba-Andhari Tiger Reserve, Maharashtra",
+   "area_en": "Tadoba-Andhari Tiger Reserve, Maharashtra",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 20.2,
+   "lon": 79.4,
+   "score": 5,
+   "why_nl": "Met naar schatting ruim honderd tijgers in kern en buffer melden vrijwel alle tripverslagen meerdere tijgers, vaak samen met luipaard en wilde honden.",
+   "why_en": "With an estimated hundred-plus tigers in core and buffer, nearly every trip report records several tigers, often along with leopard and dhole.",
+   "season_nl": "Maart t/m juni is het best; kernzone dicht in het moessonseizoen.",
+   "season_en": "March to June is best; core zone closed in the monsoon.",
+   "time_nl": "Ochtend- en middagsafari's.",
+   "time_en": "Morning and afternoon safaris.",
+   "trip_nl": "Jeepsafari's in kern- en bufferzones, 5 à 8 ritten.",
+   "trip_en": "Jeep safaris in core and buffer zones, 5–8 drives.",
+   "sources": [
+    21,
+    22
+   ]
+  },
+  {
+   "id": "in-ranthambore",
+   "species": [
+    2
+   ],
+   "name_nl": "Ranthambore",
+   "name_en": "Ranthambore",
+   "area_nl": "Ranthambore National Park, Rajasthan",
+   "area_en": "Ranthambore National Park, Rajasthan",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 26.0,
+   "lon": 76.5,
+   "score": 4,
+   "why_nl": "Beroemd en fotogeniek, maar minder voorspelbaar dan Bandhavgarh of Tadoba: je kans hangt sterk af van de zone die je krijgt en het seizoen, en is in de hete maanden april–juni het grootst.",
+   "why_en": "Famous and photogenic, but less predictable than Bandhavgarh or Tadoba: your chances depend heavily on the zone you are allocated and the season, and are highest in the hot months of April–June.",
+   "season_nl": "Oktober t/m juni; april–juni geeft de beste kans.",
+   "season_en": "October to June; April–June gives the best chance.",
+   "time_nl": "Ochtend- en middagsafari's.",
+   "time_en": "Morning and afternoon safaris.",
+   "trip_nl": "Jeepsafari's (zones worden toegewezen), minstens 5 à 6 ritten.",
+   "trip_en": "Jeep safaris (zones are allocated), at least 5–6 drives.",
+   "sources": []
+  },
+  {
+   "id": "in-gir",
+   "species": [
+    1
+   ],
+   "name_nl": "Gir",
+   "name_en": "Gir",
+   "area_nl": "Gir National Park and Wildlife Sanctuary, Sasan Gir (Gujarat)",
+   "area_en": "Gir National Park and Wildlife Sanctuary, Sasan Gir (Gujarat)",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 21.1,
+   "lon": 70.8,
+   "score": 5,
+   "why_nl": "Het enige wilde bolwerk van de Aziatische leeuw (891 dieren in 2025, waarvan 384 in Gir zelf); de leeuwen worden door boswachters gevolgd en een paar ochtendsafari's leveren vrijwel altijd leeuwen op.",
+   "why_en": "The only wild stronghold of the Asiatic lion (891 animals in 2025, 384 inside Gir itself); the lions are tracked by forest guards and a few morning safaris almost always produce lions.",
+   "season_nl": "December t/m mei; het park is dicht van half juni tot half oktober.",
+   "season_en": "December to May; the park is closed from mid-June to mid-October.",
+   "time_nl": "Ochtendsafari's zijn het best.",
+   "time_en": "Morning safaris are best.",
+   "trip_nl": "Jeepsafari's vanuit Sasan Gir met vooraf online geboekte vergunning, 3 à 4 ritten.",
+   "trip_en": "Jeep safaris from Sasan Gir with a permit booked online in advance, 3–4 drives.",
+   "sources": [
+    24,
+    25
+   ]
+  },
+  {
+   "id": "in-hemis-ladakh",
+   "species": [
+    5
+   ],
+   "name_nl": "Hemis (Ladakh)",
+   "name_en": "Hemis (Ladakh)",
+   "area_nl": "Hemis National Park, rond de valleien van Rumbak, Ladakh",
+   "area_en": "Hemis National Park, around the Rumbak valleys, Ladakh",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 33.9,
+   "lon": 77.4,
+   "score": 5,
+   "why_nl": "Drie groepsreizen in één seizoen hadden samen zo'n 15 sneeuwluipaardwaarnemingen, soms urenlang; ook onafhankelijke verslagen melden lange waarnemingen al op de eerste dag.",
+   "why_en": "Three group trips in one season had about 15 snow leopard sightings between them, sometimes lasting hours; independent reports also describe long views on day one.",
+   "season_nl": "Winter, eind december t/m maart (februari–maart het best).",
+   "season_en": "Winter, late December to March (February–March best).",
+   "time_nl": "De hele dag scannen van hellingen; ochtend en namiddag het actiefst.",
+   "time_en": "All-day scanning of slopes; morning and late afternoon most active.",
+   "trip_nl": "Verblijf in dorpshuizen of kampen in het park met lokale spotters, 7 à 10 dagen inclusief acclimatisatie in Leh.",
+   "trip_en": "Homestays or camps in the park with local spotters, 7–10 days including acclimatisation in Leh.",
+   "sources": [
+    26,
+    27
+   ]
+  },
+  {
+   "id": "in-kibber-spiti",
+   "species": [
+    5
+   ],
+   "name_nl": "Kibber (Spiti)",
+   "name_en": "Kibber (Spiti)",
+   "area_nl": "Kibber Wildlife Sanctuary, Spitivallei (Himachal Pradesh)",
+   "area_en": "Kibber Wildlife Sanctuary, Spiti Valley (Himachal Pradesh)",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 32.3,
+   "lon": 78.0,
+   "score": 4,
+   "why_nl": "In de winter volgen sneeuwluipaarden hun prooi naar lagere hellingen rond de dorpen; een bezoeker in 2020 zag vijf verschillende dieren, maar de weg kan door sneeuw dicht zijn.",
+   "why_en": "In winter snow leopards follow their prey down to lower slopes around the villages; a 2020 visitor saw five different animals, but snow can close the road.",
+   "season_nl": "Januari t/m maart.",
+   "season_en": "January to March.",
+   "time_nl": "Overdag hellingen afzoeken met telescoop.",
+   "time_en": "Daytime scanning of slopes with a telescope.",
+   "trip_nl": "Verblijf in Kibber met lokale spotters, 6 à 8 dagen in het gebied.",
+   "trip_en": "Stay in Kibber with local spotters, 6–8 days in the area.",
+   "sources": [
+    28,
+    29
+   ]
+  },
+  {
+   "id": "cl-torres-del-paine",
+   "species": [
+    28
+   ],
+   "name_nl": "Torres del Paine",
+   "name_en": "Torres del Paine",
+   "area_nl": "Oostzijde van Nationaal Park Torres del Paine en omliggende steppe, Magallanes",
+   "area_en": "Eastern side of Torres del Paine National Park and surrounding steppe, Magallanes",
+   "country_nl": "Chili",
+   "country_en": "Chile",
+   "cont": "sam",
+   "lat": -51.0,
+   "lon": -72.8,
+   "score": 5,
+   "why_nl": "Dit is de meest betrouwbare poemaplek ter wereld: met lokale spoorzoekers zien vrijwel alle bezoekers in een paar dagen een poema, en zelfs zelfrijders vinden ze geregeld.",
+   "why_en": "This is the most reliable puma site in the world: with local trackers nearly every visitor sees one within a few days, and even self-drivers find them regularly.",
+   "season_nl": "Het hele jaar; in de winter (mei–september) is het rustiger en zijn poema's vaak beter te zien.",
+   "season_en": "Year-round; in winter (May–September) it is quieter and pumas are often easier to see.",
+   "time_nl": "Zonsopkomst en schemering.",
+   "time_en": "Dawn and dusk.",
+   "trip_nl": "Zoektochten te voet en per auto met een lokale gids en spoorzoekers, 3 à 4 dagen.",
+   "trip_en": "Searches on foot and by vehicle with a local guide and trackers, 3–4 days.",
+   "sources": [
+    30,
+    31,
+    32,
+    33
+   ]
+  },
+  {
+   "id": "es-sierra-de-andujar",
+   "species": [
+    27
+   ],
+   "name_nl": "Sierra de Andújar",
+   "name_en": "Sierra de Andújar",
+   "area_nl": "Natuurpark Sierra de Andújar, Jaén (Andalusië)",
+   "area_en": "Sierra de Andújar Natural Park, Jaén (Andalusia)",
+   "country_nl": "Spanje",
+   "country_en": "Spain",
+   "cont": "eur",
+   "lat": 38.3,
+   "lon": -4.0,
+   "score": 5,
+   "why_nl": "In de paartijd vinden de meeste bezoekers met drie à vier dagen geduldig zoeken een lynx (één verslag noemt zes verschillende dieren), al zijn er ook pechvogels.",
+   "why_en": "In the mating season most visitors who search patiently for three or four days find a lynx (one report lists six different animals), though some do go home empty-handed.",
+   "season_nl": "December en januari (paartijd); februari is ook goed.",
+   "season_en": "December and January (mating season); February is also good.",
+   "time_nl": "Vroege ochtend en vooral de late middag tot het donker.",
+   "time_en": "Early morning and especially late afternoon until dark.",
+   "trip_nl": "Zelf posten op openbare uitkijkplekken in het park, of met een lokale gids vanuit Andújar, 3 à 4 dagen.",
+   "trip_en": "Watch from public viewpoints in the park yourself, or with a local guide from Andújar, 3–4 days.",
+   "sources": [
+    34,
+    35,
+    36
+   ]
+  },
+  {
+   "id": "my-deramakot",
+   "species": [
+    32
+   ],
+   "name_nl": "Deramakot",
+   "name_en": "Deramakot",
+   "area_nl": "Deramakot Forest Reserve, Sabah (Borneo)",
+   "area_en": "Deramakot Forest Reserve, Sabah (Borneo)",
+   "country_nl": "Maleisië",
+   "country_en": "Malaysia",
+   "cont": "asia",
+   "lat": 5.4,
+   "lon": 117.4,
+   "score": 5,
+   "why_nl": "Op de nachtritten is de Sunda-bengaalse kat vaste prik: elk tripverslag meldt er minstens enkele, en één reis telde 35 waarnemingen in Deramakot en Tabin.",
+   "why_en": "On night drives the Sunda leopard cat is a fixture: every trip report logs at least a few, and one trip counted 35 sightings across Deramakot and Tabin.",
+   "season_nl": "Het hele jaar; maart t/m oktober is meestal droger.",
+   "season_en": "Year-round; March to October is usually drier.",
+   "time_nl": "Nacht, vanaf de schemering tot diep in de nacht.",
+   "time_en": "Night, from dusk until late.",
+   "trip_nl": "Nachtritten met schijnwerper over de bosbouwwegen, 4 à 5 nachten.",
+   "trip_en": "Spotlighting night drives along the forestry roads, 4–5 nights.",
+   "sources": [
+    40,
+    41,
+    42
+   ]
+  },
+  {
+   "id": "us-point-reyes",
+   "species": [
+    26
+   ],
+   "name_nl": "Point Reyes",
+   "name_en": "Point Reyes",
+   "area_nl": "Point Reyes National Seashore, Marin County (Californië)",
+   "area_en": "Point Reyes National Seashore, Marin County (California)",
+   "country_nl": "Verenigde Staten",
+   "country_en": "United States",
+   "cont": "nam",
+   "lat": 38.1,
+   "lon": -122.9,
+   "score": 4,
+   "why_nl": "De rode lynxen jagen hier overdag op woelmuizen in open grasland en zijn redelijk gewend aan mensen; één waarnemer zag er vijf op een dag, maar er zijn ook bezoekers die niets zien.",
+   "why_en": "Bobcats here hunt voles by day in open grassland and are fairly used to people; one observer saw five in a day, but some visitors see none.",
+   "season_nl": "Het hele jaar; de winter (december–maart) wordt het vaakst als goed genoemd.",
+   "season_en": "Year-round; winter (December–March) is most often reported as good.",
+   "time_nl": "Vroege ochtend en late middag.",
+   "time_en": "Early morning and late afternoon.",
+   "trip_nl": "Zelf rijden en wandelen langs de graslanden in het noorden van het park, 2 à 3 dagen.",
+   "trip_en": "Drive and walk the grasslands in the north of the park yourself, 2–3 days.",
+   "sources": [
+    43,
+    44,
+    45
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "id": 1,
+   "title": "In Brazil's Pantanal, too many tourists may be the jaguar's new predator (Mongabay, 2025)",
+   "url": "https://news.mongabay.com/2025/09/in-brazils-pantanal-too-many-tourists-may-be-the-jaguars-new-predator/"
+  },
+  {
+   "id": 2,
+   "title": "Brazil – Mammals of the Pantanal, trip report October 2019 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/BRA11_report_191020_Brazil_Mammals_of_the_Pantanal.pdf"
+  },
+  {
+   "id": 3,
+   "title": "Mara Predator Conservation Programme, Q1 2026 technical report (lion density)",
+   "url": "https://www.marapredatorconservation.org/wp-content/uploads/2026/07/MPCP-Q1-2026-Technical-Report-web-02.06.2026.pdf"
+  },
+  {
+   "id": 4,
+   "title": "Maasai Mara National Reserve, trip report May 2023 (mammalwatching.com)",
+   "url": "https://mammalwatching.com/wp-content/uploads/2024/07/May-25-28-2023-Maasi-Mara-National-Reserve.pdf"
+  },
+  {
+   "id": 5,
+   "title": "Tanzania trip report – Serengeti and Ngorongoro (mammalwatching.com, 2023)",
+   "url": "https://mammalwatching.com/wp-content/uploads/2023/07/Tanzania-Trip-Report-1.pdf"
+  },
+  {
+   "id": 7,
+   "title": "Serval and Caracal Photo Tour 2023 – trip report and comments on Ngorongoro servals (mammalwatching.com, 2024)",
+   "url": "https://mammalwatching.com/?p=65815"
+  },
+  {
+   "id": 8,
+   "title": "Safari meets science at Sabi Sands (Panthera)",
+   "url": "https://panthera.org/blog-post/safari-meets-science-sabi-sands-south-africa"
+  },
+  {
+   "id": 9,
+   "title": "Rosenblatt et al. – Effects of a protection gradient on leopard density, Luangwa Valley (Ecology and Evolution, 2016)",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4864144/"
+  },
+  {
+   "id": 10,
+   "title": "South Africa, Northern Cape (Kgalagadi and Kimberley area), trip report November 2016 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2017/11/SO-South-Africa-2016.pdf"
+  },
+  {
+   "id": 11,
+   "title": "Kgalagadi trip report May 2026 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2026/05/Kgalagadi-Trip-Report-May-2026.pdf"
+  },
+  {
+   "id": 12,
+   "title": "Black-footed cat species account (IUCN SSC Cat Specialist Group)",
+   "url": "https://www.catsg.org/living-species-blackfootedcat"
+  },
+  {
+   "id": 13,
+   "title": "Sliwa et al. – Black-footed cat work 2021 report (density decline on Benfontein)",
+   "url": "https://n-c-e.org/sites/default/files/2022-08/Sliwa%2Bal%202022-Report-Felis-nigripes-Work-2021.pdf"
+  },
+  {
+   "id": 14,
+   "title": "South Africa mammals and birds tour, trip report July 2016 – seven black-footed cats (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2016/07/RW-South-Africa-July-2016.pdf"
+  },
+  {
+   "id": 15,
+   "title": "A decade among Yala's ghosts of gold – leopard density Block 1 (The Island)",
+   "url": "https://island.lk/a-decade-among-yalas-ghosts-of-gold/"
+  },
+  {
+   "id": 16,
+   "title": "The Sri Lankan leopard in Yala National Park: a research summary (WWCT)",
+   "url": "https://www.wwct.org/publications/the-sri-lankan-leopard-(panthera-pardus-kotiya)-in-yala-national-park%3A-a-research-summary."
+  },
+  {
+   "id": 17,
+   "title": "Sri Lanka 2023 trip report – Yala without leopard (mammalwatching.com)",
+   "url": "https://mammalwatching.com/wp-content/uploads/2024/11/Sri-Lanka-2023.pdf"
+  },
+  {
+   "id": 19,
+   "title": "Tigers of India 2024 – Bandhavgarh and Kanha, trip report (mammalwatching.com)",
+   "url": "https://mammalwatching.com/wp-content/uploads/2024/06/Trip_Report-TigersofIndia_2024.pdf"
+  },
+  {
+   "id": 20,
+   "title": "Best mammal watching experience – Bandhavgarh comments (mammalwatching.com)",
+   "url": "https://mammalwatching.com/?p=16464"
+  },
+  {
+   "id": 21,
+   "title": "New trip reports: Tadoba, India (mammalwatching.com, 2019)",
+   "url": "https://www.mammalwatching.com/2019/07/03/new-trip-report-tadoba-india/"
+  },
+  {
+   "id": 22,
+   "title": "Tadoba Andhari Tiger Reserve – tiger and leopard estimate (Drishti IAS, 2020)",
+   "url": "https://www.drishtiias.com/daily-updates/daily-news-analysis/tadoba-andhari-tiger-reserve-1"
+  },
+  {
+   "id": 24,
+   "title": "Asiatic lion population rises from 674 to 891: 16th Lion Census 2025 (Vision IAS)",
+   "url": "https://dce.visionias.in/news-today/2025-05-22/environment/asiatic-lion-population-increases-from-674-to-891-in-5-years-16th-lion-census-2025"
+  },
+  {
+   "id": 25,
+   "title": "Gir National Park (Gujarat Tourism)",
+   "url": "https://gujarattourism.com/saurashtra/gir-somnath/gir-national-park.html"
+  },
+  {
+   "id": 26,
+   "title": "New trip report: Hemis NP and the Hanle Changthang Plateau, Ladakh (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/?p=50267"
+  },
+  {
+   "id": 27,
+   "title": "Ladakh trip report December 2023 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/01/Ladakh-Trip-Report-Chris-Daniels-2023.pdf"
+  },
+  {
+   "id": 28,
+   "title": "Snow leopard trip Kibber, trip report 2020 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/SS-Snow-Leopard-2020.pdf"
+  },
+  {
+   "id": 29,
+   "title": "Snow leopards of the Spiti Valley (Snow Leopard Conservancy)",
+   "url": "https://snowleopardconservancy.org/?p=4811"
+  },
+  {
+   "id": 30,
+   "title": "Southern Chile trip report December 2023 – pumas near Torres del Paine (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2023/12/Southern-Chile-Rept.pdf"
+  },
+  {
+   "id": 31,
+   "title": "Patagonia trip report March 2024 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/03/Patagonia-March-2024.pdf"
+  },
+  {
+   "id": 32,
+   "title": "Orcas and Pumas trip report 2026 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2026/04/Orcas-and-Pumas-Trip-report.pdf"
+  },
+  {
+   "id": 33,
+   "title": "Paving the way for human–puma coexistence in Chilean Patagonia (Panthera, 2025)",
+   "url": "https://panthera.org/blog-post/paving-way-human-puma-coexistence-chilean-patagonia"
+  },
+  {
+   "id": 34,
+   "title": "Iberian lynx in Andújar – maps and charts, trip report January 2024 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/01/Trip-report-Lynx-1.pdf"
+  },
+  {
+   "id": 35,
+   "title": "Spain trip report January 2023 – six Iberian lynx (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2023/02/Tripreport_SPAIN_2023_JVG.pdf"
+  },
+  {
+   "id": 36,
+   "title": "A month with the lynx in Sierra de Andújar (mammalwatching.com, 2025)",
+   "url": "https://www.mammalwatching.com/?p=71436"
+  },
+  {
+   "id": 40,
+   "title": "Cats of Borneo, trip report 2024 – 35 leopard cat sightings (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/06/Cat-Expeditions-Trip-Report-Cats-of-Borneo-2024.pdf"
+  },
+  {
+   "id": 41,
+   "title": "Borneo trip report June 2024 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/07/Borneo-June-2024.pdf"
+  },
+  {
+   "id": 42,
+   "title": "Deramakot revisited, trip report 2017 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2017/11/SM-DERAMAKOT-REVISITED-2017.pdf"
+  },
+  {
+   "id": 43,
+   "title": "Bobcat quest Point Reyes, trip report 2020 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/SC-Bobcat-quest-2020.pdf"
+  },
+  {
+   "id": 44,
+   "title": "California trip report 2025 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2025/03/California-trip-report-25.pdf"
+  },
+  {
+   "id": 45,
+   "title": "Point Reyes and Monterey Bay report March 2023 – no bobcat (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2023/03/Point-Reyes-and-Monterey-Bay-Report-March-2023.pdf"
+  }
+ ]
+}

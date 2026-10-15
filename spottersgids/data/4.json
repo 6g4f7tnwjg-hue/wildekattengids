@@ -1,0 +1,413 @@
+{
+ "no": 4,
+ "intro_nl": "Een staart hangt slap omlaag uit een marulaboom. Pas als je verrekijker scherp staat, zie je de rest: een luipaard, languit op een tak, met een half opgegeten impala naast zich. In Sabi Sand, naast Kruger, is zo'n moment eerder regel dan uitzondering. De katten zijn hier gewend aan voertuigen en lopen soms rustig langs de jeep. Kans: 5 – met een paar dagen in Sabi Sand zie je er bijna altijd een.",
+ "intro_en": "A tail hangs limply from a marula tree. Only when your binoculars come into focus do you see the rest: a leopard, stretched out on a branch, a half-eaten impala beside it. In Sabi Sand, next to Kruger, a moment like this is the rule rather than the exception. The cats here are used to vehicles and sometimes stroll calmly past the jeep. Chance: 5 – with a few days in Sabi Sand you will almost always see one.",
+ "spots": [
+  {
+   "id": "za-sabi-sand",
+   "name_nl": "Sabi Sand",
+   "name_en": "Sabi Sand",
+   "area_nl": "Sabi Sand Game Reserve, Mpumalanga (grenst aan Nationaal Park Kruger)",
+   "area_en": "Sabi Sand Game Reserve, Mpumalanga (bordering Kruger National Park)",
+   "country_nl": "Zuid-Afrika",
+   "country_en": "South Africa",
+   "cont": "afr",
+   "lat": -24.8,
+   "lon": 31.5,
+   "score": 5,
+   "why_nl": "Sabi Sand staat bekend om zijn hoge luipaarddichtheid, en bezoekers op mammalwatching.com melden er hun beste luipaardontmoetingen ooit, met dieren die gewend zijn aan voertuigen.",
+   "why_en": "Sabi Sand is known for its high leopard density, and visitors on mammalwatching.com report their best leopard encounters ever there, with animals that are used to vehicles.",
+   "season_nl": "Het hele jaar; in de droge winter (mei–september) is de begroeiing lager en zie je verder.",
+   "season_en": "Year-round; in the dry winter (May–September) the vegetation is lower and visibility better.",
+   "time_nl": "Vroege ochtend en laatste uren voor zonsondergang, plus het begin van de avondrit.",
+   "time_en": "Early morning and the last hours before sunset, plus the start of the evening drive.",
+   "trip_nl": "Ochtend- en avondritten in open voertuigen vanuit lodges in het reservaat, 2 à 4 nachten.",
+   "trip_en": "Morning and evening drives in open vehicles from lodges inside the reserve, 2–4 nights.",
+   "sources": [
+    5
+   ]
+  },
+  {
+   "id": "zm-south-luangwa",
+   "name_nl": "South Luangwa",
+   "name_en": "South Luangwa",
+   "area_nl": "Nationaal Park South Luangwa, Oostelijke Provincie",
+   "area_en": "South Luangwa National Park, Eastern Province",
+   "country_nl": "Zambia",
+   "country_en": "Zambia",
+   "cont": "afr",
+   "lat": -13.0,
+   "lon": 31.5,
+   "score": 4,
+   "why_nl": "Het park staat al decennia bekend om zijn luipaarden; een recent fotoreisverslag telde negen verschillende luipaardwaarnemingen en een oudere bezoeker zag er vijf op één nacht.",
+   "why_en": "The park has been famous for its leopards for decades; a recent photo-tour report logged nine different leopard sightings and an earlier visitor saw five in a single night.",
+   "season_nl": "Droge tijd, juni–oktober; in het regenseizoen zijn veel wegen en kampen dicht.",
+   "season_en": "Dry season, June–October; in the rains many roads and camps close.",
+   "time_nl": "Avond- en nachtritten met zoeklicht – in Zambia toegestaan – zijn hier je beste kans.",
+   "time_en": "Evening and night drives with a spotlight – permitted in Zambia – are your best bet here.",
+   "trip_nl": "Dag- en nachtritten vanuit lodges rond Mfuwe en in het park, 4 à 6 nachten.",
+   "trip_en": "Day and night drives from lodges around Mfuwe and in the park, 4–6 nights.",
+   "sources": [
+    7,
+    8
+   ]
+  },
+  {
+   "id": "lk-yala",
+   "name_nl": "Yala",
+   "name_en": "Yala",
+   "area_nl": "Nationaal Park Yala (Ruhuna), vooral Blok 1, Zuidelijke en Uva-provincie",
+   "area_en": "Yala (Ruhuna) National Park, especially Block 1, Southern and Uva Provinces",
+   "country_nl": "Sri Lanka",
+   "country_en": "Sri Lanka",
+   "cont": "asia",
+   "lat": 6.4,
+   "lon": 81.5,
+   "score": 4,
+   "why_nl": "Onderzoek in Blok 1 vond een uitzonderlijk hoge luipaarddichtheid, maar een recent mammalwatching-verslag laat zien dat het niet vanzelf gaat: pas op de derde rit, in de laatste minuten, liet een luipaard zich zien.",
+   "why_en": "Research in Block 1 found an exceptionally high leopard density, but a recent mammalwatching report shows it is not automatic: a leopard only appeared on the third drive, in the final minutes.",
+   "season_nl": "Februari–juli is droog en het populairst; het park sluit meestal een deel van augustus–oktober.",
+   "season_en": "February–July is dry and most popular; the park usually closes for part of August–October.",
+   "time_nl": "Bij opening van het park in de ochtend en in de late middag.",
+   "time_en": "At park opening in the morning and in the late afternoon.",
+   "trip_nl": "Jeepsafari's vanuit Tissamaharama of Kirinda, 3 à 4 ritten (ochtend en middag).",
+   "trip_en": "Jeep safaris from Tissamaharama or Kirinda, 3–4 drives (morning and afternoon).",
+   "sources": [
+    9,
+    10
+   ]
+  },
+  {
+   "id": "lk-wilpattu",
+   "name_nl": "Wilpattu",
+   "name_en": "Wilpattu",
+   "area_nl": "Nationaal Park Wilpattu, Noordwestelijke Provincie",
+   "area_en": "Wilpattu National Park, North Western Province",
+   "country_nl": "Sri Lanka",
+   "country_en": "Sri Lanka",
+   "cont": "asia",
+   "lat": 8.5,
+   "lon": 80.0,
+   "score": 4,
+   "why_nl": "Mammalwatching-verslagen melden vijf luipaarden in twee dagen (2022) en drie dieren op één dag (2018), in een rustiger park dan Yala.",
+   "why_en": "Mammalwatching reports mention five leopards in two days (2022) and three animals in a single day (2018), in a quieter park than Yala.",
+   "season_nl": "Vooral februari–oktober; na de noordoostmoesson (nov–jan) zijn paden soms modderig.",
+   "season_en": "Mainly February–October; after the north-east monsoon (Nov–Jan) tracks can be muddy.",
+   "time_nl": "Ochtend en late middag, langs de 'villu's' (natuurlijke meertjes) waar prooidieren drinken.",
+   "time_en": "Morning and late afternoon, around the 'villus' (natural lakes) where prey comes to drink.",
+   "trip_nl": "Halve of hele dagen jeepsafari vanaf de ingang bij Hunuwilagama, 2 à 3 dagen.",
+   "trip_en": "Half- or full-day jeep safaris from the Hunuwilagama entrance, 2–3 days.",
+   "sources": [
+    11
+   ]
+  },
+  {
+   "id": "in-jawai-bera",
+   "name_nl": "Jawai en Bera",
+   "name_en": "Jawai and Bera",
+   "area_nl": "Granietheuvels rond het Jawai-stuwmeer en het dorp Bera, district Pali (Rajasthan)",
+   "area_en": "Granite hills around Jawai reservoir and Bera village, Pali district (Rajasthan)",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 25.1,
+   "lon": 73.1,
+   "score": 4,
+   "why_nl": "Hier leven luipaarden buiten een park tussen dorpen en tempels; een mammalwatching-verslag zag op twee ritten een paartje dat op de rotsen paarde.",
+   "why_en": "Leopards live here outside any park, among villages and temples; a mammalwatching report saw a mating pair on the rocks on two drives.",
+   "season_nl": "Oktober–maart: koel en de beste maanden.",
+   "season_en": "October–March: cool and the best months.",
+   "time_nl": "Zonsopkomst en zonsondergang, als de katten op de granietkoppen verschijnen.",
+   "time_en": "Sunrise and sunset, when the cats appear on the granite outcrops.",
+   "trip_nl": "Jeeptochten met een lokale gids vanuit Bera of Jawai, 2 à 3 dagen.",
+   "trip_en": "Jeep outings with a local guide from Bera or Jawai, 2–3 days.",
+   "sources": [
+    12
+   ]
+  },
+  {
+   "id": "ke-masai-mara",
+   "name_nl": "Masai Mara",
+   "name_en": "Masai Mara",
+   "area_nl": "Nationaal Reservaat Masai Mara en aangrenzende conservancies, Narok",
+   "area_en": "Masai Mara National Reserve and adjoining conservancies, Narok",
+   "country_nl": "Kenia",
+   "country_en": "Kenya",
+   "cont": "afr",
+   "lat": -1.5,
+   "lon": 35.1,
+   "score": 4,
+   "why_nl": "Een mammalwatching-verslag van vier dagen in 2023 zag twee verschillende luipaarden, waarvan één ook de dag erna nog op dezelfde plek lag.",
+   "why_en": "A four-day mammalwatching report from 2023 saw two different leopards, one of which was still in the same spot the next day.",
+   "season_nl": "Het hele jaar; juli–oktober is druk (migratie), in natte maanden is het rustiger.",
+   "season_en": "Year-round; July–October is busy (migration), the wet months are quieter.",
+   "time_nl": "Vroege ochtend en late middag langs beboste rivieroevers en losse bomen.",
+   "time_en": "Early morning and late afternoon along wooded riverbanks and isolated trees.",
+   "trip_nl": "Game drives vanuit kampen in of rond het reservaat, 3 à 4 dagen; nachtritten alleen in sommige conservancies.",
+   "trip_en": "Game drives from camps in or around the reserve, 3–4 days; night drives only in some conservancies.",
+   "sources": [
+    13
+   ]
+  },
+  {
+   "id": "za-kruger",
+   "name_nl": "Kruger",
+   "name_en": "Kruger",
+   "area_nl": "Nationaal Park Kruger, vooral het zuiden (Lower Sabie, Skukuza, Satara)",
+   "area_en": "Kruger National Park, especially the south (Lower Sabie, Skukuza, Satara)",
+   "country_nl": "Zuid-Afrika",
+   "country_en": "South Africa",
+   "cont": "afr",
+   "lat": -24.0,
+   "lon": 31.6,
+   "score": 3,
+   "why_nl": "Op eigen gelegenheid is het luipaard de lastigste van de Big Five: een mammalwatcher zag er in zo'n zes dagen twee, waarvan één tijdens een nachtrit.",
+   "why_en": "Self-driving, the leopard is the hardest of the Big Five: one mammalwatcher saw two in about six days, one of them on a night drive.",
+   "season_nl": "Mei–september (droog, weinig blad).",
+   "season_en": "May–September (dry, sparse foliage).",
+   "time_nl": "Direct bij het openen van de kamppoorten en het laatste uur voor sluiting.",
+   "time_en": "Right when the camp gates open and in the last hour before closing.",
+   "trip_nl": "Zelf rijden vanuit de rustkampen, aangevuld met georganiseerde zonsondergang- of nachtritten van het park, 5 à 7 dagen.",
+   "trip_en": "Self-drive from the rest camps, plus the park's organised sunset or night drives, 5–7 days.",
+   "sources": [
+    6
+   ]
+  },
+  {
+   "id": "ru-land-of-the-leopard",
+   "name_nl": "Land van de Luipaard",
+   "name_en": "Land of the Leopard",
+   "area_nl": "Nationaal Park Land van de Luipaard en Kedrovaja Pad, Primorje",
+   "area_en": "Land of the Leopard National Park and Kedrovaya Pad, Primorye",
+   "country_nl": "Rusland",
+   "country_en": "Russia",
+   "cont": "asia",
+   "lat": 43.1,
+   "lon": 131.5,
+   "score": 2,
+   "why_nl": "Hier leeft de Amoerluipaard (rond de honderd dieren volgens cameravaltellingen); op wandelpaden zie je hem bijna nooit, alleen meerdaagse verblijven in een fotohut in de winter leveren soms een waarneming op.",
+   "why_en": "This is home to the Amur leopard (around a hundred animals according to camera-trap counts); on the trails you almost never see one, and only multi-day stays in a photo hide in winter sometimes produce a sighting.",
+   "season_nl": "Midden november – maart: sneeuw, sporen en de enige periode dat de fotohutten open zijn.",
+   "season_en": "Mid-November – March: snow, tracks, and the only period the photo hides are open.",
+   "time_nl": "Dag en nacht vanuit de hut; luipaarden komen vaak in het donker.",
+   "time_en": "Day and night from the hide; leopards often come after dark.",
+   "trip_nl": "Verblijf van 4 à 6 nachten in een fotohut van het park, of een dagwandeling over het ecopad met uitleg over cameravallen.",
+   "trip_en": "A 4–6 night stay in one of the park's photo hides, or a day walk on the eco-trail with a look at camera-trap images.",
+   "sources": [
+    14,
+    15
+   ]
+  },
+  {
+   "id": "ir-tandoureh",
+   "name_nl": "Tandoureh",
+   "name_en": "Tandoureh",
+   "area_nl": "Nationaal Park Tandoureh, Razavi-Khorasan (Kopet Dag)",
+   "area_en": "Tandoureh National Park, Razavi Khorasan (Kopet Dag)",
+   "country_nl": "Iran",
+   "country_en": "Iran",
+   "cont": "asia",
+   "lat": 37.4,
+   "lon": 58.8,
+   "score": 1,
+   "why_nl": "Iran is het bolwerk van de Perzische luipaard en Tandoureh een van de hotspots, maar waarnemingen zijn zeldzaam en hangen af van ervaren rangers; andere bezoekers zagen alleen sporen.",
+   "why_en": "Iran is the stronghold of the Persian leopard and Tandoureh one of its hotspots, but sightings are rare and depend on experienced rangers; other visitors saw only tracks.",
+   "season_nl": "Herfst en winter (oktober–februari), als prooidieren lager in de dalen komen.",
+   "season_en": "Autumn and winter (October–February), when prey moves lower into the valleys.",
+   "time_nl": "Vroeg in de ochtend vanaf uitkijkpunten, en nachtelijk zoeken met een lamp onder begeleiding.",
+   "time_en": "Early morning from viewpoints, plus guided night searches with a light.",
+   "trip_nl": "Wandelingen en ritten met parkwachters vanuit Dargaz, 3 à 5 dagen; vraag vooraf naar vergunningen.",
+   "trip_en": "Walks and drives with park rangers from Dargaz, 3–5 days; ask about permits in advance.",
+   "sources": [
+    16
+   ]
+  },
+  {
+   "id": "am-khosrov",
+   "name_nl": "Khosrov-woud",
+   "name_en": "Khosrov Forest",
+   "area_nl": "Staatsreservaat Khosrov-woud en het zuidelijke Zangezur-gebied, Ararat/Syunik",
+   "area_en": "Khosrov Forest State Reserve and the southern Zangezur area, Ararat/Syunik",
+   "country_nl": "Armenië",
+   "country_en": "Armenia",
+   "cont": "asia",
+   "lat": 39.9,
+   "lon": 44.9,
+   "score": 1,
+   "why_nl": "Armenië telt volgens cameravallen minimaal 3–9 volwassen luipaarden; ze worden bijna alleen met cameravallen vastgelegd.",
+   "why_en": "Camera traps put Armenia's population at a minimum of 3–9 adult leopards; they are recorded almost exclusively on camera traps.",
+   "season_nl": "Lente en herfst voor wandelen; sporen zie je het best in de sneeuw.",
+   "season_en": "Spring and autumn for hiking; tracks are easiest to find in snow.",
+   "time_nl": "Schemer; reken op sporen en camerabeelden, niet op de kat zelf.",
+   "time_en": "Dusk; count on tracks and camera images, not the cat itself.",
+   "trip_nl": "Wandelingen met een reservaatwachter (toegang op vergunning), 2 à 3 dagen.",
+   "trip_en": "Walks with a reserve ranger (access by permit), 2–3 days.",
+   "sources": [
+    18,
+    19,
+    20
+   ]
+  },
+  {
+   "id": "ru-north-caucasus",
+   "name_nl": "Noord-Kaukasus",
+   "name_en": "North Caucasus",
+   "area_nl": "Kaukasisch Biosfeerreservaat bij Sotsji en beschermde gebieden in Noord-Ossetië-Alanië",
+   "area_en": "Caucasus Biosphere Reserve near Sochi and protected areas in North Ossetia–Alania",
+   "country_nl": "Rusland",
+   "country_en": "Russia",
+   "cont": "eur",
+   "lat": 43.8,
+   "lon": 40.4,
+   "score": 1,
+   "why_nl": "Sinds 2016 zijn hier 15 in gevangenschap gefokte Perzische luipaarden vrijgelaten, maar hoeveel er nog leven is onbekend en ze duiken alleen af en toe op cameravallen op.",
+   "why_en": "Since 2016, 15 captive-bred Persian leopards have been released here, but how many survive is unknown and they only occasionally appear on camera traps.",
+   "season_nl": "Zomer en herfst voor bergwandelingen; een waarneming is pure toeval.",
+   "season_en": "Summer and autumn for mountain hikes; a sighting would be pure chance.",
+   "time_nl": "Geen vaste tijd; de kans is in de praktijk alleen via cameravallen.",
+   "time_en": "No set time; in practice the only chance is via camera traps.",
+   "trip_nl": "Wandelen in het Kaukasus-biosfeerreservaat en Nationaal Park Sotsji; verwacht hooguit sporen.",
+   "trip_en": "Hiking in the Caucasus Biosphere Reserve and Sochi National Park; expect tracks at best.",
+   "sources": [
+    21,
+    22
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Scan bomen: in Afrika liggen luipaarden graag in worstenbomen, marula's en vijgenbomen. Zoek naar een hangende staart of een prooi in een vork.",
+  "Een prooi in een boom betekent dat de kat terugkomt. Kom de volgende ochtend of avond terug naar dezelfde plek.",
+  "Luister naar alarmroepen: blaffende bavianen, kwetterende vervetapen en snuivende impala's in Afrika; langoeren en axisherten in India en Sri Lanka.",
+  "Leer het 'zagen': een raspend, ritmisch geluid alsof iemand hout zaagt, vooral 's nachts en vroeg in de ochtend.",
+  "Zoek 's ochtends vroeg sporen op zandwegen: ronde prenten zonder klauwen, kleiner dan die van een leeuw.",
+  "Kies een park met nachtritten (zoals in Zambia): met een zoeklicht zie je de oogreflectie al van ver.",
+  "In Rajasthan en de Kaukasus: kijk bij schemering naar rotsrichels en granietkoppen boven de dorpen."
+ ],
+ "tips_en": [
+  "Scan trees: in Africa leopards like sausage trees, marulas and figs. Look for a dangling tail or a carcass wedged in a fork.",
+  "A kill in a tree means the cat will return. Come back to the same spot the next morning or evening.",
+  "Listen for alarm calls: barking baboons, chattering vervets and snorting impala in Africa; langurs and spotted deer (chital) in India and Sri Lanka.",
+  "Learn the 'sawing' call: a rasping, rhythmic sound like someone sawing wood, mostly at night and early morning.",
+  "Check sandy roads early for tracks: round prints without claw marks, smaller than a lion's.",
+  "Choose a park with night drives (such as in Zambia): with a spotlight you pick up eyeshine from far away.",
+  "In Rajasthan and the Caucasus: watch rocky ledges and granite outcrops above villages at dusk."
+ ],
+ "threats_nl": [
+  "Conflict met veehouders: luipaarden worden uit wraak voor gedood vee vergiftigd, gestrikt of doodgeschoten.",
+  "Verlies en versnippering van leefgebied door landbouw, wegen en grenshekken.",
+  "Uitputting van prooidieren door stroperij en strikken voor bushmeat.",
+  "Illegale handel in huiden, klauwen en botten.",
+  "Trofeejacht: in een aantal Afrikaanse landen toegestaan; over de duurzaamheid van quota bestaat veel discussie."
+ ],
+ "threats_en": [
+  "Conflict with livestock owners: leopards are poisoned, snared or shot in retaliation for killed livestock.",
+  "Loss and fragmentation of habitat through farming, roads and border fences.",
+  "Prey depletion through poaching and bushmeat snaring.",
+  "Illegal trade in skins, claws and bones.",
+  "Trophy hunting: permitted in several African countries; the sustainability of quotas is widely debated."
+ ],
+ "status_note_nl": "De IUCN deelt het luipaard in als Kwetsbaar (Vulnerable) met een dalende trend; hij komt nog maar in ongeveer een kwart van zijn oorspronkelijke verspreidingsgebied voor. Het Perzisch luipaard is Bedreigd (Endangered), met naar schatting 750–1.044 dieren.",
+ "status_note_en": "The IUCN lists the leopard as a species as Vulnerable with a decreasing trend; it survives in only about a quarter of its historical range. The Persian leopard is Endangered, with an estimated 750–1,044 animals.",
+ "sources": [
+  {
+   "id": 1,
+   "title": "IUCN Red List assessment of Panthera pardus (Stein et al.), cited in CITES CoP17 Inf. 21 (CITES, 2016)",
+   "url": "https://cites.org/sites/default/files/eng/cop/17/InfDocs/E-CoP17-Inf-21.pdf"
+  },
+  {
+   "id": 2,
+   "title": "Leopard (Panthera pardus) status, distribution, and the research efforts across its range (Jacobson et al., PeerJ, 2016)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4861552"
+  },
+  {
+   "id": 3,
+   "title": "Museum record citing IUCN Red List 2025 (amended 2024 assessment), trend decreasing (National Museum of Nature and Science, Tokyo)",
+   "url": "https://yoshimoto.kahaku.go.jp/3d/en/NSMTM32381/"
+  },
+  {
+   "id": 5,
+   "title": "Some selective mammaling in South Africa – incl. Sabi Sands (mammalwatching.com, 2017)",
+   "url": "https://www.mammalwatching.com/2017/01/16/selective-mammaling-south-africa/"
+  },
+  {
+   "id": 6,
+   "title": "South Africa: Kruger, Sani Pass, Karoo and Cape – trip report (mammalwatching.com, 2023)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/01/2023_SouthAfrica.pdf"
+  },
+  {
+   "id": 7,
+   "title": "Zambia – country page with South Luangwa leopard experiences (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/gd_place/zambia/"
+  },
+  {
+   "id": 8,
+   "title": "Classic safari in Zambia – trip report 2024 (mammalwatching.com, 2025)",
+   "url": "https://www.mammalwatching.com/community-post/classic-safari-in-zambia-cat-expeditions-trip-report-2024/"
+  },
+  {
+   "id": 9,
+   "title": "Sri Lanka 2023 – Yala trip report (mammalwatching.com, 2024)",
+   "url": "https://mammalwatching.com/wp-content/uploads/2024/11/Sri-Lanka-2023.pdf"
+  },
+  {
+   "id": 10,
+   "title": "The Sri Lankan leopard in Yala National Park: a research summary (Wilderness & Wildlife Conservation Trust)",
+   "url": "https://www.wwct.org/publications/the-sri-lankan-leopard-(panthera-pardus-kotiya)-in-yala-national-park%3A-a-research-summary."
+  },
+  {
+   "id": 11,
+   "title": "Trip reports Wilpattu National Park 2018 and Sri Lanka June/July 2022 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/?p=28908"
+  },
+  {
+   "id": 12,
+   "title": "Rajasthan leopard tour – trip report incl. Bera (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/?p=21351"
+  },
+  {
+   "id": 13,
+   "title": "Maasai Mara National Reserve, 25–28 May 2023 – trip report (mammalwatching.com, 2024)",
+   "url": "https://mammalwatching.com/wp-content/uploads/2024/07/May-25-28-2023-Maasi-Mara-National-Reserve.pdf"
+  },
+  {
+   "id": 14,
+   "title": "Amur leopard population triples to 103 (Scientific American)",
+   "url": "https://www.scientificamerican.com/blog/extinction-countdown/amur-leopard-population-triples-to-103/"
+  },
+  {
+   "id": 15,
+   "title": "Amur leopard photography – Kedrovaya Pad hide trip info and results 2018–19 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/Amur-Leopard-Photography-2018-19.pdf"
+  },
+  {
+   "id": 16,
+   "title": "Face to face with a Persian leopard – Tandoureh (Future4Leopards Foundation, 2018)",
+   "url": "https://future4leopards.org/face-to-face-with-a-persian-leopard/"
+  },
+  {
+   "id": 18,
+   "title": "Overview report on the Persian leopard (CMS Range State meeting, Tbilisi, 2022)",
+   "url": "https://cami.cms.int/sites/default/files/document/cms_pl-rs1_inf.2_rev.1_overview-report_e_0.pdf"
+  },
+  {
+   "id": 19,
+   "title": "Caucasian leopard recorded by camera trap in Khosrov Forest (Hetq)",
+   "url": "https://hetq.am/en/article/146940"
+  },
+  {
+   "id": 20,
+   "title": "Endangered Persian leopards persist across borders despite hunters and landmines (Mongabay, 2026)",
+   "url": "https://news.mongabay.com/2026/05/endangered-persian-leopards-persist-across-borders-despite-hunters-and-landmines/"
+  },
+  {
+   "id": 21,
+   "title": "Interview on the Persian leopard reintroduction in the North Caucasus (A.N. Severtsov Institute, IEE RAS, 2025)",
+   "url": "https://sev-in.ru/en/node/4572"
+  },
+  {
+   "id": 22,
+   "title": "Persian leopard activities are good news for leopard conservation (WWF)",
+   "url": "https://www.worldwildlife.org/stories/persian-leopard-activities-are-good-news-for-leopard-conservation"
+  }
+ ]
+}

@@ -1,0 +1,289 @@
+{
+ "no": 27,
+ "intro_nl": "Het is januari, half acht 's ochtends, en de rijp ligt nog op de granietblokken. Langs het uitzichtpunt staan tientallen telescopen op dezelfde helling gericht. Dan fluistert iemand: 'Daar!' Tussen de steeneiken loopt een pardellynx, pluimpjes op de oren, gevlekte vacht in het eerste zonlicht. In de Sierra de Andújar is dit geen sprookje meer: in de paartijd zien de meeste goed voorbereide bezoekers er binnen een paar dagen minstens één. Kans: 5 – in de winter, met geduld, ga je hier zelden met lege handen naar huis.",
+ "intro_en": "It is January, half past seven in the morning, and frost still clings to the granite boulders. Along the viewpoint, dozens of telescopes point at the same slope. Then someone whispers: 'There!' Between the holm oaks walks an Iberian lynx, ear tufts up, spotted coat lit by the first sun. In the Sierra de Andújar this is no fairy tale any more: during the mating season most well-prepared visitors see at least one within a few days. Chance: 5 – in winter, with patience, you rarely go home empty-handed here.",
+ "spots": [
+  {
+   "id": "es-sierra-de-andujar",
+   "name_nl": "Sierra de Andújar",
+   "name_en": "Sierra de Andújar",
+   "area_nl": "Natuurpark Sierra de Andújar (kern Andújar-Cardeña, oostelijke Sierra Morena), Jaén (Andalusië)",
+   "area_en": "Sierra de Andújar Natural Park (Andújar-Cardeña nucleus, eastern Sierra Morena), Jaén (Andalusia)",
+   "country_nl": "Spanje",
+   "country_en": "Spain",
+   "cont": "eur",
+   "lat": 38.3,
+   "lon": -4.0,
+   "score": 5,
+   "why_nl": "Recente tripverslagen op mammalwatching.com melden vrijwel steeds succes in de winter, bijvoorbeeld vier waarnemingen van 3 à 5 dieren in vier dagen (januari 2024) en zes verschillende lynxen in januari 2023, en de oostelijke Sierra Morena is met 613 dieren (2025) de grootste kern van het hele Iberisch Schiereiland.",
+   "why_en": "Recent mammalwatching.com trip reports almost always report success in winter, e.g. four sightings of 3–5 animals in four days (January 2024) and six different lynx in January 2023, and with 613 animals (2025) the eastern Sierra Morena is the largest nucleus on the whole Iberian Peninsula.",
+   "season_nl": "December–februari (paartijd, de meeste waarnemingen); het hele jaar mogelijk, maar in de zomer lastiger door hitte en minder activiteit overdag",
+   "season_en": "December–February (mating season, most sightings); possible year-round, but harder in summer because of heat and less daytime activity",
+   "time_nl": "Vroege ochtend en de laatste uren voor zonsondergang; midden op de dag soms zonnebadend op hellingen",
+   "time_en": "Early morning and the last hours before sunset; sometimes sunbathing on slopes in the middle of the day",
+   "trip_nl": "Zelf rijden vanaf Andújar en urenlang scannen vanaf uitzichtpunten langs de openbare wegen in het park, of met een lokale gids; reken op 3 à 4 dagen",
+   "trip_en": "Self-drive from Andújar and spend hours scanning from viewpoints along the public roads in the park, or go with a local guide; allow 3–4 days",
+   "sources": [
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "es-guarrizas-despenaperros",
+   "name_nl": "Guarrizas (oostelijke Sierra Morena)",
+   "name_en": "Guarrizas (eastern Sierra Morena)",
+   "area_nl": "Lynxkern Guarrizas, rond Santa Elena en La Carolina (Despeñaperros), Jaén (Andalusië)",
+   "area_en": "Guarrizas lynx nucleus, around Santa Elena and La Carolina (Despeñaperros), Jaén (Andalusia)",
+   "country_nl": "Spanje",
+   "country_en": "Spain",
+   "cont": "eur",
+   "lat": 38.3,
+   "lon": -3.6,
+   "score": 2,
+   "why_nl": "Guarrizas hoort bij de dichtst bevolkte lynxkern van Iberië, maar ligt grotendeels op privéterrein zonder de vaste uitkijkcultuur van Andújar, dus waarnemingen zijn hier meer geluk dan routine.",
+   "why_en": "Guarrizas is part of the most densely populated lynx nucleus in Iberia, but lies largely on private land without Andújar's established viewing culture, so sightings here are more luck than routine.",
+   "season_nl": "December–februari",
+   "season_en": "December–February",
+   "time_nl": "Schemer, vroege ochtend",
+   "time_en": "Dusk, early morning",
+   "trip_nl": "Combineer met Andújar; vanaf Santa Elena en Despeñaperros op openbare wegen en paden; bij het fokcentrum La Olivilla bij Santa Elena is ook voorlichting over de soort",
+   "trip_en": "Combine with Andújar; from Santa Elena and Despeñaperros on public roads and trails; near Santa Elena the La Olivilla breeding centre also offers information on the species",
+   "sources": [
+    3,
+    10
+   ]
+  },
+  {
+   "id": "es-donana",
+   "name_nl": "Doñana",
+   "name_en": "Doñana",
+   "area_nl": "Nationaal en Natuurpark Doñana en omgeving (kern Doñana-Aljarafe), Huelva/Sevilla (Andalusië)",
+   "area_en": "Doñana National and Natural Park and surroundings (Doñana-Aljarafe nucleus), Huelva/Seville (Andalusia)",
+   "country_nl": "Spanje",
+   "country_en": "Spain",
+   "cont": "eur",
+   "lat": 37.0,
+   "lon": -6.4,
+   "score": 2,
+   "why_nl": "Er leven ongeveer 133 lynxen (2025) in dichte struikvegetatie, waardoor ontmoetingen meestal kort en toevallig zijn, al vond een groep in januari 2024 er 's nachts een langs de weg.",
+   "why_en": "About 133 lynx (2025) live here in dense scrub, so encounters are usually brief and chance affairs, although one group found one beside the road at night in January 2024.",
+   "season_nl": "Herfst tot vroege lente (oktober–maart)",
+   "season_en": "Autumn to early spring (October–March)",
+   "time_nl": "Schemer en nacht; let op langs zandpaden in de randzones",
+   "time_en": "Dusk and night; watch along sandy tracks in the buffer zones",
+   "trip_nl": "Officiële excursies in het nationaal park of zelf rijden over openbare wegen langs de randen (El Rocío, Aljarafe); combineer met vogels kijken",
+   "trip_en": "Official excursions into the national park, or drive public roads along the edges (El Rocío, Aljarafe); combine with birding",
+   "sources": [
+    3,
+    5
+   ]
+  },
+  {
+   "id": "es-sierra-morena-ciudad-real",
+   "name_nl": "Sierra Morena in Ciudad Real",
+   "name_en": "Sierra Morena in Ciudad Real",
+   "area_nl": "Oostelijke en westelijke Sierra Morena, o.a. rond het Natuurpark Valle de Alcudia y Sierra Madrona, Ciudad Real (Castilla-La Mancha)",
+   "area_en": "Eastern and western Sierra Morena, including around Valle de Alcudia y Sierra Madrona Natural Park, Ciudad Real (Castilla-La Mancha)",
+   "country_nl": "Spanje",
+   "country_en": "Spain",
+   "cont": "eur",
+   "lat": 38.5,
+   "lon": -4.2,
+   "score": 2,
+   "why_nl": "Met 356 lynxen in het oostelijke en 105–113 in het westelijke deel (2025) is de populatie groot, maar er zijn nauwelijks gepubliceerde bezoekersverslagen en veel leefgebied is privéjachtterrein.",
+   "why_en": "With 356 lynx in the eastern part and 105–113 in the western part (2025) the population is large, but there are hardly any published visitor reports and much habitat is private hunting land.",
+   "season_nl": "December–februari",
+   "season_en": "December–February",
+   "time_nl": "Vroege ochtend en schemer",
+   "time_en": "Early morning and dusk",
+   "trip_nl": "Zelf rijden en scannen vanaf openbare wegen; vooral interessant als avontuurlijke aanvulling op Andújar, aan de andere kant van de bergkam",
+   "trip_en": "Self-drive and scan from public roads; mainly interesting as an adventurous add-on to Andújar, on the other side of the ridge",
+   "sources": [
+    3,
+    13
+   ]
+  },
+  {
+   "id": "es-montes-de-toledo",
+   "name_nl": "Montes de Toledo",
+   "name_en": "Montes de Toledo",
+   "area_nl": "Montes de Toledo (Toledo en Ciudad Real, Castilla-La Mancha)",
+   "area_en": "Montes de Toledo (Toledo and Ciudad Real, Castilla-La Mancha)",
+   "country_nl": "Spanje",
+   "country_en": "Spain",
+   "cont": "eur",
+   "lat": 39.4,
+   "lon": -4.4,
+   "score": 2,
+   "why_nl": "Met 527 dieren (2025) is dit de grootste afzonderlijke kern, maar de lynxen zitten vooral op grote privélandgoederen en betrouwbare kijkplekken voor publiek zijn (nog) niet bekend.",
+   "why_en": "With 527 animals (2025) this is the largest single nucleus, but the lynx live mainly on large private estates and reliable public viewing spots are not (yet) known.",
+   "season_nl": "December–februari",
+   "season_en": "December–February",
+   "time_nl": "Vroege ochtend en schemer",
+   "time_en": "Early morning and dusk",
+   "trip_nl": "Zelf rijden op openbare wegen; het dichtstbijzijnde lynxgebied vanaf Madrid, maar reken op weinig garantie",
+   "trip_en": "Self-drive on public roads; the nearest lynx area to Madrid, but expect little certainty",
+   "sources": [
+    3,
+    9,
+    13
+   ]
+  },
+  {
+   "id": "es-valle-del-matachel",
+   "name_nl": "Vallei van de Matachel",
+   "name_en": "Matachel Valley",
+   "area_nl": "Vallei van de Matachel (o.a. rond Alange en Hornachos), Badajoz (Extremadura)",
+   "area_en": "Matachel Valley (incl. around Alange and Hornachos), Badajoz (Extremadura)",
+   "country_nl": "Spanje",
+   "country_en": "Spain",
+   "cont": "eur",
+   "lat": 38.7,
+   "lon": -6.2,
+   "score": 2,
+   "why_nl": "Hier leven 178–179 lynxen (2025), de grootste kern van Extremadura, maar er zijn vrijwel geen gepubliceerde waarnemingsverslagen van bezoekers.",
+   "why_en": "Some 178–179 lynx live here (2025), the largest nucleus in Extremadura, but there are almost no published visitor sighting reports.",
+   "season_nl": "December–februari",
+   "season_en": "December–February",
+   "time_nl": "Vroege ochtend en schemer",
+   "time_en": "Early morning and dusk",
+   "trip_nl": "Zelf rijden en scannen in open dehesa en heuvelland vanaf openbare wegen; goed te combineren met steppevogels in Extremadura",
+   "trip_en": "Self-drive and scan open dehesa and hills from public roads; combines well with steppe birds in Extremadura",
+   "sources": [
+    3
+   ]
+  },
+  {
+   "id": "pt-vale-do-guadiana",
+   "name_nl": "Vale do Guadiana",
+   "name_en": "Guadiana Valley",
+   "area_nl": "Natuurpark Vale do Guadiana en omgeving (Mértola, Serpa, Alcoutim), Alentejo/Algarve",
+   "area_en": "Guadiana Valley Natural Park and surroundings (Mértola, Serpa, Alcoutim), Alentejo/Algarve",
+   "country_nl": "Portugal",
+   "country_en": "Portugal",
+   "cont": "eur",
+   "lat": 37.7,
+   "lon": -7.6,
+   "score": 2,
+   "why_nl": "De Portugese populatie groeide naar 394 dieren (2025), maar er is geen toeristische kijkinfrastructuur en succesvolle bezoekersverslagen zijn zeldzaam.",
+   "why_en": "The Portuguese population has grown to 394 animals (2025), but there is no tourist viewing infrastructure and successful visitor reports are rare.",
+   "season_nl": "December–februari",
+   "season_en": "December–February",
+   "time_nl": "Vroege ochtend en schemer",
+   "time_en": "Early morning and dusk",
+   "trip_nl": "Zelf rijden vanuit Mértola; zoek in de vroege ochtend naar verse sporen op zandpaden en scan open heuvels",
+   "trip_en": "Self-drive from Mértola; look for fresh tracks on sandy trails at dawn and scan open hillsides",
+   "sources": [
+    3,
+    11,
+    12
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Ga in december of januari: dan is het paartijd, zijn de lynxen overdag actiever en staan er meer zoekers die elkaar waarschuwen.",
+  "Kies een uitzichtpunt boven een vallei en scan de tegenoverliggende hellingen urenlang met een telescoop; lynxen liggen graag in de zon op rotsen.",
+  "Zoek konijnen: waar veel konijnen zitten in open struikgewas met graniet en steeneiken, is de kans op een lynx het grootst.",
+  "Een warmtebeeldkijker helpt enorm in de schemer: in januari 2024 vond één groep drie van de vier lynxen zo. Gebruik geen lampen en volg de regels van het park.",
+  "Plan minstens 3 à 4 dagen en wees geduldig: een verslag uit 2025 zag pas een half uur voor het einde van de middag een lynx.",
+  "Blijf stil en in of bij de auto, zet je telefoon op stil en ga nooit privéterrein op of achter een dier aan.",
+  "Luister in de paartijd 's avonds naar het hese, miauwende geroep van lynxen."
+ ],
+ "tips_en": [
+  "Go in December or January: it is the mating season, the lynx are more active by day and more searchers are around to alert each other.",
+  "Pick a viewpoint above a valley and scan the opposite slopes for hours with a telescope; lynx like to lie in the sun on rocks.",
+  "Look for rabbits: where rabbits are plentiful in open scrub with granite and holm oaks, your chances of a lynx are highest.",
+  "A thermal scope helps hugely at dusk: in January 2024 one group found three of its four lynx that way. Do not use spotlights and follow park rules.",
+  "Plan at least 3–4 days and be patient: a 2025 report only got its lynx half an hour before the end of the afternoon session.",
+  "Stay quiet and in or near the car, silence your phone, and never enter private land or follow an animal.",
+  "During the mating season, listen in the evening for the hoarse, meowing calls of lynx."
+ ],
+ "threats_nl": [
+  "Verkeer: in 2025 werden 212 lynxen doodgereden, bijna 78% van alle niet-natuurlijke sterfte.",
+  "Konijnenziekten (zoals RHD/konijnenpest en myxomatose) die de belangrijkste prooi kunnen decimeren.",
+  "Stroperij en illegale vallen of gif.",
+  "Versnippering en verlies van leefgebied, en klimaatverandering.",
+  "Ziekten die huiskatten overdragen."
+ ],
+ "threats_en": [
+  "Traffic: 212 lynx were killed on roads in 2025, almost 78% of all non-natural deaths.",
+  "Rabbit diseases (such as RHD and myxomatosis) that can decimate the main prey.",
+  "Poaching and illegal traps or poison.",
+  "Habitat fragmentation and loss, and climate change.",
+  "Diseases transmitted by domestic cats."
+ ],
+ "status_note_nl": "De IUCN zette de pardellynx in juni 2024 terug van Bedreigd naar Kwetsbaar, na een groei van 62 volwassen dieren in 2001 naar 648 in 2022. De census van 2025 telde minstens 2.663 lynxen (2.269 in Spanje, 394 in Portugal), 10,9% meer dan in 2024.",
+ "status_note_en": "In June 2024 the IUCN downlisted the Iberian lynx from Endangered to Vulnerable, after growth from 62 mature animals in 2001 to 648 in 2022. The 2025 census counted at least 2,663 lynx (2,269 in Spain, 394 in Portugal), 10.9% more than in 2024.",
+ "sources": [
+  {
+   "id": 1,
+   "title": "Iberian lynx rebounding thanks to conservation action – IUCN Red List (IUCN, 2024)",
+   "url": "https://iucn.org/index%2ephp/node/41648"
+  },
+  {
+   "id": 2,
+   "title": "La población de lince ibérico alcanzó los 2.663 ejemplares en 2025 (MITECO, 2026)",
+   "url": "https://www.miteco.gob.es/es/prensa/ultimas-noticias/2026/junio/la-poblacion-de-lince-iberico-alcanzo-los-2-663-ejemplares-en-20.html"
+  },
+  {
+   "id": 3,
+   "title": "Informe censo lince ibérico 2025 (MITECO, 2026)",
+   "url": "https://www.miteco.gob.es/content/dam/miteco/es/prensa/junio-2026/Informe%20censo%20lince%202025_para%20web.pdf"
+  },
+  {
+   "id": 4,
+   "title": "La población de linces ibéricos creció un 19% en 2024 (MITECO, 2025)",
+   "url": "https://www.miteco.gob.es/es/prensa/ultimas-noticias/2025/mayo/la-poblacion-de-linces-ibericos-crecio-un-19--en-2024-respecto-a.html"
+  },
+  {
+   "id": 5,
+   "title": "Iberian lynx and other mammals in maps and charts, Andújar, January 2024 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/01/Trip-report-Lynx-1.pdf"
+  },
+  {
+   "id": 6,
+   "title": "Trip report Spain, January 2023 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2023/02/Tripreport_SPAIN_2023_JVG.pdf"
+  },
+  {
+   "id": 7,
+   "title": "Iberian lynx trip report, January 2020 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/JW-IBERIAN-LYNX-JAN-2020.pdf"
+  },
+  {
+   "id": 8,
+   "title": "Spain 2025 – lynx at Andújar, November 2025 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2026/01/Spain-2025-Lynx-1.pdf"
+  },
+  {
+   "id": 9,
+   "title": "Iberian lynx tag – trip reports and forum posts (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/tag/iberian-lynx/"
+  },
+  {
+   "id": 10,
+   "title": "Sierra Morena, lynx territory (Andalucía tourism, n.d.)",
+   "url": "https://andalucia.org/en/sierra-morena-lynx-territory"
+  },
+  {
+   "id": 11,
+   "title": "Mértola: lince-ibérico Mistral encontrado morto com sinais de atropelamento (Sul Informação, 2019)",
+   "url": "https://www.sulinformacao.pt/en/2019/01/mertola-lince-iberico-mistral-encontrado-morto-com-sinais-de-atropelamento/"
+  },
+  {
+   "id": 12,
+   "title": "Two wild Iberian lynx cubs discovered in Portugal (Wilder, 2016)",
+   "url": "https://wilder.pt/english/two-wild-iberian-lynx-cubs-discovered-in-portugal"
+  },
+  {
+   "id": 13,
+   "title": "Castilla-La Mancha, la región con más linces ibéricos de España: 1.051 ejemplares (El Debate, 2026)",
+   "url": "https://www.eldebate.com/espana/castilla-la-mancha/20260607/castilla-mancha-region-linces-ibericos-espana-paraiso-1051-ejemplares_425657.html"
+  }
+ ]
+}

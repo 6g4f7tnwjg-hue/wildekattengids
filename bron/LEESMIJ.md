@@ -1,19 +1,20 @@
 # Bron van de Wilde katachtigen-gids
 
 Alles wordt uit deze map gebouwd. Pas nooit de gegenereerde bestanden in de hoofdmap aan
-(`index.html`, `soort/`, `top10/`, `nederland/`, `belgie/`, `luxemburg/`, `duitsland/`, `frankrijk/`, `sitemap.xml`): die worden bij elke bouw overschreven.
+(`index.html`, `soort/`, `top10/`, `nederland/`, `belgie/`, `luxemburg/`, `duitsland/`, `frankrijk/`, `oostenrijk/`, `zwitserland/`, `verenigd-koninkrijk/`, `italie/`, `sitemap.xml`): die worden bij elke bouw overschreven.
 
 ## Wat staat waar
 
 | Bestand | Inhoud |
 |---|---|
-| `gidsen/nl.html`, `be.html`, `lu.html`, `de.html`, `fr.html` | De landengidsen. Alle gegevens (soorten, waarnemingen `R`, locaties `LOCS`, jongen `YOUNG`) staan in het script van de gids; de Duitse gids heeft één blok per deelstaat, de Franse één blok per regio (13 regio’s van Europees Frankrijk; Corsica heeft geen katten). Talen: Nederlands en Engels; België, Luxemburg en Frankrijk ook Frans, Duitsland ook Duits (`T(nl,en,de)` en `l-de`-elementen). Foto's staan erin als `@@IMGn@@`. |
-| `start.html` | De startpagina. De gegevens in `const D` (kaartstippen, aantallen, recente geboortes) worden bij elke bouw opnieuw berekend uit de gidsen. Kaartvormen en de deelstaat-notitie blijven staan. Talen: Nederlands, Engels, Frans en Duits (`T(nl,en,fr,de)` en `l-fr`/`l-de`-elementen). |
+| `gidsen/nl.html`, `be.html`, `lu.html`, `de.html`, `fr.html`, `at.html`, `ch.html`, `uk.html`, `it.html` | De landengidsen. Alle gegevens (soorten, waarnemingen `R`, locaties `LOCS`, jongen `YOUNG`) staan in het script van de gids; Duitsland, Frankrijk, Oostenrijk, Zwitserland en het VK hebben één blok per deelstaat of regio, Italië is één pagina met een filter per regio (`REGIO`, `REGN`). Talen (regel: Nederlands, Engels en de landstaal of -talen): NL/EN (Nederland, VK), NL/EN/FR (België, Frankrijk), NL/EN/DE (Duitsland, Oostenrijk), NL/EN/FR/DE (Luxemburg), NL/EN/DE/FR/IT (Zwitserland), NL/EN/IT (Italië). Een gids met één derde taal gebruikt `T(nl,en,x)` en `l-x`-elementen; Zwitserland en Luxemburg gebruiken de taaltabel `LGS` (`T(nl,en,...)` in de volgorde van `LGS`, woordenlijsten per taal zoals `SPFR`, `R5IT`, `ITD`). Foto's staan erin als `@@IMGn@@`. |
+| `start.html` | De startpagina. De gegevens in `const D` (kaartstippen, aantallen, recente geboortes) worden bij elke bouw opnieuw berekend uit de gidsen. Kaartvormen en de deelstaat-notitie blijven staan. Talen: Nederlands, Engels, Frans, Duits en Italiaans (`T(nl,en,fr,de,it)` en `l-fr`/`l-de`/`l-it`-elementen). Onder de titel staat een regel met aantallen (landen · locaties · soorten), berekend uit `D`. |
 | `../img/` | Alle foto's; `n.webp` hoort bij `@@IMGn@@`. Nieuwe foto: volgend nummer toevoegen. |
 | `artifact_kop.html`, `web_kop.html` | Vaste kopjes voor de Claude-pagina en de website. |
 | `top10.json` | De top 10 om te bezoeken (blok op de startpagina en pagina `/top10/`, op de Claude-pagina `#top10`). `vast` staat in die volgorde bovenaan, met de uitleg in vier talen; is de lijst korter dan 10 of verdwijnt een park uit de gids, dan vult de bouw aan op score. Volgorde of uitleg veranderen: alleen dit bestand aanpassen. |
-| `franse_namen.json`, `duitse_namen.json` | Franse en Duitse soortnamen voor de startgegevens. |
-| `locatietypes.json` | De vaste lijst van locatietypes en labels. Elke locatie heeft in `LOCINFO` één `type` (de namen uit deze lijst) en `labels` (sleutels uit deze lijst). Dierentuin = lid van EAZA, NVD of VdZ; anders dierenpark. |
+| `franse_namen.json`, `duitse_namen.json`, `italiaanse_namen.json` | Franse, Duitse en Italiaanse soortnamen voor de startgegevens. |
+| `taalmenu.js` | Het taalmenu (wereldbol met de taalcode; de lijst toont de talen van de pagina in hun eigen naam). De bouw zet het in de startpagina en in elke gids. |
+| `locatietypes.json` | De vaste lijst van locatietypes en labels. Elke locatie heeft in `LOCINFO` één `type` (de namen uit deze lijst) en `labels` (sleutels uit deze lijst). Dierentuin = lid van EAZA, NVD, VdZ of UIZA; anders dierenpark. |
 | `locatietypes.js` | Filterknoppen, labels en types in de gidsen; de bouw zet dit achter het script van elke gids en deelstaat. |
 | `bouw.py`, `startdata.py`, `extract.js` | De bouw. Deelstaten en regio’s staan in `STATES` en `REGIOS` in `bouw.py` (samen `DEEL`). |
 

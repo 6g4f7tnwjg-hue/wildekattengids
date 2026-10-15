@@ -14,6 +14,13 @@ Bijgehouden door Claude. Bijwerken als een punt is opgelost.
 - **Oostenrijk/Zwitserland nagaan**: Tiger’s World (Judenau, NÖ) — alleen op een toeristische site, eigen site niet te openen, niet opgenomen; Luchsgehege Loipersdorf (ligging en publiek onbekend); Parc animalier de Prêles (BE) niet nagelopen; Bioparc Genève houdt ook hybride wilde katten en savannahkatten (niet meegeteld).
 - **Fréjus (Var)**: dierentuin dicht sinds 30-8-2026; na eind november 2026 nagaan waar de katten zijn gebleven.
 - **Kapotte links op de losse soortpagina’s (website)** (gezien 14-10-2026, bestond al vóór de taalwijziging): 586 links naar soortpagina’s binnen een deelstaat of regio die daar niet bestaan (bijv. `oostenrijk/steiermark/soort/manoel/`). Komt uit de “lijkt op”-verwijzingen op de momentopnames; in de interactieve gids werken ze wel.
+- **Italië (15-10-2026)**:
+  - **Top 10**: de lijst `vast` in `top10.json` telt tien parken, dus Italië staat er nu niet in. Beste Italiaanse kandidaat: Parco Faunistico La Torbiera (8 soorten, o.a. vissende kat, manoel, nevelpanter; score 80, nummer 10 heeft 86). Beslissen of er een park uit moet.
+  - **UIZA**: geen actuele ledenlijst; gebruikt is de lijst van aangesloten parken op uiza.org (januari 2022). Napoli, Fasano, Ravenna en Pombia staan niet bij EAZA of UIZA en heten daarom dierenpark of safaripark.
+  - **Ministeriële lijst** (MASE, oktober 2025): “BIN snc” (Trentino) niet thuisgebracht.
+  - **Circussen**: 13 reizende circussen, momentopnames (dompteurs wisselen van circus). Het volledige verbod op wilde dieren in circussen is uitgesteld tot eind 2026: begin 2027 opnieuw nagaan.
+  - **Nagaan**: Bioparco di Roma (site gaf 403; leeuw en luipaard nu onzeker, verblijf in verbouwing), Simba Little Wild Park (sloopbevel kooien augustus 2025), Le Cornelle (Amoertijger), Valcorba (Amoer-luipaardkat), Zoo delle Star (leeuw, luipaard), de Area faunistica della Lince in Civitella Alfedena (nieuwe lynx?).
+  - **Foto's**: geen eigen foto's van Italiaanse parken (afspraak: geen foto's van dierentuinen zoeken).
 - **Onderzoeksagenten**: in de opdracht zetten dat ze geen persoonlijke gegevens meesturen (ook niet als contact in een User-Agent).
 
 - **Controle op gemiste parken in Frankrijk (13-10-2026)**: vergeleken met de officiële lijst (ICPE-rubriek 2140, Géorisques: 196 vergunde dierenparken), Zootierliste en Nature et Zoo; geen gemiste locaties met katten. Nog onduidelijk, mogelijk navragen bij de DDPP: een vergunning op naam van een particulier in Grignols (Gironde) en de vereniging Gaia in Allennes-les-Marais (Nord); van geen van beide is een site of bezoekinformatie gevonden.

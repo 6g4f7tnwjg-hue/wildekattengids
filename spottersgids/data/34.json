@@ -1,0 +1,332 @@
+{
+ "no": 34,
+ "intro_nl": "Het is half elf en de buitenboordmotor is allang uit. Je drijft geruisloos een smalle zijrivier van de Kinabatangan af, één lamp zwiept over de modderige oever. Dan twee lichtpuntjes, laag bij het water. Een kat met een kop als een otter loopt langs de waterlijn, op zoek naar vis en kikkers. De platkopkat is een van de minst geziene katten ter wereld, maar op Borneo lukt het sommige doorzetters toch, vooral als het water laag staat. Kans: 3 – met een paar lange nachtelijke boottochten bij laag water maak je een redelijke kans, maar veel reizigers gaan ook zonder naar huis.",
+ "intro_en": "It is half past ten and the outboard engine has long been switched off. You drift silently down a narrow tributary of the Kinabatangan, a single lamp sweeping the muddy bank. Then two points of light, low by the water. A cat with a head like an otter's walks along the waterline, hunting fish and frogs. The flat-headed cat is one of the least-seen cats on earth, yet on Borneo some persistent travellers do find it, especially when the water is low. Chance: 3 – with a few long night boat trips at low water you have a reasonable chance, but plenty of travellers go home without one.",
+ "spots": [
+  {
+   "id": "my-kinabatangan",
+   "name_nl": "Kinabatangan-rivier",
+   "name_en": "Kinabatangan River",
+   "area_nl": "Lower Kinabatangan Wildlife Sanctuary en zijrivieren zoals de Menanggul, rond Sukau en Bilit (Sabah, Borneo)",
+   "area_en": "Lower Kinabatangan Wildlife Sanctuary and tributaries such as the Menanggul, around Sukau and Bilit (Sabah, Borneo)",
+   "country_nl": "Maleisië",
+   "country_en": "Malaysia",
+   "cont": "asia",
+   "lat": 5.5,
+   "lon": 118.2,
+   "score": 3,
+   "why_nl": "Recente verslagen op mammalwatching.com melden waarnemingen in 2022 (drie dieren in twee nachten) en tweemaal in april 2024, maar een andere groep zag hem in juni 2024 niet na 29,5 uur op het water, en tussen 2014 en 2018 was hij hier vrijwel onvindbaar.",
+   "why_en": "Recent mammalwatching.com reports describe sightings in 2022 (three animals in two nights) and twice in April 2024, but another group missed it in June 2024 after 29.5 hours on the water, and between 2014 and 2018 it was almost never found here.",
+   "season_nl": "Het hele jaar mogelijk; de kans is het grootst als het water laag staat en er veel oever droogvalt (vaak later in het droge seizoen). Bij hoog water na veel regen is de kans klein.",
+   "season_en": "Possible year-round; chances are best when the water is low and lots of bank is exposed (often later in the dry season). After heavy rain and high water, chances drop sharply.",
+   "time_nl": "Na het donker; de meeste waarnemingen vallen tussen ongeveer 21.30 en 01.00 uur.",
+   "time_en": "After dark; most sightings fall roughly between 21:30 and 01:00.",
+   "trip_nl": "Privé nachtelijke boottochten met een ervaren lokale spotter vanuit Sukau of Bilit, het liefst 3 à 4 nachten en langer dan de standaard korte nachtvaart.",
+   "trip_en": "Private night boat trips with an experienced local spotter from Sukau or Bilit, ideally 3–4 nights and longer than the standard short night cruise.",
+   "sources": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    17
+   ]
+  },
+  {
+   "id": "my-deramakot",
+   "name_nl": "Deramakot",
+   "name_en": "Deramakot",
+   "area_nl": "Deramakot Forest Reserve, Sabah (Borneo)",
+   "area_en": "Deramakot Forest Reserve, Sabah (Borneo)",
+   "country_nl": "Maleisië",
+   "country_en": "Malaysia",
+   "cont": "asia",
+   "lat": 5.4,
+   "lon": 117.4,
+   "score": 2,
+   "why_nl": "In 2018 zagen twee groepen binnen een paar weken een platkopkat bij een riviertje vlak bij het bosbouwstation, maar een groot cameravalonderzoek in dit landschap leverde maar één registratie op.",
+   "why_en": "In 2018 two groups saw a flat-headed cat within a few weeks by a small river near the forestry station, but a large camera-trap survey in this landscape produced only a single record.",
+   "season_nl": "Het hele jaar; let op het waterpeil van de riviertjes (niet te hoog, niet te laag).",
+   "season_en": "Year-round; watch the water level of the small rivers (neither too high nor too low).",
+   "time_nl": "'s Nachts, tijdens lange nachtritten en bij het water rond het station.",
+   "time_en": "At night, on long night drives and by the water near the station.",
+   "trip_nl": "Lange nachtritten (vaak 5 à 7 uur) vanuit het bosbouwstation in het reservaat, 3 à 4 nachten; je komt hier vooral voor andere katten en de platkopkat is een bonus.",
+   "trip_en": "Long night drives (often 5–7 hours) from the forestry station in the reserve, 3–4 nights; you mainly come here for other cats and the flat-headed cat is a bonus.",
+   "sources": [
+    3,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "my-tabin",
+   "name_nl": "Tabin",
+   "name_en": "Tabin",
+   "area_nl": "Tabin Wildlife Reserve, oost-Sabah (Borneo)",
+   "area_en": "Tabin Wildlife Reserve, eastern Sabah (Borneo)",
+   "country_nl": "Maleisië",
+   "country_en": "Malaysia",
+   "cont": "asia",
+   "lat": 5.2,
+   "lon": 118.7,
+   "score": 1,
+   "why_nl": "Uit Tabin zijn maar een paar cameravalbeelden bekend (onder meer uit een onderzoek in 2011–2012); waarnemingen door bezoekers zijn ons niet bekend.",
+   "why_en": "Only a handful of camera-trap records are known from Tabin (including one from a 2011–2012 survey); we know of no visitor sightings.",
+   "season_nl": "Het hele jaar.",
+   "season_en": "Year-round.",
+   "time_nl": "'s Nachts.",
+   "time_en": "At night.",
+   "trip_nl": "Nachtritten en nachtwandelingen vanuit de accommodatie in het reservaat, vaak gecombineerd met de Kinabatangan.",
+   "trip_en": "Night drives and night walks from the accommodation in the reserve, often combined with the Kinabatangan.",
+   "sources": [
+    10
+   ]
+  },
+  {
+   "id": "my-maludam",
+   "name_nl": "Maludam (Sarawak)",
+   "name_en": "Maludam (Sarawak)",
+   "area_nl": "Maludam National Park en veenmoerasbossen van west-Sarawak (Borneo)",
+   "area_en": "Maludam National Park and peat-swamp forests of western Sarawak (Borneo)",
+   "country_nl": "Maleisië",
+   "country_en": "Malaysia",
+   "cont": "asia",
+   "lat": 1.6,
+   "lon": 111.1,
+   "score": 1,
+   "why_nl": "Hier zijn de eerste bevestigde vondsten voor west-Sarawak gedaan, maar alleen met cameravallen; er is geen toerisme op deze kat.",
+   "why_en": "The first confirmed records for western Sarawak were made here, but only with camera traps; there is no tourism aimed at this cat.",
+   "season_nl": "Het hele jaar.",
+   "season_en": "Year-round.",
+   "time_nl": "'s Nachts.",
+   "time_en": "At night.",
+   "trip_nl": "Alleen voor avonturiers: bezoek aan het nationaal park met eventuele nachtelijke boottochten op de rivieren, met toestemming van de parkbeheerder.",
+   "trip_en": "For adventurers only: a visit to the national park with possible night boat trips on the rivers, with permission from the park authority.",
+   "sources": [
+    14,
+    9
+   ]
+  },
+  {
+   "id": "id-sabangau",
+   "name_nl": "Sabangau",
+   "name_en": "Sabangau",
+   "area_nl": "Nationaal Park Sebangau, veenmoerasbos bij Palangka Raya (Centraal-Kalimantan, Borneo)",
+   "area_en": "Sebangau National Park, peat-swamp forest near Palangka Raya (Central Kalimantan, Borneo)",
+   "country_nl": "Indonesië",
+   "country_en": "Indonesia",
+   "cont": "asia",
+   "lat": -2.6,
+   "lon": 113.7,
+   "score": 1,
+   "why_nl": "Onderzoekers hadden 3.498 cameravalnachten nodig voor de eerste foto en kwamen in ruim een jaar op 7 opnames; zelf zien is uitzonderlijk.",
+   "why_en": "Researchers needed 3,498 camera-trap nights for the first photo and got 7 captures in just over a year; seeing one yourself is exceptional.",
+   "season_nl": "Het hele jaar; in het droge seizoen is het veenbos beter begaanbaar.",
+   "season_en": "Year-round; the peat forest is easier to get around in the dry season.",
+   "time_nl": "Vooral na middernacht actief.",
+   "time_en": "Mostly active after midnight.",
+   "trip_nl": "Bezoek vanuit Palangka Raya, eventueel via een onderzoeksstation; geen gerichte excursies voor deze kat.",
+   "trip_en": "A visit from Palangka Raya, possibly via a research station; no excursions aimed at this cat.",
+   "sources": [
+    11,
+    12
+   ]
+  },
+  {
+   "id": "id-kampar-peninsula",
+   "name_nl": "Kampar-schiereiland (Sumatra)",
+   "name_en": "Kampar Peninsula (Sumatra)",
+   "area_nl": "Veenmoerasbossen van het Kampar-schiereiland, Riau (Sumatra)",
+   "area_en": "Peat-swamp forests of the Kampar Peninsula, Riau (Sumatra)",
+   "country_nl": "Indonesië",
+   "country_en": "Indonesia",
+   "cont": "asia",
+   "lat": 0.4,
+   "lon": 102.8,
+   "score": 1,
+   "why_nl": "In 2021 filmde een cameraval hier een vrouwtje met een jong, het eerste broedbewijs in dit gebied; waarnemingen door bezoekers zijn er niet bekend.",
+   "why_en": "In 2021 a camera trap filmed a female carrying a kitten here, the first breeding record for the area; there are no known visitor sightings.",
+   "season_nl": "Het hele jaar.",
+   "season_en": "Year-round.",
+   "time_nl": "'s Nachts.",
+   "time_en": "At night.",
+   "trip_nl": "Alleen met toestemming van de beheerders van het herstelproject; nachtelijke boottochten op zwartwaterrivieren zijn de enige realistische zoekmethode.",
+   "trip_en": "Only with permission from the managers of the restoration project; night boat trips on blackwater rivers are the only realistic way to search.",
+   "sources": [
+    13,
+    1
+   ]
+  },
+  {
+   "id": "my-tasek-bera",
+   "name_nl": "Tasek Bera",
+   "name_en": "Tasek Bera",
+   "area_nl": "Ramsargebied Tasek Bera, Pahang (Maleisisch schiereiland)",
+   "area_en": "Tasek Bera Ramsar Site, Pahang (Peninsular Malaysia)",
+   "country_nl": "Maleisië",
+   "country_en": "Malaysia",
+   "cont": "asia",
+   "lat": 3.1,
+   "lon": 102.6,
+   "score": 1,
+   "why_nl": "In 2014 werd de soort hier voor het eerst met cameravallen vastgelegd; elders op het schiereiland zijn de vondsten nog schaarser.",
+   "why_en": "In 2014 the species was recorded here by camera traps for the first time; elsewhere on the peninsula records are even scarcer.",
+   "season_nl": "Het hele jaar.",
+   "season_en": "Year-round.",
+   "time_nl": "'s Nachts.",
+   "time_en": "At night.",
+   "trip_nl": "Bezoek aan het moerasgebied met eventueel een nachtelijke boottocht; zie het als een gok.",
+   "trip_en": "A visit to the wetland with a possible night boat trip; treat it as a gamble.",
+   "sources": [
+    1
+   ]
+  },
+  {
+   "id": "th-princess-sirindhorn",
+   "name_nl": "Pru To Daeng (Thailand)",
+   "name_en": "Pru To Daeng (Thailand)",
+   "area_nl": "Princess Sirindhorn Wildlife Sanctuary (veenmoerasbos Pru To Daeng), Narathiwat (zuid-Thailand)",
+   "area_en": "Princess Sirindhorn Wildlife Sanctuary (Pru To Daeng peat-swamp forest), Narathiwat (southern Thailand)",
+   "country_nl": "Thailand",
+   "country_en": "Thailand",
+   "cont": "asia",
+   "lat": 6.1,
+   "lon": 101.9,
+   "score": 1,
+   "why_nl": "Na bijna dertig jaar zonder bevestiging leverden cameravallen hier in 2024 en 2025 samen 29 opnames op, waaronder een vrouwtje met jong; zelf zien blijft extreem onwaarschijnlijk.",
+   "why_en": "After almost thirty years without confirmation, camera traps here produced 29 detections in 2024 and 2025, including a female with a kitten; seeing one yourself remains extremely unlikely.",
+   "season_nl": "Het hele jaar.",
+   "season_en": "Year-round.",
+   "time_nl": "'s Nachts.",
+   "time_en": "At night.",
+   "trip_nl": "Overdag kun je over de vlonderpaden van het bezoekerscentrum het veenbos in; nachtelijk zoeken is niet gangbaar. Let op actuele reisadviezen voor deze provincie.",
+   "trip_en": "By day you can walk into the peat forest on the visitor-centre boardwalk; night searches are not usual. Check current travel advice for this province.",
+   "sources": [
+    15,
+    16
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Zoek bij het water: de platkopkat jaagt langs oevers, zandbankjes en drooggevallen modder op vis en kikkers.",
+  "Laag water is je beste vriend. Plan je reis als de rivier laag staat en blijf bij hoog water realistisch.",
+  "Huur een privéboot en ga lang: de standaard korte nachtvaart is te kort. Zijrivieren zoals de Menanggul leveren de meeste waarnemingen op.",
+  "Laat één persoon zoeken met één lamp. Pas als er oogreflectie is, gaan de andere lampen aan. Stil blijven is essentieel.",
+  "Een warmtebeeldkijker helpt om een kat in de oeverbegroeiing te onderscheiden van civetkatten en ratten.",
+  "Verwar hem niet met de Sunda-bengaalse kat of een civetkat: let op de korte poten, de korte staart en de platte, langgerekte kop.",
+  "Waterhyacint kan zijrivieren blokkeren en oevers aan het zicht onttrekken; vraag vooraf naar de situatie."
+ ],
+ "tips_en": [
+  "Search by the water: the flat-headed cat hunts fish and frogs along banks, sandbars and exposed mud.",
+  "Low water is your best friend. Plan your trip for when the river is low, and stay realistic when it is high.",
+  "Hire a private boat and stay out long: the standard short night cruise is too short. Tributaries such as the Menanggul produce most sightings.",
+  "Let one person search with one lamp. Only when there is eyeshine do the other lights go on. Staying silent is essential.",
+  "A thermal scope helps you tell a cat in the bankside vegetation from civets and rats.",
+  "Don't confuse it with a Sunda leopard cat or a civet: look for the short legs, short tail and flat, elongated head.",
+  "Water hyacinth can block tributaries and hide the banks; ask about conditions beforehand."
+ ],
+ "threats_nl": [
+  "Verlies van laaglandbos, veenmoeras en rivieroevers, vooral door omzetting naar oliepalmplantages; naar schatting is meer dan 70% van het oorspronkelijke leefgebied ongeschikt geworden.",
+  "Drooglegging en branden in veenmoerasbossen.",
+  "Vervuiling van rivieren door landbouw en houtkap, en overbevissing waardoor prooi verdwijnt.",
+  "Strikken, vergiftiging en bijvangst; af en toe handel via sociale media.",
+  "Mogelijke ziekte-overdracht door huisdieren."
+ ],
+ "threats_en": [
+  "Loss of lowland forest, peat swamp and riverbanks, especially through conversion to oil palm; an estimated 70%+ of its historical habitat has become unsuitable.",
+  "Drainage and fires in peat-swamp forests.",
+  "Pollution of rivers by agriculture and logging, and overfishing that removes prey.",
+  "Snares, poisoning and bycatch; occasional trade via social media.",
+  "Possible disease transmission from domestic animals."
+ ],
+ "status_note_nl": "De IUCN beschouwt de platkopkat als Bedreigd (Endangered); men verwacht een verdere afname van minstens 20% in twaalf jaar door verlies van wetlands, en de effectieve populatie is mogelijk kleiner dan 2.500 volwassen dieren.",
+ "status_note_en": "The IUCN lists the flat-headed cat as Endangered; a further decline of at least 20% over twelve years is expected due to wetland loss, and the effective population may be fewer than 2,500 mature individuals.",
+ "sources": [
+  {
+   "id": 1,
+   "title": "Flat-headed cat – species account (IUCN SSC Cat Specialist Group)",
+   "url": "https://www.catsg.org/living-species-flatheadedcat"
+  },
+  {
+   "id": 2,
+   "title": "Prionailurus planiceps – IUCN assessment text (ESABII Threatened Mammal Species Database, Ministry of the Environment Japan)",
+   "url": "https://www.esabii.biodic.go.jp/database/mammal/carnivora/prionailurus_planiceps.html"
+  },
+  {
+   "id": 3,
+   "title": "Borneo RFI – Kinabatangan River, forum thread (mammalwatching.com, 2018)",
+   "url": "https://www.mammalwatching.com/2018/04/13/borneo-rfi-kinabatangan-river/"
+  },
+  {
+   "id": 4,
+   "title": "Borneo trip report: Danum, Kinabatangan and Deramakot (mammalwatching.com, 2022)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/AJ-Borneo-2022.pdf"
+  },
+  {
+   "id": 5,
+   "title": "Borneo trip report, April 2024: Sepilok, Deramakot, Kinabatangan, Tabin (mammalwatching.com, 2024)",
+   "url": "https://mammalwatching.com/wp-content/uploads/2024/07/BORNEO.pdf"
+  },
+  {
+   "id": 6,
+   "title": "Cats of Borneo trip report, April 2024 (mammalwatching.com, 2024)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/06/Cat-Expeditions-Trip-Report-Cats-of-Borneo-2024.pdf"
+  },
+  {
+   "id": 7,
+   "title": "Borneo trip report, June 2024 (mammalwatching.com, 2024)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/07/Borneo-June-2024.pdf"
+  },
+  {
+   "id": 8,
+   "title": "Deramakot trip report, March 2018 (mammalwatching.com, 2018)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2018/04/MS-Deramakot-March-18.pdf"
+  },
+  {
+   "id": 9,
+   "title": "Mysterious, at-risk, understudied flat-headed cat lacks conservation focus (Mongabay, 2024)",
+   "url": "https://news.mongabay.com/2024/05/mysterious-at-risk-understudied-flat-headed-cat-lacks-conservation-focus/"
+  },
+  {
+   "id": 10,
+   "title": "Gardner et al. – camera-trap record of flat-headed cat in Tabin Wildlife Reserve, Cat News 61 (bibliographic entry, 2014)",
+   "url": "https://zootier-lexikon.org/bibliographie/g-1699975706/gardner-p-c-ambu-k-bernard-h-goossens-b-1914"
+  },
+  {
+   "id": 11,
+   "title": "Cheyne & Macdonald – Wild felid diversity and activity patterns in Sabangau peat-swamp forest, Oryx (2011)",
+   "url": "https://www.cambridge.org/core/product/A7196C5E884BCB24FD5571A271402CCA"
+  },
+  {
+   "id": 12,
+   "title": "Cats on camera – camera trapping in Sabangau (The Biologist, Royal Society of Biology)",
+   "url": "https://thebiologist.rsb.org.uk/biologist-features/cats-on-camera2"
+  },
+  {
+   "id": 13,
+   "title": "First breeding record of flat-headed cat on the Kampar Peninsula published in CATnews (Restorasi Ekosistem Riau, 2025)",
+   "url": "https://www.rekoforest.org/news/restorasi-ekosistem-riau-ecologists-publish-first-breeding-record-of-the-endangered-flat-headed-cat-in-catnews"
+  },
+  {
+   "id": 14,
+   "title": "Mohd-Azlan & Thaqifah – New records of the flat-headed cat in western Sarawak, Journal of Threatened Taxa (2020)",
+   "url": "https://threatenedtaxa.org/index.php/JoTT/article/view/5105"
+  },
+  {
+   "id": 15,
+   "title": "Endangered flat-headed cat rediscovered in Thailand after nearly three decades (Panthera, 2025)",
+   "url": "https://panthera.org/newsroom/endangered-flat-headed-cat-rediscovered-thailand-after-nearly-three-decades"
+  },
+  {
+   "id": 16,
+   "title": "Princess Sirindhorn Wildlife Sanctuary – Ramsar Site Information Sheet (Ramsar Convention)",
+   "url": "https://rsis.ramsar.org/ris/1102"
+  },
+  {
+   "id": 17,
+   "title": "Flat-headed cat sighting: Kinabatangan River, March 2024 (International Society for Endangered Cats Canada, 2024)",
+   "url": "https://wildcatconservation.org/flat-headed-cat-sighting-kinabatangan-river/"
+  }
+ ],
+ "doubts": "Kanscore Kinabatangan (3) is een grensgeval: met gerichte privé-boottochten van meerdere nachten en laag water lukt het de laatste jaren regelmatig (2022, 2x april 2024, plus een waarneming bij een kamp in maart 2024), maar juni 2024 mislukte na 29,5 uur en 2014–2018 was een droge periode. Voor de gewone toerist op een korte standaard-nachtvaart is het eerder 1–2. Gidsen en lodges die in de verslagen bij naam worden aanbevolen heb ik bewust weggelaten. Tabin: alleen cameravalgegevens (Gardner et al. 2014, ik kon het artikel zelf niet openen, alleen de bibliografische vermelding). Narathiwat-coördinaten en de naam Pru To Daeng komen uit Ramsar/Wikipedia; Panthera noemt de provincie niet. Zuid-Thailand heeft al jaren een onrustige veiligheidssituatie – daarom de verwijzing naar reisadviezen. Berbak NP (Sumatra; dood dier gevonden, Oryx 2000) en Pasoh/Panti (schiereiland) heb ik niet als aparte spots opgenomen. Status: ESABII geeft de IUCN-tekst (2015-beoordeling?); Panthera meldt dat een nieuwe Red List-beoordeling begin 2026 verwacht werd – ik heb niet gecontroleerd of die al gepubliceerd is."
+}

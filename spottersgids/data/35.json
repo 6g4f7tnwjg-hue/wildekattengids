@@ -1,0 +1,292 @@
+{
+ "no": 35,
+ "intro_nl": "Het is na middernacht op een zandweg langs de rand van Wilpattu. De lamp vangt een paar oogjes in een struik, nauwelijks een halve meter boven de grond. Een katje, kleiner dan je eigen huiskat, met roestbruine vlekjes, kijkt je even aan en schiet dan een boom in. De roestkat is de kleinste kat ter wereld. In het droge noorden van Sri Lanka zien de meeste gerichte nachtzoekers hem binnen een paar nachten. Kans: 4 – met een goede lokale gids en een paar late nachtritten zit het er vaak in.",
+ "intro_en": "It is past midnight on a dirt road along the edge of Wilpattu. The lamp catches a pair of eyes in a bush, barely half a metre off the ground. A kitten-sized cat, smaller than your own house cat, with rusty-brown spots, stares at you for a moment and then shoots up a tree. The rusty-spotted cat is the smallest cat in the world. In Sri Lanka's dry north, most dedicated night searchers find one within a few nights. Chance: 4 – with a good local guide and a few late night drives, it often works out.",
+ "spots": [
+  {
+   "id": "lk-sigiriya-wilpattu",
+   "name_nl": "Sigiriya en Wilpattu",
+   "name_en": "Sigiriya and Wilpattu",
+   "area_nl": "Platteland rond Sigiriya (Matale) en de randzone van Wilpattu National Park",
+   "area_en": "Countryside around Sigiriya (Matale) and the edges of Wilpattu National Park",
+   "country_nl": "Sri Lanka",
+   "country_en": "Sri Lanka",
+   "cont": "asia",
+   "lat": 8.0,
+   "lon": 80.8,
+   "score": 4,
+   "why_nl": "De meeste gerichte reizen op mammalwatching.com zagen hier roestkatten (2018 meerdere keren, 2019, 2022, vier dieren in maart 2024, 2026), al waren sommige waarnemingen kort en miste een groep hem in 2025 bij hoog water.",
+   "why_en": "Most dedicated trips on mammalwatching.com saw rusty-spotted cats here (several in 2018, 2019, 2022, four animals in March 2024, 2026), although some views were brief and one group missed it in 2025 when water levels were high.",
+   "season_nl": "Het hele jaar, maar het droge seizoen (ongeveer februari tot september) werkt het best; na zware regen en hoog water lijken katten lastiger te vinden.",
+   "season_en": "Year-round, but the dry season (roughly February to September) works best; after heavy rain and high water, cats seem harder to find.",
+   "time_nl": "Late nachtritten, vaak van 22.00 tot 02.00 uur of zelfs tot de ochtend; soms een toevalstreffer overdag in een boom.",
+   "time_en": "Late night drives, often from 22:00 to 02:00 or even until dawn; occasionally a lucky daytime sighting in a tree.",
+   "trip_nl": "Gespecialiseerde nachtritten met een lokale gids over landwegen rond Sigiriya en langs de grens van Wilpattu (het park zelf is 's nachts dicht), 4 à 6 nachten.",
+   "trip_en": "Specialised night drives with a local guide on rural roads around Sigiriya and along the Wilpattu boundary (the park itself is closed at night), 4–6 nights.",
+   "sources": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "in-pench",
+   "name_nl": "Pench",
+   "name_en": "Pench",
+   "area_nl": "Bufferzone van Pench Tiger Reserve, Madhya Pradesh",
+   "area_en": "Buffer zone of Pench Tiger Reserve, Madhya Pradesh",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 21.7,
+   "lon": 79.3,
+   "score": 2,
+   "why_nl": "Een groep zag in 2023 een roestkat tijdens een officiële nachtsafari in de bufferzone, maar dat was één tocht en geen vast patroon.",
+   "why_en": "One group saw a rusty-spotted cat in 2023 on an official night safari in the buffer zone, but that was a single trip and not an established pattern.",
+   "season_nl": "Oktober tot juni (parkseizoen); in het hete voorjaar is de vegetatie het ijlst.",
+   "season_en": "October to June (park season); in the hot pre-monsoon months vegetation is thinnest.",
+   "time_nl": "Tijdens de avondlijke nachtsafari.",
+   "time_en": "On the evening night safari.",
+   "trip_nl": "Nachtsafari in de bufferzone met een parkchauffeur en gids; vraag of je routes buiten de rij tijger- en luipaardzoekers mag rijden.",
+   "trip_en": "Night safari in the buffer zone with a park driver and guide; ask whether you can drive stretches away from the line of vehicles looking for tigers and leopards.",
+   "sources": [
+    11
+   ]
+  },
+  {
+   "id": "in-panna",
+   "name_nl": "Panna",
+   "name_en": "Panna",
+   "area_nl": "Panna Tiger Reserve en omgeving, Madhya Pradesh",
+   "area_en": "Panna Tiger Reserve and surroundings, Madhya Pradesh",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 24.7,
+   "lon": 80.0,
+   "score": 2,
+   "why_nl": "Twee verslagen (2022 en 2023) melden roestkatten in Panna, de laatste zelfs overdag, en ze worden hier volgens de schrijver 'van tijd tot tijd' gezien.",
+   "why_en": "Two reports (2022 and 2023) mention rusty-spotted cats in Panna, the latter even in daylight, and according to the author they are seen here 'from time to time'.",
+   "season_nl": "Oktober tot juni (parkseizoen).",
+   "season_en": "October to June (park season).",
+   "time_nl": "Vroeg in de ochtend en laat in de middag tijdens safari's; soms rond de accommodatie in het donker.",
+   "time_en": "Early morning and late afternoon on safaris; sometimes around accommodation after dark.",
+   "trip_nl": "Jeepsafari's in het tijgerreservaat met een lokale gids, 2 à 3 dagen, vaak gecombineerd met Bandhavgarh of Khajuraho.",
+   "trip_en": "Jeep safaris in the tiger reserve with a local guide, 2–3 days, often combined with Bandhavgarh or Khajuraho.",
+   "sources": [
+    12,
+    13
+   ]
+  },
+  {
+   "id": "in-kanha",
+   "name_nl": "Kanha",
+   "name_en": "Kanha",
+   "area_nl": "Kanha Tiger Reserve, Madhya Pradesh",
+   "area_en": "Kanha Tiger Reserve, Madhya Pradesh",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 22.3,
+   "lon": 80.6,
+   "score": 1,
+   "why_nl": "Cameravallen legden hier tussen 2014 en 2018 roestkatten vast, ook in bos, maar 's nachts mag je het park niet in en waarnemingen door bezoekers zijn zeldzaam.",
+   "why_en": "Camera traps recorded rusty-spotted cats here between 2014 and 2018, including in forest, but the park is closed at night and visitor sightings are rare.",
+   "season_nl": "Oktober tot juni.",
+   "season_en": "October to June.",
+   "time_nl": "Vroege ochtend en schemer.",
+   "time_en": "Early morning and dusk.",
+   "trip_nl": "Jeepsafari's in het tijgerreservaat, 3 à 4 dagen; houd de randen van rotsige stukken en graslanden in de gaten.",
+   "trip_en": "Jeep safaris in the tiger reserve, 3–4 days; keep an eye on the edges of rocky patches and grasslands.",
+   "sources": [
+    16
+   ]
+  },
+  {
+   "id": "lk-horton-plains",
+   "name_nl": "Horton Plains",
+   "name_en": "Horton Plains",
+   "area_nl": "Horton Plains National Park, centrale hooglanden (Sri Lanka)",
+   "area_en": "Horton Plains National Park, central highlands (Sri Lanka)",
+   "country_nl": "Sri Lanka",
+   "country_en": "Sri Lanka",
+   "cont": "asia",
+   "lat": 6.8,
+   "lon": 80.8,
+   "score": 1,
+   "why_nl": "Cameravallen vonden hier boven 2.000 meter een broedende populatie (15 opnames in 5.538 cameradagen, overdag en 's nachts), maar bezoekers zien hem vrijwel nooit.",
+   "why_en": "Camera traps found a breeding population here above 2,000 m (15 captures in 5,538 camera-trap days, by day and night), but visitors almost never see one.",
+   "season_nl": "Het hele jaar; januari tot maart is meestal het droogst.",
+   "season_en": "Year-round; January to March is usually driest.",
+   "time_nl": "Vroege ochtend, als het park opengaat.",
+   "time_en": "Early morning, when the park opens.",
+   "trip_nl": "Wandeling over de vaste route door het park vanaf het bezoekerscentrum; 's nachts is het park dicht.",
+   "trip_en": "A walk on the set trail through the park from the visitor centre; the park is closed at night.",
+   "sources": [
+    17
+   ]
+  },
+  {
+   "id": "np-shuklaphanta-bardia",
+   "name_nl": "Shuklaphanta en Bardia",
+   "name_en": "Shuklaphanta and Bardia",
+   "area_nl": "Nationale parken Shuklaphanta en Bardiya, west-Terai",
+   "area_en": "Shuklaphanta and Bardiya National Parks, western Terai",
+   "country_nl": "Nepal",
+   "country_en": "Nepal",
+   "cont": "asia",
+   "lat": 28.9,
+   "lon": 80.2,
+   "score": 1,
+   "why_nl": "Nepal kent alleen een handvol vondsten: cameravalbeelden uit Shuklaphanta (2016) en een bezoekersfoto uit Bardiya (2012).",
+   "why_en": "Nepal has only a handful of records: camera-trap photos from Shuklaphanta (2016) and a visitor's photo from Bardiya (2012).",
+   "season_nl": "Oktober tot april.",
+   "season_en": "October to April.",
+   "time_nl": "Schemer.",
+   "time_en": "Dusk.",
+   "trip_nl": "Jeepsafari's en wandelingen met een parkgids in Shuklaphanta of Bardiya; zie een roestkat als een loterijprijs.",
+   "trip_en": "Jeep safaris and walks with a park guide in Shuklaphanta or Bardiya; treat a rusty-spotted cat as a lottery win.",
+   "sources": [
+    18,
+    19
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Ga laat op pad: in Sri Lanka vallen veel waarnemingen pas na 22.00 uur, en wie tot diep in de nacht doorrijdt, ziet het meest.",
+  "Zoek naar kleine, laag hangende oogreflectie in struiken en droge bosranden, en in bomen: roestkatten klimmen bij verstoring vaak omhoog.",
+  "Een gevonden roestkat kruipt vaak weg in dichte begroeiing en blijft daar zitten. Doe je lamp zachter, wacht stil en geef hem ruimte.",
+  "Pas op met verwarring: vooral in Sri Lanka lopen veel kruisingen van huiskatten met kleine wilde katten rond. Let op de roestbruine vlekken en rijen, de korte staart en het kleine formaat.",
+  "Een warmtebeeldkijker helpt om dieren in dicht struikgewas te vinden.",
+  "Rijd ook door landbouwgebied langs bosranden: de soort leeft vaak buiten parken, dicht bij dorpen.",
+  "Na zware regen en hoog water lijken kleine katten lastiger te vinden; plan zo mogelijk in het droge seizoen."
+ ],
+ "tips_en": [
+  "Go out late: in Sri Lanka many sightings come only after 22:00, and those who keep driving deep into the night see the most.",
+  "Look for small, low eyeshine in bushes and dry forest edges, and in trees: rusty-spotted cats often climb when disturbed.",
+  "Once found, a rusty-spotted cat often creeps into dense cover and stays put. Dim your lamp, wait quietly and give it space.",
+  "Beware of confusion: especially in Sri Lanka, many hybrids between house cats and small wild cats roam around. Look for the rusty-brown spots and rows, the short tail and the tiny size.",
+  "A thermal scope helps you find animals in dense scrub.",
+  "Also drive through farmland along forest edges: the species often lives outside parks, close to villages.",
+  "After heavy rain and high water, small cats seem harder to find; plan for the dry season if you can."
+ ],
+ "threats_nl": [
+  "Verlies en versnippering van droog loofbos en struikgebied door landbouw, irrigatie, verstedelijking, mijnbouw en zonneparken.",
+  "Verkeer: in Rajasthan alleen al zijn meerdere verkeersslachtoffers gemeld.",
+  "Vervolging omdat hij soms kippen pakt, en jacht voor vlees of vacht.",
+  "Mogelijke vermenging met huiskatten.",
+  "Beheer gericht op grote katten, zoals graslandaanleg voor hertenprooi, kan ongunstig zijn voor deze kleine kat."
+ ],
+ "threats_en": [
+  "Loss and fragmentation of dry deciduous forest and scrub to agriculture, irrigation, urbanisation, mining and solar farms.",
+  "Traffic: several road kills have been reported in Rajasthan alone.",
+  "Persecution because it occasionally takes poultry, and hunting for meat or fur.",
+  "Possible hybridisation with domestic cats.",
+  "Management aimed at big cats, such as creating grassland for deer prey, may be unfavourable for this small cat."
+ ],
+ "status_note_nl": "Wereldwijd staat de roestkat sinds 2016 als Gevoelig (Near Threatened) op de Rode Lijst van de IUCN, vooral door verlies van loofbos; op de nationale Rode Lijst van Sri Lanka geldt hij als Bedreigd. Betrouwbare populatieschattingen ontbreken.",
+ "status_note_en": "Globally, the rusty-spotted cat has been listed as Near Threatened on the IUCN Red List since 2016, mainly due to loss of deciduous forest; on Sri Lanka's national Red List it is classed as Endangered. Reliable population estimates are lacking.",
+ "sources": [
+  {
+   "id": 1,
+   "title": "Rusty-spotted cat – species account (IUCN SSC Cat Specialist Group)",
+   "url": "https://www.catsg.org/living-species-rustyspottedcat"
+  },
+  {
+   "id": 2,
+   "title": "Rusty-spotted cat (Wikipedia, citing Mukherjee et al. 2016, IUCN Red List e.T18149A50662471)",
+   "url": "https://en.wikipedia.org/wiki/Rusty-spotted_cat"
+  },
+  {
+   "id": 3,
+   "title": "Sri Lanka: 4 nights, 40 mammals, including 4 cat species (mammalwatching.com, 2018)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2016/08/Sri-Lanka-trip-report-4-cat.pdf"
+  },
+  {
+   "id": 4,
+   "title": "Wilpattu National Park trip report (mammalwatching.com, 2018)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/CD-Wilpattu-National-Park-2018.pdf"
+  },
+  {
+   "id": 5,
+   "title": "Sri Lanka trip report (mammalwatching.com, 2018)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/MH-Sri-Lanka-2018.pdf"
+  },
+  {
+   "id": 6,
+   "title": "Sri Lanka trip report, February 2019 (mammalwatching.com, 2019)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/JW-Sri-Lanka-Feb-2019.pdf"
+  },
+  {
+   "id": 7,
+   "title": "Sri Lanka trip report, 2022 (mammalwatching.com, 2022)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/JW-Sri-Lanka-2022.pdf"
+  },
+  {
+   "id": 8,
+   "title": "Sri Lanka: nocturnal cats and more, March 2024 (mammalwatching.com, 2024)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/04/Sri-Lanka-small-cats-and-more-March-2024.pdf"
+  },
+  {
+   "id": 9,
+   "title": "Sri Lanka mammal tour, 2025 (mammalwatching.com, 2025)",
+   "url": "https://mammalwatching.com/wp-content/uploads/2025/03/Sri-Lanka-2025-Mammal-Tour.pdf"
+  },
+  {
+   "id": 10,
+   "title": "Sri Lanka trip report, 2026 (mammalwatching.com, 2026)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2026/04/Sri-Lanka-2026-5.pdf"
+  },
+  {
+   "id": 11,
+   "title": "India trip report 2023: Pench, Gujarat and more (mammalwatching.com, 2023)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2023/06/Tripreport_India_2023_JVG.pdf"
+  },
+  {
+   "id": 12,
+   "title": "Rusty-spotted cat, sloth bear and more – Panna NP, April 2022 (mammalwatching.com, 2022)",
+   "url": "https://www.mammalwatching.com/2022/05/14/rusty-spotted-cat-sloth-bear-and-more-panna-np-april-2022/"
+  },
+  {
+   "id": 13,
+   "title": "Panna and Kaziranga trip report (mammalwatching.com, 2023)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2023/04/Trip-Report-Panna-and-Kaziranga-2023.pdf"
+  },
+  {
+   "id": 14,
+   "title": "Sharma & Dhakad – The rusty-spotted cat in Rajasthan: a compilation of two decades, Journal of Threatened Taxa (2020)",
+   "url": "https://threatenedtaxa.org/index.php/JoTT/article/view/6064"
+  },
+  {
+   "id": 15,
+   "title": "Looking for eyeshine: a tiny wildcat and its neighbours in Jawai (RoundGlass Sustain)",
+   "url": "https://roundglasssustain.com/habitats/jawai"
+  },
+  {
+   "id": 16,
+   "title": "Rusty-spotted cat conservation hinges on dedicated research and management plans (Mongabay India, 2023)",
+   "url": "https://india.mongabay.com/2023/11/rusty-spotted-cat-conservation-hinges-on-dedicated-research-and-management-plans/"
+  },
+  {
+   "id": 17,
+   "title": "Nimalrathna et al. – First photographic record of rusty-spotted cat in Horton Plains National Park, Journal of Threatened Taxa (2019)",
+   "url": "https://threatenedtaxa.org/index.php/JoTT/article/view/4094"
+  },
+  {
+   "id": 18,
+   "title": "Lamichhane et al. – Rusty-spotted cat: 12th cat species discovered in western Terai of Nepal, CATnews (2016)",
+   "url": "https://openaccess.leidenuniv.nl/bitstream/handle/1887/62590/Lamichhane_etal_2016_Rusty-spotted_cat_12th_cat_species_in_Western_Terai_of_Nepal.pdf?sequence=1"
+  },
+  {
+   "id": 19,
+   "title": "Status, distribution and conservation of rusty-spotted cat in Shuklaphanta Wildlife Reserve (Rufford Foundation project, 2016)",
+   "url": "https://www.rufford.org/projects/bhuwan-singh-bist/status-distribution-and-conservation-initiatives-of-rusty-spotted-cat-prionailurus-rubiginosus-in-shuklaphanta-wildlife-reserve-swr-nepal/"
+  }
+ ],
+ "doubts": "Yala: ik vond geen enkele betrouwbare waarneming van roestkat in Yala (park is 's nachts ook dicht), daarom weggelaten. Tadoba: alleen een oude waarneming (JBNHS 1999) en een vermelding door WWF-India (pagina niet te openen) – weggelaten. Gir en Kutch: WWF-India noemt Gir, maar een groep die 7 dagen met nachtsafari's in Kutch zocht (2023) zag geen roestkat – weggelaten. Score Sri Lanka (4): de meeste gerichte reizen slagen, maar soms alleen met korte waarnemingen, en 2025 mislukte bij hoog water; 4 lijkt eerlijk, 5 niet. Waarnemingen bij Sigiriya en Wilpattu worden in de verslagen vaak samen gedaan, dus één spot (bestaande id lk-sigiriya-wilpattu). Jawai (score 1) steunt alleen op journalistieke verhalen (RoundGlass, Outlook Traveller) plus de Rajasthan-compilatie; overweeg schrappen. Hybridisatie met huiskatten: catsg noemt het 'mogelijk in sommige gebieden' en meerdere tripverslagen waarschuwen voor hybriden in Sri Lanka, maar specifiek genetisch bewijs voor roestkat-hybriden heb ik niet gevonden – daarom voorzichtig geformuleerd. Wilpattu-centrum ligt westelijker (8,5/80,0); ik gebruik de bestaande coördinaat van lk-sigiriya-wilpattu. Pench-coördinaat is de Madhya Pradesh-kant (afgerond). Seizoen Sri Lanka ('februari–september droger') is een globale inschatting op basis van de reisdata in de verslagen, niet uit een officiële bron."
+}

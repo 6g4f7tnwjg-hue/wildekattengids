@@ -1,0 +1,285 @@
+{
+ "no": 10,
+ "intro_nl": "Het is twee uur 's nachts op een bosbouwweg in Sabah. Je lamp glijdt langs de stammen en blijft hangen op twee oranje ogen, hoog in een boom. Een kat met een staart zo lang als zijn lijf, vol donkere vlekken als marmer, kijkt rustig op je neer. Dat is de marmerkat, een van de minst geziene katten ter wereld. In Deramakot heb je met een week aan nachtritten een redelijke kans. Kans: 3 – met genoeg nachten maak je echt een kans.",
+ "intro_en": "It is two in the morning on a forestry road in Sabah. Your beam slides along the trunks and stops on two orange eyes, high up in a tree. A cat with a tail as long as its body, covered in dark blotches like marble, gazes calmly down at you. This is the marbled cat, one of the least-seen cats in the world. In Deramakot, a week of night drives gives you a fair chance. Chance: 3 – with enough nights you stand a real chance.",
+ "spots": [
+  {
+   "id": "my-deramakot",
+   "name_nl": "Deramakot",
+   "name_en": "Deramakot",
+   "area_nl": "Deramakot Forest Reserve, Sabah (Borneo)",
+   "area_en": "Deramakot Forest Reserve, Sabah (Borneo)",
+   "country_nl": "Maleisië",
+   "country_en": "Malaysia",
+   "cont": "asia",
+   "lat": 5.4,
+   "lon": 117.4,
+   "score": 3,
+   "why_nl": "Een bezoeker rekende uit dat er gemiddeld ongeveer één marmerkat per vijftien nachtritten wordt gezien, en de meeste tripverslagen van 4 tot 10 nachten melden er één of twee.",
+   "why_en": "One visitor calculated that on average about one marbled cat is seen per fifteen night drives, and most trip reports of 4 to 10 nights log one or two.",
+   "season_nl": "Het hele jaar; reken op dagelijkse, vaak hevige regenbuien.",
+   "season_en": "Year-round; expect daily, often torrential rain showers.",
+   "time_nl": "Nacht (vaak liggend in een boom, soms laat in de nacht); overdag ben je op de wegen ook niet kansloos.",
+   "time_en": "Night (often resting in a tree, sometimes late at night); daytime on the roads is not hopeless either.",
+   "trip_nl": "Nachtritten met schijnwerper over de bosbouwwegen (standaard zo'n 6 uur per nacht), 5 à 10 nachten.",
+   "trip_en": "Spotlighting night drives along the forestry roads (typically about 6 hours a night), 5–10 nights.",
+   "sources": [
+    3,
+    4,
+    5,
+    6,
+    7
+   ]
+  },
+  {
+   "id": "my-danum-valley",
+   "name_nl": "Danum Valley",
+   "name_en": "Danum Valley",
+   "area_nl": "Danum Valley Conservation Area, Sabah (Borneo)",
+   "area_en": "Danum Valley Conservation Area, Sabah (Borneo)",
+   "country_nl": "Maleisië",
+   "country_en": "Malaysia",
+   "cont": "asia",
+   "lat": 4.9,
+   "lon": 117.7,
+   "score": 2,
+   "why_nl": "Cameravallen meten hier de hoogste dichtheid van het hele verspreidingsgebied (bijna 20 per 100 km²), maar omdat nachtritten beperkt zijn, zien bezoekers hem maar af en toe, zoals in 2023 op de weg rond tien uur 's avonds.",
+   "why_en": "Camera traps measure the highest density anywhere in the range here (almost 20 per 100 km²), but because night drives are limited visitors only see one now and then, as in 2023 on the road around ten at night.",
+   "season_nl": "Het hele jaar; maart–oktober is meestal iets droger.",
+   "season_en": "Year-round; March–October is usually a bit drier.",
+   "time_nl": "Overdag (de soort is vooral overdag actief) en bij avondritten.",
+   "time_en": "Daytime (the species is mainly diurnal) and on evening drives.",
+   "trip_nl": "Boswandelingen overdag en avondritten met schijnwerper vanuit de accommodaties in het gebied, 2 à 3 nachten.",
+   "trip_en": "Daytime forest walks and spotlighting evening drives from the accommodation in the area, 2–3 nights.",
+   "sources": [
+    2,
+    7,
+    8
+   ]
+  },
+  {
+   "id": "in-eaglenest",
+   "name_nl": "Eaglenest",
+   "name_en": "Eaglenest",
+   "area_nl": "Eaglenest Wildlife Sanctuary, West Kameng (Arunachal Pradesh)",
+   "area_en": "Eaglenest Wildlife Sanctuary, West Kameng (Arunachal Pradesh)",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 27.1,
+   "lon": 92.4,
+   "score": 1,
+   "why_nl": "Marmerkatten zijn hier overdag op de weg onder het kamp Bompu gezien en in 2023 kort in de schemering, maar ervaren bezoekers noemen hem hier heel moeilijk.",
+   "why_en": "Marbled cats have been seen here by day on the road below Bompu camp and briefly at dusk in 2023, but experienced visitors call it very hard to find here.",
+   "season_nl": "Oktober–november of februari–maart; dicht in de moesson (mei–september).",
+   "season_en": "October–November or February–March; closed during the monsoon (May–September).",
+   "time_nl": "Overdag en in de schemering; af en toe 's nachts.",
+   "time_en": "Daytime and dusk; occasionally at night.",
+   "trip_nl": "Rustige ritten en wandelingen over de bosweg vanuit de tentenkampen in het reservaat met een lokale gids, 5 à 6 nachten; te combineren met de zoektocht naar de Aziatische goudkat.",
+   "trip_en": "Slow drives and walks along the forest track from the tented camps in the sanctuary with a local guide, 5–6 nights; combine with the search for Asian golden cat.",
+   "sources": [
+    9,
+    10
+   ]
+  },
+  {
+   "id": "th-kaeng-krachan",
+   "name_nl": "Kaeng Krachan",
+   "name_en": "Kaeng Krachan",
+   "area_nl": "Nationaal Park Kaeng Krachan, Phetchaburi",
+   "area_en": "Kaeng Krachan National Park, Phetchaburi",
+   "country_nl": "Thailand",
+   "country_en": "Thailand",
+   "cont": "asia",
+   "lat": 12.8,
+   "lon": 99.4,
+   "score": 1,
+   "why_nl": "In 2024 zagen parkwachters en een toerist hier een marmerkat op de parkweg, maar mammalwatchers schrijven dat hij er 'eens in de zoveel tijd' gezien wordt.",
+   "why_en": "In 2024 rangers and a tourist saw a marbled cat on the park road here, but mammal watchers write that it is seen 'every once in a very long while'.",
+   "season_nl": "Het hele jaar; de meeste bezoekers gaan in de drogere maanden (ongeveer november–april).",
+   "season_en": "Year-round; most visitors go in the drier months (roughly November–April).",
+   "time_nl": "Overdag; in Thaise cameravalstudies werden marmerkatten alleen tussen 6 en 18 uur gefotografeerd.",
+   "time_en": "Daytime; in Thai camera-trap studies marbled cats were only photographed between 6 am and 6 pm.",
+   "trip_nl": "Langzaam rijden en wandelen langs de parkweg naar de bergtop en bij de kampeerterreinen, 2 à 3 dagen.",
+   "trip_en": "Slow driving and walking along the park road up the mountain and around the campsites, 2–3 days.",
+   "sources": [
+    11,
+    12,
+    13
+   ]
+  },
+  {
+   "id": "id-way-kambas",
+   "name_nl": "Way Kambas",
+   "name_en": "Way Kambas",
+   "area_nl": "Nationaal Park Way Kambas, Lampung (Sumatra)",
+   "area_en": "Way Kambas National Park, Lampung (Sumatra)",
+   "country_nl": "Indonesië",
+   "country_en": "Indonesia",
+   "cont": "asia",
+   "lat": -4.9,
+   "lon": 105.8,
+   "score": 1,
+   "why_nl": "Een bezoeker zag hier in 2012 na lange nachten met de schijnwerper meerdere marmerkatten (de eerste pas in nacht acht), maar latere verslagen melden hoogstens een 'waarschijnlijke' en weinig dieren op de weg.",
+   "why_en": "One visitor saw several marbled cats here in 2012 after long spotlighting nights (the first only on night eight), but later reports mention at most a 'probable' and few animals on the road.",
+   "season_nl": "Droge tijd, ongeveer mei–oktober.",
+   "season_en": "Dry season, roughly May–October.",
+   "time_nl": "Nacht.",
+   "time_en": "Night.",
+   "trip_nl": "Nachtelijke ritten en wandelingen met schijnwerper over de parkweg met een lokale gids, minstens een week.",
+   "trip_en": "Night drives and walks with a spotlight along the park road with a local guide, at least a week.",
+   "sources": [
+    14,
+    15,
+    16
+   ]
+  },
+  {
+   "id": "my-tabin",
+   "name_nl": "Tabin",
+   "name_en": "Tabin",
+   "area_nl": "Tabin Wildlife Reserve, Lahad Datu (Sabah, Borneo)",
+   "area_en": "Tabin Wildlife Reserve, Lahad Datu (Sabah, Borneo)",
+   "country_nl": "Maleisië",
+   "country_en": "Malaysia",
+   "cont": "asia",
+   "lat": 5.2,
+   "lon": 118.5,
+   "score": 1,
+   "why_nl": "Cameravallen tonen hier een flinke dichtheid (ruim 10 per 100 km²), maar in tripverslagen van nachtritten vond ik geen waarnemingen.",
+   "why_en": "Camera traps show a fair density here (over 10 per 100 km²), but I found no sightings in trip reports from night drives.",
+   "season_nl": "Het hele jaar.",
+   "season_en": "Year-round.",
+   "time_nl": "Overdag en 's avonds.",
+   "time_en": "Daytime and evening.",
+   "trip_nl": "Nachtritten met schijnwerper door het reservaat, vaak gecombineerd met Deramakot, 2 à 3 nachten.",
+   "trip_en": "Spotlighting night drives through the reserve, often combined with Deramakot, 2–3 nights.",
+   "sources": [
+    2,
+    6
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Kijk omhoog. Marmerkatten worden vaak gevonden liggend op een tak, soms 20 tot 45 meter hoog; zoek met je lamp naar oranje oogreflectie in de kruinen.",
+  "Een kat die rustig in een boom ligt, blijft vaak lang zitten, zeker na een regenbui. Krijg je een melding van een andere groep, ga dan meteen kijken.",
+  "Zoek ook overdag: cameravallen fotograferen de soort vooral bij daglicht, en in Danum en Eaglenest zijn ze overdag of in de schemering gezien.",
+  "Let op de lange, dikbehaarde staart (ongeveer zo lang als het lijf) en de wolkachtige vlekken: zo onderscheid je hem van de bengaalkat en de veel grotere nevelpanter.",
+  "Gebruik een smalle, sterke lamp en, als het kan, een warmtebeeldkijker; in 2024 volgde een groep een marmerkat met warmtebeeld toen hij het struikgewas in klom.",
+  "Plan veel nachten: met ongeveer één waarneming per vijftien ritten in Deramakot is een week het minimum."
+ ],
+ "tips_en": [
+  "Look up. Marbled cats are often found resting on a branch, sometimes 20 to 45 metres up; scan the canopy with your torch for orange eyeshine.",
+  "A cat resting in a tree often stays put for a long time, especially after rain. If another group reports one, go straight away.",
+  "Search by day too: camera traps record the species mainly in daylight, and in Danum and Eaglenest they have been seen by day or at dusk.",
+  "Look for the long, bushy tail (about as long as the body) and the cloud-like blotches: that separates it from the leopard cat and the much larger clouded leopard.",
+  "Use a narrow, strong torch and, if possible, a thermal scope; in 2024 a group followed a marbled cat with thermals as it climbed down into the undergrowth.",
+  "Plan many nights: with roughly one sighting per fifteen drives in Deramakot, a week is the minimum."
+ ],
+ "threats_nl": [
+  "Ontbossing, houtkap en omzetting van bos in oliepalmplantages; de marmerkat is afhankelijk van groot, aaneengesloten bos.",
+  "Strikken en jacht voor vacht, vlees en botten, vaak als bijvangst van jacht op ander wild.",
+  "Versnippering en bosranden, waardoor de kat zijn activiteit moet aanpassen om mensen te ontwijken.",
+  "Af en toe gedood na het pakken van kippen bij dorpen."
+ ],
+ "threats_en": [
+  "Deforestation, logging and conversion of forest to oil palm plantations; the marbled cat depends on large, continuous forest.",
+  "Snaring and hunting for pelt, meat and bones, often as bycatch of hunting for other game.",
+  "Fragmentation and forest edges, which force the cat to shift its activity to avoid people.",
+  "Occasional killing after taking poultry near villages."
+ ],
+ "status_note_nl": "De marmerkat staat sinds 2015 als Gevoelig (Near Threatened) op de Rode Lijst van de IUCN; de trend is onbekend. Onderzoekers vinden dat de soort eigenlijk als Kwetsbaar te boek zou moeten staan, omdat hij slecht tegen bosverlies en oliepalm kan.",
+ "status_note_en": "The marbled cat has been listed as Near Threatened on the IUCN Red List since 2015; the population trend is unknown. Researchers argue it should really be listed as Vulnerable, because it copes poorly with forest loss and oil palm.",
+ "sources": [
+  {
+   "id": 1,
+   "title": "Forest loss may push tree-dependent marbled cats into threatened category (Mongabay, 2023)",
+   "url": "https://news.mongabay.com/2023/02/forest-loss-may-push-tree-dependent-marbled-cats-into-threatened-category/"
+  },
+  {
+   "id": 2,
+   "title": "Marbled cat – species account (IUCN SSC Cat Specialist Group)",
+   "url": "https://www.catsg.org/living-species-marbledcat"
+  },
+  {
+   "id": 3,
+   "title": "Deramakot revisited, October 2017 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2017/11/SM-DERAMAKOT-REVISITED-2017.pdf"
+  },
+  {
+   "id": 4,
+   "title": "Sabah, Borneo, October 2022 – return to Deramakot (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/CoxChapmanBorneo-trip-report-Oct-2022.pdf"
+  },
+  {
+   "id": 5,
+   "title": "Borneo, June 2024 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/07/Borneo-June-2024.pdf"
+  },
+  {
+   "id": 6,
+   "title": "Sabah trip report 2017 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2016/08/Sabah-trip-report-2017.pdf"
+  },
+  {
+   "id": 7,
+   "title": "Borneo, June 2023 trip report (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2023/07/Borneo-2023-Trip-Report.pdf"
+  },
+  {
+   "id": 8,
+   "title": "Hendry et al. – Marbled cats in Southeast Asia: are diurnal and semi-arboreal felids at greater risk from human disturbances? (Ecosphere, 2023; data on Dryad)",
+   "url": "https://datadryad.org/dataset/doi:10.5061/dryad.dz08kps09"
+  },
+  {
+   "id": 9,
+   "title": "Asian golden cat in Northeast India, March 2022 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/Asian-golden-cat-in-Northeast-India-March-2022.pdf"
+  },
+  {
+   "id": 10,
+   "title": "North-East India, March–April 2023 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2023/04/Report_India_2023-1.pdf"
+  },
+  {
+   "id": 11,
+   "title": "Marbled cat spotted in Kaeng Krachan National Park (Pattaya Mail, 2024)",
+   "url": "https://www.pattayamail.com/thailandnews/marbled-cat-spotted-in-kaeng-krachan-national-park-in-phetchaburi-a-critical-area-for-conservation-474085"
+  },
+  {
+   "id": 12,
+   "title": "Kaeng Krachan National Park, Thailand, January 2025 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/?p=69959"
+  },
+  {
+   "id": 13,
+   "title": "Lynam et al. – Terrestrial activity patterns of wild cats from camera-trapping (Raffles Bulletin of Zoology, 2013)",
+   "url": "https://fishingcat.org/wp-content/uploads/2020/10/lynam-et-al-2013.pdf"
+  },
+  {
+   "id": 14,
+   "title": "Notes about mammal watching at Deramakot, Way Kambas and Gunung Leuser (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/?p=5511"
+  },
+  {
+   "id": 15,
+   "title": "New trip report – Way Kambas, Sumatra (mammalwatching.com, 2012)",
+   "url": "https://www.mammalwatching.com/2012/06/07/new-trip-report-way-kambas-sumatra/"
+  },
+  {
+   "id": 16,
+   "title": "Way Kambas and Tangkoko, 2018 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2018/09/AJ-Way-Kambas-Tangkoko-2018.pdf"
+  },
+  {
+   "id": 17,
+   "title": "Communities rally to conserve marbled cat (Mongabay India, 2026)",
+   "url": "https://india.mongabay.com/2026/06/communities-rally-to-conserve-marbled-cat/"
+  },
+  {
+   "id": 18,
+   "title": "Haidir et al. – Population dynamics of threatened felids in response to forest cover change in Sumatra (PLoS ONE, 2020)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7423073"
+  }
+ ]
+}

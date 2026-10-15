@@ -1,0 +1,304 @@
+{
+ "no": 8,
+ "intro_nl": "Het is midden op de dag in de bergbossen van Arunachal Pradesh. De auto kruipt over de smalle bosweg, mist hangt tussen de eiken. Dan stapt er een roodbruine kat uit de struiken, een meter voor je neus, en is twee tellen later weer weg. Zo gaat het met de Aziatische goudkat: je kunt er twaalf nachten voor zoeken en niets zien, of hem in één keer treffen. Kans: 2 – een kleine kans, en dan alleen voor wie geduld meebrengt.",
+ "intro_en": "It is the middle of the day in the mountain forests of Arunachal Pradesh. The car crawls along the narrow forest track, mist hanging between the oaks. Then a red-brown cat steps out of the undergrowth, a metre in front of you, and two seconds later it is gone. That is how it goes with the Asian golden cat: you can search for twelve nights and see nothing, or bump into one at the first try. Chance: 2 – a small chance, and only for those who bring patience.",
+ "spots": [
+  {
+   "id": "in-eaglenest",
+   "name_nl": "Eaglenest",
+   "name_en": "Eaglenest",
+   "area_nl": "Eaglenest Wildlife Sanctuary, West Kameng (Arunachal Pradesh)",
+   "area_en": "Eaglenest Wildlife Sanctuary, West Kameng (Arunachal Pradesh)",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 27.1,
+   "lon": 92.4,
+   "score": 2,
+   "why_nl": "Volgens mammalwatchers is dit vrijwel de enige plek waar goudkatten met enige regelmaat gezien worden, maar zelfs toegewijde bezoekers missen hem vaak: één reiziger zag in twaalf nachten geen enkele kat, terwijl een andere groep er in dezelfde periode twee tegelijk zag.",
+   "why_en": "Mammal watchers call this almost the only place where golden cats are seen with any regularity, yet even dedicated visitors often miss it: one traveller saw no cat in twelve nights while another group saw two together during the same stay.",
+   "season_nl": "Oktober–november of februari–maart; het reservaat is in de moesson (mei–september) dicht en in december–januari kan er veel sneeuw liggen.",
+   "season_en": "October–November or February–March; the sanctuary closes during the monsoon (May–September) and December–January can bring heavy snow.",
+   "time_nl": "Vroege ochtend, late middag en schemering; goudkatten zijn hier ook midden op de dag gezien.",
+   "time_en": "Early morning, late afternoon and dusk; golden cats have also been seen here in the middle of the day.",
+   "trip_nl": "Rustige ritten en wandelingen over de bosweg (zonder doorgaand verkeer) vanuit de eenvoudige tentenkampen in het reservaat, met een lokale gids; reken op minstens 5 à 6 nachten en vraag tijdig een vergunning voor Arunachal Pradesh aan.",
+   "trip_en": "Slow drives and walks along the forest track (no through traffic) from the basic tented camps inside the sanctuary, with a local guide; allow at least 5–6 nights and apply early for the Arunachal Pradesh permit.",
+   "sources": [
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "id": "id-kerinci",
+   "name_nl": "Gunung Kerinci",
+   "name_en": "Mount Kerinci",
+   "area_nl": "Hellingen van de Kerinci-vulkaan, Nationaal Park Kerinci Seblat (Jambi, Sumatra)",
+   "area_en": "Slopes of Mount Kerinci, Kerinci Seblat National Park (Jambi, Sumatra)",
+   "country_nl": "Indonesië",
+   "country_en": "Indonesia",
+   "cont": "asia",
+   "lat": -1.7,
+   "lon": 101.3,
+   "score": 1,
+   "why_nl": "Rond 2015 meldden vogelaars goudkatten langs het hoofdpad omhoog, maar ook toen bleven veel groepen zonder; recente meldingen heb ik niet gevonden, terwijl cameravallen laten zien dat de soort in het park stabiel aanwezig is.",
+   "why_en": "Around 2015 birders reported golden cats along the main summit trail, but even then many groups saw none; I found no recent reports, although camera traps show the species is still present in stable numbers in the park.",
+   "season_nl": "Het hele jaar; de drogere maanden (ongeveer juni–september) maken het pad beter begaanbaar.",
+   "season_en": "Year-round; the drier months (roughly June–September) make the trail easier going.",
+   "time_nl": "Middag en vroege avond; er zijn ook waarnemingen overdag.",
+   "time_en": "Afternoon and early evening; there are also daytime sightings.",
+   "trip_nl": "Vogel- en zoogdierwandelingen met een lokale gids over het hoofdpad van de Kerinci, 3 à 4 dagen; let ook op sporen in de modder.",
+   "trip_en": "Birding and mammal walks with a local guide along the main Kerinci trail, 3–4 days; also check the mud for tracks.",
+   "sources": [
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "th-khao-yai",
+   "name_nl": "Khao Yai",
+   "name_en": "Khao Yai",
+   "area_nl": "Nationaal Park Khao Yai, Nakhon Ratchasima",
+   "area_en": "Khao Yai National Park, Nakhon Ratchasima",
+   "country_nl": "Thailand",
+   "country_en": "Thailand",
+   "cont": "asia",
+   "lat": 14.4,
+   "lon": 101.4,
+   "score": 1,
+   "why_nl": "In een landelijk cameravalonderzoek leverde Khao Yai meer goudkatfoto's op dan de meeste Thaise parken, en begin 2026 legde een cameraval er opnieuw een vast, maar in recente tripverslagen van mammalwatchers komt hij niet voor.",
+   "why_en": "In a nationwide camera-trap study Khao Yai produced more golden cat photos than most Thai parks, and in early 2026 a camera trap caught one again, but the cat does not appear in recent mammal watchers' trip reports.",
+   "season_nl": "Het hele jaar; november–april is droger.",
+   "season_en": "Year-round; November–April is drier.",
+   "time_nl": "Na zonsopkomst en halverwege de middag (de activiteitspieken uit cameravalonderzoek), plus avondritten.",
+   "time_en": "After sunrise and mid-afternoon (the activity peaks found by camera traps), plus evening drives.",
+   "trip_nl": "Zelf rijden of ritten met een lokale gids over de parkwegen, gecombineerd met een avondrit met schijnwerper, 2 à 3 dagen.",
+   "trip_en": "Self-drive or drives with a local guide along the park roads, combined with a spotlighting evening drive, 2–3 days.",
+   "sources": [
+    10,
+    11
+   ]
+  },
+  {
+   "id": "la-nam-et-phou-louey",
+   "name_nl": "Nam Et-Phou Louey",
+   "name_en": "Nam Et-Phou Louey",
+   "area_nl": "Nationaal Park Nam Et-Phou Louey (Houaphan / Luang Prabang / Xieng Khouang)",
+   "area_en": "Nam Et-Phou Louey National Park (Houaphan / Luang Prabang / Xieng Khouang)",
+   "country_nl": "Laos",
+   "country_en": "Laos",
+   "cont": "asia",
+   "lat": 20.2,
+   "lon": 103.3,
+   "score": 1,
+   "why_nl": "Cameravallen vonden de goudkat hier op een groot deel van de plekken, en het park noemt hem bij de dieren die 'sommige gelukkige' deelnemers aan de nachtelijke boottocht zagen; meestal zie je civetkatten en sambars.",
+   "why_en": "Camera traps found the golden cat at a large share of sites here, and the park lists it among animals that 'some lucky' guests on the night boat trip have seen; most see civets and sambar.",
+   "season_nl": "Het hele jaar; in de droge tijd (november–april) is de rivier rustiger.",
+   "season_en": "Year-round; in the dry season (November–April) the river is calmer.",
+   "time_nl": "Nacht, vanaf de schemering.",
+   "time_en": "Night, from dusk.",
+   "trip_nl": "De nachtelijke boottocht met schijnwerper op de Nam Nern die het park samen met de dorpen organiseert, met een overnachting in het bos.",
+   "trip_en": "The spotlighting night boat trip on the Nam Nern river that the park runs with local villages, with an overnight stay in the forest.",
+   "sources": [
+    12,
+    13
+   ]
+  },
+  {
+   "id": "cn-tangjiahe",
+   "name_nl": "Tangjiahe",
+   "name_en": "Tangjiahe",
+   "area_nl": "Natuurreservaat Tangjiahe, Qingchuan (Sichuan)",
+   "area_en": "Tangjiahe National Nature Reserve, Qingchuan (Sichuan)",
+   "country_nl": "China",
+   "country_en": "China",
+   "cont": "asia",
+   "lat": 32.6,
+   "lon": 104.8,
+   "score": 1,
+   "why_nl": "In februari 2025 zagen bezoekers hier drie nachten achter elkaar een gevlekte goudkat langs de hoofdweg, maar dat was opvallend genoeg om groot nieuws te zijn onder mammalwatchers.",
+   "why_en": "In February 2025 visitors saw a spotted golden cat along the main road on three consecutive nights, but that was unusual enough to be big news among mammal watchers.",
+   "season_nl": "Het hele jaar; de waarnemingen van 2025 waren midden in de winter (februari).",
+   "season_en": "Year-round; the 2025 sightings were in midwinter (February).",
+   "time_nl": "Nacht en schemering.",
+   "time_en": "Night and dusk.",
+   "trip_nl": "Avond- en nachtritten met schijnwerper over de reservaatsweg vanuit het hoofdkwartier, 3 à 4 nachten; let op dat een gevlekte goudkat lijkt op een bengaalkat.",
+   "trip_en": "Evening and night spotlighting drives along the reserve road from the headquarters area, 3–4 nights; note that a spotted golden cat resembles a leopard cat.",
+   "sources": [
+    14,
+    15
+   ]
+  },
+  {
+   "id": "my-taman-negara",
+   "name_nl": "Taman Negara",
+   "name_en": "Taman Negara",
+   "area_nl": "Nationaal Park Taman Negara (Pahang, Kelantan, Terengganu)",
+   "area_en": "Taman Negara National Park (Pahang, Kelantan, Terengganu)",
+   "country_nl": "Maleisië",
+   "country_en": "Malaysia",
+   "cont": "asia",
+   "lat": 4.6,
+   "lon": 102.4,
+   "score": 1,
+   "why_nl": "De goudkat is hier herhaaldelijk op cameravallen vastgelegd en ook in het bos ernaast, maar waarnemingen door bezoekers zijn nauwelijks gedocumenteerd.",
+   "why_en": "The golden cat has repeatedly been recorded on camera traps here and in the adjoining forest, but sightings by visitors are barely documented.",
+   "season_nl": "Februari–september; in de noordoostmoesson (november–januari) is het nat en zijn delen van het park slecht bereikbaar.",
+   "season_en": "February–September; during the northeast monsoon (November–January) it is wet and parts of the park are hard to reach.",
+   "time_nl": "Overdag en in de schemering.",
+   "time_en": "Daytime and dusk.",
+   "trip_nl": "Bosbanen en schuilhutten vanuit Kuala Tahan, eventueel met een nachtwandeling onder begeleiding van een ranger of gids, 3 à 4 dagen.",
+   "trip_en": "Forest trails and hides from Kuala Tahan, optionally with a night walk led by a ranger or guide, 3–4 days.",
+   "sources": [
+    16,
+    10
+   ]
+  },
+  {
+   "id": "bt-jigme-singye-wangchuck",
+   "name_nl": "Jigme Singye Wangchuck",
+   "name_en": "Jigme Singye Wangchuck",
+   "area_nl": "Nationaal Park Jigme Singye Wangchuck, centraal Bhutan",
+   "area_en": "Jigme Singye Wangchuck National Park, central Bhutan",
+   "country_nl": "Bhutan",
+   "country_en": "Bhutan",
+   "cont": "asia",
+   "lat": 27.2,
+   "lon": 90.4,
+   "score": 1,
+   "why_nl": "Cameravallen legden hier in 2020 alle zes kleurvormen van de goudkat vast, maar van gerichte waarnemingen door bezoekers zijn geen verslagen bekend.",
+   "why_en": "Camera traps recorded all six colour morphs of the golden cat here in 2020, but there are no known reports of visitors finding one on purpose.",
+   "season_nl": "Oktober–november en maart–mei (droog en helder).",
+   "season_en": "October–November and March–May (dry and clear).",
+   "time_nl": "Overdag en in de schemering.",
+   "time_en": "Daytime and dusk.",
+   "trip_nl": "Natuurreis door centraal Bhutan met verplichte lokale gids, met wandelingen en ritten door het park; zie een goudkat als een onverwachte bonus.",
+   "trip_en": "Nature trip through central Bhutan with the mandatory local guide, with walks and drives in the park; treat a golden cat as an unexpected bonus.",
+   "sources": [
+    17,
+    2
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Rij langzaam over rustige boswegen zonder doorgaand verkeer en scan ver vooruit: goudkatten worden meestal gezien als ze de weg oversteken.",
+  "Zoek niet alleen 's nachts. Cameravallen laten pieken zien na zonsopkomst en halverwege de middag, en in Eaglenest zijn ze rond het middaguur gezien.",
+  "Ken de kleurvormen: naast goudrood bestaan grijze, kaneelbruine, zwarte en gevlekte goudkatten. Een gevlekt dier in je lamp kan dus ook een goudkat zijn, en geen bengaalkat.",
+  "Let op sporen en modderplekken langs paden: op de Kerinci zijn verse sporen gevonden waar de kat jaagt op fazanten en patrijzen.",
+  "Plan veel tijd. Zelfs op de beste plek missen ervaren zoekers hem na een week of meer; reken op minimaal 5 à 6 volle dagen.",
+  "Gebruik in het donker een smalle, sterke lamp en eventueel een warmtebeeldkijker, en schijn niet langer dan nodig in de ogen van het dier."
+ ],
+ "tips_en": [
+  "Drive slowly along quiet forest roads without through traffic and scan far ahead: golden cats are usually seen crossing the road.",
+  "Don't only search at night. Camera traps show activity peaks after sunrise and in mid-afternoon, and in Eaglenest they have been seen around midday.",
+  "Know the colour morphs: besides golden-red there are grey, cinnamon, black and spotted golden cats. A spotted animal in your beam may be a golden cat rather than a leopard cat.",
+  "Check tracks and muddy patches along trails: on Kerinci fresh tracks were found where the cat hunts pheasants and partridges.",
+  "Plan plenty of time. Even at the best site experienced searchers miss it after a week or more; allow at least 5–6 full days.",
+  "At night use a narrow, strong torch and ideally a thermal scope, and do not keep the beam in the animal's eyes longer than needed."
+ ],
+ "threats_nl": [
+  "Ontbossing en versnippering door landbouw, houtkap, mijnbouw en wegen; de kat mijdt kleine bosstukken en bosranden.",
+  "Strikken en jacht: in Zuidoost-Azië liggen miljoenen strikken in beschermde gebieden.",
+  "Handel in vachten, botten en vlees (voor traditionele geneesmiddelen en als delicatesse).",
+  "Wraakacties na het doden van pluimvee of geiten, soms met vergif.",
+  "Verdwijnen van prooidieren door overbejaging."
+ ],
+ "threats_en": [
+  "Deforestation and fragmentation from agriculture, logging, mining and roads; the cat avoids small forest patches and edges.",
+  "Snaring and hunting: millions of snares lie in protected areas in Southeast Asia.",
+  "Trade in pelts, bones and meat (for traditional medicine and as a delicacy).",
+  "Retaliatory killing after attacks on poultry or goats, sometimes with poison.",
+  "Loss of prey through overhunting."
+ ],
+ "status_note_nl": "Sinds de IUCN-beoordeling van 2023 staat de Aziatische goudkat als Kwetsbaar (Vulnerable) op de Rode Lijst, met een dalende trend; er zijn ruwweg 7.000 volwassen dieren (marge 1.000–12.000). Hij is waarschijnlijk uitgestorven in Vietnam en Singapore, en in China kromp het leefgebied fors.",
+ "status_note_en": "Since the 2023 IUCN assessment the Asian golden cat has been listed as Vulnerable, with a declining trend; there are roughly 7,000 mature animals (range 1,000–12,000). It is probably extinct in Vietnam and Singapore, and its range in China has shrunk sharply.",
+ "sources": [
+  {
+   "id": 1,
+   "title": "Asian golden cat range expands but declines continue amid rising threats (Mongabay, 2025)",
+   "url": "https://news.mongabay.com/2025/11/asian-golden-cat-range-expands-but-declines-continue-amid-rising-threats/"
+  },
+  {
+   "id": 2,
+   "title": "Asian golden cat – species account (IUCN SSC Cat Specialist Group)",
+   "url": "https://www.catsg.org/living-species-asiangoldencat"
+  },
+  {
+   "id": 3,
+   "title": "Asian golden cat in Northeast India, March 2022 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/Asian-golden-cat-in-Northeast-India-March-2022.pdf"
+  },
+  {
+   "id": 4,
+   "title": "India trip report, incl. 6 nights Eaglenest for golden cat (mammalwatching.com, 2023)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2023/04/India2.pdf"
+  },
+  {
+   "id": 5,
+   "title": "Eaglesnest, India, May 2023 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2023/06/Eaglesnest-India-May-2023-1.pdf"
+  },
+  {
+   "id": 6,
+   "title": "North-East India, March–April 2023 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2023/04/Report_India_2023-1.pdf"
+  },
+  {
+   "id": 7,
+   "title": "Sumatra – notes on golden cats on Kerinci (mammalwatching.com, 2015)",
+   "url": "https://www.mammalwatching.com/?p=4903"
+  },
+  {
+   "id": 8,
+   "title": "Notes about mammal watching at Deramakot, Way Kambas and Gunung Leuser (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/?p=5511"
+  },
+  {
+   "id": 9,
+   "title": "Haidir et al. – Population dynamics of threatened felids in response to forest cover change in Sumatra (PLoS ONE, 2020)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7423073"
+  },
+  {
+   "id": 10,
+   "title": "Lynam et al. – Terrestrial activity patterns of wild cats from camera-trapping (Raffles Bulletin of Zoology, 2013)",
+   "url": "https://fishingcat.org/wp-content/uploads/2020/10/lynam-et-al-2013.pdf"
+  },
+  {
+   "id": 11,
+   "title": "Rare Asiatic golden cat spotted in Khao Yai National Park (The Thaiger, 2026)",
+   "url": "https://thethaiger.com/news/national/asiatic-golden-cat-khao-yai-sighting"
+  },
+  {
+   "id": 12,
+   "title": "The Nam Nern Night Safari (Nam Et-Phou Louey National Park)",
+   "url": "https://www.namet.org/wp/namnern/itinerary/"
+  },
+  {
+   "id": 13,
+   "title": "Camera-trap study of carnivores in Nam Et-Phou Louey (WCS Library)",
+   "url": "https://library.wcs.org/en-us/doi/ctl/view/mid/33065/pubid/PUB14038.aspx"
+  },
+  {
+   "id": 14,
+   "title": "Asian Golden Cat seen on three consecutive nights in Tangjiahe (mammalwatching.com, 2025)",
+   "url": "https://www.mammalwatching.com/community-post/asian-golden-cat-seen-on-three-consecutive-nights-in-tangjiahe/"
+  },
+  {
+   "id": 15,
+   "title": "Duan et al. – Distribution of the Asiatic golden cat and variations in its coat morphology in China (Ecology and Evolution, 2024)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10847886/"
+  },
+  {
+   "id": 16,
+   "title": "Ab Razak et al. – Camera trap record of Asiatic golden cat in Merapoh, Pahang (Journal of Threatened Taxa, 2021)",
+   "url": "https://threatenedtaxa.org/index.php/JoTT/article/view/6492"
+  },
+  {
+   "id": 17,
+   "title": "A small cat spectrum: Asian golden cats exhibit six distinct colors (Panthera, 2024)",
+   "url": "https://panthera.org/blog-post/small-cat-spectrum-asian-golden-cats-exhibit-six-distinct-colors"
+  }
+ ]
+}

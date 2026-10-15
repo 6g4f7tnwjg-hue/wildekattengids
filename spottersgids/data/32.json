@@ -1,0 +1,343 @@
+{
+ "no": 32,
+ "intro_nl": "De jeep hobbelt over de bosweg van Tabin, aan de ene kant regenwoud, aan de andere kant rijen oliepalmen. Het kikkerconcert is oorverdovend na de middagregen. Dan staat er een kat in de berm, gevlekt als een miniatuurluipaard, met een muis in zijn bek. Even later nog een, en nog een. Op Borneo is de Sundaluipaardkat de kat die je wél ziet: één groep telde er negen in één nacht. Kans: 5 – op een paar nachtritten in Sabah ga je vrijwel zeker raak.",
+ "intro_en": "The jeep bumps along the forest road at Tabin, rainforest on one side, rows of oil palms on the other. After the afternoon rain the frog chorus is deafening. Then a cat stands on the verge, spotted like a miniature leopard, a mouse in its jaws. A little later another, and another. On Borneo the Sunda leopard cat is the cat you actually do see: one group counted nine in a single night. Chance: 5 – a few night drives in Sabah will almost certainly get you one.",
+ "spots": [
+  {
+   "id": "my-tabin",
+   "name_nl": "Tabin",
+   "name_en": "Tabin",
+   "area_nl": "Tabin Wildlife Reserve en omliggende oliepalmplantages, Lahad Datu (Sabah, Borneo)",
+   "area_en": "Tabin Wildlife Reserve and surrounding oil palm estates, Lahad Datu (Sabah, Borneo)",
+   "country_nl": "Maleisië",
+   "country_en": "Malaysia",
+   "cont": "asia",
+   "lat": 5.2,
+   "lon": 118.6,
+   "score": 5,
+   "why_nl": "Een groep zag er in 2024 negen en acht op twee nachtritten, en een ander verslag uit 2024 telde er zeven op één rit.",
+   "why_en": "In 2024 one group saw nine and eight on two night drives, and another 2024 report counted seven on a single drive.",
+   "season_nl": "Het hele jaar; maart t/m oktober is meestal droger.",
+   "season_en": "Year-round; March to October is usually drier.",
+   "time_nl": "Nacht, vanaf de schemering tot middernacht; vaak aan de plantagekant van de weg.",
+   "time_en": "Night, from dusk until midnight; often on the plantation side of the road.",
+   "trip_nl": "Nachtritten met schijnwerper vanuit de lodge in het reservaat, 2 à 3 nachten.",
+   "trip_en": "Spotlighting night drives from the lodge in the reserve, 2–3 nights.",
+   "sources": [
+    3,
+    4
+   ]
+  },
+  {
+   "id": "my-deramakot",
+   "name_nl": "Deramakot",
+   "name_en": "Deramakot",
+   "area_nl": "Deramakot Forest Reserve, Sabah (Borneo)",
+   "area_en": "Deramakot Forest Reserve, Sabah (Borneo)",
+   "country_nl": "Maleisië",
+   "country_en": "Malaysia",
+   "cont": "asia",
+   "lat": 5.4,
+   "lon": 117.4,
+   "score": 5,
+   "why_nl": "Op de nachtritten is de Sundaluipaardkat vaste prik: elk tripverslag meldt er minstens enkele, en in 2017 werd hij 'bijna elke nacht' gezien.",
+   "why_en": "On night drives the Sunda leopard cat is a fixture: every trip report logs at least a few, and in 2017 it was seen 'almost nightly'.",
+   "season_nl": "Het hele jaar; maart t/m oktober is meestal droger.",
+   "season_en": "Year-round; March to October is usually drier.",
+   "time_nl": "Nacht, vanaf de schemering tot diep in de nacht.",
+   "time_en": "Night, from dusk until late.",
+   "trip_nl": "Nachtritten met schijnwerper over de bosbouwwegen, 4 à 5 nachten.",
+   "trip_en": "Spotlighting night drives along the forestry roads, 4–5 nights.",
+   "sources": [
+    3,
+    4,
+    5
+   ]
+  },
+  {
+   "id": "my-kinabatangan",
+   "name_nl": "Kinabatangan",
+   "name_en": "Kinabatangan",
+   "area_nl": "Lower Kinabatangan Wildlife Sanctuary, rond Sukau (Sabah, Borneo)",
+   "area_en": "Lower Kinabatangan Wildlife Sanctuary, around Sukau (Sabah, Borneo)",
+   "country_nl": "Maleisië",
+   "country_en": "Malaysia",
+   "cont": "asia",
+   "lat": 5.5,
+   "lon": 118.3,
+   "score": 4,
+   "why_nl": "In juni 2024 leverde vrijwel elke nachtelijke boottocht één Sundaluipaardkat op de oever op.",
+   "why_en": "In June 2024 almost every night boat trip produced one Sunda leopard cat on the riverbank.",
+   "season_nl": "Het hele jaar; bij lage waterstand (vaak april–oktober) is de oever beter te zien.",
+   "season_en": "Year-round; at lower water levels (often April–October) the banks are easier to scan.",
+   "time_nl": "Nacht; boottochten van 20.00 uur tot na middernacht.",
+   "time_en": "Night; boat trips from 8 pm until after midnight.",
+   "trip_nl": "Nachtelijke boottochten met schijnwerper over de rivier en de zijrivieren vanuit Sukau, 3 nachten.",
+   "trip_en": "Night boat trips with a spotlight on the main river and side channels from Sukau, 3 nights.",
+   "sources": [
+    4
+   ]
+  },
+  {
+   "id": "id-way-kambas",
+   "name_nl": "Way Kambas",
+   "name_en": "Way Kambas",
+   "area_nl": "Nationaal park Way Kambas (Lampung, Sumatra)",
+   "area_en": "Way Kambas National Park (Lampung, Sumatra)",
+   "country_nl": "Indonesië",
+   "country_en": "Indonesia",
+   "cont": "asia",
+   "lat": -4.9,
+   "lon": 105.8,
+   "score": 4,
+   "why_nl": "Een bezoeker zag er in november 2024 zeven in vier dagen en noemt hem 'vrij algemeen, maar wisselvallig'; ook in 2012, 2013 en 2018 werd hij gezien.",
+   "why_en": "One visitor saw seven in four days in November 2024 and calls it 'fairly common, though hit-or-miss'; it was also seen in 2012, 2013 and 2018.",
+   "season_nl": "Het hele jaar; de droge tijd (ongeveer juni–oktober) is het prettigst.",
+   "season_en": "Year-round; the dry season (roughly June–October) is most comfortable.",
+   "time_nl": "Vroege ochtend, schemering en nacht, vooral langs de jeeptracks.",
+   "time_en": "Early morning, dusk and night, especially along the jeep tracks.",
+   "trip_nl": "Spotlighten vanuit een 4x4 en te voet over de jeeptracks met een lokale gids, vanuit een lodge net buiten het park, 3 à 4 dagen.",
+   "trip_en": "Spotlighting from a 4x4 and on foot along the jeep tracks with a local guide, staying just outside the park, 3–4 days.",
+   "sources": [
+    6,
+    7,
+    8
+   ]
+  },
+  {
+   "id": "my-danum-valley",
+   "name_nl": "Danum Valley",
+   "name_en": "Danum Valley",
+   "area_nl": "Danum Valley Conservation Area en omliggend herstelbos, Lahad Datu (Sabah, Borneo)",
+   "area_en": "Danum Valley Conservation Area and surrounding restored forest, Lahad Datu (Sabah, Borneo)",
+   "country_nl": "Maleisië",
+   "country_en": "Malaysia",
+   "cont": "asia",
+   "lat": 4.9,
+   "lon": 117.7,
+   "score": 3,
+   "why_nl": "In juni 2024 leverde één van drie nachtritten twee Sundaluipaardkatten op; in het dichte bos zie je hem minder vaak dan aan plantageranden.",
+   "why_en": "In June 2024 one of three night drives produced two Sunda leopard cats; in dense forest you see it less often than along plantation edges.",
+   "season_nl": "Het hele jaar.",
+   "season_en": "Year-round.",
+   "time_nl": "Nacht, van 20.00 uur tot na middernacht.",
+   "time_en": "Night, from 8 pm until after midnight.",
+   "trip_nl": "Nachtritten vanuit de onderkomens in het gebied, 2 à 3 nachten; goed te combineren met Tabin.",
+   "trip_en": "Night drives from accommodation in the area, 2–3 nights; easy to combine with Tabin.",
+   "sources": [
+    4
+   ]
+  },
+  {
+   "id": "id-baluran",
+   "name_nl": "Baluran",
+   "name_en": "Baluran",
+   "area_nl": "Nationaal park Baluran (Oost-Java)",
+   "area_en": "Baluran National Park (East Java)",
+   "country_nl": "Indonesië",
+   "country_en": "Indonesia",
+   "cont": "asia",
+   "lat": -7.8,
+   "lon": 114.4,
+   "score": 3,
+   "why_nl": "Een bezoeker zag er drie tijdens een nachtwandeling van twee uur, een ander zag 'een paar', en een groep in 2024 zag er een bij het verlaten van het park in het donker.",
+   "why_en": "One visitor saw three on a two-hour night walk, another saw 'a few', and a group in 2024 saw one while leaving the park after dark.",
+   "season_nl": "Droge tijd, ongeveer mei–oktober.",
+   "season_en": "Dry season, roughly May–October.",
+   "time_nl": "Schemering en nacht.",
+   "time_en": "Dusk and night.",
+   "trip_nl": "Nachtwandelingen of -ritten met een parkgids (vraag toestemming om na donker te blijven), 1 à 2 nachten; te combineren met Alas Purwo.",
+   "trip_en": "Night walks or drives with a park guide (ask permission to stay after dark), 1–2 nights; combine with Alas Purwo.",
+   "sources": [
+    9,
+    10
+   ]
+  },
+  {
+   "id": "id-gunung-leuser",
+   "name_nl": "Gunung Leuser",
+   "name_en": "Gunung Leuser",
+   "area_nl": "Nationaal park Gunung Leuser en omliggende bossen en plantages (Noord-Sumatra)",
+   "area_en": "Gunung Leuser National Park and surrounding forest and plantations (North Sumatra)",
+   "country_nl": "Indonesië",
+   "country_en": "Indonesia",
+   "cont": "asia",
+   "lat": 3.7,
+   "lon": 97.5,
+   "score": 3,
+   "why_nl": "Een groep zag er in 2023 drie, maar pas na veel moeite: er is weinig te zien vóór 22.00 uur, en ze spotlighten vaak tot 4 uur 's nachts.",
+   "why_en": "A group saw three in 2023, but only after real effort: little shows before 10 pm, and they often spotlighted until 4 am.",
+   "season_nl": "Het hele jaar.",
+   "season_en": "Year-round.",
+   "time_nl": "Laat in de nacht (na 22.00 uur).",
+   "time_en": "Late at night (after 10 pm).",
+   "trip_nl": "Lange spotlightsessies in bos en plantages met lokale gidsen, 3 à 4 nachten.",
+   "trip_en": "Long spotlighting sessions in forest and plantations with local guides, 3–4 nights.",
+   "sources": [
+    11
+   ]
+  },
+  {
+   "id": "id-bali-barat",
+   "name_nl": "Bali Barat",
+   "name_en": "West Bali",
+   "area_nl": "Nationaal park Bali Barat (West-Bali)",
+   "area_en": "West Bali National Park (Bali)",
+   "country_nl": "Indonesië",
+   "country_en": "Indonesia",
+   "cont": "asia",
+   "lat": -8.1,
+   "lon": 114.5,
+   "score": 1,
+   "why_nl": "De kat komt er voor, maar een bezoeker hoorde van de parkgids dat hij 'duidelijk moeilijk te zien' is.",
+   "why_en": "The cat occurs here, but a visitor was told by the park guide that it is 'obviously difficult to see'.",
+   "season_nl": "Droge tijd, april–oktober.",
+   "season_en": "Dry season, April–October.",
+   "time_nl": "Nacht.",
+   "time_en": "Night.",
+   "trip_nl": "Wandelingen met een parkgids; een kat is hier een toevalstreffer.",
+   "trip_en": "Walks with a park guide; a cat here is a lucky bonus.",
+   "sources": [
+    12
+   ]
+  },
+  {
+   "id": "ph-palawan",
+   "name_nl": "Palawan",
+   "name_en": "Palawan",
+   "area_nl": "Eiland Palawan, o.a. rond Puerto Princesa",
+   "area_en": "Palawan Island, e.g. around Puerto Princesa",
+   "country_nl": "Filipijnen",
+   "country_en": "Philippines",
+   "cont": "asia",
+   "lat": 9.8,
+   "lon": 118.7,
+   "score": 1,
+   "why_nl": "De kat duikt soms op bij dorpen (zelfs in een hotel in Puerto Princesa, maart 2025), maar in recente tripverslagen van zoogdierkijkers ontbreekt hij.",
+   "why_en": "The cat sometimes turns up near villages (even in a hotel in Puerto Princesa, March 2025), but it is missing from recent mammalwatchers' trip reports.",
+   "season_nl": "Droge tijd, december–mei.",
+   "season_en": "Dry season, December–May.",
+   "time_nl": "Nacht.",
+   "time_en": "Night.",
+   "trip_nl": "Nachtwandelingen met een lokale natuurgids, bijvoorbeeld rond Sabang; zie de kat als bonus.",
+   "trip_en": "Night walks with a local naturalist, for example around Sabang; treat the cat as a bonus.",
+   "sources": [
+    13,
+    14,
+    1
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Herken hem aan het formaat van een huiskat, zwarte vlekken op een geelbruine tot grijze vacht, lange poten en twee smalle zwarte wangstrepen met een witte vlek ertussen.",
+  "Spotlight langzaam over wegbermen en let op groenig oogschijnsel laag bij de grond; schijn ook hoger, want hij klimt goed.",
+  "Zoek op randen van bos en plantage: in Sabah jaagt hij graag in oliepalm, op Negros zelfs in suikerriet, want daar zitten veel ratten.",
+  "Na een regenbui zijn er veel kikkers en knaagdieren actief, en dus ook katten.",
+  "Ga vroeg op pad en wees de eerste auto op de weg; dat geeft de beste kans op een kat in de berm.",
+  "Vanaf een boot op de Kinabatangan: scan de modderige oevers en de onderste takken.",
+  "Benader een kat niet te dicht en houd de lamp niet te lang op hem; een rode lamp of warmtebeeldkijker stoort minder."
+ ],
+ "tips_en": [
+  "Recognise it by its house-cat size, black spots on a yellowish-brown to grey coat, long legs and two narrow black cheek stripes with a white spot between them.",
+  "Spotlight verges slowly and watch for greenish eyeshine low to the ground; shine higher too, as it climbs well.",
+  "Search forest and plantation edges: in Sabah it likes to hunt in oil palm, on Negros even in sugarcane, because that is where the rats are.",
+  "After a rain shower lots of frogs and rodents are active, and so are the cats.",
+  "Head out early and be the first vehicle on the road; that gives you the best chance of a cat on the verge.",
+  "From a boat on the Kinabatangan: scan the muddy banks and the lowest branches.",
+  "Do not crowd a cat or keep the beam on it for long; a red light or thermal scope disturbs it less."
+ ],
+ "threats_nl": [
+  "Verlies van leefgebied door ontbossing; de soort verdraagt verstoord bos beter dan de meeste Aziatische katten, maar in delen van het areaal gaat hij achteruit.",
+  "Vangst voor de huisdierhandel, vooral op Java en Bali (naar schatting zo'n 600 katten per jaar op Java).",
+  "Strikken voor ander wild, en doden omdat hij kippen pakt.",
+  "Kleine eilandpopulaties, zoals op de Filipijnen: de Visayaanse vorm is minstens 95% van zijn oorspronkelijke leefgebied kwijt.",
+  "Hogere sterfte in drukke, verstoorde gebieden, onder meer door verkeer."
+ ],
+ "threats_en": [
+  "Habitat loss from deforestation; the species copes with disturbed forest better than most Asian cats, but is declining in parts of its range.",
+  "Capture for the pet trade, especially on Java and Bali (an estimated 600 cats a year on Java).",
+  "Snares set for other animals, and killing because it takes poultry.",
+  "Small island populations, as in the Philippines: the Visayan form has lost at least 95% of its former range.",
+  "Higher mortality in busy, disturbed areas, including from traffic."
+ ],
+ "status_note_nl": "De IUCN beoordeelde de Bengaalse kat als geheel als Niet bedreigd (Least Concern, 2015), maar dat was vóór de splitsing; voor de Sundaluipaardkat apart bestaat nog geen beoordeling en is de trend onbekend. Op de Filipijnen staat hij nationaal als kwetsbaar te boek.",
+ "status_note_en": "The IUCN assessed the leopard cat as a whole as Least Concern (2015), but that was before the split; the Sunda leopard cat has no assessment of its own yet and its trend is unknown. In the Philippines it is listed nationally as Vulnerable.",
+ "sources": [
+  {
+   "id": 1,
+   "title": "Sunda leopard cat – species account (IUCN SSC Cat Specialist Group)",
+   "url": "https://www.catsg.org/living-species-sundaleopardcat"
+  },
+  {
+   "id": 2,
+   "title": "Prionailurus bengalensis – IUCN Red List assessment, pre-split (Ross et al., 2015)",
+   "url": "https://doi.org/10.2305/IUCN.UK.2015-4.RLTS.T18146A50661611.en"
+  },
+  {
+   "id": 3,
+   "title": "Cats of Borneo, trip report 2024 – 35 leopard cat sightings (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/06/Cat-Expeditions-Trip-Report-Cats-of-Borneo-2024.pdf"
+  },
+  {
+   "id": 4,
+   "title": "Sabah, Borneo, trip report June 2024 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/07/Borneo-June-2024.pdf"
+  },
+  {
+   "id": 5,
+   "title": "Deramakot revisited, trip report 2017 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2017/11/SM-DERAMAKOT-REVISITED-2017.pdf"
+  },
+  {
+   "id": 6,
+   "title": "Way Kambas National Park, trip report November 2024 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/11/Bennett-Gardner-Way-Kambas-2024-Trip-Report-1.pdf"
+  },
+  {
+   "id": 7,
+   "title": "Way Kambas and Tangkoko, trip report 2018 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2018/09/AJ-Way-Kambas-Tangkoko-2018.pdf"
+  },
+  {
+   "id": 8,
+   "title": "Java and Sumatra, trip report 2013 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2016/08/RW-Java-and-Sumatra-2013.pdf"
+  },
+  {
+   "id": 9,
+   "title": "Central & East Java wildlife trip, report July–August 2024 (mammalwatching.com)",
+   "url": "https://mammalwatching.com/wp-content/uploads/2024/09/Primavest-Trip-Report-7D6N-C-E-Java.pdf"
+  },
+  {
+   "id": 10,
+   "title": "Indonesia tips – forum thread on Baluran (mammalwatching.com, 2017–2018)",
+   "url": "https://www.mammalwatching.com/?p=16809"
+  },
+  {
+   "id": 11,
+   "title": "Sumatra & Java mammal tour, trip report September 2023 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/05/Sumatra-Java-Wildlife-Exploration-Sep-2023.pdf"
+  },
+  {
+   "id": 12,
+   "title": "West Bali National Park, trip report (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/MJ-West-Bali-National-Park.pdf"
+  },
+  {
+   "id": 13,
+   "title": "Endangered leopard cat wanders into hotel in Puerto Princesa (GMA News, 2025)",
+   "url": "https://www.gmanetwork.com/news/topstories/regions/939384/endangered-leopard-cat-wanders-into-hotel-in-puerto-princesa/story/"
+  },
+  {
+   "id": 14,
+   "title": "Philippines – overview of trip reports (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/gd_place/philippines/"
+  },
+  {
+   "id": 15,
+   "title": "Survival of the leopard cat in an agricultural landscape on Negros (Lorica & Heaney, Journal of Threatened Taxa, 2013)",
+   "url": "https://www.threatenedtaxa.org/index.php/JoTT/article/view/889"
+  }
+ ],
+ "doubts": "NAAM: in topspots.json staat voor Deramakot nog 'Sundaluipaardkat'; hier gebruik ik 'Sundaluipaardkat' zoals gevraagd – kies één naam voor de hele site. TAXONOMIE: de CatSG/KATalogue-split gevolgd; Sumatra, Java, Bali, Borneo en de Filipijnen (Palawan, Negros, Panay, Cebu) = P. javanensis. Het Maleisisch schiereiland is volgens de CatSG 'mogelijk' javanensis; daarom geen spot op het schiereiland (Taman Negara e.d.) en ook niet bij nr. 31. Oudere bronnen (zoals Lorica & Heaney 2013 en het nieuwsbericht uit Palawan) noemen de dieren nog P. bengalensis. HERGEBRUIK: my-deramakot met dezelfde coördinaten; de tekst iets aangepast (nu ook verslag 2017: 'seen almost nightly'). De bron 'Cats of Borneo 2024' is van een cat-tourbedrijf, maar staat op mammalwatching.com; de bedrijfsnaam staat in de URL maar niet in titel of tekst. Hetzelfde geldt voor de URL van het Java-verslag 2024 (bevat een bedrijfsnaam) – vervang die URL als je dat te ver vindt gaan. SCORES: Tabin 5 berust op twee verslagen uit 2024 (9+8 resp. 1+7 per rit); Kinabatangan 4: in juni 2024 vijf van de zes nachtelijke boottochten één kat (de eerste nacht onduidelijk, één kat over twee nachten). Danum 3: één verslag, 2 katten op 1 van 3 nachtritten (in herstelbos naast Danum, niet bij het veldstation zelf). Way Kambas 4: verslag 2024 noemt hem 'hit-or-miss', dus misschien eerder 3–4. Baluran 3: bronnen zijn forumreacties (2017) en één verslag 2024. Gunung Leuser 3: één verslag, veel inspanning; coördinaat is het midden van het park, terwijl bezoekers meestal bij Bukit Lawang zitten. Bali Barat 1: alleen een uitspraak van een gids. FILIPIJNEN: geen enkel mammalwatching-verslag gevonden met een waarneming op Palawan of Negros; Palawan daarom score 1 op basis van een nieuwsbericht. Negros (suikerrietvelden, Lorica & Heaney 2013) is alleen als tip gebruikt; er zijn geen excursies. Bron 15 wordt daarom alleen in de tips bedoeld en niet aan een spot gekoppeld. NIET OPGENOMEN: Sarawak, Kalimantan, Ujung Kulon, Gunung Halimun (geen concrete waarnemingen in de gevonden bronnen). STATUS: de getallen over de huisdierhandel op Java (~600/jaar), het verlies van 95% van het leefgebied van rabori en de nationale status 'kwetsbaar' op de Filipijnen komen uit de CatSG-pagina."
+}

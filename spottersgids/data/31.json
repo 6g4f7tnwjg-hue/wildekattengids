@@ -1,0 +1,365 @@
+{
+ "no": 31,
+ "intro_nl": "Het is donker in de beboste dalen van Tangjiahe. De schijnwerper glijdt over de berm, langs een groep takins, en dan blijven twee groene ogen hangen. Een kat ter grootte van een huiskat, met zwarte vlekken op een goudbruine vacht, kijkt even in het licht en glipt dan het struikgewas in. In dit reservaat in Sichuan zagen recente bezoekers de Bengaalse kat meestal binnen een of twee nachten. Kans: 4 – met een paar nachten spotlighten heb je hier goede papieren.",
+ "intro_en": "It is dark in the forested valleys of Tangjiahe. The spotlight slides along the verge, past a group of takin, and then two green eyes catch the beam. A cat the size of a house cat, black spots on a golden-brown coat, looks into the light for a moment and then slips into the undergrowth. In this Sichuan reserve recent visitors usually found the leopard cat within a night or two. Chance: 4 – give it a few nights of spotlighting and your odds here are good.",
+ "spots": [
+  {
+   "id": "cn-tangjiahe",
+   "name_nl": "Tangjiahe",
+   "name_en": "Tangjiahe",
+   "area_nl": "Nationaal natuurreservaat Tangjiahe, Qingchuan (Sichuan)",
+   "area_en": "Tangjiahe National Nature Reserve, Qingchuan (Sichuan)",
+   "country_nl": "China",
+   "country_en": "China",
+   "cont": "asia",
+   "lat": 32.6,
+   "lon": 104.8,
+   "score": 4,
+   "why_nl": "Vrijwel elk recent tripverslag meldt hier de Bengaalse kat: twee in één avond spotlighten (maart 2025), één in één nacht (juni 2026) en één bij sneeuw (januari 2026).",
+   "why_en": "Almost every recent trip report records the leopard cat here: two in one evening of spotlighting (March 2025), one in a single night (June 2026) and one in snow (January 2026).",
+   "season_nl": "Het hele jaar; de meeste verslagen komen uit het voorjaar (maart–april). Bij regen of zware sneeuw zie je minder.",
+   "season_en": "Year-round; most reports date from spring (March–April). Rain or heavy snow means fewer sightings.",
+   "time_nl": "Nacht, vanaf ongeveer een uur na zonsondergang tot middernacht, langs de weg door het dal.",
+   "time_en": "Night, from about an hour after dark until midnight, along the valley road.",
+   "trip_nl": "Avondlijke spotlighttochten met de auto (bij voorkeur met een warmtebeeldkijker) met een lokale gids, 2 à 3 nachten; vaak gecombineerd met het Tibetaanse plateau.",
+   "trip_en": "Evening spotlighting drives by car (ideally with a thermal scope) with a local guide, 2–3 nights; often combined with the Tibetan Plateau.",
+   "sources": [
+    3,
+    4,
+    5,
+    6,
+    7
+   ]
+  },
+  {
+   "id": "kr-seosan",
+   "name_nl": "Seosan",
+   "name_en": "Seosan",
+   "area_nl": "Meren en polders van Seosan (Cheonsu-baai), Zuid-Chungcheong",
+   "area_en": "Seosan lakes and reclaimed farmland (Cheonsu Bay), South Chungcheong",
+   "country_nl": "Zuid-Korea",
+   "country_en": "South Korea",
+   "cont": "asia",
+   "lat": 36.7,
+   "lon": 126.4,
+   "score": 3,
+   "why_nl": "Twee bezoekers die hier gericht zochten, zagen allebei Amoerkatten (de noordelijke ondersoort), één zelfs midden op de ochtend langs een half bevroren rivier.",
+   "why_en": "Both visitors who searched here in earnest saw Amur leopard cats (the northern subspecies), one of them mid-morning along a half-frozen river.",
+   "season_nl": "Winter (november–februari), als de akkers kaal zijn en er veel watervogels zitten.",
+   "season_en": "Winter (November–February), when the fields are bare and waterbirds are abundant.",
+   "time_nl": "Schemering en nacht; soms ook overdag langs dijken en kanalen.",
+   "time_en": "Dusk and night; sometimes by day along dykes and canals.",
+   "trip_nl": "Een dag en een nacht rondrijden en spotlighten over de polderwegen, eventueel met een lokale natuurgids, 1 à 2 dagen; te combineren met vogelkijken.",
+   "trip_en": "A day and a night driving and spotlighting the farm roads, optionally with a local naturalist, 1–2 days; easy to combine with birding.",
+   "sources": [
+    8,
+    9
+   ]
+  },
+  {
+   "id": "vn-cat-tien",
+   "name_nl": "Cat Tien",
+   "name_en": "Cat Tien",
+   "area_nl": "Nationaal park Cat Tien (Dong Nai)",
+   "area_en": "Cat Tien National Park (Dong Nai)",
+   "country_nl": "Vietnam",
+   "country_en": "Vietnam",
+   "cont": "asia",
+   "lat": 11.4,
+   "lon": 107.4,
+   "score": 3,
+   "why_nl": "In twee recente verslagen (2020 en 2024) leverde het verblijf telkens één Bengaalse kat op, één keer tijdens de officiële nachtrit door de graslanden.",
+   "why_en": "In two recent reports (2020 and 2024) each stay produced one leopard cat, once on the official night drive through the grasslands.",
+   "season_nl": "Droge tijd, december tot en met april.",
+   "season_en": "Dry season, December to April.",
+   "time_nl": "Nacht; de officiële nachtrit vertrekt rond zonsondergang en duurt een paar uur.",
+   "time_en": "Night; the official night drive leaves around dusk and lasts a couple of hours.",
+   "trip_nl": "Nachtritten van het park met een parkgids, plus wandelen in het donker rond het hoofdkwartier, 3 à 4 nachten.",
+   "trip_en": "Park-run night drives with a park guide, plus walking after dark around the headquarters, 3–4 nights.",
+   "sources": [
+    10,
+    11
+   ]
+  },
+  {
+   "id": "th-khao-yai",
+   "name_nl": "Khao Yai",
+   "name_en": "Khao Yai",
+   "area_nl": "Nationaal park Khao Yai (Nakhon Ratchasima)",
+   "area_en": "Khao Yai National Park (Nakhon Ratchasima)",
+   "country_nl": "Thailand",
+   "country_en": "Thailand",
+   "cont": "asia",
+   "lat": 14.4,
+   "lon": 101.4,
+   "score": 2,
+   "why_nl": "Een kampeerder zag er in 2019 een vlak bij de camping, maar zelfstandig spotlighten is nu verboden en de korte, drukke nachtsafari leverde in 2024 geen katten op.",
+   "why_en": "A camper saw one near the campsite in 2019, but independent spotlighting is now banned and the short, crowded night safari produced no cats in 2024.",
+   "season_nl": "November tot en met april (droog en koel).",
+   "season_en": "November to April (dry and cool).",
+   "time_nl": "Avond en nacht.",
+   "time_en": "Evening and night.",
+   "trip_nl": "Kamperen in het park en meedoen aan de officiële nachtsafari van het park, 2 à 3 nachten; vraag vooraf naar de actuele regels.",
+   "trip_en": "Camp in the park and join the park's official night safari, 2–3 nights; check the current rules beforehand.",
+   "sources": [
+    12,
+    13
+   ]
+  },
+  {
+   "id": "jp-iriomote",
+   "name_nl": "Iriomote",
+   "name_en": "Iriomote",
+   "area_nl": "Kustwegen van het eiland Iriomote (Okinawa)",
+   "area_en": "Coastal roads of Iriomote Island (Okinawa)",
+   "country_nl": "Japan",
+   "country_en": "Japan",
+   "cont": "asia",
+   "lat": 24.3,
+   "lon": 123.8,
+   "score": 2,
+   "why_nl": "Twee vogelaars zagen de iriomotekat in 24 uur, na een paar uur spotlighten 's avonds en voor zonsopkomst langs de noordelijke kustweg; maar er leven maar ongeveer honderd dieren.",
+   "why_en": "Two birders saw the Iriomote cat within 24 hours, after a few hours of spotlighting in the evening and before dawn along the northern coast road; yet only around a hundred animals remain.",
+   "season_nl": "Het hele jaar; voorjaar is prettig weer.",
+   "season_en": "Year-round; spring has pleasant weather.",
+   "time_nl": "Laat op de avond en vooral voor zonsopkomst, in kustruigte, mangrove en aan bosranden.",
+   "time_en": "Late evening and especially before dawn, in coastal scrub, mangrove and forest edges.",
+   "trip_nl": "Zelf stapvoets rijden over de kustweg met een huurauto vanaf Uehara of Ohara, 1 à 2 nachten; bezoek ook het Iriomote Wildlife Conservation Center.",
+   "trip_en": "Drive the coast road yourself at walking pace in a hire car from Uehara or Ohara, 1–2 nights; also visit the Iriomote Wildlife Conservation Center.",
+   "sources": [
+    14,
+    1
+   ]
+  },
+  {
+   "id": "in-eaglenest",
+   "name_nl": "Eaglenest",
+   "name_en": "Eaglenest",
+   "area_nl": "Eaglenest Wildlife Sanctuary, West Kameng (Arunachal Pradesh)",
+   "area_en": "Eaglenest Wildlife Sanctuary, West Kameng (Arunachal Pradesh)",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 27.1,
+   "lon": 92.4,
+   "score": 2,
+   "why_nl": "De Bengaalse kat wordt hier volgens gidsen regelmatig gezien, maar een bezoeker die in 2026 gericht zocht, zag hem niet.",
+   "why_en": "Guides say the leopard cat is seen here regularly, but a visitor who searched hard in 2026 did not find one.",
+   "season_nl": "Oktober tot en met april (het seizoenskamp is dan open).",
+   "season_en": "October to April (when the seasonal camp is open).",
+   "time_nl": "Nacht, langs de bosweg door het reservaat.",
+   "time_en": "Night, along the forest road through the sanctuary.",
+   "trip_nl": "Verblijf in het eenvoudige tentenkamp in het reservaat, met nachtelijke ritten en wandelingen met een lokale gids, 3 à 4 nachten.",
+   "trip_en": "Stay at the basic tented camp in the sanctuary, with night drives and walks with a local guide, 3–4 nights.",
+   "sources": [
+    17
+   ]
+  },
+  {
+   "id": "jp-tsushima",
+   "name_nl": "Tsushima",
+   "name_en": "Tsushima",
+   "area_nl": "Eiland Tsushima (Nagasaki)",
+   "area_en": "Tsushima Island (Nagasaki)",
+   "country_nl": "Japan",
+   "country_en": "Japan",
+   "cont": "asia",
+   "lat": 34.4,
+   "lon": 129.3,
+   "score": 1,
+   "why_nl": "Er leven nog maar ongeveer 150 tsushimakatten en we vonden geen recent tripverslag met een waarneming; je hebt dus echt geluk nodig.",
+   "why_en": "Only about 150 Tsushima leopard cats remain and we found no recent trip report with a sighting, so you really need luck.",
+   "season_nl": "Het hele jaar.",
+   "season_en": "Year-round.",
+   "time_nl": "Nacht, op rustige wegen door open kustlandschap.",
+   "time_en": "Night, on quiet roads through open coastal country.",
+   "trip_nl": "Zelf 's nachts langzaam rijden met een huurauto, 2 à 3 nachten; het Tsushima Wildlife Conservation Center geeft uitleg over de kat.",
+   "trip_en": "Drive slowly at night in a hire car, 2–3 nights; the Tsushima Wildlife Conservation Center explains the cat's story.",
+   "sources": [
+    15,
+    16,
+    1
+   ]
+  },
+  {
+   "id": "tw-miaoli",
+   "name_nl": "Miaoli",
+   "name_en": "Miaoli",
+   "area_nl": "Heuvelland van de county Miaoli (o.a. rond Tongxiao)",
+   "area_en": "Hill country of Miaoli County (e.g. around Tongxiao)",
+   "country_nl": "Taiwan",
+   "country_en": "Taiwan",
+   "cont": "asia",
+   "lat": 24.5,
+   "lon": 120.8,
+   "score": 1,
+   "why_nl": "De kat leeft hier vlak bij dorpen, maar bezoekers zien hem bijna nooit; het nieuws gaat vooral over verkeersslachtoffers (17 van de 18 dode dieren in 2023).",
+   "why_en": "The cat lives close to villages here, but visitors almost never see one; the news is mostly about road kills (17 of 18 dead cats in 2023).",
+   "season_nl": "Het hele jaar.",
+   "season_en": "Year-round.",
+   "time_nl": "Avond en nacht.",
+   "time_en": "Evening and night.",
+   "trip_nl": "Geen gerichte excursies; hooguit avondwandelingen langs akkers en bosranden met een lokale natuurgids.",
+   "trip_en": "No dedicated excursions; at most evening walks along fields and forest edges with a local naturalist.",
+   "sources": [
+    18
+   ]
+  },
+  {
+   "id": "ru-lazovsky",
+   "name_nl": "Lazovski",
+   "name_en": "Lazovsky",
+   "area_nl": "Lazovski-reservaat en Nationaal park Zov Tigra (Primorje)",
+   "area_en": "Lazovsky Nature Reserve and Zov Tigra National Park (Primorye)",
+   "country_nl": "Rusland",
+   "country_en": "Russia",
+   "cont": "asia",
+   "lat": 43.2,
+   "lon": 133.9,
+   "score": 1,
+   "why_nl": "Cameravallen tonen ongeveer 20 Amoerkatten per 100 km², vooral langs de kust, maar waarnemingen door bezoekers zijn zeldzaam.",
+   "why_en": "Camera traps show about 20 Amur leopard cats per 100 km², mostly near the coast, but sightings by visitors are rare.",
+   "season_nl": "Het hele jaar; in de winter zie je sporen in de sneeuw.",
+   "season_en": "Year-round; in winter you can find tracks in the snow.",
+   "time_nl": "Schemering en nacht.",
+   "time_en": "Dusk and night.",
+   "trip_nl": "Natuurexcursies vanuit het dorp Lazo met parkpersoneel, meerdere dagen; reken eerder op sporen of camerabeelden.",
+   "trip_en": "Nature excursions from Lazo village with park staff, several days; expect tracks or camera-trap images rather than the cat itself.",
+   "sources": [
+    19
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Herken hem aan het formaat van een huiskat, lange poten, zwarte vlekken op een goud- tot grijsbruine vacht en twee witte strepen langs de neus naar het voorhoofd.",
+  "Spotlight langzaam vanuit de auto en let op laag, groenig oogschijnsel in bermen, akkers en bosranden; een warmtebeeldkijker helpt enorm.",
+  "Zoek op overgangen: bosranden, rivierdalen, rijstvelden en polders vol knaagdieren. De kat gedijt ook in landbouwgebied.",
+  "Ga na regen of sneeuw op droge avonden op pad; dan zijn er meer dieren actief.",
+  "Kijk ook omhoog: hij klimt goed en zit soms in een boom of op een rots.",
+  "Rij langzaam op Iriomote en Tsushima. Verkeer is daar een van de grootste bedreigingen, en elke kat telt.",
+  "In het noorden (Korea, Rusland) vind je in de winter makkelijk sporen in sneeuw of modder langs rivieren."
+ ],
+ "tips_en": [
+  "Recognise it by its house-cat size, long legs, black spots on a golden to grey-brown coat and two white stripes running from the nose up to the forehead.",
+  "Spotlight slowly from a car and watch for low, greenish eyeshine on verges, in fields and along forest edges; a thermal scope helps enormously.",
+  "Search edges: forest margins, river valleys, rice fields and farmland full of rodents. The cat does well in farmland too.",
+  "Head out on dry evenings after rain or snow, when more animals are active.",
+  "Look up as well: it climbs well and sometimes sits in a tree or on a rock.",
+  "Drive slowly on Iriomote and Tsushima. Traffic is one of the biggest threats there, and every cat counts.",
+  "In the north (Korea, Russia) tracks in snow or mud along rivers are easy to find in winter."
+ ],
+ "threats_nl": [
+  "Historische bonthandel: tussen 1955 en 1981 werden gemiddeld 150.000 vachten per jaar uitgevoerd, vooral uit China; jacht voor bont, vlees en de huisdierhandel gaat in delen van het areaal door.",
+  "Verkeersslachtoffers: in Zuid-Korea de belangrijkste bedreiging, en ook op Taiwan en Iriomote een groot probleem.",
+  "Verlies en versnippering van leefgebied.",
+  "Kleine eilandpopulaties: de iriomotekat (circa 100 dieren) is ernstig bedreigd, en op Tsushima is de stand de afgelopen decennia gedaald.",
+  "Vergiftiging en strikken, vervolging om kippenroof, en ziektes en vermenging via verwilderde huiskatten."
+ ],
+ "threats_en": [
+  "Historic fur trade: from 1955 to 1981 an average of 150,000 skins a year were exported, mainly from China; hunting for fur, meat and the pet trade continues in parts of the range.",
+  "Road kills: the main threat in South Korea, and a big problem in Taiwan and on Iriomote too.",
+  "Habitat loss and fragmentation.",
+  "Small island populations: the Iriomote cat (about 100 animals) is Critically Endangered, and on Tsushima numbers have fallen over recent decades.",
+  "Poisoning and snares, persecution for raiding poultry, and disease and interbreeding via feral domestic cats."
+ ],
+ "status_note_nl": "De Bengaalse kat staat als Niet bedreigd (Least Concern) op de Rode Lijst van de IUCN (2015); de stand wordt stabiel verondersteld, maar is in grote delen van het areaal nooit geteld. De iriomotekat geldt als ernstig bedreigd, en in India, Nepal en Taiwan is de soort nationaal beschermd.",
+ "status_note_en": "The leopard cat is listed as Least Concern on the IUCN Red List (2015); its population is assumed to be stable, but has never been counted across much of its range. The Iriomote cat is Critically Endangered, and the species is nationally protected in India, Nepal and Taiwan.",
+ "sources": [
+  {
+   "id": 1,
+   "title": "Leopard cat – species account (IUCN SSC Cat Specialist Group)",
+   "url": "https://www.catsg.org/living-species-leopardcat"
+  },
+  {
+   "id": 2,
+   "title": "Prionailurus bengalensis – IUCN Red List assessment (Ross et al., 2015)",
+   "url": "https://doi.org/10.2305/IUCN.UK.2015-4.RLTS.T18146A50661611.en"
+  },
+  {
+   "id": 3,
+   "title": "Sichuan & Qinghai, trip report March 2025 (mammalwatching.com)",
+   "url": "https://mammalwatching.com/wp-content/uploads/2025/03/China-Trip-Report_20250316.pdf"
+  },
+  {
+   "id": 4,
+   "title": "China: Sichuan and the Tibetan Plateau, trip report June 2026 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2026/09/China-Mammal-trip-report-2026-N-Buys-PDF.pdf"
+  },
+  {
+   "id": 5,
+   "title": "Tangjiahe, trip report January 2026 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2026/01/Tangjiahe2026_report_with_map.pdf"
+  },
+  {
+   "id": 6,
+   "title": "China – Sichuan, trip report 2017 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2017/12/JVG-CHINA-SICHUAN-2017.pdf"
+  },
+  {
+   "id": 7,
+   "title": "Sichuan mammal tour, trip report April 2019 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/Sichuan-Mammal-Tour-Apr-2019-1.pdf"
+  },
+  {
+   "id": 8,
+   "title": "South Korea, trip report 2019 (V. Dinets, mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/VD-South-Korea-2019.pdf"
+  },
+  {
+   "id": 9,
+   "title": "Korea trip report 2009 (J. Hall, mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/?p=428"
+  },
+  {
+   "id": 10,
+   "title": "Vietnam, trip report January–February 2024 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/03/VIETNAM.pdf"
+  },
+  {
+   "id": 11,
+   "title": "Vietnam: Cat Tien NP, trip report March 2020 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/Vietnam-Cat-Tien-March-2020-1.pdf"
+  },
+  {
+   "id": 12,
+   "title": "Thailand mammals, trip report April 2019 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/Thailand-Mammals-April-2019.pdf"
+  },
+  {
+   "id": 13,
+   "title": "Thailand, trip report February–March 2024 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/06/THAILAND-2024.pdf"
+  },
+  {
+   "id": 14,
+   "title": "Ryukyu Islands incl. Iriomote, trip report March 2017 (G. Knass, mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2017/06/KNASS_Ryukyu_03_2017.compressed.pdf"
+  },
+  {
+   "id": 15,
+   "title": "A few more Japanese islands – Tsushima (mammalwatching.com, 2019)",
+   "url": "https://www.mammalwatching.com/2019/08/31/a-few-more-japanese-islands/"
+  },
+  {
+   "id": 16,
+   "title": "Short-tailed Tsushima leopard cats and the island's ~150 cats (Nautilus, 2026)",
+   "url": "https://nautil.us/why-the-discovery-of-the-first-short-tailed-tsushima-leopard-cat-worried-researchers-1285013/"
+  },
+  {
+   "id": 17,
+   "title": "My Big Cat Year – India incl. Eaglenest, trip report March–April 2026 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2026/04/Trip-Report-India-270326-to-290426.pdf"
+  },
+  {
+   "id": 18,
+   "title": "Leopard cat road kills in Miaoli (Taiwan News, 2024)",
+   "url": "https://www.taiwannews.com.tw/en/news/5078569"
+  },
+  {
+   "id": 19,
+   "title": "Far Eastern leopard cat and Amur lynx in Lazovsky Reserve and Zov Tigra NP (Myslenkov et al., Biota and Environment of Natural Areas, 2023)",
+   "url": "https://biosoil.ru/en/biota-environ/publication/2613"
+  }
+ ],
+ "doubts": "TAXONOMIE: volgens de briefing (KATalogue/CatSG-split) behandel ik hier alleen P. bengalensis van het vasteland plus Japan, Taiwan, Korea en Rusland; de Sunda-eilanden staan bij nr. 32. Het Maleisisch schiereiland is volgens de CatSG mogelijk javanensis-gebied; daarom heb ik daar geen spot opgenomen. De iriomotekat (vroeger P. b. iriomotensis) en de tsushimakat (P. b. euptilura) vallen hier onder. SRI LANKA: de soort komt daar niet voor (alleen roestkat, moeraskat, vissende kat), dus geen spot. SCORES: Tangjiahe 4 is gebaseerd op vijf verslagen (2017, april 2019, maart 2025, januari 2026, juni 2026); alle vijf zagen er een, maar telkens maar 1–2 dieren, en in maart 2025 leverde de eerste (regen)nacht niets op. Labahe (Sichuan) leverde in juni 2026 ook een kat op; een winterverslag uit Sichuan (feb. 2025, ander reservaat met kabelbaan) noemt meldingen op nachtritten 'redelijk vaak', maar zag zelf niets door sneeuw. Niet als aparte spot opgenomen. Seosan score 3 berust op maar twee verslagen (2009 en 2019); de exacte locaties uit het verslag van Dinets heb ik bewust weggelaten. Cat Tien 3: twee verslagen met telkens één kat; misschien eerder 2. Khao Yai 2: zelfstandig spotlighten verboden (verslag 2024), een ander verslag (2024) spotlightte toch met eigen auto; regels lijken wisselend. Kaeng Krachan heb ik weggelaten: je moet na donker het park uit, en geen enkel verslag meldt er een Bengaalse kat. Kaziranga en Corbett: geen betrouwbare bron met concrete waarnemingen gevonden (Corbett alleen een forumbericht over een zeldzame waarneming); weggelaten. Eaglenest 2 rust op één verslag waarin de gids zegt dat hij 'regelmatig' gezien wordt; zelf zag de schrijver hem niet. Iriomote: ethisch gevoelig – ernstig bedreigd en verkeer is een hoofdbedreiging; ik heb daarom 'stapvoets rijden' benadrukt. Overweeg of je deze spot wilt tonen. Tsushima: geen recent tripverslag met waarneming gevonden; het mammalwatching-stuk uit 2019 adviseert alleen open kustwegen. Het aantal van ~150 komt uit Nautilus (2026), niet uit een primaire bron. Taiwan (Miaoli): alleen nieuwsberichten over verkeersslachtoffers en cameravallen; score 1. Rusland: het bestaande id ru-land-of-the-leopard (ZW-Primorje) heb ik niet hergebruikt, omdat de bron over Lazovski/Zov Tigra (ZO-Primorje) gaat. Er zijn geen excursies gevonden die gericht op deze kat zoeken. De Rode Lijst-pagina zelf kon ik niet openen; de DOI resolveert wel naar iucnredlist.org/species/18146/50661611. Nationale statussen (India bedreigd, Nepal kwetsbaar, Taiwan categorie 1) uit CatSG en Taiwan News."
+}

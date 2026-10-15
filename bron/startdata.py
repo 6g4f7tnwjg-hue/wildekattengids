@@ -24,7 +24,7 @@ def _vert(nl, regels):
         nl = re.sub(a, b, nl)
     return nl
 # talen van elke gids na Nederlands en Engels (zelfde volgorde als de vakken in de gids)
-GTAAL = {"nl": [], "be": ["fr"], "lu": ["fr", "de"], "de": ["de"], "fr": ["fr"], "at": ["de"], "ch": ["de", "fr", "it"], "uk": [], "it": ["it"], "es": ["es"]}
+GTAAL = {"nl": [], "be": ["fr"], "lu": ["fr", "de"], "de": ["de"], "fr": ["fr"], "at": ["de"], "ch": ["de", "fr", "it"], "uk": [], "it": ["it"], "es": ["es"], "ie": []}
 def n4(n, land):
     """[nl, en, fr, de, it, es] voor 'aantal jongen': uit de gids zelf als die de taal heeft, anders vertaald met vaste regels."""
     vak = lambda l: (n[2 + GTAAL.get(land, []).index(l)] if l in GTAAL.get(land, []) and len(n) > 2 + GTAAL[land].index(l) else "")

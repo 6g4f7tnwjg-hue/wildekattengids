@@ -1,0 +1,322 @@
+{
+ "no": 36,
+ "intro_nl": "Het is vijf uur 's ochtends op de steppe en het licht is nog roze. Boven op een rotsblok zit een plat, pluizig gezicht met twee gele ogen. De manoel verroert zich niet: hij vertrouwt erop dat je hem voor een steen houdt. In Oost-Mongolië weten lokale spotters waar de holen liggen, en in juli zie je er dan bijna elke dag een, soms met jongen. Elders blijft het urenlang rotsen en pikakolonies afscannen. Kans: 5 – met een gespecialiseerde reis in Mongolië ga je zelden met lege handen naar huis.",
+ "intro_en": "It is five in the morning on the steppe and the light is still pink. On top of a boulder sits a flat, fluffy face with two yellow eyes. The manul doesn't move: it is counting on you to mistake it for a rock. In eastern Mongolia local spotters know where the dens are, and in July you can see one almost every day, sometimes with kittens. Elsewhere it means hours of scanning rocks and pika colonies. Chance: 5 – on a dedicated trip in Mongolia you rarely go home empty-handed.",
+ "spots": [
+  {
+   "id": "mn-mongolian-steppe",
+   "name_nl": "Steppe van Oost-Mongolië",
+   "name_en": "Eastern Mongolian steppe",
+   "area_nl": "Heuvelachtige steppe met rotsruggen, ca. 500 km (9 uur rijden) ten oosten van Ulaanbaatar",
+   "area_en": "Rolling steppe with rocky ridges, about 500 km (a 9-hour drive) east of Ulaanbaatar",
+   "country_nl": "Mongolië",
+   "country_en": "Mongolia",
+   "cont": "asia",
+   "lat": 47.3,
+   "lon": 111.5,
+   "score": 5,
+   "why_nl": "Gespecialiseerde manoelreizen naar Oost-Mongolië zagen 17 (2022) en 16 (2023) verschillende katten, drie families in 2024 en in 2025 op elke velddag een manoel.",
+   "why_en": "Dedicated Pallas's cat trips to eastern Mongolia saw 17 (2022) and 16 (2023) different cats, three families in 2024 and a manul on every day in the field in 2025.",
+   "season_nl": "Eind juni t/m juli, als de jongen uit het hol komen; ook in februari lukte het al op de eerste dag (bij −20 °C).",
+   "season_en": "Late June to July, when the kittens leave the den; a February trip also scored on day one (at −20 °C).",
+   "time_nl": "Vanaf zonsopkomst (vertrek om 4 à 5 uur) en in de late middag tot het donker.",
+   "time_en": "From sunrise (leaving camp at 4–5 am) and in the late afternoon until dark.",
+   "trip_nl": "Gespecialiseerde reis van 9 à 10 dagen met lokale gids en spotters: lange rit vanuit Ulaanbaatar, overnachten in een gerkamp op de steppe, 's ochtends rijden en scannen, 's middags en 's avonds urenlang posten op afstand van een hol (vaak vanuit een schuiltent).",
+   "trip_en": "Dedicated 9–10-day trip with a local guide and spotters: a long drive from Ulaanbaatar, staying in a ger camp on the steppe, driving and scanning in the mornings, and spending afternoons and evenings watching a den from a distance (often from a hide).",
+   "sources": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "id": "cn-yushu-sanjiangyuan",
+   "name_nl": "Yushu en Sanjiangyuan (Qinghai)",
+   "name_en": "Yushu and Sanjiangyuan (Qinghai)",
+   "area_nl": "Graslanden en rotsige hellingen rond Zhidoi en Qumarlêb, Nationaal Park Sanjiangyuan (Drie Rivieren), prefectuur Yushu",
+   "area_en": "Grasslands and rocky slopes around Zhidoi and Qumarlêb, Sanjiangyuan (Three Rivers) National Park, Yushu Prefecture",
+   "country_nl": "China",
+   "country_en": "China",
+   "cont": "asia",
+   "lat": 34.0,
+   "lon": 95.8,
+   "score": 4,
+   "why_nl": "Alle recente zoogdierreizen in deze regio zagen manoels: vier waarnemingen in 2019, een moeder met drie jongen in 2023 en meer dan tien katten in 2024.",
+   "why_en": "Every recent mammal tour in this region saw Pallas's cats: four sightings in 2019, a mother with three kittens in 2023 and more than ten cats in 2024.",
+   "season_nl": "Juli en augustus (de meeste verslagen); in de winter zitten ze volgens één verslag dichter bij de weg.",
+   "season_en": "July and August (most reports); one report notes they are seen closer to the road in winter.",
+   "time_nl": "Overdag scannen van rotsen en pikakolonies; 's avonds zoeken met een lamp naar oogreflectie.",
+   "time_en": "Scan rocks and pika colonies by day; search for eyeshine with a spotlight after dark.",
+   "trip_nl": "Zoogdierreis van ongeveer twee weken vanuit Yushu (vliegveld op 3.600 m) met lokale gids en chauffeurs, met dagen in Zhidoi en het Drie Rivierenpark; vaak gecombineerd met sneeuwpanter.",
+   "trip_en": "Mammal tour of about two weeks from Yushu (airport at 3,600 m) with a local guide and drivers, spending days around Zhidoi and the Three Rivers park; often combined with snow leopard.",
+   "sources": [
+    9,
+    10,
+    11
+   ]
+  },
+  {
+   "id": "in-hanle-changthang",
+   "name_nl": "Hanle (Changthang, Ladakh)",
+   "name_en": "Hanle (Changthang, Ladakh)",
+   "area_nl": "Hoogvlakte rond Hanle, Changthang Wildlife Sanctuary, Ladakh",
+   "area_en": "High plateau around Hanle, Changthang Wildlife Sanctuary, Ladakh",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 32.8,
+   "lon": 79.0,
+   "score": 3,
+   "why_nl": "Een gezin zag in januari 2024 al op de eerste dagen meerdere keren een manoel, maar een andere bezoeker zocht in februari–maart weken voordat het lukte.",
+   "why_en": "A family saw Pallas's cats several times within their first days in January 2024, but another visitor searched for weeks in February–March before succeeding.",
+   "season_nl": "Winter, december t/m maart; in de zomer wordt hij hier zelden gezien.",
+   "season_en": "Winter, December to March; it is rarely seen here in summer.",
+   "time_nl": "Vroege ochtend en late middag, als de kat in de zon op de rotsen zit.",
+   "time_en": "Early morning and late afternoon, when the cat sits on sunlit rocks.",
+   "trip_nl": "Uitbreiding van 2 à 4 dagen op een sneeuwpanterreis in Ladakh: een lange rit vanuit Leh, overnachten in Hanle of Nyoma (70 km) en met lokale gids en spotter het terrein afscannen met telescopen.",
+   "trip_en": "A 2–4-day extension to a snow leopard trip in Ladakh: a long drive from Leh, staying in Hanle or Nyoma (70 km away) and scanning the terrain with scopes alongside a local guide and spotter.",
+   "sources": [
+    12,
+    13,
+    14,
+    15,
+    23
+   ]
+  },
+  {
+   "id": "cn-ruoergai-zoige",
+   "name_nl": "Ruoergai (Zoige)",
+   "name_en": "Ruoergai (Zoige)",
+   "area_nl": "Graslanden en rotsige heuvels van Ruoergai, Noord-Sichuan",
+   "area_en": "Grasslands and rocky hills of Ruoergai, northern Sichuan",
+   "country_nl": "China",
+   "country_en": "China",
+   "cont": "asia",
+   "lat": 33.6,
+   "lon": 102.9,
+   "score": 3,
+   "why_nl": "Een reis in 2017 zag een moeder met twee jongen op een rotsrichel op twee dagen en een groepsreis in 2019 zag er één, maar in 2014 bleef het bij een Chinese bergkat.",
+   "why_en": "A 2017 trip saw a mother with two kittens on a rocky outcrop on two days and a 2019 group tour saw one, but a 2014 trip found only a Chinese mountain cat.",
+   "season_nl": "Geslaagde verslagen komen uit eind september–oktober en december.",
+   "season_en": "Successful reports date from late September–October and December.",
+   "time_nl": "Overdag rotsen scannen; 's avonds spotlighten (ook voor de Chinese bergkat).",
+   "time_en": "Scan rocks by day; spotlight in the evening (also for Chinese mountain cat).",
+   "trip_nl": "Twee à vier dagen in Ruoergai binnen een zoogdierreis door Sichuan (vaak met rode panda), met lokale gids: scannen vanaf heuvels en nachtritten.",
+   "trip_en": "Two to four days at Ruoergai as part of a Sichuan mammal trip (often with red panda), with a local guide: scanning from hilltops and night drives.",
+   "sources": [
+    16,
+    17,
+    18
+   ]
+  },
+  {
+   "id": "mn-hustai",
+   "name_nl": "Hustai",
+   "name_en": "Hustai",
+   "area_nl": "Nationaal Park Hustai, provincie Töv",
+   "area_en": "Hustai National Park, Töv Province",
+   "country_nl": "Mongolië",
+   "country_en": "Mongolia",
+   "cont": "asia",
+   "lat": 47.7,
+   "lon": 105.9,
+   "score": 2,
+   "why_nl": "Een verkenningsreis in 2022 zag hier op de eerste avond een manoel in het licht van een zaklamp, maar het park is geen bekende vaste plek.",
+   "why_en": "A 2022 recce trip saw a Pallas's cat here by torchlight on its first evening, but the park is not a known reliable site.",
+   "season_nl": "Zomer en nazomer (juli–september).",
+   "season_en": "Summer and late summer (July–September).",
+   "time_nl": "Avond en nacht.",
+   "time_en": "Evening and night.",
+   "trip_nl": "Avondwandeling of nachtrit met een gids in het park, niet ver van Ulaanbaatar, meestal als eerste stop van een rondreis met Przewalskipaarden.",
+   "trip_en": "Evening walk or night drive with a guide in the park, not far from Ulaanbaatar, usually the first stop of a tour that also targets Przewalski's horses.",
+   "sources": [
+    7
+   ]
+  },
+  {
+   "id": "ru-daursky",
+   "name_nl": "Daursky",
+   "name_en": "Daursky",
+   "area_nl": "Biosfeerreservaat Daursky en omringende steppe, kraj Transbaikalië",
+   "area_en": "Daursky Biosphere Reserve and surrounding steppe, Zabaykalsky Krai",
+   "country_nl": "Rusland",
+   "country_en": "Russia",
+   "cont": "asia",
+   "lat": 50.1,
+   "lon": 115.7,
+   "score": 1,
+   "why_nl": "Hier loopt al jaren manoelonderzoek, maar we vonden geen enkel recent reisverslag van bezoekers die er een zagen.",
+   "why_en": "Pallas's cat research has run here for years, but we found no recent trip report of visitors seeing one.",
+   "season_nl": "Onbekend voor bezoekers; onderzoek gebeurt het hele jaar.",
+   "season_en": "Unknown for visitors; research takes place year-round.",
+   "time_nl": "Schemering.",
+   "time_en": "Dusk and dawn.",
+   "trip_nl": "Alleen via het reservaat zelf (vergunning nodig); reken op cameravallen en geduld, niet op een waarneming.",
+   "trip_en": "Only through the reserve itself (permit required); count on camera traps and patience, not on a sighting.",
+   "sources": [
+    22,
+    21
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Scan rotsrichels, puinhellingen en rotsblokken in het grasland met een telescoop vanaf een hoog punt; de manoel heeft rotsdekking nodig en zit zelden in open gras.",
+  "Zoek waar pika's, woelmuizen en marmotten veel voorkomen: daar jaagt hij, en oude marmottenholen gebruikt hij als schuilplaats en kraamhol.",
+  "Wees er bij zonsopkomst en in de late middag; hij is vooral in de schemering actief en zonnebaadt graag op rotsen.",
+  "Bij gevaar bevriest hij in plaats van te vluchten. Kijk dus elke 'steen' met oren twee keer na; 's nachts kun je met een lamp naar oogreflectie zoeken.",
+  "Op het Tibetaans plateau en in Ladakh is de winter (december–maart) het best; in Mongolië zijn eind juni en juli het best, als de jongen buiten spelen.",
+  "Huur een lokale gids met spotters: zij zoeken parallel een groot gebied af en bellen je op als ze er een vinden.",
+  "Houd afstand (fotoreizen bleven gemiddeld 15 à 25 meter weg), blijf stil en ga nooit naar een hol toe."
+ ],
+ "tips_en": [
+  "Scan rocky ridges, scree slopes and boulders in grassland with a scope from a high point; the manul needs rock cover and rarely sits in open grass.",
+  "Look where pikas, voles and marmots are abundant: that's where it hunts, and it uses old marmot burrows as shelter and birthing dens.",
+  "Be out at sunrise and in the late afternoon; it is mostly crepuscular and likes to sunbathe on rocks.",
+  "When threatened it freezes instead of running. So check every 'stone' with ears twice; at night you can search for eyeshine with a spotlight.",
+  "On the Tibetan Plateau and in Ladakh winter (December–March) is best; in Mongolia late June and July are best, when kittens play outside the den.",
+  "Hire a local guide with spotters: they search a large area in parallel and call you when they find one.",
+  "Keep your distance (photo tours stayed on average 15–25 metres away), stay quiet and never approach a den."
+ ],
+ "threats_nl": [
+  "Vergiftiging van pika's en andere knaagdieren: de manoel verliest zijn prooi of krijgt zelf gif binnen.",
+  "Jacht voor de pels, illegale handel en per ongeluk gevangen in vallen of neergeschoten bij marmottenjacht.",
+  "Honden van herders en verwilderde honden die manoels doden en ziektes kunnen overbrengen.",
+  "Aantasting van leefgebied door overbegrazing, akkerbouw, mijnbouw en nieuwe wegen.",
+  "Klimaatverandering: meer sneeuw, branden en vee en honden die steeds hoger trekken."
+ ],
+ "threats_en": [
+  "Poisoning of pikas and other rodents: the manul loses its prey or ingests poison itself.",
+  "Hunting for fur, illegal trade, and accidental capture in traps or shooting during marmot hunts.",
+  "Herding and feral dogs that kill manuls and can transmit disease.",
+  "Habitat degradation from overgrazing, cropland conversion, mining and new roads.",
+  "Climate change: more snow, wildfires, and livestock and dogs moving ever higher."
+ ],
+ "status_note_nl": "Sinds de beoordeling van 2020 staat de manoel als Niet bedreigd (Least Concern) op de Rode Lijst van de IUCN, met naar schatting zo'n 58.000 volwassen dieren, maar de populatie neemt mogelijk af. Lokaal gaat hij achteruit; in China en Turkmenistan geldt hij als bedreigd en in Armenië en Azerbeidzjan als uitgestorven.",
+ "status_note_en": "Since the 2020 assessment the manul has been listed as Least Concern on the IUCN Red List, with an estimated 58,000 adults, although the population may be decreasing. It is declining locally; it is listed as Endangered in China and Turkmenistan and as extinct in Armenia and Azerbaijan.",
+ "sources": [
+  {
+   "id": 1,
+   "title": "Manul of Mongolia photo tour, trip report 2025 – manul on every field day (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2025/10/Cat-Expeditions-Manul-of-Mongolia-Tour-1-Trip-Report-2025.pdf"
+  },
+  {
+   "id": 2,
+   "title": "Manul (Pallas's cat) of Mongolia Tour One 2025 – three tours in eastern Mongolia (mammalwatching.com, 2025)",
+   "url": "https://www.mammalwatching.com/community-post/manul-pallass-cat-of-mongolia-tour-one-2025-trip-report/"
+  },
+  {
+   "id": 3,
+   "title": "Manul of Mongolia photo tour 2023 – sixteen manuls in eastern Mongolia (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2023/10/Cat-Expeditions-Manul-of-Mongolia-Photo-Tour-2023-Trip-Report.pdf"
+  },
+  {
+   "id": 4,
+   "title": "Manul of Mongolia photo tour 2022 – seventeen manuls in eastern Mongolia (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2023/02/Cat-Expeditions-Manul-of-Mongolia-Photo-Tour-2022-Trip-Report.pdf"
+  },
+  {
+   "id": 5,
+   "title": "Nature travel in Mongolia, February 2019 – Pallas's cat 500 km east of Ulaanbaatar (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/WTM-Snow-leopard-Mongolia-2019.pdf"
+  },
+  {
+   "id": 6,
+   "title": "Manul / Pallas's cat trip reports 2022–2025 (mammalwatching.com tag page)",
+   "url": "https://www.mammalwatching.com/tag/manul/"
+  },
+  {
+   "id": 7,
+   "title": "Mongolia 2022 recce trip report – Pallas's cat by torchlight in Hustai NP (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2023/05/trip-report-Mongolia2022.pdf"
+  },
+  {
+   "id": 8,
+   "title": "Never Mind the Snowcocks – Mongolia 2025, spotters scanning rocky outcrops for Pallas's cat (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2025/10/Never-Mind-The-Snowcocks-V3.pdf"
+  },
+  {
+   "id": 9,
+   "title": "Qinghai mammals tour August 2023 – Pallas's cat at Zhidoi and in Three Rivers NP (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2023/09/Qinghai-mammals-tour-August-2023-.pdf"
+  },
+  {
+   "id": 10,
+   "title": "Qinghai snow leopards and mammals tour July–August 2024 – more than ten Pallas's cats (mammalwatching.com)",
+   "url": "https://mammalwatching.com/wp-content/uploads/2025/03/Qinghai-Snow-Leopards-Mammals-Tour-Jul-Aug-2024.pdf"
+  },
+  {
+   "id": 11,
+   "title": "Mammals of the roof of the world, Qinghai August 2019 – four Pallas's cat observations (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/JK-Qinghai-August-2019.pdf"
+  },
+  {
+   "id": 12,
+   "title": "Ladakh trip report December 2023–January 2024 – Pallas's cat at Hanle (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/01/Ladakh-Trip-Report-Chris-Daniels-2023.pdf"
+  },
+  {
+   "id": 13,
+   "title": "Ladakh trip February–March 2024 – Pallas's cat near Hanle (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/03/ladakh-trip-2024.pdf"
+  },
+  {
+   "id": 14,
+   "title": "New trip report: Hemis NP and the Hanley Changthang Plateau, Ladakh (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/?p=50267"
+  },
+  {
+   "id": 15,
+   "title": "Ladakh summer 2019 – Pallas's cat at Tso Kar, rarely seen in summer (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/MR-Ladakh-summer-2019.pdf"
+  },
+  {
+   "id": 16,
+   "title": "China Sichuan 2017 – Pallas's cat mother and two kittens at Ruoergai (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2017/12/JVG-CHINA-SICHUAN-2017.pdf"
+  },
+  {
+   "id": 17,
+   "title": "Sichuan birds and mammals tour report 2019 – Pallas's cat in species list (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/CHN05_report_191203_Wild_China_Sichuans_Birds_Mammals.pdf"
+  },
+  {
+   "id": 18,
+   "title": "Sichuan trip synopsis 2014 – Pallas's cat missed at Ruoergai (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/2014/04/22/4163/"
+  },
+  {
+   "id": 19,
+   "title": "Pallas's cat species account (IUCN SSC Cat Specialist Group)",
+   "url": "https://www.catsg.org/living-species-pallasscat"
+  },
+  {
+   "id": 20,
+   "title": "Otocolobus manul – Mammalian Species account (Noonan, Baker & Hayssen, 2024)",
+   "url": "https://academic.oup.com/mspecies/article/56/1038/seae004/7712840"
+  },
+  {
+   "id": 21,
+   "title": "'Meme face' Pallas's cat traverses a complex conservation landscape (Mongabay, 2026)",
+   "url": "https://news.mongabay.com/2026/07/meme-face-pallass-cat-traverses-a-complex-conservation-landscape/"
+  },
+  {
+   "id": 22,
+   "title": "Significance of protected areas for Pallas's cat conservation in Russia (Barashkova, Kirilyuk & Smelansky, Nature Conservation Research, 2017)",
+   "url": "https://ncr-journal.bear-land.org/article/66"
+  },
+  {
+   "id": 23,
+   "title": "Recent records of the Pallas's cat in Changthang Wildlife Sanctuary, Ladakh (Mahar et al., 2017)",
+   "url": "https://researchgate.net/profile/Neeraj-Mahar/publication/316075522_Recent_records_of_the_Pallas's_cat_in_Changthang_Wildlife_Sanctuary_Ladakh_India/links/58ef06df458515c4aa52dd96/Recent-records-of-the-Pallass-cat-in-Changthang-Wildlife-Sanctuary-Ladakh-India.pdf"
+  },
+  {
+   "id": 24,
+   "title": "Distribution and status of manul in Central Asia and adjacent areas (Barashkova et al., 2019)",
+   "url": "https://zool.kz/wp-content/uploads/2021/01/barashkova_et_al_2019_distribution_and_status_of_manul_in_central_asia_and_adjacent_areas.pdf"
+  }
+ ],
+ "doubts": "Regio Mongolië: de gespecialiseerde manoelreizen (2022–2025) gaan volgens alle verslagen naar 'de steppe van Oost-Mongolië', 9 uur rijden vanaf Ulaanbaatar met een gerkamp; een winterverslag (feb. 2019) noemt '500 km ten oosten van Ulaanbaatar'. Geen enkel verslag noemt een aimag of reservaat (waarschijnlijk bewust geheimgehouden). Op basis van de afstand is dat grofweg het grensgebied Khentii/Sükhbaatar; ik heb lat 47.3 / lon 111.5 gezet. Let op: de opgegeven coördinaat 47.5/108.0 ligt maar ca. 80 km ten oosten van UB, en topspots.json heeft zelfs 47.0/104.0 (dat ligt ten westen van UB) – beide passen niet bij '9 uur rijden naar het oosten'; kies zelf welke je wilt aanhouden (id is behouden). Merkwaardig: het PDF-verslag 2025 vermeldt onder 'Places visited' 'Western Mongolia', terwijl het bijbehorende bericht en alle eerdere verslagen 'eastern Mongolia' zeggen en de soorten (Mongoolse gazelle, Brandts woelmuis) bij de oostelijke steppe passen; ik houd 'Oost' aan. Hustai: slechts één verslag met een manoel (nachtwaarneming); Hustai is dus NIET het gebied van de manoelreizen. Ikh Nart: geen bruikbare bron gevonden, weggelaten. Rusland: Daursky alleen op basis van onderzoek (Barashkova e.a. 2017, Mongabay), geen bezoekersverslagen gevonden; Altai (Sailyugem) en Tuva ook mogelijk, maar zonder bronnen. Kazachstan (centraal-Kazachstan monitoringsgebied), Iran, Nepal en Bhutan (record begin 2026 via cameravallen) weggelaten: alleen sporadische/cameravalgegevens, geen plek met een realistische kans. Het tripverslag 2022 noemt in de samenvatting 17 katten, het mammalwatching-bericht 19; ik noem 17. De CatSG-pagina vermeldt nog 'Near Threatened'; ik volg de IUCN-beoordeling 2020 (LC) via Mammalian Species 2024 en Mongabay 2026. Ruoergai-seizoen is afgeleid uit de data van de reizen (sept–okt 2017, dec 2019), niet uit een expliciete bron. De IUCN-pagina zelf gaf een 403, daarom niet als bron opgenomen."
+}

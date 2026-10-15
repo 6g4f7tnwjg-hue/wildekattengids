@@ -1,5 +1,5 @@
 {
-"_uitleg": "Top 10 om te bezoeken. 'vast' staat in deze volgorde bovenaan; land = nl/be/lu/de/fr, naam = precies de naam uit de gids. Is 'vast' korter dan 10, of staat een park niet meer in de gids, dan vult de bouw aan met de hoogste score (soorten, zeldzame soorten, beleving; aftrek voor beperkte toegang en onzekere vermeldingen; hooguit max_per_land per land). 'uitleg' is de zin waarom het park in de lijst staat (nl, en, fr, de, it); zonder uitleg maakt de bouw er zelf een. 'uitsluiten' = namen die nooit in de lijst mogen.",
+"_uitleg": "Top 10 om te bezoeken. 'vast' staat in deze volgorde bovenaan; land = nl/be/lu/de/fr, naam = precies de naam uit de gids. Is 'vast' korter dan 10, of staat een park niet meer in de gids, dan vult de bouw aan met de hoogste score (soorten, zeldzame soorten, beleving; aftrek voor beperkte toegang en onzekere vermeldingen; hooguit max_per_land per land). 'uitleg' is de zin waarom het park in de lijst staat (nl, en, fr, de, it, es); zonder uitleg maakt de bouw er zelf een. 'uitsluiten' = namen die nooit in de lijst mogen.",
 "max_per_land": 4,
 "uitsluiten": [],
 "vast": [
@@ -8,60 +8,70 @@
   "With 26 confirmed cat species, the largest cat collection in this guide, from tigers and jaguars to rare small cats such as the Asiatic golden cat and the tiger cats.",
   "Avec 26 espèces confirmées, la plus grande collection de félins de ce guide, des tigres et jaguars aux petits félins rares comme le chat de Temminck et les oncilles.",
   "Mit 26 bestätigten Katzenarten die größte Katzensammlung in diesem Guide – von Tigern und Jaguaren bis zu seltenen Kleinkatzen wie Asiatischer Goldkatze und Tigerkatzen.",
-  "Con 26 specie di felini confermate, la più grande collezione di felini di questa guida, dalle tigri e dai giaguari a piccoli felini rari come il gatto dorato asiatico e i gatti tigrini."]},
+  "Con 26 specie di felini confermate, la più grande collezione di felini di questa guida, dalle tigri e dai giaguari a piccoli felini rari come il gatto dorato asiatico e i gatti tigrini.",
+  "Con 26 especies de felinos confirmadas, la mayor colección de felinos de esta guía, desde tigres y jaguares hasta pequeños felinos raros como el gato dorado asiático y los tigrillos."]},
  {"land": "nl", "naam": "Faunapark Flakkee", "uitleg": [
   "De beste plek voor kleine katten: acht soorten, waaronder roestkat, moeraskat en Geoffroy’s kat, die je elders bijna niet ziet. Let op: niet elke dag open.",
   "The best place for small cats: eight species, including rusty-spotted cat, jungle cat and Geoffroy’s cat, which you hardly see anywhere else. Note: not open every day.",
   "Le meilleur endroit pour les petits félins : huit espèces, dont le chat rubigineux, le chat des marais et le chat de Geoffroy, presque introuvables ailleurs. Attention : pas ouvert tous les jours.",
   "Der beste Ort für Kleinkatzen: acht Arten, darunter Rostkatze, Rohrkatze und Salzkatze, die man anderswo kaum sieht. Achtung: nicht täglich geöffnet.",
-  "Il posto migliore per i piccoli felini: otto specie, tra cui gatto rugginoso, gatto della giungla e gatto di Geoffroy, che altrove non vedi quasi mai. Attenzione: non è aperto tutti i giorni."]},
+  "Il posto migliore per i piccoli felini: otto specie, tra cui gatto rugginoso, gatto della giungla e gatto di Geoffroy, che altrove non vedi quasi mai. Attenzione: non è aperto tutti i giorni.",
+  "El mejor lugar para los pequeños felinos: ocho especies, entre ellas el gato herrumbroso, el gato de la jungla y el gato de Geoffroy, que casi no se ven en otros sitios. Ojo: no abre todos los días."]},
  {"land": "fr", "naam": "Le Domaine des Fauves", "uitleg": [
   "19 soorten, met de enige Canadese lynx van Frankrijk en veel kleine katten, van margay tot vissende kat.",
   "19 species, including France’s only Canada lynx and many small cats, from margay to fishing cat.",
   "19 espèces, dont le seul lynx du Canada de France et de nombreux petits félins, du margay au chat pêcheur.",
   "19 Arten, darunter der einzige Kanadische Luchs Frankreichs und viele Kleinkatzen, von der Langschwanzkatze bis zur Fischkatze.",
-  "19 specie, con l’unica lince canadese di Francia e molti piccoli felini, dal margay al gatto pescatore."]},
+  "19 specie, con l’unica lince canadese di Francia e molti piccoli felini, dal margay al gatto pescatore.",
+  "19 especies, con el único lince canadiense de Francia y muchos pequeños felinos, del margay al gato pescador."]},
  {"land": "be", "naam": "Pairi Daiza", "uitleg": [
   "Acht soorten grote en middelgrote katten, waaronder jaguar, sneeuwluipaard en cheetah. Je kunt er overnachten met uitzicht op de katten: in The Tiger House bij de Siberische tijgers en in The Jaguar Falls bij de jaguars.",
   "Eight species of big and medium-sized cats, including jaguar, snow leopard and cheetah. You can stay overnight with a view of the cats: in The Tiger House next to the Siberian tigers and in The Jaguar Falls next to the jaguars.",
   "Huit espèces de grands et moyens félins, dont le jaguar, la panthère des neiges et le guépard. On peut y dormir avec vue sur les félins : à The Tiger House près des tigres de Sibérie et à The Jaguar Falls près des jaguars.",
   "Acht Arten großer und mittelgroßer Katzen, darunter Jaguar, Schneeleopard und Gepard. Du kannst dort mit Blick auf die Katzen übernachten: im Tiger House bei den Sibirischen Tigern und in The Jaguar Falls bei den Jaguaren.",
-  "Otto specie di felini grandi e medi, tra cui giaguaro, leopardo delle nevi e ghepardo. Puoi pernottare con vista sui felini: in The Tiger House accanto alle tigri siberiane e in The Jaguar Falls accanto ai giaguari."]},
+  "Otto specie di felini grandi e medi, tra cui giaguaro, leopardo delle nevi e ghepardo. Puoi pernottare con vista sui felini: in The Tiger House accanto alle tigri siberiane e in The Jaguar Falls accanto ai giaguari.",
+  "Ocho especies de felinos grandes y medianos, entre ellas el jaguar, el leopardo de las nieves y el guepardo. Puedes dormir con vistas a los felinos: en The Tiger House junto a los tigres siberianos y en The Jaguar Falls junto a los jaguares."]},
  {"land": "fr", "naam": "ZooParc de Beauval", "uitleg": [
   "Elf soorten, waaronder nevelpanter, jaguar en sneeuwluipaard, en de witte tijgers; een van de grootste dierentuinen van Europa.",
   "Eleven species, including clouded leopard, jaguar and snow leopard, plus the white tigers; one of the largest zoos in Europe.",
   "Onze espèces, dont la panthère nébuleuse, le jaguar et la panthère des neiges, ainsi que les tigres blancs ; l’un des plus grands zoos d’Europe.",
   "Elf Arten, darunter Nebelparder, Jaguar und Schneeleopard, dazu die weißen Tiger; einer der größten Zoos Europas.",
-  "Undici specie, tra cui leopardo nebuloso, giaguaro e leopardo delle nevi, e le tigri bianche; uno degli zoo più grandi d’Europa."]},
+  "Undici specie, tra cui leopardo nebuloso, giaguaro e leopardo delle nevi, e le tigri bianche; uno degli zoo più grandi d’Europa.",
+  "Once especies, entre ellas la pantera nebulosa, el jaguar y el leopardo de las nieves, además de los tigres blancos; uno de los zoos más grandes de Europa."]},
  {"land": "nl", "naam": "Landgoed Hoenderdaell / Stichting Leeuw", "uitleg": [
   "Hier vangt Stichting Leeuw grote katten op die uit slechte omstandigheden zijn gered: zes soorten, van leeuw en tijger tot sneeuwluipaard en lynx.",
   "Here Stichting Leeuw takes in big cats rescued from poor conditions: six species, from lion and tiger to snow leopard and lynx.",
   "Ici, Stichting Leeuw accueille de grands félins sauvés de mauvaises conditions : six espèces, du lion et du tigre à la panthère des neiges et au lynx.",
   "Hier nimmt die Stichting Leeuw Großkatzen auf, die aus schlechten Verhältnissen gerettet wurden: sechs Arten, von Löwe und Tiger bis Schneeleopard und Luchs.",
-  "Qui Stichting Leeuw accoglie grandi felini salvati da cattive condizioni: sei specie, dal leone e dalla tigre al leopardo delle nevi e alla lince."]},
+  "Qui Stichting Leeuw accoglie grandi felini salvati da cattive condizioni: sei specie, dal leone e dalla tigre al leopardo delle nevi e alla lince.",
+  "Aquí la fundación Stichting Leeuw acoge grandes felinos rescatados de malas condiciones: seis especies, del león y el tigre al leopardo de las nieves y el lince."]},
  {"land": "fr", "naam": "Zoo du Bassin d’Arcachon", "uitleg": [
   "Tien soorten, van jaguar en sneeuwluipaard tot margay, ocelot en zandkat; een van de meest complete kattencollecties van Frankrijk.",
   "Ten species, from jaguar and snow leopard to margay, ocelot and sand cat; one of the most complete cat collections in France.",
   "Dix espèces, du jaguar et de la panthère des neiges au margay, à l’ocelot et au chat des sables ; l’une des collections de félins les plus complètes de France.",
   "Zehn Arten, von Jaguar und Schneeleopard bis Langschwanzkatze, Ozelot und Sandkatze; eine der vollständigsten Katzensammlungen Frankreichs.",
-  "Dieci specie, dal giaguaro e dal leopardo delle nevi al margay, all’ocelot e al gatto delle sabbie; una delle collezioni di felini più complete di Francia."]},
+  "Dieci specie, dal giaguaro e dal leopardo delle nevi al margay, all’ocelot e al gatto delle sabbie; una delle collezioni di felini più complete di Francia.",
+  "Diez especies, del jaguar y el leopardo de las nieves al margay, el ocelote y el gato de las arenas; una de las colecciones de felinos más completas de Francia."]},
  {"land": "de", "naam": "Wilhelma", "uitleg": [
   "Zeven soorten, waaronder jaguar, sneeuwluipaard en cheetah. In 2025 opende een tijgerverblijf van 5.000 m² met een bezoekerstunnel.",
   "Seven species, including jaguar, snow leopard and cheetah. In 2025 a 5,000 m² tiger enclosure with a visitor tunnel opened.",
   "Sept espèces, dont le jaguar, la panthère des neiges et le guépard. En 2025 a ouvert un enclos pour tigres de 5 000 m² avec un tunnel pour les visiteurs.",
   "Sieben Arten, darunter Jaguar, Schneeleopard und Gepard. 2025 eröffnete eine 5.000 m² große Tigeranlage mit Besuchertunnel.",
-  "Sette specie, tra cui giaguaro, leopardo delle nevi e ghepardo. Nel 2025 è stato aperto un recinto per le tigri di 5.000 m² con un tunnel per i visitatori."]},
+  "Sette specie, tra cui giaguaro, leopardo delle nevi e ghepardo. Nel 2025 è stato aperto un recinto per le tigri di 5.000 m² con un tunnel per i visitatori.",
+  "Siete especies, entre ellas el jaguar, el leopardo de las nieves y el guepardo. En 2025 abrió un recinto de tigres de 5000 m² con un túnel para visitantes."]},
  {"land": "de", "naam": "Zoo Leipzig", "uitleg": [
   "Zes soorten in themawerelden als de Tiger-Taiga en de tropenhal Gondwanaland, waar ook ocelot en vissende kat wonen. Leipzig houdt het internationale stamboek van de tijger.",
   "Six species in themed worlds such as the Tiger-Taiga and the tropical hall Gondwanaland, home to ocelot and fishing cat. Leipzig keeps the international tiger studbook.",
   "Six espèces dans des univers thématiques comme la Tiger-Taiga et la serre tropicale Gondwanaland, où vivent aussi l’ocelot et le chat pêcheur. Leipzig tient le registre international du tigre.",
   "Sechs Arten in Themenwelten wie der Tiger-Taiga und der Tropenhalle Gondwanaland, wo auch Ozelot und Fischkatze leben. Leipzig führt das internationale Zuchtbuch des Tigers.",
-  "Sei specie in mondi tematici come la Tiger-Taiga e la serra tropicale Gondwanaland, dove vivono anche ocelot e gatto pescatore. Lipsia tiene il libro genealogico internazionale della tigre."]},
+  "Sei specie in mondi tematici come la Tiger-Taiga e la serra tropicale Gondwanaland, dove vivono anche ocelot e gatto pescatore. Lipsia tiene il libro genealogico internazionale della tigre.",
+  "Seis especies en mundos temáticos como la Tiger-Taiga y el pabellón tropical Gondwanaland, donde viven el ocelote y el gato pescador. Leipzig lleva el libro genealógico internacional del tigre."]},
  {"land": "nl", "naam": "Safaripark Beekse Bergen", "uitleg": [
   "Leeuw, tijger, luipaard en cheetah, te zien vanuit de eigen auto, de safaribus of de boot. Je kunt er ook overnachten tussen de dieren.",
   "Lion, tiger, leopard and cheetah, seen from your own car, the safari bus or the boat. You can also stay overnight among the animals.",
   "Lion, tigre, léopard et guépard, à voir depuis sa propre voiture, le bus safari ou le bateau. On peut aussi dormir au milieu des animaux.",
   "Löwe, Tiger, Leopard und Gepard, zu sehen aus dem eigenen Auto, dem Safaribus oder dem Boot. Man kann auch zwischen den Tieren übernachten.",
-  "Leone, tigre, leopardo e ghepardo, da vedere dalla propria auto, dal safaribus o dalla barca. Puoi anche pernottare tra gli animali."]}
+  "Leone, tigre, leopardo e ghepardo, da vedere dalla propria auto, dal safaribus o dalla barca. Puoi anche pernottare tra gli animali.",
+  "León, tigre, leopardo y guepardo, vistos desde tu propio coche, el autobús del safari o el barco. También puedes dormir entre los animales."]}
 ]
 }

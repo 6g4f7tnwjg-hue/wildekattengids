@@ -1,0 +1,269 @@
+{
+ "no": 6,
+ "intro_nl": "Een groep varkensstaartmakaken scheldt hoog in de kroon van het regenwoud. Dan zie je waarom: languit op een tak ligt een kat met wolkvlekken en een staart bijna zo lang als zijn lijf. Zo'n moment is in Khao Yai echt gebeurd, maar het is decennia geleden en zeldzaam gebleven. Er is op het vasteland van Azië nog geen enkele plek waar je de nevelpanter met enige regelmaat ziet. Kans: 1 – zoeken is een avontuur, zien is een wonder.",
+ "intro_en": "A troop of pig-tailed macaques is scolding high in the rainforest canopy. Then you see why: stretched out on a branch lies a cat with cloud-shaped blotches and a tail almost as long as its body. That really happened in Khao Yai, but it was decades ago and has stayed rare. On mainland Asia there is still not a single place where you see the clouded leopard with any regularity. Chance: 1 – searching is an adventure, seeing one is a miracle.",
+ "spots": [
+  {
+   "id": "th-khao-yai",
+   "name_nl": "Khao Yai",
+   "name_en": "Khao Yai",
+   "area_nl": "Nationaal park Khao Yai en het aangrenzende Thap Lan (Dong Phayayen–Khao Yai-boscomplex)",
+   "area_en": "Khao Yai National Park and adjoining Thap Lan (Dong Phayayen–Khao Yai forest complex)",
+   "country_nl": "Thailand",
+   "country_en": "Thailand",
+   "cont": "asia",
+   "lat": 14.4,
+   "lon": 101.4,
+   "score": 1,
+   "why_nl": "De soort is hier goed onderzocht en er zijn losse waarnemingen bekend, zoals een dier in de boomkroon in 1990, maar recente tripverslagen van zoogdierkijkers melden geen nevelpanters, en nieuwe meldingen komen vooral van cameravallen.",
+   "why_en": "The species has been studied here and there are scattered sightings, such as an animal in the canopy in 1990, but recent mammalwatching trip reports log no clouded leopards, and new records come mainly from camera traps.",
+   "season_nl": "Het hele jaar; het droge seizoen (ongeveer november–april) maakt wegen en paden beter begaanbaar.",
+   "season_en": "Year-round; the dry season (roughly November–April) makes roads and trails easier.",
+   "time_nl": "De officiële nachtrit na zonsondergang en de vroege ochtend; de soort is dag en nacht actief, met iets meer activiteit in de schemering en 's nachts.",
+   "time_en": "The official night drive after dusk and early morning; the species is active by day and night, slightly more at twilight and at night.",
+   "trip_nl": "Twee à drie dagen in of bij het park: zelf over de parkwegen rijden, wandelen met een parkranger en de door het park georganiseerde nachtrit met zoeklicht.",
+   "trip_en": "Two to three days in or near the park: self-drive on the park roads, walks with a park ranger and the park's own spotlit night drive.",
+   "sources": [
+    1,
+    2,
+    3,
+    4,
+    14
+   ]
+  },
+  {
+   "id": "th-kaeng-krachan",
+   "name_nl": "Kaeng Krachan",
+   "name_en": "Kaeng Krachan",
+   "area_nl": "Nationaal park Kaeng Krachan, provincie Phetchaburi (West-Thailand)",
+   "area_en": "Kaeng Krachan National Park, Phetchaburi Province (western Thailand)",
+   "country_nl": "Thailand",
+   "country_en": "Thailand",
+   "cont": "asia",
+   "lat": 12.8,
+   "lon": 99.4,
+   "score": 1,
+   "why_nl": "Het park staat bekend om luipaarden op de weg en de nevelpanter komt er voor, maar bezoekers mogen na donker niet blijven en een zoogdierkijker noemde de kans op een nevelpanter in 2025 'nog kleiner' dan op een tijger.",
+   "why_en": "The park is known for leopards on the road and clouded leopards do occur, but visitors may not stay after dark and one mammalwatcher in 2025 rated the chance of a clouded leopard as 'even slimmer' than that of a tiger.",
+   "season_nl": "Droge seizoen, ongeveer november–mei; in de regentijd kunnen delen van de parkweg afgesloten zijn.",
+   "season_en": "Dry season, roughly November–May; in the rainy season parts of the park road may be closed.",
+   "time_nl": "Van poortopening (ongeveer 5 uur) tot sluiting (ongeveer 19 uur); de eerste en laatste uren zijn het best.",
+   "time_en": "From gate opening (about 5 am) to closing (about 7 pm); the first and last hours are best.",
+   "trip_nl": "Twee à vier dagen langzaam rijden en lopen over de parkweg, met lunch op een van de kampeerterreinen in het park; kamperen binnen het park geeft je de meeste uren.",
+   "trip_en": "Two to four days of slow driving and walking along the park road, with lunch at one of the park's campsites; camping inside the park gives you the most hours.",
+   "sources": [
+    2,
+    5,
+    6
+   ]
+  },
+  {
+   "id": "th-huai-kha-khaeng",
+   "name_nl": "Huai Kha Khaeng",
+   "name_en": "Huai Kha Khaeng",
+   "area_nl": "Wildreservaat Huai Kha Khaeng (Werelderfgoed Thungyai–Huai Kha Khaeng), provincie Uthai Thani",
+   "area_en": "Huai Kha Khaeng Wildlife Sanctuary (Thungyai–Huai Kha Khaeng World Heritage Site), Uthai Thani Province",
+   "country_nl": "Thailand",
+   "country_en": "Thailand",
+   "cont": "asia",
+   "lat": 15.5,
+   "lon": 99.3,
+   "score": 1,
+   "why_nl": "Een van de wildrijkste bossen van Thailand waar nevelpanters 'af en toe' worden gezien, maar toeristen mogen er normaal niet rondrijden en 's nachts niet de weg op.",
+   "why_en": "One of Thailand's richest forests, where clouded leopards are seen 'occasionally', but tourists are normally not allowed to drive around and roads are closed at night.",
+   "season_nl": "Droge seizoen, ongeveer november–april.",
+   "season_en": "Dry season, roughly November–April.",
+   "time_nl": "Vroege ochtend en late middag rond het hoofdkwartier.",
+   "time_en": "Early morning and late afternoon around headquarters.",
+   "trip_nl": "Een à twee dagen rond het hoofdkwartier met wandelpaden; voor meer toegang heb je speciale toestemming en een ranger nodig.",
+   "trip_en": "One or two days around headquarters with its trails; wider access needs special permission and a ranger.",
+   "sources": [
+    2,
+    7
+   ]
+  },
+  {
+   "id": "in-manas",
+   "name_nl": "Manas",
+   "name_en": "Manas",
+   "area_nl": "Nationaal park en tijgerreservaat Manas, Assam (grenst aan Royal Manas in Bhutan)",
+   "area_en": "Manas National Park and Tiger Reserve, Assam (bordering Royal Manas in Bhutan)",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 26.7,
+   "lon": 91.0,
+   "score": 1,
+   "why_nl": "Cameravallen legden hier twaalf verschillende nevelpanters vast (ongeveer 1,7 per 100 km²), maar de kat houdt zich bewust schuil voor tijgers en luipaarden en waarnemingen door bezoekers zijn zeldzaam.",
+   "why_en": "Camera traps recorded twelve different clouded leopards here (about 1.7 per 100 km²), but the cat deliberately keeps out of sight of tigers and leopards, and sightings by visitors are rare.",
+   "season_nl": "Het park is meestal open van ongeveer oktober tot mei; in de moesson is het dicht.",
+   "season_en": "The park is usually open from about October to May; it closes during the monsoon.",
+   "time_nl": "Ochtend- en middagsafari's; houd bij bosranden en in dichte bosstukken de bomen in de gaten.",
+   "time_en": "Morning and afternoon safaris; keep an eye on trees along forest edges and in dense patches.",
+   "trip_nl": "Jeepsafari's vanuit de dorpen aan de rand van het park, drie à vier dagen.",
+   "trip_en": "Jeep safaris from villages at the edge of the park, three to four days.",
+   "sources": [
+    1,
+    9
+   ]
+  },
+  {
+   "id": "in-dampa",
+   "name_nl": "Dampa",
+   "name_en": "Dampa",
+   "area_nl": "Tijgerreservaat Dampa, Mizoram (Noordoost-India)",
+   "area_en": "Dampa Tiger Reserve, Mizoram (northeast India)",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 23.6,
+   "lon": 92.4,
+   "score": 1,
+   "why_nl": "Hier werd met ongeveer 5 dieren per 100 km² een van de hoogste dichtheden van het vasteland gemeten, maar dat is cameravalwerk: tripverslagen van bezoekers die er een zagen, vonden we niet.",
+   "why_en": "Researchers measured one of the highest densities on the mainland here, about 5 per 100 km², but that is camera-trap work: we found no trip reports from visitors who saw one.",
+   "season_nl": "Droge seizoen, ongeveer november–maart.",
+   "season_en": "Dry season, roughly November–March.",
+   "time_nl": "Vroege ochtend en schemering.",
+   "time_en": "Early morning and dusk.",
+   "trip_nl": "Een avontuurlijke expeditie: regel vooraf toestemming bij de bosdienst en trek met een lokale gids of ranger het bos in.",
+   "trip_en": "An adventurous expedition: arrange permission with the forest department in advance and go into the forest with a local guide or ranger.",
+   "sources": [
+    1,
+    8
+   ]
+  },
+  {
+   "id": "np-langtang",
+   "name_nl": "Langtang",
+   "name_en": "Langtang",
+   "area_nl": "Nationaal park Langtang, bossen in de Himalaya-uitlopers ten noorden van Kathmandu",
+   "area_en": "Langtang National Park, forests in the Himalayan foothills north of Kathmandu",
+   "country_nl": "Nepal",
+   "country_en": "Nepal",
+   "cont": "asia",
+   "lat": 28.2,
+   "lon": 85.5,
+   "score": 1,
+   "why_nl": "Cameravallen vonden hier nevelpanters tot op bijna 3500 m en zoogdierkijkers zoeken er sinds een paar jaar gericht, maar in 2020 zag alleen een lokale gids er een en in 2023 bleef het bij sporen.",
+   "why_en": "Camera traps found clouded leopards here up to almost 3,500 m and mammalwatchers have searched in a targeted way for some years, but in 2020 only a local guide saw one and in 2023 the group found only tracks.",
+   "season_nl": "Voorjaar (eind februari–mei) en najaar (september–half november); mijd de diepe winter.",
+   "season_en": "Spring (late February–May) and autumn (September–mid-November); avoid deep winter.",
+   "time_nl": "Avond en nacht op de bospaden, plus de vroege ochtend.",
+   "time_en": "Evening and night on the forest trails, plus early morning.",
+   "trip_nl": "Een trekking- en kampeerexpeditie van ongeveer tien dagen met lokale gidsen, met lange wandelingen over bospaden overdag en 's nachts; voor kamperen in het bos zijn vergunningen nodig.",
+   "trip_en": "A trekking and camping expedition of about ten days with local guides, with long walks on forest trails by day and night; camping in the forest needs permits.",
+   "sources": [
+    10,
+    11,
+    12
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Kijk omhoog. De nevelpanter rust en jaagt veel in bomen; zoek dikke horizontale takken en lianen af, vooral langs bosranden en rivieren.",
+  "Luister naar makaken en langoeren. Plotseling alarmgeschreeuw in de kroon kan betekenen dat er een rover vlakbij is.",
+  "Hij loopt ook over wegen en paden. Rijd of loop langzaam in de schemering en speur de berm af naar een lange, dikke staart.",
+  "Let op sporen in modder op bospaden: ronde pootafdrukken zonder nagels, groter dan die van een bengaalse kat.",
+  "Waar je 's nachts mag zoeken, gebruik dan een sterke lamp of een warmtebeeldkijker; de soort is dag en nacht actief.",
+  "Reken op cameravallen, niet op je ogen. Bijna alle recente gegevens op het vasteland komen van cameravallen.",
+  "Ga met realistische verwachtingen: wie Neofelis echt wil zien, heeft op Borneo (Soendanevelpanter) meer kans."
+ ],
+ "tips_en": [
+  "Look up. The clouded leopard rests and hunts a lot in trees; scan thick horizontal branches and lianas, especially along forest edges and rivers.",
+  "Listen to macaques and langurs. Sudden alarm calls in the canopy can mean a predator is close.",
+  "It also walks along roads and trails. Drive or walk slowly at dusk and scan the verges for a long, thick tail.",
+  "Check muddy forest trails for tracks: round prints without claw marks, larger than a leopard cat's.",
+  "Where night searching is allowed, use a strong torch or a thermal scope; the species is active by day and night.",
+  "Count on camera traps, not your eyes. Almost all recent records on the mainland come from camera traps.",
+  "Keep your expectations realistic: if you really want to see a Neofelis, your odds are better on Borneo (Sunda clouded leopard)."
+ ],
+ "threats_nl": [
+  "Stroperij en strikken: illegale jacht voor vacht, tanden en botten geldt als de grootste oorzaak van de achteruitgang, en veel dieren komen om in strikken die voor ander wild zijn gezet.",
+  "Ontbossing en versnippering door landbouw en oliepalmplantages.",
+  "Illegale handel in huiden en soms levende dieren op markten in Zuidoost-Azië.",
+  "Minder prooi doordat herten, varkens en apen worden weggejaagd voor de vleesmarkt.",
+  "In Nepal ook vergeldingsdoding na het doden van vee."
+ ],
+ "threats_en": [
+  "Poaching and snares: illegal hunting for fur, teeth and bones is considered the main driver of decline, and many animals die in snares set for other game.",
+  "Deforestation and fragmentation by agriculture and oil palm plantations.",
+  "Illegal trade in skins and occasionally live animals in Southeast Asian markets.",
+  "Prey depletion because deer, pigs and primates are hunted for local meat markets.",
+  "In Nepal also retaliatory killing after livestock losses."
+ ],
+ "status_note_nl": "De nevelpanter staat sinds 2008 als Kwetsbaar (Vulnerable) op de IUCN Rode Lijst, met een dalende trend; volgens de IUCN SSC Cat Specialist Group leven er waarschijnlijk maar 3.700 à 5.580 volwassen dieren en is de soort sterk achteruitgegaan in China, Myanmar en Vietnam. De Taiwanese ondersoort geldt als uitgestorven (laatste zekere waarneming 1983).",
+ "status_note_en": "The clouded leopard has been listed as Vulnerable on the IUCN Red List since 2008, with a decreasing trend; according to the IUCN SSC Cat Specialist Group there are probably only 3,700–5,580 mature individuals, with severe declines in China, Myanmar and Vietnam. The Taiwanese subspecies is considered extinct (last confirmed record 1983).",
+ "sources": [
+  {
+   "id": 1,
+   "title": "Mainland clouded leopard – species account (IUCN SSC Cat Specialist Group)",
+   "url": "https://www.catsg.org/living-species-cloudedleopard"
+  },
+  {
+   "id": 2,
+   "title": "Clouded leopard (Neofelis nebulosa) – species page and Thai site list (Thai National Parks)",
+   "url": "https://www.thainationalparks.com/species/clouded-leopard"
+  },
+  {
+   "id": 3,
+   "title": "Sighting of a clouded leopard in Khao Yai National Park (Natural History Bulletin of the Siam Society, 1990)",
+   "url": "https://thesiamsociety.org/wp-content/uploads/2020/04/NHBSS_038_1l_Davies_SightingOfAClouded-2.pdf"
+  },
+  {
+   "id": 4,
+   "title": "Camera spots three rare clouded leopards, incl. Thap Lan in the Khao Yai complex (Bangkok Post)",
+   "url": "https://www.bangkokpost.com/thailand/general/2721394/camera-spots-three-rare-clouded-leopards"
+  },
+  {
+   "id": 5,
+   "title": "Thailand trip report: Kaeng Krachan, no spotlighting after dark (mammalwatching.com, 2026)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2026/04/Thailand.pdf"
+  },
+  {
+   "id": 6,
+   "title": "Kaeng Krachan National Park, Thailand, January 2025 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/community-post/kaeng-krachan-national-park-thailand-january-2025/"
+  },
+  {
+   "id": 7,
+   "title": "Thailand: Huai Kha Khaeng and Mae Wong (mammalwatching.com, 2007)",
+   "url": "https://www.mammalwatching.com/2007/12/21/thailand-hui-kha-kaeng-and-mae-wong-2007/"
+  },
+  {
+   "id": 8,
+   "title": "Singh & Macdonald – Populations and activity patterns of clouded leopards and marbled cats in Dampa Tiger Reserve (Journal of Mammalogy, 2017)",
+   "url": "https://ora.ox.ac.uk/objects/uuid:6f7f1f48-5c02-4658-9f9d-36a350cef119"
+  },
+  {
+   "id": 9,
+   "title": "Clouded leopards develop ways to survive competition – Manas camera-trap study (Mongabay India, 2023)",
+   "url": "https://india.mongabay.com/2023/10/clouded-leopards-develop-ways-to-survive-competition/?amp=1"
+  },
+  {
+   "id": 10,
+   "title": "Can et al. – Occurrence and activity of clouded leopards, leopards and leopard cats in Langtang (Biodiversity and Conservation, 2019)",
+   "url": "https://www.springerprofessional.de/factors-affecting-the-occurrence-and-activity-of-clouded-leopard/17481536"
+  },
+  {
+   "id": 11,
+   "title": "Mainland clouded leopard search, Langtang, February 2020 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/2020/05/07/new-trip-report-mainland-clouded-leopard-search-nepal/"
+  },
+  {
+   "id": 12,
+   "title": "Clouded leopard expedition Langtang, November 2023 – trip report (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/07/Clouded-Leopard-Expedition-Nepal-Nov-2023.pdf"
+  },
+  {
+   "id": 13,
+   "title": "Advice for Thailand too – Khao Sok, clouded leopard possible but rare (mammalwatching.com, 2017)",
+   "url": "https://www.mammalwatching.com/2017/10/29/advice-for-thailand-too/"
+  },
+  {
+   "id": 14,
+   "title": "Thailand mammal report: Kaeng Krachan and Khao Yai, February 2024 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/06/2024-thailand-mammal-report.pdf"
+  }
+ ],
+ "doubts": "Eerlijk gezegd bestaat er op het vasteland geen plek waar toeristen de nevelpanter met enige regelmaat zien; alle spots hebben daarom score 1 en de volgorde is grotendeels arbitrair (Khao Yai eerst omdat daar een officiële nachtrit is en de soort er bekend is). Langtang (Nepal) werd door zoogdierkijkers enkele jaren als de 'beste gok' gezien (rond 2018/2019 zou een reiziger er succes hebben gehad), maar dat verslag heb ik niet zelf gelezen; de groepsreizen van 2020 en 2023 zagen er zelf geen. Bron 13 (Khao Sok) is alleen als achtergrond opgenomen, niet als spot. Weggelaten: Taman Negara/Maleisisch schiereiland (geen bruikbare waarnemingsgegevens gevonden; CATSG noemt wel de Central Forest Spine), Bhutan (alleen het grensgebied Royal Manas genoemd bij Manas), Chitwan (geen onderbouwing gevonden), Pakke en Namdapha (alleen cameravalrecords; Pakke had pas in 2016/2017 zijn eerste foto). Taiwan: uitgestorven, alleen in de statusnotitie. Het seizoen voor Manas (oktober–mei open) en de droge seizoenen voor Thailand en Mizoram zijn algemene kennis en niet uit een specifieke bron. Een viraal 'Noordoost-India'-filmpje van een moeder met jongen (2025) bleek uit Indonesië te komen; niet gebruikt. Populatiecijfer: CATSG geeft 3.700–5.580 volwassen dieren, oudere bronnen 'minder dan 10.000'."
+}

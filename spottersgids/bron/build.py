@@ -10,7 +10,7 @@ J = lambda *p: os.path.join(ROOT, *p)
 load = lambda p: json.load(open(J(p), encoding='utf-8'))
 
 # Soorten met een afgeronde soortpagina (per werelddeel uitgebreid)
-PAGES = [24, 27, 37, 4, 38, 42]
+PAGES = [24, 27, 37, 4, 38, 42, 1, 30, 11, 12, 13, 40, 41]
 
 # Dezelfde plek onder verschillende id's in de onderzoeksbestanden
 ALIAS = json.load(open(J('data', 'alias.json'), encoding='utf-8')) if os.path.exists(J('data', 'alias.json')) else {}

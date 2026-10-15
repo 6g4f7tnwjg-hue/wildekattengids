@@ -2,6 +2,30 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 15 oktober 2026 – Ierland
+
+Nieuwe landpagina `ierland/` (bron: `bron/gidsen/ie.html`), in het Nederlands en Engels (geen Iers, op verzoek). Eén pagina met een filter per provincie (Leinster, Munster, Ulster-deel; Connacht heeft geen locaties met katten), plus kaart, routeplanner, recente geboortes, soortpagina’s, filters op type en labels en het meldformulier. Noord-Ierland staat niet in deze gids: grijs op de kaart, met een verwijzing naar de VK-gids.
+
+**Aantallen**
+- **7 locaties** met wilde katachtigen: 3 dierentuinen (Dublin Zoo, Fota Wildlife Park, Ardmore Open Farm; EAZA of BIAZA), 2 dierenparken (Secret Valley, Errigal View), 1 wildpark (Wild Ireland) en 1 attractiepark (Emerald Park). Ardmore en Errigal View hebben alleen onzekere vermeldingen.
+- **6 soorten bevestigd**: leeuw (Aziatisch), tijger (Amoer en Sumatraans), luipaard (Amoer), cheetah, Euraziatische lynx en serval. Sneeuwluipaard (Dublin Zoo) alleen onzeker.
+- 15 vermeldingen in de hoofdtabel, waarvan 4 onzeker (zie `TWIJFELGEVALLEN.md`).
+- Route met alle soorten in drie parken: Emerald Park, Dublin Zoo en Secret Valley (Fota kan Dublin Zoo vervangen).
+- 3 recente geboortes, allemaal in Fota: cheetah (november 2025), Sumatraanse tijger (juni 2026), Aziatische leeuw (juli 2026).
+- 73 andere locaties onderzocht zonder katten (gesloten, circussen, opvang zonder katten, roofvogelcentra, open farms, aquaria).
+
+**Werkwijze**
+- Basislijst uit Zootierliste (alle katachtige taxa, “Aktuelle” en “Ehemalige”: 35 Ierse instellingen, 6 met katten), de EAZA-ledenkaart (5 Ierse leden) en de BIAZA-ledenlijst (5 Ierse leden).
+- Officiële lijst: de NPWS publiceert geen lijst van vergunde dierentuinen (S.I. 440/2003). De nieuwste volledige lijst is een antwoord op Kamervragen van 8 september 2022 (55 geïnspecteerde dierentuinen, 51 open): **verouderd**. Alle namen daarop zijn nagelopen.
+- Vijf onderzoeksagenten (Zootierliste en officiële lijsten, Leinster, Munster, Connacht + Cavan/Donegal/Monaghan, opvang/particulieren/circussen) en twee vervolgagenten (open punten per locatie; de NPWS-namen en een brede zoektocht naar gemiste locaties). Eén JSON-formaat, eigen naamvoorvoegsels, samengevoegd met een script. Per locatie de eigen website (waar nodig met Playwright), daarna Iers nieuws en sociale media; bij elke vermelding bron en datum.
+- Type: dierentuin bij lidmaatschap van EAZA of BIAZA (BIAZA toegevoegd aan `locatietypes.json`); wildparken en attractieparken houden hun eigen type.
+- Circussen: wilde dieren verboden sinds 1-1-2018 (S.I. 482/2017), ook tentoonstellen en winterkwartieren; geen circus met katten meer. Particulier houden van wilde dieren is in de Republiek niet geregeld (geen register); geen particuliere houder gevonden die bezoekers ontvangt.
+- De gids is met een script afgeleid van de Spaanse gids (eerst het Spaans eruit, dan gegevens en vaste teksten). Geen foto’s van parken gezocht; de pagina gebruikt de bestaande soortfoto’s.
+
+**Hoofdpagina**: Ierland heeft een vlag, kleur (groen), tegel en kaartvorm (Natural Earth; het kaartkader is naar het westen vergroot tot 10,75° W), staat in “alle soorten”, “parken op aantal soorten”, het overzicht per land, het zoeken en de tellerregel (nu 11 landen · 500 locaties · 29 soorten). Landenlijsten in titels en beschrijvingen in zes talen bijgewerkt. Top 10 niet veranderd: geen Iers park komt in de buurt (Fota en Emerald Park scoren 30, nummer 10 heeft 46).
+
+**Gecontroleerd**: de Ierse pagina (NL/EN) en de hoofdpagina (zes talen) op 375 px: geen fouten, geen horizontaal scrollen. Provinciefilter (kaart, lijsten en hoofdtabel), kaart, zoeken, locatie- en soortpagina’s, route, interne links en de Claude-pagina.
+
 ## 15 oktober 2026 – Spanje
 
 Nieuwe landpagina `spanje/` (bron: `bron/gidsen/es.html`), in het Nederlands, Engels en Spaans. Eén pagina met een filter per autonome gemeenschap (kaart, lijsten, keuzelijst en hoofdtabel), plus kaart, routeplanner, recente geboortes, soortpagina’s, filters op type en labels en het meldformulier.

@@ -4,6 +4,24 @@ Vermeldingen met de status “onzeker”: ze staan wel in de gids, maar tellen n
 
 Regel: bevestigd alleen met een recente bron (2025–2026); onzeker alleen met een concrete aanwijzing van na 2024; oudere aanwijzingen gaan naar “Eerder hier”.
 
+## Ierland
+
+| Locatie | Soort | Waarom twijfel | Bron |
+|---|---|---|---|
+| Ardmore Open Farm (Ardmore (Waterford)) | Euraziatische lynx | Alleen genoemd door een bezoeker (begin 2025) en op Visit Waterford (ongedateerd). Niet op de eigen site (dierenlijst van 2017–2018) en Zootierliste kent Ardmore niet als lynxhouder. | ZooChat (bezoek begin 2025); visitwaterford.com (ongedateerd) — https://www.zoochat.com/community/posts/1619387/ · https://visitwaterford.com/vw_listing/ardmore-mini-farm/ |
+| Ardmore Open Farm (Ardmore (Waterford)) | Serval | Volgens een forumbericht (dat naar de sociale media van het park verwijst) kwamen in september 2025 twee servals uit Nederland; Zootierliste zag ze in 09/2025. De eigen site (ook sitemap en WordPress-API) noemt ze niet; geen bron uit 2026. | ZooChat 23-09-2025; Zootierliste (bezoek 09/2025) — https://www.zoochat.com/community/posts/1619387/ · https://www.zootierliste.de/map.php?showzoo=10003395 |
+| Dublin Zoo (Dublin (Phoenix Park)) | Sneeuwluipaard | Sinds 17-09-2026 een bord ‘none on show’; volgens een verzorger (via bezoekers op ZooChat, 5 en 9 oktober 2026) zijn beide dieren binnen drie maanden aan ouderdom overleden. Geen officieel bericht; de soortpagina staat nog online. Zootierliste: ‘tot 2026’. | dublinzoo.ie soortpagina (bijgewerkt 28-08-2026); ZooChat 25-09-2026 en 05-10-2026 — https://www.dublinzoo.ie/animals/snow-leopard/ · https://www.zoochat.com/community/threads/dublin-zoo-news-2026.496325/ |
+| Errigal View Pet Zoo (Gweedore (Donegal)) | Serval | Alleen Zootierliste (bezoek 09/2025, gezien en bebord) en één forumbericht (23-09-2025). Eigen site onbereikbaar, Facebook achter login; het park was in 2026 open (reviews augustus 2026), maar geen bron uit 2026 noemt een serval. | Zootierliste (bezoek 09/2025); ZooChat 23-09-2025 — https://www.zootierliste.de/map.php?showzoo=10010137 |
+
+### Niet opgenomen of als bevestigd met kanttekening
+
+- **Belfast Zoo – cheetah Mia** (Noord-Ierland, VK-gids): de ongedateerde soortpagina van Belfast Zoo zegt dat Mia tijdelijk in Fota Wildlife Park zit voor het fokprogramma; Fota noemt haar nergens en Zootierliste zag in 02/2026 en 05/2026 een cheetah in Belfast. Niet in de Ierse gids; de VK-gids nagaan.
+- **Fota Wildlife Park – leeuwinnen Gira en Gita**: sinds november 2024 niet meer genoemd. De leeuw staat als bevestigd (Yali, Arya en drie welpen); Gira en Gita alleen in “Gepland, tijdelijk of niet zichtbaar”.
+- **Emerald Park – Euraziatische lynx**: bevestigd (‘our Eurasian Lynx’, zoo-nieuws augustus 2026), maar aantal en namen na het vertrek van Ana en Silver (maart 2026) zijn afgeleid (waarschijnlijk Lana en Zelda).
+- **Dublin Zoo – Amoertijger**: bevestigd (soortpagina september 2026); de komst van een tijgerin uit Kopenhagen (oktober 2025) staat alleen op ZooChat.
+- **Secret Valley Wildlife Park – serval Zeus**: bevestigd op de ‘About’-pagina (30-07-2026) en door een TripAdvisor-review (september 2026, alleen via een zoekmachine-samenvatting gelezen).
+- **Wild Ireland – lynx Naoise**: Zootierliste zag hem in 05/2026 niet, maar de eigen site (oktober 2026, dagelijkse lynxpraatjes) en reviews uit september en oktober 2026 noemen hem. Bevestigd.
+
 ## Spanje
 
 | Locatie | Soort | Waarom twijfel | Bron |

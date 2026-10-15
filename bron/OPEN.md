@@ -8,7 +8,7 @@ Bijgehouden door Claude. Bijwerken als een punt is opgelost.
 - **Overzeese gebieden van Frankrijk** (bijv. Zoo de Guyane: jaguar, ocelot, margay): nog beslissen of ze erbij komen.
 - **Foto's van Franse parken**: veel locaties hebben nog geen foto (Commons gaf een limiet). Een rustige extra ronde.
 - **Maandelijkse controle**: een geplande taak die nieuws over geboortes, vertrek en aankomst zoekt en voorstellen doet.
-- **Volgend land**: het Verenigd Koninkrijk staat erin (14-10-2026, NL/EN/DE). Keuze voor daarna volgt. Als de website sneller moet: de vaste JS van de deelstaatblokken één keer delen in plaats van per blok (scheelt ±4 MB).
+- **Volgend land**: het Verenigd Koninkrijk staat erin (14-10-2026, NL/EN/DE), Ierland ook (15-10-2026, NL/EN). Keuze voor daarna volgt. Als de website sneller moet: de vaste JS van de deelstaatblokken één keer delen in plaats van per blok (scheelt ±4 MB).
 - **VK nagaan**: Longleat (eigen site geblokkeerd; alles uit nieuws), Whipsnade (eigen site geblokkeerd), Amazon World (Isle of Wight: oude pagina noemt ocelot en Geoffroy’s kat), Green Dragon Eco Farm (alleen Zootierliste: lynx en wilde kat; niet opgenomen), Mole Hall en Galloway Wildlife Park (mogelijk dicht), Borth Wild Animal Kingdom (katten 2020–2021 weg). Een officiële landelijke lijst van vergunde dierentuinen is niet openbaar; de nieuwste volledige lijst is een FOI-antwoord van APHA uit 2018–2019.
 - **Zwitserland in het Frans**: de gids is nu NL/EN/DE. Frans erbij kan met een tweede versie van elk regioblok (NL/EN/FR) die de pagina laadt bij de taalknop FR.
 - **Oostenrijk/Zwitserland nagaan**: Tiger’s World (Judenau, NÖ) — alleen op een toeristische site, eigen site niet te openen, niet opgenomen; Luchsgehege Loipersdorf (ligging en publiek onbekend); Parc animalier de Prêles (BE) niet nagelopen; Bioparc Genève houdt ook hybride wilde katten en savannahkatten (niet meegeteld).
@@ -27,12 +27,32 @@ Bijgehouden door Claude. Bijwerken als een punt is opgelost.
   - **Twijfelachtige “bevestigd”**: Zoo de Castellar, MundoPark, Natura Parc, Cocodrilo Park en Safari Mallorca rusten op ongedateerde eigen lijsten of een plattegrond plus een Zootierliste-bezoek in 2025 (zie `TWIJFELGEVALLEN.md`).
   - **Registers**: geen openbare lijst behalve Castilië en León (open data 2023). Particuliere houders zijn daardoor niet volledig na te gaan.
   - **Kaart**: de Balearen en de Canarische Eilanden staan op verzoek niet op de kaarten (alleen in de lijst en het regiofilter).
+- **Ierland (15-10-2026)**:
+  - **Top 10**: geen Iers park komt in de buurt (Fota en Emerald Park scoren 30; nummer 10 heeft 46). Niets veranderd.
+  - **Officiële lijst**: de NPWS publiceert geen lijst van vergunde dierentuinen; de nieuwste volledige lijst is van 8-9-2022 (Kamervragen, 55 geïnspecteerde dierentuinen). Een actuele lijst kan bij zoos@npws.gov.ie of met een FOI-verzoek. “Oak Cottage” (Kilkenny) van die lijst niet thuisgebracht.
+  - **Nagaan**: de servals van Ardmore Open Farm (sinds 09/2025, niet op de eigen site) en Errigal View Pet Zoo (alleen 09/2025) en de lynx van Ardmore; het snelst telefonisch. Dublin Zoo: officieel bericht over de sneeuwluipaarden en de tijgerin uit Kopenhagen. Fota: leeuwinnen Gira en Gita. Emerald Park: welke lynxen er zijn.
+  - **VK-gids nagaan**: Belfast Zoo meldt dat cheetah Mia tijdelijk in Fota zit, maar Fota noemt haar niet en in 2026 is in Belfast een cheetah gezien. De VK-gids zegt nu “tijdelijk in Fota”.
+  - **BIAZA in de typeregel**: BIAZA staat nu in `locatietypes.json`. In de VK-gids zijn de types niet langs die regel gelegd (bijv. Wingham Wildlife Park en Porfell als dierenpark); nagaan of BIAZA-leden daar dierentuin moeten heten.
 - **Italiaanse gids**: in de Italiaanse taalstand staan nog een paar Franse resten (“espèce(s)”, “Filtrer par statut”, “Tick the locations…”, voetregel “État au 28 septembre 2026”). In de Spaanse gids opgelost; in de Italiaanse nog niet.
 - **Onderzoeksagenten**: in de opdracht zetten dat ze geen persoonlijke gegevens meesturen (ook niet als contact in een User-Agent).
 
 - **Controle op gemiste parken in Frankrijk (13-10-2026)**: vergeleken met de officiële lijst (ICPE-rubriek 2140, Géorisques: 196 vergunde dierenparken), Zootierliste en Nature et Zoo; geen gemiste locaties met katten. Nog onduidelijk, mogelijk navragen bij de DDPP: een vergunning op naam van een particulier in Grignols (Gironde) en de vereniging Gaia in Allennes-les-Marais (Nord); van geen van beide is een site of bezoekinformatie gevonden.
 - **Sigean**: Nature et Zoo noemt een serval (sinds 2023), de eigen site en het persdossier 2026 niet. Niet opgenomen.
 - **Citadelle van Besançon**: in februari 2024 kwam er een in beslag genomen serval binnen (tijdelijke opvang?); niet op de eigen site. Niet opgenomen.
+
+## Bronnen en valkuilen (geleerd bij Ierland, oktober 2026)
+
+**Bronnen Ierland**
+- **Geen openbare vergunningenlijst.** Dierentuinen hebben een vergunning nodig (S.I. 440/2003, NPWS), maar de NPWS publiceert geen lijst. De beste lijst komt uit schriftelijke Kamervragen: zoek via `api.oireachtas.ie` (de webpagina’s van oireachtas.ie en kildarestreet.com blokkeren); het antwoord van 8-9-2022 bevat een tabel met alle geïnspecteerde dierentuinen 2020–2022 (vergund en vrijgesteld door elkaar).
+- **BIAZA** dekt het VK en Ierland; Ierse leden (2026): Dublin Zoo, Fota, Galway Atlantaquaria, Tropical World (Letterkenny) en Ardmore Open Farm. **EAZA**: Dublin Zoo, Fota, Emerald Park, Galway Atlantaquaria, Dingle Oceanworld.
+- **Circussen**: verbod via S.I. 482/2017 (niet 641/2017), sinds 1-1-2018; geldt ook voor tentoonstellen en winterkwartieren. Ierse circussen huurden hun wilde dieren in het buitenland; geen ex-circuskatten in Ierse opvang.
+- **Particulier houden**: geen register of vergunning voor gevaarlijke wilde dieren in de Republiek (anders dan in Noord-Ierland). Gevonden exotische katten gaan via de ISPCA/NSPCA naar een park (serval Zeus → Secret Valley).
+- **Sites**: Fota draait op Shopify (soortpagina’s onder `/pages/animal-and-plant-listing/`, geeft snel HTTP 429); Dublin Zoo en Emerald Park hebben een WordPress-sitemap met lastmod-datums; Ardmore blokkeert curl (403). Facebook en Instagram van kleine parken zijn zonder login niet te lezen.
+
+**Valkuilen**
+- **Kleine parken op sociale media**: de servals van Ardmore en Errigal View staan alleen op Zootierliste en ZooChat; de parken melden nieuwe dieren alleen op Instagram/Facebook. Telefonisch navragen is sneller.
+- **Zusterparken**: Dublin Zoo en Fota horen bij dezelfde Zoological Society of Ireland en ruilen katten (cheetah Callie kwam uit Fota). Ook Belfast Zoo (VK-gids) werkt met Fota samen.
+- **Namen in Zootierliste**: instellingen met “geschlossen” in de naam zijn dicht; Rosepark (Ballymoney) ligt in Noord-Ierland.
 
 ## Bronnen en valkuilen (geleerd bij Spanje, oktober 2026)
 
@@ -235,3 +255,10 @@ Regel (voor alle landen, 14-10-2026): bevestigd alleen met een recente bron (202
 **Noord-Ierland**
 
 - [y] Belfast Zoo – Cheetah: poes Mia tijdelijk in Fota Wildlife Park (EEP); terugkeer verwacht
+
+### Ierland
+
+- [w] Dublin Zoo – Sneeuwluipaard: volgens bezoekers (ZooChat, 25-09 en 05-10-2026) zijn beide dieren overleden; geen officieel bericht, soortpagina nog online.
+- [w] Ardmore Open Farm – Serval: alleen ZooChat en Zootierliste (09/2025, twee dieren uit Nederland); niet op de eigen site.
+- [w] Ardmore Open Farm – Euraziatische lynx: alleen een bezoeker (begin 2025) en een ongedateerde toeristische vermelding.
+- [w] Errigal View Pet Zoo – Serval: alleen Zootierliste en ZooChat (09/2025); park in 2026 open, maar geen bron uit 2026 noemt een serval.

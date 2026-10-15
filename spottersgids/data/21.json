@@ -1,0 +1,220 @@
+{
+ "no": 21,
+ "intro_nl": "Het is min tien op de Altiplano, op ruim vierduizend meter. Je adem bevriest in de bundel van je lamp, die langzaam over een helling met graspollen en rotsblokken glijdt. Daar, twee groene ogen. Een gedrongen kat met gestreepte poten en een dikke, geringde staart kijkt even om en sluipt weg over de heuvelrug. De colocolo leeft van Ecuador tot Patagonië, maar is overal schaars en schuw. Kans: 3 – met een week nachtelijk zoeken in de hoge Andes, of een paar avonden in Emas, maak je een redelijke kans.",
+ "intro_en": "It is minus ten on the Altiplano, at over four thousand metres. Your breath freezes in the beam of your torch as it slides across a slope of tussock grass and boulders. There: two green eyes. A stocky cat with banded legs and a thick, ringed tail glances back and slinks away over the ridge. The colocolo ranges from Ecuador to Patagonia, but it is scarce and shy everywhere. Chance: 3 – with a week of night searching in the high Andes, or a few evenings in Emas, you stand a reasonable chance.",
+ "spots": [
+  {
+   "id": "cl-lauca-surire",
+   "name_nl": "Lauca en Salar de Surire",
+   "name_en": "Lauca and Salar de Surire",
+   "area_nl": "Nationaal Park Lauca, Nationaal Reservaat Las Vicuñas en Natuurmonument Salar de Surire, regio Arica y Parinacota",
+   "area_en": "Lauca National Park, Las Vicuñas National Reserve and Salar de Surire Natural Monument, Arica y Parinacota Region",
+   "country_nl": "Chili",
+   "country_en": "Chile",
+   "cont": "sam",
+   "lat": -18.4,
+   "lon": -69.2,
+   "score": 3,
+   "why_nl": "Bijna elke mammalwatcher die hier een week of langer 's nachts zocht, zag een colocolo (2018, 2019, 2022, 2023, 2024), maar vaak maar één keer en soms alleen als schim in het donker; wie één nacht blijft, ziet meestal niets.",
+   "why_en": "Almost every mammalwatcher who spent a week or more searching here at night saw a colocolo (2018, 2019, 2022, 2023, 2024), but often just once and sometimes only as a shadow in the dark; a single night usually yields nothing.",
+   "season_nl": "Verslagen met succes komen uit april–mei en november–december; de nachten zijn altijd ijskoud",
+   "season_en": "Successful reports come from April–May and November–December; nights are always freezing",
+   "time_nl": "'s Nachts, vooral de eerste uren na het donker en vlak voor zonsopkomst",
+   "time_en": "At night, especially the first hours after dark and just before dawn",
+   "trip_nl": "Rijden en lopen met zaklamp en warmtebeeldkijker door struikgebied en rotshellingen vanuit Putre of Guallatiri, liefst met een lokale kattenspecialist; reken op 5 à 10 nachten en wen eerst aan de hoogte",
+   "trip_en": "Spotlighting by car and on foot through shrubland and rocky slopes from Putre or Guallatiri, ideally with a local cat specialist; allow 5–10 nights and acclimatise to the altitude first",
+   "sources": [
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "id": "pe-junin-reserve",
+   "name_nl": "Meer van Junín",
+   "name_en": "Lake Junín",
+   "area_nl": "Nationaal Reservaat Junín (Lago Junín of Chinchaycocha), rond Ondores, departement Junín",
+   "area_en": "Junín National Reserve (Lake Junín or Chinchaycocha), around Ondores, Junín Department",
+   "country_nl": "Peru",
+   "country_en": "Peru",
+   "cont": "sam",
+   "lat": -11.0,
+   "lon": -76.1,
+   "score": 3,
+   "why_nl": "In augustus 2024 vond een kleine groep met een lokale gids de colocolo in twee van de drie nachten, met goede, close waarnemingen; dat is wel maar één verslag, al bestudeerden onderzoekers hier ook het dieet van de soort.",
+   "why_en": "In August 2024 a small group with a local guide found the colocolo on two of three nights, with good close views; that is only one report, though researchers have also studied the species' diet here.",
+   "season_nl": "Droge tijd, ongeveer mei–september (het succesverslag is van augustus)",
+   "season_en": "Dry season, roughly May–September (the successful report is from August)",
+   "time_nl": "Vroeg in de avond: de kat was er om 19.00 en 20.00 uur",
+   "time_en": "Early evening: the cat appeared at 7 pm and 8 pm",
+   "trip_nl": "Zoeken met zaklamp langs rotswanden en graslanden rond het meer, met een gids uit de dorpen aan de oever; 3 nachten op ruim 4000 meter, als uitbreiding van een Peru-reis",
+   "trip_en": "Spotlighting along rocky cliffs and grassland around the lake with a guide from one of the lakeshore villages; 3 nights at over 4,000 m, as an extension to a Peru trip",
+   "sources": [
+    7,
+    8
+   ]
+  },
+  {
+   "id": "br-emas",
+   "name_nl": "Emas",
+   "name_en": "Emas",
+   "area_nl": "Nationaal Park Emas, Goiás (cerrado)",
+   "area_en": "Emas National Park, Goiás (cerrado)",
+   "country_nl": "Brazilië",
+   "country_en": "Brazil",
+   "cont": "sam",
+   "lat": -18.1,
+   "lon": -52.9,
+   "score": 3,
+   "why_nl": "Een bezoeker zag in 2019 in vijf nachten twee verschillende dieren en in 2017 werden er in een paar dagen meerdere gezien, maar andere bezoekers misten hem na vier nachtritten (2019) of een bezoek in 2025.",
+   "why_en": "One visitor saw two different cats in five nights in 2019 and several were seen within a few days in 2017, but other visitors missed it after four night drives (2019) or a visit in 2025.",
+   "season_nl": "Droge tijd, juli–oktober; de meeste waarnemingen in de verslagen zijn uit juli–september",
+   "season_en": "Dry season, July–October; most sightings in the reports are from July–September",
+   "time_nl": "Vroeg in de avond (19.00–20.30 uur in de verslagen); in Emas is de soort volgens onderzoek ook overdag actief",
+   "time_en": "Early evening (7–8.30 pm in the reports); research shows the species is also active by day in Emas",
+   "trip_nl": "Ochtend-, middag- en nachtritten over de zandwegen van het park met een lokale gids, vanuit Chapadão do Céu; reken op 4 à 5 nachten, te combineren met de Pantanal",
+   "trip_en": "Morning, afternoon and night drives along the park's sand tracks with a local guide, based in Chapadão do Céu; allow 4–5 nights, easy to combine with the Pantanal",
+   "sources": [
+    1,
+    9,
+    10,
+    11,
+    12
+   ]
+  },
+  {
+   "id": "cl-torres-del-paine",
+   "name_nl": "Torres del Paine",
+   "name_en": "Torres del Paine",
+   "area_nl": "Oostzijde van Nationaal Park Torres del Paine en omliggende steppe, Magallanes",
+   "area_en": "Eastern side of Torres del Paine National Park and surrounding steppe, Magallanes",
+   "country_nl": "Chili",
+   "country_en": "Chile",
+   "cont": "sam",
+   "lat": -51.0,
+   "lon": -72.8,
+   "score": 1,
+   "why_nl": "Het zuidelijkste puntje van het leefgebied: 63 cameravallen ten oosten van het park legden in ruim 10.000 cameranachten precies één colocolo vast (april 2020), de eerste bevestiging in Magallanes sinds de jaren '80.",
+   "why_en": "The southern tip of the range: 63 camera traps east of the park recorded exactly one colocolo in over 10,000 trap nights (April 2020), the first confirmation in Magallanes since the 1980s.",
+   "season_nl": "Het hele jaar; je gaat hier voor poema's en ziet een colocolo alleen met veel geluk",
+   "season_en": "Year-round; you come here for pumas and see a colocolo only with great luck",
+   "time_nl": "'s Nachts (de cameraopname was rond half één)",
+   "time_en": "At night (the camera record was at about 12.30 am)",
+   "trip_nl": "Houd je ogen open tijdens poema-excursies en avondritten in de steppe rond Lago Sarmiento; niet de moeite om er speciaal voor te gaan",
+   "trip_en": "Keep your eyes open during puma excursions and evening drives in the steppe around Lago Sarmiento; not worth a dedicated trip",
+   "sources": [
+    13
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Zoek in open terrein met struiken, graspollen en rotsen waar veel knaagdieren zitten; in de Andes zit de colocolo meer in vlak struikgebied dan de Andeskat, die rotshellingen met viscacha's verkiest.",
+  "Controleer elke oogreflectie: op de Altiplano is een vos (culpeo) veel waarschijnlijker dan een kat. Een kat beweegt laag en sluipend en draait snel weg van het licht.",
+  "Let op de staart: dik en geringd bij zowel colocolo als Andeskat, maar de Andeskat is groter, grijzer en heeft een veel langere, dikkere staart.",
+  "Colocolo's zijn erg lichtschuw; schijn kort, bij voorkeur met een rode filter of warmtebeeldkijker, en blijf stil staan als hij wegloopt.",
+  "In Emas: rij ook overdag en bij schemer langzaam over de zandwegen en scan het grasland, want daar is de soort deels dagactief.",
+  "Neem de hoogte serieus: Lauca en Junín liggen boven de 4000 meter. Plan een paar dagen om te wennen en neem warme kleren mee voor nachten ver onder nul."
+ ],
+ "tips_en": [
+  "Search open country with shrubs, tussock grass and rocks where rodents are plentiful; in the Andes the colocolo favours flatter shrubland more than the Andean cat, which prefers rocky slopes with viscachas.",
+  "Check every eyeshine: on the Altiplano a fox (culpeo) is far more likely than a cat. A cat moves low and stealthily and quickly turns away from the light.",
+  "Look at the tail: thick and ringed in both colocolo and Andean cat, but the Andean cat is larger, greyer and has a much longer, bushier tail.",
+  "Colocolos are very light-shy; keep beams brief, ideally with a red filter or a thermal scope, and stand still when it moves off.",
+  "In Emas, also drive the sand tracks slowly by day and at dusk and scan the grassland, as the species is partly diurnal there.",
+  "Take altitude seriously: Lauca and Junín lie above 4,000 m. Plan a few days to acclimatise and pack warm clothes for nights far below freezing."
+ ],
+ "threats_nl": [
+  "Verlies en aantasting van leefgebied door landbouw, overbegrazing en olie- en mijnbouw, waardoor ook prooidieren verdwijnen",
+  "Vergeldingsdoding na aanvallen op kippen en jonge geiten",
+  "Jacht voor rituelen (vooral in de hoge Andes) en voor de sport",
+  "Verkeer, loslopende honden en af en toe vangst voor de dierenhandel"
+ ],
+ "threats_en": [
+  "Habitat loss and degradation through agriculture, overgrazing and oil and mineral extraction, which also removes prey",
+  "Retaliatory killing after attacks on poultry and young goats",
+  "Hunting for ceremonies (mainly in the high Andes) and for sport",
+  "Traffic, free-roaming dogs and occasional capture for the pet trade"
+ ],
+ "status_note_nl": "De IUCN beschouwt de colocolo als Gevoelig (Near Threatened); in Argentinië, Bolivia, Brazilië en Ecuador geldt hij als kwetsbaar. Er zijn geen betrouwbare aantalsschattingen, en de soort lijkt in grote delen van zijn leefgebied zeldzaam.",
+ "status_note_en": "The IUCN lists the colocolo as Near Threatened; it is considered Vulnerable in Argentina, Bolivia, Brazil and Ecuador. There are no reliable population estimates, and the species appears rare across much of its range.",
+ "sources": [
+  {
+   "id": 1,
+   "title": "Pampas cat / colocolo (Leopardus colocola) species account (IUCN SSC Cat Specialist Group)",
+   "url": "https://www.catsg.org/living-species-pampascat"
+  },
+  {
+   "id": 2,
+   "title": "Chile, Lauca National Park, November–December 2022: ten days of spotlighting, one colocolo (mammalwatching.com, 2022)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/JB-Chile-2022.pdf"
+  },
+  {
+   "id": 3,
+   "title": "Chile, April–May 2024: seven nights in Lauca, one brief pampas cat (mammalwatching.com, 2024)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/07/Chile.pdf"
+  },
+  {
+   "id": 4,
+   "title": "Searching for the Andean mountain cat, Lauca and Surire 2018: pampas cat near Guallatiri (mammalwatching.com, 2019)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2019/06/AndeanMountainCat.pdf"
+  },
+  {
+   "id": 5,
+   "title": "Chile, March 2019: one night at Salar de Surire, pampas cat missed (mammalwatching.com, 2019)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/Chile-March-2019.pdf"
+  },
+  {
+   "id": 6,
+   "title": "Chile: overview of mammalwatching trip reports, incl. Lauca pampas cat records 2018–2024 (mammalwatching.com, 2025)",
+   "url": "https://www.mammalwatching.com/?p=26740"
+  },
+  {
+   "id": 7,
+   "title": "Peru Colocolo trip report, Lake Junín, 15–18 August 2024: seen on 2 of 3 nights (mammalwatching.com, 2024)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/08/Peru-Colocolo-Trip-Report_2024.pdf"
+  },
+  {
+   "id": 8,
+   "title": "Junin Lake, Peru Colocolo (mammalwatching.com community post, 2024)",
+   "url": "https://www.mammalwatching.com/community-post/junin-lake-peru-colocolo/"
+  },
+  {
+   "id": 9,
+   "title": "Emas NP, Brazil, 31 July – 5 August 2019: two pampas cats in five nights (mammalwatching.com, 2019)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/AJ-Emas-2019-1.pdf"
+  },
+  {
+   "id": 10,
+   "title": "New trip report: Emas National Park, with comments on misses (mammalwatching.com, 2019)",
+   "url": "https://www.mammalwatching.com/2019/08/11/new-trip-report-emas-national-park-brazil/"
+  },
+  {
+   "id": 11,
+   "title": "Brazil 2017 trip report: pampas cats at Emas (mammalwatching.com, 2018)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2018/01/AG-BRAZIL-2017.pdf"
+  },
+  {
+   "id": 12,
+   "title": "Brazil: North and South Pantanal and Emas NP, June and October 2025 (mammalwatching.com, 2025)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2025/12/NS-Pantanal-Emas-NP-Trip-Report.pdf"
+  },
+  {
+   "id": 13,
+   "title": "Confirmation of pampas cat presence in Magallanes, Chile: camera-trap record near Torres del Paine (Notas sobre Mamíferos Sudamericanos, SAREM, 2020)",
+   "url": "https://ojs.sarem.org.ar/index.php/nms/article/download/733/59/3927"
+  },
+  {
+   "id": 14,
+   "title": "Pampas cat split (5 species?) (mammalwatching.com, 2020)",
+   "url": "https://www.mammalwatching.com/2020/08/19/pampas-cat-split-5-species/"
+  },
+  {
+   "id": 15,
+   "title": "Scientists name a new cat species for the first time in over a century: Leopardus tilcayo (Live Science, 2026)",
+   "url": "https://www.livescience.com/animals/cats/scientists-name-a-new-cat-species-for-the-first-time-in-over-a-century"
+  }
+ ],
+ "doubts": "Taxonomie: ik heb de colocolo in brede zin genomen (incl. garleppi, pajeros, braccatus enz.), zoals CATSG doet. Let op: de Tilcayo (L. tilcayo, beschreven in september 2026 uit de Yungas van Bolivia) is volgens de berichtgeving een afsplitsing van de noordelijke tijgerkat (L. tigrinus), NIET van de colocolo; de colocolo-verspreiding wordt er dus niet door beïnvloed (bron 15). Controleer of de gids dat ook zo heeft. Scores: alle drie topplekken krijgen 3, maar om verschillende redenen: Lauca heeft veel verslagen maar vraagt een week of meer nachtwerk, Junín heeft één sterk verslag (2/3 nachten), Emas wisselt tussen succes en missers. Ik twijfelde of Lauca een 2 moest zijn (soms alleen een schim). Bij Junín werd gezocht bij een rotswand op een particuliere boerderij; die plek noem ik bewust niet. Weggelaten wegens gebrek aan waarnemingen door bezoekers: Laguna de Pozuelos/Abra Pampa (Jujuy), Serra da Canastra, de Pantanal en de Argentijnse Patagonische steppe (alleen een onzekere waarneming bij Balneario El Cóndor in 2018 en rangers bij Punta Tombo die zeiden dat de soort daar zeldzaam is). In Argentinië en Bolivia heb ik dus geen goede plek kunnen vinden. Er zijn ook losse waarnemingen in Peru (bijv. bij Salkantay, 2018). Wise Birding- en andere reisbureauverslagen heb ik niet gebruikt. Torres del Paine kreeg het bestaande id; de cameravalopname lag op een particuliere estancia ten oosten van het park, die noem ik niet."
+}

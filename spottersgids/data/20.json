@@ -1,0 +1,203 @@
+{
+ "no": 20,
+ "intro_nl": "Het is bijna middernacht in het regenwoud van Chiloé. Je staat al uren stil op een bosweg, de zaklamp uit, het mos druppelt. Dan een doffe plof vlak naast je: op een omgevallen stam zit een pikzwarte kat, nauwelijks groter dan een huiskat, en kijkt je aan. Tien seconden, dan is hij weg in de varens. De kodkod is de kleinste kat van Amerika, en wie hem wil zien, moet geduld meebrengen. Kans: 3 – met een paar nachten gericht zoeken op Chiloé heb je een redelijke kans, maar zeker is het nooit.",
+ "intro_en": "It is almost midnight in the rainforest of Chiloé. You have been standing still on a forest track for hours, torch off, moss dripping. Then a soft thud right next to you: on a fallen log sits a jet-black cat, barely bigger than a house cat, staring at you. Ten seconds, and it melts into the ferns. The kodkod is the smallest cat in the Americas, and seeing one takes patience. Chance: 3 – with a few nights of dedicated searching on Chiloé you have a reasonable chance, but it is never certain.",
+ "spots": [
+  {
+   "id": "cl-chiloe-tepuhueico",
+   "name_nl": "Parque Tepuhueico (Chiloé)",
+   "name_en": "Parque Tepuhueico (Chiloé)",
+   "area_nl": "Particulier natuurpark Tepuhueico, midden-Chiloé, regio Los Lagos",
+   "area_en": "Tepuhueico private nature park, central Chiloé, Los Lagos Region",
+   "country_nl": "Chili",
+   "country_en": "Chile",
+   "cont": "sam",
+   "lat": -42.8,
+   "lon": -73.9,
+   "score": 3,
+   "why_nl": "Recente verslagen melden kodkods na 2 tot 10 nachten zoeken (2024: twee in tien nachten, één in vier nachten; 2025: één melanistisch dier), maar groepen met twee of drie nachten (2017, 2023) gingen zonder naar huis.",
+   "why_en": "Recent reports log kodkods after 2 to 10 nights of searching (2024: two in ten nights, one in four nights; 2025: one melanistic cat), but groups with only two or three nights (2017, 2023) left empty-handed.",
+   "season_nl": "Het hele jaar; de meeste recente successen vielen tussen februari en mei. Soms zit er een tijdje een kat rond de gebouwen, dan weer weken niet.",
+   "season_en": "Year-round; most recent successes came between February and May. Sometimes a cat hangs around the buildings for a while, then none for weeks.",
+   "time_nl": "Na het donker tot na middernacht; waarnemingen rond 20.00 tot 0.00 uur",
+   "time_en": "After dark until past midnight; sightings mostly between 8 pm and midnight",
+   "trip_nl": "Verblijf in het park met nachtelijke zoektochten te voet en per auto over rustige boswegen, met een lokale gids, zaklamp en warmtebeeldkijker; reken op minstens 4 à 5 nachten",
+   "trip_en": "Stay inside the park and search at night on foot and by car along quiet forest tracks with a local guide, spotlight and thermal scope; allow at least 4–5 nights",
+   "sources": [
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "id": "cl-petrohue-vicente-perez-rosales",
+   "name_nl": "Petrohué (Vicente Pérez Rosales)",
+   "name_en": "Petrohué (Vicente Pérez Rosales)",
+   "area_nl": "Omgeving van Petrohué, Nationaal Park Vicente Pérez Rosales, regio Los Lagos",
+   "area_en": "Around Petrohué, Vicente Pérez Rosales National Park, Los Lagos Region",
+   "country_nl": "Chili",
+   "country_en": "Chile",
+   "cont": "sam",
+   "lat": -41.1,
+   "lon": -72.4,
+   "score": 2,
+   "why_nl": "Er zijn een paar losse waarnemingen van mammalwatchers bij Petrohué (onder meer een kodkod in een boom in 2019), maar een bezoeker die in 2023 vier uur 's nachts reed, zag niets.",
+   "why_en": "A handful of mammalwatchers have seen kodkod around Petrohué (including one in a tree in 2019), but a visitor who drove for four hours at night in 2023 saw nothing.",
+   "season_nl": "Het hele jaar; buiten de zomervakantie is het rustiger op de weg",
+   "season_en": "Year-round; quieter on the road outside the summer holidays",
+   "time_nl": "'s Nachts, vanaf het invallen van de duisternis",
+   "time_en": "At night, from dusk onwards",
+   "trip_nl": "Zelf spotten: langzaam rijden of lopen langs de weg naar Petrohué met een sterke zaklamp, 2 à 3 nachten, makkelijk te combineren met een reis naar Chiloé",
+   "trip_en": "Self-guided: drive slowly or walk the Petrohué road with a strong spotlight for 2–3 nights; easy to combine with a trip to Chiloé",
+   "sources": [
+    5,
+    7
+   ]
+  },
+  {
+   "id": "ar-nahuel-huapi-puerto-blest",
+   "name_nl": "Nahuel Huapi (Puerto Blest)",
+   "name_en": "Nahuel Huapi (Puerto Blest)",
+   "area_nl": "Valdiviaans regenwoud rond Puerto Blest, Nationaal Park Nahuel Huapi, Río Negro",
+   "area_en": "Valdivian rainforest around Puerto Blest, Nahuel Huapi National Park, Río Negro",
+   "country_nl": "Argentinië",
+   "country_en": "Argentina",
+   "cont": "sam",
+   "lat": -41.0,
+   "lon": -71.8,
+   "score": 1,
+   "why_nl": "Nahuel Huapi is het grootste beschermde gebied van de kodkod in Argentinië, maar 80 cameravallen leverden in 2022–2023 maar vier opnamen op, en een groep zag in 2025 bij Puerto Blest alleen een 'waarschijnlijke' kodkod en sporen.",
+   "why_en": "Nahuel Huapi is the largest protected area for the kodkod in Argentina, yet 80 camera traps produced only four records in 2022–2023, and a group at Puerto Blest in 2025 saw only a 'probable' kodkod and tracks.",
+   "season_nl": "Zomer en vroege herfst (december–april), als de boot naar Puerto Blest dagelijks vaart",
+   "season_en": "Summer and early autumn (December–April), when the boat to Puerto Blest runs daily",
+   "time_nl": "'s Nachts, als de dagjesmensen met de laatste boot vertrokken zijn",
+   "time_en": "At night, after the day visitors have left on the last boat",
+   "trip_nl": "Overnachten in Puerto Blest (boottocht over het meer vanaf Bariloche) en 's avonds spotten met zaklamp en warmtebeeldkijker langs de randen van het bos, 2 à 3 nachten",
+   "trip_en": "Stay overnight at Puerto Blest (boat across the lake from Bariloche) and spotlight with torch and thermal scope along the forest edges, 2–3 nights",
+   "sources": [
+    4,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "cl-chiloe-national-park-cucao",
+   "name_nl": "Rest van Chiloé (Cucao, Chepu)",
+   "name_en": "Rest of Chiloé (Cucao, Chepu)",
+   "area_nl": "Nationaal Park Chiloé bij Cucao en de omgeving van Chepu, Chiloé",
+   "area_en": "Chiloé National Park near Cucao and the Chepu area, Chiloé",
+   "country_nl": "Chili",
+   "country_en": "Chile",
+   "cont": "sam",
+   "lat": -42.6,
+   "lon": -74.1,
+   "score": 1,
+   "why_nl": "Overal staan verkeersborden die waarschuwen voor kodkods, maar een bezoeker die in 2025 een week lang op eigen houtje zocht, zag er geen; loslopende huiskatten maken het zoeken met de lamp lastig.",
+   "why_en": "Road signs warning of kodkods are everywhere, but a visitor who searched independently for a week in 2025 saw none; free-roaming house cats make spotlighting confusing.",
+   "season_nl": "Het hele jaar",
+   "season_en": "Year-round",
+   "time_nl": "'s Nachts",
+   "time_en": "At night",
+   "trip_nl": "Zelf rijden en wandelen met een zaklamp langs bosranden en meeroevers, eventueel een boottocht op de rivier bij Chepu; vooral een aanvulling op een verblijf in het binnenland van het eiland",
+   "trip_en": "Self-drive and walk with a spotlight along forest edges and lakeshores, perhaps a boat trip on the Chepu river; mainly an add-on to a stay in the island's interior",
+   "sources": [
+    6,
+    8
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Zoek in dicht inheems bos met veel ondergroei; kodkods mijden kaal begraasd land en volgen bosranden en houtwallen.",
+  "Sta stil in plaats van te blijven rijden: op een rustig kruispunt van boswegen wachten en om de beurt schijnen leverde in 2024 een kat op tien meter op.",
+  "Let op oogreflectie laag in de struiken én in bomen: kodkods klimmen goed en vluchten vaak omhoog.",
+  "Veel kodkods op Chiloé zijn helemaal zwart; reken er niet op dat je vlekken ziet.",
+  "Huiskatten zwerven tot diep in het bos; kijk naar de kleine kop, de dikke korte staart en het gedrag voordat je juicht.",
+  "Houd je camera bij de hand: de meeste waarnemingen duren maar enkele seconden.",
+  "Een warmtebeeldkijker helpt enorm in het natte, dichte bos; doe de lamp pas aan als je iets ziet en schijn niet langer dan nodig."
+ ],
+ "tips_en": [
+  "Search dense native forest with thick understorey; kodkods avoid bare grazed land and follow forest edges and hedgerows.",
+  "Stand still instead of driving on: waiting at a quiet junction of forest tracks and scanning in turns produced a cat at ten metres in 2024.",
+  "Look for eyeshine low in the bushes and in trees: kodkods climb well and often escape upwards.",
+  "Many kodkods on Chiloé are completely black; do not count on seeing spots.",
+  "House cats roam deep into the forest; check for the small head, short thick tail and behaviour before you celebrate.",
+  "Keep your camera in your hands: most sightings last only a few seconds.",
+  "A thermal scope helps hugely in wet, dense forest; switch on the torch only once you find something and keep it brief."
+ ],
+ "threats_nl": [
+  "Verlies en versnippering van inheems bos door houtkap, landbouw, veeteelt, dennenplantages, verstedelijking en bosbranden",
+  "Verkeersslachtoffers",
+  "Vergeldingsdoding door boeren die hun kippen willen beschermen",
+  "Ziekten van huiskatten en honden, zoals FIV en FeLV",
+  "Verwachte krimp van het leefgebied door klimaatverandering"
+ ],
+ "threats_en": [
+  "Loss and fragmentation of native forest through logging, agriculture, livestock, pine plantations, urban sprawl and forest fires",
+  "Road kills",
+  "Retaliatory killing by farmers protecting poultry",
+  "Diseases from domestic cats and dogs, such as FIV and FeLV",
+  "Predicted range contraction due to climate change"
+ ],
+ "status_note_nl": "De IUCN beschouwt de kodkod wereldwijd als Niet bedreigd (geschat 26.000–101.000 volwassen dieren, trend onzeker); vroeger stond hij als Kwetsbaar te boek. In Argentinië en in het noorden van zijn Chileense leefgebied is hij nog steeds kwetsbaar, en drie van de zes genetische groepen zijn heel klein.",
+ "status_note_en": "The IUCN lists the kodkod globally as Least Concern (an estimated 26,000–101,000 mature individuals, trend uncertain); it was formerly Vulnerable. It remains Vulnerable in Argentina and in the northern part of its Chilean range, and three of its six genetic groups are very small.",
+ "sources": [
+  {
+   "id": 1,
+   "title": "Guiña / kodkod (Leopardus guigna) species account (IUCN SSC Cat Specialist Group)",
+   "url": "https://www.catsg.org/living-species-kodkod"
+  },
+  {
+   "id": 2,
+   "title": "Chile (Chiloé Island), Parque Tepuhueico, February 2024: ten nights, two kodkods in the park (mammalwatching.com, 2024)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/02/Parque-Tepuhueico.pdf"
+  },
+  {
+   "id": 3,
+   "title": "Chile, April–May 2024: melanistic kodkod at Tepuhueico after two nights' waiting (mammalwatching.com, 2024)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/07/Chile.pdf"
+  },
+  {
+   "id": 4,
+   "title": "Endemic Mammals of the Southern Cone, February 2025: Puerto Blest and Chiloé (mammalwatching.com, 2025)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2025/08/Endemic-Mammals-of-the-Southern-Cone-Feb-2025.pdf"
+  },
+  {
+   "id": 5,
+   "title": "Parque Tepuhueico, Chiloé Island, November 2023: kodkod missed, with comments on Petrohué sightings (mammalwatching.com, 2024)",
+   "url": "https://www.mammalwatching.com/community-post/parque-tepuhueico-chiloe-island-chile-november-2023/"
+  },
+  {
+   "id": 6,
+   "title": "Mammal trip in Chile, November 2017: kodkod missed at Tepuhueico and Chepu (mammalwatching.com, 2017)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2017/12/RS-Chile-2017.pdf"
+  },
+  {
+   "id": 7,
+   "title": "Chile 2019 road trip: kodkod at Petrohué (mammalwatching.com, 2019)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/JD-Chile-2019.pdf"
+  },
+  {
+   "id": 8,
+   "title": "Chiloé, November 2025: a week of independent searching (mammalwatching.com, 2025)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2025/12/JE-chiloe-2025.pdf"
+  },
+  {
+   "id": 9,
+   "title": "Camera traps record kodkod (gato huiña) in Nahuel Huapi National Park (Noticias NQN, 2023)",
+   "url": "https://www.noticiasnqn.com.ar/amp/noticias/2023/06/02/277621-con-cmaras-nocturnas-detectaron-ejemplares-del-gato-huia-en-el-parque-nahuel-huapi"
+  },
+  {
+   "id": 10,
+   "title": "Factors affecting the carnivore assemblage in northwestern Patagonia, Nahuel Huapi (Rufford Foundation project)",
+   "url": "https://rufford.org/projects/laura-alvarez-borla/factors-affecting-assemblage-carnivores-orden-carnivora-northwestern-patagonia-argentina"
+  },
+  {
+   "id": 11,
+   "title": "Smallest wild cat in the Americas faces big problems, but hope exists (Mongabay, 2018)",
+   "url": "https://news.mongabay.com/2018/01/smallest-wild-cat-in-the-americas-faces-big-problems-but-hope-exists"
+  }
+ ],
+ "doubts": "Tepuhueico is een particulier natuurpark met een lodge; ik noem alleen het park (zoals Sabi Sand), niet de lodge of gidsen. De eigenaar legt soms voer in bomen bij de lodge om kodkods te lokken; dat heb ik niet als tip opgenomen. Score 3 is een afweging: van zes verslagen (2017–2025) zagen er vier een kodkod, maar alleen wie minstens 2 à 4 nachten gericht zocht; korte bezoeken mislukten. Het verslag van februari 2023 (reisbureau) heb ik niet gebruikt. Puyehue, Huerquehue en Pumalín heb ik weggelaten: ik vond geen waarnemingen door bezoekers (één reiziger zocht in Puyehue zonder resultaat). Nahuel Huapi kreeg score 1 omdat de enige 'waarneming' daar onzeker was. Voor de IUCN-status vertrouw ik op de CATSG-soortpagina (Least Concern, trend onzeker); de oude status 'Vulnerable' staat nog op veel websites. Bron 11 (Mongabay) is vooral achtergrond bij bedreigingen. De coördinaten van Tepuhueico (-42.8, -74.0) en de 'rest van Chiloé' (-42.6, -74.1) liggen dicht bij elkaar; eventueel samenvoegen op de kaart."
+}

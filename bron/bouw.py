@@ -36,7 +36,10 @@ REGIOS = {"auvergne-rhone-alpes": "Auvergne-Rhône-Alpes", "bourgogne-franche-co
 AT_ST = {"wien": "Wenen", "niederoesterreich": "Neder-Oostenrijk", "burgenland": "Burgenland", "oberoesterreich": "Opper-Oostenrijk", "salzburg": "Salzburg", "steiermark": "Stiermarken", "kaernten": "Karinthië", "tirol": "Tirol", "vorarlberg": "Vorarlberg"}
 CH_RG = {"genfermeergebied": "Genèvemeerregio", "mittelland": "Mittelland", "noordwest-zwitserland": "Noordwest-Zwitserland", "zuerich": "Zürich", "oost-zwitserland": "Oost-Zwitserland", "centraal-zwitserland": "Centraal-Zwitserland", "ticino": "Ticino"}
 UK_RG = {"londen": "Londen", "zuidoost-engeland": "Zuidoost-Engeland", "zuidwest-engeland": "Zuidwest-Engeland", "oost-engeland": "Oost-Engeland", "oost-midlands": "East Midlands", "west-midlands": "West Midlands", "noordwest-engeland": "Noordwest-Engeland", "yorkshire": "Yorkshire en de Humber", "noordoost-engeland": "Noordoost-Engeland", "schotland": "Schotland", "wales": "Wales", "noord-ierland": "Noord-Ierland"}
-DEEL = {"de": STATES, "fr": REGIOS, "at": AT_ST, "ch": CH_RG, "uk": UK_RG}
+DEEL = {"de": STATES}
+# Frankrijk, Oostenrijk, Zwitserland en het VK zijn sinds 17-10-2026 één pagina met een regiofilter (bron/samenvoegen.py);
+# de oude adressen per regio verwijzen door
+OUD_DEEL = {"fr": REGIOS, "at": AT_ST, "ch": CH_RG, "uk": UK_RG}
 W3F_KEY = "9494e3c0-9342-4457-a5d6-b795793b9ce4"
 MIME = {"webp": "image/webp", "jpg": "image/jpeg", "png": "image/png", "gif": "image/gif"}
 
@@ -92,6 +95,8 @@ es_namen = json.load(open(BRON + "spaanse_namen.json", encoding="utf8"))
 today = datetime.date.today()
 for c in F:
     D[c] = bereken(DATA[c], D[c], today, fr, c, de_namen, it_namen, es_namen)
+for c in OUD_DEEL:
+    D[c].pop("note", None)   # "alle 13 regio's" e.d. hoort niet meer bij één pagina
 D["sp"] = soorten(DATA, fr, today, de_namen, it_namen, es_namen)
 D["lt"] = {"types": [{k: t[k] for k in ("nl", "en", "fr", "de", "it", "es", "uitleg", "uitleg_en", "uitleg_fr", "uitleg_de", "uitleg_it", "uitleg_es")} for t in LTJ["types"]],
            "labels": [{k: l[k] for k in ("key", "nl", "en", "fr", "de", "it", "es", "icoon")} for l in LTJ["labels"]]}
@@ -381,7 +386,7 @@ wr(ROOT + "top10/index.html", top_page())
 # ------------------------------------------------------------------ website: losse soort- en locatiepagina's
 
 routes = []
-for c in ["nl", "be", "lu", "it", "es", "ie", "pt"]:
+for c in [c for c in F if c not in DEEL]:
     sp = {}
     for l in D[c]["locs"]:
         routes.append((c, None, "locatie", l[4], l[0], {"plaats": l[1], "katten": [s[0] for s in l[5]]}))
@@ -527,5 +532,20 @@ for st_ in STATES:
             wr(ROOT + "duitsland/" + st_ + "/soort/" + o + "/index.html",
                f'<!DOCTYPE html><html lang="nl"><head><meta charset="UTF-8"><title>Doorverwijzing</title><link rel="canonical" href="https://yeetkitty.github.io{doel}">'
                f'<meta name="robots" content="noindex"><meta http-equiv="refresh" content="0; url={doel}"></head><body><a href="{doel}">Ga verder</a></body></html>\n')
+def doorverwijzing(pad, doel):
+    wr(ROOT + pad + "index.html", f'<!DOCTYPE html><html lang="nl"><head><meta charset="UTF-8"><title>Doorverwijzing</title><link rel="canonical" href="https://yeetkitty.github.io{doel}">'
+       f'<meta name="robots" content="noindex"><script>var h=location.hash.slice(1);location.replace("{doel}"+(h&&"{doel}".indexOf("#")>=0?"/"+h:""));</script>'
+       f'<meta http-equiv="refresh" content="0; url={doel}"></head><body><a href="{doel}">Ga verder</a></body></html>\n')
+for c, regs in OUD_DEEL.items():
+    m0 = DATA[c]["main"]; rg = m0.get("REGIO") or {}
+    for st_ in regs:
+        doorverwijzing(F[c] + "/" + st_ + "/", BASE + F[c] + "/#" + st_)
+    for l in D[c]["locs"]:
+        st_ = rg.get(l[0])
+        if st_:
+            doorverwijzing(F[c] + "/" + st_ + "/locatie/" + l[4] + "/", static_url(c, None, "locatie", l[4]))
+            for x in l[5]:
+                if os.path.exists(ROOT + static_url(c, None, "soort", x[4])[len(BASE):] + "index.html") and not os.path.exists(ROOT + F[c] + "/" + st_ + "/soort/" + x[4] + "/index.html"):
+                    doorverwijzing(F[c] + "/" + st_ + "/soort/" + x[4] + "/", static_url(c, None, "soort", x[4]))
 wr(ROOT + "robots.txt", f"User-agent: *\nAllow: /\nSitemap: {SITE}sitemap.xml\n")
 print("Website:", len(urls), "pagina's")

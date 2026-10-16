@@ -2,6 +2,14 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 17 oktober 2026 – Oostenrijk, Zwitserland, Frankrijk en VK: één pagina met regiofilter
+
+Met `bron/samenvoegen.py` zijn de gidsen van Oostenrijk (22 locaties), Zwitserland (20), Frankrijk (67) en het VK (88) omgezet van een pagina per deelstaat/regio naar één pagina met een regiofilter, zoals Italië en Spanje. Alleen Duitsland (172) houdt pagina’s per deelstaat.
+- Gegevens samengevoegd (`R`, `LOCS`, `LOCINFO`, `YOUNG`, vertaaltabellen); drie VK-locaties stonden in twee regio’s en tellen nu één keer (88 i.p.v. 91). Kaart: alle regio’s samen met een nieuwe projectie. Route met alle soorten opnieuw berekend (gretig).
+- Teksten per regio (In het kort, aanbevelingen, gepland, kleur, uitleg, lijsten per locatie) staan onder elkaar met de regionaam als kop (`data-rg`); het regiofilter verbergt de andere regio’s overal op de pagina. Nieuwe algemene teksten (inleiding, locaties, jongen) in alle talen van de gids.
+- Oude adressen (`#tirol/…`, `/oostenrijk/tirol/`, `/oostenrijk/tirol/locatie/…`) werken nog: de gids zet dan het filter op die regio; `bouw.py` maakt doorverwijzingen (`OUD_DEEL`).
+- Bijwerken gaat nu zoals bij Italië: één gids `bron/gidsen/xx.html` met `REGIO`/`REGN`/`REGORDER`.
+
 ## 16 oktober 2026 – Gidsen in de huisstijl van de startpagina
 
 Nieuw bestand `bron/huisstijl.py`: de bouw zet in elke landengids, deelstaat- en regiopagina en in de losse soort- en locatiepagina’s (alleen op de website) dezelfde bovenbalk als de startpagina (pootje = terug naar de hoofdpagina, vergrootglas = zoeken op de hoofdpagina via `#zoek`, taalknop van de gids, menu), de kleuren en letters van de startpagina, een rustiger kop (kleine titelregel, foto 21:9), de inhoudsopgave als tabbladen die blijven staan (met het actieve tabblad gemarkeerd) en de Ko-fi-voet. “← Alle landen”, “Steun de gids” bovenaan en het losse Ko-fi-blok zijn verborgen. De gegevens, teksten en kaarten van de gidsen zijn niet veranderd. Het pootje draagt het oude id `naar-landen`, omdat het script van de gids daarnaar luistert.

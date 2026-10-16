@@ -444,26 +444,3 @@ section{scroll-margin-top:calc(var(--hs-head) + 64px)}
 .hs-kofibar p{flex:1 1 260px;color:var(--ink);font-size:1rem}
 .hs-kofi{display:inline-flex;align-items:center;gap:8px;background:var(--hs-accent);color:#FFF8EA!important;text-decoration:none;font-weight:700;padding:11px 20px;border-radius:99px}
 .hs-kofi:hover{filter:brightness(1.07)}
-
-
-  .dsp{list-style:none;padding:0;margin:0;display:grid;gap:8px;grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr))}
-  .dsp a{display:flex;align-items:center;gap:10px;background:var(--card);border:1.5px solid var(--line);border-radius:999px;padding:5px 14px 5px 5px;text-decoration:none;color:var(--ink);transition:border-color .15s}
-  .dsp a:hover,.dsp a:focus-visible{border-color:var(--bark)}
-  .dsp img,.dsp .noimg{flex:none;width:38px;height:38px;border-radius:50%;object-fit:cover;background:var(--tan)}
-  .dsp b{display:block;font-family:"Alegreya Sans",system-ui,sans-serif;font-weight:600;font-size:15.5px;color:#2A1C12;line-height:1.2}
-  .dsp small{display:block;font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums}
-  .dsk-terug{display:inline-block;margin:0 0 12px;font-family:"Alegreya Sans",system-ui,sans-serif;font-weight:600;color:var(--bark)}
-  .dsk-h{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-bottom:6px}
-  .dsk-h img{width:88px;height:88px;border-radius:50%;object-fit:cover;background:var(--tan)}
-  .dsk-h h3{margin:0;font-size:24px}
-  .dsk-h p{margin:2px 0 0;color:var(--muted)}
-  .dsk-st{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr));margin-top:12px}
-  .dsk-st article{background:var(--card);border:1.5px solid var(--line);border-radius:14px;padding:10px 14px}
-  .dsk-st h4{margin:0 0 4px;font-family:"Alegreya Sans",system-ui,sans-serif;font-size:17px}
-  .dsk-st ul{list-style:none;margin:0;padding:0}
-  .dsk-st li{padding:5px 0;border-bottom:1px dashed var(--line)}
-  .dsk-st li:last-child{border:0}
-  .dsk-st li small{display:block;color:var(--muted);font-size:13px}
-  .dsk-st li.unc a{color:var(--w)}
-  .dsk-st .gl{margin:6px 0 0;font-size:14px}
-  

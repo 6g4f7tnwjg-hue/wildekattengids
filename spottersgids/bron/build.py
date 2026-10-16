@@ -27,12 +27,15 @@ for c in cats:
         if x not in c['cont']:
             c['cont'].append(x)
 
-# Foto's als data-URI in de pagina: losse bestanden laden niet in elke viewer (o.a. de Claude-app)
-import base64
+# Foto's als losse bestanden (img/NN-i.jpg, mee publiceren); in de pagina alleen een piepklein voorbeeld (data-URI)
+# dat meteen zichtbaar is en blijft staan als het losse bestand niet laadt.
+import base64, io
+from PIL import Image
 for c in cats:
     for ph in c['photos']:
-        if not ph['src'].startswith('data:'):
-            ph['src'] = 'data:image/jpeg;base64,' + base64.b64encode(open(J(ph['src']), 'rb').read()).decode()
+        im = Image.open(J(ph['src'])).convert('RGB'); im.thumbnail((40, 40))
+        b = io.BytesIO(); im.save(b, 'JPEG', quality=55)
+        ph['th'] = 'data:image/jpeg;base64,' + base64.b64encode(b.getvalue()).decode()
 
 sources, src_idx = [], {}
 def add_source(s):

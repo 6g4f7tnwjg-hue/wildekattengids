@@ -418,7 +418,8 @@ const narrow = () => window.innerWidth < 600;
 const scoreHtml = (n, big, compact) => `<span class="score${big?' big':''}" style="--c:var(--s${n})" title="${esc(T(U.chance))} ${n}/5 · ${esc(T(U.sc[n]))}"><span class="pips" aria-hidden="true">${[1,2,3,4,5].map(i=>`<i class="${i<=n?'on':''}"></i>`).join('')}</span><b>${compact ? `${n}/5` : `${esc(T(U.chance))} ${n} · ${esc(T(U.sc[n]))}`}</b></span>`;
 const credit = cr => esc(String(cr || '').replace(/^foto:\s*/i, T(U.photoPre) + ' '));
 const catName = c => T({nl:c.nl, en:c.en});
-const img = (p, alt, eager) => `<img src="${esc(p.src)}" alt="${esc(alt)}" loading="${eager?'eager':'lazy'}" decoding="async">`;
+// foto als los bestand; het voorbeeldje (p.th) staat eronder tijdens het laden en vervangt de foto als die niet laadt
+const img = (p, alt, eager) => `<img src="${esc(p.src)}" alt="${esc(alt)}" loading="${eager?'eager':'lazy'}" decoding="async" style="background:center/cover no-repeat url('${p.th}')" onerror="this.onerror=null;this.src='${p.th}'">`;
 const iucnHtml = code => `<span class="iucn" style="--ic:${IUCN_COL[code]||'#777'}"><b>${esc(code)}</b>${esc(T(U.iucn[code]||{nl:code,en:code}))}</span>`;
 const contName = c => T(U.cont[c]);
 const factsHtml = r => `<dl class="facts">

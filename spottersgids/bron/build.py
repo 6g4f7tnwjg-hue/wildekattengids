@@ -21,6 +21,10 @@ for c in cats:
     c['cont'] = [CONT_MAP[x] for x in c['cont']]
     if c['no'] not in PAGES:
         c['photos'] = c['photos'][:1]
+# Werelddelen die de gids níet overneemt uit de KATalogue (Costa Rica/Panama rekent de gids tot Midden-/Zuid-Amerika)
+REMOVE_CONT = {18: ['nam']}   # wolkentijgerkat
+for c in cats:
+    c['cont'] = [x for x in c['cont'] if x not in REMOVE_CONT.get(c['no'], [])]
 extra_cont = load('data/extra_cont.json') if os.path.exists(J('data', 'extra_cont.json')) else {}
 for c in cats:
     for x in extra_cont.get(str(c['no']), []):

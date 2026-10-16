@@ -3,8 +3,8 @@
 Maker: J. Gelens. Stand: 16 oktober 2026. Alle 42 soorten hebben een soortpagina.
 
 ## Waar staat alles
-- **Live (wordt): GitHub Pages** https://yeetkitty.github.io/wildekattengids/spottersgids/ – openbaar; Pages publiceert de branch `main` (map `spottersgids/`). Live zetten = `spottersgids-europa` samenvoegen in `main` (pull request, alleen als de gebruiker erom vraagt).
-- **Oud: artifact (privé)** https://claude.ai/artifact/4Pmep6UwbY4aoyRyXXfRRX – staat nog op de versie met ingebakken foto's (12,7 MB). Losse foto's laden niet in de Claude-app (getest 16-10-2026). Advies aan de gebruiker: na livegang van Pages er een korte 'verhuisd naar …'-pagina van maken (nog niet besloten). De huidige `index.html` werkt NIET meer in het artifact.
+- **Live: GitHub Pages** https://yeetkitty.github.io/wildekattengids/spottersgids/ – openbaar sinds 16-10-2026 (PR #1 samengevoegd). Pages publiceert de branch `main` (map `spottersgids/`). Wijzigingen: werken op `spottersgids-europa` (vers vanaf `main`), daarna via een nieuwe pull request naar `main` (alleen als de gebruiker erom vraagt).
+- **Oud: artifact (privé)** https://claude.ai/artifact/4Pmep6UwbY4aoyRyXXfRRX – staat nog op de versie met ingebakken foto's (12,7 MB). Losse foto's laden niet in de Claude-app (getest 16-10-2026). Gebruiker akkoord met een korte 'verhuisd naar …'-pagina; publiceren werd in de sessie geblokkeerd, wacht op bevestiging. De huidige `index.html` werkt NIET meer in het artifact.
 - **Repo:** `yeetkitty/wildekattengids`, branch **`spottersgids-europa`**, map `spottersgids/` (losse site naast de bestaande dierentuingids; niets daarbuiten aangeraakt).
 - **Bron van de soortgegevens:** artifact "De KATalogue" https://claude.ai/code/artifact/ba3edb6b-d786-4e68-906b-779c6b5cb3ea (42 soorten, foto's + credits, verspreidingskaarten, IUCN). Al uitgepakt naar `bron/katalogue.json`, `bron/land.txt` en `img/NN-i.jpg`.
 

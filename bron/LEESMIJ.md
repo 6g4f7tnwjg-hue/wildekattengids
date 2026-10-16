@@ -16,6 +16,7 @@ Alles wordt uit deze map gebouwd. Pas nooit de gegenereerde bestanden in de hoof
 | `taalmenu.js` | Het taalmenu (wereldbol met de taalcode; de lijst toont de talen van de pagina in hun eigen naam). De bouw zet het in de startpagina en in elke gids. |
 | `locatietypes.json` | De vaste lijst van locatietypes en labels. Elke locatie heeft in `LOCINFO` één `type` (de namen uit deze lijst) en `labels` (sleutels uit deze lijst). Dierentuin = lid van EAZA, NVD, VdZ, UIZA, AIZA of BIAZA; anders dierenpark. Types en labels hebben namen in zes talen plus Portugees (`pt`, alleen voor de Portugese gids); `locatietypes.js` kiest de taal met `LT_I`/`LT_TX`. |
 | `locatietypes.js` | Filterknoppen, labels en types in de gidsen; de bouw zet dit achter het script van elke gids en deelstaat. |
+| `huisstijl.py` | Huisstijl van de startpagina voor de gidsen op de website: bovenbalk, kleuren en letters, rustiger kop, tabbladen en Ko-fi-voet (CSS en script worden door de bouw in elke gids en losse pagina gezet). |
 | `bouw.py`, `startdata.py`, `extract.js` | De bouw. Deelstaten en regio’s staan in `STATES` en `REGIOS` in `bouw.py` (samen `DEEL`). |
 
 ## Bijwerken

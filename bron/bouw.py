@@ -24,6 +24,7 @@ BRON = os.path.dirname(os.path.abspath(__file__)) + "/"
 ROOT = os.path.dirname(BRON.rstrip("/")) + "/"
 sys.path.insert(0, BRON)
 from startdata import bereken, slug, soorten
+import huisstijl
 
 BASE = "/wildekattengids/"
 SITE = "https://yeetkitty.github.io" + BASE
@@ -286,6 +287,7 @@ for c, doc in G.items():
     doc = fotos(doc)
     doc = sub1(doc, HOME_JS, f'location.href="{BASE}";')
     doc = sub1(doc, '<a href="#" id="naar-landen">', f'<a href="{BASE}" id="naar-landen">')
+    doc = huisstijl.toepassen(doc, ["nl", "en"] + GTAAL[c], BASE)   # bovenbalk, kleuren, letters, kop, tabbladen en Ko-fi van de startpagina
     t, d = CTRY[c]
     doc = re.sub(r"<title>[^<]*</title>", lambda mm: f"<title>{t}</title>\n" + seo(t, d, SITE + F[c] + "/"), doc, count=1)
     WEB[c] = doc   # zonder meldformulier-aanpassing (voor de stijl en momentopnames)
@@ -398,8 +400,8 @@ PART = {}
 for c, f in F.items():
     doc = WEB[c]
     wr(ROOT + f + "/gids.css", "\n".join(re.findall(r"<style[^>]*>(.*?)</style>", doc, re.S)))
-    PART[c] = re.search(r'<nav class="landbar".*?</nav>', doc, re.S).group(0)
-    PART[c + "_kofi"] = re.search(r'<div class="kofi-wrap">.*?</aside></div>', doc, re.S).group(0)
+    PART[c] = huisstijl.bovenbalk(["nl"], BASE, taal=False)
+    PART[c + "_kofi"] = huisstijl.voet(["nl"])
 
 def guide_url(c, st_, kind=None, s=None):
     h = (st_ + ("/" + kind + "/" + s if kind else "")) if st_ else (kind + "/" + s if kind else "")
@@ -436,9 +438,9 @@ def page(c, st_, kind, s, naam, extra, frag):
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{esc(title)}</title>
 {seo(title.split(' – ')[0], desc, url, soort='article')}<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap" rel="stylesheet">
+{huisstijl.FONTS}
 <link rel="stylesheet" href="{BASE}{F[c]}/gids.css">
-<style>.gidslink{{margin-top:14px}}.gidslink a{{display:inline-flex;align-items:center;gap:8px;font-family:"Bricolage Grotesque",system-ui,sans-serif;font-size:15px;font-weight:600;color:#2A1C12;background:#F2DFB6;border:1.5px solid #D9BE86;border-radius:999px;padding:8px 14px;text-decoration:none}}.gidslink a:hover{{border-color:#5A3E2B}}#info[hidden]{{display:block!important}}</style>
+<style>.gidslink{{margin-top:14px}}.gidslink a{{display:inline-flex;align-items:center;gap:8px;font-family:"Alegreya Sans",system-ui,sans-serif;font-size:16px;font-weight:700;color:#F0EEE2;background:#1E2318;border:1px solid #1E2318;border-radius:999px;padding:8px 16px;text-decoration:none}}.gidslink a:hover{{background:#46552E;border-color:#46552E}}#info[hidden]{{display:block!important}}</style>
 </head>
 <body>
 {PART[c]}
@@ -447,7 +449,7 @@ def page(c, st_, kind, s, naam, extra, frag):
 {rewrite(frag["html"], c, st_)}
 </div>
 {PART[c + '_kofi']}
-</body>
+{huisstijl.JS}</body>
 </html>
 """
 

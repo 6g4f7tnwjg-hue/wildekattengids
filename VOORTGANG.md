@@ -2,6 +2,10 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 16 oktober 2026 – Gidsen in de huisstijl van de startpagina
+
+Nieuw bestand `bron/huisstijl.py`: de bouw zet in elke landengids, deelstaat- en regiopagina en in de losse soort- en locatiepagina’s (alleen op de website) dezelfde bovenbalk als de startpagina (pootje = terug naar de hoofdpagina, vergrootglas = zoeken op de hoofdpagina via `#zoek`, taalknop van de gids, menu), de kleuren en letters van de startpagina, een rustiger kop (kleine titelregel, foto 21:9), de inhoudsopgave als tabbladen die blijven staan (met het actieve tabblad gemarkeerd) en de Ko-fi-voet. “← Alle landen”, “Steun de gids” bovenaan en het losse Ko-fi-blok zijn verborgen. De gegevens, teksten en kaarten van de gidsen zijn niet veranderd. Het pootje draagt het oude id `naar-landen`, omdat het script van de gids daarnaar luistert.
+
 ## 16 oktober 2026 – Nieuwe opbouw startpagina
 
 De startpagina (`bron/start.html`) is opnieuw ingedeeld in de stijl van de Spottersgids (kleuren, letters Alegreya/Alegreya Sans/Barlow Condensed, knoppen). Mobiel is de pagina van ±16.400 px naar ±1.400 px gegaan.

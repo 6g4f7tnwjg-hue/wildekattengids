@@ -1017,6 +1017,7 @@ function route(){const h=decodeURIComponent(location.hash||"").slice(1);
   const m=h.match(/^kat\/([a-z0-9-]+)/);if(m&&CANON[m[1]]){showKat(m[1],false);return;}
   if(h==="top10"&&!KB){showTop(false);return;}
   if(PAGES.includes(h)){showPage(h,false);return;}
+  if(h==="zoek"){if(KAT||TOPV||PAGE)showHome(false,"kaart");else setTab("kaart");try{history.replaceState(null,"",location.pathname+location.search);}catch(_){}toggleDrop("zoekpaneel","zoek-btn");return;}
   if(KAT||TOPV||PAGE)showHome(false,h);else setTab({landen:"landen",overzicht:"landen",soorten:"soorten"}[h]||"kaart");
 }
 window.addEventListener("popstate",()=>{if(ONHOME)route();});

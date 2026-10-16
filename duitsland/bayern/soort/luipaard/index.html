@@ -76,6 +76,31 @@ var raf=0;function actief(){raf=0;var navs=[].slice.call(document.querySelectorA
     if(cur&&cur.dataset.hsOn!=="1"){as.forEach(function(a){a.dataset.hsOn="";});cur.dataset.hsOn="1";var l=cur.offsetLeft-nav.offsetLeft-16;if(l<nav.scrollLeft||l+cur.offsetWidth>nav.scrollLeft+nav.clientWidth)nav.scrollTo({left:Math.max(0,l),behavior:"smooth"});}});}
 addEventListener("scroll",function(){if(!raf)raf=requestAnimationFrame(actief);},{passive:true});
 setTimeout(actief,300);
+/* kaarten: kleur en icoon per type, legenda met filter */
+var HT=window.__HST;if(!HT)return;
+var NS="http://www.w3.org/2000/svg",FILT={};
+function taal(){var l=(document.documentElement.lang||"nl").slice(0,2);return HT.nm[l]?l:(document.documentElement.classList.contains("en")?"en":"nl");}
+function typeOf(mk){var lab=mk.getAttribute("aria-label")||"",best=-1,bl=0;
+  for(var k in HT.loc){if((lab===k||lab.indexOf(k+", ")===0)&&k.length>bl){best=HT.loc[k];bl=k.length;}}return best;}
+function icoon(k){return '<svg viewBox="-8 -8 16 16" aria-hidden="true" style="color:'+(k<0?"#8B8676":HT.col[k])+'"><circle r="8" fill="currentColor"/><g fill="#F0EEE2" style="color:#F0EEE2">'+(k<0?'<circle r="2"/>':HT.gly[k])+'</g></svg>';}
+function stijl(svg){var nieuw=false;
+  svg.querySelectorAll(".mk:not([data-hs])").forEach(function(mk){var d=mk.querySelector(".dot");if(!d)return;nieuw=true;
+    var k=typeOf(mk);mk.setAttribute("data-hs",String(k));mk.style.color=k<0?"#8B8676":HT.col[k];
+    var r=+d.getAttribute("r")||6,g=document.createElementNS(NS,"g");g.setAttribute("class","hs-gl");
+    g.setAttribute("transform","translate("+d.getAttribute("cx")+" "+d.getAttribute("cy")+") scale("+(r/8*.95).toFixed(3)+")");
+    g.innerHTML=k<0?'<circle r="2"/>':HT.gly[k];d.parentNode.insertBefore(g,d.nextSibling);});
+  if(nieuw||!svg.dataset.hsLg)legenda(svg);}
+function legenda(svg){var box=svg.closest(".map"),lg=box&&box.querySelector(".maplegend");if(!lg)return;svg.dataset.hsLg="1";
+  var l=taal(),onz=svg.querySelector(".mk.w")!==null;lg.classList.add("hs-lg");
+  lg.innerHTML='<span class="hs-lgt">'+HT.uit[l]+'</span>'+(onz?'<span class="hs-onz"><i></i>'+HT.onz[l]+'</span>':"");
+  chips();}
+/* de typeknoppen boven de kaart (bron/locatietypes.js) krijgen het icoon van hun type */
+function chips(){var l=taal();document.querySelectorAll(".lt-chip").forEach(function(b){var t=b.dataset.t;if(!t){b.classList.add("hs-alle");return;}
+  var k=HT.ti[t];if(k===undefined||b.querySelector("svg"))return;b.insertAdjacentHTML("afterbegin",icoon(k));b.classList.add("hs-tc");});}
+var rq=0;function alles(){rq=0;document.querySelectorAll(".map svg").forEach(function(s){if(s.querySelector(".mk"))stijl(s);});}
+new MutationObserver(function(){if(!rq)rq=requestAnimationFrame(function(){alles();chips();});}).observe(document.body,{childList:true,subtree:true});
+new MutationObserver(function(){document.querySelectorAll(".map svg[data-hs-lg]").forEach(legenda);}).observe(document.documentElement,{attributes:true,attributeFilter:["lang","class"]});
+alles();
 })();
 </script>
 </body>

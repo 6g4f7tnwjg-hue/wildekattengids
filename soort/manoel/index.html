@@ -225,7 +225,8 @@ p{margin:0}
 .map .land{fill:var(--land);stroke:var(--land-line);stroke-linejoin:round}
 .map .nb{fill:var(--nb);stroke:var(--nb);stroke-width:2.5;stroke-linejoin:round}
 .lbl-l{font-family:var(--label);font-weight:600;font-size:10.5px;letter-spacing:.14em;fill:color-mix(in srgb,var(--ink) 70%,transparent);text-anchor:middle;dominant-baseline:central;paint-order:stroke;stroke:var(--land);stroke-width:3px;stroke-opacity:.85;pointer-events:none}
-.lbl-l.off{display:none}
+.lbl-l.off,.lbl-l.oth{display:none}
+.map .land.oth{fill:var(--nb);stroke:var(--nb)}
 .map .water{fill:var(--sea);stroke:var(--land-line)}
 .map{border-radius:0}
 .mk,.cl{cursor:pointer}
@@ -706,6 +707,7 @@ const tCol=k=>k<0?"#8B8676":TCOL[k%TCOL.length];
 const tGly=k=>k<0?'<circle r="2"/>':GLY[k%GLY.length];
 const tIcon=(k,cls)=>`<svg class="${cls||"ti"}" viewBox="-8 -8 16 16" aria-hidden="true" style="color:${tCol(k)}"><circle r="8" fill="currentColor"/><g fill="#F0EEE2" style="color:#F0EEE2">${tGly(k)}</g></svg>`;
 function shown(c,i){const l=D[c].locs[i];if(l[2]==null)return false;
+  if(ZOOM!=="all"&&c!==ZOOM)return false;
   if(LTF&&ltOf(c,i)[0]!==LTF)return false;
   if(CAT&&catAt(c,i)===null)return false;
   if(JONG&&!jongAt(c,i).length)return false;
@@ -781,6 +783,8 @@ function animTo(t){
     setVB(from.map((v,i)=>v+(t[i]-v)*k));if(k<1)anim=requestAnimationFrame(step);};
   anim=requestAnimationFrame(step);}
 function zoomTo(c){ZOOM=c;LIST=null;
+  svg.querySelectorAll(".land").forEach(p=>p.classList.toggle("oth",c!=="all"&&!p.classList.contains(c)));
+  svg.querySelectorAll(".lbl-l").forEach(t=>t.classList.toggle("oth",c!=="all"&&t.dataset.c!==c));
   if(c!=="all"&&SEL&&SEL[0]!==c)SEL=null;
   drawMarkers();animTo(c==="all"?FULL.slice():fitBox(BOX[c]));
   renderZoom();

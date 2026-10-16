@@ -394,6 +394,31 @@ nav.toc::-webkit-scrollbar{display:none}
 nav.toc a{flex:none;border:1px solid var(--line)!important;background:var(--card);border-radius:99px;padding:5px 13px!important;margin:0!important;text-decoration:none!important;color:var(--ink)!important;font-weight:500;font-size:.95rem!important;white-space:nowrap}
 nav.toc a.hs-on{background:var(--hs-olive);border-color:var(--hs-olive)!important;color:var(--card)!important}
 section{scroll-margin-top:calc(var(--hs-head) + 64px)}
+/* kaarten in de gidsen: elk type locatie een eigen kleur en icoon (zoals op de startpagina) */
+.map{background:var(--card)!important;border-radius:12px!important;border:1px solid var(--line)!important}
+.map svg{background:#E2DFD4;border-radius:8px}
+.map .land{fill:#CDC7A9!important;stroke:#A59F84!important}
+.map .water{fill:#D3E1E4!important;stroke:#A59F84!important}
+.map .buur{fill:#E2DFD4!important;stroke:#C9C5B6!important}
+.map .mk[data-hs] .dot{fill:currentColor!important;stroke:var(--card)!important;stroke-width:1.6!important}
+.map .mk[data-hs] .hs-gl{fill:var(--card);color:var(--card);pointer-events:none}
+.map .mk.w[data-hs] .dot{fill:var(--card)!important;stroke:currentColor!important;stroke-width:2!important}
+.map .mk.w[data-hs] .hs-gl{fill:currentColor;color:inherit}
+.map .mk.hs-uit{display:none}
+.maplegend.hs-lg{display:block!important;font-family:var(--hs-body)!important;font-size:.95rem!important;margin:8px 2px 2px!important}
+.hs-lg .hs-lgt{display:block;color:var(--muted);margin:0 0 4px}
+.hs-lg .hs-onz{display:flex!important}
+.hs-lg .hs-chips{display:flex;flex-wrap:wrap;gap:6px}
+.hs-lg button{all:unset;box-sizing:border-box;cursor:pointer;display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--card);border-radius:99px;padding:4px 11px 4px 5px;font-size:.92rem;color:var(--ink);white-space:nowrap}
+.hs-lg button[aria-pressed="true"]{background:var(--hs-olive);border-color:var(--hs-olive);color:var(--card)}
+.hs-lg button .n{font-family:var(--hs-label);font-weight:600;opacity:.75}
+.hs-lg svg{width:18px;height:18px;flex:none}
+.lt-chip.hs-tc{display:inline-flex;align-items:center;gap:6px;padding-left:5px!important}
+.lt-chip svg{width:18px;height:18px;flex:none}
+.lt-chip{font-family:var(--hs-body)!important;font-size:.92rem!important;border-width:1px!important}
+.lt-chip[aria-pressed="true"]{background:var(--hs-olive)!important;border-color:var(--hs-olive)!important}
+.hs-lg .hs-onz{display:inline-flex;align-items:center;gap:6px;color:var(--muted);margin-top:6px}
+.hs-lg .hs-onz i{width:12px;height:12px;border-radius:50%;border:2px solid var(--muted);display:inline-block}
 /* voet met Ko-fi */
 .hs-foot{border-top:1px solid var(--line);margin-top:24px;background:var(--card);font-family:var(--hs-body);font-size:.95rem;color:var(--muted)}
 .hs-foot .hs-wrap{padding-top:22px;padding-bottom:40px}

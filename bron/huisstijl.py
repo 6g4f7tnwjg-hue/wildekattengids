@@ -6,7 +6,7 @@
 #   - de inhoudsopgave van de gids als tabbladen die blijven staan
 #   - Ko-fi onderaan zoals op de startpagina
 # De gegevens en teksten van de gidsen zelf blijven onaangeroerd; de kaart in de gids houdt zijn eigen stijl.
-import re
+import re, json
 
 FONTS = ('<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
          '<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;0,700;0,800;1,500&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Barlow+Condensed:wght@500;600&display=swap" rel="stylesheet">')
@@ -143,6 +143,31 @@ nav.toc::-webkit-scrollbar{display:none}
 nav.toc a{flex:none;border:1px solid var(--line)!important;background:var(--card);border-radius:99px;padding:5px 13px!important;margin:0!important;text-decoration:none!important;color:var(--ink)!important;font-weight:500;font-size:.95rem!important;white-space:nowrap}
 nav.toc a.hs-on{background:var(--hs-olive);border-color:var(--hs-olive)!important;color:var(--card)!important}
 section{scroll-margin-top:calc(var(--hs-head) + 64px)}
+/* kaarten in de gidsen: elk type locatie een eigen kleur en icoon (zoals op de startpagina) */
+.map{background:var(--card)!important;border-radius:12px!important;border:1px solid var(--line)!important}
+.map svg{background:#E2DFD4;border-radius:8px}
+.map .land{fill:#CDC7A9!important;stroke:#A59F84!important}
+.map .water{fill:#D3E1E4!important;stroke:#A59F84!important}
+.map .buur{fill:#E2DFD4!important;stroke:#C9C5B6!important}
+.map .mk[data-hs] .dot{fill:currentColor!important;stroke:var(--card)!important;stroke-width:1.6!important}
+.map .mk[data-hs] .hs-gl{fill:var(--card);color:var(--card);pointer-events:none}
+.map .mk.w[data-hs] .dot{fill:var(--card)!important;stroke:currentColor!important;stroke-width:2!important}
+.map .mk.w[data-hs] .hs-gl{fill:currentColor;color:inherit}
+.map .mk.hs-uit{display:none}
+.maplegend.hs-lg{display:block!important;font-family:var(--hs-body)!important;font-size:.95rem!important;margin:8px 2px 2px!important}
+.hs-lg .hs-lgt{display:block;color:var(--muted);margin:0 0 4px}
+.hs-lg .hs-onz{display:flex!important}
+.hs-lg .hs-chips{display:flex;flex-wrap:wrap;gap:6px}
+.hs-lg button{all:unset;box-sizing:border-box;cursor:pointer;display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--card);border-radius:99px;padding:4px 11px 4px 5px;font-size:.92rem;color:var(--ink);white-space:nowrap}
+.hs-lg button[aria-pressed="true"]{background:var(--hs-olive);border-color:var(--hs-olive);color:var(--card)}
+.hs-lg button .n{font-family:var(--hs-label);font-weight:600;opacity:.75}
+.hs-lg svg{width:18px;height:18px;flex:none}
+.lt-chip.hs-tc{display:inline-flex;align-items:center;gap:6px;padding-left:5px!important}
+.lt-chip svg{width:18px;height:18px;flex:none}
+.lt-chip{font-family:var(--hs-body)!important;font-size:.92rem!important;border-width:1px!important}
+.lt-chip[aria-pressed="true"]{background:var(--hs-olive)!important;border-color:var(--hs-olive)!important}
+.hs-lg .hs-onz{display:inline-flex;align-items:center;gap:6px;color:var(--muted);margin-top:6px}
+.hs-lg .hs-onz i{width:12px;height:12px;border-radius:50%;border:2px solid var(--muted);display:inline-block}
 /* voet met Ko-fi */
 .hs-foot{border-top:1px solid var(--line);margin-top:24px;background:var(--card);font-family:var(--hs-body);font-size:.95rem;color:var(--muted)}
 .hs-foot .hs-wrap{padding-top:22px;padding-bottom:40px}
@@ -175,12 +200,58 @@ var raf=0;function actief(){raf=0;var navs=[].slice.call(document.querySelectorA
     if(cur&&cur.dataset.hsOn!=="1"){as.forEach(function(a){a.dataset.hsOn="";});cur.dataset.hsOn="1";var l=cur.offsetLeft-nav.offsetLeft-16;if(l<nav.scrollLeft||l+cur.offsetWidth>nav.scrollLeft+nav.clientWidth)nav.scrollTo({left:Math.max(0,l),behavior:"smooth"});}});}
 addEventListener("scroll",function(){if(!raf)raf=requestAnimationFrame(actief);},{passive:true});
 setTimeout(actief,300);
+/* kaarten: kleur en icoon per type, legenda met filter */
+var HT=window.__HST;if(!HT)return;
+var NS="http://www.w3.org/2000/svg",FILT={};
+function taal(){var l=(document.documentElement.lang||"nl").slice(0,2);return HT.nm[l]?l:(document.documentElement.classList.contains("en")?"en":"nl");}
+function typeOf(mk){var lab=mk.getAttribute("aria-label")||"",best=-1,bl=0;
+  for(var k in HT.loc){if((lab===k||lab.indexOf(k+", ")===0)&&k.length>bl){best=HT.loc[k];bl=k.length;}}return best;}
+function icoon(k){return '<svg viewBox="-8 -8 16 16" aria-hidden="true" style="color:'+(k<0?"#8B8676":HT.col[k])+'"><circle r="8" fill="currentColor"/><g fill="#F0EEE2" style="color:#F0EEE2">'+(k<0?'<circle r="2"/>':HT.gly[k])+'</g></svg>';}
+function stijl(svg){var nieuw=false;
+  svg.querySelectorAll(".mk:not([data-hs])").forEach(function(mk){var d=mk.querySelector(".dot");if(!d)return;nieuw=true;
+    var k=typeOf(mk);mk.setAttribute("data-hs",String(k));mk.style.color=k<0?"#8B8676":HT.col[k];
+    var r=+d.getAttribute("r")||6,g=document.createElementNS(NS,"g");g.setAttribute("class","hs-gl");
+    g.setAttribute("transform","translate("+d.getAttribute("cx")+" "+d.getAttribute("cy")+") scale("+(r/8*.95).toFixed(3)+")");
+    g.innerHTML=k<0?'<circle r="2"/>':HT.gly[k];d.parentNode.insertBefore(g,d.nextSibling);});
+  if(nieuw||!svg.dataset.hsLg)legenda(svg);}
+function legenda(svg){var box=svg.closest(".map"),lg=box&&box.querySelector(".maplegend");if(!lg)return;svg.dataset.hsLg="1";
+  var l=taal(),onz=svg.querySelector(".mk.w")!==null;lg.classList.add("hs-lg");
+  lg.innerHTML='<span class="hs-lgt">'+HT.uit[l]+'</span>'+(onz?'<span class="hs-onz"><i></i>'+HT.onz[l]+'</span>':"");
+  chips();}
+/* de typeknoppen boven de kaart (bron/locatietypes.js) krijgen het icoon van hun type */
+function chips(){var l=taal();document.querySelectorAll(".lt-chip").forEach(function(b){var t=b.dataset.t;if(!t){b.classList.add("hs-alle");return;}
+  var k=HT.ti[t];if(k===undefined||b.querySelector("svg"))return;b.insertAdjacentHTML("afterbegin",icoon(k));b.classList.add("hs-tc");});}
+var rq=0;function alles(){rq=0;document.querySelectorAll(".map svg").forEach(function(s){if(s.querySelector(".mk"))stijl(s);});}
+new MutationObserver(function(){if(!rq)rq=requestAnimationFrame(function(){alles();chips();});}).observe(document.body,{childList:true,subtree:true});
+new MutationObserver(function(){document.querySelectorAll(".map svg[data-hs-lg]").forEach(legenda);}).observe(document.documentElement,{attributes:true,attributeFilter:["lang","class"]});
+alles();
 })();
 </script>
 """
 
-def toepassen(doc, langs, base):
-    """Huisstijl op een gids of deelstaatpagina zetten (website)."""
+TCOL = ["#2F6B2F", "#2766B0", "#7A5230", "#C98500", "#8A3FA0", "#16878A", "#B0306A", "#666158"]   # zelfde als op de startpagina
+GLY = ['<ellipse cx="0" cy="1.7" rx="2.6" ry="2.2"/><circle cx="-3.1" cy="-1.3" r="1.15"/><circle cx="-1.15" cy="-3.2" r="1.15"/><circle cx="1.15" cy="-3.2" r="1.15"/><circle cx="3.1" cy="-1.3" r="1.15"/>',
+       '<circle cx="0" cy="-1.4" r="3.2"/><rect x="-.75" y="1" width="1.5" height="3.6"/>',
+       '<path d="M0-4.8 3.9 1.6H-3.9Z"/><rect x="-.75" y="1.4" width="1.5" height="3.1"/>',
+       '<path d="M-4.4 1.8V-.4l1.5-2.6h4.6l1.6 2.6h1.1v2.2Z"/><circle cx="-2.3" cy="2.5" r="1.4"/><circle cx="2.3" cy="2.5" r="1.4"/>',
+       '<g fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="0" cy="-1" r="3.1"/><path d="M0-1-2.6 4.4M0-1 2.6 4.4M-3.1-1H3.1M0-4.1V2.1"/></g>',
+       '<path d="M-3.8 3.8C-3.8-1.8-.4-4.2 4-4.2 4 .2 1.6 3.8-3.8 3.8Z"/>',
+       '<path d="M0 3.9C-4.8.8-4.3-3.7-1.5-3.7-.6-3.7 0-3 0-2.4 0-3 .6-3.7 1.5-3.7 4.3-3.7 4.8.8 0 3.9Z"/>',
+       '<path d="M-4.2.3 0-4 4.2.3H2.9V4H-2.9V.3Z"/>']
+UITLEG = {"nl": "Kleur en icoon tonen het soort locatie (zie de knoppen boven de kaart; tik erop om te filteren).", "en": "Colour and icon show the type of location (see the buttons above the map; tap one to filter).",
+          "fr": "La couleur et l’icône indiquent le type de lieu (voir les boutons au-dessus de la carte ; touchez-en un pour filtrer).", "de": "Farbe und Symbol zeigen die Art des Ortes (siehe die Knöpfe über der Karte; zum Filtern antippen).",
+          "it": "Colore e icona indicano il tipo di luogo (vedi i pulsanti sopra la mappa; toccane uno per filtrare).", "es": "El color y el icono indican el tipo de lugar (mira los botones encima del mapa; toca uno para filtrar).",
+          "pt": "A cor e o ícone mostram o tipo de local (vê os botões acima do mapa; toca num para filtrar)."}
+ONZ = {"nl": "open stip: alleen onzekere vermeldingen", "en": "open dot: uncertain entries only", "fr": "point vide : mentions incertaines seulement",
+       "de": "offener Punkt: nur unsichere Einträge", "it": "punto vuoto: solo segnalazioni incerte", "es": "punto vacío: solo menciones inciertas", "pt": "ponto vazio: só menções incertas"}
+def kaartdata(types, locinfo, langs):
+    """types: de lijst uit locatietypes.json; locinfo: {locatienaam: typenaam (nl)}."""
+    idx = {t["nl"]: k for k, t in enumerate(types)}
+    return {"loc": {n: idx.get(tp, -1) for n, tp in locinfo.items()}, "ti": idx, "col": TCOL, "gly": GLY,
+            "nm": {l: [t.get(l) or t["en"] for t in types] for l in langs}, "uit": {l: UITLEG[l] for l in langs}, "onz": {l: ONZ[l] for l in langs}}
+
+def toepassen(doc, langs, base, kaart=None):
+    """Huisstijl op een gids of deelstaatpagina zetten (website). kaart: uitvoer van kaartdata()."""
     doc = lettertypen(doc)
     m = re.search(r'<nav class="landbar".*?</nav>', doc, re.S)
     assert m, "landbar niet gevonden"
@@ -191,4 +262,5 @@ def toepassen(doc, langs, base):
     assert k, "Ko-fi-blok niet gevonden"
     doc = doc[:k.start()] + voet(langs) + doc[k.end():]
     i = doc.rindex("</body>")
-    return doc[:i] + JS + doc[i:]
+    data = ("<script>window.__HST=" + json.dumps(kaart, ensure_ascii=False).replace("</", "<\\/") + ";</script>\n") if kaart else ""
+    return doc[:i] + data + JS + doc[i:]

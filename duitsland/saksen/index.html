@@ -436,6 +436,31 @@ nav.toc::-webkit-scrollbar{display:none}
 nav.toc a{flex:none;border:1px solid var(--line)!important;background:var(--card);border-radius:99px;padding:5px 13px!important;margin:0!important;text-decoration:none!important;color:var(--ink)!important;font-weight:500;font-size:.95rem!important;white-space:nowrap}
 nav.toc a.hs-on{background:var(--hs-olive);border-color:var(--hs-olive)!important;color:var(--card)!important}
 section{scroll-margin-top:calc(var(--hs-head) + 64px)}
+/* kaarten in de gidsen: elk type locatie een eigen kleur en icoon (zoals op de startpagina) */
+.map{background:var(--card)!important;border-radius:12px!important;border:1px solid var(--line)!important}
+.map svg{background:#E2DFD4;border-radius:8px}
+.map .land{fill:#CDC7A9!important;stroke:#A59F84!important}
+.map .water{fill:#D3E1E4!important;stroke:#A59F84!important}
+.map .buur{fill:#E2DFD4!important;stroke:#C9C5B6!important}
+.map .mk[data-hs] .dot{fill:currentColor!important;stroke:var(--card)!important;stroke-width:1.6!important}
+.map .mk[data-hs] .hs-gl{fill:var(--card);color:var(--card);pointer-events:none}
+.map .mk.w[data-hs] .dot{fill:var(--card)!important;stroke:currentColor!important;stroke-width:2!important}
+.map .mk.w[data-hs] .hs-gl{fill:currentColor;color:inherit}
+.map .mk.hs-uit{display:none}
+.maplegend.hs-lg{display:block!important;font-family:var(--hs-body)!important;font-size:.95rem!important;margin:8px 2px 2px!important}
+.hs-lg .hs-lgt{display:block;color:var(--muted);margin:0 0 4px}
+.hs-lg .hs-onz{display:flex!important}
+.hs-lg .hs-chips{display:flex;flex-wrap:wrap;gap:6px}
+.hs-lg button{all:unset;box-sizing:border-box;cursor:pointer;display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--card);border-radius:99px;padding:4px 11px 4px 5px;font-size:.92rem;color:var(--ink);white-space:nowrap}
+.hs-lg button[aria-pressed="true"]{background:var(--hs-olive);border-color:var(--hs-olive);color:var(--card)}
+.hs-lg button .n{font-family:var(--hs-label);font-weight:600;opacity:.75}
+.hs-lg svg{width:18px;height:18px;flex:none}
+.lt-chip.hs-tc{display:inline-flex;align-items:center;gap:6px;padding-left:5px!important}
+.lt-chip svg{width:18px;height:18px;flex:none}
+.lt-chip{font-family:var(--hs-body)!important;font-size:.92rem!important;border-width:1px!important}
+.lt-chip[aria-pressed="true"]{background:var(--hs-olive)!important;border-color:var(--hs-olive)!important}
+.hs-lg .hs-onz{display:inline-flex;align-items:center;gap:6px;color:var(--muted);margin-top:6px}
+.hs-lg .hs-onz i{width:12px;height:12px;border-radius:50%;border:2px solid var(--muted);display:inline-block}
 /* voet met Ko-fi */
 .hs-foot{border-top:1px solid var(--line);margin-top:24px;background:var(--card);font-family:var(--hs-body);font-size:.95rem;color:var(--muted)}
 .hs-foot .hs-wrap{padding-top:22px;padding-bottom:40px}
@@ -679,6 +704,7 @@ function start(){stijl();alles();
 if(document.body)start();else document.addEventListener("DOMContentLoaded",start);
 })();
 </script>
+<script>window.__HST={"loc": {"Erlebnis-Zoo Hannover": 0, "Tierpark Ströhen": 1, "Wisentgehege Springe": 2, "Wildpark Neuhaus": 2, "Tierpark Bad Pyrmont": 1, "Wildgatter Hildesheim": 2, "Wildtierstation Sachsenhagen": 6, "Zoo Braunschweig": 1, "Artenschutzzentrum Grasleben": 5, "Tierpark Essehof": 1, "Luchsgehege Rabenklippe": 5, "Wildkatzen-Erlebniszentrum Bad Harzburg": 5, "Serengeti-Park Hodenhagen": 3, "Wildpark Lüneburger Heide": 2, "Wildpark Schwarze Berge": 2, "Wingster Waldzoo": 0, "Tierpark CUX-Art": 1, "Tiergarten Ludwigslust": 1, "Zoo Osnabrück": 0, "Tierpark Nordhorn": 0, "Jaderpark": 4, "Tier- und Freizeitpark Thüle": 4, "Wildpark Ostrittrum": 2, "Zoo Duisburg": 0, "Zoo Krefeld": 0, "Grüner Zoo Wuppertal": 0, "Solinger Vogel- und Tierpark": 1, "Tiergehege im Kaisergarten": 1, "Tierpark Tannenbusch": 1, "Wildpark Grafenberger Wald": 2, "Kölner Zoo": 0, "Euregiozoo Aachen": 0, "Wildpark Reuschenberg": 2, "Wildpark Gangelt": 2, "Brückenkopf-Park": 1, "Wildfreigehege Hellenthal": 2, "Allwetterzoo Münster": 0, "ZOOM Erlebniswelt": 0, "NaturZoo Rheine": 0, "Wildpark Anholter Schweiz": 2, "Naturwildpark Granat": 2, "Wildpark Frankenhof": 2, "Tier Wohlfühlheim": 6, "Safariland Stukenbrock": 3, "Tierpark Nadermann": 1, "Tierpark Olderdissen": 1, "Tierpark Herford": 1, "Zoo Dortmund": 0, "Tierpark Hamm": 0, "Wildpark Bilsteintal": 2, "Panorama-Park Sauerland": 4, "Zoo Leipzig": 0, "Wildpark Leipzig": 2, "Tiergarten Delitzsch": 1, "Tierpark Eilenburg": 1, "Zoo Dresden": 0, "Zoo Hoyerswerda": 0, "Tierpark Zittau": 1, "Tierpark Weißwasser": 1, "Tierpark Bischofswerda": 1, "Wildgehege Moritzburg": 2, "Wildpark Osterzgebirge": 2, "Tierpark Chemnitz": 0, "Wildgatter Oberrabenstein": 2, "Zoo der Minis": 1, "Amerika-Tierpark Limbach-Oberfrohna": 1, "Tiergarten Falkenstein": 1, "Wildpark Waschleithe": 2, "Pfaffengut Plauen": 5, "Circus Krone": 7, "Tierpark Hellabrunn": 0, "Wildpark Poing": 2, "Krone Farm": 7, "Tiergarten Straubing": 0, "Tier-Freigelände Lusen": 2, "Tier-Freigelände Falkenstein": 2, "Tierpark Irgenöd": 1, "Bayerwald-Tierpark Lohberg": 1, "Zoo Hof": 1, "Wildpark Hundshaupten": 2, "Wildpark Schloss Tambach": 2, "Wildpark Waldhaus Mehlmeisel": 2, "Tiergarten Nürnberg": 0, "Raubtier- und Exotenasyl Ansbach": 6, "Wildpark an den Eichen": 2, "Wild-Park Klaushof": 2, "Zoo Augsburg": 0, "Tierpark Hagenbeck": 0, "Zoo am Meer": 0, "Neunkircher Zoo": 0, "Zoo Saarbrücken": 0, "Wildpark Saarbrücken": 2, "Zoo Arche Noah Grömitz": 1, "Wildpark Eekholt": 2, "Tierpark Neumünster": 0, "Opel-Zoo": 0, "Zoo Frankfurt": 0, "Wildpark Alte Fasanerie": 2, "Tier- und Pflanzenpark Fasanerie": 2, "Wildpark Tiergarten Weilburg": 2, "Tierpark Sababurg": 1, "Wildpark Knüll": 2, "WildtierPark Edersee": 2, "Wildpark Gersfeld": 2, "Tier-, Freizeit- und Saurierpark Germendorf": 4, "Tierpark Kunsterspring": 1, "Tierpark Perleberg": 1, "Felidae Wildkatzen- und Artenschutzzentrum Barnim": 5, "Zoo Eberswalde": 0, "Wildpark Schorfheide": 2, "Wildpark Johannismühle": 2, "Tierpark Luckenwalde": 1, "Tierpark Cottbus": 0, "Tierpark Finsterwalde": 1, "Tierpark Senftenberg": 1, "Heimattiergarten Fürstenwalde": 1, "Zoo Schwerin": 0, "Erlebnis- und Tigerpark Dassow": 7, "Tierpark Wismar": 1, "Zoo Rostock": 0, "Wildpark-MV": 2, "Tiergarten Neustrelitz": 1, "Zoo Stralsund": 0, "Tierpark Ueckermünde": 0, "Zoo Neuwied": 0, "Tier-Erlebnispark Bell": 1, "Wildfreigehege Wildenburg": 2, "Tierpark Niederfischbach": 1, "Eifel-Zoo": 1, "Eifelpark Gondorf": 4, "Zoo Landau in der Pfalz": 0, "Wildpark Betzenberg": 2, "TIERART Wildtierstation": 6, "Wildpark Rheingönheim": 2, "Kurpfalz-Park": 4, "Tiger-Garten Waldeck": 6, "Alternativer Bärenpark Worbis": 6, "Freizeit- und Erholungspark Possen": 4, "Thüringer Zoopark Erfurt": 0, "Tierpark Gotha": 1, "BUND-Wildkatzendorf Hütscheroda": 5, "Tierpark Suhl": 1, "Tierpark Gera": 1, "Tiergarten Stendal": 1, "Zoo Aschersleben": 1, "Zoo Magdeburg": 0, "Tiergarten Bernburg": 0, "Tiergarten Staßfurt": 1, "Heimattiergarten Bierer Berg": 1, "Tierpark Hexentanzplatz": 1, "Wildpark Christianental": 2, "Tiergarten Halberstadt": 1, "Tierpark Dessau": 1, "Tierpark Köthen": 1, "Bergzoo Halle": 0, "Heimattierpark im Südpark": 1, "Heimatnaturgarten Weißenfels": 1, "Tierpark Bad Kösen": 1, "Wilhelma": 0, "Wildparadies Tripsdrill": 2, "Wildpark Bad Mergentheim": 2, "Der Kleine Tierpark Göppingen": 1, "Zoologischer Stadtgarten Karlsruhe": 0, "Zoo Heidelberg": 0, "Wildpark Pforzheim": 2, "Alternativer Wolf- und Bärenpark Schwarzwald": 6, "Tatzmania Löffingen": 4, "Steinwasen-Park": 4, "Schwarzwaldzoo Waldkirch": 1, "Wild- und Freizeitpark Allensbach": 2, "Zoo Berlin": 0, "Tierpark Berlin": 0}, "ti": {"Dierentuin": 0, "Dierenpark": 1, "Wildpark": 2, "Safaripark": 3, "Attractiepark met dieren": 4, "Natuur- en fokcentrum": 5, "Opvang of sanctuary": 6, "Particuliere houder": 7}, "col": ["#2F6B2F", "#2766B0", "#7A5230", "#C98500", "#8A3FA0", "#16878A", "#B0306A", "#666158"], "gly": ["<ellipse cx=\"0\" cy=\"1.7\" rx=\"2.6\" ry=\"2.2\"/><circle cx=\"-3.1\" cy=\"-1.3\" r=\"1.15\"/><circle cx=\"-1.15\" cy=\"-3.2\" r=\"1.15\"/><circle cx=\"1.15\" cy=\"-3.2\" r=\"1.15\"/><circle cx=\"3.1\" cy=\"-1.3\" r=\"1.15\"/>", "<circle cx=\"0\" cy=\"-1.4\" r=\"3.2\"/><rect x=\"-.75\" y=\"1\" width=\"1.5\" height=\"3.6\"/>", "<path d=\"M0-4.8 3.9 1.6H-3.9Z\"/><rect x=\"-.75\" y=\"1.4\" width=\"1.5\" height=\"3.1\"/>", "<path d=\"M-4.4 1.8V-.4l1.5-2.6h4.6l1.6 2.6h1.1v2.2Z\"/><circle cx=\"-2.3\" cy=\"2.5\" r=\"1.4\"/><circle cx=\"2.3\" cy=\"2.5\" r=\"1.4\"/>", "<g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"><circle cx=\"0\" cy=\"-1\" r=\"3.1\"/><path d=\"M0-1-2.6 4.4M0-1 2.6 4.4M-3.1-1H3.1M0-4.1V2.1\"/><\/g>", "<path d=\"M-3.8 3.8C-3.8-1.8-.4-4.2 4-4.2 4 .2 1.6 3.8-3.8 3.8Z\"/>", "<path d=\"M0 3.9C-4.8.8-4.3-3.7-1.5-3.7-.6-3.7 0-3 0-2.4 0-3 .6-3.7 1.5-3.7 4.3-3.7 4.8.8 0 3.9Z\"/>", "<path d=\"M-4.2.3 0-4 4.2.3H2.9V4H-2.9V.3Z\"/>"], "nm": {"nl": ["Dierentuin", "Dierenpark", "Wildpark", "Safaripark", "Attractiepark met dieren", "Natuur- en fokcentrum", "Opvang of sanctuary", "Particuliere houder"], "en": ["Zoo", "Animal park", "Wildlife park", "Safari park", "Theme park with animals", "Conservation centre", "Rescue centre or sanctuary", "Private keeper"], "de": ["Zoo", "Tierpark", "Wildpark", "Safaripark", "Freizeitpark mit Tieren", "Artenschutzzentrum", "Auffangstation", "Privathalter"]}, "uit": {"nl": "Kleur en icoon tonen het soort locatie (zie de knoppen boven de kaart; tik erop om te filteren).", "en": "Colour and icon show the type of location (see the buttons above the map; tap one to filter).", "de": "Farbe und Symbol zeigen die Art des Ortes (siehe die Knöpfe über der Karte; zum Filtern antippen)."}, "onz": {"nl": "open stip: alleen onzekere vermeldingen", "en": "open dot: uncertain entries only", "de": "offener Punkt: nur unsichere Einträge"}};</script>
 <script>
 (function(){
 /* taalknop van de gids naar de bovenbalk */
@@ -701,6 +727,31 @@ var raf=0;function actief(){raf=0;var navs=[].slice.call(document.querySelectorA
     if(cur&&cur.dataset.hsOn!=="1"){as.forEach(function(a){a.dataset.hsOn="";});cur.dataset.hsOn="1";var l=cur.offsetLeft-nav.offsetLeft-16;if(l<nav.scrollLeft||l+cur.offsetWidth>nav.scrollLeft+nav.clientWidth)nav.scrollTo({left:Math.max(0,l),behavior:"smooth"});}});}
 addEventListener("scroll",function(){if(!raf)raf=requestAnimationFrame(actief);},{passive:true});
 setTimeout(actief,300);
+/* kaarten: kleur en icoon per type, legenda met filter */
+var HT=window.__HST;if(!HT)return;
+var NS="http://www.w3.org/2000/svg",FILT={};
+function taal(){var l=(document.documentElement.lang||"nl").slice(0,2);return HT.nm[l]?l:(document.documentElement.classList.contains("en")?"en":"nl");}
+function typeOf(mk){var lab=mk.getAttribute("aria-label")||"",best=-1,bl=0;
+  for(var k in HT.loc){if((lab===k||lab.indexOf(k+", ")===0)&&k.length>bl){best=HT.loc[k];bl=k.length;}}return best;}
+function icoon(k){return '<svg viewBox="-8 -8 16 16" aria-hidden="true" style="color:'+(k<0?"#8B8676":HT.col[k])+'"><circle r="8" fill="currentColor"/><g fill="#F0EEE2" style="color:#F0EEE2">'+(k<0?'<circle r="2"/>':HT.gly[k])+'</g></svg>';}
+function stijl(svg){var nieuw=false;
+  svg.querySelectorAll(".mk:not([data-hs])").forEach(function(mk){var d=mk.querySelector(".dot");if(!d)return;nieuw=true;
+    var k=typeOf(mk);mk.setAttribute("data-hs",String(k));mk.style.color=k<0?"#8B8676":HT.col[k];
+    var r=+d.getAttribute("r")||6,g=document.createElementNS(NS,"g");g.setAttribute("class","hs-gl");
+    g.setAttribute("transform","translate("+d.getAttribute("cx")+" "+d.getAttribute("cy")+") scale("+(r/8*.95).toFixed(3)+")");
+    g.innerHTML=k<0?'<circle r="2"/>':HT.gly[k];d.parentNode.insertBefore(g,d.nextSibling);});
+  if(nieuw||!svg.dataset.hsLg)legenda(svg);}
+function legenda(svg){var box=svg.closest(".map"),lg=box&&box.querySelector(".maplegend");if(!lg)return;svg.dataset.hsLg="1";
+  var l=taal(),onz=svg.querySelector(".mk.w")!==null;lg.classList.add("hs-lg");
+  lg.innerHTML='<span class="hs-lgt">'+HT.uit[l]+'</span>'+(onz?'<span class="hs-onz"><i></i>'+HT.onz[l]+'</span>':"");
+  chips();}
+/* de typeknoppen boven de kaart (bron/locatietypes.js) krijgen het icoon van hun type */
+function chips(){var l=taal();document.querySelectorAll(".lt-chip").forEach(function(b){var t=b.dataset.t;if(!t){b.classList.add("hs-alle");return;}
+  var k=HT.ti[t];if(k===undefined||b.querySelector("svg"))return;b.insertAdjacentHTML("afterbegin",icoon(k));b.classList.add("hs-tc");});}
+var rq=0;function alles(){rq=0;document.querySelectorAll(".map svg").forEach(function(s){if(s.querySelector(".mk"))stijl(s);});}
+new MutationObserver(function(){if(!rq)rq=requestAnimationFrame(function(){alles();chips();});}).observe(document.body,{childList:true,subtree:true});
+new MutationObserver(function(){document.querySelectorAll(".map svg[data-hs-lg]").forEach(legenda);}).observe(document.documentElement,{attributes:true,attributeFilter:["lang","class"]});
+alles();
 })();
 </script>
 </body></html>

@@ -27,7 +27,10 @@ Maker: J. Gelens. Stand: 16 oktober 2026. Alle 42 soorten hebben een soortpagina
 | `data/extra_cont.json` | Extra werelddelen bovenop de KATalogue (luipaard, Afr. wilde kat, moeraskat → ook Europa). |
 | `data/text.json`, `data/europe.json` | Pagina's Verantwoord spotten, Katten in Europa, Paklijst, Over mij (NL/EN). |
 | `TWIJFELS.md` | Alle twijfels en redactiekeuzes per soort en per ronde. |
-| `index.html` | Gebouwde site (≈0,9 MB; een bezoek laadt live ≈0,5–0,6 MB dankzij compressie, foto's pas als ze in beeld komen). |
+| `index.html` | Gebouwde startpagina (klein omhulsel). Oude #-adressen (bijv. `#soort-27`) werken nog. |
+| `data.js`, `app.js`, `style.css` | Gebouwd: gegevens, script en stijl uit de template, gedeeld door alle pagina's (met `?v=`-versie tegen oude cache). Niet met de hand wijzigen. |
+| `<nl-naam>/index.html`, `en/<en-name>/index.html` | Gebouwd: losse soortpagina per taal (84 stuks) voor Google, met eigen titel, beschrijving, canonical/hreflang en voorgerenderde tekst. `<base href>` wijst naar de map spottersgids. |
+| `sitemap.xml` | Gebouwd: start + 84 soortpagina's. |
 | `img/`, `foto/` | Foto's (groot jpg, klein webp); horen in de repo, Pages serveert ze. |
 
 Topspot-regel in de bouw: plek met score 5 op een soortpagina = topspot; score 4 alleen als hij in `topspots.json` voor die soort staat.
@@ -45,6 +48,8 @@ Topspot-regel in de bouw: plek met score 5 op een soortpagina = topspot; score 4
 - De gids mag openbaar zijn en gevonden worden.
 
 ## Wat er gebouwd is (functies)
+- Losse soortpagina's (16-10-2026): NL op `/spottersgids/manoel/`, EN op `/spottersgids/en/pallas-cat/`. Links naar soorten gaan via `spHref()`; de taalknop op een soortpagina gaat naar de pagina in de andere taal. `window.SG_PAGE` in de pagina vertelt het script welke soort/taal.
+- Telefoon (≤820 px): de balk met werelddelen en tabbladen verdwijnt bij omlaag scrollen en komt terug bij omhoog scrollen (16-10-2026).
 - Start: werelddeelfilter; tabs **Kaart · Topspots · Soorten**. Fotorij "kies een kat": per werelddeel alleen katten van dat werelddeel (kleur = met spotplek, grijs = leeft er, nog geen plek); kies je een kat, dan blijft de kaart in het werelddeel met leefgebied erachter. Sterren = topspots.
 - Startkaart (aangepast 16-10-2026): kleinere markers; de legenda is een filter op kans (standaard 3–5 aan, knop "Toon ook kans 1–2"); zoomen met +/−/hele kaart, knijpen, slepen als ingezoomd, ctrl+scroll en dubbelklik; daaronder een lijst "Plekken op de kaart / in beeld" (eerst 10, knop "Toon alle"; tik = plek kiezen). Code: `homeData`, `drawHomeMap`, `bindGestures`, `drawMapList` in de template.
 - Topspots: eerst 6, knop "Toon alle". Soorten: zoekveld.
@@ -52,6 +57,9 @@ Topspot-regel in de bouw: plek met score 5 op een soortpagina = topspot; score 4
 - Menu: Soorten · Topspots · Katten in Europa · Meer (Verantwoord spotten, Paklijst, Over mij).
 
 ## Open punten / mogelijke vervolgstappen
+- **Contactformulier** op Over mij: gebruiker maakt zelf een formulier en geeft de link.
+- `spottersgids/sitemap.xml` is nog nergens aangemeld (root-`robots.txt`/`sitemap.xml` liggen buiten de map); kan via Google Search Console.
+- Verbeterlijst uit de review van 16-10-2026 (nog niet gedaan): bronnen van reisorganisaties (URL's met Cat Expeditions/Sakertours), IUCN nakijken (jaguarundi, Aziatische goudkat, kodkod), uitleg kans op start, kans 3× herhaald op soortpagina, bronnummers ongesorteerd, soortkaart zonder landen, dierentuinfoto's, deelvoorbeeld/icoon, Ko-fi in voettekst, tilcayo-zin 'eerste nieuwe soort in 100 jaar'.
 - **Later (gebruiker):** link naar de Spottersgids vanaf de bestaande site en opname in de root-`sitemap.xml`. Dat raakt bestanden buiten `spottersgids/`, dus alleen op verzoek.
 - Bij een kat met alleen plekken met kans 1–2 (bijv. caracal) is de startkaart eerst leeg tot je "Toon ook kans 1–2" kiest. Gevraagd of dat automatisch moet; nog geen antwoord.
 - `OVERDRACHT.md` en `TWIJFELS.md` staan in de openbare map en zijn dus ook via de website op te vragen (bijv. …/spottersgids/TWIJFELS.md). Nog niet met de gebruiker besproken.

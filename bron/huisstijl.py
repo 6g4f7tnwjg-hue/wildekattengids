@@ -210,7 +210,9 @@ function icoon(k){return '<svg viewBox="-8 -8 16 16" aria-hidden="true" style="c
 function stijl(svg){var nieuw=false;
   svg.querySelectorAll(".mk:not([data-hs])").forEach(function(mk){var d=mk.querySelector(".dot");if(!d)return;nieuw=true;
     var k=typeOf(mk);mk.setAttribute("data-hs",String(k));mk.style.color=k<0?"#8B8676":HT.col[k];
-    var r=+d.getAttribute("r")||6,g=document.createElementNS(NS,"g");g.setAttribute("class","hs-gl");
+    var r=(+d.getAttribute("r")||6)*HT.groot;d.setAttribute("r",r.toFixed(2));
+    var ri=mk.querySelector(".ring"),hi=mk.querySelector(".hit");if(ri)ri.setAttribute("r",(r+3.5).toFixed(2));if(hi)hi.setAttribute("r",Math.max(+hi.getAttribute("r")||0,r+3).toFixed(2));
+    var g=document.createElementNS(NS,"g");g.setAttribute("class","hs-gl");
     g.setAttribute("transform","translate("+d.getAttribute("cx")+" "+d.getAttribute("cy")+") scale("+(r/8*.95).toFixed(3)+")");
     g.innerHTML=k<0?'<circle r="2"/>':HT.gly[k];d.parentNode.insertBefore(g,d.nextSibling);});
   if(nieuw||!svg.dataset.hsLg)legenda(svg);}
@@ -247,7 +249,7 @@ ONZ = {"nl": "open stip: alleen onzekere vermeldingen", "en": "open dot: uncerta
 def kaartdata(types, locinfo, langs):
     """types: de lijst uit locatietypes.json; locinfo: {locatienaam: typenaam (nl)}."""
     idx = {t["nl"]: k for k, t in enumerate(types)}
-    return {"loc": {n: idx.get(tp, -1) for n, tp in locinfo.items()}, "ti": idx, "col": TCOL, "gly": GLY,
+    return {"loc": {n: idx.get(tp, -1) for n, tp in locinfo.items()}, "ti": idx, "groot": 1.5, "col": TCOL, "gly": GLY,
             "nm": {l: [t.get(l) or t["en"] for t in types] for l in langs}, "uit": {l: UITLEG[l] for l in langs}, "onz": {l: ONZ[l] for l in langs}}
 
 def toepassen(doc, langs, base, kaart=None):

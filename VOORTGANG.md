@@ -12,6 +12,7 @@ De startpagina (`bron/start.html`) is opnieuw ingedeeld in de stijl van de Spott
 - **Menu**: Top 10, Recent geboren (nieuwe pagina met alle geboortes uit `D.sp`, filter per land), Parken op aantal soorten, Soorten locaties, Over deze gids; onder “Meer” de Spottersgids en Ko-fi. De dubbele blokken onderaan (Spottersgids, Ko-fi, landenlijst naast de kaart) zijn weg.
 - De soortpagina’s (`/soort/…`) en `/top10/` gebruiken dezelfde kop en stijl.
 - Later dezelfde avond: elk type locatie een eigen kleur en icoon (`TCOL`, `GLY` in `start.html`, volgorde van `locatietypes.json`); locaties die op het scherm dicht bij elkaar liggen worden een rondje met een getal (tik = inzoomen, op dezelfde plek = lijst in het infovak); bij een gekozen land worden de andere landen lichter; geboortes aan/uit (rode rand, bij groepjes een rood stipje); legenda met de types klapt uit onder de kaart.
+- Daarna: geboortes standaard uit; geen nieuwste geboorte meer op de landkaarten; kaart met lichtblauwe zee, grijze buurlanden (`NBR`, Natural Earth 1:50m via world-atlas, geprojecteerd en bijgesneden) en landnamen; groepjes olijfgroen met schaduw; “Soorten locaties” klapt per type open tot een lijst per land; Ko-fi onderaan elke pagina (voet van `start.html`); lijst “In beeld” onder de kaart (meeste soorten eerst, tik = kaart erheen).
 
 ## 16 oktober 2026 – Portugal
 

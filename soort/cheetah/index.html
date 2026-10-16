@@ -84,7 +84,7 @@
 :root{
   color-scheme:light;
   --bg:#E3E1D0; --paper:#F0EEE2; --ink:#1E2318; --muted:#5A604D; --line:#C6C3AD;
-  --olive:#46552E; --accent:#9B5A1C; --accent-ink:#FFF8EA; --sea:#E9E7DA; --land:#C9C4A8; --land-line:#8F8A72;
+  --olive:#46552E; --accent:#9B5A1C; --accent-ink:#FFF8EA; --sea:#D3E1E4; --land:#CDC7A9; --land-line:#A59F84; --nb:#E2DFD4;
   --dot:#46552E; --birth:#E0352B;
   --shadow:0 1px 0 rgba(30,35,24,.06),0 8px 24px -12px rgba(30,35,24,.25);
   --display:"Alegreya",Georgia,"Times New Roman",serif;
@@ -206,14 +206,28 @@ p{margin:0}
 
 /* kaart */
 .mapgrid{display:grid;gap:14px;grid-template-columns:minmax(0,1fr);align-items:start}
-@media (min-width:860px){.mapgrid{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr)}.mapgrid .info{position:sticky;top:calc(var(--head) + 76px)}}
-.mapbox{background:var(--paper);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+@media (min-width:860px){.mapgrid{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr)}}
+.side{display:grid;gap:14px;min-width:0}
+.maplist{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:12px 14px 14px}
+.maplist h3{font-size:1.15rem}
+.maplist .note{margin:2px 0 6px}
+.maplist ol{list-style:none;margin:0;padding:0}
+.maplist li+li{border-top:1px solid var(--line)}
+.maplist .lpick{padding:8px 2px}
+.maplist .lpick .k{margin-left:auto;flex:none;font-family:var(--label);font-weight:600;color:var(--muted);font-size:.9rem;white-space:nowrap}
+.maplist .lpick[aria-current="true"] b{color:var(--accent)}
+.maplist .morewrap{margin-top:8px}
+.mapbox{scroll-margin-top:calc(var(--head) + 70px);background:var(--paper);border:1px solid var(--line);border-radius:12px;overflow:hidden}
 .mapstage{position:relative}
 .map{display:block;width:100%;height:auto;max-height:78vh;background:var(--sea);touch-action:pan-y;user-select:none;-webkit-user-select:none}
 .map.zoomed{touch-action:none;cursor:grab}
 .map.dragging{cursor:grabbing}
 .map .land{fill:var(--land);stroke:var(--land-line);stroke-linejoin:round}
+.map .nb{fill:var(--nb);stroke:var(--nb);stroke-width:2.5;stroke-linejoin:round}
+.lbl-l{font-family:var(--label);font-weight:600;font-size:10.5px;letter-spacing:.14em;fill:color-mix(in srgb,var(--ink) 70%,transparent);text-anchor:middle;dominant-baseline:central;paint-order:stroke;stroke:var(--land);stroke-width:3px;stroke-opacity:.85;pointer-events:none}
+.lbl-l.off{display:none}
 .map .water{fill:var(--sea);stroke:var(--land-line)}
+.map{border-radius:0}
 .mk,.cl{cursor:pointer}
 .mk .dot{fill:currentColor;stroke:var(--paper);stroke-width:1.2}
 .mk .gl{fill:var(--paper);color:var(--paper)}
@@ -226,7 +240,8 @@ p{margin:0}
 .mk .hit,.cl .hit{fill:transparent}
 .mk .ring{fill:none;stroke:var(--ink);stroke-width:2.2;opacity:0}
 .mk.sel .ring{opacity:1}
-.cl .cdot{fill:var(--ink);stroke:var(--paper);stroke-width:1.5}
+.cl .cdot{fill:var(--olive);stroke:var(--paper);stroke-width:1.6}
+.mk .sh,.cl .sh{fill:rgba(30,35,24,.22)}
 .cl .cn{fill:var(--paper);font-family:var(--label);font-weight:600;font-size:12px;text-anchor:middle;pointer-events:none}
 .mk.dim,.cl.dim{opacity:.3}
 .mk:focus,.cl:focus{outline:none} .mk:focus-visible .ring{opacity:1;stroke:var(--accent)} .cl:focus-visible .cdot{stroke:var(--accent);stroke-width:2.5}
@@ -333,10 +348,24 @@ p{margin:0}
 .births small{display:block;color:var(--muted);font-size:.9rem}
 .none{color:var(--muted);margin:0}
 .types{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));margin:0;padding:0;list-style:none}
-.types li{margin:0;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--paper)}
+.types>li{margin:0;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--paper)}
 .types b{font-family:var(--display);font-size:1.12rem}
 .types .n{color:var(--muted);font-size:.92rem;font-variant-numeric:tabular-nums;margin-left:6px}
 .types p{margin:4px 0 0;font-size:.98rem}
+.types{grid-template-columns:minmax(0,1fr)!important;max-width:820px}
+.tdet summary{list-style:none;cursor:pointer}
+.tdet summary::-webkit-details-marker{display:none}
+.tdet .more{display:inline-flex;align-items:center;gap:6px;margin-top:8px;font-weight:700;color:var(--accent)}
+.tdet .more::after{content:"";width:7px;height:7px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg);margin-top:-3px;transition:transform .2s}
+.tdet[open] .more::after{transform:rotate(-135deg);margin-top:3px}
+.tlist h3{font-family:var(--body);font-size:1.02rem;font-weight:700;margin:16px 0 4px;display:flex;align-items:center;gap:8px}
+.tlist h3 svg{width:24px;height:16px;border-radius:2px;box-shadow:0 0 0 1px rgba(30,35,24,.2)}
+.tlist h3 .n{margin:0}
+.tlist ul{list-style:none;margin:0;padding:0}
+.tlist li{padding:6px 0;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;justify-content:space-between;gap:2px 12px;align-items:baseline}
+.tlist li:last-child{border:0}
+.tlist a{font-weight:700;text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--accent) 60%,transparent)}
+.tlist small{color:var(--muted);font-size:.9rem}
 
 /* top 10 */
 .toplist{list-style:none;padding:0;margin:0;display:grid;gap:12px}
@@ -426,6 +455,10 @@ html.katmode .intro,html.katmode .bar,html.katmode .tabpanel,html.katmode .page,
 .laden{position:fixed;left:50%;top:calc(env(safe-area-inset-top,0px) + 70px);transform:translateX(-50%);z-index:40;background:var(--ink);color:var(--paper);font-weight:700;padding:8px 16px;border-radius:99px}
 .foot{border-top:1px solid var(--line);margin-top:10px;background:var(--paper)}
 .foot .wrap{padding-block:22px 40px;color:var(--muted);font-size:.92rem}
+.kofibar{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;padding-bottom:18px;margin-bottom:16px;border-bottom:1px solid var(--line)}
+.kofibar p{flex:1 1 260px;color:var(--ink);font-size:1rem}
+.kofi{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:700;padding:11px 20px;border-radius:99px}
+.kofi:hover{color:var(--accent-ink);filter:brightness(1.07)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 
@@ -485,7 +518,7 @@ html.katmode .intro,html.katmode .bar,html.katmode .tabpanel,html.katmode .page,
       <div class="maplegend" id="legend"></div>
       <div class="ltfbox" id="ltfbox" hidden><p class="ltf-n note" id="ltf-n" aria-live="polite"></p><div class="chips wrapit" id="ltf" role="group" aria-label="Soort locatie / Type of location / Type de lieu / Art des Ortes"></div></div>
     </div>
-    <div class="info" id="info" aria-live="polite"></div>
+    <div class="side"><div class="info" id="info" aria-live="polite"></div><div class="maplist" id="maplist"></div></div>
   </div>
 </section>
 
@@ -554,7 +587,7 @@ html.katmode .intro,html.katmode .bar,html.katmode .tabpanel,html.katmode .page,
       <small>Nederland · geboren 20 november 2025</small></li></ul></div></section>
 </div>
 </main>
-<footer class="foot"><div class="wrap"><span class="l-nl">Samengesteld door J. Gelens. Bronnen en foto’s staan in de gidsen per land.</span><span class="l-en">Compiled by J. Gelens. Sources and photos are listed in each country’s guide.</span><span class="l-fr">Rédigé par J. Gelens. Les sources et les photos figurent dans le guide de chaque pays.</span><span class="l-de">Zusammengestellt von J. Gelens. Quellen und Fotos stehen im Guide des jeweiligen Landes.</span><span class="l-it">Compilata da J. Gelens. Fonti e foto si trovano nelle guide di ciascun paese.</span><span class="l-es">Elaborado por J. Gelens. Las fuentes y las fotos figuran en la guía de cada país.</span></div></footer>
+<footer class="foot"><div class="wrap"><div class="kofibar"><p><b><span class="l-nl">Vind je deze gids handig?</span><span class="l-en">Find this guide useful?</span><span class="l-fr">Ce guide vous est utile ?</span><span class="l-de">Findest du diesen Guide nützlich?</span><span class="l-it">Trovi utile questa guida?</span><span class="l-es">¿Te resulta útil esta guía?</span></b> <span class="l-nl">Met een kleine bijdrage help je hem actueel te houden.</span><span class="l-en">A small contribution helps keep it up to date.</span><span class="l-fr">Une petite contribution aide à le tenir à jour.</span><span class="l-de">Ein kleiner Beitrag hilft, ihn aktuell zu halten.</span><span class="l-it">Con un piccolo contributo aiuti a tenerla aggiornata.</span><span class="l-es">Una pequeña aportación ayuda a mantenerla al día.</span></p><a class="kofi" href="https://ko-fi.com/katalogue" target="_blank" rel="noopener">☕ <span class="l-nl">Steun de gids op Ko-fi</span><span class="l-en">Support the guide on Ko-fi</span><span class="l-fr">Soutenir le guide sur Ko-fi</span><span class="l-de">Den Guide auf Ko-fi unterstützen</span><span class="l-it">Sostieni la guida su Ko-fi</span><span class="l-es">Apoya la guía en Ko-fi</span></a></div><span class="l-nl">Samengesteld door J. Gelens. Bronnen en foto’s staan in de gidsen per land.</span><span class="l-en">Compiled by J. Gelens. Sources and photos are listed in each country’s guide.</span><span class="l-fr">Rédigé par J. Gelens. Les sources et les photos figurent dans le guide de chaque pays.</span><span class="l-de">Zusammengestellt von J. Gelens. Quellen und Fotos stehen im Guide des jeweiligen Landes.</span><span class="l-it">Compilata da J. Gelens. Fonti e foto si trovano nelle guide di ciascun paese.</span><span class="l-es">Elaborado por J. Gelens. Las fuentes y las fotos figuran en la guía de cada país.</span></div></footer>
 
 <script>
 (()=>{
@@ -645,13 +678,12 @@ const BAT={};BIRTHS.forEach(b=>{if(b.i>=0)(BAT[b.c+"|"+b.i]=BAT[b.c+"|"+b.i]||[]
 
 /* ---------- landen ---------- */
 function tiles(){
-  $("tiles").innerHTML=ORDER.map(c=>{const d=D[c],y=d.young[0];
+  $("tiles").innerHTML=ORDER.map(c=>{const d=D[c];
     return `<a class="tile" href="${window.__F[c]}"><span class="hd">${flag(c)}<span><b>${esc(cname(c))}</b>
       <small>${NLOC(d.counts[1])} · ${NSP(d.counts[0])}</small>${d.note?`<small>${esc(L4(d.note))}</small>`:""}
       <span class="langs" aria-label="${T("Talen","Languages","Langues","Sprachen","Lingue","Idiomas")}">${C[c].langs.map(l=>`<i>${l}</i>`).join("")}</span></span>
       <span class="go" aria-hidden="true">→</span></span>
-      ${y?`<span class="nb"><span class="lbl">${T("Nieuwste geboorte","Latest birth","Dernière naissance","Neueste Geburt","Ultima nascita","Último nacimiento")}</span>${esc(spn(y.sp,y.spslug))} · ${esc(L4(y.n))}
-      <small>${esc(y.loc)}${y.pre?" · "+esc(stName(y.pre)):""} · ${fdate(y.born,y.approx)}</small></span>`:""}</a>`;}).join("");
+      </a>`;}).join("");
 }
 
 /* ---------- kaart ---------- */
@@ -663,7 +695,7 @@ const BOX={};
 ORDER.forEach(c=>{let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;
   D[c].poly.forEach(r=>r.forEach(p=>{const[x,y]=P(p[0],p[1]);x0=Math.min(x0,x);y0=Math.min(y0,y);x1=Math.max(x1,x);y1=Math.max(y1,y);}));
   const pad=Math.max(x1-x0,y1-y0)*.08;BOX[c]=[x0-pad,y0-pad,x1-x0+2*pad,y1-y0+2*pad];});
-let VB=FULL.slice(),ZOOM="all",SEL=null,anim=null,CAT=null,LTF="",JONG=false,GEB=true,DRAGGED=false,LGOPEN=false,LIST=null;
+let VB=FULL.slice(),ZOOM="all",SEL=null,anim=null,CAT=null,LTF="",JONG=false,GEB=false,DRAGGED=false,LGOPEN=false,LIST=null;
 const svg=$("map");
 const ltOf=(c,i)=>(D[c].lt&&D[c].lt[i])||["",[]];
 const ltName=k=>{const t=D.lt.types.find(x=>x.nl===k);return t?T(t.nl,t.en,t.fr,t.de,t.it,t.es):k;};
@@ -691,11 +723,20 @@ function shown(c,i){const l=D[c].locs[i];if(l[2]==null)return false;
   if(CAT&&catAt(c,i)===null)return false;
   if(JONG&&!jongAt(c,i).length)return false;
   return true;}
+/* landen buiten de gids (Natural Earth, 1:50m, al geprojecteerd en bijgesneden) */
+const NBR="M331,599L328,599L329,594L334,595L336,596L337,599L335,600ZM317,580L317,584L313,583ZM233,306L234,303L236,297L239,294L243,287L246,286L248,286L250,294L248,297L247,299L239,307L236,305L234,306ZM720,1460L721,1451L722,1445L726,1438L724,1432L723,1426L723,1415L723,1411L721,1407L720,1402L720,1398L721,1387L722,1379L724,1368L723,1365L722,1363L719,1360L720,1357L725,1352L727,1344L730,1343L733,1340L733,1337L732,1334L742,1330L750,1321L754,1318L774,1310L777,1310L780,1311L779,1315L778,1317L779,1322L782,1319L781,1317L781,1315L785,1315L789,1315L793,1318L793,1328L798,1338L797,1343L801,1346L805,1342L807,1337L814,1334L821,1326L825,1326L826,1332L828,1338L825,1339L822,1345L815,1360L810,1365L805,1371L804,1375L803,1379L805,1388L808,1397L811,1402L815,1404L823,1412L823,1417L824,1423L825,1430L827,1436L821,1448L818,1457L816,1460ZM1115,88L1114,101L1119,106L1116,107L1114,108L1112,111L1111,115L1105,118L1103,120L1099,125L1097,131L1094,134L1090,135L1092,129L1095,125L1093,122L1091,117L1089,114L1090,110L1089,103L1090,97L1092,93L1095,91L1100,85L1105,80L1112,78L1115,80L1116,76L1118,75L1120,76L1125,80L1122,81L1120,85L1117,86ZM1025,161L1025,156L1033,137L1037,136L1042,125L1044,120L1046,115L1047,111L1048,109L1051,110L1049,113L1049,116L1049,118L1043,131L1041,140L1039,142L1030,173L1028,176L1026,175L1025,171ZM850,9L851,0L853,-7L851,-16L849,-23L848,-26L854,-32L856,-37L857,-40L1122,-40L1121,-35L1118,-34L1112,-29L1109,-26L1106,-24L1100,-19L1097,-19L1095,-16L1093,-15L1091,-16L1083,-12L1084,-10L1090,-9L1093,-10L1095,-12L1097,-13L1099,-12L1102,-14L1104,-15L1106,-14L1108,-10L1103,-8L1100,-7L1099,-1L1097,2L1095,3L1088,6L1084,10L1078,13L1076,12L1072,15L1064,19L1060,23L1051,27L1047,31L1034,31L1022,30L1018,32L1022,32L1024,34L1028,33L1035,34L1039,35L1045,40L1041,42L1034,44L1037,52L1039,57L1036,60L1036,75L1032,75L1031,81L1032,84L1032,92L1033,96L1034,100L1033,104L1028,114L1028,119L1029,122L1030,126L1027,134L1025,142L1023,147L1018,155L1016,160L1010,177L1007,180L1003,182L1000,180L996,179L992,179L985,181L974,180L964,180L962,182L963,188L960,189L956,187L953,189L950,191L945,197L943,200L943,206L945,212L948,218L942,226L938,226L928,224L910,229L894,225L896,221L896,218L896,213L897,208L897,205L896,202L892,197L882,182L880,175L878,173L887,176L889,175L888,169L886,167L885,164L889,163L892,163L895,159L893,153L890,151L887,150L882,141L876,136L866,116L862,103L859,104L857,99L856,93L856,89L850,87L850,84L849,72L844,70L840,63L839,50L835,47L832,48L832,45L833,41L831,29L831,18L829,15L829,11L829,7L830,5L834,5L838,8L841,15L843,16L847,14ZM1127,71L1133,71L1128,75L1127,78L1125,78L1124,75ZM1100,5L1102,4L1100,8L1098,9L1099,6ZM1106,-22L1108,-23L1111,-22L1108,-20L1107,-18L1106,-16L1105,-19ZM1156,662L1152,661L1149,658L1145,657L1143,657L1141,660L1140,663L1132,666L1119,667L1114,670L1113,674L1113,676L1114,679L1112,682L1103,683L1090,684L1083,684L1076,684L1071,681L1065,677L1059,671L1054,669L1051,668L1050,665L1046,658L1042,647L1042,643L1044,640L1045,637L1045,635L1047,629L1050,623L1052,620L1054,618L1058,619L1065,620L1071,620L1076,617L1078,614L1081,612L1081,610L1087,608L1088,606L1088,603L1089,599L1090,596L1098,590L1099,588L1103,585L1105,582L1107,581L1110,581L1113,580L1115,579L1120,580L1120,583L1121,586L1128,586L1131,579L1133,578L1137,576L1139,574L1142,580L1144,583L1145,585L1147,586L1149,587L1151,588L1151,591L1151,594L1151,596L1150,598L1152,598L1155,598L1160,598L1160,660L1158,661ZM1020,760L1019,767L1014,767L1012,768L1010,772L1007,773L1004,775L1002,776L999,777L996,778L995,780L995,782L997,787L998,791L998,796L997,798L996,800L989,802L983,806L986,810L983,813L983,815L983,818L985,820L985,822L982,823L977,823L971,820L969,820L967,822L965,821L963,820L959,816L958,813L957,811L955,811L954,814L951,820L949,821L946,821L941,821L938,821L935,819L934,821L933,823L931,824L921,821L919,819L922,818L925,815L927,815L929,814L931,813L929,809L925,804L923,803L920,801L921,792L917,792L916,789L918,785L921,782L921,779L918,778L916,777L914,777L912,774L913,771L916,768L919,765L922,763L924,759L926,759L929,759L933,760L936,761L939,762L945,764L951,764L953,765L956,766L957,764L961,762L964,760L965,757L967,755L971,753L973,752L981,751L989,752L993,751L996,748L1001,747L1008,749L1009,742L1011,739L1013,738L1021,739L1022,743L1022,747L1024,748L1024,752L1026,754L1029,759L1026,759L1022,758ZM1154,964L1151,963L1147,960L1145,960L1143,957L1138,949L1133,945L1130,943L1129,941L1129,939L1132,935L1135,934L1137,936L1139,936L1140,934L1141,931L1140,928L1136,919L1132,913L1132,911L1135,911L1139,911L1143,911L1144,909L1144,907L1142,906L1138,901L1135,896L1131,893L1128,892L1127,890L1126,888L1127,885L1127,881L1128,878L1130,873L1133,868L1135,863L1135,858L1134,856L1131,855L1127,856L1124,858L1122,858L1122,856L1124,855L1126,852L1124,842L1127,841L1127,838L1130,840L1133,840L1137,840L1137,837L1135,835L1132,833L1126,830L1122,826L1122,822L1123,820L1124,818L1120,816L1119,814L1120,811L1118,804L1116,800L1118,798L1118,796L1119,794L1123,792L1125,789L1128,791L1130,791L1132,790L1134,788L1137,787L1139,785L1142,781L1145,780L1149,781L1154,781L1157,780L1160,781L1160,967L1157,965ZM879,911L880,913L879,916L876,916L875,914L877,911ZM1146,283L1150,277L1154,272L1157,265L1158,260L1158,255L1160,254L1160,284L1157,284ZM1155,598L1152,598L1150,598L1151,596L1151,594L1151,591L1151,588L1149,587L1147,586L1145,585L1144,583L1142,580L1140,575L1137,576L1133,578L1131,579L1128,586L1121,586L1120,583L1120,580L1116,579L1115,573L1107,565L1106,561L1106,557L1104,556L1098,554L1096,555L1092,552L1088,550L1086,548L1084,550L1080,552L1078,551L1075,547L1073,544L1071,543L1069,541L1074,538L1075,536L1074,532L1072,533L1068,534L1065,535L1063,535L1053,527L1047,525L1043,524L1044,529L1047,534L1047,536L1043,538L1041,539L1039,541L1037,543L1035,544L1032,543L1028,535L1023,529L1021,528L1019,526L1019,523L1020,521L1023,520L1025,518L1026,516L1023,513L1020,511L1012,512L1010,513L1008,510L1006,509L1003,507L1000,506L997,505L990,502L987,502L984,499L983,497L982,492L977,490L972,489L972,494L972,497L969,498L965,498L969,490L971,484L973,475L971,467L970,464L969,462L962,459L962,457L963,452L962,450L961,448L959,444L958,440L960,436L961,433L962,428L963,426L961,423L961,421L961,418L961,415L958,413L957,411L956,408L957,404L958,398L954,391L945,383L940,377L940,374L942,371L946,368L949,364L950,358L951,353L946,337L946,333L945,328L945,326L953,330L957,332L957,329L956,325L956,321L948,318L943,318L943,315L943,313L945,314L950,315L962,309L983,302L1006,295L1012,294L1017,293L1019,290L1021,288L1024,284L1031,277L1043,274L1048,271L1057,266L1079,261L1088,260L1097,260L1105,264L1113,269L1115,272L1110,270L1103,265L1101,265L1107,279L1110,284L1116,288L1121,289L1137,287L1143,284L1145,282L1157,284L1160,284L1160,598L1156,597ZM856,-37L854,-32L848,-26L849,-23L851,-16L853,-7L851,0L850,9L847,14L843,16L841,15L838,8L837,6L837,4L828,1L826,2L823,0L821,0L817,-1L813,-8L810,-13L809,-16L809,-26L808,-31L808,-36L806,-32L807,-25L804,-23L801,-21L801,-17L803,-13L802,-7L795,6L793,8L789,8L784,12L780,12L778,8L772,3L769,3L772,6L774,9L773,12L771,13L769,14L760,19L763,22L760,25L757,26L755,27L755,29L746,36L730,52L722,57L717,61L712,61L706,65L691,69L681,67L674,69L670,66L669,64L670,61L666,61L665,65L663,66L658,64L659,59L662,57L661,54L659,54L655,54L651,54L638,47L635,44L625,39L621,33L618,26L618,21L620,12L622,9L631,12L640,18L644,13L650,10L648,9L640,13L637,11L632,6L632,4L634,2L635,-1L634,-4L634,-8L638,-12L643,-16L648,-20L652,-23L647,-22L642,-19L637,-15L630,-11L626,-10L623,-9L620,-7L616,-2L612,0L605,0L604,-4L606,-17L608,-24L610,-29L614,-29L616,-33L619,-33L620,-31L628,-30L631,-34L636,-35L644,-39L638,-39L635,-39L630,-38L627,-38L627,-40L617,-40L612,-36L609,-33L608,-31L606,-29L604,-28L603,-30L603,-34L603,-40L857,-40ZM340,1460L175,1460L189,1409L190,1403L197,1401L202,1400L205,1398L210,1394L214,1396L212,1399L212,1405L215,1413L221,1422L231,1433L239,1438L250,1440L263,1435L270,1435L274,1433L278,1436L285,1437L292,1436L297,1431L301,1426L301,1428L301,1431L302,1433L305,1440L306,1442L310,1442L313,1443L321,1443L329,1444L330,1448L332,1452L340,1460ZM1133,945L1138,949L1143,957L1145,960L1147,960L1151,963L1154,964L1157,965L1160,967L1160,998L1157,1000L1154,1001L1151,1001L1150,998L1150,994L1149,992L1147,992L1144,996L1142,1000L1139,1005L1137,1009L1134,1015L1133,1020L1134,1022L1136,1026L1135,1029L1135,1035L1135,1038L1129,1033L1127,1026L1118,1015L1108,1007L1108,1005L1109,1003L1107,1003L1105,1004L1103,1001L1101,999L1101,996L1103,995L1105,993L1105,991L1102,983L1102,979L1101,972L1102,970L1108,968L1108,963L1108,961L1109,958L1110,956L1113,953L1117,949L1120,950L1121,953L1123,952L1123,949L1121,943L1120,940L1120,938L1123,938L1125,939L1128,938L1129,941L1130,943ZM689,924L688,926L688,924ZM948,1391L952,1393L955,1397L956,1399L955,1401L952,1401L948,1398ZM945,1385L947,1386L947,1388L945,1389L942,1387ZM766,720L768,714L769,716L769,719L770,721L771,724L770,727L767,726L766,724ZM1154,781L1149,781L1145,780L1142,781L1139,785L1137,787L1134,788L1132,790L1130,791L1128,791L1125,789L1124,791L1119,794L1116,795L1112,796L1110,796L1106,801L1101,804L1098,805L1096,804L1083,804L1077,803L1074,800L1071,798L1070,795L1067,794L1063,793L1059,790L1056,785L1053,782L1049,779L1045,775L1042,770L1038,765L1031,761L1029,760L1026,754L1024,752L1024,749L1022,747L1022,743L1022,740L1013,738L1019,732L1022,730L1026,730L1028,726L1028,723L1026,721L1026,717L1026,715L1026,708L1026,706L1029,706L1031,705L1033,703L1034,701L1035,698L1034,693L1026,691L1027,688L1029,686L1031,685L1034,686L1038,689L1041,688L1046,688L1050,688L1049,684L1049,682L1048,680L1049,678L1050,676L1051,672L1053,670L1058,670L1065,677L1071,681L1076,684L1083,684L1090,684L1103,683L1112,683L1114,679L1113,676L1113,674L1114,670L1119,667L1132,666L1140,663L1141,660L1143,657L1145,657L1149,658L1152,661L1156,662L1158,661L1160,660L1160,781L1157,780ZM1155,1182L1152,1175L1146,1166L1146,1164L1149,1162L1153,1161L1155,1162L1157,1164L1154,1168L1154,1170L1156,1173L1157,1180L1158,1182L1160,1183L1160,1186L1158,1185ZM876,213L872,215L869,218L868,222L871,225L875,227L876,233L872,236L864,239L863,246L863,251L863,255L862,261L855,264L851,255L851,252L849,248L849,244L848,239L841,237L838,237L835,238L829,230L830,222L828,218L827,216L828,214L826,212L823,211L822,207L825,206L831,206L833,206L835,205L840,197L841,193L846,193L849,195L849,200L849,206L852,208L854,208L855,204L856,202L857,200L858,196L857,194L855,192L862,187L869,183L873,183L876,184L880,185L882,186L883,188L881,192L880,195L882,203L882,209L881,211L879,212ZM767,260L761,262L758,262L755,259L745,256L743,256L736,256L736,251L735,247L732,242L736,241L735,230L734,225L724,219L716,214L718,196L718,191L715,182L716,171L717,154L720,153L729,156L732,156L734,159L736,160L738,157L738,152L744,146L748,144L751,142L753,145L756,148L756,142L758,129L752,127L748,129L744,137L740,147L733,147L728,150L724,147L721,145L721,141L722,139L727,131L734,123L741,123L746,121L750,121L759,121L764,120L769,116L779,101L784,95L795,93L806,86L808,86L804,91L803,93L802,96L806,103L805,107L805,115L802,120L798,129L796,141L797,143L796,153L800,157L804,159L817,159L819,160L820,163L819,169L818,172L814,175L809,178L806,178L802,173L800,175L798,177L794,190L792,198L790,198L786,197L782,199L784,201L787,204L786,206L782,208L779,211L777,214L773,217L770,220L772,225L772,229L773,234L772,238L767,243L765,248L770,248L772,249L774,250L776,252L775,254L776,260L773,260L771,259ZM815,234L816,238L815,242L809,247L802,247L795,245L785,240L784,238L783,236L780,229L780,219L785,218L796,213L799,214L801,216L805,217L809,213L811,217L813,223L816,231ZM851,264L852,269L848,271L845,270L840,272L824,264L825,256L825,254L833,253L836,257L843,260L848,260L851,262ZM812,256L813,252L818,247L820,240L820,246L814,262L813,265L811,265L809,260ZM865,255L866,252L869,250L871,246L872,248L876,248L878,249L880,250L881,252L874,252L867,256ZM882,211L883,209L885,211L885,214L882,217L880,213ZM793,252L796,253L799,256L801,256L804,258L801,260L798,258L794,254ZM777,246L779,247L786,251L788,255L788,257L784,258L782,256L778,256ZM806,196L805,192L806,190L809,195L810,197L809,200L808,203L805,203L805,199ZM826,110L829,111L826,113L825,115L823,116L818,114L821,112ZM962,236L964,232L977,241L978,245L976,249L974,250L968,248L961,244ZM1107,581L1105,582L1103,585L1100,587L1098,590L1091,595L1089,599L1088,603L1088,606L1087,608L1082,609L1081,612L1078,614L1076,617L1071,620L1065,620L1058,619L1054,618L1052,620L1050,623L1047,629L1046,634L1043,628L1041,627L1038,627L1032,623L1030,622L1028,622L1025,624L1024,626L1018,626L1012,625L1003,618L1001,618L999,618L995,617L988,613L984,612L982,612L980,613L978,612L975,610L972,610L971,620L970,624L966,624L962,630L961,634L956,633L953,632L951,633L949,635L942,635L937,634L935,628L932,626L929,624L926,621L923,617L918,612L914,613L913,611L910,606L909,604L906,603L903,600L899,594L895,590L891,590L888,588L886,585L884,582L881,575L879,572L878,569L876,567L877,562L878,560L880,557L878,553L875,550L871,547L868,544L867,541L867,539L865,537L864,534L864,532L867,533L869,535L871,539L874,534L877,529L881,526L884,526L887,525L889,524L893,525L896,526L898,523L898,521L905,519L907,515L909,515L910,513L912,513L914,514L917,508L919,508L924,507L931,504L935,502L939,501L943,498L949,496L946,493L945,491L946,488L949,488L954,489L956,490L956,493L957,495L959,495L958,499L960,500L962,501L964,501L965,499L969,498L972,497L972,494L972,490L977,490L982,492L983,497L984,499L986,501L990,502L997,505L1000,506L1003,507L1006,509L1008,510L1009,512L1012,512L1020,511L1023,513L1025,515L1025,518L1023,520L1020,521L1019,523L1018,525L1021,528L1023,529L1028,535L1032,543L1034,544L1037,543L1039,541L1041,539L1043,538L1047,536L1047,534L1044,529L1042,525L1047,525L1053,527L1063,535L1065,535L1068,534L1072,533L1074,532L1075,536L1074,538L1069,541L1071,543L1073,544L1075,547L1077,550L1080,552L1084,550L1086,548L1088,550L1092,552L1095,554L1098,554L1104,556L1106,557L1106,560L1107,565L1115,573L1116,578L1113,580L1110,581ZM934,821L935,819L938,821L941,821L946,821L949,821L951,820L954,814L955,811L957,811L958,813L959,816L963,820L965,821L967,822L969,820L971,820L977,823L982,823L985,822L985,820L983,818L983,815L983,813L986,811L983,807L989,802L996,800L997,798L998,796L998,791L997,787L995,783L995,780L996,778L999,777L1002,776L1004,775L1007,773L1010,772L1012,768L1014,767L1018,768L1019,761L1021,759L1026,759L1029,760L1031,761L1038,765L1042,770L1045,775L1049,779L1053,782L1056,785L1059,790L1063,793L1067,794L1070,795L1071,798L1074,800L1077,803L1083,804L1095,804L1098,805L1101,804L1105,802L1110,796L1112,796L1116,795L1118,794L1118,796L1118,798L1116,800L1118,804L1120,811L1119,814L1120,816L1124,818L1123,820L1122,822L1122,826L1126,830L1132,833L1134,834L1136,836L1137,839L1133,840L1130,840L1127,838L1127,840L1124,842L1126,852L1125,854L1122,855L1122,858L1120,858L1116,857L1114,855L1114,853L1114,851L1113,848L1110,845L1103,845L1100,844L1098,843L1095,842L1093,842L1090,843L1084,841L1083,843L1080,845L1078,845L1073,841L1068,843L1066,843L1059,840L1057,840L1055,841L1052,840L1044,833L1040,838L1030,837L1027,840L1024,846L1021,850L1019,848L1016,846L1011,839L1009,837L1006,837L1003,838L1001,850L1000,859L1000,864L1005,869L1012,878L1014,879L1015,882L1016,889L1018,897L1021,903L1024,906L1028,910L1032,915L1036,921L1037,923L1044,931L1050,939L1057,942L1058,949L1058,952L1062,958L1071,967L1072,970L1071,972L1069,974L1067,972L1060,963L1052,957L1044,946L1032,942L1025,937L1020,938L1015,940L1012,940L1009,939L1008,936L1008,934L1008,931L1003,926L997,921L991,915L980,900L977,895L979,894L981,894L983,893L986,893L990,894L987,890L983,887L972,874L969,868L968,861L969,852L967,845L959,837L956,832L950,830L947,830L945,833L944,840L939,850L937,854L934,860L931,860L926,851L921,843L921,840L920,836L917,821L919,819L921,821L931,824L933,823ZM1054,974L1051,975L1046,974L1042,976L1038,975L1036,974L1035,972L1034,970L1041,972L1046,971L1051,972ZM1025,958L1029,956L1034,957L1036,959L1050,961L1055,962L1052,963L1035,963L1031,961ZM1026,949L1027,947L1032,947L1041,949L1043,951L1039,954L1033,954L1028,953L1026,951ZM975,901L981,906L982,908L977,904L975,902ZM954,848L952,845L955,841L957,836L959,839L961,845L963,846L965,851L961,853L959,850L958,848ZM960,862L961,859L963,859L964,861L966,865L967,867L964,865L961,864ZM972,884L969,881L968,877L964,870L963,868L965,871L967,873L969,873L973,878L977,884L982,889L980,889L979,891L976,888L974,886ZM978,916L968,902L968,900L971,903L980,915L978,915ZM983,909L986,912L989,916L987,915L984,912ZM947,856L946,854L948,851L948,849L946,841L949,840L949,845L950,848L953,852L952,858L953,866L953,868L953,870L953,873L951,870L950,865ZM1063,982L1070,984L1075,988L1060,983L1062,982ZM1097,998L1091,992L1078,982L1069,980L1057,972L1049,969L1052,968L1056,968L1074,979L1072,976L1075,975L1077,976L1079,979L1082,982L1086,986L1089,989L1096,994L1098,995L1101,996L1101,999L1103,1001L1104,1004ZM1123,938L1121,937L1120,940L1121,943L1123,949L1123,952L1121,953L1120,950L1118,949L1113,953L1110,956L1109,958L1108,961L1108,963L1108,968L1103,969L1101,972L1102,979L1102,983L1105,990L1105,993L1103,995L1101,996L1098,995L1096,994L1089,989L1086,986L1082,982L1079,979L1077,976L1075,975L1072,976L1069,974L1071,972L1072,970L1071,967L1062,958L1058,952L1058,949L1058,943L1050,939L1044,931L1037,923L1036,921L1032,915L1028,910L1024,906L1021,903L1018,897L1016,889L1015,882L1014,879L1012,878L1005,869L1000,864L1000,859L1001,850L1002,839L1006,837L1009,837L1011,839L1016,846L1019,848L1021,850L1024,846L1027,840L1030,837L1040,838L1044,833L1052,840L1055,841L1057,840L1059,840L1065,842L1068,843L1072,840L1078,845L1080,845L1083,843L1084,841L1090,843L1093,842L1095,842L1098,843L1100,844L1103,845L1110,845L1113,848L1114,851L1114,853L1114,855L1116,857L1120,858L1122,858L1124,858L1127,856L1131,855L1134,856L1135,858L1135,863L1133,868L1130,873L1128,878L1127,881L1127,885L1126,888L1127,890L1128,892L1131,893L1135,896L1138,901L1142,906L1144,907L1144,909L1143,911L1139,911L1135,911L1133,910L1131,912L1136,919L1140,928L1141,931L1140,934L1139,936L1137,936L1135,934L1133,934L1129,938L1126,938ZM467,1004L465,1002L465,1000L465,998L465,994L468,991L470,992L476,994L477,997L476,1000L471,1003L469,1003ZM727,1344L725,1352L720,1357L719,1359L722,1363L723,1365L724,1368L722,1379L721,1387L720,1398L720,1402L721,1407L723,1411L723,1415L723,1426L724,1432L726,1438L722,1445L721,1451L720,1460L340,1460L332,1452L330,1448L329,1444L336,1445L340,1444L349,1439L356,1432L362,1428L367,1420L371,1415L378,1410L396,1398L399,1398L405,1401L410,1400L414,1396L418,1386L423,1380L431,1374L441,1369L448,1363L459,1359L486,1356L499,1353L509,1354L518,1346L523,1343L543,1342L553,1336L590,1336L594,1338L599,1342L606,1349L610,1351L615,1349L626,1342L639,1338L645,1334L648,1327L654,1325L658,1330L671,1335L679,1333L682,1332L681,1324L690,1326L696,1330L703,1337L708,1339L716,1335L732,1334L733,1337L733,1340L730,1343ZM1136,1026L1134,1022L1133,1020L1134,1015L1137,1009L1139,1005L1142,1000L1144,996L1147,992L1149,992L1150,994L1150,998L1150,1000L1154,1001L1157,1000L1160,998L1160,1167L1159,1162L1158,1158L1154,1147L1140,1137L1137,1133L1135,1129L1134,1126L1137,1126L1139,1128L1139,1126L1138,1122L1135,1113L1135,1110L1136,1103L1139,1094L1139,1084L1140,1076L1139,1071L1139,1064L1141,1056L1142,1054L1144,1052L1144,1043L1140,1039L1135,1038L1135,1035L1136,1030Z";
+/* plek van de landnaam: midden van de grootste vorm */
+const LBL={};ORDER.forEach(c=>{let best=null,ba=-1;D[c].poly.forEach(r=>{const q=r.map(p=>P(p[0],p[1]));let a=0,cx=0,cy=0;
+  for(let k=0;k<q.length;k++){const[x0,y0]=q[k],[x1,y1]=q[(k+1)%q.length],f=x0*y1-x1*y0;a+=f;cx+=(x0+x1)*f;cy+=(y0+y1)*f;}
+  if(Math.abs(a)>ba){ba=Math.abs(a);best=[cx/(3*a),cy/(3*a)];}});LBL[c]=best;});
+LBL.it=P(15.6,40.9);LBL.uk=P(-3.6,56.9);LBL.fr=P(0.6,47.9);LBL.es=P(-5.2,39.3);LBL.de=P(12.6,49.9);LBL.ie=P(-8.4,53.0);LBL.pt=P(-7.9,38.4);LBL.at=P(14.2,47.4);LBL.ch=P(8.2,46.75);
 function drawMap(){
-  let h="";
+  let h=`<path class="nb" d="${NBR}"/>`;
   ["es","pt","it","uk","ie","fr","de","ch","at","nl","be","lu"].forEach(c=>{D[c].poly.forEach(r=>{h+=`<path class="land ${c}" d="${path(r)}"/>`;});D[c].water.forEach(r=>{h+=`<path class="water" d="${path(r)}"/>`;});});
-  svg.innerHTML=h+'<g id="mks"></g>';drawMarkers();
+  svg.innerHTML=h+'<g id="mks"></g><g id="lbls"></g>';renderLabels();drawMarkers();
 }
+function renderLabels(){const g=$("lbls");if(!g)return;
+  g.innerHTML=ORDER.map(c=>LBL[c]?`<text class="lbl-l" data-c="${c}" data-x="${LBL[c][0].toFixed(1)}" data-y="${LBL[c][1].toFixed(1)}">${esc(cname(c)).toUpperCase()}</text>`:"").join("");}
 /* zichtbare locaties; bij een gekozen land worden de andere landen lichter */
 let VIS=[],CL_U=null;
 function drawMarkers(){VIS=[];
@@ -714,10 +755,10 @@ function clusters(u){const R=22*u,R2=R*R,grid=new Map(),out=[];
 function renderMarkers(u){const lo=[],mid=[],hi=[];
   clusters(u).forEach(cl=>{
     if(cl.ps.length===1){const p=cl.ps[0],l=D[p.c].locs[p.i];
-      const g=`<g class="mk${p.jg?" jong":""}${p.unc?" unc":""}${p.sel?" sel":""}${p.dim?" dim":""}" style="color:${tCol(p.k)}" data-c="${p.c}" data-i="${p.i}" data-x="${p.x.toFixed(1)}" data-y="${p.y.toFixed(1)}" tabindex="0" role="button" aria-label="${esc(l[0])}, ${esc(l[1])}"><circle class="hit" r="12"/><circle class="bring" r="9.6"/><circle class="dot" r="7.4"/><g class="gl" transform="scale(.9)">${tGly(p.k)}</g><circle class="ring" r="11.5"/></g>`;
+      const g=`<g class="mk${p.jg?" jong":""}${p.unc?" unc":""}${p.sel?" sel":""}${p.dim?" dim":""}" style="color:${tCol(p.k)}" data-c="${p.c}" data-i="${p.i}" data-x="${p.x.toFixed(1)}" data-y="${p.y.toFixed(1)}" tabindex="0" role="button" aria-label="${esc(l[0])}, ${esc(l[1])}"><circle class="hit" r="12"/><circle class="bring" r="9.6"/><circle class="sh" cy="1.3" r="7.6"/><circle class="dot" r="7.4"/><g class="gl" transform="scale(.9)">${tGly(p.k)}</g><circle class="ring" r="11.5"/></g>`;
       (p.dim?lo:p.sel||p.jg?hi:mid).push(g);return;}
     const n=cl.ps.length,x=cl.ps.reduce((a,p)=>a+p.x,0)/n,y=cl.ps.reduce((a,p)=>a+p.y,0)/n,jg=cl.ps.some(p=>p.jg),R=n<10?9.5:n<100?11.5:13.5;
-    const g=`<g class="cl${jg?" jong":""}${cl.dim?" dim":""}" data-x="${x.toFixed(1)}" data-y="${y.toFixed(1)}" data-ids="${cl.ps.map(p=>p.c+"|"+p.i).join(",")}" tabindex="0" role="button" aria-label="${n} ${T("locaties","locations","lieux","Orte","luoghi","lugares")}"><circle class="hit" r="${R+4}"/><circle class="cdot" r="${R}"/><text class="cn" dy=".36em">${n}</text><circle class="badge" cx="${(R*.72).toFixed(1)}" cy="${(-R*.72).toFixed(1)}" r="3.6"/></g>`;
+    const g=`<g class="cl${jg?" jong":""}${cl.dim?" dim":""}" data-x="${x.toFixed(1)}" data-y="${y.toFixed(1)}" data-ids="${cl.ps.map(p=>p.c+"|"+p.i).join(",")}" tabindex="0" role="button" aria-label="${n} ${T("locaties","locations","lieux","Orte","luoghi","lugares")}"><circle class="hit" r="${R+4}"/><circle class="sh" cy="1.4" r="${R+.4}"/><circle class="cdot" r="${R}"/><text class="cn" dy=".36em">${n}</text><circle class="badge" cx="${(R*.72).toFixed(1)}" cy="${(-R*.72).toFixed(1)}" r="3.6"/></g>`;
     (cl.dim?lo:mid).push(g);});
   $("mks").innerHTML=lo.join("")+mid.join("")+hi.join("");
 }
@@ -725,7 +766,9 @@ function renderMarkers(u){const lo=[],mid=[],hi=[];
 function setVB(v){VB=v;svg.setAttribute("viewBox",v.map(n=>n.toFixed(2)).join(" "));
   const r=svg.getBoundingClientRect(),u=Math.max(v[2]/(r.width||360),v[3]/(r.height||458));
   if(CL_U===null||Math.abs(Math.log(u/CL_U))>.1){CL_U=u;renderMarkers(u);}
-  svg.querySelectorAll(".mk,.cl").forEach(g=>g.setAttribute("transform",`translate(${g.dataset.x} ${g.dataset.y}) scale(${u.toFixed(4)})`));
+  svg.querySelectorAll(".mk,.cl,.lbl-l").forEach(g=>g.setAttribute("transform",`translate(${g.dataset.x} ${g.dataset.y}) scale(${u.toFixed(4)})`));
+  svg.querySelectorAll(".lbl-l").forEach(t=>{const b=BOX[t.dataset.c],wpx=b[2]/u;t.classList.toggle("off",wpx<70||wpx>900);});
+  schedList();
   svg.querySelectorAll(".land,.water").forEach(e=>e.setAttribute("stroke-width",(.9*u).toFixed(2)));
   const z=v[2]<FULL[2]-1;svg.classList.toggle("zoomed",z);
   const zo=$("z-out"),zr=$("z-reset"),zi=$("z-in");if(zo){zo.disabled=!z;zr.disabled=!z&&ZOOM==="all";zi.disabled=v[2]<=MINW+.5;}
@@ -803,8 +846,11 @@ $("legend").addEventListener("click",e=>{
   if(e.target.closest("#jong-btn")){JONG=!JONG;if(SEL&&JONG&&!jongAt(SEL[0],SEL[1]).length)SEL=null;drawMarkers();renderLegend();renderInfo();}});
 $("ltfbox").addEventListener("click",e=>{const b=e.target.closest("[data-lt]");if(!b)return;LTF=(b.dataset.lt&&LTF!==b.dataset.lt)?b.dataset.lt:"";
   if(SEL&&LTF&&ltOf(SEL[0],SEL[1])[0]!==LTF)SEL=null;drawMarkers();renderLegend();renderInfo();});
+const nConfAt=(c,i)=>new Set(D[c].locs[i][5].filter(x=>CONF.includes(x[3])).map(x=>CANON[x[4]]||x[4])).size;
+function typeList(k){const per=ORDER.map(c=>[c,D[c].locs.map((l,i)=>[l,i]).filter(([l,i])=>ltOf(c,i)[0]===k).sort((a,b)=>a[0][0].localeCompare(b[0][0]))]).filter(x=>x[1].length);
+  return per.map(([c,xs])=>`<h3>${flag(c,"")}${esc(cname(c))} <span class="n">${xs.length}</span></h3><ul>${xs.map(([l,i])=>`<li><a href="${window.__F[c]}#${l[6]||""}locatie/${l[4]}">${esc(l[0])}</a><small>${esc(l[1])}${l[6]?" · "+esc(stName(l[6])):""} · ${NSP(nConfAt(c,i))}</small></li>`).join("")}</ul>`).join("");}
 function renderTypes(){const n=ltCount();
-  $("types").innerHTML=D.lt.types.map(t=>`<li><b>${tIcon(TI[t.nl])}${esc(T(t.nl,t.en,t.fr,t.de,t.it,t.es))}</b><span class="n">${n[t.nl]?NLOC(n[t.nl]):T("nog geen locaties","no locations yet","pas encore de lieux","noch keine Orte","ancora nessun luogo","aún sin lugares")}</span><p>${esc(T(t.uitleg,t.uitleg_en,t.uitleg_fr,t.uitleg_de,t.uitleg_it,t.uitleg_es))}</p></li>`).join("");}
+  $("types").innerHTML=D.lt.types.map(t=>`<li><details class="tdet"><summary><b>${tIcon(TI[t.nl])}${esc(T(t.nl,t.en,t.fr,t.de,t.it,t.es))}</b><span class="n">${n[t.nl]?NLOC(n[t.nl]):T("nog geen locaties","no locations yet","pas encore de lieux","noch keine Orte","ancora nessun luogo","aún sin lugares")}</span><p>${esc(T(t.uitleg,t.uitleg_en,t.uitleg_fr,t.uitleg_de,t.uitleg_it,t.uitleg_es))}</p>${n[t.nl]?`<span class="more">${T("Toon alle locaties per land","Show all locations by country","Voir tous les lieux par pays","Alle Orte nach Land zeigen","Mostra tutti i luoghi per paese","Ver todos los lugares por país")}</span>`:""}</summary>${n[t.nl]?`<div class="tlist">${typeList(t.nl)}</div>`:""}</details></li>`).join("");}
 
 /* infovak naast of onder de kaart */
 function birthLine(b,metPlek){const c=b.c;
@@ -831,7 +877,21 @@ function renderInfo(){
     ${ys.length?`<h4>${T("Recent geboren","Recently born","Naissances récentes","Kürzlich geboren","Nati di recente","Nacimientos recientes")}</h4><ul class="births">${ys.map(b=>birthLine(b,false)).join("")}</ul>`:""}
     <a class="btn" href="${window.__F[c]}#${l[6]||""}locatie/${l[4]}">${T("Meer over deze locatie","More about this location","En savoir plus sur ce lieu","Mehr über diesen Ort","Maggiori informazioni su questo luogo","Más sobre este lugar")} →</a>`;
 }
-function pick(g){SEL=[g.dataset.c,+g.dataset.i];LIST=null;drawMarkers();renderInfo();
+/* lijst onder de kaart: de locaties die nu in beeld zijn, meeste soorten eerst */
+let LISTN=10,LT_=null;
+function schedList(){clearTimeout(LT_);LT_=setTimeout(renderList,180);}
+function renderList(){const el=$("maplist");if(!el)return;
+  const[x,y,w,h]=VB,inV=VIS.filter(p=>p.x>=x&&p.x<=x+w&&p.y>=y&&p.y<=y+h&&!p.dim).map(p=>({...p,n:nConfAt(p.c,p.i)}));
+  inV.sort((a,b)=>b.n-a.n||D[a.c].locs[a.i][0].localeCompare(D[b.c].locs[b.i][0]));
+  const show=inV.slice(0,LISTN);
+  el.innerHTML=`<h3>${T("In beeld","On the map","Sur la carte","Im Bild","Sulla mappa","En el mapa")}: ${NLOC(inV.length)}</h3><p class="note">${T("Meeste soorten eerst. Tik op een naam om hem op de kaart te zien.","Most species first. Tap a name to see it on the map.","Le plus d’espèces d’abord. Touchez un nom pour le voir sur la carte.","Meiste Arten zuerst. Tippe auf einen Namen, um ihn auf der Karte zu sehen.","Prima i luoghi con più specie. Tocca un nome per vederlo sulla mappa.","Primero los que tienen más especies. Toca un nombre para verlo en el mapa.")}</p>
+    <ol>${show.map(p=>{const l=D[p.c].locs[p.i];return `<li><button type="button" class="lpick" data-pick="${p.c}|${p.i}" data-fly="1"${p.sel?' aria-current="true"':""}>${tIcon(p.k)}<span><b>${esc(l[0])}</b><small>${esc(l[1])} · ${esc(cname(p.c))}</small></span><span class="k">${NSP(p.n)}</span></button></li>`;}).join("")}</ol>
+    ${inV.length>LISTN?`<div class="morewrap"><button type="button" class="btn ghost" id="list-more">${T("Toon meer","Show more","Afficher plus","Mehr zeigen","Mostra altri","Mostrar más")} (${inV.length-LISTN})</button></div>`:""}`;}
+$("maplist").addEventListener("click",e=>{if(e.target.closest("#list-more")){LISTN+=20;renderList();return;}
+  const b=e.target.closest("[data-pick]");if(!b)return;const q=b.dataset.pick.split("|"),c=q[0],i=+q[1],[px,py]=P(D[c].locs[i][2],D[c].locs[i][3]);
+  pick({dataset:{c,i}},true);const nw=Math.min(VB[2],200);animTo(clampVB([px-nw/2,py-nw/AR/2,nw,nw/AR]));
+  document.querySelector(".mapbox").scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"start"});});
+function pick(g,stil){SEL=[g.dataset.c,+g.dataset.i];LIST=null;drawMarkers();renderInfo();if(stil)return;
   if(matchMedia("(max-width:859px)").matches)$("info").scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"nearest"});}
 svg.addEventListener("click",e=>{if(DRAGGED)return;const cl=e.target.closest(".cl");if(cl){openCluster(cl);return;}const g=e.target.closest(".mk");if(g)pick(g);});
 $("info").addEventListener("click",e=>{const b=e.target.closest("[data-pick]");if(!b)return;const q=b.dataset.pick.split("|");pick({dataset:{c:q[0],i:q[1]}});});

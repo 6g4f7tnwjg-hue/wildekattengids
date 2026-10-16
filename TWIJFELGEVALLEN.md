@@ -4,6 +4,26 @@ Vermeldingen met de status “onzeker”: ze staan wel in de gids, maar tellen n
 
 Regel: bevestigd alleen met een recente bron (2025–2026); onzeker alleen met een concrete aanwijzing van na 2024; oudere aanwijzingen gaan naar “Eerder hier”.
 
+## Portugal
+
+| Locatie | Soort | Waarom twijfel | Bron |
+|---|---|---|---|
+| Europaradise (Montemor-o-Velho (Coimbra)) | Tijger | De soortpagina (2020) noemt een Bengaalse tijger en de crowdfunding van het park (februari 2026) noemt ‘viveiros de tigres’ die door storm Kristin onbereikbaar waren. Het park ging volgens de eigen site op 23-05-2026 weer open, maar er is geen bericht over de tijgers na de heropening en geen aantal. | europaradise-park.com soortpagina (21-03-2020) en contactpagina (2026); ppl.pt crowdfunding (02-2026); Zootierliste (09/2022) — https://www.europaradise-park.com/55-2/ · https://ppl.pt/en/Europaradise |
+| Zoo da Maia (Maia (Porto)) | Leeuw | Niet op de eigen site. Alleen Zootierliste (gezien 03/2025; leeuwen sinds 1985, ‘Angola-leeuw’) en ongedateerde bezoekersreviews. | Zootierliste (bezoek 03/2025) — https://www.zootierliste.de/map.php?showzoo=10002257 |
+| Zoo de Lagos (Barão de São João (Lagos)) | Ocelot | Zootierliste noemt Lagos nog als houder (laatst gezien 02/2019); niet op de dierenlijst van de eigen site (2026). Waarschijnlijk weg. | Zootierliste (02/2019); zoolagos.com dierenlijst — https://zoolagos.com/pages/animais |
+
+### Bevestigd met kanttekening of niet opgenomen
+
+- **Jardim Zoológico de Lisboa – nevelpanter**: laatste eigen bron is het tijdschrift Revista ZOO (augustus 2025, nachtprogramma); Zootierliste zag hem in 2024 en 2025 overdag niet. Aantal en geslacht onduidelijk (Zootierliste: één kater; ZooChat 2021: twee poezen uit Ústí).
+- **Jardim Zoológico de Lisboa – Euraziatische lynx**: soortpagina (ongedateerd) en Zootierliste 03/2025; niets uit 2026.
+- **Jardim Zoológico de Lisboa – jaguar**: nieuw kweekpaar Pawa en Feliciana volgens Revista ZOO 2025 (p. 27); Pawa volgens ZooChat in april 2026 nog in leven. Feliciana na 2025 niet meer genoemd.
+- **Jardim Zoológico de Lisboa – leeuwenwelp**: geboren in 2024 (‘nascida no ano passado’, bericht 14-03-2025); datum onbekend, daarom niet bij de recente geboortes.
+- **Zoo Santo Inácio – cheetah**: alleen op de plattegrond van oktober 2026 (die volgens de plattegrond zelf niet altijd actueel is); geen soortpagina meer. Zootierliste: twee katers, gezien 06/2024.
+- **Zoo da Maia – witte tijger en Euraziatische lynx**: soortteksten uit 2020 (site herbouwd juli 2026); laatste waarneming Zootierliste 03/2025.
+- **Zoo de Lagos – lynx Thea**: aankomst (± september 2026, uit Neurenberg) alleen volgens Zootierliste. De lynx zelf staat op de eigen dierenlijst.
+- **Parque Biológico de Gaia – Iberische lynx**: twee lynxen uit Silves aangekondigd (2023), verblijf in 2024 nog in aanbouw; aankomst niet bevestigd. Niet als locatie opgenomen, wel onder “Geen katachtigen gevonden – gepland”.
+- **CNRLI Silves – Iberische lynx**: fokcentrum, niet open voor publiek; het uitkijkpunt brandde in 2018 af. Niet opgenomen.
+
 ## Ierland
 
 | Locatie | Soort | Waarom twijfel | Bron |

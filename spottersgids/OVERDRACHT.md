@@ -39,6 +39,7 @@ Topspot-regel in de bouw: plek met score 5 op een soortpagina = topspot; score 4
 ## Afspraken met de gebruiker (belangrijk)
 - **Alleen aanpassen wat gevraagd wordt.** Bij onduidelijke wensen **doorvragen**; bij een keuze eerst een voorstel met advies geven ("Wat stel je voor" = opties + aanbeveling, nog niet bouwen).
 - Na elke wijziging committen, pushen en direct live zetten (naar `main`).
+- Na elke update de link sturen naar wat er veranderd is (bijv. https://yeetkitty.github.io/wildekattengids/spottersgids/wilde-kat/), of naar de startpagina als het de hele site raakt.
 - Taal: Nederlands naar de gebruiker; site NL/EN. Gidsnamen uit de KATalogue (bijv. sneeuwpanter, Sundaluipaardkat, het luipaard). Let op het Duitse "stuft/stufte" in statusteksten → "deelt in"/"zette".
 - Schrijfstijl: avontuurlijk, eerlijk, "je"; intro eindigt met "Kans: X – …".
 - Kansscore eerlijk (5 bijna zeker … 1 alleen geluk/cameravallen).

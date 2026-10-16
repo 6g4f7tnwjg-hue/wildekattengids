@@ -1,0 +1,317 @@
+{
+ "no": 33,
+ "intro_nl": "Het is twee uur 's nachts en de jeep kruipt stapvoets langs een vijver tussen de huizen. Niemand zegt iets. Dan fluistert de gids: daar, op het muurtje in het water. Een gedrongen, gestreepte kat met een korte staart kijkt je even aan en glijdt dan het riet in. De vissende kat leeft vlak naast mensen, tussen sawa's, kanalen en visvijvers, maar hem zien vraagt nachtenlang zoeken in stilte. Kans: 4 – op Sri Lanka lukt het de meeste gerichte zoekers, maar soms pas na vijf of zes nachten.",
+ "intro_en": "It is two in the morning and the jeep is crawling past a pond between the houses. Nobody says a word. Then the guide whispers: there, on the little wall in the water. A stocky, striped cat with a short tail looks at you for a moment, then slips into the reeds. The fishing cat lives right next to people, among paddy fields, canals and fish ponds, but seeing one takes night after night of silent searching. Chance: 4 – in Sri Lanka most dedicated searchers succeed, but sometimes only after five or six nights.",
+ "spots": [
+  {
+   "id": "lk-sigiriya-wilpattu",
+   "name_nl": "Sigiriya en de randen van Wilpattu",
+   "name_en": "Sigiriya and the edges of Wilpattu",
+   "area_nl": "Platteland met vijvers, sawa's en reservoirs rond Sigiriya (Matale) en het boerenland net buiten Wilpattu National Park",
+   "area_en": "Countryside with ponds, paddy fields and reservoirs around Sigiriya (Matale) and the farmland just outside Wilpattu National Park",
+   "country_nl": "Sri Lanka",
+   "country_en": "Sri Lanka",
+   "cont": "asia",
+   "lat": 8.0,
+   "lon": 80.8,
+   "score": 4,
+   "why_nl": "Vrijwel alle gerichte kattenreizen op mammalwatching.com tussen 2018 en 2026 zagen hier minstens één vissende kat, vaak maar één en soms van ver; een groep in juli 2026 zocht vijf nachten bij Sigiriya tevergeefs en vond hem pas de eerste nacht bij Wilpattu.",
+   "why_en": "Almost every dedicated cat trip reported on mammalwatching.com between 2018 and 2026 saw at least one fishing cat here, often just one and sometimes only at a distance; a group in July 2026 searched five nights around Sigiriya in vain and only found one on their first night near Wilpattu.",
+   "season_nl": "Het hele jaar; de meeste succesvolle verslagen komen uit februari–juli. Na veel regen, met hoge waterstanden, verspreiden de katten zich en dalen je kansen.",
+   "season_en": "Year-round; most successful reports are from February–July. After heavy rain, with high water levels, the cats spread out and your chances drop.",
+   "time_nl": "Diep in de nacht: ritten lopen van ongeveer 21.30–22.00 uur tot 2.00–5.00 uur; waarnemingen vielen rond 1.45, 2.00 en zelfs 4.00 uur.",
+   "time_en": "Late at night: drives run from about 9.30–10 pm until 2–5 am; sightings were made around 1.45 am, 2 am and even 4 am.",
+   "trip_nl": "Gespecialiseerde nachtritten met schijnwerper en warmtebeeldcamera met een lokale zoogdiergids, over binnenwegen langs vijvers en sawa's; reken op minstens 3 à 5 nachten, eventueel verdeeld over Sigiriya en Wilpattu. Overdag kun je in Wilpattu National Park op luipaard en lippenbeer.",
+   "trip_en": "Specialised spotlighting night drives with a thermal scope and a local mammal guide, along back roads past ponds and paddy fields; allow at least 3 to 5 nights, ideally split between Sigiriya and Wilpattu. By day you can look for leopard and sloth bear in Wilpattu National Park.",
+   "sources": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "np-koshi-tappu",
+   "name_nl": "Koshi Tappu",
+   "name_en": "Koshi Tappu",
+   "area_nl": "Koshi Tappu Wildlife Reserve en bufferzone (oostelijke Terai)",
+   "area_en": "Koshi Tappu Wildlife Reserve and buffer zone (eastern Terai)",
+   "country_nl": "Nepal",
+   "country_en": "Nepal",
+   "cont": "asia",
+   "lat": 26.6,
+   "lon": 87.0,
+   "score": 2,
+   "why_nl": "Cameravallen tonen vissende katten in het grootste deel van het reservaat, en bezoekers zagen er af en toe een bij schemer vanaf een vogelkijkhut of op het terrein van een kamp, maar recente bezoekersverslagen zijn schaars.",
+   "why_en": "Camera traps show fishing cats across most of the reserve, and visitors have occasionally seen one at dusk from a bird hide or on camp grounds, but recent visitor reports are scarce.",
+   "season_nl": "Droog seizoen, ongeveer oktober–april; in de moesson staat veel van het gebied onder water.",
+   "season_en": "Dry season, roughly October–April; during the monsoon much of the area floods.",
+   "time_nl": "Schemer en nacht; let ook op dagwaarnemingen rond waterkanten.",
+   "time_en": "Dusk and night; occasional daytime sightings near water also happen.",
+   "trip_nl": "Verblijf van 2 à 3 nachten aan de rand van het reservaat, met boottochten, wandelingen langs de dijken en geduldig posten bij een kijkhut aan het water in de schemer.",
+   "trip_en": "A stay of 2 to 3 nights on the edge of the reserve, with boat trips, walks along the embankments and patient waiting at a waterside hide at dusk.",
+   "sources": [
+    1,
+    12,
+    13,
+    14
+   ]
+  },
+  {
+   "id": "lk-yala",
+   "name_nl": "Yala",
+   "name_en": "Yala",
+   "area_nl": "Sawa's en wetlands rond Yala National Park, Zuid-Sri Lanka",
+   "area_en": "Paddy fields and wetlands around Yala National Park, southern Sri Lanka",
+   "country_nl": "Sri Lanka",
+   "country_en": "Sri Lanka",
+   "cont": "asia",
+   "lat": 6.4,
+   "lon": 81.5,
+   "score": 2,
+   "why_nl": "Een gericht verslag uit 2018 noemt één vissende kat die in een rijstveld bij Yala snel wegrende; schijnwerpen in het gebied is beperkt toegestaan en Yala wordt veel minder genoemd dan Sigiriya.",
+   "why_en": "A dedicated 2018 report mentions one fishing cat running off quickly in a rice field near Yala; spotlighting in the area is restricted and Yala is mentioned far less often than Sigiriya.",
+   "season_nl": "Het hele jaar; het park zelf sluit meestal een deel van het droge seizoen (rond september–oktober).",
+   "season_en": "Year-round; the park itself usually closes for part of the dry season (around September–October).",
+   "time_nl": "Nacht, buiten het park.",
+   "time_en": "Night, outside the park.",
+   "trip_nl": "Nachtritten met schijnwerper over het boerenland buiten het park, alleen waar dat mag, gecombineerd met jeepsafari's overdag in Yala voor luipaard.",
+   "trip_en": "Spotlighting night drives through farmland outside the park, only where permitted, combined with daytime jeep safaris in Yala for leopard.",
+   "sources": [
+    8
+   ]
+  },
+  {
+   "id": "lk-colombo-wetlands",
+   "name_nl": "Wetlands van Colombo",
+   "name_en": "Colombo wetlands",
+   "area_nl": "Stedelijke moerassen en meren rond Colombo, zoals Diyasaru Park (Diyawanna Oya) en Thalangama",
+   "area_en": "Urban marshes and lakes around Colombo, such as Diyasaru Park (Diyawanna Oya) and Thalangama",
+   "country_nl": "Sri Lanka",
+   "country_en": "Sri Lanka",
+   "cont": "asia",
+   "lat": 6.9,
+   "lon": 79.9,
+   "score": 1,
+   "why_nl": "Colombo heeft de enige bekende stadspopulatie ter wereld, maar een onderzoeker zag er in tien jaar veldwerk maar twee keer kort een kat en deelnemers aan nachtwandelingen in februari 2026 zagen er geen.",
+   "why_en": "Colombo has the only known urban population in the world, but one researcher saw a cat only twice, briefly, in ten years of fieldwork, and participants in night walks in February 2026 saw none.",
+   "season_nl": "Het hele jaar; in februari (rond Fishing Cat Day, 22 februari) worden soms begeleide nachtwandelingen gehouden.",
+   "season_en": "Year-round; in February (around Fishing Cat Day, 22 February) guided night walks are sometimes held.",
+   "time_nl": "Nacht, ongeveer 21.00–1.00 uur.",
+   "time_en": "Night, roughly 9 pm–1 am.",
+   "trip_nl": "Begeleide nachtwandeling over de vlonders van een stadsmoeras, georganiseerd door een lokaal onderzoeks- en natuurbeschermingsproject; leuk als je toch in Colombo bent, maar geen plek om je reis op te bouwen.",
+   "trip_en": "A guided night walk on the boardwalks of an urban marsh, run by a local research and conservation project; fun if you are in Colombo anyway, but not a place to build your trip around.",
+   "sources": [
+    2,
+    10,
+    11
+   ]
+  },
+  {
+   "id": "in-coringa",
+   "name_nl": "Coringa",
+   "name_en": "Coringa",
+   "area_nl": "Coringa Wildlife Sanctuary, mangroven van de Godavari-delta bij Kakinada (Andhra Pradesh)",
+   "area_en": "Coringa Wildlife Sanctuary, Godavari delta mangroves near Kakinada (Andhra Pradesh)",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 16.8,
+   "lon": 82.3,
+   "score": 1,
+   "why_nl": "Coringa is een van de bekende bolwerken aan de Indiase oostkust, maar de katten worden vooral met cameravallen vastgelegd en goede bezoekerswaarnemingen hebben we niet gevonden.",
+   "why_en": "Coringa is one of the known strongholds on India's east coast, but the cats are mostly recorded by camera traps and we found no solid visitor sightings.",
+   "season_nl": "Droog seizoen, ongeveer november–maart.",
+   "season_en": "Dry season, roughly November–March.",
+   "time_nl": "Schemer en nacht; de katten zijn vooral 's nachts actief.",
+   "time_en": "Dusk and night; the cats are mainly active at night.",
+   "trip_nl": "Boottochten door de kreken van de mangroven vanuit de omgeving van Kakinada; zoek op de modderbanken naar sporen.",
+   "trip_en": "Boat trips through the mangrove creeks from the Kakinada area; check the mudbanks for tracks.",
+   "sources": [
+    1,
+    2,
+    17
+   ]
+  },
+  {
+   "id": "in-chilika",
+   "name_nl": "Chilikameer",
+   "name_en": "Chilika Lake",
+   "area_nl": "Moerassen in het noorden en noordoosten van het Chilikameer en de Parikud-eilanden (Odisha)",
+   "area_en": "Marshes in the north and northeast of Chilika Lake and the Parikud islands (Odisha)",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 19.7,
+   "lon": 85.3,
+   "score": 1,
+   "why_nl": "Een cameravaltelling in 2021–2022 schatte hier zo'n 176 katten (131–237) buiten beschermd gebied, maar ze leven in moeilijk toegankelijk moeras en bezoekerswaarnemingen zijn zeldzaam.",
+   "why_en": "A 2021–2022 camera-trap census estimated about 176 cats (131–237) here outside protected areas, but they live in hard-to-reach marsh and visitor sightings are rare.",
+   "season_nl": "Winter, ongeveer november–februari, ook de beste tijd voor watervogels.",
+   "season_en": "Winter, roughly November–February, also the best time for waterbirds.",
+   "time_nl": "Schemer en nacht.",
+   "time_en": "Dusk and night.",
+   "trip_nl": "Boottochten op het meer en wandelingen langs de moerasranden; vooral een bonus bij een vogelreis.",
+   "trip_en": "Boat trips on the lake and walks along the marsh edges; mainly a bonus on a birding trip.",
+   "sources": [
+    1,
+    2,
+    15
+   ]
+  },
+  {
+   "id": "th-khao-sam-roi-yot",
+   "name_nl": "Khao Sam Roi Yot",
+   "name_en": "Khao Sam Roi Yot",
+   "area_nl": "Khao Sam Roi Yot National Park en omliggende moerassen en garnalenkwekerijen, Prachuap Khiri Khan",
+   "area_en": "Khao Sam Roi Yot National Park and surrounding marshes and shrimp farms, Prachuap Khiri Khan",
+   "country_nl": "Thailand",
+   "country_en": "Thailand",
+   "cont": "asia",
+   "lat": 12.2,
+   "lon": 100.0,
+   "score": 1,
+   "why_nl": "Dit is de bekendste populatie van Zuidoost-Azië (geschat 18 katten per 100 km²), maar ze leeft geïsoleerd tussen kwekerijen en we vonden geen verslagen van bezoekers die er een zagen.",
+   "why_en": "This is the best-known population in Southeast Asia (an estimated 18 cats per 100 km²), but it is isolated among aquaculture ponds and we found no reports of visitors seeing one.",
+   "season_nl": "Droog seizoen, ongeveer november–april.",
+   "season_en": "Dry season, roughly November–April.",
+   "time_nl": "Nacht.",
+   "time_en": "Night.",
+   "trip_nl": "Zelf zoeken met een zaklamp langs wegen aan de moerasranden, alleen waar dat mag; combineer met een bezoek aan het park overdag.",
+   "trip_en": "Searching on your own with a torch along roads at the marsh edges, only where allowed; combine with a daytime visit to the park.",
+   "sources": [
+    16,
+    18
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Zoek 's nachts langs vijvers, sawa's, kanalen en reservoirs; de vissende kat zit vaak stil aan de waterkant of op een dijkje of muurtje in het water.",
+  "Wees muisstil in de auto: geen stemmen, geen plotselinge bewegingen, en laat het schijnwerpen aan de gids over. Bij één groep verdween een kat meteen na de eerste oogreflectie.",
+  "Blijf laat op: veel waarnemingen vallen tussen 1.00 en 4.00 uur 's nachts.",
+  "Kijk 's ochtends in de modder naar sporen: grote ronde katachtige prenten aan de waterkant, en de soort heeft deels zwemvliezen tussen de tenen.",
+  "Let op hybriden met huiskatten, vooral op Sri Lanka: kijk naar de dikke korte staart, de gedrongen bouw en de rijen donkere vlekken op een grijsbruine vacht.",
+  "Is een kat weggedoken? Laat hem met rust en kom een uur later terug; zo zag een groep in 2026 dezelfde kat een tweede keer.",
+  "Na veel regen en hoog water zijn je kansen kleiner; plan liever in een droge periode."
+ ],
+ "tips_en": [
+  "Search at night along ponds, paddy fields, canals and reservoirs; fishing cats often sit still at the water's edge or on a bund or little wall in the water.",
+  "Be absolutely quiet in the vehicle: no voices, no sudden movements, and leave the spotlighting to the guide. For one group a cat vanished right after the first eyeshine.",
+  "Stay up late: many sightings happen between 1 and 4 am.",
+  "In the morning, check the mud for tracks: large rounded cat prints at the water's edge; the species has partly webbed toes.",
+  "Watch out for hybrids with domestic cats, especially in Sri Lanka: look for the thick short tail, stocky build and rows of dark spots on a grey-brown coat.",
+  "If a cat slips away, leave it alone and come back an hour later; that is how one group in 2026 saw the same cat a second time.",
+  "After heavy rain and high water your chances are lower; plan for a dry spell if you can."
+ ],
+ "threats_nl": [
+  "Verlies van wetlands en mangroven door aquacultuur (garnalen- en viskwekerijen), landbouw, verstedelijking en industrie.",
+  "Vergeldingsdoding door vissers en kippenhouders, met strikken, vallen en gif.",
+  "Verkeersslachtoffers, een groeiend probleem in India en op Sri Lanka.",
+  "Jacht voor vlees en lichaamsdelen en vangst voor de dierenhandel.",
+  "Vervuiling van het water, en op Sri Lanka kruising met huiskatten."
+ ],
+ "threats_en": [
+  "Loss of wetlands and mangroves to aquaculture (shrimp and fish farms), agriculture, urbanisation and industry.",
+  "Retaliatory killing by fish farmers and poultry keepers, with snares, traps and poison.",
+  "Road kills, a growing problem in India and Sri Lanka.",
+  "Hunting for meat and body parts, and capture for the pet trade.",
+  "Water pollution, and in Sri Lanka hybridisation with domestic cats."
+ ],
+ "status_note_nl": "De vissende kat staat als Kwetsbaar op de Rode Lijst van de IUCN (2016), met een dalende trend: de wereldpopulatie zou in vijftien jaar met 30% of meer zijn afgenomen en in Zuidoost-Azië is de soort zeer zeldzaam geworden. De CatSG schat de totale populatie op ruwweg 3.200–7.500 dieren, met de bolwerken in India, Bangladesh, Nepal en Sri Lanka.",
+ "status_note_en": "The fishing cat is listed as Vulnerable on the IUCN Red List (2016), with a decreasing trend: the global population is suspected to have declined by 30% or more over fifteen years, and in Southeast Asia the species has become very rare. The CatSG estimates the total population at roughly 3,200–7,500 animals, with strongholds in India, Bangladesh, Nepal and Sri Lanka.",
+ "sources": [
+  {
+   "id": 1,
+   "title": "Prionailurus viverrinus – IUCN Red List assessment (Mukherjee et al., IUCN, 2016)",
+   "url": "https://fishingcat.org/wp-content/uploads/2020/10/mukherjee-et-al-2016.pdf"
+  },
+  {
+   "id": 2,
+   "title": "Fishing cat – species account (IUCN SSC Cat Specialist Group)",
+   "url": "https://catsg.org/living-species-fishingcat"
+  },
+  {
+   "id": 3,
+   "title": "Sri Lanka trip report, July 2026: fishing cat 'much more difficult than expected' (mammalwatching.com, 2026)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2026/07/My-Big-Cat-Year-Trip-Report-Sri-Lanka-010726-to-250726.pdf"
+  },
+  {
+   "id": 4,
+   "title": "Sri Lanka trip report, April 2026, Sigiriya (mammalwatching.com, 2026)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2026/04/Sri-Lanka-2026-5.pdf"
+  },
+  {
+   "id": 5,
+   "title": "Sri Lanka nocturnal cats and more, March 2024 (mammalwatching.com, 2024)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/04/Sri-Lanka-small-cats-and-more-March-2024.pdf"
+  },
+  {
+   "id": 6,
+   "title": "Sri Lanka wildlife tour with focus on mammals, 2025 (mammalwatching.com, 2025)",
+   "url": "https://mammalwatching.com/wp-content/uploads/2025/03/Sri-Lanka-2025-Mammal-Tour.pdf"
+  },
+  {
+   "id": 7,
+   "title": "Sri Lanka sightings and species list, Jan–Feb 2022, incl. hybrid warning (mammalwatching.com, 2022)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/JW-Sri-Lanka-2022.pdf"
+  },
+  {
+   "id": 8,
+   "title": "Sri Lanka 'in search of fishing cat & rusty-spotted cat', June 2018 (mammalwatching.com, 2018)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2018/09/JVG-Sri-Lanka-2018.pdf"
+  },
+  {
+   "id": 9,
+   "title": "Sri Lanka trip report, March 2023 (mammalwatching.com, 2023)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2023/04/Sri-Lanka-Trip-Report-2023.pdf"
+  },
+  {
+   "id": 10,
+   "title": "Fishing cats: finding the elusive creatures in Colombo (Geographical, 2024)",
+   "url": "https://geographical.co.uk/wildlife/fishing-cats-finding-the-elusive-creatures-in-colombo"
+  },
+  {
+   "id": 11,
+   "title": "Fishing Cat February: night safaris in Colombo's urban wetlands (Mihipedia, 2026)",
+   "url": "https://mihipedia.lk/2026/02/21/fishing-cat-february-night-safaris-in-colombos-urban-wetlands/"
+  },
+  {
+   "id": 12,
+   "title": "Ganges river dolphin and other species near Koshi Tappu, Nepal (mammalwatching.com, 2017)",
+   "url": "https://www.mammalwatching.com/2017/01/09/ganges-river-dolphin-species-near-koshi-tappu-nepal/"
+  },
+  {
+   "id": 13,
+   "title": "On the trail of Nepal's endangered fishing cats (Taronga Conservation Society, 2018)",
+   "url": "https://www.taronga.org.au/about/newsroom/posts/on-the-trail-of-nepals-endangered-fishing-cats/"
+  },
+  {
+   "id": 14,
+   "title": "Fishing cats in Koshi Tappu Wildlife Reserve, camera-trap and sign survey (Taylor et al., Journal of Threatened Taxa, 2016)",
+   "url": "https://threatenedtaxa.org/index.php/JoTT/article/download/2034/3529/7078?inline=1"
+  },
+  {
+   "id": 15,
+   "title": "Chilika lake has 176 fishing cats, survey reveals (Down To Earth, 2022)",
+   "url": "https://www.downtoearth.org.in/news/wildlife-biodiversity/chilika-lake-has-176-fishing-cats-survey-reveals-83166"
+  },
+  {
+   "id": 16,
+   "title": "Fishing cats in an anthropogenic landscape, Khao Sam Roi Yot (Phosri et al., Global Ecology and Conservation, 2021)",
+   "url": "https://kirim.kmutt.ac.th/converis/portal/detail/Publication/627057491?lang=de_DE"
+  },
+  {
+   "id": 17,
+   "title": "The fishing cat: a feline fisher hunting by night in wetlands (Mongabay India, 2018)",
+   "url": "https://india.mongabay.com/2018/11/the-fishing-cat-a-feline-fisher-hunting-by-the-night-in-wetlands/"
+  },
+  {
+   "id": 18,
+   "title": "An update on the status of fishing cat in Thailand (Journal of Threatened Taxa, 2019)",
+   "url": "https://threatenedtaxa.org/JoTT/article/view/4557"
+  }
+ ]
+}

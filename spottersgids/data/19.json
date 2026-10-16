@@ -1,0 +1,321 @@
+{
+ "no": 19,
+ "intro_nl": "Het is pikdonker in de Chaco. De schijnwerper glijdt over het gras langs de zandweg en blijft hangen op twee groene ogen. Een kat met een tijgerpatroon gaat rechtop zitten, als een stokstaartje, en kijkt je even recht aan. Dan is hij weg in de doornstruiken. In Paraguay en het noordoosten van Argentinië is Geoffroys kat geen fabeldier, maar je moet er wel nachten voor willen rijden. Kans: 4 – met een paar nachten in de Chaco is de kans groot.",
+ "intro_en": "It is pitch dark in the Chaco. The spotlight sweeps over the grass beside the dirt road and stops on two green eyes. A spotted cat sits up on its haunches like a meerkat and stares straight back at you. Then it slips away into the thorn scrub. In Paraguay and north-eastern Argentina Geoffroy's cat is no myth, but you do need to put in the night drives. Chance: 4 – with a few nights in the Chaco your odds are good.",
+ "spots": [
+  {
+   "id": "py-central-chaco",
+   "name_nl": "Centrale Chaco",
+   "name_en": "Central Chaco",
+   "area_nl": "Droge en natte Chaco rond Fortín Toledo en Filadelfia, met particuliere reservaten en estancia's",
+   "area_en": "Dry and humid Chaco around Fortín Toledo and Filadelfia, with private reserves and cattle ranches",
+   "country_nl": "Paraguay",
+   "country_en": "Paraguay",
+   "cont": "sam",
+   "lat": -22.3,
+   "lon": -60.0,
+   "score": 4,
+   "why_nl": "Alle vier recente tripverslagen die we vonden (2019, 2021, 2023, 2024) zagen hier Geoffroys kat, vaak al op de eerste avond en soms meerdere per nacht.",
+   "why_en": "All four recent trip reports we found (2019, 2021, 2023, 2024) saw Geoffroy's cat here, often on the first evening and sometimes several per night.",
+   "season_nl": "Het hele jaar; de droge winter (mei–september) werkt goed. Veel regen maakt zandwegen onbegaanbaar en houdt dieren schuil.",
+   "season_en": "Year-round; the dry winter (May–September) works well. Heavy rain makes dirt roads impassable and keeps animals hidden.",
+   "time_nl": "Vanaf zonsondergang tot diep in de nacht; ook overdag steken katten soms de weg over.",
+   "time_en": "From sunset well into the night; cats sometimes cross roads in daylight too.",
+   "trip_nl": "Nachtritten met schijnwerper of warmtebeeldcamera over zandwegen langs veeboerderijen en reservaten, met een lokale natuurgids; reken op 3 à 4 nachten.",
+   "trip_en": "Night drives with a spotlight or thermal scope along dirt roads past ranches and reserves, with a local naturalist guide; allow 3–4 nights.",
+   "sources": [
+    2,
+    3,
+    4,
+    5
+   ]
+  },
+  {
+   "id": "ar-el-palmar",
+   "name_nl": "El Palmar en omgeving",
+   "name_en": "El Palmar and surroundings",
+   "area_nl": "Nationaal Park El Palmar en het boerenland van Entre Ríos tot aan Ceibas",
+   "area_en": "El Palmar National Park and the farmland of Entre Ríos down to Ceibas",
+   "country_nl": "Argentinië",
+   "country_en": "Argentina",
+   "cont": "sam",
+   "lat": -31.9,
+   "lon": -58.3,
+   "score": 3,
+   "why_nl": "Sinds 2013 zien veel spotters hier Geoffroys kat (ook zwarte exemplaren), maar in 2022 lukte het een groep in het park niet, en sinds de nachtregels strenger zijn is het lastiger geworden.",
+   "why_en": "Since 2013 many watchers have seen Geoffroy's cat here (including black ones), but a 2022 group missed it in the park, and stricter night rules have made it harder.",
+   "season_nl": "Het hele jaar; najaar (april–mei) is aangenaam. Na zware regen is weinig te zien.",
+   "season_en": "Year-round; autumn (April–May) is pleasant. Little shows after heavy rain.",
+   "time_nl": "Schemering en vroege avond; in het park zijn zijwegen 's nachts dicht (circa 20.00–7.30 uur) en is schijnen alleen bij de camping toegestaan.",
+   "time_en": "Dusk and early evening; inside the park side roads close at night (about 8 pm–7.30 am) and spotlighting is only allowed at the campsite.",
+   "trip_nl": "Verblijf op de camping in het park of in een plaats ernaast, met schemerritten in het park en avondritten over landweggetjes tussen de veeboerderijen; 2 à 3 nachten.",
+   "trip_en": "Stay at the park campsite or a nearby town, with dusk drives in the park and evening drives along country lanes between cattle ranches; 2–3 nights.",
+   "sources": [
+    6,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "ar-peninsula-valdes",
+   "name_nl": "Península Valdés",
+   "name_en": "Península Valdés",
+   "area_nl": "Natuurgebied Península Valdés en de struiksteppe van Chubut rond Puerto Madryn",
+   "area_en": "Península Valdés protected area and the shrub steppe of Chubut around Puerto Madryn",
+   "country_nl": "Argentinië",
+   "country_en": "Argentina",
+   "cont": "sam",
+   "lat": -42.5,
+   "lon": -64.0,
+   "score": 3,
+   "why_nl": "Een groep zag in april 2022 overdag vier katten langs de grindwegen (waaronder een moeder met twee jongen), maar andere bezoekers noemen het gebied moeilijk voor zoogdieren en zagen geen kat.",
+   "why_en": "One group saw four cats by the gravel roads in daylight in April 2022 (including a mother with two young), but other visitors call the area hard for mammals and saw no cat.",
+   "season_nl": "Het hele jaar; combineer met orka's (maart–april) of walvissen (juni–december).",
+   "season_en": "Year-round; combine with orcas (March–April) or whales (June–December).",
+   "time_nl": "Vroege ochtend en late middag; 's nachts rijden is op het schiereiland niet toegestaan.",
+   "time_en": "Early morning and late afternoon; driving at night is not allowed on the peninsula.",
+   "trip_nl": "Zelf rijden of een natuurrondrit vanuit Puerto Madryn of Puerto Pirámides, langzaam over de grindwegen en de bermen afzoeken; 3 à 4 dagen.",
+   "trip_en": "Self-drive or a wildlife tour from Puerto Madryn or Puerto Pirámides, driving slowly on the gravel roads and scanning the verges; 3–4 days.",
+   "sources": [
+    8,
+    9,
+    15
+   ]
+  },
+  {
+   "id": "ar-lihue-calel",
+   "name_nl": "Lihué Calel",
+   "name_en": "Lihué Calel",
+   "area_nl": "Nationaal Park Lihué Calel en het omringende caldénbos en veeland, La Pampa",
+   "area_en": "Lihué Calel National Park and the surrounding calden woodland and ranchland, La Pampa",
+   "country_nl": "Argentinië",
+   "country_en": "Argentina",
+   "cont": "sam",
+   "lat": -38.0,
+   "lon": -65.6,
+   "score": 2,
+   "why_nl": "Hier deden onderzoekers jarenlang zenderonderzoek aan Geoffroys kat en in goede jaren is de dichtheid hoog, maar we vonden geen tripverslagen met waarnemingen door bezoekers.",
+   "why_en": "Researchers radio-tracked Geoffroy's cats here for years and density is high in good years, but we found no trip reports with visitor sightings.",
+   "season_nl": "Het hele jaar; na een paar natte jaren zijn er veel prooidieren en dus meer katten, na droogte veel minder.",
+   "season_en": "Year-round; after a few wet years there is lots of prey and so more cats, after drought far fewer.",
+   "time_nl": "Schemering en avond, langs rotsheuvels en dichte struiken.",
+   "time_en": "Dusk and evening, along rocky hills and dense scrub.",
+   "trip_nl": "Zelf rijden en kamperen op de camping van het park, met schemerwandelingen en avondritten op de openbare weg; 2 à 3 nachten.",
+   "trip_en": "Self-drive and camp at the park campground, with dusk walks and evening drives on public roads; 2–3 nights.",
+   "sources": [
+    1,
+    11,
+    14
+   ]
+  },
+  {
+   "id": "bo-kaa-iya",
+   "name_nl": "Kaa-Iya del Gran Chaco",
+   "name_en": "Kaa-Iya del Gran Chaco",
+   "area_nl": "Nationaal Park Kaa-Iya del Gran Chaco, Santa Cruz",
+   "area_en": "Kaa-Iya del Gran Chaco National Park, Santa Cruz",
+   "country_nl": "Bolivia",
+   "country_en": "Bolivia",
+   "cont": "sam",
+   "lat": -19.5,
+   "lon": -61.5,
+   "score": 2,
+   "why_nl": "In de Boliviaanse Chaco zijn dichtheden tot 42 katten per 100 km² gemeten, maar het enige tripverslag dat we vonden meldt één kat overdag op de toegangsweg.",
+   "why_en": "Densities of up to 42 cats per 100 km² have been measured in the Bolivian Chaco, but the only trip report we found mentions a single cat in daylight on the access road.",
+   "season_nl": "Droge tijd (mei–oktober), als de wegen begaanbaar zijn.",
+   "season_en": "Dry season (May–October), when roads are passable.",
+   "time_nl": "Avond en nacht; soms ook overdag op de weg.",
+   "time_en": "Evening and night; sometimes on the road in daytime.",
+   "trip_nl": "Expeditie met eigen 4x4 en lokale gids vanuit Santa Cruz, met kamperen en nachtritten; 3 à 4 nachten.",
+   "trip_en": "Expedition by 4x4 with a local guide from Santa Cruz, camping and doing night drives; 3–4 nights.",
+   "sources": [
+    10,
+    11
+   ]
+  },
+  {
+   "id": "ar-ibera",
+   "name_nl": "Esteros del Iberá",
+   "name_en": "Esteros del Iberá",
+   "area_nl": "Iberá-moerassen rond Colonia Carlos Pellegrini, Corrientes",
+   "area_en": "Iberá wetlands around Colonia Carlos Pellegrini, Corrientes",
+   "country_nl": "Argentinië",
+   "country_en": "Argentina",
+   "cont": "sam",
+   "lat": -28.5,
+   "lon": -57.2,
+   "score": 2,
+   "why_nl": "Er zijn foto's van wilde Geoffroys katten rond Carlos Pellegrini, maar in de tripverslagen die we lazen werd hij hier niet gezien.",
+   "why_en": "There are photo records of wild Geoffroy's cats around Carlos Pellegrini, but the trip reports we read did not see one here.",
+   "season_nl": "Het hele jaar; voorjaar en najaar zijn het aangenaamst.",
+   "season_en": "Year-round; spring and autumn are most pleasant.",
+   "time_nl": "Schemering en avond, langs bosranden en moerasranden.",
+   "time_en": "Dusk and evening, along forest and marsh edges.",
+   "trip_nl": "Verblijf in Colonia Carlos Pellegrini met boottochten overdag en een begeleide avondwandeling of -rit; 2 à 3 nachten.",
+   "trip_en": "Stay in Colonia Carlos Pellegrini with boat trips by day and a guided evening walk or drive; 2–3 nights.",
+   "sources": [
+    13
+   ]
+  },
+  {
+   "id": "uy-humedales-santa-lucia",
+   "name_nl": "Humedales del Santa Lucía",
+   "name_en": "Santa Lucía Wetlands",
+   "area_nl": "Beschermd gebied Humedales del Santa Lucía, ten westen van Montevideo",
+   "area_en": "Santa Lucía Wetlands protected area, west of Montevideo",
+   "country_nl": "Uruguay",
+   "country_en": "Uruguay",
+   "cont": "sam",
+   "lat": -34.8,
+   "lon": -56.4,
+   "score": 1,
+   "why_nl": "Cameravallen tonen dat Geoffroys kat hier tot de algemeenste roofdieren hoort, maar er zijn geen verslagen van bezoekers die hem zagen.",
+   "why_en": "Camera traps show Geoffroy's cat is among the commonest carnivores here, but there are no reports of visitors seeing one.",
+   "season_nl": "Het hele jaar.",
+   "season_en": "Year-round.",
+   "time_nl": "Schemering en nacht.",
+   "time_en": "Dusk and night.",
+   "trip_nl": "Dagtocht vanuit Montevideo naar de wandelpaden en uitkijkpunten; blijf tot de schemering.",
+   "trip_en": "Day trip from Montevideo to the trails and viewpoints; stay until dusk.",
+   "sources": [
+    12
+   ]
+  },
+  {
+   "id": "cl-torres-del-paine",
+   "name_nl": "Torres del Paine",
+   "name_en": "Torres del Paine",
+   "area_nl": "Oostzijde van Nationaal Park Torres del Paine en omliggende steppe, Magallanes",
+   "area_en": "Eastern side of Torres del Paine National Park and surrounding steppe, Magallanes",
+   "country_nl": "Chili",
+   "country_en": "Chile",
+   "cont": "sam",
+   "lat": -51.0,
+   "lon": -72.8,
+   "score": 1,
+   "why_nl": "Dit is het belangrijkste leefgebied in Chili en er is hier ooit veldonderzoek naar gedaan, maar in Chili is de soort zeldzaam en poema-trips melden hem vrijwel nooit.",
+   "why_en": "This is the main area for the species in Chile and it was once studied here, but it is rare in Chile and puma trips almost never report it.",
+   "season_nl": "Het hele jaar; de meeste bezoekers komen in de zomer (november–maart) of in de winter voor poema's.",
+   "season_en": "Year-round; most visitors come in summer (November–March) or in winter for pumas.",
+   "time_nl": "Schemering, in de overgang van bos naar steppe.",
+   "time_en": "Dusk, where forest meets steppe.",
+   "trip_nl": "Meeliften op een poema-trip met lokale spoorzoekers aan de oostkant van het park; kijk 's avonds extra goed langs bosranden.",
+   "trip_en": "Combine with a puma-tracking trip with local trackers on the east side of the park; scan forest edges at dusk.",
+   "sources": [
+    11
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Zoek 's avonds met een sterke lamp naar oogreflectie langs zandwegen, bosranden en weilanden; een warmtebeeldcamera helpt veel.",
+  "Zet de motor stil en piep of sis zachtjes: Geoffroys katten komen daar soms op af, tot op een paar meter.",
+  "Let op katten die rechtop zitten met de staart als steun: typisch Geoffroys kat.",
+  "Zoek overdag naar sporen in de modder en naar keurige hoopjes uitgeplukte duivenveren: tekenen dat er een kat jaagt.",
+  "Kijk ook in bomen: overdag rusten ze in dichte struiken of holle bomen, en 's nachts klimmen ze soms weg.",
+  "In natte en beboste streken, zoals El Palmar, zijn zwarte (melanistische) katten vrij gewoon. Kijk goed naar de vage strepen op de poten, anders denk je aan een huiskat.",
+  "Houd je aan de regels: in El Palmar mag je alleen bij de camping schijnen en op Península Valdés mag je 's nachts niet rijden. Rij altijd langzaam."
+ ],
+ "tips_en": [
+  "At night, scan with a strong lamp for eyeshine along dirt roads, forest edges and pastures; a thermal scope helps a lot.",
+  "Cut the engine and squeak or pish softly: Geoffroy's cats sometimes come in to within a few metres.",
+  "Watch for a cat sitting bolt upright with its tail as a prop: classic Geoffroy's cat behaviour.",
+  "By day, look for tracks in mud and neat piles of plucked dove feathers: signs of a hunting cat.",
+  "Check trees too: they rest in thickets or hollow trees by day and sometimes climb at night.",
+  "In wet and wooded areas such as El Palmar, black (melanistic) cats are fairly common. Look for faint bars on the legs, or you will take it for a house cat.",
+  "Follow the rules: at El Palmar spotlighting is only allowed at the campsite, and on Península Valdés driving at night is banned. Always drive slowly."
+ ],
+ "threats_nl": [
+  "Vervolging door boeren uit wraak voor gedode kippen en lammeren; in Midden-Argentinië kwam tot 62% van de sterfte door mensen.",
+  "Verkeer: overal in het leefgebied worden veel katten doodgereden.",
+  "Verlies en versnippering van leefgebied door landbouw, overbegrazing en ontbossing, onder meer in de Chaco.",
+  "Honden die katten doden, en ziektes van huisdieren.",
+  "Bonthandel: tussen eind jaren '60 en de jaren '80 werden honderdduizenden vellen verhandeld; nu is de handel grotendeels gestopt, maar illegale handel komt nog voor."
+ ],
+ "threats_en": [
+  "Persecution by farmers in revenge for poultry and lamb losses; in central Argentina up to 62% of recorded deaths were human-caused.",
+  "Traffic: road mortality is high across the range.",
+  "Habitat loss and fragmentation from agriculture, overgrazing and clearing, including in the Chaco.",
+  "Dogs that kill cats, and diseases from domestic animals.",
+  "Fur trade: hundreds of thousands of skins were traded from the late 1960s to the 1980s; commercial trade has largely stopped, but illegal trade persists."
+ ],
+ "status_note_nl": "Op de IUCN Rode Lijst staat Geoffroys kat als Niet bedreigd (Least Concern), met naar schatting ruim een half miljoen volwassen dieren. De trend is onbekend, maar in de Braziliaanse Pampa is in drie generaties een daling van 79% gemeten (IUCN SSC Cat Specialist Group).",
+ "status_note_en": "Geoffroy's cat is listed as Least Concern on the IUCN Red List, with an estimated half a million mature animals. The global trend is unknown, but a 79% decline over three generations was measured in the Brazilian Pampa (IUCN SSC Cat Specialist Group).",
+ "sources": [
+  {
+   "id": 1,
+   "title": "Geoffroy's cat – species account (IUCN SSC Cat Specialist Group)",
+   "url": "https://www.catsg.org/living-species-geoffroyscat"
+  },
+  {
+   "id": 2,
+   "title": "Central Chaco, Paraguay – trip report, July 2019 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/AJ-Central-chaco-Paraguay.pdf"
+  },
+  {
+   "id": 3,
+   "title": "Paraguay, May 2021 – trip report (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/CA-Paraguay-2021.pdf"
+  },
+  {
+   "id": 4,
+   "title": "Paraguay, May 2023 – trip report (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2023/05/Paraguay-trip-report-May-2023-Stuart-Chapman.pdf"
+  },
+  {
+   "id": 5,
+   "title": "Paraguay, Humid and Dry Chaco, September 2024 – trip report (mammalwatching.com)",
+   "url": "https://mammalwatching.com/wp-content/uploads/2024/11/Report-Paraguay-2024.pdf"
+  },
+  {
+   "id": 6,
+   "title": "The Geoffroy's cats of El Palmar – trip report 2013 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/Neotropical/Otherreports/SM%20Argentina%20GEOFFROY%27S%20CAT%20TOUR%202013.pdf"
+  },
+  {
+   "id": 7,
+   "title": "Argentina: a weekend in Entre Ríos (mammalwatching.com, 2017)",
+   "url": "https://www.mammalwatching.com/2017/06/12/argentina-weekend-entre-rios/"
+  },
+  {
+   "id": 8,
+   "title": "Argentina 2018 – trip report incl. El Palmar, Valdés and Punta Tombo (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/DB-ARGENTINA-2018.pdf"
+  },
+  {
+   "id": 9,
+   "title": "Northern Argentina & Península Valdés, April 2022 – trip report (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/Northern-Argentina-Peninsula-Valdes-Wildlife-Tour-Apr-2022-MW.pdf"
+  },
+  {
+   "id": 10,
+   "title": "Kaa-Iya National Park, Bolivia, July 2016 – trip report (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2016/08/NM-Bolivia-Kaa-Iya-NP-2016.pdf"
+  },
+  {
+   "id": 11,
+   "title": "Leopardus geoffroyi – species classification file (Ministerio del Medio Ambiente, Chile)",
+   "url": "https://clasificacionespecies.mma.gob.cl/wp-content/uploads/2019/10/Leopardus_geoffroyi_P07.pdf"
+  },
+  {
+   "id": 12,
+   "title": "Monitoring native mammals in the Santa Lucía Wetlands (Gobierno de Uruguay, 2025)",
+   "url": "https://www.gub.uy/ministerio-educacion-cultura/comunicacion/noticias/monitoreo-mamiferos-nativos-area-protegida-humedales-santa-lucia"
+  },
+  {
+   "id": 13,
+   "title": "Geoffroy's cat photo record, Esteros del Iberá (EcoRegistros)",
+   "url": "https://www.ecoregistros.org/site_en/imagen.php?id=19609"
+  },
+  {
+   "id": 14,
+   "title": "Pampas and Geoffroy's cat research at Lihué Calel (Rufford Foundation)",
+   "url": "https://www.rufford.org/projects/javier-adolfo-pereira/pampas-and-geoffroys-cat-argentina/"
+  },
+  {
+   "id": 15,
+   "title": "Orcas and Pumas, Torres del Paine & Península Valdés – trip report 2026 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2026/04/Orcas-and-Pumas-Trip-report.pdf"
+  }
+ ]
+}

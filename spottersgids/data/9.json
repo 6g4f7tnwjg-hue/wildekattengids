@@ -1,0 +1,305 @@
+{
+ "no": 9,
+ "intro_nl": "Dit is de heilige graal van de kattenspotters. Diep in het regenwoud van Borneo leeft een kat die bijna niemand ooit met eigen ogen heeft gezien. Zelfs onderzoekers die er jaren cameravallen zetten, kennen hem vaak alleen van een paar korrelige foto's. Ga je toch? Doe het dan voor het avontuur, en zie je hem, dan hoor je bij een heel klein clubje. Kans: 1 – alleen met heel veel geluk.",
+ "intro_en": "This is the holy grail of cat-watching. Deep in the rainforest of Borneo lives a cat that almost nobody has ever seen with their own eyes. Even researchers who run camera traps there for years often know it only from a handful of grainy pictures. Going anyway? Then do it for the adventure, and if you do see one, you join a very small club. Chance: 1 – only with a great deal of luck.",
+ "spots": [
+  {
+   "id": "my-deramakot",
+   "name_nl": "Deramakot",
+   "name_en": "Deramakot",
+   "area_nl": "Deramakot Forest Reserve, Sabah (Borneo)",
+   "area_en": "Deramakot Forest Reserve, Sabah (Borneo)",
+   "country_nl": "Maleisië",
+   "country_en": "Malaysia",
+   "cont": "asia",
+   "lat": 5.4,
+   "lon": 117.4,
+   "score": 1,
+   "why_nl": "De enige plek met herhaalde waarnemingen door bezoekers (o.a. 2013, 2019 en mei 2023, telkens tijdens nachtritten), maar dat zijn er een handvol in tien jaar tegenover honderden groepen die hem misten.",
+   "why_en": "The only place with repeated sightings by visitors (including 2013, 2019 and May 2023, each on night drives), but that is a handful in ten years against hundreds of groups who missed it.",
+   "season_nl": "Het hele jaar; maart t/m oktober is meestal droger en de bosweggen zijn dan beter begaanbaar.",
+   "season_en": "Year-round; March to October is usually drier and the forest tracks are easier then.",
+   "time_nl": "De waarnemingen door bezoekers vielen 's nachts tijdens schijnwerperritten; cameravallen laten zien dat hij ook overdag actief is.",
+   "time_en": "Visitor sightings were at night during spotlighting drives; camera traps show it is also active by day.",
+   "trip_nl": "Nachtritten met schijnwerper in een 4x4 met een lokale gids, overnachten in het bosbouwkamp in het reservaat, 4 à 5 nachten; vaak gecombineerd met Danum Valley en de Kinabatangan.",
+   "trip_en": "Spotlighting night drives in a 4x4 with a local guide, staying at the forestry camp inside the reserve, 4–5 nights; often combined with Danum Valley and the Kinabatangan.",
+   "sources": [
+    3,
+    4,
+    5,
+    6,
+    2
+   ]
+  },
+  {
+   "id": "my-danum-valley",
+   "name_nl": "Danum Valley",
+   "name_en": "Danum Valley",
+   "area_nl": "Danum Valley Conservation Area, Sabah (Borneo)",
+   "area_en": "Danum Valley Conservation Area, Sabah (Borneo)",
+   "country_nl": "Maleisië",
+   "country_en": "Malaysia",
+   "cont": "asia",
+   "lat": 5.0,
+   "lon": 117.8,
+   "score": 1,
+   "why_nl": "Ongerept laaglandregenwoud waar de soort op cameravallen is vastgelegd; waarnemingen door bezoekers vond ik niet gedocumenteerd.",
+   "why_en": "Pristine lowland rainforest where the species has been recorded on camera traps; I found no documented visitor sightings.",
+   "season_nl": "Het hele jaar; maart t/m oktober meestal droger.",
+   "season_en": "Year-round; March to October usually drier.",
+   "time_nl": "Overdag op bospaden en 's nachts tijdens ritten met schijnwerper.",
+   "time_en": "Daytime on forest trails and at night on spotlighting drives.",
+   "trip_nl": "Verblijf in het veldcentrum of de lodge in het gebied, met boswandelingen en nachtritten onder begeleiding van een lokale gids, 3 à 4 nachten.",
+   "trip_en": "Stay at the field centre or lodge in the area, with forest walks and night drives led by a local guide, 3–4 nights.",
+   "sources": [
+    7,
+    8
+   ]
+  },
+  {
+   "id": "my-tabin",
+   "name_nl": "Tabin",
+   "name_en": "Tabin",
+   "area_nl": "Tabin Wildlife Reserve, Sabah (Borneo)",
+   "area_en": "Tabin Wildlife Reserve, Sabah (Borneo)",
+   "country_nl": "Maleisië",
+   "country_en": "Malaysia",
+   "cont": "asia",
+   "lat": 5.2,
+   "lon": 118.5,
+   "score": 1,
+   "why_nl": "Cameravallen legden de baaikat vast in het bos van Tabin (niet in de omliggende oliepalmplantages); een visuele waarneming door bezoekers vond ik niet.",
+   "why_en": "Camera traps recorded the bay cat in Tabin's forest (not in the surrounding oil palm plantations); I found no visual sighting by visitors.",
+   "season_nl": "Het hele jaar.",
+   "season_en": "Year-round.",
+   "time_nl": "Vooral tijdens nachtritten langs de bosrand en wandelingen overdag.",
+   "time_en": "Mainly on night drives along the forest edge and daytime walks.",
+   "trip_nl": "Nachtritten en boswandelingen vanuit de lodge in het reservaat, 2 à 3 nachten.",
+   "trip_en": "Night drives and forest walks from the lodge in the reserve, 2–3 nights.",
+   "sources": [
+    12,
+    1
+   ]
+  },
+  {
+   "id": "id-kayan-mentarang",
+   "name_nl": "Kayan Mentarang",
+   "name_en": "Kayan Mentarang",
+   "area_nl": "Nationaal Park Kayan Mentarang, Noord-Kalimantan (Borneo)",
+   "area_en": "Kayan Mentarang National Park, North Kalimantan (Borneo)",
+   "country_nl": "Indonesië",
+   "country_en": "Indonesia",
+   "cont": "asia",
+   "lat": 3.0,
+   "lon": 115.6,
+   "score": 1,
+   "why_nl": "Parkcamera's legden in 2023 een baaikat vast, de eerste vondst hier sinds 2003; het park is enorm, afgelegen en nauwelijks toeristisch ontsloten.",
+   "why_en": "Park cameras recorded a bay cat in 2023, the first record here since 2003; the park is vast, remote and barely developed for tourism.",
+   "season_nl": "Het hele jaar; de drogere maanden maken reizen over rivier en bospaden makkelijker.",
+   "season_en": "Year-round; the drier months make river and forest travel easier.",
+   "time_nl": "Dag en nacht; reken eerder op sporen dan op de kat zelf.",
+   "time_en": "Day and night; expect tracks rather than the cat itself.",
+   "trip_nl": "Expeditie per boot en te voet met lokale dragers en gidsen uit de Dajakdorpen, minstens een week; regel vergunningen via de parkbeheerder.",
+   "trip_en": "Expedition by boat and on foot with local porters and guides from Dayak villages, at least a week; arrange permits through the park authority.",
+   "sources": [
+    13,
+    9
+   ]
+  },
+  {
+   "id": "id-wehea-east-kalimantan",
+   "name_nl": "Wehea en Oost-Kalimantan",
+   "name_en": "Wehea and East Kalimantan",
+   "area_nl": "Beschermd bos Wehea (ook Nationaal Park Kutai en Sungai Wain), Oost-Kalimantan (Borneo)",
+   "area_en": "Wehea Protection Forest (also Kutai National Park and Sungai Wain), East Kalimantan (Borneo)",
+   "country_nl": "Indonesië",
+   "country_en": "Indonesia",
+   "cont": "asia",
+   "lat": 1.5,
+   "lon": 116.8,
+   "score": 1,
+   "why_nl": "In 2012–2013 leverden cameravallen in Wehea, Kutai en Sungai Wain baaikatten op, in laagland tot ongeveer 400 m; een zichtwaarneming is nergens gemeld.",
+   "why_en": "In 2012–2013 camera traps in Wehea, Kutai and Sungai Wain recorded bay cats in lowlands up to about 400 m; no visual sighting has been reported.",
+   "season_nl": "Het hele jaar.",
+   "season_en": "Year-round.",
+   "time_nl": "Dag en nacht.",
+   "time_en": "Day and night.",
+   "trip_nl": "Bezoek met de lokale Dajakgemeenschap die het bos van Wehea beheert, met boswandelingen en nachtwandelingen, 3 à 5 dagen.",
+   "trip_en": "Visit with the local Dayak community that manages the Wehea forest, with forest walks and night walks, 3–5 days.",
+   "sources": [
+    7,
+    14,
+    1
+   ]
+  },
+  {
+   "id": "my-pulong-tau",
+   "name_nl": "Pulong Tau",
+   "name_en": "Pulong Tau",
+   "area_nl": "Nationaal Park Pulong Tau en de Kelabit-hooglanden, Sarawak (Borneo)",
+   "area_en": "Pulong Tau National Park and the Kelabit Highlands, Sarawak (Borneo)",
+   "country_nl": "Maleisië",
+   "country_en": "Malaysia",
+   "cont": "asia",
+   "lat": 3.6,
+   "lon": 115.5,
+   "score": 1,
+   "why_nl": "Cameravallen van de bosbouwdienst fotografeerden hier rond 2009–2010 twee à drie baaikatten in gekapt bos aan de parkrand; bezoekerswaarnemingen zijn niet bekend.",
+   "why_en": "Forestry department camera traps photographed two or three bay cats here around 2009–2010 in logged forest on the park edge; no visitor sightings are known.",
+   "season_nl": "Het hele jaar.",
+   "season_en": "Year-round.",
+   "time_nl": "Dag en nacht.",
+   "time_en": "Day and night.",
+   "trip_nl": "Meerdaagse jungletocht vanuit Bario met een lokale gids, overnachten in hutten of dorpen, 4 à 7 dagen.",
+   "trip_en": "Multi-day jungle trek from Bario with a local guide, sleeping in huts or villages, 4–7 days.",
+   "sources": [
+    10,
+    11
+   ]
+  },
+  {
+   "id": "my-lanjak-entimau",
+   "name_nl": "Lanjak-Entimau",
+   "name_en": "Lanjak-Entimau",
+   "area_nl": "Wildreservaat Lanjak-Entimau, Sarawak (Borneo)",
+   "area_en": "Lanjak-Entimau Wildlife Sanctuary, Sarawak (Borneo)",
+   "country_nl": "Maleisië",
+   "country_en": "Malaysia",
+   "cont": "asia",
+   "lat": 1.5,
+   "lon": 112.2,
+   "score": 1,
+   "why_nl": "Hier en in andere parken in Sarawak leverde cameravalonderzoek vanaf 2003 baaikatten op, vaak dicht bij rivieren; het reservaat is nauwelijks toegankelijk voor bezoekers.",
+   "why_en": "Camera-trap studies from 2003 recorded bay cats here and in other Sarawak parks, often close to rivers; the sanctuary is barely accessible to visitors.",
+   "season_nl": "Het hele jaar.",
+   "season_en": "Year-round.",
+   "time_nl": "Dag en nacht.",
+   "time_en": "Day and night.",
+   "trip_nl": "Alleen per boot over de rivier en met speciale toestemming van de Sarawakse bosbouwautoriteit; reken op een expeditie.",
+   "trip_en": "Only by boat upriver and with special permission from the Sarawak forestry authority; think expedition.",
+   "sources": [
+    9,
+    10
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Wees eerlijk tegen jezelf: je gaat voor de andere katten van Borneo (Sunda-bengaalse kat, marmerkat, Sunda-nevelpanter) en een baaikat is pure bonus.",
+  "Herken hem goed: egaal roodbruin of grijs (soms zwart), slank, met een lange staart met een witte streep aan de onderkant en een witte punt. Hij is groter en egaler gekleurd dan een platkopkat.",
+  "Bezoekers zagen hem 's nachts vanaf een rijdende 4x4 met schijnwerper; scan rivieroevers en open plekken langs bosweggen op oogreflectie.",
+  "Cameravallen laten zien dat hij ook overdag actief is: wandel rustig over bospaden in de vroege ochtend en late middag.",
+  "Kies grote stukken natuurlijk of selectief gekapt bos; in oliepalmplantages is hij nog nooit vastgelegd.",
+  "Gebruik je schijnwerper kort en niet recht in de ogen: de kat in 2023 liep weg toen het felle licht op hem bleef staan.",
+  "Maak altijd een foto, ook al is die slecht: vrijwel alle waarnemingen door bezoekers zijn onbewezen gebleven."
+ ],
+ "tips_en": [
+  "Be honest with yourself: you go for Borneo's other cats (Sunda leopard cat, marbled cat, Sunda clouded leopard), and a bay cat is pure bonus.",
+  "Know what you are looking at: uniformly reddish-brown or grey (sometimes black), slender, with a long tail with a white stripe underneath and a white tip. It is larger and more evenly coloured than a flat-headed cat.",
+  "Visitors saw it at night from a moving 4x4 with a spotlight; scan riverbanks and clearings along forest roads for eyeshine.",
+  "Camera traps show it is also active by day: walk forest trails quietly in the early morning and late afternoon.",
+  "Choose large tracts of natural or selectively logged forest; it has never been recorded in oil palm plantations.",
+  "Keep the spotlight brief and not straight in the eyes: the cat seen in 2023 walked off when the strong beam stayed on it.",
+  "Always take a photo, however poor: almost all visitor sightings remain unproven."
+ ],
+ "threats_nl": [
+  "Verlies van bos door commerciële houtkap en omzetting naar oliepalm en andere landbouw; Borneo verloor sinds de jaren zeventig ongeveer de helft van zijn bos.",
+  "Wegen, stuwdammen (in Sarawak zijn er meerdere gepland) en andere infrastructuur die het bos versnipperen.",
+  "Strikken en jacht, ook als de kat per ongeluk in strikken voor ander wild belandt of wordt gedood omdat hij kippen pakt.",
+  "Illegale handel in huiden en levende dieren; juist zijn zeldzaamheid maakt hem gewild bij verzamelaars."
+ ],
+ "threats_en": [
+  "Forest loss through commercial logging and conversion to oil palm and other agriculture; Borneo has lost about half its forest since the 1970s.",
+  "Roads, dams (several are planned in Sarawak) and other infrastructure fragmenting the forest.",
+  "Snaring and hunting, including cats caught in snares set for other game or killed for taking chickens.",
+  "Illegal trade in skins and live animals; its very rarity makes it attractive to collectors."
+ ],
+ "status_note_nl": "Op de Rode Lijst van de IUCN staat de baaikat als Bedreigd (EN): er zijn naar schatting minder dan 2500 volwassen dieren, en zijn mogelijke leefgebied is tot 2010 waarschijnlijk met een derde gekrompen. Echte dichtheidsschattingen zijn er nauwelijks, dus de trend is vooral afgeleid van bosverlies.",
+ "status_note_en": "The IUCN Red List classifies the bay cat as Endangered (EN): there are estimated to be fewer than 2,500 mature individuals, and its potential area of occupancy probably shrank by a third by 2010. Real density estimates barely exist, so the trend is inferred mainly from forest loss.",
+ "sources": [
+  {
+   "id": 1,
+   "title": "Bornean bay cat – species account (IUCN SSC Cat Specialist Group)",
+   "url": "https://www.catsg.org/living-species-baycat"
+  },
+  {
+   "id": 2,
+   "title": "On the trail of Borneo's bay cat, one of the world's most mysterious felines (Mongabay, 2024)",
+   "url": "https://news.mongabay.com/2024/04/on-the-trail-of-borneos-bay-cat-one-of-the-worlds-most-mysterious-felines/"
+  },
+  {
+   "id": 3,
+   "title": "Bay cat in Sabah – sighting in Deramakot, with 2015 comment (mammalwatching.com, 2013)",
+   "url": "https://www.mammalwatching.com/2013/09/21/bay-cat-in-sabah/"
+  },
+  {
+   "id": 4,
+   "title": "Bay Cat and new Flat Headed Cat location – Deramakot sighting (mammalwatching.com, 2019)",
+   "url": "https://www.mammalwatching.com/2019/04/29/bay-cat-and-new-flat-headed-cat-location/"
+  },
+  {
+   "id": 5,
+   "title": "Malaysian Borneo trip report – bay cat on a night drive in Deramakot, May 2023 (mammalwatching.com, 2024)",
+   "url": "https://mammalwatching.com/wp-content/uploads/2024/05/Trip-Report-RBL-Malaysia-Borneo-Exts-2023.pdf"
+  },
+  {
+   "id": 6,
+   "title": "Borneo trip report October 2022 – mentions a recent bay cat report in Deramakot (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/CoxChapmanBorneo-trip-report-Oct-2022.pdf"
+  },
+  {
+   "id": 7,
+   "title": "Bay cat – overview of records with references (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Bay_cat"
+  },
+  {
+   "id": 8,
+   "title": "Hearn et al. – Predicted distribution of the bay cat on Borneo (Raffles Bulletin of Zoology Suppl. 33, 2016)",
+   "url": "https://www.science.nus.edu.sg/wp-content/uploads/sites/11/2024/05/S33rbz165-172.pdf"
+  },
+  {
+   "id": 9,
+   "title": "Mohd-Azlan & Sanderson – Geographic distribution and conservation status of the bay cat (Oryx, 2007)",
+   "url": "https://resolve.cambridge.org/core/journals/oryx/article/geographic-distribution-and-conservation-status-of-the-bay-cat-catopuma-badia-a-bornean-endemic/F80BFBE97BE28558BCAA3173F5A343E3"
+  },
+  {
+   "id": 10,
+   "title": "Rare bay cat recorded in the extensions of Pulong Tau National Park (ITTO, 2011)",
+   "url": "https://www.itto.int/news_releases/id=2565"
+  },
+  {
+   "id": 11,
+   "title": "Rare cat photographed in Borneo, not believed to be extinct (Mongabay, 2011)",
+   "url": "https://news.mongabay.com/2011/01/picture-rare-cat-photographed-in-borneo-not-believed-to-be-extinct/"
+  },
+  {
+   "id": 12,
+   "title": "Bernard et al. – Records of Bornean felids in and around Tabin Wildlife Reserve (CATnews 56, 2012; UMS repository)",
+   "url": "https://eprints.ums.edu.my/id/eprint/19169"
+  },
+  {
+   "id": 13,
+   "title": "Setelah 20 tahun, kucing misterius ini terpantau di Kayan Mentarang (Mongabay Indonesia, 2025)",
+   "url": "https://mongabay.co.id/2025/06/02/setelah-20-tahun-kucing-misterius-ini-terpantau-di-kayan-mentarang/"
+  },
+  {
+   "id": 14,
+   "title": "Rufford project report – camera traps in Wehea Forest record bay cat (Rufford Foundation, 2012)",
+   "url": "https://media.rufford.org/media/project_reports/11196-1%20June%202012.pdf"
+  },
+  {
+   "id": 15,
+   "title": "New population of the secretive bay cat discovered on Borneo – Rungan, Central Kalimantan (Borneo Nature Foundation, 2017)",
+   "url": "https://borneonaturefoundation.org/?p=9086"
+  },
+  {
+   "id": 16,
+   "title": "Wearn et al. – Camera-trapping in a logged forest, Kalabakan, Sabah (PLOS ONE, 2013)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3817192"
+  },
+  {
+   "id": 17,
+   "title": "Small cat surveys: 10 years of data from Central Kalimantan (Journal of Threatened Taxa)",
+   "url": "https://threatenedtaxa.org/index.php/JoTT/article/view/4466"
+  }
+ ]
+}

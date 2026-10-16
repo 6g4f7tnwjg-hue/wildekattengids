@@ -1,0 +1,284 @@
+{
+ "no": 15,
+ "intro_nl": "Het is twee uur 's nachts in het nevelwoud. Je lamp vangt iets op een tak boven het pad: grote ogen, een lange gevlekte staart. Een margay. Even later klautert hij kopje-onder langs de stam omlaag, alsof zwaartekracht niet bestaat, en is weg. Zo'n moment is zeldzaam; ook doorgewinterde kattenzoekers missen hem vaak. Kans: 2 – alleen met geduld, veel nachtwandelingen en geluk.",
+ "intro_en": "It is two in the morning in the cloud forest. Your torch catches something on a branch above the trail: huge eyes, a long spotted tail. A margay. Moments later it climbs head-first down the trunk, as if gravity did not exist, and is gone. Such a moment is rare; even seasoned cat hunters often miss it. Chance: 2 – only with patience, many night walks and luck.",
+ "spots": [
+  {
+   "id": "cr-monteverde",
+   "name_nl": "Monteverde",
+   "name_en": "Monteverde",
+   "area_nl": "Nevelwoud rond Monteverde en Santa Elena (o.a. reservaat Curi-Cancha), Puntarenas",
+   "area_en": "Cloud forest around Monteverde and Santa Elena (incl. Curi-Cancha reserve), Puntarenas",
+   "country_nl": "Costa Rica",
+   "country_en": "Costa Rica",
+   "cont": "sam",
+   "lat": 10.3,
+   "lon": -84.8,
+   "score": 2,
+   "why_nl": "Lokale gidsen lieten in 2022 foto's zien van een margay die ze een paar dagen eerder hadden gezien, en het gebied heeft een dicht netwerk van nachtwandelingen – maar ook hier blijft het geluk.",
+   "why_en": "In 2022 local guides showed photos of a margay they had seen a few days earlier, and the area has a dense network of night walks – but even here it remains luck.",
+   "season_nl": "Het hele jaar; december–april is het droogst.",
+   "season_en": "Year-round; December–April is driest.",
+   "time_nl": "Nachtwandelingen in het bos, en in de schemering langs bosranden.",
+   "time_en": "Night walks in the forest, and at dusk along forest edges.",
+   "trip_nl": "Meerdere begeleide nachtwandelingen in de reservaten rond Monteverde, 3 à 4 nachten. Let op: sommige verblijven in het Costaricaanse nevelwoud lokken dieren met fruit- of zaadvoederplekken; deze gids raadt lokken af. Vraag gidsen of een waarneming bij een voederplek was.",
+   "trip_en": "Several guided night walks in the reserves around Monteverde, 3–4 nights. Note: some places to stay in Costa Rica's cloud forest attract animals with fruit or seed feeders; this guide advises against baiting. Ask guides whether a sighting was at a feeder.",
+   "sources": [
+    3,
+    5
+   ]
+  },
+  {
+   "id": "cr-arenal",
+   "name_nl": "Arenal",
+   "name_en": "Arenal",
+   "area_nl": "Omgeving van Nationaal Park Volcán Arenal, Alajuela",
+   "area_en": "Surroundings of Arenal Volcano National Park, Alajuela",
+   "country_nl": "Costa Rica",
+   "country_en": "Costa Rica",
+   "cont": "sam",
+   "lat": 10.5,
+   "lon": -84.7,
+   "score": 1,
+   "why_nl": "In 2019 liep er om zes uur 's ochtends een margay langs een lodgegebouw aan de voet van de vulkaan; volgens het personeel gebeurt dat zo'n vijf à zes keer per jaar – dus zeldzaam, en het is onduidelijk of etensresten meespelen.",
+   "why_en": "In 2019 a margay walked past a lodge building at the foot of the volcano at six in the morning; staff said this happens about five or six times a year – so rare, and it is unclear whether food scraps play a role.",
+   "season_nl": "Het hele jaar.",
+   "season_en": "Year-round.",
+   "time_nl": "Vroege ochtend en nacht.",
+   "time_en": "Early morning and night.",
+   "trip_nl": "Combineer met een algemene natuurreis rond La Fortuna en Arenal; begeleide nachtwandelingen in het bos rond de vulkaan.",
+   "trip_en": "Combine with a general wildlife trip around La Fortuna and Arenal; guided night walks in the forest around the volcano.",
+   "sources": [
+    4
+   ]
+  },
+  {
+   "id": "mx-yucatan-valladolid",
+   "name_nl": "Oost-Yucatán (Valladolid)",
+   "name_en": "Eastern Yucatán (Valladolid)",
+   "area_nl": "Bossen en kleine reservaten rond Valladolid en Xocén, Yucatán",
+   "area_en": "Forests and small reserves around Valladolid and Xocén, Yucatán",
+   "country_nl": "Mexico",
+   "country_en": "Mexico",
+   "cont": "nam",
+   "lat": 20.7,
+   "lon": -88.1,
+   "score": 1,
+   "why_nl": "Lokale biologen zien hier af en toe een margay, soms zelfs overdag, en cameravallen leggen hem regelmatig vast; toch zagen twee gerichte zoektochten (2018 en 2021) na vele uren spotten er geen.",
+   "why_en": "Local biologists see a margay here now and then, sometimes even by day, and camera traps record it regularly; yet two dedicated searches (2018 and 2021) saw none after many hours of spotlighting.",
+   "season_nl": "Het hele jaar; de gemelde reizen waren in de droge tijd (januari–maart).",
+   "season_en": "Year-round; the reported trips were in the dry season (January–March).",
+   "time_nl": "Nachtritten en nachtwandelingen over kleine bosweggetjes.",
+   "time_en": "Night drives and night walks along small forest roads.",
+   "trip_nl": "Gespecialiseerde nachtexcursies met een lokale bioloog als gids vanuit Valladolid, 2 à 3 nachten.",
+   "trip_en": "Specialised night excursions with a local biologist as guide from Valladolid, 2–3 nights.",
+   "sources": [
+    8,
+    9
+   ]
+  },
+  {
+   "id": "ec-sumaco",
+   "name_nl": "Sumaco",
+   "name_en": "Sumaco",
+   "area_nl": "Andes-uitlopers rond Nationaal Park Sumaco Napo-Galeras, Napo",
+   "area_en": "Andean foothills around Sumaco Napo-Galeras National Park, Napo",
+   "country_nl": "Ecuador",
+   "country_en": "Ecuador",
+   "cont": "sam",
+   "lat": -0.7,
+   "lon": -77.6,
+   "score": 1,
+   "why_nl": "Cameravallen vonden hier tien verschillende margays en een hoge dichtheid, maar bij een bezoek in 2017 had volgens de beheerders nog niemand er een met eigen ogen gezien.",
+   "why_en": "Camera traps found ten different margays and a high density here, but on a 2017 visit staff said nobody had yet seen one with their own eyes.",
+   "season_nl": "Het hele jaar; bezoekers kregen te horen dat regen de activiteit verhoogt en volle maan die verlaagt (anekdotisch).",
+   "season_en": "Year-round; visitors were told rain increases activity and a full moon decreases it (anecdotal).",
+   "time_nl": "Nachtwandelingen; de margay is hier vooral 's nachts actief.",
+   "time_en": "Night walks; the margay here is mainly active at night.",
+   "trip_nl": "Verblijf in de Andes-uitlopers (vaak een vogelaarsreis) met zelfstandige of begeleide nachtwandelingen; reken op minstens 3 nachten.",
+   "trip_en": "Stay in the Andean foothills (often a birding trip) with independent or guided night walks; allow at least 3 nights.",
+   "sources": [
+    6,
+    7
+   ]
+  },
+  {
+   "id": "pe-los-amigos-madre-de-dios",
+   "name_nl": "Los Amigos (Madre de Dios)",
+   "name_en": "Los Amigos (Madre de Dios)",
+   "area_nl": "Biologisch station Los Amigos en omliggend regenwoud, Madre de Dios",
+   "area_en": "Los Amigos Biological Station and surrounding rainforest, Madre de Dios",
+   "country_nl": "Peru",
+   "country_en": "Peru",
+   "cont": "sam",
+   "lat": -12.6,
+   "lon": -70.1,
+   "score": 1,
+   "why_nl": "Een ecoloog zag hier één margay in drie weken nachtwandelen – dat zegt genoeg over de kans.",
+   "why_en": "An ecologist saw one margay here in three weeks of night walks – which says enough about the odds.",
+   "season_nl": "Het hele jaar; de droge tijd (ongeveer mei–oktober) maakt de paden beter begaanbaar.",
+   "season_en": "Year-round; the dry season (roughly May–October) makes the trails easier.",
+   "time_nl": "Stille nachtwandelingen; scan de middelste bosetages.",
+   "time_en": "Quiet night walks; scan the middle storeys of the forest.",
+   "trip_nl": "Verblijf van een week of langer op het onderzoeksstation (per boot vanaf Puerto Maldonado/Laberinto) met nachtwandelingen.",
+   "trip_en": "A stay of a week or more at the research station (by boat from Puerto Maldonado/Laberinto) with night walks.",
+   "sources": [
+    12
+   ]
+  },
+  {
+   "id": "br-rio-grande-do-sul-atlantic-forest",
+   "name_nl": "Atlantisch woud van Rio Grande do Sul",
+   "name_en": "Atlantic Forest of Rio Grande do Sul",
+   "area_nl": "Bosresten in Rio Grande do Sul (o.a. Floresta Nacional de Passo Fundo, Pró-Mata, Parque Estadual do Turvo)",
+   "area_en": "Forest remnants in Rio Grande do Sul (e.g. Passo Fundo National Forest, Pró-Mata, Turvo State Park)",
+   "country_nl": "Brazilië",
+   "country_en": "Brazil",
+   "cont": "sam",
+   "lat": -29.0,
+   "lon": -51.5,
+   "score": 1,
+   "why_nl": "Cameravallen meten hier tot zo'n 37 margays per 100 km², maar een gerichte zoektocht van meerdere dagen met hulp van een lokaal kattenproject in 2022 leverde alleen prooiresten op.",
+   "why_en": "Camera traps measure up to about 37 margays per 100 km² here, but a multi-day dedicated search with help from a local cat project in 2022 produced only prey remains.",
+   "season_nl": "Het hele jaar.",
+   "season_en": "Year-round.",
+   "time_nl": "Nacht, met een piek rond 1–2 uur; overdag rust hij in bomen.",
+   "time_en": "Night, peaking around 1–2 am; by day it rests in trees.",
+   "trip_nl": "Gespecialiseerde kattenreis met lokale gids en toestemming van grondeigenaren (veel bos ligt op privéland); reken op een week of meer.",
+   "trip_en": "Specialised cat trip with a local guide and landowners' permission (much forest is on private land); allow a week or more.",
+   "sources": [
+    10,
+    11
+   ]
+  },
+  {
+   "id": "bz-rio-bravo-gallon-jug",
+   "name_nl": "Rio Bravo en Gallon Jug",
+   "name_en": "Rio Bravo and Gallon Jug",
+   "area_nl": "Rio Bravo Conservation and Management Area en bossen rond Gallon Jug, Orange Walk",
+   "area_en": "Rio Bravo Conservation and Management Area and forests around Gallon Jug, Orange Walk",
+   "country_nl": "Belize",
+   "country_en": "Belize",
+   "cont": "sam",
+   "lat": 17.6,
+   "lon": -89.0,
+   "score": 1,
+   "why_nl": "Mammalwatchers noemen dit gebied als een van de betere gokjes voor margay, en de bossen van Belize zijn volgens de Cat Specialist Group zeer geschikt leefgebied – maar concrete waarnemingen vonden we niet.",
+   "why_en": "Mammalwatchers name this area as one of the better bets for margay, and the Cat Specialist Group rates Belize's forests as highly suitable habitat – but we found no concrete sightings.",
+   "season_nl": "Het hele jaar; de droge tijd (ongeveer februari–mei) is het prettigst.",
+   "season_en": "Year-round; the dry season (roughly February–May) is most comfortable.",
+   "time_nl": "Nachtritten en nachtwandelingen.",
+   "time_en": "Night drives and night walks.",
+   "trip_nl": "Nachtritten met een lokale gids vanuit lodges en veldstations in het gebied, vaak met kans op ocelot en andere katten; 3 à 4 nachten.",
+   "trip_en": "Night drives with a local guide from lodges and field stations in the area, often with chances of ocelot and other cats; 3–4 nights.",
+   "sources": [
+    2,
+    1
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Wandel 's nachts stil over bospaden en schijn ook in de bomen: de margay rust en klimt veel hoger dan de ocelot.",
+  "De piek van activiteit ligt diep in de nacht (rond 1–2 uur); blijf dus laat op pad.",
+  "Kenmerken: grote, uitpuilende ogen, een kleine kop en een staart die langer is dan bij de ocelot. Hij daalt kopje-onder langs stammen af.",
+  "Waar veel ocelotten zitten, zijn margays vaak schaarser; kies bosrijke gebieden met weinig verstoring.",
+  "Een warmtebeeldkijker helpt om een stille kat in het bladerdak te vinden.",
+  "Deze gids raadt lokken en voederplekken af. Zie je een margay bij een voederplaats, weet dan dat dat geen natuurlijke waarneming is."
+ ],
+ "tips_en": [
+  "Walk forest trails quietly at night and shine into the trees too: margays rest and climb much higher than ocelots.",
+  "Activity peaks deep in the night (around 1–2 am), so stay out late.",
+  "Features: big, bulging eyes, a small head and a tail longer than an ocelot's. It climbs head-first down trunks.",
+  "Where ocelots are abundant, margays are often scarcer; pick well-forested, undisturbed areas.",
+  "A thermal scope helps find a silent cat in the canopy.",
+  "This guide advises against baiting and feeding stations. If you see a margay at a feeder, know that it is not a natural sighting."
+ ],
+ "threats_nl": [
+  "Ontbossing en omzetting van bos naar landbouw, weide en plantages",
+  "Illegale jacht en handel als huisdier",
+  "Verkeersslachtoffers",
+  "Vergeldingsdoding na verlies van kippen",
+  "Honden, wilde zwijnen en ziektes"
+ ],
+ "threats_en": [
+  "Deforestation and conversion of forest to farmland, pasture and plantations",
+  "Illegal hunting and pet trade",
+  "Road deaths",
+  "Retaliatory killing over poultry losses",
+  "Dogs, wild boar and disease"
+ ],
+ "status_note_nl": "De margay staat als Gevoelig (Near Threatened) op de Rode Lijst van de IUCN (beoordeling 2015) en kan in de toekomst als Kwetsbaar worden aangemerkt. Buiten het Amazonegebied zijn de populaties sterk versnipperd.",
+ "status_note_en": "The margay is listed as Near Threatened on the IUCN Red List (2015 assessment) and may be classified as Vulnerable in future. Outside the Amazon, populations are severely fragmented.",
+ "sources": [
+  {
+   "id": 1,
+   "title": "Margay – species account (IUCN SSC Cat Specialist Group)",
+   "url": "https://www.catsg.org/living-species-margay"
+  },
+  {
+   "id": 2,
+   "title": "Question to Neotropical mammal watchers about tayra and margay (mammalwatching.com, 2012)",
+   "url": "https://www.mammalwatching.com/2012/10/11/question-to-neotropical-mammal-watchers-about-tayra-and-margay/"
+  },
+  {
+   "id": 3,
+   "title": "Rare mammals of Costa Rica, March 2022 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/CR_TR_AMVS_Mar22-compressed.pdf"
+  },
+  {
+   "id": 4,
+   "title": "Costa Rica & Panama trip report 2019 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/RB-Costa-Rica-Panama-2019.pdf"
+  },
+  {
+   "id": 5,
+   "title": "Costa Rica trip report, February 2018 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2016/08/Report_CostaRica2018.pdf"
+  },
+  {
+   "id": 6,
+   "title": "Ecuador trip report 2017 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2016/08/Report_Ecuador2017.pdf"
+  },
+  {
+   "id": 7,
+   "title": "Vanderhoff et al. – Abundance and activity of the margay in the eastern Andes of Ecuador (Mastozoología Neotropical)",
+   "url": "https://mn.sarem.org.ar/keyword/wildsumaco/"
+  },
+  {
+   "id": 8,
+   "title": "Yucatán trip report 2018 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2018/04/VS-Yucatan-2018.pdf"
+  },
+  {
+   "id": 9,
+   "title": "Mexico: Yucatán trip report 2021 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/AJ-Mexico-Yucatan-2021.pdf"
+  },
+  {
+   "id": 10,
+   "title": "Brazil 2022 – margay and southern tigrina search (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/AJ-Brazil-2022-compressed.pdf"
+  },
+  {
+   "id": 11,
+   "title": "Horn et al. – Margay in the southernmost Atlantic Forest: density and activity (PLoS ONE, 2020)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7202647/"
+  },
+  {
+   "id": 12,
+   "title": "Planning trip to Ecuador – forum thread with Los Amigos comment (mammalwatching.com, 2016)",
+   "url": "https://www.mammalwatching.com/?p=13724"
+  },
+  {
+   "id": 13,
+   "title": "Cat News 85 abstracts: first record of margay in the Pantanal (IUCN SSC Cat Specialist Group)",
+   "url": "https://www.catsg.org/_files/ugd/7a07e2_1ded182a0e0e4b759daaaaaeab57d6f4.pdf"
+  },
+  {
+   "id": 14,
+   "title": "Margay in Serra Bonita, Brazil (mammalwatching.com, 2024)",
+   "url": "https://www.mammalwatching.com/community-post/margay-in-serra-bonita-brazil/"
+  }
+ ]
+}

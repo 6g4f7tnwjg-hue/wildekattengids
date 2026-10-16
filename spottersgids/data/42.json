@@ -1,0 +1,377 @@
+{
+ "no": 42,
+ "intro_nl": "De zon staat nog laag boven het grasland van Velavadar. Tussen de zwartbokken sluipt een slanke, zandkleurige kat met lange poten en een kort, geringd staartje. Hij kijkt even om en loopt dan rustig verder, het hoge gras in. In de koele maanden is de moeraskat hier overdag gewoon op pad, en sommige bezoekers zien er meerdere op één ochtend. Kans: 5 – in West-India is dit de makkelijkste wilde kat die er is.",
+ "intro_en": "The sun still hangs low over the grassland of Velavadar. Between the blackbuck a slender, sand-coloured cat slinks past on long legs, with a short, ringed tail. It glances back once, then strolls on into the tall grass. In the cool months jungle cats are out and about here in broad daylight, and some visitors see several in a single morning. Chance: 5 – in western India this is about the easiest wild cat there is.",
+ "spots": [
+  {
+   "id": "in-velavadar",
+   "name_nl": "Velavadar",
+   "name_en": "Velavadar",
+   "area_nl": "Blackbuck National Park Velavadar, Bhavnagar (Gujarat)",
+   "area_en": "Velavadar Blackbuck National Park, Bhavnagar (Gujarat)",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 22.0,
+   "lon": 72.0,
+   "score": 5,
+   "why_nl": "In recente tripverslagen zagen bezoekers 6 moeraskatten in één ochtendrit (november 2022) en 11 in twee dagen (april 2026).",
+   "why_en": "Recent trip reports logged 6 jungle cats on a single morning drive (November 2022) and 11 in two days (April 2026).",
+   "season_nl": "November tot en met maart is het prettigst; ook in april nog goed, maar dan is het bloedheet.",
+   "season_en": "November to March is most comfortable; April still works, but it is scorching hot.",
+   "time_nl": "Vroege ochtend en late middag; in de koele maanden ook overdag actief in het open grasland.",
+   "time_en": "Early morning and late afternoon; in the cool months also active by day in the open grassland.",
+   "trip_nl": "Jeepritten in het park vanaf Velavadar of Bhavnagar; twee dagen is meestal genoeg.",
+   "trip_en": "Jeep drives in the park from Velavadar or Bhavnagar; two days is usually enough.",
+   "sources": [
+    7,
+    8
+   ]
+  },
+  {
+   "id": "lk-sigiriya-wilpattu",
+   "name_nl": "Sigiriya en Wilpattu",
+   "name_en": "Sigiriya and Wilpattu",
+   "area_nl": "Platteland rond Sigiriya (Matale) en de randzone van Wilpattu National Park",
+   "area_en": "Countryside around Sigiriya (Matale) and the edges of Wilpattu National Park",
+   "country_nl": "Sri Lanka",
+   "country_en": "Sri Lanka",
+   "cont": "asia",
+   "lat": 8.0,
+   "lon": 80.8,
+   "score": 4,
+   "why_nl": "Bezoekers die gericht 's nachts spotlighten zien hier vrijwel altijd moeraskatten; een groep telde er circa tien in zes nachtritten (maart 2024).",
+   "why_en": "Visitors who go spotlighting at night almost always find jungle cats here; one group counted about ten in six night drives (March 2024).",
+   "season_nl": "Het hele jaar; de meeste verslagen komen uit december tot en met mei.",
+   "season_en": "Year-round; most reports date from December to May.",
+   "time_nl": "'s Nachts, vooral de eerste uren na zonsondergang, op akkers en in ruigte.",
+   "time_en": "At night, especially the first hours after dark, in fields and scrub.",
+   "trip_nl": "Nachtelijke spotlighttochten over het platteland buiten de parken, 3 à 5 nachten.",
+   "trip_en": "Night spotlighting drives through the countryside outside the parks, 3 to 5 nights.",
+   "sources": [
+    11,
+    12
+   ]
+  },
+  {
+   "id": "in-little-rann-of-kutch",
+   "name_nl": "Little Rann of Kutch",
+   "name_en": "Little Rann of Kutch",
+   "area_nl": "Wild Ass Sanctuary, Little Rann of Kutch (Gujarat)",
+   "area_en": "Wild Ass Sanctuary, Little Rann of Kutch (Gujarat)",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 23.5,
+   "lon": 71.3,
+   "score": 4,
+   "why_nl": "Moeraskatten duiken in veel tripverslagen uit Kutch op; in de nabije Banni-graslanden telde één groep er zelfs 17 in een week.",
+   "why_en": "Jungle cats turn up in many trip reports from Kutch; in the nearby Banni grasslands one group counted 17 in a week.",
+   "season_nl": "November tot en met maart.",
+   "season_en": "November to March.",
+   "time_nl": "Vroege ochtend, schemering en nachtritten langs plassen, akkers en doornstruweel.",
+   "time_en": "Early morning, dusk and night drives along pools, fields and thorn scrub.",
+   "trip_nl": "Jeepritten vanuit de dorpen aan de rand van de Rann, 2 à 3 dagen; combineer met Velavadar.",
+   "trip_en": "Jeep drives from villages on the edge of the Rann, 2 to 3 days; combine with Velavadar.",
+   "sources": [
+    7,
+    9
+   ]
+  },
+  {
+   "id": "in-kanha",
+   "name_nl": "Kanha en Bandhavgarh",
+   "name_en": "Kanha and Bandhavgarh",
+   "area_nl": "Kanha Tiger Reserve en Bandhavgarh National Park (Madhya Pradesh)",
+   "area_en": "Kanha Tiger Reserve and Bandhavgarh National Park (Madhya Pradesh)",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 22.3,
+   "lon": 80.6,
+   "score": 3,
+   "why_nl": "Op tijgersafari's is de moeraskat een mooie bijvangst: een groep zag er drie in twee parken, waarvan twee overdag rond zonsopkomst.",
+   "why_en": "On tiger safaris the jungle cat is a regular bonus: one group saw three in two parks, two of them by day around sunrise.",
+   "season_nl": "Oktober tot en met juni (parken in het moessonseizoen grotendeels dicht).",
+   "season_en": "October to June (parks largely closed during the monsoon).",
+   "time_nl": "Eerste en laatste uur van de jeepritten.",
+   "time_en": "First and last hour of the jeep drives.",
+   "trip_nl": "Gewone tijgersafari's per jeep, 4 à 6 ritten per park.",
+   "trip_en": "Standard tiger safaris by jeep, 4 to 6 drives per park.",
+   "sources": [
+    8,
+    10
+   ]
+  },
+  {
+   "id": "il-hula-valley",
+   "name_nl": "Hulavallei",
+   "name_en": "Hula Valley",
+   "area_nl": "Agamon Hula en omgeving, Hulavallei (Opper-Galilea)",
+   "area_en": "Agamon Hula and surroundings, Hula Valley (Upper Galilee)",
+   "country_nl": "Israël",
+   "country_en": "Israel",
+   "cont": "asia",
+   "lat": 33.1,
+   "lon": 35.6,
+   "score": 3,
+   "why_nl": "Lokale waarnemers noemen de begeleide nachttochten in de Agamon 'bijna zeker', maar die lopen niet altijd en buiten de tochten is het geluk.",
+   "why_en": "Local observers call the guided night tours at the Agamon 'almost guaranteed', but they do not always run and outside them it is down to luck.",
+   "season_nl": "Het hele jaar; nachttochten volgens bezoekers niet in de winter.",
+   "season_en": "Year-round; according to visitors, night tours do not run in winter.",
+   "time_nl": "Schemering en nacht langs rietkragen; soms overdag jagend op jonge beverratten.",
+   "time_en": "Dusk and night along reed edges; sometimes hunting young coypu by day.",
+   "trip_nl": "Begeleide nachttocht in de Agamon (vooraf boeken) en spotlighten in de vallei, 1 à 2 nachten.",
+   "trip_en": "Guided night tour at the Agamon (book ahead) plus spotlighting in the valley, 1 to 2 nights.",
+   "sources": [
+    13,
+    14
+   ]
+  },
+  {
+   "id": "np-koshi-tappu",
+   "name_nl": "Koshi Tappu",
+   "name_en": "Koshi Tappu",
+   "area_nl": "Koshi Tappu Wildlife Reserve en bufferzone (Oost-Terai)",
+   "area_en": "Koshi Tappu Wildlife Reserve and buffer zone (eastern Terai)",
+   "country_nl": "Nepal",
+   "country_en": "Nepal",
+   "cont": "asia",
+   "lat": 26.6,
+   "lon": 87.0,
+   "score": 2,
+   "why_nl": "Cameravallen leggen de soort hier geregeld vast, maar uitsluitend 's nachts; echte waarnemingen door bezoekers zijn schaars.",
+   "why_en": "Camera traps record the species regularly here, but only at night; actual sightings by visitors are scarce.",
+   "season_nl": "Oktober tot en met maart.",
+   "season_en": "October to March.",
+   "time_nl": "De eerste uren na zonsondergang.",
+   "time_en": "The first hours after sunset.",
+   "trip_nl": "Wandelingen en ritten langs de dijken en graslanden, liefst met een avondronde in de bufferzone, 2 à 3 dagen.",
+   "trip_en": "Walks and drives along the embankments and grasslands, ideally with an evening round in the buffer zone, 2 to 3 days.",
+   "sources": [
+    15
+   ]
+  },
+  {
+   "id": "eg-faiyum",
+   "name_nl": "Faiyum en Wadi El Rayan",
+   "name_en": "Faiyum and Wadi El Rayan",
+   "area_nl": "Akkers en rietlanden van de Faiyum-oase en Wadi El Rayan Protected Area",
+   "area_en": "Farmland and reedbeds of the Faiyum oasis and Wadi El Rayan Protected Area",
+   "country_nl": "Egypte",
+   "country_en": "Egypt",
+   "cont": "afr",
+   "lat": 29.3,
+   "lon": 30.6,
+   "score": 2,
+   "why_nl": "Een Egyptische natuurkenner noemt de moeraskat hier 'vrij algemeen' in suikerriet en landbouwgebied, maar zeer schuw; tripverslagen ontbreken.",
+   "why_en": "An Egyptian naturalist calls the jungle cat 'fairly common' here in sugarcane and farmland, but very elusive; trip reports are lacking.",
+   "season_nl": "Oktober tot en met april (koeler).",
+   "season_en": "October to April (cooler).",
+   "time_nl": "Schemering en nacht langs kanalen, rietkragen en suikerrietvelden.",
+   "time_en": "Dusk and night along canals, reed edges and sugarcane fields.",
+   "trip_nl": "Eigen verkenning met een lokale gids vanuit Faiyum, 2 à 3 dagen.",
+   "trip_en": "Your own exploration with a local guide from Faiyum, 2 to 3 days.",
+   "sources": [
+    16,
+    1
+   ]
+  },
+  {
+   "id": "ru-dagestan-samur",
+   "name_nl": "Kaspische kust van Dagestan",
+   "name_en": "Caspian coast of Dagestan",
+   "area_nl": "Nationaal Park Samoerski (Samoerdelta) en rietlanden langs de benedenloop van Soelak en Terek, Dagestan",
+   "area_en": "Samursky National Park (Samur delta) and reedbeds of the lower Sulak and Terek, Dagestan",
+   "country_nl": "Rusland",
+   "country_en": "Russia",
+   "cont": "eur",
+   "lat": 41.8,
+   "lon": 48.5,
+   "score": 1,
+   "why_nl": "Dit is de enige vaste Europese populatie (enkele honderden dieren), maar er zijn vrijwel geen waarnemingen door bezoekers bekend.",
+   "why_en": "This is the only resident European population (a few hundred animals), but hardly any visitor sightings are known.",
+   "season_nl": "Winter: sporen in sneeuw of modder; januari tot april roepen de katers in de paartijd.",
+   "season_en": "Winter: tracks in snow or mud; January to April the males call during the mating season.",
+   "time_nl": "Vroege ochtend en schemering langs rietkragen.",
+   "time_en": "Early morning and dusk along reed edges.",
+   "trip_nl": "Natuurreis naar het nationale park met lokale begeleiding; reken op sporen in plaats van de kat zelf.",
+   "trip_en": "Nature trip to the national park with local guidance; expect tracks rather than the cat itself.",
+   "sources": [
+    3,
+    6,
+    4
+   ]
+  },
+  {
+   "id": "az-hirkan",
+   "name_nl": "Hirkan",
+   "name_en": "Hirkan",
+   "area_nl": "Nationaal Park Hirkan (Talysh) en de Koera-Araks-laagvlakte",
+   "area_en": "Hirkan National Park (Talysh) and the Kura-Araz lowland",
+   "country_nl": "Azerbeidzjan",
+   "country_en": "Azerbaijan",
+   "cont": "asia",
+   "lat": 38.6,
+   "lon": 48.7,
+   "score": 1,
+   "why_nl": "Onderzoekers schatten hier bijna 200 moeraskatten op basis van cameravallen, maar waarnemingen door bezoekers zijn niet gedocumenteerd.",
+   "why_en": "Researchers estimate nearly 200 jungle cats here from camera traps, but visitor sightings are not documented.",
+   "season_nl": "Het hele jaar.",
+   "season_en": "Year-round.",
+   "time_nl": "Schemering en nacht.",
+   "time_en": "Dusk and night.",
+   "trip_nl": "Wandelingen in het park en ritten door de laagvlakte; vooral kans via cameravallen.",
+   "trip_en": "Walks in the park and drives through the lowland; mainly a camera-trap species.",
+   "sources": [
+    5
+   ]
+  },
+  {
+   "id": "tj-tigrovaya-balka",
+   "name_nl": "Tigrovaja Balka",
+   "name_en": "Tigrovaya Balka",
+   "area_nl": "Natuurreservaat Tigrovaja Balka, Vachsj-vallei",
+   "area_en": "Tigrovaya Balka Nature Reserve, Vakhsh valley",
+   "country_nl": "Tadzjikistan",
+   "country_en": "Tajikistan",
+   "cont": "asia",
+   "lat": 37.2,
+   "lon": 68.5,
+   "score": 1,
+   "why_nl": "De soort staat op de faunalijst van dit tugaibos, maar recente waarnemingen of tripverslagen ontbreken.",
+   "why_en": "The species is on the fauna list of this tugay forest, but recent sightings or trip reports are lacking.",
+   "season_nl": "Voorjaar en herfst (de zomer is extreem heet).",
+   "season_en": "Spring and autumn (summer is extremely hot).",
+   "time_nl": "Schemering langs rietkragen en rivierarmen.",
+   "time_en": "Dusk along reed edges and river channels.",
+   "trip_nl": "Bezoek met vergunning van het reservaat; puur avontuur.",
+   "trip_en": "Visit with a reserve permit; pure adventure.",
+   "sources": [
+    17,
+    1
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Herken hem aan de lange poten, de effen zand- tot grijsbruine vacht, de grote oren met kleine zwarte pluimpjes en de korte staart met donkere ringen en een zwarte punt.",
+  "Zoek langs randen: rietkragen, plassen, suikerriet, geoogste akkers en de overgang van grasland naar struweel.",
+  "In India en Sri Lanka loont spotlighten: kijk naar laag oogschijnsel in akkers en ruigte, vaak in de eerste uren na het donker.",
+  "In de Indiase winter jaagt hij vaak ook overdag; ga in Velavadar en Kutch vroeg op pad.",
+  "Luister in de paartijd (in de Kaukasus januari tot april) naar het luide roepen van de katers.",
+  "Let op hybriden met huiskatten; die komen onder meer in Sri Lanka en Egypte voor. Een echte moeraskat heeft lange poten en een korte staart.",
+  "In Europa en de Kaukasus heb je meer kans op sporen in modder of sneeuw langs rietkragen, of op een foto met een cameraval."
+ ],
+ "tips_en": [
+  "Recognise it by its long legs, plain sandy to grey-brown coat, big ears with small black tufts and a short tail with dark rings and a black tip.",
+  "Search edges: reedbeds, pools, sugarcane, harvested fields and the transition from grassland to scrub.",
+  "In India and Sri Lanka spotlighting pays off: look for low eyeshine in fields and scrub, often in the first hours after dark.",
+  "In the Indian winter it often hunts by day too; head out early at Velavadar and in Kutch.",
+  "In the mating season (January to April in the Caucasus) listen for the loud calls of the males.",
+  "Watch out for hybrids with domestic cats, found for example in Sri Lanka and Egypt. A true jungle cat has long legs and a short tail.",
+  "In Europe and the Caucasus you are more likely to find tracks in mud or snow along reedbeds, or a camera-trap photo."
+ ],
+ "threats_nl": [
+  "Verlies van wetlands, rietlanden en oeverbossen door drooglegging, dammen, irrigatie en verstedelijking.",
+  "Vervolging door boeren vanwege kippenroof, vaak met gif.",
+  "Niet-selectieve strikken en vallen, en illegale jacht voor de vacht.",
+  "Verkeersslachtoffers, bijvoorbeeld langs de snelweg Bakoe–Tbilisi.",
+  "Vermenging met huiskatten."
+ ],
+ "threats_en": [
+  "Loss of wetlands, reedbeds and riverine forest to drainage, dams, irrigation and urbanisation.",
+  "Persecution by farmers over poultry losses, often with poison.",
+  "Non-selective snares and traps, and illegal hunting for fur.",
+  "Road kills, for example along the Baku–Tbilisi highway.",
+  "Hybridisation with domestic cats."
+ ],
+ "status_note_nl": "Wereldwijd staat de moeraskat als Niet bedreigd (Least Concern) op de Rode Lijst van de IUCN (2016). In de Kaukasus en Europa is hij sinds de jaren zestig sterk achteruitgegaan en staat hij in de Rode Boeken van Rusland, Azerbeidzjan, Armenië en Georgië.",
+ "status_note_en": "Globally the jungle cat is listed as Least Concern on the IUCN Red List (2016). In the Caucasus and Europe it has declined sharply since the 1960s and is listed in the Red Data Books of Russia, Azerbaijan, Armenia and Georgia.",
+ "sources": [
+  {
+   "id": 1,
+   "title": "Jungle cat – species account (IUCN SSC Cat Specialist Group)",
+   "url": "https://www.catsg.org/living-species-junglecat"
+  },
+  {
+   "id": 2,
+   "title": "Felis chaus – IUCN Red List assessment (Gray et al., 2016)",
+   "url": "https://doi.org/10.2305/IUCN.UK.2016-2.RLTS.T8540A50651463.en"
+  },
+  {
+   "id": 3,
+   "title": "Spatial distribution and population of the jungle cat in the Republic of Dagestan (Yarovenko, 2014)",
+   "url": "https://www.rusmam.ru/static/literature/cc/7a/cc7a96a79beb8b378944788ad7b3e78d.pdf"
+  },
+  {
+   "id": 4,
+   "title": "Records of the jungle cat in Astrakhan Biosphere Reserve, Volga delta (Strelkov, Mordovsky Zapovednik no. 11, 2016)",
+   "url": "https://rusmam.ru/static/literature/cc/6e/cc6eeacd67ebcc83bc3c5221701bcf75.pdf"
+  },
+  {
+   "id": 5,
+   "title": "New data on the status of the jungle cat in Azerbaijan (Spassov et al., Historia naturalis bulgarica, 2021)",
+   "url": "https://www.nmnhs.com/historia-naturalis-bulgarica/article.php?id=000454000422021"
+  },
+  {
+   "id": 6,
+   "title": "Conservation project for Caucasian jungle cat and wildcat in Samursky National Park, Dagestan (Retail.ru, 2025)",
+   "url": "https://www.retail.ru/news/magnit-pomozhet-sokhranit-kamyshovogo-i-lesnogo-kavkazskikh-kotov-8-avgusta-2025-267673/"
+  },
+  {
+   "id": 7,
+   "title": "My Big Cat Year – India trip report, March–April 2026 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2026/04/Trip-Report-India-270326-to-290426.pdf"
+  },
+  {
+   "id": 8,
+   "title": "India trip report, November 2022 – Gir, Velavadar, Little Rann of Kutch, Kanha (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2023/10/India.pdf"
+  },
+  {
+   "id": 9,
+   "title": "Cats from East to West – India trip report 2023, incl. Kutch/Banni (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2023/06/Tripreport_India_2023_JVG.pdf"
+  },
+  {
+   "id": 10,
+   "title": "Tigers of India – trip report Kanha & Bandhavgarh, Feb–Mar 2024 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/06/Trip_Report-TigersofIndia_2024.pdf"
+  },
+  {
+   "id": 11,
+   "title": "Sri Lanka small cats and more, March 2024 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/04/Sri-Lanka-small-cats-and-more-March-2024.pdf"
+  },
+  {
+   "id": 12,
+   "title": "Sri Lanka trip report 2026 – Sigiriya and Wilpattu (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2026/04/Sri-Lanka-2026-5.pdf"
+  },
+  {
+   "id": 13,
+   "title": "Israel – site information and visitor notes (mammalwatching.com, 2016–2025)",
+   "url": "https://mammalwatching.com/?p=26734"
+  },
+  {
+   "id": 14,
+   "title": "Israel Big Day – trip report incl. Hula Valley (mammalwatching.com, 2025)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2025/08/ISRAEL-BIG-DAY-1-1.pdf"
+  },
+  {
+   "id": 15,
+   "title": "Opportunistic records of jungle cat and activity pattern in Koshi Tappu Wildlife Reserve, Nepal (Mishra et al., Nepalese Journal of Zoology, 2020)",
+   "url": "https://www.nepjol.info/index.php/njz/article/view/30673"
+  },
+  {
+   "id": 16,
+   "title": "Endangered species: Egypt's wild cats (Egypt Independent, 2011)",
+   "url": "https://www.egyptindependent.com/endangered-species-egypts-wild-cats/"
+  },
+  {
+   "id": 17,
+   "title": "Tigrovaya Balka Nature Reserve – fauna overview (CABAR.asia)",
+   "url": "https://cabar.asia/?p=62870"
+  }
+ ]
+}

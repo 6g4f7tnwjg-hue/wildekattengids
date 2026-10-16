@@ -1,0 +1,238 @@
+{
+ "no": 17,
+ "intro_nl": "Het heeft een etmaal gegoten in de dalen ten noorden van Caxias do Sul. Dan breekt de lucht open, en om tien uur 's ochtends steekt een kleine, donkere kat met een korte staart de bosweg over. Een paar tellen, meer niet. Voor de spotter in die auto was het het hoogtepunt van de reis, en een van de weinige gedocumenteerde waarnemingen van deze soort door een reiziger. Kans: 1 – een kwestie van veel geluk.",
+ "intro_en": "It has poured for a full day in the valleys north of Caxias do Sul. Then the sky breaks, and at ten in the morning a small, dark cat with a short tail crosses the forest road. A few seconds, nothing more. For the spotter in that car it was the highlight of the trip, and one of the very few documented sightings of this species by a traveller. Chance: 1 – a matter of great luck.",
+ "spots": [
+  {
+   "id": "br-serra-gaucha-caxias",
+   "name_nl": "Dalen ten noorden van Caxias do Sul",
+   "name_en": "Valleys north of Caxias do Sul",
+   "area_nl": "Atlantisch bos in de dalen van de Serra Gaúcha, Rio Grande do Sul",
+   "area_en": "Atlantic forest in the valleys of the Serra Gaúcha, Rio Grande do Sul",
+   "country_nl": "Brazilië",
+   "country_en": "Brazil",
+   "cont": "sam",
+   "lat": -29.0,
+   "lon": -51.1,
+   "score": 1,
+   "why_nl": "Hier vond de enige zichtwaarneming door een mammalwatcher die ik kon terugvinden (2022): één kat die overdag een bosweg overstak, tijdens een reis die speciaal op deze soort gericht was.",
+   "why_en": "This is where the only sighting by a mammal watcher I could trace took place (2022): a single cat crossing a forest road by day, on a trip aimed specifically at this species.",
+   "season_nl": "Het hele jaar; in de koele maanden lijkt de soort vaker overdag actief.",
+   "season_en": "Year-round; in the cool months the species seems more active by day.",
+   "time_nl": "Nacht en schemering, maar ook overdag, zeker na lange regen of op koude dagen.",
+   "time_en": "Night and dusk, but also by day, especially after long rain or on cold days.",
+   "trip_nl": "Zelf rijden of met een lokale natuurgids over rustige bosweggen, overdag verkennen en 's nachts spotlighten; enkele dagen tot een week.",
+   "trip_en": "Self-drive or with a local naturalist guide along quiet forest roads, scouting by day and spotlighting at night; a few days to a week.",
+   "sources": [
+    2
+   ]
+  },
+  {
+   "id": "br-planalto-serrano-sc",
+   "name_nl": "Araucariahoogland van Santa Catarina",
+   "name_en": "Araucaria highlands of Santa Catarina",
+   "area_nl": "Araucariabossen en graslanden van het Planalto Serrano, Santa Catarina",
+   "area_en": "Araucaria forest and grasslands of the Planalto Serrano, Santa Catarina",
+   "country_nl": "Brazilië",
+   "country_en": "Brazil",
+   "cont": "sam",
+   "lat": -28.0,
+   "lon": -49.9,
+   "score": 1,
+   "why_nl": "Santa Catarina geldt als bolwerk van de soort, en in een privaat natuurreservaat in dit hoogland leverden cameravallen in twee jaar 108 registraties op, maar zichtwaarnemingen blijven toeval.",
+   "why_en": "Santa Catarina is considered a stronghold for the species, and in a private nature reserve in these highlands camera traps logged 108 records in two years, but sightings remain a matter of chance.",
+   "season_nl": "Juni tot september (winter): dan valt de araucarianotenoogst en piekt de activiteit van de katten.",
+   "season_en": "June to September (winter), when the araucaria nut harvest falls and cat activity peaks.",
+   "time_nl": "Vooral nacht en schemering; op koude dagen ook overdag.",
+   "time_en": "Mainly night and dusk; on cold days also by day.",
+   "trip_nl": "Rondreis met eigen auto door de hooglanden rond São Joaquim en Urubici, met nachtelijke ritten over rustige onverharde wegen; minimaal enkele nachten.",
+   "trip_en": "Self-drive tour through the highlands around São Joaquim and Urubici, with night drives on quiet dirt roads; at least several nights.",
+   "sources": [
+    4,
+    1
+   ]
+  },
+  {
+   "id": "ar-iguazu",
+   "name_nl": "Iguazú en Andresito",
+   "name_en": "Iguazú and Andresito",
+   "area_nl": "Noord-Misiones: Nationaal Park Iguazú en het platteland rond Comandante Andresito",
+   "area_en": "Northern Misiones: Iguazú National Park and the countryside around Comandante Andresito",
+   "country_nl": "Argentinië",
+   "country_en": "Argentina",
+   "cont": "sam",
+   "lat": -25.7,
+   "lon": -54.2,
+   "score": 1,
+   "why_nl": "In Misiones worden af en toe tirica's gezien en gefilmd, onder meer 's nachts op een landweg bij Andresito (januari 2026) en overdag in een strook bos op een boerenerf, maar het blijven losse toevalstreffers.",
+   "why_en": "Tiger cats are occasionally seen and filmed in Misiones, including at night on a country road near Andresito (January 2026) and by day in a strip of forest on a farm, but these remain isolated lucky encounters.",
+   "season_nl": "Het hele jaar.",
+   "season_en": "Year-round.",
+   "time_nl": "Vooral 's nachts, langs bosranden en rustige landwegen.",
+   "time_en": "Mainly at night, along forest edges and quiet country roads.",
+   "trip_nl": "Combineer een bezoek aan de watervallen met nachtritten met lokale gids over landwegen rond Andresito; 3 à 4 nachten.",
+   "trip_en": "Combine a visit to the falls with night drives with a local guide along country roads around Andresito; 3 to 4 nights.",
+   "sources": [
+    6,
+    7
+   ]
+  },
+  {
+   "id": "br-porto-alegre-lami-itapua",
+   "name_nl": "Lami en Itapuã bij Porto Alegre",
+   "name_en": "Lami and Itapuã near Porto Alegre",
+   "area_nl": "Reserva Biológica do Lami en Parque Estadual de Itapuã, Porto Alegre e.o. (Rio Grande do Sul)",
+   "area_en": "Lami Biological Reserve and Itapuã State Park, Porto Alegre area (Rio Grande do Sul)",
+   "country_nl": "Brazilië",
+   "country_en": "Brazil",
+   "cont": "sam",
+   "lat": -30.3,
+   "lon": -51.1,
+   "score": 1,
+   "why_nl": "In Lami was de tijgerkat de enige wilde kat op de cameravallen (25 registraties in een jaar) en in Itapuã komt hij ook voor, maar beide gebieden zijn na zonsondergang gesloten voor bezoekers.",
+   "why_en": "At Lami the tiger cat was the only wild cat on the camera traps (25 records in a year), and it also occurs at Itapuã, but both areas are closed to visitors after dark.",
+   "season_nl": "Augustus tot november gaven de meeste cameraregistraties.",
+   "season_en": "August to November produced the most camera records.",
+   "time_nl": "Zowel dag als nacht; in de winter vaker overdag.",
+   "time_en": "Both day and night; more often by day in winter.",
+   "trip_nl": "Dagbezoek en wandelingen in het park; 's nachts spotlighten is in Itapuã niet toegestaan.",
+   "trip_en": "Day visits and walks in the park; spotlighting at night is not permitted at Itapuã.",
+   "sources": [
+    3,
+    2
+   ]
+  },
+  {
+   "id": "br-guaraquecaba-salto-morato",
+   "name_nl": "Salto Morato (Guaraqueçaba)",
+   "name_en": "Salto Morato (Guaraqueçaba)",
+   "area_nl": "Reserva Natural Salto Morato, Atlantisch kustbos van Guaraqueçaba (Paraná)",
+   "area_en": "Salto Morato Nature Reserve, coastal Atlantic forest of Guaraqueçaba (Paraná)",
+   "country_nl": "Brazilië",
+   "country_en": "Brazil",
+   "cont": "sam",
+   "lat": -25.2,
+   "lon": -48.3,
+   "score": 1,
+   "why_nl": "Cameravallen legden hier in 2022 een zwarte moederpoes met jong vast, wat laat zien dat de soort er leeft, maar zien doe je hem vrijwel alleen op beelden.",
+   "why_en": "Camera traps here recorded a black mother with her kitten in 2022, showing the species lives here, but you will almost only ever see it on footage.",
+   "season_nl": "Het hele jaar; de wintermaanden zijn droger.",
+   "season_en": "Year-round; the winter months are drier.",
+   "time_nl": "Vooral nacht en schemering.",
+   "time_en": "Mainly night and dusk.",
+   "trip_nl": "Dagbezoek aan het reservaat met wandelpaden; combineer met vogels en primaten in het kustbos van Paraná.",
+   "trip_en": "Day visit to the reserve's trails; combine with birds and primates in Paraná's coastal forest.",
+   "sources": [
+    5
+   ]
+  },
+  {
+   "id": "py-mbaracayu",
+   "name_nl": "Bosque Mbaracayú",
+   "name_en": "Mbaracayú Forest",
+   "area_nl": "Reserva Natural del Bosque Mbaracayú, Canindeyú",
+   "area_en": "Mbaracayú Forest Nature Reserve, Canindeyú",
+   "country_nl": "Paraguay",
+   "country_en": "Paraguay",
+   "cont": "sam",
+   "lat": -24.1,
+   "lon": -55.4,
+   "score": 1,
+   "why_nl": "Een reisgroep kreeg hier in 2015 een tijgerkat op een wildcamera langs een bosweg, maar zag hem zelf niet.",
+   "why_en": "A travelling group got a tiger cat on a trail camera along a forest road here in 2015, but did not see it themselves.",
+   "season_nl": "Het hele jaar; april tot september is koeler en droger.",
+   "season_en": "Year-round; April to September is cooler and drier.",
+   "time_nl": "Nacht en schemering.",
+   "time_en": "Night and dusk.",
+   "trip_nl": "Verblijf in het reservaat met nachtwandelingen en eigen wildcamera's langs bospaden; 3 à 4 nachten.",
+   "trip_en": "Stay in the reserve with night walks and your own trail cameras along forest tracks; 3 to 4 nights.",
+   "sources": [
+    8
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Reken niet op een gerichte waarneming: ook onderzoekers kennen de soort vooral van cameravallen.",
+  "Paradoxaal genoeg zijn grote, ongestoorde parken niet altijd beter: waar ocelotten talrijk zijn, is de tijgerkat schaars. Bosranden en kleinere bosgebieden kunnen meer opleveren.",
+  "Let op koude of natte dagen: dan is de soort vaker overdag actief en zie je hem soms een weg oversteken.",
+  "Rijd 's nachts langzaam over rustige bosweggen en scan bermen met een lamp of warmtebeeldkijker; de kat loopt meestal over de grond.",
+  "Zwarte (melanistische) dieren komen relatief vaak voor; een kleine donkere kat in het Atlantisch bos kan dus best deze soort zijn.",
+  "Zet met toestemming een eigen wildcamera langs paden: de kans op een beeld is veel groter dan op een waarneming."
+ ],
+ "tips_en": [
+  "Do not count on a targeted sighting: even researchers know the species mainly from camera traps.",
+  "Paradoxically, large undisturbed parks are not always better: where ocelots are common, tiger cats are scarce. Forest edges and smaller woodlands may pay off more.",
+  "Watch out for cold or wet days: the species is then more often active by day and sometimes crosses a road.",
+  "Drive slowly at night along quiet forest roads and scan verges with a lamp or thermal scope; the cat mostly moves on the ground.",
+  "Black (melanistic) animals are relatively common, so a small dark cat in the Atlantic forest may well be this species.",
+  "With permission, set your own trail camera along tracks: the odds of an image are much better than of a sighting."
+ ],
+ "threats_nl": [
+  "Verlies en versnippering van het Atlantisch bos",
+  "Vervolging na verlies van kippen en verkeersslachtoffers",
+  "Concurrentie, predatie en ziektes door loslopende honden en huiskatten",
+  "Illegale jacht en vangst voor de handel in huisdieren",
+  "Klimaatverandering, die het leefgebied verder kan inkrimpen"
+ ],
+ "threats_en": [
+  "Loss and fragmentation of the Atlantic forest",
+  "Persecution after poultry losses, and road deaths",
+  "Competition, predation and disease from free-ranging dogs and domestic cats",
+  "Illegal hunting and capture for the pet trade",
+  "Climate change, which may shrink its range further"
+ ],
+ "status_note_nl": "De IUCN beschouwt de soort als Kwetsbaar met een dalende trend; in Santa Catarina nam de populatie in acht jaar met bijna de helft af. De wereldpopulatie wordt geschat op ruim 6.000 volwassen dieren.",
+ "status_note_en": "The IUCN considers the species Vulnerable with a declining trend; in Santa Catarina the population fell by almost half in eight years. The global population is estimated at just over 6,000 mature individuals.",
+ "sources": [
+  {
+   "id": 1,
+   "title": "Southern tiger cat – species account (IUCN SSC Cat Specialist Group)",
+   "url": "https://www.catsg.org/living-species-southerntigercat"
+  },
+  {
+   "id": 2,
+   "title": "Brazil 2022 – trip report focused on margay and southern tiger cat (mammalwatching.com, 2022)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/AJ-Brazil-2022-compressed.pdf"
+  },
+  {
+   "id": 3,
+   "title": "Daily activity patterns and occurrence of Leopardus guttulus in Lami Biological Reserve (Linck et al., Iheringia Série Zoologia, 2021)",
+   "url": "https://scielo.br/j/isz/a/B9L7FqtX5kRgXgMQJFxDbst/?lang=en"
+  },
+  {
+   "id": 4,
+   "title": "Daily and seasonal activity of felids in the Papagaios-de-Altitude private protected area, Santa Catarina (Alberti et al., Iheringia Série Zoologia, 2023)",
+   "url": "https://www.scielo.br/j/isz/a/9JJG86ddBznKb8tSpX8KbLx/?lang=en"
+  },
+  {
+   "id": 5,
+   "title": "Melanistic southern tiger cat and cub recorded at Salto Morato reserve, Guaraqueçaba (Itatiaia news, 2023)",
+   "url": "https://www.itatiaia.com.br/brasil/felino-selvagem-raro-e-flagrado-em-reserva-da-mata-atlantica-veja-imagem/"
+  },
+  {
+   "id": 6,
+   "title": "Tirica filmed on a rural road in Comandante Andresito, Misiones (Canal 12 Misiones, 2026)",
+   "url": "https://www.canal12misiones.com/?p=625896"
+  },
+  {
+   "id": 7,
+   "title": "Tirica seen by day in native forest on a Misiones farm, reported by Red Yaguareté (Canal 12 Misiones, 2023)",
+   "url": "https://www.canal12misiones.com/?p=190422"
+  },
+  {
+   "id": 8,
+   "title": "Paraguay trip report, April 2015 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2017/01/RF-Paraguay-2015.pdf"
+  },
+  {
+   "id": 9,
+   "title": "Molecular data reveal a cryptic species of Neotropical wild cat (Trigo et al., Current Biology, 2013 – ScienceDaily summary)",
+   "url": "https://sciencedaily.com/releases/2013/11/131127122411.htm"
+  },
+  {
+   "id": 10,
+   "title": "Southern tiger cat – species page (Wild Cat Conservation)",
+   "url": "https://wildcatconservation.org/wild-cats/south-america/southern-tiger-cat/"
+  }
+ ]
+}

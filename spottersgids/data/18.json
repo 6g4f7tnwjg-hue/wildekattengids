@@ -1,0 +1,219 @@
+{
+ "no": 18,
+ "intro_nl": "Het is tien uur 's avonds op een smalle bergweg in het nevelwoud boven Quito. De lamp glijdt langs mossige stammen en natte varens. Dan klinkt er een schel alarmgeluid: een olingo in een boom zit iets op de weg uit te schelden. In de lichtbundel staat een kat die nauwelijks groter is dan een huiskat, bedekt met kleine rozetten. Een tel later is de wolkentijgerkat weer in de mist verdwenen. Kans: 3 – met een paar avonden lampen heb je een redelijke kans.",
+ "intro_en": "It is ten at night on a narrow mountain road in the cloud forest above Quito. Your torch slides along mossy trunks and dripping ferns. Then a shrill alarm call rings out: an olinguito in a tree is scolding something on the road. In the beam stands a cat barely bigger than a house cat, covered in small rosettes. A second later the clouded tiger cat has vanished back into the mist. Chance: 3 – with a few evenings of spotlighting you have a reasonable chance.",
+ "spots": [
+  {
+   "id": "ec-tandayapa-mindo",
+   "name_nl": "Tandayapa en Mindo",
+   "name_en": "Tandayapa and Mindo",
+   "area_nl": "Nevelwoud van de Tandayapa-vallei en omgeving Mindo, westhelling van de Andes (Pichincha)",
+   "area_en": "Cloud forest of the Tandayapa Valley and the Mindo area, western Andean slope (Pichincha)",
+   "country_nl": "Ecuador",
+   "country_en": "Ecuador",
+   "cont": "sam",
+   "lat": 0.0,
+   "lon": -78.7,
+   "score": 3,
+   "why_nl": "Een kattenliefhebber zag in juli 2023 twee keer een wolkentijgerkat in vier nachtelijke ritten met een lamp langs de Tandayapa-weg (zonder lokvoer), en ook anderen melden hier af en toe katten, soms overdag rustend.",
+   "why_en": "A cat enthusiast saw a clouded tiger cat twice in four night drives with a spotlight along the Tandayapa road in July 2023 (no bait), and others occasionally report cats here, sometimes resting by day.",
+   "season_nl": "Hele jaar; in de drogere maanden (ongeveer juni–september) is het minder nat en lijken waarnemingen vaker. In de regentijd verdwijnen katten soms maandenlang uit beeld.",
+   "season_en": "Year-round; in the drier months (roughly June–September) it is less wet and sightings seem more frequent. In the rainy season cats sometimes go unseen for months.",
+   "time_nl": "Avond en nacht (de waarnemingen waren rond 22.00 uur), plus vroege ochtend.",
+   "time_en": "Evening and night (the sightings were around 10 pm), plus early morning.",
+   "trip_nl": "Nachtelijke ritten en wandelingen met een lamp langs rustige wegen in het nevelwoud, met een lokale natuurgids, 3 à 4 avonden; uitvalsbasis Mindo of een verblijf in de vallei. Combineer met olingo en vogels.",
+   "trip_en": "Night drives and walks with a spotlight along quiet cloud-forest roads, with a local nature guide, 3 to 4 evenings; base yourself in Mindo or at a stay in the valley. Combine with olinguito and birds.",
+   "sources": [
+    5,
+    6
+   ]
+  },
+  {
+   "id": "cr-talamanca-cerro-de-la-muerte",
+   "name_nl": "Talamanca – Cerro de la Muerte en Savegre",
+   "name_en": "Talamanca – Cerro de la Muerte and Savegre",
+   "area_nl": "Nevelwoud en páramo van de Cordillera de Talamanca rond Cerro de la Muerte, San Gerardo de Dota en de Savegre-vallei (o.a. Los Quetzales National Park)",
+   "area_en": "Cloud forest and páramo of the Cordillera de Talamanca around Cerro de la Muerte, San Gerardo de Dota and the Savegre Valley (including Los Quetzales National Park)",
+   "country_nl": "Costa Rica",
+   "country_en": "Costa Rica",
+   "cont": "sam",
+   "lat": 9.6,
+   "lon": -83.8,
+   "score": 1,
+   "why_nl": "Talamanca is het bolwerk van de Midden-Amerikaanse wolkentijgerkat en hij staat geregeld op cameravallen in de Savegre-vallei, maar in de reisverslagen van mammalwatchers vond ik geen recente waarnemingen hier.",
+   "why_en": "Talamanca is the stronghold of the Central American clouded tiger cat and it regularly shows up on camera traps in the Savegre Valley, but I found no recent sightings here in mammalwatchers' trip reports.",
+   "season_nl": "Droge tijd, december t/m april.",
+   "season_en": "Dry season, December to April.",
+   "time_nl": "Nacht en schemering.",
+   "time_en": "Night and dusk.",
+   "trip_nl": "Nachtritten en -wandelingen met een lamp vanuit San Gerardo de Dota, bijvoorbeeld op de wegen richting Providencia, 2 à 3 nachten; combineer met quetzals overdag. Rij voorzichtig op de Pan-Americana: daar sterven jaarlijks katten in het verkeer.",
+   "trip_en": "Night drives and walks with a spotlight from San Gerardo de Dota, for example on the roads towards Providencia, 2 to 3 nights; combine with quetzals by day. Drive carefully on the Pan-American Highway: cats die there in traffic every year.",
+   "sources": [
+    4,
+    11,
+    12
+   ]
+  },
+  {
+   "id": "ec-cosanga-eastern-slope",
+   "name_nl": "Oostelijke Andeshelling bij Cosanga",
+   "name_en": "Eastern Andean slope near Cosanga",
+   "area_nl": "Nevelwoud rond Cosanga aan de oostkant van de Andes, aan de rand van Cayambe-Coca en Antisana (Napo)",
+   "area_en": "Cloud forest around Cosanga on the eastern side of the Andes, on the edge of Cayambe-Coca and Antisana (Napo)",
+   "country_nl": "Ecuador",
+   "country_en": "Ecuador",
+   "cont": "sam",
+   "lat": -0.6,
+   "lon": -77.9,
+   "score": 1,
+   "why_nl": "De kat wordt hier af en toe gezien op wegen en paden, maar een bezoeker die er in 2023 vijf nachten gericht naar zocht, vond niets.",
+   "why_en": "The cat is seen here now and then on roads and trails, but a visitor who searched specifically for five nights in 2023 found nothing.",
+   "season_nl": "Hele jaar; het is hier vaak nat.",
+   "season_en": "Year-round; it is often wet here.",
+   "time_nl": "Nacht.",
+   "time_en": "Night.",
+   "trip_nl": "Nachtwandelingen en ritten met een lamp vanuit een verblijf in het nevelwoud, 3 à 5 nachten; combineer met brilbeer en bergtapir rond Papallacta.",
+   "trip_en": "Night walks and drives with a spotlight from a cloud-forest stay, 3 to 5 nights; combine with spectacled bear and mountain tapir around Papallacta.",
+   "sources": [
+    5
+   ]
+  },
+  {
+   "id": "pe-manu-cloud-forest",
+   "name_nl": "Nevelwoud van Manu",
+   "name_en": "Manu cloud forest",
+   "area_nl": "Nevelwoud langs de Manu-weg in de Kosñipata-vallei, Nationaal Park Manu en bufferzone (Cusco)",
+   "area_en": "Cloud forest along the Manu Road in the Kosñipata Valley, Manu National Park and buffer zone (Cusco)",
+   "country_nl": "Peru",
+   "country_en": "Peru",
+   "cont": "sam",
+   "lat": -13.1,
+   "lon": -71.6,
+   "score": 1,
+   "why_nl": "Het Peruaanse nevelwoud hoort bij het verspreidingsgebied, maar ik vond geen enkele gepubliceerde waarneming langs de Manu-weg; hier is het echt een kwestie van geluk.",
+   "why_en": "Peru's cloud forest lies within the range, but I found no published sighting along the Manu Road at all; here it really is a matter of luck.",
+   "season_nl": "Droge tijd, mei t/m september.",
+   "season_en": "Dry season, May to September.",
+   "time_nl": "Nacht.",
+   "time_en": "Night.",
+   "trip_nl": "Nachtwandelingen met een lamp vanuit verblijven langs de Manu-weg (het traject rond San Pedro is goed voor nachtdieren), 2 à 3 nachten.",
+   "trip_en": "Night walks with a spotlight from lodgings along the Manu Road (the stretch around San Pedro is good for nocturnal mammals), 2 to 3 nights.",
+   "sources": [
+    2,
+    3,
+    13
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Zoek met een sterke lamp naar oogreflecties langs rustige bergwegen in het nevelwoud, tussen ongeveer 1500 en 3000 m. Wegen geven meer zicht dan smalle, modderige paden.",
+  "Mijd volle maan: de soort lijkt fel maanlicht te ontwijken en is vooral actief na zonsondergang en voor zonsopkomst.",
+  "Luister naar alarmroepen. In Ecuador verraadde een scheldende olingo een kat op de weg.",
+  "Reken op zwarte katten. In Costa Rica is ongeveer een derde van de vastgelegde dieren zwart, in Ecuador bijna een vijfde.",
+  "Herkenning: let op het kleine formaat, de vele kleine vlekjes en de kleine oren; zo onderscheid je hem van de margay en de ocelot.",
+  "Vraag lokale gidsen naar recente waarnemingen en meld vooraf dat je naar deze kat wilt zoeken; overdag rustende katten worden soms toevallig gevonden.",
+  "Gebruik geen lokvoer; zoek de kat op zijn eigen voorwaarden."
+ ],
+ "tips_en": [
+  "Use a strong torch to look for eyeshine along quiet mountain roads in the cloud forest, between roughly 1,500 and 3,000 m. Roads give better views than narrow, muddy trails.",
+  "Avoid the full moon: the species seems to avoid bright moonlight and is most active after sunset and before sunrise.",
+  "Listen for alarm calls. In Ecuador a scolding olinguito gave away a cat on the road.",
+  "Expect black cats. In Costa Rica about a third of recorded animals are black, in Ecuador almost a fifth.",
+  "Identification: look for the small size, the many small spots and the small ears; that is how you tell it from the margay and the ocelot.",
+  "Ask local guides about recent sightings and tell them in advance you want to look for this cat; cats resting by day are sometimes found by chance.",
+  "Do not use bait; look for the cat on its own terms."
+ ],
+ "threats_nl": [
+  "Ontbossing en versnippering van het nevelwoud.",
+  "Klimaatverandering, die het koele nevelwoud bergopwaarts drukt; het verspreidingsgebied is naar schatting al met de helft gekrompen.",
+  "Verkeer: in Costa Rica sterven er naar schatting drie per jaar op de Pan-Americana.",
+  "Honden en katten: aanvallen en overdracht van ziektes.",
+  "Vergeldingsdoding na roof van kippen, en stroperij."
+ ],
+ "threats_en": [
+  "Deforestation and fragmentation of cloud forest.",
+  "Climate change, pushing the cool cloud forest upslope; the range is estimated to have already shrunk by half.",
+  "Traffic: in Costa Rica an estimated three a year die on the Pan-American Highway.",
+  "Dogs and cats: attacks and disease transmission.",
+  "Retaliatory killing after poultry losses, and poaching."
+ ],
+ "status_note_nl": "De wolkentijgerkat is pas in 2024 als aparte soort erkend en heeft nog geen eigen IUCN-beoordeling; hij valt nog onder de tijgerkat (L. tigrinus, kwetsbaar) en experts denken dat hij mogelijk bedreigd is (Mongabay, 2024). In Costa Rica geldt de ondersoort oncilla als de meest bedreigde wilde kat van Midden-Amerika (Ramírez-Fernández et al., 2024).",
+ "status_note_en": "The clouded tiger cat was only recognised as a separate species in 2024 and has no IUCN assessment of its own yet; it still falls under the tiger cat (L. tigrinus, Vulnerable), and experts think it may qualify as Endangered (Mongabay, 2024). In Costa Rica the subspecies oncilla is considered the most endangered wild cat in Mesoamerica (Ramírez-Fernández et al., 2024).",
+ "sources": [
+  {
+   "id": 1,
+   "title": "de Oliveira et al. – Species delimitation of tiger cats, description of Leopardus pardinoides (Scientific Reports, 2024)",
+   "url": "https://www.nature.com/articles/s41598-024-52379-8"
+  },
+  {
+   "id": 2,
+   "title": "A tiger cat gains new species designation, but conservation challenges remain (Mongabay, 2024)",
+   "url": "https://news.mongabay.com/2024/04/a-tiger-cat-gains-new-species-designation-but-conservation-challenges-remain/"
+  },
+  {
+   "id": 3,
+   "title": "Clouded tiger cat (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Clouded_tiger_cat"
+  },
+  {
+   "id": 4,
+   "title": "Ramírez-Fernández et al. – Distribution and habitat use of the Central American clouded oncilla in Costa Rica (PLOS ONE, 2024)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11407673/"
+  },
+  {
+   "id": 5,
+   "title": "Ecuador trip report, July 2023 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2023/10/Ecuador.pdf"
+  },
+  {
+   "id": 6,
+   "title": "Ecuador trip report March 2022, with comments on oncilla sightings (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/?p=26668"
+  },
+  {
+   "id": 7,
+   "title": "Three days in Panama 2026 – clouded oncilla and more (mammalwatching.com, 2026)",
+   "url": "https://www.mammalwatching.com/community-post/three-days-in-panama-2026-clouded-oncilla-and-more/"
+  },
+  {
+   "id": 8,
+   "title": "Melanistic oncilla in Panama, February 2020 (mammalwatching.com)",
+   "url": "https://mammalwatching.com/?p=21321"
+  },
+  {
+   "id": 9,
+   "title": "Northern oncilla, Colombia (mammalwatching.com, 2023)",
+   "url": "https://www.mammalwatching.com/community-post/northern-oncilla/"
+  },
+  {
+   "id": 10,
+   "title": "Northern oncilla still showing, Colombia (mammalwatching.com, 2025)",
+   "url": "https://www.mammalwatching.com/community-post/northern-oncilla-still-showing-at-mirador-el-roble-colombia/"
+  },
+  {
+   "id": 11,
+   "title": "The sixth cat – tiger cat on camera traps in Talamanca (Re:wild, 2019)",
+   "url": "https://www.rewild.org/blog/the-sixth-cat"
+  },
+  {
+   "id": 12,
+   "title": "Trip report Costa Rica 2018, Savegre Valley (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2016/08/Report_CostaRica2018.pdf"
+  },
+  {
+   "id": 13,
+   "title": "Tips for a visit to Peru, Cusco region and Manu Road (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/community-post/tips-for-a-visit-to-peru-cuzco-region/"
+  },
+  {
+   "id": 14,
+   "title": "Bird and mammal trip report Costa Rica 2019, oncilla near Arenal (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/RJ-Costa-Rica-2019.pdf"
+  },
+  {
+   "id": 15,
+   "title": "Wildcats from the Andes and Central America differ from those found in Brazil (Pesquisa FAPESP, 2024)",
+   "url": "https://revistapesquisa.fapesp.br/en/wildcats-from-the-andes-and-central-america-differ-to-those-found-in-brazil/"
+  }
+ ]
+}

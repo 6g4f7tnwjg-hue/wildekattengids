@@ -1,0 +1,430 @@
+{
+ "no": 28,
+ "intro_nl": "Een guanaco op de heuvelrug blijft staan en begint te hinniken, schel en zonder ophouden. Alle verrekijkers in de auto draaien dezelfde kant op. Daar, tussen de lage struiken, loopt een poema, rustig, alsof de hele steppe van haar is. Aan de oostkant van Torres del Paine is dit inmiddels de gewone gang van zaken: met een lokale spoorzoeker zien de meeste bezoekers in een paar dagen meerdere poema's. Elders in Amerika, van Canada tot Mexico, blijft hij een spook. Kans: 5 – in Patagonië ga je zelden met lege handen naar huis.",
+ "intro_en": "A guanaco on the ridge freezes and starts to bray, shrill and relentless. Every pair of binoculars in the car swings the same way. There, between the low shrubs, walks a puma, calmly, as if the whole steppe belongs to her. On the eastern side of Torres del Paine this has become routine: with a local tracker most visitors see several pumas in a few days. Elsewhere in the Americas, from Canada to Mexico, it remains a ghost. Chance: 5 – in Patagonia you rarely go home empty-handed.",
+ "spots": [
+  {
+   "id": "cl-torres-del-paine",
+   "name_nl": "Torres del Paine",
+   "name_en": "Torres del Paine",
+   "area_nl": "Oostzijde van Nationaal Park Torres del Paine en omliggende steppe, Magallanes",
+   "area_en": "Eastern side of Torres del Paine National Park and surrounding steppe, Magallanes",
+   "country_nl": "Chili",
+   "country_en": "Chile",
+   "cont": "sam",
+   "lat": -51.0,
+   "lon": -72.8,
+   "score": 5,
+   "why_nl": "Dit is de betrouwbaarste poemaplek ter wereld: groepen met lokale spoorzoekers zagen in 2022 elke volle dag meerdere poema's (minstens zestien per reis), en ook zelfrijders meldden 13 waarnemingen in 2,5 dag of een paartje vlak langs de weg.",
+   "why_en": "This is the most reliable puma site in the world: groups with local trackers saw several pumas every full day in 2022 (at least sixteen per trip), and self-drivers too reported 13 sightings in 2.5 days or a pair right next to the road.",
+   "season_nl": "Het hele jaar; de meeste recente verslagen komen uit het zuidelijke voorjaar en de zomer (oktober–januari), met jongen en veel guanacokalveren",
+   "season_en": "Year-round; most recent reports are from the southern spring and summer (October–January), with cubs and many guanaco calves",
+   "time_nl": "Rond zonsopkomst (in de zomer al rond 05.00 uur) en de laatste uren voor en na zonsondergang; overdag liggen ze vaak te rusten op hellingen",
+   "time_en": "Around sunrise (in summer as early as 05:00) and the last hours before and after sunset; by day they often rest on slopes",
+   "trip_nl": "Excursies met een lokale poemaspoorzoeker die via de radio meldt waar een kat ligt (deels op privéland ten oosten van het park), of zelf rijden en scannen langs de openbare wegen bij Laguna Amarga; reken op 3 à 5 dagen",
+   "trip_en": "Excursions with a local puma tracker who radios in when he finds a cat (partly on private land east of the park), or self-drive and scan along the public roads near Laguna Amarga; allow 3–5 days",
+   "sources": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ]
+  },
+  {
+   "id": "cl-patagonia-chacabuco",
+   "name_nl": "Parque Nacional Patagonia (Valle Chacabuco)",
+   "name_en": "Patagonia National Park (Chacabuco Valley)",
+   "area_nl": "Nationaal Park Patagonia, sector Valle Chacabuco, Aysén",
+   "area_en": "Patagonia National Park, Chacabuco Valley sector, Aysén",
+   "country_nl": "Chili",
+   "country_en": "Chile",
+   "cont": "sam",
+   "lat": -47.1,
+   "lon": -72.5,
+   "score": 3,
+   "why_nl": "In de vallei leven honderden guanaco's; zelfrijders zagen in 2023 vlak na zonsopkomst een moeder met drie jongen op de parkweg, en andere bezoekers hoorden van twee waarnemingen in enkele dagen, maar er zijn veel minder verslagen dan uit Torres del Paine.",
+   "why_en": "Hundreds of guanacos live in the valley; self-drivers in 2023 saw a mother with three cubs on the park road just after sunrise, and other visitors heard of two sightings within a few days, but there are far fewer reports than from Torres del Paine.",
+   "season_nl": "Zuidelijke lente en zomer (oktober–maart), als de parkwegen goed begaanbaar zijn",
+   "season_en": "Southern spring and summer (October–March), when the park roads are easy to drive",
+   "time_nl": "Vroeg in de ochtend, het eerste uur na zonsopkomst",
+   "time_en": "Early morning, the first hour after sunrise",
+   "trip_nl": "Zelf rijden over de parkweg door de vallei bij zonsopkomst, kamperen in het park; 2 à 3 dagen",
+   "trip_en": "Self-drive along the park road through the valley at sunrise, camping in the park; 2–3 days",
+   "sources": [
+    4,
+    6
+   ]
+  },
+  {
+   "id": "bo-kaa-iya",
+   "name_nl": "Kaa-Iya del Gran Chaco",
+   "name_en": "Kaa-Iya del Gran Chaco",
+   "area_nl": "Nationaal Park Kaa-Iya del Gran Chaco, Santa Cruz",
+   "area_en": "Kaa-Iya del Gran Chaco National Park, Santa Cruz",
+   "country_nl": "Bolivia",
+   "country_en": "Bolivia",
+   "cont": "sam",
+   "lat": -19.2,
+   "lon": -61.6,
+   "score": 3,
+   "why_nl": "In augustus 2024 liep een poema tijdens een ochtendrit voor de auto uit over de parkweg; een groep in 2025 miste hem, maar noemde de poema hier wel de vaakst geziene kat.",
+   "why_en": "In August 2024 a puma walked ahead of the car along the park road during a morning drive; a group in 2025 missed it, but still called the puma the most frequently seen cat here.",
+   "season_nl": "Droge tijd (ongeveer juni–oktober)",
+   "season_en": "Dry season (roughly June–October)",
+   "time_nl": "Ochtendritten tot het middaguur en avond- en nachtritten met lamp of warmtebeeldcamera",
+   "time_en": "Morning drives until noon plus evening and night drives with a spotlight or thermal scope",
+   "trip_nl": "Gespecialiseerde zoogdierreis met lokale gids vanuit Santa Cruz, met ritten (deels bovenop de auto) over de wegen in het park; 3 à 4 dagen in het park",
+   "trip_en": "Specialised mammal trip with a local guide from Santa Cruz, with drives (partly on the vehicle roof) along the roads in the park; 3–4 days in the park",
+   "sources": [
+    10,
+    11
+   ]
+  },
+  {
+   "id": "ar-monte-leon",
+   "name_nl": "Monte León",
+   "name_en": "Monte León",
+   "area_nl": "Nationaal Park Monte León, Santa Cruz",
+   "area_en": "Monte León National Park, Santa Cruz",
+   "country_nl": "Argentinië",
+   "country_en": "Argentina",
+   "cont": "sam",
+   "lat": -50.3,
+   "lon": -68.9,
+   "score": 2,
+   "why_nl": "Onderzoekers vonden hier met zenders en cameravallen de hoogste poemadichtheid ooit gemeten (circa 13 per 100 km²), rond een kolonie Magelhaenpinguïns, maar verslagen van gewone bezoekers die er een zagen zijn schaars.",
+   "why_en": "With collars and camera traps, researchers found the highest puma density ever measured here (about 13 per 100 km²), around a Magellanic penguin colony, but reports from ordinary visitors who saw one are scarce.",
+   "season_nl": "Oktober–april, als de pinguïnkolonie bezet is en de poema's zich daar ophouden",
+   "season_en": "October–April, when the penguin colony is occupied and pumas concentrate there",
+   "time_nl": "Schemering, vroeg in de ochtend en laat in de middag",
+   "time_en": "Twilight, early morning and late afternoon",
+   "trip_nl": "Zelf rijden en wandelen in het park vanuit Puerto Santa Cruz; 2 à 3 dagen, vooral voor wie toch langs de kust van Patagonië reist",
+   "trip_en": "Self-drive and walk in the park from Puerto Santa Cruz; 2–3 days, mainly for those already travelling the Patagonian coast",
+   "sources": [
+    9
+   ]
+  },
+  {
+   "id": "br-transpantaneira-pantanal",
+   "name_nl": "Transpantaneira (noordelijke Pantanal)",
+   "name_en": "Transpantaneira (northern Pantanal)",
+   "area_nl": "Langs de Transpantaneira ten zuiden van Poconé, Mato Grosso",
+   "area_en": "Along the Transpantaneira south of Poconé, Mato Grosso",
+   "country_nl": "Brazilië",
+   "country_en": "Brazil",
+   "cont": "sam",
+   "lat": -16.6,
+   "lon": -56.8,
+   "score": 2,
+   "why_nl": "Af en toe meldt een tripverslag een poema langs de Transpantaneira (zoals in 2024), maar hier zoekt iedereen jaguars en ocelotten en is de poema een zeldzame bonus; in Nationaal Park Emas misten bezoekers hem ondanks dat hij er op cameravallen staat.",
+   "why_en": "Now and then a trip report mentions a puma along the Transpantaneira (as in 2024), but here everyone looks for jaguars and ocelots and the puma is a rare bonus; in Emas National Park visitors missed it even though it appears on camera traps there.",
+   "season_nl": "Droge tijd (juli–oktober)",
+   "season_en": "Dry season (July–October)",
+   "time_nl": "Avond- en nachtritten met een lamp en vroege ochtendritten",
+   "time_en": "Evening and night drives with a spotlight and early morning drives",
+   "trip_nl": "Nachtritten vanuit pousadas langs de Transpantaneira, te combineren met jaguarboottochten vanaf Porto Jofre; 3 à 5 nachten",
+   "trip_en": "Night drives from pousadas along the Transpantaneira, easily combined with jaguar boat trips from Porto Jofre; 3–5 nights",
+   "sources": [
+    12,
+    18
+   ]
+  },
+  {
+   "id": "cr-osa-corcovado",
+   "name_nl": "Schiereiland Osa (Corcovado)",
+   "name_en": "Osa Peninsula (Corcovado)",
+   "area_nl": "Nationaal Park Corcovado en omliggende bossen op het schiereiland Osa, Puntarenas",
+   "area_en": "Corcovado National Park and surrounding forests on the Osa Peninsula, Puntarenas",
+   "country_nl": "Costa Rica",
+   "country_en": "Costa Rica",
+   "cont": "sam",
+   "lat": 8.5,
+   "lon": -83.5,
+   "score": 2,
+   "why_nl": "Rond 2015 werden poema's in Corcovado en op het zuidpuntje van Osa in de droge tijd geregeld gezien, soms meerdere keren per week, maar recente verslagen die dat bevestigen ontbreken.",
+   "why_en": "Around 2015 pumas were seen regularly in Corcovado and at the southern tip of Osa in the dry season, sometimes several times a week, but recent reports confirming this are lacking.",
+   "season_nl": "Droge tijd (december–april)",
+   "season_en": "Dry season (December–April)",
+   "time_nl": "Vroege ochtendwandelingen (vanaf 05.00 uur) en de late middag",
+   "time_en": "Early morning walks (from 05:00) and late afternoon",
+   "trip_nl": "Meerdaagse tochten met een verplichte gids door Nationaal Park Corcovado, met overnachting in het parkstation, of wandelen rond lodges op het zuidpuntje van Osa; 3 à 5 dagen",
+   "trip_en": "Multi-day hikes with a mandatory guide through Corcovado National Park, staying at the park station, or walking around lodges at the southern tip of Osa; 3–5 days",
+   "sources": [
+    13,
+    14,
+    17
+   ]
+  },
+  {
+   "id": "us-big-bend",
+   "name_nl": "Big Bend",
+   "name_en": "Big Bend",
+   "area_nl": "Big Bend National Park, vooral de Chisos Mountains, Texas",
+   "area_en": "Big Bend National Park, especially the Chisos Mountains, Texas",
+   "country_nl": "Verenigde Staten",
+   "country_en": "United States",
+   "cont": "nam",
+   "lat": 29.3,
+   "lon": -103.2,
+   "score": 2,
+   "why_nl": "Bezoekers melden er jaarlijks meer dan 150 poema's, vooral langs de parkwegen, maar ervaren zoogdierspotters noemen de kans nog altijd klein en sommigen zagen in twee dagen niets.",
+   "why_en": "Visitors report more than 150 mountain lions a year, mostly along park roads, but experienced mammal watchers still call the odds small and some saw nothing in two days.",
+   "season_nl": "Het hele jaar; najaar tot voorjaar is koeler en prettiger om lang te zoeken",
+   "season_en": "Year-round; autumn to spring is cooler and better for long searches",
+   "time_nl": "Schemering en 's nachts langs de wegen; hogerop in de Chisos ook vroeg in de ochtend",
+   "time_en": "Twilight and at night along the roads; higher up in the Chisos also early morning",
+   "trip_nl": "Zelf rijden over de parkwegen bij schemering en wandelen in de Chisos Mountains; minstens 3 à 4 dagen, en reken op geluk",
+   "trip_en": "Self-drive along the park roads at dusk and hike in the Chisos Mountains; at least 3–4 days, and count on luck",
+   "sources": [
+    16,
+    17,
+    18
+   ]
+  },
+  {
+   "id": "mx-calakmul",
+   "name_nl": "Calakmul",
+   "name_en": "Calakmul",
+   "area_nl": "Biosfeerreservaat Calakmul, Campeche",
+   "area_en": "Calakmul Biosphere Reserve, Campeche",
+   "country_nl": "Mexico",
+   "country_en": "Mexico",
+   "cont": "nam",
+   "lat": 18.3,
+   "lon": -89.7,
+   "score": 1,
+   "why_nl": "Poema's, ocelotten en jaguars worden hier 'af en toe' gezien, maar de meeste bewijzen komen van cameravallen.",
+   "why_en": "Pumas, ocelots and jaguars are seen here 'every now and then', but most evidence comes from camera traps.",
+   "season_nl": "Droge tijd (februari–mei), als dieren bij de schaarse waterpoelen komen",
+   "season_en": "Dry season (February–May), when animals visit the few remaining water holes",
+   "time_nl": "Vroege ochtend op de lange toegangsweg naar de ruïnes en bij schemering",
+   "time_en": "Early morning on the long access road to the ruins and at dusk",
+   "trip_nl": "Zelf rijden of met een lokale gids over de toegangsweg naar de Mayaruïnes van Calakmul, overnachten bij de reservaatgrens; 2 à 3 dagen",
+   "trip_en": "Self-drive or go with a local guide along the access road to the Maya ruins of Calakmul, staying near the reserve boundary; 2–3 days",
+   "sources": [
+    15
+   ]
+  },
+  {
+   "id": "us-yellowstone-northern-range",
+   "name_nl": "Yellowstone (Northern Range)",
+   "name_en": "Yellowstone (Northern Range)",
+   "area_nl": "Northern Range van Yellowstone National Park (Lamar Valley en omgeving), Wyoming/Montana",
+   "area_en": "Northern Range of Yellowstone National Park (Lamar Valley and surroundings), Wyoming/Montana",
+   "country_nl": "Verenigde Staten",
+   "country_en": "United States",
+   "cont": "nam",
+   "lat": 44.9,
+   "lon": -110.3,
+   "score": 1,
+   "why_nl": "Op de Northern Range leven ruwweg 29 à 45 poema's, maar volgens de parkdienst ziet bijna niemand ze; je hebt echt geluk nodig.",
+   "why_en": "Roughly 29–45 cougars live on the Northern Range, but according to the park service hardly anyone ever sees them; you really need luck.",
+   "season_nl": "Winter (december–maart), als poema's met de wapiti's naar lager gelegen dalen trekken en de weg door Lamar Valley open blijft",
+   "season_en": "Winter (December–March), when cougars follow the elk to lower valleys and the road through Lamar Valley stays open",
+   "time_nl": "Vroege ochtend en schemering, scannen met een telescoop",
+   "time_en": "Early morning and dusk, scanning with a spotting scope",
+   "trip_nl": "Winterse wildexcursies door Lamar Valley (vooral voor wolven), met een telescoop; een poema is een zeldzame bonus; 4 à 5 dagen",
+   "trip_en": "Winter wildlife outings through Lamar Valley (mainly for wolves) with a spotting scope; a cougar is a rare bonus; 4–5 days",
+   "sources": [
+    19
+   ]
+  },
+  {
+   "id": "us-big-cypress-everglades",
+   "name_nl": "Big Cypress en Everglades",
+   "name_en": "Big Cypress and Everglades",
+   "area_nl": "Big Cypress National Preserve en Everglades National Park, Zuid-Florida",
+   "area_en": "Big Cypress National Preserve and Everglades National Park, South Florida",
+   "country_nl": "Verenigde Staten",
+   "country_en": "United States",
+   "cont": "nam",
+   "lat": 26.0,
+   "lon": -81.1,
+   "score": 1,
+   "why_nl": "Er leven maar zo'n 120 à 230 volwassen Florida-panters en rangers die hier twintig jaar werkten hebben er soms nog nooit een gezien.",
+   "why_en": "Only about 120–230 adult Florida panthers survive, and rangers who worked here for twenty years have sometimes never seen one.",
+   "season_nl": "Droge tijd (november–april)",
+   "season_en": "Dry season (November–April)",
+   "time_nl": "Schemering en nacht, langs rustige wegen",
+   "time_en": "Dusk and night, along quiet roads",
+   "trip_nl": "Zelf rijden over de wegen door Big Cypress bij schemering; zie het vooral als bonus bij een natuurreis door Zuid-Florida",
+   "trip_en": "Self-drive the roads through Big Cypress at dusk; treat it mainly as a bonus on a nature trip through South Florida",
+   "sources": [
+    18,
+    20,
+    21
+   ]
+  },
+  {
+   "id": "ca-vancouver-island",
+   "name_nl": "Vancouver Island",
+   "name_en": "Vancouver Island",
+   "area_nl": "Bossen van Vancouver Island, Brits-Columbia",
+   "area_en": "Forests of Vancouver Island, British Columbia",
+   "country_nl": "Canada",
+   "country_en": "Canada",
+   "cont": "nam",
+   "lat": 49.6,
+   "lon": -125.6,
+   "score": 1,
+   "why_nl": "Het eiland heeft een van de hoogste gemeten poemadichtheden van Noord-Amerika, maar ook hier blijft een waarneming pure mazzel.",
+   "why_en": "The island has one of the highest cougar densities measured in North America, but even here a sighting is pure luck.",
+   "season_nl": "Het hele jaar",
+   "season_en": "Year-round",
+   "time_nl": "Schemering, vroege ochtend en avond",
+   "time_en": "Twilight, early morning and evening",
+   "trip_nl": "Zelf rijden en wandelen in de bossen; geen gerichte excursies, zie het als bonus bij een reis voor orka's en beren",
+   "trip_en": "Self-drive and hike in the forests; no dedicated excursions, treat it as a bonus on a trip for orcas and bears",
+   "sources": [
+    22,
+    18
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Luister naar guanaco's: een schel, aanhoudend alarmgeroep betekent vaak dat er een poema in de buurt is. Kijk in de richting waarin de guanaco staart.",
+  "Scan bij zonsopkomst systematisch heuvelruggen, rotsrichels en de randen van struiken; een liggende poema lijkt op een steen.",
+  "Vind je een vers kadaver langs de weg, kom dan terug bij het eerste licht. Poema's keren vaak terug naar hun prooi, soms met jongen.",
+  "In Patagonië vergroot een lokale spoorzoeker je kansen enorm. Die zoekt de hele dag en roept je via de radio op als hij een kat vindt.",
+  "Blijf op de weg of in de auto waar dat verplicht is (veel poemaland is privébezit). Benader een kat nooit tijdens een jacht.",
+  "In de tropen en Noord-Amerika werk je vooral met nachtritten en een lamp of warmtebeeldcamera, en in de winter met sporen in de sneeuw. Reken op veel uren en geluk.",
+  "Komt een poema dichtbij: niet wegrennen, groepje vormen, oogcontact houden en jezelf groot maken."
+ ],
+ "tips_en": [
+  "Listen to guanacos: a shrill, persistent alarm call often means a puma is close. Look where the guanaco is staring.",
+  "At sunrise, scan ridges, rocky ledges and the edges of shrubs systematically; a resting puma looks like a rock.",
+  "If you find a fresh carcass by the road, come back at first light. Pumas often return to their kill, sometimes with cubs.",
+  "In Patagonia a local tracker hugely improves your odds. He searches all day and radios you when he finds a cat.",
+  "Stay on the road or in the car where that is required (much puma country is private land). Never approach a cat during a hunt.",
+  "In the tropics and North America you rely mostly on night drives with a spotlight or thermal scope, and in winter on tracks in snow. Expect long hours and luck.",
+  "If a puma comes close: don't run, stay together, keep eye contact and make yourself look big."
+ ],
+ "threats_nl": [
+  "Vervolging door veehouders: in Argentijns Patagonië worden poema's legaal bejaagd en betalen sommige provincies premies; ook in Chili gebeurt nog illegaal doden.",
+  "Verkeer: aanrijdingen zijn de belangrijkste doodsoorzaak van de Florida-panter (28 van de 35 dode dieren in 2024).",
+  "Verlies en versnippering van leefgebied door landbouw, wegen en bebouwing, plus branden in gebieden als de Pantanal.",
+  "Afnemende prooidieren door jacht."
+ ],
+ "threats_en": [
+  "Persecution by ranchers: in Argentine Patagonia pumas are legally hunted and some provinces pay bounties; illegal killing still happens in Chile too.",
+  "Traffic: vehicle collisions are the main cause of death of the Florida panther (28 of 35 dead animals in 2024).",
+  "Habitat loss and fragmentation through agriculture, roads and settlements, plus fires in areas such as the Pantanal.",
+  "Declining prey through hunting."
+ ],
+ "status_note_nl": "De IUCN beschouwt de poema als Niet bedreigd (2015), maar de wereldwijde populatie neemt af; de kleine populatie in Florida is wel bedreigd.",
+ "status_note_en": "The IUCN lists the puma as Least Concern (2015), but the global population is decreasing; the small Florida population is endangered.",
+ "sources": [
+  {
+   "id": 1,
+   "title": "Puma concolor – IUCN Red List-beoordeling (Nielsen et al., IUCN, 2015)",
+   "url": "https://www.iucnredlist.org/species/18868/97216466"
+  },
+  {
+   "id": 2,
+   "title": "Tabel met IUCN-status en populatietrend van katachtigen (PMC, 2020)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7158323/table/t0010"
+  },
+  {
+   "id": 3,
+   "title": "Pumas of Patagonia 2022 – trip report (mammalwatching.com, 2023)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2023/07/Pumas-of-Patagonia-2022-Trip-Report-1.pdf"
+  },
+  {
+   "id": 4,
+   "title": "Bird & Mammal Trip Report Patagonia, Chile & Argentina, dec 2021–jan 2022 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/RJ-Patagonia-2021_december.pdf"
+  },
+  {
+   "id": 5,
+   "title": "Southern Chile Mammal-watching 2023, M. Hunter (mammalwatching.com, 2023)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2023/12/Southern-Chile-Rept.pdf"
+  },
+  {
+   "id": 6,
+   "title": "Patagonia Oct–Nov 2023 trip report (mammalwatching.com, 2023)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2023/11/Trip-report-Patagonia-2023.pdf"
+  },
+  {
+   "id": 7,
+   "title": "Argentina and Chile mammal trip report: pumas and orcas (mammalwatching.com, 2026)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2026/04/Orcas-and-Pumas-Trip-report.pdf"
+  },
+  {
+   "id": 8,
+   "title": "In Patagonia, a puma's life is decided by political borders (Mongabay, 2022)",
+   "url": "https://news.mongabay.com/2022/12/in-patagonia-a-pumas-life-is-decided-by-political-borders/"
+  },
+  {
+   "id": 9,
+   "title": "How penguins reshape puma habits in Patagonia – Monte León (UC Berkeley, 2025)",
+   "url": "https://ourenvironment.berkeley.edu/node/595"
+  },
+  {
+   "id": 10,
+   "title": "Bolivia August 2024 trip report: Santa Cruz, Kaa Iya e.a. (mammalwatching.com, 2024)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/11/CR-Bolivia-2024.pdf"
+  },
+  {
+   "id": 11,
+   "title": "Bolivia, Sept 2025 trip report (mammalwatching.com, 2025)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2025/11/Bolivia-Trip-Report-Tomer-Ben-Yehuda-3.pdf"
+  },
+  {
+   "id": 12,
+   "title": "Trip report Southwestern Brazil 2024: Northern Pantanal and Emas NP (mammalwatching.com, 2024)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/11/Brazil-Northern-Pantanal-and-Emas-trip-report-2024.pdf"
+  },
+  {
+   "id": 13,
+   "title": "New Trip Report: Costa Rica 2015 – pumas in Corcovado (mammalwatching.com, 2015)",
+   "url": "https://www.mammalwatching.com/?p=5763"
+  },
+  {
+   "id": 14,
+   "title": "A mammal watching tip in Costa Rica – puma op het schiereiland Osa (mammalwatching.com, 2015)",
+   "url": "https://mammalwatching.com/?p=5076"
+  },
+  {
+   "id": 15,
+   "title": "Mexico – Yucatán trip report, juli 2021 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/AJ-Mexico-Yucatan-2021.pdf"
+  },
+  {
+   "id": 16,
+   "title": "Mountain Lions – Big Bend National Park (NPS)",
+   "url": "https://www.nps.gov/bibe/learn/nature/mt-lions.htm"
+  },
+  {
+   "id": 17,
+   "title": "Where to find a Puma in the USA – forumdiscussie (mammalwatching.com, 2012)",
+   "url": "https://www.mammalwatching.com/2012/05/21/where-to-find-a-puma-in-the-usa/"
+  },
+  {
+   "id": 18,
+   "title": "Some notes on mountain lions in western USA (and elsewhere) (mammalwatching.com, 2013)",
+   "url": "https://www.mammalwatching.com/2013/05/25/some-notes-on-mountain-lions-in-western-usa-and-elsewhere/"
+  },
+  {
+   "id": 19,
+   "title": "Cougar – Yellowstone National Park (NPS)",
+   "url": "https://www.nps.gov/yell/learn/nature/cougar.htm"
+  },
+  {
+   "id": 20,
+   "title": "Florida Panther (Florida Fish and Wildlife Conservation Commission)",
+   "url": "https://myfwc.com/wildlifehabitats/wildlife/panther/"
+  },
+  {
+   "id": 21,
+   "title": "Nearly back-to-back endangered Florida panther deaths reported (WINK News, dec 2024)",
+   "url": "https://winknews.com/2024/12/27/nearly-back-to-back-endangered-florida-panther-deaths-reported"
+  },
+  {
+   "id": 22,
+   "title": "Cougar ecology on southeastern Vancouver Island – MSc-thesis (University of British Columbia)",
+   "url": "https://open.library.ubc.ca/cIRcle/collections/831/items/1.0090208"
+  }
+ ]
+}

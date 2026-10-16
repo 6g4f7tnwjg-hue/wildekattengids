@@ -1,0 +1,356 @@
+{
+ "no": 5,
+ "intro_nl": "Het is min twintig. Al uren tuur je door de telescoop naar een rotswand die er overal hetzelfde uitziet. Dan fluistert de spotter naast je één woord, en ineens zie je hem: een grijze kat met een staart als een sjaal, languit op een richel. In de Rumbak-vallei van Hemis in Ladakh gebeurt dit elke winter opnieuw, als je er een week voor uittrekt. Kans: 5 – met geduld, goede spotters en warme kleren is de geest van de bergen hier echt te vinden.",
+ "intro_en": "It is minus twenty. For hours you have been staring through the scope at a rock face that looks the same everywhere. Then the spotter next to you whispers one word, and suddenly you see it: a grey cat with a tail like a scarf, stretched out on a ledge. In the Rumbak Valley of Hemis in Ladakh this happens every winter, as long as you give it a week. Chance: 5 – with patience, good spotters and warm clothes, the ghost of the mountains really can be found here.",
+ "spots": [
+  {
+   "id": "in-hemis-ladakh",
+   "name_nl": "Hemis – Rumbak-vallei",
+   "name_en": "Hemis – Rumbak Valley",
+   "area_nl": "Nationaal Park Hemis, Ladakh (o.a. de Rumbak-vallei)",
+   "area_en": "Hemis National Park, Ladakh (incl. the Rumbak Valley)",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 33.9,
+   "lon": 77.4,
+   "score": 5,
+   "why_nl": "Een landelijk onderzoek uit 2025 vond in Hemis tot 3 sneeuwpanters per 100 km², de hoogste dichtheid in Ladakh, en vrijwel alle recente winterverslagen op mammalwatching.com melden een of meer goede waarnemingen, soms al op de eerste dag.",
+   "why_en": "A 2025 Ladakh-wide survey found up to 3 snow leopards per 100 km² in Hemis, the highest density in Ladakh, and nearly all recent winter reports on mammalwatching.com describe one or more good sightings, sometimes on the very first day.",
+   "season_nl": "December–maart; februari en maart (paartijd) gelden als de beste maanden.",
+   "season_en": "December–March; February and March (mating season) are considered the best months.",
+   "time_nl": "De hele dag scannen; de katten liggen overdag vaak stil en worden actief rond schemering.",
+   "time_en": "Scan all day; the cats often rest during the day and become active around dusk.",
+   "trip_nl": "Meerdaagse zoektocht vanuit homestays of een kampement in Rumbak, met lokale spotters die met telescopen de hellingen afzoeken en elkaar per radio waarschuwen; reken op 7 à 10 dagen inclusief acclimatisatie in Leh.",
+   "trip_en": "Multi-day search based in homestays or a camp at Rumbak, with local spotters scanning the slopes through scopes and alerting each other by radio; plan 7–10 days including acclimatisation in Leh.",
+   "sources": [
+    4,
+    5,
+    6,
+    7,
+    8
+   ]
+  },
+  {
+   "id": "in-kibber-spiti",
+   "name_nl": "Kibber (Spiti)",
+   "name_en": "Kibber (Spiti)",
+   "area_nl": "Wildreservaat Kibber, Spiti-vallei (Himachal Pradesh), met de dorpen Kibber en Chicham",
+   "area_en": "Kibber Wildlife Sanctuary, Spiti Valley (Himachal Pradesh), around the villages of Kibber and Chicham",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 32.3,
+   "lon": 78.0,
+   "score": 4,
+   "why_nl": "Een bezoeker in februari/maart 2020 zag in een week vijf verschillende sneeuwpanters en citeert National Geographic dat dat jaar elke toerist in Kibber er een zag, maar hij beschrijft ook dagen zonder kat.",
+   "why_en": "A February/March 2020 visitor saw five different snow leopards in a week and quotes National Geographic saying every tourist in Kibber saw one that year, but he also describes days without a cat.",
+   "season_nl": "Januari–maart, als de prooidieren en de katten lager zitten.",
+   "season_en": "January–March, when prey and cats are lower down.",
+   "time_nl": "Overdag scannen vanaf uitzichtpunten bij de dorpen; beweging vooral laat in de middag.",
+   "time_en": "Daytime scanning from viewpoints near the villages; movement mostly late in the afternoon.",
+   "trip_nl": "Winterreis van ongeveer een week met een lokale gids en spotters vanuit homestays in Kibber; de weg vanaf Shimla kost twee à drie dagen.",
+   "trip_en": "Winter trip of about a week with a local guide and spotters from homestays in Kibber; the road from Shimla takes two to three days.",
+   "sources": [
+    9,
+    10
+   ]
+  },
+  {
+   "id": "cn-yushu-sanjiangyuan",
+   "name_nl": "Yushu – Sanjiangyuan",
+   "name_en": "Yushu – Sanjiangyuan",
+   "area_nl": "Bergdalen rond Yushu en Zaduo (o.a. Angsai), Nationaal Park Sanjiangyuan, Qinghai",
+   "area_en": "Mountain valleys around Yushu and Zaduo (incl. Angsai), Sanjiangyuan National Park, Qinghai",
+   "country_nl": "China",
+   "country_en": "China",
+   "cont": "asia",
+   "lat": 33.0,
+   "lon": 96.0,
+   "score": 4,
+   "why_nl": "Recente groepsreizen in de zomers van 2023–2025 en een kleine reis in februari 2024 zagen allemaal sneeuwpanters, in 2025 zelfs een moeder met twee jongen bij herhaling, al kostte het in eerdere jaren dagen scannen.",
+   "why_en": "Recent group trips in the summers of 2023–2025 and a small trip in February 2024 all saw snow leopards, in 2025 even a mother with two cubs repeatedly, although in earlier years it took days of scanning.",
+   "season_nl": "Het hele jaar mogelijk; verslagen melden succes zowel in februari als in juli–augustus.",
+   "season_en": "Possible year-round; reports describe success both in February and in July–August.",
+   "time_nl": "Overdag scannen vanaf de weg of een helling; schemering en zelfs nachtwaarnemingen komen voor.",
+   "time_en": "Daytime scanning from the road or a slope; dusk and even night sightings occur.",
+   "trip_nl": "Rondreis met een lokale gids vanuit Yushu (vlucht vanaf Xining of Chengdu), deels met door de gemeenschap georganiseerde tochten en homestays, 7 à 14 dagen; buitenlanders hebben vaak vergunningen en een begeleider nodig.",
+   "trip_en": "Tour with a local guide from Yushu (flights from Xining or Chengdu), partly using community-run trips and homestays, 7–14 days; foreigners often need permits and an escort.",
+   "sources": [
+    12,
+    13,
+    14
+   ]
+  },
+  {
+   "id": "in-ulley-ladakh",
+   "name_nl": "Ulley (Sham-vallei)",
+   "name_en": "Ulley (Sham Valley)",
+   "area_nl": "Dorp Ulley en omgeving, Sham-vallei, Ladakh",
+   "area_en": "Ulley village and surroundings, Sham Valley, Ladakh",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 34.3,
+   "lon": 76.8,
+   "score": 3,
+   "why_nl": "In de Sham-vallei worden in de winter geregeld sneeuwpanters bij dorpen gezien en vonden spotters in december 2023 twee katten bij een prooi, maar er zijn ook berichten over droge periodes van een week of langer.",
+   "why_en": "In the Sham Valley snow leopards are regularly seen near villages in winter and spotters found two cats on a kill in December 2023, but there are also reports of dry spells of a week or more.",
+   "season_nl": "December–maart.",
+   "season_en": "December–March.",
+   "time_nl": "De hele dag scannen; activiteit vooral vroeg en laat.",
+   "time_en": "Scan all day; activity mainly early and late.",
+   "trip_nl": "Verblijf in een homestay in het dorp met lokale spotters met telescopen, 4 à 6 dagen; goed te combineren met Hemis.",
+   "trip_en": "Stay in a village homestay with local spotters using scopes, 4–6 days; easy to combine with Hemis.",
+   "sources": [
+    6,
+    11
+   ]
+  },
+  {
+   "id": "mn-mongol-altai-khovd",
+   "name_nl": "Mongoolse Altaj (Khovd)",
+   "name_en": "Mongolian Altai (Khovd)",
+   "area_nl": "Bergketens van de Mongoolse Altaj in de provincie Khovd (West-Mongolië)",
+   "area_en": "Ranges of the Mongolian Altai in Khovd province (western Mongolia)",
+   "country_nl": "Mongolië",
+   "country_en": "Mongolia",
+   "cont": "asia",
+   "lat": 47.0,
+   "lon": 92.5,
+   "score": 3,
+   "why_nl": "Een wintergroep in februari 2025 had vier waarnemingen, maar een groep in november 2023 zag pas op dag vier toevallig een kat bij een gedood veulen en een groep in mei 2026 zag zes dagen niets in de Altaj.",
+   "why_en": "A winter group in February 2025 had four sightings, but a November 2023 group only saw a cat by chance on day four at a killed foal, and a May 2026 group saw nothing in six days in the Altai.",
+   "season_nl": "November–maart; in het voorjaar en de zomer is het duidelijk moeilijker.",
+   "season_en": "November–March; spring and summer are clearly harder.",
+   "time_nl": "Vanaf zonsopkomst tot zonsondergang scannen.",
+   "time_en": "Scan from sunrise to sunset.",
+   "trip_nl": "Expeditie vanuit een gerkamp met een lokale gids en meerdere spotters (vaak herders) die verspreid de bergen afzoeken, 8 à 10 dagen; vlucht van Ulaanbaatar naar Khovd.",
+   "trip_en": "Expedition from a ger camp with a local guide and several spotters (often herders) spread across the mountains, 8–10 days; fly from Ulaanbaatar to Khovd.",
+   "sources": [
+    15,
+    16,
+    17
+   ]
+  },
+  {
+   "id": "kg-central-tien-shan",
+   "name_nl": "Centrale Tiensjan",
+   "name_en": "Central Tien Shan",
+   "area_nl": "Staatsreservaat in het hooggebergte van de Kirgizische Tiensjan",
+   "area_en": "State nature reserve in the high Kyrgyz Tien Shan",
+   "country_nl": "Kirgizië",
+   "country_en": "Kyrgyzstan",
+   "cont": "asia",
+   "lat": 41.9,
+   "lon": 78.0,
+   "score": 3,
+   "why_nl": "Een groep zag in februari 2022 in acht dagen drie keer een sneeuwpanter, in een reservaat waar cameravallen minstens 25 à 30 dieren aantonen, maar de gids noemt een ontmoeting zonder systematisch speuren pure toeval.",
+   "why_en": "A group saw a snow leopard three times in eight days in February 2022, in a reserve where camera traps show at least 25–30 animals, but the guide calls an encounter without systematic searching pure chance.",
+   "season_nl": "Winter, vooral februari.",
+   "season_en": "Winter, especially February.",
+   "time_nl": "De hele dag scannen met meerdere waarnemers.",
+   "time_en": "Scan all day with several observers.",
+   "trip_nl": "Kampeertocht in joerten in een afgelegen vallei, samen met rangers van het reservaat, ongeveer 10 dagen.",
+   "trip_en": "Camping trip in yurts in a remote valley together with reserve rangers, about 10 days.",
+   "sources": [
+    18
+   ]
+  },
+  {
+   "id": "pk-khunjerab",
+   "name_nl": "Khunjerab",
+   "name_en": "Khunjerab",
+   "area_nl": "Nationaal Park Khunjerab, Boven-Hunza (Gilgit-Baltistan)",
+   "area_en": "Khunjerab National Park, Upper Hunza (Gilgit-Baltistan)",
+   "country_nl": "Pakistan",
+   "country_en": "Pakistan",
+   "cont": "asia",
+   "lat": 36.8,
+   "lon": 75.2,
+   "score": 1,
+   "why_nl": "In 2015 werden volgens een lokale functionaris minstens 22 sneeuwpanters in het park waargenomen, maar betrouwbare gegevens over het succes van bezoekers ontbreken.",
+   "why_en": "According to a local official at least 22 snow leopards were seen in the park in 2015, but reliable data on visitor success are lacking.",
+   "season_nl": "Winter en vroege voorjaar (januari–april), als steenbokken lager komen.",
+   "season_en": "Winter and early spring (January–April), when ibex come lower.",
+   "time_nl": "Vroege ochtend en schemering.",
+   "time_en": "Early morning and dusk.",
+   "trip_nl": "Meerdaagse wintertochten met een lokale gids vanuit dorpen in Boven-Hunza; check vooraf toegang en weersomstandigheden.",
+   "trip_en": "Multi-day winter trips with a local guide from villages in Upper Hunza; check access and conditions beforehand.",
+   "sources": [
+    19
+   ]
+  },
+  {
+   "id": "np-annapurna-mustang-manang",
+   "name_nl": "Mustang en Manang",
+   "name_en": "Mustang and Manang",
+   "area_nl": "Annapurna Conservation Area: Opper-Mustang, Muktinath en Manang",
+   "area_en": "Annapurna Conservation Area: Upper Mustang, Muktinath and Manang",
+   "country_nl": "Nepal",
+   "country_en": "Nepal",
+   "cont": "asia",
+   "lat": 28.8,
+   "lon": 84.0,
+   "score": 1,
+   "why_nl": "Cameravallen tonen sneeuwpanters rond Muktinath en Thorong La, en in 2014 kwam er een het dorp Manang in, maar gerichte sneeuwpanterreizen met bekende slagingskansen bestaan hier nauwelijks.",
+   "why_en": "Camera traps show snow leopards around Muktinath and Thorong La, and in 2014 one walked into Manang village, but dedicated snow leopard trips with known success rates hardly exist here.",
+   "season_nl": "Late herfst en winter, als prooidieren lager komen; trektochten vooral in het voorjaar en de herfst.",
+   "season_en": "Late autumn and winter, when prey come lower; trekking mainly in spring and autumn.",
+   "time_nl": "Vroege ochtend en schemering.",
+   "time_en": "Early morning and dusk.",
+   "trip_nl": "Trektocht (bijv. via Manang of door Opper-Mustang) met een lokale gids; zie je een sneeuwpanter, dan is dat een bonus.",
+   "trip_en": "Trek (e.g. via Manang or through Upper Mustang) with a local guide; a snow leopard is a bonus.",
+   "sources": [
+    20,
+    21
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Zonder telescoop kom je nergens: scan rustig richels, rotsblokken en de randen van kammen, uur na uur. De vacht gaat volledig op in de rots.",
+  "Lokale spotters maken het verschil. Ze kennen de dieren, verspreiden zich over de valleien en waarschuwen elkaar per radio of telefoon.",
+  "Let op verse sporen in sneeuw of stof, krabplekken en geurmarkeringen langs paden en onder overhangende rotsen: ze verraden dat er een kat in de buurt is.",
+  "Kijk naar de prooidieren. Blauwschapen of steenbokken die allemaal dezelfde kant op staren of alarm slaan, kunnen een jagende kat verraden.",
+  "Een gedood dier (vee of wild) is goud waard: de kat blijft vaak dagen in de buurt en komt rond schemering terug. Houd afstand en blijf stil.",
+  "Ga in de winter: dan zakken prooi en katten naar lagere hellingen. Februari–maart is paartijd, en dan zwerven vooral mannetjes meer rond.",
+  "Neem de tijd: acclimatiseer twee à drie dagen (Leh ligt op 3500 m) en plan liever tien dagen dan vijf. Kleed je op –20 °C en lager."
+ ],
+ "tips_en": [
+  "You won't get anywhere without a scope: scan ledges, boulders and ridgelines slowly, hour after hour. The coat blends perfectly into the rock.",
+  "Local spotters make the difference. They know the animals, spread out over the valleys and alert each other by radio or phone.",
+  "Look for fresh tracks in snow or dust, scrapes and scent marks along trails and under overhanging rocks: they tell you a cat is around.",
+  "Watch the prey. Blue sheep or ibex all staring in one direction or giving alarm calls can give away a hunting cat.",
+  "A kill (livestock or wild) is gold: the cat often stays nearby for days and returns around dusk. Keep your distance and stay quiet.",
+  "Go in winter, when prey and cats move down to lower slopes. February–March is the mating season, when males in particular roam more.",
+  "Take your time: acclimatise for two or three days (Leh is at 3,500 m) and plan ten days rather than five. Dress for –20 °C and below."
+ ],
+ "threats_nl": [
+  "Vergeldingsdoding door herders na aanvallen op vee; volgens TRAFFIC de belangrijkste oorzaak van gedode sneeuwpanters.",
+  "Stroperij voor vacht en botten en bijvangst in strikken: naar schatting 221 à 450 dieren per jaar sinds 2008.",
+  "Achteruitgang van wilde prooi zoals blauwschaap, steenbok en argali door jacht en concurrentie met vee.",
+  "Wegen, dammen, mijnbouw en andere infrastructuur, plus verwilderde honden rond dorpen en legerposten.",
+  "Klimaatverandering die de boomgrens laat stijgen en het leefgebied in het hooggebergte verkleint."
+ ],
+ "threats_en": [
+  "Retaliatory killing by herders after attacks on livestock; according to TRAFFIC the main cause of snow leopards being killed.",
+  "Poaching for skins and bones and by-catch in snares: an estimated 221–450 animals a year since 2008.",
+  "Decline of wild prey such as blue sheep, ibex and argali through hunting and competition with livestock.",
+  "Roads, dams, mining and other infrastructure, plus feral dogs around villages and army posts.",
+  "Climate change pushing the treeline upwards and shrinking high-mountain habitat."
+ ],
+ "status_note_nl": "De IUCN zette de sneeuwpanter in 2017 van Bedreigd naar Kwetsbaar. Er leven naar schatting 7.400 à 8.000 sneeuwpanters, waarvan 2.700 à 3.400 volwassen. De trend verschilt per regio, maar over drie generaties wordt een afname van zo'n 10% verwacht.",
+ "status_note_en": "The IUCN moved the snow leopard from Endangered to Vulnerable in 2017. An estimated 7,400 to 8,000 snow leopards remain, of which 2,700 to 3,400 are mature. The trend varies by region, but a decline of about 10% over three generations is projected.",
+ "sources": [
+  {
+   "id": 1,
+   "title": "Snow leopard – species account (IUCN SSC Cat Specialist Group)",
+   "url": "https://www.catsg.org/living-species-snowleopard"
+  },
+  {
+   "id": 2,
+   "title": "A downlist is not a demotion: Red List status and reality (Mallon & Jackson, Oryx, 2017)",
+   "url": "https://www.cambridge.org/core/product/452CCBA3734AE56B698783507F0B02C1"
+  },
+  {
+   "id": 3,
+   "title": "An Ounce of Prevention: Snow Leopard Crime Revisited (TRAFFIC, 2016)",
+   "url": "https://www.traffic.org/site/assets/files/2358/ounce-of-prevention.pdf"
+  },
+  {
+   "id": 4,
+   "title": "Snow leopard survey finds the elusive cat thriving in Ladakh (Mongabay India, 2025)",
+   "url": "https://india.mongabay.com/2025/07/snow-leopard-survey-finds-the-elusive-cat-thriving/amp/"
+  },
+  {
+   "id": 5,
+   "title": "Rumbak and Hanle, Ladakh trip report, Dec 2023–Jan 2024 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/01/Ladakh-Trip-Report-Chris-Daniels-2023.pdf"
+  },
+  {
+   "id": 6,
+   "title": "Hemis NP – Hanle – Eaglenest – Manas, March 2023 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2023/04/India2.pdf"
+  },
+  {
+   "id": 7,
+   "title": "Ladakh: Hemis National Park trip report, February 2019 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/Hemis-trip-report.pdf"
+  },
+  {
+   "id": 8,
+   "title": "Snow leopard trip in Ladakh, Feb–Mar 2022 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/2022/03/30/snow-leopard-trip-in-ladakh-2022/"
+  },
+  {
+   "id": 9,
+   "title": "Trip to Kibber Wildlife Sanctuary for the Snow Leopard, 2020 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/SS-Snow-Leopard-2020.pdf"
+  },
+  {
+   "id": 10,
+   "title": "New trip report: Snow leopards in Chicham/Kibber, Himachal Pradesh (mammalwatching.com, 2022)",
+   "url": "https://www.mammalwatching.com/2022/11/26/new-trip-report-snow-leopards-in-chicham-himachal-pradesh-india/"
+  },
+  {
+   "id": 11,
+   "title": "On the trail of the snow leopard in Ulley, day 2 (Outlook Traveller, 2023)",
+   "url": "https://www.outlooktraveller.com/experiences/adventure/on-the-trail-of-the-snow-leopard-day-2"
+  },
+  {
+   "id": 12,
+   "title": "Qinghai's Snow Leopards & other mammals of the Tibetan Plateau, Jul–Aug 2025 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2026/05/Qinghai-Snow-Leopards-Mammals-Tour-Jul-Aug-2025.pdf"
+  },
+  {
+   "id": 13,
+   "title": "Chinese Snow Leopard sighting near Yushu, February 2024 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/03/Chinese-Snow-Leopard-Trip-February-2024.pdf"
+  },
+  {
+   "id": 14,
+   "title": "Snow leopards turn from foe to friend on the Tibetan Plateau – Angsai (The National, 2023)",
+   "url": "https://thenational-the-national-prod.cdn.arcpublishing.com/world/2023/04/05/snow-leopards-turn-from-foe-to-friend-in-tibetan-plateau"
+  },
+  {
+   "id": 15,
+   "title": "Snow Leopards of Mongolia photo tour, Altai, February 2025 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2025/04/Cat-Expeditions-Trip-Report-Snow-Leopards-in-Mongolia-2025.pdf"
+  },
+  {
+   "id": 16,
+   "title": "Snow Leopard and Pallas's Cat winter mammal tour, Mongolia, Nov 2023 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2023/12/trip-report-standard.pdf"
+  },
+  {
+   "id": 17,
+   "title": "My Big Cat Year – Mongolia and the quest for the Snow Leopard, Apr–May 2026 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2026/05/Trip-Report-Mongolia-300426-to-120526.pdf"
+  },
+  {
+   "id": 18,
+   "title": "Snow leopard trip in Kyrgyzstan, February 2022 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/community-post/snow-leopard-trip-in-kyrgyzstan-2022/"
+  },
+  {
+   "id": 19,
+   "title": "20-plus snow leopards sighted in Khunjerab National Park in 2015 (Pamir Times, 2016)",
+   "url": "https://pamirtimes.net/2016/02/19/20-plus-snow-leopards-sighted-in-khunjerav-national-park-in-2015-2/"
+  },
+  {
+   "id": 20,
+   "title": "Five snow leopards confirmed in Mustang District of Nepal (Snow Leopard Network, 2013)",
+   "url": "https://snowleopardnetwork.org/?p=567"
+  },
+  {
+   "id": 21,
+   "title": "Snow leopard spotted in Upper Manang village (Kathmandu Post, 2014)",
+   "url": "https://kathmandupost.com/national/2014/10/01/snow-leopard-spotted-in-upper-manang-village"
+  },
+  {
+   "id": 22,
+   "title": "National Snow Leopard Survey of Bhutan 2022–23 (Department of Forests and Park Services, 2023)",
+   "url": "https://www.dofps.gov.bt/?p=4552"
+  }
+ ]
+}

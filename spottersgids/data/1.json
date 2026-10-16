@@ -1,0 +1,461 @@
+{
+ "no": 1,
+ "intro_nl": "Het is nog donker in de Mara als het geluid door je tent rolt: een diep, aanzwellend gebrul dat kilometers ver draagt. Bij het eerste licht vind je ze, drie mannetjes plat in het gras, de buiken rond van een prooi. In de Masai Mara, de Serengeti en de Ngorongorokrater is dit de gewoonste zaak van de wereld. Wil je de zeldzame Aziatische leeuw zien, dan moet je naar Gir in India, en voor de noordelijke leeuw van Afrika naar Zakouma in Tsjaad. Kans: 5 – in Oost-Afrika zie je ze bijna zeker.",
+ "intro_en": "It is still dark in the Mara when the sound rolls through your tent: a deep, swelling roar that carries for miles. At first light you find them, three males flat in the grass, bellies round from a kill. In the Masai Mara, the Serengeti and Ngorongoro Crater this is entirely normal. For the rare Asiatic lion you need to go to Gir in India, and for Africa's northern lion to Zakouma in Chad. Chance: 5 – in East Africa you will almost certainly see them.",
+ "spots": [
+  {
+   "id": "ke-masai-mara",
+   "name_nl": "Masai Mara",
+   "name_en": "Masai Mara",
+   "area_nl": "Nationaal Reservaat Masai Mara en de aangrenzende conservancies, Narok",
+   "area_en": "Masai Mara National Reserve and adjoining conservancies, Narok",
+   "country_nl": "Kenia",
+   "country_en": "Kenya",
+   "cont": "afr",
+   "lat": -1.5,
+   "lon": 35.1,
+   "score": 5,
+   "why_nl": "Mammalwatchers zagen hier in drie dagen 'meerdere troepen leeuwen', en ook een kort bezoek van vier dagen in 2023 leverde slapende mannetjes en een rustende troep op.",
+   "why_en": "Mammalwatchers saw 'several prides of lions' here in three days, and a short four-day visit in 2023 also produced sleeping males and a resting pride.",
+   "season_nl": "Het hele jaar; juli tot oktober extra spektakel met de grote trek, april–mei zijn natte maanden met modderige wegen.",
+   "season_en": "Year-round; July to October adds the spectacle of the great migration, April–May are wet months with muddy tracks.",
+   "time_nl": "Vroege ochtend en late middag; midden op de dag liggen ze plat in de schaduw van struiken.",
+   "time_en": "Early morning and late afternoon; at midday they lie flat in the shade of bushes.",
+   "trip_nl": "game drives vanuit kampen in of rond het reservaat, 3 à 4 dagen",
+   "trip_en": "game drives from camps in or around the reserve, 3–4 days",
+   "sources": [
+    4,
+    5
+   ]
+  },
+  {
+   "id": "tz-serengeti",
+   "name_nl": "Centrale Serengeti (Seronera)",
+   "name_en": "Central Serengeti (Seronera)",
+   "area_nl": "Nationaal Park Serengeti, vooral de vlakten en kopjes rond Seronera",
+   "area_en": "Serengeti National Park, especially the plains and kopjes around Seronera",
+   "country_nl": "Tanzania",
+   "country_en": "Tanzania",
+   "cont": "afr",
+   "lat": -2.3,
+   "lon": 34.8,
+   "score": 5,
+   "why_nl": "Het langlopende leeuwenonderzoek volgde hier in 2023 21 troepen met 205 herkende leeuwen, en reisverslagen beschrijven grote troepen op prooien en mannetjes bij de Gol Kopjes.",
+   "why_en": "The long-term lion study tracked 21 prides with 205 identified lions here in 2023, and trip reports describe big prides on kills and males at the Gol Kopjes.",
+   "season_nl": "Het hele jaar; de troepen rond Seronera zijn standvast, de grote kuddes trekken van december tot maart naar het zuiden (Ndutu).",
+   "season_en": "Year-round; the prides around Seronera are resident, while the big herds move south (Ndutu) from December to March.",
+   "time_nl": "Ochtend en namiddag; zoek ook op en rond de granieten kopjes.",
+   "time_en": "Morning and late afternoon; also scan on and around the granite kopjes.",
+   "trip_nl": "game drives vanuit kampen in het park, 3 à 4 dagen, vaak gecombineerd met Ngorongoro",
+   "trip_en": "game drives from camps in the park, 3–4 days, often combined with Ngorongoro",
+   "sources": [
+    6,
+    7
+   ]
+  },
+  {
+   "id": "tz-ngorongoro-crater",
+   "name_nl": "Ngorongorokrater",
+   "name_en": "Ngorongoro Crater",
+   "area_nl": "Kraterbodem van het Ngorongoro Conservation Area, Arusha",
+   "area_en": "Crater floor of the Ngorongoro Conservation Area, Arusha",
+   "country_nl": "Tanzania",
+   "country_en": "Tanzania",
+   "cont": "afr",
+   "lat": -3.2,
+   "lon": 35.6,
+   "score": 5,
+   "why_nl": "Op de kraterbodem leven zo'n 60 leeuwen in ongeveer vijf troepen, en beide reisverslagen die ik las vonden er op één dag meerdere groepen.",
+   "why_en": "About 60 lions in some five prides live on the crater floor, and both trip reports I read found several groups in a single day.",
+   "season_nl": "Het hele jaar.",
+   "season_en": "Year-round.",
+   "time_nl": "Vroeg naar beneden rijden loont: dan is het rustiger en zijn de leeuwen actiever.",
+   "time_en": "Drive down early: it is quieter and the lions are more active.",
+   "trip_nl": "dagtocht met een safarivoertuig naar de kraterbodem (de verblijven liggen op de kraterrand)",
+   "trip_en": "day trip by safari vehicle to the crater floor (accommodation is on the crater rim)",
+   "sources": [
+    9,
+    7,
+    8
+   ]
+  },
+  {
+   "id": "za-kruger",
+   "name_nl": "Kruger",
+   "name_en": "Kruger",
+   "area_nl": "Nationaal Park Kruger, vooral het zuiden en midden (Lower Sabie, Skukuza, Satara)",
+   "area_en": "Kruger National Park, especially the south and centre (Lower Sabie, Skukuza, Satara)",
+   "country_nl": "Zuid-Afrika",
+   "country_en": "South Africa",
+   "cont": "afr",
+   "lat": -24.0,
+   "lon": 31.6,
+   "score": 4,
+   "why_nl": "Een mammalwatcher noemt de leeuw er 'redelijk algemeen' en zo'n soort heb je volgens hem binnen 2–3 dagen, maar in het noorden van het park zijn de aantallen sterk gedaald.",
+   "why_en": "One mammalwatcher calls the lion 'reasonably common' here and the kind of species you get within 2–3 days, but numbers in the north of the park have dropped sharply.",
+   "season_nl": "Het hele jaar; in het droge seizoen (mei–oktober) is het gras laag en zie je meer.",
+   "season_en": "Year-round; in the dry season (May–October) the grass is short and you see more.",
+   "time_nl": "Zo vroeg mogelijk als de poorten opengaan, en tegen zonsondergang.",
+   "time_en": "As early as possible when the gates open, and towards sunset.",
+   "trip_nl": "zelf rijden vanuit de ruskampen plus georganiseerde zonsondergangs- en nachtritten van het park, 4 à 6 dagen",
+   "trip_en": "self-drive from the rest camps plus the park's organised sunset and night drives, 4–6 days",
+   "sources": [
+    11,
+    12
+   ]
+  },
+  {
+   "id": "za-bw-kgalagadi",
+   "name_nl": "Kgalagadi",
+   "name_en": "Kgalagadi",
+   "area_nl": "Kgalagadi Transfrontier Park (droge rivierbeddingen van de Auob en Nossob)",
+   "area_en": "Kgalagadi Transfrontier Park (dry Auob and Nossob riverbeds)",
+   "country_nl": "Zuid-Afrika / Botswana",
+   "country_en": "South Africa / Botswana",
+   "cont": "afr",
+   "lat": -25.8,
+   "lon": 20.6,
+   "score": 4,
+   "why_nl": "Een kort bezoek in mei 2026, aan maar twee kampen, leverde zes verschillende leeuwenwaarnemingen op, waaronder een brullend paartje en een mannetje met zwarte manen.",
+   "why_en": "A short visit in May 2026, to just two camps, produced six different lion sightings, including a roaring mating pair and a black-maned male.",
+   "season_nl": "Het hele jaar; maart–mei is aangenaam, in de zomer is het heet maar na goede regens is er veel wild.",
+   "season_en": "Year-round; March–May is pleasant, summer is hot, but after good rains there is plenty of game.",
+   "time_nl": "Bij zonsopkomst langs de rivierbeddingen en bij de drinkplaatsen.",
+   "time_en": "At sunrise along the riverbeds and at the waterholes.",
+   "trip_nl": "zelf rijden langs de rivierbeddingen vanuit de ruskampen, plus begeleide zonsondergangs- en nachtritten, 4 à 6 dagen",
+   "trip_en": "self-drive along the riverbeds from the rest camps, plus guided sunset and night drives, 4–6 days",
+   "sources": [
+    10
+   ]
+  },
+  {
+   "id": "na-etosha",
+   "name_nl": "Etosha",
+   "name_en": "Etosha",
+   "area_nl": "Nationaal Park Etosha, vooral de drinkplaatsen rond Okaukuejo en de zuidrand van de pan",
+   "area_en": "Etosha National Park, especially the waterholes around Okaukuejo and the southern edge of the pan",
+   "country_nl": "Namibië",
+   "country_en": "Namibia",
+   "cont": "afr",
+   "lat": -18.9,
+   "lon": 16.0,
+   "score": 4,
+   "why_nl": "Reisverslagen beschrijven een troep die vast bij een drinkplaats lag, een stand-off van zeven leeuwen met zebra's en, opgeteld over een rondreis met Botswana, meer dan 70 leeuwen.",
+   "why_en": "Trip reports describe a pride in permanent attendance at a waterhole, a stand-off between seven lions and zebras and, across a tour that included Botswana, more than 70 lions in total.",
+   "season_nl": "Droge seizoen (juni–oktober), wanneer het wild zich bij de drinkplaatsen verzamelt.",
+   "season_en": "Dry season (June–October), when the game gathers at the waterholes.",
+   "time_nl": "Vroege ochtend bij de drinkplaatsen; 's avonds bij de verlichte drinkplaats van het kamp.",
+   "time_en": "Early morning at the waterholes; in the evening at the camp's floodlit waterhole.",
+   "trip_nl": "zelf rijden tussen de drinkplaatsen vanuit de ruskampen in het park, 3 à 4 dagen",
+   "trip_en": "self-drive between waterholes from the rest camps in the park, 3–4 days",
+   "sources": [
+    13,
+    14
+   ]
+  },
+  {
+   "id": "bw-okavango-moremi",
+   "name_nl": "Okavango (Moremi, Khwai)",
+   "name_en": "Okavango (Moremi, Khwai)",
+   "area_nl": "Moremi Game Reserve en het aangrenzende Khwai-gebied, Okavangodelta",
+   "area_en": "Moremi Game Reserve and the adjoining Khwai area, Okavango Delta",
+   "country_nl": "Botswana",
+   "country_en": "Botswana",
+   "cont": "afr",
+   "lat": -19.2,
+   "lon": 23.4,
+   "score": 4,
+   "why_nl": "Een rondreis zag in Moremi een groep van zo'n tien leeuwen in beweging; recente cijfers over de slaagkans vond ik niet, daarom geen 5.",
+   "why_en": "One tour saw a group of about ten lions on the move in Moremi; I found no recent success-rate figures, hence not a 5.",
+   "season_nl": "Droge seizoen (juni–oktober).",
+   "season_en": "Dry season (June–October).",
+   "time_nl": "Ochtend en namiddag; in Khwai zijn ook nachtritten mogelijk.",
+   "time_en": "Morning and late afternoon; night drives are possible in Khwai.",
+   "trip_nl": "game drives vanuit kampen in of rond het reservaat, of een zelfrijdende kampeertocht met 4x4, 3 à 5 dagen",
+   "trip_en": "game drives from camps in or around the reserve, or a self-drive 4x4 camping trip, 3–5 days",
+   "sources": [
+    14
+   ]
+  },
+  {
+   "id": "td-zakouma",
+   "name_nl": "Zakouma",
+   "name_en": "Zakouma",
+   "area_nl": "Nationaal Park Zakouma, zuidoost-Tsjaad",
+   "area_en": "Zakouma National Park, south-eastern Chad",
+   "country_nl": "Tsjaad",
+   "country_en": "Chad",
+   "cont": "afr",
+   "lat": 10.9,
+   "lon": 19.8,
+   "score": 4,
+   "why_nl": "De beste plek voor de noordelijke leeuw: in 2023 zagen bezoekers ze 'elke dag en bijna elke rit', en in 2018 werden er acht gezien.",
+   "why_en": "The best place for the northern lion: in 2023 visitors saw them 'every day and on almost every drive', and eight were seen in 2018.",
+   "season_nl": "Droge seizoen, grofweg december tot mei; eind van het droge seizoen (april–mei) concentreert het wild zich bij het water. Rond eind mei beginnen de regens.",
+   "season_en": "Dry season, roughly December to May; late in the dry season (April–May) the game concentrates at the water. The rains usually start around the end of May.",
+   "time_nl": "Vroege ochtend en late middag bij drinkplaatsen en in de uiterwaarden.",
+   "time_en": "Early morning and late afternoon at waterholes and on the floodplain.",
+   "trip_nl": "ochtend-, middag- en nachtritten vanuit een kamp in het park, 5 à 6 dagen (vaak als onderdeel van een langere Tsjaadreis)",
+   "trip_en": "morning, afternoon and night drives from a camp inside the park, 5–6 days (often part of a longer Chad trip)",
+   "sources": [
+    15,
+    16,
+    17
+   ]
+  },
+  {
+   "id": "in-gir",
+   "name_nl": "Gir",
+   "name_en": "Gir",
+   "area_nl": "Nationaal Park en Wildreservaat Gir en het Devalia-bezoekersgebied, Sasan Gir (Gujarat)",
+   "area_en": "Gir National Park and Wildlife Sanctuary and the Devalia interpretation zone, Sasan Gir (Gujarat)",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 21.1,
+   "lon": 70.8,
+   "score": 4,
+   "why_nl": "De enige plek ter wereld voor de Aziatische leeuw; groepen zagen er drie keer leeuwen in zes ritten (2017) of vier leeuwen in drie ritten (2020).",
+   "why_en": "The only place in the world for the Asiatic lion; groups saw lions three times in six drives (2017) or four lions in three drives (2020).",
+   "season_nl": "16 oktober tot 15 juni; het park is van 16 juni tot 15 oktober dicht, het omheinde Devalia-gebied blijft dan meestal open.",
+   "season_en": "16 October to 15 June; the park is closed from 16 June to 15 October, while the fenced Devalia zone usually stays open.",
+   "time_nl": "Vroege ochtendrit en late middagrit.",
+   "time_en": "Early morning and late afternoon drives.",
+   "trip_nl": "jeepsafari's met parkjeep en verplichte parkgids (vooraf online permit boeken), 2 à 3 dagen met 4–6 ritten",
+   "trip_en": "jeep safaris in park jeeps with a compulsory park guide (book permits online in advance), 2–3 days with 4–6 drives",
+   "sources": [
+    22,
+    23,
+    24,
+    25,
+    3
+   ]
+  },
+  {
+   "id": "ug-queen-elizabeth",
+   "name_nl": "Queen Elizabeth NP",
+   "name_en": "Queen Elizabeth NP",
+   "area_nl": "Nationaal Park Queen Elizabeth, inclusief de Ishasha-sector",
+   "area_en": "Queen Elizabeth National Park, including the Ishasha sector",
+   "country_nl": "Oeganda",
+   "country_en": "Uganda",
+   "cont": "afr",
+   "lat": -0.2,
+   "lon": 29.9,
+   "score": 2,
+   "why_nl": "De beroemde boomklimmende leeuwen van Ishasha zijn volgens recente berichten teruggevallen tot een klein restant, dus reken nergens op.",
+   "why_en": "According to recent reports, Ishasha's famous tree-climbing lions have dwindled to a small remnant, so do not count on anything.",
+   "season_nl": "Droge maanden (grofweg juni–september en december–februari).",
+   "season_en": "Drier months (roughly June–September and December–February).",
+   "time_nl": "Ochtend en middag; in Ishasha zoek je in de grote vijgenbomen.",
+   "time_en": "Morning and afternoon; in Ishasha, check the large fig trees.",
+   "trip_nl": "game drives vanuit verblijven in en rond het park, 2 à 3 dagen",
+   "trip_en": "game drives from accommodation in and around the park, 2–3 days",
+   "sources": [
+    18,
+    19
+   ]
+  },
+  {
+   "id": "bj-pendjari",
+   "name_nl": "Pendjari (W-Arly-Pendjari)",
+   "name_en": "Pendjari (W-Arly-Pendjari)",
+   "area_nl": "Nationaal Park Pendjari, onderdeel van het W-Arly-Pendjari-complex, Noord-Benin",
+   "area_en": "Pendjari National Park, part of the W-Arly-Pendjari complex, northern Benin",
+   "country_nl": "Benin",
+   "country_en": "Benin",
+   "cont": "afr",
+   "lat": 11.2,
+   "lon": 1.5,
+   "score": 1,
+   "why_nl": "Hier leeft het grootste deel van de West-Afrikaanse leeuwen (rond 350), maar door gewapende groepen en aanvallen in 2024–2025 is een bezoek nu niet verantwoord.",
+   "why_en": "Most of West Africa's lions (around 350) live here, but armed groups and attacks in 2024–2025 mean a visit is not responsible at present.",
+   "season_nl": "Droge seizoen; controleer eerst het actuele reisadvies.",
+   "season_en": "Dry season; check current travel advice first.",
+   "time_nl": "Vroege ochtend.",
+   "time_en": "Early morning.",
+   "trip_nl": "momenteel geen toerisme aan te raden; volg het reisadvies",
+   "trip_en": "tourism currently not advisable; follow official travel advice",
+   "sources": [
+    20,
+    21
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Luister 's nachts en bij zonsopkomst: leeuwen brullen vooral in het donker en je hoort ze kilometers ver. Rijd bij het eerste licht in die richting.",
+  "Let op gieren: dalende of in bomen wachtende gieren wijzen vaak op een prooi, en daar liggen vaak leeuwen bij.",
+  "Luister naar alarmroepen van zebra's, impala's en bavianen, en kijk waar antilopen allemaal dezelfde kant op staren.",
+  "Midden op de dag liggen leeuwen plat in de schaduw onder struiken of bomen. Scan elke schaduwplek, ook vlak langs de weg.",
+  "Zoek 's ochtends naar verse sporen in het zand van wegen en droge rivierbeddingen; in Kgalagadi en Etosha werkt dat goed.",
+  "In droge gebieden is wachten bij een drinkplaats vaak slimmer dan rondrijden.",
+  "Blijf in de auto, houd afstand en maak geen lawaai. Een leeuw die opstaat en wegloopt, voelt zich gestoord."
+ ],
+ "tips_en": [
+  "Listen at night and at dawn: lions roar mostly in the dark and you can hear them for miles. Drive in that direction at first light.",
+  "Watch for vultures: birds descending or waiting in trees often mark a kill, and lions are often lying close by.",
+  "Listen for alarm calls of zebras, impalas and baboons, and notice where antelope are all staring the same way.",
+  "At midday lions lie flat in the shade of bushes or trees. Scan every patch of shade, even right next to the road.",
+  "Look for fresh tracks in the sand of roads and dry riverbeds in the morning; this works well in Kgalagadi and Etosha.",
+  "In dry areas, waiting at a waterhole is often smarter than driving around.",
+  "Stay in the vehicle, keep your distance and stay quiet. A lion that gets up and walks off feels disturbed."
+ ],
+ "threats_nl": [
+  "Vergeldingsacties door veehouders, onder meer door het vergiftigen van karkassen; dit is een van de twee belangrijkste bedreigingen.",
+  "Stroperij op prooidieren voor bushmeat, waardoor leeuwen te weinig te eten hebben; ook strikken doden leeuwen.",
+  "Verlies en versnippering van leefgebied door groeiende nederzettingen en landbouw.",
+  "Handel in botten, tanden en klauwen, deels als vervanger voor tijgerbot in Azië.",
+  "Kleine, geïsoleerde populaties: in Gir leven alle Aziatische leeuwen in één regio, waar ziekte-uitbraken (2018) tientallen dieren doodden, en de kraterleeuwen van Ngorongoro zijn sterk ingeteeld."
+ ],
+ "threats_en": [
+  "Retaliatory killing by livestock owners, including poisoning of carcasses; one of the two main threats.",
+  "Bushmeat poaching of prey species, leaving lions without enough food; snares also kill lions.",
+  "Habitat loss and fragmentation as settlements and farming expand.",
+  "Trade in bones, teeth and claws, partly as a substitute for tiger bone in Asia.",
+  "Small, isolated populations: all Asiatic lions live in one region, where disease outbreaks (2018) killed dozens, and the Ngorongoro Crater lions are highly inbred."
+ ],
+ "status_note_nl": "De IUCN deelt de leeuw in als Kwetsbaar met een dalende trend: er zijn nog zo'n 23.000 in Afrika, en de eerste Green Status (2025) noemt de soort 'grotendeels uitgeput'. De Aziatische leeuw in Gujarat groeit juist, van 674 in 2020 naar 891 in 2025.",
+ "status_note_en": "The IUCN lists the lion as Vulnerable with a decreasing trend: around 23,000 remain in Africa, and the first Green Status (2025) rates the species 'Largely Depleted'. The Asiatic lion in Gujarat is increasing, from 674 in 2020 to 891 in 2025.",
+ "sources": [
+  {
+   "id": 1,
+   "title": "IUCN Green Status for the lion: 'Largely Depleted'; Red List Vulnerable, ~23,000 in Africa and ~670 in India (Down To Earth, 2025)",
+   "url": "https://www.downtoearth.org.in/amp/story/wildlife-biodiversity/largely-depleted-iucns-new-green-status-assessment-for-the-lion-in-africa-and-india"
+  },
+  {
+   "id": 2,
+   "title": "Red List assessment of the lion – presentation for CITES/CMS African Carnivores Initiative (CMS, 2023)",
+   "url": "https://www.cms.int/cami/sites/default/files/document/Day_3_Red%20List%20Assessment%20Lion.pdf"
+  },
+  {
+   "id": 3,
+   "title": "Asiatic lion population in Gujarat rises from 674 to 891 in 5 years (Down To Earth, 2025)",
+   "url": "https://www.downtoearth.org.in/amp/story/wildlife-biodiversity/asiatic-lion-population-in-gujarat-rises-from-674-to-891-in-5-years-spreading-beyond-traditional-habitats"
+  },
+  {
+   "id": 4,
+   "title": "Kenya 2021 – trip report incl. Masai Mara (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/SM-Kenya-2021.pdf"
+  },
+  {
+   "id": 5,
+   "title": "Maasai Mara National Reserve, 25–28 May 2023 – trip report (mammalwatching.com, 2024)",
+   "url": "https://mammalwatching.com/wp-content/uploads/2024/07/May-25-28-2023-Maasi-Mara-National-Reserve.pdf"
+  },
+  {
+   "id": 6,
+   "title": "Long-term ecological study of the Serengeti lion – 2023 update (TAWIRI, 2023)",
+   "url": "https://www.tawiri.or.tz/long-term-ecological-study-of-the-serengeti-lion/"
+  },
+  {
+   "id": 7,
+   "title": "Tanzania trip report Feb–Mar 2013: Ngorongoro, central Serengeti, Ndutu (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/TBY-Tanzania-2013.pdf"
+  },
+  {
+   "id": 8,
+   "title": "Tanzania, November 2015 – trip report incl. Ngorongoro Crater (mammalwatching.com)",
+   "url": "http://mammalwatching.com/Afrotropical/other%20reports/SL%20Tanzania%202015.pdf"
+  },
+  {
+   "id": 9,
+   "title": "Constraints to gene flow increase the risk of genome erosion in the Ngorongoro Crater lion population (Dussex et al., Communications Biology, 2025)",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12012037/"
+  },
+  {
+   "id": 10,
+   "title": "Kgalagadi trip report, May 2026 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2026/05/Kgalagadi-Trip-Report-May-2026.pdf"
+  },
+  {
+   "id": 11,
+   "title": "South Africa: Kruger, Sani Pass, Karoo and Cape – trip report (mammalwatching.com, 2023)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/01/2023_SouthAfrica.pdf"
+  },
+  {
+   "id": 12,
+   "title": "Parliamentary reply NW4914 on Kruger lion survey results 2023–2025 (Parliamentary Monitoring Group, 2026)",
+   "url": "https://pmg.org.za/committee-question/40466/"
+  },
+  {
+   "id": 13,
+   "title": "Namibia, April 2012 – trip report incl. Etosha (mammalwatching.com)",
+   "url": "http://mammalwatching.com/Afrotropical/other%20reports/SO%202012%20Namibia.pdf"
+  },
+  {
+   "id": 14,
+   "title": "A wildlife tour of Namibia and Botswana incl. Etosha and Moremi, 2012 (mammalwatching.com)",
+   "url": "http://mammalwatching.com/Afrotropical/other%20reports/SAS%20Namibia%20and%20Botswana%202012.pdf"
+  },
+  {
+   "id": 15,
+   "title": "Chad: Ennedi, Ouadi-Rimé & Zakouma, 2023 – trip report (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/community-post/chad-ennedi-ouadi-rime-zakouma-2023/"
+  },
+  {
+   "id": 16,
+   "title": "Zakouma N.P., Chad, 7–14 February 2018 – trip report (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2018/06/JW-ZAKOUMA-2018.pdf"
+  },
+  {
+   "id": 17,
+   "title": "Seasonal movements of GPS-collared lions in the Greater Zakouma Ecosystem, 2020–2023 (Mammalian Biology, 2025)",
+   "url": "https://link.springer.com/article/10.1007/s42991-025-00525-8"
+  },
+  {
+   "id": 18,
+   "title": "Lions in Queen Elizabeth National Park – monitoring and threats (WCS Uganda)",
+   "url": "https://uganda.wcs.org/Wildlife/Lions.aspx"
+  },
+  {
+   "id": 19,
+   "title": "UWA and WCS sign 10-year conservation management partnership for Ishasha (WCS, 2026)",
+   "url": "https://newsroom.wcs.org/News-Releases/articleType/ArticleView/articleId/26607/UWA-and-Wildlife-Conservation-Society-Sign-10-Year-Conservation-Management-Partnership-for-Ishasha-in-Ugandas-Queen-Elizabeth-Protected-Area.aspx"
+  },
+  {
+   "id": 20,
+   "title": "West African lions in the W-Arly-Pendjari complex, ~350 animals (Frontiers in Ecology and Evolution, 2016)",
+   "url": "https://www.frontiersin.org/journals/ecology-and-evolution/articles/10.3389/fevo.2016.00110/pdf"
+  },
+  {
+   "id": 21,
+   "title": "World Heritage Committee decision on W-Arly-Pendjari: continuing insecurity, attacks in 2024 and January 2025 (UNESCO)",
+   "url": "https://whc.unesco.org/en/decisions/8766"
+  },
+  {
+   "id": 22,
+   "title": "India 2017 – trip report incl. Gir Forest (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2017/03/India-2017-report-online-version.pdf"
+  },
+  {
+   "id": 23,
+   "title": "India 2020 – trip report incl. Gir Forest (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/JW-INDIA-2020.pdf"
+  },
+  {
+   "id": 24,
+   "title": "Gir National Park – visitor information and annual closure (Gujarat Tourism)",
+   "url": "https://gujarattourism.com/saurashtra/gir-somnath/gir-national-park.html"
+  },
+  {
+   "id": 25,
+   "title": "Sinh Darshan in Gir reopens after annual closure; Devaliya stays open (DeshGujarat, 2017)",
+   "url": "https://deshgujarat.com/2017/10/16/sinh-darshan-in-gir-sanctuary-the-only-abode-of-asiatic-lions-begins-after-4-months-annual-closure/"
+  },
+  {
+   "id": 26,
+   "title": "Threat analysis for more effective lion conservation (Bauer et al., Oryx)",
+   "url": "https://research.slu.se/en/publications/threat-analysis-for-more-effective-lion-conservation/"
+  },
+  {
+   "id": 27,
+   "title": "A roaring trade? The legal trade in Panthera leo bones from Africa to East-Southeast Asia (University of Oxford)",
+   "url": "https://www.biology.ox.ac.uk/node/1965816"
+  },
+  {
+   "id": 28,
+   "title": "The latest disease outbreak in Gir is yet another reminder that Asiatic lions need more homes (The Wire)",
+   "url": "https://thewire.in/environment/the-latest-disease-outbreak-in-gir-is-yet-another-reminder-that-asiatic-lions-need-more-homes-and-soon"
+  }
+ ]
+}

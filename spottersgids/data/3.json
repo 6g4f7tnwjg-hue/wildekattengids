@@ -1,0 +1,452 @@
+{
+ "no": 3,
+ "intro_nl": "De motor van de boot valt stil. Op de oever, half verstopt tussen de waterhyacinten, ligt een jaguar je aan te kijken. In de Pantanal bij Porto Jofre is dat geen droom maar gewoon een dinsdagochtend. Tussen juli en oktober jagen de katten langs de rivieren, en de meeste bezoekers zien er binnen drie dagen meerdere. Kans: 5 – hier ga je zelden met lege handen naar huis.",
+ "intro_en": "The boat's engine cuts out. On the bank, half hidden among the water hyacinths, a jaguar lies looking straight at you. In the Pantanal near Porto Jofre that is not a dream but just another Tuesday morning. Between July and October the cats hunt along the rivers, and most visitors see several within three days. Chance: 5 – you rarely go home empty-handed here.",
+ "spots": [
+  {
+   "id": "br-porto-jofre-pantanal",
+   "name_nl": "Porto Jofre (noordelijke Pantanal)",
+   "name_en": "Porto Jofre (northern Pantanal)",
+   "area_nl": "Rivieren Cuiabá, São Lourenço en Três Irmãos rond Porto Jofre en Staatspark Encontro das Águas, Mato Grosso",
+   "area_en": "Cuiabá, São Lourenço and Três Irmãos rivers around Porto Jofre and Encontro das Águas State Park, Mato Grosso",
+   "country_nl": "Brazilië",
+   "country_en": "Brazil",
+   "cont": "sam",
+   "lat": -17.3,
+   "lon": -56.8,
+   "score": 5,
+   "why_nl": "Modelonderzoek schat de kans op een jaguar hier in het hoogseizoen op meer dan 94%, het aantal aan boten gewende jaguars steeg van 29 (2013) naar 130 (2023), en een mammalwatching-groep zag er in drie dagen op de rivier minstens vijf.",
+   "why_en": "Modelling puts the chance of seeing a jaguar here above 94% in high season, the number of boat-habituated jaguars rose from 29 (2013) to 130 (2023), and a mammalwatching group saw at least five in three days on the river.",
+   "season_nl": "Droge tijd, juli t/m oktober: het water zakt vanaf mei en de katten jagen dan langs de oevers. In het natte seizoen heb je veel geluk nodig.",
+   "season_en": "Dry season, July to October: the water drops from May onwards and the cats hunt along the banks. In the wet season you need a lot of luck.",
+   "time_nl": "De hele dag; vroege ochtend en late middag zijn het actiefst, rond het middaguur liggen ze vaak te slapen op de oever.",
+   "time_en": "All day; early morning and late afternoon are most active, around midday they often sleep on the bank.",
+   "trip_nl": "Boottochten van een hele of halve dag vanaf Porto Jofre over de rivieren, minstens 3 volle dagen; je komt er via de Transpantaneira vanaf Poconé.",
+   "trip_en": "Full- or half-day boat trips from Porto Jofre along the rivers, at least 3 full days; you get there along the Transpantaneira from Poconé.",
+   "sources": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": "br-southern-pantanal-miranda",
+   "name_nl": "Zuidelijke Pantanal (Miranda)",
+   "name_en": "Southern Pantanal (Miranda)",
+   "area_nl": "Rivieren Miranda, Vermelho en Aquidauana en omliggende ranches, Mato Grosso do Sul",
+   "area_en": "Miranda, Vermelho and Aquidauana rivers and surrounding ranches, Mato Grosso do Sul",
+   "country_nl": "Brazilië",
+   "country_en": "Brazil",
+   "cont": "sam",
+   "lat": -19.7,
+   "lon": -56.9,
+   "score": 4,
+   "why_nl": "Mammalwatchers zagen hier jaguars op nachtritten tussen rijstvelden en weiden en op boottochten over de Miranda (zes waarnemingen in twee reizen), maar minder dan bij Porto Jofre; een ervaren bezoeker raadt minstens vijf dagen aan.",
+   "why_en": "Mammalwatchers have seen jaguars here on night drives among rice fields and pastures and on boat trips on the Miranda (six sightings over two trips), but fewer than at Porto Jofre; one experienced visitor advises at least five days.",
+   "season_nl": "Juli t/m september (droog); oktober kan ook, al vallen dan de eerste buien.",
+   "season_en": "July to September (dry); October can work too, though the first rains arrive then.",
+   "time_nl": "Nachtritten na zonsondergang; boottochten in de ochtend en late middag.",
+   "time_en": "Night drives after sunset; boat trips in the morning and late afternoon.",
+   "trip_nl": "Nachtritten met zoeklicht vanuit lodges op ranches rond Miranda, gecombineerd met boottochten op de Miranda, 4 à 5 dagen.",
+   "trip_en": "Spotlit night drives from lodges on ranches around Miranda, combined with boat trips on the Miranda river, 4 to 5 days.",
+   "sources": [
+    4,
+    5
+   ]
+  },
+  {
+   "id": "br-mamiraua",
+   "name_nl": "Mamirauá",
+   "name_en": "Mamirauá",
+   "area_nl": "Duurzaam-ontwikkelingsreservaat Mamirauá (overstroomd várzeabos), bij Tefé, Amazonas",
+   "area_en": "Mamirauá Sustainable Development Reserve (flooded várzea forest), near Tefé, Amazonas",
+   "country_nl": "Brazilië",
+   "country_en": "Brazil",
+   "cont": "sam",
+   "lat": -2.5,
+   "lon": -65.8,
+   "score": 3,
+   "why_nl": "Onderzoekers van het Instituut Mamirauá ontdekten dat jaguars hier tijdens het hoogwater maanden in de boomkruinen leven; met gezenderde dieren als hulp nemen ze bezoekers in kleine boten mee om ze te zoeken, maar slagingspercentages zijn niet gepubliceerd.",
+   "why_en": "Researchers from the Mamirauá Institute found that jaguars here spend months in the treetops during high water; using radio-collared cats they take visitors out in small boats to look for them, but success rates have not been published.",
+   "season_nl": "Hoogwaterseizoen, ruwweg april–juli, als de bosbodem meters onder water staat.",
+   "season_en": "High-water season, roughly April to July, when the forest floor is metres under water.",
+   "time_nl": "Overdag, tijdens tochten door het overstroomde bos.",
+   "time_en": "During the day, on trips through the flooded forest.",
+   "trip_nl": "Speciale jaguarexpedities per kano of kleine boot vanuit een gemeenschapslodge in het reservaat, samen met onderzoekers, 4 à 5 dagen; bereikbaar per boot vanaf Tefé.",
+   "trip_en": "Special jaguar expeditions by canoe or small boat from a community-run lodge in the reserve, together with researchers, 4 to 5 days; reached by boat from Tefé.",
+   "sources": [
+    6
+   ]
+  },
+  {
+   "id": "pe-manu",
+   "name_nl": "Manu (laagland)",
+   "name_en": "Manu (lowlands)",
+   "area_nl": "Nationaal Park Manu en de Gereserveerde Zone van Manu, Madre de Dios",
+   "area_en": "Manu National Park and Manu Reserved Zone, Madre de Dios",
+   "country_nl": "Peru",
+   "country_en": "Peru",
+   "cont": "sam",
+   "lat": -11.9,
+   "lon": -71.6,
+   "score": 2,
+   "why_nl": "Jaguars worden vaak langs de rivieroevers gezien, vooral na regen of koel weer, maar een mammalwatcher zag er in twee weken alleen een tijdens een nachtwandeling en geen enkele vanaf de boot.",
+   "why_en": "Jaguars are often seen along the riverbanks, especially after rain or cool weather, but one mammalwatcher saw one only on a night walk in two weeks and none from the boat.",
+   "season_nl": "Droge tijd, juni–oktober, als zandbanken en oevers vrij liggen.",
+   "season_en": "Dry season, June to October, when sandbars and banks are exposed.",
+   "time_nl": "Boottochten overdag; nachtwandelingen op paden bij de lodges.",
+   "time_en": "Boat trips by day; night walks on trails near the lodges.",
+   "trip_nl": "Meerdaagse boottocht over de Madre de Dios en Manu met overnachting in lodges, aangevuld met nachtwandelingen, 7 à 10 dagen.",
+   "trip_en": "Multi-day boat trip along the Madre de Dios and Manu rivers staying in lodges, plus night walks, 7 to 10 days.",
+   "sources": [
+    9
+   ]
+  },
+  {
+   "id": "bo-madidi",
+   "name_nl": "Madidi",
+   "name_en": "Madidi",
+   "area_nl": "Nationaal Park en Natuurgebied Madidi, La Paz",
+   "area_en": "Madidi National Park and Natural Integrated Management Area, La Paz",
+   "country_nl": "Bolivia",
+   "country_en": "Bolivia",
+   "cont": "sam",
+   "lat": -13.6,
+   "lon": -68.6,
+   "score": 2,
+   "why_nl": "Een mammalwatcher noteerde in acht dagen in Madidi een jaguar; meer recente gegevens over succes zijn er nauwelijks.",
+   "why_en": "One mammalwatcher recorded a jaguar in eight days in Madidi; there is little more recent information on success rates.",
+   "season_nl": "Droge tijd, juni–oktober.",
+   "season_en": "Dry season, June to October.",
+   "time_nl": "Boottochten langs rivieroevers overdag; nachtwandelingen.",
+   "time_en": "Boat trips along riverbanks by day; night walks.",
+   "trip_nl": "Boottocht vanaf Rurrenabaque naar een ecolodge in het park, met boot- en nachtexcursies, 5 à 8 dagen.",
+   "trip_en": "Boat journey from Rurrenabaque to an ecolodge in the park, with boat and night excursions, 5 to 8 days.",
+   "sources": [
+    10
+   ]
+  },
+  {
+   "id": "mx-calakmul",
+   "name_nl": "Calakmul",
+   "name_en": "Calakmul",
+   "area_nl": "Biosfeerreservaat Calakmul, Campeche",
+   "area_en": "Calakmul Biosphere Reserve, Campeche",
+   "country_nl": "Mexico",
+   "country_en": "Mexico",
+   "cont": "nam",
+   "lat": 18.4,
+   "lon": -89.6,
+   "score": 2,
+   "why_nl": "Bezoekers melden af en toe jaguars op de toegangsweg naar de Mayaruïnes, maar een mammalwatcher die er een nacht verbleef zag er zelf geen.",
+   "why_en": "Visitors occasionally report jaguars on the access road to the Maya ruins, but a mammalwatcher who spent a night there did not see one himself.",
+   "season_nl": "Droge tijd, februari–mei: de dieren komen dan naar de waterpoelen (aguadas).",
+   "season_en": "Dry season, February to May, when animals visit the waterholes (aguadas).",
+   "time_nl": "Zo vroeg mogelijk 's ochtends; de weg in het reservaat gaat pas na zonsopkomst open, dus probeer de eerste auto te zijn.",
+   "time_en": "As early as possible in the morning; the road into the reserve only opens after sunrise, so try to be the first car in.",
+   "trip_nl": "Zelf rijden of met een lokale gids over de weg naar de ruïnes, plus nachtritten buiten het reservaat, 2 à 3 dagen.",
+   "trip_en": "Drive yourself or with a local guide along the road to the ruins, plus night drives outside the reserve, 2 to 3 days.",
+   "sources": [
+    12
+   ]
+  },
+  {
+   "id": "ar-ibera",
+   "name_nl": "Iberá",
+   "name_en": "Iberá",
+   "area_nl": "Nationaal Park Iberá en de Esteros del Iberá, Corrientes",
+   "area_en": "Iberá National Park and the Esteros del Iberá wetlands, Corrientes",
+   "country_nl": "Argentinië",
+   "country_en": "Argentina",
+   "cont": "sam",
+   "lat": -28.5,
+   "lon": -57.2,
+   "score": 1,
+   "why_nl": "Na herintroductie leven er nu zo'n 50 jaguars vrij in Iberá, maar pas in mei 2026 filmden toeristen er voor het eerst een, bij Colonia Carlos Pellegrini.",
+   "why_en": "After reintroduction about 50 jaguars now live free in Iberá, but only in May 2026 did tourists film one for the first time, near Colonia Carlos Pellegrini.",
+   "season_nl": "Het hele jaar; voorjaar en herfst (april–mei, september–oktober) zijn het aangenaamst.",
+   "season_en": "Year-round; spring and autumn (April–May, September–October) are most pleasant.",
+   "time_nl": "Vroege ochtend en schemering.",
+   "time_en": "Early morning and dusk.",
+   "trip_nl": "Wandelingen op de parkpaden en boottochten vanuit Colonia Carlos Pellegrini, 2 à 3 dagen; let op, paden kunnen tijdelijk aangepast zijn als er een jaguar rondloopt.",
+   "trip_en": "Walks on the park trails and boat trips from Colonia Carlos Pellegrini, 2 to 3 days; note that trail rules may change when a jaguar is around.",
+   "sources": [
+    7,
+    8
+   ]
+  },
+  {
+   "id": "cr-corcovado",
+   "name_nl": "Corcovado",
+   "name_en": "Corcovado",
+   "area_nl": "Nationaal Park Corcovado, schiereiland Osa, Puntarenas",
+   "area_en": "Corcovado National Park, Osa Peninsula, Puntarenas",
+   "country_nl": "Costa Rica",
+   "country_en": "Costa Rica",
+   "cont": "sam",
+   "lat": 8.5,
+   "lon": -83.6,
+   "score": 1,
+   "why_nl": "Cameravallen laten zien dat het aantal jaguars tussen 2015 en 2021 is gestegen, maar een jaguar bij de rivier Sirena in 2024 haalde nog het landelijke nieuws als 'eerste in vele jaren' in dat gebied.",
+   "why_en": "Camera traps show jaguar numbers rose between 2015 and 2021, but a jaguar at the Sirena river in 2024 still made national news as 'the first in many years' in the area.",
+   "season_nl": "Droge tijd, december–april.",
+   "season_en": "Dry season, December to April.",
+   "time_nl": "Vroege ochtend en late middag op het strand en langs riviermondingen.",
+   "time_en": "Early morning and late afternoon on the beach and along river mouths.",
+   "trip_nl": "Meerdaagse wandeling met verplichte gids naar parkwachterspost Sirena, met overnachting, 2 à 3 dagen.",
+   "trip_en": "Multi-day hike with a mandatory guide to Sirena ranger station, staying overnight, 2 to 3 days.",
+   "sources": [
+    15,
+    16
+   ]
+  },
+  {
+   "id": "py-gran-chaco",
+   "name_nl": "Gran Chaco",
+   "name_en": "Gran Chaco",
+   "area_nl": "Nationale parken Defensores del Chaco en Teniente Agripino Enciso, Boquerón en Alto Paraguay",
+   "area_en": "Defensores del Chaco and Teniente Agripino Enciso National Parks, Boquerón and Alto Paraguay",
+   "country_nl": "Paraguay",
+   "country_en": "Paraguay",
+   "cont": "sam",
+   "lat": -20.5,
+   "lon": -60.9,
+   "score": 1,
+   "why_nl": "Mammalwatchers vinden hier sporen van katten en zien soms een poema, maar recente tripverslagen melden geen jaguar.",
+   "why_en": "Mammalwatchers find cat signs here and sometimes see a puma, but recent trip reports mention no jaguar.",
+   "season_nl": "Droge winter, mei–september.",
+   "season_en": "Dry winter, May to September.",
+   "time_nl": "Nachtritten en wachten bij waterpoelen in de schemering.",
+   "time_en": "Night drives and waiting at waterholes at dusk.",
+   "trip_nl": "Meerdaagse expeditie met een gespecialiseerde mammalgids en terreinwagen door de Chaco, met nachtritten, 4 à 6 dagen.",
+   "trip_en": "Multi-day expedition by 4x4 through the Chaco with a specialist mammal guide, including night drives, 4 to 6 days.",
+   "sources": [
+    11
+   ]
+  },
+  {
+   "id": "bz-cockscomb",
+   "name_nl": "Cockscomb Basin",
+   "name_en": "Cockscomb Basin",
+   "area_nl": "Cockscomb Basin Wildlife Sanctuary, Stann Creek",
+   "area_en": "Cockscomb Basin Wildlife Sanctuary, Stann Creek",
+   "country_nl": "Belize",
+   "country_en": "Belize",
+   "cont": "sam",
+   "lat": 16.8,
+   "lon": -88.6,
+   "score": 1,
+   "why_nl": "Cameravallen legden er in 14 jaar 105 volwassen jaguars vast en de katten lopen over de toeristenpaden, maar zelf zien is grote uitzondering; reken op sporen.",
+   "why_en": "Camera traps recorded 105 adult jaguars in 14 years and the cats use the tourist trails, but seeing one yourself is rare; expect tracks.",
+   "season_nl": "Droge tijd, februari–mei.",
+   "season_en": "Dry season, February to May.",
+   "time_nl": "Vroege ochtend op de paden; 's nachts is de kans iets groter.",
+   "time_en": "Early morning on the trails; chances are slightly better at night.",
+   "trip_nl": "Wandelingen in het reservaat met overnachting op het hoofdkwartier, eventueel een nachtwandeling met een parkgids, 2 à 3 dagen.",
+   "trip_en": "Walks in the sanctuary staying overnight at the headquarters, possibly a night walk with a park guide, 2 to 3 days.",
+   "sources": [
+    14
+   ]
+  },
+  {
+   "id": "gt-maya-biosphere",
+   "name_nl": "Maya-biosfeerreservaat",
+   "name_en": "Maya Biosphere Reserve",
+   "area_nl": "Maya-biosfeerreservaat (o.a. Laguna del Tigre en Mirador–Río Azul), Petén",
+   "area_en": "Maya Biosphere Reserve (incl. Laguna del Tigre and Mirador–Río Azul), Petén",
+   "country_nl": "Guatemala",
+   "country_en": "Guatemala",
+   "cont": "sam",
+   "lat": 17.5,
+   "lon": -90.0,
+   "score": 1,
+   "why_nl": "Laguna del Tigre heeft de hoogste jaguardichtheid van het reservaat en elders is de stand stabiel, maar jaguars worden vrijwel alleen via cameravallen vastgelegd.",
+   "why_en": "Laguna del Tigre has the reserve's highest jaguar density and elsewhere numbers are stable, but jaguars are almost only recorded by camera traps.",
+   "season_nl": "Droge tijd, februari–mei.",
+   "season_en": "Dry season, February to May.",
+   "time_nl": "Vroege ochtend en schemering.",
+   "time_en": "Early morning and dusk.",
+   "trip_nl": "Meerdaagse trektocht met gids en muilezels naar El Mirador vanuit Carmelita, 5 à 6 dagen; of een bezoek aan Tikal als kennismaking.",
+   "trip_en": "Multi-day trek with a guide and mules to El Mirador from Carmelita, 5 to 6 days; or visit Tikal as an introduction.",
+   "sources": [
+    13
+   ]
+  },
+  {
+   "id": "us-southeast-arizona",
+   "name_nl": "Zuidoost-Arizona",
+   "name_en": "Southeastern Arizona",
+   "area_nl": "Sky-islandgebergten langs de grens, o.a. Huachuca, Santa Rita en Chiricahua Mountains",
+   "area_en": "Sky island mountains along the border, incl. the Huachuca, Santa Rita and Chiricahua Mountains",
+   "country_nl": "Verenigde Staten",
+   "country_en": "United States",
+   "cont": "nam",
+   "lat": 31.6,
+   "lon": -110.5,
+   "score": 1,
+   "why_nl": "Er leeft geen vaste populatie: sinds 1996 zijn alleen enkele zwervende mannetjes uit Mexico vastgelegd, bijna altijd met cameravallen; de dichtstbijzijnde broedpopulatie ligt zo'n 200 km zuidelijker.",
+   "why_en": "There is no resident population: since 1996 only a few wandering males from Mexico have been recorded, almost always by camera traps; the nearest breeding population is some 200 km to the south.",
+   "season_nl": "Het hele jaar; een waarneming is puur toeval.",
+   "season_en": "Year-round; a sighting is pure chance.",
+   "time_nl": "Vooral 's nachts.",
+   "time_en": "Mainly at night.",
+   "trip_nl": "Geen jaguartochten mogelijk; wandel in de sky islands voor het landschap en andere zoogdieren.",
+   "trip_en": "No jaguar trips possible; hike the sky islands for the scenery and other mammals.",
+   "sources": [
+    17,
+    18
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Ga in de droge tijd: dan trekt het water zich terug en concentreren jaguars zich langs de rivieroevers.",
+  "Neem minstens drie volle dagen op de rivier; elke extra dag vergroot je kans op een jaguar die jaagt of zwemt in plaats van slaapt.",
+  "Scan de oevers op een gele vlek in de schaduw, en zandbanken op verse, ronde prenten zonder klauwafdruk.",
+  "Let op onrust bij kaaimannen, capibara's en vogels: vluchtende capibara's en alarmerende reigers verraden vaak een jagende kat.",
+  "Luister 's nachts naar het diepe, raspende 'zagen' of grommen; zo maken jaguars hun aanwezigheid bekend.",
+  "In de zuidelijke Pantanal en de Chaco: kies nachtritten met zoeklicht; de oogreflectie zie je van ver.",
+  "Houd afstand en blijf in de boot of auto; laat drukte rond één kat niet je gedrag bepalen."
+ ],
+ "tips_en": [
+  "Go in the dry season, when the water recedes and jaguars concentrate along the riverbanks.",
+  "Plan at least three full days on the river; every extra day raises your chance of a jaguar hunting or swimming instead of sleeping.",
+  "Scan the banks for a yellow patch in the shade, and sandbars for fresh round prints without claw marks.",
+  "Watch for unrest among caimans, capybaras and birds: fleeing capybaras and alarm-calling herons often give away a hunting cat.",
+  "Listen at night for the deep, rasping 'sawing' call or grunts jaguars use to advertise themselves.",
+  "In the southern Pantanal and the Chaco, join spotlit night drives; you can see the eyeshine from far away.",
+  "Keep your distance and stay in the boat or vehicle; don't let the crowd around one cat dictate your behaviour."
+ ],
+ "threats_nl": [
+  "Verlies en versnippering van leefgebied door ontbossing voor veeteelt en landbouw; buiten de Amazone is de soort met zo'n 82% achteruitgegaan.",
+  "Conflict met veehouders: jaguars die vee doden worden uit wraak afgeschoten of vergiftigd.",
+  "Stroperij voor tanden, schedels en huiden, vooral voor de illegale handel naar Azië.",
+  "Branden: in 2020 brandde 31% van de Pantanal af en werd zo'n 45% van de jaguars daar getroffen.",
+  "Onvoldoende geregeld toerisme: in Porto Jofre liggen soms tientallen boten rond één jaguar."
+ ],
+ "threats_en": [
+  "Habitat loss and fragmentation through deforestation for cattle ranching and agriculture; outside the Amazon the species has declined by about 82%.",
+  "Conflict with ranchers: jaguars that kill livestock are shot or poisoned in retaliation.",
+  "Poaching for fangs, skulls and skins, mainly for illegal trade to Asia.",
+  "Fire: in 2020, 31% of the Pantanal burned and about 45% of its jaguars were affected.",
+  "Poorly regulated tourism: at Porto Jofre dozens of boats sometimes crowd around a single jaguar."
+ ],
+ "status_note_nl": "De IUCN deelt de jaguar in als Gevoelig (Near Threatened); volgens recente analyses is de soort uit ruim de helft van zijn oorspronkelijke gebied verdwenen en zijn 33 van de 34 deelpopulaties buiten de Amazone bedreigd, waardoor hij mogelijk eigenlijk als Kwetsbaar zou moeten gelden.",
+ "status_note_en": "The IUCN lists the jaguar as Near Threatened; recent analyses show it has vanished from more than half of its historical range and that 33 of its 34 subpopulations (all except the Amazon) are threatened, so it may in fact qualify as Vulnerable.",
+ "sources": [
+  {
+   "id": 1,
+   "title": "In Brazil's Pantanal, too many tourists may be the jaguar's new predator (Mongabay, 2025)",
+   "url": "https://news.mongabay.com/2025/09/in-brazils-pantanal-too-many-tourists-may-be-the-jaguars-new-predator/"
+  },
+  {
+   "id": 2,
+   "title": "Jaguar tourism in Brazil's Pantanal needs new rules to avoid collapse: study (Mongabay, 2025)",
+   "url": "https://news.mongabay.com/short-article/2025/04/jaguar-tourism-in-brazils-pantanal-needs-new-rules-to-avoid-collapse-study/"
+  },
+  {
+   "id": 3,
+   "title": "Brazil – Mammals of the Pantanal, trip report October 2019 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/BRA11_report_191020_Brazil_Mammals_of_the_Pantanal.pdf"
+  },
+  {
+   "id": 4,
+   "title": "Southern Pantanal trip report 2015–2016 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2017/10/Southern-Pantanal-trip-report-Mogens-Trolle.pdf"
+  },
+  {
+   "id": 5,
+   "title": "Brazil, the Pantanal, October–November 2022, trip report (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/JW-Brazil-2022.pdf"
+  },
+  {
+   "id": 6,
+   "title": "Brazil jaguars find safe haven from floods in rainforest trees – Mamirauá (AFP via Free Malaysia Today, 2018)",
+   "url": "https://www.freemalaysiatoday.com/category/2018/04/05/brazil-jaguars-find-safe-haven-from-floods-in-rainforest-trees/"
+  },
+  {
+   "id": 7,
+   "title": "Iberá reaches 50 jaguars in the wild (Noticias Ambientales, April 2026)",
+   "url": "https://noticiasambientales.com/animals/the-return-of-the-great-feline-ibera-reaches-50-jaguars-in-the-wild-thanks-to-the-birth-of-a-new-cub-in-the-region/"
+  },
+  {
+   "id": 8,
+   "title": "Historic encounter with 'Ombú': tourists film a jaguar in the Iberá Wetlands for the first time (Noticias Ambientales, May 2026)",
+   "url": "https://noticiasambientales.com/animals/historic-encounter-with-ombu-tourists-film-a-jaguar-in-the-ibera-wetlands-for-the-first-time/"
+  },
+  {
+   "id": 9,
+   "title": "Manu Lowlands, trip report September 2016 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/2016/08/22/manu-lowlands/"
+  },
+  {
+   "id": 10,
+   "title": "New trip reports: Bolivia – Madidi and San Miguelito 2015 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/2015/10/05/new-trip-reports-bolivia/"
+  },
+  {
+   "id": 11,
+   "title": "Paraguay trip report May 2023 – Chaco (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2023/05/Paraguay-trip-report-May-2023-Stuart-Chapman.pdf"
+  },
+  {
+   "id": 12,
+   "title": "Yucatán Peninsula trip report 2017/2018, incl. Calakmul (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2018/04/VS-Yucatan-2018.pdf"
+  },
+  {
+   "id": 13,
+   "title": "International Jaguar Day: what this feline reveals about our forests – Maya Biosphere Reserve (WCS, 2025)",
+   "url": "https://programs.wcs.org/5greatforests/en-us/News/ID/25723/International-Jaguar-Day-What-this-feline-reveals-about-our-forests"
+  },
+  {
+   "id": 14,
+   "title": "Long-term monitoring of jaguars in the Cockscomb Basin Wildlife Sanctuary, Belize (PLoS ONE, 2017)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5489181/"
+  },
+  {
+   "id": 15,
+   "title": "Olson et al. – Jaguar abundance in Corcovado National Park, Costa Rica, 2015–2021 (Oryx, 2024)",
+   "url": "https://www.cambridge.org/core/journals/oryx/article/conservation-crisis-status-of-jaguars-panthera-onca-in-corcovado-national-park-costa-rica/DB1034CFAED2447D7E4326BD481B5768"
+  },
+  {
+   "id": 16,
+   "title": "Guide films a jaguar on the Sirena River, Corcovado (Observador, August 2024)",
+   "url": "https://observador.cr/video-guia-de-corcovado-capta-un-jaguar-por-primera-vez-en-muchos-anos-en-la-zona/"
+  },
+  {
+   "id": 17,
+   "title": "Arizona Game and Fish confirms new wild jaguar in the Huachuca Mountains (FOX 10 Phoenix, 2016)",
+   "url": "https://www.fox10phoenix.com/news/azgfd-officials-confirm-wild-jaguar-shown-in-photo-is-new"
+  },
+  {
+   "id": 18,
+   "title": "Another jaguar discovery in southern Arizona – all jaguars found since 1996 were males (Arizona Daily Star, 2018)",
+   "url": "https://thisistucson.com/news/local/another-jaguar-discovery-in-southern-arizona-adds-to-border-wall-debate/article_f4cb68db-4b96-556c-8cde-a76842dddebe.html"
+  },
+  {
+   "id": 19,
+   "title": "de la Torre et al. – The jaguar's spots are darker than they appear: global conservation status of the jaguar (Oryx, 2018)",
+   "url": "https://www.cambridge.org/core/product/07988F672DDB1CD701370FC3E196199E/core-reader"
+  },
+  {
+   "id": 20,
+   "title": "CMS COP13 proposal citing the IUCN Red List assessment of Panthera onca (Quigley et al. 2017) (CMS, 2020)",
+   "url": "https://www.cms.int/slender-billed-curlew/sites/default/files/document/cms_cop13_doc.27.1.2_addendum2_e.pdf"
+  },
+  {
+   "id": 21,
+   "title": "Tortato et al. – The numbers of the beast: valuation of jaguar tourism and cattle depredation in the Pantanal (Global Ecology and Conservation, 2017)",
+   "url": "https://ueaeprints.uea.ac.uk/id/eprint/63724/"
+  },
+  {
+   "id": 22,
+   "title": "Wildfires disproportionately affected jaguars in the Pantanal (Communications Biology, 2022)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9561719/"
+  },
+  {
+   "id": 23,
+   "title": "Poaching pressure mounts on jaguars, the Americas' iconic big cat (Mongabay, 2020)",
+   "url": "https://news.mongabay.com/2020/09/poaching-pressure-mounts-on-jaguars-the-americas-iconic-big-cat/"
+  }
+ ]
+}

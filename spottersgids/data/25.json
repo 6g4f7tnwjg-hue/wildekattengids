@@ -1,0 +1,307 @@
+{
+ "no": 25,
+ "intro_nl": "Het is min twintig en doodstil in het bos boven Grand Marais. In de verse sneeuw langs de weg lopen sporen zo groot als een handpalm, en dan staat hij er ineens: lange poten, pluimpjes op de oren, een gezicht vol grijze bakkebaarden. Een paar tellen kijkt de Canadese lynx je aan, dan glijdt hij weg tussen de sparren. Wie in februari een paar dagen volhoudt, heeft hier een eerlijke kans. Kans: 3 – met geduld en sneeuw onder de banden is het zeker haalbaar.",
+ "intro_en": "It is minus twenty and dead quiet in the forest above Grand Marais. In the fresh snow along the road run tracks as big as your palm, and then suddenly he is there: long legs, tufted ears, a face full of grey whiskers. For a few seconds the Canada lynx looks at you, then it slips away between the spruces. Stick it out for a few days in February and you have a fair shot here. Chance: 3 – with patience and snow under your tyres it is definitely doable.",
+ "spots": [
+  {
+   "id": "us-superior-nf-grand-marais",
+   "name_nl": "Superior National Forest bij Grand Marais",
+   "name_en": "Superior National Forest near Grand Marais",
+   "area_nl": "Superior National Forest (Arrowhead-regio), Cook County, Minnesota",
+   "area_en": "Superior National Forest (Arrowhead region), Cook County, Minnesota",
+   "country_nl": "Verenigde Staten",
+   "country_en": "United States",
+   "cont": "nam",
+   "lat": 47.9,
+   "lon": -90.5,
+   "score": 3,
+   "why_nl": "Bijna alle winterreizen in de verslagen op mammalwatching.com zagen hier lynxen (van één dier tot een familie van vier), maar zelfs een ervaren gids had in 2017 zo'n 60 uur nodig en een bezoeker eind maart zag niets.",
+   "why_en": "Almost every winter trip in the mammalwatching.com reports saw lynx here (from a single animal to a family of four), yet even an experienced guide needed some 60 hours in 2017 and one late-March visitor saw none.",
+   "season_nl": "Winter, januari t/m maart; eind februari (paartijd) geldt als de beste periode. In de zomer is het hier druk en zie je ze veel minder.",
+   "season_en": "Winter, January to March; late February (mating season) is considered best. Summer is busy and sightings are far fewer.",
+   "time_nl": "Vooral schemering en vroege ochtend, maar lynxen worden hier ook overdag gezien.",
+   "time_en": "Mostly dusk and early morning, though lynx are also seen here in daylight.",
+   "trip_nl": "Zelf langzaam over de bosweggen rijden in een auto met vierwielaandrijving (sneeuw en ijs), of een gespecialiseerde winterexcursie met een lokale gids vanuit Grand Marais; reken op 3 à 7 dagen.",
+   "trip_en": "Drive the forest roads slowly yourself in a four-wheel-drive car (snow and ice), or join a specialist winter excursion with a local guide from Grand Marais; allow 3 to 7 days.",
+   "sources": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": "ca-kluane",
+   "name_nl": "Kluane en Zuidwest-Yukon",
+   "name_en": "Kluane and southwest Yukon",
+   "area_nl": "Omgeving van Kluane National Park and Reserve en Haines Junction, tot aan Whitehorse (Yukon)",
+   "area_en": "Around Kluane National Park and Reserve and Haines Junction, east to Whitehorse (Yukon)",
+   "country_nl": "Canada",
+   "country_en": "Canada",
+   "cont": "nam",
+   "lat": 60.8,
+   "lon": -137.5,
+   "score": 2,
+   "why_nl": "Hier draait de beroemde haas-lynxcyclus: in 2025 zaten de sneeuwschoenhazen in een sterke groeifase, dus 2025–2027 zijn waarschijnlijk goede lynxjaren, maar in de dalfase zag een ervaren waarnemer er in de hele Yukon geen één.",
+   "why_en": "This is home of the famous hare–lynx cycle: in 2025 snowshoe hares were in a strong increase phase, so 2025–2027 are likely good lynx years, but during a low an experienced observer failed to find a single one anywhere in the Yukon.",
+   "season_nl": "Het hele jaar; zomer geeft lange dagen, winter geeft sporen in de sneeuw. Vooral de piekjaren van de hazencyclus tellen.",
+   "season_en": "Year-round; summer brings long days, winter brings tracks in the snow. Above all, the peak years of the hare cycle matter.",
+   "time_nl": "Vroege ochtend en avond; in de zomer is het dan nog licht.",
+   "time_en": "Early morning and evening; in summer it is still light then.",
+   "trip_nl": "Zelf rijden langs de hoofdwegen rond Kluane en Haines Junction bij zonsopkomst en in de avond, plus wandelen in het park; reken op 1 à 2 weken in de Yukon.",
+   "trip_en": "Self-drive along the main highways around Kluane and Haines Junction at dawn and in the evening, plus hiking in the park; plan on 1 to 2 weeks in the Yukon.",
+   "sources": [
+    6,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "us-denali",
+   "name_nl": "Denali en Fairbanks",
+   "name_en": "Denali and Fairbanks",
+   "area_nl": "Denali National Park and Preserve en de omgeving van Fairbanks, binnenland van Alaska",
+   "area_en": "Denali National Park and Preserve and the Fairbanks area, Interior Alaska",
+   "country_nl": "Verenigde Staten",
+   "country_en": "United States",
+   "cont": "nam",
+   "lat": 63.3,
+   "lon": -150.5,
+   "score": 2,
+   "why_nl": "Rond de hazenpiek van 2019 zagen buschauffeurs in Denali gemiddeld eens per week een lynx en waren er dieren met vaste territoria langs de parkweg, maar in dalfases zijn ze hier zeldzaam.",
+   "why_en": "Around the 2019 hare peak, Denali bus drivers saw a lynx about once a week each and some animals held territories along the park road, but during lows they are scarce here.",
+   "season_nl": "Zomer (eind mei–september) als de parkweg open is; rond Fairbanks ook in de winter. Ga in een piekjaar van de hazencyclus.",
+   "season_en": "Summer (late May–September) when the park road is open; around Fairbanks also in winter. Go in a hare-cycle peak year.",
+   "time_nl": "Vroege ochtend en late avond.",
+   "time_en": "Early morning and late evening.",
+   "trip_nl": "Bustochten over de parkweg van Denali, aangevuld met eigen ritten bij de parkingang en wandelingen; rond Fairbanks winterwandelingen over de besneeuwde paden; 3 à 6 dagen.",
+   "trip_en": "Bus trips along the Denali park road, plus your own drives near the park entrance and walks; around Fairbanks, winter walks on the packed snow trails; 3 to 6 days.",
+   "sources": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "id": "us-katmai",
+   "name_nl": "Katmai (Brooks Camp)",
+   "name_en": "Katmai (Brooks Camp)",
+   "area_nl": "Katmai National Park and Preserve, Alaska-schiereiland",
+   "area_en": "Katmai National Park and Preserve, Alaska Peninsula",
+   "country_nl": "Verenigde Staten",
+   "country_en": "United States",
+   "cont": "nam",
+   "lat": 58.6,
+   "lon": -155.0,
+   "score": 2,
+   "why_nl": "Een parkmedewerker bij Brooks Camp noteerde 49 lynxwaarnemingen in de zomer van 2025 (en naar eigen zeggen 63 in 2024), maar dat is over een heel seizoen; een bezoeker van een paar dagen moet geluk hebben.",
+   "why_en": "A park worker at Brooks Camp logged 49 lynx sightings in summer 2025 (and reportedly 63 in 2024), but that is over a whole season; a visitor staying a few days needs luck.",
+   "season_nl": "Zomer, juni t/m september (het bezoekseizoen).",
+   "season_en": "Summer, June to September (the visitor season).",
+   "time_nl": "Overdag en in de lange zomeravonden.",
+   "time_en": "During the day and in the long summer evenings.",
+   "trip_nl": "Met een watervliegtuig naar Brooks Camp (bekend om de bruine beren) en daar rondlopen en kamperen; 2 à 4 dagen.",
+   "trip_en": "Fly in by floatplane to Brooks Camp (famous for brown bears) and walk and camp there; 2 to 4 days.",
+   "sources": [
+    10
+   ]
+  },
+  {
+   "id": "ca-cape-breton-highlands",
+   "name_nl": "Cape Breton Highlands",
+   "name_en": "Cape Breton Highlands",
+   "area_nl": "Cape Breton Highlands National Park en omgeving, Nova Scotia",
+   "area_en": "Cape Breton Highlands National Park and surroundings, Nova Scotia",
+   "country_nl": "Canada",
+   "country_en": "Canada",
+   "cont": "nam",
+   "lat": 46.7,
+   "lon": -60.6,
+   "score": 1,
+   "why_nl": "Dit is de enige plek in Nova Scotia waar nog lynxen leven, in een heel kleine, bedreigde populatie in twee delen van de hooglanden; Parks Canada noemt de soort hier ongewoon.",
+   "why_en": "This is the only place in Nova Scotia where lynx survive, as a very small, endangered population in two parts of the highlands; Parks Canada calls the species uncommon here.",
+   "season_nl": "Het hele jaar.",
+   "season_en": "Year-round.",
+   "time_nl": "Schemering.",
+   "time_en": "Twilight.",
+   "trip_nl": "Zelf rijden en wandelen in het nationale park, als onderdeel van een bredere rondreis; zie een lynx als bonus.",
+   "trip_en": "Self-drive and hike in the national park as part of a wider tour; treat a lynx as a bonus.",
+   "sources": [
+    11,
+    12
+   ]
+  },
+  {
+   "id": "us-northern-maine",
+   "name_nl": "Noord-Maine",
+   "name_en": "Northern Maine",
+   "area_nl": "Uitgestrekte spar- en zilversparbossen van Noord- en West-Maine (o.a. Aroostook County)",
+   "area_en": "Extensive spruce–fir forests of northern and western Maine (including Aroostook County)",
+   "country_nl": "Verenigde Staten",
+   "country_en": "United States",
+   "cont": "nam",
+   "lat": 46.5,
+   "lon": -69.0,
+   "score": 1,
+   "why_nl": "Maine heeft de grootste lynxpopulatie in het oosten van de VS (geschat 750–1.000 volwassen dieren) en waarnemingen nemen toe, maar er zijn nauwelijks gerichte waarnemersverslagen.",
+   "why_en": "Maine holds the largest lynx population in the eastern US (an estimated 750–1,000 adults) and sightings are increasing, but there are hardly any targeted watcher reports.",
+   "season_nl": "Winter, als sporen in de sneeuw je helpen.",
+   "season_en": "Winter, when tracks in the snow help you.",
+   "time_nl": "Schemering.",
+   "time_en": "Twilight.",
+   "trip_nl": "Zelf rijden over de onverharde bosweggen van de houtindustrie, met veel geduld; minstens een paar dagen.",
+   "trip_en": "Self-drive the unpaved logging roads, with plenty of patience; at least several days.",
+   "sources": [
+    13
+   ]
+  },
+  {
+   "id": "us-colorado-san-juan",
+   "name_nl": "San Juan Mountains",
+   "name_en": "San Juan Mountains",
+   "area_nl": "Hooggebergte van de San Juan Mountains (o.a. Rio Grande en San Juan National Forest), Colorado",
+   "area_en": "High country of the San Juan Mountains (including Rio Grande and San Juan National Forests), Colorado",
+   "country_nl": "Verenigde Staten",
+   "country_en": "United States",
+   "cont": "nam",
+   "lat": 37.7,
+   "lon": -107.0,
+   "score": 1,
+   "why_nl": "Na de herintroductie vanaf 1999 leven hier naar schatting zo'n 200 lynxen, maar ze worden vooral via cameravallen en sporen gevolgd en waarnemingen van bezoekers zijn zeldzaam.",
+   "why_en": "Since reintroduction began in 1999 an estimated 200 or so lynx live here, but they are mostly tracked by camera traps and snow tracks, and visitor sightings are rare.",
+   "season_nl": "Winter (sporen) of zomer (toegankelijkheid).",
+   "season_en": "Winter (tracks) or summer (access).",
+   "time_nl": "Schemering.",
+   "time_en": "Twilight.",
+   "trip_nl": "Wandelen of skiën in de subalpiene sparrenbossen van het hooggebergte; zie een lynx alleen als bonus.",
+   "trip_en": "Hiking or skiing in the high subalpine forests; only as a bonus.",
+   "sources": [
+    14
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Kijk eerst naar de hazen: zijn er veel sneeuwschoenhazen, dan zijn er een jaar of twee later ook veel lynxen. Plan je reis in een piekjaar.",
+  "Zoek verse sporen in de sneeuw: rond, groot (zo breed als een handpalm) en zonder nagelafdrukken; zie je er veel, blijf dan in dat gebied.",
+  "Rij langzaam over rustige boswegen bij zonsopkomst en in de schemering, en scan de bermen en open plekken.",
+  "Eind februari is paartijd: de dieren zwerven meer en zijn soms te horen met luid, klagend gejammer.",
+  "Neem een sterke lamp mee voor de schemering en een auto met vierwielaandrijving voor ijzige zijwegen.",
+  "Een dood hert of ander kadaver trekt lynxen aan; houd zo'n plek op afstand in de gaten, maar voer nooit zelf."
+ ],
+ "tips_en": [
+  "Look at the hares first: when snowshoe hares are abundant, lynx follow a year or two later. Plan your trip for a peak year.",
+  "Search for fresh tracks in the snow: round, big (palm-sized) and without claw marks; if you find many, stay in that area.",
+  "Drive quiet forest roads slowly at dawn and dusk, scanning verges and clearings.",
+  "Late February is mating season: animals roam more and can sometimes be heard giving loud, wailing calls.",
+  "Bring a strong light for dusk and a four-wheel-drive vehicle for icy side roads.",
+  "A deer carcass attracts lynx; watch such a spot from a distance, but never bait yourself."
+ ],
+ "threats_nl": [
+  "Klimaatverandering: minder en kortere sneeuwwinters nemen de lynx zijn voorsprong op concurrenten als de rode lynx en coyote af, vooral aan de zuidrand van het areaal.",
+  "Verlies en versnippering van boreaal bos door bosbouw, wegen en bebouwing.",
+  "Vangst voor de bonthandel en per ongeluk in klemmen voor andere dieren, vooral riskant in dalfases van de cyclus.",
+  "Aanrijdingen op wegen (in Maine werden in 2016 recordaantallen doodgereden lynxen gemeld).",
+  "Kleine, geïsoleerde populaties zoals op Cape Breton zijn extra kwetsbaar."
+ ],
+ "threats_en": [
+  "Climate change: less and shorter snow cover erodes the lynx's edge over competitors such as bobcat and coyote, especially at the southern range edge.",
+  "Loss and fragmentation of boreal forest through forestry, roads and development.",
+  "Trapping for fur and accidental capture in traps set for other species, especially risky during cycle lows.",
+  "Road traffic (Maine reported a record number of lynx road kills in 2016).",
+  "Small, isolated populations such as on Cape Breton are especially vulnerable."
+ ],
+ "status_note_nl": "De Canadese lynx staat wereldwijd als Niet bedreigd (Least Concern) op de Rode Lijst van de IUCN; in Canada geldt hij als veilig, met naar schatting zo'n 110.000 dieren zelfs in een dalfase. In de 48 aaneengesloten Amerikaanse staten is hij sinds 2000 wettelijk 'bedreigd', en in Nova Scotia en New Brunswick is hij in gevaar.",
+ "status_note_en": "The Canada lynx is listed as Least Concern on the IUCN Red List; in Canada it is considered secure, with an estimated 110,000 animals even at a cyclic low. In the contiguous US it has been federally listed as Threatened since 2000, and it is at risk in Nova Scotia and New Brunswick.",
+ "sources": [
+  {
+   "id": 1,
+   "title": "Canada Lynx – where to see it in Minnesota, with list of trip reports (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/?p=7463"
+  },
+  {
+   "id": 2,
+   "title": "Missing Lynx: Minnesota 2017 (mammalwatching.com, 2017)",
+   "url": "https://www.mammalwatching.com/2017/03/14/missing-lynx-minnesota-2017/"
+  },
+  {
+   "id": 3,
+   "title": "Finding Canada lynx, eastern wolves and other mammals on the Gunflint Trail (mammalwatching.com, 2026)",
+   "url": "https://www.mammalwatching.com/community-post/finding-canada-lynx-eastern-wolves-and-other-mammals-on-the-gunflint-trail-northern-minnesota/"
+  },
+  {
+   "id": 4,
+   "title": "Interior Alaska update, Aug 2019 (mammalwatching.com, 2019)",
+   "url": "https://www.mammalwatching.com/2019/10/12/interior-alaska-update-aug-2019/"
+  },
+  {
+   "id": 5,
+   "title": "High time for lynx in Alaska's Interior (Alaska Science Forum, University of Alaska Fairbanks, 2021)",
+   "url": "https://www.gi.alaska.edu/alaska-science-forum/high-time-lynx-alaskas-interior"
+  },
+  {
+   "id": 6,
+   "title": "New research sheds light on Canada lynx–snowshoe hare cycle and human impacts (Mongabay, 2025)",
+   "url": "https://news.mongabay.com/2025/05/new-research-sheds-light-on-canada-lynx-snowshoe-hare-cycle-human-impacts/"
+  },
+  {
+   "id": 7,
+   "title": "Seasonal coat-colour moulting phenology of snowshoe hares in a Yukon boreal forest (Royal Society Open Science, 2025)",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12606214/"
+  },
+  {
+   "id": 8,
+   "title": "Yukon – mammalwatching site notes and trip reports (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/places/yukon/"
+  },
+  {
+   "id": 9,
+   "title": "Wildlife viewing in Kluane Region (Travel Yukon, Government of Yukon)",
+   "url": "https://www.travelyukon.com/en/things-to-do/article/wildlife-kluane"
+  },
+  {
+   "id": 10,
+   "title": "Summer 2025 – Katmai National Park wolverine (and other critter) sightings (mammalwatching.com, 2025)",
+   "url": "https://www.mammalwatching.com/community-post/summer-2025-katmai-national-park-wolverine-and-other-critter-sightings/"
+  },
+  {
+   "id": 11,
+   "title": "Canada lynx – Nova Scotia's species at risk",
+   "url": "https://www.speciesatrisk.ca/municipalities/sar_lynx.htm"
+  },
+  {
+   "id": 12,
+   "title": "Canada lynx – Cape Breton Highlands National Park (Parks Canada)",
+   "url": "https://parks.canada.ca/pn-np/ns/cbreton/decouvrir-discover/faune-animals/mammiferes-mammals/lynx"
+  },
+  {
+   "id": 13,
+   "title": "Reward for information: two Canada lynx found dead – population and road-kill trends (Maine Dept. of Inland Fisheries and Wildlife, 2016)",
+   "url": "https://www.maine.gov/ifw/news-events/single-release.html?id=722748"
+  },
+  {
+   "id": 14,
+   "title": "Revisiting Colorado's successful lynx reintroduction (The Wildlife Society, 2021)",
+   "url": "https://wildlife.org/?p=13071"
+  },
+  {
+   "id": 15,
+   "title": "Lynx: non-detriment finding (Environment and Climate Change Canada)",
+   "url": "https://www.canada.ca/en/environment-climate-change/services/convention-international-trade-endangered-species/non-detriment-findings/lynx.html"
+  },
+  {
+   "id": 16,
+   "title": "Canadian lynx – NWT species status (Government of the Northwest Territories, 2024)",
+   "url": "https://www.gov.nt.ca/species-search/node/417288"
+  },
+  {
+   "id": 17,
+   "title": "Federal officials propose a recovery plan for the snow-dependent and climate-threatened lynx (Boise State Public Radio / AP, 2023)",
+   "url": "https://www.boisestatepublicradio.org/2023-12-11/federal-officials-propose-a-recovery-plan-for-the-snow-dependent-and-climate-threatened-lynx"
+  },
+  {
+   "id": 18,
+   "title": "Lynx canadensis – IUCN status Least Concern (Mammal Diversity Database)",
+   "url": "https://www.mammaldiversity.org/taxon/1006006"
+  }
+ ]
+}

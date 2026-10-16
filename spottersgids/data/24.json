@@ -1,0 +1,315 @@
+{
+ "no": 24,
+ "intro_nl": "Het is drie uur 's nachts in een Estisch dennenbos. Op het scherm van de warmtecamera gloeit een vlek op, aan de rand van een besneeuwd veld. De schijnwerper gaat aan en daar zit hij: pluimpjes op de oren, een korte staart, gele ogen die je rustig aankijken. Een lynx zien is in heel Europa een kwestie van geluk, maar in Lahemaa in februari en maart lukt het verrassend veel groepen. Kans: 3 – met een paar nachten rijden en een gids die het gebied kent, heb je een echte kans.",
+ "intro_en": "It is three in the morning in an Estonian pine forest. A warm blob lights up on the thermal scope, at the edge of a snowy field. The spotlight comes on and there it is: ear tufts, a stubby tail, yellow eyes calmly staring back at you. Seeing a lynx anywhere in Europe is usually down to luck, but in Lahemaa in February and March a surprising number of groups succeed. Chance: 3 – with a few nights of driving and a guide who knows the area, you have a real shot.",
+ "spots": [
+  {
+   "id": "ee-lahemaa",
+   "name_nl": "Lahemaa",
+   "name_en": "Lahemaa",
+   "area_nl": "Nationaal park Lahemaa, Noord-Estland",
+   "area_en": "Lahemaa National Park, northern Estonia",
+   "country_nl": "Estland",
+   "country_en": "Estonia",
+   "cont": "eur",
+   "lat": 59.5,
+   "lon": 25.9,
+   "score": 3,
+   "why_nl": "Recente reisverslagen (2022–2026) melden vaak lynxen tijdens nachtritten met een gespecialiseerde lokale gids, maar er zijn ook groepen met maar één korte waarneming; op eigen houtje is je kans kleiner.",
+   "why_en": "Recent trip reports (2022–2026) often mention lynx on night drives with a specialist local guide, but some groups get only one brief sighting; on your own your chances are lower.",
+   "season_nl": "Februari–maart (sneeuw en paartijd); november kan ook",
+   "season_en": "February–March (snow cover and mating season); November can also work",
+   "time_nl": "Van zonsondergang tot diep in de nacht; overdag zelden",
+   "time_en": "From sunset until well after midnight; rarely by day",
+   "trip_nl": "Nachtritten met warmtecamera en schijnwerper over bosweggen, liefst met een lokale lynxspecialist; reken op 4 à 7 nachten",
+   "trip_en": "Night drives with thermal scope and spotlight along forest roads, ideally with a local lynx specialist; allow 4–7 nights",
+   "sources": [
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "in-hemis-ladakh",
+   "name_nl": "Hemis (Rumbak-vallei)",
+   "name_en": "Hemis (Rumbak valley)",
+   "area_nl": "Nationaal park Hemis, Ladakh",
+   "area_en": "Hemis National Park, Ladakh",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 33.9,
+   "lon": 77.4,
+   "score": 3,
+   "why_nl": "Meerdere sneeuwluipaardreizen van 8–14 dagen in februari melden één tot vijf lynxwaarnemingen, maar vaak op honderden meters en via de telescoop, en niet elke reis ziet er een.",
+   "why_en": "Several 8–14-day snow leopard trips in February report one to five lynx sightings, but often at hundreds of metres through a scope, and not every trip sees one.",
+   "season_nl": "Februari–begin maart",
+   "season_en": "February to early March",
+   "time_nl": "Overdag; vroege ochtend en late middag zijn het best",
+   "time_en": "Daytime; early morning and late afternoon are best",
+   "trip_nl": "Sneeuwluipaardreis met kamp in de Rumbak-vallei; urenlang hellingen afspeuren met telescoop, 8–12 dagen",
+   "trip_en": "Snow leopard trip with a camp in the Rumbak valley; hours of scanning slopes with a scope, 8–12 days",
+   "sources": [
+    5,
+    6,
+    7,
+    8
+   ]
+  },
+  {
+   "id": "pl-bieszczady",
+   "name_nl": "Bieszczady",
+   "name_en": "Bieszczady",
+   "area_nl": "Bieszczady-gebergte (Nationaal park Bieszczady en omgeving), Zuidoost-Polen",
+   "area_en": "Bieszczady Mountains (Bieszczady National Park and surroundings), southeastern Poland",
+   "country_nl": "Polen",
+   "country_en": "Poland",
+   "cont": "eur",
+   "lat": 49.1,
+   "lon": 22.5,
+   "score": 2,
+   "why_nl": "Lynxen worden hier af en toe gezien door gespecialiseerde zoekers, maar veel bezoekers vinden alleen sporen en uitwerpselen.",
+   "why_en": "Dedicated searchers see lynx here now and then, but many visitors find only tracks and scat.",
+   "season_nl": "Late winter en voorjaar (februari–april); ook najaar",
+   "season_en": "Late winter and spring (February–April); also autumn",
+   "time_nl": "Schemering en avond",
+   "time_en": "Dusk and evening",
+   "trip_nl": "Speuren vanaf uitkijkpunten over bergweides en avondritten, 5 à 7 dagen; let op het jachtseizoen",
+   "trip_en": "Scanning meadows from vantage points and evening drives, 5–7 days; mind the hunting season",
+   "sources": [
+    9,
+    10
+   ]
+  },
+  {
+   "id": "ro-harghita",
+   "name_nl": "Harghita (Transsylvanië)",
+   "name_en": "Harghita (Transylvania)",
+   "area_nl": "Harghita-gebergte, Oost-Karpaten",
+   "area_en": "Harghita Mountains, Eastern Carpathians",
+   "country_nl": "Roemenië",
+   "country_en": "Romania",
+   "cont": "eur",
+   "lat": 46.4,
+   "lon": 25.4,
+   "score": 2,
+   "why_nl": "Cameravallen tonen geregeld lynxen in deze valleien, maar groepsreizen houden het meestal bij een of twee korte glimpen.",
+   "why_en": "Camera traps regularly show lynx in these valleys, but group trips usually manage only one or two brief glimpses.",
+   "season_nl": "Februari–maart, liefst met sneeuw",
+   "season_en": "February–March, ideally with snow",
+   "time_nl": "Schemering en nacht",
+   "time_en": "Dusk and night",
+   "trip_nl": "Sporen zoeken in de sneeuw en avondritten met warmtecamera, minstens een week",
+   "trip_en": "Snow tracking and evening drives with a thermal scope, at least a week",
+   "sources": [
+    11,
+    12
+   ]
+  },
+  {
+   "id": "fi-kuhmo-hides",
+   "name_nl": "Kuhmo (fotohutten)",
+   "name_en": "Kuhmo (photo hides)",
+   "area_nl": "Bossen bij Kuhmo nabij de Russische grens, Oost-Finland",
+   "area_en": "Forests around Kuhmo near the Russian border, eastern Finland",
+   "country_nl": "Finland",
+   "country_en": "Finland",
+   "cont": "eur",
+   "lat": 64.1,
+   "lon": 29.6,
+   "score": 1,
+   "why_nl": "De kijkhutten zijn bedoeld voor beer, wolf en veelvraat; een lynx is hier een zeldzame bonus die in reisverslagen nauwelijks voorkomt.",
+   "why_en": "The hides are aimed at bear, wolf and wolverine; a lynx is a rare bonus here that hardly ever turns up in trip reports.",
+   "season_nl": "April–september",
+   "season_en": "April–September",
+   "time_nl": "Avond en lichte zomernacht",
+   "time_en": "Evening and the light summer night",
+   "trip_nl": "Overnachten in een kijkhut, meerdere nachten",
+   "trip_en": "Overnight stays in a viewing hide, several nights",
+   "sources": [
+    14
+   ]
+  },
+  {
+   "id": "ch-jura",
+   "name_nl": "Zwitserse Jura",
+   "name_en": "Swiss Jura",
+   "area_nl": "Noordelijke Jura (Solothurn/Basel-Landschaft)",
+   "area_en": "Northern Jura (Solothurn/Basel-Landschaft)",
+   "country_nl": "Zwitserland",
+   "country_en": "Switzerland",
+   "cont": "eur",
+   "lat": 47.4,
+   "lon": 7.5,
+   "score": 1,
+   "why_nl": "Een stabiele populatie van ongeveer 2–3 lynxen per 100 km², maar ervaren zoekers zien er hooguit eens een bij heel vaak terugkomen.",
+   "why_en": "A stable population of about 2–3 lynx per 100 km², but even experienced searchers only see one occasionally after many visits.",
+   "season_nl": "Hele jaar; lange zomeravonden werken goed",
+   "season_en": "Year-round; long summer evenings work well",
+   "time_nl": "Avond en vroege ochtend",
+   "time_en": "Evening and early morning",
+   "trip_nl": "Stil wandelen of fietsen over bosweggen langs bosranden en weides",
+   "trip_en": "Walking or cycling quietly on forest roads along forest edges and meadows",
+   "sources": [
+    15,
+    16
+   ]
+  },
+  {
+   "id": "tr-sarikamis",
+   "name_nl": "Sarıkamış",
+   "name_en": "Sarıkamış",
+   "area_nl": "Nationaal park Sarıkamış-Allahuekber, Kars (Oost-Turkije)",
+   "area_en": "Sarıkamış-Allahuekber Mountains National Park, Kars (eastern Turkey)",
+   "country_nl": "Turkije",
+   "country_en": "Turkey",
+   "cont": "asia",
+   "lat": 40.3,
+   "lon": 42.6,
+   "score": 1,
+   "why_nl": "Onderzoekers volgen hier een broedpopulatie met cameravallen en zenders, maar voor gewone bezoekers zijn er geen betrouwbare waarnemingen gemeld.",
+   "why_en": "Researchers follow a breeding population here with camera traps and collars, but there are no reliable sighting reports from ordinary visitors.",
+   "season_nl": "Winter (sneeuw, paartijd)",
+   "season_en": "Winter (snow, mating season)",
+   "time_nl": "Schemering",
+   "time_en": "Dusk",
+   "trip_nl": "Sporen zoeken in de sneeuw in de bossen rond Sarıkamış; vooral iets voor avonturiers",
+   "trip_en": "Snow tracking in the forests around Sarıkamış; mainly for the adventurous",
+   "sources": [
+    17
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Zoek in de sneeuw naar ronde prenten van zo'n 7–9 cm zonder nagelafdrukken; een vers spoor vertelt je waar een lynx de afgelopen nacht jaagde.",
+  "Vind je een geslagen ree, half bedekt met sneeuw of bladeren? Een lynx komt vaak meerdere nachten terug naar zijn prooi. Houd afstand en kijk vanuit de auto.",
+  "Luister naar alarmerende reeën: korte, opvallend lage blaffen kunnen verraden dat er een lynx in de buurt is.",
+  "In februari en maart is het paartijd. Lynxen zwerven dan meer en roepen soms met een hees, klagend geluid in de nacht.",
+  "Een warmtecamera maakt 's nachts het grote verschil. Schijn kort en zet het licht uit als het dier onrustig wordt.",
+  "Blijf op de weg en loop niet het bos in: een lynx die zich gezien voelt, verdwijnt. Wie rustig doorloopt, ziet hem soms weer tevoorschijn komen.",
+  "Krabsporen aan boomstammen en uitwerpselen op opvallende plekken zijn markeringen; cameravallen op zulke plekken laten zien of er een lynx actief is."
+ ],
+ "tips_en": [
+  "Look in snow for round prints of about 7–9 cm without claw marks; a fresh trail tells you where a lynx hunted last night.",
+  "Find a killed roe deer half covered with snow or leaves? A lynx often returns to its kill for several nights. Keep your distance and watch from the car.",
+  "Listen for alarmed roe deer: short, unusually deep barks can give away a nearby lynx.",
+  "February and March are the mating season. Lynx roam more and sometimes call at night with a hoarse, wailing sound.",
+  "A thermal scope makes all the difference at night. Spotlight briefly and switch off if the animal gets nervous.",
+  "Stay on the road and don't walk into the forest: a lynx that knows it has been seen will vanish. Walk on calmly and it may step out again.",
+  "Scratch marks on tree trunks and scat in conspicuous places are territory markers; camera traps at such spots reveal whether a lynx is active."
+ ],
+ "threats_nl": [
+  "Stroperij en illegaal doden, ook in beschermde gebieden",
+  "Verkeersslachtoffers en versnippering van leefgebied door wegen",
+  "Inteelt in kleine, geherintroduceerde populaties zoals in de Dinarische Alpen en de Alpen",
+  "Jachtquota en conflicten met jagers en veehouders",
+  "Achteruitgang van prooidieren zoals reeën en verlies van bos"
+ ],
+ "threats_en": [
+  "Poaching and illegal killing, even in protected areas",
+  "Road deaths and habitat fragmentation by roads",
+  "Inbreeding in small reintroduced populations such as in the Dinaric Mountains and the Alps",
+  "Hunting quotas and conflict with hunters and livestock owners",
+  "Decline of prey such as roe deer and loss of forest"
+ ],
+ "status_note_nl": "De Euraziatische lynx staat wereldwijd als Niet bedreigd (Least Concern) op de Rode Lijst van de IUCN (2015) en ook op de Europese lijst (herbeoordeeld 2025); de meeste populaties gelden als stabiel. Sommige ondersoorten zijn wel bedreigd: de Balkanlynx is ernstig bedreigd.",
+ "status_note_en": "The Eurasian lynx is listed as Least Concern on the global IUCN Red List (2015) and on the European list (reassessed 2025); most populations are considered stable. Some subspecies are threatened, however: the Balkan lynx is Critically Endangered.",
+ "sources": [
+  {
+   "id": 1,
+   "title": "Three Eurasian lynx tours in Estonia: 6 individuals over 12 observations (mammalwatching.com, 2024)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/04/download.pdf"
+  },
+  {
+   "id": 2,
+   "title": "Eurasian Lynx of Estonia Photo Tour, Lahemaa (mammalwatching.com trip report, 2025)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2025/04/Cat-Expeditions-Trip-Report-Eurasian-Lynx-in-Estonia-2025.pdf"
+  },
+  {
+   "id": 3,
+   "title": "Trip report Estonia February 2026, Lahemaa night drives (mammalwatching.com, 2026)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2026/06/Trip-Report-Estonia-february-2026-2.pdf"
+  },
+  {
+   "id": 4,
+   "title": "Estonia 7–12 November 2022 trip report (mammalwatching.com, 2023)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2023/02/ESTONIA-7-12-NOV-2022.pdf"
+  },
+  {
+   "id": 5,
+   "title": "Ladakh: Hemis National Park trip report, February 2019 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/Hemis-trip-report.pdf"
+  },
+  {
+   "id": 6,
+   "title": "Snow leopard trip in Ladakh, February–March 2022 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/Snow-leopard-trip-in-Ladakh-2022-def.pdf"
+  },
+  {
+   "id": 7,
+   "title": "Ladakh trip 2024 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/03/ladakh-trip-2024.pdf"
+  },
+  {
+   "id": 8,
+   "title": "Ladakh & Tadoba: two Eurasian lynx on a February snow leopard trip (mammalwatching.com, 2016)",
+   "url": "https://www.mammalwatching.com/2016/11/06/ladakh-tadoba/"
+  },
+  {
+   "id": 9,
+   "title": "Again Eurasian lynxes this spring in Poland, Bieszczady (mammalwatching.com, 2016)",
+   "url": "https://www.mammalwatching.com/?p=9628"
+  },
+  {
+   "id": 10,
+   "title": "Poland's Mammals: In Search of the Eurasian Lynx, tour report April 2019 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/POL05_report_190408_Polands_Mammals_In_Search_of_the_Eurasian_Lynx.pdf"
+  },
+  {
+   "id": 11,
+   "title": "Chasing the Transylvanian Lynx (mammalwatching.com, 2022)",
+   "url": "https://www.mammalwatching.com/2022/03/29/chasing-the-transylvanian-lynx-2022/"
+  },
+  {
+   "id": 12,
+   "title": "Romania Eurasian lynx tour report 2022 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/SAKERTOURS_ROMANIA_Eurasian_Lynx_tour_2022-3.pdf"
+  },
+  {
+   "id": 14,
+   "title": "JvG Finland 2021 trip report, Kuhmo hides (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/JvG-Finland-2021.pdf"
+  },
+  {
+   "id": 15,
+   "title": "Mammal watching in Switzerland, lynx section (mammalwatching.com, 2023)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2023/12/mammal_watching_Switzerland_Jurek_v3.pdf"
+  },
+  {
+   "id": 16,
+   "title": "KORA camera-trap report lynx Jura Süd 2020/21 (Kanton Solothurn/KORA)",
+   "url": "https://so.ch/fileadmin/internet/vwd/vwd-awjf-jagd/pdf/Wildtiere_pdf_HP_neu/KORA_Report_Jura_Sud_2020_2021_DE.pdf"
+  },
+  {
+   "id": 17,
+   "title": "Breeding population of Caucasian lynx in Sarıkamış, eastern Turkey (Turkish Journal of Zoology, 2015)",
+   "url": "https://journals.tubitak.gov.tr/zoology/vol39/iss3/26"
+  },
+  {
+   "id": 18,
+   "title": "Non-detriment finding for Eurasian lynx: IUCN status global and European (VKM Norway, 2026)",
+   "url": "https://english.vkm.no/download/18.52ec987319c88eb5fde7ac9c/1773139768457/Non-detriment%20finding%20for%20Eurasian%20lynx%20(Lynx%20lynx).pdf"
+  },
+  {
+   "id": 19,
+   "title": "CMS listing proposal Lynx lynx (incl. Balkan lynx status) (CMS COP14)",
+   "url": "https://unoceans.un.org/www.cms.int/sites/default/files/document/cms_cop14_doc.31.4.1_listing-proposal-lynx-lynx_e_0.pdf"
+  },
+  {
+   "id": 20,
+   "title": "LIFE Lynx project (reinforcement of the Dinaric-SE Alpine population)",
+   "url": "https://www.lifelynx.eu/10th-life-lynx-project-steering-group-meeting-and-excursion-in-the-romanian-carpathian-mountains/"
+  }
+ ]
+}

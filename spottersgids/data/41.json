@@ -1,0 +1,255 @@
+{
+ "no": 41,
+ "intro_nl": "Het is na tienen en de wind snijdt over de vlakte. De schijnwerper glijdt langzaam over het korte gras, langs termietenheuvels en springhazenholen. Dan twee piepkleine lichtjes, vlak boven de grond, en weg zijn ze weer. De zwartvoetkat is de kleinste kat van Afrika en een van de dodelijkste jagers ter wereld, maar hem vinden is elke nacht weer een gok: zelfs in de beste gebieden rond Kimberley rijden groepen drie nachten zonder iets te zien. Kans: 3 – met geduld, droog weer en kort gras zit het erin, maar garanties zijn er niet.",
+ "intro_en": "It is past ten and the wind cuts across the plain. The spotlight glides slowly over short grass, past termite mounds and springhare burrows. Then two tiny lights, just above the ground, and they are gone again. The black-footed cat is Africa's smallest cat and one of the deadliest hunters on earth, but finding one is a gamble every single night: even in the best areas around Kimberley, groups drive for three nights without a sighting. Chance: 3 – with patience, dry weather and short grass it can happen, but there are no guarantees.",
+ "spots": [
+  {
+   "id": "za-northern-cape-kimberley",
+   "name_nl": "Noord-Kaap bij Kimberley",
+   "name_en": "Northern Cape near Kimberley",
+   "area_nl": "Graslanden en Karoo-veld rond Kimberley, Noord-Kaap (tegen de grens met de Vrijstaat)",
+   "area_en": "Grassland and Karoo veld around Kimberley, Northern Cape (near the Free State border)",
+   "country_nl": "Zuid-Afrika",
+   "country_en": "South Africa",
+   "cont": "afr",
+   "lat": -28.7,
+   "lon": 24.8,
+   "score": 3,
+   "why_nl": "Dit is wereldwijd het bekendste gebied voor de soort: in 2016 zagen groepen er zes tot zeven katten in drie nachten, maar groepen in 2019, 2022, 2023 en januari 2026 zagen er in drie nachten hooguit één of geen enkele.",
+   "why_en": "This is the best-known area for the species worldwide: in 2016 groups saw six to seven cats in three nights, but groups in 2019, 2022, 2023 and January 2026 saw at most one, or none, in three nights.",
+   "season_nl": "Het hele jaar, maar het best aan het eind van het droge seizoen (ruwweg juli–oktober), als het gras kort is; na een natte zomer met hoog gras zakken de kansen flink.",
+   "season_en": "Year-round, but best at the end of the dry season (roughly July–October) when the grass is short; after a wet summer with tall grass your chances drop sharply.",
+   "time_nl": "Nacht; nachtritten lopen meestal van ongeveer 20.00 tot 23.00 uur of langer.",
+   "time_en": "Night; night drives usually run from about 8 to 11 pm or longer.",
+   "trip_nl": "Nachtritten met schijnwerper op wildboerderijen en particuliere natuurreservaten rond Kimberley, minstens drie nachten; soms kun je mee met onderzoekers die gezenderde katten volgen. Combineer met een dagbezoek aan Mokala National Park.",
+   "trip_en": "Spotlighting night drives on game farms and private nature reserves around Kimberley, at least three nights; sometimes you can join researchers tracking radio-collared cats. Combine with a day visit to Mokala National Park.",
+   "sources": [
+    1,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    14
+   ]
+  },
+  {
+   "id": "za-upper-karoo-hanover",
+   "name_nl": "Boven-Karoo bij Hanover",
+   "name_en": "Upper Karoo near Hanover",
+   "area_nl": "Particuliere natuurconservancies in de Boven-Karoo rond Hanover, Noord-Kaap",
+   "area_en": "Private conservancies in the Upper Karoo around Hanover, Northern Cape",
+   "country_nl": "Zuid-Afrika",
+   "country_en": "South Africa",
+   "cont": "afr",
+   "lat": -31.1,
+   "lon": 24.4,
+   "score": 2,
+   "why_nl": "Een groep zag hier in april 2026 na lang zoeken één kat kort, een groep in maart 2023 zag er geen, en volgens een ervaren kattenzoeker leverden zulke Karoo-gebieden vooral in droogtejaren veel waarnemingen op.",
+   "why_en": "One group saw a single cat briefly here in April 2026 after extensive searching, a group in March 2023 saw none, and according to an experienced cat-seeker these Karoo areas mainly produced many sightings in drought years.",
+   "season_nl": "Droge maanden met kort gras, ruwweg juli–oktober; winternachten zijn hier ijskoud.",
+   "season_en": "Dry months with short grass, roughly July–October; winter nights here are freezing.",
+   "time_nl": "Nacht; nachtritten na het avondeten, soms tot vijf uur lang.",
+   "time_en": "Night; drives after dinner, sometimes up to five hours long.",
+   "trip_nl": "Lange nachtritten met schijnwerper vanuit gastenboerderijen in een Karoo-conservancy, 2 à 3 nachten; vaak gecombineerd met de omgeving van Kimberley (ongeveer 3,5 uur rijden).",
+   "trip_en": "Long spotlighting night drives from guest farms in a Karoo conservancy, 2–3 nights; often combined with the Kimberley area (about 3.5 hours' drive).",
+   "sources": [
+    1,
+    6,
+    7,
+    9
+   ]
+  },
+  {
+   "id": "za-southwestern-free-state",
+   "name_nl": "Zuidwestelijke Vrijstaat",
+   "name_en": "Southwestern Free State",
+   "area_nl": "Open grasland en Karoo-veld in het zuidwesten van de Vrijstaat, tegen de Noord-Kaap",
+   "area_en": "Open grassland and Karoo veld in the southwestern Free State, bordering the Northern Cape",
+   "country_nl": "Zuid-Afrika",
+   "country_en": "South Africa",
+   "cont": "afr",
+   "lat": -29.5,
+   "lon": 25.3,
+   "score": 1,
+   "why_nl": "De soort komt in de Vrijstaat voor en de hoogste dichtheden liggen in de centrale band van Zuid-Afrika, maar er zijn geen plekken waar bezoekers hem met enige regelmaat zien.",
+   "why_en": "The species occurs in the Free State and the highest densities lie in South Africa's central belt, but there are no places where visitors see it with any regularity.",
+   "season_nl": "Droge winter- en voorjaarsmaanden (juni–oktober), als het gras kort is.",
+   "season_en": "Dry winter and spring months (June–October), when the grass is short.",
+   "time_nl": "Nacht.",
+   "time_en": "Night.",
+   "trip_nl": "Alleen op eigen initiatief: nachtritten op boerderijen waar je toestemming hebt, of als toevalstreffer tijdens een rit tussen Kimberley en de Karoo.",
+   "trip_en": "Only on your own initiative: night drives on farms where you have permission, or as a lucky bonus while travelling between Kimberley and the Karoo.",
+   "sources": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "na-southern-namibia-grunau",
+   "name_nl": "Zuid-Namibië bij Grünau",
+   "name_en": "Southern Namibia near Grünau",
+   "area_nl": "Boerenland en particuliere natuurparken rond Grünau en de Fish River Canyon, regio //Karas",
+   "area_en": "Farmland and private nature parks around Grünau and the Fish River Canyon, //Karas Region",
+   "country_nl": "Namibië",
+   "country_en": "Namibia",
+   "cont": "afr",
+   "lat": -27.6,
+   "lon": 18.0,
+   "score": 1,
+   "why_nl": "Onderzoekers zagen hier in 2019 vier katten in acht nachten en volgen er sindsdien gezenderde katten, maar in 2013 leverde 88 uur schijnwerperen op zes boerderijen niets op, en voor gewone bezoekers bestaat er geen georganiseerde zoektocht.",
+   "why_en": "Researchers saw four cats in eight nights here in 2019 and have tracked collared cats since, but in 2013 some 88 hours of spotlighting on six farms produced nothing, and there is no organised search for ordinary visitors.",
+   "season_nl": "Het hele jaar; de koele, droge winter (mei–september) maakt nachtelijk zoeken aangenamer.",
+   "season_en": "Year-round; the cool, dry winter (May–September) makes night searches more pleasant.",
+   "time_nl": "Nacht.",
+   "time_en": "Night.",
+   "trip_nl": "Overnachten op gastenboerderijen in de regio en vragen naar nachtritten of eigen schijnwerpertochten op het terrein; reken op meerdere nachten en weinig kans.",
+   "trip_en": "Stay on guest farms in the region and ask about night drives or spotlighting on the property; expect several nights and low odds.",
+   "sources": [
+    1,
+    2,
+    11,
+    12,
+    15
+   ]
+  },
+  {
+   "id": "za-bw-kgalagadi",
+   "name_nl": "Kgalagadi Transfrontier Park",
+   "name_en": "Kgalagadi Transfrontier Park",
+   "area_nl": "Kgalagadi Transfrontier Park, Noord-Kaap (Zuid-Afrika) en zuidwest-Botswana",
+   "area_en": "Kgalagadi Transfrontier Park, Northern Cape (South Africa) and southwestern Botswana",
+   "country_nl": "Zuid-Afrika / Botswana",
+   "country_en": "South Africa / Botswana",
+   "cont": "afr",
+   "lat": -25.5,
+   "lon": 20.6,
+   "score": 1,
+   "why_nl": "De soort leeft verspreid in de Kalahari en zuidwest-Botswana, maar in de besproken reisverslagen zagen bezoekers in het park wel Afrikaanse wilde katten en geen zwartvoetkat, en avondritten duren er maar twee uur.",
+   "why_en": "The species is thinly spread through the Kalahari and southwestern Botswana, but in the trip reports reviewed visitors saw African wildcats in the park and no black-footed cat, and night drives there last only two hours.",
+   "season_nl": "Het hele jaar; de droge winter (mei–september) geeft korter gras en heldere nachten.",
+   "season_en": "Year-round; the dry winter (May–September) brings shorter grass and clear nights.",
+   "time_nl": "Avond en nacht, alleen tijdens begeleide ritten van het park.",
+   "time_en": "Evening and night, only on the park's guided drives.",
+   "trip_nl": "Zelfrijden overdag plus begeleide avondritten vanuit de parkkampen; in Botswana ook kamperen in het Mabuasehube-deel. Zie een zwartvoetkat hier als zeldzame bonus.",
+   "trip_en": "Self-drive by day plus guided evening drives from the park camps; in Botswana also camping in the Mabuasehube section. Treat a black-footed cat here as a rare bonus.",
+   "sources": [
+    1,
+    2,
+    3,
+    7
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Rijd heel langzaam (stapvoets) met een sterke schijnwerper over boerderijpaden in open veld met kort gras, en zoek naar piepkleine oogjes vlak boven de grond.",
+  "Kijk vooral naast het pad: zwartvoetkatten bewegen snel en volgen, anders dan veel andere dieren, zelden wegen of wildpaden.",
+  "Overdag zitten ze in holle termietenheuvels en oude holen van springhazen, aardvarkens en stekelvarkens. Een veld vol holen en termietenheuvels is goed terrein, maar blijf bij de holen zelf weg.",
+  "Kies het droge seizoen met kort gras (ruwweg juli–oktober). Na een natte zomer met hoog gras zien zelfs de beste plekken soms maandenlang geen kat.",
+  "Plan minstens drie nachten op één plek; veel groepen missen hem in drie nachten, dus extra nachten vergroten je kans echt.",
+  "Neem warme kleren mee: winternachten in de Karoo en rond Kimberley gaan ruim onder nul, en een nachtrit duurt al gauw drie uur of langer.",
+  "Let op de bijvangst: dezelfde nachtritten leveren vaak aardvarken, aardwolf, grootoorvos en Afrikaanse wilde kat op. Verwar die laatste niet met de veel kleinere, gedrongen zwartvoetkat met zijn korte staart."
+ ],
+ "tips_en": [
+  "Drive very slowly (walking pace) with a strong spotlight along farm tracks through open, short-grass veld, and look for tiny eyes just above the ground.",
+  "Scan beside the track: black-footed cats move fast and, unlike many other animals, rarely follow roads or game paths.",
+  "By day they hide in hollow termite mounds and old burrows of springhares, aardvarks and porcupines. A field full of burrows and termite mounds is good terrain, but stay away from the burrows themselves.",
+  "Choose the dry season with short grass (roughly July–October). After a wet summer with tall grass, even the best sites sometimes go months without a sighting.",
+  "Plan at least three nights in one place; many groups miss the cat in three nights, so extra nights genuinely improve your odds.",
+  "Bring warm clothes: winter nights in the Karoo and around Kimberley drop well below freezing, and a night drive easily lasts three hours or more.",
+  "Enjoy the supporting cast: the same night drives often turn up aardvark, aardwolf, bat-eared fox and African wildcat. Don't confuse the latter with the much smaller, stocky, short-tailed black-footed cat."
+ ],
+ "threats_nl": [
+  "Bestrijding van roofdieren op boerderijen: klemmen en vergiftigd aas voor jakhalzen, karakals en wilde katten doden ook zwartvoetkatten; ook vergif tegen sprinkhanen is een risico.",
+  "Overbegrazing, landbouw en stroperij van springhazen voor vlees, waardoor prooi en schuilholen verdwijnen.",
+  "Ziekte (onder meer AA-amyloïdose) en predatie door jakhalzen, karakals en honden.",
+  "Verkeersslachtoffers, en een dalende dichtheid in het langst bestudeerde gebied: van ongeveer 17 naar 8 katten per 100 km² tussen 1998–1999 en 2005–2015."
+ ],
+ "threats_en": [
+  "Predator control on farms: gin traps and poisoned bait set for jackals, caracals and wildcats also kill black-footed cats; locust-control poison is a further risk.",
+  "Overgrazing, agriculture and bushmeat hunting of springhares, which remove prey and shelter burrows.",
+  "Disease (including AA amyloidosis) and predation by jackals, caracals and dogs.",
+  "Road kills, and a falling density at the longest-studied site: from about 17 to 8 cats per 100 km² between 1998–1999 and 2005–2015."
+ ],
+ "status_note_nl": "De IUCN deelt de zwartvoetkat in als Kwetsbaar, met een dalende populatie van naar schatting minder dan 10.000 volwassen dieren en geen enkele deelpopulatie boven de 1.000 (IUCN SSC Cat Specialist Group; SANBI).",
+ "status_note_en": "The IUCN lists the black-footed cat as Vulnerable, with a declining population estimated at fewer than 10,000 mature individuals and no subpopulation above 1,000 (IUCN SSC Cat Specialist Group; SANBI).",
+ "sources": [
+  {
+   "id": 1,
+   "title": "Black-footed cat species account (IUCN SSC Cat Specialist Group)",
+   "url": "https://www.catsg.org/living-species-blackfootedcat"
+  },
+  {
+   "id": 2,
+   "title": "Animal of the week: Black-footed cat (SANBI)",
+   "url": "https://www.sanbi.org/animal-of-the-week/black-footed-cat/"
+  },
+  {
+   "id": 3,
+   "title": "South Africa, Northern Cape (Kimberley area and Kgalagadi), trip report November 2016 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2017/11/SO-South-Africa-2016.pdf"
+  },
+  {
+   "id": 4,
+   "title": "South Africa mammal tour, trip report July 2016 – seven black-footed cat sightings (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2016/07/RW-South-Africa-July-2016.pdf"
+  },
+  {
+   "id": 5,
+   "title": "South Africa mammals, trip report September 2019 – one brief black-footed cat (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/WW-South_Africa_Mammals_Report_2019_updated.pdf"
+  },
+  {
+   "id": 6,
+   "title": "Roundup of a few 2022 cat trips – three nights near Kimberley without black-footed cat (mammalwatching.com, 2023)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2023/02/2022-Chris-Cat-Trip-Roundup-2.pdf"
+  },
+  {
+   "id": 7,
+   "title": "Aardwolfs, aardvarks and more in the Karoo and Kalahari of South Africa, trip report March 2023 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2023/05/South-Africa_Karoo_Kalahari-2023.pdf"
+  },
+  {
+   "id": 8,
+   "title": "My Big Cat Year – South Africa, trip report January 2026 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2026/02/Big-Cat-Year-Trip-Report-South-Africa-080126-to-280126.pdf"
+  },
+  {
+   "id": 9,
+   "title": "Mammals recorded on a South Africa rare mammals trip, April 2026 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2026/08/MAMMALS-RECORDED-ON-SOUTH-AFRICA.pdf"
+  },
+  {
+   "id": 10,
+   "title": "A night with Africa's smallest cat near Kimberley (South African Tourism)",
+   "url": "https://southafrica.net/gl/en/travel/article/a-night-with-africa-s-smallest-cat-benfontein-nature-reserve-northern-cape"
+  },
+  {
+   "id": 11,
+   "title": "New black-footed cat study – Namibia scouting survey 2019 (Wild Cat Conservation)",
+   "url": "https://wildcatconservation.org/new-black-footed-cat-study/"
+  },
+  {
+   "id": 12,
+   "title": "Küsters – Black-footed cat distribution in Namibia, project update October 2013 (Rufford Foundation)",
+   "url": "https://media.rufford.org/media/project_reports/12347-1%20October%202013.pdf"
+  },
+  {
+   "id": 13,
+   "title": "Black-footed cat: mammalwatching.com tag page with trip reports and requests",
+   "url": "https://www.mammalwatching.com/tag/black-footed-cat"
+  },
+  {
+   "id": 14,
+   "title": "Felis nigripes – Red List of South African Species assessment (SANBI/EWT)",
+   "url": "https://speciesstatus.sanbi.org/assessment/last-assessment/2036/"
+  },
+  {
+   "id": 15,
+   "title": "Sliwa et al. – Black-footed Cat Working Group report on Felis nigripes work in 2021 (Namibia and Benfontein)",
+   "url": "https://n-c-e.org/sites/default/files/2022-08/Sliwa%2Bal%202022-Report-Felis-nigripes-Work-2021.pdf"
+  }
+ ]
+}

@@ -1,0 +1,339 @@
+{
+ "no": 37,
+ "intro_nl": "Het is half acht in de ochtend en de dauw ligt nog op het pas gemaaide hooiland. Midden in het veld zit een grijsbruine kat doodstil, oren naar voren. Dan een sprong, een korte worsteling, en ze loopt weg met een woelrat in haar bek. In de bergen rond Riaño in Noord-Spanje zie je dit in augustus en september vaak gewoon vanuit de auto. Elders in Europa is de wilde kat een schim van het bos die je bijna nooit te zien krijgt. Kans: 5 – in de Cantabrische bergen na het maaien zie je er bijna altijd één.",
+ "intro_en": "It is half past seven in the morning and the dew still lies on the freshly mown hay meadow. In the middle of the field a grey-brown cat sits perfectly still, ears forward. Then a pounce, a brief struggle, and she walks off with a water vole in her jaws. In the mountains around Riaño in northern Spain you can often watch this from your car in August and September. Elsewhere in Europe the wildcat is a forest ghost you will almost never see. Chance: 5 – in the Cantabrian mountains after mowing you will nearly always find one.",
+ "spots": [
+  {
+   "id": "es-riano-cantabrian-mountains",
+   "name_nl": "Riaño en Boca de Huérgano (Cantabrisch gebergte)",
+   "name_en": "Riaño and Boca de Huérgano (Cantabrian Mountains)",
+   "area_nl": "Regionaal park Montaña de Riaño y Mampodre en de zuidflank van de Picos de Europa, León (Castilië en León)",
+   "area_en": "Montaña de Riaño y Mampodre Regional Park and the southern flank of the Picos de Europa, León (Castile and León)",
+   "country_nl": "Spanje",
+   "country_en": "Spain",
+   "cont": "eur",
+   "lat": 42.9,
+   "lon": -4.9,
+   "score": 5,
+   "why_nl": "Trip reports van 2016 tot 2023 melden vrijwel allemaal wilde katten die op gemaaide weides jagen, vaak al op de eerste dag (bijvoorbeeld drie katten in vier ritten in 2017, twee op de eerste middag in 2022).",
+   "why_en": "Trip reports from 2016 to 2023 almost all record wildcats hunting in mown meadows, often on the first day (e.g. three cats in four drives in 2017, two on the first afternoon in 2022).",
+   "season_nl": "Augustus tot half september, zodra het hooi gemaaid is; bij grote hitte trekken de katten zich terug in het bos.",
+   "season_en": "August to mid-September, once the hay has been cut; in very hot weather the cats retreat into the cooler forest.",
+   "time_nl": "De eerste twee uur na zonsopkomst en de laatste twee uur voor zonsondergang; soms ook midden op de ochtend.",
+   "time_en": "The first two hours after sunrise and the last two hours before sunset; sometimes mid-morning too.",
+   "trip_nl": "Langzaam rijden over openbare wegen langs hooiweides in de vallei tussen Boca de Huérgano, Riaño en Besande, met regelmatig stoppen om te scannen; 2 à 4 dagen, goed te combineren met wolf en bruine beer (Somiedo).",
+   "trip_en": "Drive slowly along public roads past hay meadows in the valleys between Boca de Huérgano, Riaño and Besande, stopping often to scan; 2–4 days, easily combined with wolf and brown bear (Somiedo).",
+   "sources": [
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "id": "bg-eastern-rhodopes",
+   "name_nl": "Oostelijke Rodopen",
+   "name_en": "Eastern Rhodopes",
+   "area_nl": "Oostelijke Rodopen rond Madzjarovo, Zuid-Bulgarije",
+   "area_en": "Eastern Rhodopes around Madzharovo, southern Bulgaria",
+   "country_nl": "Bulgarije",
+   "country_en": "Bulgaria",
+   "cont": "eur",
+   "lat": 41.6,
+   "lon": 25.8,
+   "score": 2,
+   "why_nl": "Eén trip report (2015) meldt een wilde kat overdag langs een bosrand bij Efrem en een tweede langs de weg richting Boergas, maar gerichte zoektochten zijn er nauwelijks.",
+   "why_en": "One trip report (2015) records a wildcat by day along a woodland edge near Efrem and a second beside the road towards Burgas, but targeted searches are scarce.",
+   "season_nl": "Voorjaar (mei) en zomer; meldingen zijn schaars, dus elk seizoen is een gok.",
+   "season_en": "Spring (May) and summer; records are scarce, so any season is a gamble.",
+   "time_nl": "Vroege middag tot schemering, langs bosranden en kleine akkers.",
+   "time_en": "Early afternoon to dusk, along woodland edges and small fields.",
+   "trip_nl": "Zelf rondrijden over rustige wegen tussen dorpen en bosranden, vaak gecombineerd met vogels kijken (gieren) bij Madzjarovo; enkele dagen.",
+   "trip_en": "Self-drive along quiet roads between villages and woodland edges, often combined with birding (vultures) at Madzharovo; a few days.",
+   "sources": [
+    9
+   ]
+  },
+  {
+   "id": "es-sierra-de-andujar",
+   "name_nl": "Sierra de Andújar",
+   "name_en": "Sierra de Andújar",
+   "area_nl": "Natuurpark Sierra de Andújar, Jaén (Andalusië)",
+   "area_en": "Sierra de Andújar Natural Park, Jaén (Andalusia)",
+   "country_nl": "Spanje",
+   "country_en": "Spain",
+   "cont": "eur",
+   "lat": 38.2,
+   "lon": -4.0,
+   "score": 2,
+   "why_nl": "De meeste lynxspotters zien hier geen wilde kat; een trip report uit 2025 noemt er één als bijvangst en zegt dat de soort hier niet algemeen is en dat er ook hybriden voorkomen.",
+   "why_en": "Most lynx-watchers here see no wildcat; a 2025 trip report logs one as a bonus and notes the species is not common here and that hybrids also occur.",
+   "season_nl": "Hele jaar; december tot februari is de drukste lynxperiode, dus dan zijn er de meeste ogen op de weg.",
+   "season_en": "Year-round; December to February is peak lynx season, so that is when most eyes are on the roads.",
+   "time_nl": "Ochtend en late middag langs de hoofdweg door het park.",
+   "time_en": "Morning and late afternoon along the main road through the park.",
+   "trip_nl": "Als bijvangst tijdens een lynxtrip: vanaf uitkijkpunten en langs de parkweg vanaf Andújar, 3 à 4 dagen.",
+   "trip_en": "As a bonus on a lynx trip: from viewpoints and along the park road from Andújar, 3–4 days.",
+   "sources": [
+    7
+   ]
+  },
+  {
+   "id": "pt-montesinho",
+   "name_nl": "Montesinho",
+   "name_en": "Montesinho",
+   "area_nl": "Natuurpark Montesinho, Trás-os-Montes (Noordoost-Portugal)",
+   "area_en": "Montesinho Natural Park, Trás-os-Montes (north-east Portugal)",
+   "country_nl": "Portugal",
+   "country_en": "Portugal",
+   "cont": "eur",
+   "lat": 41.9,
+   "lon": -6.9,
+   "score": 1,
+   "why_nl": "Onderzoek met cameravallen vond hier een vrij zuivere maar dunne populatie (ongeveer 3 katten per 100 km²), en trip reports met waarnemingen ontbreken.",
+   "why_en": "Camera-trap research found a fairly pure but thin population here (about 3 cats per 100 km²), and there are no trip reports with sightings.",
+   "season_nl": "Zomer en vroege herfst, als de weides gemaaid zijn.",
+   "season_en": "Summer and early autumn, when the meadows have been cut.",
+   "time_nl": "Schemering en vroege ochtend langs weides en bosranden.",
+   "time_en": "Dusk and early morning along meadows and woodland edges.",
+   "trip_nl": "Zelf wandelen en rondrijden vanuit dorpen in het park; reken op geluk, combineer met wolvensporen en vogels.",
+   "trip_en": "Walk and drive yourself from villages in the park; count on luck, combine with wolf signs and birds.",
+   "sources": [
+    8
+   ]
+  },
+  {
+   "id": "de-hainich",
+   "name_nl": "Nationaal Park Hainich",
+   "name_en": "Hainich National Park",
+   "area_nl": "Nationaal Park Hainich, Thüringen",
+   "area_en": "Hainich National Park, Thuringia",
+   "country_nl": "Duitsland",
+   "country_en": "Germany",
+   "cont": "eur",
+   "lat": 51.1,
+   "lon": 10.4,
+   "score": 1,
+   "why_nl": "Er leven zo’n 60 wilde katten in het park (2017), maar in het dichte beukenbos krijg je ze zelden te zien; in Hütscheroda kun je ze wel in een verblijf bekijken.",
+   "why_en": "Around 60 wildcats live in the park (2017), but in the dense beech forest you rarely see one; at Hütscheroda you can see captive cats in an enclosure.",
+   "season_nl": "Late winter en vroeg voorjaar (paartijd, minder blad) en zomer langs bosweides.",
+   "season_en": "Late winter and early spring (mating season, less foliage) and summer along forest meadows.",
+   "time_nl": "Schemering, langs open plekken en weides aan de bosrand.",
+   "time_en": "Dusk, along clearings and meadows at the forest edge.",
+   "trip_nl": "Wandelen over de gemarkeerde paden van het park, onder meer het wildkattenpad bij Hütscheroda; een paar dagen, vooral voor sporen en de sfeer.",
+   "trip_en": "Walk the park's marked trails, including the wildcat trail near Hütscheroda; a few days, mainly for signs and atmosphere.",
+   "sources": [
+    14,
+    1
+   ]
+  },
+  {
+   "id": "it-etna",
+   "name_nl": "Etna",
+   "name_en": "Mount Etna",
+   "area_nl": "Parco dell’Etna, Catania (Sicilië)",
+   "area_en": "Etna Regional Park, Catania (Sicily)",
+   "country_nl": "Italië",
+   "country_en": "Italy",
+   "cont": "eur",
+   "lat": 37.7,
+   "lon": 15.0,
+   "score": 1,
+   "why_nl": "Onderzoekers fotograferen hier al jaren wilde katten met cameravallen, maar ze mijden mensen en drukke wegen en trip reports met waarnemingen heb ik niet gevonden.",
+   "why_en": "Researchers have camera-trapped wildcats here for years, but the cats avoid people and busy roads, and I found no trip reports with sightings.",
+   "season_nl": "Voorjaar tot herfst.",
+   "season_en": "Spring to autumn.",
+   "time_nl": "Schemering en nacht, op de beboste hellingen ver van drukke wegen.",
+   "time_en": "Dusk and night, on the wooded slopes away from busy roads.",
+   "trip_nl": "Wandelen in de stille bossen op de flanken van de vulkaan; zie het als een mooie bonus bij een Etna-reis.",
+   "trip_en": "Walk the quiet forests on the volcano's flanks; treat it as a lovely bonus on an Etna trip.",
+   "sources": [
+    15,
+    16
+   ]
+  },
+  {
+   "id": "gb-cairngorms",
+   "name_nl": "Cairngorms",
+   "name_en": "Cairngorms",
+   "area_nl": "Cairngorms National Park, Schotse Hooglanden",
+   "area_en": "Cairngorms National Park, Scottish Highlands",
+   "country_nl": "Verenigd Koninkrijk (Schotland)",
+   "country_en": "United Kingdom (Scotland)",
+   "cont": "eur",
+   "lat": 57.1,
+   "lon": -3.6,
+   "score": 1,
+   "why_nl": "De oorspronkelijke Schotse populatie geldt als niet meer levensvatbaar en is sterk vermengd; sinds 2023 zijn 46 in gevangenschap gefokte katten uitgezet, maar spotters zien vrijwel nooit een echte wilde kat.",
+   "why_en": "The original Scottish population is considered no longer viable and heavily hybridised; since 2023, 46 captive-bred cats have been released, but watchers almost never see a genuine wildcat.",
+   "season_nl": "Herfst en winter, als de katten vaker in de schemering actief zijn en er minder dekking is.",
+   "season_en": "Autumn and winter, when cats are more often active at dusk and cover is thinner.",
+   "time_nl": "Schemering en nacht.",
+   "time_en": "Dusk and night.",
+   "trip_nl": "Zelf rondtrekken in Strathspey en omgeving; elke kat die je ziet is waarschijnlijk een hybride of verwilderde huiskat. Meld waarnemingen bij het herstelproject.",
+   "trip_en": "Explore Strathspey and surroundings yourself; any cat you see is most likely a hybrid or feral cat. Report sightings to the recovery project.",
+   "sources": [
+    1,
+    11,
+    12,
+    10
+   ]
+  },
+  {
+   "id": "tr-yenice-forest",
+   "name_nl": "Yenice-bossen",
+   "name_en": "Yenice Forest",
+   "area_nl": "Yenice-bossen, provincie Karabük (Zwarte Zeegebied)",
+   "area_en": "Yenice Forest, Karabük province (Black Sea region)",
+   "country_nl": "Turkije",
+   "country_en": "Turkey",
+   "cont": "asia",
+   "lat": 41.2,
+   "lon": 32.3,
+   "score": 1,
+   "why_nl": "Cameravalonderzoek noemt deze bossen een van de belangrijkste gebieden voor de wilde kat in Turkije, maar er zijn geen trip reports met waarnemingen en huiskatten duiken er ook op.",
+   "why_en": "Camera-trap studies call these forests one of the most important wildcat areas in Turkey, but there are no trip reports with sightings and domestic cats turn up there too.",
+   "season_nl": "Voorjaar tot herfst.",
+   "season_en": "Spring to autumn.",
+   "time_nl": "Schemering en nacht.",
+   "time_en": "Dusk and night.",
+   "trip_nl": "Zelf wandelen op bosweggetjes; realistisch alleen met veel geluk of met eigen cameravallen. Beste optie in het Aziatische deel van het verspreidingsgebied (Turkije, Kaukasus).",
+   "trip_en": "Walk forest tracks on your own; realistically only with great luck or your own camera traps. Best option in the Asian part of the range (Turkey, Caucasus).",
+   "sources": [
+    17,
+    18,
+    1
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Ga in augustus of september naar het Cantabrisch gebergte en zoek pas gemaaide hooiweides af: daar jagen wilde katten overdag op woelratten.",
+  "Scan vanuit de auto en blijf zitten. Wilde katten zijn schuw en vluchten vaak als je stopt of uitstapt; wie het eerst langskomt, heeft de beste kans.",
+  "Let op de staart: een dikke, stompe staart met losse zwarte ringen en een zwarte punt. De rugstreep stopt bij de staartwortel.",
+  "Witte poten, vlekken of een dunne, spitse staart wijzen op een huiskat of hybride. Zekerheid krijg je alleen met DNA.",
+  "Schijnwerpen vanaf de weg is in Spanje verboden; gebruik een warmtebeeldkijker als je in de schemering zoekt.",
+  "In bossen als de Hainich of op de Etna zie je wilde katten vooral op cameravallen. Zoek sporen en uitwerpselen op bospaden en aan bosranden."
+ ],
+ "tips_en": [
+  "Visit the Cantabrian mountains in August or September and scan freshly mown hay meadows: wildcats hunt water voles there in daylight.",
+  "Scan from the car and stay put. Wildcats are shy and often flee when you stop or get out; the first car along has the best chance.",
+  "Check the tail: thick and blunt, with separate black rings and a black tip. The dorsal stripe stops at the base of the tail.",
+  "White paws, spots or a thin, tapering tail point to a domestic cat or hybrid. Only DNA gives certainty.",
+  "Spotlighting from roads is illegal in Spain; use a thermal scope if you search at dusk.",
+  "In forests such as Hainich or on Etna you mostly see wildcats on camera traps. Look for tracks and droppings on forest trails and edges."
+ ],
+ "threats_nl": [
+  "Vermenging met huiskatten (hybridisatie), de grootste bedreiging; in Schotland is meer dan 80% van de katten in het wild hybride of verwilderd.",
+  "Ziektes van huiskatten, zoals FIV en FeLV.",
+  "Verkeersslachtoffers en vergiftiging door rattengif.",
+  "Verlies en versnippering van bos en minder prooidieren, zoals konijnen in Iberië.",
+  "Illegale vervolging, onder meer in Iberië en Schotland."
+ ],
+ "threats_en": [
+  "Hybridisation with domestic cats, the main threat; in Scotland more than 80% of cats in the wild are hybrids or feral.",
+  "Diseases from domestic cats, such as FIV and FeLV.",
+  "Road kills and rodenticide poisoning.",
+  "Loss and fragmentation of forest and fewer prey, such as rabbits in Iberia.",
+  "Illegal persecution, among others in Iberia and Scotland."
+ ],
+ "status_note_nl": "De IUCN stelt de wilde kat wereldwijd op Niet bedreigd (Least Concern), maar de wereldwijde trend is onbekend. Duitse, Franse en Italiaanse populaties breiden zich uit, de Iberische populatie gaat achteruit en de Schotse geldt als niet meer levensvatbaar (IUCN SSC Cat Specialist Group).",
+ "status_note_en": "The IUCN lists the wildcat globally as Least Concern, but the global trend is unknown. German, French and Italian populations are expanding, the Iberian population is declining and the Scottish one is considered no longer viable (IUCN SSC Cat Specialist Group).",
+ "sources": [
+  {
+   "id": 1,
+   "title": "European wildcat – species account (IUCN SSC Cat Specialist Group)",
+   "url": "https://www.catsg.org/living-species-europeanwildcat"
+  },
+  {
+   "id": 2,
+   "title": "Trip report Spain, Riaño, August 2017 (mammalwatching.com, 2017)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2017/09/MMS-Spain-2017.pdf"
+  },
+  {
+   "id": 3,
+   "title": "Spain – Sierra de Andújar and Cordillera Cantábrica, 2016 (S. Öllers, mammalwatching.com, 2017)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2017/11/SO-Spain-2016.pdf"
+  },
+  {
+   "id": 4,
+   "title": "Spain & Andorra, September 2022 – European wildcat in Riaño (mammalwatching.com, 2022)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/AJ-Spain-Andorra-2022.pdf"
+  },
+  {
+   "id": 5,
+   "title": "Spain, Picos de Europa/Riaño, September 2023 (Balmford, mammalwatching.com, 2023)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2023/09/Spain-Balmford-Sept-23-1.pdf"
+  },
+  {
+   "id": 6,
+   "title": "Asturias and León (Spain), 2019 (mammalwatching.com, 2019)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/MG-Asturias-Spain-2019.pdf"
+  },
+  {
+   "id": 7,
+   "title": "Iberian lynx trip report, Andújar (Tomer, mammalwatching.com, 2025)",
+   "url": "https://mammalwatching.com/wp-content/uploads/2025/04/Tomer-Iberian-Lynx-Trip-Report.pdf"
+  },
+  {
+   "id": 8,
+   "title": "Matias et al. – Wildcat density in Montesinho Natural Park, Portugal (Population Ecology, 2021)",
+   "url": "https://repositorio.ulisboa.pt/jspui/handle/10451/51092?mode=full"
+  },
+  {
+   "id": 9,
+   "title": "Bulgaria, May 2015 (M. Richardson, mammalwatching.com, 2015)",
+   "url": "http://mammalwatching.com/Palearctic/Otherreports/MR%20Bulgaria%202015.pdf"
+  },
+  {
+   "id": 10,
+   "title": "Ardnamurchan (Scotland) wildcat search, 2019 (J. Wright, mammalwatching.com, 2019)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/JW-Ardnamurchan-2019.pdf"
+  },
+  {
+   "id": 11,
+   "title": "2025 wildcat releases in the Cairngorms (Saving Wildcats/RZSS, 2025)",
+   "url": "https://www.savingwildcats.org.uk/news-events/2025/october/2025releases/"
+  },
+  {
+   "id": 12,
+   "title": "Have you seen a wildcat? – identification and reporting (Saving Wildcats)",
+   "url": "https://savingwildcats.org.uk/about-saving-wildcats/have-you-seen-a-wildcat/"
+  },
+  {
+   "id": 13,
+   "title": "Definition of a wildcat – updated guidance (NatureScot)",
+   "url": "https://www.nature.scot/doc/definition-wildcat-updated-guidance"
+  },
+  {
+   "id": 14,
+   "title": "Wildcats in Hainich National Park (Nationalpark Hainich)",
+   "url": "https://www.nationalpark-hainich.de/en/national-park/nature/animals/wildcats.html"
+  },
+  {
+   "id": 15,
+   "title": "Camera-trap recapture of a European wildcat on Mt Etna after nine years (Journal of Threatened Taxa, 2020)",
+   "url": "https://threatenedtaxa.org/JoTT/article/view/5484"
+  },
+  {
+   "id": 16,
+   "title": "Anile et al. – Habitat fragmentation and anthropogenic factors affect wildcat occupancy on Mt Etna (2019)",
+   "url": "https://iris.unipa.it/retrieve/e3ad8920-b54e-da0e-e053-3705fe0a2b96/2019%2c%20Anile%20et%20al%2c%20Habitat%20fragmentation%20and%20anthropogenic%20factors%20affect%20wildcat%20Felis.pdf"
+  },
+  {
+   "id": 17,
+   "title": "Can, Kandemir & Togan – The wildcat in northern Turkey: assessment of status using camera trapping (Oryx, 2011)",
+   "url": "https://avesis.metu.edu.tr/yayin/09268eab-1444-433e-9cbc-b6431b26a7d2/the-wildcat-felis-silvestris-in-northern-turkey-assessment-of-status-using-camera-trapping"
+  },
+  {
+   "id": 18,
+   "title": "Soyumert – Camera trapping Eurasian lynx and wildcat in northern Anatolia (Mammal Study, 2020)",
+   "url": "https://bioone.org/journals/Mammal-Study/volume-45/issue-1/ms2019-0046/Camera-Trapping-Two-Felid-Species--Monitoring-Eurasian-Lynx-Lynx/10.3106/ms2019-0046.full"
+  },
+  {
+   "id": 19,
+   "title": "The European wildcat hovers between recovery and local extinction (Mongabay, 2026)",
+   "url": "https://news.mongabay.com/2026/05/the-european-wildcat-hovers-between-recovery-and-local-extinction/"
+  }
+ ]
+}

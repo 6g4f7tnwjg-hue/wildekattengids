@@ -1,0 +1,410 @@
+{
+ "no": 14,
+ "intro_nl": "De koplamp glijdt over een rijstveld bij Miranda. Twee groene ogen lichten op, laag bij de grond. Dan stapt hij het licht in: een ocelot, met zijn kettingen van zwarte vlekken, rustig op jacht naar ratten. In de zuidelijke Pantanal is dat geen zeldzaamheid. Wie hier een paar nachten mee op pad gaat, ziet er vaak meer dan één. Kans: 4 – met een paar nachtritten heb je hem bijna altijd.",
+ "intro_en": "The spotlight sweeps across a rice field near Miranda. Two green eyes flare, low to the ground. Then it steps into the beam: an ocelot, draped in chains of black spots, calmly hunting rats. In the southern Pantanal that is no rarity. Join a few night drives here and you often see more than one. Chance: 4 – with a few night drives you will very likely get one.",
+ "spots": [
+  {
+   "id": "br-pantanal-miranda",
+   "name_nl": "Zuidelijke Pantanal (Miranda)",
+   "name_en": "Southern Pantanal (Miranda)",
+   "area_nl": "Pantanal van Miranda en Abobral, Mato Grosso do Sul",
+   "area_en": "Miranda and Abobral Pantanal, Mato Grosso do Sul",
+   "country_nl": "Brazilië",
+   "country_en": "Brazil",
+   "cont": "sam",
+   "lat": -20.0,
+   "lon": -56.6,
+   "score": 4,
+   "why_nl": "Op de open rijstvelden en weides bij Miranda zag één bezoeker meer dan tien ocelotten in vier nachtritten, een ander vijf in één verblijf, en in 2022 zag een groep er binnen een paar dagen meerdere; onderzoekers volgen hier de ocelotten al jaren.",
+   "why_en": "On the open rice fields and pastures near Miranda one visitor logged more than ten ocelots on four night drives, another saw five in a single stay, and in 2022 a group saw several within a few days; researchers have studied the ocelots here for years.",
+   "season_nl": "Het hele jaar; de droge tijd (ongeveer juli–oktober) is het makkelijkst, de gemelde successen waren vooral in augustus–oktober.",
+   "season_en": "Year-round; the dry season (roughly July–October) is easiest, and the reported successes were mostly in August–October.",
+   "time_nl": "Nachtritten na het donker; soms ook vlak na zonsopkomst op de toegangswegen.",
+   "time_en": "Night drives after dark; sometimes also just after sunrise on the access tracks.",
+   "trip_nl": "Nachtsafari's in open trucks vanaf boerderij-lodges rond Miranda; reken op 2 à 3 nachten. Boek als het kan een privérit, want de standaardritten zijn soms erg druk.",
+   "trip_en": "Night safaris in open trucks from ranch lodges around Miranda; allow 2–3 nights. Book a private drive if you can, as the standard drives can be very crowded.",
+   "sources": [
+    2,
+    3,
+    4,
+    23
+   ]
+  },
+  {
+   "id": "br-transpantaneira",
+   "name_nl": "Transpantaneira (noordelijke Pantanal)",
+   "name_en": "Transpantaneira (northern Pantanal)",
+   "area_nl": "Langs de Transpantaneira tussen Poconé en Porto Jofre, Mato Grosso",
+   "area_en": "Along the Transpantaneira between Poconé and Porto Jofre, Mato Grosso",
+   "country_nl": "Brazilië",
+   "country_en": "Brazil",
+   "cont": "sam",
+   "lat": -16.6,
+   "lon": -56.7,
+   "score": 3,
+   "why_nl": "Veel nachtritten langs de Transpantaneira leveren een ocelot op (2013, 2018 drie keer in één week, 2019, 2023), maar meestal gaat het om één korte waarneming.",
+   "why_en": "Many night drives along the Transpantaneira produce an ocelot (2013, three times in one week in 2018, 2019, 2023), but usually as a single brief sighting.",
+   "season_nl": "Het hele jaar; juli–oktober is het droogst. In mei kan hoog water de weg naar Porto Jofre lastig maken.",
+   "season_en": "Year-round; July–October is driest. In May high water can make the road to Porto Jofre difficult.",
+   "time_nl": "Nachtritten met een lamp; in 2018 werden alle drie de ocelotten tussen 21 en 23 uur gezien.",
+   "time_en": "Spotlighting night drives; in 2018 all three ocelots were seen between 9 and 11 pm.",
+   "trip_nl": "Nachtritten met een lokale gids vanuit lodges langs de weg, vaak gecombineerd met jaguar-boottochten vanaf Porto Jofre; reken op 3 à 4 nachten. Rijd ook de zijwegen van lodges, want op de hoofdweg is het drukker geworden.",
+   "trip_en": "Night drives with a local guide from lodges along the road, often combined with jaguar boat trips from Porto Jofre; allow 3–4 nights. Also drive lodge side tracks, as the main road has become busier.",
+   "sources": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "pe-los-amigos-madre-de-dios",
+   "name_nl": "Los Amigos (Madre de Dios)",
+   "name_en": "Los Amigos (Madre de Dios)",
+   "area_nl": "Biologisch station Los Amigos en omliggend regenwoud, Madre de Dios",
+   "area_en": "Los Amigos Biological Station and surrounding rainforest, Madre de Dios",
+   "country_nl": "Peru",
+   "country_en": "Peru",
+   "cont": "sam",
+   "lat": -12.6,
+   "lon": -70.1,
+   "score": 2,
+   "why_nl": "Een ecoloog zag hier vier ocelotten in drie weken nachtwandelen en er zijn meldingen van ocelotten op het gazon van het station, maar een mammalwatcher die er in 2018 gericht zocht, zag er geen.",
+   "why_en": "An ecologist saw four ocelots here in three weeks of night walks and there are reports of ocelots on the station lawn, but a mammalwatcher searching specifically in 2018 saw none.",
+   "season_nl": "Het hele jaar; de droge tijd (ongeveer mei–oktober) maakt de paden beter begaanbaar.",
+   "season_en": "Year-round; the dry season (roughly May–October) makes the trails easier.",
+   "time_nl": "Stille nachtwandelingen op de paden; houd ook de open plekken rond het station in de gaten.",
+   "time_en": "Quiet night walks on the trails; also keep an eye on the clearings around the station.",
+   "trip_nl": "Verblijf van een week of langer op het onderzoeksstation (per boot vanaf Puerto Maldonado/Laberinto) met zelfstandige of begeleide nachtwandelingen.",
+   "trip_en": "A stay of a week or more at the research station (by boat from Puerto Maldonado/Laberinto) with independent or guided night walks.",
+   "sources": [
+    10,
+    11
+   ]
+  },
+  {
+   "id": "cr-la-selva-sarapiqui",
+   "name_nl": "La Selva (Sarapiquí)",
+   "name_en": "La Selva (Sarapiquí)",
+   "area_nl": "Biologisch station La Selva, Sarapiquí, Heredia",
+   "area_en": "La Selva Biological Station, Sarapiquí, Heredia",
+   "country_nl": "Costa Rica",
+   "country_en": "Costa Rica",
+   "cont": "sam",
+   "lat": 10.4,
+   "lon": -84.0,
+   "score": 2,
+   "why_nl": "In een week nachtwandelen in 2019 zag een reisgenoot één ocelot op een bospad; de schrijver zelf niet – een kleine maar echte kans.",
+   "why_en": "During a week of night walks in 2019 a companion saw one ocelot on a forest trail; the writer himself did not – a small but real chance.",
+   "season_nl": "Het hele jaar; het is hier vrijwel altijd nat.",
+   "season_en": "Year-round; it is wet here almost all the time.",
+   "time_nl": "Nachtwandelingen op de paden verder van de gebouwen.",
+   "time_en": "Night walks on the trails further from the buildings.",
+   "trip_nl": "Verblijf op het onderzoeksstation met begeleide of zelfstandige nachtwandelingen; reken op 4 à 7 nachten.",
+   "trip_en": "Stay at the research station with guided or independent night walks; allow 4–7 nights.",
+   "sources": [
+    12
+   ]
+  },
+  {
+   "id": "bz-rio-bravo-gallon-jug",
+   "name_nl": "Rio Bravo en Gallon Jug",
+   "name_en": "Rio Bravo and Gallon Jug",
+   "area_nl": "Rio Bravo Conservation and Management Area en bossen rond Gallon Jug, Orange Walk",
+   "area_en": "Rio Bravo Conservation and Management Area and forests around Gallon Jug, Orange Walk",
+   "country_nl": "Belize",
+   "country_en": "Belize",
+   "cont": "sam",
+   "lat": 17.6,
+   "lon": -89.0,
+   "score": 2,
+   "why_nl": "Een gezin zag hier bij twee van de twee bezoeken een ocelot tijdens nachtritten, en een cameraval bij La Milpa legde er in 2016 een vast – maar gedetailleerde recente verslagen zijn schaars.",
+   "why_en": "A family saw an ocelot on two out of two visits here during night drives, and a trail camera near La Milpa caught one in 2016 – but detailed recent reports are scarce.",
+   "season_nl": "Het hele jaar; de droge tijd (ongeveer februari–mei) is het prettigst.",
+   "season_en": "Year-round; the dry season (roughly February–May) is most comfortable.",
+   "time_nl": "Nachtritten over de onverharde wegen door het bos.",
+   "time_en": "Night drives along the dirt roads through the forest.",
+   "trip_nl": "Nachtritten met een lokale gids vanuit lodges en veldstations in het gebied; reken op 3 à 4 nachten.",
+   "trip_en": "Night drives with a local guide from lodges and field stations in the area; allow 3–4 nights.",
+   "sources": [
+    13,
+    14
+   ]
+  },
+  {
+   "id": "bo-kaa-iya",
+   "name_nl": "Kaa-Iya del Gran Chaco",
+   "name_en": "Kaa-Iya del Gran Chaco",
+   "area_nl": "Nationaal Park Kaa-Iya del Gran Chaco, Santa Cruz",
+   "area_en": "Kaa-Iya del Gran Chaco National Park, Santa Cruz",
+   "country_nl": "Bolivia",
+   "country_en": "Bolivia",
+   "cont": "sam",
+   "lat": -19.2,
+   "lon": -61.5,
+   "score": 2,
+   "why_nl": "Een gerichte zoogdierreis in 2016 zag hier twee keer een ocelot (één keer zelfs overdag in de zon), en ook een reis in 2024 meldde de soort – maar het gaat om weinig verslagen.",
+   "why_en": "A dedicated mammal trip in 2016 saw an ocelot twice here (once even sunning itself by day), and a 2024 trip also reported the species – but there are only a few reports.",
+   "season_nl": "Droge tijd, ongeveer juni–oktober (de gemelde reizen waren in augustus).",
+   "season_en": "Dry season, roughly June–October (the reported trips were in August).",
+   "time_nl": "Nachtritten over de zandwegen, en blijf ook overdag alert.",
+   "time_en": "Night drives on the sandy roads, and stay alert by day too.",
+   "trip_nl": "Gespecialiseerde zoogdierexpeditie met lokale gids en eigen vervoer; afgelegen, reken op 4 à 6 dagen.",
+   "trip_en": "Specialised mammal expedition with a local guide and own transport; remote, allow 4–6 days.",
+   "sources": [
+    22
+   ]
+  },
+  {
+   "id": "mx-calakmul",
+   "name_nl": "Calakmul",
+   "name_en": "Calakmul",
+   "area_nl": "Biosfeerreservaat Calakmul, Campeche",
+   "area_en": "Calakmul Biosphere Reserve, Campeche",
+   "country_nl": "Mexico",
+   "country_en": "Mexico",
+   "cont": "nam",
+   "lat": 18.3,
+   "lon": -89.6,
+   "score": 1,
+   "why_nl": "Cameravallen legden 40 verschillende ocelotten vast bij drinkpoelen, ook vlak bij de weg, en volgens lokale kenners wordt er af en toe een gezien – maar in de mammalwatching-verslagen die we vonden zag niemand er een.",
+   "why_en": "Camera traps recorded 40 different ocelots at waterholes, some near the road, and local experts say one is seen now and then – but none of the mammalwatching reports we found saw one.",
+   "season_nl": "Het hele jaar; in de droge tijd (ongeveer februari–mei) concentreert het wild zich rond het water.",
+   "season_en": "Year-round; in the dry season (roughly February–May) wildlife concentrates around water.",
+   "time_nl": "Vroege ochtend en avond op de toegangsweg; ocelotten zijn hier vooral 's nachts en in de schemering actief.",
+   "time_en": "Early morning and evening on the access road; ocelots here are mostly active at night and at dusk.",
+   "trip_nl": "Ochtend- en avondritten op de weg naar de Maya-ruïnes met een lokale gids vanuit de omgeving van Xpujil; reken op 2 à 3 dagen.",
+   "trip_en": "Morning and evening drives on the road to the Maya ruins with a local guide from around Xpujil; allow 2–3 days.",
+   "sources": [
+    16,
+    17
+   ]
+  },
+  {
+   "id": "cr-osa-corcovado",
+   "name_nl": "Osa en Corcovado",
+   "name_en": "Osa and Corcovado",
+   "area_nl": "Nationaal Park Corcovado en omgeving, schiereiland Osa, Puntarenas",
+   "area_en": "Corcovado National Park and surroundings, Osa Peninsula, Puntarenas",
+   "country_nl": "Costa Rica",
+   "country_en": "Costa Rica",
+   "cont": "sam",
+   "lat": 8.5,
+   "lon": -83.5,
+   "score": 1,
+   "why_nl": "Wildcamera's bij een verblijf naast Corcovado filmen ocelotten bijna wekelijks, maar bezoekers zien ze zelden, en in de verslagen van bezoeken aan Sirena die we vonden staat geen ocelot.",
+   "why_en": "Trail cameras at a property next to Corcovado record ocelots almost weekly, but visitors rarely see them, and the Sirena trip reports we found mention no ocelot.",
+   "season_nl": "Het hele jaar; december–april is het droogst.",
+   "season_en": "Year-round; December–April is driest.",
+   "time_nl": "Nachtwandelingen; overdag is de kans heel klein.",
+   "time_en": "Night walks; by day the chance is very small.",
+   "trip_nl": "Begeleide nachtwandelingen vanuit Puerto Jiménez of Drake Bay, of meerdaagse tochten met verplichte gids naar station Sirena.",
+   "trip_en": "Guided night walks from Puerto Jiménez or Drake Bay, or multi-day hikes with a mandatory guide to Sirena station.",
+   "sources": [
+    15
+   ]
+  },
+  {
+   "id": "us-laguna-atascosa",
+   "name_nl": "Laguna Atascosa",
+   "name_en": "Laguna Atascosa",
+   "area_nl": "Laguna Atascosa National Wildlife Refuge, Zuid-Texas",
+   "area_en": "Laguna Atascosa National Wildlife Refuge, South Texas",
+   "country_nl": "Verenigde Staten",
+   "country_en": "United States",
+   "cont": "nam",
+   "lat": 26.2,
+   "lon": -97.4,
+   "score": 1,
+   "why_nl": "In heel de VS leven nog maar zo'n 80 bekende ocelotten, waarvan ongeveer 13 in dit refugium; de dienst zelf noemt de soort zelden gezien.",
+   "why_en": "Only about 80 known ocelots remain in the whole US, roughly 13 of them in this refuge; the agency itself calls the species rarely seen.",
+   "season_nl": "Het hele jaar.",
+   "season_en": "Year-round.",
+   "time_nl": "Schemering, op de open wegen door het refugium.",
+   "time_en": "Dusk, on the open roads through the refuge.",
+   "trip_nl": "Zelf rijden over de openbare routes van het refugium; zie je er een, meld het dan aan de beheerders. Ga vooral voor het landschap en de vogels.",
+   "trip_en": "Drive the refuge's public routes yourself; if you see one, report it to refuge staff. Go mainly for the scenery and the birds.",
+   "sources": [
+    18,
+    19
+   ]
+  },
+  {
+   "id": "ar-ibera",
+   "name_nl": "Iberá",
+   "name_en": "Iberá",
+   "area_nl": "Nationaal Park Iberá, Corrientes",
+   "area_en": "Iberá National Park, Corrientes",
+   "country_nl": "Argentinië",
+   "country_en": "Argentina",
+   "cont": "sam",
+   "lat": -28.5,
+   "lon": -57.2,
+   "score": 1,
+   "why_nl": "De ocelot was uit Iberá vrijwel verdwenen; sinds eind 2023 worden er een paar dieren met halsband uitgezet, dus een waarneming is voorlopig puur geluk.",
+   "why_en": "The ocelot had all but vanished from Iberá; since late 2023 a handful of collared animals have been released, so a sighting is pure luck for now.",
+   "season_nl": "Het hele jaar; voorjaar en herfst (september–november, maart–mei) zijn het aangenaamst.",
+   "season_en": "Year-round; spring and autumn (September–November, March–May) are most pleasant.",
+   "time_nl": "Schemering en nacht.",
+   "time_en": "Dusk and night.",
+   "trip_nl": "Combineer met een algemene natuurreis door het park; kom voor moerashert, kaaimannen en vogels, en zie een ocelot als bonus.",
+   "trip_en": "Combine with a general wildlife trip through the park; come for marsh deer, caimans and birds, and treat an ocelot as a bonus.",
+   "sources": [
+    20,
+    21
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Ga op nachtrit: ocelotten zijn vooral 's nachts en in de schemering actief. Scan met een lamp naar oogreflectie, laag in het gras en hoog in de bomen.",
+  "Kijk ook omhoog. Ocelotten klimmen goed; in de Pantanal zat er één twintig meter van de weg in een boom.",
+  "Let op sporen in het zand en de modder: bij de ocelot valt de achtervoet vaak precies in de afdruk van de voorvoet.",
+  "Ocelotten gebruiken vaste latrines en markeren met urine; verse keutels op paden betekenen dat er een in de buurt rondloopt.",
+  "Rijd ook in de eerste uren na zonsopkomst: op de toegangswegen kom je dan soms nog een ocelot tegen.",
+  "Sommige lodges lokken ocelotten met vlees of vis naar een schuilhut. Deze gids raadt dat af en telt zulke waarnemingen niet mee; kies voor nachtritten.",
+  "Rijd langzaam, zeker in Texas en Mexico, waar het verkeer een van de grootste doodsoorzaken is."
+ ],
+ "tips_en": [
+  "Go on night drives: ocelots are mostly active at night and at dusk. Scan with a spotlight for eyeshine, low in the grass and high in the trees.",
+  "Look up too. Ocelots climb well; in the Pantanal one sat in a tree twenty metres from the road.",
+  "Watch for tracks in sand and mud: in ocelots the hind foot often lands right in the print of the forefoot.",
+  "Ocelots use fixed latrines and spray urine; fresh scat on trails means one is around.",
+  "Also drive in the first hours after sunrise: you sometimes still meet an ocelot on the access tracks.",
+  "Some lodges lure ocelots to a hide with meat or fish. This guide advises against it and does not count such sightings; choose night drives instead.",
+  "Drive slowly, especially in Texas and Mexico, where traffic is one of the main causes of death."
+ ],
+ "threats_nl": [
+  "Verlies en versnippering van bos door landbouw en houtkap",
+  "Verkeersslachtoffers, vooral in Texas, Brazilië en Mexico",
+  "Illegale handel in vachten en als huisdier",
+  "Vergeldingsdoding na verlies van kippen",
+  "Loslopende honden (ziektes, concurrentie)"
+ ],
+ "threats_en": [
+  "Loss and fragmentation of forest through agriculture and logging",
+  "Road deaths, especially in Texas, Brazil and Mexico",
+  "Illegal trade in skins and pets",
+  "Retaliatory killing over poultry losses",
+  "Free-ranging dogs (disease, competition)"
+ ],
+ "status_note_nl": "Wereldwijd staat de ocelot als Niet bedreigd (Least Concern) op de Rode Lijst van de IUCN, maar de aantallen nemen vermoedelijk af buiten het Amazonegebied. In de VS en Mexico geldt de soort als bedreigd; in Texas leven nog maar zo'n 80 dieren.",
+ "status_note_en": "Globally the ocelot is listed as Least Concern on the IUCN Red List, but numbers are presumed to be declining outside the Amazon. It is considered endangered in the US and Mexico; only about 80 remain in Texas.",
+ "sources": [
+  {
+   "id": 1,
+   "title": "Ocelot – species account (IUCN SSC Cat Specialist Group)",
+   "url": "https://www.catsg.org/living-species-ocelot"
+  },
+  {
+   "id": 2,
+   "title": "Southern Pantanal trip report (mammalwatching.com, 2017)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2017/10/Southern-Pantanal-trip-report-Mogens-Trolle.pdf"
+  },
+  {
+   "id": 3,
+   "title": "Going big in Brazil – trip report incl. southern Pantanal (mammalwatching.com, 2019)",
+   "url": "https://www.mammalwatching.com/2019/02/26/going-big-in-brazil-a-big-trip-in-search-of-some-of-brazils-biggest-mammals/"
+  },
+  {
+   "id": 4,
+   "title": "Brazil (Pantanal) trip report, October 2022 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/JW-Brazil-2022.pdf"
+  },
+  {
+   "id": 5,
+   "title": "Pantanal: Jaguar and Ocelot trip, May 2018 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2016/08/Pantanal-May-2018.pdf"
+  },
+  {
+   "id": 6,
+   "title": "Northern Pantanal trip report 2023 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2023/11/Brazil-Panatanl-Trijuncao-2023-Trip-Report.pdf"
+  },
+  {
+   "id": 7,
+   "title": "Pantanal wildlife, September 2013 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2016/08/Pantanal-Wildlife-Sep-2013-MW.pdf"
+  },
+  {
+   "id": 8,
+   "title": "Brazil: mammals of the Pantanal, 2019 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/BRA11_report_191020_Brazil_Mammals_of_the_Pantanal.pdf"
+  },
+  {
+   "id": 9,
+   "title": "Pantanal help please – forum thread on ocelot sites and baited hides (mammalwatching.com, 2017)",
+   "url": "https://www.mammalwatching.com/2017/12/06/pantanal-help-please/"
+  },
+  {
+   "id": 10,
+   "title": "Manu, Peru trip report 2018 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2018/07/MA-Manu-Peru-2018.pdf"
+  },
+  {
+   "id": 11,
+   "title": "Planning trip to Ecuador – forum thread with Los Amigos comment (mammalwatching.com, 2016)",
+   "url": "https://www.mammalwatching.com/?p=13724"
+  },
+  {
+   "id": 12,
+   "title": "La Selva Biological Station trip report, 2019 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2023/07/LaSelvaCostaRica.pdf"
+  },
+  {
+   "id": 13,
+   "title": "RFI Belize and Yucatan – forum thread (mammalwatching.com, 2014)",
+   "url": "https://www.mammalwatching.com/2014/02/25/rfi-belize-and-yucatan/"
+  },
+  {
+   "id": 14,
+   "title": "Belize trip report 2016 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2017/01/RF-Belize-2016.pdf"
+  },
+  {
+   "id": 15,
+   "title": "A mammal watching tip on the Osa Peninsula, Costa Rica (mammalwatching.com, 2015)",
+   "url": "https://mammalwatching.com/?p=5076"
+  },
+  {
+   "id": 16,
+   "title": "Mexico: Yucatán trip report 2021 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/AJ-Mexico-Yucatan-2021.pdf"
+  },
+  {
+   "id": 17,
+   "title": "Sandoval-Serés et al. – Ocelot waterhole use and activity in Calakmul (Revista Mexicana de Biodiversidad, 2022)",
+   "url": "https://revista.ib.unam.mx/index.php/bio/article/view/3930"
+  },
+  {
+   "id": 18,
+   "title": "Newly discovered ocelots in Texas bring researchers hope (Texas Public Radio, 2020)",
+   "url": "https://www.tpr.org/post/newly-discovered-ocelots-texas-bring-researchers-hope-endangered-population"
+  },
+  {
+   "id": 19,
+   "title": "Ocelot (Leopardus pardalis) (U.S. Fish and Wildlife Service)",
+   "url": "https://www.fws.gov/media/ocelot-leopardus-pardalis"
+  },
+  {
+   "id": 20,
+   "title": "The ocelot returns to Corrientes: release in Iberá National Park (Noticias Ambientales, 2025)",
+   "url": "https://noticiasambientales.com/animals/the-ocelot-returns-to-corrientes-a-milestone-for-species-reintroduction-in-ibera-national-park/"
+  },
+  {
+   "id": 21,
+   "title": "Ocelot reintroductions in Iberá – project page (Mossy Earth)",
+   "url": "https://www.mossy.earth/projects/ocelot-reintroductions-in-ibera"
+  },
+  {
+   "id": 22,
+   "title": "Bolivia: Kaa-Iya National Park trip report 2016 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2016/08/NM-Bolivia-Kaa-Iya-NP-2016.pdf"
+  },
+  {
+   "id": 23,
+   "title": "Ocelot Project, Miranda Pantanal (Instituto Pró-Carnívoros)",
+   "url": "https://procarnivoros.org.br/en/projeto/ocelot-project/"
+  }
+ ]
+}

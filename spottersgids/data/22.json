@@ -1,0 +1,301 @@
+{
+ "no": 22,
+ "intro_nl": "Het is na middernacht op 4.000 meter hoogte en je adem bevriest in de lichtbundel. Al uren zoek je rotswanden af waar viscacha's wonen, zonder iets te zien. Dan blijven twee ogen oplichten op een richel. Grijs, dikke ringen om een lange staart: een Andesbergkat, een van de zeldzaamste katten van Amerika. Alleen in het Chileense altiplano rond Lauca wordt hij af en toe door bezoekers gezien, en dan nog vaak pas na een week zoeken. Kans: 2 – met veel nachten en een ervaren gids heb je een kleine kans.",
+ "intro_en": "It is past midnight at 4,000 metres and your breath freezes in the torch beam. For hours you have been scanning rock walls where viscachas live, without seeing a thing. Then two eyes keep glowing on a ledge. Grey, thick rings around a long tail: an Andean mountain cat, one of the rarest cats in the Americas. Only in the Chilean altiplano around Lauca do visitors see it now and then, and often only after a week of searching. Chance: 2 – with many nights and an experienced guide you have a small chance.",
+ "spots": [
+  {
+   "id": "cl-lauca-las-vicunas-surire",
+   "name_nl": "Lauca, Las Vicuñas en Salar de Surire",
+   "name_en": "Lauca, Las Vicuñas and Salar de Surire",
+   "area_nl": "Nationaal park Lauca, Nationaal reservaat Las Vicuñas en Natuurmonument Salar de Surire, regio Arica y Parinacota",
+   "area_en": "Lauca National Park, Las Vicuñas National Reserve and Salar de Surire Natural Monument, Arica y Parinacota region",
+   "country_nl": "Chili",
+   "country_en": "Chile",
+   "cont": "sam",
+   "lat": -18.5,
+   "lon": -69.2,
+   "score": 2,
+   "why_nl": "Tussen 2018 en 2024 zagen meerdere bezoekers hier na 3 tot 10 nachten zoeken een Andesbergkat, maar minstens vier andere zoektochten bleven zonder kat en zelfs de meest ervaren gids zag er in 2024 pas zijn zesde.",
+   "why_en": "Between 2018 and 2024 several visitors saw an Andean mountain cat here after 3 to 10 nights of searching, but at least four other searches drew a blank and even the most experienced guide saw only his sixth in 2024.",
+   "season_nl": "Geslaagde reizen vonden plaats in november–december en april–mei",
+   "season_en": "Successful trips took place in November–December and April–May",
+   "time_nl": "Vooral 's nachts en in de schemering; daarna bij daglicht terugkeren naar de plek waar je ogen zag oplichten",
+   "time_en": "Mainly at night and at dusk/dawn; then return in daylight to where you saw eyeshine",
+   "trip_nl": "Gespecialiseerde zoektocht van een week of langer met een lokale gids en terreinwagen, overnachten in gastverblijven in het altiplano; overdag ravijnen met viscacha's afzoeken op sporen, 's nachts lampen vanuit de auto en te voet. Acclimatiseer eerst een of twee nachten in Putre",
+   "trip_en": "Specialised search of a week or more with a local guide and 4x4, staying in homestays on the altiplano; by day check gorges with viscachas for signs, by night spotlight from the car and on foot. Acclimatise for one or two nights in Putre first",
+   "sources": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "id": "bo-sajama",
+   "name_nl": "Sajama",
+   "name_en": "Sajama",
+   "area_nl": "Nationaal park Sajama, departement Oruro",
+   "area_en": "Sajama National Park, Oruro department",
+   "country_nl": "Bolivia",
+   "country_en": "Bolivia",
+   "cont": "sam",
+   "lat": -18.1,
+   "lon": -68.9,
+   "score": 1,
+   "why_nl": "Sajama geldt als een van de twee belangrijkste gebieden voor de soort in Bolivia, maar we vonden geen enkel reisverslag met een waarneming: kennis komt van onderzoek met cameravallen.",
+   "why_en": "Sajama is considered one of the two most important areas for the species in Bolivia, but we found no trip report with a sighting: what is known comes from camera-trap research.",
+   "season_nl": "Droge tijd (ongeveer mei–oktober) is het makkelijkst begaanbaar",
+   "season_en": "The dry season (roughly May–October) is easiest for travel",
+   "time_nl": "Nacht en schemering",
+   "time_en": "Night and dusk/dawn",
+   "trip_nl": "Zelf of met een lokale gids rotsige hellingen met viscachakolonies afzoeken vanuit het dorp Sajama; combineer met Lauca, dat er direct tegenaan ligt aan Chileense kant",
+   "trip_en": "Search rocky slopes with viscacha colonies from Sajama village, on your own or with a local guide; combine with Lauca, which borders it on the Chilean side",
+   "sources": [
+    8,
+    7
+   ]
+  },
+  {
+   "id": "pe-salinas-aguada-blanca",
+   "name_nl": "Salinas y Aguada Blanca",
+   "name_en": "Salinas y Aguada Blanca",
+   "area_nl": "Nationaal reservaat Salinas y Aguada Blanca, Arequipa",
+   "area_en": "Salinas y Aguada Blanca National Reserve, Arequipa",
+   "country_nl": "Peru",
+   "country_en": "Peru",
+   "cont": "sam",
+   "lat": -16.0,
+   "lon": -71.3,
+   "score": 1,
+   "why_nl": "Hier werden in 2015 de eerste cameravalfoto's van levende Andesbergkatten in Peru gemaakt; waarnemingen door bezoekers zijn ons niet bekend.",
+   "why_en": "The first camera-trap photos of live Andean mountain cats in Peru were taken here in 2015; we know of no sightings by visitors.",
+   "season_nl": "Droge tijd (ongeveer mei–oktober)",
+   "season_en": "Dry season (roughly May–October)",
+   "time_nl": "Nacht en schemering",
+   "time_en": "Night and dusk/dawn",
+   "trip_nl": "Dagtochten of overnachtingen in de hoge puna vanuit Arequipa; zoek rotsige hellingen met viscacha's af. Verwacht eerder vicuña's en vossen dan een kat",
+   "trip_en": "Day trips or overnight stays in the high puna from Arequipa; scan rocky slopes with viscachas. Expect vicuñas and foxes rather than a cat",
+   "sources": [
+    9
+   ]
+  },
+  {
+   "id": "ar-jujuy-puna",
+   "name_nl": "Puna van Jujuy",
+   "name_en": "Jujuy Puna",
+   "area_nl": "Hoge Andes en puna van de provincie Jujuy",
+   "area_en": "High Andes and puna of Jujuy province",
+   "country_nl": "Argentinië",
+   "country_en": "Argentina",
+   "cont": "sam",
+   "lat": -22.6,
+   "lon": -66.0,
+   "score": 1,
+   "why_nl": "Onderzoekers hebben de kat hier met cameravallen vaak vastgelegd, maar ook daar was de bergkat duidelijk zeldzamer dan de pampaskat; directe waarnemingen door bezoekers zijn uitzonderlijk.",
+   "why_en": "Researchers have recorded the cat here many times with camera traps, but even there it was clearly rarer than the pampas cat; direct sightings by visitors are exceptional.",
+   "season_nl": "Hele jaar; de droge winter (mei–september) is koud maar helder",
+   "season_en": "Year-round; the dry winter (May–September) is cold but clear",
+   "time_nl": "Nacht en schemering",
+   "time_en": "Night and dusk/dawn",
+   "trip_nl": "Rondreis met terreinwagen door de puna; bij dorpen naar rotswanden met viscacha's vragen en daar in de schemering posten",
+   "trip_en": "4x4 road trip through the puna; ask in villages about rock walls with viscachas and wait there at dusk",
+   "sources": [
+    10,
+    16,
+    7
+   ]
+  },
+  {
+   "id": "ar-catamarca-el-penon",
+   "name_nl": "El Peñón (puna van Catamarca)",
+   "name_en": "El Peñón (Catamarca puna)",
+   "area_nl": "Puna rond El Peñón, noordelijk Catamarca",
+   "area_en": "Puna around El Peñón, northern Catamarca",
+   "country_nl": "Argentinië",
+   "country_en": "Argentina",
+   "cont": "sam",
+   "lat": -26.5,
+   "lon": -67.3,
+   "score": 1,
+   "why_nl": "Een cameraval die een natuurgids samen met de Alianza Gato Andino plaatste, legde hier een Andesbergkat vast; zien met eigen ogen blijft puur geluk.",
+   "why_en": "A camera trap set by a nature guide together with the Andean Cat Alliance recorded an Andean mountain cat here; seeing one yourself remains pure luck.",
+   "season_nl": "Hele jaar; voorjaar en najaar zijn het aangenaamst",
+   "season_en": "Year-round; spring and autumn are most pleasant",
+   "time_nl": "Nacht",
+   "time_en": "Night",
+   "trip_nl": "Meerdaagse puna-excursie met terreinwagen vanuit El Peñón, eventueel gecombineerd met het meekijken naar cameravalbeelden van lokaal onderzoek",
+   "trip_en": "Multi-day 4x4 puna excursion from El Peñón, possibly combined with looking at camera-trap footage from local research",
+   "sources": [
+    11
+   ]
+  },
+  {
+   "id": "ar-payunia-malargue",
+   "name_nl": "La Payunia (Malargüe)",
+   "name_en": "La Payunia (Malargüe)",
+   "area_nl": "Beschermd natuurgebied La Payunia en omgeving, departement Malargüe (Mendoza)",
+   "area_en": "La Payunia Protected Natural Area and surroundings, Malargüe department (Mendoza)",
+   "country_nl": "Argentinië",
+   "country_en": "Argentina",
+   "cont": "sam",
+   "lat": -36.4,
+   "lon": -69.2,
+   "score": 1,
+   "why_nl": "Hier leeft de Patagonische laaglandpopulatie; sinds 2024 zijn er elk jaar enkele cameravalbeelden, maar geen waarnemingen door bezoekers.",
+   "why_en": "This is where the Patagonian lowland population lives; since 2024 there have been a few camera-trap records every year, but no sightings by visitors.",
+   "season_nl": "Zomer (november–maart) is het best bereisbaar",
+   "season_en": "Summer (November–March) is best for travel",
+   "time_nl": "Nacht",
+   "time_en": "Night",
+   "trip_nl": "Dagexcursies met terreinwagen door de vulkaanlandschappen van La Payunia vanuit Malargüe; vooral een kans op het landschap en ander wild, de kat is een bonus voor wie heel veel geluk heeft",
+   "trip_en": "4x4 day excursions through the volcanic landscapes of La Payunia from Malargüe; mainly a chance for scenery and other wildlife, the cat is a bonus for the very lucky",
+   "sources": [
+    12,
+    13,
+    14
+   ]
+  },
+  {
+   "id": "cl-andino-juncal",
+   "name_nl": "Parque Andino Juncal",
+   "name_en": "Parque Andino Juncal",
+   "area_nl": "Parque Andino Juncal, Andes van Centraal-Chili (regio Valparaíso)",
+   "area_en": "Parque Andino Juncal, central Chilean Andes (Valparaíso region)",
+   "country_nl": "Chili",
+   "country_en": "Chile",
+   "cont": "sam",
+   "lat": -32.9,
+   "lon": -70.1,
+   "score": 1,
+   "why_nl": "Acht cameravallen leverden hier in 1.080 cameradagen slechts twee opnamen op (2021), wat laat zien hoe zeldzaam de kat in Centraal-Chili is.",
+   "why_en": "Eight camera traps produced only two records here in 1,080 camera-days (2021), which shows how rare the cat is in central Chile.",
+   "season_nl": "Zomer (december–maart); opnamen waren in januari en maart",
+   "season_en": "Summer (December–March); records were in January and March",
+   "time_nl": "Nacht en schemering",
+   "time_en": "Night and dusk/dawn",
+   "trip_nl": "Wandelingen in het park op een dagtocht vanuit Santiago of Los Andes; zie het als een mooie berg-dag met een minieme kans",
+   "trip_en": "Hikes in the park on a day trip from Santiago or Los Andes; treat it as a fine mountain day with a tiny chance",
+   "sources": [
+    15
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Zoek eerst de viscacha's: de Andesbergkat leeft vooral van deze konijnachtige knaagdieren en jaagt bij hun kolonies in rotswanden, het liefst niet ver van water of veengrond (bofedales).",
+  "Lampen werkt: oplichtende ogen zie je makkelijker dan de goed gecamoufleerde kat zelf. Ga 's nachts te voet en vanuit de auto rotswanden langs.",
+  "Zag je 's nachts ogen? Kom voor zonsopkomst terug en wacht op licht; sommige bezoekers vonden de kat de volgende ochtend een paar honderd meter verderop.",
+  "Let op het verschil met de pampaskat: de Andesbergkat is grijzer, met een lange, dikke staart met brede donkere ringen en verticale strepen van vlekken op de flanken.",
+  "Een warmtecamera helpt minder dan je denkt: overdag opgewarmde rotsen verbergen het lichaam van de kat.",
+  "Alarmroepen van viscacha's kunnen een roofdier verraden; luister ernaar tijdens wandelingen overdag. Zoek ook naar sporen, uitwerpselen en vacht bij kolonies.",
+  "Neem de hoogte serieus: acclimatiseer, neem warme kleren, zonnebrand en extra brandstof mee."
+ ],
+ "tips_en": [
+  "Find the viscachas first: the Andean mountain cat lives mainly on these rabbit-like rodents and hunts at their colonies in rock walls, preferably not far from water or peat bogs (bofedales).",
+  "Spotlighting works: eyeshine is easier to spot than the well-camouflaged cat itself. Check rock walls at night on foot and from the car.",
+  "Saw eyes at night? Return before sunrise and wait for light; some visitors found the cat the next morning a few hundred metres away.",
+  "Know the difference from the pampas cat: the Andean mountain cat is greyer, with a long, thick tail with broad dark rings and vertical lines of spots on the flanks.",
+  "A thermal scope helps less than you might think: rocks warmed by the sun hide the cat's body heat.",
+  "Viscacha alarm calls can betray a predator; listen for them on daytime walks. Also look for tracks, scat and fur near colonies.",
+  "Take the altitude seriously: acclimatise and bring warm clothes, sunscreen and extra fuel."
+ ],
+ "threats_nl": [
+  "Verlies en aantasting van leefgebied door mijnbouw (vooral lithium), olie- en waterwinning, wegen en veeteelt",
+  "Jacht en vervolging: voor vacht, rituelen en volksgeneeskunde, en uit wraak voor gedode dieren",
+  "Aanvallen door honden en verkeersslachtoffers",
+  "Achteruitgang van prooien: chinchilla's zijn grotendeels verdwenen en viscacha's nemen lokaal af",
+  "Kleine, versnipperde populaties met weinig genetische variatie, en klimaatverandering"
+ ],
+ "threats_en": [
+  "Habitat loss and degradation from mining (especially lithium), oil and water extraction, roads and livestock",
+  "Hunting and persecution: for fur, rituals and folk medicine, and in retaliation for livestock losses",
+  "Dog attacks and road kills",
+  "Prey decline: chinchillas have largely disappeared and viscachas are declining locally",
+  "Small, fragmented populations with low genetic diversity, and climate change"
+ ],
+ "status_note_nl": "De Andesbergkat staat als Bedreigd (Endangered) op de Rode Lijst van de IUCN: naar schatting minder dan 2.500 volwassen dieren (ongeveer 2.177), met een vermoedelijk dalende trend. Nationaal geldt de soort in Bolivia zelfs als ernstig bedreigd.",
+ "status_note_en": "The Andean mountain cat is listed as Endangered on the IUCN Red List: estimated at fewer than 2,500 mature individuals (about 2,177), with an inferred continuing decline. Nationally it is even listed as Critically Endangered in Bolivia.",
+ "sources": [
+  {
+   "id": 1,
+   "title": "Andean Mountain Cat in Chile – trip report Lauca/Surire, December 2018 (mammalwatching.com, 2019)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2019/06/AndeanMountainCat.pdf"
+  },
+  {
+   "id": 2,
+   "title": "Searching for the Andean Mountain Cat, November 2018 – Lauca (mammalwatching.com, 2018)",
+   "url": "https://www.mammalwatching.com/2018/12/19/searching-for-the-andean-mountain-cat-november-2018/"
+  },
+  {
+   "id": 3,
+   "title": "Chile and Peru 2019 trip report – Surire, Parinacota, Junín (mammalwatching.com, 2019)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/DB-CHILE-and-PERU-2019.pdf"
+  },
+  {
+   "id": 4,
+   "title": "Chile 2022 – ten days searching for Andean mountain cats in Lauca (mammalwatching.com, 2023)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/JB-Chile-2022.pdf"
+  },
+  {
+   "id": 5,
+   "title": "Chile, 23 April – 15 May 2024 – Altiplano, Lauca and Las Vicuñas (mammalwatching.com, 2024)",
+   "url": "https://mammalwatching.com/wp-content/uploads/2024/07/Chile.pdf"
+  },
+  {
+   "id": 6,
+   "title": "Roundup of a few 2022 cat trips – Andean mountain cat missed (mammalwatching.com, 2023)",
+   "url": "https://www.mammalwatching.com/community-post/roundup-of-a-few-2022-cat-trips/"
+  },
+  {
+   "id": 7,
+   "title": "Andean mountain cat – species account (IUCN SSC Cat Specialist Group)",
+   "url": "https://www.catsg.org/living-species-andeanmountaincat"
+  },
+  {
+   "id": 8,
+   "title": "Conservation of the Andean cat: effects of llama grazing in Sajama National Park, Bolivia (Rufford Foundation project)",
+   "url": "https://www.rufford.org/projects/juan-carlos-huaranca/conservation-of-the-andean-cat-assessing-the-effects-of-llama-grazing-in-the-sajama-national-park-bolivia/"
+  },
+  {
+   "id": 9,
+   "title": "Llerena-Reátegui et al. – Photographic record of Andean cat in Salinas y Aguada Blanca National Reserve, Peru (2017)",
+   "url": "https://alicia.concytec.gob.pe/vufind/Record/REVUNMSM_5d2c80d538f3efba3ff45410b714a7c9"
+  },
+  {
+   "id": 10,
+   "title": "Cámaras trampa registran gatos andinos en Jujuy, Argentina (Mongabay, 2012)",
+   "url": "https://es.mongabay.com/2012/06/video-destacado-las-camaras-de-trampeo-registran-gatos-andinos-y-otros-animales-en-argentina/"
+  },
+  {
+   "id": 11,
+   "title": "A journey through the puna… and into the invisible – camera-trap record at El Peñón, Catamarca (Andean Cat Alliance)",
+   "url": "https://gatoandino.org/en/a-journey-through-the-puna-and-into-the-invisible/"
+  },
+  {
+   "id": 12,
+   "title": "Rare Andean cat no longer exclusive to the Andes – Patagonian steppe records (WCS, 2011)",
+   "url": "https://newsroom.wcs.org/News-Releases/articleType/ArticleView/articleId/5559/Rare-Andean-Cat-No-Longer-Exclusive-to-the-Andes.aspx"
+  },
+  {
+   "id": 13,
+   "title": "Vuelven a divisar en Mendoza gatos andinos – La Payunia, Malargüe (Gobierno de Mendoza, 2024)",
+   "url": "https://www.mendoza.gov.ar/prensa/vuelven-a-divisar-en-mendoza-gatos-andinos-el-felino-mas-amenazado-de-america/"
+  },
+  {
+   "id": 14,
+   "title": "Rare small cat caught on camera in the Andean foothills – Payunia, 2026 (BBC Wildlife / Discover Wildlife, 2026)",
+   "url": "https://www.discoverwildlife.com/animal-facts/mammals/andean-cat-sighting-argentina"
+  },
+  {
+   "id": 15,
+   "title": "Zapararte et al. – New records of the Andean cat in the central Andes of Chile, Parque Andino Juncal (Animals, 2022)",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8909686/"
+  },
+  {
+   "id": 16,
+   "title": "Reppucci – Ecología y abundancia poblacional del gato andino y gato del pajonal en los altos Andes argentinos, PhD thesis Jujuy (Universidad Nacional del Sur, 2012)",
+   "url": "https://repositoriodigital.uns.edu.ar/handle/123456789/467"
+  }
+ ]
+}

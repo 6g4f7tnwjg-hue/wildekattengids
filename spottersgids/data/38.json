@@ -1,0 +1,352 @@
+{
+ "no": 38,
+ "intro_nl": "De zon is net op boven de rode duinen van de Kalahari. In de bedding van de Auob sluipt een slanke, zandkleurige kat door het gras. Lange poten, een geringde staart, en als hij omkijkt zie je de roestrode achterkant van zijn oren. Dit is de stamvader van elke huiskat ter wereld, maar dan echt wild. In Kgalagadi zien bezoekers er vaak meerdere op één ochtend. Kans: 5 – in de Kalahari krijg je hem bijna altijd te zien.",
+ "intro_en": "The sun has just cleared the red dunes of the Kalahari. In the dry bed of the Auob River, a slender, sand-coloured cat slips through the grass. Long legs, a ringed tail, and when it glances back you catch the rusty-red backs of its ears. This is the wild ancestor of every house cat on Earth, and here it is truly wild. In Kgalagadi visitors often see several in a single morning. Chance: 5 – in the Kalahari you will almost always see one.",
+ "spots": [
+  {
+   "id": "za-bw-kgalagadi",
+   "name_nl": "Kgalagadi Transfrontier Park",
+   "name_en": "Kgalagadi Transfrontier Park",
+   "area_nl": "Kgalagadi Transfrontier Park (Zuid-Afrikaanse kant: Auob- en Nossob-rivierbeddingen, omgeving Twee Rivieren)",
+   "area_en": "Kgalagadi Transfrontier Park (South African side: Auob and Nossob riverbeds, around Twee Rivieren)",
+   "country_nl": "Zuid-Afrika / Botswana",
+   "country_en": "South Africa / Botswana",
+   "cont": "afr",
+   "lat": -25.5,
+   "lon": 20.6,
+   "score": 5,
+   "why_nl": "Eén mammalwatching-verslag telde 21 wilde katten in het park, waaronder zeven op één ochtendrit; een kort bezoek in mei 2026 leverde nog acht waarnemingen op.",
+   "why_en": "One mammalwatching report counted 21 wildcats in the park, seven of them on a single morning drive; a short visit in May 2026 still produced eight sightings.",
+   "season_nl": "Het hele jaar; in de droge maanden (mei–oktober) is het gras korter en zie je ze makkelijker.",
+   "season_en": "Year-round; in the dry months (May–October) the grass is shorter and cats are easier to spot.",
+   "time_nl": "Vroeg in de ochtend en bij zonsondergang; 's nachts tijdens begeleide nachtritten.",
+   "time_en": "Early morning and around sunset; at night on guided night drives.",
+   "trip_nl": "Zelf rijden langs de rivierbeddingen vanaf de ruststations, plus geleide zonsondergang- en nachtritten van het park; reken op 4 à 7 dagen.",
+   "trip_en": "Self-drive along the riverbeds from the rest camps, plus the park's guided sunset and night drives; allow 4 to 7 days.",
+   "sources": [
+    8,
+    9
+   ]
+  },
+  {
+   "id": "eh-dakhla-aousserd",
+   "name_nl": "Woestijn tussen Dakhla en Aousserd",
+   "name_en": "Desert between Dakhla and Aousserd",
+   "area_nl": "Steen- en zandwoestijn landinwaarts van Dakhla, richting Aousserd",
+   "area_en": "Stony and sandy desert inland from Dakhla, towards Aousserd",
+   "country_nl": "Westelijke Sahara (door Marokko bestuurd)",
+   "country_en": "Western Sahara (administered by Morocco)",
+   "cont": "afr",
+   "lat": 23.0,
+   "lon": -15.1,
+   "score": 4,
+   "why_nl": "De meeste recente verslagen van zandkattentochten hier noemen ook de Afrikaanse wilde kat, die bij nachtelijk zoeklichtwerk vaak eerder opduikt dan de zandkat.",
+   "why_en": "Most recent reports from sand cat trips here also list African wildcat, which often turns up on night spotlighting sooner than the sand cat does.",
+   "season_nl": "Oktober tot april; de zomer is erg heet.",
+   "season_en": "October to April; summer is extremely hot.",
+   "time_nl": "'s Nachts, met een zoeklicht vanuit de auto.",
+   "time_en": "At night, spotlighting from a vehicle.",
+   "trip_nl": "Nachtelijke zoektochten per auto vanuit Dakhla, meestal met een lokale gids; reken op 3 à 6 nachten.",
+   "trip_en": "Night drives by car from Dakhla, usually with a local guide; allow 3 to 6 nights.",
+   "sources": [
+    10,
+    11
+   ]
+  },
+  {
+   "id": "in-desert-national-park",
+   "name_nl": "Desert National Park (Thar-woestijn)",
+   "name_en": "Desert National Park (Thar Desert)",
+   "area_nl": "Desert National Park bij Jaisalmer, Rajasthan",
+   "area_en": "Desert National Park near Jaisalmer, Rajasthan",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 26.4,
+   "lon": 70.6,
+   "score": 3,
+   "why_nl": "Hier leeft de Aziatische steppekat (F. l. ornata); het park leverde de meeste waarnemingen op in een Indiase reeks, en kattentochten in 2020 en 2024 zagen er een.",
+   "why_en": "This is home to the Asiatic wildcat (F. l. ornata); the park produced the most sightings in one Indian dataset, and cat-focused trips in 2020 and 2024 each saw one.",
+   "season_nl": "November tot maart, als het koeler is.",
+   "season_en": "November to March, when it is cooler.",
+   "time_nl": "Schemering en 's avonds, tijdens ritten met koplampen of een zoeklicht.",
+   "time_en": "Dusk and evening, on drives with headlights or a spotlight.",
+   "trip_nl": "Jeepritten in en rond het park vanuit Jaisalmer, vaak gecombineerd met de Grote Indische trap; 2 à 3 dagen.",
+   "trip_en": "Jeep drives in and around the park from Jaisalmer, often combined with the Great Indian Bustard; 2 to 3 days.",
+   "sources": [
+    12,
+    13,
+    14
+   ]
+  },
+  {
+   "id": "za-kruger-satara",
+   "name_nl": "Kruger Nationaal Park (rond Satara)",
+   "name_en": "Kruger National Park (around Satara)",
+   "area_nl": "Kruger Nationaal Park, open savanne rond het ruststation Satara",
+   "area_en": "Kruger National Park, open savanna around Satara rest camp",
+   "country_nl": "Zuid-Afrika",
+   "country_en": "South Africa",
+   "cont": "afr",
+   "lat": -24.4,
+   "lon": 31.8,
+   "score": 2,
+   "why_nl": "Bezoekers melden wilde katten die 's avonds door het ruststation Satara lopen, maar harde cijfers over hoe vaak dat lukt ontbreken.",
+   "why_en": "Visitors report wildcats walking through Satara rest camp in the evening, but there are no hard figures on how often that works.",
+   "season_nl": "Het hele jaar; in de droge winter (mei–september) is het zicht beter.",
+   "season_en": "Year-round; visibility is better in the dry winter (May–September).",
+   "time_nl": "Avond en nacht.",
+   "time_en": "Evening and night.",
+   "trip_nl": "Zonsondergang- en nachtritten van het park vanuit Satara, en 's avonds rustig rondkijken in het ruststation; 3 à 4 nachten.",
+   "trip_en": "The park's sunset and night drives from Satara, and quiet evening walks around the camp; 3 to 4 nights.",
+   "sources": [
+    17
+   ]
+  },
+  {
+   "id": "tz-serengeti",
+   "name_nl": "Serengeti",
+   "name_en": "Serengeti",
+   "area_nl": "Serengeti Nationaal Park, Tanzania",
+   "area_en": "Serengeti National Park, Tanzania",
+   "country_nl": "Tanzania",
+   "country_en": "Tanzania",
+   "cont": "afr",
+   "lat": -2.3,
+   "lon": 34.8,
+   "score": 2,
+   "why_nl": "Onderzoek mat hier hoge dichtheden (10–100 per 100 km²), maar in de reisverslagen die ik vond komt de wilde kat zelden voor.",
+   "why_en": "Research measured high densities here (10–100 per 100 km²), but the wildcat rarely features in the trip reports I found.",
+   "season_nl": "Het hele jaar.",
+   "season_en": "Year-round.",
+   "time_nl": "Vroege ochtend en late middag.",
+   "time_en": "Early morning and late afternoon.",
+   "trip_nl": "Gewone safariritten; let in het korte gras op kleine katten tussen de grote.",
+   "trip_en": "Regular game drives; scan the short grass for small cats among the big ones.",
+   "sources": [
+    2
+   ]
+  },
+  {
+   "id": "in-tal-chhapar",
+   "name_nl": "Tal Chhapar",
+   "name_en": "Tal Chhapar",
+   "area_nl": "Tal Chhapar Wildlife Sanctuary, district Churu, Rajasthan",
+   "area_en": "Tal Chhapar Wildlife Sanctuary, Churu district, Rajasthan",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 27.8,
+   "lon": 74.4,
+   "score": 2,
+   "why_nl": "De woestijnkat is hier waargenomen, maar in Rajasthan werden in 2010–2018 in totaal maar 26 waarnemingen verzameld.",
+   "why_en": "The desert cat has been recorded here, but only 26 sightings were collected across Rajasthan in 2010–2018.",
+   "season_nl": "November tot maart.",
+   "season_en": "November to March.",
+   "time_nl": "Schemering.",
+   "time_en": "Dusk.",
+   "trip_nl": "Dagbezoek of overnachting bij het reservaat, samen met de hertenantilopen; 1 à 2 dagen.",
+   "trip_en": "Day visit or overnight stay near the sanctuary, together with the blackbuck; 1 to 2 days.",
+   "sources": [
+    14
+   ]
+  },
+  {
+   "id": "ae-dubai-desert-conservation-reserve",
+   "name_nl": "Dubai Desert Conservation Reserve",
+   "name_en": "Dubai Desert Conservation Reserve",
+   "area_nl": "Dubai Desert Conservation Reserve, binnenland van Dubai",
+   "area_en": "Dubai Desert Conservation Reserve, inland Dubai",
+   "country_nl": "Verenigde Arabische Emiraten",
+   "country_en": "United Arab Emirates",
+   "cont": "asia",
+   "lat": 24.8,
+   "lon": 55.7,
+   "score": 1,
+   "why_nl": "De Arabische wilde kat is hier zo zeldzaam dat een cameravalfoto al nieuws is; in Arabië zie je vooral verwilderde huiskatten die erop lijken.",
+   "why_en": "The Arabian wildcat is so rare here that a camera-trap photo is news; in Arabia you mostly see feral cats that look like it.",
+   "season_nl": "November tot maart.",
+   "season_en": "November to March.",
+   "time_nl": "'s Nachts.",
+   "time_en": "At night.",
+   "trip_nl": "Alleen met veel geluk; in Arabië zie je vooral verwilderde huiskatten, dus kijk kritisch.",
+   "trip_en": "Only with a lot of luck; in Arabia you mostly see feral cats, so look critically.",
+   "sources": [
+    16,
+    18
+   ]
+  },
+  {
+   "id": "it-sardinia",
+   "name_nl": "Sardinië",
+   "name_en": "Sardinia",
+   "area_nl": "Binnenland van Sardinië (macchia en bos)",
+   "area_en": "Interior of Sardinia (maquis and woodland)",
+   "country_nl": "Italië",
+   "country_en": "Italy",
+   "cont": "eur",
+   "lat": 40.1,
+   "lon": 9.0,
+   "score": 1,
+   "why_nl": "Genetisch hoort de Sardijnse wilde kat bij de Afrikaanse wilde kat, maar hij is zo slecht bekend dat onderzoekers vooral verkeersslachtoffers en enquêtes gebruiken; ik vond geen reisverslagen met waarnemingen.",
+   "why_en": "Genetically the Sardinian wildcat belongs to the African wildcat, but it is so poorly known that researchers rely mainly on road kills and questionnaires; I found no trip reports with sightings.",
+   "season_nl": "Het hele jaar.",
+   "season_en": "Year-round.",
+   "time_nl": "Schemering en nacht.",
+   "time_en": "Dusk and night.",
+   "trip_nl": "Geen gerichte excursies; avondritten over rustige binnenwegen geven hooguit een toevalstreffer.",
+   "trip_en": "No dedicated excursions; evening drives on quiet back roads might give a lucky encounter at best.",
+   "sources": [
+    3,
+    6,
+    7
+   ]
+  },
+  {
+   "id": "fr-corsica",
+   "name_nl": "Corsica (ghjattu-volpe)",
+   "name_en": "Corsica (ghjattu-volpe)",
+   "area_nl": "Beboste valleien in het noorden van Corsica (o.a. bos van Asco), Haute-Corse",
+   "area_en": "Forested valleys of northern Corsica (incl. the Asco forest), Haute-Corse",
+   "country_nl": "Frankrijk",
+   "country_en": "France",
+   "cont": "eur",
+   "lat": 42.4,
+   "lon": 9.0,
+   "score": 1,
+   "why_nl": "De Corsicaanse 'kattenvos' is alleen bekend uit vangsten en cameravallen van onderzoekers; de indeling bij F. lybica is nog onzeker.",
+   "why_en": "The Corsican 'cat-fox' is known only from researchers' captures and camera traps; whether it belongs to F. lybica is still uncertain.",
+   "season_nl": "Het hele jaar.",
+   "season_en": "Year-round.",
+   "time_nl": "'s Nachts.",
+   "time_en": "At night.",
+   "trip_nl": "Niet gericht te bezoeken; geniet van het landschap en zie het als een bonus als je iets ziet.",
+   "trip_en": "Not possible to target; enjoy the landscape and treat any sighting as a bonus.",
+   "sources": [
+    4,
+    5
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Rijd vroeg en laat: wilde katten zijn vooral 's nachts actief, maar in de Kalahari lopen ze ook rond zonsopkomst en -ondergang nog vaak rond.",
+  "Zoek 's nachts met een zoeklicht naar oogreflectie laag bij de grond; kijk daarna goed met de verrekijker.",
+  "Let op de kenmerken: roestrode achterkant van de oren, lange poten, slank lijf, een staart met ringen en een donkere punt, en vage strepen op de poten.",
+  "Twijfel je? Een huiskat heeft vaak kortere poten, een dikkere staart en geen roestrode oren. Dicht bij boerderijen en dorpen zijn kruisingen heel gewoon.",
+  "Scan droge rivierbeddingen, grasranden langs de weg en de omgeving van waterpoelen; ze jagen vooral op muizen en ratten.",
+  "Kijk 's avonds ook in en rond ruststations en kampen: sommige katten zijn daar gewend aan mensen.",
+  "In Arabië en op de Middellandse Zee-eilanden is het vrijwel alleen met cameravallen te doen."
+ ],
+ "tips_en": [
+  "Drive early and late: wildcats are mainly nocturnal, but in the Kalahari they are often still about around sunrise and sunset.",
+  "At night, spotlight for eyeshine low to the ground, then check carefully with binoculars.",
+  "Know the field marks: rusty-red backs of the ears, long legs, a slender body, a ringed tail with a dark tip, and faint stripes on the legs.",
+  "Not sure? A house cat usually has shorter legs, a thicker tail and no rusty ears. Near farms and villages hybrids are very common.",
+  "Scan dry riverbeds, grassy road verges and the areas around waterholes; they hunt mainly mice and rats.",
+  "In the evening, also look in and around rest camps: some cats there are used to people.",
+  "In Arabia and on the Mediterranean islands, camera traps are virtually the only option."
+ ],
+ "threats_nl": [
+  "Kruising met huiskatten en verwilderde katten, waardoor zuivere populaties verdwijnen.",
+  "Ziekten die huiskatten overdragen, en concurrentie met verwilderde katten.",
+  "Vervolging: vergiftiging, vallen en strikken, vaak omdat ze kippen pakken.",
+  "Verkeersslachtoffers, vooral in versnipperd leefgebied zoals in de Thar-woestijn.",
+  "Verlies van leefgebied en rattengif."
+ ],
+ "threats_en": [
+  "Hybridisation with domestic and feral cats, which erodes pure populations.",
+  "Diseases passed on by domestic cats, and competition with feral cats.",
+  "Persecution: poisoning, trapping and snaring, often because they take poultry.",
+  "Road kills, especially in fragmented habitat such as the Thar Desert.",
+  "Habitat loss and rodenticides."
+ ],
+ "status_note_nl": "Op de Rode Lijst van de IUCN staat de Afrikaanse wilde kat als Niet bedreigd; de trend is onbekend maar lijkt in een groot deel van het verspreidingsgebied stabiel, met achteruitgang in onder meer Zuid-Afrika, Lesotho en Arabië (IUCN SSC Cat Specialist Group). Regionaal is de soort wel bedreigd, bijvoorbeeld in de VAE en China (Bedreigd).",
+ "status_note_en": "The IUCN Red List lists the African wildcat as Least Concern; the trend is unknown but thought to be stable across much of its range, with declines reported from South Africa, Lesotho and Arabia, among others (IUCN SSC Cat Specialist Group). Regionally it is threatened, for example in the UAE and China (Endangered).",
+ "sources": [
+  {
+   "id": 1,
+   "title": "Cat classification – A revised taxonomy of the Felidae (Kitchener et al., IUCN SSC Cat Specialist Group, 2017)",
+   "url": "https://www.catsg.org/classification"
+  },
+  {
+   "id": 2,
+   "title": "Afro-Asiatic wildcat Felis lybica – species account (IUCN SSC Cat Specialist Group)",
+   "url": "https://www.catsg.org/living-species-africanwildcat"
+  },
+  {
+   "id": 3,
+   "title": "Wildcat – subspecies and ranges (Wild Cat Conservation)",
+   "url": "https://wildcatconservation.org/wild-cats/wildcat/"
+  },
+  {
+   "id": 4,
+   "title": "Population genomics of Corsican wildcats (Portanier et al., Molecular Ecology, 2023)",
+   "url": "https://doi.org/10.1111/mec.16856"
+  },
+  {
+   "id": 5,
+   "title": "Le ghjattu-volpe est bien un félin spécifique de Corse (Corse Net Infos / OFB, 2023)",
+   "url": "https://www.corsenetinfos.corsica/Le-ghjattu-volpe-est-bien-un-felin-specifique-de-Corse_a70150.html"
+  },
+  {
+   "id": 6,
+   "title": "The dispersal of domestic cats from Northern Africa and their introduction to Europe (De Martino et al., bioRxiv preprint, 2025)",
+   "url": "https://www.biorxiv.org/content/10.1101/2025.03.28.645893.full.pdf"
+  },
+  {
+   "id": 7,
+   "title": "Unghosting the Sardinian wildcat (Lecis et al., BMC Ecology and Evolution, 2026)",
+   "url": "https://iris.uniss.it/handle/11388/377669"
+  },
+  {
+   "id": 8,
+   "title": "South Africa, Northern Cape, November 2016 – trip report (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2017/11/SO-South-Africa-2016.pdf"
+  },
+  {
+   "id": 9,
+   "title": "Kgalagadi trip report, May 2026 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2026/05/Kgalagadi-Trip-Report-May-2026.pdf"
+  },
+  {
+   "id": 10,
+   "title": "Western Sahara 2019–2020 – trip report (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/SM-Western-Sahara-2019-2020.pdf"
+  },
+  {
+   "id": 11,
+   "title": "Morocco and Western Sahara, Feb–Mar 2026 – trip report (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2026/03/Trip-Report-Morocco-and-Western-Sahara-210226-to-020326.pdf"
+  },
+  {
+   "id": 12,
+   "title": "Small cats and other mammals of North India, November 2024 – trip report (mammalwatching.com)",
+   "url": "https://mammalwatching.com/wp-content/uploads/2024/12/Small-Cats-and-Other-Mammals-of-North.pdf"
+  },
+  {
+   "id": 13,
+   "title": "Desert Cat, Wild Ass and Great Indian Bustard from Kutch and Rajasthan, January 2020 (mammalwatching.com)",
+   "url": "https://mammalwatching.com/?p=21507"
+  },
+  {
+   "id": 14,
+   "title": "Hybridisation, roadkills are major threats for the Indian desert cat population (Mongabay India, 2023)",
+   "url": "https://india.mongabay.com/2023/09/hybridisation-roadkills-are-major-threats-for-the-indian-desert-cat-population/"
+  },
+  {
+   "id": 16,
+   "title": "Rare wildcat snapped prowling around wadi (The National, 2009)",
+   "url": "https://thenationalnews.com/uae/rare-wildcat-snapped-prowling-around-wadi-1.523827"
+  },
+  {
+   "id": 17,
+   "title": "One last question about Kruger – forum thread with visitor reports from Satara (mammalwatching.com, 2016)",
+   "url": "https://mammalwatching.com/?p=6776"
+  },
+  {
+   "id": 18,
+   "title": "Oman 2016 – trip report noting feral cats resembling wildcats (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2017/01/DB-OMAN-2016.pdf"
+  }
+ ]
+}

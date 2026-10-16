@@ -1,0 +1,377 @@
+{
+ "no": 12,
+ "intro_nl": "Het is kwart voor zeven, de poort gaat zo dicht. Dan slaat een groep helmparelhoenders alarm. Honderd meter verderop staat hij: roodbruin, slank, met lange zwarte oorpluimen. Even kijkt hij je aan, dan is hij weg in de struiken. Zo gaat het meestal met de caracal: dagenlang niets, en dan twee minuten die je nooit vergeet. Kans: 2 – ook in de beste gebieden heb je geduld en geluk nodig.",
+ "intro_en": "It is a quarter to seven and the gate is about to close. Then a flock of helmeted guineafowl starts to scold. A hundred metres further on it stands there: russet, slender, with long black ear tufts. For a moment it looks at you, then it melts into the bush. That is how it usually goes with the caracal: days of nothing, then two minutes you will never forget. Chance: 2 – even in the best areas you need patience and luck.",
+ "spots": [
+  {
+   "id": "za-west-coast-np",
+   "name_nl": "West Coast National Park",
+   "name_en": "West Coast National Park",
+   "area_nl": "West Coast National Park bij Langebaan, West-Kaap (vooral het Postberg-deel)",
+   "area_en": "West Coast National Park near Langebaan, Western Cape (especially the Postberg section)",
+   "country_nl": "Zuid-Afrika",
+   "country_en": "South Africa",
+   "cont": "afr",
+   "lat": -33.2,
+   "lon": 18.1,
+   "score": 2,
+   "why_nl": "Het park staat bij kattenzoekers bekend om zijn caracals, maar een bezoeker die vijf dagen gericht zocht, zag pas op de laatste ochtend twee à drie dieren, en een ander zag er op een volle dag geen enkele.",
+   "why_en": "The park is known among cat-seekers for its caracals, but one visitor who searched for five days saw two or three only on the last morning, while another saw none in a full day.",
+   "season_nl": "Het hele jaar; een bezoeker koos april (buiten het bloemenseizoen, mogelijk paartijd) en zag de katten vooral bij helder, zacht weer na regen.",
+   "season_en": "Year-round; one visitor chose April (outside the flower season, possibly mating time) and saw the cats mainly in clear, mild weather after rain.",
+   "time_nl": "Vroege ochtend direct na zonsopkomst en het laatste uur voor de poort sluit.",
+   "time_en": "Early morning right after sunrise and the last hour before the gate closes.",
+   "trip_nl": "Zelf rijden en wandelen vanuit de huisjes in het park, minstens 4 à 5 dagen; overnachten in het park maakt vroege en late ritten mogelijk.",
+   "trip_en": "Self-drive and hiking from the cottages inside the park, at least 4 to 5 days; staying in the park makes early and late drives possible.",
+   "sources": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "za-cape-peninsula",
+   "name_nl": "Kaapse Schiereiland (Tafelberg)",
+   "name_en": "Cape Peninsula (Table Mountain)",
+   "area_nl": "Table Mountain National Park inclusief Kaap de Goede Hoop, en groene randen van Kaapstad",
+   "area_en": "Table Mountain National Park including Cape of Good Hope, and green edges of Cape Town",
+   "country_nl": "Zuid-Afrika",
+   "country_en": "South Africa",
+   "cont": "afr",
+   "lat": -34.2,
+   "lon": 18.4,
+   "score": 2,
+   "why_nl": "Op het schiereiland leven zo'n 50 à 60 caracals en een kenner noemde de kans bij Kaap de Goede Hoop 'redelijk, maar verre van gegarandeerd'; een recente bezoeker miste ze in het park en zag er een aan de stadsrand.",
+   "why_en": "Around 50 to 60 caracals live on the peninsula and a local expert called the odds near Cape of Good Hope 'reasonable but nowhere near guaranteed'; a recent visitor missed them in the park and found one on the city's edge.",
+   "season_nl": "Het hele jaar.",
+   "season_en": "Year-round.",
+   "time_nl": "Als eerste door de poort in de vroege ochtend, en de late middag tot de schemering.",
+   "time_en": "First through the gate in the early morning, and late afternoon into dusk.",
+   "trip_nl": "Dagtochten met eigen auto of met een lokale natuurgids vanuit Kaapstad, 2 à 3 dagen; nachtritten zijn in het park niet toegestaan.",
+   "trip_en": "Day trips by car or with a local wildlife guide from Cape Town, 2 to 3 days; night drives are not allowed in the park.",
+   "sources": [
+    4,
+    5,
+    6,
+    7
+   ]
+  },
+  {
+   "id": "za-bw-kgalagadi",
+   "name_nl": "Kgalagadi",
+   "name_en": "Kgalagadi",
+   "area_nl": "Kgalagadi Transfrontier Park, droge rivierbeddingen van de Auob en Nossob (Zuid-Afrika/Botswana)",
+   "area_en": "Kgalagadi Transfrontier Park, dry Auob and Nossob riverbeds (South Africa/Botswana)",
+   "country_nl": "Zuid-Afrika / Botswana",
+   "country_en": "South Africa / Botswana",
+   "cont": "afr",
+   "lat": -25.8,
+   "lon": 20.6,
+   "score": 2,
+   "why_nl": "Het bezoekersboek bij een drinkplaats toonde dat ook caracals er komen en bezoekers melden af en toe een jagende caracal bij een waterpunt, maar uitgebreide tripverslagen van meer dan een week noemen hem vaak niet.",
+   "why_en": "A waterhole visitor book showed caracals also come to drink and visitors occasionally report a hunting caracal at a waterhole, but detailed trip reports of more than a week often do not list it.",
+   "season_nl": "Het hele jaar.",
+   "season_en": "Year-round.",
+   "time_nl": "Vroege ochtend zodra de kampen opengaan, late middag, en 's avonds bij verlichte drinkplaatsen in de kampen.",
+   "time_en": "Early morning as soon as the camps open, late afternoon, and evenings at floodlit camp waterholes.",
+   "trip_nl": "Zelf rijden langs de waterpunten vanuit de kampen in het park, en begeleide nachtritten van het park; reken op een week of meer.",
+   "trip_en": "Self-drive along the waterholes from the camps in the park, plus park-run guided night drives; allow a week or more.",
+   "sources": [
+    8,
+    9
+   ]
+  },
+  {
+   "id": "il-arava-negev",
+   "name_nl": "Arava en Negev",
+   "name_en": "Arava and Negev",
+   "area_nl": "Arava-vallei en zuidelijke Negev, tussen de Dode Zee en Eilat",
+   "area_en": "Arava Valley and southern Negev, between the Dead Sea and Eilat",
+   "country_nl": "Israël",
+   "country_en": "Israel",
+   "cont": "asia",
+   "lat": 30.3,
+   "lon": 35.1,
+   "score": 1,
+   "why_nl": "Er leeft een onderzochte populatie in de droge rivierbeddingen, en een enkele bezoeker zag er een tijdens het lampen, maar de meeste zoekers op mammalwatching.com melden geen caracal.",
+   "why_en": "A studied population lives in the dry creek beds and the odd visitor has seen one while spotlighting, but most searchers on mammalwatching.com report no caracal.",
+   "season_nl": "Het hele jaar.",
+   "season_en": "Year-round.",
+   "time_nl": "Schemering en nacht.",
+   "time_en": "Dusk and night.",
+   "trip_nl": "Avondritten op openbare wegen langs wadi's en akkers, liefst met een lokale natuurkenner; let op militaire zones en regels voor lampen.",
+   "trip_en": "Evening drives on public roads past wadis and fields, ideally with a local naturalist; mind military zones and spotlighting rules.",
+   "sources": [
+    10,
+    11,
+    12
+   ]
+  },
+  {
+   "id": "tz-serengeti",
+   "name_nl": "Serengeti",
+   "name_en": "Serengeti",
+   "area_nl": "Serengeti National Park, vooral de oostelijke vlakten",
+   "area_en": "Serengeti National Park, especially the eastern plains",
+   "country_nl": "Tanzania",
+   "country_en": "Tanzania",
+   "cont": "afr",
+   "lat": -2.3,
+   "lon": 34.8,
+   "score": 1,
+   "why_nl": "Een week lang gericht zoeken naar serval en caracal in de oostelijke Serengeti leverde vijf servals op, maar geen enkele caracal.",
+   "why_en": "A week of targeted searching for serval and caracal in the eastern Serengeti produced five servals but not a single caracal.",
+   "season_nl": "Het hele jaar; het genoemde verslag is van november.",
+   "season_en": "Year-round; the report cited is from November.",
+   "time_nl": "Vroege ochtend en vlak voor de schemering.",
+   "time_en": "Early morning and just before dusk.",
+   "trip_nl": "Game drives vanuit kampen in en rond het park, een week of langer; een caracal is hier vooral een bonus.",
+   "trip_en": "Game drives from camps in and around the park, a week or longer; here a caracal is mostly a bonus.",
+   "sources": [
+    1,
+    13
+   ]
+  },
+  {
+   "id": "in-kutch",
+   "name_nl": "Kutch",
+   "name_en": "Kutch",
+   "area_nl": "Graslanden en struikgebieden van het district Kutch (Kachchh), Gujarat",
+   "area_en": "Grasslands and scrub of Kutch (Kachchh) district, Gujarat",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 23.4,
+   "lon": 69.6,
+   "score": 1,
+   "why_nl": "Hier leven naar schatting nog zo'n 20 caracals en sinds 2001 zijn er maar negen fotografische waarnemingen; een vijfdaagse tocht met een lokale gids zag er ooit één.",
+   "why_en": "An estimated 20 or so caracals remain here and there have been only nine photographic records since 2001; one five-day guided trip once saw one.",
+   "season_nl": "Droge, koele maanden (ongeveer november tot maart) zijn het prettigst om te reizen.",
+   "season_en": "The dry, cool months (roughly November to March) are the most comfortable for travel.",
+   "time_nl": "Schemering en nacht.",
+   "time_en": "Dusk and night.",
+   "trip_nl": "Meerdaagse tocht met een lokale natuurgids door het district, 4 à 5 dagen.",
+   "trip_en": "Multi-day trip with a local wildlife guide through the district, 4 to 5 days.",
+   "sources": [
+    14,
+    15,
+    16
+   ]
+  },
+  {
+   "id": "in-ranthambore",
+   "name_nl": "Ranthambore",
+   "name_en": "Ranthambore",
+   "area_nl": "Ranthambore Tiger Reserve en omgeving, Rajasthan",
+   "area_en": "Ranthambore Tiger Reserve and surroundings, Rajasthan",
+   "country_nl": "India",
+   "country_en": "India",
+   "cont": "asia",
+   "lat": 26.0,
+   "lon": 76.5,
+   "score": 1,
+   "why_nl": "Met naar schatting 28 dieren is dit een van de twee laatste populaties van India; ze worden vooral met cameravallen vastgelegd, in en rond het reservaat.",
+   "why_en": "With an estimated 28 animals this is one of India's last two populations; they are recorded mainly by camera traps in and around the reserve.",
+   "season_nl": "Oktober tot juni, als het park open is.",
+   "season_en": "October to June, when the park is open.",
+   "time_nl": "Ochtend- en middagsafari's; vroeg en laat is het beste.",
+   "time_en": "Morning and afternoon safaris; early and late are best.",
+   "trip_nl": "Jeepsafari's in het tijgerreservaat, meerdere ritten; je komt voor de tijger, een caracal is pure mazzel.",
+   "trip_en": "Jeep safaris in the tiger reserve, several drives; you come for the tiger, a caracal is pure luck.",
+   "sources": [
+    14,
+    15
+   ]
+  },
+  {
+   "id": "tr-duzlercami-antalya",
+   "name_nl": "Düzlerçamı (Antalya)",
+   "name_en": "Düzlerçamı (Antalya)",
+   "area_nl": "Wildreservaat Düzlerçamı en mediterrane bossen bij Antalya",
+   "area_en": "Düzlerçamı Wildlife Reserve and Mediterranean forests near Antalya",
+   "country_nl": "Turkije",
+   "country_en": "Turkey",
+   "cont": "asia",
+   "lat": 37.0,
+   "lon": 30.6,
+   "score": 1,
+   "why_nl": "Cameravallen op 444 punten legden hier caracals vast op 19 locaties; voor gewone bezoekers is een waarneming hoogst uitzonderlijk.",
+   "why_en": "Camera traps at 444 points recorded caracals at 19 locations here; for ordinary visitors a sighting is highly exceptional.",
+   "season_nl": "Het hele jaar.",
+   "season_en": "Year-round.",
+   "time_nl": "Schemering en nacht.",
+   "time_en": "Dusk and night.",
+   "trip_nl": "Wandelingen in het bos rond Antalya; realistisch alleen via cameravallen of met veel geluk.",
+   "trip_en": "Walks in the forests around Antalya; realistically only via camera traps or with a lot of luck.",
+   "sources": [
+    1,
+    17
+   ]
+  },
+  {
+   "id": "uz-ustyurt-kyzylkum",
+   "name_nl": "Ustyurt en Kyzylkum",
+   "name_en": "Ustyurt and Kyzylkum",
+   "area_nl": "Ustyurt-plateau en Kyzylkum-woestijn (o.a. Kyzylkum Staatsreservaat), Oezbekistan",
+   "area_en": "Ustyurt Plateau and Kyzylkum Desert (incl. Kyzylkum State Reserve), Uzbekistan",
+   "country_nl": "Oezbekistan",
+   "country_en": "Uzbekistan",
+   "cont": "asia",
+   "lat": 44.0,
+   "lon": 57.0,
+   "score": 1,
+   "why_nl": "Tussen 2011 en 2017 werden in heel Oezbekistan maar 27 waarnemingen verzameld; in Centraal-Azië geldt de caracal als een van de zeldzaamste gewervelde dieren.",
+   "why_en": "Only 27 records were gathered across Uzbekistan between 2011 and 2017; in Central Asia the caracal counts as one of the rarest vertebrates.",
+   "season_nl": "Voorjaar en herfst zijn het prettigst om te reizen.",
+   "season_en": "Spring and autumn are the most comfortable for travel.",
+   "time_nl": "Schemering en nacht.",
+   "time_en": "Dusk and night.",
+   "trip_nl": "Expeditie met terreinwagen en lokale natuurkenner door de woestijn; alleen voor de echte avonturier.",
+   "trip_en": "Desert expedition by four-wheel drive with a local naturalist; only for the true adventurer.",
+   "sources": [
+    1,
+    18
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Luister naar vogels. Parelhoenders en frankolijnen die alarm slaan, kijken vaak precies naar de kat. Volg hun blik.",
+  "Ken het silhouet: effen roodbruine vacht, lange poten en lange zwarte oorpluimen. Zelfs op afstand verraden die oren hem.",
+  "Wees als eerste op de weg na zonsopkomst en blijf tot het laatste moment voor de poort sluit. Rij langzaam en scan de bermen.",
+  "Zoek in lage begroeiing. In hoge struiken zie je een caracal niet, ook niet met een lamp.",
+  "Kijk naar sporen op zandwegen en bij duikers onder de weg. Wie sporen vindt, weet waar hij 's ochtends moet kijken.",
+  "In woestijnen jagen caracals vooral in droge rivierbeddingen, en vaak in donkere nachten rond nieuwe maan.",
+  "Lampen mag lang niet overal. Vraag het de rangers en houd je aan de regels; meld je auto aan als je 's nachts mag rijden."
+ ],
+ "tips_en": [
+  "Listen to the birds. Guineafowl and francolins sounding the alarm are often staring straight at the cat. Follow their gaze.",
+  "Know the silhouette: plain russet coat, long legs and long black ear tufts. Even at a distance those ears give it away.",
+  "Be first on the road after sunrise and stay until the last moment before the gate closes. Drive slowly and scan the verges.",
+  "Search in low vegetation. In tall bush you will not see a caracal, not even with a spotlight.",
+  "Check for tracks on sandy roads and at culverts under the road. Find tracks and you know where to look at dawn.",
+  "In deserts caracals hunt mainly along dry creek beds, often on dark nights around the new moon.",
+  "Spotlighting is not allowed everywhere. Ask the rangers and stick to the rules; register your car if you are allowed to drive at night."
+ ],
+ "threats_nl": [
+  "Vervolging door veehouders: caracals worden geschoten en gevangen omdat ze schapen en geiten pakken.",
+  "Vergif, zowel gericht tegen roofdieren als via rattengif.",
+  "Verkeer: aanrijdingen zijn bijvoorbeeld rond Kaapstad een van de belangrijkste doodsoorzaken.",
+  "Verlies en versnippering van leefgebied, waardoor populaties geïsoleerd raken.",
+  "Illegale handel als huisdier, vooral richting de Golfstaten."
+ ],
+ "threats_en": [
+  "Persecution by livestock farmers: caracals are shot and trapped because they take sheep and goats.",
+  "Poison, both targeted at predators and through rodenticides.",
+  "Traffic: around Cape Town, for example, collisions are one of the main causes of death.",
+  "Habitat loss and fragmentation, leaving populations isolated.",
+  "Illegal pet trade, especially towards the Gulf states."
+ ],
+ "status_note_nl": "Wereldwijd staat de caracal als Niet bedreigd (Least Concern) op de Rode Lijst van de IUCN en in zuidelijk Afrika is hij algemeen, maar in Noord-Afrika, Arabië en Azië gaat het slecht: in Israël kwetsbaar, in Marokko en Pakistan ernstig bedreigd. In India zijn er naar schatting nog maar zo'n 50 over.",
+ "status_note_en": "Globally the caracal is listed as Least Concern on the IUCN Red List and it is common in southern Africa, but it is faring badly in North Africa, Arabia and Asia: Vulnerable in Israel, Critically Endangered in Morocco and Pakistan. India has an estimated 50 or so left.",
+ "sources": [
+  {
+   "id": 1,
+   "title": "Caracal – species account (IUCN SSC Cat Specialist Group)",
+   "url": "https://catsg.org/living-species-caracal"
+  },
+  {
+   "id": 2,
+   "title": "West Coast National Park Caracal Trip, April 2023 (mammalwatching.com, 2024)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/01/West-Coast-National-Park-Caracal-Trip-Google-Docs.pdf"
+  },
+  {
+   "id": 3,
+   "title": "My Big Cat Year – South Africa trip report, January 2026 (mammalwatching.com, 2026)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2026/02/Big-Cat-Year-Trip-Report-South-Africa-080126-to-280126.pdf"
+  },
+  {
+   "id": 4,
+   "title": "Forum: Caracal in Cape Town? (mammalwatching.com, 2023)",
+   "url": "https://www.mammalwatching.com/community-post/caracal-in-cape-town/"
+  },
+  {
+   "id": 5,
+   "title": "Urban Caracal Project (Cape Leopard Trust)",
+   "url": "https://capeleopard.org.za/research/associate/urban-caracal"
+  },
+  {
+   "id": 6,
+   "title": "City cats – caracals on the Cape Peninsula (Cape Leopard Trust)",
+   "url": "https://capeleopard.org.za/news-media/news/story/city-cats"
+  },
+  {
+   "id": 7,
+   "title": "This wild African cat is adapting to life in a big city (National Geographic)",
+   "url": "https://www.nationalgeographic.com/animals/article/this-wild-african-cat-is-adapting-to-life-in-a-big-city"
+  },
+  {
+   "id": 8,
+   "title": "South Africa, Northern Cape, November 2016 – trip report (mammalwatching.com, 2017)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2017/11/SO-South-Africa-2016.pdf"
+  },
+  {
+   "id": 9,
+   "title": "Kalahari Captures, Sept./Oct. 2019 – trip report (Africa Wild forum, 2019)",
+   "url": "https://africawild-forum.com/viewtopic.php?p=484866"
+  },
+  {
+   "id": 10,
+   "title": "Creek beds and Cape hares: caracal movement and diet in a hyperarid desert, Arava (Ecology and Evolution, 2026)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12912937/"
+  },
+  {
+   "id": 11,
+   "title": "Tiny trip report – 2.5 hours spotlighting for caracals in southern Israel, with comments (mammalwatching.com, 2015)",
+   "url": "https://www.mammalwatching.com/2015/01/24/tiny-trip-report-2-5-hours-spotlighting-for-caracals-in-southernish-israel/"
+  },
+  {
+   "id": 12,
+   "title": "Five trips to Israel with a little bit of Jordan, 2013–2023 (mammalwatching.com, 2023)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2023/01/JE-israels-2013-2023.pdf"
+  },
+  {
+   "id": 13,
+   "title": "Serval and Caracal Photo Tour 2023 – trip report, eastern Serengeti (mammalwatching.com, 2024)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2024/02/Serval-and-Caracal-Photo-Tour-2023-Trip-Report.pdf"
+  },
+  {
+   "id": 14,
+   "title": "As caracals inch towards extinction, path to conserving the wild cat remains unclear (Mongabay India, 2023)",
+   "url": "https://india.mongabay.com/2023/10/as-caracals-inch-towards-extinction-path-to-conserving-the-wild-cat-remains-unclear/"
+  },
+  {
+   "id": 15,
+   "title": "Diminishing dominions: a new study on the caracal in India (Rajasthan Biodiversity Network)",
+   "url": "https://rajasthanbiodiversity.org/diminishing-caracal-in-india/"
+  },
+  {
+   "id": 16,
+   "title": "New report: Caracal in Kutch, western India (mammalwatching.com, 2019)",
+   "url": "https://www.mammalwatching.com/2019/05/21/new-report-caracal-in-kutch-western-india/"
+  },
+  {
+   "id": 17,
+   "title": "Caracal camera-trap study in Düzlerçamı, Antalya (Turkish Journal of Forestry, 2019)",
+   "url": "https://doaj.org/article/632f8f415523427d8cccc66b7a79fb8b"
+  },
+  {
+   "id": 18,
+   "title": "The Caracal in Uzbekistan (Journal of Threatened Taxa, 2019)",
+   "url": "https://threatenedtaxa.org/index.php/JoTT/article/view/13470-13477"
+  },
+  {
+   "id": 19,
+   "title": "Rediscovery of Caracal in Abu Dhabi Emirate, UAE (Journal of Threatened Taxa, 2020)",
+   "url": "https://threatenedtaxa.org/index.php/JoTT/article/view/5856"
+  },
+  {
+   "id": 20,
+   "title": "Ecology and diet of the caracal on lethal and non-lethal control farms in the Karoo (University of the Western Cape thesis)",
+   "url": "https://etd.uwc.ac.za/handle/11394/8137"
+  },
+  {
+   "id": 21,
+   "title": "Poison use by sheep farmers in the Karoo (paper, hosted by HWCTF)",
+   "url": "https://www.hwctf.org/_files/ugd/7acc16_dcb3c22cf7f7401ab7ad6ed3738aa220.pdf"
+  }
+ ]
+}

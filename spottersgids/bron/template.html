@@ -374,6 +374,7 @@ const $$ = s => Array.from(document.querySelectorAll(s));
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let L = 'nl';
 try { const s = localStorage.getItem('sg-lang'); if (s === 'en' || s === 'nl') L = s; else if (!/^nl/i.test(navigator.language || 'nl')) L = 'en'; } catch(e) {}
+try { const q = new URLSearchParams(location.search).get('lang'); if (q === 'nl' || q === 'en') { L = q; localStorage.setItem('sg-lang', L); } } catch(e) {}
 if (SGP) { L = SGP.lang; try { localStorage.setItem('sg-lang', L); } catch(e) {} }
 /* adres van een losse soortpagina (relatief t.o.v. de map spottersgids) */
 const spHref = no => (L === 'en' ? 'en/' : '') + D.slugs[L][no] + '/';

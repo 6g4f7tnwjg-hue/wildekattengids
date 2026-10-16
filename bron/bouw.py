@@ -505,6 +505,9 @@ for r in routes:
     u = static_url(*key)
     wr(ROOT + u[len(BASE):] + "index.html", page(*r, fr_))
     urls.append("https://yeetkitty.github.io" + u)
+# Spottersgids (eigen bouw in spottersgids/) meenemen in de hoofd-sitemap
+if os.path.exists(ROOT + "spottersgids/sitemap.xml"):
+    urls += [u for u in re.findall(r"<loc>([^<]+)</loc>", rd(ROOT + "spottersgids/sitemap.xml")) if u not in urls]
 wr(ROOT + "sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
    + "".join(f"  <url><loc>{u}</loc><lastmod>{today.isoformat()}</lastmod></url>\n" for u in urls) + "</urlset>\n")
 # oude adressen na hernoemen van soorten in de Duitse gids (okt 2026) → doorverwijzen

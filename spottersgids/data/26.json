@@ -1,0 +1,294 @@
+{
+ "no": 26,
+ "intro_nl": "Mist hangt nog boven de heuvels van Point Reyes als je hem ziet: een gevlekte kat midden in het grasland, oren gespitst, roerloos boven een woelmuizenhol. Dan een sprong, een korte worsteling, en de rode lynx loopt rustig verder met zijn prooi. Hij kijkt nauwelijks op van je verrekijker. Op deze plekken jaagt hij gewoon overdag, en wie in de winter een paar ochtenden rondloopt, heeft een goede kans. Kans: 4 – een kat die je echt met eigen ogen kunt zien jagen.",
+ "intro_en": "Fog still hangs over the hills of Point Reyes when you spot it: a spotted cat in the middle of the grassland, ears pricked, frozen above a vole burrow. Then a pounce, a short scuffle, and the bobcat calmly walks on with its prey. It barely glances at your binoculars. In places like this it simply hunts by day, and if you spend a few winter mornings walking around, your chances are good. Chance: 4 – a cat you can genuinely watch hunting with your own eyes.",
+ "spots": [
+  {
+   "id": "us-point-reyes",
+   "name_nl": "Point Reyes",
+   "name_en": "Point Reyes",
+   "area_nl": "Point Reyes National Seashore, Marin County (Californië)",
+   "area_en": "Point Reyes National Seashore, Marin County (California)",
+   "country_nl": "Verenigde Staten",
+   "country_en": "United States",
+   "cont": "nam",
+   "lat": 38.1,
+   "lon": -122.9,
+   "score": 4,
+   "why_nl": "De rode lynxen jagen hier overdag op woelmuizen in open grasland en zijn gewend aan fotografen; één waarnemer zag er in de winter van 2021 vijf op één dag (twee keer), maar een stel in maart 2025 had pas op de allerlaatste ochtend beet.",
+   "why_en": "Bobcats here hunt voles by day in open grassland and are used to photographers; one observer saw five in a single day (twice) in winter 2021, while a couple in March 2025 only scored on their very last morning.",
+   "season_nl": "Het hele jaar; de winter (december–maart) wordt het vaakst als goed genoemd.",
+   "season_en": "Year-round; winter (December–March) is most often reported as good.",
+   "time_nl": "Vroege ochtend en late middag.",
+   "time_en": "Early morning and late afternoon.",
+   "trip_nl": "Zelf rijden en wandelen langs de graslanden in het noorden van het park, of een dagexcursie met een lokale natuurgids; 2 à 3 dagen.",
+   "trip_en": "Drive and walk the grasslands in the north of the park yourself, or take a day excursion with a local naturalist guide; 2–3 days.",
+   "sources": [
+    1,
+    2,
+    3,
+    15
+   ]
+  },
+  {
+   "id": "us-sweetwater-wetlands-tucson",
+   "name_nl": "Sweetwater Wetlands (Tucson)",
+   "name_en": "Sweetwater Wetlands (Tucson)",
+   "area_nl": "Sweetwater Wetlands, stadsmoerasgebied bij een waterzuivering in Tucson (Arizona)",
+   "area_en": "Sweetwater Wetlands, an urban treatment-marsh park in Tucson (Arizona)",
+   "country_nl": "Verenigde Staten",
+   "country_en": "United States",
+   "cont": "nam",
+   "lat": 32.3,
+   "lon": -111.0,
+   "score": 4,
+   "why_nl": "In 2021–2022 hadden hier vier rode lynxen overlappende territoria en lag de kans per bezoek in de winter op 50–75%, in de zomer rond 10%.",
+   "why_en": "In 2021–2022 four bobcats had overlapping ranges here and the chance per visit was 50–75% in winter, around 10% in summer.",
+   "season_nl": "Winter is veruit het best; in de zomer zijn ze lastig.",
+   "season_en": "Winter is by far the best; in summer they are hard to find.",
+   "time_nl": "Vroeg in de ochtend en laat op de middag (het park is open van zonsopkomst tot zonsondergang).",
+   "time_en": "Early morning and late afternoon (the park is open sunrise to sunset).",
+   "trip_nl": "Zelf rustig over de wandelpaden rond de vijvers lopen, liefst met z'n tweeën op verschillende rondjes; een paar ochtenden of middagen.",
+   "trip_en": "Walk the paths around the ponds quietly yourself, ideally two of you on separate loops; a few mornings or afternoons.",
+   "sources": [
+    4,
+    1
+   ]
+  },
+  {
+   "id": "us-wind-wolves-preserve",
+   "name_nl": "Wind Wolves Preserve",
+   "name_en": "Wind Wolves Preserve",
+   "area_nl": "Wind Wolves Preserve, San Emigdio-gebergte, Kern County (Californië)",
+   "area_en": "Wind Wolves Preserve, San Emigdio Mountains, Kern County (California)",
+   "country_nl": "Verenigde Staten",
+   "country_en": "United States",
+   "cont": "nam",
+   "lat": 34.9,
+   "lon": -119.2,
+   "score": 3,
+   "why_nl": "Medewerkers zien hier volgens een verslag 'vrij regelmatig' rode lynxen en een waarnemer zag er in december 2018 twee op één wandeling, maar het reservaat is niet open bij zonsopkomst en -ondergang.",
+   "why_en": "According to one report staff see bobcats here 'fairly regularly', and one observer saw two on a single hike in December 2018, but the preserve is closed at dawn and dusk.",
+   "season_nl": "Midden in de winter, door de week (dan heb je de paden vaak voor jezelf).",
+   "season_en": "Midwinter, on weekdays (you will often have the trails to yourself).",
+   "time_nl": "Overdag, binnen de openingstijden.",
+   "time_en": "Daytime, within opening hours.",
+   "trip_nl": "Zelf wandelen rond het bezoekerscentrum en langs de beekbedding in de vallei; een dagtocht.",
+   "trip_en": "Hike yourself around the visitor centre and along the creek in the valley; a day trip.",
+   "sources": [
+    5
+   ]
+  },
+  {
+   "id": "us-yellowstone-madison",
+   "name_nl": "Madison-rivier (Yellowstone)",
+   "name_en": "Madison River (Yellowstone)",
+   "area_nl": "Madison-vallei in het westen van Yellowstone National Park (Wyoming/Montana)",
+   "area_en": "Madison valley in western Yellowstone National Park (Wyoming/Montana)",
+   "country_nl": "Verenigde Staten",
+   "country_en": "United States",
+   "cont": "nam",
+   "lat": 44.6,
+   "lon": -110.9,
+   "score": 2,
+   "why_nl": "Door warme bronnen bevriest de Madison niet, en rode lynxen jagen er 's winters op watervogels; in sommige winters werden er vijf à zes verschillende dieren gezien en trekken ze fotografen van over de hele wereld, maar het verschilt sterk per jaar en Yellowstone noemt waarnemingen verder zeldzaam.",
+   "why_en": "Geothermal water keeps the Madison ice-free and bobcats hunt waterfowl along it in winter; in some winters five or six different animals were seen and photographers came from around the world, but it varies a lot by year and the park otherwise calls sightings rare.",
+   "season_nl": "Winter (december–maart), als alleen de sneeuwvoertuigen de weg vanaf West Yellowstone mogen gebruiken.",
+   "season_en": "Winter (December–March), when only oversnow vehicles may use the road from West Yellowstone.",
+   "time_nl": "Overdag; scan de rivieroevers en rotswanden.",
+   "time_en": "Daytime; scan the riverbanks and rock faces.",
+   "trip_nl": "Wintertochten met een sneeuwcoach of sneeuwscooter (met gids, verplicht in het park) vanuit West Yellowstone langs de rivier; 2 à 4 dagen.",
+   "trip_en": "Winter snowcoach or snowmobile tours (guided, as required in the park) from West Yellowstone along the river; 2 to 4 days.",
+   "sources": [
+    6,
+    7
+   ]
+  },
+  {
+   "id": "us-merritt-island",
+   "name_nl": "Merritt Island",
+   "name_en": "Merritt Island",
+   "area_nl": "Merritt Island National Wildlife Refuge, Brevard County (Florida)",
+   "area_en": "Merritt Island National Wildlife Refuge, Brevard County (Florida)",
+   "country_nl": "Verenigde Staten",
+   "country_en": "United States",
+   "cont": "nam",
+   "lat": 28.6,
+   "lon": -80.7,
+   "score": 2,
+   "why_nl": "Natuurfotografen melden hier al jaren af en toe rode lynxen langs de wildroutes en in de struiken, maar het blijft een toevalstreffer.",
+   "why_en": "Nature photographers have reported occasional bobcats along the wildlife drives and in the scrub for years, but it remains a matter of chance.",
+   "season_nl": "Winter en voorjaar (november–april), ook prettig voor de vogels.",
+   "season_en": "Winter and spring (November–April), also good for birds.",
+   "time_nl": "Eerste en laatste uren van de dag.",
+   "time_en": "First and last hours of the day.",
+   "trip_nl": "Zelf langzaam over de wildroute in het reservaat rijden en korte wandelingen maken; 1 à 2 dagen.",
+   "trip_en": "Drive the refuge's wildlife drive slowly yourself and take short walks; 1 to 2 days.",
+   "sources": [
+    8
+   ]
+  },
+  {
+   "id": "us-big-bend",
+   "name_nl": "Big Bend",
+   "name_en": "Big Bend",
+   "area_nl": "Big Bend National Park, Chihuahuawoestijn (Texas)",
+   "area_en": "Big Bend National Park, Chihuahuan Desert (Texas)",
+   "country_nl": "Verenigde Staten",
+   "country_en": "United States",
+   "cont": "nam",
+   "lat": 29.3,
+   "lon": -103.2,
+   "score": 2,
+   "why_nl": "De parklijst noemt de rode lynx 'ongewoon', maar bezoekers zagen er bij ritten in de schemering en soms 's ochtends vroeg op open grasveldjes langs de Rio Grande.",
+   "why_en": "The park checklist rates the bobcat as 'uncommon', but visitors have seen them on dusk drives and sometimes early in the morning on open grassy areas along the Rio Grande.",
+   "season_nl": "Najaar tot voorjaar (oktober–april); in de zomer is het erg heet.",
+   "season_en": "Autumn to spring (October–April); summer is very hot.",
+   "time_nl": "Schemering, nacht en vroege ochtend.",
+   "time_en": "Dusk, night and early morning.",
+   "trip_nl": "Zelf rijden over de parkwegen bij schemering en vroeg in de ochtend; 2 à 4 dagen.",
+   "trip_en": "Self-drive the park roads at dusk and early morning; 2 to 4 days.",
+   "sources": [
+    9,
+    10
+   ]
+  },
+  {
+   "id": "mx-sierra-de-la-laguna",
+   "name_nl": "Baja California Sur (Sierra de la Laguna)",
+   "name_en": "Baja California Sur (Sierra de la Laguna)",
+   "area_nl": "Biosfeerreservaat Sierra de la Laguna en omgeving van La Paz, Baja California Sur",
+   "area_en": "Sierra de la Laguna Biosphere Reserve and the La Paz area, Baja California Sur",
+   "country_nl": "Mexico",
+   "country_en": "Mexico",
+   "cont": "nam",
+   "lat": 23.5,
+   "lon": -110.0,
+   "score": 1,
+   "why_nl": "De rode lynx hoort hier van nature thuis en werd zelfs in een park in La Paz gefilmd, maar er zijn amper waarnemersverslagen uit Mexico; voor Mexico is dit dus vooral geluk.",
+   "why_en": "The bobcat is native here and has even been filmed in a park in La Paz, but there are hardly any watcher reports from Mexico, so here it is mostly luck.",
+   "season_nl": "Droge, koelere maanden (november–april).",
+   "season_en": "Dry, cooler months (November–April).",
+   "time_nl": "Schemering en nacht.",
+   "time_en": "Dusk and night.",
+   "trip_nl": "Wandelen en 's avonds met een lamp zoeken in het reservaat, als onderdeel van een bredere natuurreis door Baja; zie de lynx als bonus.",
+   "trip_en": "Hiking and evening spotlighting in the reserve as part of a broader Baja nature trip; treat the bobcat as a bonus.",
+   "sources": [
+    11,
+    12
+   ]
+  }
+ ],
+ "tips_nl": [
+  "Zoek open grasland met veel woelmuizen of katoenratten: daar jaagt de rode lynx overdag, vaak urenlang op dezelfde plek.",
+  "Ga in de winter: de katten zijn dan vaker overdag actief en de vegetatie is lager.",
+  "Loop langzaam en stil, of blijf in de auto; gewende dieren laten je soms een tijd meelopen als je afstand houdt en niet afsnijdt.",
+  "Scan randen van struiken, slootkanten en ook golfbanen en parken aan de rand van de stad: rode lynxen leven verrassend dicht bij mensen.",
+  "Let op alarmroepen van vogels en eekhoorns, en op coyotes die opeens één kant op staren.",
+  "Sporen zijn rond, zo'n 5 cm groot en zonder nagelafdrukken; de staart is kort met zwarte bandjes aan de bovenkant, niet met een volledig zwarte punt zoals bij de Canadese lynx."
+ ],
+ "tips_en": [
+  "Look for open grassland with plenty of voles or cotton rats: bobcats hunt there by day, often for hours in the same spot.",
+  "Go in winter: the cats are more often active in daylight and the vegetation is lower.",
+  "Walk slowly and quietly, or stay in your car; habituated animals sometimes let you tag along for a while if you keep your distance and do not cut them off.",
+  "Scan scrub edges, ditches and also golf courses and parks on the edge of town: bobcats live surprisingly close to people.",
+  "Listen for alarm calls of birds and squirrels, and watch for coyotes suddenly staring one way.",
+  "Tracks are round, about 5 cm long and without claw marks; the tail is short with black bars on top, without the fully black tip of the Canada lynx."
+ ],
+ "threats_nl": [
+  "Vangst en jacht voor de bonthandel: in de VS werden in sommige jaren tienduizenden pelzen geëxporteerd.",
+  "Rattengif: bij onderzoek in Zuid-Californië bleek het merendeel van de onderzochte rode lynxen anticoagulante rodenticiden in het lichaam te hebben, gekoppeld aan dodelijke schurft.",
+  "Verkeer: wegen versnipperen leefgebieden en eisen veel slachtoffers rond steden.",
+  "Verlies van leefgebied door verstedelijking en landbouw."
+ ],
+ "threats_en": [
+  "Trapping and hunting for fur: in some years tens of thousands of pelts were exported from the US.",
+  "Rodenticides: research in southern California found anticoagulant rat poison in most bobcats tested, linked to fatal mange.",
+  "Road traffic: roads fragment habitat and kill many bobcats around cities.",
+  "Habitat loss to urban sprawl and agriculture."
+ ],
+ "status_note_nl": "De rode lynx staat als Niet bedreigd (Least Concern) op de Rode Lijst van de IUCN: hij is talrijk en wijdverspreid van Zuid-Canada tot Midden-Mexico, al gaat hij plaatselijk achteruit.",
+ "status_note_en": "The bobcat is listed as Least Concern on the IUCN Red List: it is abundant and widespread from southern Canada to central Mexico, although it is declining locally.",
+ "sources": [
+  {
+   "id": 1,
+   "title": "Update on bobcats in Tucson, Arizona – with comments on Point Reyes bobcat counts in winter 2020–21 (mammalwatching.com, 2021)",
+   "url": "https://www.mammalwatching.com/2021/03/06/update-on-bobcats-in-tucson-arizona/"
+  },
+  {
+   "id": 2,
+   "title": "Bobcat quest, Point Reyes 2020 (trip report, mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/SC-Bobcat-quest-2020.pdf"
+  },
+  {
+   "id": 3,
+   "title": "California trip report, March 2025 (mammalwatching.com)",
+   "url": "https://www.mammalwatching.com/wp-content/uploads/2025/03/California-trip-report-25.pdf"
+  },
+  {
+   "id": 4,
+   "title": "Bobcat update, Tucson Arizona (mammalwatching.com, 2022)",
+   "url": "https://www.mammalwatching.com/2022/01/10/bobcat-update-tucson-arizona/"
+  },
+  {
+   "id": 5,
+   "title": "New Southern California bobcat site – Wind Wolves Preserve (mammalwatching.com, 2018)",
+   "url": "https://www.mammalwatching.com/2018/12/13/new-southern-california-bobcat-site/"
+  },
+  {
+   "id": 6,
+   "title": "Stealing the show: Madison River bobcats draw tourists from around the globe in wintertime (Bozeman Daily Chronicle)",
+   "url": "https://www.bozemandailychronicle.com/news/stealing-the-show-madison-river-bobcats-draw-tourists-from-around-the-globe-in-wintertime/article_dcd6c0da-0d86-599f-9099-2a88beed83c3.html"
+  },
+  {
+   "id": 7,
+   "title": "Bobcat – Yellowstone National Park (National Park Service)",
+   "url": "https://home.nps.gov/yell/learn/nature/bobcat.htm"
+  },
+  {
+   "id": 8,
+   "title": "Expected and unexpected birds and more at Merritt Island (nature photography blog, 2024)",
+   "url": "https://rogersimmons.com/2024/08/26/expected-and-unexpected-birds-and-more-at-merritt-island"
+  },
+  {
+   "id": 9,
+   "title": "RFI: Big Bend NP, Texas (mammalwatching.com, 2015)",
+   "url": "https://www.mammalwatching.com/2015/06/01/rfi-big-bend-np-texas/"
+  },
+  {
+   "id": 10,
+   "title": "New trip report – Big Bend NP, Texas (mammalwatching.com, 2013)",
+   "url": "https://www.mammalwatching.com/2013/05/24/new-trip-report-big-bend-np-texas/"
+  },
+  {
+   "id": 11,
+   "title": "Captan a un lince en el Eco Parque de La Juventud en La Paz (Posta BCS)",
+   "url": "https://www.posta.com.mx/bcs/captan-a-un-lince-en-el-eco-parque-de-la-juventud-en-la-paz-video/vl1734727"
+  },
+  {
+   "id": 12,
+   "title": "Mexico – mammalwatching site notes and trip reports (mammalwatching.com)",
+   "url": "https://mammalwatching.com/gd_place/mexico"
+  },
+  {
+   "id": 13,
+   "title": "Researchers investigate rodenticides and mange in bobcats (National Park Service, Santa Monica Mountains)",
+   "url": "https://www.nps.gov/articles/researchers-investigate-rodenticides-and-mange-in-bobcats.htm"
+  },
+  {
+   "id": 14,
+   "title": "The growing trade in bear, lynx and wolf pelts (Sierra Club)",
+   "url": "https://sierraclub.org/sierra/growing-trade-bear-lynx-and-wolf-pelts"
+  },
+  {
+   "id": 15,
+   "title": "Bobcats in California 2023 – trip report, fifteen bobcats in December (mammalwatching.com, 2024)",
+   "url": "https://www.mammalwatching.com/community-post/bobcats-in-california-2023-trip-report/"
+  },
+  {
+   "id": 16,
+   "title": "Lynx rufus – IUCN Red List status Least Concern (iNaturalist guide)",
+   "url": "https://www.inaturalist.org/guide_taxa/80366"
+  }
+ ]
+}

@@ -172,6 +172,28 @@ main{display:block;min-height:70vh}
 .panel .hint{color:var(--muted)}
 .panel h3{font-size:1.35rem}
 .panel .meta{color:var(--muted);margin:2px 0 10px}
+/* startkaart: zoomen, filter op kans, lijst */
+.mapstage{position:relative}
+#mapwrap .map{touch-action:pan-x pan-y;user-select:none;-webkit-user-select:none}
+#mapwrap .map.zoomed{touch-action:none;cursor:grab}
+.zoombtns{position:absolute;top:10px;right:10px;display:flex;flex-direction:column;gap:6px;z-index:2}
+.zoombtns button{width:36px;height:36px;border-radius:8px;border:1px solid var(--line);background:var(--paper);color:var(--ink);font:700 1.3rem/1 var(--body);cursor:pointer;box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center;padding:0}
+.zoombtns button svg{width:18px;height:18px}
+.zoombtns button:disabled{opacity:.4;cursor:default}
+.maplegend .lgbtn{border:1px solid var(--line);background:var(--paper);border-radius:99px;padding:3px 10px 3px 8px;font:inherit;color:var(--ink);cursor:pointer;display:inline-flex;align-items:center;gap:5px}
+.maplegend .lgbtn[aria-pressed="false"]{color:var(--muted);background:none;border-style:dashed}
+.maplegend .lgbtn[aria-pressed="false"] i{background:none;box-shadow:inset 0 0 0 2px var(--c)}
+.maplegend .lowbtn{border:0;background:none;color:var(--olive);font:inherit;font-weight:700;text-decoration:underline;text-underline-offset:2px;cursor:pointer;padding:3px 0}
+.maplist{border-top:1px solid var(--line);padding:16px 14px 18px}
+.maplist ol{list-style:none;margin:10px 0 0;padding:0}
+.maplist li+li{border-top:1px solid var(--line)}
+.maplist .pl{width:100%;display:flex;gap:10px;align-items:flex-start;text-align:left;background:none;border:0;padding:9px 4px;cursor:pointer;font:inherit;color:inherit;border-radius:6px}
+.maplist .pl:hover,.maplist .pl[aria-current="true"]{background:color-mix(in srgb,var(--olive) 10%,transparent)}
+.maplist .pl .d{flex:none;width:12px;height:12px;border-radius:50%;background:var(--c);margin-top:5px}
+.maplist .pl .d.st{background:none;color:var(--c);width:15px;height:15px;margin-top:3px}
+.maplist .pl b{display:block}
+.maplist .pl small{display:block;color:var(--muted);font-size:.92rem}
+.maplist .morewrap{margin-top:10px}
 .rec{border-top:1px dashed var(--line);padding-top:10px;margin-top:10px;display:grid;gap:4px}
 .rec:first-of-type{border-top:0;margin-top:0;padding-top:0}
 .rec .sp{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;font-weight:700;font-size:1.05rem}
@@ -335,6 +357,12 @@ const U = {
   alsoLbl:{nl:'Ook te zien op deze plekken:',en:'Also seen at these places:'},
   alsoNone:{nl:'— kies een kat —',en:'— pick a cat —'},
   alsoAt:{nl:'zie je ook bij:',en:'can also be seen at:'},
+  zoomIn:{nl:'Inzoomen',en:'Zoom in'}, zoomOut:{nl:'Uitzoomen',en:'Zoom out'}, zoomReset:{nl:'Hele kaart tonen',en:'Show whole map'},
+  lgToggle:{nl:'Kans {n} tonen of verbergen',en:'Show or hide chance {n}'},
+  showLow:{nl:'Toon ook kans 1–2',en:'Also show chance 1–2'}, hideLow:{nl:'Verberg kans 1–2',en:'Hide chance 1–2'},
+  listMap:{nl:'Plekken op de kaart',en:'Places on the map'}, listView:{nl:'Plekken in beeld',en:'Places in view'},
+  listNone:{nl:'Geen plekken met deze kans in beeld.',en:'No places with this chance in view.'},
+  listAll:{nl:'Toon alle plekken',en:'Show all places'},
   mapHint:{nl:'Tik op een marker om te zien welke katten je daar kunt vinden.',en:'Tap a marker to see which cats you can find there.'},
   search:{nl:'Zoek een soort (NL, Engels of Latijn)',en:'Search a species (Dutch, English or Latin)'},
   ready:{nl:'Klaar om te spotten',en:'Ready to spot'},
@@ -380,6 +408,8 @@ SPOTS.forEach(s => s.recs.forEach(r => { if (!BEST[r.no] || r.score > BEST[r.no]
 const spotMax = s => Math.max(...s.recs.map(r => r.score));
 const isTop = s => s.recs.some(r => r.top);
 let FILTER = 'all', TAB = 'topspots', SEL = null, SHOWALL = false, Q = '', CAT = null, ALSO = null;
+// startkaart: zichtbare kansen (standaard 3–5), ingezoomd kader (null = niet ingezoomd), hele lijst tonen
+let SHOWN = new Set([3,4,5]), VIEW = null, LISTALL = false, DRAGGED = false;
 TAB = 'kaart';   // de kaart is de pagina die opent
 try { const f = localStorage.getItem('sg-cont'); if (f && (f === 'all' || CONTS.includes(f))) FILTER = f; } catch(e) {}
 const narrow = () => window.innerWidth < 600;
@@ -416,20 +446,21 @@ const ratioFor = b => Math.max(narrow() ? 1.05 : 1.9, Math.min(W/H, b[2]/b[3]));
 const GRAT = (() => { let g=''; for(let lon=-150; lon<180; lon+=30) g+=`M${(lon+180)*2},0V284`; for(let lat=60; lat>-60; lat-=30) g+=`M0,${(84-lat)*2}H720`; return g; })();
 const starPath = (x, y, R) => { let d=''; for (let i=0;i<10;i++){ const a = -Math.PI/2 + i*Math.PI/5, rr = i%2 ? R*.48 : R; d += (i?'L':'M') + (x+rr*Math.cos(a)).toFixed(2) + ',' + (y+rr*Math.sin(a)).toFixed(2); } return d + 'Z'; };
 function mapSvg(opts){
-  const vb = opts.world ? [0,0,W,H] : fit(opts.box, ratioFor(opts.box));
+  const vb = opts.vb || (opts.world ? [0,0,W,H] : fit(opts.box, ratioFor(opts.box)));
   const u = vb[2] / opts.cw;                       // kaarteenheden per schermpixel
-  const sw = 1.6*u, k = vb[2]/W;
+  const k = vb[2]/W, mr = opts.mr || 6.5;
   const rng = opts.range ? `<path class="rng" d="${opts.range}" stroke-width="${.6*k}"/>` : '';
+  // markers in schermpixels; de schaal u houdt ze even groot, ook tijdens het zoomen
   const mks = opts.markers.map(m => {
     const [x,y] = proj(m.lat, m.lon);
-    const r = (m.num ? 10 : 6.5) * u;
-    const shape = m.star ? `<path class="dot" d="${starPath(x, y, r*1.7)}" fill="var(--s${m.score})" stroke-width="${sw}"/>`
-                         : `<circle class="dot" cx="${x}" cy="${y}" r="${r}" fill="var(--s${m.score})" stroke-width="${sw}"/>`;
-    return `<g class="mk${m.sel?' sel':''}${m.dim?' dim':''}" data-id="${esc(m.id)}" tabindex="0" role="button" aria-label="${esc(m.label)}">
-      <circle cx="${x}" cy="${y}" r="${16*u}" fill="transparent"/>${shape}
-      ${m.num?`<text x="${x}" y="${y}" font-size="${13*u}">${m.num}</text>`:''}</g>`;
+    const r = m.num ? 10 : mr;
+    const shape = m.star ? `<path class="dot" d="${starPath(0, 0, r*1.7)}" fill="var(--s${m.score})" stroke-width="1.6"/>`
+                         : `<circle class="dot" r="${r}" fill="var(--s${m.score})" stroke-width="1.6"/>`;
+    return `<g class="mk${m.sel?' sel':''}${m.dim?' dim':''}" data-id="${esc(m.id)}" data-x="${x}" data-y="${y}" transform="translate(${x} ${y}) scale(${u})" tabindex="0" role="button" aria-label="${esc(m.label)}">
+      <circle r="16" fill="transparent"/>${shape}
+      ${m.num?`<text font-size="13">${m.num}</text>`:''}</g>`;
   }).join('');
-  return `<svg class="map" viewBox="${vb.join(' ')}" role="img" aria-label="${esc(opts.label)}">
+  return `<svg class="map${opts.cls?' '+opts.cls:''}" viewBox="${vb.join(' ')}" role="img" aria-label="${esc(opts.label)}">
     <path class="grat" d="${GRAT}" stroke-width="${.5*k}"/><path class="land" d="${D.land}"/>${rng}${mks}</svg>`;
 }
 function bboxOfPath(p){
@@ -480,7 +511,7 @@ function topspotList(){
 function catsInFilter(){ return CATS.filter(c => FILTER === 'all' || c.cont.includes(FILTER)); }
 function tabCount(t){
   if (t === 'topspots') return topspotList().length;
-  if (t === 'kaart') return CAT ? catSpots(CAT).length : SPOTS.filter(s => inFilter(s.cont)).length;
+  if (t === 'kaart') return homeData().all.filter(m => SHOWN.has(m.score)).length;
   return catsInFilter().length;
 }
 function topsHtml(){
@@ -526,28 +557,166 @@ function catRowHtml(){
     ${CAT ? `<div class="catnote"><b>${esc(catName(BY[CAT]))}</b><span class="lat">${esc(BY[CAT].la)}</span>${n ? `<span class="note">${n} ${esc(n === 1 ? T(U.catShown1) : T(U.catShown))}</span>` : `<span class="soon">${esc(T(U.noSpot))}</span>`}${PAGES[CAT] ? `<a class="btnlink" href="#soort-${CAT}">${esc(T(U.toPage))} →</a>` : (n ? `<span class="soon">${esc(T(U.soonPage))}</span>` : '')}</div>` : ''}`;
 }
 function mapTabHtml(){
+  const ico = d => `<svg viewBox="0 0 20 20" aria-hidden="true"><path d="${d}" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
   return `${catRowHtml()}<p class="note" style="margin-bottom:12px">${esc(T(U.mapSub))}</p>
-    <div class="mapbox"><div id="mapwrap"></div>${legendHtml(true)}<div class="panel" id="panel" aria-live="polite">${panelHtml()}</div></div>`;
+    <div class="mapbox"><div class="mapstage"><div id="mapwrap"></div>
+      <div class="zoombtns"><button type="button" id="zIn" aria-label="${esc(T(U.zoomIn))}" title="${esc(T(U.zoomIn))}">${ico('M10 4v12M4 10h12')}</button>
+      <button type="button" id="zOut" aria-label="${esc(T(U.zoomOut))}" title="${esc(T(U.zoomOut))}">${ico('M4 10h12')}</button>
+      <button type="button" id="zReset" aria-label="${esc(T(U.zoomReset))}" title="${esc(T(U.zoomReset))}">${ico('M3 7V3h4M17 7V3h-4M3 13v4h4M17 13v4h-4')}</button></div></div>
+    <div id="maplegend"></div><div class="panel" id="panel" aria-live="polite">${panelHtml()}</div><div class="maplist" id="maplist"></div></div>`;
 }
-function drawHomeMap(){
-  const mw = $('#mapwrap'); if (!mw) return;
-  const keep = mw.scrollLeft, world = FILTER === 'all' && !CAT;
-  mw.className = 'mapscroll' + (world ? ' world' : '');
-  const cw = world && narrow() ? 680 : (mw.clientWidth || 360);
-  let markers, box = BOX[FILTER], range = null;
+// alle plekken voor de startkaart (nog niet gefilterd op kans) plus het kader en het leefgebied
+function homeData(){
+  let all, box = BOX[FILTER], range = null;
   if (CAT) {   // één kat: alleen zijn plekken, kleur = kans voor die kat, met leefgebied
-    markers = catSpots(CAT).map(s => ({s, r:s.recs.find(r => r.no === CAT)})).map(({s,r}) => ({id:s.id, lat:s.lat, lon:s.lon, score:r.score, star:r.top, sel:SEL===s.id, label:`${T(s.name)}, ${T(s.country)}`}));
+    all = catSpots(CAT).map(s => ({s, r:s.recs.find(r => r.no === CAT)})).map(({s,r}) => ({s, id:s.id, lat:s.lat, lon:s.lon, score:r.score, star:r.top, label:`${T(s.name)}, ${T(s.country)}`}));
     range = BY[CAT].range || null;
     let [x0,y0,x1,y1] = range ? bboxOfPath(range) : [720,284,0,0];
-    markers.forEach(m => { const [x,y] = proj(m.lat, m.lon); x0=Math.min(x0,x); x1=Math.max(x1,x); y0=Math.min(y0,y); y1=Math.max(y1,y); });
+    all.forEach(m => { const [x,y] = proj(m.lat, m.lon); x0=Math.min(x0,x); x1=Math.max(x1,x); y0=Math.min(y0,y); y1=Math.max(y1,y); });
     box = FILTER === 'all' ? [x0-12, y0-12, Math.max(60, x1-x0+24), Math.max(36, y1-y0+24)] : BOX[FILTER];
   } else {
-    markers = SPOTS.filter(s => inFilter(s.cont)).map(s => ({id:s.id, lat:s.lat, lon:s.lon, score:spotMax(s), star:isTop(s), sel:SEL===s.id, label:`${T(s.name)}, ${T(s.country)}`}));
+    all = SPOTS.filter(s => inFilter(s.cont)).map(s => ({s, id:s.id, lat:s.lat, lon:s.lon, score:spotMax(s), star:isTop(s), label:`${T(s.name)}, ${T(s.country)}`}));
   }
+  return {all, box, range};
+}
+const worldMode = () => FILTER === 'all' && !CAT && !VIEW;
+// het kader zonder inzoomen (bij de wereldkaart op een telefoon: het stuk dat in beeld is)
+function baseVB(){
+  const mw = $('#mapwrap');
+  if (FILTER === 'all' && !CAT) {
+    if (!narrow() || !mw) return [0,0,W,H];
+    const s = W/680, w = Math.min(W, mw.clientWidth*s);
+    return [VIEW ? (W-w)/2 : Math.min(W-w, mw.scrollLeft*s), 0, w, H];
+  }
+  return fit(homeData().box, ratioFor(homeData().box));
+}
+const curVB = () => VIEW || baseVB();
+function clampView(v){
+  let [x,y,w,h] = v;
+  x = w <= W ? Math.max(0, Math.min(W-w, x)) : (W-w)/2;
+  y = h <= H ? Math.max(0, Math.min(H-h, y)) : (H-h)/2;
+  return [x,y,w,h];
+}
+// nieuw kader; zo ver uitgezoomd als het basiskader = niet meer ingezoomd
+function setView(v){
+  const full = baseVB()[2];
+  VIEW = v[2] >= full - .5 ? null : clampView(v);
+}
+const MINW = 20;   // verst ingezoomd: 10 lengtegraden breed
+function zoomView(v, f, fx, fy){
+  const [x,y,w,h] = v, full = baseVB()[2];
+  const nw = Math.max(MINW, Math.min(full, w/f)), nh = nw * h / w;
+  return [x + fx*w - fx*nw, y + fy*h - fy*nh, nw, nh];
+}
+function zoomBy(f, fx = .5, fy = .5){ setView(zoomView(curVB(), f, fx, fy)); LISTALL = false; drawHomeMap(); }
+// tijdens een gebaar alleen het kader en de markerschaal bijwerken (snel)
+function liveView(v){
+  const svg = $('#mapwrap svg'); if (!svg) return;
+  VIEW = clampView(v);
+  svg.setAttribute('viewBox', VIEW.join(' '));
+  const u = VIEW[2] / (svg.clientWidth || 360);
+  svg.querySelectorAll('.mk').forEach(g => g.setAttribute('transform', `translate(${g.dataset.x} ${g.dataset.y}) scale(${u})`));
+}
+let LASTSCROLL = 0;
+function drawHomeMap(){
+  const mw = $('#mapwrap'); if (!mw) return;
+  const world = worldMode();
+  const keep = world ? (mw.scrollLeft || LASTSCROLL) : LASTSCROLL;
+  mw.className = 'mapscroll' + (world ? ' world' : '');
+  const cw = world && narrow() ? 680 : (mw.clientWidth || 360);
+  const {all, box, range} = homeData();
+  const markers = all.filter(m => SHOWN.has(m.score)).map(m => ({...m, sel:SEL===m.id}));
   markers.sort((a,b) => (a.sel - b.sel) || (a.score - b.score));
-  mw.innerHTML = mapSvg({box, world, cw, markers, range, label:T(U.navMap)});
-  if (world && mw.scrollWidth > mw.clientWidth) mw.scrollLeft = keep || (mw.scrollWidth - mw.clientWidth) * .55;
-  bindMarkers(mw, id => { SEL = id; drawHomeMap(); const p = $('#panel'); p.innerHTML = panelHtml(); p.scrollIntoView({block:'nearest', behavior:'smooth'}); });
+  mw.innerHTML = mapSvg({box, world, vb:VIEW, cw, markers, range, mr:5, cls:VIEW?'zoomed':'', label:T(U.navMap)});
+  if (world && mw.scrollWidth > mw.clientWidth) { mw.scrollLeft = keep || (mw.scrollWidth - mw.clientWidth) * .55; LASTSCROLL = mw.scrollLeft; }
+  bindMarkers(mw, id => { if (!DRAGGED) selectSpot(id); });
+  bindGestures(mw);
+  $('#zOut').disabled = $('#zReset').disabled = !VIEW;
+  $('#zIn').disabled = !!VIEW && VIEW[2] <= MINW + .5;
+  $('#maplegend').innerHTML = homeLegendHtml(all);
+  $$('#maplegend [data-sc]').forEach(b => b.onclick = () => { const n = +b.dataset.sc; SHOWN.has(n) ? SHOWN.delete(n) : SHOWN.add(n); afterFilter(); });
+  const lb = $('#lowBtn'); if (lb) lb.onclick = () => { const on = SHOWN.has(1) && SHOWN.has(2); [1,2].forEach(n => on ? SHOWN.delete(n) : SHOWN.add(n)); afterFilter(); };
+  const tc = $('.tab[data-t="kaart"] small'); if (tc) tc.textContent = markers.length;
+  drawMapList(markers);
+}
+function afterFilter(){
+  if (SEL && SPOT[SEL]) { const m = homeData().all.find(x => x.id === SEL); if (!m || !SHOWN.has(m.score)) { SEL = null; $('#panel').innerHTML = panelHtml(); } }
+  LISTALL = false; drawHomeMap();
+}
+function selectSpot(id){ SEL = id; drawHomeMap(); const p = $('#panel'); p.innerHTML = panelHtml(); p.scrollIntoView({block:'nearest', behavior:'smooth'}); }
+function homeLegendHtml(all){
+  const low = all.filter(m => m.score <= 2 && !SHOWN.has(m.score)).length, lowOn = SHOWN.has(1) && SHOWN.has(2);
+  return `<div class="maplegend"><span>${esc(T(U.legend))}</span>${[5,4,3,2,1].map(n => `<button type="button" class="lgbtn" data-sc="${n}" aria-pressed="${SHOWN.has(n)}" title="${esc(T(U.lgToggle).replace('{n}', n))}"><i style="--c:var(--s${n})"></i>${n}</button>`).join('')}
+    <span style="color:var(--ink)">${STAR}<span style="color:var(--muted)">${esc(T(U.topStar))}</span></span>
+    ${lowOn ? `<button type="button" class="lowbtn" id="lowBtn">${esc(T(U.hideLow))}</button>` : (low ? `<button type="button" class="lowbtn" id="lowBtn">${esc(T(U.showLow))} (${low})</button>` : '')}</div>`;
+}
+// lijst van de plekken die op de kaart staan (bij inzoomen: alleen wat in beeld is)
+function drawMapList(markers){
+  const el = $('#maplist'); if (!el) return;
+  let list = markers;
+  if (VIEW) { const [x,y,w,h] = VIEW; list = list.filter(m => { const [px,py] = proj(m.lat, m.lon); return px >= x && px <= x+w && py >= y && py <= y+h; }); }
+  list = list.slice().sort((a,b) => b.score - a.score || b.star - a.star || T(a.s.name).localeCompare(T(b.s.name)));
+  const shown = LISTALL ? list : list.slice(0, 10);
+  const cats = m => CAT ? `${esc(catName(BY[CAT]))} · ${esc(T(U.chance).toLowerCase())} ${m.score}`
+    : m.s.recs.slice().sort((a,b) => b.score - a.score).map(r => `${esc(catName(BY[r.no]))} ${r.score}`).join(' · ');
+  el.innerHTML = `<h3>${esc(T(VIEW ? U.listView : U.listMap))} <span class="note">(${list.length})</span></h3>
+    ${list.length ? `<ol>${shown.map(m => `<li><button type="button" class="pl" data-id="${esc(m.id)}"${SEL===m.id?' aria-current="true"':''}>
+      ${m.star ? `<span class="d st" style="--c:var(--s${m.score})">${STAR}</span>` : `<span class="d" style="--c:var(--s${m.score})"></span>`}
+      <span><b>${esc(T(m.s.name))}</b><small>${esc(T(m.s.country))} · ${cats(m)}</small></span></button></li>`).join('')}</ol>` : `<p class="empty">${esc(T(U.listNone))}</p>`}
+    ${list.length > 10 ? `<div class="morewrap"><button type="button" class="btn" id="listAll">${esc(LISTALL ? T(U.showLess) : `${T(U.listAll)} (${list.length})`)}</button></div>` : ''}`;
+  el.querySelectorAll('.pl').forEach(b => b.onclick = () => selectSpot(b.dataset.id));
+  const la = $('#listAll'); if (la) la.onclick = () => { LISTALL = !LISTALL; drawMapList(markers); if (!LISTALL) el.scrollIntoView({block:'nearest'}); };
+}
+// slepen (als ingezoomd), knijpen met twee vingers, ctrl+scroll / trackpad en dubbelklik
+function bindGestures(mw){
+  const svg = mw.querySelector('svg'); if (!svg) return;
+  const pts = new Map(); let g = null, endT = null;
+  const frac = (cx, cy, r) => [(cx - r.left) / r.width, (cy - r.top) / r.height];
+  const begin = () => {
+    if (!VIEW && pts.size === 2 && worldMode()) { VIEW = baseVB(); drawHomeMap(); }   // wereldkaart op telefoon: eerst omzetten naar zoommodus
+    const s = $('#mapwrap svg'), r = s.getBoundingClientRect(), vb = s.getAttribute('viewBox').split(' ').map(Number), p = [...pts.values()];
+    g = {r, vb, p0:p.map(q => ({...q})), d0: p.length === 2 ? Math.hypot(p[0].x-p[1].x, p[0].y-p[1].y) : 0};
+  };
+  const move = e => {
+    if (!pts.has(e.pointerId)) return;
+    pts.set(e.pointerId, {x:e.clientX, y:e.clientY});
+    if (!g) return;
+    const p = [...pts.values()], {r, vb} = g, sx = vb[2] / r.width, sy = vb[3] / r.height;
+    if (p.length >= 2 && g.d0) {
+      const d = Math.hypot(p[0].x-p[1].x, p[0].y-p[1].y), m0 = [(g.p0[0].x+g.p0[1].x)/2, (g.p0[0].y+g.p0[1].y)/2], m = [(p[0].x+p[1].x)/2, (p[0].y+p[1].y)/2];
+      const [fx,fy] = frac(m0[0], m0[1], r), ax = vb[0] + fx*vb[2], ay = vb[1] + fy*vb[3];
+      const nv = zoomView(vb, d / g.d0, fx, fy), [gx,gy] = frac(m[0], m[1], r);
+      nv[0] = ax - gx*nv[2]; nv[1] = ay - gy*nv[3];
+      DRAGGED = true; liveView(nv);
+    } else if (p.length === 1 && VIEW) {
+      const dx = p[0].x - g.p0[0].x, dy = p[0].y - g.p0[0].y;
+      if (Math.hypot(dx, dy) > 5) DRAGGED = true;
+      if (DRAGGED) liveView([vb[0] - dx*sx, vb[1] - dy*sy, vb[2], vb[3]]);
+    }
+  };
+  const up = e => {
+    if (!pts.delete(e.pointerId)) return;
+    if (pts.size) { begin(); return; }
+    window.removeEventListener('pointermove', move); window.removeEventListener('pointerup', up); window.removeEventListener('pointercancel', up);
+    g = null;
+    if (DRAGGED) setTimeout(() => { if (VIEW) setView(VIEW); LISTALL = false; drawHomeMap(); DRAGGED = false; }, 0);
+  };
+  svg.addEventListener('pointerdown', e => {
+    if (e.pointerType === 'mouse' && e.button !== 0) return;
+    if (!pts.size) { DRAGGED = false; window.addEventListener('pointermove', move); window.addEventListener('pointerup', up); window.addEventListener('pointercancel', up); }
+    pts.set(e.pointerId, {x:e.clientX, y:e.clientY});
+    if (VIEW && e.pointerType === 'mouse') e.preventDefault();
+    begin();
+  });
+  svg.addEventListener('wheel', e => {
+    if (!e.ctrlKey) return;            // gewoon scrollen blijft de pagina scrollen
+    e.preventDefault();
+    if (worldMode()) { VIEW = baseVB(); drawHomeMap(); }
+    const s = $('#mapwrap svg'), [fx,fy] = frac(e.clientX, e.clientY, s.getBoundingClientRect());
+    liveView(zoomView(VIEW, Math.exp(-e.deltaY * .01), fx, fy));
+    clearTimeout(endT); endT = setTimeout(() => { setView(VIEW); LISTALL = false; drawHomeMap(); }, 150);
+  }, {passive:false});
+  svg.addEventListener('dblclick', e => { const [fx,fy] = frac(e.clientX, e.clientY, svg.getBoundingClientRect()); zoomBy(2, fx, fy); });
 }
 function speciesTabHtml(){
   return `<input class="search" id="q" type="search" placeholder="${esc(T(U.search))}" value="${esc(Q)}" autocomplete="off" spellcheck="false" enterkeyhint="search"><div id="splist">${speciesListHtml()}</div>`;
@@ -586,7 +755,7 @@ function renderHome(){
 function refreshHome(){ $('#bar').innerHTML = renderBar(); $('#tabbody').innerHTML = tabBody(); bindHome(); }
 function bindHome(){
   $$('.chip[data-f]').forEach(b => b.onclick = () => {
-    FILTER = b.dataset.f; CAT = null; try { localStorage.setItem('sg-cont', FILTER); } catch(e) {}
+    FILTER = b.dataset.f; CAT = null; VIEW = null; LISTALL = false; LASTSCROLL = 0; try { localStorage.setItem('sg-cont', FILTER); } catch(e) {}
     if (SEL && SPOT[SEL] && !inFilter(SPOT[SEL].cont)) SEL = null;
     refreshHome();
   });
@@ -602,12 +771,13 @@ function bindHome(){
     refreshHome(); renderChrome({nav:''}); window.scrollTo(0, $('.intro').offsetHeight);
   });
   $$('.catbtn').forEach(b => b.onclick = () => {
-    CAT = b.dataset.cat ? +b.dataset.cat : null;
+    CAT = b.dataset.cat ? +b.dataset.cat : null; VIEW = null; LISTALL = false;
     if (SEL && CAT && !SPOT[SEL].recs.some(r => r.no === CAT)) SEL = null;
     const x = $('#catrow').scrollLeft; refreshHome(); const cr = $('#catrow'); if (cr) cr.scrollLeft = x;
   });
   const sa = $('#showAll'); if (sa) sa.onclick = () => { SHOWALL = !SHOWALL; $('#tops').innerHTML = topsHtml(); bindHome(); };
   const q = $('#q'); if (q) q.oninput = () => { Q = q.value; $('#splist').innerHTML = speciesListHtml(); };
+  const zi = $('#zIn'); if (zi) { zi.onclick = () => zoomBy(2); $('#zOut').onclick = () => zoomBy(.5); $('#zReset').onclick = () => { VIEW = null; LISTALL = false; drawHomeMap(); }; }
   drawHomeMap();
 }
 let rsz; window.addEventListener('resize', () => { clearTimeout(rsz); rsz = setTimeout(() => { if ($('#mapwrap')) drawHomeMap(); if ($('#spmap')) drawSpeciesMap(); }, 200); });

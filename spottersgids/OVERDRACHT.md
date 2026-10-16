@@ -34,7 +34,7 @@ Topspot-regel in de bouw: plek met score 5 op een soortpagina = topspot; score 4
 - Ontwerp: één lichte stijl (donker vond de gebruiker te donker). Kaart opent als eerste tabblad.
 
 ## Wat er gebouwd is (functies)
-- Start: werelddeelfilter; tabs **Kaart · Topspots · Soorten**. Kaart met fotorij "kies een kat": per werelddeel alleen katten van dat werelddeel (kleur = met spotplek, grijs = leeft er, nog geen plek); kies je een kat, dan blijft de kaart in het werelddeel met leefgebied erachter. Sterren = topspots. Topspots: eerst 6, knop "Toon alle". Soorten: zoekveld.
+- Start: werelddeelfilter; tabs **Kaart · Topspots · Soorten**. Kaart met fotorij "kies een kat": per werelddeel alleen katten van dat werelddeel (kleur = met spotplek, grijs = leeft er, nog geen plek); kies je een kat, dan blijft de kaart in het werelddeel met leefgebied erachter. Sterren = topspots. Startkaart (16-10-2026): markers kleiner; legenda is een filter op kans (standaard 3–5 aan, knop "Toon ook kans 1–2"); zoomen met +/−/hele kaart, knijpen, slepen als ingezoomd, ctrl+scroll en dubbelklik; daaronder een lijst "Plekken op de kaart / in beeld" (eerst 10, knop "Toon alle"). Soortpagina-kaarten ongewijzigd. Topspots: eerst 6, knop "Toon alle". Soorten: zoekveld.
 - Soortpagina: samenvatting (beste plek/tijd/kans), snelmenu, inklapbare plekken (top 3 open), kaart met genummerde plekken + keuzelijst "Ook te zien op deze plekken", tips, status/bedreigingen, foto's met credits, bronnen.
 - Menu: Soorten · Topspots · Katten in Europa · Meer (Verantwoord spotten, Paklijst, Over mij).
 

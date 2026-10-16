@@ -158,6 +158,9 @@ for lang in ('nl', 'en'):
         out = tpl.replace('<html lang="nl">', f'<html lang="{lang}">', 1)
         out = re.sub(r'<title>.*?</title>', f'<title>{H.escape(title)}</title>', out, count=1)
         out = re.sub(r'<meta name="description" content="[^"]*">', f'<meta name="description" content="{H.escape(desc)}">\n{alt}', out, count=1)
+        og = {'og:site_name': 'Spottersgids voor wilde katten' if lang == 'nl' else "Wild Cat Spotter's Guide", 'og:title': title, 'og:description': desc, 'og:image': SITE + c['photos'][0]['src'], 'og:url': url(lang, no)}
+        for prop, val in og.items():
+            out = re.sub(rf'<meta property="{prop}" content="[^"]*">', lambda m, v=val, pr=prop: f'<meta property="{pr}" content="{H.escape(v)}">', out, count=1)
         out = out.replace('<meta charset="utf-8">', f'<meta charset="utf-8">\n<base href="{base}">', 1)
         out = out.replace('<main id="main"></main>', f'<main id="main">{pre}</main>', 1)
         out = out.replace('<script src="data.js', f'<script>window.SG_PAGE={{no:{no},lang:"{lang}"}};</script>\n<script src="data.js', 1)

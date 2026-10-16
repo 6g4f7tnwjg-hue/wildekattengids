@@ -168,7 +168,7 @@ function renderChrome(route){
      <div class="moremenu"><span class="lbl mlbl">${esc(T(U.navMore))}</span>${MORE.map(link).join('')}</div></div>`;
   $('#moreBtn').onclick = e => { e.stopPropagation(); const o = $('#more').classList.toggle('open'); $('#moreBtn').setAttribute('aria-expanded', o); };
   $('#langNl').setAttribute('aria-pressed', L==='nl'); $('#langEn').setAttribute('aria-pressed', L==='en');
-  $('#foot').innerHTML = `<p style="max-width:36rem">${esc(T(U.footMade))}</p><nav>${[...NAV, ...MORE].map(([id,k])=>`<a href="#${id}">${esc(T(U[k]))}</a>`).join('')}</nav>`;
+  $('#foot').innerHTML = `<p style="max-width:36rem">${esc(T(U.footMade))}</p><nav>${[...NAV, ...MORE].map(([id,k])=>`<a href="#${id}">${esc(T(U[k]))}</a>`).join('')}<a href="${esc(KOFI_URL)}" target="_blank" rel="noopener">${esc(L==='nl'?'Steun via Ko-fi ☕':'Support on Ko-fi ☕')}</a></nav>`;
   const h = $('.top').offsetHeight; if (h) document.documentElement.style.setProperty('--head', h + 'px');
 }
 document.addEventListener('click', e => { const m = $('#more'); if (m && !m.contains(e.target)) { m.classList.remove('open'); } });
@@ -326,7 +326,8 @@ function homeLegendHtml(all){
   const low = all.filter(m => m.score <= 2 && !SHOWN.has(m.score)).length, lowOn = SHOWN.has(1) && SHOWN.has(2);
   return `<div class="maplegend"><span>${esc(T(U.legend))}</span>${[5,4,3,2,1].map(n => `<button type="button" class="lgbtn" data-sc="${n}" aria-pressed="${SHOWN.has(n)}" title="${esc(T(U.lgToggle).replace('{n}', n))}"><i style="--c:var(--s${n})"></i>${n}</button>`).join('')}
     <span style="color:var(--ink)">${STAR}<span style="color:var(--muted)">${esc(T(U.topStar))}</span></span>
-    ${lowOn ? `<button type="button" class="lowbtn" id="lowBtn">${esc(T(U.hideLow))}</button>` : (low ? `<button type="button" class="lowbtn" id="lowBtn">${esc(T(U.showLow))} (${low})</button>` : '')}</div>`;
+    ${lowOn ? `<button type="button" class="lowbtn" id="lowBtn">${esc(T(U.hideLow))}</button>` : (low ? `<button type="button" class="lowbtn" id="lowBtn">${esc(T(U.showLow))} (${low})</button>` : '')}
+    <p class="lgexp">${[5,4,3,2,1].map(n => `<b>${n}</b> ${esc(T(U.sc[n]))}`).join(' · ')}</p></div>`;
 }
 // lijst van de plekken die op de kaart staan (bij inzoomen: alleen wat in beeld is)
 function drawMapList(markers){
@@ -336,7 +337,7 @@ function drawMapList(markers){
   list = list.slice().sort((a,b) => b.score - a.score || b.star - a.star || T(a.s.name).localeCompare(T(b.s.name)));
   const shown = LISTALL ? list : list.slice(0, 10);
   const cats = m => CAT ? `${esc(catName(BY[CAT]))} · ${esc(T(U.chance).toLowerCase())} ${m.score}`
-    : m.s.recs.slice().sort((a,b) => b.score - a.score).map(r => `${esc(catName(BY[r.no]))} ${r.score}`).join(' · ');
+    : m.s.recs.slice().sort((a,b) => b.score - a.score).map(r => `${esc(catName(BY[r.no]))} ${esc(T(U.chance).toLowerCase())} ${r.score}`).join(' · ');
   el.innerHTML = `<h3>${esc(T(VIEW ? U.listView : U.listMap))} <span class="note">(${list.length})</span></h3>
     ${list.length ? `<ol>${shown.map(m => `<li><button type="button" class="pl" data-id="${esc(m.id)}"${SEL===m.id?' aria-current="true"':''}>
       ${m.star ? `<span class="d st" style="--c:var(--s${m.score})">${STAR}</span>` : `<span class="d" style="--c:var(--s${m.score})"></span>`}
@@ -472,7 +473,7 @@ function renderSpecies(no){
   if (!c || !P) return renderMissing(c);
   const recs = P.spots.map(id => { const s = SPOT[id]; return {s, r:s.recs.find(r => r.no === no)}; });
   const local = {}; P.sources.forEach((g,i) => local[g] = i+1);
-  const cite = ids => (ids||[]).filter(g => local[g]).map(g => `<a class="cite" href="#bron-${no}-${local[g]}">[${local[g]}]</a>`).join('');
+  const cite = ids => (ids||[]).filter(g => local[g]).sort((a,b) => local[a] - local[b]).map(g => `<a class="cite" href="#bron-${no}-${local[g]}">[${local[g]}]</a>`).join('');
   const top = recs[0], best = top.r.score;
   let [x0,y0,x1,y1] = c.range ? bboxOfPath(c.range) : [720,284,0,0];
   recs.forEach(({s}) => { const [x,y] = proj(s.lat, s.lon); x0=Math.min(x0,x); x1=Math.max(x1,x); y0=Math.min(y0,y); y1=Math.max(y1,y); });
@@ -495,7 +496,6 @@ function renderSpecies(no){
       <dl class="summary">
         <div><dt>${esc(T(U.bestPlace))}</dt><dd>${esc(T(top.s.name))}<small>${esc(T(top.s.country))}</small></dd></div>
         <div><dt>${esc(T(U.bestTime))}</dt><dd>${esc(season1)}</dd></div>
-        <div><dt>${esc(T(U.chance))}</dt><dd>${scoreHtml(best)}</dd></div>
       </dl>
       <p class="lead">${esc(story)}${km ? `<span class="kans">${esc(km[0])}</span>` : ''}</p>
     </div>

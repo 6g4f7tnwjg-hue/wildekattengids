@@ -14,7 +14,7 @@ Maker: J. Gelens. Stand: 16 oktober 2026. Alle 42 soorten hebben een soortpagina
 3. Bouwen: `cd spottersgids && python3 bron/build.py` (de melding over Ndutu bij soort 1 is bekend en onschuldig).
 4. Lokaal testen zoals Pages het serveert: `python3 -m http.server 8765` in de repo-root, dan `http://localhost:8765/spottersgids/` (Playwright met Chromium uit `/opt/pw-browsers` werkt; Python-pakket `playwright` eventueel eerst `pip install`). Telefoon testen met `is_mobile=True`.
 5. Committen en pushen naar `spottersgids-europa` (afspraak: na elke wijziging).
-6. Live zetten = pull request `spottersgids-europa` → `main`; alleen maken als de gebruiker erom vraagt. De gebruiker voegt zelf samen. Daarna duurt het ±1 minuut tot de site bijgewerkt is.
+6. Live zetten: **Claude zet het zelf live** (afspraak 16-10-2026, "gelijk live"): na testen pushen naar `spottersgids-europa` én naar `main` (`git push origin spottersgids-europa:main`, fast-forward). Geen pull request meer nodig. Daarna ±1 minuut tot de site bijgewerkt is.
 
 ## Opbouw van `spottersgids/`
 | Pad | Wat |
@@ -37,7 +37,7 @@ Topspot-regel in de bouw: plek met score 5 op een soortpagina = topspot; score 4
 
 ## Afspraken met de gebruiker (belangrijk)
 - **Alleen aanpassen wat gevraagd wordt.** Bij onduidelijke wensen **doorvragen**; bij een keuze eerst een voorstel met advies geven ("Wat stel je voor" = opties + aanbeveling, nog niet bouwen).
-- Na elke wijziging committen en pushen.
+- Na elke wijziging committen, pushen en direct live zetten (naar `main`).
 - Taal: Nederlands naar de gebruiker; site NL/EN. Gidsnamen uit de KATalogue (bijv. sneeuwpanter, Sundaluipaardkat, het luipaard). Let op het Duitse "stuft/stufte" in statusteksten → "deelt in"/"zette".
 - Schrijfstijl: avontuurlijk, eerlijk, "je"; intro eindigt met "Kans: X – …".
 - Kansscore eerlijk (5 bijna zeker … 1 alleen geluk/cameravallen).

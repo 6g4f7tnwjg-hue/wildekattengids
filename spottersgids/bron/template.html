@@ -169,7 +169,7 @@ main{display:block;min-height:70vh}
 /* kaart */
 .mapbox{background:var(--paper);border:1px solid var(--line);border-radius:12px;overflow:hidden}
 .mapscroll{overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin}
-@media (max-width:600px){.mapscroll.world .map{width:680px;max-width:none}}
+@media (max-width:600px){.mapscroll.world .map{width:960px;max-width:none}}
 .map{display:block;width:100%;height:auto;background:var(--sea);touch-action:manipulation}
 .map .land{fill:var(--land)}
 .map .grat{stroke:color-mix(in srgb,var(--ink) 7%,transparent);fill:none}
@@ -464,7 +464,7 @@ function fit(b, r){
   return [x,y,w,h];
 }
 // op een telefoon mag een werelddeel hoger worden, zodat het het scherm vult
-const ratioFor = b => Math.max(narrow() ? 1.05 : 1.9, Math.min(W/H, b[2]/b[3]));
+const ratioFor = b => narrow() ? Math.max(.8, Math.min(1, b[2]/b[3])) : Math.max(1.9, Math.min(W/H, b[2]/b[3]));
 const GRAT = (() => { let g=''; for(let lon=-150; lon<180; lon+=30) g+=`M${(lon+180)*2},0V284`; for(let lat=60; lat>-60; lat-=30) g+=`M0,${(84-lat)*2}H720`; return g; })();
 const starPath = (x, y, R) => { let d=''; for (let i=0;i<10;i++){ const a = -Math.PI/2 + i*Math.PI/5, rr = i%2 ? R*.48 : R; d += (i?'L':'M') + (x+rr*Math.cos(a)).toFixed(2) + ',' + (y+rr*Math.sin(a)).toFixed(2); } return d + 'Z'; };
 function mapSvg(opts){
@@ -645,7 +645,7 @@ function drawHomeMap(){
   const world = worldMode();
   const keep = world ? (mw.scrollLeft || LASTSCROLL) : LASTSCROLL;
   mw.className = 'mapscroll' + (world ? ' world' : '');
-  const cw = world && narrow() ? 680 : (mw.clientWidth || 360);
+  const cw = world && narrow() ? 960 : (mw.clientWidth || 360);
   const {all, box, range} = homeData();
   const markers = all.filter(m => SHOWN.has(m.score)).map(m => ({...m, sel:SEL===m.id}));
   markers.sort((a,b) => (a.sel - b.sel) || (a.score - b.score));

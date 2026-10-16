@@ -149,7 +149,7 @@ main{display:block;min-height:70vh}
 /* kaart */
 .mapbox{background:var(--paper);border:1px solid var(--line);border-radius:12px;overflow:hidden}
 .mapscroll{overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin}
-@media (max-width:600px){.mapscroll.world .map{width:680px;max-width:none}}
+@media (max-width:600px){.mapscroll.world .map{width:960px;max-width:none}}
 .map{display:block;width:100%;height:auto;background:var(--sea);touch-action:manipulation}
 .map .land{fill:var(--land)}
 .map .grat{stroke:color-mix(in srgb,var(--ink) 7%,transparent);fill:none}

@@ -2,6 +2,30 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 16 oktober 2026 – Portugal
+
+Nieuwe landpagina `portugal/` (bron: `bron/gidsen/pt.html`), in het Nederlands, Engels en Portugees (Europees Portugees). Eén pagina met een filter per regio (de NUTS-regio’s van 2024: Norte, Centro, Oeste en Taagvallei, Lissabon en Setúbal, Alentejo, Algarve, Azoren, Madeira; alleen regio’s met locaties krijgen een knop), plus kaart, routeplanner, recente geboortes, soortpagina’s, filters op type en labels en het meldformulier. Spanje staat grijs op de kaart.
+
+**Aantallen**
+- **7 locaties** met wilde katachtigen: 3 dierentuinen (Jardim Zoológico de Lisboa, Zoo Santo Inácio, Zoo de Lagos), 2 dierenparken (Zoo da Maia, Europaradise), 1 wildpark (Parque Biológico da Serra da Lousã) en 1 safaripark (Badoca). Europaradise heeft alleen een onzekere vermelding.
+- **10 soorten bevestigd**: leeuw, tijger, luipaard, jaguar, nevelpanter, cheetah, Euraziatische lynx, Iberische lynx, rode lynx, serval. Ocelot (Lagos) alleen onzeker.
+- 23 vermeldingen in de hoofdtabel, waarvan 3 onzeker (zie `TWIJFELGEVALLEN.md`).
+- Route met alle soorten in twee parken: Jardim Zoológico de Lisboa en Zoo de Lagos.
+- 1 recente geboorte: drie Perzische luipaarden in Lissabon (april 2026).
+- 48 andere locaties onderzocht zonder katten (fokcentrum Iberische lynx, gepland, gesloten, opvang, aquaria, quintas pedagógicas e.d.); op de Azoren en Madeira geen wilde katten.
+
+**Werkwijze**
+- Basislijst uit Zootierliste (alle 202 katachtige taxa, “Aktuelle” en “Ehemalige”: 38 Portugese instellingen), de EAZA-ledenkaart (7 Portugese leden) en de AIZA-ledenlijst (7 Portugese leden).
+- Officiële lijst: vergunningen geeft sinds 2012 de DGAV (niet het ICNF). De enige gepubliceerde lijst “Parques Zoológicos Licenciados” (24 parken) is van 28-04-2021: **verouderd**. Azoren en Madeira hebben eigen diensten.
+- Zes onderzoeksagenten (Zootierliste en officiële lijsten, Norte, Centro, Lissabon + Alentejo, Algarve + eilanden, opvang/particulieren/circussen) en één vervolgagent voor de open punten. Eén JSON-formaat met eigen naamvoorvoegsels, samengevoegd met een script; regio’s bepaald uit de coördinaten (NUTS 2024).
+- Type: dierentuin bij lidmaatschap van EAZA of AIZA; safariparken en wildparken houden hun eigen type.
+- Circussen: wilde dieren verboden (Lei 20/2019, overgang tot eind 2025); de laatste circuskatten gingen naar AAP Primadomus (Spanje, 2022 en 2026). Particulieren mogen sinds 2018 geen wilde katten houden (Portaria 86/2018).
+- De gids is met een script afgeleid van de Spaanse gids: Spaans → Portugees in de code (taaltabellen `SPPT`, `PTD`, `R1PT` …), de vaste teksten door een vertaalagent naar het Portugees vertaald, daarna gegevens en tekstblokken (NL/EN, Portugees via een vertaaltabel). Geen foto’s van parken gezocht.
+
+**Hoofdpagina**: Portugal heeft een vlag, kleur (donkerblauw), tegel en kaartvorm (vasteland; het kaartkader was al groot genoeg), staat in “alle soorten”, “parken op aantal soorten”, het overzicht per land, het zoeken en de tellerregel. Landenlijsten in titels en beschrijvingen in zes talen bijgewerkt. Het taalmenu van de hoofdpagina blijft zes talen; Portugees staat in het taalmenu van de Portugese gids. `locatietypes.json`/`.js` en het meldformulier hebben nu ook Portugees.
+
+**Gecontroleerd**: de Portugese pagina (NL/EN/PT) en de hoofdpagina (zes talen) op 375 px: geen fouten, geen horizontaal scrollen, geen Spaanse resten. Regiofilter, kaart, zoeken, locatie- en soortpagina’s, route, interne links en de Claude-pagina.
+
 ## 15 oktober 2026 – Ierland
 
 Nieuwe landpagina `ierland/` (bron: `bron/gidsen/ie.html`), in het Nederlands en Engels (geen Iers, op verzoek). Eén pagina met een filter per provincie (Leinster, Munster, Ulster-deel; Connacht heeft geen locaties met katten), plus kaart, routeplanner, recente geboortes, soortpagina’s, filters op type en labels en het meldformulier. Noord-Ierland staat niet in deze gids: grijs op de kaart, met een verwijzing naar de VK-gids.

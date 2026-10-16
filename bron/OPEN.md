@@ -8,7 +8,7 @@ Bijgehouden door Claude. Bijwerken als een punt is opgelost.
 - **Overzeese gebieden van Frankrijk** (bijv. Zoo de Guyane: jaguar, ocelot, margay): nog beslissen of ze erbij komen.
 - **Foto's van Franse parken**: veel locaties hebben nog geen foto (Commons gaf een limiet). Een rustige extra ronde.
 - **Maandelijkse controle**: een geplande taak die nieuws over geboortes, vertrek en aankomst zoekt en voorstellen doet.
-- **Volgend land**: het Verenigd Koninkrijk staat erin (14-10-2026, NL/EN/DE), Ierland ook (15-10-2026, NL/EN). Keuze voor daarna volgt. Als de website sneller moet: de vaste JS van de deelstaatblokken één keer delen in plaats van per blok (scheelt ±4 MB).
+- **Volgend land**: het Verenigd Koninkrijk staat erin (14-10-2026, NL/EN/DE), Ierland ook (15-10-2026, NL/EN), Portugal ook (16-10-2026, NL/EN/PT). Keuze voor daarna volgt. Als de website sneller moet: de vaste JS van de deelstaatblokken één keer delen in plaats van per blok (scheelt ±4 MB).
 - **VK nagaan**: Longleat (eigen site geblokkeerd; alles uit nieuws), Whipsnade (eigen site geblokkeerd), Amazon World (Isle of Wight: oude pagina noemt ocelot en Geoffroy’s kat), Green Dragon Eco Farm (alleen Zootierliste: lynx en wilde kat; niet opgenomen), Mole Hall en Galloway Wildlife Park (mogelijk dicht), Borth Wild Animal Kingdom (katten 2020–2021 weg). Een officiële landelijke lijst van vergunde dierentuinen is niet openbaar; de nieuwste volledige lijst is een FOI-antwoord van APHA uit 2018–2019.
 - **Zwitserland in het Frans**: de gids is nu NL/EN/DE. Frans erbij kan met een tweede versie van elk regioblok (NL/EN/FR) die de pagina laadt bij de taalknop FR.
 - **Oostenrijk/Zwitserland nagaan**: Tiger’s World (Judenau, NÖ) — alleen op een toeristische site, eigen site niet te openen, niet opgenomen; Luchsgehege Loipersdorf (ligging en publiek onbekend); Parc animalier de Prêles (BE) niet nagelopen; Bioparc Genève houdt ook hybride wilde katten en savannahkatten (niet meegeteld).
@@ -27,6 +27,11 @@ Bijgehouden door Claude. Bijwerken als een punt is opgelost.
   - **Twijfelachtige “bevestigd”**: Zoo de Castellar, MundoPark, Natura Parc, Cocodrilo Park en Safari Mallorca rusten op ongedateerde eigen lijsten of een plattegrond plus een Zootierliste-bezoek in 2025 (zie `TWIJFELGEVALLEN.md`).
   - **Registers**: geen openbare lijst behalve Castilië en León (open data 2023). Particuliere houders zijn daardoor niet volledig na te gaan.
   - **Kaart**: de Balearen en de Canarische Eilanden staan op verzoek niet op de kaarten (alleen in de lijst en het regiofilter).
+- **Portugal (16-10-2026)**:
+  - **Top 10**: Jardim Zoológico de Lisboa is een sterke kandidaat (9 bevestigde soorten, waaronder de Iberische lynx, die je in Portugal alleen daar ziet, nevelpanter, jaguar en Perzische luipaarden met jongen). Beslissen of hij in de vaste lijst komt (die telt nu tien parken).
+  - **Officiële lijst**: de DGAV-lijst “Parques Zoológicos Licenciados” is van 28-04-2021 (24 parken). Een nieuwere lijst opvragen bij de DGAV.
+  - **Nagaan**: Europaradise (tijgers na de heropening in mei 2026?), Zoo da Maia (leeuw), Zoo de Lagos (ocelot weg? lynx Thea), Zoo Santo Inácio (cheetahs, alleen op de plattegrond), Lissabon (nevelpanter, aantal en geslacht; Euraziatische lynx in 2026), Parque Biológico de Gaia (komen de Iberische lynxen?).
+  - **Hoofdpagina in het Portugees**: de hoofdpagina heeft zes talen; Portugees is alleen een gidstaal. Eventueel later als zevende taal toevoegen.
 - **Ierland (15-10-2026)**:
   - **Top 10**: geen Iers park komt in de buurt (Fota en Emerald Park scoren 30; nummer 10 heeft 46). Niets veranderd.
   - **Officiële lijst**: de NPWS publiceert geen lijst van vergunde dierentuinen; de nieuwste volledige lijst is van 8-9-2022 (Kamervragen, 55 geïnspecteerde dierentuinen). Een actuele lijst kan bij zoos@npws.gov.ie of met een FOI-verzoek. “Oak Cottage” (Kilkenny) van die lijst niet thuisgebracht.
@@ -39,6 +44,21 @@ Bijgehouden door Claude. Bijwerken als een punt is opgelost.
 - **Controle op gemiste parken in Frankrijk (13-10-2026)**: vergeleken met de officiële lijst (ICPE-rubriek 2140, Géorisques: 196 vergunde dierenparken), Zootierliste en Nature et Zoo; geen gemiste locaties met katten. Nog onduidelijk, mogelijk navragen bij de DDPP: een vergunning op naam van een particulier in Grignols (Gironde) en de vereniging Gaia in Allennes-les-Marais (Nord); van geen van beide is een site of bezoekinformatie gevonden.
 - **Sigean**: Nature et Zoo noemt een serval (sinds 2023), de eigen site en het persdossier 2026 niet. Niet opgenomen.
 - **Citadelle van Besançon**: in februari 2024 kwam er een in beslag genomen serval binnen (tijdelijke opvang?); niet op de eigen site. Niet opgenomen.
+
+## Bronnen en valkuilen (geleerd bij Portugal, oktober 2026)
+
+**Bronnen Portugal**
+- **Vergunningen bij de DGAV, niet het ICNF.** Sinds Decreto-Lei 104/2012 geeft de DGAV de dierentuinvergunningen; de lijst “Parques Zoológicos Licenciados” (met toegestane diergroepen per park, bijv. “todas exceto elefantes” of alleen vogels) staat op dgav.pt, versie 28-04-2021. Het ICNF gaat over CITES en beschermde soorten en beheert sinds juni 2026 zelf het lynxfokcentrum CNRLI (Silves).
+- **AIZA** heeft ook Portugese leden (Badoca, Monte Selvagem, Krazy World, Parque Biológico de Gaia, Lagos, Zoomarine, Fluviário de Mora); de dierentuin van Lissabon is alleen EAZA-lid.
+- **Circussen en particulieren**: Lei 20/2019 (overgang tot eind 2025, uitvoering via DL 47/2020 en Portaria 199/2020); ex-circuskatten via het ICNF naar AAP Primadomus (Spanje). Portaria 86/2018 verbiedt particulieren alle Felidae behalve de huiskat (ook hybriden).
+- **Revista ZOO**: het jaarlijkse tijdschrift van de dierentuin van Lissabon (bijlage van Expresso, augustus) noemt dieren en aankomsten die niet op de site staan (bijv. het jaguarpaar Pawa en Feliciana, 2025).
+- **Kaart en regio’s**: GISCO (Eurostat) NUTS 2024, niveau 2; Natural Earth 50m voor de landvorm.
+
+**Valkuilen**
+- **Portugese namen:** *lince-ibérico* = Iberische lynx, *lince-euroasiático*/*lince-dos-Cárpatos* = Euraziatische lynx, *lince-vermelho* = rode lynx, *chita* = cheetah, *gato-bravo* = wilde kat, *leopardo-da-pérsia* = Perzische luipaard.
+- **Twee parken in hetzelfde dorp**: Zoo Santo Inácio en het Parque Biológico de Gaia liggen allebei in Avintes; het samenvoegscript koppelde ze op afstand. Controleer samengevoegde locaties met verschillende namen.
+- **1-aprilgrap**: een bericht in DN Madeira over een dierentuin met sneeuwluipaarden (Palheiro) was een 1-aprilgrap (2022).
+- **Zootierliste-coördinaten** kunnen fout zijn (Santo Inácio stond bij 40,15° N); gebruik de EAZA-kaart of OpenStreetMap.
 
 ## Bronnen en valkuilen (geleerd bij Ierland, oktober 2026)
 
@@ -262,3 +282,10 @@ Regel (voor alle landen, 14-10-2026): bevestigd alleen met een recente bron (202
 - [w] Ardmore Open Farm – Serval: alleen ZooChat en Zootierliste (09/2025, twee dieren uit Nederland); niet op de eigen site.
 - [w] Ardmore Open Farm – Euraziatische lynx: alleen een bezoeker (begin 2025) en een ongedateerde toeristische vermelding.
 - [w] Errigal View Pet Zoo – Serval: alleen Zootierliste en ZooChat (09/2025); park in 2026 open, maar geen bron uit 2026 noemt een serval.
+
+### Portugal
+
+- [w] Europaradise – Tijger: na de stormschade en de heropening (mei 2026) geen bevestiging dat de tijgers te zien zijn.
+- [w] Zoo da Maia – Leeuw: alleen Zootierliste (03/2025) en ongedateerde reviews; niet op de eigen site.
+- [w] Zoo de Lagos – Ocelot: alleen Zootierliste (laatst gezien 02/2019); niet op de eigen dierenlijst.
+

@@ -50,6 +50,7 @@ Topspot-regel in de bouw: plek met score 5 op een soortpagina = topspot; score 4
 - De gids mag openbaar zijn en gevonden worden.
 
 ## Wat er gebouwd is (functies)
+- Meldpagina `#melden` (en `#melden-<nr>` met soort vooraf gekozen), 16-10-2026, net als 'Rapporteer' in de dierentuingids: verstuurt via Web3Forms (zelfde sleutel `W3F_KEY` als de dierentuingids) naar de maker. Keuzes: kat gezien / plek ontbreekt / info klopt niet / iets anders, soort, plek (of andere plek), datum, opmerkingen (max. 500), samenvatting. Link in menu Meer, op Over mij en onderaan elke soortpagina. Testen met een nagebootste verzending (Playwright route), niet echt versturen.
 - Losse soortpagina's (16-10-2026): NL op `/spottersgids/manoel/`, EN op `/spottersgids/en/pallas-cat/`. Links naar soorten gaan via `spHref()`; de taalknop op een soortpagina gaat naar de pagina in de andere taal. `window.SG_PAGE` in de pagina vertelt het script welke soort/taal.
 - Telefoon (≤820 px): de balk met werelddelen en tabbladen verdwijnt bij omlaag scrollen en komt terug bij omhoog scrollen (16-10-2026).
 - Start: werelddeelfilter; tabs **Kaart · Topspots · Soorten**. Fotorij "kies een kat": per werelddeel alleen katten van dat werelddeel (kleur = met spotplek, grijs = leeft er, nog geen plek); kies je een kat, dan blijft de kaart in het werelddeel met leefgebied erachter. Sterren = topspots.
@@ -59,7 +60,6 @@ Topspot-regel in de bouw: plek met score 5 op een soortpagina = topspot; score 4
 - Menu: Soorten · Topspots · Katten in Europa · Meer (Verantwoord spotten, Paklijst, Over mij).
 
 ## Open punten / mogelijke vervolgstappen
-- **Contactformulier** op Over mij: gebruiker maakt zelf een formulier en geeft de link.
 - `spottersgids/sitemap.xml` is nog nergens aangemeld (root-`robots.txt`/`sitemap.xml` liggen buiten de map); kan via Google Search Console.
 - Verbeterlijst uit de review van 16-10-2026, nog open: dierentuinfoto's (zoeken naar vrije foto's uit het wild). Gedaan op 16-10: IUCN-status gecontroleerd (jaguarundi NT 2026, Aziatische goudkat VU, kodkod LC 2025 kloppen; goudkattekst noemt 2023, Wikipedia 2025 – nakijken), kansuitleg in legenda startkaart, 'Tijger kans 5' in kaartlijst, kans uit samenvattingsvak (2 vakken), bronnummers gesorteerd, Ko-fi in voettekst, icoon (`icon.svg`, `icon-180.png`) en deelvoorbeeld (og-tags; soortpagina's met eigen foto). Ook gedaan: reisverslagen als uitzondering toegestaan, soortkaart met landsgrenzen en -namen, tilcayo 'de nieuwste kattensoort ter wereld', kaarten op telefoon groter (wereld 960 px breed, overige kaarten vierkant).
 - **Later (gebruiker):** link naar de Spottersgids vanaf de bestaande site en opname in de root-`sitemap.xml`. Dat raakt bestanden buiten `spottersgids/`, dus alleen op verzoek.

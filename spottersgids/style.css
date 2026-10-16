@@ -160,6 +160,25 @@ main{display:block;min-height:70vh}
 .map .mk .dot{stroke:var(--paper);stroke-linejoin:round}
 .map .mk.sel .dot{stroke:var(--ink)}
 .map .mk text{font-family:var(--label);font-weight:600;fill:var(--paper);text-anchor:middle;dominant-baseline:central;pointer-events:none}
+.rp-form{display:grid;gap:16px;background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:12px;padding:16px;max-width:640px;margin-top:18px}
+.rp-form fieldset{border:0;margin:0;padding:0}
+.rp-form legend,.rp-l{display:block;font-weight:700;margin:0 0 6px}
+.rp-types{display:grid;gap:8px}
+.rp-types label{display:flex;gap:10px;align-items:flex-start;cursor:pointer}
+.rp-types input{width:19px;height:19px;margin:3px 0 0;accent-color:var(--accent);flex:none}
+.rp-form select,.rp-form input[type=date],.rp-form input[type=text],.rp-form textarea{font:inherit;font-size:16px;padding:9px 11px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);border-radius:8px;width:100%;max-width:440px;box-sizing:border-box}
+.rp-form select:focus,.rp-form input:focus,.rp-form textarea:focus{border-color:var(--accent);outline:none}
+.rp-form input[type=text]{margin-top:8px}
+.rp-form textarea{resize:vertical;display:block;min-height:96px}
+.rp-cnt{display:block;color:var(--muted);font-size:.85rem;margin-top:4px}
+.rp-sum{margin:0;padding:10px 12px;border:1.5px dashed var(--line);border-radius:8px;line-height:1.45}
+.rp-sum.leeg{color:var(--muted)}
+.rp-go{font:inherit;font-weight:700;padding:11px 18px;border:0;background:var(--olive);color:var(--paper);border-radius:99px;cursor:pointer;justify-self:start}
+.rp-go:disabled{opacity:.45;cursor:not-allowed}
+.rp-msg{margin:0;min-height:1.4em}
+.rp-msg.fout{color:#A3242B}
+.rp-msg.ok{color:var(--olive);font-weight:700}
+.rp-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 .lgexp{flex-basis:100%;margin:0;font-size:.82rem;line-height:1.5}
 .lgexp b{color:var(--ink)}
 .maplegend{display:flex;flex-wrap:wrap;gap:6px 14px;padding:10px 14px;border-top:1px solid var(--line);font-size:.9rem;color:var(--muted);align-items:center}

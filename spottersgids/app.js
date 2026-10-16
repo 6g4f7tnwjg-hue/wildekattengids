@@ -20,7 +20,7 @@ const U = {
   brandSub:{nl:'wilde katten · J. Gelens',en:'wild cats · J. Gelens'},
   navSpecies:{nl:'Soorten',en:'Species'}, navTop:{nl:'Topspots',en:'Top spots'}, navMap:{nl:'Kaart',en:'Map'},
   navResp:{nl:'Verantwoord spotten',en:'Responsible spotting'}, navEur:{nl:'Katten in Europa',en:'Cats in Europe'},
-  navPack:{nl:'Paklijst',en:'Packing list'}, navAbout:{nl:'Over mij',en:'About me'}, navMore:{nl:'Meer',en:'More'},
+  navPack:{nl:'Paklijst',en:'Packing list'}, navAbout:{nl:'Over mij',en:'About me'}, navReport:{nl:'Melden',en:'Report'}, navMore:{nl:'Meer',en:'More'},
   sub:{nl:'Waar je alle 42 wilde kattensoorten in het wild kunt zien, hoe groot je kans is en hoe je ze vindt.',en:'Where to see all 42 wild cat species in the wild, how good your chances are and how to find them.'},
   all:{nl:'Hele wereld',en:'Whole world'},
   topSub:{nl:'Plekken waar je een soort (bijna) zeker ziet, mits je de tijd neemt en in het goede seizoen gaat.',en:'Places where you will (almost) certainly see a species, as long as you take your time and go in the right season.'},
@@ -164,7 +164,7 @@ function bindMarkers(root, fn){
 
 /* ---------- navigatie ---------- */
 const NAV = [['soorten','navSpecies'],['topspots','navTop'],['europa','navEur']];
-const MORE = [['verantwoord','navResp'],['paklijst','navPack'],['over','navAbout']];
+const MORE = [['verantwoord','navResp'],['paklijst','navPack'],['melden','navReport'],['over','navAbout']];
 function renderChrome(route){
   document.documentElement.lang = L;
   document.title = (SGP && route.page === SGP.no && L === SGP.lang) ? INIT_TITLE : (route.title ? `${route.title} · ${T(U.title)}` : T(U.title));
@@ -529,7 +529,8 @@ function renderSpecies(no){
   ${c.photos.length > 1 ? `<section class="sec"><h2 style="margin-bottom:14px">${esc(T(U.photos))}</h2><div class="gallery">${c.photos.slice(1).map(p => `<figure><div class="ph">${img(p, catName(c))}</div><figcaption>${credit(p.cr)}</figcaption></figure>`).join('')}</div></section>` : ''}
   <section class="sec read anchor" id="bronnen"><h2 style="margin-bottom:14px">${esc(T(U.sources))}</h2>
     <ol class="sources">${P.sources.map((g,i) => `<li id="bron-${no}-${i+1}"><a href="${esc(SRC[g].url)}" target="_blank" rel="noopener">${esc(T(SRC[g].title))}</a></li>`).join('')}</ol>
-    <p class="note" style="margin-top:14px">${esc(L==='nl'?'Foto’s, leefgebied en IUCN-status: De KATalogue.':'Photos, range and IUCN status: De KATalogue.')}</p></section>
+    <p class="note" style="margin-top:14px">${esc(L==='nl'?'Foto’s, leefgebied en IUCN-status: De KATalogue.':'Photos, range and IUCN status: De KATalogue.')}</p>
+    <p style="margin-top:14px">${esc(L==='nl'?'Zelf deze kat gezien, of klopt er iets niet?':'Seen this cat yourself, or is something wrong?')} <a class="btnlink" href="#melden-${no}">${esc(L==='nl'?'Meld het hier':'Report it here')} →</a></p></section>
   </div>`;
   drawSpeciesMap(); bindAlso(no, recs);
   $$('.jump button').forEach(b => b.onclick = () => { const el = document.getElementById(b.dataset.go); if (el) el.scrollIntoView({block:'start', behavior:'smooth'}); });
@@ -571,6 +572,7 @@ function renderText(id){
   let html = `<div class="wrap sec"><div class="read prose"><span class="lbl">${esc(T(pg.eyebrow))}</span><h1>${esc(T(pg.title))}</h1>${T(pg.html)}`;
   if (id === 'europa') html += europaList();
   if (id === 'over') html += `<p><a class="kofi" href="${esc(KOFI_URL)}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 6h13a4 4 0 0 1 0 8h-1.1A6 6 0 0 1 10 19H9a5 5 0 0 1-5-5V6zm12 2v4h1a2 2 0 0 0 0-4h-1z"/></svg>${esc(L==='nl'?'Trakteer me op een koffie (Ko-fi)':'Buy me a coffee (Ko-fi)')}</a></p>`;
+  if (id === 'over') html += `<p><a class="btnlink" href="#melden">${esc(L==='nl'?'Stuur me een melding':'Send me a report')} →</a></p>`;
   if (pg.sources && pg.sources.length) html += `<h2>${esc(T(U.sources))}</h2><ol class="sources">${pg.sources.map(g => `<li><a href="${esc(SRC[g].url)}" target="_blank" rel="noopener">${esc(T(SRC[g].title))}</a></li>`).join('')}</ol>`;
   html += `</div></div>`;
   $('#main').innerHTML = html;
@@ -580,6 +582,87 @@ function europaList(){
   return `<div class="eurlist">${D.europe.map(e => { const c = BY[e.no], page = PAGES[e.no];
     const inner = `${img(c.photos[0], catName(c), false, true)}<div><span class="lbl">${esc(T(e.where))}</span><b style="font-family:var(--display);font-size:1.15rem">${esc(catName(c))}</b><span class="lat">${esc(c.la)}</span>${BEST[e.no]?scoreHtml(BEST[e.no]):''}<span>${esc(T(e.text))}</span></div>`;
     return page ? `<a class="eurrow" href="${spHref(e.no)}">${inner}</a>` : `<div class="eurrow">${inner}</div>`; }).join('')}</div>`;
+}
+
+/* ---------- melden (Web3Forms, gaat naar de maker; zelfde sleutel als de dierentuingids) ---------- */
+const W3F_KEY = '9494e3c0-9342-4457-a5d6-b795793b9ce4';
+const RP_TYPES = [['seen',{nl:'Ik heb een kat gezien',en:'I saw a cat'}],['missing',{nl:'Er ontbreekt een plek',en:'A place is missing'}],
+  ['wrong',{nl:'Informatie klopt niet of is verouderd',en:'Information is wrong or out of date'}],['other',{nl:'Iets anders',en:'Something else'}]];
+function renderReport(no){
+  const nl = L === 'nl', cats = D.cats.slice().sort((a,b) => catName(a).localeCompare(catName(b)));
+  const today = new Date().toISOString().slice(0,10);
+  $('#main').innerHTML = `<div class="wrap sec"><div class="read prose">
+    <span class="lbl">${esc(nl?'Contact':'Contact')}</span><h1>${esc(T(U.navReport))}</h1>
+    <p>${esc(nl?'Zelf een wilde kat gezien, een goede plek die hier ontbreekt, of iets dat niet (meer) klopt? Laat het weten. Zo blijft de gids eerlijk en actueel.':'Seen a wild cat yourself, know a good place that is missing, or found something that is wrong or out of date? Let me know. That keeps the guide honest and up to date.')}</p></div>
+    <form class="rp-form" id="rp-form" onsubmit="return false">
+      <fieldset><legend>${esc(nl?'Wat wil je melden?':'What would you like to report?')}</legend><div class="rp-types">
+        ${RP_TYPES.map(([v,l]) => `<label><input type="radio" name="rp-type" value="${v}"><span>${esc(T(l))}</span></label>`).join('')}</div></fieldset>
+      <div><label class="rp-l" for="rp-cat">${esc(nl?'Soort':'Species')}</label>
+        <select id="rp-cat"><option value="0">${esc(nl?'Weet ik niet / geen':'Not sure / none')}</option>${cats.map(c => `<option value="${c.no}"${c.no===no?' selected':''}>${esc(catName(c))}</option>`).join('')}</select></div>
+      <div><label class="rp-l" for="rp-spot">${esc(nl?'Plek':'Place')}</label><select id="rp-spot"></select>
+        <input type="text" id="rp-spot2" maxlength="120" placeholder="${esc(nl?'Naam van de plek, gebied en land':'Name of the place, area and country')}" hidden></div>
+      <div><label class="rp-l" for="rp-date">${esc(nl?'Datum (van je waarneming of bezoek)':'Date (of your sighting or visit)')}</label><input type="date" id="rp-date" value="${today}" max="${today}"></div>
+      <div><label class="rp-l" for="rp-opm">${esc(nl?'Opmerkingen':'Comments')} <span style="font-weight:400;color:var(--muted)">(${esc(nl?'optioneel':'optional')})</span></label>
+        <textarea id="rp-opm" maxlength="500" placeholder="${esc(nl?'Bijvoorbeeld: tijdens een nachtrit, langs de bosrand, ongeveer 30 meter afstand':'For example: on a night drive, along the forest edge, about 30 metres away')}"></textarea><span class="rp-cnt" id="rp-cnt">0 / 500</span></div>
+      <div class="rp-hp" aria-hidden="true"><input type="text" id="rp-bot" tabindex="-1" autocomplete="off"></div>
+      <div><span class="rp-l">${esc(nl?'Je melding':'Your report')}</span><p class="rp-sum leeg" id="rp-sum"></p></div>
+      <button type="button" class="rp-go" id="rp-go" disabled>${esc(nl?'Plaats melding':'Submit report')}</button>
+      <p class="rp-msg" id="rp-msg" aria-live="polite"></p>
+    </form>
+    <p class="note" style="margin-top:14px;max-width:640px">${esc(nl?'Je melding gaat rechtstreeks naar de maker van de gids en is niet openbaar. Wil je een reactie, zet dan je e-mailadres bij Opmerkingen.':'Your report goes straight to the guide’s author and is not public. If you would like a reply, add your email address under Comments.')}</p></div>`;
+  const fillSpots = () => {
+    const c = +$('#rp-cat').value, P = c && PAGES[c];
+    const opts = P ? P.spots.map(id => `<option value="${esc(id)}">${esc(T(SPOT[id].name))}, ${esc(T(SPOT[id].country))}</option>`).join('') : '';
+    $('#rp-spot').innerHTML = opts + `<option value="_">${esc(nl?'Andere plek…':'Another place…')}</option>`;
+  };
+  fillSpots();
+  $('#rp-cat').onchange = () => { fillSpots(); rpUpdate(); };
+  $('#rp-form').addEventListener('input', rpUpdate); $('#rp-form').addEventListener('change', rpUpdate);
+  $('#rp-go').onclick = rpSend;
+  rpUpdate();
+  return T(U.navReport);
+}
+function rpData(){
+  const t = (document.querySelector('input[name="rp-type"]:checked') || {}).value || '';
+  const c = +$('#rp-cat').value, sp = $('#rp-spot').value, other = sp === '_';
+  $('#rp-spot2').hidden = !other;
+  const place = other ? $('#rp-spot2').value.trim() : (SPOT[sp] ? T(SPOT[sp].name) + ', ' + T(SPOT[sp].country) : '');
+  const placeNl = other ? place : (SPOT[sp] ? SPOT[sp].name.nl + ', ' + SPOT[sp].country.nl : '');
+  return {t, c, place, placeNl, date: $('#rp-date').value, opm: $('#rp-opm').value.trim()};
+}
+function rpUpdate(){
+  const d = rpData(), nl = L === 'nl', el = $('#rp-sum');
+  $('#rp-cnt').textContent = $('#rp-opm').value.length + ' / 500';
+  const type = RP_TYPES.find(([v]) => v === d.t), cat = d.c ? catName(BY[d.c]) : (nl ? 'onbekende soort' : 'unknown species');
+  const ok = !!type && (d.t !== 'seen' || !!d.c) && (d.t === 'other' || !!d.place);
+  if (!type) { el.className = 'rp-sum leeg'; el.textContent = nl ? 'Kies hierboven wat je wilt melden en waar.' : 'Choose above what you want to report and where.'; }
+  else {
+    const dt = d.date ? new Date(d.date + 'T12:00').toLocaleDateString(nl ? 'nl-NL' : 'en-GB', {day:'numeric', month:'short', year:'numeric'}) : '';
+    el.className = 'rp-sum';
+    el.textContent = `${T(type[1])}: ${cat}${d.place ? (nl ? ' bij ' : ' at ') + d.place : ''}${dt ? (nl ? ', op ' : ', on ') + dt : ''}.` +
+      (!ok ? (nl ? (d.t === 'seen' && !d.c ? ' Kies nog een soort.' : ' Kies of vul nog een plek in.') : (d.t === 'seen' && !d.c ? ' Please choose a species.' : ' Please choose or enter a place.')) : '');
+  }
+  $('#rp-go').disabled = !ok;
+}
+function rpMsg(t, cls){ const m = $('#rp-msg'); m.textContent = t; m.className = 'rp-msg' + (cls ? ' ' + cls : ''); }
+async function rpSend(){
+  const d = rpData(), nl = L === 'nl', btn = $('#rp-go');
+  if ($('#rp-bot').value) return;
+  const type = RP_TYPES.find(([v]) => v === d.t), catNl = d.c ? BY[d.c].nl : 'onbekend';
+  btn.disabled = true; rpMsg(nl ? 'Bezig met versturen…' : 'Sending…');
+  const body = {access_key: W3F_KEY, subject: `Melding Spottersgids: ${type[1].nl} – ${catNl}${d.placeNl ? ' – ' + d.placeNl : ''}`, from_name: 'Spottersgids voor wilde katten',
+    Melding: $('#rp-sum').textContent.trim(), Soort_melding: type[1].nl, Soort: catNl, Plek: d.placeNl || '-', Datum: d.date || '-', Opmerkingen: d.opm || '-',
+    Gids: 'Spottersgids', Pagina: location.href, Taal: L, botcheck: ''};
+  try {
+    const r = await fetch('https://api.web3forms.com/submit', {method:'POST', headers:{'Content-Type':'application/json', 'Accept':'application/json'}, body: JSON.stringify(body)});
+    const j = await r.json().catch(() => ({}));
+    if (!(r.ok && j.success)) throw new Error(j.message || r.status);
+    rpMsg(nl ? 'Bedankt! Je melding is verstuurd.' : 'Thank you! Your report has been sent.', 'ok');
+    $('#rp-opm').value = ''; document.querySelectorAll('input[name="rp-type"]').forEach(x => x.checked = false); rpUpdate();
+  } catch(e) {
+    rpMsg(nl ? 'Versturen is niet gelukt. Probeer het later opnieuw.' : 'Sending failed. Please try again later.', 'fout');
+    btn.disabled = false;
+  }
 }
 
 /* ---------- router ---------- */
@@ -592,6 +675,7 @@ function route(keep){
     nav = TAB === 'kaart' ? '' : TAB; renderHome();
   }
   else if (/^soort-\d+$/.test(h)) { nav = 'soorten'; page = +h.slice(6); title = renderSpecies(page); }
+  else if (/^melden(-\d+)?$/.test(h)) { nav = 'melden'; title = renderReport(+(h.split('-')[1] || 0)); }
   else if (D.text[h]) { nav = h; title = renderText(h); }
   else { title = renderMissing(null); }
   renderChrome({title, nav, page});

@@ -2,6 +2,16 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 16 oktober 2026 – Nieuwe opbouw startpagina
+
+De startpagina (`bron/start.html`) is opnieuw ingedeeld in de stijl van de Spottersgids (kleuren, letters Alegreya/Alegreya Sans/Barlow Condensed, knoppen). Mobiel is de pagina van ±16.400 px naar ±1.400 px gegaan.
+- **Bovenbalk** (vast): pootje + naam, vergrootglas (zoekvak klapt open), taalmenu, menuknop.
+- **Tabbladen** Kaart · Landen · Soorten; de pagina opent op Kaart.
+- **Kaart**: landenknoppen om in te zoomen, soortcirkels met foto (kies een soort: alleen zijn locaties, onzeker als open stip), +/−/hele kaart, slepen en knijpen. Locaties met recente geboortes hebben een rode stip; de legenda heeft een knop “Recent geboren” (alleen die locaties) en een uitklapbaar filter op type. Het infovak toont de katten en de geboortes van de gekozen locatie.
+- **Landen**: één kaart per land met aantallen, talen en de nieuwste geboorte. “Kies een land” en “Overzicht per land” zijn samengevoegd.
+- **Menu**: Top 10, Recent geboren (nieuwe pagina met alle geboortes uit `D.sp`, filter per land), Parken op aantal soorten, Soorten locaties, Over deze gids; onder “Meer” de Spottersgids en Ko-fi. De dubbele blokken onderaan (Spottersgids, Ko-fi, landenlijst naast de kaart) zijn weg.
+- De soortpagina’s (`/soort/…`) en `/top10/` gebruiken dezelfde kop en stijl.
+
 ## 16 oktober 2026 – Portugal
 
 Nieuwe landpagina `portugal/` (bron: `bron/gidsen/pt.html`), in het Nederlands, Engels en Portugees (Europees Portugees). Eén pagina met een filter per regio (de NUTS-regio’s van 2024: Norte, Centro, Oeste en Taagvallei, Lissabon en Setúbal, Alentejo, Algarve, Azoren, Madeira; alleen regio’s met locaties krijgen een knop), plus kaart, routeplanner, recente geboortes, soortpagina’s, filters op type en labels en het meldformulier. Spanje staat grijs op de kaart.

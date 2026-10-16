@@ -215,14 +215,17 @@ p{margin:0}
 .map .land{fill:var(--land);stroke:var(--land-line);stroke-linejoin:round}
 .map .water{fill:var(--sea);stroke:var(--land-line)}
 .mk{cursor:pointer}
-.mk .dot{fill:var(--dot);stroke:var(--paper)}
-.mk.jong .dot{fill:var(--birth)}
-.mk.unc .dot{fill:var(--paper);stroke:var(--dot)}
-.mk.unc.jong .dot{stroke:var(--birth)}
+.mk .dot{fill:currentColor;stroke:var(--paper);stroke-width:1}
+.mk .gl{display:none;fill:var(--paper);color:var(--paper)}
+.map.icons .mk .gl{display:inline}
+.map.icons .mk .dot{stroke-width:1.2}
+.mk.unc .dot{fill:var(--paper);stroke:currentColor;stroke-width:1.5}
+.mk.unc .gl{color:inherit;fill:currentColor}
+.mk .bring{fill:none;stroke:var(--birth);stroke-width:2;display:none}
+.mk.jong .bring{display:inline}
 .mk .hit{fill:transparent}
-.mk .ring{fill:none;stroke:var(--ink);opacity:0}
+.mk .ring{fill:none;stroke:var(--ink);stroke-width:2.2;opacity:0}
 .mk.sel .ring{opacity:1}
-.mk.off{display:none}
 .mk:focus{outline:none} .mk:focus-visible .ring{opacity:1;stroke:var(--accent)}
 .zoombtns{position:absolute;top:10px;right:10px;display:flex;flex-direction:column;gap:6px;z-index:2}
 .zoombtns button{width:36px;height:36px;border-radius:8px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer;box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center;padding:0}
@@ -238,8 +241,20 @@ p{margin:0}
 .lgbtn svg{width:14px;height:14px}
 .lgbtn .chev{width:10px;height:10px;transition:transform .2s}
 .lgbtn[aria-expanded="true"] .chev{transform:rotate(180deg)}
-.ltfbox{padding:10px 12px 4px;border-top:1px solid var(--line)}
+.ltfbox{padding:8px 12px 4px;border-top:1px solid var(--line)}
+.ti{width:18px;height:18px;flex:none;vertical-align:-4px}
+.tchip{padding-left:6px}
+.tl{display:inline-flex;align-items:center;gap:5px}
+.types b{display:inline-flex;align-items:center;gap:7px}
+.lgbtn .sw{width:12px;height:12px;border-radius:50%;border:2px solid var(--birth);flex:none}
+.lgbtn.geb[aria-pressed="false"]{color:var(--muted);border-style:dashed}
+.lgbtn.geb[aria-pressed="false"] .sw{border-color:var(--line)}
+.lgbtn.geb[aria-pressed="true"]{background:var(--paper);color:var(--ink);border-color:var(--birth)}
+.lgbtn.geb[aria-pressed="true"]::after{content:"\2713";color:var(--birth);font-weight:700}
+.lowbtn{border:0;background:none;color:var(--olive);font:inherit;font-weight:700;text-decoration:underline;text-underline-offset:2px;cursor:pointer;padding:3px 0}
 .ltfbox .chip{font-size:.9rem;padding:4px 11px}
+.ltfbox .chip.tchip{padding-left:5px;gap:6px}
+.chip svg.ti{width:18px;height:18px;border-radius:50%;box-shadow:none}
 .ltf-n{margin:0 0 4px}
 .info{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:12px;padding:14px 16px 16px;min-width:0;scroll-margin-top:calc(var(--head) + 80px)}
 .info h3{font-size:1.35rem}
@@ -460,7 +475,7 @@ html.katmode .intro,html.katmode .bar,html.katmode .tabpanel,html.katmode .page,
       <div class="mapstage"><svg id="map" class="map" viewBox="0 0 1117 1420" role="group" aria-label="Kaart / Map / Carte / Karte"></svg>
         <div class="zoombtns" id="zoombtns"></div></div>
       <div class="maplegend" id="legend"></div>
-      <div class="ltfbox" id="ltfbox" hidden><p class="ltf-n note" id="ltf-n" aria-live="polite" hidden></p><div class="chips wrapit" id="ltf" role="group" aria-label="Soort locatie / Type of location / Type de lieu / Art des Ortes"></div></div>
+      <div class="ltfbox" id="ltfbox"><p class="ltf-n note" id="ltf-n" aria-live="polite"></p><div class="chips wrapit" id="ltf" role="group" aria-label="Soort locatie / Type of location / Type de lieu / Art des Ortes"></div></div>
     </div>
     <div class="info" id="info" aria-live="polite"></div>
   </div>
@@ -629,7 +644,7 @@ const BOX={};
 ORDER.forEach(c=>{let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;
   D[c].poly.forEach(r=>r.forEach(p=>{const[x,y]=P(p[0],p[1]);x0=Math.min(x0,x);y0=Math.min(y0,y);x1=Math.max(x1,x);y1=Math.max(y1,y);}));
   const pad=Math.max(x1-x0,y1-y0)*.08;BOX[c]=[x0-pad,y0-pad,x1-x0+2*pad,y1-y0+2*pad];});
-let VB=FULL.slice(),ZOOM="all",SEL=null,anim=null,CAT=null,LTF="",JONG=false,LTFOPEN=false,DRAGGED=false;
+let VB=FULL.slice(),ZOOM="all",SEL=null,anim=null,CAT=null,LTF="",JONG=false,GEB=true,DRAGGED=false;
 const svg=$("map");
 const ltOf=(c,i)=>(D[c].lt&&D[c].lt[i])||["",[]];
 const ltName=k=>{const t=D.lt.types.find(x=>x.nl===k);return t?T(t.nl,t.en,t.fr,t.de,t.it,t.es):k;};
@@ -637,6 +652,21 @@ function ltCount(){const n={};ORDER.forEach(c=>D[c].locs.forEach((l,i)=>{const k
 /* status van de gekozen soort op een locatie: null = niet aanwezig */
 function catAt(c,i){let st=null;D[c].locs[i][5].forEach(s=>{if(CANON[s[4]]===CAT&&(st===null||CONF.includes(s[3])))st=s[3];});return st;}
 const jongAt=(c,i)=>(BAT[c+"|"+i]||[]).filter(b=>!CAT||b.s[0]===CAT);
+/* elk type locatie een eigen kleur en icoon (volgorde van bron/locatietypes.json); ingezoomd zie je het icoon, uitgezoomd een stip in die kleur */
+const TCOL=["#3F5A2A","#7A9A2C","#2C6E5C","#B88512","#7B4A8E","#2E6F9E","#9B5A1C","#6B6553"];
+const GLY=['<ellipse cx="0" cy="1.7" rx="2.6" ry="2.2"/><circle cx="-3.1" cy="-1.3" r="1.15"/><circle cx="-1.15" cy="-3.2" r="1.15"/><circle cx="1.15" cy="-3.2" r="1.15"/><circle cx="3.1" cy="-1.3" r="1.15"/>',
+ '<circle cx="0" cy="-1.4" r="3.2"/><rect x="-.75" y="1" width="1.5" height="3.6"/>',
+ '<path d="M0-4.8 3.9 1.6H-3.9Z"/><rect x="-.75" y="1.4" width="1.5" height="3.1"/>',
+ '<path d="M-4.4 1.8V-.4l1.5-2.6h4.6l1.6 2.6h1.1v2.2Z"/><circle cx="-2.3" cy="2.5" r="1.4"/><circle cx="2.3" cy="2.5" r="1.4"/>',
+ '<g fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="0" cy="-1" r="3.1"/><path d="M0-1-2.6 4.4M0-1 2.6 4.4M-3.1-1H3.1M0-4.1V2.1"/></g>',
+ '<path d="M-3.8 3.8C-3.8-1.8-.4-4.2 4-4.2 4 .2 1.6 3.8-3.8 3.8Z"/>',
+ '<path d="M0 3.9C-4.8.8-4.3-3.7-1.5-3.7-.6-3.7 0-3 0-2.4 0-3 .6-3.7 1.5-3.7 4.3-3.7 4.8.8 0 3.9Z"/>',
+ '<path d="M-4.2.3 0-4 4.2.3H2.9V4H-2.9V.3Z"/>'];
+const TI={};D.lt.types.forEach((t,k)=>{TI[t.nl]=k;});
+const tIdx=(c,i)=>{const k=ltOf(c,i)[0];return k in TI?TI[k]:-1;};
+const tCol=k=>k<0?"#8B8676":TCOL[k%TCOL.length];
+const tGly=k=>k<0?'<circle r="2"/>':GLY[k%GLY.length];
+const tIcon=(k,cls)=>`<svg class="${cls||"ti"}" viewBox="-8 -8 16 16" aria-hidden="true" style="color:${tCol(k)}"><circle r="8" fill="currentColor"/><g fill="#F0EEE2" style="color:#F0EEE2">${tGly(k)}</g></svg>`;
 function shown(c,i){const l=D[c].locs[i];if(l[2]==null)return false;
   if(LTF&&ltOf(c,i)[0]!==LTF)return false;
   if(CAT&&catAt(c,i)===null)return false;
@@ -649,21 +679,24 @@ function drawMap(){
 }
 function drawMarkers(){
   const a=[],b=[];
-  ORDER.forEach(c=>D[c].locs.forEach((l,i)=>{if(!shown(c,i))return;const[x,y]=P(l[2],l[3]);
-    const jg=jongAt(c,i).length>0,unc=CAT&&!CONF.includes(catAt(c,i)),sel=SEL&&SEL[0]===c&&SEL[1]===i;
-    const g=`<g class="mk${jg?" jong":""}${unc?" unc":""}${sel?" sel":""}" data-c="${c}" data-i="${i}" tabindex="0" role="button" aria-label="${esc(l[0])}, ${esc(l[1])}"><circle class="hit" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}"/><circle class="ring" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}"/><circle class="dot" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}"/></g>`;
+  ORDER.forEach(c=>D[c].locs.forEach((l,i)=>{if(!shown(c,i))return;const[x,y]=P(l[2],l[3]),k=tIdx(c,i);
+    const jg=GEB&&jongAt(c,i).length>0,unc=CAT&&!CONF.includes(catAt(c,i)),sel=SEL&&SEL[0]===c&&SEL[1]===i;
+    const g=`<g class="mk${jg?" jong":""}${unc?" unc":""}${sel?" sel":""}" style="color:${tCol(k)}" data-c="${c}" data-i="${i}" data-x="${x.toFixed(1)}" data-y="${y.toFixed(1)}" tabindex="0" role="button" aria-label="${esc(l[0])}, ${esc(l[1])}"><circle class="hit" r="11"/><circle class="bring"/><circle class="dot"/><g class="gl">${tGly(k)}</g><circle class="ring"/></g>`;
     (jg||sel?b:a).push(g);}));
   $("mks").innerHTML=a.join("")+b.join("");
   const n=a.length+b.length,tc=document.querySelector("#tab-kaart small");if(tc)tc.textContent=n;
-  setVB(VB);
+  ICONS=null;setVB(VB);
 }
-/* grootte van stippen in schermpixels, hoe ver je ook inzoomt */
+/* stippen en iconen houden dezelfde grootte in schermpixels, hoe ver je ook inzoomt; vanaf een paar keer inzoomen worden de stippen iconen */
+let ICONS=null;
 function setVB(v){VB=v;svg.setAttribute("viewBox",v.map(n=>n.toFixed(2)).join(" "));
-  const r=svg.getBoundingClientRect(),u=Math.max(v[2]/(r.width||360),v[3]/(r.height||458)),small=(r.width||360)<500;
-  const R=(small?4.2:5)*u;
-  svg.querySelectorAll(".dot").forEach(e=>{const j=e.parentNode.classList.contains("jong");e.setAttribute("r",(j?R*1.25:R).toFixed(2));e.setAttribute("stroke-width",(1.3*u).toFixed(2));});
-  svg.querySelectorAll(".hit").forEach(e=>e.setAttribute("r",(12*u).toFixed(2)));
-  svg.querySelectorAll(".ring").forEach(e=>{e.setAttribute("r",(R*2).toFixed(2));e.setAttribute("stroke-width",(2.2*u).toFixed(2));});
+  const r=svg.getBoundingClientRect(),u=Math.max(v[2]/(r.width||360),v[3]/(r.height||458)),ic=1/u>=.85;
+  svg.querySelectorAll(".mk").forEach(g=>g.setAttribute("transform",`translate(${g.dataset.x} ${g.dataset.y}) scale(${u.toFixed(4)})`));
+  if(ic!==ICONS){ICONS=ic;svg.classList.toggle("icons",ic);
+    const R=ic?8:3;
+    svg.querySelectorAll(".mk .dot").forEach(e=>e.setAttribute("r",R));
+    svg.querySelectorAll(".mk .bring").forEach(e=>e.setAttribute("r",R+2.2));
+    svg.querySelectorAll(".mk .ring").forEach(e=>e.setAttribute("r",R+4.5));}
   svg.querySelectorAll(".land,.water").forEach(e=>e.setAttribute("stroke-width",(.9*u).toFixed(2)));
   const z=v[2]<FULL[2]-1;svg.classList.toggle("zoomed",z);
   const zo=$("z-out"),zr=$("z-reset"),zi=$("z-in");if(zo){zo.disabled=!z;zr.disabled=!z&&ZOOM==="all";zi.disabled=v[2]<=MINW+.5;}
@@ -714,26 +747,24 @@ document.addEventListener("click",e=>{const b=e.target.closest("[data-cat]");if(
   CAT=b.dataset.cat||null;if(SEL&&CAT&&catAt(SEL[0],SEL[1])===null)SEL=null;
   renderCatrow();drawMarkers();renderLegend();renderInfo();});
 
-/* legenda met de filters: recente geboortes en soort locatie */
+/* legenda met de filters: recente geboortes (aan/uit) en soort locatie (tik op een type om te filteren) */
 function renderLegend(){const n=ltCount(),tot=ORDER.reduce((a,c)=>a+D[c].locs.length,0);
   const nb=new Set(BIRTHS.filter(b=>b.i>=0&&(!CAT||b.s[0]===CAT)).map(b=>b.c+"|"+b.i)).size;
-  $("legend").innerHTML=`<span><i style="--c:var(--dot)"></i>${T("Locatie","Location","Lieu","Ort","Luogo","Lugar")}</span>`+
-    (CAT?`<span><i class="o"></i>${T("onzeker of niet te zien","uncertain or not visible","incertain ou non visible","unsicher oder nicht zu sehen","incerto o non visibile","incierto o no visible")}</span>`:"")+
-    `<button type="button" class="lgbtn" id="jong-btn" aria-pressed="${JONG}"><i style="--c:var(--birth)"></i>${T("Recent geboren","Recently born","Naissances récentes","Kürzlich geboren","Nati di recente","Nacimientos recientes")} <span class="n">${nb}</span></button>`+
-    `<button type="button" class="lgbtn" id="ltf-btn" aria-expanded="${LTFOPEN}" aria-controls="ltfbox">${T("Type","Type","Type","Typ","Tipo","Tipo")}: <b>${LTF?esc(ltName(LTF)):T("alle","all","tous","alle","tutti","todos")}</b><svg class="chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>`;
-  $("ltfbox").hidden=!LTFOPEN;
-  $("ltf").innerHTML=`<button type="button" class="chip" data-lt="" aria-pressed="${LTF===""}">${T("Alle soorten locaties","All types","Tous les types","Alle Ortstypen","Tutti i tipi","Todos los tipos")} <span class="n">${tot}</span></button>`+
-    D.lt.types.filter(t=>n[t.nl]).map(t=>`<button type="button" class="chip" data-lt="${esc(t.nl)}" aria-pressed="${LTF===t.nl}">${esc(T(t.nl,t.en,t.fr,t.de,t.it,t.es))} <span class="n">${n[t.nl]}</span></button>`).join("");
-  const p=$("ltf-n");p.hidden=!LTF;
-  if(LTF)p.innerHTML=`${T(`${n[LTF]||0} van de ${tot} locaties: ${ltName(LTF).toLowerCase()}.`,`${n[LTF]||0} of ${tot} locations: ${ltName(LTF).toLowerCase()}.`,`${n[LTF]||0} sur ${tot} lieux : ${ltName(LTF).toLowerCase()}.`,`${n[LTF]||0} von ${tot} Orten: ${ltName(LTF)}.`,`${n[LTF]||0} di ${tot} luoghi: ${ltName(LTF).toLowerCase()}.`,`${n[LTF]||0} de ${tot} lugares: ${ltName(LTF).toLowerCase()}.`)} <a href="#typen">${T("Wat betekenen de types?","What do the types mean?","Que signifient les types ?","Was bedeuten die Typen?","Cosa significano i tipi?","¿Qué significan los tipos?")}</a>`;
+  $("legend").innerHTML=`<button type="button" class="lgbtn geb" id="geb-btn" aria-pressed="${GEB}"><span class="sw" aria-hidden="true"></span>${T("Recent geboren","Recently born","Naissances récentes","Kürzlich geboren","Nati di recente","Nacimientos recientes")} <span class="n">${nb}</span></button>`+
+    (GEB?`<button type="button" class="lowbtn" id="jong-btn" aria-pressed="${JONG}">${JONG?T("Alle locaties tonen","Show all locations","Afficher tous les lieux","Alle Orte zeigen","Mostra tutti i luoghi","Mostrar todos los lugares"):T("Alleen deze tonen","Show only these","N’afficher que ceux-ci","Nur diese zeigen","Mostra solo questi","Mostrar solo estos")}</button>`:"")+
+    (CAT?`<span><i class="o"></i>${T("open stip: onzeker of niet te zien","open dot: uncertain or not visible","point vide : incertain ou non visible","offener Punkt: unsicher oder nicht zu sehen","punto vuoto: incerto o non visibile","punto vacío: incierto o no visible")}</span>`:"");
+  $("ltf").innerHTML=D.lt.types.filter(t=>n[t.nl]).map(t=>`<button type="button" class="chip tchip" data-lt="${esc(t.nl)}" aria-pressed="${LTF===t.nl}">${tIcon(TI[t.nl])}${esc(T(t.nl,t.en,t.fr,t.de,t.it,t.es))} <span class="n">${n[t.nl]}</span></button>`).join("");
+  const p=$("ltf-n");
+  p.innerHTML=LTF?`${T(`${n[LTF]||0} van de ${tot} locaties: ${ltName(LTF).toLowerCase()}.`,`${n[LTF]||0} of ${tot} locations: ${ltName(LTF).toLowerCase()}.`,`${n[LTF]||0} sur ${tot} lieux : ${ltName(LTF).toLowerCase()}.`,`${n[LTF]||0} von ${tot} Orten: ${ltName(LTF)}.`,`${n[LTF]||0} di ${tot} luoghi: ${ltName(LTF).toLowerCase()}.`,`${n[LTF]||0} de ${tot} lugares: ${ltName(LTF).toLowerCase()}.`)} <button type="button" class="lowbtn" data-lt="">${T("Alle types tonen","Show all types","Afficher tous les types","Alle Typen zeigen","Mostra tutti i tipi","Mostrar todos los tipos")}</button>`
+    :`${T("Soort locatie: tik om te filteren.","Type of location: tap to filter.","Type de lieu : touchez pour filtrer.","Art des Ortes: zum Filtern tippen.","Tipo di luogo: tocca per filtrare.","Tipo de lugar: toca para filtrar.")} <a href="#typen">${T("Wat betekenen de types?","What do the types mean?","Que signifient les types ?","Was bedeuten die Typen?","Cosa significano i tipi?","¿Qué significan los tipos?")}</a>`;
 }
 $("legend").addEventListener("click",e=>{
-  if(e.target.closest("#jong-btn")){JONG=!JONG;if(SEL&&JONG&&!jongAt(SEL[0],SEL[1]).length)SEL=null;drawMarkers();renderLegend();renderInfo();return;}
-  if(e.target.closest("#ltf-btn")){LTFOPEN=!LTFOPEN;renderLegend();}});
-$("ltf").addEventListener("click",e=>{const b=e.target.closest("[data-lt]");if(!b)return;LTF=b.dataset.lt;
+  if(e.target.closest("#geb-btn")){GEB=!GEB;if(!GEB)JONG=false;drawMarkers();renderLegend();renderInfo();return;}
+  if(e.target.closest("#jong-btn")){JONG=!JONG;if(SEL&&JONG&&!jongAt(SEL[0],SEL[1]).length)SEL=null;drawMarkers();renderLegend();renderInfo();}});
+$("ltfbox").addEventListener("click",e=>{const b=e.target.closest("[data-lt]");if(!b)return;LTF=(b.dataset.lt&&LTF!==b.dataset.lt)?b.dataset.lt:"";
   if(SEL&&LTF&&ltOf(SEL[0],SEL[1])[0]!==LTF)SEL=null;drawMarkers();renderLegend();renderInfo();});
 function renderTypes(){const n=ltCount();
-  $("types").innerHTML=D.lt.types.map(t=>`<li><b>${esc(T(t.nl,t.en,t.fr,t.de,t.it,t.es))}</b><span class="n">${n[t.nl]?NLOC(n[t.nl]):T("nog geen locaties","no locations yet","pas encore de lieux","noch keine Orte","ancora nessun luogo","aún sin lugares")}</span><p>${esc(T(t.uitleg,t.uitleg_en,t.uitleg_fr,t.uitleg_de,t.uitleg_it,t.uitleg_es))}</p></li>`).join("");}
+  $("types").innerHTML=D.lt.types.map(t=>`<li><b>${tIcon(TI[t.nl])}${esc(T(t.nl,t.en,t.fr,t.de,t.it,t.es))}</b><span class="n">${n[t.nl]?NLOC(n[t.nl]):T("nog geen locaties","no locations yet","pas encore de lieux","noch keine Orte","ancora nessun luogo","aún sin lugares")}</span><p>${esc(T(t.uitleg,t.uitleg_en,t.uitleg_fr,t.uitleg_de,t.uitleg_it,t.uitleg_es))}</p></li>`).join("");}
 
 /* infovak naast of onder de kaart */
 function birthLine(b,metPlek){const c=b.c;
@@ -750,11 +781,11 @@ function renderInfo(){
       return;}
     box.innerHTML=`<h3>${T("Tik op een stip","Tap a dot","Touchez un point","Tippe auf einen Punkt","Tocca un punto","Toca un punto")}</h3>
       <p class="pl">${T("Elke stip is een dierentuin, park of opvang. Tik erop en je ziet welke katten er wonen.","Each dot is a zoo, park or sanctuary. Tap it to see which cats live there.","Chaque point est un zoo, un parc ou un refuge. Touchez-le pour voir quels félins y vivent.","Jeder Punkt ist ein Zoo, Park oder eine Auffangstation. Tippe darauf, um zu sehen, welche Katzen dort leben.","Ogni punto è uno zoo, un parco o un centro di recupero. Toccalo per vedere quali felini ci vivono.","Cada punto es un zoo, un parque o un santuario. Tócalo para ver qué felinos viven allí.")}</p>
-      <p class="note">${T("Rode stippen: hier zijn recent jongen geboren. Zoom in met + of met twee vingers, of kies hierboven een land.","Red dots: young were born here recently. Zoom in with + or two fingers, or choose a country above.","Points rouges : des petits y sont nés récemment. Zoomez avec + ou deux doigts, ou choisissez un pays ci-dessus.","Rote Punkte: Hier wurden kürzlich Jungtiere geboren. Vergrößere mit + oder zwei Fingern oder wähle oben ein Land.","Punti rossi: qui sono nati di recente dei cuccioli. Ingrandisci con + o con due dita, oppure scegli un paese qui sopra.","Puntos rojos: aquí han nacido crías hace poco. Acerca con + o con dos dedos, o elige un país arriba.")}</p>`;
+      <p class="note">${T("De kleur is het soort locatie; ingezoomd zie je het icoon. Een rode rand: hier zijn recent jongen geboren. Zoom in met + of met twee vingers, of kies hierboven een land.","The colour shows the type of location; zoom in to see the icon. A red ring: young were born here recently. Zoom in with + or two fingers, or choose a country above.","La couleur indique le type de lieu ; en zoomant, vous voyez l’icône. Un anneau rouge : des petits y sont nés récemment. Zoomez avec + ou deux doigts, ou choisissez un pays ci-dessus.","Die Farbe zeigt die Art des Ortes; vergrößert siehst du das Symbol. Ein roter Ring: Hier wurden kürzlich Jungtiere geboren. Vergrößere mit + oder zwei Fingern oder wähle oben ein Land.","Il colore indica il tipo di luogo; ingrandendo vedi l’icona. Un anello rosso: qui sono nati di recente dei cuccioli. Ingrandisci con + o con due dita, oppure scegli un paese qui sopra.","El color indica el tipo de lugar; al acercar ves el icono. Un anillo rojo: aquí han nacido crías hace poco. Acerca con + o con dos dedos, o elige un país arriba.")}</p>`;
     return;}
   const[c,i]=SEL,l=D[c].locs[i];
   const lt=ltOf(c,i),labs=lt[1].map(k=>D.lt.labels.find(x=>x.key===k)).filter(Boolean),ys=BAT[c+"|"+i]||[];
-  box.innerHTML=`<h3>${esc(l[0])}</h3><p class="pl">${lt[0]?esc(ltName(lt[0]))+" · ":""}${esc(l[1])}${l[6]?" · "+esc(stName(l[6])):""} · ${esc(cname(c))}</p>${labs.length?`<ul class="labs">${labs.map(x=>`<li>${x.icoon} ${esc(T(x.nl,x.en,x.fr,x.de,x.it,x.es))}</li>`).join("")}</ul>`:""}
+  box.innerHTML=`<h3>${esc(l[0])}</h3><p class="pl">${lt[0]?`<span class="tl">${tIcon(tIdx(c,i))}${esc(ltName(lt[0]))}</span> · `:""}${esc(l[1])}${l[6]?" · "+esc(stName(l[6])):""} · ${esc(cname(c))}</p>${labs.length?`<ul class="labs">${labs.map(x=>`<li>${x.icoon} ${esc(T(x.nl,x.en,x.fr,x.de,x.it,x.es))}</li>`).join("")}</ul>`:""}
     ${l[5].length?`<ul class="cats">${l[5].map(s=>`<li><a href="${window.__F[c]}#${l[6]||""}soort/${s[4]}">${esc(spn(s,s[4]))}</a>${STAT[s[3]]?`<small>${stat(s[3])}</small>`:""}</li>`).join("")}</ul>`:`<p>${T("Geen katten bevestigd.","No cats confirmed.","Aucun félin confirmé.","Keine Katzen bestätigt.","Nessun felino confermato.","Ningún felino confirmado.")}</p>`}
     ${ys.length?`<h4>${T("Recent geboren","Recently born","Naissances récentes","Kürzlich geboren","Nati di recente","Nacimientos recientes")}</h4><ul class="births">${ys.map(b=>birthLine(b,false)).join("")}</ul>`:""}
     <a class="btn" href="${window.__F[c]}#${l[6]||""}locatie/${l[4]}">${T("Meer over deze locatie","More about this location","En savoir plus sur ce lieu","Mehr über diesen Ort","Maggiori informazioni su questo luogo","Más sobre este lugar")} →</a>`;

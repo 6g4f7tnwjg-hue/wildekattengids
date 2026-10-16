@@ -138,8 +138,17 @@ function mapSvg(opts){
       <circle r="16" fill="transparent"/>${shape}
       ${m.num?`<text font-size="13">${m.num}</text>`:''}</g>`;
   }).join('');
+  // landsgrenzen en landnamen (alleen soortkaart); namen op schermgrootte, grootste landen eerst, niet over elkaar
+  let brd = '';
+  if (opts.borders) {
+    const [vx,vy,vw,vh] = vb, placed = [], fs = 11;
+    const lbl = D.labels.filter(l => l.w >= vw * .07 && l.x > vx + 4*u*fs && l.x < vx + vw - 4*u*fs && l.y > vy + fs*u && l.y < vy + vh - fs*u)
+      .sort((a,b) => b.w - a.w).filter(l => { const sx = (l.x - vx)/u, sy = (l.y - vy)/u;
+        if (placed.some(([px,py]) => Math.abs(px - sx) < 70 && Math.abs(py - sy) < 16)) return false; placed.push([sx,sy]); return true; });
+    brd = `<path class="brd" d="${D.borders}"/>` + lbl.map(l => `<text class="cl" x="${l.x}" y="${l.y}" font-size="${fs*u}" stroke-width="${2.5*u}">${esc(T(l))}</text>`).join('');
+  }
   return `<svg class="map${opts.cls?' '+opts.cls:''}" viewBox="${vb.join(' ')}" role="img" aria-label="${esc(opts.label)}">
-    <path class="grat" d="${GRAT}" stroke-width="${.5*k}"/><path class="land" d="${D.land}"/>${rng}${mks}</svg>`;
+    <path class="grat" d="${GRAT}" stroke-width="${.5*k}"/><path class="land" d="${D.land}"/>${rng}${brd}${mks}</svg>`;
 }
 function bboxOfPath(p){
   const n = (p.match(/-?\d+\.?\d*/g) || []).map(Number); let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;
@@ -465,7 +474,7 @@ let rsz; window.addEventListener('resize', () => { clearTimeout(rsz); rsz = setT
 let SPMAP = null;
 function drawSpeciesMap(){
   const el = $('#spmap'); if (!el || !SPMAP) return;
-  el.innerHTML = mapSvg({...SPMAP, cw: el.clientWidth || 360});
+  el.innerHTML = mapSvg({...SPMAP, cw: el.clientWidth || 360, borders: true});
   bindMarkers(el, id => { const d = document.getElementById('plek-' + id); if (d) { d.open = true; d.scrollIntoView({block:'start', behavior:'smooth'}); } });
 }
 function renderSpecies(no){

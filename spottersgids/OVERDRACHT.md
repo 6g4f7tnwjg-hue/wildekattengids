@@ -21,6 +21,7 @@ Maker: J. Gelens. Stand: 16 oktober 2026. Alle 42 soorten hebben een soortpagina
 |---|---|
 | `bron/template.html` | De hele site (HTML/CSS/JS, één pagina met #-routes). `__DATA__` wordt bij het bouwen vervangen. Ko-fi-link: `KOFI_URL` (= https://ko-fi.com/katalogue). Begint met `<!doctype html>` + viewport-meta (nodig voor Pages). |
 | `bron/build.py` | Bouwt `index.html`. `PAGES` = soortnummers met een pagina (alle 42). Foto's zijn losse bestanden: groot = `img/NN-i.jpg` (origineel, niet opnieuw gecomprimeerd), klein = `foto/NN-i-k.webp` (200 px, door de bouw gemaakt) voor fotorij, lijstjes en Katten in Europa. |
+| `bron/borders.json` | Landsgrenzen + landnamen (NL/EN) voor de soortkaart, gemaakt met `bron/borders.mjs` (node; npm-pakketten world-atlas, topojson-client, i18n-iso-countries, d3-geo). Alleen opnieuw maken als dat nodig is. |
 | `data/<nr>.json` | Onderzoek per soort: intro, plekken (score 1–5, seizoen, tijdstip, tocht, bronnen), tips, bedreigingen, status, bronnen – NL en EN. |
 | `data/topspots.json` | Oorspronkelijke topspotlijst; telt alleen nog als "deze plek mag topspot zijn bij score 4". |
 | `data/alias.json` | Samenvoegen van dezelfde plek onder verschillende id's. |
@@ -41,7 +42,7 @@ Topspot-regel in de bouw: plek met score 5 op een soortpagina = topspot; score 4
 - Taal: Nederlands naar de gebruiker; site NL/EN. Gidsnamen uit de KATalogue (bijv. sneeuwpanter, Sundaluipaardkat, het luipaard). Let op het Duitse "stuft/stufte" in statusteksten → "deelt in"/"zette".
 - Schrijfstijl: avontuurlijk, eerlijk, "je"; intro eindigt met "Kans: X – …".
 - Kansscore eerlijk (5 bijna zeker … 1 alleen geluk/cameravallen).
-- **Geen namen van reisorganisaties/lodges** in tekst of brontitels; geen hun sites als bron. Excursies wél concreet beschrijven ("excursies moeten er juist in").
+- **Geen namen van reisorganisaties/lodges** in tekst of brontitels; geen hun sites als bron. Uitzondering (16-10-2026): reisverslagen van reisorganisaties die op mammalwatching.com staan mogen als bron blijven (naam alleen in de URL, niet in titel of tekst). Excursies wél concreet beschrijven ("excursies moeten er juist in").
 - Plekken alleen op gebiedsniveau, markers op het midden van het gebied; geen holen/wissels/rustplekken.
 - **Niet lokken:** voederplekken niet als aanbevolen plek (bij wolkentijgerkat twee geschrapt).
 - Ontwerp: één lichte stijl (donker vond de gebruiker te donker). Kaart opent als eerste tabblad.
@@ -59,7 +60,7 @@ Topspot-regel in de bouw: plek met score 5 op een soortpagina = topspot; score 4
 ## Open punten / mogelijke vervolgstappen
 - **Contactformulier** op Over mij: gebruiker maakt zelf een formulier en geeft de link.
 - `spottersgids/sitemap.xml` is nog nergens aangemeld (root-`robots.txt`/`sitemap.xml` liggen buiten de map); kan via Google Search Console.
-- Verbeterlijst uit de review van 16-10-2026, nog open: bronnen van reisorganisaties (URL's met Cat Expeditions/Sakertours), soortkaart zonder landen, dierentuinfoto's, tilcayo-zin 'eerste nieuwe soort in 100 jaar'. Gedaan op 16-10: IUCN-status gecontroleerd (jaguarundi NT 2026, Aziatische goudkat VU, kodkod LC 2025 kloppen; goudkattekst noemt 2023, Wikipedia 2025 – nakijken), kansuitleg in legenda startkaart, 'Tijger kans 5' in kaartlijst, kans uit samenvattingsvak (2 vakken), bronnummers gesorteerd, Ko-fi in voettekst, icoon (`icon.svg`, `icon-180.png`) en deelvoorbeeld (og-tags; soortpagina's met eigen foto).
+- Verbeterlijst uit de review van 16-10-2026, nog open: dierentuinfoto's (zoeken naar vrije foto's uit het wild). Gedaan op 16-10: IUCN-status gecontroleerd (jaguarundi NT 2026, Aziatische goudkat VU, kodkod LC 2025 kloppen; goudkattekst noemt 2023, Wikipedia 2025 – nakijken), kansuitleg in legenda startkaart, 'Tijger kans 5' in kaartlijst, kans uit samenvattingsvak (2 vakken), bronnummers gesorteerd, Ko-fi in voettekst, icoon (`icon.svg`, `icon-180.png`) en deelvoorbeeld (og-tags; soortpagina's met eigen foto). Ook gedaan: reisverslagen als uitzondering toegestaan, soortkaart met landsgrenzen en -namen, tilcayo 'de nieuwste kattensoort ter wereld', kaarten op telefoon groter (wereld 960 px breed, overige kaarten vierkant).
 - **Later (gebruiker):** link naar de Spottersgids vanaf de bestaande site en opname in de root-`sitemap.xml`. Dat raakt bestanden buiten `spottersgids/`, dus alleen op verzoek.
 - Bij een kat met alleen plekken met kans 1–2 (bijv. caracal) is de startkaart eerst leeg tot je "Toon ook kans 1–2" kiest. Gevraagd of dat automatisch moet; nog geen antwoord.
 - `OVERDRACHT.md` en `TWIJFELS.md` staan in de openbare map en zijn dus ook via de website op te vragen (bijv. …/spottersgids/TWIJFELS.md). Nog niet met de gebruiker besproken.

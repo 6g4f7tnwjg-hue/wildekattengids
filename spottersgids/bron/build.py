@@ -116,7 +116,8 @@ BYNO = {c['no']: c for c in cats}
 slugs = {'nl': {no: slug(BYNO[no]['nl']) for no in PAGES}, 'en': {no: slug(BYNO[no]['en']) for no in PAGES}}
 
 data = {'cats': cats, 'spots': list(spots.values()), 'pages': pages, 'sources': sources,
-        'text': text, 'europe': europe, 'land': open(J('bron', 'land.txt')).read().strip(), 'slugs': slugs}
+        'text': text, 'europe': europe, 'land': open(J('bron', 'land.txt')).read().strip(), 'slugs': slugs,
+        **load('bron/borders.json')}   # landsgrenzen + landnamen voor de soortkaart (Natural Earth 110m via world-atlas)
 blob = json.dumps(data, ensure_ascii=False, separators=(',', ':'))
 datajs = 'window.SG_DATA=' + blob + ';\n'
 open(J('data.js'), 'w', encoding='utf-8').write(datajs)

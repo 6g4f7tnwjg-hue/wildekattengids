@@ -152,6 +152,8 @@ main{display:block;min-height:70vh}
 @media (max-width:600px){.mapscroll.world .map{width:960px;max-width:none}}
 .map{display:block;width:100%;height:auto;background:var(--sea);touch-action:manipulation}
 .map .land{fill:var(--land)}
+.map .brd{fill:none;stroke:color-mix(in srgb,var(--ink) 30%,transparent);stroke-width:.7;vector-effect:non-scaling-stroke;stroke-linejoin:round}
+.map .cl{font-family:var(--label);font-weight:600;letter-spacing:.04em;fill:color-mix(in srgb,var(--ink) 62%,transparent);text-anchor:middle;dominant-baseline:central;paint-order:stroke;stroke:var(--land);stroke-opacity:.8;pointer-events:none}
 .map .grat{stroke:color-mix(in srgb,var(--ink) 7%,transparent);fill:none}
 .map .rng{fill:var(--range);fill-opacity:.32;stroke:var(--range);stroke-opacity:.7;stroke-linejoin:round}
 .map .mk{cursor:pointer}

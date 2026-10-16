@@ -129,6 +129,57 @@
    ]
   },
   {
+   "id": "nl-vijlenerbos",
+   "name_nl": "Vijlenerbos (Zuid-Limburg)",
+   "name_en": "Vijlenerbos (South Limburg)",
+   "area_nl": "Vijlenerbos en omliggende bossen tussen Vaals en Epen, Zuid-Limburg",
+   "area_en": "Vijlenerbos and surrounding woods between Vaals and Epen, South Limburg",
+   "country_nl": "Nederland",
+   "country_en": "Netherlands",
+   "cont": "eur",
+   "lat": 50.77,
+   "lon": 5.95,
+   "score": 1,
+   "why_nl": "Het enige gebied in Nederland met wilde katten: cameravallen legden in 2021–2022 negen à tien katten vast, zes daarvan in het Vijlenerbos, en de groep wordt geschat op 10 tot 30 dieren. Wandelaars zien ze zelden, en bij DNA-onderzoek bleek de helft van de onderzochte katten deels huiskat te zijn.",
+   "why_en": "The only area in the Netherlands with wildcats: camera traps recorded nine or ten cats in 2021–2022, six of them in the Vijlenerbos, and the group is estimated at 10 to 30 animals. Walkers rarely see one, and DNA testing showed that half of the cats examined were partly domestic cat.",
+   "season_nl": "Het hele jaar; in late winter en vroeg voorjaar is er minder blad aan de bomen",
+   "season_en": "All year; in late winter and early spring there is less foliage",
+   "time_nl": "Schemering, langs bosranden, heggen en weides",
+   "time_en": "Dusk, along forest edges, hedgerows and meadows",
+   "trip_nl": "Wandelen over de paden van het Vijlenerbos en de bossen rond Epen en Vaals; vooral voor de sfeer, een waarneming is puur geluk",
+   "trip_en": "Walk the trails of the Vijlenerbos and the woods around Epen and Vaals; mainly for the atmosphere, a sighting is pure luck",
+   "sources": [
+    20,
+    21,
+    22,
+    23
+   ]
+  },
+  {
+   "id": "de-eifel",
+   "name_nl": "Nationalpark Eifel",
+   "name_en": "Eifel National Park",
+   "area_nl": "Nationalpark Eifel, Noordrijn-Westfalen",
+   "area_en": "Eifel National Park, North Rhine-Westphalia",
+   "country_nl": "Duitsland",
+   "country_en": "Germany",
+   "cont": "eur",
+   "lat": 50.58,
+   "lon": 6.42,
+   "score": 1,
+   "why_nl": "Met cameravallen en DNA werden in 2024 in het park 121 verschillende wilde katten herkend, en het echte aantal ligt waarschijnlijk hoger. Toch krijgen wandelaars ze in het bos zelden te zien.",
+   "why_en": "Using camera traps and DNA, 121 different wildcats were identified in the park in 2024, and the real number is probably higher. Even so, walkers rarely get to see one in the forest.",
+   "season_nl": "Late winter en vroeg voorjaar (paartijd, minder blad) en zomer langs bosweides",
+   "season_en": "Late winter and early spring (mating season, less foliage) and summer along forest meadows",
+   "time_nl": "Schemering, langs open plekken en weides aan de bosrand",
+   "time_en": "Dusk, along clearings and meadows at the forest edge",
+   "trip_nl": "Wandelen over de gemarkeerde paden van het park, een paar dagen; vooral voor sporen en de sfeer",
+   "trip_en": "Walk the park's marked trails over a few days; mainly for signs and atmosphere",
+   "sources": [
+    24
+   ]
+  },
+  {
    "id": "it-etna",
    "name_nl": "Etna",
    "name_en": "Mount Etna",
@@ -334,6 +385,31 @@
    "id": 19,
    "title": "The European wildcat hovers between recovery and local extinction (Mongabay, 2026)",
    "url": "https://news.mongabay.com/2026/05/the-european-wildcat-hovers-between-recovery-and-local-extinction/"
+  },
+  {
+   "id": 20,
+   "title": "Is Nederland wild genoeg voor de Wilde kat? Habitats en corridors in Limburg en Kempen~Broek (Natuurhistorisch Maandblad, 2025)",
+   "url": "https://natuurtijdschriften.nl/pub/1033648/NAHM2025114007005.pdf"
+  },
+  {
+   "id": 21,
+   "title": "De wilde kat in Zuid-Limburg – cameravalonderzoek 2022 (ARK Rewilding Nederland)",
+   "url": "https://www.arkrewilding.nl/sites/default/files/media/Wilde_kat_AM_juni_2022_1.pdf"
+  },
+  {
+   "id": 22,
+   "title": "Hybridisatie bij de Wilde kat in Nederland (Zodion, 2025)",
+   "url": "https://www.zodion.nl/kennisbank/publicaties/2025/hybridisatie-bij-de-wilde-kat-felis-silvestris-nederland"
+  },
+  {
+   "id": 23,
+   "title": "Wilde kat rukt op, maar wordt ook bedreigd door huiskat (Vroege Vogels, 2025)",
+   "url": "https://www.bnnvara.nl/vroegevogels/artikelen/wilde-kat-rukt-op-maar-wordt-ook-bedreigd-door-huiskat"
+  },
+  {
+   "id": 24,
+   "title": "121 Wildkatzen im Nationalpark Eifel erfasst (BRF, 2024)",
+   "url": "https://brf.be/regional/1876054"
   }
  ]
 }

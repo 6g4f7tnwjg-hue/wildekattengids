@@ -85,7 +85,7 @@
   color-scheme:light;
   --bg:#E3E1D0; --paper:#F0EEE2; --ink:#1E2318; --muted:#5A604D; --line:#C6C3AD;
   --olive:#46552E; --accent:#9B5A1C; --accent-ink:#FFF8EA; --sea:#E9E7DA; --land:#C9C4A8; --land-line:#8F8A72;
-  --dot:#46552E; --birth:#B5402A;
+  --dot:#46552E; --birth:#E0352B;
   --shadow:0 1px 0 rgba(30,35,24,.06),0 8px 24px -12px rgba(30,35,24,.25);
   --display:"Alegreya",Georgia,"Times New Roman",serif;
   --body:"Alegreya Sans","Gill Sans","Segoe UI",system-ui,sans-serif;
@@ -214,19 +214,27 @@ p{margin:0}
 .map.dragging{cursor:grabbing}
 .map .land{fill:var(--land);stroke:var(--land-line);stroke-linejoin:round}
 .map .water{fill:var(--sea);stroke:var(--land-line)}
-.mk{cursor:pointer}
-.mk .dot{fill:currentColor;stroke:var(--paper);stroke-width:1}
-.mk .gl{display:none;fill:var(--paper);color:var(--paper)}
-.map.icons .mk .gl{display:inline}
-.map.icons .mk .dot{stroke-width:1.2}
-.mk.unc .dot{fill:var(--paper);stroke:currentColor;stroke-width:1.5}
+.mk,.cl{cursor:pointer}
+.mk .dot{fill:currentColor;stroke:var(--paper);stroke-width:1.2}
+.mk .gl{fill:var(--paper);color:var(--paper)}
+.mk.unc .dot{fill:var(--paper);stroke:currentColor;stroke-width:1.6}
 .mk.unc .gl{color:inherit;fill:currentColor}
-.mk .bring{fill:none;stroke:var(--birth);stroke-width:2;display:none}
+.mk .bring,.cl .bring{fill:none;stroke:var(--birth);stroke-width:2.2;display:none}
 .mk.jong .bring{display:inline}
-.mk .hit{fill:transparent}
+.cl .badge{fill:var(--birth);stroke:var(--paper);stroke-width:1.3;display:none}
+.cl.jong .badge{display:inline}
+.mk .hit,.cl .hit{fill:transparent}
 .mk .ring{fill:none;stroke:var(--ink);stroke-width:2.2;opacity:0}
 .mk.sel .ring{opacity:1}
-.mk:focus{outline:none} .mk:focus-visible .ring{opacity:1;stroke:var(--accent)}
+.cl .cdot{fill:var(--ink);stroke:var(--paper);stroke-width:1.5}
+.cl .cn{fill:var(--paper);font-family:var(--label);font-weight:600;font-size:12px;text-anchor:middle;pointer-events:none}
+.mk.dim,.cl.dim{opacity:.3}
+.mk:focus,.cl:focus{outline:none} .mk:focus-visible .ring{opacity:1;stroke:var(--accent)} .cl:focus-visible .cdot{stroke:var(--accent);stroke-width:2.5}
+.lpick{all:unset;box-sizing:border-box;cursor:pointer;display:flex;align-items:center;gap:10px;width:100%}
+.lpick .ti{width:22px;height:22px}
+.lpick b{display:block;font-weight:700}
+.lpick small{display:block;color:var(--muted);font-size:.9rem}
+.lpick:hover b{color:var(--accent)}
 .zoombtns{position:absolute;top:10px;right:10px;display:flex;flex-direction:column;gap:6px;z-index:2}
 .zoombtns button{width:36px;height:36px;border-radius:8px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer;box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center;padding:0}
 .zoombtns button svg{width:18px;height:18px}
@@ -475,7 +483,7 @@ html.katmode .intro,html.katmode .bar,html.katmode .tabpanel,html.katmode .page,
       <div class="mapstage"><svg id="map" class="map" viewBox="0 0 1117 1420" role="group" aria-label="Kaart / Map / Carte / Karte"></svg>
         <div class="zoombtns" id="zoombtns"></div></div>
       <div class="maplegend" id="legend"></div>
-      <div class="ltfbox" id="ltfbox"><p class="ltf-n note" id="ltf-n" aria-live="polite"></p><div class="chips wrapit" id="ltf" role="group" aria-label="Soort locatie / Type of location / Type de lieu / Art des Ortes"></div></div>
+      <div class="ltfbox" id="ltfbox" hidden><p class="ltf-n note" id="ltf-n" aria-live="polite"></p><div class="chips wrapit" id="ltf" role="group" aria-label="Soort locatie / Type of location / Type de lieu / Art des Ortes"></div></div>
     </div>
     <div class="info" id="info" aria-live="polite"></div>
   </div>
@@ -655,7 +663,7 @@ const BOX={};
 ORDER.forEach(c=>{let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;
   D[c].poly.forEach(r=>r.forEach(p=>{const[x,y]=P(p[0],p[1]);x0=Math.min(x0,x);y0=Math.min(y0,y);x1=Math.max(x1,x);y1=Math.max(y1,y);}));
   const pad=Math.max(x1-x0,y1-y0)*.08;BOX[c]=[x0-pad,y0-pad,x1-x0+2*pad,y1-y0+2*pad];});
-let VB=FULL.slice(),ZOOM="all",SEL=null,anim=null,CAT=null,LTF="",JONG=false,GEB=true,DRAGGED=false;
+let VB=FULL.slice(),ZOOM="all",SEL=null,anim=null,CAT=null,LTF="",JONG=false,GEB=true,DRAGGED=false,LGOPEN=false,LIST=null;
 const svg=$("map");
 const ltOf=(c,i)=>(D[c].lt&&D[c].lt[i])||["",[]];
 const ltName=k=>{const t=D.lt.types.find(x=>x.nl===k);return t?T(t.nl,t.en,t.fr,t.de,t.it,t.es):k;};
@@ -664,7 +672,7 @@ function ltCount(){const n={};ORDER.forEach(c=>D[c].locs.forEach((l,i)=>{const k
 function catAt(c,i){let st=null;D[c].locs[i][5].forEach(s=>{if(CANON[s[4]]===CAT&&(st===null||CONF.includes(s[3])))st=s[3];});return st;}
 const jongAt=(c,i)=>(BAT[c+"|"+i]||[]).filter(b=>!CAT||b.s[0]===CAT);
 /* elk type locatie een eigen kleur en icoon (volgorde van bron/locatietypes.json); ingezoomd zie je het icoon, uitgezoomd een stip in die kleur */
-const TCOL=["#3F5A2A","#7A9A2C","#2C6E5C","#B88512","#7B4A8E","#2E6F9E","#9B5A1C","#6B6553"];
+const TCOL=["#2F6B2F","#2766B0","#7A5230","#C98500","#8A3FA0","#16878A","#B0306A","#666158"];
 const GLY=['<ellipse cx="0" cy="1.7" rx="2.6" ry="2.2"/><circle cx="-3.1" cy="-1.3" r="1.15"/><circle cx="-1.15" cy="-3.2" r="1.15"/><circle cx="1.15" cy="-3.2" r="1.15"/><circle cx="3.1" cy="-1.3" r="1.15"/>',
  '<circle cx="0" cy="-1.4" r="3.2"/><rect x="-.75" y="1" width="1.5" height="3.6"/>',
  '<path d="M0-4.8 3.9 1.6H-3.9Z"/><rect x="-.75" y="1.4" width="1.5" height="3.1"/>',
@@ -688,30 +696,48 @@ function drawMap(){
   ["es","pt","it","uk","ie","fr","de","ch","at","nl","be","lu"].forEach(c=>{D[c].poly.forEach(r=>{h+=`<path class="land ${c}" d="${path(r)}"/>`;});D[c].water.forEach(r=>{h+=`<path class="water" d="${path(r)}"/>`;});});
   svg.innerHTML=h+'<g id="mks"></g>';drawMarkers();
 }
-function drawMarkers(){
-  const a=[],b=[];
-  ORDER.forEach(c=>D[c].locs.forEach((l,i)=>{if(!shown(c,i))return;const[x,y]=P(l[2],l[3]),k=tIdx(c,i);
-    const jg=GEB&&jongAt(c,i).length>0,unc=CAT&&!CONF.includes(catAt(c,i)),sel=SEL&&SEL[0]===c&&SEL[1]===i;
-    const g=`<g class="mk${jg?" jong":""}${unc?" unc":""}${sel?" sel":""}" style="color:${tCol(k)}" data-c="${c}" data-i="${i}" data-x="${x.toFixed(1)}" data-y="${y.toFixed(1)}" tabindex="0" role="button" aria-label="${esc(l[0])}, ${esc(l[1])}"><circle class="hit" r="11"/><circle class="bring"/><circle class="dot"/><g class="gl">${tGly(k)}</g><circle class="ring"/></g>`;
-    (jg||sel?b:a).push(g);}));
-  $("mks").innerHTML=a.join("")+b.join("");
-  const n=a.length+b.length,tc=document.querySelector("#tab-kaart small");if(tc)tc.textContent=n;
-  ICONS=null;setVB(VB);
+/* zichtbare locaties; bij een gekozen land worden de andere landen lichter */
+let VIS=[],CL_U=null;
+function drawMarkers(){VIS=[];
+  ORDER.forEach(c=>D[c].locs.forEach((l,i)=>{if(!shown(c,i))return;const[x,y]=P(l[2],l[3]);
+    VIS.push({c,i,x,y,k:tIdx(c,i),jg:GEB&&jongAt(c,i).length>0,unc:!!(CAT&&!CONF.includes(catAt(c,i))),sel:!!(SEL&&SEL[0]===c&&SEL[1]===i),dim:ZOOM!=="all"&&c!==ZOOM});}));
+  const tc=document.querySelector("#tab-kaart small");if(tc)tc.textContent=VIS.length;
+  CL_U=null;setVB(VB);
 }
-/* stippen en iconen houden dezelfde grootte in schermpixels, hoe ver je ook inzoomt; vanaf een paar keer inzoomen worden de stippen iconen */
-let ICONS=null;
+/* locaties die op het scherm dicht bij elkaar liggen worden één rondje met een getal */
+function clusters(u){const R=22*u,R2=R*R,grid=new Map(),out=[];
+  VIS.forEach(p=>{if(p.sel){out.push({ps:[p],x:p.x,y:p.y,dim:p.dim});return;}
+    const gx=Math.floor(p.x/R),gy=Math.floor(p.y/R);let best=null,bd=R2;
+    for(let dx=-1;dx<=1;dx++)for(let dy=-1;dy<=1;dy++)(grid.get((gx+dx)+","+(gy+dy))||[]).forEach(cl=>{if(cl.dim!==p.dim)return;const d=(cl.x-p.x)**2+(cl.y-p.y)**2;if(d<bd){bd=d;best=cl;}});
+    if(best)best.ps.push(p);else{const cl={ps:[p],x:p.x,y:p.y,dim:p.dim},k=gx+","+gy;out.push(cl);if(!grid.has(k))grid.set(k,[]);grid.get(k).push(cl);}});
+  return out;}
+function renderMarkers(u){const lo=[],mid=[],hi=[];
+  clusters(u).forEach(cl=>{
+    if(cl.ps.length===1){const p=cl.ps[0],l=D[p.c].locs[p.i];
+      const g=`<g class="mk${p.jg?" jong":""}${p.unc?" unc":""}${p.sel?" sel":""}${p.dim?" dim":""}" style="color:${tCol(p.k)}" data-c="${p.c}" data-i="${p.i}" data-x="${p.x.toFixed(1)}" data-y="${p.y.toFixed(1)}" tabindex="0" role="button" aria-label="${esc(l[0])}, ${esc(l[1])}"><circle class="hit" r="12"/><circle class="bring" r="9.6"/><circle class="dot" r="7.4"/><g class="gl" transform="scale(.9)">${tGly(p.k)}</g><circle class="ring" r="11.5"/></g>`;
+      (p.dim?lo:p.sel||p.jg?hi:mid).push(g);return;}
+    const n=cl.ps.length,x=cl.ps.reduce((a,p)=>a+p.x,0)/n,y=cl.ps.reduce((a,p)=>a+p.y,0)/n,jg=cl.ps.some(p=>p.jg),R=n<10?9.5:n<100?11.5:13.5;
+    const g=`<g class="cl${jg?" jong":""}${cl.dim?" dim":""}" data-x="${x.toFixed(1)}" data-y="${y.toFixed(1)}" data-ids="${cl.ps.map(p=>p.c+"|"+p.i).join(",")}" tabindex="0" role="button" aria-label="${n} ${T("locaties","locations","lieux","Orte","luoghi","lugares")}"><circle class="hit" r="${R+4}"/><circle class="cdot" r="${R}"/><text class="cn" dy=".36em">${n}</text><circle class="badge" cx="${(R*.72).toFixed(1)}" cy="${(-R*.72).toFixed(1)}" r="3.6"/></g>`;
+    (cl.dim?lo:mid).push(g);});
+  $("mks").innerHTML=lo.join("")+mid.join("")+hi.join("");
+}
+/* rondjes en iconen houden dezelfde grootte in schermpixels; bij een andere zoomstand worden de groepjes opnieuw gemaakt */
 function setVB(v){VB=v;svg.setAttribute("viewBox",v.map(n=>n.toFixed(2)).join(" "));
-  const r=svg.getBoundingClientRect(),u=Math.max(v[2]/(r.width||360),v[3]/(r.height||458)),ic=1/u>=.85;
-  svg.querySelectorAll(".mk").forEach(g=>g.setAttribute("transform",`translate(${g.dataset.x} ${g.dataset.y}) scale(${u.toFixed(4)})`));
-  if(ic!==ICONS){ICONS=ic;svg.classList.toggle("icons",ic);
-    const R=ic?8:3;
-    svg.querySelectorAll(".mk .dot").forEach(e=>e.setAttribute("r",R));
-    svg.querySelectorAll(".mk .bring").forEach(e=>e.setAttribute("r",R+2.2));
-    svg.querySelectorAll(".mk .ring").forEach(e=>e.setAttribute("r",R+4.5));}
+  const r=svg.getBoundingClientRect(),u=Math.max(v[2]/(r.width||360),v[3]/(r.height||458));
+  if(CL_U===null||Math.abs(Math.log(u/CL_U))>.1){CL_U=u;renderMarkers(u);}
+  svg.querySelectorAll(".mk,.cl").forEach(g=>g.setAttribute("transform",`translate(${g.dataset.x} ${g.dataset.y}) scale(${u.toFixed(4)})`));
   svg.querySelectorAll(".land,.water").forEach(e=>e.setAttribute("stroke-width",(.9*u).toFixed(2)));
   const z=v[2]<FULL[2]-1;svg.classList.toggle("zoomed",z);
   const zo=$("z-out"),zr=$("z-reset"),zi=$("z-in");if(zo){zo.disabled=!z;zr.disabled=!z&&ZOOM==="all";zi.disabled=v[2]<=MINW+.5;}
 }
+/* tik op een groepje: inzoomen tot het uit elkaar valt; liggen ze op dezelfde plek, dan een lijst in het infovak */
+function openCluster(g){const ids=g.dataset.ids.split(",").map(x=>{const q=x.split("|");return [q[0],+q[1]];});
+  let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;ids.forEach(([c,i])=>{const[x,y]=P(D[c].locs[i][2],D[c].locs[i][3]);x0=Math.min(x0,x);y0=Math.min(y0,y);x1=Math.max(x1,x);y1=Math.max(y1,y);});
+  const w=x1-x0,h=y1-y0;
+  if(VB[2]<=MINW*1.3||(w<.4&&h<.4)){LIST=ids;SEL=null;drawMarkers();renderInfo();
+    if(matchMedia("(max-width:859px)").matches)$("info").scrollIntoView({behavior:"smooth",block:"nearest"});return;}
+  const fit=fitBox([x0,y0,Math.max(w,1),Math.max(h,1)]);const nw=Math.min(VB[2]/2,Math.max(MINW,VB[2]/4,fit[2]*2.5));
+  animTo(clampVB([(x0+x1)/2-nw/2,(y0+y1)/2-nw/AR/2,nw,nw/AR]));}
 function fitBox(t){const[x0,y0,w0,h0]=t;let x=x0,y=y0,w=w0,h=h0;
   if(w/h>AR){const nh=w/AR;y-=(nh-h)/2;h=nh;}else{const nw=h*AR;x-=(nw-w)/2;w=nw;}return [x,y,w,h];}
 function clampVB(v){const w=Math.max(MINW,Math.min(FULL[2],v[2])),h=w/AR;
@@ -724,10 +750,10 @@ function animTo(t){
   const step=now=>{let k=Math.min(1,(now-t0)/dur);k=k<.5?2*k*k:1-Math.pow(-2*k+2,2)/2;
     setVB(from.map((v,i)=>v+(t[i]-v)*k));if(k<1)anim=requestAnimationFrame(step);};
   anim=requestAnimationFrame(step);}
-function zoomTo(c){ZOOM=c;
-  animTo(c==="all"?FULL.slice():fitBox(BOX[c]));
+function zoomTo(c){ZOOM=c;LIST=null;
+  if(c!=="all"&&SEL&&SEL[0]!==c)SEL=null;
+  drawMarkers();animTo(c==="all"?FULL.slice():fitBox(BOX[c]));
   renderZoom();
-  if(c!=="all"&&SEL&&SEL[0]!==c){SEL=null;drawMarkers();}
   renderInfo();
 }
 function zoomBy(f,fx=.5,fy=.5){const[x,y,w,h]=VB,nw=Math.max(MINW,Math.min(FULL[2],w/f)),nh=nw/AR;
@@ -763,13 +789,16 @@ function renderLegend(){const n=ltCount(),tot=ORDER.reduce((a,c)=>a+D[c].locs.le
   const nb=new Set(BIRTHS.filter(b=>b.i>=0&&(!CAT||b.s[0]===CAT)).map(b=>b.c+"|"+b.i)).size;
   $("legend").innerHTML=`<button type="button" class="lgbtn geb" id="geb-btn" aria-pressed="${GEB}"><span class="sw" aria-hidden="true"></span>${T("Recent geboren","Recently born","Naissances récentes","Kürzlich geboren","Nati di recente","Nacimientos recientes")} <span class="n">${nb}</span></button>`+
     (GEB?`<button type="button" class="lowbtn" id="jong-btn" aria-pressed="${JONG}">${JONG?T("Alle locaties tonen","Show all locations","Afficher tous les lieux","Alle Orte zeigen","Mostra tutti i luoghi","Mostrar todos los lugares"):T("Alleen deze tonen","Show only these","N’afficher que ceux-ci","Nur diese zeigen","Mostra solo questi","Mostrar solo estos")}</button>`:"")+
+    `<button type="button" class="lgbtn" id="lg-btn" aria-expanded="${LGOPEN}" aria-controls="ltfbox">${T("Legenda","Legend","Légende","Legende","Legenda","Leyenda")}${LTF?`: <b>${esc(ltName(LTF))}</b>`:""}<svg class="chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>`+
     (CAT?`<span><i class="o"></i>${T("open stip: onzeker of niet te zien","open dot: uncertain or not visible","point vide : incertain ou non visible","offener Punkt: unsicher oder nicht zu sehen","punto vuoto: incerto o non visibile","punto vacío: incierto o no visible")}</span>`:"");
+  $("ltfbox").hidden=!LGOPEN;
   $("ltf").innerHTML=D.lt.types.filter(t=>n[t.nl]).map(t=>`<button type="button" class="chip tchip" data-lt="${esc(t.nl)}" aria-pressed="${LTF===t.nl}">${tIcon(TI[t.nl])}${esc(T(t.nl,t.en,t.fr,t.de,t.it,t.es))} <span class="n">${n[t.nl]}</span></button>`).join("");
   const p=$("ltf-n");
   p.innerHTML=LTF?`${T(`${n[LTF]||0} van de ${tot} locaties: ${ltName(LTF).toLowerCase()}.`,`${n[LTF]||0} of ${tot} locations: ${ltName(LTF).toLowerCase()}.`,`${n[LTF]||0} sur ${tot} lieux : ${ltName(LTF).toLowerCase()}.`,`${n[LTF]||0} von ${tot} Orten: ${ltName(LTF)}.`,`${n[LTF]||0} di ${tot} luoghi: ${ltName(LTF).toLowerCase()}.`,`${n[LTF]||0} de ${tot} lugares: ${ltName(LTF).toLowerCase()}.`)} <button type="button" class="lowbtn" data-lt="">${T("Alle types tonen","Show all types","Afficher tous les types","Alle Typen zeigen","Mostra tutti i tipi","Mostrar todos los tipos")}</button>`
-    :`${T("Soort locatie: tik om te filteren.","Type of location: tap to filter.","Type de lieu : touchez pour filtrer.","Art des Ortes: zum Filtern tippen.","Tipo di luogo: tocca per filtrare.","Tipo de lugar: toca para filtrar.")} <a href="#typen">${T("Wat betekenen de types?","What do the types mean?","Que signifient les types ?","Was bedeuten die Typen?","Cosa significano i tipi?","¿Qué significan los tipos?")}</a>`;
+    :`${T("Elke kleur en elk icoon is een soort locatie; tik om alleen die te tonen. Een rondje met een getal is een groepje locaties.","Each colour and icon is a type of location; tap to show only that type. A circle with a number is a group of locations.","Chaque couleur et icône correspond à un type de lieu ; touchez pour n’afficher que ce type. Un rond avec un chiffre est un groupe de lieux.","Jede Farbe und jedes Symbol ist eine Art von Ort; tippe, um nur diese zu zeigen. Ein Kreis mit Zahl ist eine Gruppe von Orten.","Ogni colore e icona è un tipo di luogo; tocca per mostrare solo quello. Un cerchio con un numero è un gruppo di luoghi.","Cada color e icono es un tipo de lugar; toca para mostrar solo ese. Un círculo con un número es un grupo de lugares.")} <a href="#typen">${T("Wat betekenen de types?","What do the types mean?","Que signifient les types ?","Was bedeuten die Typen?","Cosa significano i tipi?","¿Qué significan los tipos?")}</a>`;
 }
 $("legend").addEventListener("click",e=>{
+  if(e.target.closest("#lg-btn")){LGOPEN=!LGOPEN;renderLegend();return;}
   if(e.target.closest("#geb-btn")){GEB=!GEB;if(!GEB)JONG=false;drawMarkers();renderLegend();renderInfo();return;}
   if(e.target.closest("#jong-btn")){JONG=!JONG;if(SEL&&JONG&&!jongAt(SEL[0],SEL[1]).length)SEL=null;drawMarkers();renderLegend();renderInfo();}});
 $("ltfbox").addEventListener("click",e=>{const b=e.target.closest("[data-lt]");if(!b)return;LTF=(b.dataset.lt&&LTF!==b.dataset.lt)?b.dataset.lt:"";
@@ -782,6 +811,7 @@ function birthLine(b,metPlek){const c=b.c;
   return `<li><a href="${KURL(b.s[0])}">${esc(kname(b.s))}</a> · ${esc(L4(b.y.n))}<small>${metPlek?esc(b.y.loc)+" · ":""}${BORN()} ${fdate(b.y.born,b.y.approx)}</small></li>`;}
 function renderInfo(){
   const box=$("info");
+  if(!SEL&&LIST){box.innerHTML=`<h3>${LIST.length} ${T("locaties hier","locations here","lieux ici","Orte hier","luoghi qui","lugares aquí")}</h3><ul class="cats">${LIST.map(([c,i])=>{const l=D[c].locs[i];return `<li><button type="button" class="lpick" data-pick="${c}|${i}">${tIcon(tIdx(c,i))}<span><b>${esc(l[0])}</b><small>${esc(l[1])} · ${esc(cname(c))}</small></span></button></li>`;}).join("")}</ul>`;return;}
   if(!SEL){
     if(ZOOM!=="all"){const c=ZOOM,d=D[c],ys=BIRTHS.filter(b=>b.c===c).slice(0,3);
       box.innerHTML=`<h3>${esc(cname(c))}</h3>${d.note?`<p class="pl">${esc(L4(d.note))}</p>`:""}
@@ -790,9 +820,9 @@ function renderInfo(){
         <p class="note">${T("Tik op een stip voor de katten op die locatie.","Tap a dot to see the cats at that location.","Touchez un point pour voir les félins de ce lieu.","Tippe auf einen Punkt, um die Katzen an diesem Ort zu sehen.","Tocca un punto per vedere i felini di quel luogo.","Toca un punto para ver los felinos de ese lugar.")}</p>
         <a class="btn" href="${window.__F[ZOOM]}">${OPENG()} →</a>`;
       return;}
-    box.innerHTML=`<h3>${T("Tik op een stip","Tap a dot","Touchez un point","Tippe auf einen Punkt","Tocca un punto","Toca un punto")}</h3>
+    box.innerHTML=`<h3>${T("Tik op een locatie","Tap a location","Touchez un lieu","Tippe auf einen Ort","Tocca un luogo","Toca un lugar")}</h3>
       <p class="pl">${T("Elke stip is een dierentuin, park of opvang. Tik erop en je ziet welke katten er wonen.","Each dot is a zoo, park or sanctuary. Tap it to see which cats live there.","Chaque point est un zoo, un parc ou un refuge. Touchez-le pour voir quels félins y vivent.","Jeder Punkt ist ein Zoo, Park oder eine Auffangstation. Tippe darauf, um zu sehen, welche Katzen dort leben.","Ogni punto è uno zoo, un parco o un centro di recupero. Toccalo per vedere quali felini ci vivono.","Cada punto es un zoo, un parque o un santuario. Tócalo para ver qué felinos viven allí.")}</p>
-      <p class="note">${T("De kleur is het soort locatie; ingezoomd zie je het icoon. Een rode rand: hier zijn recent jongen geboren. Zoom in met + of met twee vingers, of kies hierboven een land.","The colour shows the type of location; zoom in to see the icon. A red ring: young were born here recently. Zoom in with + or two fingers, or choose a country above.","La couleur indique le type de lieu ; en zoomant, vous voyez l’icône. Un anneau rouge : des petits y sont nés récemment. Zoomez avec + ou deux doigts, ou choisissez un pays ci-dessus.","Die Farbe zeigt die Art des Ortes; vergrößert siehst du das Symbol. Ein roter Ring: Hier wurden kürzlich Jungtiere geboren. Vergrößere mit + oder zwei Fingern oder wähle oben ein Land.","Il colore indica il tipo di luogo; ingrandendo vedi l’icona. Un anello rosso: qui sono nati di recente dei cuccioli. Ingrandisci con + o con due dita, oppure scegli un paese qui sopra.","El color indica el tipo de lugar; al acercar ves el icono. Un anillo rojo: aquí han nacido crías hace poco. Acerca con + o con dos dedos, o elige un país arriba.")}</p>`;
+      <p class="note">${T("Een rondje met een getal zijn meerdere locaties dicht bij elkaar: tik erop om in te zoomen. Kleur en icoon tonen het soort locatie (zie Legenda). Een rode rand: hier zijn recent jongen geboren.","A circle with a number is several locations close together: tap it to zoom in. Colour and icon show the type of location (see Legend). A red ring: young were born here recently.","Un rond avec un chiffre regroupe plusieurs lieux proches : touchez-le pour zoomer. La couleur et l’icône indiquent le type de lieu (voir Légende). Un anneau rouge : des petits y sont nés récemment.","Ein Kreis mit Zahl sind mehrere Orte nah beieinander: Tippe darauf, um zu vergrößern. Farbe und Symbol zeigen die Art des Ortes (siehe Legende). Ein roter Ring: Hier wurden kürzlich Jungtiere geboren.","Un cerchio con un numero sono più luoghi vicini: toccalo per ingrandire. Colore e icona indicano il tipo di luogo (vedi Legenda). Un anello rosso: qui sono nati di recente dei cuccioli.","Un círculo con un número son varios lugares cercanos: tócalo para acercar. El color y el icono indican el tipo de lugar (ver Leyenda). Un anillo rojo: aquí han nacido crías hace poco.")}</p>`;
     return;}
   const[c,i]=SEL,l=D[c].locs[i];
   const lt=ltOf(c,i),labs=lt[1].map(k=>D.lt.labels.find(x=>x.key===k)).filter(Boolean),ys=BAT[c+"|"+i]||[];
@@ -801,10 +831,11 @@ function renderInfo(){
     ${ys.length?`<h4>${T("Recent geboren","Recently born","Naissances récentes","Kürzlich geboren","Nati di recente","Nacimientos recientes")}</h4><ul class="births">${ys.map(b=>birthLine(b,false)).join("")}</ul>`:""}
     <a class="btn" href="${window.__F[c]}#${l[6]||""}locatie/${l[4]}">${T("Meer over deze locatie","More about this location","En savoir plus sur ce lieu","Mehr über diesen Ort","Maggiori informazioni su questo luogo","Más sobre este lugar")} →</a>`;
 }
-function pick(g){SEL=[g.dataset.c,+g.dataset.i];drawMarkers();renderInfo();
+function pick(g){SEL=[g.dataset.c,+g.dataset.i];LIST=null;drawMarkers();renderInfo();
   if(matchMedia("(max-width:859px)").matches)$("info").scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"nearest"});}
-svg.addEventListener("click",e=>{if(DRAGGED)return;const g=e.target.closest(".mk");if(g)pick(g);});
-svg.addEventListener("keydown",e=>{const g=e.target.closest(".mk");if(g&&(e.key==="Enter"||e.key===" ")){e.preventDefault();pick(g);}});
+svg.addEventListener("click",e=>{if(DRAGGED)return;const cl=e.target.closest(".cl");if(cl){openCluster(cl);return;}const g=e.target.closest(".mk");if(g)pick(g);});
+$("info").addEventListener("click",e=>{const b=e.target.closest("[data-pick]");if(!b)return;const q=b.dataset.pick.split("|");pick({dataset:{c:q[0],i:q[1]}});});
+svg.addEventListener("keydown",e=>{const cl=e.target.closest(".cl");if(cl&&(e.key==="Enter"||e.key===" ")){e.preventDefault();openCluster(cl);return;}const g=e.target.closest(".mk");if(g&&(e.key==="Enter"||e.key===" ")){e.preventDefault();pick(g);}});
 /* slepen (ingezoomd) en knijpen met twee vingers; ctrl + scrollwiel of knijpen op een touchpad */
 {const PT=new Map();let G=null;
   const start=()=>{G={vb:VB.slice(),pts:[...PT.values()].map(p=>({...p})),r:svg.getBoundingClientRect(),moved:false};};
@@ -890,7 +921,7 @@ let KAT=null,TOPV=false,PAGE=null,TAB="kaart";
 const HTML=document.documentElement;
 function renderTabs(){
   const lab={kaart:T("Kaart","Map","Carte","Karte","Mappa","Mapa"),landen:T("Landen","Countries","Pays","Länder","Paesi","Países"),soorten:T("Soorten","Species","Espèces","Arten","Specie","Especies")};
-  const cnt={kaart:document.querySelectorAll("#mks .mk").length,landen:ORDER.length,soorten:SPL().length};
+  const cnt={kaart:VIS.length,landen:ORDER.length,soorten:SPL().length};
   ["kaart","landen","soorten"].forEach(t=>{const b=$("tab-"+t);b.innerHTML=`${lab[t]}<small>${cnt[t]}</small>`;b.setAttribute("aria-selected",String(TAB===t));b.tabIndex=TAB===t?0:-1;});
 }
 function setTab(t){TAB=t;["kaart","landen","soorten"].forEach(x=>$("p-"+x).classList.toggle("on",x===t));renderTabs();if(t==="kaart")setVB(VB);}

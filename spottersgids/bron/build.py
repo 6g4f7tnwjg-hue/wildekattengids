@@ -106,6 +106,18 @@ for t in ts['topspots']:
         if not any(r['no'] == no for r in sp['recs']):
             sp['recs'].append(rec_from(t, no, tmap, top=True))
 
+# Plekfoto's voor de topspots: data/spotfoto.json (id → src, cr, url); bron in img/spot-<id>.jpg,
+# klein exemplaar foto/spot-<id>.webp (800 px breed) voor de topspotkaartjes
+spotfoto = load('data/spotfoto.json') if os.path.exists(J('data', 'spotfoto.json')) else {}
+for sid, ph in spotfoto.items():
+    if sid not in spots:
+        print(f'LET OP: plekfoto voor onbekende plek {sid}', file=sys.stderr); continue
+    src, dst = J(ph['src']), J('foto', f'spot-{sid}.webp')
+    if not os.path.exists(dst) or os.path.getmtime(dst) < os.path.getmtime(src):
+        im = Image.open(src).convert('RGB'); im.thumbnail((800, 800))
+        im.save(dst, 'WEBP', quality=72, method=6)
+    spots[sid]['photo'] = {'src': f'foto/spot-{sid}.webp', 'cr': ph['cr'], 'url': ph['url']}
+
 text = load('data/text.json')
 for k, pg in text.items():
     pg['sources'] = [add_source(s) for s in pg.get('sources', [])]

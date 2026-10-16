@@ -268,13 +268,17 @@ function homeData(){
   return {all, box, range};
 }
 const worldMode = () => FILTER === 'all' && !CAT && !VIEW;
-// het kader zonder inzoomen (bij de wereldkaart op een telefoon: het stuk dat in beeld is)
+// wereldkaart op een telefoon: niet alles past, je ziet een venster dat je zijwaarts verschuift
+const narrowWorld = () => FILTER === 'all' && !CAT && narrow();
+let BASEX = null;   // linkerkant van dat venster (kaarteenheden); null = beginstand
+// het kader zonder inzoomen
 function baseVB(){
   const mw = $('#mapwrap');
   if (FILTER === 'all' && !CAT) {
     if (!narrow() || !mw) return [0,0,W,H];
-    const s = W/680, w = Math.min(W, mw.clientWidth*s);
-    return [VIEW ? (W-w)/2 : Math.min(W-w, mw.scrollLeft*s), 0, w, H];
+    const w = Math.min(W, (mw.clientWidth || 360) * W / 960);
+    const x = BASEX === null ? (W-w) * .55 : BASEX;
+    return [Math.max(0, Math.min(W-w, x)), 0, w, H];
   }
   return fit(homeData().box, ratioFor(homeData().box));
 }
@@ -288,7 +292,8 @@ function clampView(v){
 // nieuw kader; zo ver uitgezoomd als het basiskader = niet meer ingezoomd
 function setView(v){
   const full = baseVB()[2];
-  VIEW = v[2] >= full - .5 ? null : clampView(v);
+  if (v[2] >= full - .5) { VIEW = null; if (narrowWorld()) BASEX = clampView([v[0], 0, full, H])[0]; }
+  else VIEW = clampView(v);
 }
 const MINW = 20;   // verst ingezoomd: 10 lengtegraden breed
 function zoomView(v, f, fx, fy){
@@ -297,26 +302,46 @@ function zoomView(v, f, fx, fy){
   return [x + fx*w - fx*nw, y + fy*h - fy*nh, nw, nh];
 }
 function zoomBy(f, fx = .5, fy = .5){ setView(zoomView(curVB(), f, fx, fy)); LISTALL = false; drawHomeMap(); }
-// tijdens een gebaar alleen het kader en de markerschaal bijwerken (snel)
+// tijdens een gebaar alleen het kader en de markerschaal bijwerken (snel, één keer per beeldje)
+let FRAME = null, RAF = 0;
 function liveView(v){
-  const svg = $('#mapwrap svg'); if (!svg) return;
-  VIEW = clampView(v);
-  svg.setAttribute('viewBox', VIEW.join(' '));
-  const u = VIEW[2] / (svg.clientWidth || 360);
-  svg.querySelectorAll('.mk').forEach(g => g.setAttribute('transform', `translate(${g.dataset.x} ${g.dataset.y}) scale(${u})`));
+  FRAME = clampView(v);
+  if (RAF) return;
+  RAF = requestAnimationFrame(() => {
+    RAF = 0;
+    const svg = $('#mapwrap svg'); if (!svg || !FRAME) return;
+    svg.setAttribute('viewBox', FRAME.join(' '));
+    const u = FRAME[2] / (svg.clientWidth || 360);
+    svg.querySelectorAll('.mk').forEach(g => g.setAttribute('transform', `translate(${g.dataset.x} ${g.dataset.y}) scale(${u})`));
+  });
 }
-let LASTSCROLL = 0;
+// na een gebaar: het kader vastleggen zonder de kaart opnieuw op te bouwen (geen sprongetje)
+function commitView(){
+  if (!FRAME) return;
+  setView(FRAME); FRAME = null;
+  if (RAF) { cancelAnimationFrame(RAF); RAF = 0; }
+  const svg = $('#mapwrap svg');
+  if (svg) {   // het vastgelegde kader meteen tonen (bij helemaal uitzoomen: terug naar het basiskader)
+    const v = curVB(), u = v[2] / (svg.clientWidth || 360);
+    svg.setAttribute('viewBox', v.join(' '));
+    svg.querySelectorAll('.mk').forEach(g => g.setAttribute('transform', `translate(${g.dataset.x} ${g.dataset.y}) scale(${u})`));
+    svg.classList.toggle('zoomed', !!VIEW); svg.classList.toggle('pan', !VIEW && narrowWorld());
+  }
+  $('#zOut').disabled = $('#zReset').disabled = !VIEW;
+  $('#zIn').disabled = !!VIEW && VIEW[2] <= MINW + .5;
+  LISTALL = false; drawMapList(LASTMARKERS);
+}
+let LASTMARKERS = [];
 function drawHomeMap(){
   const mw = $('#mapwrap'); if (!mw) return;
-  const world = worldMode();
-  const keep = world ? (mw.scrollLeft || LASTSCROLL) : LASTSCROLL;
-  mw.className = 'mapscroll' + (world ? ' world' : '');
-  const cw = world && narrow() ? 960 : (mw.clientWidth || 360);
+  if (RAF) { cancelAnimationFrame(RAF); RAF = 0; } FRAME = null;
+  mw.className = 'mapscroll';
+  const cw = mw.clientWidth || 360;
   const {all, box, range} = homeData();
   const markers = all.filter(m => SHOWN.has(m.score)).map(m => ({...m, sel:SEL===m.id}));
   markers.sort((a,b) => (a.sel - b.sel) || (a.score - b.score));
-  mw.innerHTML = mapSvg({box, world, vb:VIEW, cw, markers, range, mr:5, cls:VIEW?'zoomed':'', label:T(U.navMap)});
-  if (world && mw.scrollWidth > mw.clientWidth) { mw.scrollLeft = keep || (mw.scrollWidth - mw.clientWidth) * .55; LASTSCROLL = mw.scrollLeft; }
+  LASTMARKERS = markers;
+  mw.innerHTML = mapSvg({box, world:FILTER === 'all' && !CAT, vb:curVB(), cw, markers, range, mr:5, cls:VIEW?'zoomed':(narrowWorld()?'pan':''), label:T(U.navMap)});
   bindMarkers(mw, id => { if (!DRAGGED) selectSpot(id); });
   bindGestures(mw);
   $('#zOut').disabled = $('#zReset').disabled = !VIEW;
@@ -359,12 +384,14 @@ function drawMapList(markers){
 // slepen (als ingezoomd), knijpen met twee vingers, ctrl+scroll / trackpad en dubbelklik
 function bindGestures(mw){
   const svg = mw.querySelector('svg'); if (!svg) return;
-  const pts = new Map(); let g = null, endT = null;
+  const pts = new Map(); let g = null, endT = null, glide = 0, vel = null;
   const frac = (cx, cy, r) => [(cx - r.left) / r.width, (cy - r.top) / r.height];
+  const canPan = () => !!VIEW || narrowWorld();
+  const stopGlide = () => { if (glide) { cancelAnimationFrame(glide); glide = 0; commitView(); } };
   const begin = () => {
-    if (!VIEW && pts.size === 2 && worldMode()) { VIEW = baseVB(); drawHomeMap(); }   // wereldkaart op telefoon: eerst omzetten naar zoommodus
-    const s = $('#mapwrap svg'), r = s.getBoundingClientRect(), vb = s.getAttribute('viewBox').split(' ').map(Number), p = [...pts.values()];
-    g = {r, vb, p0:p.map(q => ({...q})), d0: p.length === 2 ? Math.hypot(p[0].x-p[1].x, p[0].y-p[1].y) : 0};
+    const r = svg.getBoundingClientRect(), vb = FRAME || curVB(), p = [...pts.values()];
+    g = {r, vb:vb.slice(), p0:p.map(q => ({...q})), d0: p.length === 2 ? Math.hypot(p[0].x-p[1].x, p[0].y-p[1].y) : 0};
+    vel = {x:0, y:0, t:performance.now(), px:p[0] ? p[0].x : 0, py:p[0] ? p[0].y : 0};
   };
   const move = e => {
     if (!pts.has(e.pointerId)) return;
@@ -376,34 +403,55 @@ function bindGestures(mw){
       const [fx,fy] = frac(m0[0], m0[1], r), ax = vb[0] + fx*vb[2], ay = vb[1] + fy*vb[3];
       const nv = zoomView(vb, d / g.d0, fx, fy), [gx,gy] = frac(m[0], m[1], r);
       nv[0] = ax - gx*nv[2]; nv[1] = ay - gy*nv[3];
-      DRAGGED = true; liveView(nv);
-    } else if (p.length === 1 && VIEW) {
+      DRAGGED = true; vel = null; liveView(nv);
+    } else if (p.length === 1 && canPan()) {
       const dx = p[0].x - g.p0[0].x, dy = p[0].y - g.p0[0].y;
       if (Math.hypot(dx, dy) > 5) DRAGGED = true;
-      if (DRAGGED) liveView([vb[0] - dx*sx, vb[1] - dy*sy, vb[2], vb[3]]);
+      if (DRAGGED) {
+        liveView([vb[0] - dx*sx, vb[1] - (VIEW ? dy*sy : 0), vb[2], vb[3]]);
+        if (vel) { const t = performance.now(), dt = Math.max(1, t - vel.t), a = Math.min(1, dt / 50);
+          vel.x = vel.x*(1-a) + (p[0].x - vel.px)/dt*a; vel.y = vel.y*(1-a) + (p[0].y - vel.py)/dt*a; vel.t = t; vel.px = p[0].x; vel.py = p[0].y; }
+      }
     }
+  };
+  // uitloop na het loslaten: de kaart glijdt nog even door en remt af
+  const startGlide = (r) => {
+    let vx = vel.x, vy = VIEW ? vel.y : 0, last = performance.now();
+    if (performance.now() - vel.t > 80 || Math.hypot(vx, vy) < .15) { commitView(); return; }
+    const step = now => {
+      const dt = Math.min(32, now - last); last = now;
+      const f = Math.pow(.995, dt); vx *= f; vy *= f;
+      const fr = FRAME || curVB(), sx = fr[2] / r.width, sy = fr[3] / r.height;
+      liveView([fr[0] - vx*dt*sx, fr[1] - vy*dt*sy, fr[2], fr[3]]);
+      if (Math.hypot(vx, vy) < .02) { glide = 0; commitView(); return; }
+      glide = requestAnimationFrame(step);
+    };
+    glide = requestAnimationFrame(step);
   };
   const up = e => {
     if (!pts.delete(e.pointerId)) return;
-    if (pts.size) { begin(); return; }
+    if (pts.size) { begin(); vel = null; return; }
     window.removeEventListener('pointermove', move); window.removeEventListener('pointerup', up); window.removeEventListener('pointercancel', up);
-    g = null;
-    if (DRAGGED) setTimeout(() => { if (VIEW) setView(VIEW); LISTALL = false; drawHomeMap(); DRAGGED = false; }, 0);
+    const r = g && g.r; g = null;
+    if (DRAGGED) {
+      if (e.type === 'pointerup' && vel && r) startGlide(r); else commitView();
+      setTimeout(() => { DRAGGED = false; }, 0);
+    }
   };
   svg.addEventListener('pointerdown', e => {
     if (e.pointerType === 'mouse' && e.button !== 0) return;
+    stopGlide();
     if (!pts.size) { DRAGGED = false; window.addEventListener('pointermove', move); window.addEventListener('pointerup', up); window.addEventListener('pointercancel', up); }
     pts.set(e.pointerId, {x:e.clientX, y:e.clientY});
-    if (VIEW && e.pointerType === 'mouse') e.preventDefault();
+    if (canPan() && e.pointerType === 'mouse') e.preventDefault();
     begin();
   });
   svg.addEventListener('wheel', e => {
     if (!e.ctrlKey) return;            // gewoon scrollen blijft de pagina scrollen
-    e.preventDefault();
-    if (worldMode()) { VIEW = baseVB(); drawHomeMap(); }
-    const s = $('#mapwrap svg'), [fx,fy] = frac(e.clientX, e.clientY, s.getBoundingClientRect());
-    liveView(zoomView(VIEW, Math.exp(-e.deltaY * .01), fx, fy));
-    clearTimeout(endT); endT = setTimeout(() => { setView(VIEW); LISTALL = false; drawHomeMap(); }, 150);
+    e.preventDefault(); stopGlide();
+    const [fx,fy] = frac(e.clientX, e.clientY, svg.getBoundingClientRect());
+    liveView(zoomView(FRAME || curVB(), Math.exp(-e.deltaY * .01), fx, fy));
+    clearTimeout(endT); endT = setTimeout(commitView, 150);
   }, {passive:false});
   svg.addEventListener('dblclick', e => { const [fx,fy] = frac(e.clientX, e.clientY, svg.getBoundingClientRect()); zoomBy(2, fx, fy); });
 }
@@ -444,7 +492,7 @@ function renderHome(){
 function refreshHome(){ $('#bar').innerHTML = renderBar(); $('#tabbody').innerHTML = tabBody(); bindHome(); }
 function bindHome(){
   $$('.chip[data-f]').forEach(b => b.onclick = () => {
-    FILTER = b.dataset.f; CAT = null; VIEW = null; LISTALL = false; LASTSCROLL = 0; try { localStorage.setItem('sg-cont', FILTER); } catch(e) {}
+    FILTER = b.dataset.f; CAT = null; VIEW = null; LISTALL = false; BASEX = null; try { localStorage.setItem('sg-cont', FILTER); } catch(e) {}
     if (SEL && SPOT[SEL] && !inFilter(SPOT[SEL].cont)) SEL = null;
     refreshHome();
   });

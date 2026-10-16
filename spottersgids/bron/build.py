@@ -107,9 +107,64 @@ for k, pg in text.items():
     pg['sources'] = [add_source(s) for s in pg.get('sources', [])]
 europe = load('data/europe.json')
 
+# Adressen van de losse soortpagina's: NL op spottersgids/<naam>/, EN op spottersgids/en/<name>/
+import unicodedata, hashlib, html as H
+def slug(t):
+    t = unicodedata.normalize('NFKD', t.replace("'", '').replace('’', '')).encode('ascii', 'ignore').decode().lower()
+    return re.sub(r'[^a-z0-9]+', '-', t).strip('-')
+BYNO = {c['no']: c for c in cats}
+slugs = {'nl': {no: slug(BYNO[no]['nl']) for no in PAGES}, 'en': {no: slug(BYNO[no]['en']) for no in PAGES}}
+
 data = {'cats': cats, 'spots': list(spots.values()), 'pages': pages, 'sources': sources,
-        'text': text, 'europe': europe, 'land': open(J('bron', 'land.txt')).read().strip()}
-blob = json.dumps(data, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
-html = open(J('bron', 'template.html'), encoding='utf-8').read().replace('__DATA__', blob)
-open(J('index.html'), 'w', encoding='utf-8').write(html)
-print(f'index.html: {len(html)//1024} kB, {len(spots)} plekken, {len(pages)} soortpagina\'s, {len(sources)} bronnen')
+        'text': text, 'europe': europe, 'land': open(J('bron', 'land.txt')).read().strip(), 'slugs': slugs}
+blob = json.dumps(data, ensure_ascii=False, separators=(',', ':'))
+datajs = 'window.SG_DATA=' + blob + ';\n'
+open(J('data.js'), 'w', encoding='utf-8').write(datajs)
+
+# Stijl en script uit de template naar gedeelde bestanden (één keer laden voor alle pagina's)
+tpl = open(J('bron', 'template.html'), encoding='utf-8').read()
+m = re.search(r'<style>\n?(.*?)</style>', tpl, re.S); css = m.group(1)
+tpl = tpl[:m.start()] + '<link rel="stylesheet" href="style.css?v=__CSSVER__">' + tpl[m.end():]
+m = re.search(r"<script>\n?('use strict';.*?)</script>", tpl, re.S); js = m.group(1)
+tpl = tpl[:m.start()] + '<script src="app.js?v=__JSVER__"></script>' + tpl[m.end():]
+open(J('style.css'), 'w', encoding='utf-8').write(css)
+open(J('app.js'), 'w', encoding='utf-8').write(js)
+ver = lambda t: hashlib.md5(t.encode()).hexdigest()[:8]
+tpl = tpl.replace('__VER__', ver(datajs)).replace('__CSSVER__', ver(css)).replace('__JSVER__', ver(js))
+open(J('index.html'), 'w', encoding='utf-8').write(tpl)
+
+SITE = 'https://yeetkitty.github.io/wildekattengids/spottersgids/'
+url = lambda lang, no: SITE + ('en/' if lang == 'en' else '') + slugs[lang][no] + '/'
+LBL = {'nl': {'title': '{n} in het wild zien · Spottersgids voor wilde katten',
+              'desc': '{n} in het wild zien: beste plek {p} ({c}), kans {k} van 5. Met {m} spotplekken, seizoen, tips en bronnen.',
+              'places': 'Beste plekken', 'chance': 'kans'},
+       'en': {'title': '{n} in the wild: where to see it · Wild Cat Spotter\'s Guide',
+              'desc': '{n} in the wild: best place {p} ({c}), chance {k} out of 5. With {m} spotting sites, best season, tips and sources.',
+              'places': 'Best places', 'chance': 'chance'}}
+SPOTS = {sp['id']: sp for sp in spots.values()}
+written = []
+for lang in ('nl', 'en'):
+    for no in PAGES:
+        c, P = BYNO[no], pages[no]
+        recs = [(SPOTS[i], next(r for r in SPOTS[i]['recs'] if r['no'] == no)) for i in P['spots']]
+        best, br = recs[0]
+        lb = LBL[lang]
+        title = lb['title'].format(n=c[lang])
+        desc = lb['desc'].format(n=c[lang], p=best['name'][lang], c=best['country'][lang], k=br['score'], m=len(recs))
+        alt = f'<link rel="canonical" href="{url(lang, no)}">\n<link rel="alternate" hreflang="nl" href="{url("nl", no)}">\n<link rel="alternate" hreflang="en" href="{url("en", no)}">\n<link rel="alternate" hreflang="x-default" href="{url("en", no)}">'
+        pre = (f'<div class="wrap sec read"><h1>{H.escape(c[lang])}</h1><p>{H.escape(P["intro"][lang])}</p>'
+               f'<h2>{lb["places"]}</h2><ul>' + ''.join(f'<li>{H.escape(s["name"][lang])} ({H.escape(s["country"][lang])}) – {lb["chance"]} {r["score"]}</li>' for s, r in recs) + '</ul></div>')
+        base = '../../' if lang == 'en' else '../'
+        out = tpl.replace('<html lang="nl">', f'<html lang="{lang}">', 1)
+        out = re.sub(r'<title>.*?</title>', f'<title>{H.escape(title)}</title>', out, count=1)
+        out = re.sub(r'<meta name="description" content="[^"]*">', f'<meta name="description" content="{H.escape(desc)}">\n{alt}', out, count=1)
+        out = out.replace('<meta charset="utf-8">', f'<meta charset="utf-8">\n<base href="{base}">', 1)
+        out = out.replace('<main id="main"></main>', f'<main id="main">{pre}</main>', 1)
+        out = out.replace('<script src="data.js', f'<script>window.SG_PAGE={{no:{no},lang:"{lang}"}};</script>\n<script src="data.js', 1)
+        d = J(*(['en'] if lang == 'en' else []), slugs[lang][no]); os.makedirs(d, exist_ok=True)
+        open(os.path.join(d, 'index.html'), 'w', encoding='utf-8').write(out)
+        written.append(url(lang, no))
+
+open(J('sitemap.xml'), 'w', encoding='utf-8').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    + ''.join(f'  <url><loc>{u}</loc></url>\n' for u in [SITE] + written) + '</urlset>\n')
+print(f'index.html + {len(written)} soortpagina\'s; data.js {len(datajs)//1024} kB, {len(spots)} plekken, {len(sources)} bronnen')

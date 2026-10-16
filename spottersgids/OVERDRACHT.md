@@ -1,32 +1,43 @@
 # Overdracht – Spottersgids voor wilde katten (Wild Cat Spotter's Guide)
 
-Maker: J. Gelens. Stand: 16 oktober 2026. Alle 42 soorten hebben een soortpagina.
+Maker: J. Gelens. Stand: 16 oktober 2026. Alle 42 soorten hebben een soortpagina. De gids staat live op GitHub Pages.
 
 ## Waar staat alles
-- **Live (wordt): GitHub Pages** https://yeetkitty.github.io/wildekattengids/spottersgids/ – openbaar; Pages publiceert de branch `main` (map `spottersgids/`). Live zetten = `spottersgids-europa` samenvoegen in `main` (pull request, alleen als de gebruiker erom vraagt).
-- **Oud: artifact (privé)** https://claude.ai/artifact/4Pmep6UwbY4aoyRyXXfRRX – staat nog op de versie met ingebakken foto's (12,7 MB). Losse foto's laden niet in de Claude-app (getest 16-10-2026). Advies aan de gebruiker: na livegang van Pages er een korte 'verhuisd naar …'-pagina van maken (nog niet besloten). De huidige `index.html` werkt NIET meer in het artifact.
-- **Repo:** `yeetkitty/wildekattengids`, branch **`spottersgids-europa`**, map `spottersgids/` (losse site naast de bestaande dierentuingids; niets daarbuiten aangeraakt).
+- **Live (openbaar): https://yeetkitty.github.io/wildekattengids/spottersgids/** – GitHub Pages publiceert de branch `main` van `yeetkitty/wildekattengids` direct (geen workflow; `.nojekyll` in de root). Live sinds 16-10-2026 via PR #1.
+- **Repo:** `yeetkitty/wildekattengids`, map `spottersgids/`. Werkbranch: **`spottersgids-europa`** (na PR #1 opnieuw opgezet vanaf `main`). Niets buiten `spottersgids/` aanraken: de rest is de bestaande dierentuingids (https://yeetkitty.github.io/wildekattengids/, niet aanpassen).
+- **Oud artifact (privé), niet meer bijwerken:** https://claude.ai/artifact/4Pmep6UwbY4aoyRyXXfRRX – staat op de versie van 16-10-2026 met de foto's ingebakken (12,7 MB). Gebruiker: "laat het oude artifact maar". Losse foto-bestanden laden niet in de Claude-app (twee keer geprobeerd), daarom is de gids verhuisd naar GitHub Pages. De huidige `index.html` werkt niet meer als artifact.
 - **Bron van de soortgegevens:** artifact "De KATalogue" https://claude.ai/code/artifact/ba3edb6b-d786-4e68-906b-779c6b5cb3ea (42 soorten, foto's + credits, verspreidingskaarten, IUCN). Al uitgepakt naar `bron/katalogue.json`, `bron/land.txt` en `img/NN-i.jpg`.
+
+## Werkwijze per wijziging
+1. `git fetch origin main`; werk op `spottersgids-europa`. Is de vorige PR al samengevoegd, zet de branch dan eerst opnieuw op: `git checkout -B spottersgids-europa origin/main`.
+2. Wijzig `bron/template.html`, `bron/build.py` of `data/*.json` – alleen wat gevraagd is.
+3. Bouwen: `cd spottersgids && python3 bron/build.py` (de melding over Ndutu bij soort 1 is bekend en onschuldig).
+4. Lokaal testen zoals Pages het serveert: `python3 -m http.server 8765` in de repo-root, dan `http://localhost:8765/spottersgids/` (Playwright met Chromium uit `/opt/pw-browsers` werkt; Python-pakket `playwright` eventueel eerst `pip install`). Telefoon testen met `is_mobile=True`.
+5. Committen en pushen naar `spottersgids-europa` (afspraak: na elke wijziging).
+6. Live zetten = pull request `spottersgids-europa` → `main`; alleen maken als de gebruiker erom vraagt. De gebruiker voegt zelf samen. Daarna duurt het ±1 minuut tot de site bijgewerkt is.
 
 ## Opbouw van `spottersgids/`
 | Pad | Wat |
 |---|---|
-| `bron/template.html` | De hele site (HTML/CSS/JS, één pagina met #-routes). `__DATA__` wordt bij het bouwen vervangen. Ko-fi-link: `KOFI_URL` (= https://ko-fi.com/katalogue). |
-| `bron/build.py` | Bouwt `index.html`. `PAGES` = lijst met soortnummers die een pagina hebben (nu alle 42). Foto's zijn losse bestanden: groot = `img/NN-i.jpg` (origineel), klein = `foto/NN-i-k.webp` (200 px, door de bouw gemaakt) voor fotorij, lijstjes en Katten in Europa. |
+| `bron/template.html` | De hele site (HTML/CSS/JS, één pagina met #-routes). `__DATA__` wordt bij het bouwen vervangen. Ko-fi-link: `KOFI_URL` (= https://ko-fi.com/katalogue). Begint met `<!doctype html>` + viewport-meta (nodig voor Pages). |
+| `bron/build.py` | Bouwt `index.html`. `PAGES` = soortnummers met een pagina (alle 42). Foto's zijn losse bestanden: groot = `img/NN-i.jpg` (origineel, niet opnieuw gecomprimeerd), klein = `foto/NN-i-k.webp` (200 px, door de bouw gemaakt) voor fotorij, lijstjes en Katten in Europa. |
 | `data/<nr>.json` | Onderzoek per soort: intro, plekken (score 1–5, seizoen, tijdstip, tocht, bronnen), tips, bedreigingen, status, bronnen – NL en EN. |
-| `data/topspots.json` | Oorspronkelijke topspotlijst; telt nu alleen nog als "deze plek mag topspot zijn bij score 4". |
+| `data/topspots.json` | Oorspronkelijke topspotlijst; telt alleen nog als "deze plek mag topspot zijn bij score 4". |
 | `data/alias.json` | Samenvoegen van dezelfde plek onder verschillende id's. |
 | `data/extra_cont.json` | Extra werelddelen bovenop de KATalogue (luipaard, Afr. wilde kat, moeraskat → ook Europa). |
 | `data/text.json`, `data/europe.json` | Pagina's Verantwoord spotten, Katten in Europa, Paklijst, Over mij (NL/EN). |
 | `TWIJFELS.md` | Alle twijfels en redactiekeuzes per soort en per ronde. |
-| `index.html` | Gebouwde site (≈0,9 MB; met foto's ≈1,2 MB per bezoek). |
-| `img/`, `foto/` | Foto's (groot jpg, klein webp); moeten mee naar `main`. |
+| `index.html` | Gebouwde startpagina (klein omhulsel). Oude #-adressen (bijv. `#soort-27`) werken nog. |
+| `data.js`, `app.js`, `style.css` | Gebouwd: gegevens, script en stijl uit de template, gedeeld door alle pagina's (met `?v=`-versie tegen oude cache). Niet met de hand wijzigen. |
+| `<nl-naam>/index.html`, `en/<en-name>/index.html` | Gebouwd: losse soortpagina per taal (84 stuks) voor Google, met eigen titel, beschrijving, canonical/hreflang en voorgerenderde tekst. `<base href>` wijst naar de map spottersgids. |
+| `sitemap.xml` | Gebouwd: start + 84 soortpagina's. |
+| `img/`, `foto/` | Foto's (groot jpg, klein webp); horen in de repo, Pages serveert ze. |
 
-Bouwen: `cd spottersgids && python3 bron/build.py` → daarna committen/pushen (en via `main` live zetten). Lokaal testen: `python3 -m http.server` in de repo-root en `http://localhost:8000/spottersgids/` openen.
 Topspot-regel in de bouw: plek met score 5 op een soortpagina = topspot; score 4 alleen als hij in `topspots.json` voor die soort staat.
 
 ## Afspraken met de gebruiker (belangrijk)
-- Werkwijze per ronde; na elke ronde publiceren en **stoppen**. Bij latere wijzigingen **alleen aanpassen wat gevraagd wordt**. Bij onduidelijke wensen **doorvragen** (gebruiker vraagt daar expliciet om).
+- **Alleen aanpassen wat gevraagd wordt.** Bij onduidelijke wensen **doorvragen**; bij een keuze eerst een voorstel met advies geven ("Wat stel je voor" = opties + aanbeveling, nog niet bouwen).
+- Na elke wijziging committen en pushen.
 - Taal: Nederlands naar de gebruiker; site NL/EN. Gidsnamen uit de KATalogue (bijv. sneeuwpanter, Sundaluipaardkat, het luipaard). Let op het Duitse "stuft/stufte" in statusteksten → "deelt in"/"zette".
 - Schrijfstijl: avontuurlijk, eerlijk, "je"; intro eindigt met "Kans: X – …".
 - Kansscore eerlijk (5 bijna zeker … 1 alleen geluk/cameravallen).
@@ -34,18 +45,26 @@ Topspot-regel in de bouw: plek met score 5 op een soortpagina = topspot; score 4
 - Plekken alleen op gebiedsniveau, markers op het midden van het gebied; geen holen/wissels/rustplekken.
 - **Niet lokken:** voederplekken niet als aanbevolen plek (bij wolkentijgerkat twee geschrapt).
 - Ontwerp: één lichte stijl (donker vond de gebruiker te donker). Kaart opent als eerste tabblad.
+- De gids mag openbaar zijn en gevonden worden.
 
 ## Wat er gebouwd is (functies)
-- Start: werelddeelfilter; tabs **Kaart · Topspots · Soorten**. Kaart met fotorij "kies een kat": per werelddeel alleen katten van dat werelddeel (kleur = met spotplek, grijs = leeft er, nog geen plek); kies je een kat, dan blijft de kaart in het werelddeel met leefgebied erachter. Sterren = topspots. Startkaart (16-10-2026): markers kleiner; legenda is een filter op kans (standaard 3–5 aan, knop "Toon ook kans 1–2"); zoomen met +/−/hele kaart, knijpen, slepen als ingezoomd, ctrl+scroll en dubbelklik; daaronder een lijst "Plekken op de kaart / in beeld" (eerst 10, knop "Toon alle"). Soortpagina-kaarten ongewijzigd. Topspots: eerst 6, knop "Toon alle". Soorten: zoekveld.
-- Soortpagina: samenvatting (beste plek/tijd/kans), snelmenu, inklapbare plekken (top 3 open), kaart met genummerde plekken + keuzelijst "Ook te zien op deze plekken", tips, status/bedreigingen, foto's met credits, bronnen.
+- Losse soortpagina's (16-10-2026): NL op `/spottersgids/manoel/`, EN op `/spottersgids/en/pallas-cat/`. Links naar soorten gaan via `spHref()`; de taalknop op een soortpagina gaat naar de pagina in de andere taal. `window.SG_PAGE` in de pagina vertelt het script welke soort/taal.
+- Telefoon (≤820 px): de balk met werelddelen en tabbladen verdwijnt bij omlaag scrollen en komt terug bij omhoog scrollen (16-10-2026).
+- Start: werelddeelfilter; tabs **Kaart · Topspots · Soorten**. Fotorij "kies een kat": per werelddeel alleen katten van dat werelddeel (kleur = met spotplek, grijs = leeft er, nog geen plek); kies je een kat, dan blijft de kaart in het werelddeel met leefgebied erachter. Sterren = topspots.
+- Startkaart (aangepast 16-10-2026): kleinere markers; de legenda is een filter op kans (standaard 3–5 aan, knop "Toon ook kans 1–2"); zoomen met +/−/hele kaart, knijpen, slepen als ingezoomd, ctrl+scroll en dubbelklik; daaronder een lijst "Plekken op de kaart / in beeld" (eerst 10, knop "Toon alle"; tik = plek kiezen). Code: `homeData`, `drawHomeMap`, `bindGestures`, `drawMapList` in de template.
+- Topspots: eerst 6, knop "Toon alle". Soorten: zoekveld.
+- Soortpagina: samenvatting (beste plek/tijd/kans), snelmenu, inklapbare plekken (top 3 open), kaart met genummerde plekken + keuzelijst "Ook te zien op deze plekken" (deze kaart is niet aangepast), tips, status/bedreigingen, foto's met credits, bronnen.
 - Menu: Soorten · Topspots · Katten in Europa · Meer (Verantwoord spotten, Paklijst, Over mij).
 
 ## Open punten / mogelijke vervolgstappen
-- Wolkentijgerkat staat grijs in de fotorij bij Noord-Amerika (KATalogue rekent Costa Rica/Panama tot Noord-Amerika, de gids tot Midden-/Zuid-Amerika) – gebruiker nog niet gevraagd of dit gelijkgetrokken moet worden.
-- Openbaar maken is goedgekeurd; een link vanaf de bestaande site en opname in `sitemap.xml` komen later.
-- Testbranch `spottersgids-fotos-los` (proef losse foto's in het artifact) kan weg; verwijderen werd in de sessie geblokkeerd.
-- Kaart van Azië is op mobiel vol (niet aangepast; niet gevraagd).
-- Leeuw bij Ndutu staat niet meer op de kaart (leeuwenpagina neemt Ndutu niet op); Ndutu is topspot voor de cheetah.
+- **Contactformulier** op Over mij: gebruiker maakt zelf een formulier en geeft de link.
+- `spottersgids/sitemap.xml` is nog nergens aangemeld (root-`robots.txt`/`sitemap.xml` liggen buiten de map); kan via Google Search Console.
+- Verbeterlijst uit de review van 16-10-2026 (nog niet gedaan): bronnen van reisorganisaties (URL's met Cat Expeditions/Sakertours), IUCN nakijken (jaguarundi, Aziatische goudkat, kodkod), uitleg kans op start, kans 3× herhaald op soortpagina, bronnummers ongesorteerd, soortkaart zonder landen, dierentuinfoto's, deelvoorbeeld/icoon, Ko-fi in voettekst, tilcayo-zin 'eerste nieuwe soort in 100 jaar'.
+- **Later (gebruiker):** link naar de Spottersgids vanaf de bestaande site en opname in de root-`sitemap.xml`. Dat raakt bestanden buiten `spottersgids/`, dus alleen op verzoek.
+- Bij een kat met alleen plekken met kans 1–2 (bijv. caracal) is de startkaart eerst leeg tot je "Toon ook kans 1–2" kiest. Gevraagd of dat automatisch moet; nog geen antwoord.
+- `OVERDRACHT.md` en `TWIJFELS.md` staan in de openbare map en zijn dus ook via de website op te vragen (bijv. …/spottersgids/TWIJFELS.md). Nog niet met de gebruiker besproken.
+- Testbranch `spottersgids-fotos-los` (proef losse foto's in het artifact) kan weg; verwijderen werd in de sessie geblokkeerd. Gebruiker kan hem zelf op GitHub verwijderen.
+- Wolkentijgerkat staat grijs in de fotorij bij Noord-Amerika (KATalogue rekent Costa Rica/Panama tot Noord-Amerika, de gids tot Midden-/Zuid-Amerika) – nog niet gevraagd.
+- Leeuw bij Ndutu staat niet op de kaart (leeuwenpagina neemt Ndutu niet op); Ndutu is topspot voor de cheetah.
 - Iriomote (Bengaalse kat, ~100 dieren) staat erin met score 2 – gebruiker kan vragen om te schrappen.
-- Artifact is privé; delen gaat via het deelmenu van de pagina.
-- Er is (nog) geen pull request gemaakt; alleen gepusht naar de branch.
+- Klein lay-outpuntje gezien (niet gevraagd): op brede schermen loopt "Kans 3 · redelijke kans" in het samenvattingsvak van de soortpagina iets buiten het vak.

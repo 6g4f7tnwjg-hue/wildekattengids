@@ -382,6 +382,10 @@ h1.mast .m1{display:block!important;font-family:var(--hs-label)!important;font-s
 h1.mast .m2{display:block!important;font-family:var(--hs-display)!important;font-style:normal!important;font-weight:800!important;font-size:clamp(1.75rem,6vw,2.6rem)!important;color:var(--ink)!important;margin-top:2px!important;line-height:1.12!important;padding:0!important;background:none!important;border:0!important}
 h1.mast .m2::before,h1.mast .m2::after{display:none!important}
 h1.mast .m2::first-letter{text-transform:uppercase}
+h1.mast.hs-kop{display:flex!important;align-items:center;gap:12px;font-family:var(--hs-display)!important;font-weight:800!important;font-size:clamp(1.75rem,6vw,2.6rem)!important;line-height:1.1!important;color:var(--ink)!important;margin:0 0 4px!important;letter-spacing:-.01em}
+h1.mast.hs-kop>svg{flex:none;width:44px;height:30px;border-radius:4px;box-shadow:0 0 0 1px rgba(30,35,24,.18)}
+.hs-onder{margin:0 0 10px!important;color:var(--muted);font-size:1.08rem;font-family:var(--hs-body)}
+header .stamp.hs-stamp{display:block!important;margin:8px 0 0!important}
 header figure.hero{margin:10px 0 8px!important;max-width:720px!important}
 header figure.hero img{width:100%!important;max-width:100%!important;height:auto!important;aspect-ratio:21/9;object-fit:cover;border-radius:12px!important;box-shadow:none!important;margin:0 0 4px!important}
 header figure.hero p{font-size:.82rem!important;margin:0!important}

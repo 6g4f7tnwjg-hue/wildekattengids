@@ -288,7 +288,9 @@ for c, doc in G.items():
     doc = sub1(doc, HOME_JS, f'location.href="{BASE}";')
     doc = sub1(doc, '<a href="#" id="naar-landen">', f'<a href="{BASE}" id="naar-landen">')
     _li = {n: ((v.get("type") or [""])[0]) for part in DATA[c].values() for n, v in (part.get("LOCINFO") or {}).items()}
-    doc = huisstijl.toepassen(doc, ["nl", "en"] + GTAAL[c], BASE, huisstijl.kaartdata(LTJ["types"], _li, ["nl", "en"] + GTAAL[c]))   # bovenbalk, kleuren, letters, kop, tabbladen en Ko-fi van de startpagina
+    _vl = re.search(r"\n  " + c + r":'(<svg[^']*)'", START).group(1).replace('class="flag"', "")
+    doc = huisstijl.toepassen(doc, ["nl", "en"] + GTAAL[c], BASE, huisstijl.kaartdata(LTJ["types"], _li, ["nl", "en"] + GTAAL[c]),
+                              huisstijl.kopdata(c, ["nl", "en"] + GTAAL[c], _vl))   # bovenbalk, kleuren, letters, kop, tabbladen en Ko-fi van de startpagina
     t, d = CTRY[c]
     doc = re.sub(r"<title>[^<]*</title>", lambda mm: f"<title>{t}</title>\n" + seo(t, d, SITE + F[c] + "/"), doc, count=1)
     WEB[c] = doc   # zonder meldformulier-aanpassing (voor de stijl en momentopnames)

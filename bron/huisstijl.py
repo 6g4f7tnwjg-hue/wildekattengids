@@ -130,6 +130,10 @@ h1.mast .m1{display:block!important;font-family:var(--hs-label)!important;font-s
 h1.mast .m2{display:block!important;font-family:var(--hs-display)!important;font-style:normal!important;font-weight:800!important;font-size:clamp(1.75rem,6vw,2.6rem)!important;color:var(--ink)!important;margin-top:2px!important;line-height:1.12!important;padding:0!important;background:none!important;border:0!important}
 h1.mast .m2::before,h1.mast .m2::after{display:none!important}
 h1.mast .m2::first-letter{text-transform:uppercase}
+h1.mast.hs-kop{display:flex!important;align-items:center;gap:12px;font-family:var(--hs-display)!important;font-weight:800!important;font-size:clamp(1.75rem,6vw,2.6rem)!important;line-height:1.1!important;color:var(--ink)!important;margin:0 0 4px!important;letter-spacing:-.01em}
+h1.mast.hs-kop>svg{flex:none;width:44px;height:30px;border-radius:4px;box-shadow:0 0 0 1px rgba(30,35,24,.18)}
+.hs-onder{margin:0 0 10px!important;color:var(--muted);font-size:1.08rem;font-family:var(--hs-body)}
+header .stamp.hs-stamp{display:block!important;margin:8px 0 0!important}
 header figure.hero{margin:10px 0 8px!important;max-width:720px!important}
 header figure.hero img{width:100%!important;max-width:100%!important;height:auto!important;aspect-ratio:21/9;object-fit:cover;border-radius:12px!important;box-shadow:none!important;margin:0 0 4px!important}
 header figure.hero p{font-size:.82rem!important;margin:0!important}
@@ -200,6 +204,20 @@ var raf=0;function actief(){raf=0;var navs=[].slice.call(document.querySelectorA
     if(cur&&cur.dataset.hsOn!=="1"){as.forEach(function(a){a.dataset.hsOn="";});cur.dataset.hsOn="1";var l=cur.offsetLeft-nav.offsetLeft-16;if(l<nav.scrollLeft||l+cur.offsetWidth>nav.scrollLeft+nav.clientWidth)nav.scrollTo({left:Math.max(0,l),behavior:"smooth"});}});}
 addEventListener("scroll",function(){if(!raf)raf=requestAnimationFrame(actief);},{passive:true});
 setTimeout(actief,300);
+/* kop: landnaam (of deelstaat/regio) als titel, één regel eronder, datum bij de aantallen */
+var HK=window.__HSK;
+var PREP=/^(in der |in the |im |in |en |dans la |dans le |dans les |dans l’|dans l'|dans |nella |nello |nell’|nell'|nel |na |no |em )/i;
+function kop(h){if(!HK||h.dataset.hsk)return;var m2=h.querySelector("h1.mast .m2"),h1=h.querySelector("h1.mast");if(!m2||!h1)return;h.dataset.hsk="1";
+  var nl=m2.querySelector(".l-nl"),land=!nl||/dierenlocaties/.test(nl.textContent),ls=Object.keys(HK.land),titel="",onder="";
+  ls.forEach(function(l){var sp=m2.querySelector(".l-"+l),nm=land?HK.land[l]:(sp?sp.textContent.trim().replace(PREP,""):HK.land[l]);
+    nm=nm.charAt(0).toUpperCase()+nm.slice(1);
+    var o=land?HK.onder[l]:HK.land[l]+" · "+HK.onder[l].charAt(0).toLowerCase()+HK.onder[l].slice(1);
+    titel+='<span class="l-'+l+'">'+nm+'</span>';onder+='<span class="l-'+l+'">'+o+'</span>';});
+  h1.innerHTML=HK.vlag+'<span class="hs-t">'+titel+'</span>';h1.classList.add("hs-kop");
+  h1.insertAdjacentHTML("afterend",'<p class="hs-onder">'+onder+'</p>');
+  var st=h.querySelector(".stamp"),cn=h.querySelector(".counts");if(st&&cn){cn.insertAdjacentElement("afterend",st);st.classList.add("hs-stamp");}}
+function koppen(){document.querySelectorAll("header").forEach(kop);}
+koppen();new MutationObserver(function(){koppen();}).observe(document.body,{childList:true,subtree:true});
 /* kaarten: kleur en icoon per type, legenda met filter */
 var HT=window.__HST;if(!HT)return;
 var NS="http://www.w3.org/2000/svg",FILT={};
@@ -246,23 +264,37 @@ UITLEG = {"nl": "Kleur en icoon tonen het soort locatie (zie de knoppen boven de
           "pt": "A cor e o ícone mostram o tipo de local (vê os botões acima do mapa; toca num para filtrar)."}
 ONZ = {"nl": "open stip: alleen onzekere vermeldingen", "en": "open dot: uncertain entries only", "fr": "point vide : mentions incertaines seulement",
        "de": "offener Punkt: nur unsichere Einträge", "it": "punto vuoto: solo segnalazioni incerte", "es": "punto vacío: solo menciones inciertas", "pt": "ponto vazio: só menções incertas"}
+LANDNAAM = {
+    "nl": {"nl": "Nederland", "en": "Netherlands"}, "be": {"nl": "België", "en": "Belgium", "fr": "Belgique"},
+    "lu": {"nl": "Luxemburg", "en": "Luxembourg", "fr": "Luxembourg", "de": "Luxemburg"}, "de": {"nl": "Duitsland", "en": "Germany", "de": "Deutschland"},
+    "fr": {"nl": "Frankrijk", "en": "France", "fr": "France"}, "at": {"nl": "Oostenrijk", "en": "Austria", "de": "Österreich"},
+    "ch": {"nl": "Zwitserland", "en": "Switzerland", "de": "Schweiz", "fr": "Suisse", "it": "Svizzera"}, "uk": {"nl": "Verenigd Koninkrijk", "en": "United Kingdom"},
+    "it": {"nl": "Italië", "en": "Italy", "it": "Italia"}, "es": {"nl": "Spanje", "en": "Spain", "es": "España"},
+    "ie": {"nl": "Ierland", "en": "Ireland"}, "pt": {"nl": "Portugal", "en": "Portugal", "pt": "Portugal"}}
+ONDER = {"nl": "Wilde katachtigen in dierentuinen en parken", "en": "Wild cats in zoos and animal parks", "fr": "Félins sauvages dans les zoos et parcs animaliers",
+         "de": "Wilde Katzen in Zoos und Tierparks", "it": "Felini selvatici in zoo e parchi faunistici", "es": "Felinos salvajes en zoos y parques de animales",
+         "pt": "Felinos selvagens em zoos e parques de animais"}
+def kopdata(c, langs, vlag):
+    return {"land": {l: LANDNAAM[c][l] for l in langs}, "onder": {l: ONDER[l] for l in langs}, "vlag": vlag}
+
 def kaartdata(types, locinfo, langs):
     """types: de lijst uit locatietypes.json; locinfo: {locatienaam: typenaam (nl)}."""
     idx = {t["nl"]: k for k, t in enumerate(types)}
     return {"loc": {n: idx.get(tp, -1) for n, tp in locinfo.items()}, "ti": idx, "groot": 1.5, "col": TCOL, "gly": GLY,
             "nm": {l: [t.get(l) or t["en"] for t in types] for l in langs}, "uit": {l: UITLEG[l] for l in langs}, "onz": {l: ONZ[l] for l in langs}}
 
-def toepassen(doc, langs, base, kaart=None):
+def toepassen(doc, langs, base, kaart=None, kop=None):
     """Huisstijl op een gids of deelstaatpagina zetten (website). kaart: uitvoer van kaartdata()."""
     doc = lettertypen(doc)
     m = re.search(r'<nav class="landbar".*?</nav>', doc, re.S)
     assert m, "landbar niet gevonden"
     # het pootje krijgt het id van de oude link "← Alle landen": het script van de gids luistert daarnaar
-    kop = bovenbalk(langs, base).replace('<a class="hs-brand" href=', '<a class="hs-brand" id="naar-landen" href=', 1)
-    doc = doc[:m.start()] + f"<style>{CSS}</style>\n" + kop + doc[m.end():]
+    balk = bovenbalk(langs, base).replace('<a class="hs-brand" href=', '<a class="hs-brand" id="naar-landen" href=', 1)
+    doc = doc[:m.start()] + f"<style>{CSS}</style>\n" + balk + doc[m.end():]
     k = re.search(r'<div class="kofi-wrap"><aside class="kofi-card".*?</aside></div>', doc, re.S)
     assert k, "Ko-fi-blok niet gevonden"
     doc = doc[:k.start()] + voet(langs) + doc[k.end():]
     i = doc.rindex("</body>")
-    data = ("<script>window.__HST=" + json.dumps(kaart, ensure_ascii=False).replace("</", "<\\/") + ";</script>\n") if kaart else ""
+    data = ("<script>window.__HSK=" + json.dumps(kop, ensure_ascii=False).replace("</", "<\\/") + ";</script>\n") if kop else ""
+    data += ("<script>window.__HST=" + json.dumps(kaart, ensure_ascii=False).replace("</", "<\\/") + ";</script>\n") if kaart else ""
     return doc[:i] + data + JS + doc[i:]

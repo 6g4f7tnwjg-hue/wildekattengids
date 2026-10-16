@@ -118,7 +118,7 @@ for k in keys:
 out = []
 for line in lines:
     m = re.match(r"^(\s*)(const|let) ([A-Za-z_][A-Za-z_0-9]*)\s*=", line)
-    if m and line not in common:
+    if m and (line not in common or m.group(3) in ("MAIN", "ISLANDS", "LINES")):   # kaartvormen altijd vervangen
         n = m.group(3)
         if n == "PX": out.append(PX); continue
         if n.startswith("TITLE_"):

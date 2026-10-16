@@ -1,6 +1,9 @@
+<!doctype html>
+<html lang="nl">
+<head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Spottersgids voor wilde katten</title>
-<meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Waar je alle 42 wilde kattensoorten in het wild kunt zien, hoe groot je kans is en hoe je ze spot. Een gids van J. Gelens.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -307,7 +310,8 @@ figcaption{font-size:.82rem;color:var(--muted);margin-top:6px;overflow-wrap:anyw
 .scale{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:8px}
 .scale li{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center}
 </style>
-
+</head>
+<body>
 <header class="top">
   <div class="wrap">
     <a class="brand" href="#start" aria-label="Spottersgids – start">
@@ -418,7 +422,8 @@ const narrow = () => window.innerWidth < 600;
 const scoreHtml = (n, big, compact) => `<span class="score${big?' big':''}" style="--c:var(--s${n})" title="${esc(T(U.chance))} ${n}/5 · ${esc(T(U.sc[n]))}"><span class="pips" aria-hidden="true">${[1,2,3,4,5].map(i=>`<i class="${i<=n?'on':''}"></i>`).join('')}</span><b>${compact ? `${n}/5` : `${esc(T(U.chance))} ${n} · ${esc(T(U.sc[n]))}`}</b></span>`;
 const credit = cr => esc(String(cr || '').replace(/^foto:\s*/i, T(U.photoPre) + ' '));
 const catName = c => T({nl:c.nl, en:c.en});
-const img = (p, alt, eager) => `<img src="${esc(p.src)}" alt="${esc(alt)}" loading="${eager?'eager':'lazy'}" decoding="async">`;
+// foto's zijn losse bestanden; small = het kleine exemplaar voor ronde fotootjes en lijstjes
+const img = (p, alt, eager, small) => `<img src="${esc(small ? p.sm : p.src)}" alt="${esc(alt)}" loading="${eager?'eager':'lazy'}" decoding="async">`;
 const iucnHtml = code => `<span class="iucn" style="--ic:${IUCN_COL[code]||'#777'}"><b>${esc(code)}</b>${esc(T(U.iucn[code]||{nl:code,en:code}))}</span>`;
 const contName = c => T(U.cont[c]);
 const factsHtml = r => `<dl class="facts">
@@ -549,7 +554,7 @@ function rowCats(){
 }
 function catRowHtml(){
   const {withSpot, grey, total} = rowCats();
-  const btn = (c, g) => `<button type="button" class="catbtn${g?' grey':''}" data-cat="${c.no}" aria-pressed="${CAT===c.no}"><span class="av">${img(c.photos[0], '')}</span>${esc(catName(c))}</button>`;
+  const btn = (c, g) => `<button type="button" class="catbtn${g?' grey':''}" data-cat="${c.no}" aria-pressed="${CAT===c.no}"><span class="av">${img(c.photos[0], '', false, true)}</span>${esc(catName(c))}</button>`;
   const n = CAT ? catSpots(CAT).length : 0;
   return `<p class="lbl" style="margin-bottom:6px">${esc(T(U.catMap))}</p><div class="catrow" id="catrow">
     <button type="button" class="catbtn" data-cat="" aria-pressed="${!CAT}"><span class="av" style="background:var(--olive)">${total}</span>${esc(T(U.allCats))}</button>
@@ -731,7 +736,7 @@ function speciesListHtml(){
       <div class="ph">${img(c.photos[0], catName(c))}</div><div class="bd"><span class="no">№ ${c.no}</span><span class="nm">${esc(catName(c))}</span><span class="la lat">${esc(c.la)}</span>
       <span class="ft">${BEST[c.no] ? scoreHtml(BEST[c.no], false, true) : ''}</span></div></a>`).join('')}</div>`;
   if (later.length) h += `<div class="grouph"><h3>${esc(T(U.soon))}</h3><span>${later.length}</span></div><ul class="soonlist">${later.map(c => `<li>
-      ${img(c.photos[0], catName(c))}<div><b>${esc(catName(c))}</b><span class="la lat">${esc(c.la)}</span></div>${BEST[c.no] ? scoreHtml(BEST[c.no], false, true) : '<span></span>'}</li>`).join('')}</ul>`;
+      ${img(c.photos[0], catName(c), false, true)}<div><b>${esc(catName(c))}</b><span class="la lat">${esc(c.la)}</span></div>${BEST[c.no] ? scoreHtml(BEST[c.no], false, true) : '<span></span>'}</li>`).join('')}</ul>`;
   return h;
 }
 function tabBody(){
@@ -891,7 +896,7 @@ function renderText(id){
 }
 function europaList(){
   return `<div class="eurlist">${D.europe.map(e => { const c = BY[e.no], page = PAGES[e.no];
-    const inner = `${img(c.photos[0], catName(c))}<div><span class="lbl">${esc(T(e.where))}</span><b style="font-family:var(--display);font-size:1.15rem">${esc(catName(c))}</b><span class="lat">${esc(c.la)}</span>${BEST[e.no]?scoreHtml(BEST[e.no]):''}<span>${esc(T(e.text))}</span></div>`;
+    const inner = `${img(c.photos[0], catName(c), false, true)}<div><span class="lbl">${esc(T(e.where))}</span><b style="font-family:var(--display);font-size:1.15rem">${esc(catName(c))}</b><span class="lat">${esc(c.la)}</span>${BEST[e.no]?scoreHtml(BEST[e.no]):''}<span>${esc(T(e.text))}</span></div>`;
     return page ? `<a class="eurrow" href="#soort-${e.no}">${inner}</a>` : `<div class="eurrow">${inner}</div>`; }).join('')}</div>`;
 }
 
@@ -915,3 +920,5 @@ window.addEventListener('hashchange', () => route(false));
 route(false);
 })();
 </script>
+</body>
+</html>

@@ -3,7 +3,8 @@
 Maker: J. Gelens. Stand: 16 oktober 2026. Alle 42 soorten hebben een soortpagina.
 
 ## Waar staat alles
-- **Live (artifact, privé):** https://claude.ai/artifact/4Pmep6UwbY4aoyRyXXfRRX – altijd bijwerken op deze URL (publiceer `spottersgids/index.html`; vanuit een nieuwe chat eerst `read` met deze URL, dan publiceren met `url`).
+- **Live (wordt): GitHub Pages** https://yeetkitty.github.io/wildekattengids/spottersgids/ – openbaar; Pages publiceert de branch `main` (map `spottersgids/`). Live zetten = `spottersgids-europa` samenvoegen in `main` (pull request, alleen als de gebruiker erom vraagt).
+- **Oud: artifact (privé)** https://claude.ai/artifact/4Pmep6UwbY4aoyRyXXfRRX – staat nog op de versie met ingebakken foto's (12,7 MB). Losse foto's laden niet in de Claude-app (getest 16-10-2026). Advies aan de gebruiker: na livegang van Pages er een korte 'verhuisd naar …'-pagina van maken (nog niet besloten). De huidige `index.html` werkt NIET meer in het artifact.
 - **Repo:** `yeetkitty/wildekattengids`, branch **`spottersgids-europa`**, map `spottersgids/` (losse site naast de bestaande dierentuingids; niets daarbuiten aangeraakt).
 - **Bron van de soortgegevens:** artifact "De KATalogue" https://claude.ai/code/artifact/ba3edb6b-d786-4e68-906b-779c6b5cb3ea (42 soorten, foto's + credits, verspreidingskaarten, IUCN). Al uitgepakt naar `bron/katalogue.json`, `bron/land.txt` en `img/NN-i.jpg`.
 
@@ -11,16 +12,17 @@ Maker: J. Gelens. Stand: 16 oktober 2026. Alle 42 soorten hebben een soortpagina
 | Pad | Wat |
 |---|---|
 | `bron/template.html` | De hele site (HTML/CSS/JS, één pagina met #-routes). `__DATA__` wordt bij het bouwen vervangen. Ko-fi-link: `KOFI_URL` (= https://ko-fi.com/katalogue). |
-| `bron/build.py` | Bouwt `index.html`. `PAGES` = lijst met soortnummers die een pagina hebben (nu alle 42). Foto's worden als data-URI ingebakken (losse bestanden laden niet in de Claude-app). |
+| `bron/build.py` | Bouwt `index.html`. `PAGES` = lijst met soortnummers die een pagina hebben (nu alle 42). Foto's zijn losse bestanden: groot = `img/NN-i.jpg` (origineel), klein = `foto/NN-i-k.webp` (200 px, door de bouw gemaakt) voor fotorij, lijstjes en Katten in Europa. |
 | `data/<nr>.json` | Onderzoek per soort: intro, plekken (score 1–5, seizoen, tijdstip, tocht, bronnen), tips, bedreigingen, status, bronnen – NL en EN. |
 | `data/topspots.json` | Oorspronkelijke topspotlijst; telt nu alleen nog als "deze plek mag topspot zijn bij score 4". |
 | `data/alias.json` | Samenvoegen van dezelfde plek onder verschillende id's. |
 | `data/extra_cont.json` | Extra werelddelen bovenop de KATalogue (luipaard, Afr. wilde kat, moeraskat → ook Europa). |
 | `data/text.json`, `data/europe.json` | Pagina's Verantwoord spotten, Katten in Europa, Paklijst, Over mij (NL/EN). |
 | `TWIJFELS.md` | Alle twijfels en redactiekeuzes per soort en per ronde. |
-| `index.html` | Gebouwde site (≈12,7 MB, grens artifact 16 MB). |
+| `index.html` | Gebouwde site (≈0,9 MB; met foto's ≈1,2 MB per bezoek). |
+| `img/`, `foto/` | Foto's (groot jpg, klein webp); moeten mee naar `main`. |
 
-Bouwen: `cd spottersgids && python3 bron/build.py` → daarna publiceren en committen/pushen.
+Bouwen: `cd spottersgids && python3 bron/build.py` → daarna committen/pushen (en via `main` live zetten). Lokaal testen: `python3 -m http.server` in de repo-root en `http://localhost:8000/spottersgids/` openen.
 Topspot-regel in de bouw: plek met score 5 op een soortpagina = topspot; score 4 alleen als hij in `topspots.json` voor die soort staat.
 
 ## Afspraken met de gebruiker (belangrijk)
@@ -40,7 +42,8 @@ Topspot-regel in de bouw: plek met score 5 op een soortpagina = topspot; score 4
 
 ## Open punten / mogelijke vervolgstappen
 - Wolkentijgerkat staat grijs in de fotorij bij Noord-Amerika (KATalogue rekent Costa Rica/Panama tot Noord-Amerika, de gids tot Midden-/Zuid-Amerika) – gebruiker nog niet gevraagd of dit gelijkgetrokken moet worden.
-- Paginagrootte ≈12,7 MB: eventueel foto's verkleinen als de site op de telefoon traag laadt.
+- Openbaar maken is goedgekeurd; een link vanaf de bestaande site en opname in `sitemap.xml` komen later.
+- Testbranch `spottersgids-fotos-los` (proef losse foto's in het artifact) kan weg; verwijderen werd in de sessie geblokkeerd.
 - Kaart van Azië is op mobiel vol (niet aangepast; niet gevraagd).
 - Leeuw bij Ndutu staat niet meer op de kaart (leeuwenpagina neemt Ndutu niet op); Ndutu is topspot voor de cheetah.
 - Iriomote (Bengaalse kat, ~100 dieren) staat erin met score 2 – gebruiker kan vragen om te schrappen.

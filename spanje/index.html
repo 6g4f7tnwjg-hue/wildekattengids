@@ -2119,6 +2119,11 @@ function opbouw(){if(klaar)return;var w=document.getElementById("main")||documen
   if(al)nav.insertBefore(al,nav.firstChild);if(as&&al)al.insertAdjacentElement("afterend",as);
   /* In het kort: tabel Totaaloverzicht weg (alleen de korte punten blijven) */
   document.querySelectorAll("#tldr .tscroll").forEach(function(t){if(!t.querySelector(".tw-n"))return;t.classList.add("hs-weg");var h=t.previousElementSibling;if(h&&h.tagName==="H3"&&!h.classList.contains("rg-kop"))h.classList.add("hs-weg");});
+  /* nieuwe namen voor twee kopjes (kop en tabblad) */
+  var NAAM={soorten:{nl:"Per kat",en:"By cat",fr:"Par félin",de:"Nach Katze",it:"Per felino",es:"Por felino",pt:"Por felino"},
+    route:{nl:"Routeplanner",en:"Route planner",fr:"Planificateur d’itinéraire",de:"Routenplaner",it:"Pianificatore di percorso",es:"Planificador de ruta",pt:"Planeador de rotas"}};
+  Object.keys(NAAM).forEach(function(id){var el=[document.querySelector("#"+id+" > h2 .ctog > span"),nav.querySelector('a[href="#'+id+'"]')];
+    el.forEach(function(e){if(!e)return;var sp=e.querySelectorAll("[class^='l-']");if(sp.length)sp.forEach(function(x){var l=x.className.slice(2);if(NAAM[id][l])x.textContent=NAAM[id][l];});else e.textContent=NAAM[id].nl;});});
   rijen();mist();hoofd();
   var rows=document.getElementById("rows");if(rows)new MutationObserver(rijen).observe(rows,{childList:true});
   var sp=document.getElementById("rt-sp");if(sp)new MutationObserver(mist).observe(sp,{childList:true,subtree:true});

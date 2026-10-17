@@ -427,9 +427,11 @@ html.katmode .intro,html.katmode .bar,html.katmode .tabpanel,html.katmode .page,
 .kmap .mk .hit{fill:transparent}
 .kmap .mk.sel .dot{stroke:var(--ink);stroke-width:3px}
 .kmap .mk.hs-clh,.kmap .mk.km-off{display:none}
-.kmf{margin:0 0 8px}
-.kmf .chip.tchip{padding-left:5px}
-.kmf .chip svg.ti{width:18px;height:18px;border-radius:50%;box-shadow:none}
+.kmf{margin:0 0 4px;flex-wrap:nowrap;overflow-x:auto;padding:2px 28px 6px 2px;-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 32px),transparent);mask-image:linear-gradient(to right,#000 calc(100% - 32px),transparent);scroll-snap-type:x proximity}
+.kmf .chip{font-size:.88rem;padding:4px 10px;gap:5px;scroll-snap-align:start}
+.kmf .chip svg{width:18px;height:12px}
+.kmf .chip.tchip{padding-left:4px}
+.kmf .chip svg.ti{width:16px;height:16px;border-radius:50%;box-shadow:none}
 .kmap .mk:focus{outline:none}.kmap .mk:focus-visible .dot{stroke:var(--accent);stroke-width:3px}
 .hs-zb{position:absolute;top:10px;right:10px;display:flex;flex-direction:column;gap:6px;z-index:2}
 .hs-zb button{width:36px;height:36px;border-radius:8px;border:1px solid var(--line);background:var(--paper);color:var(--ink);font:700 1.3rem/1 var(--body);cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;box-shadow:var(--shadow)}
@@ -980,9 +982,9 @@ function katMap(slug){
   xs.forEach((x,n)=>{const[px,py]=pts[n],k=tIdx(x.c,D[x.c].locs.indexOf(x.l)),unc=!CONF.includes(x.st),r=8*s0;
     m+=`<g class="mk${unc?" unc":""}" data-hs="${k}" data-c="${x.c}" data-i="${n}" style="color:${tCol(k)}" tabindex="0" role="button" aria-label="${esc(x.l[0])}, ${esc(x.l[1])}"><circle class="hit" cx="${px.toFixed(1)}" cy="${py.toFixed(1)}" r="${(r*1.5).toFixed(1)}"/><circle class="dot" cx="${px.toFixed(1)}" cy="${py.toFixed(1)}" r="${r.toFixed(2)}"/><g class="gl" transform="translate(${px.toFixed(1)} ${py.toFixed(1)}) scale(${(r/8*.95).toFixed(3)})">${tGly(k)}</g></g>`;});
   const tk={},lk={};KL[slug].forEach(x=>{const k=tIdx(x.c,D[x.c].locs.indexOf(x.l));tk[k]=(tk[k]||0)+1;lk[x.c]=(lk[x.c]||0)+1;});KMF="";KML="";
-  const lchips=Object.keys(lk).length>1?`<div class="chips wrapit kmf" role="group" aria-label="${T("Land","Country","Pays","Land","Paese","País")}"><button type="button" class="chip" data-kml="" aria-pressed="true">${T("Alle landen","All countries","Tous les pays","Alle Länder","Tutti i paesi","Todos los países")} <span class="n">${KL[slug].length}</span></button>`+
+  const lchips=Object.keys(lk).length>1?`<div class="chips kmf" role="group" aria-label="${T("Land","Country","Pays","Land","Paese","País")}"><button type="button" class="chip" data-kml="" aria-pressed="true">${T("Alle landen","All countries","Tous les pays","Alle Länder","Tutti i paesi","Todos los países")} <span class="n">${KL[slug].length}</span></button>`+
     ORDER.filter(c=>lk[c]).map(c=>`<button type="button" class="chip" data-kml="${c}" aria-pressed="false">${flag(c,"")}${esc(cname(c))} <span class="n">${lk[c]}</span></button>`).join("")+`</div>`:"";
-  const chips=`<div class="chips wrapit kmf" role="group" aria-label="${T("Soort locatie","Type of location","Type de lieu","Art des Ortes","Tipo di luogo","Tipo de lugar")}"><button type="button" class="chip" data-kmf="" aria-pressed="true">${T("Alle types","All types","Tous les types","Alle Typen","Tutti i tipi","Todos los tipos")} <span class="n">${KL[slug].length}</span></button>`+
+  const chips=`<div class="chips kmf" role="group" aria-label="${T("Soort locatie","Type of location","Type de lieu","Art des Ortes","Tipo di luogo","Tipo de lugar")}"><button type="button" class="chip" data-kmf="" aria-pressed="true">${T("Alle types","All types","Tous les types","Alle Typen","Tutti i tipi","Todos los tipos")} <span class="n">${KL[slug].length}</span></button>`+
     Object.keys(tk).map(Number).sort((a,b)=>a-b).map(k=>`<button type="button" class="chip tchip" data-kmf="${k}" aria-pressed="false">${tIcon(k)}${k<0?"?":esc(T(...["nl","en","fr","de","it","es"].map(l=>D.lt.types[k][l])))} <span class="n">${tk[k]}</span></button>`).join("")+`</div>`;
   return lchips+chips+`<div class="kat-map"><div class="kmz"><svg class="kmap" viewBox="${vb.map(v=>v.toFixed(1)).join(" ")}" data-s0="${s0.toFixed(4)}" role="group" aria-label="${T("Kaart","Map","Carte","Karte","Mappa","Mapa")}">${m}</svg></div>
     <p class="km-sel" id="km-sel" aria-live="polite">${T("Tik op een icoon voor de locatie.","Tap an icon to see the location.","Touchez une icône pour voir le lieu.","Tippe auf ein Symbol, um den Ort zu sehen.","Tocca un’icona per vedere il luogo.","Toca un icono para ver el lugar.")}</p>
@@ -992,6 +994,7 @@ let KMF="",KML="";
 function kmApply(){const ok=(k,c)=>(!KMF||String(k)===KMF)&&(!KML||c===KML);
   document.querySelectorAll("[data-kmf]").forEach(x=>x.setAttribute("aria-pressed",String(x.dataset.kmf===KMF)));
   document.querySelectorAll("[data-kml]").forEach(x=>x.setAttribute("aria-pressed",String(x.dataset.kml===KML)));
+  document.querySelectorAll('.kmf [aria-pressed="true"]').forEach(x=>{const r=x.parentNode;const l=x.offsetLeft-r.offsetLeft-8;if(l<r.scrollLeft||l+x.offsetWidth>r.scrollLeft+r.clientWidth-30)r.scrollTo({left:Math.max(0,l),behavior:"smooth"});});
   const svg=document.querySelector("#katview .kmap");if(svg){svg.querySelectorAll(".mk").forEach(m=>m.classList.toggle("km-off",!ok(m.dataset.hs,m.dataset.c)));kmGroep(svg);}
   document.querySelectorAll("#katview .kat-land").forEach(a=>{let n=0;a.querySelectorAll("li[data-hk]").forEach(li=>{const h=!ok(li.dataset.hk,a.dataset.c);li.hidden=h;if(!h)n++;});
     a.querySelectorAll("h3").forEach(h3=>{const ul=h3.nextElementSibling;if(ul&&ul.tagName==="UL"){const v=[...ul.children].some(li=>!li.hidden);h3.hidden=!v;ul.hidden=!v;}});

@@ -254,6 +254,7 @@ if(cnt[1])$$(".nw-nloc").forEach(function(s){s.innerHTML="<strong>"+cnt[1].textC
 var tb=$("#tldr > .cbody")||$("#tldr");
 if(hd&&tb){var lede=hd.querySelector(".lede"),co=hd.querySelector(".counts");if(co)tb.insertBefore(co,tb.firstChild);if(lede)tb.insertBefore(lede,tb.firstChild);}
 if(fig){if(tb){fig.className="nw-foto";tb.insertBefore(fig,tb.firstChild);}else fig.remove();}
+var ab=$("#actueel > .cbody")||$("#actueel");if(ab){var cf=document.createElement("figure");cf.className="nw-foto";cf.innerHTML='<img src="/wildekattengids/img/nieuw/cheeta-welp.webp" alt="Jonge cheeta" loading="lazy"><p><span class="l-nl">Jonge cheeta · foto: J. Gelens</span><span class="l-en">Cheetah cub · photo: J. Gelens</span></p>';var h2=ab.querySelector(":scope > h2");if(h2&&h2.parentNode===ab)h2.after(cf);else ab.insertBefore(cf,ab.firstChild);}
 
 /* ---------- zoeken ---------- */
 var q=document.getElementById("nw-q"),res=document.getElementById("nw-res");

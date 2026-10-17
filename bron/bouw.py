@@ -23,7 +23,7 @@ from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 BRON = os.path.dirname(os.path.abspath(__file__)) + "/"
 ROOT = os.path.dirname(BRON.rstrip("/")) + "/"
 sys.path.insert(0, BRON)
-from startdata import bereken, slug, soorten
+from startdata import bereken, slug, soorten, _young
 import huisstijl
 
 BASE = "/wildekattengids/"
@@ -306,7 +306,9 @@ for c, doc in G.items():
     doc = sub1(doc, '<a href="#" id="naar-landen">', f'<a href="{BASE}" id="naar-landen">')
     _li = {n: ((v.get("type") or [""])[0]) for part in DATA[c].values() for n, v in (part.get("LOCINFO") or {}).items()}
     _vl = re.search(r"\n  " + c + r":'(<svg[^']*)'", START).group(1).replace('class="flag"', "")
-    doc = huisstijl.toepassen(doc, ["nl", "en"] + GTAAL[c], BASE, huisstijl.kaartdata(LTJ["types"], _li, ["nl", "en"] + GTAAL[c]),
+    _kd = huisstijl.kaartdata(LTJ["types"], _li, ["nl", "en"] + GTAAL[c])
+    _kd["jong"] = sorted({e["loc"] for part in DATA[c].values() for _d, e in _young(part, lambda n: n, lambda n, en: en, today, None)})
+    doc = huisstijl.toepassen(doc, ["nl", "en"] + GTAAL[c], BASE, _kd,
                               huisstijl.kopdata(c, ["nl", "en"] + GTAAL[c], _vl))   # bovenbalk, kleuren, letters, kop, tabbladen en Ko-fi van de startpagina
     t, d = CTRY[c]
     doc = re.sub(r"<title>[^<]*</title>", lambda mm: f"<title>{t}</title>\n" + seo(t, d, SITE + F[c] + "/"), doc, count=1)

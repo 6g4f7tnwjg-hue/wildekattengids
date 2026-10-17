@@ -98,6 +98,18 @@ for c in F:
 for c in OUD_DEEL:
     D[c].pop("note", None)   # "alle 13 regio's" e.d. hoort niet meer bij één pagina
 D["sp"] = soorten(DATA, fr, today, de_namen, it_namen, es_namen)
+# kenmerken per soort voor de soortpagina (uit de Nederlandse gids) en de pagina in de Spottersgids
+_nlg = DATA["nl"]["main"]; _bysci = {x[2]: x for x in _nlg["SPECIES"]}; _spen = _nlg.get("SPEN") or {}
+_kata = json.load(open(ROOT + "spottersgids/bron/katalogue.json", encoding="utf8"))
+D["feit"] = {}
+for _s in D["sp"]:
+    _r = _bysci.get(_s[4])
+    if not _r: continue
+    _k = next((k for k in _kata if k["la"] == _s[4]), None); _map = ""
+    if _k:
+        for _c in (slug(_k["nl"]), slug(_k["nl"].replace("’", "").replace("'", ""))):
+            if os.path.exists(ROOT + "spottersgids/" + _c + "/index.html"): _map = _c; break
+    D["feit"][_s[0]] = [_r[4], _r[5], _r[6], _r[9], ((_spen.get(_r[0]) or ["", "", ""]) + ["", ""])[2], _map]
 D["lt"] = {"types": [{k: t[k] for k in ("nl", "en", "fr", "de", "it", "es", "uitleg", "uitleg_en", "uitleg_fr", "uitleg_de", "uitleg_it", "uitleg_es")} for t in LTJ["types"]],
            "labels": [{k: l[k] for k in ("key", "nl", "en", "fr", "de", "it", "es", "icoon")} for l in LTJ["labels"]]}
 # top 10 om te bezoeken (bron/top10.json): vaste plaatsen, aangevuld met de hoogste score

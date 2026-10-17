@@ -16,6 +16,7 @@ Terugdraaien: /<land>-oud/index.html terugzetten op /<land>/ (of opnieuw bouwen 
 map /<land>-oud/ en img/nieuw/ weghalen, dit bestand en de regels onderaan bouw.py verwijderen.
 """
 import json
+import re
 import os
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
@@ -458,3 +459,73 @@ def maak_land(land):
 
 if __name__ == "__main__":
     maak()
+
+
+# ------------------------------------------------------------------ losse park- en soortpagina's (proef 18-10-2026)
+LOS_MARK = 'class="nw-sbar nw-los"'
+LOS_CSS = """
+<style id="nw-los-css">
+/* losse park- en soortpagina in de stijl van het nieuwe ontwerp */
+.nw-los{position:sticky;top:calc(env(safe-area-inset-top,0px) + var(--hs-head,64px));z-index:40;margin:0 -16px 6px!important;padding:10px 16px!important}
+.nw-los a.nw-back{text-decoration:none}
+#info{padding-top:0!important}
+.nw-gids{display:flex;align-items:center;gap:12px;margin:22px 0 8px;padding:14px 16px;border-radius:20px;background:var(--card);border:1px solid var(--line);box-shadow:var(--nw-shadow);color:var(--ink)!important;text-decoration:none!important}
+.nw-gids .nw-gi{flex:none;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--nw-sage);color:var(--nw-green)}
+.nw-gids .nw-gi svg{width:22px;height:22px}
+.nw-gids b{display:block;font-family:var(--hs-body);font-weight:700;font-size:1rem}
+.nw-gids small{display:block;color:var(--muted);font-size:.88rem}
+.nw-gids>svg{margin-left:auto;width:18px;height:18px;color:var(--muted);flex:none}
+</style>
+"""
+
+
+def los_pagina(pad, land, kind):
+    """Zet één gebouwde losse pagina (/<land>/locatie/<x>/ of /<land>/soort/<x>/) in de nieuwe stijl."""
+    doc = open(pad, encoding="utf-8").read()
+    if LOS_MARK in doc:
+        return False
+    m = re.search(r'<div class="wrap gidslink"><a href="([^"]*)">(.*?)</a></div>', doc, re.S)
+    if not m:
+        return False
+    gids_url, gids_tekst = m.group(1), m.group(2)
+    g = BASE + land + "/"
+    terug = g + ("#locaties" if kind == "locatie" else "#soorten")
+    titel = "Locaties" if kind == "locatie" else "Per kat"
+    sbar = (f'<div class="wrap"><div class="nw-sbar nw-los"><a class="nw-back" href="{terug}">{ICO["back"]}Terug</a>'
+            f'<span class="nw-stitle">{titel}</span></div></div>')
+    doc = doc[:m.start()] + sbar + doc[m.end():]
+    # verwijzing naar de interactieve gids als nette kaart onder de inhoud
+    kaart = (f'<a class="nw-gids" href="{gids_url}"><span class="nw-gi">{ICO["b-map"]}</span>'
+             f'<span><b>{gids_tekst.replace(" →", "").replace("Open de interactieve gids van", "Bekijk in de gids van")}</b>'
+             f'<small>Met kaart, routeplanner en favorieten</small></span>{ARROW}</a>')
+    i = doc.index('<div class="wrap" id="info">')
+    j = doc.rindex("</div>", i, doc.index("kofi", i))   # einde van #info, vlak voor de Ko-fi-voet
+    doc = doc[:j] + kaart + "\n" + doc[j:]
+    actief = "locaties" if kind == "locatie" else "soorten"
+    links = [("start", g, ICO["b-home"], "Home"), ("locaties", g + "#locaties", ICO["b-map"], "Locaties"),
+             ("soorten", g + "#soorten", ICO["b-paw"], "Per kat"), ("route", g + "#route", ICO["b-route"], "Routeplanner"),
+             ("meer", g + "#meer", ICO["b-menu"], "Meer")]
+    bar = ('<div class="nw-bar"><nav aria-label="Menu">'
+           + "".join(f'<a href="{h}"{" class=on" if k == actief else ""}>{svg}<span>{t}</span></a>' for k, h, svg, t in links)
+           + "</nav></div>\n")
+    doc = doc.replace("</head>", CSS + LOS_CSS + "</head>", 1)
+    k = doc.rindex("</body>")
+    doc = doc[:k] + bar + doc[k:]
+    open(pad, "w", encoding="utf-8").write(doc)
+    return True
+
+
+def maak_los(alleen=None):
+    n = 0
+    for land in LANDEN:
+        for kind in ("locatie", "soort"):
+            d = os.path.join(ROOT, land, kind)
+            if not os.path.isdir(d):
+                continue
+            for s in sorted(os.listdir(d)):
+                if alleen and (land, kind, s) not in alleen:
+                    continue
+                pad = os.path.join(d, s, "index.html")
+                if os.path.exists(pad) and los_pagina(pad, land, kind):
+                    n += 1
+    print("losse pagina's in nieuwe stijl:", n)

@@ -55,7 +55,7 @@ const U = {
   bestSpotsSub:{nl:'Op volgorde van kans. Tik op een plek voor alle details.',en:'In order of chance. Tap a place for all details.'},
   tips:{nl:'Spottips',en:'Spotting tips'},
   habitat:{nl:'Leefgebied en spotplekken',en:'Range and spotting sites'},
-  habitatNote:{nl:'Gekleurd: leefgebied bij benadering (bron: De KATalogue, op basis van openbare verspreidingskaarten). Cijfers: de plekken hierboven.',en:'Shaded: approximate range (source: De KATalogue, based on public range maps). Numbers: the places listed above.'},
+  habitatNote:{nl:'Gekleurd: leefgebied bij benadering (bron: De KATalogue, op basis van openbare verspreidingskaarten). Cijfers: de plekken hieronder; tik erop om de plek te openen.',en:'Shaded: approximate range (source: De KATalogue, based on public range maps). Numbers: the places listed below; tap one to open it.'},
   status:{nl:'Status en bedreigingen',en:'Status and threats'},
   threats:{nl:'Belangrijkste bedreigingen',en:'Main threats'},
   photos:{nl:"Foto's",en:'Photos'},
@@ -100,10 +100,13 @@ const catName = c => T({nl:c.nl, en:c.en});
 const img = (p, alt, eager, small) => `<img src="${esc(small ? p.sm : p.src)}" alt="${esc(alt)}" loading="${eager?'eager':'lazy'}" decoding="async">`;
 const iucnHtml = code => `<span class="iucn" style="--ic:${IUCN_COL[code]||'#777'}"><b>${esc(code)}</b>${esc(T(U.iucn[code]||{nl:code,en:code}))}</span>`;
 const contName = c => T(U.cont[c]);
-const factsHtml = r => `<dl class="facts">
-  ${T(r.season)?`<div><dt>${esc(T(U.season))}</dt><dd>${esc(T(r.season))}</dd></div>`:''}
-  ${T(r.time)?`<div><dt>${esc(T(U.time))}</dt><dd>${esc(T(r.time))}</dd></div>`:''}
-  ${T(r.trip)?`<div><dt>${esc(T(U.trip))}</dt><dd>${esc(T(r.trip))}</dd></div>`:''}</dl>`;
+// seizoen, tijdstip en soort tocht: één regel per stuk met een icoontje (label voor schermlezers en als tooltip)
+const FICO = {
+  season:'<rect x="3" y="4.5" width="14" height="12.5" rx="2"/><path d="M3 8.5h14M7 2.5v4M13 2.5v4"/>',
+  time:'<circle cx="10" cy="10" r="7.5"/><path d="M10 5.5V10l3 2"/>',
+  trip:'<path d="M2.5 13.5V10l2-4.5h9l2 4.5h2v3.5"/><path d="M2.5 10h15"/><circle cx="6" cy="14" r="1.8"/><circle cx="14" cy="14" r="1.8"/>'};
+const factsHtml = r => `<ul class="facts">${['season','time','trip'].filter(k => T(r[k])).map(k =>
+  `<li title="${esc(T(U[k]))}"><svg viewBox="0 0 20 20" aria-hidden="true">${FICO[k]}</svg><span><span class="sr">${esc(T(U[k]))}: </span>${esc(T(r[k]))}</span></li>`).join('')}</ul>`;
 const placeLine = s => [T(s.area), T(s.country)].filter(Boolean).join(' · ');
 const STAR = '<svg viewBox="-10 -10 20 20" aria-hidden="true"><path d="M0,-9 2.6,-3.2 8.6,-2.8 4,1.2 5.3,7.3 0,4.1 -5.3,7.3 -4,1.2 -8.6,-2.8 -2.6,-3.2Z" fill="currentColor"/></svg>';
 const CHEV = '<svg class="chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>';
@@ -520,6 +523,8 @@ function bindHome(){
 let rsz; window.addEventListener('resize', () => { clearTimeout(rsz); rsz = setTimeout(() => { if ($('#mapwrap')) drawHomeMap(); if ($('#spmap')) drawSpeciesMap(); }, 200); });
 
 /* ---------- soortpagina ---------- */
+// eerste deel van de seizoenstekst (tot de eerste ; of haakje), voor samenvattingen
+const shortSeason = r => T(r.season).split(/;\s*|\s\(/)[0].replace(/[.,]\s*$/, '');
 let SPMAP = null;
 function drawSpeciesMap(){
   const el = $('#spmap'); if (!el || !SPMAP) return;
@@ -541,7 +546,7 @@ function renderSpecies(no){
     label: T(U.habitat)+': '+catName(c)};
   const intro = T(P.intro), km = intro.match(/(Kans|Chance):\s*\d.*$/s);
   const story = km ? intro.slice(0, km.index).trim() : intro;
-  const season1 = T(top.r.season).split(/;\s*|\s\(/)[0];
+  const season1 = shortSeason(top.r);
   $('#main').innerHTML = `
   <div class="wrap"><p class="crumbs"><a href="#soorten">← ${esc(T(U.back))}</a></p>
   <section class="sphead">
@@ -559,32 +564,51 @@ function renderSpecies(no){
     </div>
   </section></div>
   <nav class="jump" aria-label="${esc(L==='nl'?'Snel naar':'Jump to')}"><div class="wrap">
-    ${[['plekken','jPlaces'],['kaartsec','jMap'],['tipssec','jTips'],['statussec','jStatus'],['bronnen','jSources']].map(([id,k]) => `<button type="button" data-go="${id}">${esc(T(U[k]))}</button>`).join('')}
+    ${[['kaartsec','jMap'],['plekken','jPlaces'],['tipssec','jTips'],['statussec','jStatus'],...(c.photos.length > 1 ? [['fotosec','photos']] : []),['bronnen','jSources']].map(([id,k]) => `<button type="button" data-go="${id}">${esc(T(U[k]))}</button>`).join('')}
   </div></nav>
   <div class="wrap">
-  <section class="sec anchor" id="plekken"><div class="sechead"><h2>${esc(T(U.bestSpots))}</h2><p>${esc(T(U.bestSpotsSub))}</p></div>
-    <ol class="spots">${recs.map(({s,r},i) => `<li><details class="spot" id="plek-${esc(s.id)}" style="--c:var(--s${r.score})"${i<3?' open':''}>
-      <summary><span class="rank">${i+1}</span><span class="tt"><h3>${esc(T(s.name))}</h3><span class="where">${esc(T(s.country))}</span></span><span class="sc-sum">${scoreHtml(r.score, false, true)}</span>${CHEV}</summary>
-      <div class="body"><p class="where">${esc(T(s.area))}</p>${scoreHtml(r.score)}
-      <p class="why">${esc(T(r.why))}${cite(r.src)}</p>${factsHtml(r)}</div></details></li>`).join('')}</ol></section>
   <section class="sec anchor" id="kaartsec"><div class="sechead"><h2>${esc(T(U.habitat))}</h2></div>
     <div class="mapbox">${alsoHtml(no, recs)}<div id="spmap"></div>${legendHtml(false)}<div class="panel"><p class="note">${esc(T(U.habitatNote))}</p></div></div></section>
+  <section class="sec anchor" id="plekken"><div class="sechead"><h2>${esc(T(U.bestSpots))}</h2><p>${esc(T(U.bestSpotsSub))}</p></div>
+    <ol class="spots">${recs.map(({s,r},i) => `<li><details class="spot" id="plek-${esc(s.id)}" style="--c:var(--s${r.score})">
+      <summary><span class="rank">${i+1}</span><span class="tt"><h3>${esc(T(s.name))}</h3><span class="where">${esc(T(s.country))}</span>${shortSeason(r) ? `<span class="ssn"><svg viewBox="0 0 20 20" aria-hidden="true">${FICO.season}</svg>${esc(shortSeason(r))}</span>` : ''}</span><span class="sc-sum">${scoreHtml(r.score, false, true)}</span>${CHEV}</summary>
+      <div class="body"><p class="where">${esc(T(s.area))}</p>${scoreHtml(r.score)}
+      <p class="why">${esc(T(r.why))}${cite(r.src)}</p>${factsHtml(r)}</div></details></li>`).join('')}</ol></section>
   <section class="sec two">
     <div class="anchor" id="tipssec"><h2>${esc(T(U.tips))}</h2><ul class="tips" style="margin-top:14px">${T(P.tips).map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>
     <div class="anchor" id="statussec"><h2>${esc(T(U.status))}</h2><div class="box" style="margin-top:14px;display:grid;gap:12px">
       <div>${iucnHtml(c.iucn)}</div><p>${esc(T(P.status))}${cite(P.statusSrc)}</p>
       <h3>${esc(T(U.threats))}</h3><ul class="tips">${T(P.threats).map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div></div>
   </section>
-  ${c.photos.length > 1 ? `<section class="sec"><h2 style="margin-bottom:14px">${esc(T(U.photos))}</h2><div class="gallery">${c.photos.slice(1).map(p => `<figure><div class="ph">${img(p, catName(c))}</div><figcaption>${credit(p.cr)}</figcaption></figure>`).join('')}</div></section>` : ''}
-  <section class="sec read anchor" id="bronnen"><h2 style="margin-bottom:14px">${esc(T(U.sources))}</h2>
-    <ol class="sources">${P.sources.map((g,i) => `<li id="bron-${no}-${i+1}"><a href="${esc(SRC[g].url)}" target="_blank" rel="noopener">${esc(T(SRC[g].title))}</a></li>`).join('')}</ol>
+  ${c.photos.length > 1 ? `<section class="sec anchor" id="fotosec"><h2 style="margin-bottom:14px">${esc(T(U.photos))}</h2><div class="gallery">${c.photos.slice(1).map(p => `<figure><div class="ph">${img(p, catName(c))}</div><figcaption>${credit(p.cr)}</figcaption></figure>`).join('')}</div></section>` : ''}
+  <section class="sec read anchor" id="bronnen"><details class="srcbox" id="srcbox"><summary><h2>${esc(T(U.sources))} <span class="cnt">(${P.sources.length})</span></h2>${CHEV}</summary>
+    <ol class="sources">${P.sources.map((g,i) => `<li id="bron-${no}-${i+1}"><a href="${esc(SRC[g].url)}" target="_blank" rel="noopener">${esc(T(SRC[g].title))}</a></li>`).join('')}</ol></details>
     <p class="note" style="margin-top:14px">${esc(L==='nl'?'Foto’s, leefgebied en IUCN-status: De KATalogue.':'Photos, range and IUCN status: De KATalogue.')}</p>
     <p style="margin-top:14px">${esc(L==='nl'?'Zelf deze kat gezien, of klopt er iets niet?':'Seen this cat yourself, or is something wrong?')} <a class="btnlink" href="#melden-${no}">${esc(L==='nl'?'Meld het hier':'Report it here')} →</a></p></section>
   </div>`;
   drawSpeciesMap(); bindAlso(no, recs);
   $$('.jump button').forEach(b => b.onclick = () => { const el = document.getElementById(b.dataset.go); if (el) el.scrollIntoView({block:'start', behavior:'smooth'}); });
-  $$('.cite').forEach(a => a.onclick = e => { e.preventDefault(); const el = document.getElementById(a.getAttribute('href').slice(1)); if (el) { el.scrollIntoView({block:'center', behavior:'smooth'}); el.style.background='color-mix(in srgb,var(--accent) 18%,transparent)'; setTimeout(()=>el.style.background='',1600); } });
+  bindJumpSpy();
+  $$('.cite').forEach(a => a.onclick = e => { e.preventDefault(); const el = document.getElementById(a.getAttribute('href').slice(1)); if (el) { $('#srcbox').open = true; el.scrollIntoView({block:'center', behavior:'smooth'}); el.style.background='color-mix(in srgb,var(--accent) 18%,transparent)'; setTimeout(()=>el.style.background='',1600); } });
   return catName(c);
+}
+// snelmenu: knop van het onderdeel waar je nu bent oplichten (en in beeld schuiven)
+let JUMPSPY = null;
+function bindJumpSpy(){
+  if (JUMPSPY) window.removeEventListener('scroll', JUMPSPY);
+  const btns = $$('.jump button'); if (!btns.length) { JUMPSPY = null; return; }
+  let cur = null;
+  JUMPSPY = () => {
+    const bar = $('.jump'); if (!bar || !bar.isConnected) return;
+    const lim = Math.max(bar.getBoundingClientRect().bottom + 40, innerHeight * .4);
+    let act = null;
+    btns.forEach(b => { const el = document.getElementById(b.dataset.go); if (el && el.getBoundingClientRect().top <= lim) act = b; });
+    if (innerHeight + scrollY >= document.documentElement.scrollHeight - 4) act = btns[btns.length - 1];   // onderaan: laatste onderdeel
+    if (act === cur) return; cur = act;
+    btns.forEach(b => b.classList.toggle('on', b === act));
+    if (act) { const w = act.parentNode; w.scrollTo({left: act.offsetLeft - (w.clientWidth - act.offsetWidth) / 2, behavior:'smooth'}); }
+  };
+  window.addEventListener('scroll', JUMPSPY, {passive:true}); JUMPSPY();
 }
 // andere katten die op dezelfde plekken voorkomen
 function alsoCats(no, recs){

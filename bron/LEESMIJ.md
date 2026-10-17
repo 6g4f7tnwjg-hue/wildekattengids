@@ -19,6 +19,10 @@ Alles wordt uit deze map gebouwd. Pas nooit de gegenereerde bestanden in de hoof
 | `huisstijl.py` | Huisstijl van de startpagina voor de gidsen op de website: bovenbalk, kleuren en letters, rustiger kop, tabbladen en Ko-fi-voet (CSS en script worden door de bouw in elke gids en losse pagina gezet). |
 | `bouw.py`, `startdata.py`, `extract.js` | De bouw. Deelstaten en regio’s staan in `STATES` en `REGIOS` in `bouw.py` (samen `DEEL`). |
 
+## Nieuw ontwerp landpagina's (oktober 2026)
+
+`nieuw_ontwerp.py` draait aan het eind van `bouw.py` en zet op elke landpagina in `LANDEN` (nu alle landen behalve Duitsland) het app-ontwerp: startscherm met tellers, zoekbalk en tegels, elk onderdeel als eigen scherm, onderbalk. De gebouwde oude pagina wordt als reserve bewaard in `/<land>-oud/` (noindex). Teksten die het ontwerp zelf toevoegt staan in `TR` (NL/EN plus FR, DE, IT, ES, PT); al het andere komt uit de gids. Een regiolink (`/frankrijk/bretagne/`) opent meteen het scherm Locaties met het regiofilter aan. Duitsland (keuzepagina plus één pagina per deelstaat) heeft een andere opbouw en volgt apart.
+
 ## Bijwerken
 
 1. Pas de gids aan in `bron/gidsen/…`.

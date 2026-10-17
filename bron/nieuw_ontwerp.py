@@ -23,31 +23,39 @@ BASE = "/wildekattengids/"
 IMG = BASE + "img/nieuw/"
 
 
-# Frans en Duits voor de teksten die het ontwerp zelf toevoegt (België: FR, Luxemburg: FR en DE).
-# Toon zoals de gidsen: Frans met "vous", Duits met "du".
+# Vertalingen van de teksten die het ontwerp zelf toevoegt; de rest komt uit de gids zelf.
+# Toon zoals de gidsen: Frans met "vous", Duits, Italiaans, Spaans en Portugees met "du/tu".
+TALEN = ["fr", "de", "it", "es", "pt"]
 TR = {
-    "Favorieten": ("Favoris", "Favoriten"),
-    "Terug": ("Retour", "Zurück"),
-    "Meer": ("Plus", "Mehr"),
-    "Home": ("Accueil", "Start"),
-    "Bewaar als favoriet": ("Ajouter aux favoris", "Als Favorit speichern"),
-    "In je favorieten": ("Dans vos favoris", "In deinen Favoriten"),
-    "Nog geen favorieten. Tik op het hartje bij een park of een soort om het hier te bewaren. Je lijst blijft alleen op dit apparaat.":
-        ("Pas encore de favoris. Touchez le cœur à côté d’un parc ou d’une espèce pour l’enregistrer ici. Votre liste reste uniquement sur cet appareil.",
-         "Noch keine Favoriten. Tippe auf das Herz neben einem Park oder einer Art, um ihn hier zu speichern. Deine Liste bleibt nur auf diesem Gerät."),
-    "soorten": ("espèces", "Arten"),
-    "locaties": ("lieux", "Orte"),
-    "soort": ("espèce", "Art"),
-    "locatie": ("lieu", "Ort"),
-    "Zoek een kat of een park": ("Rechercher un félin ou un parc", "Katze oder Park suchen"),
-    "Favoriet": ("Favori", "Favorit"),
+    "Favorieten": {"fr": "Favoris", "de": "Favoriten", "it": "Preferiti", "es": "Favoritos", "pt": "Favoritos"},
+    "Terug": {"fr": "Retour", "de": "Zurück", "it": "Indietro", "es": "Volver", "pt": "Voltar"},
+    "Meer": {"fr": "Plus", "de": "Mehr", "it": "Altro", "es": "Más", "pt": "Mais"},
+    "Home": {"fr": "Accueil", "de": "Start", "it": "Home", "es": "Inicio", "pt": "Início"},
+    "Bewaar als favoriet": {"fr": "Ajouter aux favoris", "de": "Als Favorit speichern", "it": "Salva nei preferiti",
+                            "es": "Guardar en favoritos", "pt": "Guardar nos favoritos"},
+    "In je favorieten": {"fr": "Dans vos favoris", "de": "In deinen Favoriten", "it": "Nei tuoi preferiti",
+                         "es": "En tus favoritos", "pt": "Nos teus favoritos"},
+    "Nog geen favorieten. Tik op het hartje bij een park of een soort om het hier te bewaren. Je lijst blijft alleen op dit apparaat.": {
+        "fr": "Pas encore de favoris. Touchez le cœur à côté d’un parc ou d’une espèce pour l’enregistrer ici. Votre liste reste uniquement sur cet appareil.",
+        "de": "Noch keine Favoriten. Tippe auf das Herz neben einem Park oder einer Art, um ihn hier zu speichern. Deine Liste bleibt nur auf diesem Gerät.",
+        "it": "Ancora nessun preferito. Tocca il cuore accanto a un parco o a una specie per salvarlo qui. La tua lista resta solo su questo dispositivo.",
+        "es": "Todavía no hay favoritos. Toca el corazón junto a un parque o una especie para guardarlo aquí. Tu lista se queda solo en este dispositivo.",
+        "pt": "Ainda não tens favoritos. Toca no coração junto a um parque ou a uma espécie para o guardar aqui. A tua lista fica só neste dispositivo."},
+    "soorten": {"fr": "espèces", "de": "Arten", "it": "specie", "es": "especies", "pt": "espécies"},
+    "locaties": {"fr": "lieux", "de": "Orte", "it": "luoghi", "es": "lugares", "pt": "locais"},
+    "soort": {"fr": "espèce", "de": "Art", "it": "specie", "es": "especie", "pt": "espécie"},
+    "locatie": {"fr": "lieu", "de": "Ort", "it": "luogo", "es": "lugar", "pt": "local"},
+    "Zoek een kat of een park": {"fr": "Rechercher un félin ou un parc", "de": "Katze oder Park suchen",
+                                 "it": "Cerca un felino o un parco", "es": "Busca un felino o un parque",
+                                 "pt": "Procura um felino ou um parque"},
+    "Favoriet": {"fr": "Favori", "de": "Favorit", "it": "Preferito", "es": "Favorito", "pt": "Favorito"},
 }
 
 
 def L(nl, en):
-    fr, de = TR.get(nl, (en, en))
+    t = TR.get(nl, {})
     return (f'<span class="l-nl">{nl}</span><span class="l-en">{en}</span>'
-            f'<span class="l-fr">{fr}</span><span class="l-de">{de}</span>')
+            + "".join(f'<span class="l-{x}">{t.get(x, en)}</span>' for x in TALEN))
 
 
 ICO = {
@@ -76,7 +84,7 @@ CSS = r"""
 <style id="nw-css">
 /* ---- nieuw ontwerp (bron/nieuw_ontwerp.py) ---- */
 /* talen die een pagina niet heeft, nooit tonen */
-html:not(.fr) .l-fr,html:not(.de) .l-de,html.fr .l-nl,html.de .l-nl{display:none!important}
+html:not(.fr) .l-fr,html:not(.de) .l-de,html:not(.it) .l-it,html:not(.es) .l-es,html:not(.pt) .l-pt,html.fr .l-nl,html.de .l-nl,html.it .l-nl,html.es .l-nl,html.pt .l-nl{display:none!important}
 :root:root{--paper:#F5F0E4;--card:#FBF8F1;--ink:#22301F;--muted:#5E6656;--line:#E2DACB;--hs-olive:#2F4A32;--hs-accent:#A65A35;--gold:#A65A35;--bark:#2F4A32;--tan:#FBF8F1;--tan-deep:#E2DACB;
   --nw-sage:#E3EADB;--nw-peach:#F3E2D3;--nw-blue:#DDE6E6;--nw-lilac:#E6DDE8;--nw-rose:#F4E3DF;--nw-green:#2F4A32;--nw-terra:#A65A35;--nw-shadow:0 1px 2px rgba(60,50,30,.06),0 10px 24px -14px rgba(60,50,30,.35);--nw-top:var(--hs-head)}
 html body{background:var(--paper)!important;padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
@@ -264,8 +272,8 @@ var R=N.R,LOCS=N.LOCS,SPECIES=N.SPECIES,SPEN=N.SPEN,BYSLUG=N.BYSLUG,LOCBYSLUG=N.
 var HEART='HEARTSVG',PAWI='PAWSVG',PINI='PINSVG',ARR='ARRSVG';
 var $=function(s,r){return (r||document).querySelector(s);},$$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s));};
 function E(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
-function TX(nl,en){var t=TRX[nl]||[en,en],l=N.lang();return l==="en"?en:l==="fr"?t[0]:l==="de"?t[1]:nl;}
-function LS(nl,en){var t=TRX[nl]||[en,en];return '<span class="l-nl">'+E(nl)+'</span><span class="l-en">'+E(en)+'</span><span class="l-fr">'+E(t[0])+'</span><span class="l-de">'+E(t[1])+'</span>';}
+function TX(nl,en){var t=TRX[nl]||{},l=N.lang();return l==="nl"?nl:l==="en"?en:(t[l]||en);}
+function LS(nl,en){var t=TRX[nl]||{},o='<span class="l-nl">'+E(nl)+'</span><span class="l-en">'+E(en)+'</span>';["fr","de","it","es","pt"].forEach(function(x){o+='<span class="l-'+x+'">'+E(t[x]||en)+'</span>';});return o;}
 function en(n){return (SPEN&&SPEN[n])?SPEN[n][0]:n;}
 var main=document.getElementById("main"),info=document.getElementById("info"),html=document.documentElement;
 var SCR=["tldr","locaties","soorten","route","actueel","kleur","uitleg","rapporteer","favorieten","meer"];
@@ -274,8 +282,8 @@ var SCR=["tldr","locaties","soorten","route","actueel","kleur","uitleg","rapport
 function naam(id){if(id==="locaties-kop"){var k=$("#locaties > h2 .ctog > span");return k?k.innerHTML:naam("locaties");}var a=$('nav.toc a[href="#'+id+'"]');if(a)return a.innerHTML;
   var h=$("#"+id+" > h2 .ctog > span")||$("#"+id+" > h2");return h?h.innerHTML:"";}
 $$("[data-nw-lbl]").forEach(function(el){el.innerHTML=naam(el.getAttribute("data-nw-lbl"));});
-/* onderbalk: korte Franse naam voor de routeplanner (de volledige naam past niet) */
-$$('[data-nw="route"] .l-fr').forEach(function(x){x.textContent="Itinéraire";});
+/* onderbalk: korte naam voor de routeplanner in talen waar de volledige naam niet past */
+var KORT={fr:"Itinéraire",it:"Percorso",es:"Ruta",pt:"Rota"};Object.keys(KORT).forEach(function(k){$$('[data-nw="route"] .l-'+k).forEach(function(x){x.textContent=KORT[k];});});
 
 /* ---------- kop: titel, ondertitel en datum van de gids op de foto; inleiding naar In het kort ---------- */
 var hd=$("#main > header"),ht=document.getElementById("nw-htxt");
@@ -354,6 +362,8 @@ function listHearts(){$$(".loclist li").forEach(function(li){var a=li.querySelec
   document.getElementById("nw-meer").innerHTML='<ul class="nw-meer">'+own+'</ul>'+(site?'<p class="nw-mlbl">'+(brand?brand.innerHTML:"")+'</p><ul class="nw-meer">'+site+'</ul>':"");})();
 
 /* ---------- schermen ---------- */
+/* binnenkomst via een regiolink (bijv. /frankrijk/bretagne/): het regiofilter staat al aan, dus meteen het scherm Locaties tonen */
+if(window.__RGINIT&&!location.hash){try{history.replaceState(null,"","#locaties");}catch(e){}}
 var stack=[location.hash||"#start"],pos={},curY=window.scrollY,popped=false;
 window.addEventListener("scroll",function(){curY=window.scrollY;},{passive:true});
 function screenOf(el){while(el&&el.parentElement!==main)el=el.parentElement;return el&&SCR.indexOf(el.id)>=0?el:null;}
@@ -401,7 +411,8 @@ paint();apply();
 """
 
 
-LANDEN = ["nederland", "belgie", "luxemburg"]
+LANDEN = ["nederland", "belgie", "luxemburg", "frankrijk", "oostenrijk", "zwitserland",
+          "verenigd-koninkrijk", "italie", "spanje", "ierland", "portugal"]
 MARK = 'id="nw-htxt"'
 
 

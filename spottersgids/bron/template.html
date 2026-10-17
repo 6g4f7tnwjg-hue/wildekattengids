@@ -908,6 +908,8 @@ function bindHome(){
   });
   $$('.catbtn').forEach(b => b.onclick = () => {
     CAT = b.dataset.cat ? +b.dataset.cat : null; VIEW = null; LISTALL = false;
+    // kat met alleen plekken met kans 1–2 (bijv. caracal): die plekken dan meteen tonen
+    if (CAT) { const sc = catSpots(CAT).map(s => s.recs.find(r => r.no === CAT).score); if (sc.length && sc.every(n => !SHOWN.has(n))) sc.forEach(n => SHOWN.add(n)); }
     if (SEL && CAT && !SPOT[SEL].recs.some(r => r.no === CAT)) SEL = null;
     const x = $('#catrow').scrollLeft; refreshHome(); const cr = $('#catrow'); if (cr) cr.scrollLeft = x;
   });

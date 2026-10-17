@@ -347,7 +347,7 @@ a{color:var(--hs-accent)}
 .hs-brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0;margin-right:auto;color:var(--ink)}
 .hs-brand svg{flex:none;width:30px;height:30px;color:var(--hs-accent)}
 .hs-brand>span{min-width:0}
-.hs-brand b{display:block;font-family:var(--hs-display);font-weight:800;font-size:1.15rem;line-height:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--ink)}
+.hs-brand b{display:block;font-family:var(--hs-display);font-weight:800;font-size:1.15rem;line-height:1.2;padding-bottom:1px;margin-bottom:-3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--ink)}
 .hs-brand small{display:block;font-family:var(--hs-label);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:3px;white-space:normal;line-height:1.25}
 @media (max-width:360px){.hs-top .hs-brand svg{display:none}.hs-top>.hs-wrap{gap:5px}.hs-ico{min-width:34px;padding:0 7px}.hs-top .hs-brand b{font-size:.98rem}.hs-top .hs-brand small{font-size:.62rem;letter-spacing:.06em}}
 @media (max-width:300px){.hs-top .hs-brand b{font-size:.78rem}}

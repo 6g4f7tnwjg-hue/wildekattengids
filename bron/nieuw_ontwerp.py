@@ -531,3 +531,67 @@ def maak_los(alleen=None):
                 if os.path.exists(pad) and los_pagina(pad, land, kind):
                     n += 1
     print("losse pagina's in nieuwe stijl:", n)
+
+
+# ------------------------------------------------------------------ startpagina en top 10 (18-10-2026)
+START_MARK = 'id="nw-start-css"'
+
+
+def _bar_css():
+    regels = [r for r in CSS.split("\n") if r.startswith(".nw-bar")]
+    return "\n".join(regels)
+
+
+START_CSS = """
+<style id="nw-start-css">
+/* startpagina en top 10 in de kleuren van het nieuwe ontwerp (bron/nieuw_ontwerp.py) */
+:root:root{--bg:#F5F0E4;--paper:#FBF8F1;--ink:#22301F;--muted:#5E6656;--line:#E2DACB;--olive:#2F4A32;--dot:#2F4A32;--accent:#A65A35;
+  --shadow:0 1px 2px rgba(60,50,30,.06),0 10px 24px -14px rgba(60,50,30,.35);--nw-green:#2F4A32;--nw-terra:#A65A35;--card:#FBF8F1;--hs-body:var(--body)}
+html body{padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
+.tab[aria-selected="true"],.lgbtn[aria-pressed="true"]{background:var(--olive)!important;border-color:var(--olive)!important;color:#FBF8F1!important}
+.catbtn[aria-pressed="true"]{background:#E3EADB!important}
+.nw-bar a,.nw-bar a:hover,.nw-bar a:visited{color:var(--muted)!important;text-decoration:none!important}.nw-bar a.on{color:var(--nw-green)!important}
+BARCSS
+</style>
+"""
+
+START_JS = """
+<script>(function(){
+var T={home:{nl:"Home",en:"Home",fr:"Accueil",de:"Start",it:"Home",es:"Inicio"},
+  landen:{nl:"Landen",en:"Countries",fr:"Pays",de:"Länder",it:"Paesi",es:"Países"},
+  soorten:{nl:"Soorten",en:"Species",fr:"Espèces",de:"Arten",it:"Specie",es:"Especies"},
+  meer:{nl:"Meer",en:"More",fr:"Plus",de:"Mehr",it:"Altro",es:"Más"}};
+var bar=document.getElementById("nw-sbar-start");if(!bar)return;
+function lang(){var l=(document.documentElement.lang||"nl").slice(0,2);return T.home[l]?l:"en";}
+function labels(){var l=lang();bar.querySelectorAll("[data-k]").forEach(function(a){a.querySelector("span").textContent=T[a.dataset.k][l];});}
+function mark(){if(!bar.dataset.start)return;var sel=document.querySelector('.tab[aria-selected="true"]'),k=sel?sel.dataset.tab:null;
+  bar.querySelectorAll("[data-k]").forEach(function(a){var on=(k==="kaart"&&a.dataset.k==="home")||(k&&a.dataset.k===k);a.classList.toggle("on",!!on);});}
+bar.addEventListener("click",function(e){var a=e.target.closest('[data-k="meer"]');if(!a)return;var m=document.getElementById("menu-btn");
+  if(m){e.preventDefault();e.stopPropagation();window.scrollTo(0,0);m.click();}});
+new MutationObserver(labels).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});
+document.querySelectorAll(".tab").forEach(function(t){new MutationObserver(mark).observe(t,{attributes:true,attributeFilter:["aria-selected"]});});
+labels();mark();
+})();</script>
+"""
+
+
+def start_pagina(pad, op_start):
+    doc = open(pad, encoding="utf-8").read()
+    if START_MARK in doc:
+        return False
+    pre = "" if op_start else BASE
+    links = [("home", pre + "#kaart", ICO["b-home"]), ("landen", pre + "#landen", ICO["b-map"]),
+             ("soorten", pre + "#soorten", ICO["b-paw"]), ("meer", pre + "#over", ICO["b-menu"])]
+    bar = ('<div class="nw-bar nw-bar4" id="nw-sbar-start"' + (' data-start="1"' if op_start else '') + '><nav aria-label="Menu">'
+           + "".join(f'<a href="{h}" data-k="{k}">{svg}<span></span></a>' for k, h, svg in links) + "</nav></div>\n")
+    css = START_CSS.replace("BARCSS", _bar_css() + "\n.nw-bar4 nav{grid-template-columns:repeat(4,minmax(0,1fr))!important}")
+    doc = doc.replace("</head>", css + "</head>", 1)
+    k = doc.rindex("</body>")
+    doc = doc[:k] + bar + START_JS + doc[k:]
+    open(pad, "w", encoding="utf-8").write(doc)
+    return True
+
+
+def maak_start():
+    n = start_pagina(os.path.join(ROOT, "index.html"), True) + start_pagina(os.path.join(ROOT, "top10", "index.html"), False)
+    print("startpagina en top 10 in nieuwe stijl:", n)

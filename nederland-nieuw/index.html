@@ -384,6 +384,9 @@ html:not(.nw-scherm) #nw-sbar{display:none!important}
 .nw-htxt{padding:14px 18px 0}
 .nw-stats{display:grid;grid-template-columns:repeat(2,minmax(0,240px));gap:12px;margin:14px 18px 0;padding-top:14px;border-top:1px solid var(--line)}
 .nw-datum{padding:8px 18px 16px}
+.nw-foto{margin:0 0 18px!important;max-width:720px}
+.nw-foto img{display:block;width:100%!important;max-width:100%!important;height:auto!important;aspect-ratio:4/3;object-fit:cover;border-radius:18px!important;margin:0!important;box-shadow:var(--nw-shadow)!important}
+.nw-foto p{margin:6px 2px 0!important;font-size:.82rem!important;color:var(--muted)!important}
 .nw-stats a{align-items:center!important;gap:10px!important}
 .nw-si{flex:none;display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%}
 .nw-si svg{width:22px;height:22px}
@@ -2223,12 +2226,13 @@ $$("[data-nw-lbl]").forEach(function(el){el.innerHTML=naam(el.getAttribute("data
 var hd=$("#main > header"),ht=document.getElementById("nw-htxt");
 ["h1.mast",".hs-onder"].forEach(function(s){var x=hd&&hd.querySelector(s);if(x)ht.appendChild(x);});
 var stp=hd&&hd.querySelector(".stamp.hs-stamp");if(stp){var sw=document.createElement("div");sw.className="nw-datum";sw.appendChild(stp);$(".nw-stats").after(sw);}
-var fig=hd&&hd.querySelector("figure.hero");if(fig)fig.remove();
+var fig=hd&&hd.querySelector("figure.hero");
 var cnt=$$("header .counts b");
 if(cnt[0])$$(".nw-nsp").forEach(function(s){s.innerHTML="<strong>"+cnt[0].textContent+"</strong> "+LS("soorten","species");});
 if(cnt[1])$$(".nw-nloc").forEach(function(s){s.innerHTML="<strong>"+cnt[1].textContent+"</strong> "+LS("locaties","locations");});
 var tb=$("#tldr > .cbody")||$("#tldr");
 if(hd&&tb){var lede=hd.querySelector(".lede"),co=hd.querySelector(".counts");if(co)tb.insertBefore(co,tb.firstChild);if(lede)tb.insertBefore(lede,tb.firstChild);}
+if(fig){if(tb){fig.className="nw-foto";tb.insertBefore(fig,tb.firstChild);}else fig.remove();}
 
 /* ---------- zoeken ---------- */
 var q=document.getElementById("nw-q"),res=document.getElementById("nw-res");

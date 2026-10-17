@@ -401,7 +401,7 @@ p{margin:0}
 #katview{display:none;padding-block:16px 24px}
 html.katmode #katview{display:block}
 html.katmode .intro,html.katmode .bar,html.katmode .tabpanel,html.katmode .page,html.pagemode .intro,html.pagemode .bar,html.pagemode .tabpanel{display:none!important}
-.kat-h{display:grid;gap:16px 24px;grid-template-columns:minmax(0,1fr);align-items:start;margin-bottom:24px}
+.kat-h{display:grid;gap:16px 24px;grid-template-columns:minmax(0,1fr);align-items:start;margin-bottom:8px}
 @media (min-width:820px){.kat-h{grid-template-columns:minmax(0,380px) minmax(0,1fr)}}
 #katview h1{font-size:clamp(2rem,6vw,3.2rem);font-weight:800;margin:8px 0 6px}
 .kat-sci{font-family:var(--display);font-style:italic;color:var(--muted);margin:0 0 4px;font-size:1.1rem}
@@ -412,7 +412,7 @@ html.katmode .intro,html.katmode .bar,html.katmode .tabpanel,html.katmode .page,
 .kat-foto figcaption{font-size:.82rem;color:var(--muted);margin-top:6px;line-height:1.4;overflow-wrap:anywhere}
 .kat-grid{display:grid;gap:24px;grid-template-columns:minmax(0,1fr)}
 .kat-grid>div:first-child{display:flex;flex-direction:column;gap:8px;min-width:0}
-.kat-grid>div:first-child>.kat-map{margin-top:16px}
+.kat-grid>div:first-child>.kat-map{margin-top:4px}
 @media (min-width:820px){.kat-grid{grid-template-columns:minmax(0,420px) minmax(0,1fr);align-items:start}.kat-grid>div:first-child{position:sticky;top:calc(var(--head) + 12px)}}
 .kat-map{background:var(--paper);border:1px solid var(--line);border-radius:12px;overflow:hidden}
 .kmz{position:relative}
@@ -462,7 +462,7 @@ html.katmode .intro,html.katmode .bar,html.katmode .tabpanel,html.katmode .page,
 .kat-land>summary .n{color:var(--muted);font-size:.92rem;margin-left:auto}
 .kat-land>summary::after{content:"";width:8px;height:8px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(45deg);margin:-4px 2px 0 4px;transition:transform .2s}
 .kat-land[open]>summary::after{transform:rotate(-135deg);margin-top:4px}
-.kat-land>:not(summary){margin-left:14px;margin-right:14px}
+.kat-land>:not(summary){margin-left:14px!important;margin-right:14px!important}
 .kat-land>.gidsl{margin-bottom:12px}
 .kat-land li{display:flex!important;align-items:center;gap:10px;justify-content:flex-start!important;flex-wrap:nowrap!important}
 .kat-land li .ti{width:22px;height:22px;flex:none}

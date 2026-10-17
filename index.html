@@ -442,7 +442,10 @@ html.katmode .intro,html.katmode .bar,html.katmode .tabpanel,html.katmode .page,
 .kmap .mk.unc .gl{fill:currentColor;color:inherit}
 .kmap .mk .hit{fill:transparent}
 .kmap .mk.sel .dot{stroke:var(--ink);stroke-width:3px}
-.kmap .mk.hs-clh{display:none}
+.kmap .mk.hs-clh,.kmap .mk.km-off{display:none}
+.kmf{margin:0 0 8px}
+.kmf .chip.tchip{padding-left:5px}
+.kmf .chip svg.ti{width:18px;height:18px;border-radius:50%;box-shadow:none}
 .kmap .mk:focus{outline:none}.kmap .mk:focus-visible .dot{stroke:var(--accent);stroke-width:3px}
 .hs-zb{position:absolute;top:10px;right:10px;display:flex;flex-direction:column;gap:6px;z-index:2}
 .hs-zb button{width:36px;height:36px;border-radius:8px;border:1px solid var(--line);background:var(--paper);color:var(--ink);font:700 1.3rem/1 var(--body);cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;box-shadow:var(--shadow)}
@@ -960,10 +963,20 @@ function katMap(slug){
   ["es","pt","it","uk","ie","fr","de","ch","at","nl","be","lu"].forEach(c=>{D[c].poly.forEach(r=>{m+=`<path class="land" d="${path(r)}"/>`;});D[c].water.forEach(r=>{m+=`<path class="water" d="${path(r)}"/>`;});});
   xs.forEach((x,n)=>{const[px,py]=pts[n],k=tIdx(x.c,D[x.c].locs.indexOf(x.l)),unc=!CONF.includes(x.st),r=8*s0;
     m+=`<g class="mk${unc?" unc":""}" data-hs="${k}" data-i="${n}" style="color:${tCol(k)}" tabindex="0" role="button" aria-label="${esc(x.l[0])}, ${esc(x.l[1])}"><circle class="hit" cx="${px.toFixed(1)}" cy="${py.toFixed(1)}" r="${(r*1.5).toFixed(1)}"/><circle class="dot" cx="${px.toFixed(1)}" cy="${py.toFixed(1)}" r="${r.toFixed(2)}"/><g class="gl" transform="translate(${px.toFixed(1)} ${py.toFixed(1)}) scale(${(r/8*.95).toFixed(3)})">${tGly(k)}</g></g>`;});
-  return `<div class="kat-map"><div class="kmz"><svg class="kmap" viewBox="${vb.map(v=>v.toFixed(1)).join(" ")}" data-s0="${s0.toFixed(4)}" role="group" aria-label="${T("Kaart","Map","Carte","Karte","Mappa","Mapa")}">${m}</svg></div>
+  const tk={};xs.forEach(x=>{const k=tIdx(x.c,D[x.c].locs.indexOf(x.l));tk[k]=(tk[k]||0)+1;});KMF="";
+  const chips=`<div class="chips wrapit kmf" role="group" aria-label="${T("Soort locatie","Type of location","Type de lieu","Art des Ortes","Tipo di luogo","Tipo de lugar")}"><button type="button" class="chip" data-kmf="" aria-pressed="true">${T("Alle","All","Tous","Alle","Tutti","Todos")} <span class="n">${xs.length}</span></button>`+
+    Object.keys(tk).map(Number).sort((a,b)=>a-b).map(k=>`<button type="button" class="chip tchip" data-kmf="${k}" aria-pressed="false">${tIcon(k)}${k<0?"?":esc(T(...["nl","en","fr","de","it","es"].map(l=>D.lt.types[k][l])))} <span class="n">${tk[k]}</span></button>`).join("")+`</div>`;
+  return chips+`<div class="kat-map"><div class="kmz"><svg class="kmap" viewBox="${vb.map(v=>v.toFixed(1)).join(" ")}" data-s0="${s0.toFixed(4)}" role="group" aria-label="${T("Kaart","Map","Carte","Karte","Mappa","Mapa")}">${m}</svg></div>
     <p class="km-sel" id="km-sel" aria-live="polite">${T("Tik op een icoon voor de locatie.","Tap an icon to see the location.","Touchez une icône pour voir le lieu.","Tippe auf ein Symbol, um den Ort zu sehen.","Tocca un’icona per vedere il luogo.","Toca un icono para ver el lugar.")}</p>
-    <div class="maplegend">${[...new Set(xs.map(x=>tIdx(x.c,D[x.c].locs.indexOf(x.l))))].sort((a,b)=>a-b).map(k=>`<span>${tIcon(k)}${k<0?"?":esc(T(...["nl","en","fr","de","it","es"].map(l=>D.lt.types[k][l])))}</span>`).join("")}${xs.some(x=>!CONF.includes(x.st))?`<span><i class="o"></i>${T("onzeker of niet te zien","uncertain or not visible","incertain ou non visible","unsicher oder nicht zu sehen","incerto o non visibile","incierto o no visible")}</span>`:""}</div></div>`;
+    ${xs.some(x=>!CONF.includes(x.st))?`<div class="maplegend"><span><i class="o"></i>${T("open stip: onzeker of niet te zien","open dot: uncertain or not visible","point vide : incertain ou non visible","offener Punkt: unsicher oder nicht zu sehen","punto vuoto: incerto o non visibile","punto vacío: incierto o no visible")}</span></div>`:""}</div></div>`;
 }
+let KMF="";
+document.addEventListener("click",e=>{const b=e.target.closest("[data-kmf]");if(!b)return;KMF=KMF===b.dataset.kmf?"":b.dataset.kmf;
+  document.querySelectorAll("[data-kmf]").forEach(x=>x.setAttribute("aria-pressed",String(x.dataset.kmf===KMF)));
+  const svg=document.querySelector("#katview .kmap");if(svg){svg.querySelectorAll(".mk").forEach(m=>m.classList.toggle("km-off",!!KMF&&m.dataset.hs!==KMF));kmGroep(svg);}
+  document.querySelectorAll("#katview .kat-land").forEach(a=>{let n=0;a.querySelectorAll("li[data-hk]").forEach(li=>{const h=!!KMF&&li.dataset.hk!==KMF;li.hidden=h;if(!h)n++;});
+    a.querySelectorAll("h3").forEach(h3=>{const ul=h3.nextElementSibling;if(ul&&ul.tagName==="UL"){const v=[...ul.children].some(li=>!li.hidden);h3.hidden=!v;ul.hidden=!v;const g=ul.nextElementSibling;if(g&&g.classList.contains("gidsl"))g.hidden=!v;}});
+    a.hidden=!n;});});
 function kmSel(i){const x=KMX[i];if(!x)return;const el=$("km-sel");if(!el)return;
   document.querySelectorAll(".kmap .mk").forEach(m=>m.classList.toggle("sel",+m.dataset.i===i));
   el.innerHTML=`<b><a href="${x.c}.html#${x.pre}locatie/${x.l[4]}">${esc(x.l[0])}</a></b> · ${esc(x.l[1])} · ${esc(cname(x.c))}${CONF.includes(x.st)?"":" · "+(STAT[x.st]?stat(x.st):T("onzeker","uncertain","incertain","unsicher","incerto","incierto"))}`;}
@@ -1006,7 +1019,7 @@ function kmSchaal(svg){const st=svg.__zk,u=st.v[2]/st.base[2];
   svg.querySelectorAll(".land,.water,.nb").forEach(e=>e.setAttribute("stroke-width",(st.v[2]/360).toFixed(3)));}
 function kmGroep(svg){const st=svg.__zk,u=st.v[2]/st.base[2],s0=+svg.dataset.s0;
   svg.querySelectorAll(".hs-cl").forEach(g=>g.remove());svg.querySelectorAll(".mk.hs-clh").forEach(m=>m.classList.remove("hs-clh"));kmSchaal(svg);
-  const ms=[...svg.querySelectorAll(".mk")],R=8*s0*1.7*u,out=[];
+  const ms=[...svg.querySelectorAll(".mk:not(.km-off)")],R=8*s0*1.7*u,out=[];
   if(st.v[2]>st.base[2]/KZ.MAX+.01)ms.forEach(m=>{if(m.classList.contains("sel"))return;const c=kmMid(m);let best=null,bd=R*R;
     out.forEach(g=>{const d=(g.x-c[0])**2+(g.y-c[1])**2;if(d<bd){bd=d;best=g;}});if(best)best.m.push(m);else out.push({x:c[0],y:c[1],m:[m]});});
   let h="";out.forEach(g=>{if(g.m.length<2)return;let x=0,y=0;g.m.forEach(m=>{const c=kmMid(m);x+=c[0];y+=c[1];m.classList.add("hs-clh");});x/=g.m.length;y/=g.m.length;const n=g.m.length,rr=n<10?10.5:12.5;
@@ -1019,7 +1032,7 @@ function kmOpen(svg,g){const st=svg.__zk;let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;
 function katLand(c,xs,slug){
   const li=x=>{const unc=!CONF.includes(x.st);
     const k=ltOf(c,D[c].locs.indexOf(x.l))[0];
-    return `<li${unc?' class="unc"':""}><a href="${window.__F[c]}#${x.pre}locatie/${x.l[4]}">${esc(x.l[0])}</a><small>${esc(x.l[1])}${k?" · "+esc(ltName(k)):""}${STAT[x.st]?" · "+stat(x.st):x.st==="p"?" · "+T("gepland","planned","prévu","geplant","previsto","previsto"):""}</small></li>`;};
+    return `<li${unc?' class="unc"':""} data-hk="${tIdx(c,D[c].locs.indexOf(x.l))}"><a href="${window.__F[c]}#${x.pre}locatie/${x.l[4]}">${esc(x.l[0])}</a><small>${esc(x.l[1])}${k?" · "+esc(ltName(k)):""}${STAT[x.st]?" · "+stat(x.st):x.st==="p"?" · "+T("gepland","planned","prévu","geplant","previsto","previsto"):""}</small></li>`;};
   const srt=a=>a.slice().sort((p,q)=>(CONF.includes(q.st)?1:0)-(CONF.includes(p.st)?1:0)||p.l[0].localeCompare(q.l[0]));
   let body="";
   if(xs.some(x=>x.pre)){const groups={};xs.forEach(x=>(groups[x.pre]=groups[x.pre]||[]).push(x));

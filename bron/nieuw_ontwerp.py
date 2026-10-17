@@ -108,6 +108,8 @@ html:not(.nw-scherm) #nw-sbar{display:none!important}
 .nw-tile .nw-ti{width:30px;height:30px;color:var(--tc)}
 .nw-tile .nw-ti svg{width:30px;height:30px}
 .nw-tile small{display:block;font-size:clamp(.78rem,3.2vw,.95rem);color:var(--ink);margin-top:3px}
+.nw-tile small.nw-cnt{display:inline-flex;align-items:baseline;gap:5px;margin-top:8px;padding:3px 12px 4px;border-radius:99px;background:rgba(255,253,248,.92);box-shadow:0 1px 3px rgba(60,50,30,.12);font-size:clamp(.82rem,3.4vw,1rem);font-weight:600;color:var(--tc)}
+.nw-tile small.nw-cnt strong{font-family:var(--hs-display);font-weight:800;font-size:clamp(1.25rem,5.4vw,1.6rem);line-height:1;color:var(--tc)}
 .nw-tile b{display:flex;align-items:center;gap:2px;font-family:var(--hs-display);font-weight:800;font-size:clamp(1.1rem,4.6vw,1.65rem);line-height:1.08;color:var(--tc);max-width:82%}
 .nw-arr{width:18px;height:18px;flex:none}
 .nw-t1{--tb:var(--nw-peach);--tc:#7A3F22;background-image:url(IMGtegel-jaguar.webp)}
@@ -178,10 +180,10 @@ START = f"""
   <div class="nw-res" id="nw-res" role="listbox" hidden></div>
 </div>
 <nav class="nw-tiles" aria-label="Menu">
-  <a class="nw-tile nw-t1" href="#soorten"><span class="nw-ti">{ICO["b-paw"]}</span><span><b><span data-nw-lbl="soorten"></span>{ARROW}</b><small class="nw-nsp"></small></span></a>
-  <a class="nw-tile nw-t2" href="#locaties"><span class="nw-ti">{ICO["b-map"]}</span><span><b><span data-nw-lbl="locaties-kop"></span>{ARROW}</b><small class="nw-nloc"></small></span></a>
-  <a class="nw-tile nw-t3" href="#actueel"><span class="nw-ti">{ICO["news"]}</span><span><b><span data-nw-lbl="actueel"></span>{ARROW}</b></span></a>
   <a class="nw-tile nw-t4" href="#tldr"><span class="nw-ti">{ICO["tbl"]}</span><span><b><span data-nw-lbl="tldr"></span>{ARROW}</b></span></a>
+  <a class="nw-tile nw-t3" href="#actueel"><span class="nw-ti">{ICO["news"]}</span><span><b><span data-nw-lbl="actueel"></span>{ARROW}</b></span></a>
+  <a class="nw-tile nw-t1" href="#soorten"><span class="nw-ti">{ICO["b-paw"]}</span><span><b><span data-nw-lbl="soorten"></span>{ARROW}</b><small class="nw-cnt nw-nsp"></small></span></a>
+  <a class="nw-tile nw-t2" href="#locaties"><span class="nw-ti">{ICO["b-map"]}</span><span><b><span data-nw-lbl="locaties-kop"></span>{ARROW}</b><small class="nw-cnt nw-nloc"></small></span></a>
 </nav>
 <nav class="nw-quick" aria-label="Menu">
   <a href="#kleur"><span class="nw-qi">{ICO["dna"]}</span><b data-nw-lbl="kleur"></b></a>
@@ -232,8 +234,8 @@ var hd=$("#main > header"),ht=document.getElementById("nw-htxt");
 ["h1.mast",".hs-onder",".stamp.hs-stamp"].forEach(function(s){var x=hd&&hd.querySelector(s);if(x)ht.appendChild(x);});
 var cap=hd&&hd.querySelector("figure.hero p");if(cap){cap.className="nw-cred";cap.removeAttribute("style");$(".nw-hero").appendChild(cap);}
 var cnt=$$("header .counts b");
-if(cnt[0])$$(".nw-nsp").forEach(function(s){s.innerHTML=cnt[0].textContent+" "+LS("soorten","species");});
-if(cnt[1])$$(".nw-nloc").forEach(function(s){s.innerHTML=cnt[1].textContent+" "+LS("locaties","locations");});
+if(cnt[0])$$(".nw-nsp").forEach(function(s){s.innerHTML="<strong>"+cnt[0].textContent+"</strong> "+LS("soorten","species");});
+if(cnt[1])$$(".nw-nloc").forEach(function(s){s.innerHTML="<strong>"+cnt[1].textContent+"</strong> "+LS("locaties","locations");});
 var tb=$("#tldr > .cbody")||$("#tldr");
 if(hd&&tb){var lede=hd.querySelector(".lede"),co=hd.querySelector(".counts");if(co)tb.insertBefore(co,tb.firstChild);if(lede)tb.insertBefore(lede,tb.firstChild);}
 

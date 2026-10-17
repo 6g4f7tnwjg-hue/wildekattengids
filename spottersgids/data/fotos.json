@@ -1,0 +1,109 @@
+{
+ "_uitleg": "Aanpassingen op de foto's uit de KATalogue (17-10-2026): dierentuin-/opvangfoto's weg, hoofdfoto (eerste) uit het wild; 'captive': true = in gevangenschap (alleen als er geen foto uit het wild is). Nieuwe foto's van iNaturalist (wilde, goedgekeurde waarnemingen).",
+ "5": [
+  {
+   "src": "img/05-2.jpg",
+   "cr": "foto: kesangchunit, CC BY-NC 4.0"
+  },
+  {
+   "src": "img/05-3.jpg",
+   "cr": "foto: romainbaujard, CC BY-NC 4.0"
+  },
+  {
+   "src": "img/05-4.jpg",
+   "cr": "foto: zametnya, CC BY-NC 4.0"
+  }
+ ],
+ "6": [
+  {
+   "src": "img/06-5.jpg",
+   "cr": "foto: Ian Dugdale, CC BY 4.0",
+   "url": "https://www.inaturalist.org/observations/302041475"
+  },
+  {
+   "src": "img/06-1.jpg",
+   "cr": "foto: Ian Dugdale, CC BY 4.0"
+  }
+ ],
+ "9": [
+  {
+   "src": "img/09-1.jpg",
+   "cr": "foto: Jim Sanderson, CC BY-SA 3.0",
+   "captive": true
+  },
+  {
+   "src": "img/09-2.jpg",
+   "cr": "foto: willbrooks, CC BY-NC 4.0"
+  }
+ ],
+ "21": [
+  {
+   "src": "img/21-4.jpg",
+   "cr": "foto: Thomas Galewski, CC BY-NC 4.0"
+  },
+  {
+   "src": "img/21-2.jpg",
+   "cr": "foto: Carol Fontes, CC0"
+  },
+  {
+   "src": "img/21-3.jpg",
+   "cr": "foto: Santiago Vitali, CC BY 4.0"
+  }
+ ],
+ "23": [
+  {
+   "src": "img/23-1.jpg",
+   "cr": "foto: Paola Nogales Ascarrunz, CC BY-SA 4.0",
+   "captive": true
+  }
+ ],
+ "33": [
+  {
+   "src": "img/33-1.jpg",
+   "cr": "foto: wilmotsenaratne, CC0"
+  },
+  {
+   "src": "img/33-5.jpg",
+   "cr": "foto: Tim, CC BY 4.0",
+   "url": "https://www.inaturalist.org/observations/378753221"
+  }
+ ],
+ "34": [
+  {
+   "src": "img/34-1.jpg",
+   "cr": "foto: Thibaud Aronson, CC BY-SA 4.0"
+  },
+  {
+   "src": "img/34-3.jpg",
+   "cr": "foto: pfaucher, CC BY-NC 4.0"
+  },
+  {
+   "src": "img/34-4.jpg",
+   "cr": "foto: rillemalmstrom, CC BY-NC 4.0"
+  }
+ ],
+ "39": [
+  {
+   "src": "img/39-3.jpg",
+   "cr": "foto: Mengshuai Ge, CC BY-NC 4.0"
+  },
+  {
+   "src": "img/39-2.jpg",
+   "cr": "foto: 吴其远, CC BY-NC 4.0"
+  },
+  {
+   "src": "img/39-4.jpg",
+   "cr": "foto: Royle Safaris, CC BY-NC 4.0"
+  }
+ ],
+ "41": [
+  {
+   "src": "img/41-3.jpg",
+   "cr": "foto: Nadia van Zyl, CC BY-NC 4.0"
+  },
+  {
+   "src": "img/41-4.jpg",
+   "cr": "foto: Calvin Harris, CC BY-NC-SA 4.0"
+  }
+ ]
+}

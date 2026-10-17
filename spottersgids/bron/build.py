@@ -17,6 +17,11 @@ ALIAS = json.load(open(J('data', 'alias.json'), encoding='utf-8')) if os.path.ex
 CONT_MAP = {'eur': 'eur', 'afr': 'afr', 'asia': 'asia', 'namerica': 'nam', 'samerica': 'sam'}
 
 cats = load('bron/katalogue.json')
+# Eigen fotokeuze per soort (dierentuinfoto's eruit, extra foto's uit het wild): data/fotos.json
+FOTOS = load('data/fotos.json') if os.path.exists(J('data', 'fotos.json')) else {}
+for c in cats:
+    if str(c['no']) in FOTOS:
+        c['photos'] = [dict(ph) for ph in FOTOS[str(c['no'])]]
 for c in cats:
     c['cont'] = [CONT_MAP[x] for x in c['cont']]
     if c['no'] not in PAGES:

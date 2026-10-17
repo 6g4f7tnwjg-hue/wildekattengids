@@ -58,7 +58,7 @@ const U = {
   habitatNote:{nl:'Gekleurd: leefgebied bij benadering (bron: De KATalogue, op basis van openbare verspreidingskaarten). Cijfers: de plekken hieronder; tik erop om de plek te openen.',en:'Shaded: approximate range (source: De KATalogue, based on public range maps). Numbers: the places listed below; tap one to open it.'},
   status:{nl:'Status en bedreigingen',en:'Status and threats'},
   threats:{nl:'Belangrijkste bedreigingen',en:'Main threats'},
-  photos:{nl:"Foto's",en:'Photos'},
+  photos:{nl:"Foto's",en:'Photos'}, captive:{nl:'in gevangenschap',en:'in captivity'},
   sources:{nl:'Bronnen',en:'Sources'},
   back:{nl:'Alle soorten',en:'All species'},
   chance:{nl:'Kans',en:'Chance'},
@@ -554,7 +554,7 @@ function renderSpecies(no){
   $('#main').innerHTML = `
   <div class="wrap"><p class="crumbs"><a href="#soorten">← ${esc(T(U.back))}</a></p>
   <section class="sphead">
-    <div class="heros"><div class="hstrip" id="hstrip">${c.photos.map((p,i) => `<figure class="hero"><div class="ph">${img(p, catName(c), i === 0)}</div><figcaption>${credit(p.cr)}</figcaption></figure>`).join('')}</div>
+    <div class="heros"><div class="hstrip" id="hstrip">${c.photos.map((p,i) => `<figure class="hero"><div class="ph">${img(p, catName(c), i === 0)}</div><figcaption>${credit(p.cr)}${p.captive ? ` · ${esc(T(U.captive))}` : ''}</figcaption></figure>`).join('')}</div>
       ${c.photos.length > 1 ? `<div class="hdots">${c.photos.map((_,i) => `<button type="button" data-i="${i}" aria-label="${esc(T(U.photos))} ${i+1}"${i ? '' : ' class="on"'}></button>`).join('')}</div>` : ''}</div>
     <div class="idblock">
       <span class="lbl">№ ${c.no} · ${c.cont.map(contName).join(' · ')}</span>

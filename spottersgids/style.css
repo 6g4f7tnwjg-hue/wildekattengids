@@ -307,17 +307,21 @@ figcaption{font-size:.82rem;color:var(--muted);margin-top:6px;overflow-wrap:anyw
 .tips li::before{content:"";position:absolute;left:2px;top:.45em;width:12px;height:12px;border-radius:50% 50% 45% 45%;background:var(--olive);opacity:.85;
   box-shadow:-5px -8px 0 -3px var(--olive),0 -10px 0 -3px var(--olive),5px -8px 0 -3px var(--olive)}
 .two{display:grid;gap:28px}
+.two:has(.fold){gap:8px 28px}
+.sec:has(.fold),.sec + .sec:has(.fold){padding-block:4px}
 @media (min-width:860px){.two{grid-template-columns:1fr 1fr}}
 .gallery{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;scrollbar-width:thin}
 .gallery figure{margin:0;flex:none;width:min(300px,78%);scroll-snap-align:start}
 .gallery .ph{aspect-ratio:4/3;border-radius:10px;overflow:hidden;background:var(--land)}
 .gallery img{width:100%;height:100%;object-fit:cover;display:block}
-.srcbox summary{list-style:none;display:flex;align-items:center;gap:10px;cursor:pointer}
-.srcbox summary::-webkit-details-marker{display:none}
-.srcbox .cnt{color:var(--muted);font-weight:400}
-.srcbox .chev{width:16px;height:16px;color:var(--muted);transition:transform .2s}
-.srcbox[open] .chev{transform:rotate(180deg)}
-.srcbox[open] summary{margin-bottom:14px}
+/* inklapbare onderdelen op de soortpagina: alleen de kop, tik = open */
+.fold summary{list-style:none;display:flex;align-items:center;gap:10px;cursor:pointer;padding:10px 0;border-bottom:1px solid var(--line)}
+.fold summary::-webkit-details-marker{display:none}
+.fold summary h2{flex:1}
+.fold .cnt{color:var(--muted);font-weight:400}
+.fold .chev{flex:none;width:16px;height:16px;color:var(--muted);transition:transform .2s}
+.fold[open] .chev{transform:rotate(180deg)}
+.fold[open] summary{margin-bottom:14px}
 .sources{margin:0;padding-left:1.6em;display:grid;gap:6px;font-size:.95rem;overflow-wrap:anywhere}
 .note{font-size:.92rem;color:var(--muted)}
 .box{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:18px}

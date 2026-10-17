@@ -575,19 +575,19 @@ function renderSpecies(no){
       <div class="body"><p class="where">${esc(T(s.area))}</p>${scoreHtml(r.score)}
       <p class="why">${esc(T(r.why))}${cite(r.src)}</p>${factsHtml(r)}</div></details></li>`).join('')}</ol></section>
   <section class="sec two">
-    <div class="anchor" id="tipssec"><h2>${esc(T(U.tips))}</h2><ul class="tips" style="margin-top:14px">${T(P.tips).map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>
-    <div class="anchor" id="statussec"><h2>${esc(T(U.status))}</h2><div class="box" style="margin-top:14px;display:grid;gap:12px">
-      <div>${iucnHtml(c.iucn)}</div><p>${esc(T(P.status))}${cite(P.statusSrc)}</p>
-      <h3>${esc(T(U.threats))}</h3><ul class="tips">${T(P.threats).map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div></div>
+    <div class="anchor" id="tipssec"><details class="fold"><summary><h2>${esc(T(U.tips))} <span class="cnt">(${T(P.tips).length})</span></h2>${CHEV}</summary><ul class="tips">${T(P.tips).map(x=>`<li>${esc(x)}</li>`).join('')}</ul></details></div>
+    <div class="anchor" id="statussec"><details class="fold"><summary><h2>${esc(T(U.status))}</h2>${iucnHtml(c.iucn)}${CHEV}</summary><div class="box" style="display:grid;gap:12px">
+      <p>${esc(T(P.status))}${cite(P.statusSrc)}</p>
+      <h3>${esc(T(U.threats))}</h3><ul class="tips">${T(P.threats).map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div></details></div>
   </section>
-  ${c.photos.length > 1 ? `<section class="sec anchor" id="fotosec"><h2 style="margin-bottom:14px">${esc(T(U.photos))}</h2><div class="gallery">${c.photos.slice(1).map(p => `<figure><div class="ph">${img(p, catName(c))}</div><figcaption>${credit(p.cr)}</figcaption></figure>`).join('')}</div></section>` : ''}
-  <section class="sec read anchor" id="bronnen"><details class="srcbox" id="srcbox"><summary><h2>${esc(T(U.sources))} <span class="cnt">(${P.sources.length})</span></h2>${CHEV}</summary>
+  ${c.photos.length > 1 ? `<section class="sec anchor" id="fotosec"><details class="fold"><summary><h2>${esc(T(U.photos))} <span class="cnt">(${c.photos.length - 1})</span></h2>${CHEV}</summary><div class="gallery">${c.photos.slice(1).map(p => `<figure><div class="ph">${img(p, catName(c))}</div><figcaption>${credit(p.cr)}</figcaption></figure>`).join('')}</div></details></section>` : ''}
+  <section class="sec read anchor" id="bronnen"><details class="fold" id="srcbox"><summary><h2>${esc(T(U.sources))} <span class="cnt">(${P.sources.length})</span></h2>${CHEV}</summary>
     <ol class="sources">${P.sources.map((g,i) => `<li id="bron-${no}-${i+1}"><a href="${esc(SRC[g].url)}" target="_blank" rel="noopener">${esc(T(SRC[g].title))}</a></li>`).join('')}</ol></details>
     <p class="note" style="margin-top:14px">${esc(L==='nl'?'Foto’s, leefgebied en IUCN-status: De KATalogue.':'Photos, range and IUCN status: De KATalogue.')}</p>
     <p style="margin-top:14px">${esc(L==='nl'?'Zelf deze kat gezien, of klopt er iets niet?':'Seen this cat yourself, or is something wrong?')} <a class="btnlink" href="#melden-${no}">${esc(L==='nl'?'Meld het hier':'Report it here')} →</a></p></section>
   </div>`;
   drawSpeciesMap(); bindAlso(no, recs);
-  $$('.jump button').forEach(b => b.onclick = () => { const el = document.getElementById(b.dataset.go); if (el) el.scrollIntoView({block:'start', behavior:'smooth'}); });
+  $$('.jump button').forEach(b => b.onclick = () => { const el = document.getElementById(b.dataset.go); if (!el) return; const f = el.querySelector('.fold'); if (f) f.open = true; el.scrollIntoView({block:'start', behavior:'smooth'}); });
   bindJumpSpy();
   $$('.cite').forEach(a => a.onclick = e => { e.preventDefault(); const el = document.getElementById(a.getAttribute('href').slice(1)); if (el) { $('#srcbox').open = true; el.scrollIntoView({block:'center', behavior:'smooth'}); el.style.background='color-mix(in srgb,var(--accent) 18%,transparent)'; setTimeout(()=>el.style.background='',1600); } });
   return catName(c);

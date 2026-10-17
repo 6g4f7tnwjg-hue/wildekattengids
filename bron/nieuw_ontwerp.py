@@ -411,7 +411,7 @@ paint();apply();
 """
 
 
-LANDEN = ["nederland", "belgie", "luxemburg", "frankrijk", "oostenrijk", "zwitserland",
+LANDEN = ["nederland", "belgie", "luxemburg", "duitsland", "frankrijk", "oostenrijk", "zwitserland",
           "verenigd-koninkrijk", "italie", "spanje", "ierland", "portugal"]
 MARK = 'id="nw-htxt"'
 

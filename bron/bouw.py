@@ -36,10 +36,10 @@ REGIOS = {"auvergne-rhone-alpes": "Auvergne-Rhône-Alpes", "bourgogne-franche-co
 AT_ST = {"wien": "Wenen", "niederoesterreich": "Neder-Oostenrijk", "burgenland": "Burgenland", "oberoesterreich": "Opper-Oostenrijk", "salzburg": "Salzburg", "steiermark": "Stiermarken", "kaernten": "Karinthië", "tirol": "Tirol", "vorarlberg": "Vorarlberg"}
 CH_RG = {"genfermeergebied": "Genèvemeerregio", "mittelland": "Mittelland", "noordwest-zwitserland": "Noordwest-Zwitserland", "zuerich": "Zürich", "oost-zwitserland": "Oost-Zwitserland", "centraal-zwitserland": "Centraal-Zwitserland", "ticino": "Ticino"}
 UK_RG = {"londen": "Londen", "zuidoost-engeland": "Zuidoost-Engeland", "zuidwest-engeland": "Zuidwest-Engeland", "oost-engeland": "Oost-Engeland", "oost-midlands": "East Midlands", "west-midlands": "West Midlands", "noordwest-engeland": "Noordwest-Engeland", "yorkshire": "Yorkshire en de Humber", "noordoost-engeland": "Noordoost-Engeland", "schotland": "Schotland", "wales": "Wales", "noord-ierland": "Noord-Ierland"}
-DEEL = {"de": STATES}
-# Frankrijk, Oostenrijk, Zwitserland en het VK zijn sinds 17-10-2026 één pagina met een regiofilter (bron/samenvoegen.py);
-# de oude adressen per regio verwijzen door
-OUD_DEEL = {"fr": REGIOS, "at": AT_ST, "ch": CH_RG, "uk": UK_RG}
+DEEL = {}
+# Frankrijk, Oostenrijk, Zwitserland en het VK zijn sinds 17-10-2026 één pagina met een regiofilter (bron/samenvoegen.py),
+# Duitsland sinds 18-10-2026; de oude adressen per regio of deelstaat verwijzen door
+OUD_DEEL = {"de": STATES, "fr": REGIOS, "at": AT_ST, "ch": CH_RG, "uk": UK_RG}
 W3F_KEY = "9494e3c0-9342-4457-a5d6-b795793b9ce4"
 MIME = {"webp": "image/webp", "jpg": "image/jpeg", "png": "image/png", "gif": "image/gif"}
 
@@ -541,7 +541,7 @@ wr(ROOT + "sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns=
 OUD = {"cheeta": "cheetah", "luipaardkat": "bengaalse-kat", "pampakat": "colocolo", "andeskat": "andesbergkat"}
 for st_ in STATES:
     for o, n in OUD.items():
-        doel = BASE + "duitsland/" + st_ + "/soort/" + n + "/"
+        doel = static_url("de", None, "soort", n)   # sinds 18-10-2026 één Duitslandpagina
         if os.path.exists(ROOT + doel[len(BASE):] + "index.html") and not os.path.exists(ROOT + "duitsland/" + st_ + "/soort/" + o + "/index.html"):
             wr(ROOT + "duitsland/" + st_ + "/soort/" + o + "/index.html",
                f'<!DOCTYPE html><html lang="nl"><head><meta charset="UTF-8"><title>Doorverwijzing</title><link rel="canonical" href="https://yeetkitty.github.io{doel}">'

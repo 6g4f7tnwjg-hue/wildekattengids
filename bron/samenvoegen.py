@@ -1,4 +1,4 @@
-# Zet een gids met aparte pagina's per deelstaat/regio (Oostenrijk, Zwitserland, Frankrijk, VK) om naar één pagina
+# Zet een gids met aparte pagina's per deelstaat/regio (Oostenrijk, Zwitserland, Frankrijk, VK; Duitsland op 18-10-2026) om naar één pagina
 # met een regiofilter, zoals Italië en Spanje. Eenmalig gebruikt op 17-10-2026; de oude versie staat in git.
 # Gebruik: python3 bron/samenvoegen.py at   (schrijft bron/gidsen/at.html)
 import re, json, sys, subprocess, html as H
@@ -18,6 +18,9 @@ LANDEN = {
     "fr": {"langs": ["nl", "en", "fr"], "naam": ["Frankrijk", "France", "France"], "in": ["in Frankrijk", "in France", "en France"],
            "van": ["van Frankrijk", "of France", "de la France"], "regio": ["Regio", "Region", "Région"], "regios": ["Alle regio’s", "All regions", "Toutes les régions"],
            "filter": ["Filter op regio", "Filter by region", "Filtrer par région"]},
+    "de": {"langs": ["nl", "en", "de"], "naam": ["Duitsland", "Germany", "Deutschland"], "in": ["in Duitsland", "in Germany", "in Deutschland"],
+           "van": ["van Duitsland", "of Germany", "von Deutschland"], "regio": ["Deelstaat", "State", "Bundesland"], "regios": ["Alle deelstaten", "All states", "Alle Bundesländer"],
+           "filter": ["Filter op deelstaat", "Filter by state", "Nach Bundesland filtern"]},
     "uk": {"langs": ["nl", "en"], "naam": ["het Verenigd Koninkrijk", "the United Kingdom"], "in": ["in het Verenigd Koninkrijk", "in the United Kingdom"],
            "van": ["van het Verenigd Koninkrijk", "of the United Kingdom"], "regio": ["Regio", "Region"], "regios": ["Alle regio’s", "All regions"],
            "filter": ["Filter op regio", "Filter by region"]},
@@ -109,7 +112,7 @@ for k in keys:
         if isinstance(v, dict) and "__set" not in v:
             merged.setdefault(n, {}).update(v)
 special = {"R": R, "LOCS": LOCS, "YOUNG": YOUNG, "BIG": big, "SMALL": small, "UNIQUE": {"__set": unique},
-           "UNSURE": {"__set": setunion("UNSURE")}, "MAIN": polys[0], "ISLANDS": polys[1:], "LINES": [],
+           "UNSURE": {"__set": setunion("UNSURE")}, "MAIN": polys[0], "ISLANDS": polys[1:], "LINES": [], "WATER": [],   # WATER: gaten (Bremen/Berlijn) vervallen, elke deelstaat is een eigen vlak
            "NOROUTE": {"__set": sorted(noroute)}}
 ASSIGN = {}
 for k in keys:
@@ -118,13 +121,20 @@ for k in keys:
 out = []
 for line in lines:
     m = re.match(r"^(\s*)(const|let) ([A-Za-z_][A-Za-z_0-9]*)\s*=", line)
-    if m and (line not in common or m.group(3) in ("MAIN", "ISLANDS", "LINES")):   # kaartvormen altijd vervangen
+    if m and (line not in common or m.group(3) in ("MAIN", "ISLANDS", "LINES", "WATER")):   # kaartvormen altijd vervangen
         n = m.group(3)
         if n == "PX": out.append(PX); continue
         if n.startswith("TITLE_"):
             l = n[6:].lower(); out.append(f'const {n}={json.dumps(START_T[LG.index(l) if l in LG else min(2, len(START_T) - 1)], ensure_ascii=False)};'); continue
         if n in special: out.append(f"{m.group(1)}{m.group(2)} {n}={sv(special[n])};"); continue
         if n in merged: out.append(f"{m.group(1)}{m.group(2)} {n}={sv(merged[n])};"); continue
+        if all(isinstance(C[k].get(n), list) for k in keys):   # overige lijsten per regio (bijv. EXPECT): samenvoegen
+            lijst, gez = [], set()
+            for k in keys:
+                for x in C[k][n]:
+                    j = json.dumps(x, ensure_ascii=False, sort_keys=True)
+                    if j not in gez: gez.add(j); lijst.append(x)
+            out.append(f"{m.group(1)}{m.group(2)} {n}={sv(lijst)};"); print("lijst samengevoegd:", n, len(lijst)); continue
         sys.exit("onbekende regel: " + line[:120])
     m = re.match(r"^\s*Object\.assign\(([A-Za-z_0-9]+),", line)
     if m and line not in common:
@@ -217,6 +227,9 @@ h2 = lambda sid: re.search(r'<section id="%s">\s*(<h2>.*?</h2>)' % sid, TH, re.S
 hd = re.search(r"<header>.*?</header>", TH, re.S).group(0)
 start_m2 = re.search(r'<header>.*?<span class="m2">(.*?)</span></h1>', src, re.S).group(1)
 hd = re.sub(r'(<span class="m2">).*?(</span></h1>)', lambda m: m.group(1) + start_m2 + m.group(2), hd, count=1, flags=re.S)
+# datum: die van de oude keuzepagina (de nieuwste), niet die van de sjabloonregio
+_st0 = re.search(r'<div class="wrap" id="start" hidden>.*?(<p class="stamp">.*?</p>)', src, re.S)
+if _st0: hd = re.sub(r'<p class="stamp">.*?</p>', lambda m: _st0.group(1), hd, count=1, flags=re.S)
 LEDE = {"nl": f"Waar {I['nl']} kun je leeuwen, tijgers, lynxen en andere wilde katten zien? Per soort en per park zie je hier welke katten er wonen, welke jongen er onlangs geboren zijn en wat er binnenkort verandert. Kies een regio om alleen die te zien.",
         "en": f"Where {I['en']} can you see lions, tigers, lynxes and other wild cats? For each species and each park you can see which cats live there, which young were born recently and what is about to change. Choose a region to see only that region.",
         "de": f"Wo {I.get('de','')} kannst du Löwen, Tiger, Luchse und andere wilde Katzen sehen? Für jede Art und jeden Park siehst du, welche Katzen dort leben, welche Jungtiere kürzlich geboren wurden und was sich bald ändert. Wähle eine Region, um nur diese zu sehen.",

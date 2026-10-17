@@ -21,7 +21,7 @@ const U = {
   brandSub:{nl:'wilde katten · J. Gelens',en:'wild cats · J. Gelens'},
   navSpecies:{nl:'Soorten',en:'Species'}, navTop:{nl:'Topspots',en:'Top spots'}, navMap:{nl:'Kaart',en:'Map'},
   navResp:{nl:'Verantwoord spotten',en:'Responsible spotting'}, navEur:{nl:'Katten in Europa',en:'Cats in Europe'},
-  navPack:{nl:'Paklijst',en:'Packing list'}, navAbout:{nl:'Over deze gids',en:'About this guide'}, navVisit:{nl:'Bezoekersgids: katten in dierentuinen',en:'Visitor’s Guide: cats in zoos'}, navKofi:{nl:'Steun de gids via Ko-fi',en:'Support the guide on Ko-fi'}, navReport:{nl:'Melden',en:'Report'}, navMore:{nl:'Meer',en:'More'},
+  navPack:{nl:'Paklijst',en:'Packing list'}, navAbout:{nl:'Over deze gids',en:'About this guide'}, navVisit:{nl:'Bezoekersgids: katten in dierentuinen',en:'Visitor’s Guide: cats in zoos'}, navKofi:{nl:'Steun de gids via Ko-fi',en:'Support the guide on Ko-fi'}, navReport:{nl:'Melden',en:'Report'}, navMore:{nl:'Meer',en:'More'}, srch:{nl:'Zoeken',en:'Search'}, srchL:{nl:'Zoek een kat of een plek',en:'Search for a cat or a place'}, srchPh:{nl:'Bijv. manoel, Pantanal of Botswana',en:'E.g. Pallas’s cat, Pantanal or Botswana'}, srchNone:{nl:'Niets gevonden',en:'Nothing found'},
   sub:{nl:'Waar je alle 42 wilde kattensoorten in het wild kunt zien, hoe groot je kans is en hoe je ze vindt.',en:'Where to see all 42 wild cat species in the wild, how good your chances are and how to find them.'},
   all:{nl:'Hele wereld',en:'Whole world'},
   topSub:{nl:'Plekken waar je een soort (bijna) zeker ziet, mits je de tijd neemt en in het goede seizoen gaat.',en:'Places where you will (almost) certainly see a species, as long as you take your time and go in the right season.'},
@@ -183,12 +183,62 @@ function renderChrome(route){
     `<div class="more" id="more"><button type="button" class="morebtn${inMore?' cur':''}" id="moreBtn" aria-expanded="false" aria-haspopup="true">${esc(T(U.navMore))}<svg viewBox="0 0 10 10"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
      <div class="moremenu"><span class="lbl mlbl">${esc(T(U.navMore))}</span>${MORE.map(link).join('')}${ext}</div></div>`;
   $('#moreBtn').onclick = e => { e.stopPropagation(); const o = $('#more').classList.toggle('open'); $('#moreBtn').setAttribute('aria-expanded', o); };
+  $('#zoekT').textContent = T(U.srch); $('#zoekBtn').setAttribute('aria-label', T(U.srch)); $('#zoekL').textContent = T(U.srchL); $('#zoekIn').placeholder = T(U.srchPh);
   $('#langNl').setAttribute('aria-pressed', L==='nl'); $('#langEn').setAttribute('aria-pressed', L==='en');
   $('#foot').innerHTML = `<p style="max-width:36rem">${esc(T(U.footMade))}</p><nav>${[...NAV, ...MORE].map(([id,k])=>`<a href="#${id}">${esc(T(U[k]))}</a>`).join('')}<a href="${esc(KOFI_URL)}" target="_blank" rel="noopener">${esc(L==='nl'?'Steun via Ko-fi ☕':'Support on Ko-fi ☕')}</a></nav>`;
   const h = $('.top').offsetHeight; if (h) document.documentElement.style.setProperty('--head', h + 'px');
 }
 document.addEventListener('click', e => { const m = $('#more'); if (m && !m.contains(e.target)) { m.classList.remove('open'); } });
-$('#menuBtn').onclick = () => { const o = $('#nav').classList.toggle('open'); $('#menuBtn').setAttribute('aria-expanded', o); };
+$('#menuBtn').onclick = () => { closeZoek(); const o = $('#nav').classList.toggle('open'); $('#menuBtn').setAttribute('aria-expanded', o); };
+/* ---------- zoeken (zoals in de Bezoekersgids): katten en plekken ---------- */
+const fold = x => String(x || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+const PIN = '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 21s-6.5-6.2-6.5-11a6.5 6.5 0 0 1 13 0c0 4.8-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>';
+let ZRES = [], ZACT = -1;
+function closeZoek(){ const p = $('#zoekpaneel'); if (!p) return; p.hidden = true; $('#zoekBtn').setAttribute('aria-expanded', false); $('#zoekRes').hidden = true; $('#zoekIn').setAttribute('aria-expanded', false); }
+function zoek(){
+  const inp = $('#zoekIn'), ul = $('#zoekRes'), q = fold(inp.value.trim());
+  $('#zoekX').hidden = !inp.value; ZACT = -1;
+  if (!q) { ul.hidden = true; inp.setAttribute('aria-expanded', false); ZRES = []; return; }
+  const hit = (xs) => { let b = 9; xs.forEach(x => { const f = fold(x); if (!f) return; if (f.startsWith(q)) b = Math.min(b, 0); else if (f.split(/[\s(),·–-]+/).some(w => w.startsWith(q))) b = Math.min(b, 1); else if (f.includes(q)) b = Math.min(b, 2); }); return b; };
+  const cats = CATS.map(c => ({c, r: hit([c.nl, c.en, c.la])})).filter(x => x.r < 9).sort((a,b) => a.r - b.r || catName(a.c).localeCompare(catName(b.c)));
+  const spots = SPOTS.map(s => ({s, r: hit([s.name.nl, s.name.en, s.area.nl, s.area.en, s.country.nl, s.country.en])})).filter(x => x.r < 9).sort((a,b) => a.r - b.r || T(a.s.name).localeCompare(T(b.s.name)));
+  ZRES = [...cats.slice(0, 8).map(x => ({t:'c', o:x.c})), ...spots.slice(0, 12).map(x => ({t:'s', o:x.s}))];
+  ul.innerHTML = ZRES.length ? ZRES.map((x, i) => x.t === 'c'
+    ? `<li><a href="${spHref(x.o.no)}" role="option" id="zr${i}">${img(x.o.photos[0], '', false, true).replace('<img ', '<img class="ik" ')}<span><b>${esc(catName(x.o))}</b><small class="lat">${esc(x.o.la)}</small></span></a></li>`
+    : `<li><a href="#kaart" data-zspot="${esc(x.o.id)}" role="option" id="zr${i}"><span class="ik loc">${PIN}</span><span><b>${esc(T(x.o.name))}</b><small>${esc(T(x.o.country))} · ${esc(x.o.recs.map(r => catName(BY[r.no])).join(', '))}</small></span></a></li>`).join('')
+    : `<li class="leeg">${esc(T(U.srchNone))}</li>`;
+  ul.hidden = false; inp.setAttribute('aria-expanded', true);
+}
+function zoekAct(i){ const as = $$('#zoekRes a'); as.forEach(a => a.classList.remove('act')); ZACT = i; if (as[i]) { as[i].classList.add('act'); as[i].scrollIntoView({block:'nearest'}); $('#zoekIn').setAttribute('aria-activedescendant', as[i].id); } }
+function goSpot(id){
+  const s = SPOT[id]; if (!s) return;
+  FILTER = 'all'; CAT = null; VIEW = null; LISTALL = false; BASEX = null; SHOWN.add(spotMax(s));
+  if (SGP) { try { sessionStorage.setItem('sg-spot', id); } catch(e) {} location.href = '#kaart'; return; }
+  TAB = 'kaart'; SEL = id;
+  if (location.hash !== '#kaart') { try { history.pushState(null, '', '#kaart'); } catch(e) {} }
+  route(false); selectSpot(id);
+}
+$('#zoekBtn').onclick = () => {
+  const p = $('#zoekpaneel'), open = p.hidden;
+  $('#nav').classList.remove('open'); $('#menuBtn').setAttribute('aria-expanded', false);
+  p.hidden = !open; $('#zoekBtn').setAttribute('aria-expanded', open);
+  if (open) { $('#zoekIn').focus(); zoek(); } else closeZoek();
+};
+$('#zoekIn').oninput = zoek;
+$('#zoekIn').onkeydown = e => {
+  const n = $$('#zoekRes a').length;
+  if (e.key === 'ArrowDown' && n) { e.preventDefault(); zoekAct((ZACT + 1) % n); }
+  else if (e.key === 'ArrowUp' && n) { e.preventDefault(); zoekAct((ZACT - 1 + n) % n); }
+  else if (e.key === 'Enter' && n) { e.preventDefault(); $$('#zoekRes a')[Math.max(ZACT, 0)].click(); }
+  else if (e.key === 'Escape') { closeZoek(); $('#zoekBtn').focus(); }
+};
+$('#zoekX').onclick = () => { $('#zoekIn').value = ''; zoek(); $('#zoekIn').focus(); };
+$('#zoekRes').addEventListener('click', e => {
+  const a = e.target.closest('a'); if (!a) return;
+  if (a.dataset.zspot) { e.preventDefault(); const id = a.dataset.zspot; closeZoek(); goSpot(id); return; }
+  closeZoek();
+});
+document.addEventListener('click', e => { const p = $('#zoekpaneel'); if (p && !p.hidden && !p.contains(e.target) && !e.target.closest('#zoekBtn')) closeZoek(); });
 $('#nav').addEventListener('click', e => { if (e.target.closest('a')) { $('#nav').classList.remove('open'); $('#menuBtn').setAttribute('aria-expanded', false); } });
 $$('.langsw [data-setlang]').forEach(b => b.onclick = () => { if (b.dataset.setlang === L) return; L = b.dataset.setlang; try { localStorage.setItem('sg-lang', L); } catch(e) {} if (SGP && !location.hash) { location.href = spHref(SGP.no); return; } route(true); });
 
@@ -781,6 +831,7 @@ window.addEventListener('scroll', () => {
   if (Math.abs(y - BARY) > 8 || y <= lim) BARY = y;
 }, {passive: true});
 route(false);
+try { const zs = sessionStorage.getItem('sg-spot'); if (zs && !SGP) { sessionStorage.removeItem('sg-spot'); if (SPOT[zs]) goSpot(zs); } } catch(e) {}
 })();
 
 /* Taalmenu: maakt van elke rij taalknoppen (.langsw met [data-setlang]-knoppen) één knop met een wereldbol en de

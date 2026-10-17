@@ -77,7 +77,7 @@ html:not(.nw-scherm) #nw-sbar{display:none!important}
 .nw-si{flex:none;display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%}
 .nw-si svg{width:22px;height:22px}
 .nw-si1{background:#F3E2D6;color:#8A4A2B}
-.nw-si1 svg{width:28px;height:28px}
+.nw-si1 svg{width:25px;height:25px}
 .nw-si2{background:#E1EADF;color:#2F4A33}
 .nw-stats a>span:last-child{display:inline-flex;align-items:baseline;gap:7px}
 .nw-stats a{display:inline-flex;align-items:baseline;gap:7px;color:var(--muted);text-decoration:none;font-size:1rem}

@@ -429,6 +429,32 @@ html.katmode .intro,html.katmode .bar,html.katmode .tabpanel,html.katmode .page,
 .kat-grid{display:grid;gap:16px;grid-template-columns:minmax(0,1fr)}
 @media (min-width:820px){.kat-grid{grid-template-columns:minmax(0,420px) minmax(0,1fr);align-items:start}.kat-grid>div:first-child{position:sticky;top:calc(var(--head) + 12px)}}
 .kat-map{background:var(--paper);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.kmz{position:relative}
+.kat-map svg.kmap{background:var(--sea);touch-action:pan-y;user-select:none;-webkit-user-select:none;max-height:70vh;width:100%;display:block}
+.kat-map svg.kmap.hs-zoomed{touch-action:none;cursor:grab}
+.kmap .nb{fill:var(--nb);stroke:var(--nb)}
+.kmap .land{fill:var(--land);stroke:var(--land-line)}
+.kmap .water{fill:var(--sea);stroke:var(--land-line)}
+.kmap .mk{cursor:pointer}
+.kmap .mk .dot{fill:currentColor;stroke:var(--paper);stroke-width:1.5px;vector-effect:non-scaling-stroke}
+.kmap .mk .gl{fill:var(--paper);color:var(--paper)}
+.kmap .mk.unc .dot{fill:var(--paper);stroke:currentColor;stroke-width:2px}
+.kmap .mk.unc .gl{fill:currentColor;color:inherit}
+.kmap .mk .hit{fill:transparent}
+.kmap .mk.sel .dot{stroke:var(--ink);stroke-width:3px}
+.kmap .mk.hs-clh{display:none}
+.kmap .mk:focus{outline:none}.kmap .mk:focus-visible .dot{stroke:var(--accent);stroke-width:3px}
+.hs-zb{position:absolute;top:10px;right:10px;display:flex;flex-direction:column;gap:6px;z-index:2}
+.hs-zb button{width:36px;height:36px;border-radius:8px;border:1px solid var(--line);background:var(--paper);color:var(--ink);font:700 1.3rem/1 var(--body);cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;box-shadow:var(--shadow)}
+.hs-zb button svg{width:18px;height:18px}
+.hs-zb button:disabled{opacity:.4;cursor:default}
+.hs-cl{cursor:pointer}
+.hs-cl .hs-cld{fill:var(--olive);stroke:var(--paper);stroke-width:1.8}
+.hs-cl .hs-clh-hit{fill:transparent}
+.hs-cl text{fill:var(--paper);font-family:var(--label);font-weight:600;font-size:13px;text-anchor:middle;pointer-events:none}
+.km-sel{margin:0;padding:10px 12px 0;font-size:.95rem;color:var(--muted)}
+.km-sel b a{color:var(--ink)}
+.kat-map .maplegend .ti{width:16px;height:16px}
 .kat-map svg{display:block;width:100%;height:auto;max-height:70vh;background:var(--sea)}
 .kat-map .land{fill:var(--land);stroke:var(--land-line);stroke-width:1}
 .kat-map .water{fill:var(--sea);stroke:var(--land-line)}
@@ -920,15 +946,76 @@ function fotoCap(f){
   const lic=f.lic==="CC0"?T("publiek domein (CC0)","public domain (CC0)","domaine public (CC0)","gemeinfrei (CC0)","pubblico dominio (CC0)","dominio público (CC0)"):esc(f.lic||"");
   return `${T("Foto","Photo","Photo","Foto","Foto","Foto")}${f.zoo?T(" (dierentuin)"," (zoo)"," (zoo)"," (Zoo)"," (zoo)"," (zoo)"):""}: ${esc(f.who)}${f.url?`, via <a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.site||"iNaturalist")}</a>`:""}${lic?" · "+lic:""}`;
 }
+/* kaart op de soortpagina: ingezoomd op waar de soort zit, iconen per type, groepjes met een getal, inzoomen */
+let KMX=[];
 function katMap(slug){
-  let h="";
-  ["es","pt","it","uk","ie","fr","de","ch","at","nl","be","lu"].forEach(c=>{D[c].poly.forEach(r=>{h+=`<path class="land ${c}" d="${path(r)}" stroke-width="1"/>`;});D[c].water.forEach(r=>{h+=`<path class="water" d="${path(r)}" stroke-width="1"/>`;});});
-  const xs=KL[slug].slice().sort((a,b)=>(CONF.includes(a.st)?1:0)-(CONF.includes(b.st)?1:0));
-  xs.forEach(x=>{if(x.l[2]==null)return;const[px,py]=P(x.l[2],x.l[3]);const unc=!CONF.includes(x.st),c=x.c;
-    h+=`<a href="${window.__F[c]}#${x.pre}locatie/${x.l[4]}" aria-label="${esc(x.l[0])}, ${esc(x.l[1])}"><title>${esc(x.l[0])} (${esc(x.l[1])})</title><circle class="kd ${x.c}${unc?" unc":""}" cx="${px.toFixed(1)}" cy="${py.toFixed(1)}" r="${unc?5:6}"/></a>`;});
-  return `<div class="kat-map"><svg viewBox="0 0 783 857" role="group" aria-label="${T("Kaart","Map","Carte","Karte","Mappa","Mapa")}">${h}</svg>
-    <div class="maplegend"><span><i style="--c:var(--dot)"></i>${T("te zien","on view","visible","zu sehen","visibile","visible")}</span>${KL[slug].some(x=>!CONF.includes(x.st))?`<span><i class="o"></i>${T("onzeker of niet te zien","uncertain or not visible","incertain ou non visible","unsicher oder nicht zu sehen","incerto o non visibile","incierto o no visible")}</span>`:""}</div></div>`;
+  const xs=KL[slug].filter(x=>x.l[2]!=null).sort((a,b)=>(CONF.includes(a.st)?1:0)-(CONF.includes(b.st)?1:0));KMX=xs;
+  const pts=xs.map(x=>P(x.l[2],x.l[3]));
+  let x0=Math.min(...pts.map(p=>p[0])),x1=Math.max(...pts.map(p=>p[0])),y0=Math.min(...pts.map(p=>p[1])),y1=Math.max(...pts.map(p=>p[1]));
+  if(!pts.length){x0=0;y0=0;x1=FULL[2];y1=FULL[3];}
+  let w=Math.max(x1-x0,180),h=Math.max(y1-y0,180),cx=(x0+x1)/2,cy=(y0+y1)/2;w*=1.25;h*=1.25;
+  if(w/h>1.3)h=w/1.3;if(h/w>1.3)w=h/1.3;
+  const vb=[cx-w/2,cy-h/2,w,h],s0=w/360;
+  let m=`<path class="nb" d="${NBR}"/>`;
+  ["es","pt","it","uk","ie","fr","de","ch","at","nl","be","lu"].forEach(c=>{D[c].poly.forEach(r=>{m+=`<path class="land" d="${path(r)}"/>`;});D[c].water.forEach(r=>{m+=`<path class="water" d="${path(r)}"/>`;});});
+  xs.forEach((x,n)=>{const[px,py]=pts[n],k=tIdx(x.c,D[x.c].locs.indexOf(x.l)),unc=!CONF.includes(x.st),r=8*s0;
+    m+=`<g class="mk${unc?" unc":""}" data-hs="${k}" data-i="${n}" style="color:${tCol(k)}" tabindex="0" role="button" aria-label="${esc(x.l[0])}, ${esc(x.l[1])}"><circle class="hit" cx="${px.toFixed(1)}" cy="${py.toFixed(1)}" r="${(r*1.5).toFixed(1)}"/><circle class="dot" cx="${px.toFixed(1)}" cy="${py.toFixed(1)}" r="${r.toFixed(2)}"/><g class="gl" transform="translate(${px.toFixed(1)} ${py.toFixed(1)}) scale(${(r/8*.95).toFixed(3)})">${tGly(k)}</g></g>`;});
+  return `<div class="kat-map"><div class="kmz"><svg class="kmap" viewBox="${vb.map(v=>v.toFixed(1)).join(" ")}" data-s0="${s0.toFixed(4)}" role="group" aria-label="${T("Kaart","Map","Carte","Karte","Mappa","Mapa")}">${m}</svg></div>
+    <p class="km-sel" id="km-sel" aria-live="polite">${T("Tik op een icoon voor de locatie.","Tap an icon to see the location.","Touchez une icône pour voir le lieu.","Tippe auf ein Symbol, um den Ort zu sehen.","Tocca un’icona per vedere il luogo.","Toca un icono para ver el lugar.")}</p>
+    <div class="maplegend">${[...new Set(xs.map(x=>tIdx(x.c,D[x.c].locs.indexOf(x.l))))].sort((a,b)=>a-b).map(k=>`<span>${tIcon(k)}${k<0?"?":esc(T(...["nl","en","fr","de","it","es"].map(l=>D.lt.types[k][l])))}</span>`).join("")}${xs.some(x=>!CONF.includes(x.st))?`<span><i class="o"></i>${T("onzeker of niet te zien","uncertain or not visible","incertain ou non visible","unsicher oder nicht zu sehen","incerto o non visibile","incierto o no visible")}</span>`:""}</div></div>`;
 }
+function kmSel(i){const x=KMX[i];if(!x)return;const el=$("km-sel");if(!el)return;
+  document.querySelectorAll(".kmap .mk").forEach(m=>m.classList.toggle("sel",+m.dataset.i===i));
+  el.innerHTML=`<b><a href="${x.c}.html#${x.pre}locatie/${x.l[4]}">${esc(x.l[0])}</a></b> · ${esc(x.l[1])} · ${esc(cname(x.c))}${CONF.includes(x.st)?"":" · "+(STAT[x.st]?stat(x.st):T("onzeker","uncertain","incertain","unsicher","incerto","incierto"))}`;}
+/* inzoomen en groepjes (zelfde werking als de kaarten in de gidsen) */
+const KZ={MAX:10};
+function kmInit(){const svg=document.querySelector("#katview .kmap");if(!svg)return;
+  const b=svg.viewBox.baseVal,st=svg.__zk={base:[b.x,b.y,b.width,b.height],v:[b.x,b.y,b.width,b.height],drag:false};
+  const box=svg.closest(".kmz");const zb=document.createElement("div");zb.className="hs-zb";
+  zb.innerHTML='<button type="button" data-z="in" aria-label="+">+</button><button type="button" data-z="out" aria-label="−">−</button><button type="button" data-z="reset" aria-label="Reset"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 7V3h4M17 7V3h-4M3 13v4h4M17 13v4h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>';
+  box.appendChild(zb);
+  zb.addEventListener("click",e=>{const t=e.target.closest("[data-z]");if(!t)return;const z=t.dataset.z;
+    if(z==="reset")kmZet(svg,st.base.slice());else kmRond(svg,z==="in"?2:.5,st.v[0]+st.v[2]/2,st.v[1]+st.v[3]/2);});
+  const PT=new Map();let G=null;
+  svg.addEventListener("pointerdown",e=>{PT.set(e.pointerId,{x:e.clientX,y:e.clientY});G={v:st.v.slice(),p:[...PT.values()].map(q=>({...q})),r:svg.getBoundingClientRect(),moved:false};});
+  svg.addEventListener("pointermove",e=>{if(!G||!PT.has(e.pointerId))return;PT.set(e.pointerId,{x:e.clientX,y:e.clientY});const ps=[...PT.values()],r=G.r,u=G.v[2]/r.width;
+    if(ps.length===1&&G.p.length===1){const dx=ps[0].x-G.p[0].x,dy=ps[0].y-G.p[0].y;if(!G.moved&&Math.hypot(dx,dy)<6)return;if(G.v[2]>=st.base[2]-.01)return;
+      G.moved=true;st.drag=true;kmZet(svg,[G.v[0]-dx*u,G.v[1]-dy*u,G.v[2],G.v[3]],true);}
+    else if(ps.length===2&&G.p.length===2){e.preventDefault();const d0=Math.hypot(G.p[0].x-G.p[1].x,G.p[0].y-G.p[1].y)||1,d1=Math.hypot(ps[0].x-ps[1].x,ps[0].y-ps[1].y);
+      const mx=(G.p[0].x+G.p[1].x)/2-r.left,my=(G.p[0].y+G.p[1].y)/2-r.top,nx=(ps[0].x+ps[1].x)/2-r.left,ny=(ps[0].y+ps[1].y)/2-r.top;
+      const w=Math.max(st.base[2]/KZ.MAX,Math.min(st.base[2],G.v[2]*d0/d1)),u2=w/r.width;G.moved=true;st.drag=true;
+      kmZet(svg,[G.v[0]+mx*u-nx*u2,G.v[1]+my*u-ny*u2,w,w*st.base[3]/st.base[2]],true);}});
+  const eind=e=>{if(!PT.has(e.pointerId))return;PT.delete(e.pointerId);if(PT.size){G={v:st.v.slice(),p:[...PT.values()].map(q=>({...q})),r:svg.getBoundingClientRect(),moved:true};return;}
+    const mv=G&&G.moved;G=null;if(mv){kmGroep(svg);setTimeout(()=>{st.drag=false;},60);}else st.drag=false;};
+  svg.addEventListener("pointerup",eind);svg.addEventListener("pointercancel",eind);
+  svg.addEventListener("click",e=>{if(st.drag)return;const cl=e.target.closest(".hs-cl");if(cl){kmOpen(svg,cl);return;}const m=e.target.closest(".mk");if(m)kmSel(+m.dataset.i);});
+  svg.addEventListener("keydown",e=>{if(e.key!=="Enter"&&e.key!==" ")return;const cl=e.target.closest(".hs-cl"),m=e.target.closest(".mk");if(cl){e.preventDefault();kmOpen(svg,cl);}else if(m){e.preventDefault();kmSel(+m.dataset.i);}});
+  svg.addEventListener("wheel",e=>{if(!e.ctrlKey&&!e.metaKey)return;e.preventDefault();const r=svg.getBoundingClientRect();
+    kmRond(svg,Math.exp(-e.deltaY*.01),st.v[0]+(e.clientX-r.left)/r.width*st.v[2],st.v[1]+(e.clientY-r.top)/r.height*st.v[3],true);},{passive:false});
+  kmZet(svg,st.base.slice());}
+function kmZet(svg,v,snel){const st=svg.__zk,B=st.base,w=Math.max(B[2]/KZ.MAX,Math.min(B[2],v[2])),h=w*B[3]/B[2];
+  st.v=[Math.max(B[0],Math.min(B[0]+B[2]-w,v[0])),Math.max(B[1],Math.min(B[1]+B[3]-h,v[1])),w,h];
+  svg.setAttribute("viewBox",st.v.map(n=>n.toFixed(2)).join(" "));const z=w<B[2]-.01;svg.classList.toggle("hs-zoomed",z);
+  const zb=svg.closest(".kmz").querySelector(".hs-zb");if(zb){zb.querySelector('[data-z="out"]').disabled=!z;zb.querySelector('[data-z="reset"]').disabled=!z;zb.querySelector('[data-z="in"]').disabled=w<=B[2]/KZ.MAX+.01;}
+  if(snel)kmSchaal(svg);else kmGroep(svg);}
+function kmRond(svg,f,cx,cy,snel){const st=svg.__zk,v=st.v;kmZet(svg,[cx-(cx-v[0])/f,cy-(cy-v[1])/f,v[2]/f,v[3]/f],snel);if(snel){clearTimeout(st.t);st.t=setTimeout(()=>kmGroep(svg),150);}}
+const kmMid=m=>{const d=m.querySelector(".dot");return [+d.getAttribute("cx"),+d.getAttribute("cy")];};
+function kmSchaal(svg){const st=svg.__zk,u=st.v[2]/st.base[2];
+  svg.querySelectorAll(".mk").forEach(m=>{const c=kmMid(m);m.setAttribute("transform",`translate(${c[0]} ${c[1]}) scale(${u.toFixed(4)}) translate(${-c[0]} ${-c[1]})`);});
+  svg.querySelectorAll(".hs-cl").forEach(g=>g.setAttribute("transform",`translate(${g.dataset.x} ${g.dataset.y}) scale(${(u*+svg.dataset.s0).toFixed(4)})`));
+  svg.querySelectorAll(".land,.water,.nb").forEach(e=>e.setAttribute("stroke-width",(st.v[2]/360).toFixed(3)));}
+function kmGroep(svg){const st=svg.__zk,u=st.v[2]/st.base[2],s0=+svg.dataset.s0;
+  svg.querySelectorAll(".hs-cl").forEach(g=>g.remove());svg.querySelectorAll(".mk.hs-clh").forEach(m=>m.classList.remove("hs-clh"));kmSchaal(svg);
+  const ms=[...svg.querySelectorAll(".mk")],R=8*s0*1.7*u,out=[];
+  if(st.v[2]>st.base[2]/KZ.MAX+.01)ms.forEach(m=>{if(m.classList.contains("sel"))return;const c=kmMid(m);let best=null,bd=R*R;
+    out.forEach(g=>{const d=(g.x-c[0])**2+(g.y-c[1])**2;if(d<bd){bd=d;best=g;}});if(best)best.m.push(m);else out.push({x:c[0],y:c[1],m:[m]});});
+  let h="";out.forEach(g=>{if(g.m.length<2)return;let x=0,y=0;g.m.forEach(m=>{const c=kmMid(m);x+=c[0];y+=c[1];m.classList.add("hs-clh");});x/=g.m.length;y/=g.m.length;const n=g.m.length,rr=n<10?10.5:12.5;
+    h+=`<g class="hs-cl" role="button" tabindex="0" data-x="${x.toFixed(1)}" data-y="${y.toFixed(1)}" data-i="${g.m.map(m=>m.dataset.i).join(",")}" transform="translate(${x.toFixed(1)} ${y.toFixed(1)}) scale(${(u*s0).toFixed(4)})"><circle class="hs-clh-hit" r="${rr+4}"/><circle class="hs-cld" r="${rr}"/><text dy=".36em">${n}</text></g>`;});
+  if(h)svg.insertAdjacentHTML("beforeend",h);}
+function kmOpen(svg,g){const st=svg.__zk;let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;
+  g.dataset.i.split(",").forEach(i=>{const m=svg.querySelector(`.mk[data-i="${i}"]`);if(!m)return;const c=kmMid(m);x0=Math.min(x0,c[0]);y0=Math.min(y0,c[1]);x1=Math.max(x1,c[0]);y1=Math.max(y1,c[1]);});
+  const w=Math.min(st.v[2]/2,Math.max(st.base[2]/KZ.MAX,(x1-x0)*3,(y1-y0)*3*st.base[2]/st.base[3])),h=w*st.base[3]/st.base[2];
+  kmZet(svg,[(x0+x1)/2-w/2,(y0+y1)/2-h/2,w,h]);}
 function katLand(c,xs,slug){
   const li=x=>{const unc=!CONF.includes(x.st);
     const k=ltOf(c,D[c].locs.indexOf(x.l))[0];
@@ -957,6 +1044,7 @@ function renderKat(){
       :`<p class="kat-geen">${T("Zie je deze soort toch ergens? Geef het door via het meldformulier in de gids van dat land.","Have you seen this species somewhere? Let us know via the report form in that country’s guide.","Vous avez vu cette espèce quelque part ? Signalez-le via le formulaire du guide de ce pays.","Hast du diese Art irgendwo gesehen? Melde es über das Meldeformular im Guide des jeweiligen Landes.","Hai visto questa specie da qualche parte? Segnalacelo con il modulo nella guida di quel paese.","¿Has visto esta especie en algún sitio? Avísanos con el formulario de la guía de ese país.")}</p>`}
     <div class="kat-geb"><h2>${T("Recent geboren","Recently born","Naissances récentes","Kürzlich geboren","Nati di recente","Nacimientos recientes")}</h2>${s[8].length?`<ul class="births">${s[8].map(y=>{const c=y.c,L=D[c].locs.find(l=>l[0]===y.loc&&(l[6]||"")===y.pre);return `<li>${L?`<a href="${window.__F[c]}#${y.pre}locatie/${L[4]}">${esc(y.loc)}</a>`:esc(y.loc)} · ${esc(L4(y.n))}
       <small>${esc(y.pre?stName(y.pre)+" ("+cname(y.c)+")":cname(y.c))} · ${BORN()} ${fdate(y.born,y.approx)}</small></li>`;}).join("")}</ul>`:`<p class="none">${T("Geen recente geboortes bekend.","No recent births known.","Aucune naissance récente connue.","Keine aktuellen Geburten bekannt.","Nessuna nascita recente nota.","No se conocen nacimientos recientes.")}</p>`}</div>`;
+  kmInit();
   document.title=T(`${kname(s)}: waar zie je hem? – Wilde katachtigen`,`${kname(s)}: where to see it – Wild cats`,`${kname(s)} : où le voir ? – Félins sauvages`,`${kname(s)}: wo zu sehen? – Wilde Katzen`,`${kname(s)}: dove vederlo – Felini selvatici`,`${kname(s)}: dónde verlo – Felinos salvajes`);
 }
 

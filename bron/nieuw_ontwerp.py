@@ -73,6 +73,12 @@ html:not(.nw-scherm) #nw-sbar{display:none!important}
 .nw-htxt{padding:14px 18px 0}
 .nw-stats{display:grid;grid-template-columns:repeat(2,minmax(0,240px));gap:12px;margin:14px 18px 0;padding-top:14px;border-top:1px solid var(--line)}
 .nw-datum{padding:8px 18px 16px}
+.nw-stats a{align-items:center!important;gap:10px!important}
+.nw-si{flex:none;display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%}
+.nw-si svg{width:22px;height:22px}
+.nw-si1{background:#F3E2D6;color:#8A4A2B}
+.nw-si2{background:#E1EADF;color:#2F4A33}
+.nw-stats a>span:last-child{display:inline-flex;align-items:baseline;gap:7px}
 .nw-stats a{display:inline-flex;align-items:baseline;gap:7px;color:var(--muted);text-decoration:none;font-size:1rem}
 .nw-stats a strong{font-family:var(--hs-display);font-weight:800;font-size:clamp(1.9rem,8vw,2.4rem);line-height:1;color:var(--ink,#22301f)}
 .nw-htxt h1.mast.hs-kop{margin:0 0 2px!important;font-size:clamp(1.9rem,8.5vw,3rem)!important}
@@ -177,7 +183,7 @@ START = f"""
 <div id="start">
 <div class="nw-hero">
   <div class="nw-htxt" id="nw-htxt"></div>
-  <div class="nw-stats"><a href="#soorten" class="nw-nsp"></a><a href="#locaties" class="nw-nloc"></a></div>
+  <div class="nw-stats"><a href="#soorten"><span class="nw-si nw-si1">{ICO["b-paw"]}</span><span class="nw-nsp"></span></a><a href="#locaties"><span class="nw-si nw-si2">{ICO["b-map"]}</span><span class="nw-nloc"></span></a></div>
 </div>
 <div class="nw-search">
   <label>{ICO["search"]}<input type="search" id="nw-q" autocomplete="off" aria-controls="nw-res"></label>

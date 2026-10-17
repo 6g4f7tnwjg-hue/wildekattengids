@@ -563,3 +563,6 @@ for c, regs in OUD_DEEL.items():
                     doorverwijzing(F[c] + "/" + st_ + "/soort/" + x[4] + "/", static_url(c, None, "soort", x[4]))
 wr(ROOT + "robots.txt", f"User-agent: *\nAllow: /\nSitemap: {SITE}sitemap.xml\n")
 print("Website:", len(urls), "pagina's")
+
+# testontwerp Nederland (17-10-2026): /nederland-nieuw/ uit de gebouwde /nederland/; weghalen = deze regels en bron/nieuw_ontwerp.py verwijderen
+import nieuw_ontwerp; nieuw_ontwerp.maak()

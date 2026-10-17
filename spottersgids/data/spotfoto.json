@@ -124,5 +124,21 @@
   "cr": "foto: Leonardo Ramos, CC BY-SA 4.0",
   "url": "https://commons.wikimedia.org/w/index.php?curid=59454973",
   "title": "Por do Sol no Porto Jofre"
+ },
+ "my-deramakot": {
+  "src": "img/spot-my-deramakot.jpg",
+  "cr": "foto: CEphoto, Uwe Aranas, CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/w/index.php?curid=55321662",
+  "title": "Papar-District Sabah Rainforests-of-Crocker-Mountain-Range-01",
+  "note_nl": "Sfeerfoto (regenwoud in Sabah)",
+  "note_en": "Mood photo (rainforest in Sabah)"
+ },
+ "mn-mongolian-steppe": {
+  "src": "img/spot-mn-mongolian-steppe.jpg",
+  "cr": "foto: bdearth, CC BY 2.0",
+  "url": "https://www.flickr.com/photos/23728403@N00/4881182877",
+  "title": "Steppe",
+  "note_nl": "Sfeerfoto (steppe in Noord-Mongolië)",
+  "note_en": "Mood photo (steppe in northern Mongolia)"
  }
 }

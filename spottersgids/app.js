@@ -208,7 +208,7 @@ function topsHtml(){
   const shown = SHOWALL ? list : list.slice(0, 6);
   return `<div class="tops">${shown.map(({s,r,recs}) => { const c = BY[r.no];
     return `<button type="button" class="tcard" data-spot="${esc(s.id)}" data-no="${r.no}">
-      <div class="ph${s.photo ? ' spot' : ''}">${s.photo ? `${img(s.photo, T(s.name))}<span class="avs">${recs.slice(0, 3).map(x => `<span class="av">${img(BY[x.no].photos[0], catName(BY[x.no]), false, true)}</span>`).join('')}</span><span class="pcr">${credit(s.photo.cr)}</span>` : img(c.photos[0], catName(c))}<span class="tag">${esc(contName(s.cont))}</span></div>
+      <div class="ph${s.photo ? ' spot' : ''}">${s.photo ? `${img(s.photo, T(s.name))}<span class="avs">${recs.slice(0, 3).map(x => `<span class="av">${img(BY[x.no].photos[0], catName(BY[x.no]), false, true)}</span>`).join('')}</span><span class="pcr">${s.photo.note ? `${esc(T(s.photo.note))} · ` : ''}${credit(s.photo.cr)}</span>` : img(c.photos[0], catName(c))}<span class="tag">${esc(contName(s.cont))}</span></div>
       <div class="bd"><span class="sp">${recs.map(x => esc(catName(BY[x.no]))).join(' · ')}</span><h3>${esc(T(s.name))}</h3><span class="where">${esc(T(s.country))}</span>
       ${scoreHtml(r.score)}<span class="ssn">${esc(T(r.season))}</span></div></button>`; }).join('')}</div>
     ${list.length > 6 ? `<div class="morewrap"><button type="button" class="btn" id="showAll">${esc(SHOWALL ? T(U.showLess) : `${T(U.showAll)} (${list.length})`)}</button></div>` : ''}

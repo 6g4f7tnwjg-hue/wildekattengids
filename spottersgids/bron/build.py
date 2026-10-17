@@ -117,6 +117,8 @@ for sid, ph in spotfoto.items():
         im = Image.open(src).convert('RGB'); im.thumbnail((800, 800))
         im.save(dst, 'WEBP', quality=72, method=6)
     spots[sid]['photo'] = {'src': f'foto/spot-{sid}.webp', 'cr': ph['cr'], 'url': ph['url']}
+    if ph.get('note_nl'):   # algemene foto, niet van de plek zelf
+        spots[sid]['photo']['note'] = bi(ph, 'note')
 
 text = load('data/text.json')
 for k, pg in text.items():

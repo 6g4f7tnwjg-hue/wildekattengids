@@ -98,7 +98,9 @@ p{margin:0}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0;margin-right:auto}
 .brand svg{flex:none;width:30px;height:30px;color:var(--accent)}
 .brand b{display:block;font-family:var(--display);font-weight:800;font-size:1.15rem;line-height:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.brand small{display:block;font-family:var(--label);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:3px;white-space:nowrap}
+.brand small{display:block;font-family:var(--label);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:3px;white-space:normal;line-height:1.25}
+@media (max-width:360px){.top .brand svg{display:none}.top .wrap{gap:5px}.top .brand b{font-size:.98rem}.top .brand small{font-size:.62rem;letter-spacing:.06em}.icobtn{min-width:34px;padding:0 7px}}
+@media (max-width:300px){.top .brand b{font-size:.78rem}}
 .brand>span{min-width:0}
 @media (max-width:400px){.top .wrap{gap:6px}.brand{gap:7px}.brand svg{width:26px;height:26px}.brand b{font-size:1.04rem}.brand small{font-size:.66rem}}
 .icobtn{flex:none;display:inline-flex;align-items:center;justify-content:center;gap:6px;border:1px solid var(--line);background:none;border-radius:8px;height:36px;min-width:38px;padding:0 9px;cursor:pointer;color:var(--ink)}

@@ -524,12 +524,14 @@ let rsz; window.addEventListener('resize', () => { clearTimeout(rsz); rsz = setT
 
 /* ---------- soortpagina ---------- */
 // eerste deel van de seizoenstekst (tot de eerste ; of haakje), voor samenvattingen
+const spotsMoreLbl = (n, all) => all ? T(U.showLess) : (L === 'nl' ? `Toon alle ${n} plekken` : `Show all ${n} places`);
+const showAllSpots = () => { const ol = $('#spotlist'), b = $('#moreSpots'); if (!ol || ol.classList.contains('all')) return; ol.classList.add('all'); if (b) b.textContent = spotsMoreLbl(0, true); };
 const shortSeason = r => T(r.season).split(/;\s*|\s\(/)[0].replace(/[.,]\s*$/, '');
 let SPMAP = null;
 function drawSpeciesMap(){
   const el = $('#spmap'); if (!el || !SPMAP) return;
   el.innerHTML = mapSvg({...SPMAP, cw: el.clientWidth || 360, borders: true});
-  bindMarkers(el, id => { const d = document.getElementById('plek-' + id); if (d) { d.open = true; d.scrollIntoView({block:'start', behavior:'smooth'}); } });
+  bindMarkers(el, id => { const d = document.getElementById('plek-' + id); if (d) { showAllSpots(); d.open = true; d.scrollIntoView({block:'start', behavior:'smooth'}); } });
 }
 function renderSpecies(no){
   const c = BY[no], P = PAGES[no];
@@ -550,7 +552,8 @@ function renderSpecies(no){
   $('#main').innerHTML = `
   <div class="wrap"><p class="crumbs"><a href="#soorten">← ${esc(T(U.back))}</a></p>
   <section class="sphead">
-    <figure class="hero"><div class="ph">${img(c.photos[0], catName(c), true)}</div><figcaption>${credit(c.photos[0].cr)}</figcaption></figure>
+    <div class="heros"><div class="hstrip" id="hstrip">${c.photos.map((p,i) => `<figure class="hero"><div class="ph">${img(p, catName(c), i === 0)}</div><figcaption>${credit(p.cr)}</figcaption></figure>`).join('')}</div>
+      ${c.photos.length > 1 ? `<div class="hdots">${c.photos.map((_,i) => `<button type="button" data-i="${i}" aria-label="${esc(T(U.photos))} ${i+1}"${i ? '' : ' class="on"'}></button>`).join('')}</div>` : ''}</div>
     <div class="idblock">
       <span class="lbl">№ ${c.no} · ${c.cont.map(contName).join(' · ')}</span>
       <h1>${esc(catName(c))}</h1>
@@ -564,23 +567,23 @@ function renderSpecies(no){
     </div>
   </section></div>
   <nav class="jump" aria-label="${esc(L==='nl'?'Snel naar':'Jump to')}"><div class="wrap">
-    ${[['kaartsec','jMap'],['plekken','jPlaces'],['tipssec','jTips'],['statussec','jStatus'],...(c.photos.length > 1 ? [['fotosec','photos']] : []),['bronnen','jSources']].map(([id,k]) => `<button type="button" data-go="${id}">${esc(T(U[k]))}</button>`).join('')}
+    ${[['kaartsec','jMap'],['plekken','jPlaces'],['tipssec','jTips'],['statussec','jStatus'],['bronnen','jSources']].map(([id,k]) => `<button type="button" data-go="${id}">${esc(T(U[k]))}</button>`).join('')}
   </div></nav>
   <div class="wrap">
   <section class="sec anchor" id="kaartsec"><div class="sechead"><h2>${esc(T(U.habitat))}</h2></div>
     <div class="mapbox">${alsoHtml(no, recs)}<div id="spmap"></div>${legendHtml(false)}<div class="panel"><p class="note">${esc(T(U.habitatNote))}</p></div></div></section>
   <section class="sec anchor" id="plekken"><div class="sechead"><h2>${esc(T(U.bestSpots))}</h2><p>${esc(T(U.bestSpotsSub))}</p></div>
-    <ol class="spots">${recs.map(({s,r},i) => `<li><details class="spot" id="plek-${esc(s.id)}" style="--c:var(--s${r.score})">
+    <ol class="spots" id="spotlist">${recs.map(({s,r},i) => `<li${i >= 3 ? ' class="more"' : ''}><details class="spot" id="plek-${esc(s.id)}" style="--c:var(--s${r.score})">
       <summary><span class="rank">${i+1}</span><span class="tt"><h3>${esc(T(s.name))}</h3><span class="where">${esc(T(s.country))}</span>${shortSeason(r) ? `<span class="ssn"><svg viewBox="0 0 20 20" aria-hidden="true">${FICO.season}</svg>${esc(shortSeason(r))}</span>` : ''}</span><span class="sc-sum">${scoreHtml(r.score, false, true)}</span>${CHEV}</summary>
       <div class="body"><p class="where">${esc(T(s.area))}</p>${scoreHtml(r.score)}
-      <p class="why">${esc(T(r.why))}${cite(r.src)}</p>${factsHtml(r)}</div></details></li>`).join('')}</ol></section>
+      <p class="why">${esc(T(r.why))}${cite(r.src)}</p>${factsHtml(r)}</div></details></li>`).join('')}</ol>
+    ${recs.length > 3 ? `<div class="morewrap"><button type="button" class="btn" id="moreSpots">${esc(spotsMoreLbl(recs.length, false))}</button></div>` : ''}</section>
   <section class="sec two">
     <div class="anchor" id="tipssec"><details class="fold"><summary><h2>${esc(T(U.tips))} <span class="cnt">(${T(P.tips).length})</span></h2>${CHEV}</summary><ul class="tips">${T(P.tips).map(x=>`<li>${esc(x)}</li>`).join('')}</ul></details></div>
     <div class="anchor" id="statussec"><details class="fold"><summary><h2>${esc(T(U.status))}</h2>${iucnHtml(c.iucn)}${CHEV}</summary><div class="box" style="display:grid;gap:12px">
       <p>${esc(T(P.status))}${cite(P.statusSrc)}</p>
       <h3>${esc(T(U.threats))}</h3><ul class="tips">${T(P.threats).map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div></details></div>
   </section>
-  ${c.photos.length > 1 ? `<section class="sec anchor" id="fotosec"><details class="fold"><summary><h2>${esc(T(U.photos))} <span class="cnt">(${c.photos.length - 1})</span></h2>${CHEV}</summary><div class="gallery">${c.photos.slice(1).map(p => `<figure><div class="ph">${img(p, catName(c))}</div><figcaption>${credit(p.cr)}</figcaption></figure>`).join('')}</div></details></section>` : ''}
   <section class="sec read anchor" id="bronnen"><details class="fold" id="srcbox"><summary><h2>${esc(T(U.sources))} <span class="cnt">(${P.sources.length})</span></h2>${CHEV}</summary>
     <ol class="sources">${P.sources.map((g,i) => `<li id="bron-${no}-${i+1}"><a href="${esc(SRC[g].url)}" target="_blank" rel="noopener">${esc(T(SRC[g].title))}</a></li>`).join('')}</ol></details>
     <p class="note" style="margin-top:14px">${esc(L==='nl'?'Foto’s, leefgebied en IUCN-status: De KATalogue.':'Photos, range and IUCN status: De KATalogue.')}</p>
@@ -589,6 +592,12 @@ function renderSpecies(no){
   drawSpeciesMap(); bindAlso(no, recs);
   $$('.jump button').forEach(b => b.onclick = () => { const el = document.getElementById(b.dataset.go); if (!el) return; const f = el.querySelector('.fold'); if (f) f.open = true; el.scrollIntoView({block:'start', behavior:'smooth'}); });
   bindJumpSpy();
+  const mb = $('#moreSpots'); if (mb) mb.onclick = () => { const ol = $('#spotlist'); if (ol.classList.contains('all')) { ol.classList.remove('all'); mb.textContent = spotsMoreLbl(recs.length, false); $('#plekken').scrollIntoView({block:'start'}); } else showAllSpots(); };
+  const hs = $('#hstrip'), dots = $$('.hdots button');
+  if (hs && dots.length) {
+    dots.forEach(d => d.onclick = () => hs.scrollTo({left: +d.dataset.i * (hs.clientWidth + 10), behavior:'smooth'}));
+    hs.addEventListener('scroll', () => { const i = Math.round(hs.scrollLeft / (hs.clientWidth + 10)); dots.forEach((d,j) => d.classList.toggle('on', i === j)); }, {passive:true});
+  }
   $$('.cite').forEach(a => a.onclick = e => { e.preventDefault(); const el = document.getElementById(a.getAttribute('href').slice(1)); if (el) { $('#srcbox').open = true; el.scrollIntoView({block:'center', behavior:'smooth'}); el.style.background='color-mix(in srgb,var(--accent) 18%,transparent)'; setTimeout(()=>el.style.background='',1600); } });
   return catName(c);
 }

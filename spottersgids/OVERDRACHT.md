@@ -67,6 +67,7 @@ Topspot-regel in de bouw: plek met score 5 op een soortpagina = topspot; score 4
 - OVERDRACHT.md/TWIJFELS.md openbaar: gebruiker vindt het niet erg (17-10-2026), laten staan.
 - Testbranch `spottersgids-fotos-los` (proef losse foto's in het artifact) kan weg; verwijderen werd in de sessie geblokkeerd. Gebruiker kan hem zelf op GitHub verwijderen.
 - Wolkentijgerkat: op 16-10-2026 bij Noord-Amerika weggehaald (`REMOVE_CONT` in `build.py`); staat alleen nog bij Midden- & Zuid-Amerika.
-- Leeuw bij Ndutu staat niet op de kaart (leeuwenpagina neemt Ndutu niet op); Ndutu is topspot voor de cheetah.
+- Leeuw bij Ndutu toegevoegd (17-10-2026, gebruiker: toevoegen): plek 4 op de leeuwenpagina, kans 5, dec–mrt, bron TBY Tanzania 2013 (paartjes leeuwen + mannetje bij het Ndutumeer, ondanks droog jaar). Topspotkaartje Ndutu: Leeuw · Cheetah. Bouwwaarschuwing over Ndutu is daarmee weg.
+- Testbranch: gebruiker verwijdert hem later zelf.
 - Iriomote (Bengaalse kat, ~100 dieren, score 2): uitgelegd (verkeer is hoofdbedreiging, tekst zegt stapvoets rijden); gebruiker 17-10-2026: laten staan.
 - Klein lay-outpuntje gezien (niet gevraagd): op brede schermen loopt "Kans 3 · redelijke kans" in het samenvattingsvak van de soortpagina iets buiten het vak.

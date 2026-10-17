@@ -80,6 +80,30 @@
    ]
   },
   {
+   "id": "tz-ndutu-southern-serengeti",
+   "name_nl": "Ndutu en zuidelijke Serengeti",
+   "name_en": "Ndutu and southern Serengeti",
+   "area_nl": "Ndutu-gebied (Ngorongoro Conservation Area) en de zuidelijke vlaktes van Serengeti National Park",
+   "area_en": "Ndutu area (Ngorongoro Conservation Area) and the southern plains of Serengeti National Park",
+   "country_nl": "Tanzania",
+   "country_en": "Tanzania",
+   "cont": "afr",
+   "lat": -3.0,
+   "lon": 34.9,
+   "score": 5,
+   "why_nl": "In het kalverseizoen trekken de gnoes en zebra's naar de korte-grasvlaktes en de leeuwen volgen. Een reiziger die er in februari 2013 was, trof de vlaktes na weinig regen vrij leeg aan, maar zag toch 'de gebruikelijke' leeuwen: paartjes in de schaduw van bomen en voor zonsopkomst een mannetje bij het Ndutumeer.",
+   "why_en": "In the calving season the wildebeest and zebra move onto the short-grass plains and the lions follow. A traveller there in February 2013 found the plains fairly empty after little rain, yet still saw 'the usual' lions: pairs in the shade of trees and, before sunrise, a male at Lake Ndutu.",
+   "season_nl": "December t/m maart (kalverseizoen, piek februari); valt de regen tegen, dan zijn de vlaktes leger.",
+   "season_en": "December to March (calving season, peak in February); if the rains fail, the plains are emptier.",
+   "time_nl": "Vroege ochtend en late middag; midden op de dag liggen ze in de schaduw van bomen.",
+   "time_en": "Early morning and late afternoon; in the middle of the day they lie in the shade of trees.",
+   "trip_nl": "game drives vanuit kampen in het Ndutu-gebied, 3 à 4 dagen; goed te combineren met de centrale Serengeti en Ngorongoro",
+   "trip_en": "game drives from camps in the Ndutu area, 3–4 days; easy to combine with the central Serengeti and Ngorongoro",
+   "sources": [
+    7
+   ]
+  },
+  {
    "id": "za-kruger",
    "name_nl": "Kruger",
    "name_en": "Kruger",

@@ -172,7 +172,7 @@ html:not(.nw-scherm) #nw-sbar{display:none!important}
 START = f"""
 <div id="start">
 <div class="nw-hero">
-  <img src="{BASE}img/nieuw/kop-serval-zacht.webp" alt="Serval">
+  <img src="{BASE}img/nieuw/kop-serval-2.webp" alt="Serval">
   <div class="nw-htxt" id="nw-htxt"></div>
 </div>
 <div class="nw-search">

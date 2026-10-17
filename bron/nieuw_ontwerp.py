@@ -56,7 +56,6 @@ table th{background:var(--nw-sage)!important;color:var(--ink)!important}
 /* schermen: startscherm of precies één onderdeel */
 html:not(.nw-scherm) #main>*:not(#start){display:none!important}
 html.nw-scherm #main>*:not(.nw-cur):not(#nw-sbar){display:none!important}
-html:not(.nw-op-uitleg) body>footer{display:none!important}
 html.nw-scherm .nw-cur>h2{display:none!important}
 html.nw-scherm .nw-cur{margin:0!important;padding:0!important;border:0!important;background:none!important;box-shadow:none!important}
 /* schermbalk met terugknop */
@@ -70,7 +69,7 @@ html:not(.nw-scherm) #nw-sbar{display:none!important}
 #info .nw-sbar{margin-top:0}
 /* kop met de serval-foto */
 .nw-hero{position:relative;margin:12px 0 0;border-radius:22px;overflow:hidden;background:var(--card);border:1px solid var(--line);box-shadow:var(--nw-shadow)}
-.nw-hero>img{display:block;width:100%;height:clamp(200px,52vw,380px);object-fit:cover;object-position:50% 50%}
+.nw-hero>img{display:block;width:100%;height:clamp(165px,44vw,320px);object-fit:cover;object-position:50% 32%}
 .nw-htxt{padding:14px 18px 44px}
 .nw-htxt h1.mast.hs-kop{margin:0 0 2px!important;font-size:clamp(1.9rem,8.5vw,3rem)!important}
 .nw-htxt .hs-onder{margin:0!important;font-size:clamp(1rem,4.2vw,1.2rem)!important}
@@ -94,27 +93,27 @@ html:not(.nw-scherm) #nw-sbar{display:none!important}
 .nw-res b{font-weight:600}
 .nw-res small{display:block;color:var(--muted);font-size:.85rem}
 .nw-res .nw-none{padding:10px 12px;color:var(--muted);margin:0}
-/* knoppen */
-.nw-quick{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:22px 0 0}
-.nw-quick a{display:flex;flex-direction:column;align-items:center;text-align:center;gap:5px;padding:14px 3px 12px;border-radius:24px;border:1px solid var(--line);text-decoration:none;color:var(--ink);box-shadow:var(--nw-shadow);min-width:0}
-.nw-quick a:nth-child(1){background:var(--nw-sage)}.nw-quick a:nth-child(2){background:var(--nw-peach)}.nw-quick a:nth-child(3){background:var(--nw-blue)}.nw-quick a:nth-child(4){background:var(--nw-rose)}
-.nw-quick svg{width:clamp(34px,10vw,52px);height:auto}
-.nw-quick b{font-family:var(--hs-display);font-weight:700;font-size:clamp(.74rem,3.2vw,1.15rem);line-height:1.15;color:var(--nw-green);white-space:nowrap;max-width:100%;overflow:hidden;text-overflow:ellipsis}
-.nw-quick small{font-size:clamp(.7rem,2.9vw,.9rem);line-height:1.2;color:var(--muted);min-height:1.2em}
+/* kleine knoppen */
+.nw-quick{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:14px 0 0}
+.nw-quick a{display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;padding:12px 4px 10px;border-radius:20px;border:1px solid var(--line);text-decoration:none;color:var(--ink);background:var(--card);box-shadow:var(--nw-shadow);min-width:0}
+.nw-quick .nw-qi{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.nw-quick a:nth-child(1) .nw-qi{background:var(--nw-lilac);color:#4E3A5A}.nw-quick a:nth-child(2) .nw-qi{background:var(--nw-blue);color:#2F4A52}.nw-quick a:nth-child(3) .nw-qi{background:var(--nw-rose);color:#B4483F}.nw-quick a:nth-child(4) .nw-qi{background:var(--nw-sage);color:var(--nw-green)}
+.nw-quick .nw-qi svg{width:24px;height:24px}
+.nw-quick b{font-family:var(--hs-body);font-weight:600;font-size:clamp(.74rem,3.1vw,.98rem);line-height:1.2;color:var(--ink)}
 /* tegels */
 .nw-tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:16px 0 0}
-.nw-tile{position:relative;display:flex;flex-direction:column;justify-content:space-between;min-height:140px;padding:14px;border-radius:22px;overflow:hidden;text-decoration:none;color:var(--ink);border:1px solid var(--line);background-size:cover;background-position:right center;box-shadow:var(--nw-shadow)}
+.nw-tile{position:relative;display:flex;flex-direction:column;justify-content:space-between;min-height:150px;padding:14px;border-radius:22px;overflow:hidden;text-decoration:none;color:var(--ink);border:1px solid var(--line);background-size:cover;background-position:right center;box-shadow:var(--nw-shadow)}
 .nw-tile::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--tb) 0,color-mix(in srgb,var(--tb) 88%,transparent) 48%,transparent 85%)}
 .nw-tile>*{position:relative}
 .nw-tile .nw-ti{width:30px;height:30px;color:var(--tc)}
 .nw-tile .nw-ti svg{width:30px;height:30px}
+.nw-tile small{display:block;font-size:clamp(.78rem,3.2vw,.95rem);color:var(--ink);margin-top:3px}
 .nw-tile b{display:flex;align-items:center;gap:2px;font-family:var(--hs-display);font-weight:800;font-size:clamp(1.1rem,4.6vw,1.65rem);line-height:1.08;color:var(--tc);max-width:82%}
 .nw-arr{width:18px;height:18px;flex:none}
 .nw-t1{--tb:var(--nw-peach);--tc:#7A3F22;background-image:url(IMGtegel-jaguar.webp)}
-.nw-t2{--tb:var(--nw-blue);--tc:#2F4A52;background-image:url(IMGtegel-sneeuwluipaard.webp)}
-.nw-t3{--tb:var(--nw-lilac);--tc:#4E3A5A;background-image:url(IMGtegel-witte-leeuw.webp)}
-.nw-t4{--tb:var(--nw-sage);--tc:var(--nw-green);background-image:url(IMGtegel-lynx.webp)}
-.nw-illu{position:absolute;right:8px;top:8px;font-size:.62rem;color:#4E5A48;background:rgba(251,248,241,.8);padding:0 6px;border-radius:99px}
+.nw-t2{--tb:var(--nw-sage);--tc:var(--nw-green);background-image:url(IMGtegel-lynx.webp)}
+.nw-t3{--tb:var(--nw-blue);--tc:#2F4A52;background-image:url(IMGtegel-sneeuwluipaard.webp)}
+.nw-t4{--tb:var(--nw-lilac);--tc:#4E3A5A;background-image:url(IMGtegel-witte-leeuw.webp)}
 .nw-strip{display:flex;align-items:center;gap:12px;margin:12px 0 0;padding:16px;border-radius:22px;background:var(--nw-terra);color:#FFF8EE!important;text-decoration:none;box-shadow:var(--nw-shadow)}
 .nw-strip svg{width:24px;height:24px;flex:none}
 .nw-strip b{flex:1;font-family:var(--hs-display);font-size:1.2rem}
@@ -178,17 +177,17 @@ START = f"""
   <label>{ICO["search"]}<input type="search" id="nw-q" autocomplete="off" aria-controls="nw-res"></label>
   <div class="nw-res" id="nw-res" role="listbox" hidden></div>
 </div>
-<nav class="nw-quick" aria-label="Menu">
-  <a href="#locaties">{ICO["pin"]}<b data-nw-lbl="locaties"></b><small><span class="nw-nloc"></span></small></a>
-  <a href="#soorten">{ICO["paw"]}<b data-nw-lbl="soorten"></b><small><span class="nw-nsp"></span></small></a>
-  <a href="#route">{ICO["cal"]}<b data-nw-lbl="route"></b><small></small></a>
-  <a href="#favorieten">{ICO["heart"]}<b>{L("Favorieten", "Favourites")}</b><small><span class="nw-nfav"></span></small></a>
-</nav>
 <nav class="nw-tiles" aria-label="Menu">
-  <a class="nw-tile nw-t1" href="#tldr"><span class="nw-ti">{ICO["tbl"]}</span><b><span data-nw-lbl="tldr"></span>{ARROW}</b><span class="nw-illu">{L("illustratie", "illustration")}</span></a>
-  <a class="nw-tile nw-t2" href="#actueel"><span class="nw-ti">{ICO["news"]}</span><b><span data-nw-lbl="actueel"></span>{ARROW}</b><span class="nw-illu">{L("illustratie", "illustration")}</span></a>
-  <a class="nw-tile nw-t3" href="#kleur"><span class="nw-ti">{ICO["dna"]}</span><b><span data-nw-lbl="kleur"></span>{ARROW}</b><span class="nw-illu">{L("illustratie", "illustration")}</span></a>
-  <a class="nw-tile nw-t4" href="#uitleg"><span class="nw-ti">{ICO["info"]}</span><b><span data-nw-lbl="uitleg"></span>{ARROW}</b><span class="nw-illu">{L("illustratie", "illustration")}</span></a>
+  <a class="nw-tile nw-t1" href="#soorten"><span class="nw-ti">{ICO["b-paw"]}</span><span><b><span data-nw-lbl="soorten"></span>{ARROW}</b><small class="nw-nsp"></small></span></a>
+  <a class="nw-tile nw-t2" href="#locaties"><span class="nw-ti">{ICO["b-map"]}</span><span><b><span data-nw-lbl="locaties-kop"></span>{ARROW}</b><small class="nw-nloc"></small></span></a>
+  <a class="nw-tile nw-t3" href="#actueel"><span class="nw-ti">{ICO["news"]}</span><span><b><span data-nw-lbl="actueel"></span>{ARROW}</b></span></a>
+  <a class="nw-tile nw-t4" href="#tldr"><span class="nw-ti">{ICO["tbl"]}</span><span><b><span data-nw-lbl="tldr"></span>{ARROW}</b></span></a>
+</nav>
+<nav class="nw-quick" aria-label="Menu">
+  <a href="#kleur"><span class="nw-qi">{ICO["dna"]}</span><b data-nw-lbl="kleur"></b></a>
+  <a href="#route"><span class="nw-qi">{ICO["b-route"]}</span><b data-nw-lbl="route"></b></a>
+  <a href="#favorieten"><span class="nw-qi">{ICO["b-heart"]}</span><b>{L("Favorieten", "Favourites")}</b></a>
+  <a href="#uitleg"><span class="nw-qi">{ICO["info"]}</span><b data-nw-lbl="uitleg"></b></a>
 </nav>
 <a class="nw-strip" href="#rapporteer">{ICO["flag"]}<b data-nw-lbl="rapporteer"></b>{ARROW}</a>
 </div>
@@ -224,7 +223,7 @@ var main=document.getElementById("main"),info=document.getElementById("info"),ht
 var SCR=["tldr","locaties","soorten","route","actueel","kleur","uitleg","rapporteer","favorieten","meer"];
 
 /* ---------- namen van de knoppen: uit de tabbladen en kopjes van de gids ---------- */
-function naam(id){var a=$('nav.toc a[href="#'+id+'"]');if(a)return a.innerHTML;
+function naam(id){if(id==="locaties-kop"){var k=$("#locaties > h2 .ctog > span");return k?k.innerHTML:naam("locaties");}var a=$('nav.toc a[href="#'+id+'"]');if(a)return a.innerHTML;
   var h=$("#"+id+" > h2 .ctog > span")||$("#"+id+" > h2");return h?h.innerHTML:"";}
 $$("[data-nw-lbl]").forEach(function(el){el.innerHTML=naam(el.getAttribute("data-nw-lbl"));});
 

@@ -367,7 +367,6 @@ table th{background:var(--nw-sage)!important;color:var(--ink)!important}
 /* schermen: startscherm of precies één onderdeel */
 html:not(.nw-scherm) #main>*:not(#start){display:none!important}
 html.nw-scherm #main>*:not(.nw-cur):not(#nw-sbar){display:none!important}
-html:not(.nw-op-uitleg) body>footer{display:none!important}
 html.nw-scherm .nw-cur>h2{display:none!important}
 html.nw-scherm .nw-cur{margin:0!important;padding:0!important;border:0!important;background:none!important;box-shadow:none!important}
 /* schermbalk met terugknop */
@@ -381,7 +380,7 @@ html:not(.nw-scherm) #nw-sbar{display:none!important}
 #info .nw-sbar{margin-top:0}
 /* kop met de serval-foto */
 .nw-hero{position:relative;margin:12px 0 0;border-radius:22px;overflow:hidden;background:var(--card);border:1px solid var(--line);box-shadow:var(--nw-shadow)}
-.nw-hero>img{display:block;width:100%;height:clamp(200px,52vw,380px);object-fit:cover;object-position:50% 50%}
+.nw-hero>img{display:block;width:100%;height:clamp(165px,44vw,320px);object-fit:cover;object-position:50% 32%}
 .nw-htxt{padding:14px 18px 44px}
 .nw-htxt h1.mast.hs-kop{margin:0 0 2px!important;font-size:clamp(1.9rem,8.5vw,3rem)!important}
 .nw-htxt .hs-onder{margin:0!important;font-size:clamp(1rem,4.2vw,1.2rem)!important}
@@ -405,27 +404,27 @@ html:not(.nw-scherm) #nw-sbar{display:none!important}
 .nw-res b{font-weight:600}
 .nw-res small{display:block;color:var(--muted);font-size:.85rem}
 .nw-res .nw-none{padding:10px 12px;color:var(--muted);margin:0}
-/* knoppen */
-.nw-quick{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:22px 0 0}
-.nw-quick a{display:flex;flex-direction:column;align-items:center;text-align:center;gap:5px;padding:14px 3px 12px;border-radius:24px;border:1px solid var(--line);text-decoration:none;color:var(--ink);box-shadow:var(--nw-shadow);min-width:0}
-.nw-quick a:nth-child(1){background:var(--nw-sage)}.nw-quick a:nth-child(2){background:var(--nw-peach)}.nw-quick a:nth-child(3){background:var(--nw-blue)}.nw-quick a:nth-child(4){background:var(--nw-rose)}
-.nw-quick svg{width:clamp(34px,10vw,52px);height:auto}
-.nw-quick b{font-family:var(--hs-display);font-weight:700;font-size:clamp(.74rem,3.2vw,1.15rem);line-height:1.15;color:var(--nw-green);white-space:nowrap;max-width:100%;overflow:hidden;text-overflow:ellipsis}
-.nw-quick small{font-size:clamp(.7rem,2.9vw,.9rem);line-height:1.2;color:var(--muted);min-height:1.2em}
+/* kleine knoppen */
+.nw-quick{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:14px 0 0}
+.nw-quick a{display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;padding:12px 4px 10px;border-radius:20px;border:1px solid var(--line);text-decoration:none;color:var(--ink);background:var(--card);box-shadow:var(--nw-shadow);min-width:0}
+.nw-quick .nw-qi{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.nw-quick a:nth-child(1) .nw-qi{background:var(--nw-lilac);color:#4E3A5A}.nw-quick a:nth-child(2) .nw-qi{background:var(--nw-blue);color:#2F4A52}.nw-quick a:nth-child(3) .nw-qi{background:var(--nw-rose);color:#B4483F}.nw-quick a:nth-child(4) .nw-qi{background:var(--nw-sage);color:var(--nw-green)}
+.nw-quick .nw-qi svg{width:24px;height:24px}
+.nw-quick b{font-family:var(--hs-body);font-weight:600;font-size:clamp(.74rem,3.1vw,.98rem);line-height:1.2;color:var(--ink)}
 /* tegels */
 .nw-tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:16px 0 0}
-.nw-tile{position:relative;display:flex;flex-direction:column;justify-content:space-between;min-height:140px;padding:14px;border-radius:22px;overflow:hidden;text-decoration:none;color:var(--ink);border:1px solid var(--line);background-size:cover;background-position:right center;box-shadow:var(--nw-shadow)}
+.nw-tile{position:relative;display:flex;flex-direction:column;justify-content:space-between;min-height:150px;padding:14px;border-radius:22px;overflow:hidden;text-decoration:none;color:var(--ink);border:1px solid var(--line);background-size:cover;background-position:right center;box-shadow:var(--nw-shadow)}
 .nw-tile::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--tb) 0,color-mix(in srgb,var(--tb) 88%,transparent) 48%,transparent 85%)}
 .nw-tile>*{position:relative}
 .nw-tile .nw-ti{width:30px;height:30px;color:var(--tc)}
 .nw-tile .nw-ti svg{width:30px;height:30px}
+.nw-tile small{display:block;font-size:clamp(.78rem,3.2vw,.95rem);color:var(--ink);margin-top:3px}
 .nw-tile b{display:flex;align-items:center;gap:2px;font-family:var(--hs-display);font-weight:800;font-size:clamp(1.1rem,4.6vw,1.65rem);line-height:1.08;color:var(--tc);max-width:82%}
 .nw-arr{width:18px;height:18px;flex:none}
 .nw-t1{--tb:var(--nw-peach);--tc:#7A3F22;background-image:url(/wildekattengids/img/nieuw/tegel-jaguar.webp)}
-.nw-t2{--tb:var(--nw-blue);--tc:#2F4A52;background-image:url(/wildekattengids/img/nieuw/tegel-sneeuwluipaard.webp)}
-.nw-t3{--tb:var(--nw-lilac);--tc:#4E3A5A;background-image:url(/wildekattengids/img/nieuw/tegel-witte-leeuw.webp)}
-.nw-t4{--tb:var(--nw-sage);--tc:var(--nw-green);background-image:url(/wildekattengids/img/nieuw/tegel-lynx.webp)}
-.nw-illu{position:absolute;right:8px;top:8px;font-size:.62rem;color:#4E5A48;background:rgba(251,248,241,.8);padding:0 6px;border-radius:99px}
+.nw-t2{--tb:var(--nw-sage);--tc:var(--nw-green);background-image:url(/wildekattengids/img/nieuw/tegel-lynx.webp)}
+.nw-t3{--tb:var(--nw-blue);--tc:#2F4A52;background-image:url(/wildekattengids/img/nieuw/tegel-sneeuwluipaard.webp)}
+.nw-t4{--tb:var(--nw-lilac);--tc:#4E3A5A;background-image:url(/wildekattengids/img/nieuw/tegel-witte-leeuw.webp)}
 .nw-strip{display:flex;align-items:center;gap:12px;margin:12px 0 0;padding:16px;border-radius:22px;background:var(--nw-terra);color:#FFF8EE!important;text-decoration:none;box-shadow:var(--nw-shadow)}
 .nw-strip svg{width:24px;height:24px;flex:none}
 .nw-strip b{flex:1;font-family:var(--hs-display);font-size:1.2rem}
@@ -660,17 +659,17 @@ section::before,.board::before,.ip-sec::before,footer::before{display:none!impor
   <label><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg><input type="search" id="nw-q" autocomplete="off" aria-controls="nw-res"></label>
   <div class="nw-res" id="nw-res" role="listbox" hidden></div>
 </div>
-<nav class="nw-quick" aria-label="Menu">
-  <a href="#locaties"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 12l11-4 14 5 11-4v27l-11 4-14-5-11 4z" fill="#C9D6BC"/><path d="M17 8v27M31 13v27" stroke="#9DB28E" stroke-width="2"/><path d="M33 4a8 8 0 0 0-8 8c0 6 8 14 8 14s8-8 8-14a8 8 0 0 0-8-8z" fill="#2F4A32"/><circle cx="33" cy="12" r="3" fill="#F5F0E4"/></svg><b data-nw-lbl="locaties"></b><small><span class="nw-nloc"></span></small></a>
-  <a href="#soorten"><svg viewBox="0 0 48 48" aria-hidden="true" fill="#A65A35"><ellipse cx="24" cy="31" rx="10" ry="8.5"/><ellipse cx="10.5" cy="21" rx="4" ry="5.2"/><ellipse cx="18.5" cy="13.5" rx="4" ry="5.4"/><ellipse cx="29.5" cy="13.5" rx="4" ry="5.4"/><ellipse cx="37.5" cy="21" rx="4" ry="5.2"/></svg><b data-nw-lbl="soorten"></b><small><span class="nw-nsp"></span></small></a>
-  <a href="#route"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="9" width="36" height="32" rx="5" fill="#4C6670"/><rect x="6" y="9" width="36" height="9" rx="4" fill="#3A515A"/><rect x="10" y="21" width="28" height="16" rx="2" fill="#DDE6E6"/><path d="M15 5v8M33 5v8" stroke="#3A515A" stroke-width="3.4" stroke-linecap="round"/><path d="M19 23v12M29 23v12M12 27h24M12 32h24" stroke="#4C6670" stroke-width="1.8"/></svg><b data-nw-lbl="route"></b><small></small></a>
-  <a href="#favorieten"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 41S6 30 6 17.5A9.5 9.5 0 0 1 24 13a9.5 9.5 0 0 1 18 4.5C42 30 24 41 24 41z" fill="#C2564F"/></svg><b><span class="l-nl">Favorieten</span><span class="l-en">Favourites</span></b><small><span class="nw-nfav"></span></small></a>
-</nav>
 <nav class="nw-tiles" aria-label="Menu">
-  <a class="nw-tile nw-t1" href="#tldr"><span class="nw-ti"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M3 14h18M9 9v11"/></svg></span><b><span data-nw-lbl="tldr"></span><svg class="nw-arr" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></b><span class="nw-illu"><span class="l-nl">illustratie</span><span class="l-en">illustration</span></span></a>
-  <a class="nw-tile nw-t2" href="#actueel"><span class="nw-ti"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/><path d="M9 15l2 2 4-4"/></svg></span><b><span data-nw-lbl="actueel"></span><svg class="nw-arr" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></b><span class="nw-illu"><span class="l-nl">illustratie</span><span class="l-en">illustration</span></span></a>
-  <a class="nw-tile nw-t3" href="#kleur"><span class="nw-ti"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 3c0 6 10 6 10 12s-10 6-10 6M17 3c0 6-10 6-10 12"/><path d="M8.5 7h7M8.5 17h7"/></svg></span><b><span data-nw-lbl="kleur"></span><svg class="nw-arr" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></b><span class="nw-illu"><span class="l-nl">illustratie</span><span class="l-en">illustration</span></span></a>
-  <a class="nw-tile nw-t4" href="#uitleg"><span class="nw-ti"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="currentColor"/><circle cx="12" cy="7.2" r="1.6" fill="#F5F0E4"/><path d="M12 11v7" stroke="#F5F0E4" stroke-width="2.6" stroke-linecap="round"/></svg></span><b><span data-nw-lbl="uitleg"></span><svg class="nw-arr" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></b><span class="nw-illu"><span class="l-nl">illustratie</span><span class="l-en">illustration</span></span></a>
+  <a class="nw-tile nw-t1" href="#soorten"><span class="nw-ti"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><ellipse cx="12" cy="15.5" rx="5" ry="4.3"/><ellipse cx="5.3" cy="10.5" rx="2" ry="2.6"/><ellipse cx="9.3" cy="6.7" rx="2" ry="2.7"/><ellipse cx="14.7" cy="6.7" rx="2" ry="2.7"/><ellipse cx="18.7" cy="10.5" rx="2" ry="2.6"/></svg></span><span><b><span data-nw-lbl="soorten"></span><svg class="nw-arr" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></b><small class="nw-nsp"></small></span></a>
+  <a class="nw-tile nw-t2" href="#locaties"><span class="nw-ti"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg></span><span><b><span data-nw-lbl="locaties-kop"></span><svg class="nw-arr" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></b><small class="nw-nloc"></small></span></a>
+  <a class="nw-tile nw-t3" href="#actueel"><span class="nw-ti"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/><path d="M9 15l2 2 4-4"/></svg></span><span><b><span data-nw-lbl="actueel"></span><svg class="nw-arr" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></b></span></a>
+  <a class="nw-tile nw-t4" href="#tldr"><span class="nw-ti"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M3 14h18M9 9v11"/></svg></span><span><b><span data-nw-lbl="tldr"></span><svg class="nw-arr" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></b></span></a>
+</nav>
+<nav class="nw-quick" aria-label="Menu">
+  <a href="#kleur"><span class="nw-qi"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 3c0 6 10 6 10 12s-10 6-10 6M17 3c0 6-10 6-10 12"/><path d="M8.5 7h7M8.5 17h7"/></svg></span><b data-nw-lbl="kleur"></b></a>
+  <a href="#route"><span class="nw-qi"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.5"/></svg></span><b data-nw-lbl="route"></b></a>
+  <a href="#favorieten"><span class="nw-qi"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.5A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z"/></svg></span><b><span class="l-nl">Favorieten</span><span class="l-en">Favourites</span></b></a>
+  <a href="#uitleg"><span class="nw-qi"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="currentColor"/><circle cx="12" cy="7.2" r="1.6" fill="#F5F0E4"/><path d="M12 11v7" stroke="#F5F0E4" stroke-width="2.6" stroke-linecap="round"/></svg></span><b data-nw-lbl="uitleg"></b></a>
 </nav>
 <a class="nw-strip" href="#rapporteer"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4h11l-2 4 2 4H5"/></svg><b data-nw-lbl="rapporteer"></b><svg class="nw-arr" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></a>
 </div>
@@ -2203,7 +2202,7 @@ var main=document.getElementById("main"),info=document.getElementById("info"),ht
 var SCR=["tldr","locaties","soorten","route","actueel","kleur","uitleg","rapporteer","favorieten","meer"];
 
 /* ---------- namen van de knoppen: uit de tabbladen en kopjes van de gids ---------- */
-function naam(id){var a=$('nav.toc a[href="#'+id+'"]');if(a)return a.innerHTML;
+function naam(id){if(id==="locaties-kop"){var k=$("#locaties > h2 .ctog > span");return k?k.innerHTML:naam("locaties");}var a=$('nav.toc a[href="#'+id+'"]');if(a)return a.innerHTML;
   var h=$("#"+id+" > h2 .ctog > span")||$("#"+id+" > h2");return h?h.innerHTML:"";}
 $$("[data-nw-lbl]").forEach(function(el){el.innerHTML=naam(el.getAttribute("data-nw-lbl"));});
 

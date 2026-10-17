@@ -1,14 +1,19 @@
 """Testontwerp voor de Nederlandse gids (oktober 2026).
 
-Maakt /nederland-nieuw/index.html uit de gebouwde /nederland/index.html. Alleen de vormgeving en de
-opbouw veranderen; alle teksten en feiten komen uit de gebouwde pagina (knopnamen worden in de browser
-uit de tabbladen en kopjes van de gids overgenomen). De echte pagina /nederland/ blijft ongewijzigd.
+Nieuw ontwerp van de landpagina's (live sinds 17-10-2026, eerst Nederland).
+
+Neemt de gebouwde /<land>/index.html, bewaart die als reserve in /<land>-oud/index.html (noindex) en
+schrijft het nieuwe ontwerp over /<land>/index.html. Alleen de vormgeving en de opbouw veranderen; alle
+teksten en feiten komen uit de gebouwde pagina (knopnamen worden in de browser uit de tabbladen en kopjes
+van de gids overgenomen). De losse park- en soortpagina's blijven in de oude stijl.
 
 Opbouw: startscherm (serval-foto met de kop van de gids, zoekbalk, knoppen, tegels) en elk onderdeel
 als eigen scherm met terugknop; onderbalk Home · Locaties · Per kat · Routeplanner · Meer.
 
 Gebruik: python3 bron/nieuw_ontwerp.py   (draait ook automatisch aan het eind van bouw.py)
-Terugdraaien: map nederland-nieuw/ en img/nieuw/ weghalen, dit bestand en de regels onderaan bouw.py verwijderen.
+Werkt ook als het twee keer draait: staat het nieuwe ontwerp al op /<land>/, dan is /<land>-oud/ de bron.
+Terugdraaien: /<land>-oud/index.html terugzetten op /<land>/ (of opnieuw bouwen zonder dit script),
+map /<land>-oud/ en img/nieuw/ weghalen, dit bestand en de regels onderaan bouw.py verwijderen.
 """
 import os
 
@@ -367,15 +372,32 @@ paint();apply();
 """
 
 
+LANDEN = ["nederland"]
+MARK = 'id="nw-htxt"'
+
+
 def maak():
-    src = os.path.join(ROOT, "nederland", "index.html")
-    doc = open(src, encoding="utf-8").read()
+    for land in LANDEN:
+        maak_land(land)
+
+
+def maak_land(land):
+    hier = os.path.join(ROOT, land, "index.html")
+    oud = os.path.join(ROOT, land + "-oud", "index.html")
+    doc = open(hier, encoding="utf-8").read()
+    if MARK in doc:
+        # nieuw ontwerp staat er al: opnieuw opbouwen vanuit de reserve
+        doc = open(oud, encoding="utf-8").read().replace('<meta name="robots" content="noindex">\n', "", 1)
+    else:
+        os.makedirs(os.path.dirname(oud), exist_ok=True)
+        r = doc.replace("</head>", '<meta name="robots" content="noindex">\n</head>', 1)
+        open(oud, "w", encoding="utf-8").write(r)
 
     def sub1(t, a, b):
         assert a in t, f"niet gevonden: {a[:60]}"
         return t.replace(a, b, 1)
 
-    doc = sub1(doc, "</head>", '<meta name="robots" content="noindex">\n' + CSS + "</head>")
+    doc = sub1(doc, "</head>", CSS + "</head>")
     doc = sub1(doc, '<div class="wrap" id="main">', '<div class="wrap" id="main">\n' + START)
     # de inhoud van de gids blijft staan; favorieten en meer komen achter de laatste sectie
     doc = sub1(doc, '<section id="rapporteer"', EXTRA + '<section id="rapporteer"')
@@ -390,10 +412,8 @@ def maak():
           .replace("ARRSVG", ARROW).replace("var $=function", "var SVG=" + svg + ";\nvar $=function", 1))
     i = doc.rindex("</body>")
     doc = doc[:i] + BAR + js + doc[i:]
-    out = os.path.join(ROOT, "nederland-nieuw")
-    os.makedirs(out, exist_ok=True)
-    open(os.path.join(out, "index.html"), "w", encoding="utf-8").write(doc)
-    print("testontwerp geschreven:", os.path.join("nederland-nieuw", "index.html"))
+    open(hier, "w", encoding="utf-8").write(doc)
+    print("nieuw ontwerp geschreven:", land + "/index.html", "(reserve:", land + "-oud/index.html)")
 
 
 if __name__ == "__main__":

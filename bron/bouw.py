@@ -564,5 +564,5 @@ for c, regs in OUD_DEEL.items():
 wr(ROOT + "robots.txt", f"User-agent: *\nAllow: /\nSitemap: {SITE}sitemap.xml\n")
 print("Website:", len(urls), "pagina's")
 
-# testontwerp Nederland (17-10-2026): /nederland-nieuw/ uit de gebouwde /nederland/; weghalen = deze regels en bron/nieuw_ontwerp.py verwijderen
+# nieuw ontwerp landpagina's (17-10-2026): zet het nieuwe ontwerp op /<land>/, oude pagina als reserve op /<land>-oud/ (zie bron/nieuw_ontwerp.py)
 import nieuw_ontwerp; nieuw_ontwerp.maak()

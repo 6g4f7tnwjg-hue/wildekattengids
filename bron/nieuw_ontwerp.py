@@ -50,6 +50,7 @@ TR = {
                                  "it": "Cerca un felino o un parco", "es": "Busca un felino o un parque",
                                  "pt": "Procura um felino ou um parque"},
     "Favoriet": {"fr": "Favori", "de": "Favorit", "it": "Preferito", "es": "Favorito", "pt": "Favorito"},
+    "Alle types": {"fr": "Tous les types", "de": "Alle Typen", "it": "Tutti i tipi", "es": "Todos los tipos", "pt": "Todos os tipos"},
 }
 
 
@@ -86,6 +87,15 @@ CSS = r"""
 /* ---- nieuw ontwerp (bron/nieuw_ontwerp.py) ---- */
 /* lange weblinks (bijv. bij "Website") laten afbreken in plaats van de pagina te verbreden */
 #info dd,#info dd a{overflow-wrap:anywhere}
+/* filters bij Locaties als keuzeknoppen */
+html.nw-fk #rg-lab,html.nw-fk #rg-bar,html.nw-fk #rg-count,html.nw-fk #lt-bar,html.nw-fk #lt-count{display:none!important}
+.nw-filters{display:flex;gap:8px;margin:6px 0 12px}
+.nw-fsel{position:relative;flex:1;min-width:0;display:flex;align-items:center;gap:6px;height:44px;padding:0 12px 0 16px;border-radius:99px;border:1px solid var(--line);background:var(--card);box-shadow:var(--nw-shadow);color:var(--ink);font:500 .98rem var(--hs-body);cursor:pointer}
+.nw-fsel .nw-fv{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.nw-fsel svg{flex:none;width:18px;height:18px}
+.nw-fsel select{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer;font-size:16px}
+.nw-fsel.on{background:var(--nw-green);border-color:var(--nw-green);color:#FBF8F1}
+.nw-fsel:focus-within{outline:2px solid var(--nw-terra);outline-offset:2px}
 /* talen die een pagina niet heeft, nooit tonen */
 html:not(.fr) .l-fr,html:not(.de) .l-de,html:not(.it) .l-it,html:not(.es) .l-es,html:not(.pt) .l-pt,html.fr .l-nl,html.de .l-nl,html.it .l-nl,html.es .l-nl,html.pt .l-nl{display:none!important}
 :root:root{--paper:#F5F0E4;--card:#FBF8F1;--ink:#22301F;--muted:#5E6656;--line:#E2DACB;--hs-olive:#2F4A32;--hs-accent:#A65A35;--gold:#A65A35;--bark:#2F4A32;--tan:#FBF8F1;--tan-deep:#E2DACB;
@@ -408,6 +418,37 @@ window.addEventListener("hashchange",function(){
   var h=location.hash||"#start",prev=stack[stack.length-1];pos[prev]=curY;
   if(stack.length>1&&stack[stack.length-2]===h){stack.pop();popped=true;}else{stack.push(h);popped=false;}
   apply();setTimeout(function(){apply();popped=false;},0);});
+/* ---------- filters bij Locaties: keuzeknoppen in plaats van rijen knoppen (de oude knoppen blijven verborgen en doen het werk) ---------- */
+(function(){
+  var sec=document.getElementById("locaties");if(!sec)return;
+  var lt=document.getElementById("lt-bar");if(!lt)return;
+  var wrap=document.createElement("div");wrap.className="nw-filters";
+  (document.getElementById("rg-lab")||lt).insertAdjacentElement("beforebegin",wrap);
+  function maak(bar,attr,alle){
+    if(!bar)return null;
+    var l=document.createElement("label");l.className="nw-fsel";
+    l.innerHTML='<span class="nw-fv"></span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg><select></select>';
+    wrap.appendChild(l);var sel=l.querySelector("select"),v=l.querySelector(".nw-fv"),bezig=false;
+    function naamVan(b){var c=b.cloneNode(true);c.querySelectorAll(".n,svg").forEach(function(x){x.remove();});return c.textContent.trim();}
+    function telVan(b){var n=b.querySelector(".n");return n?n.textContent.trim():"";}
+    function sync(){if(bezig)return;bezig=true;
+      var chips=[].slice.call(bar.querySelectorAll("button[data-"+attr+"]")),cur="";
+      sel.innerHTML=chips.map(function(b){var k=b.getAttribute("data-"+attr),nm=k?naamVan(b):alle(b);if(b.getAttribute("aria-pressed")==="true")cur=k;
+        return '<option value="'+E(k)+'">'+E(nm)+' ('+telVan(b)+')</option>';}).join("");
+      sel.value=cur;var on=chips.filter(function(b){return b.getAttribute("data-"+attr)===cur;})[0];
+      v.textContent=on?(cur?naamVan(on):alle(on))+" · "+telVan(on):"";
+      l.classList.toggle("on",!!cur);sel.setAttribute("aria-label",bar.getAttribute("aria-label")||"");
+      bezig=false;}
+    sel.addEventListener("change",function(){var k=sel.value,b=[].slice.call(bar.querySelectorAll("button[data-"+attr+"]")).filter(function(x){return x.getAttribute("data-"+attr)===k;})[0];if(b)b.click();sync();});
+    new MutationObserver(sync).observe(bar,{childList:true,subtree:true,attributes:true,attributeFilter:["aria-pressed"]});
+    sync();return sync;}
+  function rgAlle(b){return naamVan0(b);}
+  function naamVan0(b){var c=b.cloneNode(true);c.querySelectorAll(".n,svg").forEach(function(x){x.remove();});return c.textContent.trim();}
+  var s1=maak(document.getElementById("rg-bar"),"r",rgAlle);
+  var s2=maak(lt,"t",function(){return TX("Alle types","All types");});
+  document.documentElement.classList.add("nw-fk");
+  new MutationObserver(function(){if(s1)s1();if(s2)s2();}).observe(document.documentElement,{attributes:true,attributeFilter:["lang","class"]});
+})();
 paint();apply();
 })();
 </script>

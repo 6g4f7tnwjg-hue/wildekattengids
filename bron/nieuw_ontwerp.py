@@ -15,6 +15,7 @@ Werkt ook als het twee keer draait: staat het nieuwe ontwerp al op /<land>/, dan
 Terugdraaien: /<land>-oud/index.html terugzetten op /<land>/ (of opnieuw bouwen zonder dit script),
 map /<land>-oud/ en img/nieuw/ weghalen, dit bestand en de regels onderaan bouw.py verwijderen.
 """
+import json
 import os
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
@@ -22,8 +23,31 @@ BASE = "/wildekattengids/"
 IMG = BASE + "img/nieuw/"
 
 
+# Frans en Duits voor de teksten die het ontwerp zelf toevoegt (België: FR, Luxemburg: FR en DE).
+# Toon zoals de gidsen: Frans met "vous", Duits met "du".
+TR = {
+    "Favorieten": ("Favoris", "Favoriten"),
+    "Terug": ("Retour", "Zurück"),
+    "Meer": ("Plus", "Mehr"),
+    "Home": ("Accueil", "Start"),
+    "Bewaar als favoriet": ("Ajouter aux favoris", "Als Favorit speichern"),
+    "In je favorieten": ("Dans vos favoris", "In deinen Favoriten"),
+    "Nog geen favorieten. Tik op het hartje bij een park of een soort om het hier te bewaren. Je lijst blijft alleen op dit apparaat.":
+        ("Pas encore de favoris. Touchez le cœur à côté d’un parc ou d’une espèce pour l’enregistrer ici. Votre liste reste uniquement sur cet appareil.",
+         "Noch keine Favoriten. Tippe auf das Herz neben einem Park oder einer Art, um ihn hier zu speichern. Deine Liste bleibt nur auf diesem Gerät."),
+    "soorten": ("espèces", "Arten"),
+    "locaties": ("lieux", "Orte"),
+    "soort": ("espèce", "Art"),
+    "locatie": ("lieu", "Ort"),
+    "Zoek een kat of een park": ("Rechercher un félin ou un parc", "Katze oder Park suchen"),
+    "Favoriet": ("Favori", "Favorit"),
+}
+
+
 def L(nl, en):
-    return f'<span class="l-nl">{nl}</span><span class="l-en">{en}</span>'
+    fr, de = TR.get(nl, (en, en))
+    return (f'<span class="l-nl">{nl}</span><span class="l-en">{en}</span>'
+            f'<span class="l-fr">{fr}</span><span class="l-de">{de}</span>')
 
 
 ICO = {
@@ -50,7 +74,9 @@ HEART_S = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-8-5-8-11
 
 CSS = r"""
 <style id="nw-css">
-/* ---- testontwerp (bron/nieuw_ontwerp.py) ---- */
+/* ---- nieuw ontwerp (bron/nieuw_ontwerp.py) ---- */
+/* talen die een pagina niet heeft, nooit tonen */
+html:not(.fr) .l-fr,html:not(.de) .l-de,html.fr .l-nl,html.de .l-nl{display:none!important}
 :root:root{--paper:#F5F0E4;--card:#FBF8F1;--ink:#22301F;--muted:#5E6656;--line:#E2DACB;--hs-olive:#2F4A32;--hs-accent:#A65A35;--gold:#A65A35;--bark:#2F4A32;--tan:#FBF8F1;--tan-deep:#E2DACB;
   --nw-sage:#E3EADB;--nw-peach:#F3E2D3;--nw-blue:#DDE6E6;--nw-lilac:#E6DDE8;--nw-rose:#F4E3DF;--nw-green:#2F4A32;--nw-terra:#A65A35;--nw-shadow:0 1px 2px rgba(60,50,30,.06),0 10px 24px -14px rgba(60,50,30,.35);--nw-top:var(--hs-head)}
 html body{background:var(--paper)!important;padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
@@ -238,7 +264,8 @@ var R=N.R,LOCS=N.LOCS,SPECIES=N.SPECIES,SPEN=N.SPEN,BYSLUG=N.BYSLUG,LOCBYSLUG=N.
 var HEART='HEARTSVG',PAWI='PAWSVG',PINI='PINSVG',ARR='ARRSVG';
 var $=function(s,r){return (r||document).querySelector(s);},$$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s));};
 function E(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
-function LS(nl,en){return '<span class="l-nl">'+E(nl)+'</span><span class="l-en">'+E(en)+'</span>';}
+function TX(nl,en){var t=TRX[nl]||[en,en],l=N.lang();return l==="en"?en:l==="fr"?t[0]:l==="de"?t[1]:nl;}
+function LS(nl,en){var t=TRX[nl]||[en,en];return '<span class="l-nl">'+E(nl)+'</span><span class="l-en">'+E(en)+'</span><span class="l-fr">'+E(t[0])+'</span><span class="l-de">'+E(t[1])+'</span>';}
 function en(n){return (SPEN&&SPEN[n])?SPEN[n][0]:n;}
 var main=document.getElementById("main"),info=document.getElementById("info"),html=document.documentElement;
 var SCR=["tldr","locaties","soorten","route","actueel","kleur","uitleg","rapporteer","favorieten","meer"];
@@ -247,6 +274,8 @@ var SCR=["tldr","locaties","soorten","route","actueel","kleur","uitleg","rapport
 function naam(id){if(id==="locaties-kop"){var k=$("#locaties > h2 .ctog > span");return k?k.innerHTML:naam("locaties");}var a=$('nav.toc a[href="#'+id+'"]');if(a)return a.innerHTML;
   var h=$("#"+id+" > h2 .ctog > span")||$("#"+id+" > h2");return h?h.innerHTML:"";}
 $$("[data-nw-lbl]").forEach(function(el){el.innerHTML=naam(el.getAttribute("data-nw-lbl"));});
+/* onderbalk: korte Franse naam voor de routeplanner (de volledige naam past niet) */
+$$('[data-nw="route"] .l-fr').forEach(function(x){x.textContent="Itinéraire";});
 
 /* ---------- kop: titel, ondertitel en datum van de gids op de foto; inleiding naar In het kort ---------- */
 var hd=$("#main > header"),ht=document.getElementById("nw-htxt");
@@ -254,8 +283,8 @@ var hd=$("#main > header"),ht=document.getElementById("nw-htxt");
 var stp=hd&&hd.querySelector(".stamp.hs-stamp");if(stp){var sw=document.createElement("div");sw.className="nw-datum";sw.appendChild(stp);$(".nw-stats").after(sw);}
 var fig=hd&&hd.querySelector("figure.hero");
 var cnt=$$("header .counts b");
-if(cnt[0])$$(".nw-nsp").forEach(function(s){s.innerHTML="<strong>"+cnt[0].textContent+"</strong> "+LS("soorten","species");});
-if(cnt[1])$$(".nw-nloc").forEach(function(s){s.innerHTML="<strong>"+cnt[1].textContent+"</strong> "+LS("locaties","locations");});
+if(cnt[0])$$(".nw-nsp").forEach(function(s){s.innerHTML="<strong>"+cnt[0].textContent+"</strong> "+(cnt[0].textContent.trim()==="1"?LS("soort","species"):LS("soorten","species"));});
+if(cnt[1])$$(".nw-nloc").forEach(function(s){s.innerHTML="<strong>"+cnt[1].textContent+"</strong> "+(cnt[1].textContent.trim()==="1"?LS("locatie","location"):LS("locaties","locations"));});
 var tb=$("#tldr > .cbody")||$("#tldr");
 if(hd&&tb){var lede=hd.querySelector(".lede"),co=hd.querySelector(".counts");if(co)tb.insertBefore(co,tb.firstChild);if(lede)tb.insertBefore(lede,tb.firstChild);}
 if(fig){if(tb){fig.className="nw-foto";tb.insertBefore(fig,tb.firstChild);}else fig.remove();}
@@ -263,7 +292,7 @@ var ab=$("#actueel > .cbody")||$("#actueel");if(ab){var cf=document.createElemen
 
 /* ---------- zoeken ---------- */
 var q=document.getElementById("nw-q"),res=document.getElementById("nw-res");
-function ph(){q.placeholder=N.lang()==="en"?"Search for a cat or a park":"Zoek een kat of een park";q.setAttribute("aria-label",q.placeholder);}
+function ph(){q.placeholder=TX("Zoek een kat of een park","Search for a cat or a park");q.setAttribute("aria-label",q.placeholder);}
 ph();new MutationObserver(ph).observe(html,{attributes:true,attributeFilter:["class","lang"]});
 function norm(s){return String(s).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/[’']/g,"");}
 var SEEN={};R.forEach(function(r){SEEN[r[0]]=1;});
@@ -302,7 +331,7 @@ function save(){try{localStorage.setItem("nw-fav",JSON.stringify(MEM));}catch(e)
 function has(k,s){return F()[k].indexOf(s)>=0;}
 function toggle(k,s){var a=F()[k],i=a.indexOf(s);if(i>=0)a.splice(i,1);else a.push(s);save();paint();}
 function lbl(on){return on?LS("In je favorieten","In your favourites"):LS("Bewaar als favoriet","Save as favourite");}
-function btn(k,s){var on=has(k,s);return '<button type="button" class="nw-heart" data-fk="'+k+'" data-fs="'+E(s)+'" aria-pressed="'+on+'" aria-label="'+(N.lang()==="en"?"Favourite":"Favoriet")+'">'+HEART+'</button>';}
+function btn(k,s){var on=has(k,s);return '<button type="button" class="nw-heart" data-fk="'+k+'" data-fs="'+E(s)+'" aria-pressed="'+on+'" aria-label="'+TX("Favoriet","Favourite")+'">'+HEART+'</button>';}
 document.addEventListener("click",function(e){var b=e.target.closest(".nw-hwrap")||e.target.closest(".nw-heart");if(!b||!b.dataset.fk)return;e.preventDefault();e.stopPropagation();toggle(b.dataset.fk,b.dataset.fs);});
 function renderFavs(){var f=F(),a=[],b=[];
   f.loc.forEach(function(s){var i=LOCBYSLUG[s];if(i===undefined)return;a.push('<li><a href="#locatie/'+s+'">'+E(LOCS[i][0])+'<small>'+E(LOCS[i][1])+'</small></a>'+btn("loc",s)+'</li>');});
@@ -372,7 +401,7 @@ paint();apply();
 """
 
 
-LANDEN = ["nederland"]
+LANDEN = ["nederland", "belgie", "luxemburg"]
 MARK = 'id="nw-htxt"'
 
 
@@ -409,7 +438,7 @@ def maak_land(land):
     doc = doc[:e] + exp + doc[e:]
     svg = "{" + ",".join(f'"{k}":{v!r}' for k, v in ICO.items()) + "}"
     js = (JS.replace("HEARTSVG", HEART_S).replace("PAWSVG", ICO["b-paw"]).replace("PINSVG", ICO["b-map"])
-          .replace("ARRSVG", ARROW).replace("var $=function", "var SVG=" + svg + ";\nvar $=function", 1))
+          .replace("ARRSVG", ARROW).replace("var $=function", "var SVG=" + svg + ";\nvar TRX=" + json.dumps(TR, ensure_ascii=False) + ";\nvar $=function", 1))
     i = doc.rindex("</body>")
     doc = doc[:i] + BAR + js + doc[i:]
     open(hier, "w", encoding="utf-8").write(doc)

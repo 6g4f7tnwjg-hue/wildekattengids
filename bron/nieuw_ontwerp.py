@@ -77,6 +77,7 @@ html:not(.nw-scherm) #nw-sbar{display:none!important}
 .nw-si{flex:none;display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%}
 .nw-si svg{width:22px;height:22px}
 .nw-si1{background:#F3E2D6;color:#8A4A2B}
+.nw-si1 svg{width:28px;height:28px}
 .nw-si2{background:#E1EADF;color:#2F4A33}
 .nw-stats a>span:last-child{display:inline-flex;align-items:baseline;gap:7px}
 .nw-stats a{display:inline-flex;align-items:baseline;gap:7px;color:var(--muted);text-decoration:none;font-size:1rem}
@@ -183,7 +184,7 @@ START = f"""
 <div id="start">
 <div class="nw-hero">
   <div class="nw-htxt" id="nw-htxt"></div>
-  <div class="nw-stats"><a href="#soorten"><span class="nw-si nw-si1"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.2 2.8 9 7.6q3-1 6 0l4.8-4.8q.9 4.6.4 9C20 17 16.6 20.6 12 20.6S4 17 3.8 11.8q-.5-4.4.4-9z"/><ellipse cx="8.9" cy="12.6" rx="1.2" ry="1.7" fill="#F3E2D6"/><ellipse cx="15.1" cy="12.6" rx="1.2" ry="1.7" fill="#F3E2D6"/><path d="M10.8 15.6h2.4L12 17z" fill="#F3E2D6"/></svg></span><span class="nw-nsp"></span></a><a href="#locaties"><span class="nw-si nw-si2">{ICO["b-map"]}</span><span class="nw-nloc"></span></a></div>
+  <div class="nw-stats"><a href="#soorten"><span class="nw-si nw-si1"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.4 2.6 8.6 7.3q3.4-1.1 6.8 0l5.2-4.7q1.2 4.8.6 9.4C21 17.4 17.2 21 12 21S3 17.4 2.8 12q-.6-4.6.6-9.4z"/><ellipse cx="8.9" cy="12.6" rx="1.2" ry="1.7" fill="#F3E2D6"/><ellipse cx="15.1" cy="12.6" rx="1.2" ry="1.7" fill="#F3E2D6"/><path d="M10.8 15.6h2.4L12 17z" fill="#F3E2D6"/></svg></span><span class="nw-nsp"></span></a><a href="#locaties"><span class="nw-si nw-si2">{ICO["b-map"]}</span><span class="nw-nloc"></span></a></div>
 </div>
 <div class="nw-search">
   <label>{ICO["search"]}<input type="search" id="nw-q" autocomplete="off" aria-controls="nw-res"></label>

@@ -172,7 +172,6 @@ html:not(.nw-scherm) #nw-sbar{display:none!important}
 START = f"""
 <div id="start">
 <div class="nw-hero">
-  <img src="{BASE}img/nieuw/kop-serval-2.webp" alt="Serval">
   <div class="nw-htxt" id="nw-htxt"></div>
 </div>
 <div class="nw-search">
@@ -232,7 +231,7 @@ $$("[data-nw-lbl]").forEach(function(el){el.innerHTML=naam(el.getAttribute("data
 /* ---------- kop: titel, ondertitel en datum van de gids op de foto; inleiding naar In het kort ---------- */
 var hd=$("#main > header"),ht=document.getElementById("nw-htxt");
 ["h1.mast",".hs-onder",".stamp.hs-stamp"].forEach(function(s){var x=hd&&hd.querySelector(s);if(x)ht.appendChild(x);});
-var cap=hd&&hd.querySelector("figure.hero p");if(cap){cap.className="nw-cred";cap.removeAttribute("style");$(".nw-hero").appendChild(cap);}
+var fig=hd&&hd.querySelector("figure.hero");if(fig)fig.remove();
 var cnt=$$("header .counts b");
 if(cnt[0])$$(".nw-nsp").forEach(function(s){s.innerHTML="<strong>"+cnt[0].textContent+"</strong> "+LS("soorten","species");});
 if(cnt[1])$$(".nw-nloc").forEach(function(s){s.innerHTML="<strong>"+cnt[1].textContent+"</strong> "+LS("locaties","locations");});

@@ -450,6 +450,39 @@ html.hs-geballeen .map .mk:not(.hs-jong){display:none}
 .lt-chip[aria-pressed="true"]{background:var(--hs-olive)!important;border-color:var(--hs-olive)!important}
 .hs-lg .hs-onz{display:inline-flex;align-items:center;gap:6px;color:var(--muted);margin-top:6px}
 .hs-lg .hs-onz i{width:12px;height:12px;border-radius:50%;border:2px solid var(--muted);display:inline-block}
+/* gidspagina overzichtelijker (17-10-2026) */
+/* rustiger: geen ringband-stipjes op kaartjes, een dunne lijn tussen de onderdelen */
+.loclist.cards li::before{display:none!important}
+.loclist.cards li{background:var(--card)!important;border-radius:12px!important}
+section::before,.board::before,.ip-sec::before,footer::before{display:none!important}
+.wrap>footer{border-top:1px solid var(--line)!important}
+.wrap>section,.wrap>.board{border-top:1px solid var(--line)!important}
+/* In het kort: alleen de korte punten, de tabel Totaaloverzicht vervalt */
+.hs-weg{display:none!important}
+/* Plan je bezoek: alleen de vinklijst; de teller toont wat je nog mist */
+.rt-out{display:none!important}
+.rt-grid{grid-template-columns:minmax(0,1fr)!important;max-width:640px}
+.rt-score{top:calc(env(safe-area-inset-top,0px) + var(--hs-head) + 54px)!important;z-index:20!important}
+.rt-score .hs-mist{display:block;margin-top:6px;color:var(--ink);font-size:14px;line-height:1.4}
+.rt-score .hs-mist b{font-size:14px!important;font-weight:700!important}
+/* hoofdtabel op de telefoon: per soort, één korte regel per locatie, tik voor details */
+@media (max-width:760px){
+  .reg tr{position:relative;padding:9px 34px 9px 12px!important;cursor:pointer}
+  .reg tr.hs-grp{border-top:2px solid var(--line);margin-top:6px;padding-top:12px!important}
+  .reg tr.hs-same td.sp{display:none!important}
+  .reg td.sp{font-family:var(--hs-display);font-weight:800;font-size:1.15rem!important;margin-bottom:2px}
+  .reg tr:not(.hs-open) td:nth-child(2),.reg tr:not(.hs-open) td:nth-child(n+6){display:none!important}
+  .reg td.hs-unk{display:none!important}
+  .reg td:nth-child(3),.reg td:nth-child(4){display:inline!important}
+  .reg td:nth-child(4)::before{content:" · "!important;font-size:inherit!important;font-family:inherit!important}
+  .reg td:nth-child(4){color:var(--muted)}
+  .reg td:nth-child(5){margin-top:2px}
+  .reg td:nth-child(5)::before{content:none!important}
+  .reg tr.hs-open td:nth-child(2){margin-top:6px}
+  .reg tr::after{content:"";position:absolute;right:14px;top:calc(50% - 6px);width:8px;height:8px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(45deg)}
+  .reg tr.hs-grp::after{top:calc(50% + 6px)}
+  .reg tr.hs-open::after{transform:rotate(-135deg)}
+}
 /* voet met Ko-fi */
 .hs-foot{border-top:1px solid var(--line);margin-top:24px;background:var(--card);font-family:var(--hs-body);font-size:.95rem;color:var(--muted)}
 .hs-foot .hs-wrap{padding-top:22px;padding-bottom:40px}

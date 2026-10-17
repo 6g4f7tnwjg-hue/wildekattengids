@@ -490,6 +490,39 @@ html.hs-geballeen .map .mk:not(.hs-jong){display:none}
 .lt-chip[aria-pressed="true"]{background:var(--hs-olive)!important;border-color:var(--hs-olive)!important}
 .hs-lg .hs-onz{display:inline-flex;align-items:center;gap:6px;color:var(--muted);margin-top:6px}
 .hs-lg .hs-onz i{width:12px;height:12px;border-radius:50%;border:2px solid var(--muted);display:inline-block}
+/* gidspagina overzichtelijker (17-10-2026) */
+/* rustiger: geen ringband-stipjes op kaartjes, een dunne lijn tussen de onderdelen */
+.loclist.cards li::before{display:none!important}
+.loclist.cards li{background:var(--card)!important;border-radius:12px!important}
+section::before,.board::before,.ip-sec::before,footer::before{display:none!important}
+.wrap>footer{border-top:1px solid var(--line)!important}
+.wrap>section,.wrap>.board{border-top:1px solid var(--line)!important}
+/* In het kort: alleen de korte punten, de tabel Totaaloverzicht vervalt */
+.hs-weg{display:none!important}
+/* Plan je bezoek: alleen de vinklijst; de teller toont wat je nog mist */
+.rt-out{display:none!important}
+.rt-grid{grid-template-columns:minmax(0,1fr)!important;max-width:640px}
+.rt-score{top:calc(env(safe-area-inset-top,0px) + var(--hs-head) + 54px)!important;z-index:20!important}
+.rt-score .hs-mist{display:block;margin-top:6px;color:var(--ink);font-size:14px;line-height:1.4}
+.rt-score .hs-mist b{font-size:14px!important;font-weight:700!important}
+/* hoofdtabel op de telefoon: per soort, één korte regel per locatie, tik voor details */
+@media (max-width:760px){
+  .reg tr{position:relative;padding:9px 34px 9px 12px!important;cursor:pointer}
+  .reg tr.hs-grp{border-top:2px solid var(--line);margin-top:6px;padding-top:12px!important}
+  .reg tr.hs-same td.sp{display:none!important}
+  .reg td.sp{font-family:var(--hs-display);font-weight:800;font-size:1.15rem!important;margin-bottom:2px}
+  .reg tr:not(.hs-open) td:nth-child(2),.reg tr:not(.hs-open) td:nth-child(n+6){display:none!important}
+  .reg td.hs-unk{display:none!important}
+  .reg td:nth-child(3),.reg td:nth-child(4){display:inline!important}
+  .reg td:nth-child(4)::before{content:" · "!important;font-size:inherit!important;font-family:inherit!important}
+  .reg td:nth-child(4){color:var(--muted)}
+  .reg td:nth-child(5){margin-top:2px}
+  .reg td:nth-child(5)::before{content:none!important}
+  .reg tr.hs-open td:nth-child(2){margin-top:6px}
+  .reg tr::after{content:"";position:absolute;right:14px;top:calc(50% - 6px);width:8px;height:8px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(45deg)}
+  .reg tr.hs-grp::after{top:calc(50% + 6px)}
+  .reg tr.hs-open::after{transform:rotate(-135deg)}
+}
 /* voet met Ko-fi */
 .hs-foot{border-top:1px solid var(--line);margin-top:24px;background:var(--card);font-family:var(--hs-body);font-size:.95rem;color:var(--muted)}
 .hs-foot .hs-wrap{padding-top:22px;padding-bottom:40px}
@@ -4117,6 +4150,48 @@ var rq=0;function alles(){rq=0;document.querySelectorAll(".map svg").forEach(fun
 new MutationObserver(function(){if(!rq)rq=requestAnimationFrame(function(){alles();chips();});}).observe(document.body,{childList:true,subtree:true});
 new MutationObserver(function(){document.querySelectorAll(".map svg[data-hs-lg]").forEach(legenda);}).observe(document.documentElement,{attributes:true,attributeFilter:["lang","class"]});
 alles();
+})();
+</script>
+<script>
+(function(){
+/* gidspagina overzichtelijker (17-10-2026): kaart en overzicht open bovenaan, compacte hoofdtabel, korter plan, hoofdletters */
+var ONB=/^(onbekend|unknown|inconnu|inconnue|unbekannt|sconosciuto|non noto|desconocido|desconhecido)$/i;
+var MIST={nl:"Nog niet:",en:"Not yet:",fr:"Pas encore :",de:"Noch nicht:",it:"Non ancora:",es:"Aún no:",pt:"Ainda não:"};
+function taal(){var l=(document.documentElement.lang||"nl").slice(0,2);return MIST[l]?l:"nl";}
+function open(b){var t=b&&b.querySelector(":scope > h2 .ctog");if(t&&t.getAttribute("aria-expanded")==="false")t.click();}
+var klaar=false;
+function opbouw(){if(klaar)return;var w=document.getElementById("main")||document.querySelector(".wrap"),nav=document.querySelector("nav.toc"),loc=document.getElementById("locaties"),sr=document.getElementById("soorten");
+  if(!w||!nav||!loc||!loc.querySelector(".ctog"))return;klaar=true;
+  /* kaart (Per locatie) en Overzicht direct onder de kop, allebei open */
+  nav.insertAdjacentElement("afterend",loc);if(sr)loc.insertAdjacentElement("afterend",sr);
+  open(loc);open(sr);
+  /* de lange lijst met kaartjes onder de kaart ingeklapt */
+  loc.querySelectorAll(":scope > .cbody > details[open]").forEach(function(d){d.open=false;});
+  /* tabbladen in dezelfde volgorde */
+  var al=nav.querySelector('a[href="#locaties"]'),as=nav.querySelector('a[href="#soorten"]');
+  if(al)nav.insertBefore(al,nav.firstChild);if(as&&al)al.insertAdjacentElement("afterend",as);
+  /* In het kort: tabel Totaaloverzicht weg (alleen de korte punten blijven) */
+  document.querySelectorAll("#tldr .tscroll").forEach(function(t){if(!t.querySelector(".tw-n"))return;t.classList.add("hs-weg");var h=t.previousElementSibling;if(h&&h.tagName==="H3"&&!h.classList.contains("rg-kop"))h.classList.add("hs-weg");});
+  rijen();mist();hoofd();
+  var rows=document.getElementById("rows");if(rows)new MutationObserver(rijen).observe(rows,{childList:true});
+  var sp=document.getElementById("rt-sp");if(sp)new MutationObserver(mist).observe(sp,{childList:true,subtree:true});
+  new MutationObserver(function(){mist();}).observe(document.documentElement,{attributes:true,attributeFilter:["lang","class"]});}
+/* hoofdtabel: groepjes per soort, "onbekend" weg, tik op een regel voor details */
+function rijen(){var prev=null;document.querySelectorAll("#rows > tr").forEach(function(tr){var sp=tr.querySelector("td.sp"),k=sp?sp.textContent.trim():"";
+  tr.classList.toggle("hs-same",k===prev);tr.classList.toggle("hs-grp",k!==prev);prev=k;
+  tr.querySelectorAll("td").forEach(function(td){if(ONB.test(td.textContent.trim()))td.classList.add("hs-unk");});});}
+document.addEventListener("click",function(e){var tr=e.target.closest&&e.target.closest("#rows > tr");if(!tr||e.target.closest("a"))return;
+  if(!matchMedia("(max-width:760px)").matches)return;tr.classList.toggle("hs-open");});
+/* Plan je bezoek: welke bevestigde soorten je met je keuze nog mist */
+function mist(){var sc=document.getElementById("rt-score"),sp=document.getElementById("rt-sp");if(!sc||!sp)return;
+  var oud=sc.querySelector(".hs-mist");if(oud)oud.remove();
+  var b=sc.querySelector("b"),m=sc.textContent.replace(b?b.textContent:"","").match(/\d+/),gezien=b?+b.textContent:0,tot=m?+m[0]:0;
+  if(!gezien||gezien>=tot)return;
+  var nog=[].slice.call(sp.querySelectorAll(".rchip:not(.on)")).map(function(c){return (c.firstChild&&c.firstChild.nodeType===3?c.firstChild.textContent:c.textContent).trim();}).slice(0,tot-gezien);
+  if(nog.length)sc.insertAdjacentHTML("beforeend",'<span class="hs-mist"><b>'+MIST[taal()]+'</b> '+nog.map(function(x){return x.replace(/[<&]/g,"");}).join(", ")+'</span>');}
+/* locatiekaartjes: tekst begint met een hoofdletter */
+function hoofd(){document.querySelectorAll(".loclist.cards li > span:not(.plc)").forEach(function(s){var n=s.firstChild;if(n&&n.nodeType===3&&/^\s*[a-zà-ÿ]/.test(n.textContent))n.textContent=n.textContent.replace(/^(\s*)(.)/,function(_,a,c){return a+c.toUpperCase();});});}
+opbouw();if(!klaar){document.addEventListener("DOMContentLoaded",opbouw);var n=0,iv=setInterval(function(){opbouw();if(klaar||++n>40)clearInterval(iv);},100);}
 })();
 </script>
 </body></html>

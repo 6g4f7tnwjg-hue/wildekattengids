@@ -382,8 +382,8 @@ html:not(.nw-scherm) #nw-sbar{display:none!important}
 .nw-hero{position:relative;margin:12px 0 0;border-radius:22px;overflow:hidden;background:var(--card);border:1px solid var(--line);box-shadow:var(--nw-shadow)}
 .nw-hero>img{display:block;width:100%;height:clamp(165px,44vw,320px);object-fit:cover;object-position:50% 32%}
 .nw-htxt{padding:14px 18px 0}
-.nw-stats{display:flex;gap:26px;padding:14px 18px 0}
-.nw-datum{padding:6px 18px 44px}
+.nw-stats{display:grid;grid-template-columns:repeat(2,minmax(0,240px));gap:12px;margin:14px 18px 0;padding-top:14px;border-top:1px solid var(--line)}
+.nw-datum{padding:8px 18px 16px}
 .nw-stats a{display:inline-flex;align-items:baseline;gap:7px;color:var(--muted);text-decoration:none;font-size:1rem}
 .nw-stats a strong{font-family:var(--hs-display);font-weight:800;font-size:clamp(1.9rem,8vw,2.4rem);line-height:1;color:var(--ink,#22301f)}
 .nw-htxt h1.mast.hs-kop{margin:0 0 2px!important;font-size:clamp(1.9rem,8.5vw,3rem)!important}
@@ -391,7 +391,7 @@ html:not(.nw-scherm) #nw-sbar{display:none!important}
 .nw-datum .stamp.hs-stamp{display:block!important;background:none!important;padding:0!important;margin:0!important;color:var(--muted)!important;font-size:.92rem!important}
 .nw-cred{position:absolute;top:10px;right:12px;z-index:1;margin:0!important;font-size:.72rem!important;color:#FFF8EC!important;background:rgba(20,24,14,.5);padding:2px 9px;border-radius:99px;max-width:none!important}
 /* zoeken */
-.nw-search{position:relative;margin:-26px 10px 0;z-index:5}
+.nw-search{position:relative;margin:14px 0 0;z-index:5}
 .nw-search label{display:flex;align-items:center;gap:10px;background:#FFFDF8;border:1px solid var(--line);border-radius:99px;padding:0 18px;height:54px;box-shadow:var(--nw-shadow)}
 .nw-search label:focus-within{border-color:var(--nw-green);box-shadow:0 0 0 2px color-mix(in srgb,var(--nw-green) 25%,transparent),var(--nw-shadow)}
 .nw-search label svg{width:22px;height:22px;flex:none;color:var(--ink)}
@@ -478,7 +478,7 @@ html:not(.nw-scherm) #nw-sbar{display:none!important}
   html body #main,html body #info{margin-top:54px}
   .nw-hero>img{height:340px}
   .nw-quick{gap:16px}.nw-tiles{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.nw-tile{min-height:190px;padding:18px}
-  .nw-search{margin:-28px 60px 0}
+  .nw-search{margin:16px 0 0}
 }
 @media (max-width:380px){.nw-quick{gap:7px}.nw-quick a{padding:12px 2px 10px;border-radius:20px}.nw-tiles{gap:9px}.nw-tile{padding:12px;min-height:130px}}
 </style>

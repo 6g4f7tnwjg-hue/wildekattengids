@@ -68,5 +68,5 @@ Topspot-regel in de bouw: plek met score 5 op een soortpagina = topspot; score 4
 - Testbranch `spottersgids-fotos-los` (proef losse foto's in het artifact) kan weg; verwijderen werd in de sessie geblokkeerd. Gebruiker kan hem zelf op GitHub verwijderen.
 - Wolkentijgerkat: op 16-10-2026 bij Noord-Amerika weggehaald (`REMOVE_CONT` in `build.py`); staat alleen nog bij Midden- & Zuid-Amerika.
 - Leeuw bij Ndutu staat niet op de kaart (leeuwenpagina neemt Ndutu niet op); Ndutu is topspot voor de cheetah.
-- Iriomote (Bengaalse kat, ~100 dieren) staat erin met score 2 – gebruiker kan vragen om te schrappen.
+- Iriomote (Bengaalse kat, ~100 dieren, score 2): uitgelegd (verkeer is hoofdbedreiging, tekst zegt stapvoets rijden); gebruiker 17-10-2026: laten staan.
 - Klein lay-outpuntje gezien (niet gevraagd): op brede schermen loopt "Kans 3 · redelijke kans" in het samenvattingsvak van de soortpagina iets buiten het vak.

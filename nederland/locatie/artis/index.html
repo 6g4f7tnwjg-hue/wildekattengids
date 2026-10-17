@@ -24,6 +24,8 @@
 
 <style id="nw-css">
 /* ---- nieuw ontwerp (bron/nieuw_ontwerp.py) ---- */
+/* lange weblinks (bijv. bij "Website") laten afbreken in plaats van de pagina te verbreden */
+#info dd,#info dd a{overflow-wrap:anywhere}
 /* talen die een pagina niet heeft, nooit tonen */
 html:not(.fr) .l-fr,html:not(.de) .l-de,html:not(.it) .l-it,html:not(.es) .l-es,html:not(.pt) .l-pt,html.fr .l-nl,html.de .l-nl,html.it .l-nl,html.es .l-nl,html.pt .l-nl{display:none!important}
 :root:root{--paper:#F5F0E4;--card:#FBF8F1;--ink:#22301F;--muted:#5E6656;--line:#E2DACB;--hs-olive:#2F4A32;--hs-accent:#A65A35;--gold:#A65A35;--bark:#2F4A32;--tan:#FBF8F1;--tan-deep:#E2DACB;

@@ -394,9 +394,9 @@ function open(b){var t=b&&b.querySelector(":scope > h2 .ctog");if(t&&t.getAttrib
 var klaar=false;
 function opbouw(){if(klaar)return;var w=document.getElementById("main")||document.querySelector(".wrap"),nav=document.querySelector("nav.toc"),loc=document.getElementById("locaties"),sr=document.getElementById("soorten");
   if(!w||!nav||!loc||!loc.querySelector(".ctog"))return;klaar=true;
-  /* kaart (Per locatie) en Overzicht direct onder de kop, allebei open */
-  nav.insertAdjacentElement("afterend",loc);if(sr)loc.insertAdjacentElement("afterend",sr);
-  open(loc);open(sr);
+  /* volgorde: In het kort, Per locatie (kaart), Overzicht; alles ingeklapt (17-10-2026) */
+  var tl=document.getElementById("tldr"),na=tl||nav;if(tl)nav.insertAdjacentElement("afterend",tl);
+  na.insertAdjacentElement("afterend",loc);if(sr)loc.insertAdjacentElement("afterend",sr);
   /* de lange lijst met kaartjes onder de kaart ingeklapt */
   loc.querySelectorAll(":scope > .cbody > details[open]").forEach(function(d){d.open=false;});
   /* tabbladen in dezelfde volgorde */

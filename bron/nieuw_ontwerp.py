@@ -70,7 +70,10 @@ html:not(.nw-scherm) #nw-sbar{display:none!important}
 /* kop met de serval-foto */
 .nw-hero{position:relative;margin:12px 0 0;border-radius:22px;overflow:hidden;background:var(--card);border:1px solid var(--line);box-shadow:var(--nw-shadow)}
 .nw-hero>img{display:block;width:100%;height:clamp(165px,44vw,320px);object-fit:cover;object-position:50% 32%}
-.nw-htxt{padding:14px 18px 44px}
+.nw-htxt{padding:14px 18px 0}
+.nw-stats{display:flex;gap:26px;padding:10px 18px 44px}
+.nw-stats a{display:inline-flex;align-items:baseline;gap:7px;color:var(--muted);text-decoration:none;font-size:1rem}
+.nw-stats a strong{font-family:var(--hs-display);font-weight:800;font-size:clamp(1.9rem,8vw,2.4rem);line-height:1;color:var(--ink,#22301f)}
 .nw-htxt h1.mast.hs-kop{margin:0 0 2px!important;font-size:clamp(1.9rem,8.5vw,3rem)!important}
 .nw-htxt .hs-onder{margin:0!important;font-size:clamp(1rem,4.2vw,1.2rem)!important}
 .nw-htxt .stamp.hs-stamp{display:block!important;background:none!important;padding:0!important;margin:4px 0 0!important;color:var(--muted)!important;font-size:.92rem!important}
@@ -173,6 +176,7 @@ START = f"""
 <div id="start">
 <div class="nw-hero">
   <div class="nw-htxt" id="nw-htxt"></div>
+  <div class="nw-stats"><a href="#soorten" class="nw-nsp"></a><a href="#locaties" class="nw-nloc"></a></div>
 </div>
 <div class="nw-search">
   <label>{ICO["search"]}<input type="search" id="nw-q" autocomplete="off" aria-controls="nw-res"></label>
@@ -181,8 +185,8 @@ START = f"""
 <nav class="nw-tiles" aria-label="Menu">
   <a class="nw-tile nw-t4" href="#tldr"><span class="nw-ti">{ICO["tbl"]}</span><span><b><span data-nw-lbl="tldr"></span>{ARROW}</b></span></a>
   <a class="nw-tile nw-t3" href="#actueel"><span class="nw-ti">{ICO["news"]}</span><span><b><span data-nw-lbl="actueel"></span>{ARROW}</b></span></a>
-  <a class="nw-tile nw-t1" href="#soorten"><span class="nw-ti">{ICO["b-paw"]}</span><span><b><span data-nw-lbl="soorten"></span>{ARROW}</b><small class="nw-cnt nw-nsp"></small></span></a>
-  <a class="nw-tile nw-t2" href="#locaties"><span class="nw-ti">{ICO["b-map"]}</span><span><b><span data-nw-lbl="locaties-kop"></span>{ARROW}</b><small class="nw-cnt nw-nloc"></small></span></a>
+  <a class="nw-tile nw-t1" href="#soorten"><span class="nw-ti">{ICO["b-paw"]}</span><span><b><span data-nw-lbl="soorten"></span>{ARROW}</b></span></a>
+  <a class="nw-tile nw-t2" href="#locaties"><span class="nw-ti">{ICO["b-map"]}</span><span><b><span data-nw-lbl="locaties-kop"></span>{ARROW}</b></span></a>
 </nav>
 <nav class="nw-quick" aria-label="Menu">
   <a href="#kleur"><span class="nw-qi">{ICO["dna"]}</span><b data-nw-lbl="kleur"></b></a>

@@ -94,17 +94,24 @@ koppen();new MutationObserver(function(){koppen();}).observe(document.body,{chil
 var HT=window.__HST;if(!HT)return;
 var NS="http://www.w3.org/2000/svg",FILT={};
 function taal(){var l=(document.documentElement.lang||"nl").slice(0,2);return HT.nm[l]?l:(document.documentElement.classList.contains("en")?"en":"nl");}
+var GEBON=false,GEBALL=false;
+function isJong(mk){var lab=mk.getAttribute("aria-label")||"";return (HT.jong||[]).some(function(n){return lab===n||lab.indexOf(n+", ")===0;});}
+function gebStand(){document.documentElement.classList.toggle("hs-geb",GEBON);document.documentElement.classList.toggle("hs-geballeen",GEBON&&GEBALL);
+  document.querySelectorAll(".map svg").forEach(function(s){if(s.__zk)plan(s);});document.querySelectorAll(".map svg[data-hs-lg]").forEach(legenda);}
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest("[data-hsgeb]");if(!b)return;
+  if(b.dataset.hsgeb==="aan"){GEBON=!GEBON;if(!GEBON)GEBALL=false;}else GEBALL=!GEBALL;gebStand();});
 function typeOf(mk){var lab=mk.getAttribute("aria-label")||"",best=-1,bl=0;
   for(var k in HT.loc){if((lab===k||lab.indexOf(k+", ")===0)&&k.length>bl){best=HT.loc[k];bl=k.length;}}return best;}
 function icoon(k){return '<svg viewBox="-8 -8 16 16" aria-hidden="true" style="color:'+(k<0?"#8B8676":HT.col[k])+'"><circle r="8" fill="currentColor"/><g fill="#F0EEE2" style="color:#F0EEE2">'+(k<0?'<circle r="2"/>':HT.gly[k])+'</g></svg>';}
 function stijl(svg){var nieuw=false;
   svg.querySelectorAll(".mk:not([data-hs])").forEach(function(mk){var d=mk.querySelector(".dot");if(!d)return;nieuw=true;
-    var k=typeOf(mk);mk.setAttribute("data-hs",String(k));mk.style.color=k<0?"#8B8676":HT.col[k];
+    var k=typeOf(mk);mk.setAttribute("data-hs",String(k));if(isJong(mk))mk.classList.add("hs-jong");mk.style.color=k<0?"#8B8676":HT.col[k];
     var r=(+d.getAttribute("r")||6)*HT.groot;d.setAttribute("r",r.toFixed(2));
     var ri=mk.querySelector(".ring"),hi=mk.querySelector(".hit");if(ri)ri.setAttribute("r",(r+3.5).toFixed(2));if(hi)hi.setAttribute("r",Math.max(+hi.getAttribute("r")||0,r+3).toFixed(2));
     var g=document.createElementNS(NS,"g");g.setAttribute("class","hs-gl");
     g.setAttribute("transform","translate("+d.getAttribute("cx")+" "+d.getAttribute("cy")+") scale("+(r/8*.95).toFixed(3)+")");
-    g.innerHTML=k<0?'<circle r="2"/>':HT.gly[k];d.parentNode.insertBefore(g,d.nextSibling);});
+    g.innerHTML=k<0?'<circle r="2"/>':HT.gly[k];d.parentNode.insertBefore(g,d.nextSibling);
+    if(mk.classList.contains("hs-jong")){var br=document.createElementNS(NS,"circle");br.setAttribute("class","hs-bring");br.setAttribute("cx",d.getAttribute("cx"));br.setAttribute("cy",d.getAttribute("cy"));br.setAttribute("r",(r+2.6).toFixed(2));d.parentNode.insertBefore(br,d);}});
   if(nieuw||!svg.dataset.hsLg)legenda(svg);
   zk(svg);if(nieuw)plan(svg);}
 /* inzoomen (knoppen, twee vingers, ctrl+scrollen) en groepjes: iconen die elkaar raken worden één rondje met een getal */
@@ -162,8 +169,8 @@ function groepen(svg){var st=zk(svg);if(!st)return;st.busy=true;var u=st.v[2]/st
     out.forEach(function(g){var d=(g.x-c[0])*(g.x-c[0])+(g.y-c[1])*(g.y-c[1]);if(d<bd){bd=d;best=g;}});
     if(best){best.m.push(m);}else out.push({x:c[0],y:c[1],m:[m]});});
   var html="";out.forEach(function(g){if(g.m.length<2)return;var x=0,y=0;g.m.forEach(function(m){var c=midden(m);x+=c[0];y+=c[1];m.classList.add("hs-clh");});
-    x/=g.m.length;y/=g.m.length;var n=g.m.length,rr=n<10?10.5:12.5;
-    html+='<g class="hs-cl" role="button" tabindex="0" data-x="'+x.toFixed(1)+'" data-y="'+y.toFixed(1)+'" data-i="'+g.m.map(function(m){return m.dataset.i;}).join(",")+'" transform="translate('+x.toFixed(1)+' '+y.toFixed(1)+') scale('+u.toFixed(4)+')"><circle class="hs-clh-hit" r="'+(rr+4)+'"/><circle class="hs-cld" r="'+rr+'"/><text dy=".36em">'+n+'</text></g>';});
+    x/=g.m.length;y/=g.m.length;var n=g.m.length,rr=n<10?10.5:12.5,jg=GEBON&&g.m.some(function(m){return m.classList.contains("hs-jong");});
+    html+='<g class="hs-cl" role="button" tabindex="0" data-x="'+x.toFixed(1)+'" data-y="'+y.toFixed(1)+'" data-i="'+g.m.map(function(m){return m.dataset.i;}).join(",")+'" transform="translate('+x.toFixed(1)+' '+y.toFixed(1)+') scale('+u.toFixed(4)+')"><circle class="hs-clh-hit" r="'+(rr+4)+'"/><circle class="hs-cld" r="'+rr+'"/><text dy=".36em">'+n+'</text>'+(jg?'<circle class="hs-badge" cx="'+(rr*.72).toFixed(1)+'" cy="'+(-rr*.72).toFixed(1)+'" r="3.8"/>':"")+'</g>';});
   if(html)svg.insertAdjacentHTML("beforeend",html);
   st.busy=false;}
 function openGroep(svg,g){var st=svg.__zk,ids=g.dataset.i.split(","),x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;
@@ -173,7 +180,9 @@ function openGroep(svg,g){var st=svg.__zk,ids=g.dataset.i.split(","),x0=1e9,y0=1
 document.addEventListener("keydown",function(e){var g=e.target.closest&&e.target.closest(".hs-cl");if(g&&(e.key==="Enter"||e.key===" ")){e.preventDefault();openGroep(g.closest("svg"),g);}});
 function legenda(svg){var box=svg.closest(".map"),lg=box&&box.querySelector(".maplegend");if(!lg)return;svg.dataset.hsLg="1";
   var l=taal(),onz=svg.querySelector(".mk.w")!==null;lg.classList.add("hs-lg");
-  lg.innerHTML='<span class="hs-lgt">'+HT.uit[l]+'</span>'+(onz?'<span class="hs-onz"><i></i>'+HT.onz[l]+'</span>':"");
+  var nj=svg.querySelectorAll(".mk.hs-jong").length;
+  lg.innerHTML=(nj?'<span class="hs-gebrow"><button type="button" class="hs-gebbtn" data-hsgeb="aan" aria-pressed="'+GEBON+'"><span class="sw"></span>'+HT.geb[l]+' <span class="n">'+nj+'</span></button>'+(GEBON?'<button type="button" class="hs-gebx" data-hsgeb="alleen" aria-pressed="'+GEBALL+'">'+(GEBALL?HT.terug[l]:HT.alleen[l])+'</button>':"")+'</span>':"")+
+    '<span class="hs-lgt">'+HT.uit[l]+'</span>'+(onz?'<span class="hs-onz"><i></i>'+HT.onz[l]+'</span>':"");
   chips();}
 /* de typeknoppen boven de kaart (bron/locatietypes.js) krijgen het icoon van hun type */
 function chips(){var l=taal();document.querySelectorAll(".lt-chip").forEach(function(b){var t=b.dataset.t;if(!t){b.classList.add("hs-alle");return;}

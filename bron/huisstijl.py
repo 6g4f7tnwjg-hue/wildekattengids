@@ -72,7 +72,7 @@ def bovenbalk(langs, base, taal=True):
             + ('<span id="hs-lang"></span>' if taal else "") +
             f'<button type="button" class="hs-ico" id="hs-menu-btn" aria-expanded="false" aria-controls="hs-menu" aria-label="Menu">{MENU}<span class="t">Menu</span></button></div>'
             f'<div class="hs-drop" id="hs-menu" hidden><div class="hs-wrap"><nav aria-label="Menu"><div>{links(["kaart", "landen", "soorten", "top10"])}</div>'
-            f'<div>{links(["geboren", "perpark", "typen", "over"])}<div class="hs-meer"><span class="hs-lbl">{t("meer", langs)}</span>{spot(langs, base)}'
+            f'<div>{links(["geboren", "perpark", "typen"])}<div class="hs-meer"><span class="hs-lbl">{t("meer", langs)}</span><a href="{h("over")}">{t("over", langs)}</a>{spot(langs, base)}'
             f'<a href="https://ko-fi.com/katalogue" target="_blank" rel="noopener">{t("kofi", langs)} ☕</a></div></div></nav></div></div></div>')
 
 def voet(langs):

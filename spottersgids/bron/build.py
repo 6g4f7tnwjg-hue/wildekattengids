@@ -152,6 +152,8 @@ tpl = tpl[:m.start()] + '<link rel="stylesheet" href="style.css?v=__CSSVER__">' 
 m = re.search(r"<script>\n?('use strict';.*?)</script>", tpl, re.S); js = m.group(1)
 tpl = tpl[:m.start()] + '<script src="app.js?v=__JSVER__"></script>' + tpl[m.end():]
 open(J('style.css'), 'w', encoding='utf-8').write(css)
+# taalmenu (wereldbol met de huidige taal), hetzelfde script als de Bezoekersgids
+js = js + '\n' + open(J('..', 'bron', 'taalmenu.js'), encoding='utf-8').read()
 open(J('app.js'), 'w', encoding='utf-8').write(js)
 ver = lambda t: hashlib.md5(t.encode()).hexdigest()[:8]
 tpl = tpl.replace('__VER__', ver(datajs)).replace('__CSSVER__', ver(css)).replace('__JSVER__', ver(js))

@@ -43,7 +43,7 @@
 }
 *,*::before,*::after{box-sizing:border-box}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
-body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55;-webkit-text-size-adjust:100%}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--paper)}
 a{color:inherit;text-decoration-color:color-mix(in srgb,var(--accent) 60%,transparent);text-underline-offset:3px}
 a:hover{color:var(--accent)}
@@ -74,21 +74,31 @@ p{margin:0}
 .moremenu{position:absolute;right:0;top:calc(100% + 6px);background:var(--paper);border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow);padding:6px;min-width:220px;display:none;flex-direction:column}
 .more.open .moremenu{display:flex}
 .moremenu .mlbl{display:none}
-.lang{display:flex;border:1px solid var(--line);border-radius:99px;padding:2px;flex:none}
-.lang button{border:0;background:none;padding:4px 10px;border-radius:99px;font-family:var(--label);font-weight:600;letter-spacing:.06em;cursor:pointer;color:var(--muted)}
-.lang button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
-.menubtn{display:none;border:1px solid var(--line);background:none;border-radius:8px;padding:6px 9px;cursor:pointer;flex:none}
+.langsw{flex:none;position:relative;display:inline-flex;border:1px solid var(--line);border-radius:99px;padding:2px}
+.langsw button{border:0;background:none;padding:4px 10px;border-radius:99px;font-family:var(--label);font-weight:600;letter-spacing:.06em;cursor:pointer;color:var(--muted)}
+.langsw button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.top .langsw.lm{border:0;padding:0}
+.top .lm .lm-btn{font-family:var(--label);font-size:15px;letter-spacing:.06em;color:var(--ink);border:1px solid var(--line);border-radius:99px;height:36px;padding:0 11px}
+.top .lm .lm-btn:hover,.top .lm .lm-btn[aria-expanded="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.top .lm .lm-pop{background:var(--paper);border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow);top:calc(100% + 8px)}
+.top .lm .lm-pop button{font-family:var(--body);font-weight:500;font-size:16px;color:var(--ink);letter-spacing:0}
+.top .lm .lm-pop button:hover,.top .lm .lm-pop button:focus-visible{background:color-mix(in srgb,var(--accent) 12%,transparent)}
+.top .lm .lm-pop button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.menubtn{display:none;border:1px solid var(--line);background:none;border-radius:8px;height:36px;min-width:38px;padding:0 9px;cursor:pointer;flex:none;color:var(--ink)}
 .menubtn svg{display:block;width:20px;height:20px}
+.menubtn[aria-expanded="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.nav .nico{display:none}
 @media (max-width:820px){
-  .menubtn{display:block}
+  .menubtn{display:inline-flex;align-items:center;justify-content:center}
   .nav{position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;background:var(--paper);border-bottom:1px solid var(--line);padding:6px var(--gutr) 14px var(--gut);margin:0;display:none;box-shadow:var(--shadow)}
   .nav.open{display:flex}
-  .nav a{padding:12px 6px;font-size:1.08rem;border-bottom:1px solid var(--line);border-radius:0}
+  .nav a{display:flex;align-items:center;gap:10px;padding:12px 6px;font-size:1.08rem;border-bottom:1px solid var(--line);border-radius:0}
+  .nav .nico{display:block;flex:none;width:20px;height:20px;color:var(--accent)}
   .morebtn{display:none}
   .moremenu{display:flex;position:static;border:0;box-shadow:none;background:none;padding:0;min-width:0}
   .moremenu .mlbl{display:block;padding:14px 6px 2px}
   .moremenu a{font-size:1rem;color:var(--muted)}
-  .lang{margin-left:auto}
+  .langsw{margin-left:auto}
 }
 
 /* sections */
@@ -383,8 +393,8 @@ figcaption{font-size:.82rem;color:var(--muted);margin-top:6px;overflow-wrap:anyw
       <span><b id="brandName">Spottersgids</b><small id="brandSub">wilde katten</small></span>
     </a>
     <nav class="nav" id="nav"></nav>
-    <div class="lang" role="group" aria-label="Taal / Language">
-      <button type="button" id="langNl" data-l="nl">NL</button><button type="button" id="langEn" data-l="en">EN</button>
+    <div class="langsw" role="group" aria-label="Taal / Language">
+      <button type="button" id="langNl" data-setlang="nl">NL</button><button type="button" id="langEn" data-setlang="en">EN</button>
     </div>
     <button type="button" class="menubtn" id="menuBtn" aria-expanded="false" aria-controls="nav" aria-label="Menu"><svg viewBox="0 0 20 20"><path d="M2 5h16M2 10h16M2 15h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
   </div>
@@ -417,7 +427,7 @@ const U = {
   brandSub:{nl:'wilde katten · J. Gelens',en:'wild cats · J. Gelens'},
   navSpecies:{nl:'Soorten',en:'Species'}, navTop:{nl:'Topspots',en:'Top spots'}, navMap:{nl:'Kaart',en:'Map'},
   navResp:{nl:'Verantwoord spotten',en:'Responsible spotting'}, navEur:{nl:'Katten in Europa',en:'Cats in Europe'},
-  navPack:{nl:'Paklijst',en:'Packing list'}, navAbout:{nl:'Over mij',en:'About me'}, navReport:{nl:'Melden',en:'Report'}, navMore:{nl:'Meer',en:'More'},
+  navPack:{nl:'Paklijst',en:'Packing list'}, navAbout:{nl:'Over deze gids',en:'About this guide'}, navVisit:{nl:'Bezoekersgids: katten in dierentuinen',en:'Visitor’s Guide: cats in zoos'}, navKofi:{nl:'Steun de gids via Ko-fi',en:'Support the guide on Ko-fi'}, navReport:{nl:'Melden',en:'Report'}, navMore:{nl:'Meer',en:'More'},
   sub:{nl:'Waar je alle 42 wilde kattensoorten in het wild kunt zien, hoe groot je kans is en hoe je ze vindt.',en:'Where to see all 42 wild cat species in the wild, how good your chances are and how to find them.'},
   all:{nl:'Hele wereld',en:'Whole world'},
   topSub:{nl:'Plekken waar je een soort (bijna) zeker ziet, mits je de tijd neemt en in het goede seizoen gaat.',en:'Places where you will (almost) certainly see a species, as long as you take your time and go in the right season.'},
@@ -563,18 +573,21 @@ function bindMarkers(root, fn){
 }
 
 /* ---------- navigatie ---------- */
-const NAV = [['soorten','navSpecies'],['topspots','navTop'],['europa','navEur']];
+const NAV = [['soorten','navSpecies','<ellipse cx="12" cy="15" rx="4.5" ry="4"/><circle cx="6.5" cy="9.5" r="1.8"/><circle cx="10" cy="6" r="1.8"/><circle cx="14" cy="6" r="1.8"/><circle cx="17.5" cy="9.5" r="1.8"/>'],
+  ['topspots','navTop','<path d="M12 3.5l2.6 5.3 5.9.9-4.25 4.1 1 5.8L12 16.9l-5.25 2.7 1-5.8L3.5 9.7l5.9-.9z"/>'],
+  ['europa','navEur','<path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/>']];
 const MORE = [['verantwoord','navResp'],['paklijst','navPack'],['melden','navReport'],['over','navAbout']];
 function renderChrome(route){
   document.documentElement.lang = L;
   document.title = (SGP && route.page === SGP.no && L === SGP.lang) ? INIT_TITLE : (route.title ? `${route.title} · ${T(U.title)}` : T(U.title));
   $('#brandName').textContent = L === 'nl' ? 'Spottersgids' : "Spotter's Guide";
   $('#brandSub').textContent = T(U.brandSub);
-  const link = ([id,k]) => `<a href="#${id}"${route.nav===id?' aria-current="page"':''}>${esc(T(U[k]))}</a>`;
+  const link = ([id,k,ic]) => `<a href="#${id}"${route.nav===id?' aria-current="page"':''}>${ic?`<svg class="nico" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${ic}</svg>`:''}${esc(T(U[k]))}</a>`;
+  const ext = `<a href="https://yeetkitty.github.io/wildekattengids/">${esc(T(U.navVisit))}</a><a href="${esc(KOFI_URL)}" target="_blank" rel="noopener">${esc(T(U.navKofi))} ☕</a>`;
   const inMore = MORE.some(([id]) => id === route.nav);
   $('#nav').innerHTML = NAV.map(link).join('') +
     `<div class="more" id="more"><button type="button" class="morebtn${inMore?' cur':''}" id="moreBtn" aria-expanded="false" aria-haspopup="true">${esc(T(U.navMore))}<svg viewBox="0 0 10 10"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
-     <div class="moremenu"><span class="lbl mlbl">${esc(T(U.navMore))}</span>${MORE.map(link).join('')}</div></div>`;
+     <div class="moremenu"><span class="lbl mlbl">${esc(T(U.navMore))}</span>${MORE.map(link).join('')}${ext}</div></div>`;
   $('#moreBtn').onclick = e => { e.stopPropagation(); const o = $('#more').classList.toggle('open'); $('#moreBtn').setAttribute('aria-expanded', o); };
   $('#langNl').setAttribute('aria-pressed', L==='nl'); $('#langEn').setAttribute('aria-pressed', L==='en');
   $('#foot').innerHTML = `<p style="max-width:36rem">${esc(T(U.footMade))}</p><nav>${[...NAV, ...MORE].map(([id,k])=>`<a href="#${id}">${esc(T(U[k]))}</a>`).join('')}<a href="${esc(KOFI_URL)}" target="_blank" rel="noopener">${esc(L==='nl'?'Steun via Ko-fi ☕':'Support on Ko-fi ☕')}</a></nav>`;
@@ -583,7 +596,7 @@ function renderChrome(route){
 document.addEventListener('click', e => { const m = $('#more'); if (m && !m.contains(e.target)) { m.classList.remove('open'); } });
 $('#menuBtn').onclick = () => { const o = $('#nav').classList.toggle('open'); $('#menuBtn').setAttribute('aria-expanded', o); };
 $('#nav').addEventListener('click', e => { if (e.target.closest('a')) { $('#nav').classList.remove('open'); $('#menuBtn').setAttribute('aria-expanded', false); } });
-$$('.lang button').forEach(b => b.onclick = () => { if (b.dataset.l === L) return; L = b.dataset.l; try { localStorage.setItem('sg-lang', L); } catch(e) {} if (SGP && !location.hash) { location.href = spHref(SGP.no); return; } route(true); });
+$$('.langsw [data-setlang]').forEach(b => b.onclick = () => { if (b.dataset.setlang === L) return; L = b.dataset.setlang; try { localStorage.setItem('sg-lang', L); } catch(e) {} if (SGP && !location.hash) { location.href = spHref(SGP.no); return; } route(true); });
 
 /* ---------- startpagina ---------- */
 function inFilter(cont){ return FILTER === 'all' || cont === FILTER; }

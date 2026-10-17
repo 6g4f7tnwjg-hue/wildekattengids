@@ -298,7 +298,7 @@ function has(k,s){return F()[k].indexOf(s)>=0;}
 function toggle(k,s){var a=F()[k],i=a.indexOf(s);if(i>=0)a.splice(i,1);else a.push(s);save();paint();}
 function lbl(on){return on?LS("In je favorieten","In your favourites"):LS("Bewaar als favoriet","Save as favourite");}
 function btn(k,s){var on=has(k,s);return '<button type="button" class="nw-heart" data-fk="'+k+'" data-fs="'+E(s)+'" aria-pressed="'+on+'" aria-label="'+(N.lang()==="en"?"Favourite":"Favoriet")+'">'+HEART+'</button>';}
-document.addEventListener("click",function(e){var b=e.target.closest(".nw-heart,.nw-hwrap");if(!b)return;e.preventDefault();e.stopPropagation();toggle(b.dataset.fk,b.dataset.fs);});
+document.addEventListener("click",function(e){var b=e.target.closest(".nw-hwrap")||e.target.closest(".nw-heart");if(!b||!b.dataset.fk)return;e.preventDefault();e.stopPropagation();toggle(b.dataset.fk,b.dataset.fs);});
 function renderFavs(){var f=F(),a=[],b=[];
   f.loc.forEach(function(s){var i=LOCBYSLUG[s];if(i===undefined)return;a.push('<li><a href="#locatie/'+s+'">'+E(LOCS[i][0])+'<small>'+E(LOCS[i][1])+'</small></a>'+btn("loc",s)+'</li>');});
   f.sp.forEach(function(s){var x=BYSLUG[s];if(!x)return;b.push('<li><a href="#soort/'+s+'">'+LS(x[0],en(x[0]))+'<small><em>'+E(x[2])+'</em></small></a>'+btn("sp",s)+'</li>');});

@@ -414,10 +414,10 @@ p{margin:0}
 .cnt-p .chips{margin:10px 0 2px}
 
 /* soortweergave (alle landen) en top 10: #katview */
-#katview{display:none;padding-block:16px 40px}
+#katview{display:none;padding-block:16px 24px}
 html.katmode #katview{display:block}
 html.katmode .intro,html.katmode .bar,html.katmode .tabpanel,html.katmode .page,html.pagemode .intro,html.pagemode .bar,html.pagemode .tabpanel{display:none!important}
-.kat-h{display:grid;gap:18px;grid-template-columns:minmax(0,1fr);align-items:start;margin-bottom:22px}
+.kat-h{display:grid;gap:16px 24px;grid-template-columns:minmax(0,1fr);align-items:start;margin-bottom:24px}
 @media (min-width:820px){.kat-h{grid-template-columns:minmax(0,380px) minmax(0,1fr)}}
 #katview h1{font-size:clamp(2rem,6vw,3.2rem);font-weight:800;margin:8px 0 6px}
 .kat-sci{font-family:var(--display);font-style:italic;color:var(--muted);margin:0 0 4px;font-size:1.1rem}
@@ -426,7 +426,9 @@ html.katmode .intro,html.katmode .bar,html.katmode .tabpanel,html.katmode .page,
 .kat-foto{margin:0}
 .kat-foto img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:12px;background:var(--land)}
 .kat-foto figcaption{font-size:.82rem;color:var(--muted);margin-top:6px;line-height:1.4;overflow-wrap:anywhere}
-.kat-grid{display:grid;gap:16px;grid-template-columns:minmax(0,1fr)}
+.kat-grid{display:grid;gap:24px;grid-template-columns:minmax(0,1fr)}
+.kat-grid>div:first-child{display:flex;flex-direction:column;gap:8px;min-width:0}
+.kat-grid>div:first-child>.kat-map{margin-top:16px}
 @media (min-width:820px){.kat-grid{grid-template-columns:minmax(0,420px) minmax(0,1fr);align-items:start}.kat-grid>div:first-child{position:sticky;top:calc(var(--head) + 12px)}}
 .kat-map{background:var(--paper);border:1px solid var(--line);border-radius:12px;overflow:hidden}
 .kmz{position:relative}
@@ -443,7 +445,7 @@ html.katmode .intro,html.katmode .bar,html.katmode .tabpanel,html.katmode .page,
 .kmap .mk .hit{fill:transparent}
 .kmap .mk.sel .dot{stroke:var(--ink);stroke-width:3px}
 .kmap .mk.hs-clh,.kmap .mk.km-off{display:none}
-.kmf{margin:0 0 4px;flex-wrap:nowrap;overflow-x:auto;padding:2px 28px 6px 2px;-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 32px),transparent);mask-image:linear-gradient(to right,#000 calc(100% - 32px),transparent);scroll-snap-type:x proximity}
+.kmf{margin:0;flex-wrap:nowrap;overflow-x:auto;padding:2px 28px 6px 2px;-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 32px),transparent);mask-image:linear-gradient(to right,#000 calc(100% - 32px),transparent);scroll-snap-type:x proximity}
 .kmf .chip{font-size:.88rem;padding:4px 10px;gap:5px;scroll-snap-align:start}
 .kmf .chip svg{width:18px;height:12px}
 .kmf .chip.tchip{padding-left:4px}
@@ -467,7 +469,7 @@ html.katmode .intro,html.katmode .bar,html.katmode .tabpanel,html.katmode .page,
 .kat-map .kd.unc{fill:var(--paper);stroke:var(--dot);stroke-width:2;stroke-dasharray:3 2}
 .kat-map a:focus-visible .kd{stroke:var(--accent);stroke-width:3}
 .kat-map .maplegend i.o{box-shadow:inset 0 0 0 1.5px var(--dot)}
-.kat-lands{display:grid;gap:14px}
+.kat-lands{display:grid;gap:8px;align-content:start}
 .kat-land{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:0;min-width:0}
 .kat-land>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;padding:12px 14px;flex-wrap:wrap}
 .kat-land>summary::-webkit-details-marker{display:none}
@@ -488,9 +490,9 @@ html.katmode .intro,html.katmode .bar,html.katmode .tabpanel,html.katmode .page,
 .kl-g{flex:none;text-decoration:none;color:var(--accent);font-weight:700;padding:4px 6px}
 details.onz{margin-top:6px}
 details.onz>summary{cursor:pointer;color:var(--muted);font-size:.92rem;padding:4px 0}
-.kl-kop{font-size:1.4rem;margin:0 0 2px}
+.kl-kop{font-size:1.4rem;margin:0}
 .kat-kern{font-family:var(--label);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--olive);margin:2px 0 10px;font-size:.92rem}
-.kat-feit{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;background:var(--paper);border:1px solid var(--line);border-radius:12px;margin:0 0 12px}
+.kat-feit{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;background:var(--paper);border:1px solid var(--line);border-radius:12px;margin:0 0 10px}
 .kat-feit>div{padding:9px 11px;border-left:1px solid var(--line);min-width:0}
 .kat-feit>div:first-child{border-left:0}
 .kat-feit>div.wd{grid-column:1/-1;border-left:0;border-top:1px solid var(--line)}
@@ -499,7 +501,7 @@ details.onz>summary{cursor:pointer;color:var(--muted);font-size:.92rem;padding:4
 .kat-feit>div.wd dd{font-weight:500}
 .iucn{display:inline-flex;align-items:center;gap:5px;flex-wrap:wrap}
 .iucn b{font-family:var(--label);color:#fff;background:var(--ic);border-radius:99px;padding:0 7px;font-size:.85rem}
-.kat-spot{display:inline-flex;font-weight:700;color:var(--accent);text-decoration:none;margin-bottom:6px}
+.kat-spot{display:inline-flex;font-weight:700;color:var(--accent);text-decoration:none}
 .kat-spot:hover{text-decoration:underline}
 .kat-land h2{display:flex;align-items:center;gap:10px;font-size:1.35rem;margin:0 0 6px}
 .kat-land h2 svg{width:33px;height:22px;border-radius:3px;box-shadow:0 0 0 1px rgba(30,35,24,.18);flex:none}
@@ -513,11 +515,12 @@ details.onz>summary{cursor:pointer;color:var(--muted);font-size:.92rem;padding:4
 .kat-land .gidsl{font-size:.95rem;margin:4px 0 0}
 .kat-land .gidsl a{color:var(--accent);font-weight:700}
 .kat-geen{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px;margin:0}
-.kat-geb{margin-top:22px;max-width:44rem}
+.kat-geb{margin-top:16px;max-width:44rem}
 .kat-geb h2{font-size:1.4rem;margin:0 0 6px}
 
 .laden{position:fixed;left:50%;top:calc(env(safe-area-inset-top,0px) + 70px);transform:translateX(-50%);z-index:40;background:var(--ink);color:var(--paper);font-weight:700;padding:8px 16px;border-radius:99px}
 .foot{border-top:1px solid var(--line);margin-top:10px;background:var(--paper)}
+html.katmode .foot{margin-top:0}
 .foot .wrap{padding-block:22px 40px;color:var(--muted);font-size:.92rem}
 .kofibar{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;padding-bottom:18px;margin-bottom:16px;border-bottom:1px solid var(--line)}
 .kofibar p{flex:1 1 260px;color:var(--ink);font-size:1rem}
@@ -1004,7 +1007,7 @@ function katMap(slug){
     Object.keys(tk).map(Number).sort((a,b)=>a-b).map(k=>`<button type="button" class="chip tchip" data-kmf="${k}" aria-pressed="false">${tIcon(k)}${k<0?"?":esc(T(...["nl","en","fr","de","it","es"].map(l=>D.lt.types[k][l])))} <span class="n">${tk[k]}</span></button>`).join("")+`</div>`;
   return lchips+chips+`<div class="kat-map"><div class="kmz"><svg class="kmap" viewBox="${vb.map(v=>v.toFixed(1)).join(" ")}" data-s0="${s0.toFixed(4)}" role="group" aria-label="${T("Kaart","Map","Carte","Karte","Mappa","Mapa")}">${m}</svg></div>
     <p class="km-sel" id="km-sel" aria-live="polite">${T("Tik op een icoon voor de locatie.","Tap an icon to see the location.","Touchez une icône pour voir le lieu.","Tippe auf ein Symbol, um den Ort zu sehen.","Tocca un’icona per vedere il luogo.","Toca un icono para ver el lugar.")}</p>
-    ${xs.some(x=>!CONF.includes(x.st))?`<div class="maplegend"><span><i class="o"></i>${T("open stip: onzeker of niet te zien","open dot: uncertain or not visible","point vide : incertain ou non visible","offener Punkt: unsicher oder nicht zu sehen","punto vuoto: incerto o non visibile","punto vacío: incierto o no visible")}</span></div>`:""}</div></div>`;
+    ${xs.some(x=>!CONF.includes(x.st))?`<div class="maplegend"><span><i class="o"></i>${T("open stip: onzeker of niet te zien","open dot: uncertain or not visible","point vide : incertain ou non visible","offener Punkt: unsicher oder nicht zu sehen","punto vuoto: incerto o non visibile","punto vacío: incierto o no visible")}</span></div>`:""}</div>`;
 }
 let KMF="",KML="";
 function kmApply(){const ok=(k,c)=>(!KMF||String(k)===KMF)&&(!KML||c===KML);

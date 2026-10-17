@@ -183,7 +183,7 @@ START = f"""
 <div id="start">
 <div class="nw-hero">
   <div class="nw-htxt" id="nw-htxt"></div>
-  <div class="nw-stats"><a href="#soorten"><span class="nw-si nw-si1">{ICO["b-paw"]}</span><span class="nw-nsp"></span></a><a href="#locaties"><span class="nw-si nw-si2">{ICO["b-map"]}</span><span class="nw-nloc"></span></a></div>
+  <div class="nw-stats"><a href="#soorten"><span class="nw-si nw-si1"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.2 2.8 9 7.6q3-1 6 0l4.8-4.8q.9 4.6.4 9C20 17 16.6 20.6 12 20.6S4 17 3.8 11.8q-.5-4.4.4-9z"/><ellipse cx="8.9" cy="12.6" rx="1.2" ry="1.7" fill="#F3E2D6"/><ellipse cx="15.1" cy="12.6" rx="1.2" ry="1.7" fill="#F3E2D6"/><path d="M10.8 15.6h2.4L12 17z" fill="#F3E2D6"/></svg></span><span class="nw-nsp"></span></a><a href="#locaties"><span class="nw-si nw-si2">{ICO["b-map"]}</span><span class="nw-nloc"></span></a></div>
 </div>
 <div class="nw-search">
   <label>{ICO["search"]}<input type="search" id="nw-q" autocomplete="off" aria-controls="nw-res"></label>

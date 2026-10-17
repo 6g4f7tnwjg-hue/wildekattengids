@@ -71,12 +71,13 @@ html:not(.nw-scherm) #nw-sbar{display:none!important}
 .nw-hero{position:relative;margin:12px 0 0;border-radius:22px;overflow:hidden;background:var(--card);border:1px solid var(--line);box-shadow:var(--nw-shadow)}
 .nw-hero>img{display:block;width:100%;height:clamp(165px,44vw,320px);object-fit:cover;object-position:50% 32%}
 .nw-htxt{padding:14px 18px 0}
-.nw-stats{display:flex;gap:26px;padding:10px 18px 44px}
+.nw-stats{display:flex;gap:26px;padding:14px 18px 0}
+.nw-datum{padding:6px 18px 44px}
 .nw-stats a{display:inline-flex;align-items:baseline;gap:7px;color:var(--muted);text-decoration:none;font-size:1rem}
 .nw-stats a strong{font-family:var(--hs-display);font-weight:800;font-size:clamp(1.9rem,8vw,2.4rem);line-height:1;color:var(--ink,#22301f)}
 .nw-htxt h1.mast.hs-kop{margin:0 0 2px!important;font-size:clamp(1.9rem,8.5vw,3rem)!important}
 .nw-htxt .hs-onder{margin:0!important;font-size:clamp(1rem,4.2vw,1.2rem)!important}
-.nw-htxt .stamp.hs-stamp{display:block!important;background:none!important;padding:0!important;margin:4px 0 0!important;color:var(--muted)!important;font-size:.92rem!important}
+.nw-datum .stamp.hs-stamp{display:block!important;background:none!important;padding:0!important;margin:0!important;color:var(--muted)!important;font-size:.92rem!important}
 .nw-cred{position:absolute;top:10px;right:12px;z-index:1;margin:0!important;font-size:.72rem!important;color:#FFF8EC!important;background:rgba(20,24,14,.5);padding:2px 9px;border-radius:99px;max-width:none!important}
 /* zoeken */
 .nw-search{position:relative;margin:-26px 10px 0;z-index:5}
@@ -234,7 +235,8 @@ $$("[data-nw-lbl]").forEach(function(el){el.innerHTML=naam(el.getAttribute("data
 
 /* ---------- kop: titel, ondertitel en datum van de gids op de foto; inleiding naar In het kort ---------- */
 var hd=$("#main > header"),ht=document.getElementById("nw-htxt");
-["h1.mast",".hs-onder",".stamp.hs-stamp"].forEach(function(s){var x=hd&&hd.querySelector(s);if(x)ht.appendChild(x);});
+["h1.mast",".hs-onder"].forEach(function(s){var x=hd&&hd.querySelector(s);if(x)ht.appendChild(x);});
+var stp=hd&&hd.querySelector(".stamp.hs-stamp");if(stp){var sw=document.createElement("div");sw.className="nw-datum";sw.appendChild(stp);$(".nw-stats").after(sw);}
 var fig=hd&&hd.querySelector("figure.hero");if(fig)fig.remove();
 var cnt=$$("header .counts b");
 if(cnt[0])$$(".nw-nsp").forEach(function(s){s.innerHTML="<strong>"+cnt[0].textContent+"</strong> "+LS("soorten","species");});

@@ -415,7 +415,7 @@ h1.mast .m2::first-letter{text-transform:uppercase}
 h1.mast.hs-kop{display:flex!important;align-items:center;gap:12px;font-family:var(--hs-display)!important;font-weight:800!important;font-size:clamp(1.75rem,6vw,2.6rem)!important;line-height:1.1!important;color:var(--ink)!important;margin:0 0 4px!important;letter-spacing:-.01em}
 h1.mast.hs-kop>svg{flex:none;width:44px;height:30px;border-radius:4px;box-shadow:0 0 0 1px rgba(30,35,24,.18)}
 .hs-onder{margin:0 0 10px!important;color:var(--muted);font-size:1.08rem;font-family:var(--hs-body)}
-header .stamp.hs-stamp{display:block!important;margin:8px 0 0!important}
+header .stamp.hs-stamp{display:block!important;margin:-6px 0 10px!important;font-family:var(--hs-body)!important;font-weight:400!important;font-size:.92rem!important;letter-spacing:0!important;text-transform:none!important;color:var(--muted)!important}
 header figure.hero{margin:10px 0 8px!important;max-width:720px!important}
 header figure.hero img{width:100%!important;max-width:100%!important;height:auto!important;aspect-ratio:21/9;object-fit:cover;border-radius:12px!important;box-shadow:none!important;margin:0 0 4px!important}
 header figure.hero p{font-size:.82rem!important;margin:0!important}
@@ -489,6 +489,7 @@ section::before,.board::before,.ip-sec::before,footer::before{display:none!impor
 .wrap>section,.wrap>.board{border-top:1px solid var(--line)!important}
 /* In het kort: alleen de korte punten, de tabel Totaaloverzicht vervalt */
 .hs-weg{display:none!important}
+.hs-reg{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);scroll-margin-top:calc(var(--hs-head) + 64px)}
 /* Plan je bezoek: alleen de vinklijst; de teller toont wat je nog mist */
 .rt-out{display:none!important}
 .rt-grid{grid-template-columns:minmax(0,1fr)!important;max-width:640px}
@@ -1993,7 +1994,9 @@ function kop(h){if(!HK||h.dataset.hsk)return;var m2=h.querySelector("h1.mast .m2
     titel+='<span class="l-'+l+'">'+nm+'</span>';onder+='<span class="l-'+l+'">'+o+'</span>';});
   h1.innerHTML=HK.vlag+'<span class="hs-t">'+titel+'</span>';h1.classList.add("hs-kop");
   h1.insertAdjacentHTML("afterend",'<p class="hs-onder">'+onder+'</p>');
-  var st=h.querySelector(".stamp"),cn=h.querySelector(".counts");if(st&&cn){cn.insertAdjacentElement("afterend",st);st.classList.add("hs-stamp");}}
+  /* datum als kleine regel direct onder de ondertitel (17-10-2026) */
+  var st=h.querySelector(".stamp"),on=h.querySelector(".hs-onder");if(st&&on){on.insertAdjacentElement("afterend",st);st.classList.add("hs-stamp");
+    st.querySelectorAll(".l-nl").forEach(function(x){x.textContent=x.textContent.replace(/^Stand /,"Bijgewerkt ");});}}
 function koppen(){document.querySelectorAll("header").forEach(kop);}
 koppen();new MutationObserver(function(){koppen();}).observe(document.body,{childList:true,subtree:true});
 /* kaarten: kleur en icoon per type, legenda met filter */
@@ -2124,6 +2127,10 @@ function opbouw(){if(klaar)return;var w=document.getElementById("main")||documen
     route:{nl:"Routeplanner",en:"Route planner",fr:"Planificateur d’itinéraire",de:"Routenplaner",it:"Pianificatore di percorso",es:"Planificador de ruta",pt:"Planeador de rotas"}};
   Object.keys(NAAM).forEach(function(id){var el=[document.querySelector("#"+id+" > h2 .ctog > span"),nav.querySelector('a[href="#'+id+'"]')];
     el.forEach(function(e){if(!e)return;var sp=e.querySelectorAll("[class^='l-']");if(sp.length)sp.forEach(function(x){var l=x.className.slice(2);if(NAAM[id][l])x.textContent=NAAM[id][l];});else e.textContent=NAAM[id].nl;});});
+  /* hoofdtabel onder Per kat: de lijst staat direct onder de soortknoppen (17-10-2026) */
+  var reg=document.getElementById("register"),rb=reg&&reg.querySelector(":scope > .cbody"),sb=sr&&sr.querySelector(":scope > .cbody");
+  if(reg&&rb&&sb){reg.id="hs-register-oud";reg.classList.add("hs-weg");var d=document.createElement("div");d.id="register";d.className="hs-reg";
+    while(rb.firstChild)d.appendChild(rb.firstChild);sb.appendChild(d);var ar=nav.querySelector('a[href="#register"]');if(ar)ar.remove();}
   rijen();mist();hoofd();
   var rows=document.getElementById("rows");if(rows)new MutationObserver(rijen).observe(rows,{childList:true});
   var sp=document.getElementById("rt-sp");if(sp)new MutationObserver(mist).observe(sp,{childList:true,subtree:true});

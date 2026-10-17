@@ -77,7 +77,9 @@ function kop(h){if(!HK||h.dataset.hsk)return;var m2=h.querySelector("h1.mast .m2
     titel+='<span class="l-'+l+'">'+nm+'</span>';onder+='<span class="l-'+l+'">'+o+'</span>';});
   h1.innerHTML=HK.vlag+'<span class="hs-t">'+titel+'</span>';h1.classList.add("hs-kop");
   h1.insertAdjacentHTML("afterend",'<p class="hs-onder">'+onder+'</p>');
-  var st=h.querySelector(".stamp"),cn=h.querySelector(".counts");if(st&&cn){cn.insertAdjacentElement("afterend",st);st.classList.add("hs-stamp");}}
+  /* datum als kleine regel direct onder de ondertitel (17-10-2026) */
+  var st=h.querySelector(".stamp"),on=h.querySelector(".hs-onder");if(st&&on){on.insertAdjacentElement("afterend",st);st.classList.add("hs-stamp");
+    st.querySelectorAll(".l-nl").forEach(function(x){x.textContent=x.textContent.replace(/^Stand /,"Bijgewerkt ");});}}
 function koppen(){document.querySelectorAll("header").forEach(kop);}
 koppen();new MutationObserver(function(){koppen();}).observe(document.body,{childList:true,subtree:true});
 /* kaarten: kleur en icoon per type, legenda met filter */

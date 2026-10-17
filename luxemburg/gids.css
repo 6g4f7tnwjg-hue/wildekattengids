@@ -385,7 +385,7 @@ h1.mast .m2::first-letter{text-transform:uppercase}
 h1.mast.hs-kop{display:flex!important;align-items:center;gap:12px;font-family:var(--hs-display)!important;font-weight:800!important;font-size:clamp(1.75rem,6vw,2.6rem)!important;line-height:1.1!important;color:var(--ink)!important;margin:0 0 4px!important;letter-spacing:-.01em}
 h1.mast.hs-kop>svg{flex:none;width:44px;height:30px;border-radius:4px;box-shadow:0 0 0 1px rgba(30,35,24,.18)}
 .hs-onder{margin:0 0 10px!important;color:var(--muted);font-size:1.08rem;font-family:var(--hs-body)}
-header .stamp.hs-stamp{display:block!important;margin:8px 0 0!important}
+header .stamp.hs-stamp{display:block!important;margin:-6px 0 10px!important;font-family:var(--hs-body)!important;font-weight:400!important;font-size:.92rem!important;letter-spacing:0!important;text-transform:none!important;color:var(--muted)!important}
 header figure.hero{margin:10px 0 8px!important;max-width:720px!important}
 header figure.hero img{width:100%!important;max-width:100%!important;height:auto!important;aspect-ratio:21/9;object-fit:cover;border-radius:12px!important;box-shadow:none!important;margin:0 0 4px!important}
 header figure.hero p{font-size:.82rem!important;margin:0!important}
@@ -459,6 +459,7 @@ section::before,.board::before,.ip-sec::before,footer::before{display:none!impor
 .wrap>section,.wrap>.board{border-top:1px solid var(--line)!important}
 /* In het kort: alleen de korte punten, de tabel Totaaloverzicht vervalt */
 .hs-weg{display:none!important}
+.hs-reg{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);scroll-margin-top:calc(var(--hs-head) + 64px)}
 /* Plan je bezoek: alleen de vinklijst; de teller toont wat je nog mist */
 .rt-out{display:none!important}
 .rt-grid{grid-template-columns:minmax(0,1fr)!important;max-width:640px}

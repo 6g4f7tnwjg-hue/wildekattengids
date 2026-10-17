@@ -18,8 +18,8 @@ def lettertypen(doc):
     return re.sub(r"\bLiterata\b", "Alegreya Sans", doc)
 
 L = {  # teksten in alle gidstalen
-    "naam": {"nl": "Wilde katachtigen", "en": "Wild cats", "fr": "Félins sauvages", "de": "Wilde Katzen", "it": "Felini selvatici", "es": "Felinos salvajes", "pt": "Felinos selvagens"},
-    "sub": {"nl": "in Europa", "en": "in Europe", "fr": "en Europe", "de": "in Europa", "it": "in Europa", "es": "en Europa", "pt": "na Europa"},
+    "naam": {"nl": "Bezoekersgids", "en": "Visitor’s Guide", "fr": "Guide du visiteur", "de": "Besucherführer", "it": "Guida per visitatori", "es": "Guía del visitante", "pt": "Guia do visitante"},
+    "sub": {"nl": "Wilde katten", "en": "Wild cats", "fr": "Félins sauvages", "de": "Wilde Katzen", "it": "Felini selvatici", "es": "Felinos salvajes", "pt": "Felinos selvagens"},
     "zoek": {"nl": "Zoeken", "en": "Search", "fr": "Chercher", "de": "Suchen", "it": "Cerca", "es": "Buscar", "pt": "Pesquisar"},
     "kaart": {"nl": "Kaart", "en": "Map", "fr": "Carte", "de": "Karte", "it": "Mappa", "es": "Mapa", "pt": "Mapa"},
     "landen": {"nl": "Alle landen", "en": "All countries", "fr": "Tous les pays", "de": "Alle Länder", "it": "Tutti i paesi", "es": "Todos los países", "pt": "Todos os países"},

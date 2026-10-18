@@ -1731,7 +1731,7 @@ html body #main:has(#meer.nw-cur,#locaties.nw-cur,#soorten.nw-cur) .nw-sbar .nw-
 html body .nw-sbar:not(.nw-los){position:relative!important;top:0!important;min-height:166px;box-sizing:border-box;display:flex!important;flex-wrap:wrap;align-content:flex-start;align-items:center;column-gap:12px;padding-top:20px!important}
 html body .nw-sbar .jg-sub{flex-basis:100%;margin:8px 0 0;color:#D3E4C2;font-size:1.05rem;line-height:1.35}
 html body .nw-sbar .nw-stitle{font-size:clamp(2.2rem,10vw,3.2rem)!important}
-html body .nw-sbar .nw-stitle,html body .nw-sbar .nw-stitle *{font-size:clamp(2.2rem,10vw,3.2rem)!important}
+html body .nw-sbar .nw-stitle,html body .nw-sbar .nw-stitle *{font-size:var(--jg-fs,clamp(2.2rem,10vw,3.2rem))!important}
 html body .jg-kop:not(.jg-foto){min-height:166px;box-sizing:border-box;padding-top:20px}
 html body .jg-kop:not(.jg-foto) h1{font-size:clamp(2.2rem,10vw,3.2rem)!important;margin:0!important}
 html body .jg-kop .terug{margin:0 0 10px!important}
@@ -1750,10 +1750,9 @@ html body .nw-sbar .jg-sub{margin-top:6px!important}
 /* vier koppen exact gelijk aan de landkop (19-10-2026) */
 html body #main .nw-sbar:not(.nw-los){height:auto!important;min-height:0!important;padding:21px 20px 44px!important;display:block!important;overflow:hidden}
 html body #main .nw-sbar:not(.nw-los) .nw-back{float:left;margin:2px 12px 0 0!important}
-html body #main:not(:has(#meer.nw-cur,#locaties.nw-cur,#soorten.nw-cur)) .nw-sbar:not(.nw-los) .jg-vlag{display:none!important}
 html body #main .nw-sbar .jg-vlag{float:left;margin:6px 12px 0 0}
-html body #main .nw-sbar .nw-stitle{display:block!important;line-height:1.1!important;height:auto;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-html body #main .nw-sbar .nw-stitle *{line-height:1.1!important}
+html body #main .nw-sbar .nw-stitle{display:block!important;line-height:calc(clamp(2.2rem,10vw,3.2rem) * 1.1)!important;height:auto;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+html body #main .nw-sbar .nw-stitle *{line-height:inherit!important}
 html body #main .nw-sbar .jg-sub{clear:both;display:block;margin:4px 0 0!important;font-size:16.8px!important;line-height:26.88px!important;color:#D3E4C2!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 html body #main .nw-sbar .jg-meta{display:block!important;margin:10px 0 0!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 html body #main .nw-sbar .jg-meta,html body #main .nw-sbar .jg-meta *{font-size:13.76px!important;letter-spacing:.06em!important;line-height:17px!important}
@@ -1763,6 +1762,14 @@ html body #main .nw-sbar .jg-meta .nw-stats strong{font-size:13.76px!important}
 html body #main .nw-sbar [data-tab]{display:none!important}
 html body #main:has(#locaties.nw-cur) .nw-sbar [data-tab="locaties"],html body #main:has(#soorten.nw-cur) .nw-sbar [data-tab="soorten"],html body #main:has(#meer.nw-cur) .nw-sbar [data-tab="meer"],html body #main:not(:has(#locaties.nw-cur,#soorten.nw-cur,#meer.nw-cur)) .nw-sbar [data-tab="anders"]{display:block!important;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 html body #main .nw-sbar .jg-meta [data-tab] .nw-stats,html body #main .nw-sbar .jg-meta [data-tab] .nw-stats>a,html body #main .nw-sbar .jg-meta [data-tab] .nw-datum{display:inline-flex!important}
+html body #main:has(#tldr.nw-cur) .nw-sbar [data-tab="tldr"],html body #main:has(#actueel.nw-cur) .nw-sbar [data-tab="actueel"],html body #main:has(#kleur.nw-cur) .nw-sbar [data-tab="kleur"],html body #main:has(#route.nw-cur) .nw-sbar [data-tab="route"],html body #main:has(#tabel.nw-cur) .nw-sbar [data-tab="tabel"],html body #main:has(#uitleg.nw-cur) .nw-sbar [data-tab="uitleg"],html body #main:has(#rapporteer.nw-cur) .nw-sbar [data-tab="rapporteer"]{display:block!important;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+html body #main:has(#locaties.nw-cur,#soorten.nw-cur,#meer.nw-cur,#tldr.nw-cur,#actueel.nw-cur,#kleur.nw-cur,#route.nw-cur,#tabel.nw-cur,#uitleg.nw-cur,#rapporteer.nw-cur) .nw-sbar [data-tab="anders"]{display:none!important}
+html body .nw-sbar:not(.nw-los) .nw-back{display:none!important}
+html body .jg-terug{display:none;position:fixed;z-index:75;left:max(16px,env(safe-area-inset-left,0px));bottom:calc(76px + env(safe-area-inset-bottom,0px));width:52px;height:52px;border-radius:50%;border:2px solid #143A22;background:#F2C14E;color:#143A22;box-shadow:0 6px 16px -6px rgba(10,36,20,.6);cursor:pointer;padding:0;align-items:center;justify-content:center}
+html body .jg-terug svg{width:26px;height:26px}
+html body .jg-terug .jg-vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+html body:has(#main :is(#tldr.nw-cur,#actueel.nw-cur,#kleur.nw-cur,#route.nw-cur,#tabel.nw-cur,#uitleg.nw-cur,#rapporteer.nw-cur)) .jg-terug{display:flex}
+html body .jg-terug:focus-visible{outline:3px solid #143A22;outline-offset:3px}
 @media (prefers-reduced-motion:reduce){html body *{animation:none!important}}
 
 :root{--bg:#ECF2DF;--paper:#FAFBF2;--card:#FAFBF2;--ink:#13301C;--muted:#4C6450;--line:#CADBB9;--olive:#1F5A33;--dot:#1F5A33;--accent:#B8501C;
@@ -1827,7 +1834,18 @@ var T={
  locw:{nl:'locaties',en:'locations',fr:'lieux',de:'Orte',it:'luoghi',es:'lugares',pt:'locais'},
  spw:{nl:'soorten',en:'species',fr:'espèces',de:'Arten',it:'specie',es:'especies',pt:'espécies'},
  big:{nl:'grote',en:'big',fr:'grands',de:'groß',it:'grandi',es:'grandes',pt:'grandes'},
- small:{nl:'kleine',en:'small',fr:'petits',de:'klein',it:'piccoli',es:'pequeños',pt:'pequenos'}};
+ small:{nl:'kleine',en:'small',fr:'petits',de:'klein',it:'piccoli',es:'pequeños',pt:'pequenos'},
+ tldr:{nl:'De belangrijkste feiten op een rij',en:'The key facts at a glance',fr:'L’essentiel en bref',de:'Das Wichtigste auf einen Blick',it:'I fatti principali in breve',es:'Lo esencial de un vistazo',pt:'O essencial num relance'},
+ actueel:{nl:'Geboortes, verhuizingen en nieuws',en:'Births, moves and news',fr:'Naissances, transferts et actualités',de:'Geburten, Umzüge und Neuigkeiten',it:'Nascite, trasferimenti e novità',es:'Nacimientos, traslados y noticias',pt:'Nascimentos, transferências e novidades'},
+ kleur:{nl:'Zwarte panters, witte tijgers en kruisingen',en:'Black panthers, white tigers and hybrids',fr:'Panthères noires, tigres blancs et hybrides',de:'Schwarze Panther, weiße Tiger und Hybriden',it:'Pantere nere, tigri bianche e ibridi',es:'Panteras negras, tigres blancos e híbridos',pt:'Panteras negras, tigres brancos e híbridos'},
+ route:{nl:'Zo zie je de meeste soorten',en:'How to see the most species',fr:'Comment voir le plus d’espèces',de:'So siehst du die meisten Arten',it:'Come vedere più specie',es:'Cómo ver más especies',pt:'Como ver mais espécies'},
+ routeg:{nl:'{N} soorten in {P} parken',en:'{N} species in {P} parks',fr:'{N} espèces dans {P} parcs',de:'{N} Arten in {P} Parks',it:'{N} specie in {P} parchi',es:'{N} especies en {P} parques',pt:'{N} espécies em {P} parques'},
+ tabel:{nl:'Alle vermeldingen per soort en locatie',en:'All entries by species and location',fr:'Toutes les mentions par espèce et lieu',de:'Alle Einträge nach Art und Ort',it:'Tutte le segnalazioni per specie e luogo',es:'Todas las menciones por especie y lugar',pt:'Todas as menções por espécie e local'},
+ tabelg:{nl:'{V} vermeldingen',en:'{V} entries',fr:'{V} mentions',de:'{V} Einträge',it:'{V} segnalazioni',es:'{V} menciones',pt:'{V} menções'},
+ uitleg:{nl:'Hoe deze gids is gemaakt',en:'How this guide was made',fr:'Comment ce guide a été réalisé',de:'Wie dieser Guide entstanden ist',it:'Come è stata realizzata questa guida',es:'Cómo se hizo esta guía',pt:'Como este guia foi feito'},
+ uitlegg:{nl:'Bronnen: parken, ZooTrack en Zootierliste',en:'Sources: parks, ZooTrack and Zootierliste',fr:'Sources : parcs, ZooTrack et Zootierliste',de:'Quellen: Parks, ZooTrack und Zootierliste',it:'Fonti: parchi, ZooTrack e Zootierliste',es:'Fuentes: parques, ZooTrack y Zootierliste',pt:'Fontes: parques, ZooTrack e Zootierliste'},
+ rapporteer:{nl:'Iets gezien of klopt er iets niet?',en:'Seen something or spotted a mistake?',fr:'Vu quelque chose ou une erreur ?',de:'Etwas gesehen oder einen Fehler entdeckt?',it:'Visto qualcosa o un errore?',es:'¿Has visto algo o hay un error?',pt:'Viste algo ou há um erro?'},
+ rapporteerg:{nl:'Meldingen worden eerst gecontroleerd',en:'Reports are checked first',fr:'Les signalements sont d’abord vérifiés',de:'Meldungen werden zuerst geprüft',it:'Le segnalazioni vengono prima verificate',es:'Los avisos se revisan primero',pt:'Os avisos são verificados primeiro'}};
 var MV={'Dierentuin':{nl:'dierentuinen',en:'zoos',fr:'zoos',de:'Zoos',it:'zoo',es:'zoos',pt:'zoos'},
  'Dierenpark':{nl:'dierenparken',en:'animal parks',fr:'parcs animaliers',de:'Tierparks',it:'parchi faunistici',es:'parques de animales',pt:'parques de animais'},
  'Safaripark':{nl:'safariparken',en:'safari parks',fr:'parcs safari',de:'Safariparks',it:'safari park',es:'safaris',pt:'safaris'},
@@ -1855,6 +1873,22 @@ function bouw(){var S='<i> · </i>';
   +'<span data-tab="soorten">'+per(function(l){return esc(tot2+' '+(T.spw[l]||T.spw.en))+S+esc(bg+' '+(T.big[l]||T.big.en))+S+esc(sm+' '+(T.small[l]||T.small.en))})+'</span>'
   +'<span data-tab="meer">'+(datum?datum.innerHTML:'')+'</span>'
   +'<span data-tab="anders">'+(meta?meta.innerHTML:'')+'</span>';
+ function tx(k){return per(function(l){return esc(T[k][l]||T[k].en)})}
+ var rp=document.getElementById('rt-preset'),P=rp?+((rp.textContent.match(/\d+/)||[0])[0]):0;
+ var cnt=document.getElementById('count'),V=cnt?(cnt.textContent.match(/\d+/g)||[]).pop():'';
+ var dt=datum?datum.innerHTML:'';
+ sub+='<span data-tab="tldr">'+tx('tldr')+'</span><span data-tab="actueel">'+tx('actueel')+'</span><span data-tab="kleur">'+tx('kleur')+'</span><span data-tab="route">'+tx('route')+'</span><span data-tab="tabel">'+tx('tabel')+'</span><span data-tab="uitleg">'+tx('uitleg')+'</span><span data-tab="rapporteer">'+tx('rapporteer')+'</span>';
+ mt+='<span data-tab="tldr">'+(meta?meta.innerHTML:'')+'</span><span data-tab="actueel">'+dt+'</span><span data-tab="kleur">'+dt+'</span>'
+  +'<span data-tab="route">'+(P?per(function(l){return esc((T.routeg[l]||T.routeg.en).replace('{N}',tot2).replace('{P}',P))}):dt)+'</span>'
+  +'<span data-tab="tabel">'+(V?per(function(l){return esc((T.tabelg[l]||T.tabelg.en).replace('{V}',V))}):dt)+'</span>'
+  +'<span data-tab="uitleg">'+tx('uitlegg')+'</span><span data-tab="rapporteer">'+tx('rapporteerg')+'</span>';
  if(p.innerHTML!==sub)p.innerHTML=sub; if(g.innerHTML!==mt)g.innerHTML=mt;}
 bouw();setTimeout(bouw,400);setTimeout(bouw,1500);
+var ob=sb.querySelector('.nw-back');
+if(ob&&!document.querySelector('.jg-terug')){var tb=document.createElement('button');tb.type='button';tb.className='jg-terug';
+ tb.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>'+per(function(l){var x=ob.querySelector('.l-'+l);return '<span class="jg-vh">'+esc(x?x.textContent:'Terug')+'</span>'});
+ tb.addEventListener('click',function(){ob.click()});document.body.appendChild(tb);}
+function fit(){if(!t)return;t.style.removeProperty('--jg-fs');var fs=parseFloat(getComputedStyle(t).fontSize),n=0;while(t.scrollWidth>t.clientWidth+1&&fs>20&&n<30){fs-=1;n++;t.style.setProperty('--jg-fs',fs+'px');}}
+function later(){requestAnimationFrame(fit)}
+document.addEventListener('click',later);window.addEventListener('hashchange',later);window.addEventListener('resize',later);later();setTimeout(fit,400);
 })();</script><!--/jungle--></body></html>

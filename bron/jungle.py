@@ -76,13 +76,13 @@ def oog(cx, stijl='groen'):
     def wimpers(punten):
         return "".join(f"<path d='M{x1:.1f} {y1:.1f} L{x2:.1f} {y2:.1f}' stroke='{LO}' stroke-width='1.5' stroke-linecap='round'/>" for x1, y1, x2, y2 in punten)
     if stijl == 'rond':
-        r = 6.2
+        r = 6.8
         ws = []
         for hoek in (200, 228, 256):
             h = math.radians(hoek if s_ < 0 else 180 - hoek)
             ws.append((cx + r*math.cos(h), 48 + r*math.sin(h), cx + (r+3.4)*math.cos(h), 48 + (r+3.4)*math.sin(h)))
         return (f"<g class='jg-oog'><circle cx='{cx}' cy='48' r='{r}' fill='#C9D94A' stroke='{LO}' stroke-width='1.8'/>"
-                f"<circle cx='{cx}' cy='48.4' r='3.5' fill='{LO}'/><circle cx='{cx+1.9}' cy='46.2' r='1.5' fill='#fff'/><circle cx='{cx-1.5}' cy='50.2' r='.7' fill='#fff'/>"
+                f"<circle cx='{cx}' cy='48.4' r='3.8' fill='{LO}'/><circle cx='{cx+2.1}' cy='46' r='1.6' fill='#fff'/><circle cx='{cx-1.6}' cy='50.5' r='.8' fill='#fff'/>"
                 + wimpers(ws) + "</g>")
     if stijl == 'amber':
         x0 = cx + 8*s_
@@ -101,7 +101,7 @@ def oog(cx, stijl='groen'):
             f"<ellipse cx='{cx}' cy='49' rx='1.8' ry='3.6' fill='{LO}'/><circle cx='{cx+1.6}' cy='47' r='1' fill='#fff'/>"
             + (lambda x0: f"<path d='M{x0-0.5*s_} 47.6 L{x0+3.6*s_} 44.6 M{x0} 46.2 L{x0+2.6*s_} 42.2 M{x0-0.2*s_} 49.2 L{x0+4.2*s_} 48' stroke='{LO}' stroke-width='1.5' stroke-linecap='round'/></g>")(cx + 7.4*s_))
 
-def svg(stijl='groen'):
+def svg(stijl='rond'):
     o = f"stroke='{LO}' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'"
     g = []
     g.append("<defs><linearGradient id='jglp-v' x1='0' y1='0' x2='0' y2='1'>"

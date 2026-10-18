@@ -5578,6 +5578,8 @@ function openGroep(svg,g){var st=svg.__zk,ids=g.dataset.i.split(","),x0=1e9,y0=1
   ids.forEach(function(i){var m=svg.querySelector('.mk[data-i="'+i+'"]');if(!m)return;var c=midden(m);x0=Math.min(x0,c[0]);y0=Math.min(y0,c[1]);x1=Math.max(x1,c[0]);y1=Math.max(y1,c[1]);});
   var w=Math.min(st.v[2]/2,Math.max(st.base[2]/MAXZ,(x1-x0)*3,(y1-y0)*3*st.base[2]/st.base[3])),h=w*st.base[3]/st.base[2];
   zet(svg,[(x0+x1)/2-w/2,(y0+y1)/2-h/2,w,h]);}
+/* voor bron/test_ontwerp.py: inzoomen op een gebied (null = hele kaart) */
+window.__HSZOOM=function(svg,v){var st=zk(svg);if(!st)return;zet(svg,v?v:st.base.slice());};
 document.addEventListener("keydown",function(e){var g=e.target.closest&&e.target.closest(".hs-cl");if(g&&(e.key==="Enter"||e.key===" ")){e.preventDefault();openGroep(g.closest("svg"),g);}});
 function legenda(svg){var box=svg.closest(".map"),lg=box&&box.querySelector(".maplegend");if(!lg)return;svg.dataset.hsLg="1";
   var l=taal(),onz=svg.querySelector(".mk.w")!==null;lg.classList.add("hs-lg");

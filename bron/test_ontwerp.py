@@ -349,7 +349,17 @@ function kaartLeeg(){var k=$("#nt-kaart");if(!k)return;var o=$("#nt-kleeg");if(o
   var n=lijst(SP).length;if(!n)return;var t=KL[N.lang()]||KL.en,x=document.createElement("button");x.type="button";x.id="nt-kleeg";x.className="nt-kleeg";
   x.innerHTML='<b>'+E(t[0].replace("{r}",chipNaam(b)))+'</b><span>'+E((n===1?t[2]:t[1]).replace("{n}",n))+' ↓</span>';
   x.addEventListener("click",function(){var bl=$("#nt-beeld");if(bl)bl.scrollIntoView({behavior:"smooth",block:"start"});});k.appendChild(x);}
-function alles(){setTimeout(kaartLeeg,30);cats();spinfo();filt();beeld();types();regs();locs();spgrid();}
+/* bij een gekozen regio inzoomen op de locaties van die regio (18-10-2026) */
+var ZR=null;
+function regioZoom(){var svg=$("#nlmap"),r=reg();if(!svg||!window.__HSZOOM||r===ZR)return;ZR=r;
+  if(!r){window.__HSZOOM(svg,null);return;}
+  var b=svg.viewBox.baseVal,st=svg.__zk,B=st?st.base:[b.x,b.y,b.width,b.height],x0=1e9,y0=1e9,x1=-1e9,y1=-1e9,n=0;
+  $$(".mk",svg).forEach(function(m){var i=+m.dataset.i;if(!LOCS[i]||!inReg(i,r))return;var d=m.querySelector(".dot");if(!d)return;
+    var x=+d.getAttribute("cx"),y=+d.getAttribute("cy");x0=Math.min(x0,x);x1=Math.max(x1,x);y0=Math.min(y0,y);y1=Math.max(y1,y);n++;});
+  if(!n){window.__HSZOOM(svg,null);return;}
+  var asp=B[3]/B[2],w=Math.max((x1-x0)*1.5,(y1-y0)*1.5/asp,B[2]/4),h=w*asp;
+  window.__HSZOOM(svg,[(x0+x1)/2-w/2,(y0+y1)/2-h/2,w,h]);}
+function alles(){setTimeout(kaartLeeg,30);setTimeout(regioZoom,40);cats();spinfo();filt();beeld();types();regs();locs();spgrid();}
 
 /* ---------- opbouw: wachten tot de gids en de huisstijl klaar zijn ---------- */
 var klaar=false;
@@ -390,7 +400,7 @@ function opbouw(){if(klaar)return true;
   var sb=$("#soorten > .cbody")||$("#soorten"),lk=document.createElement("a");lk.className="nt-link";lk.href="#tabel";
   lk.innerHTML=ROWS+'<span>'+LS("Alle vermeldingen in één tabel","All entries in one table")+'</span>'+ARR;sb.appendChild(lk);
   alles();
-  ["lt-bar","rg-bar"].forEach(function(id){var b=document.getElementById(id);if(b)new MutationObserver(function(){types();regs();cats();beeld();locs();setTimeout(kaartLeeg,30);}).observe(b,{childList:true,subtree:true,attributes:true,attributeFilter:["aria-pressed"]});});
+  ["lt-bar","rg-bar"].forEach(function(id){var b=document.getElementById(id);if(b)new MutationObserver(function(){types();regs();cats();beeld();locs();setTimeout(kaartLeeg,30);setTimeout(regioZoom,40);}).observe(b,{childList:true,subtree:true,attributes:true,attributeFilter:["aria-pressed"]});});
   new MutationObserver(function(){leesDS();alles();zph();}).observe(html,{attributes:true,attributeFilter:["lang"]});
   /* na een tik op de kaart het infovak in beeld brengen als het onder de rand valt */
   $("#nt-kaart").addEventListener("click",function(e){if(!e.target.closest(".mk"))return;setTimeout(function(){var m=$("#mapinfo");if(!m)return;var r=m.getBoundingClientRect();

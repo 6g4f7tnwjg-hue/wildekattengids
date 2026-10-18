@@ -32,7 +32,6 @@ html body{padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
 .nw-bar4 nav{grid-template-columns:repeat(4,minmax(0,1fr))!important}
 </style>
 
-
 <style id="nt-eu-css">
 /* hoofdpagina in de opbouw van de landpagina's (bron/test_ontwerp.py) */
 .bar:has(#tabs){display:none!important}
@@ -1540,7 +1539,6 @@ new MutationObserver(labels).observe(document.documentElement,{attributes:true,a
 document.querySelectorAll(".tab").forEach(function(t){new MutationObserver(mark).observe(t,{attributes:true,attributeFilter:["aria-selected"]});});
 labels();mark();
 })();</script>
-
 
 <script>(function(){
 /* hoofdpagina en soortpagina's in de opbouw van de landpagina's (bron/test_ontwerp.py) */

@@ -2,6 +2,10 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 18 oktober 2026 – Inzoomen op een gekozen regio
+
+Landpagina's: kies je een regio (deelstaat, provincie, comunidad …), dan zoomt de kaart in op de locaties van die regio; "Alle regio's" zet de kaart weer op heel het land. `huisstijl.py` geeft daarvoor `window.__HSZOOM(svg, viewBox|null)`; `regioZoom()` in `test_ontwerp.py`.
+
 ## 18 oktober 2026 – Balearen op de kaart, melding bij lege kaart
 
 - De Balearen staan nu op de kaart van Spanje en op de Europakaart (eilandvormen uit Natural Earth 1:50m via world-atlas; coördinaten Natura Parc 39,610/2,837 en Safari Mallorca 39,582/3,361 uit OpenStreetMap). Kaartkader van de Spaanse gids iets breder (viewBox 442). De Canarische Eilanden blijven op verzoek van de kaart (te ver weg); de teksten daarover zijn aangepast (NL/EN/ES).

@@ -1,4 +1,4 @@
-# Overdracht (18 oktober 2026, laat op de avond)
+# Overdracht (19 oktober 2026, nacht)
 
 Lees eerst `bron/LEESMIJ.md` (opbouw, bouw en de telregel), `bron/OPEN.md` (open punten) en bovenaan `VOORTGANG.md` (laatste wijzigingen).
 
@@ -18,6 +18,21 @@ Lees eerst `bron/LEESMIJ.md` (opbouw, bouw en de telregel), `bron/OPEN.md` (open
 - Later op 18-10-2026:
   - Op het scherm Meer van de landpagina's is het blok "Bezoekersgids" weg (kop en links). Dat staat in `MEER_NIEUW` in `test_ontwerp.py`. De links staan nog in het ☰-menu.
   - Locatiefoto's in de Nederlandse gids: Eindhoven Zoo (tijger, Cro-Cop) en Hoenderdaell (leeuw, Ingredia), beide CC BY 4.0, `img/265.webp` en `img/266.webp`.
+
+## Jungle-stijl (18–19 oktober 2026)
+- De hele site (743 pagina's, behalve `/spottersgids/`, `/<land>-oud/` en `/voorbeeld-jungle/`) heeft de jungle-stijl "Expeditie". Alles staat in **`bron/jungle.py`**, dat als allerlaatste stap van `bouw.py` draait. Het zet één blok `<!--jungle-->…<!--/jungle-->` (lettertypen, CSS en een paar kleine scripts) vóór `</body>`; de inhoud van de pagina's blijft ongewijzigd.
+- Terugdraaien: `python3 bron/jungle.py --weg` en de regel onderaan `bouw.py` weghalen. Reservekopie van vóór de jungle-stijl: tak `backup-voor-jungle`.
+- Controle na elke wijziging: pagina's zonder het jungle-blok moeten exact gelijk zijn aan de versie ervoor (vingerafdruk per pagina). Daarnaast een tik-test op 414 px (onderbalk, Meer-subpagina's, terugknop) én een "rust"-meting: na het tikken mogen er geen doorlopende DOM-wijzigingen zijn.
+- Wat de stijl doet:
+  - Kleuren: donker junglegroen `#143A22`, goudgeel `#F2C14E`, lichtgroene achtergrond met vage luipaardvlekken. Letters: Anton (koppen, hoofdletters) en Nunito (tekst).
+  - Groene koppen met monsterablad en golfrand. Op de landpagina's zijn de koppen van Kaart, Locaties, Soorten, Meer en alle Meer-subpagina's (In het kort, Actueel, Kleur & hybriden, Routeplanner, Hoofdtabel, Over, Rapporteer) exact even hoog en gelijk opgebouwd: vlag + titel, lichte regel, goudgele regel (teksten in `KOP_JS`, per scherm vooraf klaargezet en met CSS `:has(#…​.nw-cur)` getoond, zodat er niets verspringt). Lange titels worden kleiner gemaakt in plaats van afgekapt.
+  - Soort- en parkpagina's binnen een land (`#soort/…`, `#locatie/…` en de losse pagina's): één groene kop (`DETAIL_JS`), foto eronder, hartje rond op de foto. Op de losse pagina's staat nog geen vlag (die pagina's hebben geen landvlag in de HTML).
+  - Zwevende gele terugknop linksonder (`.jg-terug`), alleen op Meer-subpagina's en detailpagina's; gaat terug naar Soorten/Locaties of klikt de bestaande terugknop.
+  - Houten, gelakte knoppen met ingebrande tekst (landen, filters, typen, regio's); bolletjes voor de lijsten "Waar te zien" en "Katten hier"; icoon en aantal in de locatielijst verticaal gecentreerd.
+  - Getekende luipaard op de rand van het Ko-fi-blok (ronde groene ogen met wimpers, snorharen, knipperen, kop kantelt, staart zwiept; tik = opkijken). Tekening in `svg()`/`oog()` in `jungle.py`.
+- **Les:** gebruik geen MutationObserver die op `class`-wijzigingen in `#main` reageert en dan zelf HTML schrijft. Dat gaf een oneindige lus en de site reageerde niet meer op tikken (19-10, direct teruggedraaid). Teksten nu vooraf bouwen en alleen met CSS wisselen.
+- Bekend, niet door de stijl: op de kaart van Frankrijk en Duitsland is de site zelf continu bezig (ook zonder jungle-laag). Tikken werkt, maar het kost mogelijk batterij. Nog niet uitgezocht.
+- Testpagina's (noindex, niet gelinkt): `/voorbeeld-jungle/` (drie stijlvoorbeelden, `test/` per paginasoort, `ogen/`).
 
 ## Let op bij volgende wijzigingen
 - Vaste teksten in de gidsen (In het kort, regioblokken) bevatten getallen die met de hand zijn geschreven. Verandert een locatie of status, pas die zinnen dan in alle talen mee aan.
@@ -41,6 +56,8 @@ Lees eerst `bron/LEESMIJ.md` (opbouw, bouw en de telregel), `bron/OPEN.md` (open
   - Bij "vraag door" eerst vragen stellen, met keuzeknoppen.
 
 ## Afgesproken voor later
+- Spottersgids later ook in de jungle-stijl (gebruiker: "kan later").
+- Eventueel vlag in de kop van de losse park- en soortpagina's.
 - Locatiefoto's Nederland: nog geen foto voor BestZoo (luipaard, jaguar, serval), Faunapark Flakkee, Taman Indonesia en Stichting AAP. Er zijn Commons-mappen "BestZoo" en "AAP (wildlife sanctuary)". Zoeken lukte niet goed: Wikimedia (API, Wikidata en afbeeldingen) gaf vanuit de cloud vaak 429. De gewone zoekpagina en `?action=raw` van een bestandspagina werkten wel. De gebruiker zoekt zelf mee en stuurt links. Controleer of de foto echt in dat park is gemaakt (een voorgestelde "Lioness from Perth Zoo" voor BestZoo is afgewezen).
 - Foto's van parken in de locatiekaartjes.
 - Desktopweergave: Locaties in twee kolommen met de kaart ernaast.

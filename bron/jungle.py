@@ -412,8 +412,8 @@ html body #info .ip-head.jg-klaar:not(:has(.ip-photo)) .nw-hwrap{{margin:0 0 0 a
 html body #info .jg-dkop .jg-sub i{{font-style:italic}}
 html body #info .jg-dkop .jg-meta i,html body #info .jg-dkop .jg-sub>i:not(:first-child){{font-style:normal}}
 html body:has(#info .jg-dkop) .jg-terug{{display:flex}}
-html body .ip-sec:has(a[href*="locatie"]) ul.ip-where>li{{position:relative;padding-left:20px!important}}
-html body .ip-sec:has(a[href*="locatie"]) ul.ip-where>li::before{{content:"•";position:absolute;left:2px;top:var(--jg-bt,15px);font-size:1.4rem;line-height:1;color:{ACC}}}
+html body .ip-sec ul.ip-where>li{{position:relative;padding-left:20px!important}}
+html body .ip-sec ul.ip-where>li::before{{content:"•";position:absolute;left:2px;top:var(--jg-bt,15px);font-size:1.4rem;line-height:1;color:{ACC}}}
 @media (prefers-reduced-motion:reduce){{html body *{{animation:none!important}}}}
 """
 

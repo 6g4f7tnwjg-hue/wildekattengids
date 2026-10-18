@@ -16,6 +16,22 @@ html body{padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
 .nw-bar a:focus-visible{outline:2px solid var(--nw-terra);border-radius:8px}
 .nw-bar4 nav{grid-template-columns:repeat(4,minmax(0,1fr))!important}
 </style>
+
+<style id="nt-eu-css">
+/* hoofdpagina in de opbouw van de landpagina's (bron/test_ontwerp.py) */
+.bar:has(#tabs){display:none!important}
+.intro{padding-bottom:6px}
+#lg-btn,#ltf-n{display:none!important}
+#ltfbox,#ltfbox[hidden]{display:block!important;margin-top:6px}
+#ltf{flex-wrap:nowrap!important;overflow-x:auto;scrollbar-width:none;padding-bottom:4px}
+#ltf::-webkit-scrollbar{display:none}
+.info.nt-leeg{background:none!important;border:0!important;box-shadow:none!important;padding:0 2px!important;min-height:0}
+.info.nt-leeg h3,.info.nt-leeg .note{display:none}
+.info.nt-leeg .pl{margin:0;font-size:.95rem}
+.kat-land li{display:grid!important;grid-template-columns:28px minmax(0,1fr) auto;gap:4px 12px;align-items:center}
+.kat-land li .nt-ti svg{width:28px;height:28px;display:block}
+.kat-land li .kl-go{font-weight:700}
+</style>
 </head><body>
 <title>Wilde katachtigen in de Benelux, Duitsland, Frankrijk, Oostenrijk, Zwitserland, Italië, Spanje, Portugal, het Verenigd Koninkrijk en Ierland – waar zie je welke wilde kat?</title>
 <meta name="description" content="Gids van J. Gelens: welke wilde katten – leeuw, tijger, luipaard, lynx, serval, manoel en meer – je in dierentuinen, dierenparken en opvangcentra in Nederland, België, Luxemburg, Duitsland, Frankrijk, Oostenrijk, Zwitserland, Italië, Spanje, Portugal, het Verenigd Koninkrijk en Ierland kunt zien. Met kaart, routeplanner en recente geboortes.">
@@ -1439,10 +1455,10 @@ function start(){stijl();alles();
 if(document.body)start();else document.addEventListener("DOMContentLoaded",start);
 })();
 </script>
-<div class="nw-bar nw-bar4" id="nw-sbar-start" data-start="1"><nav aria-label="Menu"><a href="#kaart" data-k="home"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg><span></span></a><a href="#landen" data-k="landen"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg><span></span></a><a href="#soorten" data-k="soorten"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><ellipse cx="12" cy="15.5" rx="5" ry="4.3"/><ellipse cx="5.3" cy="10.5" rx="2" ry="2.6"/><ellipse cx="9.3" cy="6.7" rx="2" ry="2.7"/><ellipse cx="14.7" cy="6.7" rx="2" ry="2.7"/><ellipse cx="18.7" cy="10.5" rx="2" ry="2.6"/></svg><span></span></a><a href="#over" data-k="meer"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg><span></span></a></nav></div>
+<div class="nw-bar nw-bar4" id="nw-sbar-start" data-start="1"><nav aria-label="Menu"><a href="#kaart" data-k="home"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg><span></span></a><a href="#landen" data-k="landen"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/></svg><span></span></a><a href="#soorten" data-k="soorten"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><ellipse cx="12" cy="15.5" rx="5" ry="4.3"/><ellipse cx="5.3" cy="10.5" rx="2" ry="2.6"/><ellipse cx="9.3" cy="6.7" rx="2" ry="2.7"/><ellipse cx="14.7" cy="6.7" rx="2" ry="2.7"/><ellipse cx="18.7" cy="10.5" rx="2" ry="2.6"/></svg><span></span></a><a href="#over" data-k="meer"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg><span></span></a></nav></div>
 
 <script>(function(){
-var T={home:{nl:"Home",en:"Home",fr:"Accueil",de:"Start",it:"Home",es:"Inicio"},
+var T={home:{nl:"Kaart",en:"Map",fr:"Carte",de:"Karte",it:"Mappa",es:"Mapa"},
   landen:{nl:"Landen",en:"Countries",fr:"Pays",de:"Länder",it:"Paesi",es:"Países"},
   soorten:{nl:"Soorten",en:"Species",fr:"Espèces",de:"Arten",it:"Specie",es:"Especies"},
   meer:{nl:"Meer",en:"More",fr:"Plus",de:"Mehr",it:"Altro",es:"Más"}};
@@ -1456,5 +1472,37 @@ bar.addEventListener("click",function(e){var a=e.target.closest('[data-k="meer"]
 new MutationObserver(labels).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});
 document.querySelectorAll(".tab").forEach(function(t){new MutationObserver(mark).observe(t,{attributes:true,attributeFilter:["aria-selected"]});});
 labels();mark();
+})();</script>
+
+<script>(function(){
+/* hoofdpagina en soortpagina's in de opbouw van de landpagina's (bron/test_ontwerp.py) */
+var WILD={"leeuw": "22.000–25.000", "tijger": "2.600–3.900", "luipaard": "146.800–261.600", "jaguar": "ca. 173.000", "sneeuwluipaard": "2.700–3.400", "nevelpanter": "3.700–5.600", "soenda-nevelpanter": "ca. 4.500", "cheetah": "ca. 6.500", "poema": "", "jaguarundi": "", "euraziatische-lynx": "", "canadese-lynx": "", "iberische-lynx": "ca. 650", "rode-lynx": "", "serval": "", "caracal": "", "afrikaanse-goudkat": "", "aziatische-goudkat": "1.000–12.000", "borneo-goudkat": "ca. 2.200", "marmerkat": "", "ocelot": "", "margay": "", "noordelijke-tijgerkat": "9.000–10.000", "zuidelijke-tijgerkat": "ca. 6.000", "geoffroy-s-kat": "", "kodkod": "26.400–101.300", "colocolo": "", "andesbergkat": "ca. 2.200", "bengaalse-kat": "", "soendanese-luipaardkat": "", "vissende-kat": "", "platkopkat": "ca. 2.500", "roestkat": "", "manoel": "ca. 58.000", "europese-wilde-kat": "", "afrikaanse-wilde-kat": "", "chinese-bergkat": "1.200–23.500", "zandkat": "", "zwartvoetkat": "ca. 9.700", "moeraskat": "", "oostelijke-tijgerkat": "", "wolkentijgerkat": "", "tilcayo": ""},COL=["#2F6B2F", "#2766B0", "#7A5230", "#C98500", "#8A3FA0", "#16878A", "#B0306A", "#666158"],GLY=["<ellipse cx=\"0\" cy=\"1.7\" rx=\"2.6\" ry=\"2.2\"/><circle cx=\"-3.1\" cy=\"-1.3\" r=\"1.15\"/><circle cx=\"-1.15\" cy=\"-3.2\" r=\"1.15\"/><circle cx=\"1.15\" cy=\"-3.2\" r=\"1.15\"/><circle cx=\"3.1\" cy=\"-1.3\" r=\"1.15\"/>", "<circle cx=\"0\" cy=\"-1.4\" r=\"3.2\"/><rect x=\"-.75\" y=\"1\" width=\"1.5\" height=\"3.6\"/>", "<path d=\"M0-4.8 3.9 1.6H-3.9Z\"/><rect x=\"-.75\" y=\"1.4\" width=\"1.5\" height=\"3.1\"/>", "<path d=\"M-4.4 1.8V-.4l1.5-2.6h4.6l1.6 2.6h1.1v2.2Z\"/><circle cx=\"-2.3\" cy=\"2.5\" r=\"1.4\"/><circle cx=\"2.3\" cy=\"2.5\" r=\"1.4\"/>", "<g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"><circle cx=\"0\" cy=\"-1\" r=\"3.1\"/><path d=\"M0-1-2.6 4.4M0-1 2.6 4.4M-3.1-1H3.1M0-4.1V2.1\"/></g>", "<path d=\"M-3.8 3.8C-3.8-1.8-.4-4.2 4-4.2 4 .2 1.6 3.8-3.8 3.8Z\"/>", "<path d=\"M0 3.9C-4.8.8-4.3-3.7-1.5-3.7-.6-3.7 0-3 0-2.4 0-3 .6-3.7 1.5-3.7 4.3-3.7 4.8.8 0 3.9Z\"/>", "<path d=\"M-4.2.3 0-4 4.2.3H2.9V4H-2.9V.3Z\"/>"];
+var TX={wild:{nl:"In het wild (geschat)",en:"In the wild (estimated)",fr:"Dans la nature (estimation)",de:"In freier Wildbahn (geschätzt)",it:"In natura (stima)",es:"En libertad (estimación)"},
+  onb:{nl:"onbekend",en:"unknown",fr:"inconnu",de:"unbekannt",it:"sconosciuto",es:"desconocido"},
+  verspr:{nl:"Verspreiding",en:"Range",fr:"Répartition",de:"Verbreitung",it:"Distribuzione",es:"Distribución"}};
+function lang(){var l=(document.documentElement.lang||"nl").slice(0,2);return TX.wild[l]?l:"en";}
+/* korte uitleg zolang er geen locatie gekozen is */
+var info=document.getElementById("info");
+function leeg(){if(!info)return;var k=[].slice.call(info.children).map(function(e){return e.tagName+"."+e.className;}).join(",");
+  info.classList.toggle("nt-leeg",k==="H3.,P.pl,P.note");}
+if(info){new MutationObserver(leeg).observe(info,{childList:true});leeg();}
+/* soortpagina: aantallen in het wild, hoofdletter in de link naar de Spottersgids, type-icoon bij de locaties */
+function slugNu(){var m=decodeURIComponent(location.hash||"").match(/^#kat\/(.+)$/);return m?m[1]:(window.__KAT||"");}
+function ico(k){var c=COL[k]||"#8B8676";return '<svg viewBox="-8 -8 16 16" aria-hidden="true" style="color:'+c+'"><circle r="8" fill="currentColor"/><g fill="#F0EEE2" style="color:#F0EEE2">'+(GLY[k]||'<circle r="2"/>')+'</g></svg>';}
+var bezig=false;
+function kat(){var kv=document.getElementById("katview");if(!kv||bezig)return;bezig=true;var l=lang();
+  kv.querySelectorAll(".kat-feit > div").forEach(function(div){var dt=div.querySelector("dt"),dd=div.querySelector("dd");if(!dt||!dd)return;
+    if(/IUCN/.test(dt.textContent)&&!div.dataset.nt){var s=slugNu(),w=WILD[s];div.dataset.nt="1";dt.textContent=TX.wild[l];dd.textContent=w?w:TX.onb[l];}
+    else if(div.classList.contains("wd")&&!div.dataset.nt){div.dataset.nt="1";dt.textContent=TX.verspr[l];}});
+  var h=kv.querySelector("h1"),a=kv.querySelector("a.kat-spot");
+  if(l==="nl"&&h&&a&&!a.dataset.nt){var nm=h.textContent.trim();a.dataset.nt="1";
+    if(/^(\S+(se|sche|’s)\b|Borneo|Soenda|Andes|Sri)/.test(nm)){var lo=nm.charAt(0).toLowerCase()+nm.slice(1);
+      a.childNodes.forEach(function(n){if(n.nodeType===3&&n.textContent.indexOf(lo)>=0)n.textContent=n.textContent.replace(lo,nm);});}}
+  kv.querySelectorAll(".kat-land li[data-hk]").forEach(function(li){if(li.querySelector(".nt-ti"))return;var s=document.createElement("span");s.className="nt-ti";s.innerHTML=ico(+li.dataset.hk);li.insertBefore(s,li.firstChild);});
+  bezig=false;}
+var kv=document.getElementById("katview");if(kv){new MutationObserver(kat).observe(kv,{childList:true,subtree:true});kat();}
+/* onderbalk: Soorten aan op een soortpagina */
+var bar=document.getElementById("nw-sbar-start");
+if(bar&&window.__KAT){var s=bar.querySelector('[data-k="soorten"]');if(s)s.classList.add("on");}
 })();</script>
 </body></html>

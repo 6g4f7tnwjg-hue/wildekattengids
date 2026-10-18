@@ -2,6 +2,13 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 18 oktober 2026 – Hoofdpagina, soortpagina's en losse pagina's gelijkgetrokken
+
+- Hoofdpagina en top 10: onderbalk Kaart · Landen · Soorten · Meer; de tabbladen Kaart/Landen/Soorten bovenaan zijn weg; het uitlegvak bij de kaart is één regel zolang er geen locatie gekozen is; de typeknoppen staan altijd onder de kaart (knop Legenda weg).
+- Soortpagina's `/soort/…` (29): dezelfde onderbalk; IUCN-status vervangen door "In het wild (geschat)" (waarde uit `WILD`, anders "onbekend"); "In het wild" (gebied) heet nu "Verspreiding"; hoofdletter in de Spottersgids-link (bijv. "Zie de Afrikaanse wilde kat"); type-icoon bij de locaties onder "Waar te zien".
+- Losse park- en soortpagina's per land (700): onderbalk Kaart · Soorten · Locaties · Meer, titel "Soorten" i.p.v. "Per kat", "Aanwezig" verborgen.
+- Gecontroleerd: hoofdpagina, top 10, alle soortpagina's en een steekproef losse pagina's op 390 px; soortpagina in NL/EN/DE.
+
 ## 18 oktober 2026 – Nieuwe opbouw op alle landen
 
 Het ontwerp van /nederland/ staat nu op alle twaalf landpagina's (`LIVE` in `bron/test_ontwerp.py`). Nieuw voor landen met regio's: regioknoppen boven de soortrondjes op het kaartscherm; de lijsten "In beeld" en Locaties volgen het regio- en typefilter. Teksten in alle gidstalen. Gecontroleerd op 390 px in alle talen: geen fouten, geen horizontaal scrollen, aantallen kloppen (bevestigde soorten = getal bij "Alle katten"). De testpagina /nederland-test/ is weg.

@@ -395,6 +395,154 @@ LIVE = ["nederland", "belgie", "luxemburg", "duitsland", "frankrijk", "oostenrij
 def maak_alles():
     for land in LIVE:
         maak(land)
+    maak_los2()
+    maak_europa()
+
+
+
+
+
+# ------------------------------------------------------------------ losse park- en soortpagina's (18-10-2026)
+# Zelfde onderbalk als de landpagina's (Kaart · Soorten · Locaties · Meer) en "Aanwezig" alleen nog in de hoofdtabel.
+LOS2_MARK = 'id="nt-los-css"'
+LOS2_CSS = ('<style id="nt-los-css">.nw-bar nav{grid-template-columns:repeat(4,minmax(0,1fr))}'
+            '#info .st-g{display:none!important}</style>\n')
+
+
+def los2(pad, land, kind):
+    doc = open(pad, encoding="utf-8").read()
+    if LOS2_MARK in doc or NO.LOS_MARK not in doc:
+        return False
+    g = NO.BASE + land + "/"
+    act = "locaties" if kind == "locatie" else "soorten"
+    links = [("start", g, ICO["b-map"], "Kaart"), ("soorten", g + "#soorten", ICO["b-paw"], "Soorten"),
+             ("locaties", g + "#locaties", ICO["b-pin"], "Locaties"), ("meer", g + "#meer", ICO["b-menu"], "Meer")]
+    bar = ('<div class="nw-bar"><nav aria-label="Menu">'
+           + "".join(f'<a href="{h}"{" class=on" if k == act else ""}>{svg}<span>{t}</span></a>' for k, h, svg, t in links)
+           + "</nav></div>\n")
+    doc, n = re.subn(r'<div class="nw-bar"><nav aria-label="Menu">.*?</nav></div>\n', lambda m: bar, doc, count=1, flags=re.S)
+    if not n:
+        return False
+    doc = doc.replace('<span class="nw-stitle">Per kat</span>', '<span class="nw-stitle">Soorten</span>', 1)
+    doc = doc.replace("</head>", LOS2_CSS + "</head>", 1)
+    open(pad, "w", encoding="utf-8").write(doc)
+    return True
+
+
+def maak_los2():
+    n = 0
+    for land in NO.LANDEN:
+        for kind in ("locatie", "soort"):
+            d = os.path.join(ROOT, land, kind)
+            if not os.path.isdir(d):
+                continue
+            for s in sorted(os.listdir(d)):
+                pad = os.path.join(d, s, "index.html")
+                if os.path.exists(pad) and los2(pad, land, kind):
+                    n += 1
+    print("losse pagina's met de nieuwe onderbalk:", n)
+
+
+# ------------------------------------------------------------------ hoofdpagina, soortpagina's (/soort/…) en top 10 (18-10-2026)
+# Onderbalk Kaart · Landen · Soorten · Meer zonder de tabbladen erboven; korte uitleg bij de kaart; typeknoppen altijd
+# zichtbaar onder de kaart; op de soortpagina's de geschatte aantallen in het wild in plaats van de IUCN-status
+# en locatiekaartjes met het type-icoon bij "Waar te zien".
+EU_MARK = 'id="nt-eu-css"'
+ICO["b-flag"] = ('<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" '
+                 'stroke-linejoin="round"><path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/></svg>')
+EU_CSS = r"""
+<style id="nt-eu-css">
+/* hoofdpagina in de opbouw van de landpagina's (bron/test_ontwerp.py) */
+.bar:has(#tabs){display:none!important}
+.intro{padding-bottom:6px}
+#lg-btn,#ltf-n{display:none!important}
+#ltfbox,#ltfbox[hidden]{display:block!important;margin-top:6px}
+#ltf{flex-wrap:nowrap!important;overflow-x:auto;scrollbar-width:none;padding-bottom:4px}
+#ltf::-webkit-scrollbar{display:none}
+.info.nt-leeg{background:none!important;border:0!important;box-shadow:none!important;padding:0 2px!important;min-height:0}
+.info.nt-leeg h3,.info.nt-leeg .note{display:none}
+.info.nt-leeg .pl{margin:0;font-size:.95rem}
+.kat-land li{display:grid!important;grid-template-columns:28px minmax(0,1fr) auto;gap:4px 12px;align-items:center}
+.kat-land li .nt-ti svg{width:28px;height:28px;display:block}
+.kat-land li .kl-go{font-weight:700}
+</style>
+"""
+EU_JS = r"""
+<script>(function(){
+/* hoofdpagina en soortpagina's in de opbouw van de landpagina's (bron/test_ontwerp.py) */
+var WILD=WILDJSON,COL=COLJSON,GLY=GLYJSON;
+var TX={wild:{nl:"In het wild (geschat)",en:"In the wild (estimated)",fr:"Dans la nature (estimation)",de:"In freier Wildbahn (geschätzt)",it:"In natura (stima)",es:"En libertad (estimación)"},
+  onb:{nl:"onbekend",en:"unknown",fr:"inconnu",de:"unbekannt",it:"sconosciuto",es:"desconocido"},
+  verspr:{nl:"Verspreiding",en:"Range",fr:"Répartition",de:"Verbreitung",it:"Distribuzione",es:"Distribución"}};
+function lang(){var l=(document.documentElement.lang||"nl").slice(0,2);return TX.wild[l]?l:"en";}
+/* korte uitleg zolang er geen locatie gekozen is */
+var info=document.getElementById("info");
+function leeg(){if(!info)return;var k=[].slice.call(info.children).map(function(e){return e.tagName+"."+e.className;}).join(",");
+  info.classList.toggle("nt-leeg",k==="H3.,P.pl,P.note");}
+if(info){new MutationObserver(leeg).observe(info,{childList:true});leeg();}
+/* soortpagina: aantallen in het wild, hoofdletter in de link naar de Spottersgids, type-icoon bij de locaties */
+function slugNu(){var m=decodeURIComponent(location.hash||"").match(/^#kat\/(.+)$/);return m?m[1]:(window.__KAT||"");}
+function ico(k){var c=COL[k]||"#8B8676";return '<svg viewBox="-8 -8 16 16" aria-hidden="true" style="color:'+c+'"><circle r="8" fill="currentColor"/><g fill="#F0EEE2" style="color:#F0EEE2">'+(GLY[k]||'<circle r="2"/>')+'</g></svg>';}
+var bezig=false;
+function kat(){var kv=document.getElementById("katview");if(!kv||bezig)return;bezig=true;var l=lang();
+  kv.querySelectorAll(".kat-feit > div").forEach(function(div){var dt=div.querySelector("dt"),dd=div.querySelector("dd");if(!dt||!dd)return;
+    if(/IUCN/.test(dt.textContent)&&!div.dataset.nt){var s=slugNu(),w=WILD[s];div.dataset.nt="1";dt.textContent=TX.wild[l];dd.textContent=w?w:TX.onb[l];}
+    else if(div.classList.contains("wd")&&!div.dataset.nt){div.dataset.nt="1";dt.textContent=TX.verspr[l];}});
+  var h=kv.querySelector("h1"),a=kv.querySelector("a.kat-spot");
+  if(l==="nl"&&h&&a&&!a.dataset.nt){var nm=h.textContent.trim();a.dataset.nt="1";
+    if(/^(\S+(se|sche|’s)\b|Borneo|Soenda|Andes|Sri)/.test(nm)){var lo=nm.charAt(0).toLowerCase()+nm.slice(1);
+      a.childNodes.forEach(function(n){if(n.nodeType===3&&n.textContent.indexOf(lo)>=0)n.textContent=n.textContent.replace(lo,nm);});}}
+  kv.querySelectorAll(".kat-land li[data-hk]").forEach(function(li){if(li.querySelector(".nt-ti"))return;var s=document.createElement("span");s.className="nt-ti";s.innerHTML=ico(+li.dataset.hk);li.insertBefore(s,li.firstChild);});
+  bezig=false;}
+var kv=document.getElementById("katview");if(kv){new MutationObserver(kat).observe(kv,{childList:true,subtree:true});kat();}
+/* onderbalk: Soorten aan op een soortpagina */
+var bar=document.getElementById("nw-sbar-start");
+if(bar&&window.__KAT){var s=bar.querySelector('[data-k="soorten"]');if(s)s.classList.add("on");}
+})();</script>
+"""
+EU_T_OUD = 'home:{nl:"Home",en:"Home",fr:"Accueil",de:"Start",it:"Home",es:"Inicio"}'
+EU_T_NIEUW = 'home:{nl:"Kaart",en:"Map",fr:"Carte",de:"Karte",it:"Mappa",es:"Mapa"}'
+
+
+def europa(pad, wild, soort=False):
+    doc = open(pad, encoding="utf-8").read()
+    if EU_MARK in doc:
+        return False
+    if NO.START_MARK not in doc:
+        if not soort:
+            return False
+        NO.start_pagina(pad, False)
+        doc = open(pad, encoding="utf-8").read()
+    doc = doc.replace('data-k="home">' + NO.ICO["b-home"], 'data-k="home">' + ICO["b-map"], 1)
+    doc = doc.replace('data-k="landen">' + NO.ICO["b-map"], 'data-k="landen">' + ICO["b-flag"], 1)
+    doc = doc.replace(EU_T_OUD, EU_T_NIEUW, 1)
+    import huisstijl
+    js = (EU_JS.replace("WILDJSON", json.dumps(wild, ensure_ascii=False))
+          .replace("COLJSON", json.dumps(huisstijl.TCOL)).replace("GLYJSON", json.dumps(huisstijl.GLY)))
+    doc = doc.replace("</head>", EU_CSS + "</head>", 1)
+    k = doc.rindex("</body>")
+    doc = doc[:k] + js + doc[k:]
+    open(pad, "w", encoding="utf-8").write(doc)
+    return True
+
+
+def slug_py(s):
+    import unicodedata
+    s = "".join(c for c in unicodedata.normalize("NFD", s) if unicodedata.category(c) != "Mn").lower()
+    s = re.sub(r"\(.*?\)", "", s)
+    return re.sub(r"[^a-z0-9]+", "-", s).strip("-")
+
+
+def maak_europa():
+    gids = open(os.path.join(ROOT, "nederland-oud", "index.html"), encoding="utf-8").read()
+    wild = {slug_py(k): v for k, v in json.loads(re.search(r"const WILD=(\{.*?\});", gids).group(1)).items()}
+    n = europa(os.path.join(ROOT, "index.html"), wild) + europa(os.path.join(ROOT, "top10", "index.html"), wild)
+    d = os.path.join(ROOT, "soort")
+    for s in sorted(os.listdir(d)):
+        pad = os.path.join(d, s, "index.html")
+        if os.path.exists(pad):
+            n += europa(pad, wild, soort=True)
+    print("hoofdpagina, top 10 en soortpagina's in de nieuwe opbouw:", n)
 
 
 if __name__ == "__main__":

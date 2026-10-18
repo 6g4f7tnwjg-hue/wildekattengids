@@ -27,6 +27,8 @@ Alles wordt uit deze map gebouwd. Pas nooit de gegenereerde bestanden in de hoof
 
 `test_ontwerp.py` draait aan het eind van `bouw.py` (na `nieuw_ontwerp.py`) en zet op elk land in `LIVE` (alle landen) de opbouw van de hoofdpagina, met `/<land>-oud/` als bron. Onderbalk Kaart · Soorten · Locaties · Meer; het startscherm is de kaart met regioknoppen (landen met regio's), soortrondjes (filteren de kaart; het getal bij "Alle katten" is het aantal bevestigde soorten, soorten zonder bevestigde vermelding hebben een stippelrand), typeknoppen onder de kaart en een lijst "In beeld"; Soorten als fotokaartjes; Locaties als één lijst met locatiekaartjes (filters regio en type); de hoofdtabel, de routeplanner en de rest onder Meer; "Geen katachtigen gevonden" en "Over de lijst" onder Over; "Aanwezig" alleen nog in de hoofdtabel. Nieuwe teksten in `TR` (NL/EN plus FR, DE, IT, ES, PT). Terugdraaien: `test_ontwerp.py` en de regels onderaan `bouw.py` weghalen en opnieuw bouwen.
 
+Daarna (ook in `test_ontwerp.py`): `maak_los2()` geeft de losse park- en soortpagina's dezelfde onderbalk (Kaart · Soorten · Locaties · Meer) en verbergt "Aanwezig"; `maak_europa()` geeft de hoofdpagina, de top 10 en de soortpagina's `/soort/…` de onderbalk Kaart · Landen · Soorten · Meer (zonder de tabbladen erboven), een korte uitleg bij de kaart en altijd zichtbare typeknoppen; op de soortpagina's staat in plaats van de IUCN-status de geschatte aantallen in het wild (`WILD` uit de Nederlandse gids), heet het vak met het gebied "Verspreiding" en hebben de locaties bij "Waar te zien" een type-icoon.
+
 ## Bijwerken
 
 1. Pas de gids aan in `bron/gidsen/…`.

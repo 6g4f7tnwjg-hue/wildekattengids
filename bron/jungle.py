@@ -51,6 +51,10 @@ OLIVE, ACC, WOOD, WOOD_D = '#1F5A33', '#B8501C', '#DCAE76', '#9C6B36'
 DISP = '"Anton","Impact","Arial Narrow",sans-serif'
 BODY = '"Nunito",system-ui,-apple-system,sans-serif'
 
+
+HOUT = "background:linear-gradient(180deg,rgba(255,255,255,.38) 0,rgba(255,255,255,.1) 42%,rgba(0,0,0,0) 55%,rgba(70,35,5,.14) 100%),repeating-linear-gradient(91deg,rgba(90,50,15,.07) 0 1px,transparent 1px 6px,rgba(90,50,15,.04) 6px 7px,transparent 7px 13px),linear-gradient(90deg,#D6A465,#E4B97F 45%,#D39E5E)!important;color:#5A3210!important;border:0!important;border-radius:9px!important;box-shadow:inset 0 1px 0 rgba(255,250,235,.7),inset 0 -2px 0 rgba(100,55,15,.28),0 1px 1px rgba(60,35,10,.35),0 4px 8px -4px rgba(60,35,10,.45)!important;text-shadow:0 1px 0 rgba(255,236,200,.75),0 -1px 0 rgba(70,35,5,.3);font-weight:800"
+HOUT_AAN = "background:linear-gradient(180deg,rgba(255,255,255,.22) 0,rgba(255,255,255,.04) 45%,rgba(0,0,0,0) 55%,rgba(0,0,0,.2) 100%),#1D4A2C!important;color:#F2C14E!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.3),inset 0 -2px 0 rgba(0,0,0,.3),0 1px 1px rgba(0,0,0,.35),0 4px 8px -4px rgba(10,36,20,.6)!important;text-shadow:0 -1px 0 rgba(0,0,0,.45)"
+
 GEDEELD = f"""
 @keyframes jw{{0%,100%{{transform:rotate(-4deg)}}50%{{transform:rotate(4deg)}}}}
 html body{{background:{rosettes(OLIVE,'.06')},{BG}!important}}
@@ -79,14 +83,15 @@ html body .top .icobtn,html body .top .lm .lm-btn{{border-color:#3C6B49;color:#F
 html body .top .icobtn[aria-expanded="true"]{{background:{SUN};color:{JG};border-color:{SUN}}}
 html body .intro{{position:relative;overflow:hidden;isolation:isolate;background:{rosettes('#FFFFFF','.07')},{JG};color:#F1F5E4;padding-bottom:44px}}
 html body .intro .wrap{{position:relative;z-index:2}}
-html body .intro h1{{color:#F1F5E4;font-size:clamp(2.4rem,11vw,3.4rem);max-width:12ch}}
+html body .intro h1{{color:{SUN};font-size:clamp(2rem,9.2vw,3.2rem);max-width:none}}
+html body .intro h1::first-line{{color:#F1F5E4}}
 html body .intro .sub{{color:#D3E4C2;max-width:22rem}}
 html body .intro .meta,html body .intro .meta *{{color:{SUN}!important}}
 html body .intro::before{{content:"";position:absolute;right:-34px;top:-14px;width:150px;height:180px;background:{monstera('#2F7A3B','#1D5527')} no-repeat center/contain;transform-origin:top center;animation:jw 6s ease-in-out infinite;z-index:1;pointer-events:none}}
 html body .intro::after{{content:"";position:absolute;left:0;right:0;bottom:-1px;height:30px;background:{wave(BG)} no-repeat center/100% 100%;z-index:3;pointer-events:none}}
 html body .intro .wrap::after{{content:"";position:absolute;right:-6px;bottom:-30px;width:48px;height:130px;background:{longleaf('#5FA84A','#3B7A2E')} no-repeat center/contain;transform-origin:top center;animation:jw 7s ease-in-out infinite;z-index:-1;pointer-events:none}}
-html body .chip{{background:repeating-linear-gradient(177deg,rgba(60,30,10,.08) 0 2px,transparent 2px 9px),{WOOD};color:#3A2410;border:0;border-radius:8px;box-shadow:0 3px 0 {WOOD_D};font-weight:700}}
-html body .chip[aria-pressed="true"]{{background:{JG};color:{SUN};box-shadow:0 3px 0 #0A2414}}
+html body .chip{{{HOUT}}}
+html body .chip[aria-pressed="true"]{{{HOUT_AAN}}}
 html body .lbl{{font-family:{DISP};font-size:1.15rem;letter-spacing:.04em;color:{OLIVE};display:flex;align-items:center;gap:8px}}
 html body .lbl::before{{content:"";flex:none;width:46px;height:20px;background:{paws('#C9561F')} center/contain no-repeat}}
 html body .catbtn .av{{border:3px solid {SUN};box-shadow:0 2px 0 {WOOD_D}}}
@@ -131,8 +136,8 @@ html body .nt-cat[aria-pressed="true"]{{background:#D4E6BF!important}}
 html body .nt-cat[aria-pressed="true"] .nt-av{{border-color:{JG}!important;box-shadow:0 0 0 3px {SUN}!important}}
 html body .nt-av.nt-all{{background:{JG}!important;color:{SUN}!important}}
 html body #nt-kaart{{border-radius:18px;overflow:hidden;box-shadow:0 0 0 4px {JG},0 10px 24px -12px rgba(20,58,34,.5)}}
-html body .chip,html body .nt-types button{{background:repeating-linear-gradient(177deg,rgba(60,30,10,.08) 0 2px,transparent 2px 9px),{WOOD};color:#3A2410;border:0!important;border-radius:8px;box-shadow:0 3px 0 {WOOD_D};font-weight:700}}
-html body .chip[aria-pressed="true"],html body .nt-types button[aria-pressed="true"]{{background:{JG};color:{SUN};box-shadow:0 3px 0 #0A2414}}
+html body .chip,html body .nt-types button{{{HOUT}}}
+html body .chip[aria-pressed="true"],html body .nt-types button[aria-pressed="true"]{{{HOUT_AAN}}}
 /* losse park- en soortpagina's */
 html body .nw-sbar{{background:transparent}}
 html body .nw-sbar .nw-stitle{{font-family:{DISP};font-weight:400;text-transform:uppercase;letter-spacing:.03em;color:{OLIVE}}}

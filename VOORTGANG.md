@@ -2,6 +2,10 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 18 oktober 2026 – Foto's Eindhoven Zoo en Hoenderdaell
+
+Locatiefoto's toegevoegd in de Nederlandse gids (`LOCPHOTOS`): Eindhoven Zoo (Siberische tijger, Cro-Cop, CC BY 4.0, `img/265.webp`) en Landgoed Hoenderdaell / Stichting Leeuw (leeuw, Ingredia, CC BY 4.0, `img/266.webp`). Nog zonder foto: Faunapark Flakkee, BestZoo, Taman Indonesia, Stichting AAP. De voorgestelde foto voor BestZoo ("Lioness from Perth Zoo") is niet gebruikt: die is in Perth gemaakt en BestZoo heeft geen leeuwen.
+
 ## 18 oktober 2026 – Meer op de landpagina's zonder blok Bezoekersgids
 
 Op het scherm Meer van alle landpagina's zijn de kop "Bezoekersgids" en de links eronder (Alle landen, Alle soorten, Top 10, Over deze gids, Spottersgids) weggehaald (`MEER_NIEUW` in `bron/test_ontwerp.py`). Ze staan nog in het ☰-menu.

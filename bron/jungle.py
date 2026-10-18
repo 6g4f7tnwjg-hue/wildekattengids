@@ -414,6 +414,10 @@ html body #info .jg-dkop .jg-meta i,html body #info .jg-dkop .jg-sub>i:not(:firs
 html body:has(#info .jg-dkop) .jg-terug{{display:flex}}
 html body .ip-sec ul.ip-where>li{{position:relative;padding-left:20px!important}}
 html body .ip-sec ul.ip-where>li::before{{content:"•";position:absolute;left:2px;top:var(--jg-bt,15px);font-size:1.4rem;line-height:1;color:{ACC}}}
+html body .nt-loc>.nt-ti,html body .nt-loc>.nt-n{{align-self:center!important;margin-top:0!important;margin-bottom:0!important}}
+html body #info[hidden] .jg-dkop{{display:none!important}}
+html body .jg-terug{{display:none!important}}
+html body:has(#main :is(#tldr.nw-cur,#actueel.nw-cur,#kleur.nw-cur,#route.nw-cur,#tabel.nw-cur,#uitleg.nw-cur,#rapporteer.nw-cur)) .jg-terug,html body:has(#info:not([hidden]) .jg-dkop) .jg-terug{{display:flex!important}}
 @media (prefers-reduced-motion:reduce){{html body *{{animation:none!important}}}}
 """
 

@@ -271,9 +271,11 @@ if(q)q.addEventListener("blur",function(){setTimeout(function(){if(!q.value&&doc
 """
 
 
-def maak():
+def maak(map=DOEL):
+    """Schrijft het ontwerp naar /<map>/ (standaard de testpagina; "nederland" = de live pagina)."""
+    test = map == DOEL
     bron = os.path.join(ROOT, BRON, "index.html")
-    doel = os.path.join(ROOT, DOEL, "index.html")
+    doel = os.path.join(ROOT, map, "index.html")
     doc = open(bron, encoding="utf-8").read()
     assert NO.MARK not in doc, "bron heeft al het app-ontwerp"
 
@@ -281,9 +283,12 @@ def maak():
         assert a in t, f"niet gevonden: {a[:60]}"
         return t.replace(a, b, 1)
 
-    if '<meta name="robots"' not in doc:
-        doc = sub1(doc, "</head>", '<meta name="robots" content="noindex">\n</head>')
-    doc = doc.replace("<title>", "<title>TEST · ", 1)
+    if test:
+        if '<meta name="robots"' not in doc:
+            doc = sub1(doc, "</head>", '<meta name="robots" content="noindex">\n</head>')
+        doc = doc.replace("<title>", "<title>TEST · ", 1)
+    else:
+        doc = doc.replace('<meta name="robots" content="noindex">\n', "", 1)
     doc = sub1(doc, "</head>", NO.CSS + CSS + "</head>")
     doc = sub1(doc, '<div class="wrap" id="main">', '<div class="wrap" id="main">\n' + START)
     doc = sub1(doc, '<section id="rapporteer"', EXTRA + '<section id="rapporteer"')
@@ -325,8 +330,17 @@ def maak():
     doc = doc[:i] + BAR + js + js_t + doc[i:]
     os.makedirs(os.path.dirname(doel), exist_ok=True)
     open(doel, "w", encoding="utf-8").write(doc)
-    print("testontwerp geschreven:", DOEL + "/index.html")
+    print("testontwerp geschreven:", map + "/index.html")
+
+
+LIVE = ["nederland"]   # landen waar dit ontwerp live staat (18-10-2026: Nederland)
+
+
+def maak_alles():
+    maak()
+    for land in LIVE:
+        maak(land)
 
 
 if __name__ == "__main__":
-    maak()
+    maak_alles()

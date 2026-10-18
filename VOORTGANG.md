@@ -2,6 +2,10 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 18 oktober 2026 – Nieuwe opbouw live op /nederland/
+
+Goedgekeurd: het testontwerp staat nu ook op /nederland/ (`test_ontwerp.maak_alles()`, lijst `LIVE`). De reserve blijft /nederland-oud/; /nederland-test/ blijft voorlopig staan voor de volgende landen. Volgende stappen (afgesproken): alle andere landen in dit ontwerp (met regiofilter op het kaartscherm en teksten in alle gidstalen), daarna de hoofdpagina en losse pagina's gelijktrekken en de IUCN-status op de soortpagina's vervangen door de geschatte aantallen in het wild, tot slot de Nederlandse gids nalopen (stand 28-9-2026).
+
 ## 18 oktober 2026 – Testpagina nieuwe opbouw (/nederland-test/)
 
 Op verzoek een testpagina naast de live Nederlandse gids, om de landpagina's dichter bij de hoofdpagina te brengen (bron: `bron/test_ontwerp.py`, zie `bron/LEESMIJ.md`). /nederland/ en de andere pagina's zijn niet veranderd.

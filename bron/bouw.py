@@ -569,6 +569,6 @@ import nieuw_ontwerp; nieuw_ontwerp.maak(); nieuw_ontwerp.maak_los(); nieuw_ontw
 
 # testontwerp (18-10-2026): /nederland-test/ met de opbouw van de hoofdpagina (zie bron/test_ontwerp.py)
 try:
-    import test_ontwerp; test_ontwerp.maak()
+    import test_ontwerp; test_ontwerp.maak_alles()   # ook live op /nederland/ (18-10-2026)
 except Exception as e:
     print("testontwerp overgeslagen:", e)

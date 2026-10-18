@@ -2,6 +2,10 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 18 oktober 2026 – Aantallen in het wild aangevuld
+
+Ontbrekende schattingen (24 soorten) onderzocht; alleen betrouwbare IUCN-cijfers voor volwassen dieren ingevuld: Geoffroy’s kat ca. 528.000 en zandkat ca. 27.300 (in alle gidsen). Overige uitkomsten en twijfelgevallen in `bron/OPEN.md` en `bron/wild_onderzoek_2026-10.json`.
+
 ## 18 oktober 2026 – Inzoomen op een gekozen regio
 
 Landpagina's: kies je een regio (deelstaat, provincie, comunidad …), dan zoomt de kaart in op de locaties van die regio; "Alle regio's" zet de kaart weer op heel het land. `huisstijl.py` geeft daarvoor `window.__HSZOOM(svg, viewBox|null)`; `regioZoom()` in `test_ontwerp.py`.

@@ -1,0 +1,218 @@
+{
+ "Poema": {
+  "waarde": "",
+  "bron": "IUCN Rode Lijst 2015 (Nielsen et al.) – geen aantal",
+  "jaar": "2015",
+  "url": "https://www.catsg.org/living-species-puma",
+  "is_iucn": true,
+  "zekerheid": "hoog",
+  "opmerking": "IUCN: onbekend; alleen regionaal: Canada 3.500–5.000, west-VS ca. 10.000 (jaren 90), Florida 100–180"
+ },
+ "Jaguarundi": {
+  "waarde": "",
+  "bron": "IUCN Rode Lijst 2015 (Caso et al.) – geen aantal",
+  "jaar": "2015",
+  "url": "https://www.catsg.org/living-species-jaguarundi",
+  "is_iucn": true,
+  "zekerheid": "hoog",
+  "opmerking": "IUCN: onbekend; geen betrouwbare wereldschatting"
+ },
+ "Euraziatische lynx": {
+  "waarde": "> 69.500",
+  "bron": "Som van regionale schattingen (Breitenmoser et al. 2015/IUCN; CMS COP14 2024)",
+  "jaar": "2015",
+  "url": "https://www.catsg.org/living-species-eurasianlynx",
+  "is_iucn": false,
+  "zekerheid": "laag",
+  "opmerking": "IUCN geeft geen wereldtotaal; Europa (zonder Rusland/Wit-Rusland) 9.000–10.000 + Rusland ca. 22.510 + China ca. 27.000 + Mongolië ca. 10.000; Centraal-Azië ontbreekt, geen 'mature individuals', jaartallen lopen uiteen"
+ },
+ "Canadese lynx": {
+  "waarde": "",
+  "bron": "IUCN Rode Lijst 2016 (Vashon) / CatSG",
+  "jaar": "2016",
+  "url": "https://www.catsg.org/living-species-canadalynx",
+  "is_iucn": true,
+  "zekerheid": "hoog",
+  "opmerking": "CatSG: 'No global population size estimate for the Canada lynx exists'; aantallen schommelen met hazencyclus"
+ },
+ "Rode lynx": {
+  "waarde": "2.352.276–3.571.681",
+  "bron": "IUCN Rode Lijst 2016 (Kelly et al.), o.b.v. Roberts & Crimmins 2010",
+  "jaar": "2016",
+  "url": "https://www.iucnredlist.org/species/12521/50655874",
+  "is_iucn": true,
+  "zekerheid": "middel",
+  "opmerking": "Alleen VS (alle dieren, niet specifiek volwassen); Canada en Mexico niet meegeteld, dus wereldtotaal hoger"
+ },
+ "Serval": {
+  "waarde": "",
+  "bron": "IUCN Rode Lijst 2015 (Thiel), herzien 2019",
+  "jaar": "2015",
+  "url": "https://www.catsg.org/living-species-serval",
+  "is_iucn": true,
+  "zekerheid": "hoog",
+  "opmerking": "Geen wereldschatting; alleen Noord-Afrikaanse populatie <250 volwassen dieren"
+ },
+ "Caracal": {
+  "waarde": "",
+  "bron": "IUCN Rode Lijst 2016 (Avgan et al.) – geen aantal",
+  "jaar": "2016",
+  "url": "https://www.catsg.org/living-species-caracal",
+  "is_iucn": true,
+  "zekerheid": "hoog",
+  "opmerking": "IUCN/CatSG: geen wereldschatting"
+ },
+ "Afrikaanse goudkat": {
+  "waarde": "",
+  "bron": "IUCN Rode Lijst 2015 (Bahaa-el-din et al.) – geen aantal",
+  "jaar": "2015",
+  "url": "https://www.catsg.org/living-species-africangoldencat",
+  "is_iucn": true,
+  "zekerheid": "hoog",
+  "opmerking": "IUCN: onbekend; zeer slecht bekende soort, weinig dichtheidsschattingen"
+ },
+ "Marmerkat": {
+  "waarde": "> 10.000",
+  "bron": "IUCN Rode Lijst 2016 (Ross et al.)",
+  "jaar": "2016",
+  "url": "https://www.iucnredlist.org/species/16218/97164299",
+  "is_iucn": true,
+  "zekerheid": "middel",
+  "opmerking": "Volwassen dieren, 'aangenomen dat dichtheden niet uitzonderlijk laag zijn'; via Wikipedia-lijst, niet in assessment zelf geverifieerd"
+ },
+ "Ocelot": {
+  "waarde": "",
+  "bron": "IUCN Rode Lijst 2015 (Paviolo et al.) – geen aantal",
+  "jaar": "2015",
+  "url": "https://www.catsg.org/living-species-ocelot",
+  "is_iucn": true,
+  "zekerheid": "hoog",
+  "opmerking": "Geen wetenschappelijk onderbouwde wereldschatting; Argentinië 1.500–8.000, Texas 50–80"
+ },
+ "Margay": {
+  "waarde": "",
+  "bron": "IUCN Rode Lijst 2015 (de Oliveira et al.) – geen aantal",
+  "jaar": "2015",
+  "url": "https://www.catsg.org/living-species-margay",
+  "is_iucn": true,
+  "zekerheid": "hoog",
+  "opmerking": "Geen wereldschatting; alleen Brazilië: effectieve populatie 4.700–20.000 (ICMBio)"
+ },
+ "Geoffroy’s kat": {
+  "waarde": "ca. 528.000",
+  "bron": "IUCN Rode Lijst 2015 (Pereira et al.), via CatSG",
+  "jaar": "2015",
+  "url": "https://www.catsg.org/living-species-geoffroyscat",
+  "is_iucn": true,
+  "zekerheid": "middel",
+  "opmerking": "CatSG: 'global population is estimated at 528,012 mature individuals'; nieuwere IUCN-beoordeling 2025/2026 (Tirelli et al.) niet gecontroleerd"
+ },
+ "Colocolo": {
+  "waarde": "",
+  "bron": "IUCN Rode Lijst 2016 (Lucherini et al.) – geen aantal",
+  "jaar": "2016",
+  "url": "https://www.iucnredlist.org/species/15309/97204446",
+  "is_iucn": true,
+  "zekerheid": "middel",
+  "opmerking": "Geen wereldschatting gevonden; soort is sindsdien taxonomisch opgesplitst"
+ },
+ "Bengaalse kat": {
+  "waarde": "",
+  "bron": "IUCN Rode Lijst 2015 (Ross et al.) – geen aantal",
+  "jaar": "2015",
+  "url": "https://www.catsg.org/living-species-leopardcat",
+  "is_iucn": true,
+  "zekerheid": "hoog",
+  "opmerking": "Geen wereldschatting; regionaal o.a. Rusland ca. 1.600, Nepal <2.500, Iriomote 100–110"
+ },
+ "Soendanese luipaardkat": {
+  "waarde": "",
+  "bron": "Niet apart beoordeeld door IUCN",
+  "jaar": "",
+  "url": "https://www.catsg.org/living-species-sundaleopardcat",
+  "is_iucn": false,
+  "zekerheid": "hoog",
+  "opmerking": "IUCN beoordeelde P. bengalensis vóór de splitsing; geen schatting voor P. javanensis"
+ },
+ "Vissende kat": {
+  "waarde": "3.194–7.527",
+  "bron": "IUCN Cat Specialist Group (catsg.org), o.b.v. bestaande + geëxtrapoleerde dichtheden",
+  "jaar": "2025",
+  "url": "https://www.catsg.org/living-species-fishingcat",
+  "is_iucn": false,
+  "zekerheid": "laag",
+  "opmerking": "Totaal aantal dieren (niet 'mature'); India+Bangladesh 1.768–5.088, Sri Lanka 1.392–2.187; IUCN 2016 gaf geen getal, herbeoordeling 2025 niet gecontroleerd"
+ },
+ "Roestkat": {
+  "waarde": "",
+  "bron": "IUCN Rode Lijst 2016 (Mukherjee et al.) – geen aantal",
+  "jaar": "2016",
+  "url": "https://www.catsg.org/living-species-rustyspottedcat",
+  "is_iucn": true,
+  "zekerheid": "hoog",
+  "opmerking": "IUCN: te weinig gegevens; oude 2008-beoordeling noemde <10.000 volwassen dieren (verouderd)"
+ },
+ "Europese wilde kat": {
+  "waarde": "",
+  "bron": "IUCN Rode Lijst 2022 (Gerngross et al.) – geen aantal",
+  "jaar": "2022",
+  "url": "https://www.catsg.org/living-species-europeanwildcat",
+  "is_iucn": true,
+  "zekerheid": "hoog",
+  "opmerking": "Geen wereldschatting; trend over het hele areaal onbekend"
+ },
+ "Afrikaanse wilde kat": {
+  "waarde": "",
+  "bron": "IUCN Rode Lijst 2022 – geen aantal",
+  "jaar": "2022",
+  "url": "https://www.catsg.org/living-species-africanwildcat",
+  "is_iucn": true,
+  "zekerheid": "hoog",
+  "opmerking": "CatSG: populatiegrootte onbekend, ook nationaal geen schattingen"
+ },
+ "Zandkat": {
+  "waarde": "ca. 27.300",
+  "bron": "IUCN Rode Lijst 2016 (Sliwa et al.), via CatSG",
+  "jaar": "2016",
+  "url": "https://www.iucnredlist.org/species/8541/50651884",
+  "is_iucn": true,
+  "zekerheid": "middel",
+  "opmerking": "CatSG: 'conservatively estimated at 27,264 mature individuals'; reden voor afwaardering naar LC in 2016"
+ },
+ "Moeraskat": {
+  "waarde": "",
+  "bron": "IUCN Rode Lijst 2016 (Gray et al.) – geen aantal",
+  "jaar": "2016",
+  "url": "https://www.catsg.org/living-species-junglecat",
+  "is_iucn": true,
+  "zekerheid": "hoog",
+  "opmerking": "Geen wereldschatting; alleen lokaal (bijv. Dagestan ca. 307)"
+ },
+ "Oostelijke tijgerkat": {
+  "waarde": "",
+  "bron": "Geen soortspecifieke schatting",
+  "jaar": "",
+  "url": "https://www.iucnredlist.org/species/54012637/50653881",
+  "is_iucn": false,
+  "zekerheid": "hoog",
+  "opmerking": "IUCN 2016 (Payan & de Oliveira) gaf 8.932–10.208 volwassen dieren voor L. tigrinus s.l. (incl. emiliae, pardinoides, tilcayo); niet op te splitsen"
+ },
+ "Wolkentijgerkat": {
+  "waarde": "",
+  "bron": "Geen soortspecifieke schatting",
+  "jaar": "",
+  "url": "https://en.wikipedia.org/wiki/Clouded_tiger_cat",
+  "is_iucn": false,
+  "zekerheid": "hoog",
+  "opmerking": "IUCN rekent hem nog onder L. tigrinus (2016: 8.932–10.208 volwassen dieren voor de hele groep)"
+ },
+ "Tilcayo": {
+  "waarde": "",
+  "bron": "Geen schatting (soort beschreven sept. 2026, Current Biology)",
+  "jaar": "2026",
+  "url": "https://newsweek.com/new-tiger-cat-species-tilcayo-bolivia-species-risk-extinction-12462051",
+  "is_iucn": false,
+  "zekerheid": "hoog",
+  "opmerking": "Nieuw beschreven; nog niet door IUCN beoordeeld, populatiegrootte onbekend"
+ }
+}

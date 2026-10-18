@@ -4,6 +4,9 @@ Bijgehouden door Claude. Bijwerken als een punt is opgelost.
 
 ## Voor later (afgesproken)
 
+- **Aantallen in het wild (`WILD`)**: onderzocht op 18-10-2026 (`bron/wild_onderzoek_2026-10.json`). Ingevuld: Geoffroy’s kat (ca. 528.000) en zandkat (ca. 27.300), beide IUCN-volwassen dieren. Niet ingevuld omdat ze niet passen bij de uitleg "volwassen dieren volgens de IUCN": rode lynx (2.352.276–3.571.681, alleen VS, alle dieren), Euraziatische lynx (> 69.500, eigen optelling van regio's), vissende kat (3.194–7.527, alle dieren, CatSG), marmerkat (> 10.000, alleen Wikipedia). De overige 18 hebben geen wereldwijde schatting (IUCN: onbekend). iucnredlist.org was niet te lezen (Cloudflare); bij toegang de nieuwste beoordelingen nalopen (o.a. Geoffroy’s kat 2025/2026, vissende kat 2025).
+- **Foto's van parken** in de locatiekaartjes, **desktopweergave** (Locaties in twee kolommen met kaart ernaast): later.
+
 - **Voedertijden en verzorgerspraatjes** toevoegen bij de top 10 (en eventueel in de gidsen).
 - **Overzeese gebieden van Frankrijk** (bijv. Zoo de Guyane: jaguar, ocelot, margay): nog beslissen of ze erbij komen.
 - **Foto's van Franse parken**: veel locaties hebben nog geen foto (Commons gaf een limiet). Een rustige extra ronde.

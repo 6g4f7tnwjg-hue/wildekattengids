@@ -1765,17 +1765,17 @@ html body .nw-sbar .jg-meta>div{display:inline!important}
 html body .nw-sbar .jg-meta i{font-style:normal}
 html body .nw-sbar .jg-sub{margin-top:6px!important}
 /* vier koppen exact gelijk aan de landkop (19-10-2026) */
-html body #main .nw-sbar:not(.nw-los){height:auto!important;min-height:0!important;padding:21px 20px 44px!important;display:block!important;overflow:hidden}
-html body #main .nw-sbar:not(.nw-los) .nw-back{float:left;margin:2px 12px 0 0!important}
-html body #main .nw-sbar .jg-vlag{float:left;margin:6px 12px 0 0}
-html body #main .nw-sbar .nw-stitle{display:block!important;line-height:calc(clamp(2.2rem,10vw,3.2rem) * 1.1)!important;height:auto;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-html body #main .nw-sbar .nw-stitle *{line-height:inherit!important}
-html body #main .nw-sbar .jg-sub{clear:both;display:block;margin:4px 0 0!important;font-size:16.8px!important;line-height:26.88px!important;color:#D3E4C2!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-html body #main .nw-sbar .jg-meta{display:block!important;margin:10px 0 0!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-html body #main .nw-sbar .jg-meta,html body #main .nw-sbar .jg-meta *{font-size:13.76px!important;letter-spacing:.06em!important;line-height:17px!important}
-html body #main .nw-sbar .jg-meta .nw-stats,html body #main .nw-sbar .jg-meta .nw-stats>a{display:inline-flex!important;gap:0 14px}
-html body #main .nw-sbar .jg-meta .nw-stats{margin-right:14px!important}
-html body #main .nw-sbar .jg-meta .nw-stats strong{font-size:13.76px!important}
+html body :is(#main,#info) .nw-sbar:not(.nw-los){height:auto!important;min-height:0!important;padding:21px 20px 44px!important;display:block!important;overflow:hidden}
+html body :is(#main,#info) .nw-sbar:not(.nw-los) .nw-back{float:left;margin:2px 12px 0 0!important}
+html body :is(#main,#info) .nw-sbar .jg-vlag{float:left;margin:6px 12px 0 0}
+html body :is(#main,#info) .nw-sbar .nw-stitle{display:block!important;line-height:calc(clamp(2.2rem,10vw,3.2rem) * 1.1)!important;height:auto;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+html body :is(#main,#info) .nw-sbar .nw-stitle *{line-height:inherit!important}
+html body :is(#main,#info) .nw-sbar .jg-sub{clear:both;display:block;margin:4px 0 0!important;font-size:16.8px!important;line-height:26.88px!important;color:#D3E4C2!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+html body :is(#main,#info) .nw-sbar .jg-meta{display:block!important;margin:10px 0 0!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+html body :is(#main,#info) .nw-sbar .jg-meta,html body :is(#main,#info) .nw-sbar .jg-meta *{font-size:13.76px!important;letter-spacing:.06em!important;line-height:17px!important}
+html body :is(#main,#info) .nw-sbar .jg-meta .nw-stats,html body :is(#main,#info) .nw-sbar .jg-meta .nw-stats>a{display:inline-flex!important;gap:0 14px}
+html body :is(#main,#info) .nw-sbar .jg-meta .nw-stats{margin-right:14px!important}
+html body :is(#main,#info) .nw-sbar .jg-meta .nw-stats strong{font-size:13.76px!important}
 html body #main .nw-sbar [data-tab]{display:none!important}
 html body #main:has(#locaties.nw-cur) .nw-sbar [data-tab="locaties"],html body #main:has(#soorten.nw-cur) .nw-sbar [data-tab="soorten"],html body #main:has(#meer.nw-cur) .nw-sbar [data-tab="meer"],html body #main:not(:has(#locaties.nw-cur,#soorten.nw-cur,#meer.nw-cur)) .nw-sbar [data-tab="anders"]{display:block!important;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 html body #main .nw-sbar .jg-meta [data-tab] .nw-stats,html body #main .nw-sbar .jg-meta [data-tab] .nw-stats>a,html body #main .nw-sbar .jg-meta [data-tab] .nw-datum{display:inline-flex!important}
@@ -1787,6 +1787,20 @@ html body .jg-terug svg{width:26px;height:26px}
 html body .jg-terug .jg-vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 html body:has(#main :is(#tldr.nw-cur,#actueel.nw-cur,#kleur.nw-cur,#route.nw-cur,#tabel.nw-cur,#uitleg.nw-cur,#rapporteer.nw-cur)) .jg-terug{display:flex}
 html body .jg-terug:focus-visible{outline:3px solid #143A22;outline-offset:3px}
+/* detailpagina's soort/park binnen een land */
+html body #info:has(.jg-dkop)>.nw-sbar:not(.jg-dkop),html body:has(#info .jg-dkop) .nw-sbar.nw-los{display:none!important}
+html body #info .ip-head.jg-klaar{background:none!important;margin:0!important;padding:4px 0 0!important;position:relative;overflow:visible;border:0!important}
+html body #info .ip-head.jg-klaar::before,html body #info .ip-head.jg-klaar::after{display:none!important}
+html body #info .ip-head.jg-klaar>.ip-tags,html body #info .ip-head.jg-klaar>h1,html body #info .ip-head.jg-klaar>.ip-sci,html body #info .ip-head.jg-klaar>.ip-alt{display:none!important}
+html body #info .ip-head.jg-klaar .ip-photo{box-shadow:none;border-radius:18px;margin-top:0}
+html body #info .ip-head.jg-klaar .ip-photo img{border-radius:18px;display:block}
+html body #info .ip-head.jg-klaar .ip-cap,html body #info .ip-head.jg-klaar .ip-cap *{color:#4C6450!important}
+html body #info .ip-head.jg-klaar:has(.ip-photo) .nw-hwrap{position:absolute;top:16px;right:12px;z-index:3;width:46px;height:46px;padding:0!important;border-radius:50%!important;background:#FFFFFF!important;border:0!important;box-shadow:0 4px 12px -4px rgba(0,0,0,.45);display:flex!important;align-items:center;justify-content:center;font-size:0!important}
+html body #info .ip-head.jg-klaar .nw-hwrap>span:not(.nw-heart){position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+html body #info .ip-head.jg-klaar:not(:has(.ip-photo)) .nw-hwrap{margin:0 0 0 auto}
+html body #info .jg-dkop .jg-sub i{font-style:italic}
+html body #info .jg-dkop .jg-meta i,html body #info .jg-dkop .jg-sub>i:not(:first-child){font-style:normal}
+html body:has(#info .jg-dkop) .jg-terug{display:flex}
 @media (prefers-reduced-motion:reduce){html body *{animation:none!important}}
 
 :root{--bg:#ECF2DF;--paper:#FAFBF2;--card:#FAFBF2;--ink:#13301C;--muted:#4C6450;--line:#CADBB9;--olive:#1F5A33;--dot:#1F5A33;--accent:#B8501C;
@@ -1904,8 +1918,40 @@ bouw();setTimeout(bouw,400);setTimeout(bouw,1500);
 var ob=sb.querySelector('.nw-back');
 if(ob&&!document.querySelector('.jg-terug')){var tb=document.createElement('button');tb.type='button';tb.className='jg-terug';
  tb.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>'+per(function(l){var x=ob.querySelector('.l-'+l);return '<span class="jg-vh">'+esc(x?x.textContent:'Terug')+'</span>'});
- tb.addEventListener('click',function(){ob.click()});document.body.appendChild(tb);}
+ tb.addEventListener('click',function(){if(window.jgTerug&&window.jgTerug())return;ob.click()});document.body.appendChild(tb);}
 function fit(){if(!t)return;t.style.removeProperty('--jg-fs');var fs=parseFloat(getComputedStyle(t).fontSize),n=0;while(t.scrollWidth>t.clientWidth+1&&fs>20&&n<30){fs-=1;n++;t.style.setProperty('--jg-fs',fs+'px');}}
 function later(){requestAnimationFrame(fit)}
 document.addEventListener('click',later);window.addEventListener('hashchange',later);window.addEventListener('resize',later);later();setTimeout(fit,400);
+})();(function(){
+var LW={nl:'locaties',en:'locations',fr:'lieux',de:'Orte',it:'luoghi',es:'lugares',pt:'locais'},IN={nl:'in',en:'in',fr:'en',de:'in',it:'in',es:'en',pt:'em'};
+function langs(){var a=[].map.call(document.querySelectorAll('[data-setlang]'),function(b){return b.dataset.setlang});if(!a.length)a=[document.documentElement.lang||'nl'];return a.filter(function(l,i){return a.indexOf(l)==i});}
+function esc(t){return String(t).replace(/[<&>]/g,'');}
+function tekst(el,l){if(!el)return '';var x=el.querySelector('.l-'+l);return (x||el).textContent.trim();}
+window.jgTerug=function(){var h=location.hash;var m=/^#(soort|locatie)\//.exec(h);if(m&&document.querySelector('#info .jg-dkop')){var a=document.querySelector('.nw-bar a[data-nw="'+(m[1]=='soort'?'soorten':'locaties')+'"]')||document.querySelector('.nw-bar a[href="#'+(m[1]=='soort'?'soorten':'locaties')+'"]');if(a){a.click();return true;}history.back();return true;}
+ var lb=document.querySelector('.nw-sbar.nw-los .nw-back');if(lb){lb.click();return true;}return false;};
+function knop(){if(document.querySelector('.jg-terug'))return;var tb=document.createElement('button');tb.type='button';tb.className='jg-terug';tb.setAttribute('aria-label','Terug');
+ tb.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>';
+ tb.addEventListener('click',function(){window.jgTerug()});document.body.appendChild(tb);}
+function maak(){var info=document.getElementById('info');if(!info)return;var hd=info.querySelector('.ip-head');if(!hd||hd.dataset.jg)return;hd.dataset.jg='1';
+ var oud=info.querySelector('.jg-dkop');if(oud)oud.remove();
+ var L=langs(),h1=hd.querySelector('h1'),sci=hd.querySelector('.ip-sci'),alt=hd.querySelector('.ip-alt'),tags=[].slice.call(hd.querySelectorAll('.ip-tag'));
+ var kop=document.createElement('div');kop.className='nw-sbar jg-dkop';
+ var nk=document.querySelector('.nt-kop h1');var v=nk&&nk.querySelector('svg');if(v){var c=v.cloneNode(true);c.classList.add('jg-vlag');kop.appendChild(c);}
+ var t=document.createElement('h2');t.className='nw-stitle';t.innerHTML=h1?h1.innerHTML:'';kop.appendChild(t);
+ var sub=document.createElement('p');sub.className='jg-sub';var meta=document.createElement('div');meta.className='jg-meta';
+ var land=nk&&(nk.querySelector('.hs-t')||nk);
+ if(sci){sub.innerHTML='<i>'+sci.innerHTML+'</i>';
+  var sec=[].filter.call(info.querySelectorAll('.ip-sec'),function(s){return s.querySelector('a[href*="locatie"]')})[0];
+  var n=0;if(sec){var seen={};[].forEach.call(sec.querySelectorAll('a[href*="locatie"]'),function(a){var k=a.getAttribute('href');if(!seen[k]){seen[k]=1;n++;}});}
+  var grp=hd.querySelector('.ip-tag.dark');
+  meta.innerHTML=L.map(function(l){var g=tekst(grp,l),m2=/\(([^)]+)\)/.exec(g);g=m2?m2[1]:g;var ln=land?tekst(land,l):'';
+   return '<span class="l-'+l+'">'+esc(n+' '+(LW[l]||LW.en)+(ln?' '+(IN[l]||'in')+' '+ln:''))+(g?'<i> · </i>'+esc(g):'')+'</span>'}).join('');}
+ else{sub.innerHTML=tags.slice(1,2).concat(tags.slice(0,1)).map(function(x){return x.innerHTML}).join('<i> · </i>');
+  meta.innerHTML=(alt?alt.innerHTML:'')+tags.slice(2).map(function(x){return '<i> · </i>'+x.innerHTML}).join('');}
+ kop.appendChild(sub);kop.appendChild(meta);info.insertBefore(kop,hd);
+ hd.classList.add('jg-klaar');knop();
+ requestAnimationFrame(function(){var fs=parseFloat(getComputedStyle(t).fontSize),i=0;while(t.scrollWidth>t.clientWidth+1&&fs>20&&i<30){fs--;i++;t.style.setProperty('--jg-fs',fs+'px');}});}
+function plan(){setTimeout(maak,0);requestAnimationFrame(maak);}
+maak();window.addEventListener('hashchange',plan);document.addEventListener('click',function(){setTimeout(maak,60)});
+var info=document.getElementById('info');if(info&&window.MutationObserver){new MutationObserver(function(){var hd=info.querySelector('.ip-head');if(hd&&!hd.dataset.jg)maak();}).observe(info,{childList:true});}
 })();</script><!--/jungle--></body></html>

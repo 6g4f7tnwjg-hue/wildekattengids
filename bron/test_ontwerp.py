@@ -47,6 +47,9 @@ TR.update({
     "Onderzochte locaties": {"fr": "Lieux vérifiés", "de": "Geprüfte Orte", "it": "Luoghi verificati", "es": "Lugares comprobados", "pt": "Locais verificados"},
     "Alle vermeldingen in één tabel": {"fr": "Toutes les mentions dans un tableau", "de": "Alle Einträge in einer Tabelle",
                                        "it": "Tutte le segnalazioni in una tabella", "es": "Todas las menciones en una tabla", "pt": "Todas as menções numa tabela"},
+    "Zwarte panter (zwart luipaard) in het wild, Tadoba (India)": {"fr": "Panthère noire (léopard noir) dans la nature, Tadoba (Inde)",
+        "de": "Schwarzer Panther (schwarzer Leopard) in freier Wildbahn, Tadoba (Indien)", "it": "Pantera nera (leopardo nero) in natura, Tadoba (India)",
+        "es": "Pantera negra (leopardo negro) en libertad, Tadoba (India)", "pt": "Pantera-negra (leopardo-negro) na natureza, Tadoba (Índia)"},
     "Zoek een soort": {"fr": "Rechercher une espèce", "de": "Art suchen", "it": "Cerca una specie", "es": "Busca una especie", "pt": "Procura uma espécie"},
     "Zoek een park of plaats": {"fr": "Rechercher un parc ou une ville", "de": "Park oder Ort suchen", "it": "Cerca un parco o una località",
                                 "es": "Busca un parque o un lugar", "pt": "Procura um parque ou um local"},
@@ -352,6 +355,11 @@ function opbouw(){if(klaar)return true;
   else det.forEach(function(d){if(!d.classList.contains("nt-weg"))weg.push(d);else if(d.parentElement===lb)weg.push(d);});
   if(ub&&weg.some(function(x){return !x.classList.contains("nt-weg");})){var h=document.createElement("h3");h.className="nt-uitleg-h";h.innerHTML=LS("Onderzochte locaties","Locations checked");ub.appendChild(h);}
   if(ub)weg.forEach(function(x){ub.appendChild(x);});
+  /* foto van een zwarte panter boven Kleur & hybriden (Wikimedia Commons, CC BY-SA 4.0) */
+  var kb=$("#kleur > .cbody")||$("#kleur");if(kb&&!$(".nt-kfoto",kb)){var kf=document.createElement("figure");kf.className="nw-foto nt-kfoto";
+    var cr=' · <a href="https://commons.wikimedia.org/wiki/File:Melanistic_leopard_at_Tadoba.jpg" target="_blank" rel="noopener">Atul.rewild, Wikimedia Commons</a> · CC BY-SA 4.0';
+    kf.innerHTML='<img src="/wildekattengids/img/nieuw/zwarte-panter.webp" alt="" loading="lazy" style="aspect-ratio:4/3;object-position:50% 45%"><p>'+LS("Zwarte panter (zwart luipaard) in het wild, Tadoba (India)","Black panther (black leopard) in the wild, Tadoba (India)")+cr+'</p>';
+    kb.insertBefore(kf,kb.firstChild);}
   /* zoekvelden */
   var zl=zoekveld("nt-zl");lb.insertBefore(zl,lb.firstChild);
   var sb0=$("#soorten > .cbody")||$("#soorten"),zs=zoekveld("nt-zs");sb0.insertBefore(zs,sb0.firstChild);
@@ -374,6 +382,15 @@ function opbouw(){if(klaar)return true;
   return true;}
 if(!opbouw()){var n=0,iv=setInterval(function(){if(opbouw()||++n>80)clearInterval(iv);},100);}
 
+/* routeplanner: welke soorten je met je keuze al ziet (naast "Nog niet:") */
+var ALW={nl:"Al wel:",en:"Already:",fr:"Déjà :",de:"Schon dabei:",it:"Già:",es:"Ya:",pt:"Já:"};
+function alWel(){var sc=$("#rt-score"),sp=$("#rt-sp");if(!sc||!sp)return;var o=sc.querySelector(".nt-alwel");if(o)o.remove();
+  var ja=$$(".rchip.on",sp).map(function(c){return (c.firstChild&&c.firstChild.nodeType===3?c.firstChild.textContent:c.textContent).trim();});
+  if(!ja.length)return;var s=document.createElement("span");s.className="hs-mist nt-alwel";
+  s.innerHTML='<b>'+(ALW[N.lang()]||ALW.en)+'</b> '+ja.map(E).join(", ");
+  var m=sc.querySelector(".hs-mist:not(.nt-alwel)");if(m)sc.insertBefore(s,m);else sc.appendChild(s);}
+(function(){var sp=$("#rt-sp");if(sp)new MutationObserver(function(){setTimeout(alWel,0);}).observe(sp,{childList:true,subtree:true});
+  new MutationObserver(function(){setTimeout(alWel,0);}).observe(html,{attributes:true,attributeFilter:["lang"]});setTimeout(alWel,0);})();
 /* zoeken klapt open via het vergrootglas bovenaan */
 var q=$("#nw-q"),tz=$('.hs-top a.hs-ico[href="#start"]')||$('.hs-top a.hs-ico[href$="#zoek"]');
 if(tz)tz.addEventListener("click",function(){html.classList.add("nt-zoek");});

@@ -353,6 +353,10 @@ if(q)q.addEventListener("blur",function(){setTimeout(function(){if(!q.value&&doc
 """
 
 
+MEER_OUD = 'var site=$$("#hs-menu nav a").map(function(a){var c=a.cloneNode(true);c.removeAttribute("class");return \'<li>\'+c.outerHTML.replace(/<\\/a>$/,ARR+"</a>")+\'</li>\';}).join("");'
+MEER_NIEUW = 'var site=$$("#hs-menu nav a").filter(function(a){var h=a.getAttribute("href")||"";return !/ko-fi\\.com|#(kaart|geboren|perpark|typen)$/.test(h);}).map(function(a){var c=a.cloneNode(true),lc=(a.className.match(/\\bl-[a-z]{2}\\b/)||[""])[0];c.removeAttribute("class");return \'<li\'+(lc?\' class="\'+lc+\'"\':\'\')+\'>\'+c.outerHTML.replace(/<\\/a>$/,ARR+"</a>")+\'</li>\';}).join("");'
+
+
 def maak(land="nederland", map=None):
     """Schrijft het ontwerp van /<land>-oud/ naar /<map>/ (standaard /<land>/; map DOEL = de testpagina)."""
     map = map or land
@@ -402,6 +406,9 @@ def maak(land="nederland", map=None):
              'var own=["route","actueel","tldr","kleur","favorieten","tabel","uitleg","rapporteer"]')
     js = rep(js, 'mark(["locaties","soorten","route"].indexOf(sc.id)>=0?sc.id:"meer");',
              'mark(["locaties","soorten"].indexOf(sc.id)>=0?sc.id:"meer");')
+    # Meer zonder dubbelingen (18-10-2026): Ko-fi staat al onderaan, de Spottersgids alleen in de eigen taal; kaart Europa,
+    # recent geboren, parken op aantal soorten en soorten locaties staan al in het menu bovenaan
+    js = rep(js, MEER_OUD, MEER_NIEUW)
     # de keuzeknoppen voor de filters bij Locaties niet: hier blijven de typeknoppen zichtbaar
     a = js.index("/* ---------- filters bij Locaties")
     b = js.index("paint();apply();", a)

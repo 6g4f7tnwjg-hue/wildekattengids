@@ -2,6 +2,10 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 18 oktober 2026 – Meer zonder dubbelingen
+
+Op het scherm Meer van de landpagina's: Ko-fi niet meer in de lijst (staat onderaan), de Spottersgids alleen in de eigen taal, en kaart Europa, Recent geboren, Parken op aantal soorten en Soorten locaties weg (staan in het menu bovenaan). Over (`MEER_OUD`/`MEER_NIEUW` in `bron/test_ontwerp.py`).
+
 ## 18 oktober 2026 – Land/regio en soort: wat niet samengaat grijs
 
 Hoofdpagina: kies je een land, dan worden de soortrondjes van katten die daar niet zitten grijs en schuiven achteraan (achter een streepje); "Alle katten" toont het aantal soorten in dat land. Kies je een soort, dan gebeurt hetzelfde met de landknoppen, en staat bij de andere landen het aantal locaties met die soort. Een grijze knop blijft aantikbaar: het andere filter gaat uit en er verschijnt kort een melding ("… niet te zien in …"). Op de landpagina's werkt het zo met regio's en soorten. Beschikbaarheid: elke vermelding telt (ook onzeker), net als op de kaart.

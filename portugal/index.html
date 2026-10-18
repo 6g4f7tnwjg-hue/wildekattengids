@@ -2410,7 +2410,7 @@ function listHearts(){$$(".loclist li").forEach(function(li){var a=li.querySelec
 (function(){var ic={route:"b-route",actueel:"news",tldr:"tbl",kleur:"dna",favorieten:"b-heart",tabel:"rows",uitleg:"info",rapporteer:"flag"};
   var own=["route","actueel","tldr","kleur","favorieten","tabel","uitleg","rapporteer"].map(function(id){
     return '<li><a href="#'+id+'">'+(SVG[ic[id]]||"")+'<span>'+(id==="favorieten"?LS("Favorieten","Favourites"):naam(id))+'</span>'+ARR+'</a></li>';}).join("");
-  var site=$$("#hs-menu nav a").map(function(a){var c=a.cloneNode(true);c.removeAttribute("class");return '<li>'+c.outerHTML.replace(/<\/a>$/,ARR+"</a>")+'</li>';}).join("");
+  var site=$$("#hs-menu nav a").filter(function(a){var h=a.getAttribute("href")||"";return !/ko-fi\.com|#(kaart|geboren|perpark|typen)$/.test(h);}).map(function(a){var c=a.cloneNode(true),lc=(a.className.match(/\bl-[a-z]{2}\b/)||[""])[0];c.removeAttribute("class");return '<li'+(lc?' class="'+lc+'"':'')+'>'+c.outerHTML.replace(/<\/a>$/,ARR+"</a>")+'</li>';}).join("");
   var brand=$(".hs-top .hs-brand b");
   document.getElementById("nw-meer").innerHTML='<ul class="nw-meer">'+own+'</ul>'+(site?'<p class="nw-mlbl">'+(brand?brand.innerHTML:"")+'</p><ul class="nw-meer">'+site+'</ul>':"");})();
 

@@ -5,7 +5,7 @@
 # Het blok wordt bij elke run eerst weggehaald en opnieuw gezet (dus vaker draaien is veilig).
 # Terugdraaien: de regel onderaan bouw.py weghalen en opnieuw bouwen, of `python3 bron/jungle.py --weg`.
 # Niet aangeraakt: de reservemappen /<land>-oud/, /spottersgids/ (later), /voorbeeld-jungle/ en /bron/.
-import os, re, sys, math, urllib.parse
+import os, re, sys, math, json, urllib.parse
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 OVERSLAAN = ('spottersgids', 'voorbeeld-jungle', 'bron', '.git', 'img')
@@ -43,65 +43,125 @@ def paws(col):
 def wave(col):
     return uri(f"<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 40' preserveAspectRatio='none'><path d='M0 22C55 6 95 34 150 20S260 2 310 18S370 34 400 16V40H0Z' fill='{col}'/></svg>")
 
-# luipaard boven de Ko-fi-oproep (18-10-2026)
-LO = '#143A22'   # omlijning
-LF = '#E8B04A'   # vacht
-LL = '#F8E6BC'   # licht (snuit, buik)
-LS = '#3A2410'   # vlekken
+# luipaard op de rand van het Ko-fi-blok (18-10-2026): ingevoegd met een klein script, zodat kop, ogen, oor en staart kunnen bewegen; tik = opkijken en knipperen
+import random
+LO = '#3B2414'   # omlijning
+LF = '#E6AE4C'   # vacht
+LB = '#F6DDA6'   # buik
+LW = '#FBF1DC'   # wit (snuit, kin)
+LS = '#2E1C0F'   # vlekken
+LC = '#C98E34'   # midden van een rozet
 
-def rozet(cx, cy, r, rot=0):
-    out = ''
-    for k in range(4):
-        a = math.radians(rot + k * 90 + 20)
-        x, y = cx + r * math.cos(a), cy + r * math.sin(a)
-        out += f"<ellipse cx='{x:.1f}' cy='{y:.1f}' rx='{r*0.6:.1f}' ry='{r*0.32:.1f}' transform='rotate({rot+k*90+110:.0f} {x:.1f} {y:.1f})' fill='{LS}'/>"
+def rozet(cx, cy, r, rot, seed):
+    rnd = random.Random(seed)
+    n = rnd.choice((3, 3, 4))
+    out = f"<ellipse cx='{cx:.1f}' cy='{cy:.1f}' rx='{r*0.78:.1f}' ry='{r*0.62:.1f}' transform='rotate({rot:.0f} {cx:.1f} {cy:.1f})' fill='{LC}'/>"
+    step = 360 / n
+    for k in range(n):
+        a0 = rot + k * step + rnd.uniform(4, 22)
+        a1 = rot + (k + 1) * step - rnd.uniform(10, 42)
+        rr = r * rnd.uniform(0.92, 1.08)
+        p0 = (cx + rr * math.cos(math.radians(a0)), cy + rr * 0.8 * math.sin(math.radians(a0)))
+        p1 = (cx + rr * math.cos(math.radians(a1)), cy + rr * 0.8 * math.sin(math.radians(a1)))
+        out += (f"<path d='M{p0[0]:.1f} {p0[1]:.1f} A{rr:.1f} {rr*0.8:.1f} 0 0 1 {p1[0]:.1f} {p1[1]:.1f}' "
+                f"stroke='{LS}' stroke-width='{max(1.8, r*rnd.uniform(0.28, 0.48)):.1f}' stroke-linecap='round' fill='none'/>")
     return out
 
 def stip(cx, cy, r):
     return f"<circle cx='{cx}' cy='{cy}' r='{r}' fill='{LS}'/>"
 
-def lijf():
-    sw = "stroke='%s' stroke-width='2.6' stroke-linejoin='round' stroke-linecap='round'" % LO
+def svg():
+    o = f"stroke='{LO}' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'"
     g = []
-    # lijf (ligt op de rand y=86)
-    g.append(f"<path d='M58 86 C58 62 78 50 104 50 C130 48 150 52 166 58 C182 64 190 74 190 86 Z' fill='{LF}' {sw}/>")
-    # achterpoot (heup)
-    g.append(f"<path d='M150 86 C146 70 156 58 170 60 C184 62 190 74 188 86 Z' fill='{LF}' {sw}/>")
-    # vlekken op het lijf
-    g += [rozet(92, 64, 6, 10), rozet(116, 60, 5.5, 40), rozet(138, 66, 6, 0), rozet(104, 77, 4.5, 60), rozet(128, 79, 4, 20), rozet(170, 72, 5, 30), stip(152, 58, 1.8), stip(82, 76, 1.8), stip(176, 81, 1.6)]
-    # voorpootjes over de rand
-    for x in (44, 70):
-        g.append(f"<path d='M{x} 70 L{x} 104 C{x} 112 {x+18} 112 {x+18} 104 L{x+18} 70' fill='{LF}' {sw}/>")
-        g.append(f"<path d='M{x+6} 104 L{x+6} 109 M{x+12} 104 L{x+12} 109' stroke='{LO}' stroke-width='1.8' stroke-linecap='round'/>")
-        g.append(stip(x + 9, 92, 1.8) + stip(x + 6, 82, 1.5) + stip(x + 13, 86, 1.5))
+    g.append("<defs><linearGradient id='jglp-v' x1='0' y1='0' x2='0' y2='1'>"
+             f"<stop offset='0' stop-color='#E2A843'/><stop offset='.62' stop-color='{LF}'/><stop offset='1' stop-color='{LB}'/></linearGradient>"
+             "<clipPath id='jglp-c'><path d='M64 96 C62 70 86 56 120 52 C150 48 182 50 200 62 C212 70 216 84 214 96 Z'/></clipPath></defs>")
+    # schaduw op de rand
+    g.append("<ellipse cx='136' cy='97' rx='86' ry='3.2' fill='#000' opacity='.13'/>")
+    # staart (achter het lijf; het begin zit verstopt achter de heup)
+    t = "M200 78 C214 82 222 90 222 102 C222 112 214 116 216 124 C217 129 222 130 226 127"
+    g.append("<g class='jg-staart'>")
+    g.append(f"<path d='{t}' fill='none' stroke='{LO}' stroke-width='11' stroke-linecap='round'/>")
+    g.append(f"<path d='{t}' fill='none' stroke='{LF}' stroke-width='7' stroke-linecap='round'/>")
+    for x, y, a in ((214, 86, 30), (220, 96, 80), (221, 106, 95), (217, 116, 70)):
+        g.append(f"<ellipse cx='{x}' cy='{y}' rx='3.2' ry='1.6' transform='rotate({a} {x} {y})' fill='{LS}'/>")
+    g.append(f"<path d='M217 122 C218 127 221 128 224 126' stroke='{LS}' stroke-width='5' fill='none' stroke-linecap='round'/>")
+    g.append("</g>")
+    # lijf
+    body = "M64 96 C62 70 86 56 120 52 C150 48 182 50 200 62 C212 70 216 84 214 96 Z"
+    g.append(f"<path d='{body}' fill='url(#jglp-v)' {o}/>")
+    # rozetten op het lijf
+    ros = [(100, 66, 6.5, 10), (122, 61, 6, 40), (145, 60, 6.5, -10), (168, 62, 6, 25), (112, 79, 5.5, 60), (134, 76, 6, 5),
+           (156, 77, 5.5, 35), (92, 82, 4.5, 15), (126, 90, 3.8, 50), (148, 90, 3.6, 20), (188, 70, 5, 10)]
+    g.append("<g clip-path='url(#jglp-c)'>" + ''.join(rozet(x, y, r, a, i) for i, (x, y, r, a) in enumerate(ros))
+             + stip(110, 56, 1.6) + stip(135, 54, 1.6) + stip(158, 54, 1.5) + stip(84, 70, 1.6) + "</g>")
+    # heup en achterpoot
+    g.append(f"<path d='M168 96 C164 80 172 66 188 66 C204 66 212 80 210 96' fill='url(#jglp-v)' {o}/>")
+    g.append(rozet(190, 78, 5, 20, 99) + stip(178, 86, 1.6) + stip(200, 88, 1.5) + stip(196, 72, 1.4))
+    g.append(f"<path d='M150 96 C150 89 158 87 170 88 C178 89 180 93 180 96' fill='{LB}' {o}/>")
+    g.append(f"<path d='M160 92 L160 96 M166 91 L166 96 M172 91 L172 96' stroke='{LO}' stroke-width='1.4' stroke-linecap='round'/>")
+    # voorpoten over de rand
+    for x in (52, 78):
+        g.append(f"<path d='M{x} 76 L{x} 112 C{x} 121 {x+19} 121 {x+19} 112 L{x+19} 76' fill='{LF}' {o}/>")
+        g.append(f"<path d='M{x+2} 106 C{x+6} 110 {x+13} 110 {x+17} 106 L{x+17} 113 C{x+17} 119 {x+2} 119 {x+2} 113 Z' fill='{LB}'/>")
+        g.append(f"<path d='M{x+6.5} 114 L{x+6.5} 119 M{x+12.5} 114 L{x+12.5} 119' stroke='{LO}' stroke-width='1.4' stroke-linecap='round'/>")
+        g.append(stip(x + 6, 90, 1.7) + stip(x + 13, 96, 1.6) + stip(x + 8, 101, 1.4) + stip(x + 14, 86, 1.4))
     # kop
-    g.append(f"<path d='M30 32 C22 18 28 6 40 10 C46 12 49 17 49 22 Z' fill='{LF}' {sw}/>")
-    g.append(f"<path d='M92 32 C100 18 94 6 82 10 C76 12 73 17 73 22 Z' fill='{LF}' {sw}/>")
-    g.append(f"<path d='M33 24 C30 17 33 13 39 15 C42 16 43 18 43 20 Z' fill='{LS}' opacity='.55'/><path d='M89 24 C92 17 89 13 83 15 C80 16 79 18 79 20 Z' fill='{LS}' opacity='.55'/>")
-    g.append(f"<path d='M61 16 C84 16 98 32 98 50 C98 70 82 82 61 82 C40 82 24 70 24 50 C24 32 38 16 61 16 Z' fill='{LF}' {sw}/>")
-    # snuit
-    g.append(f"<path d='M61 52 C72 52 80 58 80 66 C80 74 72 78 61 78 C50 78 42 74 42 66 C42 58 50 52 61 52 Z' fill='{LL}'/>")
-    # vlekjes op de kop
-    g += [stip(46, 30, 2), stip(54, 26, 1.8), stip(68, 26, 1.8), stip(76, 30, 2), stip(61, 30, 1.6), stip(36, 44, 1.8), stip(86, 44, 1.8), stip(33, 56, 1.6), stip(89, 56, 1.6)]
-    # ogen
-    for cx, d in ((47, 1), (75, -1)):
-        g.append(f"<path d='M{cx-8} 46 C{cx-4} 40 {cx+4} 40 {cx+8} 46 C{cx+4} 50 {cx-4} 50 {cx-8} 46 Z' fill='#C9D94A' stroke='{LO}' stroke-width='2'/>")
-        g.append(f"<ellipse cx='{cx}' cy='46' rx='1.8' ry='3.6' fill='{LO}'/><circle cx='{cx+1.6}' cy='44' r='1' fill='#fff'/>")
-        g.append(f"<path d='M{cx+6*d} 50 C{cx+8*d} 54 {cx+9*d} 56 {cx+10*d} 58' stroke='{LS}' stroke-width='1.6' fill='none' stroke-linecap='round'/>")
+    g.append("<g class='jg-kop'>")
+    for side, cx in (('l', 46), ('r', 94)):
+        sgn = -1 if side == 'l' else 1
+        g.append(f"<g class='jg-oor-{side}'>")
+        g.append(f"<path d='M{cx-12*sgn} 34 C{cx-16*sgn} 18 {cx-2*sgn} 10 {cx+6*sgn} 16 C{cx+10*sgn} 19 {cx+10*sgn} 26 {cx+8*sgn} 32 Z' fill='{LS}' {o}/>")
+        g.append(f"<path d='M{cx-9*sgn} 32 C{cx-11*sgn} 22 {cx-2*sgn} 16 {cx+3*sgn} 20 C{cx+6*sgn} 23 {cx+5*sgn} 28 {cx+4*sgn} 31 Z' fill='{LW}'/>")
+        g.append("</g>")
+    head = "M70 22 C92 22 106 36 106 54 C106 66 100 74 92 80 C86 85 78 88 70 88 C62 88 54 85 48 80 C40 74 34 66 34 54 C34 36 48 22 70 22 Z"
+    g.append(f"<path d='{head}' fill='{LF}' {o}/>")
+    # wangen iets lichter
+    g.append(f"<path d='M40 66 C44 76 54 82 62 84 L60 74 Z M100 66 C96 76 86 82 78 84 L80 74 Z' fill='{LB}' opacity='.8'/>")
+    # vlekjes op voorhoofd en wangen
+    for x, y, r in ((62, 30, 1.6), (70, 28, 1.7), (78, 30, 1.6), (58, 36, 1.4), (66, 35, 1.5), (74, 35, 1.5), (82, 36, 1.4),
+                    (54, 30, 1.3), (86, 30, 1.3), (70, 41, 1.4), (40, 52, 1.6), (100, 52, 1.6), (42, 60, 1.4), (98, 60, 1.4), (46, 68, 1.3), (94, 68, 1.3)):
+        g.append(stip(x, y, r))
+    # snuit en kin
+    g.append(f"<path d='M70 60 C78 60 86 64 86 70 C86 76 79 79 70 79 C61 79 54 76 54 70 C54 64 62 60 70 60 Z' fill='{LW}'/>")
+    g.append(f"<path d='M64 80 C66 85 74 85 76 80' fill='{LW}' stroke='{LO}' stroke-width='1.4'/>")
+    # ogen (knipperen)
+    for cx in (57, 83):
+        g.append(f"<g class='jg-oog'><path d='M{cx-8} 50 C{cx-4} 44 {cx+4} 44 {cx+8} 50 C{cx+4} 55 {cx-4} 55 {cx-8} 50 Z' fill='#D8B23A' stroke='{LO}' stroke-width='1.8'/>"
+                 f"<circle cx='{cx}' cy='50' r='2.6' fill='{LO}'/><circle cx='{cx+1.6}' cy='48.4' r='1' fill='#fff'/></g>")
+    # traanstrepen
+    g.append(f"<path d='M62 54 C63 58 62 62 61 65 M78 54 C77 58 78 62 79 65' stroke='{LS}' stroke-width='1.8' fill='none' stroke-linecap='round'/>")
     # neus en mond
-    g.append(f"<path d='M55 56 L67 56 C67 60 63 63 61 63 C59 63 55 60 55 56 Z' fill='#B5603A' stroke='{LO}' stroke-width='1.6' stroke-linejoin='round'/>")
-    g.append(f"<path d='M61 63 L61 67 M61 67 C58 71 54 71 52 68 M61 67 C64 71 68 71 70 68' stroke='{LO}' stroke-width='1.8' fill='none' stroke-linecap='round'/>")
-    g.append(stip(50, 64, 1) + stip(54, 66, 1) + stip(72, 64, 1) + stip(68, 66, 1))
-    return f"<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 116'>{''.join(g)}</svg>"
+    g.append(f"<path d='M64 63 L76 63 C76 67 72 70 70 70 C68 70 64 67 64 63 Z' fill='#C77A62' stroke='{LO}' stroke-width='1.6'/>")
+    g.append(f"<path d='M70 70 L70 73 C68 76 64 76 62 74 M70 73 C72 76 76 76 78 74' stroke='{LO}' stroke-width='1.6' fill='none' stroke-linecap='round'/>")
+    g.append(stip(60, 70, .9) + stip(63, 72, .9) + stip(80, 70, .9) + stip(77, 72, .9))
+    g.append("</g>")
+    return f"<svg viewBox='0 0 240 132' xmlns='http://www.w3.org/2000/svg'>{''.join(g)}</svg>"
 
-def staart():
-    sw = f"stroke='{LO}' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'"
-    d = "M10 2 C14 16 6 26 9 38 C12 48 20 50 20 56"
-    g = f"<path d='{d}' fill='none' {sw.replace('2.6','12')}/>"
-    g += f"<path d='{d}' fill='none' stroke='{LF}' stroke-width='7' stroke-linecap='round'/>"
-    g += "".join(f"<path d='M{x-4} {y} l8 -1' stroke='{LS}' stroke-width='2.4' stroke-linecap='round'/>" for x, y in ((11, 14), (8, 28), (13, 44)))
-    g += f"<circle cx='20' cy='56' r='4.6' fill='{LS}' stroke='{LO}' stroke-width='2'/>"
-    return f"<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 64'>{g}</svg>"
+LP_CSS = """
+html body .foot,html body .hs-foot{position:relative;margin-top:100px!important;overflow:visible}
+html body .foot .wrap,html body .hs-foot .hs-wrap{padding-top:44px!important}
+html body .jg-lp{position:absolute;left:max(6px,calc(50% - 534px));top:-96px;width:240px;height:132px;z-index:2;cursor:pointer;-webkit-tap-highlight-color:transparent}
+html body .jg-lp svg{display:block;width:100%;height:100%;overflow:visible}
+.jg-lp .jg-kop{transform-box:view-box;transform-origin:70px 86px;animation:jgkop 9s ease-in-out infinite}
+.jg-lp .jg-oog{transform-box:fill-box;transform-origin:center;animation:jgoog 5.3s infinite}
+.jg-lp .jg-oor-l{transform-box:view-box;transform-origin:48px 32px;animation:jgoor 7.4s infinite}
+.jg-lp .jg-staart{transform-box:view-box;transform-origin:204px 80px;animation:jgstaart 3.4s ease-in-out infinite}
+@keyframes jgkop{0%,55%,100%{transform:rotate(0)}62%,78%{transform:rotate(-6deg)}86%{transform:rotate(2deg)}}
+@keyframes jgoog{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.08)}}
+@keyframes jgoor{0%,80%,100%{transform:rotate(0)}82%{transform:rotate(-14deg)}84%{transform:rotate(0)}86%{transform:rotate(-9deg)}88%{transform:rotate(0)}}
+@keyframes jgstaart{0%,100%{transform:rotate(-7deg)}50%{transform:rotate(9deg)}}
+.jg-lp.jg-tik .jg-kop{animation:jgtik 1.3s ease-in-out}
+.jg-lp.jg-tik .jg-oog{animation:jgoog2 1.3s}
+@keyframes jgtik{0%{transform:rotate(0)}25%,70%{transform:translateY(-5px) rotate(5deg)}100%{transform:rotate(0)}}
+@keyframes jgoog2{0%,30%,48%,100%{transform:scaleY(1)}38%{transform:scaleY(.08)}}
+@media (prefers-reduced-motion:reduce){.jg-lp *{animation:none!important}}
+"""
+
+LP_JS = ("(function(){var f=document.querySelector('footer.foot,footer.hs-foot');if(!f||f.querySelector('.jg-lp'))return;"
+      "var d=document.createElement('div');d.className='jg-lp';d.setAttribute('aria-hidden','true');d.innerHTML=%s;"
+      "f.insertBefore(d,f.firstChild);d.addEventListener('click',function(){d.classList.remove('jg-tik');void d.offsetWidth;"
+      "d.classList.add('jg-tik');setTimeout(function(){d.classList.remove('jg-tik')},1400)})})();")
 
 
 FONTS = '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Nunito:wght@400;600;700;800&display=swap">'
@@ -127,11 +187,6 @@ html body .nw-bar a,html body .nw-bar a:hover,html body .nw-bar a:visited{{color
 html body .nw-bar a.on{{color:{SUN}!important}}
 html body .nw-bar a.on::before,html body .nw-bar a.on::after{{background:{SUN}!important}}
 html body .chip svg.flag,html body .chip svg:not(.ti){{box-shadow:none!important;border-radius:3px!important;overflow:hidden;filter:drop-shadow(0 1px 0 rgba(255,240,210,.85)) drop-shadow(0 -1px 0 rgba(70,35,5,.35))}}
-html body .foot,html body .hs-foot{{position:relative;margin-top:96px!important;overflow:visible}}
-html body .foot .wrap,html body .hs-foot .hs-wrap{{padding-top:70px!important}}
-html body .foot::before,html body .hs-foot::before{{content:""!important;display:block!important;position:absolute;left:max(10px,calc(50% - 530px));top:-87px;width:200px;height:116px;background:{uri(lijf())} no-repeat center/contain;pointer-events:none;z-index:2}}
-html body .foot::after,html body .hs-foot::after{{content:""!important;display:block!important;position:absolute;left:calc(max(10px,calc(50% - 530px)) + 184px);top:-8px;width:30px;height:64px;background:{uri(staart())} no-repeat top center/contain;transform-origin:15px 2px;animation:jzw 3.2s ease-in-out infinite;pointer-events:none;z-index:2}}
-@keyframes jzw{{0%,100%{{transform:rotate(-7deg)}}50%{{transform:rotate(9deg)}}}}
 @media (prefers-reduced-motion:reduce){{html body *{{animation:none!important}}}}
 """
 
@@ -227,8 +282,9 @@ html body .hs-kofi{{background:{SUN}!important;color:{JG}!important;border-color
 
 def blok(html):
     land = 'id="hs-top"' in html or "id='hs-top'" in html
-    css = GEDEELD + (LAND if land else EUROPA)
-    return f'{BEGIN}{FONTS}<style id="jungle">{css}</style>{EIND}'
+    css = GEDEELD + (LAND if land else EUROPA) + LP_CSS
+    js = LP_JS % json.dumps(svg())
+    return f'{BEGIN}{FONTS}<style id="jungle">{css}</style><script>{js}</script>{EIND}'
 
 def weg(html):
     return re.sub(re.escape(BEGIN) + r'.*?' + re.escape(EIND), '', html, flags=re.S)

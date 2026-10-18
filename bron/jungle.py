@@ -70,7 +70,38 @@ def rozet(cx, cy, r, rot, seed):
 def stip(cx, cy, r):
     return f"<circle cx='{cx}' cy='{cy}' r='{r}' fill='{LS}'/>"
 
-def svg():
+def oog(cx, stijl='groen'):
+    """Eén oog. 'groen' = huidige ogen; 'rond', 'amber' en 'tevreden' zijn voorbeelden om uit te kiezen."""
+    s_ = -1 if cx < 70 else 1
+    def wimpers(punten):
+        return "".join(f"<path d='M{x1:.1f} {y1:.1f} L{x2:.1f} {y2:.1f}' stroke='{LO}' stroke-width='1.5' stroke-linecap='round'/>" for x1, y1, x2, y2 in punten)
+    if stijl == 'rond':
+        r = 6.2
+        ws = []
+        for hoek in (200, 228, 256):
+            h = math.radians(hoek if s_ < 0 else 180 - hoek)
+            ws.append((cx + r*math.cos(h), 48 + r*math.sin(h), cx + (r+3.4)*math.cos(h), 48 + (r+3.4)*math.sin(h)))
+        return (f"<g class='jg-oog'><circle cx='{cx}' cy='48' r='{r}' fill='#C9D94A' stroke='{LO}' stroke-width='1.8'/>"
+                f"<circle cx='{cx}' cy='48.4' r='3.5' fill='{LO}'/><circle cx='{cx+1.9}' cy='46.2' r='1.5' fill='#fff'/><circle cx='{cx-1.5}' cy='50.2' r='.7' fill='#fff'/>"
+                + wimpers(ws) + "</g>")
+    if stijl == 'amber':
+        x0 = cx + 8*s_
+        return (f"<g class='jg-oog'><path d='M{cx-8} 49 C{cx-4} 42.5 {cx+4} 42.5 {cx+8} 48.5 C{cx+4} 53.5 {cx-4} 53.5 {cx-8} 49 Z' fill='#E2AE38' stroke='{LO}' stroke-width='2'/>"
+                f"<circle cx='{cx}' cy='48.6' r='2.6' fill='{LO}'/><circle cx='{cx+1.5}' cy='47.2' r='1.1' fill='#fff'/>"
+                f"<path d='M{x0} 48.6 L{x0+3.4*s_} 46.8' stroke='{LO}' stroke-width='2.2' stroke-linecap='round'/>"
+                + wimpers([(x0+1*s_, 47.6, x0+3.4*s_, 43.6), (x0-1.4*s_, 46.2, x0+0.4*s_, 42.4), (x0+2.4*s_, 47.4, x0+5.6*s_, 45.6)]) + "</g>")
+    if stijl == 'tevreden':
+        x0 = cx + 8*s_
+        return (f"<g class='jg-oog'><path d='M{cx-8} 49 C{cx-4} 43 {cx+4} 43 {cx+8} 49 C{cx+4} 53 {cx-4} 53 {cx-8} 49 Z' fill='#C9D94A' stroke='{LO}' stroke-width='1.8'/>"
+                f"<ellipse cx='{cx}' cy='50' rx='1.7' ry='2.6' fill='{LO}'/><circle cx='{cx+1.5}' cy='49.2' r='.8' fill='#fff'/>"
+                f"<path d='M{cx-8.6} 49 C{cx-4} 42 {cx+4} 42 {cx+8.6} 49 C{cx+4} 46.6 {cx-4} 46.6 {cx-8.6} 49 Z' fill='{LF}'/>"
+                f"<path d='M{cx-8} 49 C{cx-4} 46.4 {cx+4} 46.4 {cx+8} 49' stroke='{LO}' stroke-width='2' fill='none' stroke-linecap='round'/>"
+                + wimpers([(x0-0.4*s_, 48.4, x0+3.4*s_, 46.2), (x0-1.8*s_, 47.6, x0+1.2*s_, 44.6), (x0+0.2*s_, 49.4, x0+4*s_, 49)]) + "</g>")
+    return (f"<g class='jg-oog'><path d='M{cx-8} 49 C{cx-4} 43 {cx+4} 43 {cx+8} 49 C{cx+4} 53 {cx-4} 53 {cx-8} 49 Z' fill='#C9D94A' stroke='{LO}' stroke-width='1.8'/>"
+            f"<ellipse cx='{cx}' cy='49' rx='1.8' ry='3.6' fill='{LO}'/><circle cx='{cx+1.6}' cy='47' r='1' fill='#fff'/>"
+            + (lambda x0: f"<path d='M{x0-0.5*s_} 47.6 L{x0+3.6*s_} 44.6 M{x0} 46.2 L{x0+2.6*s_} 42.2 M{x0-0.2*s_} 49.2 L{x0+4.2*s_} 48' stroke='{LO}' stroke-width='1.5' stroke-linecap='round'/></g>")(cx + 7.4*s_))
+
+def svg(stijl='groen'):
     o = f"stroke='{LO}' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'"
     g = []
     g.append("<defs><linearGradient id='jglp-v' x1='0' y1='0' x2='0' y2='1'>"
@@ -121,11 +152,9 @@ def svg():
         g.append(stip(x, y, r))
     # witte snuit (zonder kin)
     g.append(f"<path d='M70 60 C78 60 86 64 86 70 C86 76 79 79 70 79 C61 79 54 76 54 70 C54 64 62 60 70 60 Z' fill='{LW}'/>")
-    # ogen zoals de eerste tekening: groen, amandelvorm, smalle pupil (knipperen)
+    # ogen (knipperen)
     for cx in (56, 84):
-        g.append(f"<g class='jg-oog'><path d='M{cx-8} 49 C{cx-4} 43 {cx+4} 43 {cx+8} 49 C{cx+4} 53 {cx-4} 53 {cx-8} 49 Z' fill='#C9D94A' stroke='{LO}' stroke-width='1.8'/>"
-                 f"<ellipse cx='{cx}' cy='49' rx='1.8' ry='3.6' fill='{LO}'/><circle cx='{cx+1.6}' cy='47' r='1' fill='#fff'/>"
-                 + (lambda s_, x0: f"<path d='M{x0-0.5*s_} 47.6 L{x0+3.6*s_} 44.6 M{x0} 46.2 L{x0+2.6*s_} 42.2 M{x0-0.2*s_} 49.2 L{x0+4.2*s_} 48' stroke='{LO}' stroke-width='1.5' stroke-linecap='round'/></g>")(-1 if cx < 70 else 1, cx - 7.4 if cx < 70 else cx + 7.4))
+        g.append(oog(cx, stijl))
     # streepjes van de ooghoeken naar de neus
     g.append(f"<path d='M62 52 C64 56 65 59 66 62 M78 52 C76 56 75 59 74 62' stroke='{LS}' stroke-width='1.6' fill='none' stroke-linecap='round'/>")
     # neus en mond

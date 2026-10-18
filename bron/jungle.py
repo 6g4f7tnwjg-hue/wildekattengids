@@ -217,13 +217,13 @@ html body .nw-bar a.on{{color:{SUN}!important}}
 html body .nw-bar a.on::before,html body .nw-bar a.on::after{{background:{SUN}!important}}
 html body .chip svg.flag,html body .chip svg:not(.ti){{box-shadow:none!important;border-radius:3px!important;overflow:hidden;filter:drop-shadow(0 1px 0 rgba(255,240,210,.85)) drop-shadow(0 -1px 0 rgba(70,35,5,.35))}}
 /* tussenschermen (19-10-2026): groene kop, menu-icoontjes, zoekveld, houten filterknoppen, soortkaartjes */
-html body .nw-sbar{{overflow:hidden;isolation:isolate;background:{rosettes('#FFFFFF','.07')},{JG}!important;padding:12px 20px 34px!important;border-bottom:0!important;margin-bottom:6px!important}}
+html body .nw-sbar{{overflow:hidden;isolation:isolate;background:{rosettes('#FFFFFF','.07')},{JG}!important;padding:13px 20px 34px!important;border-bottom:0!important;margin:-1px -20px 6px!important;top:56px!important}}
 html body .nw-sbar>*{{position:relative;z-index:2}}
 html body .nw-sbar::before{{content:"";position:absolute;right:-26px;top:-14px;width:96px;height:118px;background:{monstera('#2F7A3B','#1D5527')} no-repeat center/contain;transform-origin:top center;animation:jw 6s ease-in-out infinite;z-index:1;pointer-events:none}}
 html body .nw-sbar::after{{content:"";position:absolute;left:0;right:0;bottom:-1px;height:24px;background:{wave(BG)} no-repeat center/100% 100%;z-index:3;pointer-events:none}}
 html body .nw-sbar .nw-stitle,html body .nw-sbar .nw-stitle *{{color:#F1F5E4!important;font-family:{DISP}!important;font-weight:400!important;text-transform:uppercase;letter-spacing:.02em}}
 html body .nw-sbar .nw-stitle{{font-size:1.9rem!important;line-height:1!important}}
-html body .nw-sbar.nw-los{{padding-bottom:10px!important;margin:0 -20px!important}}
+html body .nw-sbar.nw-los{{padding-bottom:10px!important;margin:-1px -20px 0!important}}
 html body .nw-sbar.nw-los::after,html body .nw-sbar.nw-los::before{{display:none}}
 html body .nw-sbar.nw-los+*,html body .nw-sbar.nw-los~#info .ip-head{{margin-top:0!important}}
 html body .jg-kop{{position:relative;overflow:hidden;isolation:isolate;background:{rosettes('#FFFFFF','.07')},{JG};margin:-18px calc(-1 * var(--gut,16px)) 18px;padding:16px var(--gut,16px) 42px;color:#F1F5E4}}

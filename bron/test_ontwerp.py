@@ -455,7 +455,7 @@ def maak(land="nederland", map=None):
     # favorieten: gedeelde lijst voor alle landen; de lijst zelf staat op de hoofdpagina (Meer)
     js = rep(js, FAV_OUD, FAVJS + FAV_NIEUW.replace("LANDCODE", CODE.get(land, "")))
     js = rep(js, 'var own=["route","actueel","tldr","kleur","favorieten","tabel","uitleg","rapporteer"]',
-             'var own=["route","actueel","tldr","kleur","tabel","uitleg","rapporteer"]')
+             'var own=["tldr","actueel","kleur","route","tabel","uitleg","rapporteer"]')
     # de keuzeknoppen voor de filters bij Locaties niet: hier blijven de typeknoppen zichtbaar
     a = js.index("/* ---------- filters bij Locaties")
     b = js.index("paint();apply();", a)

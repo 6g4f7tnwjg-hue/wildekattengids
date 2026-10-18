@@ -111,8 +111,8 @@ def svg():
     for side, cx in (('l', 46), ('r', 94)):
         sgn = -1 if side == 'l' else 1
         g.append(f"<g class='jg-oor-{side}'>")
-        g.append(f"<path d='M{cx-12*sgn} 34 C{cx-16*sgn} 18 {cx-2*sgn} 10 {cx+6*sgn} 16 C{cx+10*sgn} 19 {cx+10*sgn} 26 {cx+8*sgn} 32 Z' fill='{LS}' {o}/>")
-        g.append(f"<path d='M{cx-9*sgn} 32 C{cx-11*sgn} 22 {cx-2*sgn} 16 {cx+3*sgn} 20 C{cx+6*sgn} 23 {cx+5*sgn} 28 {cx+4*sgn} 31 Z' fill='{LW}'/>")
+        g.append(f"<path d='M{cx-12*sgn} 34 C{cx-16*sgn} 18 {cx-2*sgn} 10 {cx+6*sgn} 16 C{cx+12*sgn} 22 {cx+12*sgn} 34 {cx+9*sgn} 46 Z' fill='{LS}' {o}/>")
+        g.append(f"<path d='M{cx-9*sgn} 32 C{cx-11*sgn} 22 {cx-2*sgn} 16 {cx+3*sgn} 20 C{cx+7*sgn} 24 {cx+8*sgn} 32 {cx+6*sgn} 40 Z' fill='{LW}'/>")
         g.append("</g>")
     head = "M70 22 C92 22 106 36 106 54 C106 66 100 74 92 80 C86 85 78 88 70 88 C62 88 54 85 48 80 C40 74 34 66 34 54 C34 36 48 22 70 22 Z"
     g.append(f"<path d='{head}' fill='{LF}' {o}/>")
@@ -124,7 +124,8 @@ def svg():
     # ogen zoals de eerste tekening: groen, amandelvorm, smalle pupil (knipperen)
     for cx in (56, 84):
         g.append(f"<g class='jg-oog'><path d='M{cx-8} 49 C{cx-4} 43 {cx+4} 43 {cx+8} 49 C{cx+4} 53 {cx-4} 53 {cx-8} 49 Z' fill='#C9D94A' stroke='{LO}' stroke-width='1.8'/>"
-                 f"<ellipse cx='{cx}' cy='49' rx='1.8' ry='3.6' fill='{LO}'/><circle cx='{cx+1.6}' cy='47' r='1' fill='#fff'/></g>")
+                 f"<ellipse cx='{cx}' cy='49' rx='1.8' ry='3.6' fill='{LO}'/><circle cx='{cx+1.6}' cy='47' r='1' fill='#fff'/>"
+                 + (lambda s_, x0: f"<path d='M{x0-0.5*s_} 47.6 L{x0+3.6*s_} 44.6 M{x0} 46.2 L{x0+2.6*s_} 42.2 M{x0-0.2*s_} 49.2 L{x0+4.2*s_} 48' stroke='{LO}' stroke-width='1.5' stroke-linecap='round'/></g>")(-1 if cx < 70 else 1, cx - 7.4 if cx < 70 else cx + 7.4))
     # streepjes van de ooghoeken naar de neus
     g.append(f"<path d='M62 52 C64 56 65 59 66 62 M78 52 C76 56 75 59 74 62' stroke='{LS}' stroke-width='1.6' fill='none' stroke-linecap='round'/>")
     # neus en mond

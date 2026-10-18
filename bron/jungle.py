@@ -116,25 +116,24 @@ def svg():
         g.append("</g>")
     head = "M70 22 C92 22 106 36 106 54 C106 66 100 74 92 80 C86 85 78 88 70 88 C62 88 54 85 48 80 C40 74 34 66 34 54 C34 36 48 22 70 22 Z"
     g.append(f"<path d='{head}' fill='{LF}' {o}/>")
-    # wangen iets lichter
-    g.append(f"<path d='M40 66 C44 76 54 82 62 84 L60 74 Z M100 66 C96 76 86 82 78 84 L80 74 Z' fill='{LB}' opacity='.8'/>")
-    # vlekjes op voorhoofd en wangen
-    for x, y, r in ((62, 30, 1.6), (70, 28, 1.7), (78, 30, 1.6), (58, 36, 1.4), (66, 35, 1.5), (74, 35, 1.5), (82, 36, 1.4),
-                    (54, 30, 1.3), (86, 30, 1.3), (70, 41, 1.4), (40, 52, 1.6), (100, 52, 1.6), (42, 60, 1.4), (98, 60, 1.4), (46, 68, 1.3), (94, 68, 1.3)):
+    # een paar vlekjes op het voorhoofd en de zijkanten (simpel gehouden)
+    for x, y, r in ((62, 31, 1.7), (70, 29, 1.8), (78, 31, 1.7), (66, 37, 1.5), (74, 37, 1.5), (42, 54, 1.7), (98, 54, 1.7), (45, 64, 1.5), (95, 64, 1.5)):
         g.append(stip(x, y, r))
-    # snuit en kin
+    # witte snuit (zonder kin)
     g.append(f"<path d='M70 60 C78 60 86 64 86 70 C86 76 79 79 70 79 C61 79 54 76 54 70 C54 64 62 60 70 60 Z' fill='{LW}'/>")
-    g.append(f"<path d='M64 80 C66 85 74 85 76 80' fill='{LW}' stroke='{LO}' stroke-width='1.4'/>")
-    # ogen (knipperen)
-    for cx in (57, 83):
-        g.append(f"<g class='jg-oog'><path d='M{cx-8} 50 C{cx-4} 44 {cx+4} 44 {cx+8} 50 C{cx+4} 55 {cx-4} 55 {cx-8} 50 Z' fill='#D8B23A' stroke='{LO}' stroke-width='1.8'/>"
-                 f"<circle cx='{cx}' cy='50' r='2.6' fill='{LO}'/><circle cx='{cx+1.6}' cy='48.4' r='1' fill='#fff'/></g>")
-    # traanstrepen
-    g.append(f"<path d='M62 54 C63 58 62 62 61 65 M78 54 C77 58 78 62 79 65' stroke='{LS}' stroke-width='1.8' fill='none' stroke-linecap='round'/>")
+    # ogen zoals de eerste tekening: groen, amandelvorm, smalle pupil (knipperen)
+    for cx in (56, 84):
+        g.append(f"<g class='jg-oog'><path d='M{cx-8} 49 C{cx-4} 43 {cx+4} 43 {cx+8} 49 C{cx+4} 53 {cx-4} 53 {cx-8} 49 Z' fill='#C9D94A' stroke='{LO}' stroke-width='1.8'/>"
+                 f"<ellipse cx='{cx}' cy='49' rx='1.8' ry='3.6' fill='{LO}'/><circle cx='{cx+1.6}' cy='47' r='1' fill='#fff'/></g>")
+    # streepjes van de ooghoeken naar de neus
+    g.append(f"<path d='M62 52 C64 56 65 59 66 62 M78 52 C76 56 75 59 74 62' stroke='{LS}' stroke-width='1.6' fill='none' stroke-linecap='round'/>")
     # neus en mond
-    g.append(f"<path d='M64 63 L76 63 C76 67 72 70 70 70 C68 70 64 67 64 63 Z' fill='#C77A62' stroke='{LO}' stroke-width='1.6'/>")
+    g.append(f"<path d='M64 63 L76 63 C76 67 72 70 70 70 C68 70 64 67 64 63 Z' fill='#B5603A' stroke='{LO}' stroke-width='1.6'/>")
     g.append(f"<path d='M70 70 L70 73 C68 76 64 76 62 74 M70 73 C72 76 76 76 78 74' stroke='{LO}' stroke-width='1.6' fill='none' stroke-linecap='round'/>")
-    g.append(stip(60, 70, .9) + stip(63, 72, .9) + stip(80, 70, .9) + stip(77, 72, .9))
+    # snorharen
+    g.append(f"<g stroke='{LO}' stroke-width='1' stroke-linecap='round' fill='none' opacity='.85'>"
+             "<path d='M57 69 C46 66 36 66 26 68'/><path d='M57 72 C46 72 36 73 27 76'/><path d='M58 75 C48 77 40 80 32 85'/>"
+             "<path d='M83 69 C94 66 104 66 114 68'/><path d='M83 72 C94 72 104 73 113 76'/><path d='M82 75 C92 77 100 80 108 85'/></g>")
     g.append("</g>")
     return f"<svg viewBox='0 0 240 132' xmlns='http://www.w3.org/2000/svg'>{''.join(g)}</svg>"
 

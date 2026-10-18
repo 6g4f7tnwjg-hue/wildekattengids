@@ -1787,6 +1787,8 @@ html body #info .ip-head.jg-klaar:not(:has(.ip-photo)) .nw-hwrap{margin:0 0 0 au
 html body #info .jg-dkop .jg-sub i{font-style:italic}
 html body #info .jg-dkop .jg-meta i,html body #info .jg-dkop .jg-sub>i:not(:first-child){font-style:normal}
 html body:has(#info .jg-dkop) .jg-terug{display:flex}
+html body .ip-sec:has(a[href*="locatie"]) ul.ip-where>li{position:relative;padding-left:20px!important}
+html body .ip-sec:has(a[href*="locatie"]) ul.ip-where>li::before{content:"•";position:absolute;left:2px;top:var(--jg-bt,15px);font-size:1.4rem;line-height:1;color:#B8501C}
 @media (prefers-reduced-motion:reduce){html body *{animation:none!important}}
 
 :root{--bg:#ECF2DF;--paper:#FAFBF2;--card:#FAFBF2;--ink:#13301C;--muted:#4C6450;--line:#CADBB9;--olive:#1F5A33;--dot:#1F5A33;--accent:#B8501C;

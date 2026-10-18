@@ -32,6 +32,8 @@ html body{padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
 .nw-bar4 nav{grid-template-columns:repeat(4,minmax(0,1fr))!important}
 </style>
 
+
+
 <style id="nt-eu-css">
 /* hoofdpagina in de opbouw van de landpagina's (bron/test_ontwerp.py) */
 .bar:has(#tabs){display:none!important}
@@ -43,6 +45,11 @@ html body{padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
 .info.nt-leeg{background:none!important;border:0!important;box-shadow:none!important;padding:0 2px!important;min-height:0}
 .info.nt-leeg h3,.info.nt-leeg .note{display:none}
 .info.nt-leeg .pl{margin:0;font-size:.95rem}
+.nt-grijs{opacity:.42}
+.nt-grijs .av,.nt-grijs svg{filter:grayscale(1)}
+.nt-sep{flex:none;width:1px;align-self:stretch;margin:8px 4px;background:var(--line)}
+.nt-mld{margin:0 0 10px;padding:8px 12px;border-radius:12px;background:#F3E2D3;color:var(--ink);font-size:.95rem}
+.nt-mld[hidden]{display:none}
 .kat-land li{display:grid!important;grid-template-columns:28px minmax(0,1fr) auto;gap:4px 12px;align-items:center}
 .kat-land li .nt-ti svg{width:28px;height:28px;display:block}
 .kat-land li .kl-go{font-weight:700}
@@ -1505,6 +1512,8 @@ document.querySelectorAll(".tab").forEach(function(t){new MutationObserver(mark)
 labels();mark();
 })();</script>
 
+
+
 <script>(function(){
 /* hoofdpagina en soortpagina's in de opbouw van de landpagina's (bron/test_ontwerp.py) */
 var WILD={"leeuw": "22.000–25.000", "tijger": "2.600–3.900", "luipaard": "146.800–261.600", "jaguar": "ca. 173.000", "sneeuwluipaard": "2.700–3.400", "nevelpanter": "3.700–5.600", "soenda-nevelpanter": "ca. 4.500", "cheetah": "ca. 6.500", "poema": "", "jaguarundi": "", "euraziatische-lynx": "", "canadese-lynx": "", "iberische-lynx": "ca. 650", "rode-lynx": "", "serval": "", "caracal": "", "afrikaanse-goudkat": "", "aziatische-goudkat": "1.000–12.000", "borneo-goudkat": "ca. 2.200", "marmerkat": "", "ocelot": "", "margay": "", "noordelijke-tijgerkat": "9.000–10.000", "zuidelijke-tijgerkat": "ca. 6.000", "geoffroy-s-kat": "", "kodkod": "26.400–101.300", "colocolo": "", "andesbergkat": "ca. 2.200", "bengaalse-kat": "", "soendanese-luipaardkat": "", "vissende-kat": "", "platkopkat": "ca. 2.500", "roestkat": "", "manoel": "ca. 58.000", "europese-wilde-kat": "", "afrikaanse-wilde-kat": "", "chinese-bergkat": "1.200–23.500", "zandkat": "", "zwartvoetkat": "ca. 9.700", "moeraskat": "", "oostelijke-tijgerkat": "", "wolkentijgerkat": "", "tilcayo": ""},COL=["#2F6B2F", "#2766B0", "#7A5230", "#C98500", "#8A3FA0", "#16878A", "#B0306A", "#666158"],GLY=["<ellipse cx=\"0\" cy=\"1.7\" rx=\"2.6\" ry=\"2.2\"/><circle cx=\"-3.1\" cy=\"-1.3\" r=\"1.15\"/><circle cx=\"-1.15\" cy=\"-3.2\" r=\"1.15\"/><circle cx=\"1.15\" cy=\"-3.2\" r=\"1.15\"/><circle cx=\"3.1\" cy=\"-1.3\" r=\"1.15\"/>", "<circle cx=\"0\" cy=\"-1.4\" r=\"3.2\"/><rect x=\"-.75\" y=\"1\" width=\"1.5\" height=\"3.6\"/>", "<path d=\"M0-4.8 3.9 1.6H-3.9Z\"/><rect x=\"-.75\" y=\"1.4\" width=\"1.5\" height=\"3.1\"/>", "<path d=\"M-4.4 1.8V-.4l1.5-2.6h4.6l1.6 2.6h1.1v2.2Z\"/><circle cx=\"-2.3\" cy=\"2.5\" r=\"1.4\"/><circle cx=\"2.3\" cy=\"2.5\" r=\"1.4\"/>", "<g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"><circle cx=\"0\" cy=\"-1\" r=\"3.1\"/><path d=\"M0-1-2.6 4.4M0-1 2.6 4.4M-3.1-1H3.1M0-4.1V2.1\"/></g>", "<path d=\"M-3.8 3.8C-3.8-1.8-.4-4.2 4-4.2 4 .2 1.6 3.8-3.8 3.8Z\"/>", "<path d=\"M0 3.9C-4.8.8-4.3-3.7-1.5-3.7-.6-3.7 0-3 0-2.4 0-3 .6-3.7 1.5-3.7 4.3-3.7 4.8.8 0 3.9Z\"/>", "<path d=\"M-4.2.3 0-4 4.2.3H2.9V4H-2.9V.3Z\"/>"];
@@ -1532,6 +1541,45 @@ function kat(){var kv=document.getElementById("katview");if(!kv||bezig)return;be
   kv.querySelectorAll(".kat-land li[data-hk]").forEach(function(li){if(li.querySelector(".nt-ti"))return;var s=document.createElement("span");s.className="nt-ti";s.innerHTML=ico(+li.dataset.hk);li.insertBefore(s,li.firstChild);});
   bezig=false;}
 var kv=document.getElementById("katview");if(kv){new MutationObserver(kat).observe(kv,{childList:true,subtree:true});kat();}
+/* land en soort op de kaart: wat niet samengaat grijs en achteraan (18-10-2026) */
+var AV={"nl": {"leeuw": 13, "tijger": 11, "luipaard": 6, "jaguar": 2, "sneeuwluipaard": 2, "nevelpanter": 3, "cheetah": 4, "poema": 1, "euraziatische-lynx": 4, "rode-lynx": 1, "serval": 7, "caracal": 4, "ocelot": 1, "geoffroy-s-kat": 1, "bengaalse-kat": 1, "vissende-kat": 2, "roestkat": 1, "manoel": 2, "europese-wilde-kat": 1, "moeraskat": 1}, "be": {"leeuw": 8, "tijger": 5, "luipaard": 4, "jaguar": 2, "sneeuwluipaard": 2, "nevelpanter": 2, "cheetah": 4, "poema": 5, "jaguarundi": 1, "euraziatische-lynx": 7, "serval": 3, "bengaalse-kat": 2, "europese-wilde-kat": 2, "moeraskat": 1}, "lu": {"jaguarundi": 1}, "de": {"leeuw": 42, "tijger": 48, "luipaard": 21, "jaguar": 6, "sneeuwluipaard": 16, "nevelpanter": 5, "cheetah": 23, "poema": 5, "jaguarundi": 2, "euraziatische-lynx": 101, "rode-lynx": 5, "serval": 22, "caracal": 5, "aziatische-goudkat": 2, "ocelot": 6, "margay": 2, "zuidelijke-tijgerkat": 2, "geoffroy-s-kat": 11, "bengaalse-kat": 4, "vissende-kat": 4, "roestkat": 1, "manoel": 7, "europese-wilde-kat": 57, "afrikaanse-wilde-kat": 2, "zandkat": 4, "moeraskat": 3}, "fr": {"leeuw": 38, "tijger": 37, "luipaard": 27, "jaguar": 9, "sneeuwluipaard": 16, "nevelpanter": 7, "cheetah": 25, "poema": 9, "jaguarundi": 7, "euraziatische-lynx": 30, "canadese-lynx": 1, "iberische-lynx": 1, "rode-lynx": 3, "serval": 29, "caracal": 11, "aziatische-goudkat": 1, "ocelot": 11, "margay": 5, "noordelijke-tijgerkat": 1, "zuidelijke-tijgerkat": 2, "geoffroy-s-kat": 4, "bengaalse-kat": 5, "vissende-kat": 7, "roestkat": 2, "manoel": 6, "europese-wilde-kat": 6, "afrikaanse-wilde-kat": 2, "zandkat": 8, "moeraskat": 2}, "at": {"leeuw": 5, "tijger": 4, "luipaard": 3, "jaguar": 1, "sneeuwluipaard": 2, "nevelpanter": 1, "cheetah": 5, "poema": 4, "jaguarundi": 1, "euraziatische-lynx": 16, "serval": 3, "caracal": 1, "ocelot": 1, "europese-wilde-kat": 9}, "ch": {"leeuw": 7, "tijger": 3, "luipaard": 2, "sneeuwluipaard": 4, "cheetah": 3, "poema": 1, "euraziatische-lynx": 12, "rode-lynx": 1, "serval": 5, "caracal": 1, "europese-wilde-kat": 7}, "uk": {"leeuw": 32, "tijger": 37, "luipaard": 14, "jaguar": 7, "sneeuwluipaard": 14, "nevelpanter": 8, "cheetah": 18, "poema": 8, "jaguarundi": 2, "euraziatische-lynx": 28, "canadese-lynx": 2, "rode-lynx": 5, "serval": 26, "caracal": 6, "aziatische-goudkat": 1, "ocelot": 2, "margay": 5, "geoffroy-s-kat": 3, "bengaalse-kat": 5, "vissende-kat": 6, "roestkat": 7, "manoel": 7, "europese-wilde-kat": 27, "zandkat": 1, "moeraskat": 2}, "it": {"leeuw": 30, "tijger": 30, "luipaard": 14, "jaguar": 2, "sneeuwluipaard": 4, "nevelpanter": 2, "cheetah": 6, "poema": 5, "jaguarundi": 2, "euraziatische-lynx": 10, "serval": 6, "caracal": 2, "ocelot": 5, "geoffroy-s-kat": 1, "bengaalse-kat": 2, "vissende-kat": 1, "manoel": 2, "europese-wilde-kat": 5}, "es": {"leeuw": 22, "tijger": 19, "luipaard": 11, "jaguar": 7, "sneeuwluipaard": 1, "nevelpanter": 2, "cheetah": 3, "poema": 3, "euraziatische-lynx": 16, "iberische-lynx": 8, "rode-lynx": 2, "serval": 12, "caracal": 5, "ocelot": 4, "margay": 1, "geoffroy-s-kat": 1, "bengaalse-kat": 1, "europese-wilde-kat": 3, "afrikaanse-wilde-kat": 1, "zandkat": 1}, "ie": {"leeuw": 2, "tijger": 3, "luipaard": 1, "sneeuwluipaard": 1, "cheetah": 2, "euraziatische-lynx": 3, "serval": 3}, "pt": {"leeuw": 3, "tijger": 4, "luipaard": 1, "jaguar": 1, "nevelpanter": 1, "cheetah": 2, "euraziatische-lynx": 5, "iberische-lynx": 1, "rode-lynx": 1, "serval": 2, "ocelot": 1}},zoom=document.getElementById("zoom"),row=document.getElementById("catrow"),bz=false;
+var MLD={nl:["{k}: niet te zien in {p}.","Het filter op land staat nu uit.","Het filter op soort staat nu uit."],
+  en:["{k}: not on view in {p}.","The country filter is now off.","The species filter is now off."],
+  fr:["{k} : pas visible ici ({p}).","Le filtre par pays est désactivé.","Le filtre par espèce est désactivé."],
+  de:["{k}: in {p} nicht zu sehen.","Der Länderfilter ist jetzt aus.","Der Artenfilter ist jetzt aus."],
+  it:["{k}: non visibile in {p}.","Il filtro per paese è disattivato.","Il filtro per specie è disattivato."],
+  es:["{k}: no se puede ver en {p}.","El filtro por país está desactivado.","El filtro por especie está desactivado."]};
+function land(){var b=zoom&&zoom.querySelector('.chip[aria-pressed="true"]');return b&&b.dataset.zoom!=="all"?b.dataset.zoom:"";}
+function soort(){var b=row&&row.querySelector('.catbtn[aria-pressed="true"]');return b?b.dataset.cat:"";}
+function naam(b){var c=b.cloneNode(true);c.querySelectorAll(".n,svg,.av").forEach(function(x){x.remove();});return c.textContent.trim();}
+function sorteer(box,sel,ok){var it=[].slice.call(box.querySelectorAll(sel));it.forEach(function(e,i){if(e.dataset.ntI===undefined)e.dataset.ntI=i;});
+  it.sort(function(a,b){return a.dataset.ntI-b.dataset.ntI;});
+  var ja=it.filter(function(e){return ok(e)!==false;}),nee=it.filter(function(e){return ok(e)===false;});
+  it.forEach(function(e){e.classList.toggle("nt-grijs",ok(e)===false);});
+  var sep=box.querySelector(".nt-sep");if(!sep){sep=document.createElement("span");sep.className="nt-sep";sep.setAttribute("aria-hidden","true");}
+  var want=ja.concat(nee.length?[sep]:[],nee),cur=[].slice.call(box.children).filter(function(e){return e.matches(sel)||e===sep;});
+  if(want.length!==cur.length||want.some(function(e,i){return cur[i]!==e;}))want.forEach(function(e){box.appendChild(e);});
+  if(!nee.length&&sep.parentNode)sep.remove();}
+function pas(){if(bz||!zoom||!row)return;bz=true;var c=land(),k=soort();
+  sorteer(row,".catbtn",function(b){var s=b.dataset.cat;if(!s)return null;return !c||!!(AV[c]&&AV[c][s]);});
+  var al=row.querySelector('.catbtn[data-cat=""] .av');if(al){if(al.dataset.ntN===undefined)al.dataset.ntN=al.textContent;
+    var nt=String(c?Object.keys(AV[c]||{}).length:al.dataset.ntN);if(al.textContent!==nt)al.textContent=nt;}
+  sorteer(zoom,".chip",function(b){var z=b.dataset.zoom;if(!z||z==="all")return null;return !k||!!(AV[z]&&AV[z][k]);});
+  zoom.querySelectorAll(".chip").forEach(function(b){var n=b.querySelector(".nt-n"),z=b.dataset.zoom,v=k&&z!=="all"&&AV[z]?AV[z][k]:0;
+    if(k&&z!=="all"&&v){if(!n){n=document.createElement("span");n.className="n nt-n";b.appendChild(n);}if(n.textContent!==String(v))n.textContent=v;}else if(n)n.remove();});
+  bz=false;}
+var mldT=null;
+function melding(k,p,w){var el=document.getElementById("nt-mld");if(!el&&row){el=document.createElement("p");el.id="nt-mld";el.className="nt-mld";el.setAttribute("role","status");row.insertAdjacentElement("afterend",el);}
+  if(!el)return;var t=MLD[(document.documentElement.lang||"nl").slice(0,2)]||MLD.en;el.textContent=t[0].replace("{k}",k).replace("{p}",p)+" "+t[w];el.hidden=false;
+  clearTimeout(mldT);mldT=setTimeout(function(){el.hidden=true;},6000);}
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest(".nt-grijs");if(!b||!zoom||!row)return;
+  if(b.classList.contains("catbtn")&&row.contains(b)){var p=zoom.querySelector('.chip[aria-pressed="true"]'),pn=p?naam(p):"",kn=naam(b),cat=b.dataset.cat;
+    e.preventDefault();e.stopPropagation();var a=zoom.querySelector('[data-zoom="all"]');if(a)a.click();
+    setTimeout(function(){var nb=row.querySelector('.catbtn[data-cat="'+cat+'"]');if(nb)nb.click();melding(kn,pn,1);},40);}
+  else if(b.classList.contains("chip")&&zoom.contains(b)){var s=row.querySelector('.catbtn[aria-pressed="true"]'),kn2=s?naam(s):"",pn2=naam(b),z=b.dataset.zoom;
+    e.preventDefault();e.stopPropagation();var a2=row.querySelector('.catbtn[data-cat=""]');if(a2)a2.click();
+    setTimeout(function(){var nz=zoom.querySelector('.chip[data-zoom="'+z+'"]');if(nz)nz.click();melding(kn2,pn2,2);},40);}},true);
+if(zoom&&row){[zoom,row].forEach(function(x){new MutationObserver(function(){setTimeout(pas,0);}).observe(x,{childList:true,subtree:true,attributes:true,attributeFilter:["aria-pressed"]});});pas();}
 /* onderbalk: Soorten aan op een soortpagina */
 var bar=document.getElementById("nw-sbar-start");
 if(bar&&window.__KAT){var s=bar.querySelector('[data-k="soorten"]');if(s)s.classList.add("on");}

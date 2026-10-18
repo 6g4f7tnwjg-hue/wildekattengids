@@ -549,6 +549,10 @@ html.nt-zoek #start .nw-search{display:block}
 .nt-cat[aria-pressed="true"]{background:color-mix(in srgb,var(--nw-green) 13%,transparent);font-weight:700}
 .nt-cat[aria-pressed="true"] .nt-av{border-color:var(--nw-green);box-shadow:0 0 0 2px var(--nw-green)}
 .nt-cat:focus-visible{outline:2px solid var(--nw-terra);outline-offset:1px}
+.nt-grijs{opacity:.42}
+.nt-grijs .nt-av,.nt-grijs svg{filter:grayscale(1)}
+.nt-sep{flex:none;width:1px;align-self:stretch;margin:8px 4px;background:var(--line)}
+.nt-mld{margin:0 0 10px;padding:8px 12px;border-radius:12px;background:var(--nw-peach);color:var(--ink);font-size:.95rem}
 .nt-spinfo{margin:0 0 10px;font-size:1rem;color:var(--ink)}
 .nt-spinfo a{color:var(--nw-terra);font-weight:600;text-decoration:none;white-space:nowrap}
 /* kaart en lijst */
@@ -801,6 +805,7 @@ section::before,.board::before,.ip-sec::before,footer::before{display:none!impor
 <div class="nt-rgw" id="nt-rgw" hidden><p class="nt-lbl" id="nt-rglab"></p><div class="nt-regs" id="nt-regs" role="group"></div></div>
 <p class="nt-lbl"><span class="l-nl">Waar zit welke kat? Kies een soort:</span><span class="l-en">Which cat lives where? Choose a species:</span><span class="l-fr">Quel félin vit où ? Choisissez une espèce :</span><span class="l-de">Welche Katze lebt wo? Wähle eine Art:</span><span class="l-it">Quale felino vive dove? Scegli una specie:</span><span class="l-es">¿Qué felino vive dónde? Elige una especie:</span><span class="l-pt">Que felino vive onde? Escolhe uma espécie:</span></p>
 <div class="nt-cats" id="nt-cats" role="group"></div>
+<p class="nt-mld" id="nt-mld" role="status" hidden></p>
 <p class="nt-spinfo" id="nt-spinfo" hidden></p>
 <div class="nt-grid">
   <div class="nt-mapcol"><div id="nt-kaart"></div><div class="nt-types" id="nt-types" role="group"></div></div>
@@ -5335,6 +5340,19 @@ function leesDS(){$$("#locaties .loclist.cards li").forEach(function(li){var a=l
 var SP=null,MEER=false;
 function typ(){var b=$('#lt-bar [aria-pressed="true"]');return b?b.dataset.t:"";}
 function reg(){var b=$('#rg-bar [aria-pressed="true"]');return b&&N.REGIO?b.dataset.r:"";}
+function inReg(i,r){return N.REGIO&&N.REGIO[LOCS[i][0]]===r;}
+/* melding als een grijze knop het andere filter uitzet */
+var MLD={nl:["{k}: niet te zien in {p}.","Het filter op regio staat nu uit.","Het filter op soort staat nu uit."],
+  en:["{k}: not on view in {p}.","The region filter is now off.","The species filter is now off."],
+  fr:["{k} : pas visible ici ({p}).","Le filtre par région est désactivé.","Le filtre par espèce est désactivé."],
+  de:["{k}: in {p} nicht zu sehen.","Der Regionsfilter ist jetzt aus.","Der Artenfilter ist jetzt aus."],
+  it:["{k}: non visibile in {p}.","Il filtro per regione è disattivato.","Il filtro per specie è disattivato."],
+  es:["{k}: no se puede ver en {p}.","El filtro por región está desactivado.","El filtro por especie está desactivado."],
+  pt:["{k}: não está visível em {p}.","O filtro por região está desligado.","O filtro por espécie está desligado."]};
+var mldT=null;
+function melding(k,p,welk){var el=$("#nt-mld");if(!el)return;var t=MLD[N.lang()]||MLD.en;
+  el.textContent=t[0].replace("{k}",k).replace("{p}",p)+" "+t[welk];el.hidden=false;clearTimeout(mldT);mldT=setTimeout(function(){el.hidden=true;},6000);}
+function chipNaam(b){var c=b.cloneNode(true);c.querySelectorAll(".n,svg").forEach(function(x){x.remove();});return c.textContent.trim();}
 function lijst(sp){var t=typ(),r=reg();return LOCS.map(function(l,i){return i;}).filter(function(i){return (!sp||LSP[i].indexOf(sp)>=0)&&(!t||tnl(i)===t)&&(!r||N.REGIO[LOCS[i][0]]===r);})
   .sort(function(a,b){return LSP[b].length-LSP[a].length||LOCS[a][0].localeCompare(LOCS[b][0]);});}
 function kaart(i,lang){var l=LOCS[i],nm=l[0],k=tk(nm),s=N.lslug(nm),n=LSP[i].length,d=lang&&DS[s];
@@ -5344,8 +5362,13 @@ function kaart(i,lang){var l=LOCS[i],nm=l[0],k=tk(nm),s=N.lslug(nm),n=LSP[i].len
 /* ---------- kaart (startscherm) ---------- */
 function cats(){var el=$("#nt-cats");if(!el)return;
   var all=N.BIG.concat(N.SMALL).filter(function(s){return SPL[s];}).sort(function(a,b){return N.spName(a).localeCompare(N.spName(b));});
-  var hn=$(".nw-nsp strong");el.innerHTML='<button type="button" class="nt-cat" data-sp="" aria-pressed="'+(!SP)+'"><span class="nt-av nt-all">'+(hn?hn.textContent:all.length)+'</span><span>'+LS("Alle katten","All cats")+'</span></button>'+
-    all.map(function(s){var p=PH[s]&&PH[s].src;return '<button type="button" class="nt-cat" data-sp="'+E(s)+'" aria-pressed="'+(SP===s)+'"><span class="nt-av'+(onz(s)?" nt-avu":"")+'">'+(p?'<img src="'+E(p)+'" alt="" loading="lazy">':"")+'</span><span>'+E(N.spName(s))+'</span></button>';}).join("");
+  /* met een regio gekozen: katten die daar niet zitten grijs en achteraan */
+  var r=reg(),ok=function(s){return !r||(SPL[s]||[]).some(function(i){return inReg(i,r);});};
+  var ja=all.filter(ok),nee=all.filter(function(s){return !ok(s);});
+  var hn=$(".nw-nsp strong"),num=r?ja.filter(function(s){return !onz(s);}).length:(hn?hn.textContent:all.length);
+  function knop(s,grijs){var p=PH[s]&&PH[s].src;return '<button type="button" class="nt-cat'+(grijs?" nt-grijs":"")+'" data-sp="'+E(s)+'" aria-pressed="'+(SP===s)+'"><span class="nt-av'+(onz(s)?" nt-avu":"")+'">'+(p?'<img src="'+E(p)+'" alt="" loading="lazy">':"")+'</span><span>'+E(N.spName(s))+'</span></button>';}
+  el.innerHTML='<button type="button" class="nt-cat" data-sp="" aria-pressed="'+(!SP)+'"><span class="nt-av nt-all">'+num+'</span><span>'+LS("Alle katten","All cats")+'</span></button>'+
+    ja.map(function(s){return knop(s,false);}).join("")+(nee.length?'<span class="nt-sep" aria-hidden="true"></span>'+nee.map(function(s){return knop(s,true);}).join(""):"");
   el.setAttribute("aria-label",TX("Kies een soort","Choose a species"));}
 function spinfo(){var el=$("#nt-spinfo");if(!el)return;if(!SP){el.hidden=true;el.innerHTML="";return;}var n=(SPL[SP]||[]).length;
   el.innerHTML='<b>'+E(N.spName(SP))+'</b> · '+n+' '+nloc(n)+' · <a href="#soort/'+N.slug(SP)+'">'+LS("Meer over deze soort","More about this species")+' →</a>';el.hidden=false;}
@@ -5356,14 +5379,21 @@ function beeld(){var el=$("#nt-beeld");if(!el)return;var ids=lijst(SP),n=ids.len
     (n>5&&!MEER?'<button type="button" class="nt-more" id="nt-more">'+LS("Toon alle","Show all")+' ('+n+')</button>':"");}
 document.addEventListener("click",function(e){
   var c=e.target.closest&&e.target.closest(".nt-cat");
-  if(c){SP=c.dataset.sp||null;MEER=false;cats();spinfo();filt();beeld();return;}
+  if(c&&c.classList.contains("nt-grijs")){var rb=$('#rg-bar [aria-pressed="true"]'),pn=rb?chipNaam(rb):"",al=$('#rg-bar .rg-chip[data-r=""]');
+    SP=c.dataset.sp;MEER=false;if(al)al.click();cats();spinfo();filt();beeld();regs();melding(N.spName(SP),pn,1);return;}
+  if(c){SP=c.dataset.sp||null;MEER=false;cats();spinfo();filt();beeld();regs();return;}
   if(e.target.closest&&e.target.closest("#nt-more")){MEER=true;beeld();return;}
   var t=e.target.closest&&e.target.closest("#nt-types .lt-chip");
   if(t){var o=$$("#lt-bar .lt-chip").filter(function(b){return b.dataset.t===t.dataset.t;})[0];if(o)o.click();return;}
   var g=e.target.closest&&e.target.closest("#nt-regs .rg-chip");
+  if(g&&g.classList.contains("nt-grijs")&&SP){var kn=N.spName(SP);SP=null;MEER=false;cats();spinfo();filt();melding(kn,chipNaam(g),2);}
   if(g){var o2=$$("#rg-bar .rg-chip").filter(function(b){return b.dataset.r===g.dataset.r;})[0];if(o2)o2.click();}});
 function types(){var bar=$("#lt-bar"),el=$("#nt-types");if(!el)return;if(!bar){el.hidden=true;return;}el.innerHTML=bar.innerHTML;el.setAttribute("aria-label",bar.getAttribute("aria-label")||"");}
 function regs(){var bar=$("#rg-bar"),el=$("#nt-regs"),w=$("#nt-rgw");if(!bar||!el)return;w.hidden=false;el.innerHTML=bar.innerHTML;el.setAttribute("aria-label",bar.getAttribute("aria-label")||"");
+  /* met een soort gekozen: regio's zonder die soort grijs en achteraan, bij de rest het aantal locaties met die soort */
+  if(SP){var grijs=[];$$(".rg-chip",el).forEach(function(b){var r=b.dataset.r,n=r?(SPL[SP]||[]).filter(function(i){return inReg(i,r);}).length:(SPL[SP]||[]).length,nn=b.querySelector(".n");
+      if(nn)nn.textContent=n;if(r&&!n){b.classList.add("nt-grijs");grijs.push(b);}});
+    if(grijs.length){var sp=document.createElement("span");sp.className="nt-sep";sp.setAttribute("aria-hidden","true");el.appendChild(sp);grijs.forEach(function(b){el.appendChild(b);});}}
   var lab=$("#rg-lab");$("#nt-rglab").textContent=lab?lab.textContent:"";}
 
 /* ---------- locaties ---------- */
@@ -5403,7 +5433,7 @@ function opbouw(){if(klaar)return true;
   var sb=$("#soorten > .cbody")||$("#soorten"),lk=document.createElement("a");lk.className="nt-link";lk.href="#tabel";
   lk.innerHTML=ROWS+'<span>'+LS("Alle vermeldingen in één tabel","All entries in one table")+'</span>'+ARR;sb.appendChild(lk);
   alles();
-  ["lt-bar","rg-bar"].forEach(function(id){var b=document.getElementById(id);if(b)new MutationObserver(function(){types();regs();beeld();locs();}).observe(b,{childList:true,subtree:true,attributes:true,attributeFilter:["aria-pressed"]});});
+  ["lt-bar","rg-bar"].forEach(function(id){var b=document.getElementById(id);if(b)new MutationObserver(function(){types();regs();cats();beeld();locs();}).observe(b,{childList:true,subtree:true,attributes:true,attributeFilter:["aria-pressed"]});});
   new MutationObserver(function(){leesDS();alles();}).observe(html,{attributes:true,attributeFilter:["lang"]});
   /* na een tik op de kaart het infovak in beeld brengen als het onder de rand valt */
   $("#nt-kaart").addEventListener("click",function(e){if(!e.target.closest(".mk"))return;setTimeout(function(){var m=$("#mapinfo");if(!m)return;var r=m.getBoundingClientRect();

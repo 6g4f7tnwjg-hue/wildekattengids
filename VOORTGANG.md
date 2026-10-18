@@ -2,6 +2,10 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 18 oktober 2026 – Land/regio en soort: wat niet samengaat grijs
+
+Hoofdpagina: kies je een land, dan worden de soortrondjes van katten die daar niet zitten grijs en schuiven achteraan (achter een streepje); "Alle katten" toont het aantal soorten in dat land. Kies je een soort, dan gebeurt hetzelfde met de landknoppen, en staat bij de andere landen het aantal locaties met die soort. Een grijze knop blijft aantikbaar: het andere filter gaat uit en er verschijnt kort een melding ("… niet te zien in …"). Op de landpagina's werkt het zo met regio's en soorten. Beschikbaarheid: elke vermelding telt (ook onzeker), net als op de kaart.
+
 ## 18 oktober 2026 – Hoofdpagina, soortpagina's en losse pagina's gelijkgetrokken
 
 - Hoofdpagina en top 10: onderbalk Kaart · Landen · Soorten · Meer; de tabbladen Kaart/Landen/Soorten bovenaan zijn weg; het uitlegvak bij de kaart is één regel zolang er geen locatie gekozen is; de typeknoppen staan altijd onder de kaart (knop Legenda weg).

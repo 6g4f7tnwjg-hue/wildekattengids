@@ -76,6 +76,7 @@ START = f"""
 <div class="nt-rgw" id="nt-rgw" hidden><p class="nt-lbl" id="nt-rglab"></p><div class="nt-regs" id="nt-regs" role="group"></div></div>
 <p class="nt-lbl">{L("Waar zit welke kat? Kies een soort:", "Which cat lives where? Choose a species:")}</p>
 <div class="nt-cats" id="nt-cats" role="group"></div>
+<p class="nt-mld" id="nt-mld" role="status" hidden></p>
 <p class="nt-spinfo" id="nt-spinfo" hidden></p>
 <div class="nt-grid">
   <div class="nt-mapcol"><div id="nt-kaart"></div><div class="nt-types" id="nt-types" role="group"></div></div>
@@ -131,6 +132,10 @@ html.nt-zoek #start .nw-search{display:block}
 .nt-cat[aria-pressed="true"]{background:color-mix(in srgb,var(--nw-green) 13%,transparent);font-weight:700}
 .nt-cat[aria-pressed="true"] .nt-av{border-color:var(--nw-green);box-shadow:0 0 0 2px var(--nw-green)}
 .nt-cat:focus-visible{outline:2px solid var(--nw-terra);outline-offset:1px}
+.nt-grijs{opacity:.42}
+.nt-grijs .nt-av,.nt-grijs svg{filter:grayscale(1)}
+.nt-sep{flex:none;width:1px;align-self:stretch;margin:8px 4px;background:var(--line)}
+.nt-mld{margin:0 0 10px;padding:8px 12px;border-radius:12px;background:var(--nw-peach);color:var(--ink);font-size:.95rem}
 .nt-spinfo{margin:0 0 10px;font-size:1rem;color:var(--ink)}
 .nt-spinfo a{color:var(--nw-terra);font-weight:600;text-decoration:none;white-space:nowrap}
 /* kaart en lijst */
@@ -236,6 +241,19 @@ function leesDS(){$$("#locaties .loclist.cards li").forEach(function(li){var a=l
 var SP=null,MEER=false;
 function typ(){var b=$('#lt-bar [aria-pressed="true"]');return b?b.dataset.t:"";}
 function reg(){var b=$('#rg-bar [aria-pressed="true"]');return b&&N.REGIO?b.dataset.r:"";}
+function inReg(i,r){return N.REGIO&&N.REGIO[LOCS[i][0]]===r;}
+/* melding als een grijze knop het andere filter uitzet */
+var MLD={nl:["{k}: niet te zien in {p}.","Het filter op regio staat nu uit.","Het filter op soort staat nu uit."],
+  en:["{k}: not on view in {p}.","The region filter is now off.","The species filter is now off."],
+  fr:["{k} : pas visible ici ({p}).","Le filtre par région est désactivé.","Le filtre par espèce est désactivé."],
+  de:["{k}: in {p} nicht zu sehen.","Der Regionsfilter ist jetzt aus.","Der Artenfilter ist jetzt aus."],
+  it:["{k}: non visibile in {p}.","Il filtro per regione è disattivato.","Il filtro per specie è disattivato."],
+  es:["{k}: no se puede ver en {p}.","El filtro por región está desactivado.","El filtro por especie está desactivado."],
+  pt:["{k}: não está visível em {p}.","O filtro por região está desligado.","O filtro por espécie está desligado."]};
+var mldT=null;
+function melding(k,p,welk){var el=$("#nt-mld");if(!el)return;var t=MLD[N.lang()]||MLD.en;
+  el.textContent=t[0].replace("{k}",k).replace("{p}",p)+" "+t[welk];el.hidden=false;clearTimeout(mldT);mldT=setTimeout(function(){el.hidden=true;},6000);}
+function chipNaam(b){var c=b.cloneNode(true);c.querySelectorAll(".n,svg").forEach(function(x){x.remove();});return c.textContent.trim();}
 function lijst(sp){var t=typ(),r=reg();return LOCS.map(function(l,i){return i;}).filter(function(i){return (!sp||LSP[i].indexOf(sp)>=0)&&(!t||tnl(i)===t)&&(!r||N.REGIO[LOCS[i][0]]===r);})
   .sort(function(a,b){return LSP[b].length-LSP[a].length||LOCS[a][0].localeCompare(LOCS[b][0]);});}
 function kaart(i,lang){var l=LOCS[i],nm=l[0],k=tk(nm),s=N.lslug(nm),n=LSP[i].length,d=lang&&DS[s];
@@ -245,8 +263,13 @@ function kaart(i,lang){var l=LOCS[i],nm=l[0],k=tk(nm),s=N.lslug(nm),n=LSP[i].len
 /* ---------- kaart (startscherm) ---------- */
 function cats(){var el=$("#nt-cats");if(!el)return;
   var all=N.BIG.concat(N.SMALL).filter(function(s){return SPL[s];}).sort(function(a,b){return N.spName(a).localeCompare(N.spName(b));});
-  var hn=$(".nw-nsp strong");el.innerHTML='<button type="button" class="nt-cat" data-sp="" aria-pressed="'+(!SP)+'"><span class="nt-av nt-all">'+(hn?hn.textContent:all.length)+'</span><span>'+LS("Alle katten","All cats")+'</span></button>'+
-    all.map(function(s){var p=PH[s]&&PH[s].src;return '<button type="button" class="nt-cat" data-sp="'+E(s)+'" aria-pressed="'+(SP===s)+'"><span class="nt-av'+(onz(s)?" nt-avu":"")+'">'+(p?'<img src="'+E(p)+'" alt="" loading="lazy">':"")+'</span><span>'+E(N.spName(s))+'</span></button>';}).join("");
+  /* met een regio gekozen: katten die daar niet zitten grijs en achteraan */
+  var r=reg(),ok=function(s){return !r||(SPL[s]||[]).some(function(i){return inReg(i,r);});};
+  var ja=all.filter(ok),nee=all.filter(function(s){return !ok(s);});
+  var hn=$(".nw-nsp strong"),num=r?ja.filter(function(s){return !onz(s);}).length:(hn?hn.textContent:all.length);
+  function knop(s,grijs){var p=PH[s]&&PH[s].src;return '<button type="button" class="nt-cat'+(grijs?" nt-grijs":"")+'" data-sp="'+E(s)+'" aria-pressed="'+(SP===s)+'"><span class="nt-av'+(onz(s)?" nt-avu":"")+'">'+(p?'<img src="'+E(p)+'" alt="" loading="lazy">':"")+'</span><span>'+E(N.spName(s))+'</span></button>';}
+  el.innerHTML='<button type="button" class="nt-cat" data-sp="" aria-pressed="'+(!SP)+'"><span class="nt-av nt-all">'+num+'</span><span>'+LS("Alle katten","All cats")+'</span></button>'+
+    ja.map(function(s){return knop(s,false);}).join("")+(nee.length?'<span class="nt-sep" aria-hidden="true"></span>'+nee.map(function(s){return knop(s,true);}).join(""):"");
   el.setAttribute("aria-label",TX("Kies een soort","Choose a species"));}
 function spinfo(){var el=$("#nt-spinfo");if(!el)return;if(!SP){el.hidden=true;el.innerHTML="";return;}var n=(SPL[SP]||[]).length;
   el.innerHTML='<b>'+E(N.spName(SP))+'</b> · '+n+' '+nloc(n)+' · <a href="#soort/'+N.slug(SP)+'">'+LS("Meer over deze soort","More about this species")+' →</a>';el.hidden=false;}
@@ -257,14 +280,21 @@ function beeld(){var el=$("#nt-beeld");if(!el)return;var ids=lijst(SP),n=ids.len
     (n>5&&!MEER?'<button type="button" class="nt-more" id="nt-more">'+LS("Toon alle","Show all")+' ('+n+')</button>':"");}
 document.addEventListener("click",function(e){
   var c=e.target.closest&&e.target.closest(".nt-cat");
-  if(c){SP=c.dataset.sp||null;MEER=false;cats();spinfo();filt();beeld();return;}
+  if(c&&c.classList.contains("nt-grijs")){var rb=$('#rg-bar [aria-pressed="true"]'),pn=rb?chipNaam(rb):"",al=$('#rg-bar .rg-chip[data-r=""]');
+    SP=c.dataset.sp;MEER=false;if(al)al.click();cats();spinfo();filt();beeld();regs();melding(N.spName(SP),pn,1);return;}
+  if(c){SP=c.dataset.sp||null;MEER=false;cats();spinfo();filt();beeld();regs();return;}
   if(e.target.closest&&e.target.closest("#nt-more")){MEER=true;beeld();return;}
   var t=e.target.closest&&e.target.closest("#nt-types .lt-chip");
   if(t){var o=$$("#lt-bar .lt-chip").filter(function(b){return b.dataset.t===t.dataset.t;})[0];if(o)o.click();return;}
   var g=e.target.closest&&e.target.closest("#nt-regs .rg-chip");
+  if(g&&g.classList.contains("nt-grijs")&&SP){var kn=N.spName(SP);SP=null;MEER=false;cats();spinfo();filt();melding(kn,chipNaam(g),2);}
   if(g){var o2=$$("#rg-bar .rg-chip").filter(function(b){return b.dataset.r===g.dataset.r;})[0];if(o2)o2.click();}});
 function types(){var bar=$("#lt-bar"),el=$("#nt-types");if(!el)return;if(!bar){el.hidden=true;return;}el.innerHTML=bar.innerHTML;el.setAttribute("aria-label",bar.getAttribute("aria-label")||"");}
 function regs(){var bar=$("#rg-bar"),el=$("#nt-regs"),w=$("#nt-rgw");if(!bar||!el)return;w.hidden=false;el.innerHTML=bar.innerHTML;el.setAttribute("aria-label",bar.getAttribute("aria-label")||"");
+  /* met een soort gekozen: regio's zonder die soort grijs en achteraan, bij de rest het aantal locaties met die soort */
+  if(SP){var grijs=[];$$(".rg-chip",el).forEach(function(b){var r=b.dataset.r,n=r?(SPL[SP]||[]).filter(function(i){return inReg(i,r);}).length:(SPL[SP]||[]).length,nn=b.querySelector(".n");
+      if(nn)nn.textContent=n;if(r&&!n){b.classList.add("nt-grijs");grijs.push(b);}});
+    if(grijs.length){var sp=document.createElement("span");sp.className="nt-sep";sp.setAttribute("aria-hidden","true");el.appendChild(sp);grijs.forEach(function(b){el.appendChild(b);});}}
   var lab=$("#rg-lab");$("#nt-rglab").textContent=lab?lab.textContent:"";}
 
 /* ---------- locaties ---------- */
@@ -304,7 +334,7 @@ function opbouw(){if(klaar)return true;
   var sb=$("#soorten > .cbody")||$("#soorten"),lk=document.createElement("a");lk.className="nt-link";lk.href="#tabel";
   lk.innerHTML=ROWS+'<span>'+LS("Alle vermeldingen in één tabel","All entries in one table")+'</span>'+ARR;sb.appendChild(lk);
   alles();
-  ["lt-bar","rg-bar"].forEach(function(id){var b=document.getElementById(id);if(b)new MutationObserver(function(){types();regs();beeld();locs();}).observe(b,{childList:true,subtree:true,attributes:true,attributeFilter:["aria-pressed"]});});
+  ["lt-bar","rg-bar"].forEach(function(id){var b=document.getElementById(id);if(b)new MutationObserver(function(){types();regs();cats();beeld();locs();}).observe(b,{childList:true,subtree:true,attributes:true,attributeFilter:["aria-pressed"]});});
   new MutationObserver(function(){leesDS();alles();}).observe(html,{attributes:true,attributeFilter:["lang"]});
   /* na een tik op de kaart het infovak in beeld brengen als het onder de rand valt */
   $("#nt-kaart").addEventListener("click",function(e){if(!e.target.closest(".mk"))return;setTimeout(function(){var m=$("#mapinfo");if(!m)return;var r=m.getBoundingClientRect();
@@ -462,6 +492,11 @@ EU_CSS = r"""
 .info.nt-leeg{background:none!important;border:0!important;box-shadow:none!important;padding:0 2px!important;min-height:0}
 .info.nt-leeg h3,.info.nt-leeg .note{display:none}
 .info.nt-leeg .pl{margin:0;font-size:.95rem}
+.nt-grijs{opacity:.42}
+.nt-grijs .av,.nt-grijs svg{filter:grayscale(1)}
+.nt-sep{flex:none;width:1px;align-self:stretch;margin:8px 4px;background:var(--line)}
+.nt-mld{margin:0 0 10px;padding:8px 12px;border-radius:12px;background:#F3E2D3;color:var(--ink);font-size:.95rem}
+.nt-mld[hidden]{display:none}
 .kat-land li{display:grid!important;grid-template-columns:28px minmax(0,1fr) auto;gap:4px 12px;align-items:center}
 .kat-land li .nt-ti svg{width:28px;height:28px;display:block}
 .kat-land li .kl-go{font-weight:700}
@@ -495,6 +530,45 @@ function kat(){var kv=document.getElementById("katview");if(!kv||bezig)return;be
   kv.querySelectorAll(".kat-land li[data-hk]").forEach(function(li){if(li.querySelector(".nt-ti"))return;var s=document.createElement("span");s.className="nt-ti";s.innerHTML=ico(+li.dataset.hk);li.insertBefore(s,li.firstChild);});
   bezig=false;}
 var kv=document.getElementById("katview");if(kv){new MutationObserver(kat).observe(kv,{childList:true,subtree:true});kat();}
+/* land en soort op de kaart: wat niet samengaat grijs en achteraan (18-10-2026) */
+var AV=AVJSON,zoom=document.getElementById("zoom"),row=document.getElementById("catrow"),bz=false;
+var MLD={nl:["{k}: niet te zien in {p}.","Het filter op land staat nu uit.","Het filter op soort staat nu uit."],
+  en:["{k}: not on view in {p}.","The country filter is now off.","The species filter is now off."],
+  fr:["{k} : pas visible ici ({p}).","Le filtre par pays est désactivé.","Le filtre par espèce est désactivé."],
+  de:["{k}: in {p} nicht zu sehen.","Der Länderfilter ist jetzt aus.","Der Artenfilter ist jetzt aus."],
+  it:["{k}: non visibile in {p}.","Il filtro per paese è disattivato.","Il filtro per specie è disattivato."],
+  es:["{k}: no se puede ver en {p}.","El filtro por país está desactivado.","El filtro por especie está desactivado."]};
+function land(){var b=zoom&&zoom.querySelector('.chip[aria-pressed="true"]');return b&&b.dataset.zoom!=="all"?b.dataset.zoom:"";}
+function soort(){var b=row&&row.querySelector('.catbtn[aria-pressed="true"]');return b?b.dataset.cat:"";}
+function naam(b){var c=b.cloneNode(true);c.querySelectorAll(".n,svg,.av").forEach(function(x){x.remove();});return c.textContent.trim();}
+function sorteer(box,sel,ok){var it=[].slice.call(box.querySelectorAll(sel));it.forEach(function(e,i){if(e.dataset.ntI===undefined)e.dataset.ntI=i;});
+  it.sort(function(a,b){return a.dataset.ntI-b.dataset.ntI;});
+  var ja=it.filter(function(e){return ok(e)!==false;}),nee=it.filter(function(e){return ok(e)===false;});
+  it.forEach(function(e){e.classList.toggle("nt-grijs",ok(e)===false);});
+  var sep=box.querySelector(".nt-sep");if(!sep){sep=document.createElement("span");sep.className="nt-sep";sep.setAttribute("aria-hidden","true");}
+  var want=ja.concat(nee.length?[sep]:[],nee),cur=[].slice.call(box.children).filter(function(e){return e.matches(sel)||e===sep;});
+  if(want.length!==cur.length||want.some(function(e,i){return cur[i]!==e;}))want.forEach(function(e){box.appendChild(e);});
+  if(!nee.length&&sep.parentNode)sep.remove();}
+function pas(){if(bz||!zoom||!row)return;bz=true;var c=land(),k=soort();
+  sorteer(row,".catbtn",function(b){var s=b.dataset.cat;if(!s)return null;return !c||!!(AV[c]&&AV[c][s]);});
+  var al=row.querySelector('.catbtn[data-cat=""] .av');if(al){if(al.dataset.ntN===undefined)al.dataset.ntN=al.textContent;
+    var nt=String(c?Object.keys(AV[c]||{}).length:al.dataset.ntN);if(al.textContent!==nt)al.textContent=nt;}
+  sorteer(zoom,".chip",function(b){var z=b.dataset.zoom;if(!z||z==="all")return null;return !k||!!(AV[z]&&AV[z][k]);});
+  zoom.querySelectorAll(".chip").forEach(function(b){var n=b.querySelector(".nt-n"),z=b.dataset.zoom,v=k&&z!=="all"&&AV[z]?AV[z][k]:0;
+    if(k&&z!=="all"&&v){if(!n){n=document.createElement("span");n.className="n nt-n";b.appendChild(n);}if(n.textContent!==String(v))n.textContent=v;}else if(n)n.remove();});
+  bz=false;}
+var mldT=null;
+function melding(k,p,w){var el=document.getElementById("nt-mld");if(!el&&row){el=document.createElement("p");el.id="nt-mld";el.className="nt-mld";el.setAttribute("role","status");row.insertAdjacentElement("afterend",el);}
+  if(!el)return;var t=MLD[(document.documentElement.lang||"nl").slice(0,2)]||MLD.en;el.textContent=t[0].replace("{k}",k).replace("{p}",p)+" "+t[w];el.hidden=false;
+  clearTimeout(mldT);mldT=setTimeout(function(){el.hidden=true;},6000);}
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest(".nt-grijs");if(!b||!zoom||!row)return;
+  if(b.classList.contains("catbtn")&&row.contains(b)){var p=zoom.querySelector('.chip[aria-pressed="true"]'),pn=p?naam(p):"",kn=naam(b),cat=b.dataset.cat;
+    e.preventDefault();e.stopPropagation();var a=zoom.querySelector('[data-zoom="all"]');if(a)a.click();
+    setTimeout(function(){var nb=row.querySelector('.catbtn[data-cat="'+cat+'"]');if(nb)nb.click();melding(kn,pn,1);},40);}
+  else if(b.classList.contains("chip")&&zoom.contains(b)){var s=row.querySelector('.catbtn[aria-pressed="true"]'),kn2=s?naam(s):"",pn2=naam(b),z=b.dataset.zoom;
+    e.preventDefault();e.stopPropagation();var a2=row.querySelector('.catbtn[data-cat=""]');if(a2)a2.click();
+    setTimeout(function(){var nz=zoom.querySelector('.chip[data-zoom="'+z+'"]');if(nz)nz.click();melding(kn2,pn2,2);},40);}},true);
+if(zoom&&row){[zoom,row].forEach(function(x){new MutationObserver(function(){setTimeout(pas,0);}).observe(x,{childList:true,subtree:true,attributes:true,attributeFilter:["aria-pressed"]});});pas();}
 /* onderbalk: Soorten aan op een soortpagina */
 var bar=document.getElementById("nw-sbar-start");
 if(bar&&window.__KAT){var s=bar.querySelector('[data-k="soorten"]');if(s)s.classList.add("on");}
@@ -504,10 +578,13 @@ EU_T_OUD = 'home:{nl:"Home",en:"Home",fr:"Accueil",de:"Start",it:"Home",es:"Inic
 EU_T_NIEUW = 'home:{nl:"Kaart",en:"Map",fr:"Carte",de:"Karte",it:"Mappa",es:"Mapa"}'
 
 
-def europa(pad, wild, soort=False):
+def europa(pad, wild, av, soort=False):
     doc = open(pad, encoding="utf-8").read()
-    if EU_MARK in doc:
-        return False
+    if EU_MARK in doc:   # vorige versie van deze laag eruit, dan opnieuw
+        doc = re.sub(r'\n<style id="nt-eu-css">.*?</style>\n', "\n", doc, count=1, flags=re.S)
+        doc = re.sub(r'\n<script>\(function\(\)\{\n/\* hoofdpagina en soortpagina.*?</script>\n', "\n", doc, count=1, flags=re.S)
+        assert EU_MARK not in doc and "nt-leeg" not in doc, pad
+        open(pad, "w", encoding="utf-8").write(doc)
     if NO.START_MARK not in doc:
         if not soort:
             return False
@@ -517,7 +594,7 @@ def europa(pad, wild, soort=False):
     doc = doc.replace('data-k="landen">' + NO.ICO["b-map"], 'data-k="landen">' + ICO["b-flag"], 1)
     doc = doc.replace(EU_T_OUD, EU_T_NIEUW, 1)
     import huisstijl
-    js = (EU_JS.replace("WILDJSON", json.dumps(wild, ensure_ascii=False))
+    js = (EU_JS.replace("WILDJSON", json.dumps(wild, ensure_ascii=False)).replace("AVJSON", json.dumps(av, ensure_ascii=False))
           .replace("COLJSON", json.dumps(huisstijl.TCOL)).replace("GLYJSON", json.dumps(huisstijl.GLY)))
     doc = doc.replace("</head>", EU_CSS + "</head>", 1)
     k = doc.rindex("</body>")
@@ -536,12 +613,27 @@ def slug_py(s):
 def maak_europa():
     gids = open(os.path.join(ROOT, "nederland-oud", "index.html"), encoding="utf-8").read()
     wild = {slug_py(k): v for k, v in json.loads(re.search(r"const WILD=(\{.*?\});", gids).group(1)).items()}
-    n = europa(os.path.join(ROOT, "index.html"), wild) + europa(os.path.join(ROOT, "top10", "index.html"), wild)
+    # per land: soort -> aantal locaties (ook onzeker), uit de gegevens van de hoofdpagina
+    st = open(os.path.join(ROOT, "index.html"), encoding="utf-8").read()
+    i = st.index("const D=")
+    D = json.loads(st[i + 8:st.index("\n", i)].rstrip(";"))
+    av = {}
+    for c, v in D.items():
+        if not isinstance(v, dict) or "locs" not in v:
+            continue
+        cnt = {}
+        for s in D["sp"]:
+            al = {s[0]} | set(s[5])
+            n = sum(1 for l in v["locs"] if any(x[4] in al for x in l[5]))
+            if n:
+                cnt[s[0]] = n
+        av[c] = cnt
+    n = europa(os.path.join(ROOT, "index.html"), wild, av) + europa(os.path.join(ROOT, "top10", "index.html"), wild, av)
     d = os.path.join(ROOT, "soort")
     for s in sorted(os.listdir(d)):
         pad = os.path.join(d, s, "index.html")
         if os.path.exists(pad):
-            n += europa(pad, wild, soort=True)
+            n += europa(pad, wild, av, soort=True)
     print("hoofdpagina, top 10 en soortpagina's in de nieuwe opbouw:", n)
 
 

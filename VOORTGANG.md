@@ -2,6 +2,10 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 18 oktober 2026 – Meer op de landpagina's zonder blok Bezoekersgids
+
+Op het scherm Meer van alle landpagina's zijn de kop "Bezoekersgids" en de links eronder (Alle landen, Alle soorten, Top 10, Over deze gids, Spottersgids) weggehaald (`MEER_NIEUW` in `bron/test_ontwerp.py`). Ze staan nog in het ☰-menu.
+
 ## 18 oktober 2026 – Interne controle en tellingen gelijkgetrokken
 
 Hele site intern nagelopen (tellingen, teksten, links, alle talen op 390 px). Verbeterd:

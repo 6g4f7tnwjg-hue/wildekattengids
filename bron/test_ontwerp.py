@@ -452,7 +452,8 @@ function toggle(k,s){var a=favLees(),i=-1;a.forEach(function(x,j){if(i<0&&x.k===
     if(k==="loc"){var l=LOCS[LOCBYSLUG[s]];if(l){it.n=l[0];it.p=l[1];}}else{var b=BYSLUG[s];if(b){it.n=b[0];it.e=en(b[0]);it.p=b[2];}}a.push(it);}
   favSchrijf(a);paint();}"""
 MEER_OUD = 'var site=$$("#hs-menu nav a").map(function(a){var c=a.cloneNode(true);c.removeAttribute("class");return \'<li>\'+c.outerHTML.replace(/<\\/a>$/,ARR+"</a>")+\'</li>\';}).join("");'
-MEER_NIEUW = 'var site=$$("#hs-menu nav a").filter(function(a){var h=a.getAttribute("href")||"";return !/ko-fi\\.com|#(kaart|geboren|perpark|typen)$/.test(h);}).map(function(a){var c=a.cloneNode(true),lc=(a.className.match(/\\bl-[a-z]{2}\\b/)||[""])[0];c.removeAttribute("class");return \'<li\'+(lc?\' class="\'+lc+\'"\':\'\')+\'>\'+c.outerHTML.replace(/<\\/a>$/,ARR+"</a>")+\'</li>\';}).join("");'
+# Meer zonder het blok Bezoekersgids (kop en sitelinks), 18-10-2026
+MEER_NIEUW = 'var site="";'
 
 
 def maak(land="nederland", map=None):

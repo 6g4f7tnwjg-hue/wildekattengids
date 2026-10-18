@@ -193,6 +193,43 @@ LP_JS = ("(function(){var f=document.querySelector('footer.foot,footer.hs-foot')
       "d.classList.add('jg-tik');setTimeout(function(){d.classList.remove('jg-tik')},1400)})})();")
 
 
+# groene kop op tussenschermen: vlag, lichte onderregel en goudgele regel zoals de hoofdpagina (19-10-2026)
+KOP_JS = r"""(function(){
+var ks=document.querySelectorAll('.jg-kop');for(var i=0;i<ks.length;i++){var k=ks[i];if(k.querySelector('figure, .kat-foto')){k.classList.add('jg-foto');continue;}
+ var u=k.querySelectorAll('.sub, .kat-sum');for(var j=u.length-1;j>=0;j--){u[j].classList.add('jg-uitleg');k.parentNode.insertBefore(u[j],k.nextSibling);}}
+var sb=document.getElementById('nw-sbar');if(!sb||sb.classList.contains('nw-los'))return;
+var kop=document.querySelector('.nt-kop');if(!kop)return;
+var h=kop.querySelector('h1 .hs-t')||kop.querySelector('h1');
+var vlag=kop.querySelector('h1 svg');
+var ond=kop.querySelector('.hs-onder');var meta=kop.querySelector('.nt-meta');
+var T={
+ loc:{nl:'Alle dierentuinen, parken en opvangcentra in ',en:'All zoos, animal parks and sanctuaries in ',fr:'Tous les zoos, parcs et refuges : ',de:'Alle Zoos, Tierparks und Auffangstationen: ',it:'Tutti gli zoo, parchi e centri: ',es:'Todos los zoos, parques y santuarios: ',pt:'Todos os zoos, parques e santuários: '},
+ sp:{nl:'Alle wilde katten die je kunt zien in ',en:'All the wild cats you can see in ',fr:'Tous les félins à voir : ',de:'Alle Wildkatzen zu sehen: ',it:'Tutti i felini da vedere: ',es:'Todos los felinos que puedes ver: ',pt:'Todos os felinos que podes ver: '},
+ meer:{nl:'Alles over de gids van ',en:'All about the guide to ',fr:'Tout sur le guide : ',de:'Alles über den Guide: ',it:'Tutto sulla guida: ',es:'Todo sobre la guía: ',pt:'Tudo sobre o guia: '},
+ big:{nl:'grote katten',en:'big cats',fr:'grands félins',de:'Großkatzen',it:'grandi felini',es:'grandes felinos',pt:'grandes felinos'},
+ small:{nl:'kleine katten',en:'small cats',fr:'petits félins',de:'Kleinkatzen',it:'piccoli felini',es:'pequeños felinos',pt:'pequenos felinos'}};
+var langs=[].map.call(document.querySelectorAll('[data-setlang]'),function(b){return b.dataset.setlang});if(!langs.length)langs=['nl'];
+langs=langs.filter(function(l,i){return langs.indexOf(l)==i});
+function esc(t){return String(t).replace(/[<&>]/g,'');}
+function land(l){var x=h.querySelector('.l-'+l);return (x||h).textContent.trim();}
+var t=sb.querySelector('.nw-stitle');
+if(vlag&&t&&!sb.querySelector('.jg-vlag')){var v=vlag.cloneNode(true);v.classList.add('jg-vlag');sb.insertBefore(v,t);}
+var p=sb.querySelector('.jg-sub');if(!p){p=document.createElement('p');p.className='jg-sub';sb.appendChild(p);}
+var g=document.createElement('div');g.className='jg-meta';sb.appendChild(g);
+function per(dict){return langs.map(function(l){return '<span class="l-'+l+'">'+esc((dict[l]||dict.en)+land(l))+'</span>'}).join('');}
+function upd(){var c=document.querySelector('#main .nw-cur');var id=c?c.id:'';
+ if(id=='locaties'){p.innerHTML=per(T.loc);
+  var parts=[].slice.call(document.querySelectorAll('#lt-bar .lt-chip:not(.hs-alle)')).filter(function(b){var n=b.querySelector('.n');return n&&+n.textContent>0}).sort(function(a,b){return b.querySelector('.n').textContent-a.querySelector('.n').textContent}).slice(0,3);var _x=[].filter.call(document.querySelectorAll('#lt-bar .lt-chip:not(.hs-alle)'),function(b){var n=b.querySelector('.n');return n&&+n.textContent>0});
+  g.innerHTML=parts.map(function(b){var n=b.querySelector('.n').textContent.trim();var lab=b.textContent.replace(n,'').trim();return '<span>'+esc(n+' '+lab)+'</span>'}).join('<i> · </i>');}
+ else if(id=='soorten'){p.innerHTML=per(T.sp);
+  var bg=document.querySelectorAll('#soorten .chips[data-group="big"] .chip').length,sm=document.querySelectorAll('#soorten .chips[data-group="small"] .chip').length;
+  g.innerHTML=langs.map(function(l){return '<span class="l-'+l+'">'+bg+' '+T.big[l]+'<i> · </i>'+sm+' '+T.small[l]+'</span>'}).join('');}
+ else{p.innerHTML=id=='meer'?per(T.meer):(ond?ond.innerHTML:'');g.innerHTML=meta?meta.innerHTML:'';}
+}
+upd();var mo=new MutationObserver(function(){mo.disconnect();upd();go();});function go(){mo.observe(document.getElementById('main'),{attributes:true,subtree:true,attributeFilter:['class']});}go();
+document.addEventListener('click',function(){setTimeout(upd,60)});
+})();"""
+
 FONTS = '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Nunito:wght@400;600;700;800&display=swap">'
 
 # kleuren
@@ -251,11 +288,22 @@ html body #main:has(#meer.nw-cur,#locaties.nw-cur,#soorten.nw-cur) .nw-sbar .nw-
 html body .nw-sbar:not(.nw-los){{position:relative!important;top:0!important;min-height:166px;box-sizing:border-box;display:flex!important;flex-wrap:wrap;align-content:flex-start;align-items:center;column-gap:12px;padding-top:20px!important}}
 html body .nw-sbar .jg-sub{{flex-basis:100%;margin:8px 0 0;color:#D3E4C2;font-size:1.05rem;line-height:1.35}}
 html body .nw-sbar .nw-stitle{{font-size:clamp(2.2rem,10vw,3.2rem)!important}}
+html body .nw-sbar .nw-stitle,html body .nw-sbar .nw-stitle *{{font-size:39px!important}}
 html body .jg-kop:not(.jg-foto){{min-height:166px;box-sizing:border-box;padding-top:20px}}
 html body .jg-kop:not(.jg-foto) h1{{font-size:clamp(2.2rem,10vw,3.2rem)!important;margin:0!important}}
 html body .jg-kop .terug{{margin:0 0 10px!important}}
 html body .jg-uitleg{{margin:0 0 16px!important;color:{MUTED}!important}}
 html body .nw-sbar::before,html body .jg-kop::before{{right:-30px!important;top:-12px!important;width:130px!important;height:160px!important}}
+html body .nw-sbar .nw-stitle{{display:flex!important;align-items:center;gap:12px}}
+html body .nw-sbar .jg-vlag{{display:block!important;flex:none;width:44px;height:30px;border-radius:4px;box-shadow:0 0 0 1px rgba(0,0,0,.25)}}
+html body .nw-sbar .jg-meta{{flex-basis:100%;margin-top:10px;font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-weight:600;font-size:.95rem;letter-spacing:.08em;text-transform:uppercase;color:{SUN}}}
+html body .nw-sbar .jg-meta *{{color:{SUN}!important;text-decoration:none!important;font-family:inherit!important}}
+html body .nw-sbar .jg-meta,html body .nw-sbar .jg-meta *{{font-size:.95rem!important;line-height:1.5!important;border:0!important;padding:0!important;margin:0!important;background:none!important;font-weight:600!important;letter-spacing:.08em!important}}
+html body .nw-sbar .jg-meta .nw-stats,html body .nw-sbar .jg-meta .nw-stats>a{{display:inline-flex!important;gap:0 18px}}
+html body .nw-sbar .jg-meta .nw-stats{{margin-right:18px!important}}
+html body .nw-sbar .jg-meta>div{{display:inline!important}}
+html body .nw-sbar .jg-meta i{{font-style:normal}}
+html body .nw-sbar .jg-sub{{margin-top:6px!important}}
 @media (prefers-reduced-motion:reduce){{html body *{{animation:none!important}}}}
 """
 
@@ -352,7 +400,7 @@ html body .hs-kofi{{background:{SUN}!important;color:{JG}!important;border-color
 def blok(html):
     land = 'id="hs-top"' in html or "id='hs-top'" in html
     css = GEDEELD + (LAND if land else EUROPA) + LP_CSS
-    js = LP_JS % json.dumps(svg()) + "(function(){var ts=document.querySelectorAll('.terug');for(var i=0;i<ts.length;i++){var t=ts[i],p=t.parentElement;if(!p||p.classList.contains('jg-kop'))continue;var k=document.createElement('div');k.className='jg-kop';p.insertBefore(k,t);var x=t.nextElementSibling;k.appendChild(t);while(x&&(x.tagName=='H1'||(x.tagName=='P'&&x.classList.contains('sub'))||x.classList.contains('kat-h'))){var n=x.nextElementSibling;k.appendChild(x);x=n;}}})();" + '(function(){\nvar LANGS={nl:[\'locaties\',\'soorten\',\'Alles over de gids van \'],en:[\'locations\',\'species\',\'All about the guide: \'],fr:[\'lieux\',\'espèces\',\'\'],de:[\'Orte\',\'Arten\',\'\'],it:[\'luoghi\',\'specie\',\'\'],es:[\'lugares\',\'especies\',\'\'],pt:[\'locais\',\'espécies\',\'\']};\nvar ks=document.querySelectorAll(\'.jg-kop\');for(var i=0;i<ks.length;i++){var k=ks[i];if(k.querySelector(\'figure, .kat-foto\')){k.classList.add(\'jg-foto\');continue;}\n var u=k.querySelectorAll(\'.sub, .kat-sum\');for(var j=u.length-1;j>=0;j--){u[j].classList.add(\'jg-uitleg\');k.parentNode.insertBefore(u[j],k.nextSibling);}}\nvar sb=document.getElementById(\'nw-sbar\');if(!sb||sb.classList.contains(\'nw-los\'))return;\nvar h=document.querySelector(\'.nt-kop h1 .hs-t\')||document.querySelector(\'.nt-kop h1\');if(!h)return;\nvar langs=[].map.call(document.querySelectorAll(\'[data-setlang]\'),function(b){return b.dataset.setlang});if(!langs.length)langs=[\'nl\'];\nfunction land(l){var x=h.querySelector(\'.l-\'+l);return (x||h).textContent.trim();}\nfunction tel(){var a=document.querySelector(\'.nt-av.nt-all\');var l=document.querySelector(\'#lt-bar .hs-alle .n\');return [l?l.textContent.trim():\'\',a?a.textContent.trim():\'\'];}\nvar p=document.createElement(\'p\');p.className=\'jg-sub\';sb.appendChild(p);\nfunction upd(){var c=document.querySelector(\'#main .nw-cur\');var id=c?c.id:\'\';var t=tel();var out=\'\';\n langs.forEach(function(l){var w=LANGS[l]||LANGS.en,n=land(l),txt;\n  if(id==\'locaties\')txt=t[0]+\' \'+w[0]+\' · \'+n;else if(id==\'soorten\')txt=t[1]+\' \'+w[1]+\' · \'+n;else if(id==\'meer\')txt=(w[2]||\'\')+n;else txt=n;\n  out+=\'<span class="l-\'+l+\'">\'+txt.replace(/[<&]/g,\'\')+\'</span>\';});\n p.innerHTML=out;}\nupd();new MutationObserver(upd).observe(document.getElementById(\'main\'),{attributes:true,subtree:true,attributeFilter:[\'class\']});\n})();'
+    js = LP_JS % json.dumps(svg()) + "(function(){var ts=document.querySelectorAll('.terug');for(var i=0;i<ts.length;i++){var t=ts[i],p=t.parentElement;if(!p||p.classList.contains('jg-kop'))continue;var k=document.createElement('div');k.className='jg-kop';p.insertBefore(k,t);var x=t.nextElementSibling;k.appendChild(t);while(x&&(x.tagName=='H1'||(x.tagName=='P'&&x.classList.contains('sub'))||x.classList.contains('kat-h'))){var n=x.nextElementSibling;k.appendChild(x);x=n;}}})();" + KOP_JS
     return f'{BEGIN}{FONTS}<style id="jungle">{css}</style><script>{js}</script>{EIND}'
 
 def weg(html):

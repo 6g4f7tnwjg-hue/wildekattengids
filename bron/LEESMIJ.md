@@ -29,6 +29,10 @@ Alles wordt uit deze map gebouwd. Pas nooit de gegenereerde bestanden in de hoof
 
 Daarna (ook in `test_ontwerp.py`): `maak_los2()` geeft de losse park- en soortpagina's dezelfde onderbalk (Kaart · Soorten · Locaties · Meer) en verbergt "Aanwezig"; `maak_europa()` geeft de hoofdpagina, de top 10 en de soortpagina's `/soort/…` de onderbalk Kaart · Landen · Soorten · Meer (zonder de tabbladen erboven), een korte uitleg bij de kaart en altijd zichtbare typeknoppen; op de soortpagina's staat in plaats van de IUCN-status de geschatte aantallen in het wild (`WILD` uit de Nederlandse gids), heet het vak met het gebied "Verspreiding" en hebben de locaties bij "Waar te zien" een type-icoon.
 
+## Jungle-stijl (18-10-2026)
+
+`jungle.py` draait als allerlaatste stap van `bouw.py` en zet op alle pagina's (behalve `/<land>-oud/`, `/spottersgids/`, `/voorbeeld-jungle/` en doorverwijzingen) één blok `<!--jungle-->…<!--/jungle-->` voor `</body>`: lettertypen (Anton, Nunito) en CSS in de stijl "Expeditie" (donker junglegroen, bladeren, luipaardvlekken, golfrand, houten knoppen, goudgeel). Gegevens, teksten en indeling blijven ongewijzigd. Terugdraaien: `python3 bron/jungle.py --weg` en de regel onderaan `bouw.py` weghalen. Reservekopie van de site van vóór de jungle-stijl: tak `backup-voor-jungle`.
+
 ## Telregel (18-10-2026)
 
 Overal op de site telt een getal bij een soort of locatie alleen **bevestigde** vermeldingen (status g, y, b of r); onzekere (w, en ook p en n) staan er apart achter ("10 soorten · 1 onzeker"). Zo telt ook "N soorten bevestigd op M locaties": M = locaties met een bevestigde kat. Uitzondering: het getal bij een filterknop voor regio of land met een gekozen soort, en "In beeld", tellen wat de kaart en de lijst tonen (dus ook onzekere). De groep "Onzeker" in de routeplanner (`UNSURE`) wordt in elke gids uit `R` berekend; niet meer met de hand bijhouden.

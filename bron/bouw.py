@@ -579,3 +579,6 @@ try:
     import test_ontwerp; test_ontwerp.maak_alles()
 except Exception as e:
     print("testontwerp overgeslagen:", e)
+
+# jungle-stijl (18-10-2026): vormgeving "Expeditie" als losse laag over alle pagina's, als allerlaatste stap (zie bron/jungle.py)
+import jungle; jungle.maak()

@@ -247,6 +247,7 @@ html body .group-title .gtog,html body .group-title .gtog *{{font-family:{DISP}!
 html body .group-title .gtog{{display:inline-flex;align-items:center;gap:8px;font-size:1.15rem!important}}
 html body .group-title .gtog::before{{content:"";flex:none;width:46px;height:20px;background:{paws('#C9561F')} center/contain no-repeat}}
 html body .nt-sc img{{border-bottom:3px solid {SUN}}}
+html body .nw-sbar:not(.nw-los) .nw-back,html body .jg-kop .terug{{display:none!important}}
 @media (prefers-reduced-motion:reduce){{html body *{{animation:none!important}}}}
 """
 

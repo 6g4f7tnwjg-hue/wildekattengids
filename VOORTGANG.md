@@ -2,6 +2,10 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 18 oktober 2026 – Nieuwe opbouw op alle landen
+
+Het ontwerp van /nederland/ staat nu op alle twaalf landpagina's (`LIVE` in `bron/test_ontwerp.py`). Nieuw voor landen met regio's: regioknoppen boven de soortrondjes op het kaartscherm; de lijsten "In beeld" en Locaties volgen het regio- en typefilter. Teksten in alle gidstalen. Gecontroleerd op 390 px in alle talen: geen fouten, geen horizontaal scrollen, aantallen kloppen (bevestigde soorten = getal bij "Alle katten"). De testpagina /nederland-test/ is weg.
+
 ## 18 oktober 2026 – Nieuwe opbouw live op /nederland/
 
 Goedgekeurd: het testontwerp staat nu ook op /nederland/ (`test_ontwerp.maak_alles()`, lijst `LIVE`). De reserve blijft /nederland-oud/; /nederland-test/ blijft voorlopig staan voor de volgende landen. Volgende stappen (afgesproken): alle andere landen in dit ontwerp (met regiofilter op het kaartscherm en teksten in alle gidstalen), daarna de hoofdpagina en losse pagina's gelijktrekken en de IUCN-status op de soortpagina's vervangen door de geschatte aantallen in het wild, tot slot de Nederlandse gids nalopen (stand 28-9-2026).

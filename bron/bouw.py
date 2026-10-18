@@ -567,8 +567,8 @@ print("Website:", len(urls), "pagina's")
 # nieuw ontwerp landpagina's (17-10-2026): zet het nieuwe ontwerp op /<land>/, oude pagina als reserve op /<land>-oud/ (zie bron/nieuw_ontwerp.py)
 import nieuw_ontwerp; nieuw_ontwerp.maak(); nieuw_ontwerp.maak_los(); nieuw_ontwerp.maak_start()   # losse park- en soortpagina's ook in de nieuwe stijl (18-10-2026)
 
-# testontwerp (18-10-2026): /nederland-test/ met de opbouw van de hoofdpagina (zie bron/test_ontwerp.py)
+# ontwerp landpagina's (18-10-2026): opbouw van de hoofdpagina op alle landen (zie bron/test_ontwerp.py)
 try:
-    import test_ontwerp; test_ontwerp.maak_alles()   # ook live op /nederland/ (18-10-2026)
+    import test_ontwerp; test_ontwerp.maak_alles()
 except Exception as e:
     print("testontwerp overgeslagen:", e)

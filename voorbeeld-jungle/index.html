@@ -1,0 +1,31 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex"><title>Jungle-stijl startpagina</title>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap">
+<style>
+/* Layout: korte uitleg, dan drie voorbeeldkaarten onder elkaar (naast elkaar op breed scherm) */
+:root{--bg:#EEF2E3;--ink:#17301F;--muted:#4C6450;--card:#FFFFFF;--line:#D5E0C6;--btn:#1F5A33;--btn-ink:#FFFFFF;--display:"Nunito",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#13221A;--ink:#E8F0DE;--muted:#A9BCA2;--card:#1C3024;--line:#2E4635;--btn:#F2C14E;--btn-ink:#1B2A10;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#13221A;--ink:#E8F0DE;--muted:#A9BCA2;--card:#1C3024;--line:#2E4635;--btn:#F2C14E;--btn-ink:#1B2A10;color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--display);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 40px}
+main{max-width:1100px;margin:0 auto}
+h1{font-size:1.6rem;margin:0 0 6px;text-wrap:balance}
+p.intro{margin:0 0 20px;color:var(--muted);line-height:1.5;max-width:60ch}
+.rij{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:18px}
+.kaart{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.kaart img{display:block;width:100%;height:auto;aspect-ratio:390/656;object-fit:cover;max-width:100%}
+.tekst{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.tekst h2{margin:0;font-size:1.2rem}
+.tekst p{margin:0;line-height:1.45;color:var(--muted);font-size:.95rem;flex:1}
+.knop{display:flex;align-items:center;justify-content:center;min-height:48px;border-radius:12px;background:var(--btn);color:var(--btn-ink);font-weight:800;text-decoration:none}
+.knop:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+</style>
+</head><body><main>
+  <h1>Jungle-stijl voor de startpagina</h1>
+  <p class="intro">Dit is je huidige Europa-startpagina met alleen een andere vormgeving. De indeling en inhoud zijn hetzelfde, en alles werkt zoals op je site. Open een voorbeeld om rond te kijken.</p>
+  <div class="rij">
+    <article class="kaart"><img src="kijk-1.jpg" alt="Voorbeeld 1, Expeditie: donkergroene kop met grote bladeren en houten landenknoppen"><div class="tekst"><h2>1 · Expeditie</h2><p>Donker junglegroen met grote bladeren en vage luipaardvlekken, stoere hoofdletters, houten landenbordjes en goudgele accenten.</p><a class="knop" href="stijl-1.html">Open voorbeeld 1</a></div></article>
+    <article class="kaart"><img src="kijk-2.jpg" alt="Voorbeeld 2, Dierenpark-route: houten kopbalk met lianen en wegwijzerknoppen"><div class="tekst"><h2>2 · Dierenpark-route</h2><p>Houten kop- en onderbalk met een liaan, landen als wegwijzers, pootjespad, een kaart in een houten lijst en een letter zoals op parkborden.</p><a class="knop" href="stijl-2.html">Open voorbeeld 2</a></div></article>
+    <article class="kaart"><img src="kijk-3.jpg" alt="Voorbeeld 3, Zonnig: gele kop met zon en bladeren, witte ronde knoppen"><div class="tekst"><h2>3 · Zonnig en vrolijk</h2><p>Zonnig geel met een zon en bladeren, ronde witte knoppen, oranje stippen op de kaart en een groene onderbalk.</p><a class="knop" href="stijl-3.html">Open voorbeeld 3</a></div></article>
+  </div>
+</main>
+</body></html>

@@ -2,6 +2,10 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 18 oktober 2026 – Zoekvelden en volgorde onderbalk
+
+Zoekveld bovenaan Locaties (naam, plaats en beschrijving) en bovenaan Soorten (Nederlandse en Engelse naam), op alle landpagina's. Onderbalk nu Kaart · Locaties · Soorten · Meer (ook op de losse park- en soortpagina's).
+
 ## 18 oktober 2026 – Favorieten naar de hoofdpagina
 
 Favorieten zijn één lijst voor alle landen (localStorage `nt-fav`, items met land; oude `nw-fav` wordt overgenomen, het land wordt opgezocht). Opslaan kan met het hartje bij parken en soorten in de landgidsen, in het infovak van de Europakaart en op de Europese soortpagina's. De lijst staat op de hoofdpagina: menu → Favorieten (`#favorieten`, per land gegroepeerd, parken eerst; een park opent de landgids, een soort de soortpagina van het land waar hij bewaard is, of de Europese soortpagina). Op de landpagina's staat Favorieten niet meer onder Meer.

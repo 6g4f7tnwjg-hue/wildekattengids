@@ -47,6 +47,10 @@ TR.update({
     "Onderzochte locaties": {"fr": "Lieux vérifiés", "de": "Geprüfte Orte", "it": "Luoghi verificati", "es": "Lugares comprobados", "pt": "Locais verificados"},
     "Alle vermeldingen in één tabel": {"fr": "Toutes les mentions dans un tableau", "de": "Alle Einträge in einer Tabelle",
                                        "it": "Tutte le segnalazioni in una tabella", "es": "Todas las menciones en una tabla", "pt": "Todas as menções numa tabela"},
+    "Zoek een soort": {"fr": "Rechercher une espèce", "de": "Art suchen", "it": "Cerca una specie", "es": "Busca una especie", "pt": "Procura uma espécie"},
+    "Zoek een park of plaats": {"fr": "Rechercher un parc ou une ville", "de": "Park oder Ort suchen", "it": "Cerca un parco o una località",
+                                "es": "Busca un parque o un lugar", "pt": "Procura um parque ou um local"},
+    "Niets gevonden.": {"fr": "Aucun résultat.", "de": "Nichts gefunden.", "it": "Nessun risultato.", "es": "No se ha encontrado nada.", "pt": "Nada encontrado."},
     "Kies een soort": {"fr": "Choisissez une espèce", "de": "Wähle eine Art", "it": "Scegli una specie", "es": "Elige una especie", "pt": "Escolhe uma espécie"},
 })
 
@@ -95,8 +99,8 @@ EXTRA = f"""
 BAR = f"""
 <div class="nw-bar nt-bar"><nav aria-label="Menu">
   <a href="#start" data-nw="start">{ICO["b-map"]}{L("Kaart", "Map")}</a>
-  <a href="#soorten" data-nw="soorten">{ICO["b-paw"]}{L("Soorten", "Species")}</a>
   <a href="#locaties" data-nw="locaties">{ICO["b-pin"]}{L("Locaties", "Locations")}</a>
+  <a href="#soorten" data-nw="soorten">{ICO["b-paw"]}{L("Soorten", "Species")}</a>
   <a href="#meer" data-nw="meer">{ICO["b-menu"]}{L("Meer", "More")}</a>
 </nav></div>
 """
@@ -132,6 +136,10 @@ html.nt-zoek #start .nw-search{display:block}
 .nt-cat[aria-pressed="true"]{background:color-mix(in srgb,var(--nw-green) 13%,transparent);font-weight:700}
 .nt-cat[aria-pressed="true"] .nt-av{border-color:var(--nw-green);box-shadow:0 0 0 2px var(--nw-green)}
 .nt-cat:focus-visible{outline:2px solid var(--nw-terra);outline-offset:1px}
+.nt-zoek{margin:0 0 12px!important}
+.nt-zoek label{height:48px!important}
+.nt-geen{color:var(--muted);margin:8px 2px}
+.nt-sc[hidden],#nt-zsgeen[hidden]{display:none!important}
 .nt-grijs{opacity:.42}
 .nt-grijs .nt-av,.nt-grijs svg{filter:grayscale(1)}
 .nt-sep{flex:none;width:1px;align-self:stretch;margin:8px 4px;background:var(--line)}
@@ -216,7 +224,7 @@ var $=function(s,r){return (r||document).querySelector(s);},$$=function(s,r){ret
 function E(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
 function LS(nl,en){var t=T2[nl]||{},o='<span class="l-nl">'+nl+'</span><span class="l-en">'+en+'</span>';["fr","de","it","es","pt"].forEach(function(x){o+='<span class="l-'+x+'">'+(t[x]||en)+'</span>';});return o;}
 function TX(nl,en){var t=T2[nl]||{},l=N.lang();return l==="nl"?nl:l==="en"?en:(t[l]||en);}
-var ARR='ARRSVG',ROWS='ROWSSVG',T2=T2JSON;
+var ARR='ARRSVG',ROWS='ROWSSVG',SRCH='SRCHSVG',T2=T2JSON;
 var html=document.documentElement;
 
 /* soorten per locatie en locaties per soort (zelfde koppeling als de gids: naam in LOCS[i][4]) */
@@ -297,13 +305,28 @@ function regs(){var bar=$("#rg-bar"),el=$("#nt-regs"),w=$("#nt-rgw");if(!bar||!e
     if(grijs.length){var sp=document.createElement("span");sp.className="nt-sep";sp.setAttribute("aria-hidden","true");el.appendChild(sp);grijs.forEach(function(b){el.appendChild(b);});}}
   var lab=$("#rg-lab");$("#nt-rglab").textContent=lab?lab.textContent:"";}
 
+/* ---------- zoekvelden boven Locaties en Soorten ---------- */
+function nrm(x){return String(x).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[’']/g,"").replace(/<[^>]*>/g," ");}
+var ZL="",ZS="";
+function zoekveld(id,nl,en){var d=document.createElement("div");d.className="nw-search nt-zoek";
+  d.innerHTML='<label>'+SRCH+'<input type="search" id="'+id+'" autocomplete="off"></label>';d.dataset.nl=nl;d.dataset.en=en;return d;}
+function zph(){[["nt-zl","Zoek een park of plaats","Search for a park or town"],["nt-zs","Zoek een soort","Search for a species"]].forEach(function(z){var i=document.getElementById(z[0]);if(i){i.placeholder=TX(z[1],z[2]);i.setAttribute("aria-label",i.placeholder);}});}
+function geen(){return '<p class="nt-geen">'+LS("Niets gevonden.","Nothing found.")+'</p>';}
 /* ---------- locaties ---------- */
-function locs(){var el=$("#nt-loclist");if(!el)return;el.innerHTML=lijst(null).map(function(i){return kaart(i,true);}).join("");}
+function locs(){var el=$("#nt-loclist");if(!el)return;var q=nrm(ZL.trim()),ids=lijst(null);
+  if(q){var w=q.split(/\s+/);ids=ids.filter(function(i){var l=LOCS[i],t=nrm(l[0]+" "+l[1]+" "+(l[4]||[]).join(" ")+" "+(DS[N.lslug(l[0])]||""));return w.every(function(x){return t.indexOf(x)>=0;});});}
+  el.innerHTML=ids.length?ids.map(function(i){return kaart(i,true);}).join(""):geen();}
+function zoekSoort(){var q=nrm(ZS.trim()),w=q?q.split(/\s+/):[],n=0;
+  $$(".nt-spg .nt-sc").forEach(function(a){var t=nrm(a.textContent+" "+(a.dataset.sp||"")),ok=w.every(function(x){return t.indexOf(x)>=0;});a.hidden=!ok;if(ok)n++;});
+  $$(".chips[data-group]").forEach(function(box){var vis=$$(".nt-sc",box).some(function(a){return !a.hidden;}),g=box.previousElementSibling;
+    if(q){box.classList.toggle("nt-weg",!vis);if(g&&g.classList.contains("group-title"))g.classList.toggle("nt-weg",!vis);}
+    else{box.classList.remove("nt-weg");if(g)g.classList.remove("nt-weg");}});
+  var e=$("#nt-zsgeen");if(e)e.hidden=!(q&&!n);}
 
 /* ---------- soorten ---------- */
-function spgrid(){$$(".chips[data-group]").forEach(function(box){var g=box.querySelector(":scope > .nt-spg");if(!g){g=document.createElement("div");g.className="nt-spg";box.appendChild(g);}
+function spgrid(){setTimeout(zoekSoort,0);$$(".chips[data-group]").forEach(function(box){var g=box.querySelector(":scope > .nt-spg");if(!g){g=document.createElement("div");g.className="nt-spg";box.appendChild(g);}
   g.innerHTML=$$(":scope > .chip[data-sp]",box).map(function(c){var sp=c.dataset.sp,p=PH[sp]&&PH[sp].src,n=N.locCount(sp);
-    return '<a class="nt-sc'+(onz(sp)?" nt-uns":"")+'" href="#soort/'+N.slug(sp)+'"><span class="ph">'+(p?'<img src="'+E(p)+'" alt="" loading="lazy">':"")+'</span><span class="bd"><span class="nm">'+E(N.spName(sp))+'</span><small>'+n+' '+nloc(n)+'</small></span></a>';}).join("");});}
+    return '<a class="nt-sc'+(onz(sp)?" nt-uns":"")+'" data-sp="'+E(sp+" "+(N.SPEN&&N.SPEN[sp]?N.SPEN[sp][0]:""))+'" href="#soort/'+N.slug(sp)+'"><span class="ph">'+(p?'<img src="'+E(p)+'" alt="" loading="lazy">':"")+'</span><span class="bd"><span class="nm">'+E(N.spName(sp))+'</span><small>'+n+' '+nloc(n)+'</small></span></a>';}).join("");});}
 
 function alles(){cats();spinfo();filt();beeld();types();regs();locs();spgrid();}
 
@@ -329,13 +352,20 @@ function opbouw(){if(klaar)return true;
   else det.forEach(function(d){if(!d.classList.contains("nt-weg"))weg.push(d);else if(d.parentElement===lb)weg.push(d);});
   if(ub&&weg.some(function(x){return !x.classList.contains("nt-weg");})){var h=document.createElement("h3");h.className="nt-uitleg-h";h.innerHTML=LS("Onderzochte locaties","Locations checked");ub.appendChild(h);}
   if(ub)weg.forEach(function(x){ub.appendChild(x);});
+  /* zoekvelden */
+  var zl=zoekveld("nt-zl");lb.insertBefore(zl,lb.firstChild);
+  var sb0=$("#soorten > .cbody")||$("#soorten"),zs=zoekveld("nt-zs");sb0.insertBefore(zs,sb0.firstChild);
+  var zg=document.createElement("div");zg.id="nt-zsgeen";zg.hidden=true;zg.innerHTML=geen();zs.insertAdjacentElement("afterend",zg);
+  $("#nt-zl").addEventListener("input",function(){ZL=this.value;locs();});
+  $("#nt-zs").addEventListener("input",function(){ZS=this.value;zoekSoort();});
+  zph();
   /* hoofdtabel als eigen scherm */
   var tb=$("#tabel > .cbody")||$("#tabel");tb.appendChild(reg);
   var sb=$("#soorten > .cbody")||$("#soorten"),lk=document.createElement("a");lk.className="nt-link";lk.href="#tabel";
   lk.innerHTML=ROWS+'<span>'+LS("Alle vermeldingen in één tabel","All entries in one table")+'</span>'+ARR;sb.appendChild(lk);
   alles();
   ["lt-bar","rg-bar"].forEach(function(id){var b=document.getElementById(id);if(b)new MutationObserver(function(){types();regs();cats();beeld();locs();}).observe(b,{childList:true,subtree:true,attributes:true,attributeFilter:["aria-pressed"]});});
-  new MutationObserver(function(){leesDS();alles();}).observe(html,{attributes:true,attributeFilter:["lang"]});
+  new MutationObserver(function(){leesDS();alles();zph();}).observe(html,{attributes:true,attributeFilter:["lang"]});
   /* na een tik op de kaart het infovak in beeld brengen als het onder de rand valt */
   $("#nt-kaart").addEventListener("click",function(e){if(!e.target.closest(".mk"))return;setTimeout(function(){var m=$("#mapinfo");if(!m)return;var r=m.getBoundingClientRect();
     if(r.top>innerHeight-140)window.scrollBy({top:r.top-innerHeight+Math.min(r.height,300)+90,behavior:"smooth"});},60);});
@@ -394,7 +424,7 @@ def maak(land="nederland", map=None):
     doc = sub1(doc, '<section id="rapporteer"', EXTRA + '<section id="rapporteer"')
     exp = ('window.__NW={R:R,LOCS:LOCS,SPECIES:SPECIES,SPEN:SPEN,BYSLUG:BYSLUG,LOCBYSLUG:LOCBYSLUG,slug:slug,lslug:lslug,'
            'lang:function(){return LANG;}};\n'
-           'window.__NT={R:R,LOCS:LOCS,PHOTOS:PHOTOS,BIG:BIG,SMALL:SMALL,UNSURE:UNSURE,spName:spName,slug:slug,lslug:lslug,'
+           'window.__NT={SPEN:SPEN,R:R,LOCS:LOCS,PHOTOS:PHOTOS,BIG:BIG,SMALL:SMALL,UNSURE:UNSURE,spName:spName,slug:slug,lslug:lslug,'
            'locCount:locCount,REGIO:REGIOX,lang:function(){return LANG;}};\n')
     a = doc.index("const SPECIES=[")
     e = doc.index("})();\n</script>", a)
@@ -434,7 +464,7 @@ def maak(land="nederland", map=None):
     js = (js.replace("HEARTSVG", NO.HEART_S).replace("PAWSVG", ICO["b-paw"]).replace("PINSVG", ICO["b-map"])
           .replace("ARRSVG", NO.ARROW).replace("var $=function", "var SVG=" + svg + ";\nvar TRX=" + json.dumps(NO.TR, ensure_ascii=False) + ";\nvar $=function", 1))
     js_t = (JS.replace("ARRSVG", NO.ARROW).replace("ROWSSVG", ICO["rows"])
-            .replace("T2JSON", json.dumps(TR, ensure_ascii=False)))
+            .replace("T2JSON", json.dumps(TR, ensure_ascii=False)).replace("SRCHSVG", ICO["search"]))
     i = doc.rindex("</body>")
     doc = doc[:i] + BAR + js + js_t + doc[i:]
     os.makedirs(os.path.dirname(doel), exist_ok=True)
@@ -479,12 +509,13 @@ LOS2_CSS = ('<style id="nt-los-css">.nw-bar nav{grid-template-columns:repeat(4,m
 
 def los2(pad, land, kind):
     doc = open(pad, encoding="utf-8").read()
-    if LOS2_MARK in doc or NO.LOS_MARK not in doc:
+    if NO.LOS_MARK not in doc:
         return False
+    al = LOS2_MARK in doc
     g = NO.BASE + land + "/"
     act = "locaties" if kind == "locatie" else "soorten"
-    links = [("start", g, ICO["b-map"], "Kaart"), ("soorten", g + "#soorten", ICO["b-paw"], "Soorten"),
-             ("locaties", g + "#locaties", ICO["b-pin"], "Locaties"), ("meer", g + "#meer", ICO["b-menu"], "Meer")]
+    links = [("start", g, ICO["b-map"], "Kaart"), ("locaties", g + "#locaties", ICO["b-pin"], "Locaties"),
+             ("soorten", g + "#soorten", ICO["b-paw"], "Soorten"), ("meer", g + "#meer", ICO["b-menu"], "Meer")]
     bar = ('<div class="nw-bar"><nav aria-label="Menu">'
            + "".join(f'<a href="{h}"{" class=on" if k == act else ""}>{svg}<span>{t}</span></a>' for k, h, svg, t in links)
            + "</nav></div>\n")
@@ -492,7 +523,8 @@ def los2(pad, land, kind):
     if not n:
         return False
     doc = doc.replace('<span class="nw-stitle">Per kat</span>', '<span class="nw-stitle">Soorten</span>', 1)
-    doc = doc.replace("</head>", LOS2_CSS + "</head>", 1)
+    if not al:
+        doc = doc.replace("</head>", LOS2_CSS + "</head>", 1)
     open(pad, "w", encoding="utf-8").write(doc)
     return True
 

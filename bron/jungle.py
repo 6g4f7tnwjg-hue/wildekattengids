@@ -65,6 +65,7 @@ html body .nw-bar{{background:{JG}!important;border-top:0!important;-webkit-back
 html body .nw-bar a,html body .nw-bar a:hover,html body .nw-bar a:visited{{color:#BFD9A8!important}}
 html body .nw-bar a.on{{color:{SUN}!important}}
 html body .nw-bar a.on::before,html body .nw-bar a.on::after{{background:{SUN}!important}}
+html body .chip svg.flag,html body .chip svg:not(.ti){{box-shadow:none!important;border-radius:3px!important;overflow:hidden;filter:drop-shadow(0 1px 0 rgba(255,240,210,.85)) drop-shadow(0 -1px 0 rgba(70,35,5,.35))}}
 @media (prefers-reduced-motion:reduce){{html body *{{animation:none!important}}}}
 """
 

@@ -2,6 +2,10 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 18 oktober 2026 – Scherm Meer op de hoofdpagina
+
+Meer in de onderbalk van de hoofdpagina (ook vanaf top 10 en de soortpagina's) opent nu het scherm `#meer` in plaats van het menu: Favorieten, Top 10, Recent geboren, Parken op aantal soorten, Soorten locaties, Over deze gids en de Spottersgids (eigen taal), elk met icoon. Ko-fi staat alleen onderaan. Het ☰-menu blijft. Volgorde Meer op de landpagina's: In het kort, Actueel, Kleur & hybriden, Routeplanner, Hoofdtabel, Over, Rapporteer.
+
 ## 18 oktober 2026 – Zoekvelden en volgorde onderbalk
 
 Zoekveld bovenaan Locaties (naam, plaats en beschrijving) en bovenaan Soorten (Nederlandse en Engelse naam), op alle landpagina's. Onderbalk nu Kaart · Locaties · Soorten · Meer (ook op de losse park- en soortpagina's).

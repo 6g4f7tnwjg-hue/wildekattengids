@@ -548,7 +548,8 @@ def maak_los2():
 # zichtbaar onder de kaart; op de soortpagina's de geschatte aantallen in het wild in plaats van de IUCN-status
 # en locatiekaartjes met het type-icoon bij "Waar te zien".
 EU_MARK = 'id="nt-eu-css"'
-T6 = {"Favorieten": {"fr": "Favoris", "de": "Favoriten", "it": "Preferiti", "es": "Favoritos"},
+T6 = {"Meer": {"fr": "Plus", "de": "Mehr", "it": "Altro", "es": "Más"},
+      "Favorieten": {"fr": "Favoris", "de": "Favoriten", "it": "Preferiti", "es": "Favoritos"},
       "Kaart": {"fr": "Carte", "de": "Karte", "it": "Mappa", "es": "Mapa"},
       "Je bewaarde parken en soorten uit alle landen. Tik op het hartje bij een park of soort om het hier te zetten; je lijst blijft alleen op dit apparaat.": {
           "fr": "Vos parcs et espèces enregistrés, tous pays confondus. Touchez le cœur à côté d’un parc ou d’une espèce pour l’ajouter ici ; votre liste reste uniquement sur cet appareil.",
@@ -565,6 +566,10 @@ def L6(nl, en):
 
 FAVICO = ('<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round">'
           '<path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.5A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z"/></svg>')
+MEERPAGE = ('<section class="page" id="meer" aria-labelledby="h-meer">\n'
+            f'  <a class="terug" href="#kaart" data-home="kaart">← {L6("Kaart", "Map")}</a>\n'
+            f'  <h1 id="h-meer">{L6("Meer", "More")}</h1>\n'
+            '  <ul class="nt-ml" id="nt-meerlist"></ul>\n</section>\n\n')
 FAVPAGE = ('<section class="page" id="favorieten" aria-labelledby="h-favorieten">\n'
            f'  <a class="terug" href="#kaart" data-home="kaart">← {L6("Kaart", "Map")}</a>\n'
            f'  <h1 id="h-favorieten">{L6("Favorieten", "Favourites")}</h1>\n'
@@ -602,6 +607,12 @@ EU_CSS = r"""
 .nt-hart:focus-visible{outline:2px solid var(--accent)}
 .nt-hw{all:unset;box-sizing:border-box;cursor:pointer;display:inline-flex;align-items:center;gap:4px;font:500 .95rem var(--body);color:var(--ink);margin:4px 0 8px;background:#F4E3DF;border-radius:99px;padding:0 14px 0 2px}
 .nt-fleeg{color:var(--muted)}
+.nt-ml{list-style:none;margin:6px 0 0;padding:0;background:var(--paper);border:1px solid var(--line);border-radius:16px;overflow:hidden;max-width:760px}
+.nt-ml li{margin:0;border-top:1px solid var(--line)}
+.nt-ml li:first-child{border-top:0}
+.nt-ml a{display:flex;align-items:center;gap:12px;padding:14px 16px;color:var(--ink);text-decoration:none;font-size:1.05rem;font-weight:500}
+.nt-ml a>svg:first-child{width:22px;height:22px;flex:none;color:var(--accent)}
+.nt-ml .nt-pijl{margin-left:auto;width:18px;height:18px;color:var(--muted);flex:none}
 .kat-land li{display:grid!important;grid-template-columns:28px minmax(0,1fr) auto;gap:4px 12px;align-items:center}
 .kat-land li .nt-ti svg{width:28px;height:28px;display:block}
 .kat-land li .kl-go{font-weight:700}
@@ -703,6 +714,25 @@ function favLijst(){var el=document.getElementById("nt-favlist");if(!el)return;v
     o+='</ul>';});
   el.innerHTML=o;}
 window.__NTFAV=favLijst;
+/* ---------- scherm Meer: de links uit het menu als lijst, Favorieten bovenaan, Ko-fi niet (staat onderaan) ---------- */
+var PIJL='<svg class="nt-pijl" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>';
+var EXTRA_ICO={over:'<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="currentColor"/><circle cx="12" cy="7.4" r="1.5" fill="#FBF8F1"/><path d="M12 11v6.5" stroke="#FBF8F1" stroke-width="2.4" stroke-linecap="round"/></svg>',
+  spot:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6.5" cy="15.5" r="3.5"/><circle cx="17.5" cy="15.5" r="3.5"/><path d="M10 15h4M5 12l2-6h2l1 5M19 12l-2-6h-2l-1 5"/></svg>'};
+function meerLijst(){var el=document.getElementById("nt-meerlist"),m=document.getElementById("menu");if(!el||!m)return;
+  var a=[].slice.call(m.querySelectorAll("nav a")).filter(function(x){return !/ko-fi\.com/.test(x.getAttribute("href")||"");});
+  a.sort(function(x,y){return (y.dataset.nav==="favorieten")-(x.dataset.nav==="favorieten");});
+  el.innerHTML=a.map(function(x){var c=x.cloneNode(true),lc=(x.className.match(/\bl-[a-z]{2}\b/)||[""])[0];c.removeAttribute("class");
+    if(!c.querySelector("svg"))c.insertAdjacentHTML("afterbegin",x.dataset.nav==="over"?EXTRA_ICO.over:EXTRA_ICO.spot);
+    c.insertAdjacentHTML("beforeend",PIJL);return '<li'+(lc?' class="'+lc+'"':'')+'>'+c.outerHTML+'</li>';}).join("");
+  mm();}
+function mm(){var b=document.getElementById("nw-sbar-start");if(!b)return;var me=b.querySelector('[data-k="meer"]'),op=document.documentElement.classList.contains("pagemode")&&/^#meer$/.test(location.hash);
+  if(!me)return;me.classList.toggle("on",op);if(op)b.querySelectorAll("[data-k]").forEach(function(x){if(x!==me)x.classList.remove("on");});
+  else if(!b.querySelector(".on")&&!document.documentElement.classList.contains("katmode")){var h=b.querySelector('[data-k="home"]');if(h)h.classList.add("on");}}
+window.__NTMEER=meerLijst;
+new MutationObserver(function(){setTimeout(mm,0);}).observe(document.documentElement,{attributes:true,attributeFilter:["class"]});
+window.addEventListener("popstate",function(){setTimeout(mm,0);});window.addEventListener("hashchange",function(){setTimeout(mm,0);});
+if(location.hash==="#meer")setTimeout(meerLijst,0);
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest('#nw-sbar-start [data-k="meer"]');if(b&&b.dataset.start!==undefined||b&&document.getElementById("nt-meerlist"))setTimeout(function(){window.scrollTo(0,0);},30);});
 document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest("#nt-favlist .nt-hart");if(!b)return;var a=favLees();a.splice(+b.dataset.wi,1);favSchrijf(a);favLijst();});
 /* hartje in het infovak van de kaart en op de soortpagina */
 function heeft(k,c,s){return favLees().some(function(x){return x.k===k&&x.c===c&&x.s===s;});}
@@ -747,8 +777,15 @@ def europa(pad, wild, av, idx, spn=None, soort=False):
     doc = doc.replace('data-k="landen">' + NO.ICO["b-map"], 'data-k="landen">' + ICO["b-flag"], 1)
     doc = doc.replace(EU_T_OUD, EU_T_NIEUW, 1)
     import huisstijl
-    # scherm Favorieten (in het menu, net als Recent geboren); de start-JS kent alleen de pagina's in PAGES
-    doc = doc.replace('const PAGES=["geboren","perpark","typen","over"];', 'const PAGES=["geboren","perpark","typen","over","favorieten"];', 1)
+    # schermen Favorieten en Meer (net als Recent geboren); de start-JS kent alleen de pagina's in PAGES
+    doc = re.sub(r'const PAGES=\[[^\]]*\];', 'const PAGES=["geboren","perpark","typen","over","favorieten","meer"];', doc, count=1)
+    if 'PAGE==="meer"' not in doc:
+        doc = doc.replace('function renderPage(){', 'function renderPage(){if(PAGE==="meer"&&window.__NTMEER)window.__NTMEER();', 1)
+    if 'id="meer"' not in doc and '<section class="page" id="over"' in doc:
+        doc = doc.replace('<section class="page" id="over"', MEERPAGE + '<section class="page" id="over"', 1)
+    # Meer in de onderbalk opent het scherm Meer in plaats van het menu
+    doc = doc.replace('#over" data-k="meer"', '#meer" data-k="meer"', 1)
+    doc = doc.replace("""var a=e.target.closest('[data-k="meer"]');if(!a)return;""", "var a=null;if(!a)return;", 1)
     doc = doc.replace('function renderPage(){if(PAGE==="geboren")', 'function renderPage(){if(PAGE==="favorieten"&&window.__NTFAV)window.__NTFAV();if(PAGE==="geboren")', 1)
     if 'id="favorieten"' not in doc and '<section class="page" id="over"' in doc:
         doc = doc.replace('<section class="page" id="over"', FAVPAGE + '<section class="page" id="over"', 1)

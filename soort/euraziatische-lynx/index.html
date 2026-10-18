@@ -41,6 +41,8 @@ html body{padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
 
 
 
+
+
 <style id="nt-eu-css">
 /* hoofdpagina in de opbouw van de landpagina's (bron/test_ontwerp.py) */
 .bar:has(#tabs){display:none!important}
@@ -70,6 +72,12 @@ html body{padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
 .nt-hart:focus-visible{outline:2px solid var(--accent)}
 .nt-hw{all:unset;box-sizing:border-box;cursor:pointer;display:inline-flex;align-items:center;gap:4px;font:500 .95rem var(--body);color:var(--ink);margin:4px 0 8px;background:#F4E3DF;border-radius:99px;padding:0 14px 0 2px}
 .nt-fleeg{color:var(--muted)}
+.nt-ml{list-style:none;margin:6px 0 0;padding:0;background:var(--paper);border:1px solid var(--line);border-radius:16px;overflow:hidden;max-width:760px}
+.nt-ml li{margin:0;border-top:1px solid var(--line)}
+.nt-ml li:first-child{border-top:0}
+.nt-ml a{display:flex;align-items:center;gap:12px;padding:14px 16px;color:var(--ink);text-decoration:none;font-size:1.05rem;font-weight:500}
+.nt-ml a>svg:first-child{width:22px;height:22px;flex:none;color:var(--accent)}
+.nt-ml .nt-pijl{margin-left:auto;width:18px;height:18px;color:var(--muted);flex:none}
 .kat-land li{display:grid!important;grid-template-columns:28px minmax(0,1fr) auto;gap:4px 12px;align-items:center}
 .kat-land li .nt-ti svg{width:28px;height:28px;display:block}
 .kat-land li .kl-go{font-weight:700}
@@ -695,6 +703,12 @@ html.katmode .foot{margin-top:0}
   <div id="nt-favlist"></div>
 </section>
 
+<section class="page" id="meer" aria-labelledby="h-meer">
+  <a class="terug" href="#kaart" data-home="kaart">← <span class="l-nl">Kaart</span><span class="l-en">Map</span><span class="l-fr">Carte</span><span class="l-de">Karte</span><span class="l-it">Mappa</span><span class="l-es">Mapa</span></a>
+  <h1 id="h-meer"><span class="l-nl">Meer</span><span class="l-en">More</span><span class="l-fr">Plus</span><span class="l-de">Mehr</span><span class="l-it">Altro</span><span class="l-es">Más</span></h1>
+  <ul class="nt-ml" id="nt-meerlist"></ul>
+</section>
+
 <section class="page" id="over" aria-labelledby="h-over">
   <a class="terug" href="#kaart" data-home="kaart">← <span class="l-nl">Kaart</span><span class="l-en">Map</span><span class="l-fr">Carte</span><span class="l-de">Karte</span><span class="l-it">Mappa</span><span class="l-es">Mapa</span></a>
   <h1 id="h-over"><span class="l-nl">Over deze gids</span><span class="l-en">About this guide</span><span class="l-fr">À propos de ce guide</span><span class="l-de">Über diesen Guide</span><span class="l-it">Informazioni su questa guida</span><span class="l-es">Sobre esta guía</span></h1>
@@ -1249,7 +1263,7 @@ function renderKat(){
 }
 
 /* ---------- weergaven: tabbladen, losse pagina's, soort, top 10 ---------- */
-const PAGES=["geboren","perpark","typen","over","favorieten"];
+const PAGES=["geboren","perpark","typen","over","favorieten","meer"];
 let KAT=null,TOPV=false,PAGE=null,TAB="kaart";
 const HTML=document.documentElement;
 function renderTabs(){
@@ -1272,7 +1286,7 @@ function showPage(id,push){
   if(push){try{history.pushState({page:id},"","#"+id);}catch(_){}}
   window.scrollTo(0,0);
 }
-function renderPage(){if(PAGE==="favorieten"&&window.__NTFAV)window.__NTFAV();if(PAGE==="geboren")renderGeb();if(PAGE==="perpark")renderCnt();if(PAGE==="typen")renderTypes();}
+function renderPage(){if(PAGE==="meer"&&window.__NTMEER)window.__NTMEER();if(PAGE==="favorieten"&&window.__NTFAV)window.__NTFAV();if(PAGE==="geboren")renderGeb();if(PAGE==="perpark")renderCnt();if(PAGE==="typen")renderTypes();}
 function showKat(slug,push){
   slug=CANON[slug];if(!slug)return;
   KAT=slug;TOPV=false;PAGE=null;HTML.classList.remove("pagemode");HTML.classList.add("katmode");renderKat();closeSearch();closeDrops();markNav();
@@ -1531,7 +1545,7 @@ function start(){stijl();alles();
 if(document.body)start();else document.addEventListener("DOMContentLoaded",start);
 })();
 </script>
-<div class="nw-bar nw-bar4" id="nw-sbar-start"><nav aria-label="Menu"><a href="/wildekattengids/#kaart" data-k="home"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg><span></span></a><a href="/wildekattengids/#landen" data-k="landen"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/></svg><span></span></a><a href="/wildekattengids/#soorten" data-k="soorten"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><ellipse cx="12" cy="15.5" rx="5" ry="4.3"/><ellipse cx="5.3" cy="10.5" rx="2" ry="2.6"/><ellipse cx="9.3" cy="6.7" rx="2" ry="2.7"/><ellipse cx="14.7" cy="6.7" rx="2" ry="2.7"/><ellipse cx="18.7" cy="10.5" rx="2" ry="2.6"/></svg><span></span></a><a href="/wildekattengids/#over" data-k="meer"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg><span></span></a></nav></div>
+<div class="nw-bar nw-bar4" id="nw-sbar-start"><nav aria-label="Menu"><a href="/wildekattengids/#kaart" data-k="home"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg><span></span></a><a href="/wildekattengids/#landen" data-k="landen"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/></svg><span></span></a><a href="/wildekattengids/#soorten" data-k="soorten"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><ellipse cx="12" cy="15.5" rx="5" ry="4.3"/><ellipse cx="5.3" cy="10.5" rx="2" ry="2.6"/><ellipse cx="9.3" cy="6.7" rx="2" ry="2.7"/><ellipse cx="14.7" cy="6.7" rx="2" ry="2.7"/><ellipse cx="18.7" cy="10.5" rx="2" ry="2.6"/></svg><span></span></a><a href="/wildekattengids/#meer" data-k="meer"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg><span></span></a></nav></div>
 
 <script>(function(){
 var T={home:{nl:"Kaart",en:"Map",fr:"Carte",de:"Karte",it:"Mappa",es:"Mapa"},
@@ -1543,12 +1557,14 @@ function lang(){var l=(document.documentElement.lang||"nl").slice(0,2);return T.
 function labels(){var l=lang();bar.querySelectorAll("[data-k]").forEach(function(a){a.querySelector("span").textContent=T[a.dataset.k][l];});}
 function mark(){if(!bar.dataset.start)return;var sel=document.querySelector('.tab[aria-selected="true"]'),k=sel?sel.dataset.tab:null;
   bar.querySelectorAll("[data-k]").forEach(function(a){var on=(k==="kaart"&&a.dataset.k==="home")||(k&&a.dataset.k===k);a.classList.toggle("on",!!on);});}
-bar.addEventListener("click",function(e){var a=e.target.closest('[data-k="meer"]');if(!a)return;var m=document.getElementById("menu-btn");
+bar.addEventListener("click",function(e){var a=null;if(!a)return;var m=document.getElementById("menu-btn");
   if(m){e.preventDefault();e.stopPropagation();window.scrollTo(0,0);m.click();}});
 new MutationObserver(labels).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});
 document.querySelectorAll(".tab").forEach(function(t){new MutationObserver(mark).observe(t,{attributes:true,attributeFilter:["aria-selected"]});});
 labels();mark();
 })();</script>
+
+
 
 
 
@@ -1660,6 +1676,25 @@ function favLijst(){var el=document.getElementById("nt-favlist");if(!el)return;v
     o+='</ul>';});
   el.innerHTML=o;}
 window.__NTFAV=favLijst;
+/* ---------- scherm Meer: de links uit het menu als lijst, Favorieten bovenaan, Ko-fi niet (staat onderaan) ---------- */
+var PIJL='<svg class="nt-pijl" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>';
+var EXTRA_ICO={over:'<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="currentColor"/><circle cx="12" cy="7.4" r="1.5" fill="#FBF8F1"/><path d="M12 11v6.5" stroke="#FBF8F1" stroke-width="2.4" stroke-linecap="round"/></svg>',
+  spot:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6.5" cy="15.5" r="3.5"/><circle cx="17.5" cy="15.5" r="3.5"/><path d="M10 15h4M5 12l2-6h2l1 5M19 12l-2-6h-2l-1 5"/></svg>'};
+function meerLijst(){var el=document.getElementById("nt-meerlist"),m=document.getElementById("menu");if(!el||!m)return;
+  var a=[].slice.call(m.querySelectorAll("nav a")).filter(function(x){return !/ko-fi\.com/.test(x.getAttribute("href")||"");});
+  a.sort(function(x,y){return (y.dataset.nav==="favorieten")-(x.dataset.nav==="favorieten");});
+  el.innerHTML=a.map(function(x){var c=x.cloneNode(true),lc=(x.className.match(/\bl-[a-z]{2}\b/)||[""])[0];c.removeAttribute("class");
+    if(!c.querySelector("svg"))c.insertAdjacentHTML("afterbegin",x.dataset.nav==="over"?EXTRA_ICO.over:EXTRA_ICO.spot);
+    c.insertAdjacentHTML("beforeend",PIJL);return '<li'+(lc?' class="'+lc+'"':'')+'>'+c.outerHTML+'</li>';}).join("");
+  mm();}
+function mm(){var b=document.getElementById("nw-sbar-start");if(!b)return;var me=b.querySelector('[data-k="meer"]'),op=document.documentElement.classList.contains("pagemode")&&/^#meer$/.test(location.hash);
+  if(!me)return;me.classList.toggle("on",op);if(op)b.querySelectorAll("[data-k]").forEach(function(x){if(x!==me)x.classList.remove("on");});
+  else if(!b.querySelector(".on")&&!document.documentElement.classList.contains("katmode")){var h=b.querySelector('[data-k="home"]');if(h)h.classList.add("on");}}
+window.__NTMEER=meerLijst;
+new MutationObserver(function(){setTimeout(mm,0);}).observe(document.documentElement,{attributes:true,attributeFilter:["class"]});
+window.addEventListener("popstate",function(){setTimeout(mm,0);});window.addEventListener("hashchange",function(){setTimeout(mm,0);});
+if(location.hash==="#meer")setTimeout(meerLijst,0);
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest('#nw-sbar-start [data-k="meer"]');if(b&&b.dataset.start!==undefined||b&&document.getElementById("nt-meerlist"))setTimeout(function(){window.scrollTo(0,0);},30);});
 document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest("#nt-favlist .nt-hart");if(!b)return;var a=favLees();a.splice(+b.dataset.wi,1);favSchrijf(a);favLijst();});
 /* hartje in het infovak van de kaart en op de soortpagina */
 function heeft(k,c,s){return favLees().some(function(x){return x.k===k&&x.c===c&&x.s===s;});}

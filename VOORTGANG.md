@@ -2,6 +2,12 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 18 oktober 2026 – Balearen op de kaart, melding bij lege kaart
+
+- De Balearen staan nu op de kaart van Spanje en op de Europakaart (eilandvormen uit Natural Earth 1:50m via world-atlas; coördinaten Natura Parc 39,610/2,837 en Safari Mallorca 39,582/3,361 uit OpenStreetMap). Kaartkader van de Spaanse gids iets breder (viewBox 442). De Canarische Eilanden blijven op verzoek van de kaart (te ver weg); de teksten daarover zijn aangepast (NL/EN/ES).
+- Landpagina's: kies je een regio zonder stippen op de kaart (bijv. Canarische Eilanden), dan staat er op de kaart "… staat niet op de kaart. Bekijk de N locaties hieronder ↓" (tik = naar de lijst).
+- Volledige bouw gedraaid (`bron/bouw.py`); de losse pagina's kregen daarbij ook de nieuwste CSS.
+
 ## 18 oktober 2026 – Routeplanner "Al wel" en foto zwarte panter
 
 - Routeplanner: boven "Nog niet:" staat nu ook "Al wel:" met de soorten die je met je keuze al ziet (alle landen, alle talen).

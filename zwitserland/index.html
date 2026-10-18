@@ -553,6 +553,11 @@ html.nt-zoek #start .nw-search{display:block}
 .nt-zoek label{height:48px!important}
 .nt-geen{color:var(--muted);margin:8px 2px}
 .nt-sc[hidden],#nt-zsgeen[hidden]{display:none!important}
+#nt-kaart{position:relative}
+.nt-kleeg{all:unset;box-sizing:border-box;cursor:pointer;position:absolute;left:50%;top:60%;transform:translate(-50%,-50%);width:min(78%,320px);display:flex;flex-direction:column;gap:4px;align-items:center;text-align:center;padding:14px 16px;border-radius:16px;background:color-mix(in srgb,var(--card) 94%,transparent);border:1px solid var(--line);box-shadow:var(--nw-shadow);font:400 .98rem var(--hs-body);color:var(--ink)}
+.nt-kleeg b{font-weight:700}
+.nt-kleeg span{color:var(--nw-terra);font-weight:600}
+.nt-kleeg:focus-visible{outline:2px solid var(--nw-terra)}
 .nt-grijs{opacity:.42}
 .nt-grijs .nt-av,.nt-grijs svg{filter:grayscale(1)}
 .nt-sep{flex:none;width:1px;align-self:stretch;margin:8px 4px;background:var(--line)}
@@ -5394,7 +5399,7 @@ document.addEventListener("click",function(e){
   var c=e.target.closest&&e.target.closest(".nt-cat");
   if(c&&c.classList.contains("nt-grijs")){var rb=$('#rg-bar [aria-pressed="true"]'),pn=rb?chipNaam(rb):"",al=$('#rg-bar .rg-chip[data-r=""]');
     SP=c.dataset.sp;MEER=false;if(al)al.click();cats();spinfo();filt();beeld();regs();melding(N.spName(SP),pn,1);return;}
-  if(c){SP=c.dataset.sp||null;MEER=false;cats();spinfo();filt();beeld();regs();return;}
+  if(c){SP=c.dataset.sp||null;MEER=false;cats();spinfo();filt();beeld();regs();setTimeout(kaartLeeg,30);return;}
   if(e.target.closest&&e.target.closest("#nt-more")){MEER=true;beeld();return;}
   var t=e.target.closest&&e.target.closest("#nt-types .lt-chip");
   if(t){var o=$$("#lt-bar .lt-chip").filter(function(b){return b.dataset.t===t.dataset.t;})[0];if(o)o.click();return;}
@@ -5432,7 +5437,20 @@ function spgrid(){setTimeout(zoekSoort,0);$$(".chips[data-group]").forEach(funct
   g.innerHTML=$$(":scope > .chip[data-sp]",box).map(function(c){var sp=c.dataset.sp,p=PH[sp]&&PH[sp].src,n=N.locCount(sp);
     return '<a class="nt-sc'+(onz(sp)?" nt-uns":"")+'" data-sp="'+E(sp+" "+(N.SPEN&&N.SPEN[sp]?N.SPEN[sp][0]:""))+'" href="#soort/'+N.slug(sp)+'"><span class="ph">'+(p?'<img src="'+E(p)+'" alt="" loading="lazy">':"")+'</span><span class="bd"><span class="nm">'+E(N.spName(sp))+'</span><small>'+n+' '+nloc(n)+'</small></span></a>';}).join("");});}
 
-function alles(){cats();spinfo();filt();beeld();types();regs();locs();spgrid();}
+/* kaart zonder stippen voor de gekozen regio (bijv. de Canarische Eilanden): melding met verwijzing naar de lijst */
+var KL={nl:["{r} staat niet op de kaart.","Bekijk de {n} locaties hieronder","Bekijk de locatie hieronder"],
+  en:["{r} is not on the map.","See the {n} locations below","See the location below"],
+  fr:["{r} n’apparaît pas sur la carte.","Voir les {n} lieux ci-dessous","Voir le lieu ci-dessous"],
+  de:["{r} ist nicht auf der Karte.","Die {n} Orte stehen unten","Der Ort steht unten"],
+  it:["{r} non è sulla mappa.","Vedi i {n} luoghi qui sotto","Vedi il luogo qui sotto"],
+  es:["{r} no aparece en el mapa.","Mira los {n} lugares abajo","Mira el lugar abajo"],
+  pt:["{r} não aparece no mapa.","Vê os {n} locais abaixo","Vê o local abaixo"]};
+function kaartLeeg(){var k=$("#nt-kaart");if(!k)return;var o=$("#nt-kleeg");if(o)o.remove();var b=$('#rg-bar [aria-pressed="true"]');
+  if(!b||!b.dataset.r)return;var zicht=$$("#nlmap .mk, #nlmap .hs-cl").some(function(m){return getComputedStyle(m).display!=="none";});if(zicht)return;
+  var n=lijst(SP).length;if(!n)return;var t=KL[N.lang()]||KL.en,x=document.createElement("button");x.type="button";x.id="nt-kleeg";x.className="nt-kleeg";
+  x.innerHTML='<b>'+E(t[0].replace("{r}",chipNaam(b)))+'</b><span>'+E((n===1?t[2]:t[1]).replace("{n}",n))+' ↓</span>';
+  x.addEventListener("click",function(){var bl=$("#nt-beeld");if(bl)bl.scrollIntoView({behavior:"smooth",block:"start"});});k.appendChild(x);}
+function alles(){setTimeout(kaartLeeg,30);cats();spinfo();filt();beeld();types();regs();locs();spgrid();}
 
 /* ---------- opbouw: wachten tot de gids en de huisstijl klaar zijn ---------- */
 var klaar=false;
@@ -5473,7 +5491,7 @@ function opbouw(){if(klaar)return true;
   var sb=$("#soorten > .cbody")||$("#soorten"),lk=document.createElement("a");lk.className="nt-link";lk.href="#tabel";
   lk.innerHTML=ROWS+'<span>'+LS("Alle vermeldingen in één tabel","All entries in one table")+'</span>'+ARR;sb.appendChild(lk);
   alles();
-  ["lt-bar","rg-bar"].forEach(function(id){var b=document.getElementById(id);if(b)new MutationObserver(function(){types();regs();cats();beeld();locs();}).observe(b,{childList:true,subtree:true,attributes:true,attributeFilter:["aria-pressed"]});});
+  ["lt-bar","rg-bar"].forEach(function(id){var b=document.getElementById(id);if(b)new MutationObserver(function(){types();regs();cats();beeld();locs();setTimeout(kaartLeeg,30);}).observe(b,{childList:true,subtree:true,attributes:true,attributeFilter:["aria-pressed"]});});
   new MutationObserver(function(){leesDS();alles();zph();}).observe(html,{attributes:true,attributeFilter:["lang"]});
   /* na een tik op de kaart het infovak in beeld brengen als het onder de rand valt */
   $("#nt-kaart").addEventListener("click",function(e){if(!e.target.closest(".mk"))return;setTimeout(function(){var m=$("#mapinfo");if(!m)return;var r=m.getBoundingClientRect();

@@ -26,6 +26,15 @@
 /* ---- nieuw ontwerp (bron/nieuw_ontwerp.py) ---- */
 /* lange weblinks (bijv. bij "Website") laten afbreken in plaats van de pagina te verbreden */
 #info dd,#info dd a{overflow-wrap:anywhere}
+/* filters bij Locaties als keuzeknoppen */
+html.nw-fk #rg-lab,html.nw-fk #rg-bar,html.nw-fk #rg-count,html.nw-fk #lt-bar,html.nw-fk #lt-count{display:none!important}
+.nw-filters{display:flex;gap:8px;margin:6px 0 12px}
+.nw-fsel{position:relative;flex:1;min-width:0;display:flex;align-items:center;gap:6px;height:44px;padding:0 12px 0 16px;border-radius:99px;border:1px solid var(--line);background:var(--card);box-shadow:var(--nw-shadow);color:var(--ink);font:500 .98rem var(--hs-body);cursor:pointer}
+.nw-fsel .nw-fv{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.nw-fsel svg{flex:none;width:18px;height:18px}
+.nw-fsel select{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer;font-size:16px}
+.nw-fsel.on{background:var(--nw-green);border-color:var(--nw-green);color:#FBF8F1}
+.nw-fsel:focus-within{outline:2px solid var(--nw-terra);outline-offset:2px}
 /* talen die een pagina niet heeft, nooit tonen */
 html:not(.fr) .l-fr,html:not(.de) .l-de,html:not(.it) .l-it,html:not(.es) .l-es,html:not(.pt) .l-pt,html.fr .l-nl,html.de .l-nl,html.it .l-nl,html.es .l-nl,html.pt .l-nl{display:none!important}
 :root:root{--paper:#F5F0E4;--card:#FBF8F1;--ink:#22301F;--muted:#5E6656;--line:#E2DACB;--hs-olive:#2F4A32;--hs-accent:#A65A35;--gold:#A65A35;--bark:#2F4A32;--tan:#FBF8F1;--tan-deep:#E2DACB;

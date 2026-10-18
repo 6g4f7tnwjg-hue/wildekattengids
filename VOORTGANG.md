@@ -2,6 +2,14 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 18 oktober 2026 – Testpagina nieuwe opbouw (/nederland-test/)
+
+Op verzoek een testpagina naast de live Nederlandse gids, om de landpagina's dichter bij de hoofdpagina te brengen (bron: `bron/test_ontwerp.py`, zie `bron/LEESMIJ.md`). /nederland/ en de andere pagina's zijn niet veranderd.
+- Onderbalk Kaart · Soorten · Locaties · Meer (gelijk aan de hoofdpagina); Routeplanner, Actueel, In het kort, Kleur & hybriden, Favorieten, Hoofdtabel, Over en Rapporteer onder Meer.
+- Startscherm = kaart: kop zoals de hoofdpagina (titel, ondertitel, regel met aantallen), soortrondjes met foto die de kaart filteren, typeknoppen onder de kaart, lijst “In beeld” (meeste soorten eerst). Zoeken klapt open via het vergrootglas. Geen tegels met illustraties en geen grote Rapporteer-balk.
+- Soorten: fotokaartjes zoals op de hoofdpagina. Locaties: één lijst met locatiekaartjes (type-icoon, plaats, type, aantal soorten, korte beschrijving), met typefilter. “Geen katachtigen gevonden” en “Niet specifiek online te verifiëren” staan onder Over.
+- “Aanwezig” wordt alleen in de hoofdtabel nog getoond; elders alleen afwijkingen (vertrek, gepland, rondleiding …).
+
 ## 17 oktober 2026 – Oostenrijk, Zwitserland, Frankrijk en VK: één pagina met regiofilter
 
 Met `bron/samenvoegen.py` zijn de gidsen van Oostenrijk (22 locaties), Zwitserland (20), Frankrijk (67) en het VK (88) omgezet van een pagina per deelstaat/regio naar één pagina met een regiofilter, zoals Italië en Spanje. Alleen Duitsland (172) houdt pagina’s per deelstaat.

@@ -23,6 +23,10 @@ Alles wordt uit deze map gebouwd. Pas nooit de gegenereerde bestanden in de hoof
 
 `nieuw_ontwerp.py` draait aan het eind van `bouw.py` en zet op elke landpagina in `LANDEN` (alle landen) het app-ontwerp: startscherm met tellers, zoekbalk en tegels, elk onderdeel als eigen scherm, onderbalk. De gebouwde oude pagina wordt als reserve bewaard in `/<land>-oud/` (noindex). Teksten die het ontwerp zelf toevoegt staan in `TR` (NL/EN plus FR, DE, IT, ES, PT); al het andere komt uit de gids. Een regiolink (`/frankrijk/bretagne/`) opent meteen het scherm Locaties met het regiofilter aan. `maak_los()` zet daarna ook de losse park- en soortpagina's (`/<land>/locatie/…`, `/<land>/soort/…`) in dezelfde stijl: terugknop met titel bovenaan, onderbalk naar de gids van het land en een kaart "Bekijk in de gids" onderaan. `maak_start()` geeft de startpagina en de top 10 dezelfde kleuren en een onderbalk (Home · Landen · Soorten · Meer; Meer opent het menu). Duitsland is op 18-10-2026 met `samenvoegen.py de` één pagina met een deelstaatfilter geworden (zoals Frankrijk); de oude keuzepagina en deelstaatpagina's staan als momentopname in `/duitsland-oud/deelstaten/` en `/duitsland-oud/<deelstaat>/`.
 
+## Testontwerp (18-10-2026)
+
+`test_ontwerp.py` draait aan het eind van `bouw.py` en maakt `/nederland-test/` (noindex) uit `/nederland-oud/`: een proef met dezelfde opbouw als de hoofdpagina. Onderbalk Kaart · Soorten · Locaties · Meer; het startscherm is de kaart met soortrondjes (filteren de kaart), typeknoppen onder de kaart en een lijst “In beeld”; Soorten als fotokaartjes; Locaties als één lijst met locatiekaartjes; de hoofdtabel, de routeplanner en de rest onder Meer; “Aanwezig” alleen nog in de hoofdtabel. Weghalen: map `/nederland-test/`, `test_ontwerp.py` en de regels onderaan `bouw.py`.
+
 ## Bijwerken
 
 1. Pas de gids aan in `bron/gidsen/…`.

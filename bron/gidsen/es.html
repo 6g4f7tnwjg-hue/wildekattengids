@@ -374,7 +374,7 @@ window.__LANG=l;var c=document.documentElement.classList;c.toggle("en",l==="en")
 <div class="l-nl">
 <div class="prose">
   <ul>
-    <li><strong>18 soorten bevestigd</strong> op 43 locaties: dierentuinen, dierenparken, safariparken, wildparken en opvangcentra, waarvan 2 op de Balearen en 5 op de Canarische Eilanden.</li>
+    <li><strong>18 soorten bevestigd</strong> op 41 locaties: dierentuinen, dierenparken, safariparken, wildparken en opvangcentra, waarvan 2 op de Balearen en 5 op de Canarische Eilanden. Bij Tierra Rapaz en Zoo de Lillo zijn de katten alleen onder voorbehoud.</li>
     <li><strong><a href="#locatie/zoo-koki">Zoo Koki</a></strong> (Toledo) heeft de meeste soorten: zeven, waaronder drie die je nergens anders in Spanje ziet: de Geoffroy’s kat, de Bengaalse kat (Amoer) en de Afrikaanse wilde kat. <strong><a href="#locatie/safari-madrid">Safari Madrid</a></strong> en <strong><a href="#locatie/terra-natura-benidorm">Terra Natura Benidorm</a></strong> hebben er elk zes.</li>
     <li><strong>Iberische lynx:</strong> te zien op zeven plekken, onder meer in Zoo Aquarium de Madrid, Selwo Aventura, Jerez, Córdoba en Terra Natura Murcia. Het zijn dieren uit het fokprogramma die niet geschikt zijn om te fokken of uit te zetten. De fokcentra zelf zijn niet te bezoeken; bij El Acebuche (Doñana) zie je de lynxen alleen met een parkgids.</li>
     <li><strong>Maar op één plek te zien:</strong> de rode lynx in Safari Madrid, de margay in Terra Natura Benidorm en de drie kleine katten van Zoo Koki.</li>
@@ -386,7 +386,7 @@ window.__LANG=l;var c=document.documentElement.classList;c.toggle("en",l==="en")
 </div><div class="l-en">
 <div class="prose">
   <ul>
-    <li><strong>18 species confirmed</strong> at 43 locations: zoos, animal parks, safari parks, wildlife parks and rescue centres, 2 of them on the Balearic Islands and 5 on the Canary Islands.</li>
+    <li><strong>18 species confirmed</strong> at 41 locations: zoos, animal parks, safari parks, wildlife parks and rescue centres, 2 of them on the Balearic Islands and 5 on the Canary Islands. At Tierra Rapaz and Zoo de Lillo the cats are only provisional.</li>
     <li><strong><a href="#locatie/zoo-koki">Zoo Koki</a></strong> (Toledo) has the most species: seven, including three you will not see anywhere else in Spain: Geoffroy’s cat, the leopard cat (Amur) and the African wildcat. <strong><a href="#locatie/safari-madrid">Safari Madrid</a></strong> and <strong><a href="#locatie/terra-natura-benidorm">Terra Natura Benidorm</a></strong> have six each.</li>
     <li><strong>Iberian lynx:</strong> on view at seven places, including Zoo Aquarium de Madrid, Selwo Aventura, Jerez, Córdoba and Terra Natura Murcia. These are animals from the breeding programme that are unsuitable for breeding or release. The breeding centres themselves cannot be visited; at El Acebuche (Doñana) you can only see the lynxes with a park guide.</li>
     <li><strong>Only in one place:</strong> the bobcat at Safari Madrid, the margay at Terra Natura Benidorm and the three small cats at Zoo Koki.</li>
@@ -398,7 +398,7 @@ window.__LANG=l;var c=document.documentElement.classList;c.toggle("en",l==="en")
 </div><div class="l-es">
 <div class="prose">
   <ul>
-    <li><strong>18 especies confirmadas</strong> en 43 lugares: zoos, parques de animales, safari parks, parques de fauna y centros de rescate, 2 de ellos en Baleares y 5 en Canarias.</li>
+    <li><strong>18 especies confirmadas</strong> en 41 lugares: zoos, parques de animales, safari parks, parques de fauna y centros de rescate, 2 de ellos en Baleares y 5 en Canarias. En Tierra Rapaz y el Zoo de Lillo la presencia de los felinos es incierta.</li>
     <li><strong><a href="#locatie/zoo-koki">Zoo Koki</a></strong> (Toledo) tiene más especies: siete, entre ellas tres que no verás en ningún otro sitio de España: el gato de Geoffroy, el gato leopardo (del Amur) y el gato montés africano. <strong><a href="#locatie/safari-madrid">Safari Madrid</a></strong> y <strong><a href="#locatie/terra-natura-benidorm">Terra Natura Benidorm</a></strong> tienen seis cada uno.</li>
     <li><strong>Lince ibérico:</strong> visible en siete lugares, entre ellos Zoo Aquarium de Madrid, Selwo Aventura, Jerez, Córdoba y Terra Natura Murcia. Son animales del programa de cría no aptos para la reproducción ni la suelta. Los centros de cría no se pueden visitar; en El Acebuche (Doñana) solo ves los linces con un guía del parque.</li>
     <li><strong>En un solo lugar:</strong> el lince rojo en Safari Madrid, el margay en Terra Natura Benidorm y los tres pequeños felinos de Zoo Koki.</li>
@@ -1132,7 +1132,7 @@ const R=[["Euraziatische lynx", "onbekend", "Marcelle Natureza", "Outeiro de Rei
 const BIG=["Leeuw", "Tijger", "Luipaard", "Jaguar", "Sneeuwluipaard", "Nevelpanter"];
 const SMALL=["Cheetah", "Poema", "Euraziatische lynx", "Iberische lynx", "Rode lynx", "Serval", "Caracal", "Ocelot", "Margay", "Geoffroy’s kat", "Bengaalse kat", "Europese wilde kat", "Afrikaanse wilde kat", "Zandkat"];
 const UNIQUE=new Set(["Rode lynx", "Margay", "Geoffroy’s kat", "Bengaalse kat", "Afrikaanse wilde kat"]);
-const UNSURE=new Set(["Sneeuwluipaard", "Zandkat"]);
+const UNSURE=new Set([...new Set(R.map(r=>r[0]))].filter(s=>!R.some(r=>r[0]===s&&r[4].split("+").some(c=>"gybr".includes(c)))));   /* soorten zonder bevestigde vermelding: berekend uit R */
 const LABEL={g:"Aanwezig",y:"Tijdelijk niet zichtbaar",b:"Vertrek aangekondigd",p:"Gepland",w:"Onzeker",r:"Alleen met rondleiding",n:"Niet open voor publiek"};
 let sel=null;
 const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -1300,7 +1300,7 @@ function rtUpd(){
   const where=s=>info.filter(x=>x.conf.includes(s)).map(x=>x.name);
   const chip=s=>{const on=seen.has(s), m=!on&&maybe.has(s);
     return `<span class="rchip${on?" on":m?" maybe":""}">${esc(spName(s))}${!on&&!m&&where(s).length?` <small>${esc(where(s).slice(0,3).join(", "))}${where(s).length>3?"…":""}</small>`:""}</span>`;};
-  const grp=(title,arr)=>`<h3>${title}</h3><div class="chips">${arr.map(chip).join("")}</div>`;
+  const grp=(title,arr)=>arr.length?`<h3>${title}</h3><div class="chips">${arr.map(chip).join("")}</div>`:"";
   document.getElementById("rt-sp").innerHTML=grp(T("Pantherinae (grote katten)","Pantherinae (big cats)"),BIG.filter(s=>!UNSURE.has(s)))+grp(T("Felinae (kleine katten)","Felinae (small cats)"),SMALL.filter(s=>!UNSURE.has(s)))+grp(T("Onzeker","Uncertain"),ALLSP.filter(s=>UNSURE.has(s)));
 }
 buildRoute();makeGroups();makeCollapsible();
@@ -1384,7 +1384,7 @@ function locHTML(i){
   <div class="ip-head">
     <div class="ip-tags">${inf.type?`<span class="ip-tag dark">${esc(inf.type[L]||inf.type[0])}</span>`:""}<span class="ip-tag">${esc(l[1])}</span></div>
     <h1>${esc(l[0])}</h1>
-    <p class="ip-alt">${bySp.size} ${bySp.size===1?T("soort katachtige","cat species","especie de felino"):T("soorten katachtigen","cat species","especies de felinos")}</p>
+    <p class="ip-alt">${(()=>{const nb=[...bySp.values()].filter(rs=>rs.some(r=>r[4].split("+").some(c=>"gybr".includes(c)))).length,nu=bySp.size-nb;return (nb?nb+" "+(nb===1?T("soort katachtige","cat species","especie de felino"):T("soorten katachtigen","cat species","especies de felinos")):"")+(nu?(nb?" · ":"")+nu+" "+T("onzeker","uncertain","incierto"):"");})()}</p>
     ${photo?`<div class="ip-photo">${photo}</div>`:""}
   </div>
   ${inf.about?`<div class="ip-sec"><h2>${T("Over deze locatie","About this location")}</h2><p>${esc(inf.about[L]||inf.about[0])}</p></div>`:""}

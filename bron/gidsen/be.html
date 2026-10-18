@@ -373,11 +373,11 @@ window.__LANG=l;var c=document.documentElement.classList;c.toggle("en",l==="en")
 <div class="l-nl">
   <div class="prose">
   <ul>
-    <li><strong>13 soorten bevestigd</strong> op 14 locaties: 12 dierentuinen en dierenparken en 2 opvangcentra. Bij L’Arche zijn de katten alleen onder voorbehoud (laatst bevestigd in 2021).</li>
+    <li><strong>13 soorten bevestigd</strong> op 13 locaties: 11 dierentuinen en dierenparken en 2 opvangcentra. Bij L’Arche (opvang) zijn de katten alleen onder voorbehoud (laatst bevestigd in 2021).</li>
     <li><strong>Pairi Daiza</strong> heeft acht bevestigde soorten, <strong>Pakawi en het Parc animalier de Bouillon</strong> elk zeven. Bouillon is de enige plek met zowel grote katten als de Europese wilde kat.</li>
     <li><strong>De jaguarundi is alleen te zien in ZooParc Vallée de la Sûre</strong> (Vaux-sur-Sûre). De luipaardkat zit daar en in Monde Sauvage.</li>
     <li><strong>Jonge katten:</strong> leeuwenwelpen in Bellewaerde (november 2025) en Pairi Daiza (Nala, 2024), jonge lynxen in Han-sur-Lesse (3) en Monde Sauvage (2), voorjaar 2026.</li>
-    <li><strong>26 soorten zijn in België niet te zien</strong>, en de moeraskat alleen misschien (Pakawi, achter de schermen). De caracal is nergens meer bevestigd. Er zijn geen hybriden gevonden.</li>
+    <li><strong>29 soorten zijn in België niet te zien</strong>, en de moeraskat alleen misschien (Pakawi, achter de schermen). De caracal is nergens meer bevestigd. Er zijn geen hybriden gevonden.</li>
   </ul>
   <p>In Brussel is op dit moment geen erkende dierentuin.</p>
   </div>
@@ -393,11 +393,11 @@ window.__LANG=l;var c=document.documentElement.classList;c.toggle("en",l==="en")
 </div><div class="l-en">
   <div class="prose">
   <ul>
-    <li><strong>13 species confirmed</strong> at 14 locations: 12 zoos and animal parks and 2 rescue centres. At L’Arche the cats are only provisional (last confirmed in 2021).</li>
+    <li><strong>13 species confirmed</strong> at 13 locations: 11 zoos and animal parks and 2 rescue centres. At L’Arche (rescue centre) the cats are only provisional (last confirmed in 2021).</li>
     <li><strong>Pairi Daiza</strong> has eight confirmed species, <strong>Pakawi and the Parc animalier de Bouillon</strong> seven each. Bouillon is the only place with both big cats and the European wildcat.</li>
     <li><strong>The jaguarundi can only be seen at ZooParc Vallée de la Sûre</strong> (Vaux-sur-Sûre). The leopard cat lives there and at Monde Sauvage.</li>
     <li><strong>Young cats:</strong> lion cubs at Bellewaerde (November 2025) and Pairi Daiza (Nala, 2024), young lynx at Han-sur-Lesse (3) and Monde Sauvage (2), spring 2026.</li>
-    <li><strong>26 species cannot be seen in Belgium</strong>, and the jungle cat only maybe (Pakawi, behind the scenes). The caracal is no longer confirmed anywhere. No hybrids were found.</li>
+    <li><strong>29 species cannot be seen in Belgium</strong>, and the jungle cat only maybe (Pakawi, behind the scenes). The caracal is no longer confirmed anywhere. No hybrids were found.</li>
   </ul>
   <p>Brussels currently has no recognised zoo.</p>
   </div>
@@ -413,11 +413,11 @@ window.__LANG=l;var c=document.documentElement.classList;c.toggle("en",l==="en")
 </div><div class="l-fr">
   <div class="prose">
   <ul>
-    <li><strong>13 espèces confirmées</strong> dans 14 lieux : 12 zoos et parcs animaliers et 2 centres de sauvegarde. À L’Arche, la présence des félins reste à confirmer (dernière confirmation en 2021).</li>
+    <li><strong>13 espèces confirmées</strong> dans 13 lieux : 11 zoos et parcs animaliers et 2 centres de sauvegarde. À L’Arche (centre de sauvegarde), la présence des félins reste à confirmer (dernière confirmation en 2021).</li>
     <li><strong>Pairi Daiza</strong> compte huit espèces confirmées, <strong>Pakawi et le Parc animalier de Bouillon</strong> sept chacun. Bouillon est le seul endroit qui réunit grands félins et chat sauvage d’Europe.</li>
     <li><strong>Le jaguarondi ne se voit qu’au ZooParc Vallée de la Sûre</strong> (Vaux-sur-Sûre). Le chat-léopard y vit, ainsi qu’à Monde Sauvage.</li>
     <li><strong>Jeunes félins :</strong> lionceaux à Bellewaerde (novembre 2025) et à Pairi Daiza (Nala, 2024), jeunes lynx à Han-sur-Lesse (3) et à Monde Sauvage (2), au printemps 2026.</li>
-    <li><strong>26 espèces ne sont pas visibles en Belgique</strong>, et le chat des marais seulement peut-être (Pakawi, en coulisses). Le caracal n’est plus confirmé nulle part. Aucun hybride n’a été trouvé.</li>
+    <li><strong>29 espèces ne sont pas visibles en Belgique</strong>, et le chat des marais seulement peut-être (Pakawi, en coulisses). Le caracal n’est plus confirmé nulle part. Aucun hybride n’a été trouvé.</li>
   </ul>
   <p>Bruxelles n’a actuellement aucun zoo agréé.</p>
   </div>
@@ -1042,7 +1042,7 @@ const R=[["Leeuw", "Noordelijk (P. l. leo)", "ZOO Antwerpen", "Antwerpen", "g", 
 const BIG=["Leeuw", "Tijger", "Luipaard", "Jaguar", "Sneeuwluipaard", "Nevelpanter"];
 const SMALL=["Cheetah", "Poema", "Jaguarundi", "Euraziatische lynx", "Serval", "Bengaalse kat", "Europese wilde kat", "Moeraskat"];
 const UNIQUE=new Set(["Jaguarundi"]);
-const UNSURE=new Set(["Moeraskat"]);
+const UNSURE=new Set([...new Set(R.map(r=>r[0]))].filter(s=>!R.some(r=>r[0]===s&&r[4].split("+").some(c=>"gybr".includes(c)))));   /* soorten zonder bevestigde vermelding: berekend uit R */
 const LABEL={g:"Aanwezig",y:"Tijdelijk niet zichtbaar",b:"Vertrek aangekondigd",p:"Gepland",w:"Onzeker",r:"Alleen met rondleiding",n:"Niet open voor publiek"};
 let sel=null;
 const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -1208,7 +1208,7 @@ function rtUpd(){
   const where=s=>info.filter(x=>x.conf.includes(s)).map(x=>x.name);
   const chip=s=>{const on=seen.has(s), m=!on&&maybe.has(s);
     return `<span class="rchip${on?" on":m?" maybe":""}">${esc(spName(s))}${!on&&!m&&where(s).length?` <small>${esc(where(s).slice(0,3).join(", "))}${where(s).length>3?"…":""}</small>`:""}</span>`;};
-  const grp=(title,arr)=>`<h3>${title}</h3><div class="chips">${arr.map(chip).join("")}</div>`;
+  const grp=(title,arr)=>arr.length?`<h3>${title}</h3><div class="chips">${arr.map(chip).join("")}</div>`:"";
   document.getElementById("rt-sp").innerHTML=grp(T("Pantherinae (grote katten)","Pantherinae (big cats)"),BIG.filter(s=>!UNSURE.has(s)))+grp(T("Felinae (kleine katten)","Felinae (small cats)"),SMALL.filter(s=>!UNSURE.has(s)))+grp(T("Onzeker","Uncertain"),ALLSP.filter(s=>UNSURE.has(s)));
 }
 buildRoute();makeGroups();makeCollapsible();
@@ -1289,7 +1289,7 @@ function locHTML(i){
   <div class="ip-head">
     <div class="ip-tags">${inf.type?`<span class="ip-tag dark">${esc(inf.type[L]||inf.type[0])}</span>`:""}<span class="ip-tag">${esc(l[1])}</span></div>
     <h1>${esc(l[0])}</h1>
-    <p class="ip-alt">${bySp.size} ${bySp.size===1?T("soort katachtige","cat species","espèce de félin"):T("soorten katachtigen","cat species","espèces de félins")}</p>
+    <p class="ip-alt">${(()=>{const nb=[...bySp.values()].filter(rs=>rs.some(r=>r[4].split("+").some(c=>"gybr".includes(c)))).length,nu=bySp.size-nb;return (nb?nb+" "+(nb===1?T("soort katachtige","cat species","espèce de félin"):T("soorten katachtigen","cat species","espèces de félins")):"")+(nu?(nb?" · ":"")+nu+" "+T("onzeker","uncertain","incertain"):"");})()}</p>
     ${photo?`<div class="ip-photo">${photo}</div>`:""}
   </div>
   ${inf.about?`<div class="ip-sec"><h2>${T("Over deze locatie","About this location")}</h2><p>${esc(inf.about[L]||inf.about[0])}</p></div>`:""}

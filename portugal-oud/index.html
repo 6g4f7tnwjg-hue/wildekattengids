@@ -555,7 +555,7 @@ section::before,.board::before,.ip-sec::before,footer::before{display:none!impor
 <div class="l-nl">
 <div class="prose">
   <ul>
-    <li><strong>10 soorten bevestigd</strong> op 7 locaties: 4 dierentuinen, 1 dierenpark, 1 wildpark en 1 safaripark. Europaradise heeft alleen een onzekere vermelding.</li>
+    <li><strong>10 soorten bevestigd</strong> op 6 locaties: 3 dierentuinen, 1 dierenpark, 1 wildpark en 1 safaripark. Europaradise (dierenpark) heeft alleen een onzekere vermelding.</li>
     <li><strong><a href="#locatie/jardim-zoologico-de-lisboa">Jardim Zoológico de Lisboa</a></strong> heeft verreweg de meeste soorten: negen, onder meer Amoer- en Sumatraanse tijgers, Perzische luipaarden, jaguars, een nevelpanter en de enige Iberische lynxen die je in Portugal kunt zien.</li>
     <li><strong>Iberische lynx:</strong> alleen in Lissabon (Drago en Fábula, ambassadeurs van de soort). Het nationale fokcentrum bij Silves is niet te bezoeken; in het Parque Biológico de Gaia wordt een lynxverblijf gebouwd.</li>
     <li><strong>Maar op één plek te zien:</strong> de rode lynx in <a href="#locatie/zoo-de-lagos">Zoo de Lagos</a>, de enige plek in de Algarve met wilde katten.</li>
@@ -567,7 +567,7 @@ section::before,.board::before,.ip-sec::before,footer::before{display:none!impor
 </div><div class="l-en">
 <div class="prose">
   <ul>
-    <li><strong>10 species confirmed</strong> at 7 locations: 4 zoos, 1 animal park, 1 wildlife park and 1 safari park. Europaradise has an uncertain entry only.</li>
+    <li><strong>10 species confirmed</strong> at 6 locations: 3 zoos, 1 animal park, 1 wildlife park and 1 safari park. Europaradise (animal park) has an uncertain entry only.</li>
     <li><strong><a href="#locatie/jardim-zoologico-de-lisboa">Jardim Zoológico de Lisboa</a></strong> has by far the most species: nine, including Amur and Sumatran tigers, Persian leopards, jaguars, a clouded leopard and the only Iberian lynxes you can see in Portugal.</li>
     <li><strong>Iberian lynx:</strong> only in Lisbon (Drago and Fábula, ambassadors for the species). The national breeding centre near Silves cannot be visited; a lynx enclosure is being built at the Parque Biológico de Gaia.</li>
     <li><strong>Only in one place:</strong> the bobcat at <a href="#locatie/zoo-de-lagos">Zoo de Lagos</a>, the only place in the Algarve with wild cats.</li>
@@ -579,7 +579,7 @@ section::before,.board::before,.ip-sec::before,footer::before{display:none!impor
 </div><div class="l-pt">
 <div class="prose">
   <ul>
-    <li><strong>10 espécies confirmadas</strong> em 7 locais: 4 jardins zoológicos, 1 parque de animais, 1 parque de vida selvagem e 1 safari park. O Europaradise tem apenas uma entrada incerta.</li>
+    <li><strong>10 espécies confirmadas</strong> em 6 locais: 3 jardins zoológicos, 1 parque de animais, 1 parque de vida selvagem e 1 safari park. O Europaradise (parque de animais) tem apenas uma entrada incerta.</li>
     <li><strong><a href="#locatie/jardim-zoologico-de-lisboa">Jardim Zoológico de Lisboa</a></strong> tem de longe o maior número de espécies: nove, incluindo tigres-siberianos e tigres-de-sumatra, leopardos-da-pérsia, jaguares, uma pantera-nebulosa e os únicos linces-ibéricos que podes ver em Portugal.</li>
     <li><strong>Lince-ibérico:</strong> só em Lisboa (Drago e Fábula, embaixadores da espécie). O centro nacional de reprodução perto de Silves não pode ser visitado; está a ser construído um recinto para linces no Parque Biológico de Gaia.</li>
     <li><strong>Só num local:</strong> o lince-vermelho no <a href="#locatie/zoo-de-lagos">Zoo de Lagos</a>, o único local no Algarve com felinos selvagens.</li>
@@ -1183,7 +1183,7 @@ const R=[["Iberische lynx", "—", "Jardim Zoológico de Lisboa", "Lissabon (Set
 const BIG=["Leeuw", "Tijger", "Luipaard", "Jaguar", "Nevelpanter"];
 const SMALL=["Cheetah", "Euraziatische lynx", "Iberische lynx", "Rode lynx", "Serval", "Ocelot"];
 const UNIQUE=new Set(["Luipaard", "Jaguar", "Nevelpanter", "Iberische lynx", "Rode lynx"]);
-const UNSURE=new Set(["Ocelot"]);
+const UNSURE=new Set([...new Set(R.map(r=>r[0]))].filter(s=>!R.some(r=>r[0]===s&&r[4].split("+").some(c=>"gybr".includes(c)))));   /* soorten zonder bevestigde vermelding: berekend uit R */
 const LABEL={g:"Aanwezig",y:"Tijdelijk niet zichtbaar",b:"Vertrek aangekondigd",p:"Gepland",w:"Onzeker",r:"Alleen met rondleiding",n:"Niet open voor publiek"};
 let sel=null;
 const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -1352,7 +1352,7 @@ function rtUpd(){
   const where=s=>info.filter(x=>x.conf.includes(s)).map(x=>x.name);
   const chip=s=>{const on=seen.has(s), m=!on&&maybe.has(s);
     return `<span class="rchip${on?" on":m?" maybe":""}">${esc(spName(s))}${!on&&!m&&where(s).length?` <small>${esc(where(s).slice(0,3).join(", "))}${where(s).length>3?"…":""}</small>`:""}</span>`;};
-  const grp=(title,arr)=>`<h3>${title}</h3><div class="chips">${arr.map(chip).join("")}</div>`;
+  const grp=(title,arr)=>arr.length?`<h3>${title}</h3><div class="chips">${arr.map(chip).join("")}</div>`:"";
   document.getElementById("rt-sp").innerHTML=grp(T("Pantherinae (grote katten)","Pantherinae (big cats)"),BIG.filter(s=>!UNSURE.has(s)))+grp(T("Felinae (kleine katten)","Felinae (small cats)"),SMALL.filter(s=>!UNSURE.has(s)))+grp(T("Onzeker","Uncertain"),ALLSP.filter(s=>UNSURE.has(s)));
 }
 buildRoute();makeGroups();makeCollapsible();
@@ -1436,7 +1436,7 @@ function locHTML(i){
   <div class="ip-head">
     <div class="ip-tags">${inf.type?`<span class="ip-tag dark">${esc(inf.type[L]||inf.type[0])}</span>`:""}<span class="ip-tag">${esc(l[1])}</span></div>
     <h1>${esc(l[0])}</h1>
-    <p class="ip-alt">${bySp.size} ${bySp.size===1?T("soort katachtige","cat species","espécie de felino"):T("soorten katachtigen","cat species","espécies de felinos")}</p>
+    <p class="ip-alt">${(()=>{const nb=[...bySp.values()].filter(rs=>rs.some(r=>r[4].split("+").some(c=>"gybr".includes(c)))).length,nu=bySp.size-nb;return (nb?nb+" "+(nb===1?T("soort katachtige","cat species","espécie de felino"):T("soorten katachtigen","cat species","espécies de felinos")):"")+(nu?(nb?" · ":"")+nu+" "+T("onzeker","uncertain","incerto"):"");})()}</p>
     ${photo?`<div class="ip-photo">${photo}</div>`:""}
   </div>
   ${inf.about?`<div class="ip-sec"><h2>${T("Over deze locatie","About this location")}</h2><p>${esc(inf.about[L]||inf.about[0])}</p></div>`:""}

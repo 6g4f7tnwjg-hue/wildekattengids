@@ -430,11 +430,18 @@ def guide_url(c, st_, kind=None, s=None):
     return BASE + F[c] + "/" + ("#" + h if h else "")
 def static_url(c, st_, kind, s):
     return BASE + F[c] + "/" + (st_ + "/" if st_ else "") + kind + "/" + s + "/"
+LANDSOORTEN = {c: {slug(r[0]) for r in DATA[c]["main"]["R"]} for c in F}   # soorten met een eigen pagina per land
 def rewrite(frag, c, st_):
     def fix(mm):
         h = mm.group(1)
         r = re.match(r"#(?:([a-z-]+)/)?(soort|locatie)/([a-z0-9-]+)$", h)
         if r and ((st_ is None and r.group(1) is None) or (st_ and r.group(1) in (None, st_))):
+            if r.group(2) == "soort" and not st_ and r.group(3) not in LANDSOORTEN[c]:
+                # soort zonder pagina in dit land ("lijkt op"): naar de Europese soortpagina, anders de Spottersgids, anders de gids
+                s = r.group(3)
+                if os.path.exists(ROOT + "soort/" + s + "/index.html"): return f'href="{BASE}soort/{s}/"'
+                if os.path.exists(ROOT + "spottersgids/" + s + "/index.html"): return f'href="{BASE}spottersgids/{s}/"'
+                return f'href="{guide_url(c, None, "soort", s)}"'
             return f'href="{static_url(c, st_, r.group(2), r.group(3))}"'
         rest = h[1:]
         if st_ and not rest.startswith(st_):

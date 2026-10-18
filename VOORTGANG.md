@@ -2,6 +2,19 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 18 oktober 2026 – Interne controle en tellingen gelijkgetrokken
+
+Hele site intern nagelopen (tellingen, teksten, links, alle talen op 390 px). Verbeterd:
+- Routeplanner: de groep "Onzeker" wordt nu berekend uit de gegevens (`UNSURE` in alle gidsen); hij stond verouderd in Duitsland, Frankrijk, Oostenrijk, Zwitserland en het VK. Lege kop "Onzeker" verdwijnt.
+- Eén telregel: getallen bij een soort of locatie tellen alleen bevestigde vermeldingen (aanwezig, tijdelijk niet zichtbaar, vertrek aangekondigd, rondleiding); onzekere staan er apart achter ("10 soorten · 1 onzeker"). Geldt voor "Alle katten" met een regio (landpagina's) of land (hoofdpagina), de locatie- en soortkaartjes en de soortinfo op de landpagina's, de knoppen op de soortpagina's `/soort/…` en de losse locatiepagina's. Soorten die in een regio of land alleen onzeker zijn, krijgen daar een stippelrand.
+- Typeknoppen op de landpagina's volgen de gekozen regio.
+- Hoofdpagina: onder "In beeld" staat hoeveel locaties niet op de kaart staan (reizende circussen, Canarische Eilanden).
+- Duitsland, Frankrijk, Oostenrijk, Zwitserland en het VK hebben nu ook 43 soorten (oostelijke tijgerkat, wolkentijgerkat, tilcayo) met de zin over de indeling; alle "niet te zien"-aantallen +3. Hoofdletters in de Duitse kopjes ("In Deutschland", "In Österreich", "In der Schweiz").
+- Vaste teksten: België 29 soorten niet te zien; "bevestigd op N locaties" telt overal locaties met een bevestigde kat (België 13, Italië 38, Spanje 41, Ierland 5, Portugal 6, VK Zuidoost-Engeland 16, Oost-Engeland 17, East Midlands 6; lynx en wilde kat in die VK-regio's).
+- Italiaanse gids: routeplanner-uitleg, voetregel en "soorten katachtigen" op de parkpagina's in het Italiaans. Franse gids: bronregels "maandoverzicht" vervangen.
+- Losse soortpagina's per land: "lijkt op"-links naar soorten zonder pagina in dat land gaan naar de Europese soortpagina (of de Spottersgids, of de gids).
+- Nagaan (niet veranderd): zie `bron/OPEN.md` (mogelijk dubbele geboortes, Exotic Pet Refuge).
+
 ## 18 oktober 2026 – Aantallen in het wild aangevuld
 
 Ontbrekende schattingen (24 soorten) onderzocht; alleen betrouwbare IUCN-cijfers voor volwassen dieren ingevuld: Geoffroy’s kat ca. 528.000 en zandkat ca. 27.300 (in alle gidsen). Overige uitkomsten en twijfelgevallen in `bron/OPEN.md` en `bron/wild_onderzoek_2026-10.json`.

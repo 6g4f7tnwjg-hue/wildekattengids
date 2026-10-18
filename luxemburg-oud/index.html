@@ -1192,7 +1192,7 @@ const R=[["Jaguarundi", "onbekend", "Parc Merveilleux", "Bettembourg", "g", "geb
 const BIG=[];
 const SMALL=["Jaguarundi"];
 const UNIQUE=new Set(["Jaguarundi"]);
-const UNSURE=new Set([]);
+const UNSURE=new Set([...new Set(R.map(r=>r[0]))].filter(s=>!R.some(r=>r[0]===s&&r[4].split("+").some(c=>"gybr".includes(c)))));   /* soorten zonder bevestigde vermelding: berekend uit R */
 const LABEL={g:"Aanwezig",y:"Tijdelijk niet zichtbaar",b:"Vertrek aangekondigd",p:"Gepland",w:"Onzeker",r:"Alleen met rondleiding",n:"Niet open voor publiek"};
 let sel=null;
 const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -1440,7 +1440,7 @@ function locHTML(i){
   <div class="ip-head">
     <div class="ip-tags">${inf.type?`<span class="ip-tag dark">${esc(inf.type[L]||inf.type[0])}</span>`:""}<span class="ip-tag">${esc(l[1])}</span></div>
     <h1>${esc(l[0])}</h1>
-    <p class="ip-alt">${bySp.size} ${bySp.size===1?T("soort katachtige","cat species","espèce de félin","Katzenart"):T("soorten katachtigen","cat species","espèces de félins","Katzenarten")}</p>
+    <p class="ip-alt">${(()=>{const nb=[...bySp.values()].filter(rs=>rs.some(r=>r[4].split("+").some(c=>"gybr".includes(c)))).length,nu=bySp.size-nb;return (nb?nb+" "+(nb===1?T("soort katachtige","cat species","espèce de félin","Katzenart"):T("soorten katachtigen","cat species","espèces de félins","Katzenarten")):"")+(nu?(nb?" · ":"")+nu+" "+T("onzeker","uncertain","incertain","unsicher"):"");})()}</p>
     ${photo?`<div class="ip-photo">${photo}</div>`:""}
   </div>
   ${inf.about?`<div class="ip-sec"><h2>${T("Over deze locatie","About this location")}</h2><p>${esc(inf.about[L]||inf.about[0])}</p></div>`:""}

@@ -1163,7 +1163,7 @@ const R=[
 const BIG=["Leeuw","Tijger","Luipaard","Jaguar","Sneeuwluipaard","Nevelpanter"];
 const SMALL=["Cheetah","Poema","Euraziatische lynx","Rode lynx","Caracal","Serval","Ocelot","Geoffroy’s kat","Europese wilde kat","Moeraskat","Manoel","Bengaalse kat","Roestkat","Vissende kat"];
 const UNIQUE=new Set(["Rode lynx","Ocelot","Geoffroy’s kat","Roestkat","Europese wilde kat","Moeraskat","Bengaalse kat"]);
-const UNSURE=new Set([]);
+const UNSURE=new Set([...new Set(R.map(r=>r[0]))].filter(s=>!R.some(r=>r[0]===s&&r[4].split("+").some(c=>"gybr".includes(c)))));   /* soorten zonder bevestigde vermelding: berekend uit R */
 const LABEL={g:"Aanwezig",y:"Tijdelijk niet zichtbaar",b:"Vertrek aangekondigd",p:"Gepland",w:"Onzeker",r:"Alleen met rondleiding",n:"Niet open voor publiek"};
 let sel=null;
 const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -1359,7 +1359,7 @@ function rtUpd(){
   const where=s=>info.filter(x=>x.conf.includes(s)).map(x=>x.name);
   const chip=s=>{const on=seen.has(s), m=!on&&maybe.has(s);
     return `<span class="rchip${on?" on":m?" maybe":""}">${esc(spName(s))}${!on&&!m&&where(s).length?` <small>${esc(where(s).slice(0,3).join(", "))}${where(s).length>3?"…":""}</small>`:""}</span>`;};
-  const grp=(title,arr)=>`<h3>${title}</h3><div class="chips">${arr.map(chip).join("")}</div>`;
+  const grp=(title,arr)=>arr.length?`<h3>${title}</h3><div class="chips">${arr.map(chip).join("")}</div>`:"";
   document.getElementById("rt-sp").innerHTML=grp(T("Pantherinae (grote katten)","Pantherinae (big cats)"),BIG.filter(s=>!UNSURE.has(s)))+grp(T("Felinae (kleine katten)","Felinae (small cats)"),SMALL.filter(s=>!UNSURE.has(s)))+grp(T("Onzeker","Uncertain"),ALLSP.filter(s=>UNSURE.has(s)));
 }
 buildRoute();makeGroups();makeCollapsible();
@@ -1475,7 +1475,7 @@ function locHTML(i){
   <div class="ip-head">
     <div class="ip-tags">${inf.type?`<span class="ip-tag dark">${esc(inf.type[L])}</span>`:""}<span class="ip-tag">${esc(l[1])}</span></div>
     <h1>${esc(l[0])}</h1>
-    <p class="ip-alt">${bySp.size} ${bySp.size===1?T("soort katachtige","cat species"):T("soorten katachtigen","cat species")}</p>
+    <p class="ip-alt">${(()=>{const nb=[...bySp.values()].filter(rs=>rs.some(r=>r[4].split("+").some(c=>"gybr".includes(c)))).length,nu=bySp.size-nb;return (nb?nb+" "+(nb===1?T("soort katachtige","cat species"):T("soorten katachtigen","cat species")):"")+(nu?(nb?" · ":"")+nu+" "+T("onzeker","uncertain"):"");})()}</p>
     ${photo?`<div class="ip-photo">${photo}</div>`:""}
   </div>
   ${inf.about?`<div class="ip-sec"><h2>${T("Over deze locatie","About this location")}</h2><p>${esc(inf.about[L]||inf.about[0])}</p></div>`:""}

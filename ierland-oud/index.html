@@ -555,7 +555,7 @@ section::before,.board::before,.ip-sec::before,footer::before{display:none!impor
 <div class="l-nl">
 <div class="prose">
   <ul>
-    <li><strong>6 soorten bevestigd</strong> op 7 locaties: 5 parken met zekere katten en 2 met alleen onzekere vermeldingen. Ierland is klein: Dublin Zoo en Emerald Park liggen 25 km van elkaar.</li>
+    <li><strong>6 soorten bevestigd</strong> op 5 locaties. Bij 2 andere parken zijn er alleen onzekere vermeldingen. Ierland is klein: Dublin Zoo en Emerald Park liggen 25 km van elkaar.</li>
     <li><strong><a href="#locatie/fota-wildlife-park">Fota Wildlife Park</a></strong> (Cork) is het kattenpark van Ierland: cheetahs, Aziatische leeuwen en Sumatraanse tijgers, en in 2025–2026 jongen van alle drie.</li>
     <li><strong><a href="#locatie/emerald-park">Emerald Park</a></strong> (Meath) heeft de enige Amoerpanters van het land en, met <a href="#locatie/wild-ireland">Wild Ireland</a> in Donegal, de enige zekere Euraziatische lynxen.</li>
     <li><strong>Jonge katten:</strong> cheetahwelpen Nuru en Nia (november 2025), twee tijgerwelpen (juni 2026) en drie leeuwenwelpen (juli 2026), allemaal in Fota.</li>
@@ -568,7 +568,7 @@ section::before,.board::before,.ip-sec::before,footer::before{display:none!impor
 </div><div class="l-en">
 <div class="prose">
   <ul>
-    <li><strong>6 species confirmed</strong> at 7 locations: 5 parks with confirmed cats and 2 with uncertain entries only. Ireland is small: Dublin Zoo and Emerald Park are 25 km apart.</li>
+    <li><strong>6 species confirmed</strong> at 5 locations. 2 other parks have uncertain entries only. Ireland is small: Dublin Zoo and Emerald Park are 25 km apart.</li>
     <li><strong><a href="#locatie/fota-wildlife-park">Fota Wildlife Park</a></strong> (Cork) is Ireland’s cat park: cheetahs, Asiatic lions and Sumatran tigers, with young of all three in 2025–2026.</li>
     <li><strong><a href="#locatie/emerald-park">Emerald Park</a></strong> (Meath) has the country’s only Amur leopards and, with <a href="#locatie/wild-ireland">Wild Ireland</a> in Donegal, the only confirmed Eurasian lynxes.</li>
     <li><strong>Young cats:</strong> cheetah cubs Nuru and Nia (November 2025), two tiger cubs (June 2026) and three lion cubs (July 2026), all at Fota.</li>
@@ -1076,7 +1076,7 @@ const R=[["Leeuw", "Aziatisch (P. l. leo, voorheen P. l. persica)", "Dublin Zoo"
 const BIG=["Leeuw", "Tijger", "Luipaard", "Sneeuwluipaard"];
 const SMALL=["Cheetah", "Euraziatische lynx", "Serval"];
 const UNIQUE=new Set(["Luipaard", "Serval"]);
-const UNSURE=new Set(["Sneeuwluipaard"]);
+const UNSURE=new Set([...new Set(R.map(r=>r[0]))].filter(s=>!R.some(r=>r[0]===s&&r[4].split("+").some(c=>"gybr".includes(c)))));   /* soorten zonder bevestigde vermelding: berekend uit R */
 const LABEL={g:"Aanwezig",y:"Tijdelijk niet zichtbaar",b:"Vertrek aangekondigd",p:"Gepland",w:"Onzeker",r:"Alleen met rondleiding",n:"Niet open voor publiek"};
 let sel=null;
 const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -1245,7 +1245,7 @@ function rtUpd(){
   const where=s=>info.filter(x=>x.conf.includes(s)).map(x=>x.name);
   const chip=s=>{const on=seen.has(s), m=!on&&maybe.has(s);
     return `<span class="rchip${on?" on":m?" maybe":""}">${esc(spName(s))}${!on&&!m&&where(s).length?` <small>${esc(where(s).slice(0,3).join(", "))}${where(s).length>3?"…":""}</small>`:""}</span>`;};
-  const grp=(title,arr)=>`<h3>${title}</h3><div class="chips">${arr.map(chip).join("")}</div>`;
+  const grp=(title,arr)=>arr.length?`<h3>${title}</h3><div class="chips">${arr.map(chip).join("")}</div>`:"";
   document.getElementById("rt-sp").innerHTML=grp(T("Pantherinae (grote katten)","Pantherinae (big cats)"),BIG.filter(s=>!UNSURE.has(s)))+grp(T("Felinae (kleine katten)","Felinae (small cats)"),SMALL.filter(s=>!UNSURE.has(s)))+grp(T("Onzeker","Uncertain"),ALLSP.filter(s=>UNSURE.has(s)));
 }
 buildRoute();makeGroups();makeCollapsible();
@@ -1329,7 +1329,7 @@ function locHTML(i){
   <div class="ip-head">
     <div class="ip-tags">${inf.type?`<span class="ip-tag dark">${esc(inf.type[L]||inf.type[0])}</span>`:""}<span class="ip-tag">${esc(l[1])}</span></div>
     <h1>${esc(l[0])}</h1>
-    <p class="ip-alt">${bySp.size} ${bySp.size===1?T("soort katachtige","cat species","especie de felino"):T("soorten katachtigen","cat species","especies de felinos")}</p>
+    <p class="ip-alt">${(()=>{const nb=[...bySp.values()].filter(rs=>rs.some(r=>r[4].split("+").some(c=>"gybr".includes(c)))).length,nu=bySp.size-nb;return (nb?nb+" "+(nb===1?T("soort katachtige","cat species"):T("soorten katachtigen","cat species")):"")+(nu?(nb?" · ":"")+nu+" "+T("onzeker","uncertain"):"");})()}</p>
     ${photo?`<div class="ip-photo">${photo}</div>`:""}
   </div>
   ${inf.about?`<div class="ip-sec"><h2>${T("Over deze locatie","About this location")}</h2><p>${esc(inf.about[L]||inf.about[0])}</p></div>`:""}

@@ -15,6 +15,10 @@ Lees eerst `bron/LEESMIJ.md` (opbouw, bouw en de telregel), `bron/OPEN.md` (open
   - Vaste teksten met getallen bijgewerkt (België, Italië, Spanje, Ierland, Portugal, VK-regio's).
   - "Lijkt op"-links naar soorten zonder pagina in dat land gaan naar de Europese soortpagina.
 
+- Later op 18-10-2026:
+  - Op het scherm Meer van de landpagina's is het blok "Bezoekersgids" weg (kop en links). Dat staat in `MEER_NIEUW` in `test_ontwerp.py`. De links staan nog in het ☰-menu.
+  - Locatiefoto's in de Nederlandse gids: Eindhoven Zoo (tijger, Cro-Cop) en Hoenderdaell (leeuw, Ingredia), beide CC BY 4.0, `img/265.webp` en `img/266.webp`.
+
 ## Let op bij volgende wijzigingen
 - Vaste teksten in de gidsen (In het kort, regioblokken) bevatten getallen die met de hand zijn geschreven. Verandert een locatie of status, pas die zinnen dan in alle talen mee aan.
 - De controlescripts van deze sessie staan niet in de repo. Ze vergeleken:
@@ -37,6 +41,7 @@ Lees eerst `bron/LEESMIJ.md` (opbouw, bouw en de telregel), `bron/OPEN.md` (open
   - Bij "vraag door" eerst vragen stellen, met keuzeknoppen.
 
 ## Afgesproken voor later
+- Locatiefoto's Nederland: nog geen foto voor BestZoo (luipaard, jaguar, serval), Faunapark Flakkee, Taman Indonesia en Stichting AAP. Er zijn Commons-mappen "BestZoo" en "AAP (wildlife sanctuary)". Zoeken lukte niet goed: Wikimedia (API, Wikidata en afbeeldingen) gaf vanuit de cloud vaak 429. De gewone zoekpagina en `?action=raw` van een bestandspagina werkten wel. De gebruiker zoekt zelf mee en stuurt links. Controleer of de foto echt in dat park is gemaakt (een voorgestelde "Lioness from Perth Zoo" voor BestZoo is afgewezen).
 - Foto's van parken in de locatiekaartjes.
 - Desktopweergave: Locaties in twee kolommen met de kaart ernaast.
 - Aantallen in het wild: twijfelgevallen staan in `bron/OPEN.md` (rode lynx, Euraziatische lynx, vissende kat, marmerkat). Pas invullen na een besluit.

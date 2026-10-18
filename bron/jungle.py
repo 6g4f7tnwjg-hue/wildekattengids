@@ -43,6 +43,67 @@ def paws(col):
 def wave(col):
     return uri(f"<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 40' preserveAspectRatio='none'><path d='M0 22C55 6 95 34 150 20S260 2 310 18S370 34 400 16V40H0Z' fill='{col}'/></svg>")
 
+# luipaard boven de Ko-fi-oproep (18-10-2026)
+LO = '#143A22'   # omlijning
+LF = '#E8B04A'   # vacht
+LL = '#F8E6BC'   # licht (snuit, buik)
+LS = '#3A2410'   # vlekken
+
+def rozet(cx, cy, r, rot=0):
+    out = ''
+    for k in range(4):
+        a = math.radians(rot + k * 90 + 20)
+        x, y = cx + r * math.cos(a), cy + r * math.sin(a)
+        out += f"<ellipse cx='{x:.1f}' cy='{y:.1f}' rx='{r*0.6:.1f}' ry='{r*0.32:.1f}' transform='rotate({rot+k*90+110:.0f} {x:.1f} {y:.1f})' fill='{LS}'/>"
+    return out
+
+def stip(cx, cy, r):
+    return f"<circle cx='{cx}' cy='{cy}' r='{r}' fill='{LS}'/>"
+
+def lijf():
+    sw = "stroke='%s' stroke-width='2.6' stroke-linejoin='round' stroke-linecap='round'" % LO
+    g = []
+    # lijf (ligt op de rand y=86)
+    g.append(f"<path d='M58 86 C58 62 78 50 104 50 C130 48 150 52 166 58 C182 64 190 74 190 86 Z' fill='{LF}' {sw}/>")
+    # achterpoot (heup)
+    g.append(f"<path d='M150 86 C146 70 156 58 170 60 C184 62 190 74 188 86 Z' fill='{LF}' {sw}/>")
+    # vlekken op het lijf
+    g += [rozet(92, 64, 6, 10), rozet(116, 60, 5.5, 40), rozet(138, 66, 6, 0), rozet(104, 77, 4.5, 60), rozet(128, 79, 4, 20), rozet(170, 72, 5, 30), stip(152, 58, 1.8), stip(82, 76, 1.8), stip(176, 81, 1.6)]
+    # voorpootjes over de rand
+    for x in (44, 70):
+        g.append(f"<path d='M{x} 70 L{x} 104 C{x} 112 {x+18} 112 {x+18} 104 L{x+18} 70' fill='{LF}' {sw}/>")
+        g.append(f"<path d='M{x+6} 104 L{x+6} 109 M{x+12} 104 L{x+12} 109' stroke='{LO}' stroke-width='1.8' stroke-linecap='round'/>")
+        g.append(stip(x + 9, 92, 1.8) + stip(x + 6, 82, 1.5) + stip(x + 13, 86, 1.5))
+    # kop
+    g.append(f"<path d='M30 32 C22 18 28 6 40 10 C46 12 49 17 49 22 Z' fill='{LF}' {sw}/>")
+    g.append(f"<path d='M92 32 C100 18 94 6 82 10 C76 12 73 17 73 22 Z' fill='{LF}' {sw}/>")
+    g.append(f"<path d='M33 24 C30 17 33 13 39 15 C42 16 43 18 43 20 Z' fill='{LS}' opacity='.55'/><path d='M89 24 C92 17 89 13 83 15 C80 16 79 18 79 20 Z' fill='{LS}' opacity='.55'/>")
+    g.append(f"<path d='M61 16 C84 16 98 32 98 50 C98 70 82 82 61 82 C40 82 24 70 24 50 C24 32 38 16 61 16 Z' fill='{LF}' {sw}/>")
+    # snuit
+    g.append(f"<path d='M61 52 C72 52 80 58 80 66 C80 74 72 78 61 78 C50 78 42 74 42 66 C42 58 50 52 61 52 Z' fill='{LL}'/>")
+    # vlekjes op de kop
+    g += [stip(46, 30, 2), stip(54, 26, 1.8), stip(68, 26, 1.8), stip(76, 30, 2), stip(61, 30, 1.6), stip(36, 44, 1.8), stip(86, 44, 1.8), stip(33, 56, 1.6), stip(89, 56, 1.6)]
+    # ogen
+    for cx, d in ((47, 1), (75, -1)):
+        g.append(f"<path d='M{cx-8} 46 C{cx-4} 40 {cx+4} 40 {cx+8} 46 C{cx+4} 50 {cx-4} 50 {cx-8} 46 Z' fill='#C9D94A' stroke='{LO}' stroke-width='2'/>")
+        g.append(f"<ellipse cx='{cx}' cy='46' rx='1.8' ry='3.6' fill='{LO}'/><circle cx='{cx+1.6}' cy='44' r='1' fill='#fff'/>")
+        g.append(f"<path d='M{cx+6*d} 50 C{cx+8*d} 54 {cx+9*d} 56 {cx+10*d} 58' stroke='{LS}' stroke-width='1.6' fill='none' stroke-linecap='round'/>")
+    # neus en mond
+    g.append(f"<path d='M55 56 L67 56 C67 60 63 63 61 63 C59 63 55 60 55 56 Z' fill='#B5603A' stroke='{LO}' stroke-width='1.6' stroke-linejoin='round'/>")
+    g.append(f"<path d='M61 63 L61 67 M61 67 C58 71 54 71 52 68 M61 67 C64 71 68 71 70 68' stroke='{LO}' stroke-width='1.8' fill='none' stroke-linecap='round'/>")
+    g.append(stip(50, 64, 1) + stip(54, 66, 1) + stip(72, 64, 1) + stip(68, 66, 1))
+    return f"<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 116'>{''.join(g)}</svg>"
+
+def staart():
+    sw = f"stroke='{LO}' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'"
+    d = "M10 2 C14 16 6 26 9 38 C12 48 20 50 20 56"
+    g = f"<path d='{d}' fill='none' {sw.replace('2.6','12')}/>"
+    g += f"<path d='{d}' fill='none' stroke='{LF}' stroke-width='7' stroke-linecap='round'/>"
+    g += "".join(f"<path d='M{x-4} {y} l8 -1' stroke='{LS}' stroke-width='2.4' stroke-linecap='round'/>" for x, y in ((11, 14), (8, 28), (13, 44)))
+    g += f"<circle cx='20' cy='56' r='4.6' fill='{LS}' stroke='{LO}' stroke-width='2'/>"
+    return f"<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 64'>{g}</svg>"
+
+
 FONTS = '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Nunito:wght@400;600;700;800&display=swap">'
 
 # kleuren
@@ -66,6 +127,11 @@ html body .nw-bar a,html body .nw-bar a:hover,html body .nw-bar a:visited{{color
 html body .nw-bar a.on{{color:{SUN}!important}}
 html body .nw-bar a.on::before,html body .nw-bar a.on::after{{background:{SUN}!important}}
 html body .chip svg.flag,html body .chip svg:not(.ti){{box-shadow:none!important;border-radius:3px!important;overflow:hidden;filter:drop-shadow(0 1px 0 rgba(255,240,210,.85)) drop-shadow(0 -1px 0 rgba(70,35,5,.35))}}
+html body .foot,html body .hs-foot{{position:relative;margin-top:96px!important;overflow:visible}}
+html body .foot .wrap,html body .hs-foot .hs-wrap{{padding-top:70px!important}}
+html body .foot::before,html body .hs-foot::before{{content:""!important;display:block!important;position:absolute;left:max(10px,calc(50% - 530px));top:-87px;width:200px;height:116px;background:{uri(lijf())} no-repeat center/contain;pointer-events:none;z-index:2}}
+html body .foot::after,html body .hs-foot::after{{content:""!important;display:block!important;position:absolute;left:calc(max(10px,calc(50% - 530px)) + 184px);top:-8px;width:30px;height:64px;background:{uri(staart())} no-repeat top center/contain;transform-origin:15px 2px;animation:jzw 3.2s ease-in-out infinite;pointer-events:none;z-index:2}}
+@keyframes jzw{{0%,100%{{transform:rotate(-7deg)}}50%{{transform:rotate(9deg)}}}}
 @media (prefers-reduced-motion:reduce){{html body *{{animation:none!important}}}}
 """
 

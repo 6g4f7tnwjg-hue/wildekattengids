@@ -2,6 +2,10 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 18 oktober 2026 – Favorieten naar de hoofdpagina
+
+Favorieten zijn één lijst voor alle landen (localStorage `nt-fav`, items met land; oude `nw-fav` wordt overgenomen, het land wordt opgezocht). Opslaan kan met het hartje bij parken en soorten in de landgidsen, in het infovak van de Europakaart en op de Europese soortpagina's. De lijst staat op de hoofdpagina: menu → Favorieten (`#favorieten`, per land gegroepeerd, parken eerst; een park opent de landgids, een soort de soortpagina van het land waar hij bewaard is, of de Europese soortpagina). Op de landpagina's staat Favorieten niet meer onder Meer.
+
 ## 18 oktober 2026 – Meer zonder dubbelingen
 
 Op het scherm Meer van de landpagina's: Ko-fi niet meer in de lijst (staat onderaan), de Spottersgids alleen in de eigen taal, en kaart Europa, Recent geboren, Parken op aantal soorten en Soorten locaties weg (staan in het menu bovenaan). Over (`MEER_OUD`/`MEER_NIEUW` in `bron/test_ontwerp.py`).

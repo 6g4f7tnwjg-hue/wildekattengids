@@ -2387,11 +2387,20 @@ if(tz){tz.href="#start";tz.addEventListener("click",function(e){e.preventDefault
   if(location.hash!=="#start")location.hash="start";setTimeout(function(){window.scrollTo(0,0);q.focus();},60);});}
 
 /* ---------- favorieten (alleen in deze browser bewaard) ---------- */
-var MEM=null;
-function F(){if(!MEM){try{MEM=JSON.parse(localStorage.getItem("nw-fav")||"null");}catch(e){}if(!MEM||!MEM.loc||!MEM.sp)MEM={loc:[],sp:[]};}return MEM;}
-function save(){try{localStorage.setItem("nw-fav",JSON.stringify(MEM));}catch(e){}}
+
+var FK="nt-fav";
+function favLees(){var a=null;try{a=JSON.parse(localStorage.getItem(FK)||"null");}catch(e){}
+  if(!Array.isArray(a)){a=[];try{var o=JSON.parse(localStorage.getItem("nw-fav")||"null");if(o){(o.loc||[]).forEach(function(x){a.push({k:"loc",c:"",s:x});});(o.sp||[]).forEach(function(x){a.push({k:"sp",c:"",s:x});});}}catch(e){}}
+  return a;}
+function favSchrijf(a){try{localStorage.setItem(FK,JSON.stringify(a));}catch(e){}}
+var LAND="nl";
+function hier(x){if(x.c===LAND)return true;if(x.c)return false;return x.k==="loc"?LOCBYSLUG[x.s]!==undefined:!!BYSLUG[x.s];}
+function F(){var a=favLees(),o={loc:[],sp:[]};a.forEach(function(x){if(hier(x)&&o[x.k])o[x.k].push(x.s);});return o;}
 function has(k,s){return F()[k].indexOf(s)>=0;}
-function toggle(k,s){var a=F()[k],i=a.indexOf(s);if(i>=0)a.splice(i,1);else a.push(s);save();paint();}
+function toggle(k,s){var a=favLees(),i=-1;a.forEach(function(x,j){if(i<0&&x.k===k&&x.s===s&&hier(x))i=j;});
+  if(i>=0)a.splice(i,1);else{var it={k:k,c:LAND,s:s};
+    if(k==="loc"){var l=LOCS[LOCBYSLUG[s]];if(l){it.n=l[0];it.p=l[1];}}else{var b=BYSLUG[s];if(b){it.n=b[0];it.e=en(b[0]);it.p=b[2];}}a.push(it);}
+  favSchrijf(a);paint();}
 function lbl(on){return on?LS("In je favorieten","In your favourites"):LS("Bewaar als favoriet","Save as favourite");}
 function btn(k,s){var on=has(k,s);return '<button type="button" class="nw-heart" data-fk="'+k+'" data-fs="'+E(s)+'" aria-pressed="'+on+'" aria-label="'+TX("Favoriet","Favourite")+'">'+HEART+'</button>';}
 document.addEventListener("click",function(e){var b=e.target.closest(".nw-hwrap")||e.target.closest(".nw-heart");if(!b||!b.dataset.fk)return;e.preventDefault();e.stopPropagation();toggle(b.dataset.fk,b.dataset.fs);});
@@ -2409,7 +2418,7 @@ function listHearts(){$$(".loclist li").forEach(function(li){var a=li.querySelec
 
 /* ---------- Meer: overige onderdelen en de links uit het menu van de site ---------- */
 (function(){var ic={route:"b-route",actueel:"news",tldr:"tbl",kleur:"dna",favorieten:"b-heart",tabel:"rows",uitleg:"info",rapporteer:"flag"};
-  var own=["route","actueel","tldr","kleur","favorieten","tabel","uitleg","rapporteer"].map(function(id){
+  var own=["route","actueel","tldr","kleur","tabel","uitleg","rapporteer"].map(function(id){
     return '<li><a href="#'+id+'">'+(SVG[ic[id]]||"")+'<span>'+(id==="favorieten"?LS("Favorieten","Favourites"):naam(id))+'</span>'+ARR+'</a></li>';}).join("");
   var site=$$("#hs-menu nav a").filter(function(a){var h=a.getAttribute("href")||"";return !/ko-fi\.com|#(kaart|geboren|perpark|typen)$/.test(h);}).map(function(a){var c=a.cloneNode(true),lc=(a.className.match(/\bl-[a-z]{2}\b/)||[""])[0];c.removeAttribute("class");return '<li'+(lc?' class="'+lc+'"':'')+'>'+c.outerHTML.replace(/<\/a>$/,ARR+"</a>")+'</li>';}).join("");
   var brand=$(".hs-top .hs-brand b");

@@ -353,6 +353,19 @@ if(q)q.addEventListener("blur",function(){setTimeout(function(){if(!q.value&&doc
 """
 
 
+FAV_OUD = """var MEM=null;
+function F(){if(!MEM){try{MEM=JSON.parse(localStorage.getItem("nw-fav")||"null");}catch(e){}if(!MEM||!MEM.loc||!MEM.sp)MEM={loc:[],sp:[]};}return MEM;}
+function save(){try{localStorage.setItem("nw-fav",JSON.stringify(MEM));}catch(e){}}
+function has(k,s){return F()[k].indexOf(s)>=0;}
+function toggle(k,s){var a=F()[k],i=a.indexOf(s);if(i>=0)a.splice(i,1);else a.push(s);save();paint();}"""
+FAV_NIEUW = r"""var LAND="LANDCODE";
+function hier(x){if(x.c===LAND)return true;if(x.c)return false;return x.k==="loc"?LOCBYSLUG[x.s]!==undefined:!!BYSLUG[x.s];}
+function F(){var a=favLees(),o={loc:[],sp:[]};a.forEach(function(x){if(hier(x)&&o[x.k])o[x.k].push(x.s);});return o;}
+function has(k,s){return F()[k].indexOf(s)>=0;}
+function toggle(k,s){var a=favLees(),i=-1;a.forEach(function(x,j){if(i<0&&x.k===k&&x.s===s&&hier(x))i=j;});
+  if(i>=0)a.splice(i,1);else{var it={k:k,c:LAND,s:s};
+    if(k==="loc"){var l=LOCS[LOCBYSLUG[s]];if(l){it.n=l[0];it.p=l[1];}}else{var b=BYSLUG[s];if(b){it.n=b[0];it.e=en(b[0]);it.p=b[2];}}a.push(it);}
+  favSchrijf(a);paint();}"""
 MEER_OUD = 'var site=$$("#hs-menu nav a").map(function(a){var c=a.cloneNode(true);c.removeAttribute("class");return \'<li>\'+c.outerHTML.replace(/<\\/a>$/,ARR+"</a>")+\'</li>\';}).join("");'
 MEER_NIEUW = 'var site=$$("#hs-menu nav a").filter(function(a){var h=a.getAttribute("href")||"";return !/ko-fi\\.com|#(kaart|geboren|perpark|typen)$/.test(h);}).map(function(a){var c=a.cloneNode(true),lc=(a.className.match(/\\bl-[a-z]{2}\\b/)||[""])[0];c.removeAttribute("class");return \'<li\'+(lc?\' class="\'+lc+\'"\':\'\')+\'>\'+c.outerHTML.replace(/<\\/a>$/,ARR+"</a>")+\'</li>\';}).join("");'
 
@@ -409,6 +422,10 @@ def maak(land="nederland", map=None):
     # Meer zonder dubbelingen (18-10-2026): Ko-fi staat al onderaan, de Spottersgids alleen in de eigen taal; kaart Europa,
     # recent geboren, parken op aantal soorten en soorten locaties staan al in het menu bovenaan
     js = rep(js, MEER_OUD, MEER_NIEUW)
+    # favorieten: gedeelde lijst voor alle landen; de lijst zelf staat op de hoofdpagina (Meer)
+    js = rep(js, FAV_OUD, FAVJS + FAV_NIEUW.replace("LANDCODE", CODE.get(land, "")))
+    js = rep(js, 'var own=["route","actueel","tldr","kleur","favorieten","tabel","uitleg","rapporteer"]',
+             'var own=["route","actueel","tldr","kleur","tabel","uitleg","rapporteer"]')
     # de keuzeknoppen voor de filters bij Locaties niet: hier blijven de typeknoppen zichtbaar
     a = js.index("/* ---------- filters bij Locaties")
     b = js.index("paint();apply();", a)
@@ -424,6 +441,20 @@ def maak(land="nederland", map=None):
     open(doel, "w", encoding="utf-8").write(doc)
     print("testontwerp geschreven:", map + "/index.html")
 
+
+# landcode <-> map
+CODE = {"nederland": "nl", "belgie": "be", "luxemburg": "lu", "duitsland": "de", "frankrijk": "fr", "oostenrijk": "at",
+        "zwitserland": "ch", "verenigd-koninkrijk": "uk", "italie": "it", "spanje": "es", "ierland": "ie", "portugal": "pt"}
+
+# Favorieten voor alle landen samen (18-10-2026). Elk item: {k:"loc"|"sp", c:landcode of "eu", s:slug, n:naam, e:Engelse naam, p:plaats}.
+# Oude favorieten ("nw-fav", alleen slugs) worden bij het lezen overgenomen met c:"" (land nog onbekend).
+FAVJS = r"""
+var FK="nt-fav";
+function favLees(){var a=null;try{a=JSON.parse(localStorage.getItem(FK)||"null");}catch(e){}
+  if(!Array.isArray(a)){a=[];try{var o=JSON.parse(localStorage.getItem("nw-fav")||"null");if(o){(o.loc||[]).forEach(function(x){a.push({k:"loc",c:"",s:x});});(o.sp||[]).forEach(function(x){a.push({k:"sp",c:"",s:x});});}}catch(e){}}
+  return a;}
+function favSchrijf(a){try{localStorage.setItem(FK,JSON.stringify(a));}catch(e){}}
+"""
 
 LIVE = ["nederland", "belgie", "luxemburg", "duitsland", "frankrijk", "oostenrijk", "zwitserland",
         "verenigd-koninkrijk", "italie", "spanje", "ierland", "portugal"]   # landen met dit ontwerp (18-10-2026: alle)
@@ -485,6 +516,28 @@ def maak_los2():
 # zichtbaar onder de kaart; op de soortpagina's de geschatte aantallen in het wild in plaats van de IUCN-status
 # en locatiekaartjes met het type-icoon bij "Waar te zien".
 EU_MARK = 'id="nt-eu-css"'
+T6 = {"Favorieten": {"fr": "Favoris", "de": "Favoriten", "it": "Preferiti", "es": "Favoritos"},
+      "Kaart": {"fr": "Carte", "de": "Karte", "it": "Mappa", "es": "Mapa"},
+      "Je bewaarde parken en soorten uit alle landen. Tik op het hartje bij een park of soort om het hier te zetten; je lijst blijft alleen op dit apparaat.": {
+          "fr": "Vos parcs et espèces enregistrés, tous pays confondus. Touchez le cœur à côté d’un parc ou d’une espèce pour l’ajouter ici ; votre liste reste uniquement sur cet appareil.",
+          "de": "Deine gespeicherten Parks und Arten aus allen Ländern. Tippe auf das Herz bei einem Park oder einer Art, um ihn hier zu speichern; deine Liste bleibt nur auf diesem Gerät.",
+          "it": "I tuoi parchi e le tue specie salvati, da tutti i paesi. Tocca il cuore accanto a un parco o a una specie per salvarlo qui; la tua lista resta solo su questo dispositivo.",
+          "es": "Tus parques y especies guardados de todos los países. Toca el corazón junto a un parque o una especie para guardarlo aquí; tu lista se queda solo en este dispositivo."}}
+
+
+def L6(nl, en):
+    t = T6.get(nl, {})
+    return (f'<span class="l-nl">{nl}</span><span class="l-en">{en}</span>'
+            + "".join(f'<span class="l-{x}">{t.get(x, en)}</span>' for x in ["fr", "de", "it", "es"]))
+
+
+FAVICO = ('<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round">'
+          '<path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.5A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z"/></svg>')
+FAVPAGE = ('<section class="page" id="favorieten" aria-labelledby="h-favorieten">\n'
+           f'  <a class="terug" href="#kaart" data-home="kaart">← {L6("Kaart", "Map")}</a>\n'
+           f'  <h1 id="h-favorieten">{L6("Favorieten", "Favourites")}</h1>\n'
+           f'  <p class="sub">{L6("Je bewaarde parken en soorten uit alle landen. Tik op het hartje bij een park of soort om het hier te zetten; je lijst blijft alleen op dit apparaat.", "Your saved parks and species from all countries. Tap the heart next to a park or species to keep it here; your list stays on this device only.")}</p>\n'
+           '  <div id="nt-favlist"></div>\n</section>\n\n')
 ICO["b-flag"] = ('<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" '
                  'stroke-linejoin="round"><path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/></svg>')
 EU_CSS = r"""
@@ -504,6 +557,19 @@ EU_CSS = r"""
 .nt-sep{flex:none;width:1px;align-self:stretch;margin:8px 4px;background:var(--line)}
 .nt-mld{margin:0 0 10px;padding:8px 12px;border-radius:12px;background:#F3E2D3;color:var(--ink);font-size:.95rem}
 .nt-mld[hidden]{display:none}
+.nt-fh{font-family:var(--label);font-weight:600;font-size:.8rem;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin:18px 2px 6px}
+.nt-fl{list-style:none;margin:0;padding:0;background:var(--paper);border:1px solid var(--line);border-radius:12px;overflow:hidden;max-width:760px}
+.nt-fl li{display:flex;align-items:center;gap:10px;padding:8px 8px 8px 14px;border-top:1px solid var(--line)}
+.nt-fl li:first-child{border-top:0}
+.nt-fl a{flex:1;min-width:0;color:var(--ink);text-decoration:none;font-weight:700}
+.nt-fl small{display:block;color:var(--muted);font-weight:400;font-size:.9rem}
+.nt-hart{all:unset;box-sizing:border-box;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;color:#B4483F;flex:none}
+.nt-hart svg{width:22px;height:22px}
+.nt-hart svg path{fill:transparent;stroke:currentColor;stroke-width:2}
+.nt-hart[aria-pressed="true"] svg path{fill:currentColor}
+.nt-hart:focus-visible{outline:2px solid var(--accent)}
+.nt-hw{all:unset;box-sizing:border-box;cursor:pointer;display:inline-flex;align-items:center;gap:4px;font:500 .95rem var(--body);color:var(--ink);margin:4px 0 8px;background:#F4E3DF;border-radius:99px;padding:0 14px 0 2px}
+.nt-fleeg{color:var(--muted)}
 .kat-land li{display:grid!important;grid-template-columns:28px minmax(0,1fr) auto;gap:4px 12px;align-items:center}
 .kat-land li .nt-ti svg{width:28px;height:28px;display:block}
 .kat-land li .kl-go{font-weight:700}
@@ -576,6 +642,54 @@ document.addEventListener("click",function(e){var b=e.target.closest&&e.target.c
     e.preventDefault();e.stopPropagation();var a2=row.querySelector('.catbtn[data-cat=""]');if(a2)a2.click();
     setTimeout(function(){var nz=zoom.querySelector('.chip[data-zoom="'+z+'"]');if(nz)nz.click();melding(kn2,pn2,2);},40);}},true);
 if(zoom&&row){[zoom,row].forEach(function(x){new MutationObserver(function(){setTimeout(pas,0);}).observe(x,{childList:true,subtree:true,attributes:true,attributeFilter:["aria-pressed"]});});pas();}
+/* ---------- favorieten (alle landen samen) ---------- */
+FAVJS
+var IDX=IDXJSON,SPN=SPNJSON,MAP={nl:"nederland",be:"belgie",lu:"luxemburg",de:"duitsland",fr:"frankrijk",at:"oostenrijk",ch:"zwitserland",uk:"verenigd-koninkrijk",it:"italie",es:"spanje",ie:"ierland",pt:"portugal"};
+var BASE=(window.__HOMEURL||"/wildekattengids/");
+var HS='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.5A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z"/></svg>';
+var FT={bewaar:{nl:"Bewaar als favoriet",en:"Save as favourite",fr:"Ajouter aux favoris",de:"Als Favorit speichern",it:"Salva nei preferiti",es:"Guardar en favoritos"},
+  in:{nl:"In je favorieten",en:"In your favourites",fr:"Dans vos favoris",de:"In deinen Favoriten",it:"Nei tuoi preferiti",es:"En tus favoritos"},
+  parken:{nl:"Parken",en:"Parks",fr:"Parcs",de:"Parks",it:"Parchi",es:"Parques"},soorten:{nl:"Soorten",en:"Species",fr:"Espèces",de:"Arten",it:"Specie",es:"Especies"},
+  europa:{nl:"Europa (alle landen)",en:"Europe (all countries)",fr:"Europe (tous les pays)",de:"Europa (alle Länder)",it:"Europa (tutti i paesi)",es:"Europa (todos los países)"},
+  leeg:{nl:"Nog geen favorieten.",en:"No favourites yet.",fr:"Pas encore de favoris.",de:"Noch keine Favoriten.",it:"Ancora nessun preferito.",es:"Todavía no hay favoritos."},
+  weg:{nl:"Verwijder uit favorieten",en:"Remove from favourites",fr:"Retirer des favoris",de:"Aus Favoriten entfernen",it:"Rimuovi dai preferiti",es:"Quitar de favoritos"}};
+function L2(){var l=(document.documentElement.lang||"nl").slice(0,2);return FT.in[l]?l:"en";}
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+/* oude favorieten zonder land: land opzoeken */
+function vul(a){var nu=false;a.forEach(function(x){if(x.c)return;if(x.k==="loc"){for(var c in IDX){var l=IDX[c].filter(function(y){return y[2]===x.s;})[0];if(l){x.c=c;x.n=x.n||l[0];x.p=x.p||l[1];nu=true;break;}}}
+  else{x.c="eu";var q=SPN[x.s];if(q){x.n=x.n||q[0];x.e=x.e||q[1];}nu=true;}});if(nu)favSchrijf(a);return a;}
+function landNaam(c){if(c==="eu")return FT.europa[L2()];var z=document.querySelector('#zoom .chip[data-zoom="'+c+'"]');if(z){var k=z.cloneNode(true);k.querySelectorAll("svg,.n").forEach(function(x){x.remove();});return k.textContent.trim();}return c.toUpperCase();}
+function favLijst(){var el=document.getElementById("nt-favlist");if(!el)return;var a=vul(favLees()),l=L2();
+  if(!a.length){el.innerHTML='<p class="nt-fleeg">'+FT.leeg[l]+'</p>';return;}
+  var order=Object.keys(MAP).concat(["eu"]),o="";
+  order.forEach(function(c){var it=a.map(function(x,i){return [x,i];}).filter(function(p){return p[0].c===c;});if(!it.length)return;
+    o+='<p class="nt-fh">'+esc(landNaam(c))+'</p><ul class="nt-fl">';
+    ["loc","sp"].forEach(function(k){it.filter(function(p){return p[0].k===k;}).forEach(function(p){var x=p[0],h;
+      if(k==="loc")h=BASE+MAP[c]+"/#locatie/"+x.s;else h=c==="eu"?BASE+"soort/"+x.s+"/":BASE+MAP[c]+"/#soort/"+x.s;
+      var nm=(l!=="nl"&&x.e)?x.e:(x.n||x.s),sub=k==="loc"?(x.p||""):FT.soorten[l];
+      o+='<li><a href="'+h+'">'+esc(nm)+'<small>'+esc(sub)+'</small></a><button type="button" class="nt-hart" aria-pressed="true" data-wi="'+p[1]+'" aria-label="'+FT.weg[l]+'">'+HS+'</button></li>';});});
+    o+='</ul>';});
+  el.innerHTML=o;}
+window.__NTFAV=favLijst;
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest("#nt-favlist .nt-hart");if(!b)return;var a=favLees();a.splice(+b.dataset.wi,1);favSchrijf(a);favLijst();});
+/* hartje in het infovak van de kaart en op de soortpagina */
+function heeft(k,c,s){return favLees().some(function(x){return x.k===k&&x.c===c&&x.s===s;});}
+function wissel(k,c,s,extra){var a=favLees(),i=-1;a.forEach(function(x,j){if(i<0&&x.k===k&&x.c===c&&x.s===s)i=j;});
+  if(i>=0)a.splice(i,1);else{var it={k:k,c:c,s:s};for(var q in extra)it[q]=extra[q];a.push(it);}favSchrijf(a);}
+function knop(on){var l=L2();return '<span class="nt-hart" aria-pressed="'+on+'">'+HS+'</span>'+(on?FT.in[l]:FT.bewaar[l]);}
+var LASTC=null;
+document.addEventListener("click",function(e){var m=e.target.closest&&e.target.closest(".mk[data-c]");if(m)LASTC=m.dataset.c;},true);
+function infoHart(){if(!info||info.classList.contains("nt-leeg")||!info.querySelector("ul.cats"))return;var h=info.querySelector("h3");if(!h||info.querySelector(".nt-hw"))return;
+  var nm=h.textContent.trim(),hit=null;
+  (LASTC?[LASTC]:[]).concat(Object.keys(IDX)).some(function(c){var l=(IDX[c]||[]).filter(function(y){return y[0]===nm;})[0];if(l){hit=[c,l];return true;}return false;});
+  if(!hit)return;var c=hit[0],l=hit[1],b=document.createElement("button");b.type="button";b.className="nt-hw";b.innerHTML=knop(heeft("loc",c,l[2]));
+  b.addEventListener("click",function(){wissel("loc",c,l[2],{n:l[0],p:l[1]});b.innerHTML=knop(heeft("loc",c,l[2]));});h.insertAdjacentElement("afterend",b);}
+if(info)new MutationObserver(function(){setTimeout(infoHart,0);}).observe(info,{childList:true});
+function katHart(){var kv=document.getElementById("katview");if(!kv)return;var h=kv.querySelector("h1");var s=slugNu();if(!h||!s||kv.querySelector(".nt-hw"))return;
+  var b=document.createElement("button");b.type="button";b.className="nt-hw";b.innerHTML=knop(heeft("sp","eu",s));
+  b.addEventListener("click",function(){wissel("sp","eu",s,{n:h.textContent.trim()});b.innerHTML=knop(heeft("sp","eu",s));});h.insertAdjacentElement("afterend",b);}
+if(kv)new MutationObserver(function(){setTimeout(katHart,0);}).observe(kv,{childList:true});katHart();
+if(location.hash==="#favorieten")setTimeout(favLijst,0);
 /* onderbalk: Soorten aan op een soortpagina */
 var bar=document.getElementById("nw-sbar-start");
 if(bar&&window.__KAT){var s=bar.querySelector('[data-k="soorten"]');if(s)s.classList.add("on");}
@@ -585,7 +699,7 @@ EU_T_OUD = 'home:{nl:"Home",en:"Home",fr:"Accueil",de:"Start",it:"Home",es:"Inic
 EU_T_NIEUW = 'home:{nl:"Kaart",en:"Map",fr:"Carte",de:"Karte",it:"Mappa",es:"Mapa"}'
 
 
-def europa(pad, wild, av, soort=False):
+def europa(pad, wild, av, idx, spn=None, soort=False):
     doc = open(pad, encoding="utf-8").read()
     if EU_MARK in doc:   # vorige versie van deze laag eruit, dan opnieuw
         doc = re.sub(r'\n<style id="nt-eu-css">.*?</style>\n', "\n", doc, count=1, flags=re.S)
@@ -601,7 +715,16 @@ def europa(pad, wild, av, soort=False):
     doc = doc.replace('data-k="landen">' + NO.ICO["b-map"], 'data-k="landen">' + ICO["b-flag"], 1)
     doc = doc.replace(EU_T_OUD, EU_T_NIEUW, 1)
     import huisstijl
+    # scherm Favorieten (in het menu, net als Recent geboren); de start-JS kent alleen de pagina's in PAGES
+    doc = doc.replace('const PAGES=["geboren","perpark","typen","over"];', 'const PAGES=["geboren","perpark","typen","over","favorieten"];', 1)
+    doc = doc.replace('function renderPage(){if(PAGE==="geboren")', 'function renderPage(){if(PAGE==="favorieten"&&window.__NTFAV)window.__NTFAV();if(PAGE==="geboren")', 1)
+    if 'id="favorieten"' not in doc and '<section class="page" id="over"' in doc:
+        doc = doc.replace('<section class="page" id="over"', FAVPAGE + '<section class="page" id="over"', 1)
+    m = re.search(r'<a href="([^"]*)#geboren" data-nav="geboren">', doc)
+    if m and 'data-nav="favorieten"' not in doc:
+        doc = doc.replace(m.group(0), f'<a href="{m.group(1)}#favorieten" data-nav="favorieten">{FAVICO}{L6("Favorieten", "Favourites")}</a>' + m.group(0), 1)
     js = (EU_JS.replace("WILDJSON", json.dumps(wild, ensure_ascii=False)).replace("AVJSON", json.dumps(av, ensure_ascii=False))
+          .replace("IDXJSON", json.dumps(idx, ensure_ascii=False)).replace("SPNJSON", json.dumps(spn, ensure_ascii=False)).replace("FAVJS", FAVJS)
           .replace("COLJSON", json.dumps(huisstijl.TCOL)).replace("GLYJSON", json.dumps(huisstijl.GLY)))
     doc = doc.replace("</head>", EU_CSS + "</head>", 1)
     k = doc.rindex("</body>")
@@ -635,12 +758,15 @@ def maak_europa():
             if n:
                 cnt[s[0]] = n
         av[c] = cnt
-    n = europa(os.path.join(ROOT, "index.html"), wild, av) + europa(os.path.join(ROOT, "top10", "index.html"), wild, av)
+    # per land de locaties [naam, plaats, slug] (voor favorieten en het hartje in het infovak)
+    idx = {c: [[l[0], l[1], l[4]] for l in v["locs"]] for c, v in D.items() if isinstance(v, dict) and "locs" in v}
+    spn = {x[0]: [x[1], x[2]] for x in D["sp"]}
+    n = europa(os.path.join(ROOT, "index.html"), wild, av, idx, spn) + europa(os.path.join(ROOT, "top10", "index.html"), wild, av, idx, spn)
     d = os.path.join(ROOT, "soort")
     for s in sorted(os.listdir(d)):
         pad = os.path.join(d, s, "index.html")
         if os.path.exists(pad):
-            n += europa(pad, wild, av, soort=True)
+            n += europa(pad, wild, av, idx, spn, soort=True)
     print("hoofdpagina, top 10 en soortpagina's in de nieuwe opbouw:", n)
 
 

@@ -26,7 +26,7 @@ Lees eerst `bron/LEESMIJ.md` (opbouw, bouw en de telregel), `bron/OPEN.md` (open
 - Wat de stijl doet:
   - Kleuren: donker junglegroen `#143A22`, goudgeel `#F2C14E`, lichtgroene achtergrond met vage luipaardvlekken. Letters: Anton (koppen, hoofdletters) en Nunito (tekst).
   - Groene koppen met monsterablad en golfrand. Op de landpagina's zijn de koppen van Kaart, Locaties, Soorten, Meer en alle Meer-subpagina's (In het kort, Actueel, Kleur & hybriden, Routeplanner, Hoofdtabel, Over, Rapporteer) exact even hoog en gelijk opgebouwd: vlag + titel, lichte regel, goudgele regel (teksten in `KOP_JS`, per scherm vooraf klaargezet en met CSS `:has(#…​.nw-cur)` getoond, zodat er niets verspringt). Lange titels worden kleiner gemaakt in plaats van afgekapt.
-  - Soort- en parkpagina's binnen een land (`#soort/…`, `#locatie/…` en de losse pagina's): één groene kop (`DETAIL_JS`), foto eronder, hartje rond op de foto. Op de losse pagina's staat nog geen vlag (die pagina's hebben geen landvlag in de HTML).
+  - Soort- en parkpagina's binnen een land (`#soort/…`, `#locatie/…` en de losse pagina's): één groene kop (`DETAIL_JS`), foto eronder, hartje rond op de foto. De losse pagina's krijgen vlag, landnaam en hartje via `window.__JGLOS` (`los_js()`, 19-10).
   - Zwevende gele terugknop linksonder (`.jg-terug`), alleen op Meer-subpagina's en detailpagina's; gaat terug naar Soorten/Locaties of klikt de bestaande terugknop.
   - Houten, gelakte knoppen met ingebrande tekst (landen, filters, typen, regio's); bolletjes voor de lijsten "Waar te zien" en "Katten hier"; icoon en aantal in de locatielijst verticaal gecentreerd.
   - Getekende luipaard op de rand van het Ko-fi-blok (ronde groene ogen met wimpers, snorharen, knipperen, kop kantelt, staart zwiept; tik = opkijken). Tekening in `svg()`/`oog()` in `jungle.py`.
@@ -57,7 +57,6 @@ Lees eerst `bron/LEESMIJ.md` (opbouw, bouw en de telregel), `bron/OPEN.md` (open
 
 ## Afgesproken voor later
 - Spottersgids later ook in de jungle-stijl (gebruiker: "kan later").
-- Eventueel vlag in de kop van de losse park- en soortpagina's.
 - Locatiefoto's Nederland: nog geen foto voor BestZoo (luipaard, jaguar, serval), Faunapark Flakkee, Taman Indonesia en Stichting AAP. Er zijn Commons-mappen "BestZoo" en "AAP (wildlife sanctuary)". Zoeken lukte niet goed: Wikimedia (API, Wikidata en afbeeldingen) gaf vanuit de cloud vaak 429. De gewone zoekpagina en `?action=raw` van een bestandspagina werkten wel. De gebruiker zoekt zelf mee en stuurt links. Controleer of de foto echt in dat park is gemaakt (een voorgestelde "Lioness from Perth Zoo" voor BestZoo is afgewezen).
 - Foto's van parken in de locatiekaartjes.
 - Desktopweergave: Locaties in twee kolommen met de kaart ernaast.

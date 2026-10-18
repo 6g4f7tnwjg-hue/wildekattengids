@@ -2,6 +2,10 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 19 oktober 2026 – Losse park- en soortpagina's net als de gids
+
+De losse pagina's (`/<land>/locatie/…`, `/<land>/soort/…`) hebben nu dezelfde kop als in de gids: landvlag voor de titel, "N locaties in <land>" bij soorten en het hartje rond op de foto. Het hartje gebruikt dezelfde favorieten (`nt-fav`) als de gids. Vlaggen en landnamen komen uit `bron/start.html`; code in `bron/jungle.py` (`los_js()`, `hart()` in `DETAIL_JS`).
+
 ## 18 oktober 2026 – Foto's Eindhoven Zoo en Hoenderdaell
 
 Locatiefoto's toegevoegd in de Nederlandse gids (`LOCPHOTOS`): Eindhoven Zoo (Siberische tijger, Cro-Cop, CC BY 4.0, `img/265.webp`) en Landgoed Hoenderdaell / Stichting Leeuw (leeuw, Ingredia, CC BY 4.0, `img/266.webp`). Nog zonder foto: Faunapark Flakkee, BestZoo, Taman Indonesia, Stichting AAP. De voorgestelde foto voor BestZoo ("Lioness from Perth Zoo") is niet gebruikt: die is in Perth gemaakt en BestZoo heeft geen leeuwen.

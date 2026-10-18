@@ -281,7 +281,7 @@ function maak(){var info=document.getElementById('info');if(!info)return;var hd=
  var oud=info.querySelector('.jg-dkop');if(oud)oud.remove();
  var L=langs(),h1=hd.querySelector('h1'),sci=hd.querySelector('.ip-sci'),alt=hd.querySelector('.ip-alt'),tags=[].slice.call(hd.querySelectorAll('.ip-tag'));
  var kop=document.createElement('div');kop.className='nw-sbar jg-dkop';
- var nk=document.querySelector('.nt-kop h1');var v=nk&&nk.querySelector('svg');if(v){var c=v.cloneNode(true);c.classList.add('jg-vlag');kop.appendChild(c);}
+ var nk=document.querySelector('.nt-kop h1');var v=nk&&nk.querySelector('svg');var J=window.__JGLOS;if(v){var c=v.cloneNode(true);c.classList.add('jg-vlag');kop.appendChild(c);}else if(J&&J.vlag){kop.insertAdjacentHTML('beforeend',J.vlag);}
  var t=document.createElement('h2');t.className='nw-stitle';t.innerHTML=h1?h1.innerHTML:'';kop.appendChild(t);
  var sub=document.createElement('p');sub.className='jg-sub';var meta=document.createElement('div');meta.className='jg-meta';
  var land=nk&&(nk.querySelector('.hs-t')||nk);
@@ -289,13 +289,25 @@ function maak(){var info=document.getElementById('info');if(!info)return;var hd=
   var sec=[].filter.call(info.querySelectorAll('.ip-sec'),function(s){return s.querySelector('a[href*="locatie"]')})[0];
   var n=0;if(sec){var seen={};[].forEach.call(sec.querySelectorAll('a[href*="locatie"]'),function(a){var k=a.getAttribute('href');if(!seen[k]){seen[k]=1;n++;}});}
   var grp=hd.querySelector('.ip-tag.dark');
-  meta.innerHTML=L.map(function(l){var g=tekst(grp,l),m2=/\(([^)]+)\)/.exec(g);g=m2?m2[1]:g;var ln=land?tekst(land,l):'';
+  meta.innerHTML=L.map(function(l){var g=tekst(grp,l),m2=/\(([^)]+)\)/.exec(g);g=m2?m2[1]:g;var ln=land?tekst(land,l):(J&&J.land||'');
    return '<span class="l-'+l+'">'+esc(n+' '+(LW[l]||LW.en)+(ln?' '+(IN[l]||'in')+' '+ln:''))+(g?'<i> · </i>'+esc(g):'')+'</span>'}).join('');}
  else{sub.innerHTML=tags.slice(1,2).concat(tags.slice(0,1)).map(function(x){return x.innerHTML}).join('<i> · </i>');
   meta.innerHTML=(alt?alt.innerHTML:'')+tags.slice(2).map(function(x){return '<i> · </i>'+x.innerHTML}).join('');}
  kop.appendChild(sub);kop.appendChild(meta);info.insertBefore(kop,hd);
+ if(J&&h1&&!hd.querySelector('.nw-hwrap'))hart(hd,h1,sci,tags,J);
  hd.classList.add('jg-klaar');knop();
  requestAnimationFrame(function(){var fs=parseFloat(getComputedStyle(t).fontSize),i=0;while(t.scrollWidth>t.clientWidth+1&&fs>20&&i<30){fs--;i++;t.style.setProperty('--jg-fs',fs+'px');}});}
+// losse park- en soortpagina's: hartje op de foto, zelfde favorieten ("nt-fav") als de gids (19-10-2026)
+function hart(hd,h1,sci,tags,J){var FK='nt-fav',s=J.s,k=J.k,c=J.c;
+ function lees(){var a=null;try{a=JSON.parse(localStorage.getItem(FK)||'null');}catch(e){}return Array.isArray(a)?a:[];}
+ function heeft(){return lees().some(function(x){return x.k===k&&x.c===c&&x.s===s;});}
+ var w=document.createElement('button');w.type='button';w.className='nw-hwrap';
+ function teken(){var on=heeft();w.setAttribute('aria-pressed',String(on));w.setAttribute('aria-label',on?'In je favorieten':'Bewaar als favoriet');
+  w.innerHTML='<span class="nw-heart" aria-pressed="'+on+'"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.5A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z"></path></svg></span><span class="l-nl">'+(on?'In je favorieten':'Bewaar als favoriet')+'</span>';}
+ w.addEventListener('click',function(e){e.preventDefault();var a=lees(),i=-1;a.forEach(function(x,j){if(i<0&&x.k===k&&x.c===c&&x.s===s)i=j;});
+  if(i>=0)a.splice(i,1);else{var it={k:k,c:c,s:s,n:h1.textContent.trim()};if(k==='sp'){if(sci)it.p=sci.textContent.trim();}else{var pl=tags.filter(function(x){return !x.classList.contains('dark')})[0];if(pl)it.p=pl.textContent.trim();}a.push(it);}
+  try{localStorage.setItem(FK,JSON.stringify(a));}catch(e){}teken();});
+ teken();h1.insertAdjacentElement('afterend',w);}
 function plan(){setTimeout(maak,0);requestAnimationFrame(maak);}
 maak();window.addEventListener('hashchange',plan);document.addEventListener('click',function(){setTimeout(maak,60)});
 var info=document.getElementById('info');if(info&&window.MutationObserver){new MutationObserver(function(){var hd=info.querySelector('.ip-head');if(hd&&!hd.dataset.jg)maak();}).observe(info,{childList:true});}
@@ -511,18 +523,43 @@ html body .hs-kofi{{background:{SUN}!important;color:{JG}!important;border-color
 @media (min-width:1120px){{html body .nt-kop,html body .ip-head{{border-radius:22px}}}}
 """
 
-def blok(html):
+# losse park- en soortpagina's (/<land>/locatie/…, /<land>/soort/…): vlag, landnaam en sleutel voor het hartje (19-10-2026)
+CODE = {"nederland": "nl", "belgie": "be", "luxemburg": "lu", "duitsland": "de", "frankrijk": "fr", "oostenrijk": "at",
+        "zwitserland": "ch", "verenigd-koninkrijk": "uk", "italie": "it", "spanje": "es", "ierland": "ie", "portugal": "pt"}
+_START = None
+def _start():
+    global _START
+    if _START is None:
+        t = open(os.path.join(ROOT, 'bron', 'start.html'), encoding='utf-8').read()
+        vl = dict(re.findall(r"^\s*([a-z]{2}):'(<svg[^']*</svg>)',?$", t, re.M))
+        nm = dict(re.findall(r'^\s*([a-z]{2}):\{nl:"([^"]+)"', t, re.M))
+        _START = (vl, nm)
+    return _START
+
+def los_js(pad):
+    if not pad:
+        return ''
+    d = os.path.relpath(os.path.dirname(pad), ROOT).split(os.sep)
+    if len(d) != 3 or d[0] not in CODE or d[1] not in ('locatie', 'soort'):
+        return ''
+    c = CODE[d[0]]
+    vl, nm = _start()
+    v = vl.get(c, '').replace('class="flag"', 'class="jg-vlag"')
+    return 'window.__JGLOS=' + json.dumps({'c': c, 'k': 'loc' if d[1] == 'locatie' else 'sp', 's': d[2],
+                                           'land': nm.get(c, ''), 'vlag': v}, ensure_ascii=False) + ';'
+
+def blok(html, pad=None):
     land = 'id="hs-top"' in html or "id='hs-top'" in html
     css = GEDEELD + (LAND if land else EUROPA) + LP_CSS
-    js = LP_JS % json.dumps(svg()) + "(function(){var ts=document.querySelectorAll('.terug');for(var i=0;i<ts.length;i++){var t=ts[i],p=t.parentElement;if(!p||p.classList.contains('jg-kop'))continue;var k=document.createElement('div');k.className='jg-kop';p.insertBefore(k,t);var x=t.nextElementSibling;k.appendChild(t);while(x&&(x.tagName=='H1'||(x.tagName=='P'&&x.classList.contains('sub'))||x.classList.contains('kat-h'))){var n=x.nextElementSibling;k.appendChild(x);x=n;}}})();" + KOP_JS + DETAIL_JS
+    js = LP_JS % json.dumps(svg()) + "(function(){var ts=document.querySelectorAll('.terug');for(var i=0;i<ts.length;i++){var t=ts[i],p=t.parentElement;if(!p||p.classList.contains('jg-kop'))continue;var k=document.createElement('div');k.className='jg-kop';p.insertBefore(k,t);var x=t.nextElementSibling;k.appendChild(t);while(x&&(x.tagName=='H1'||(x.tagName=='P'&&x.classList.contains('sub'))||x.classList.contains('kat-h'))){var n=x.nextElementSibling;k.appendChild(x);x=n;}}})();" + KOP_JS + los_js(pad) + DETAIL_JS
     return f'{BEGIN}{FONTS}<style id="jungle">{css}</style><script>{js}</script>{EIND}'
 
 def weg(html):
     return re.sub(re.escape(BEGIN) + r'.*?' + re.escape(EIND), '', html, flags=re.S)
 
-def zet(html):
+def zet(html, pad=None):
     html = weg(html)
-    b = blok(html)
+    b = blok(html, pad)
     i = html.rfind('</body>')
     return html[:i] + b + html[i:] if i >= 0 else html + b
 
@@ -547,7 +584,7 @@ def maak(verwijder=False):
     n = 0
     for p in bestanden():
         s = open(p, encoding='utf-8').read()
-        t = weg(s) if verwijder else zet(s)
+        t = weg(s) if verwijder else zet(s, p)
         if t != s:
             open(p, 'w', encoding='utf-8').write(t)
             n += 1

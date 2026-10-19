@@ -1296,7 +1296,7 @@ function showKat(slug,push){
 }
 function showHome(push,anchor){
   const tab={kaart:"kaart",landen:"landen",overzicht:"landen",soorten:"soorten"}[anchor]||"kaart";
-  KAT=null;TOPV=false;PAGE=null;HTML.classList.remove("katmode","pagemode");
+  KAT=null;TOPV=false;PAGE=null;HTML.classList.remove("katmode","pagemode");PAGES.forEach(p=>{const e=$(p);if(e)e.classList.remove("on");});
   const box=$("katview");if(box)box.innerHTML="";
   if(push){try{history.pushState(null,"",location.pathname+location.search+"#"+tab);}catch(e){}}
   closeDrops();markNav();applyLang(LANG,false);setTab(tab);window.scrollTo(0,0);

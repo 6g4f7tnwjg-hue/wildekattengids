@@ -2,6 +2,10 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 19 oktober 2026 – Aantallen in het wild aangevuld
+
+Op verzoek ingevuld als ondergrens in `WILD` van alle gidsen: marmerkat "> 10.000" (IUCN 2016, volwassen dieren), vissende kat "3.200–7.500" (volwassen dieren, bron onzeker), rode lynx "> 2.350.000" (alleen VS, alle dieren; Roberts & Crimmins) en Euraziatische lynx "> 69.500" (optelling per regio, alle dieren, Azië onvolledig). De uitleg op de site noemt "volwassen dieren volgens de IUCN"; voor de twee lynxen klopt dat strikt genomen niet.
+
 ## 19 oktober 2026 – Portugees als zevende taal van de hoofdpagina
 
 De hoofdpagina, top 10 en de soortpagina's (`/soort/…`) hebben nu ook Portugees (Europees Portugees), met knop PT in de taalkeuze. Aangepast: `start.html` (T() met 7e argument, vaste teksten `l-pt`, landnamen, maanden, statussen, IUCN, taalherkenning), `startdata.py` (soortnamen op index 8 in de locaties en 12 in `D.sp`, aantal jongen met eigen regels `_N_PT`), `bouw.py` (datum, locatietypes), `portugese_namen.json` (uit `SPPT` in de Portugese gids), `locatietypes.json` (`uitleg_pt`; de bestaande `pt`-namen ongewijzigd), `top10.json` (7e uitlegzin), `test_ontwerp.py` en `nieuw_ontwerp.py` (teksten van de Europa-laag, soortinfo uit `SPPT`). Gecontroleerd: alle schermen in PT (Chromium en WebKit, 414 px), en NL/EN/FR/DE/IT/ES tekst voor tekst gelijk aan de vorige versie; Portugal-gids ongewijzigd.

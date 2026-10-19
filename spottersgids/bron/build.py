@@ -2,7 +2,7 @@
 """Bouwt de Spottersgids (index.html) uit de KATalogue-gegevens en het onderzoek in data/.
 
 Gebruik:  python3 bron/build.py          (vanuit de map spottersgids)
-          python3 bron/build.py --test   testpagina in de Safari-stijl: bouwt alleen safari/ uit bron/template-safari.html
+          python3 bron/build.py --test   testpagina: bouwt alleen test/ uit bron/template-test.html (kopie van de template met de proefwijziging)
                                          (noindex; soortpagina's openen binnen de testpagina; de live gids blijft ongewijzigd)
 """
 import json, os, re, sys, subprocess
@@ -189,10 +189,10 @@ except Exception:
     UPDATED = ''
 
 # Stijl en script uit de template naar gedeelde bestanden (één keer laden voor alle pagina's)
-OUT = J('safari') if TEST else ROOT
+OUT = J('test') if TEST else ROOT
 os.makedirs(OUT, exist_ok=True)
-PRE = 'safari/' if TEST else ''
-tpl = open(J('bron', 'template-safari.html' if TEST else 'template.html'), encoding='utf-8').read()
+PRE = 'test/' if TEST else ''
+tpl = open(J('bron', 'template-test.html' if TEST else 'template.html'), encoding='utf-8').read()
 m = re.search(r'<style>\n?(.*?)</style>', tpl, re.S); css = m.group(1)
 tpl = tpl[:m.start()] + f'<link rel="stylesheet" href="{PRE}style.css?v=__CSSVER__">' + tpl[m.end():]
 m = re.search(r"<script>\n?('use strict';.*?)</script>", tpl, re.S); js = m.group(1)
@@ -210,7 +210,7 @@ if TEST:
     tpl = tpl.replace('<meta charset="utf-8">', '<meta charset="utf-8">\n<base href="../">\n<meta name="robots" content="noindex">', 1)
     tpl = tpl.replace('<script src="data.js', '<script>window.SG_TEST=1;</script>\n<script src="data.js', 1)
     open(os.path.join(OUT, 'index.html'), 'w', encoding='utf-8').write(tpl)
-    print('testpagina gebouwd: safari/index.html (+ safari/app.js, safari/style.css); live gids niet aangeraakt')
+    print('testpagina gebouwd: test/index.html (+ test/app.js, test/style.css); live gids niet aangeraakt')
     sys.exit(0)
 open(J('index.html'), 'w', encoding='utf-8').write(tpl)
 

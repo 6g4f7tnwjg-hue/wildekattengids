@@ -12,7 +12,9 @@ try { const s = localStorage.getItem('sg-lang'); if (s === 'en' || s === 'nl') L
 try { const q = new URLSearchParams(location.search).get('lang'); if (q === 'nl' || q === 'en') { L = q; localStorage.setItem('sg-lang', L); } } catch(e) {}
 if (SGP) { L = SGP.lang; try { localStorage.setItem('sg-lang', L); } catch(e) {} }
 /* adres van een losse soortpagina (relatief t.o.v. de map spottersgids) */
-const spHref = no => (L === 'en' ? 'en/' : '') + D.slugs[L][no] + '/';
+// testpagina (window.SG_TEST): soortpagina's binnen dezelfde pagina via #soort-<nr>
+const spHref = no => window.SG_TEST ? '#soort-' + no : (L === 'en' ? 'en/' : '') + D.slugs[L][no] + '/';
+const UPDATED = '2026-10-19';   // datum (jjjj-mm-dd) van de laatste wijziging in de gegevens, gezet door build.py
 const T = o => o == null ? '' : (typeof o === 'string' ? o : (o[L] != null ? o[L] : o.nl));
 
 /* ---------- vaste teksten ---------- */
@@ -71,8 +73,27 @@ const U = {
   iucn:{LC:{nl:'Niet bedreigd',en:'Least Concern'},NT:{nl:'Gevoelig',en:'Near Threatened'},VU:{nl:'Kwetsbaar',en:'Vulnerable'},EN:{nl:'Bedreigd',en:'Endangered'},CR:{nl:'Ernstig bedreigd',en:'Critically Endangered'},NE:{nl:'Niet beoordeeld',en:'Not Evaluated'},DD:{nl:'Onvoldoende gegevens',en:'Data Deficient'}},
   footMade:{nl:'Een gids van J. Gelens. Soortgegevens, foto’s en verspreidingskaarten: De KATalogue. Plekken en kansen: zie de bronnen per soort.',en:'A guide by J. Gelens. Species data, photos and range maps: De KATalogue. Places and chances: see the sources on each species page.'},
   photoPre:{nl:'foto:',en:'photo:'},
-  notFound:{nl:'Deze pagina bestaat niet (meer).',en:'This page does not exist.'}
+  notFound:{nl:'Deze pagina bestaat niet (meer).',en:'This page does not exist.'},
+  /* schermkoppen en onderbalk (Safari-stijl) */
+  world:{nl:'Wereld',en:'World'}, navMoreT:{nl:'Meer',en:'More'},
+  skMap:{nl:'Wilde katten in het wild',en:'Wild cats in the wild'},
+  skSpecies:{nl:'Alle wilde katten en waar je ze ziet',en:'Every wild cat and where to see it'},
+  skTop:{nl:'Plekken waar je (bijna) zeker een kat ziet',en:'Places where you’ll (almost) surely see a cat'},
+  skMore:{nl:'Katten in Europa, spottips en meer',en:'Cats in Europe, spotting tips and more'},
+  wSpecies:{nl:'soorten',en:'species'}, wSpecies1:{nl:'soort',en:'species'}, wPlaces:{nl:'plekken',en:'places'}, wPlace1:{nl:'plek',en:'place'},
+  wTops:{nl:'topspots',en:'top spots'}, wTop1:{nl:'topspot',en:'top spot'}, wBig:{nl:'grote',en:'big'}, wSmall:{nl:'kleine',en:'small'},
+  bigCats:{nl:'Grote katten',en:'Big cats'}, smallCats:{nl:'Kleine katten',en:'Small cats'},
+  grpBig:{nl:'Pantherinae (grote katten)',en:'Pantherinae (big cats)'}, grpSmall:{nl:'Felinae (kleine katten)',en:'Felinae (small cats)'},
+  bestChance:{nl:'beste kans',en:'best chance'},
+  updated:{nl:'Bijgewerkt',en:'Updated'},
+  pickCont:{nl:'Kies een werelddeel:',en:'Choose a continent:'}, pickCat:{nl:'Kies een kat:',en:'Choose a cat:'},
+  inView:{nl:'In beeld',en:'In view'},
+  listSub:{nl:'Grootste kans eerst. Tik op een plek om hem op de kaart te zien.',en:'Best chance first. Tap a place to see it on the map.'},
+  back2:{nl:'Terug',en:'Back'},
+  meerReport:{nl:'Zelf een kat gezien of klopt er iets niet?',en:'Seen a cat yourself or found a mistake?'},
+  reportSub:{nl:'Gaat rechtstreeks naar de maker',en:'Goes straight to the author'}
 };
+const BIG = new Set([1,2,3,4,5,6,7]);   // Pantherinae: leeuw, tijger, jaguar, luipaard, sneeuwpanter, nevelpanter, soendanevelpanter
 const IUCN_COL = {LC:'#4C7A3A',NT:'#7E8C2A',VU:'#B8860B',EN:'#C25B1E',CR:'#A3242B',NE:'#7A7868',DD:'#7A7868'};
 const CONTS = ['eur','afr','asia','nam','sam'];
 
@@ -166,30 +187,62 @@ function bindMarkers(root, fn){
   root.querySelectorAll('.mk').forEach(g => { g.onclick = () => fn(g.dataset.id); g.onkeydown = e => { if (e.key==='Enter'||e.key===' ') { e.preventDefault(); fn(g.dataset.id); } }; });
 }
 
-/* ---------- navigatie ---------- */
-const NAV = [['soorten','navSpecies','<ellipse cx="12" cy="15" rx="4.5" ry="4"/><circle cx="6.5" cy="9.5" r="1.8"/><circle cx="10" cy="6" r="1.8"/><circle cx="14" cy="6" r="1.8"/><circle cx="17.5" cy="9.5" r="1.8"/>'],
-  ['topspots','navTop','<path d="M12 3.5l2.6 5.3 5.9.9-4.25 4.1 1 5.8L12 16.9l-5.25 2.7 1-5.8L3.5 9.7l5.9-.9z"/>'],
-  ['europa','navEur','<path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/>']];
-const MORE = [['verantwoord','navResp'],['paklijst','navPack'],['melden','navReport'],['over','navAbout']];
+/* ---------- navigatie: onderbalk met vier schermen, menu (☰) en voet ---------- */
+const VISIT_URL = 'https://yeetkitty.github.io/wildekattengids/';
+const ICO = {
+  map:'<path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/>',
+  paw:'<ellipse cx="12" cy="15.5" rx="5" ry="4.3"/><ellipse cx="5.3" cy="10.5" rx="2" ry="2.6"/><ellipse cx="9.3" cy="6.7" rx="2" ry="2.7"/><ellipse cx="14.7" cy="6.7" rx="2" ry="2.7"/><ellipse cx="18.7" cy="10.5" rx="2" ry="2.6"/>',
+  star:'<path d="M12 3.5l2.6 5.3 5.9.9-4.25 4.1 1 5.8L12 16.9l-5.25 2.7 1-5.8L3.5 9.7l5.9-.9z"/>',
+  menu:'<path d="M4 6h16M4 12h16M4 18h16"/>',
+  eur:'<path d="M12 21s-6.5-6.2-6.5-11a6.5 6.5 0 0 1 13 0c0 4.8-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/>',
+  resp:'<path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/>',
+  pack:'<path d="M7 9a5 5 0 0 1 10 0v10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2z"/><path d="M10 4h4M7 14h10M10 14v3h4v-3"/>',
+  flag:'<path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/>',
+  info:'<circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/>',
+  visit:'<path d="M3 10l9-6 9 6"/><path d="M5 10v9M19 10v9M9.5 10v9M14.5 10v9M3 21h18"/>',
+  kofi:'<path d="M4 8h12v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M16 9h1.5a2.5 2.5 0 0 1 0 5H16"/><path d="M8 3v2M12 3v2"/>'};
+const svgI = (ic, cls) => `<svg${cls ? ` class="${cls}"` : ''} viewBox="0 0 24 24" aria-hidden="true" ${ic === 'paw' ? 'fill="currentColor"' : 'fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"'}>${ICO[ic]}</svg>`;
+const TABS = [['kaart','navMap','map'],['soorten','navSpecies','paw'],['topspots','navTop','star'],['meer','navMoreT','menu']];
+// menu (☰) en scherm Meer tonen dezelfde onderdelen
+const MENU = [['europa','navEur','eur'],['verantwoord','navResp','resp'],['paklijst','navPack','pack'],['melden','navReport','flag']];
+const MENU2 = [['over','navAbout','info']];
 function renderChrome(route){
   document.documentElement.lang = L;
   document.title = (SGP && route.page === SGP.no && L === SGP.lang) ? INIT_TITLE : (route.title ? `${route.title} · ${T(U.title)}` : T(U.title));
   $('#brandName').textContent = L === 'nl' ? 'Spottersgids' : "Spotter's Guide";
   $('#brandSub').textContent = T(U.brandSub);
-  const link = ([id,k,ic]) => `<a href="#${id}"${route.nav===id?' aria-current="page"':''}>${ic?`<svg class="nico" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${ic}</svg>`:''}${esc(T(U[k]))}</a>`;
-  const ext = `<a href="https://yeetkitty.github.io/wildekattengids/">${esc(T(U.navVisit))}</a><a href="${esc(KOFI_URL)}" target="_blank" rel="noopener">${esc(T(U.navKofi))} ☕</a>`;
-  const inMore = MORE.some(([id]) => id === route.nav);
-  $('#nav').innerHTML = NAV.map(link).join('') +
-    `<div class="more" id="more"><button type="button" class="morebtn${inMore?' cur':''}" id="moreBtn" aria-expanded="false" aria-haspopup="true">${esc(T(U.navMore))}<svg viewBox="0 0 10 10"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
-     <div class="moremenu"><span class="lbl mlbl">${esc(T(U.navMore))}</span>${MORE.map(link).join('')}${ext}</div></div>`;
-  $('#moreBtn').onclick = e => { e.stopPropagation(); const o = $('#more').classList.toggle('open'); $('#moreBtn').setAttribute('aria-expanded', o); };
+  const link = ([id,k,ic]) => `<a href="#${id}"${route.nav===id?' aria-current="page"':''}>${ic ? svgI(ic, 'nico') : ''}${esc(T(U[k]))}</a>`;
+  $('#nav').innerHTML = MENU.map(link).join('') + `<span class="lbl mlbl">${esc(T(U.navMore))}</span><div class="sub">${MENU2.map(([id,k]) => link([id,k])).join('')}`
+    + `<a href="${VISIT_URL}">${esc(T(U.navVisit))}</a><a href="${esc(KOFI_URL)}" target="_blank" rel="noopener">${esc(T(U.navKofi))} ☕</a></div>`;
+  $('#bnavIn').innerHTML = TABS.map(([id,k,ic]) => `<a href="#${id}" data-tab="${id}"${route.tab===id?' class="on" aria-current="page"':''}>${svgI(ic)}<span>${esc(T(U[k]))}</span></a>`).join('');
   $('#zoekT').textContent = T(U.srch); $('#zoekBtn').setAttribute('aria-label', T(U.srch)); $('#zoekL').textContent = T(U.srchL); $('#zoekIn').placeholder = T(U.srchPh);
   $('#langNl').setAttribute('aria-pressed', L==='nl'); $('#langEn').setAttribute('aria-pressed', L==='en');
-  $('#foot').innerHTML = `<p style="max-width:36rem">${esc(T(U.footMade))}</p><nav>${[...NAV, ...MORE].map(([id,k])=>`<a href="#${id}">${esc(T(U[k]))}</a>`).join('')}<a href="${esc(KOFI_URL)}" target="_blank" rel="noopener">${esc(L==='nl'?'Steun via Ko-fi ☕':'Support on Ko-fi ☕')}</a></nav>`;
+  const nl = L === 'nl';
+  $('#foot').innerHTML = `<div class="kofibar"><p><b>${esc(nl?'Vind je deze gids handig?':'Find this guide useful?')}</b> ${esc(nl?'Met een kleine bijdrage help je hem actueel te houden.':'A small contribution helps keep it up to date.')}</p>`
+    + `<a class="kofi" href="${esc(KOFI_URL)}" target="_blank" rel="noopener">☕ <span>${esc(nl?'Steun de gids op Ko-fi':'Support the guide on Ko-fi')}</span></a></div><p>${esc(T(U.footMade))}</p>`;
   const h = $('.top').offsetHeight; if (h) document.documentElement.style.setProperty('--head', h + 'px');
 }
-document.addEventListener('click', e => { const m = $('#more'); if (m && !m.contains(e.target)) { m.classList.remove('open'); } });
+// nog een keer op het scherm tikken waar je al bent: terug naar boven
+$('#bnavIn').addEventListener('click', e => { const a = e.target.closest('a'); if (a && !SGP && location.hash === a.getAttribute('href')) { e.preventDefault(); window.scrollTo({top:0, behavior:'smooth'}); } });
 $('#menuBtn').onclick = () => { closeZoek(); const o = $('#nav').classList.toggle('open'); $('#menuBtn').setAttribute('aria-expanded', o); };
+document.addEventListener('click', e => { const n = $('#nav'); if (n.classList.contains('open') && !n.contains(e.target) && !e.target.closest('#menuBtn')) { n.classList.remove('open'); $('#menuBtn').setAttribute('aria-expanded', false); } });
+/* kop per scherm */
+const GLOBE = '<svg class="sk-e" viewBox="0 0 44 30" aria-hidden="true"><rect width="44" height="30" rx="3" fill="#F2C14E"/><g fill="none" stroke="#3B2414" stroke-width="1.7"><circle cx="22" cy="15" r="10.5"/><ellipse cx="22" cy="15" rx="4.6" ry="10.5"/><path d="M11.5 15h21M13.2 9.8h17.6M13.2 20.2h17.6"/></g></svg>';
+const SEP = '<i> · </i>';
+const cnt = (n, one, many) => `${n} ${esc(T(n === 1 ? U[one] : U[many]))}`;
+const skHtml = (title, sub, meta) => `<header class="sk"><div class="wrap"><h1 class="sk-t">${GLOBE}<span class="sk-tt">${esc(title)}</span></h1>${sub ? `<p class="sk-s">${sub}</p>` : ''}<p class="sk-m">${meta || '&nbsp;'}</p></div></header>`;
+function updatedHtml(){
+  if (!/^\d{4}-\d\d-\d\d$/.test(UPDATED)) return '';
+  return `${esc(T(U.updated))} ${esc(new Date(UPDATED + 'T12:00').toLocaleDateString(L === 'nl' ? 'nl-NL' : 'en-GB', {day:'numeric', month:'long', year:'numeric'}))}`;
+}
+// lange titels (bijv. Midden- en Zuid-Amerika) kleiner maken tot ze passen
+function fitSk(){
+  $$('.sk-t').forEach(t => { const tt = t.querySelector('.sk-tt'); if (!tt) return; t.style.removeProperty('--sk-fs'); let fs = 39, n = 0;
+    while (tt.scrollWidth > tt.clientWidth + 1 && fs > 22 && n < 30) { fs--; n++; t.style.setProperty('--sk-fs', fs + 'px'); } });
+}
+if (document.fonts) { if (document.fonts.ready) document.fonts.ready.then(fitSk); if (document.fonts.addEventListener) document.fonts.addEventListener('loadingdone', fitSk); }
+window.addEventListener('load', fitSk);
+const fabHtml = href => `<a class="fab" href="${href}" aria-label="${esc(T(U.back2))}"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></a>`;
 /* ---------- zoeken (zoals in de Bezoekersgids): katten en plekken ---------- */
 const fold = x => String(x || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 const PIN = '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 21s-6.5-6.2-6.5-11a6.5 6.5 0 0 1 13 0c0 4.8-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>';
@@ -253,11 +306,6 @@ function topspotList(){
   return list;
 }
 function catsInFilter(){ return CATS.filter(c => FILTER === 'all' || c.cont.includes(FILTER)); }
-function tabCount(t){
-  if (t === 'topspots') return topspotList().length;
-  if (t === 'kaart') return homeData().all.filter(m => SHOWN.has(m.score)).length;
-  return catsInFilter().length;
-}
 function topsHtml(){
   const list = topspotList();
   if (!list.length) return `<p class="empty">${esc(L==='nl'?'Geen topspots in dit werelddeel.':'No top spots on this continent.')}</p>`;
@@ -295,19 +343,26 @@ function catRowHtml(){
   const {withSpot, grey, total} = rowCats();
   const btn = (c, g) => `<button type="button" class="catbtn${g?' grey':''}" data-cat="${c.no}" aria-pressed="${CAT===c.no}"><span class="av">${img(c.photos[0], '', false, true)}</span>${esc(catName(c))}</button>`;
   const n = CAT ? catSpots(CAT).length : 0;
-  return `<p class="lbl" style="margin-bottom:6px">${esc(T(U.catMap))}</p><div class="catrow" id="catrow">
-    <button type="button" class="catbtn" data-cat="" aria-pressed="${!CAT}"><span class="av" style="background:var(--olive)">${total}</span>${esc(T(U.allCats))}</button>
+  return `<p class="slbl">${esc(T(U.pickCat))}</p><div class="catrow" id="catrow">
+    <button type="button" class="catbtn" data-cat="" aria-pressed="${!CAT}"><span class="av all">${total}</span>${esc(T(U.allCats))}</button>
     ${withSpot.map(c => btn(c, false)).join('')}${grey.map(c => btn(c, true)).join('')}</div>
     ${CAT ? `<div class="catnote"><b>${esc(catName(BY[CAT]))}</b><span class="lat">${esc(BY[CAT].la)}</span>${n ? `<span class="note">${n} ${esc(n === 1 ? T(U.catShown1) : T(U.catShown))}</span>` : `<span class="soon">${esc(T(U.noSpot))}</span>`}${PAGES[CAT] ? `<a class="btnlink" href="${spHref(CAT)}">${esc(T(U.toPage))} →</a>` : (n ? `<span class="soon">${esc(T(U.soonPage))}</span>` : '')}</div>` : ''}`;
 }
 function mapTabHtml(){
   const ico = d => `<svg viewBox="0 0 20 20" aria-hidden="true"><path d="${d}" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
-  return `${catRowHtml()}<p class="note" style="margin-bottom:12px">${esc(T(U.mapSub))}</p>
+  return `${contChipsHtml()}${catRowHtml()}
     <div class="mapbox"><div class="mapstage"><div id="mapwrap"></div>
       <div class="zoombtns"><button type="button" id="zIn" aria-label="${esc(T(U.zoomIn))}" title="${esc(T(U.zoomIn))}">${ico('M10 4v12M4 10h12')}</button>
       <button type="button" id="zOut" aria-label="${esc(T(U.zoomOut))}" title="${esc(T(U.zoomOut))}">${ico('M4 10h12')}</button>
       <button type="button" id="zReset" aria-label="${esc(T(U.zoomReset))}" title="${esc(T(U.zoomReset))}">${ico('M3 7V3h4M17 7V3h-4M3 13v4h4M17 13v4h-4')}</button></div></div>
-    <div id="maplegend"></div><div class="panel" id="panel" aria-live="polite">${panelHtml()}</div><div class="maplist" id="maplist"></div></div>`;
+    <div id="maplegend"></div><div class="panel" id="panel" aria-live="polite">${panelHtml()}</div></div>
+    <p class="note mapnote">${esc(T(U.mapSub))}</p>
+    <div class="lcard"><div class="maplist" id="maplist"></div></div>`;
+}
+// keuzeknoppen voor het werelddeel (Kaart, Soorten en Topspots delen dezelfde keuze)
+function contChipsHtml(){
+  return `<p class="slbl">${esc(T(U.pickCont))}</p><div class="chips" role="group" aria-label="${esc(L==='nl'?'Filter per werelddeel':'Filter by continent')}">
+    ${['all',...CONTS].map(c => `<button type="button" class="chip" data-f="${c}" aria-pressed="${FILTER===c}">${esc(c==='all'?T(U.all):contName(c))}</button>`).join('')}</div>`;
 }
 // alle plekken voor de startkaart (nog niet gefilterd op kans) plus het kader en het leefgebied
 function homeData(){
@@ -405,7 +460,6 @@ function drawHomeMap(){
   $('#maplegend').innerHTML = homeLegendHtml(all);
   $$('#maplegend [data-sc]').forEach(b => b.onclick = () => { const n = +b.dataset.sc; SHOWN.has(n) ? SHOWN.delete(n) : SHOWN.add(n); afterFilter(); });
   const lb = $('#lowBtn'); if (lb) lb.onclick = () => { const on = SHOWN.has(1) && SHOWN.has(2); [1,2].forEach(n => on ? SHOWN.delete(n) : SHOWN.add(n)); afterFilter(); };
-  const tc = $('.tab[data-t="kaart"] small'); if (tc) tc.textContent = markers.length;
   drawMapList(markers);
 }
 function afterFilter(){
@@ -429,7 +483,7 @@ function drawMapList(markers){
   const shown = LISTALL ? list : list.slice(0, 10);
   const cats = m => CAT ? `${esc(catName(BY[CAT]))} · ${esc(T(U.chance).toLowerCase())} ${m.score}`
     : m.s.recs.slice().sort((a,b) => b.score - a.score).map(r => `${esc(catName(BY[r.no]))} ${esc(T(U.chance).toLowerCase())} ${r.score}`).join(' · ');
-  el.innerHTML = `<h3>${esc(T(VIEW ? U.listView : U.listMap))} <span class="note">(${list.length})</span></h3>
+  el.innerHTML = `<h3>${esc(T(U.inView))}: ${cnt(list.length, 'wPlace1', 'wPlaces')}</h3><p class="lsub">${esc(T(U.listSub))}</p>
     ${list.length ? `<ol>${shown.map(m => `<li><button type="button" class="pl" data-id="${esc(m.id)}"${SEL===m.id?' aria-current="true"':''}>
       ${m.star ? `<span class="d st" style="--c:var(--s${m.score})">${STAR}</span>` : `<span class="d" style="--c:var(--s${m.score})"></span>`}
       <span><b>${esc(T(m.s.name))}</b><small>${esc(T(m.s.country))} · ${cats(m)}</small></span></button></li>`).join('')}</ol>` : `<p class="empty">${esc(T(U.listNone))}</p>`}
@@ -511,58 +565,78 @@ function bindGestures(mw){
   }, {passive:false});
   svg.addEventListener('dblclick', e => { const [fx,fy] = frac(e.clientX, e.clientY, svg.getBoundingClientRect()); zoomBy(2, fx, fy); });
 }
+// scherm Soorten: zoekveld en fotokaartjes in twee groepen (grote en kleine katten), zoals de Bezoekersgids
+let GOPEN = {big:true, small:true};
+const CHEVUP = '<svg class="chv" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 12.5 10 7.5l5 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 function speciesTabHtml(){
-  return `<input class="search" id="q" type="search" placeholder="${esc(T(U.search))}" value="${esc(Q)}" autocomplete="off" spellcheck="false" enterkeyhint="search"><div id="splist">${speciesListHtml()}</div>`;
+  return `${contChipsHtml()}<label class="zk"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>
+    <input id="q" type="search" placeholder="${esc(T(U.search))}" value="${esc(Q)}" autocomplete="off" spellcheck="false" enterkeyhint="search" aria-label="${esc(T(U.search))}"></label><div id="splist">${speciesListHtml()}</div>`;
 }
 function speciesListHtml(){
-  const q = Q.trim().toLowerCase();
-  const cats = catsInFilter().filter(c => !q || [c.nl, c.en, c.la].some(x => x.toLowerCase().includes(q)));
+  const q = fold(Q.trim());
+  const cats = catsInFilter().filter(c => !q || [c.nl, c.en, c.la].some(x => fold(x).includes(q)));
   if (!cats.length) return `<p class="empty">${esc(T(U.noHits))}</p>`;
-  const ready = cats.filter(c => PAGES[c.no]), later = cats.filter(c => !PAGES[c.no]);
-  let h = '';
-  if (ready.length) h += `<div class="grouph"><h3>${esc(T(U.ready))}</h3><span>${ready.length}</span></div><div class="grid">${ready.map(c => `<a class="scard" href="${spHref(c.no)}">
-      <div class="ph">${img(c.photos[0], catName(c))}</div><div class="bd"><span class="no">№ ${c.no}</span><span class="nm">${esc(catName(c))}</span><span class="la lat">${esc(c.la)}</span>
-      <span class="ft">${BEST[c.no] ? scoreHtml(BEST[c.no], false, true) : ''}</span></div></a>`).join('')}</div>`;
-  if (later.length) h += `<div class="grouph"><h3>${esc(T(U.soon))}</h3><span>${later.length}</span></div><ul class="soonlist">${later.map(c => `<li>
-      ${img(c.photos[0], catName(c), false, true)}<div><b>${esc(catName(c))}</b><span class="la lat">${esc(c.la)}</span></div>${BEST[c.no] ? scoreHtml(BEST[c.no], false, true) : '<span></span>'}</li>`).join('')}</ul>`;
-  return h;
+  const card = c => {
+    const sp = catSpots(c.no), best = sp.length ? Math.max(...sp.map(s => s.recs.find(r => r.no === c.no).score)) : 0;
+    const inner = `<div class="ph">${img(c.photos[0], catName(c))}</div><div class="bd"><span class="nm">${esc(catName(c))}</span><span class="cnt">${cnt(sp.length, 'wPlace1', 'wPlaces')}</span>
+      <span class="ft">${best ? scoreHtml(best, false, true) : ''}</span></div>`;
+    return PAGES[c.no] ? `<a class="scard" href="${spHref(c.no)}">${inner}</a>` : `<div class="scard">${inner}</div>`;
+  };
+  const grp = (key, list, lbl) => { if (!list.length) return ''; const open = q ? true : GOPEN[key];
+    return `<div class="gt"><button type="button" data-g="${key}" aria-expanded="${open}">${esc(T(U[lbl]))}${CHEVUP}</button></div><div class="grid"${open ? '' : ' hidden'}>${list.map(card).join('')}</div>`; };
+  const az = list => list.sort((a,b) => catName(a).localeCompare(catName(b), L));   // op naam, zoals de Bezoekersgids
+  return grp('big', az(cats.filter(c => BIG.has(c.no))), 'grpBig') + grp('small', az(cats.filter(c => !BIG.has(c.no))), 'grpSmall');
+}
+function bindSpecies(){
+  $$('.gt button').forEach(b => b.onclick = () => { const k = b.dataset.g; GOPEN[k] = b.getAttribute('aria-expanded') !== 'true'; $('#splist').innerHTML = speciesListHtml(); bindSpecies(); });
+}
+// scherm Meer: lijst met ronde iconen
+const PIJL = '<svg class="pijl" viewBox="0 0 20 20" aria-hidden="true"><path d="M7.5 4.5 13 10l-5.5 5.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+function meerHtml(){
+  const row = (href, ic, label, ext) => `<li><a href="${esc(href)}"${ext ? ' target="_blank" rel="noopener"' : ''}><span class="mi">${svgI(ic)}</span><span class="mt">${esc(label)}</span>${PIJL}</a></li>`;
+  return `<ul class="ml">${[...MENU, ...MENU2].map(([id,k,ic]) => row('#' + id, ic, T(U[k]))).join('')}${row(VISIT_URL, 'visit', T(U.navVisit))}${row(KOFI_URL, 'kofi', T(U.navKofi), true)}</ul>`;
+}
+// kop van het scherm: titel, onderregel en goudgele regel met aantallen (volgt het gekozen werelddeel)
+function skForTab(){
+  if (TAB === 'kaart') {
+    const spots = SPOTS.filter(s => inFilter(s.cont)).length;
+    return skHtml(FILTER === 'all' ? T(U.world) : contName(FILTER), esc(T(U.skMap)),
+      [cnt(catsInFilter().length, 'wSpecies1', 'wSpecies'), cnt(spots, 'wPlace1', 'wPlaces'), cnt(topspotList().length, 'wTop1', 'wTops')].join(SEP));
+  }
+  if (TAB === 'soorten') {
+    const cs = catsInFilter(), b = cs.filter(c => BIG.has(c.no)).length;
+    return skHtml(T(U.navSpecies), esc(T(U.skSpecies)), [cnt(cs.length, 'wSpecies1', 'wSpecies'), `${b} ${esc(T(U.wBig))}`, `${cs.length - b} ${esc(T(U.wSmall))}`].join(SEP));
+  }
+  if (TAB === 'topspots') {
+    const l = topspotList(), sp = new Set(); l.forEach(x => x.recs.forEach(r => sp.add(r.no)));
+    return skHtml(T(U.navTop), esc(T(U.skTop)), [cnt(l.length, 'wTop1', 'wTops'), cnt(sp.size, 'wSpecies1', 'wSpecies')].join(SEP));
+  }
+  return skHtml(T(U.navMoreT), esc(T(U.skMore)), updatedHtml());
 }
 function tabBody(){
   if (TAB === 'kaart') return mapTabHtml();
   if (TAB === 'soorten') return speciesTabHtml();
-  return `<p class="note" style="margin-bottom:14px">${esc(T(U.topSub))}</p><div id="tops">${topsHtml()}</div>`;
-}
-function renderBar(){
-  const tabs = [['kaart','navMap'],['topspots','navTop'],['soorten','navSpecies']];
-  return `<div class="chips" role="group" aria-label="${esc(L==='nl'?'Filter per werelddeel':'Filter by continent')}">
-    ${['all',...CONTS].map(c => `<button type="button" class="chip" data-f="${c}" aria-pressed="${FILTER===c}">${esc(c==='all'?T(U.all):contName(c))}</button>`).join('')}</div>
-    <div class="tabs" role="tablist">${tabs.map(([t,k]) => `<button type="button" class="tab" role="tab" data-t="${t}" aria-selected="${TAB===t}">${esc(T(U[k]))}<small>${tabCount(t)}</small></button>`).join('')}</div>`;
+  if (TAB === 'meer') return meerHtml();
+  return `${contChipsHtml()}<p class="note" style="margin:2px 0 14px">${esc(T(U.topSub))}</p><div id="tops">${topsHtml()}</div>`;
 }
 function renderHome(){
-  $('#main').innerHTML = `
-  <section class="intro"><div class="wrap"><h1>${esc(T(U.title))}</h1><p class="sub">${esc(T(U.sub))}</p></div></section>
-  <div class="bar"><div class="wrap" id="bar">${renderBar()}</div></div>
-  <section class="sec" style="padding-top:18px"><div class="wrap" id="tabbody">${tabBody()}</div></section>`;
-  bindHome();
+  $('#main').innerHTML = `${skForTab()}<section class="sec screen"><div class="wrap" id="tabbody">${tabBody()}</div></section>`;
+  bindHome(); fitSk();
 }
-function refreshHome(){ $('#bar').innerHTML = renderBar(); $('#tabbody').innerHTML = tabBody(); bindHome(); }
+function refreshHome(){ renderHome(); }
 function bindHome(){
   $$('.chip[data-f]').forEach(b => b.onclick = () => {
     FILTER = b.dataset.f; CAT = null; VIEW = null; LISTALL = false; BASEX = null; try { localStorage.setItem('sg-cont', FILTER); } catch(e) {}
     if (SEL && SPOT[SEL] && !inFilter(SPOT[SEL].cont)) SEL = null;
-    refreshHome();
-  });
-  $$('.tab').forEach(b => b.onclick = () => {
-    TAB = b.dataset.t; try { history.replaceState(null, '', '#' + TAB); } catch(e) {}
-    refreshHome(); renderChrome({nav: TAB === 'kaart' ? '' : TAB});
-    const bar = $('.bar'); if (bar && bar.getBoundingClientRect().top < 0) window.scrollTo(0, $('.intro').offsetHeight);
+    const x = b.parentNode.scrollLeft; refreshHome(); const ch = $('.chips'); if (ch) ch.scrollLeft = x;
   });
   $$('.tcard').forEach(b => b.onclick = () => {
     const no = +b.dataset.no;
-    if (PAGES[no]) { location.href = spHref(no); return; }
+    if (PAGES[no]) { const h = spHref(no); if (h[0] === '#') location.hash = h; else location.href = h; return; }
     SEL = b.dataset.spot; TAB = 'kaart'; try { history.replaceState(null, '', '#kaart'); } catch(e) {}
-    refreshHome(); renderChrome({nav:''}); window.scrollTo(0, $('.intro').offsetHeight);
+    refreshHome(); renderChrome({tab:'kaart'}); const mb = $('.mapbox'); if (mb) mb.scrollIntoView({block:'start'});
   });
+  bindSpecies();
   $$('.catbtn').forEach(b => b.onclick = () => {
     CAT = b.dataset.cat ? +b.dataset.cat : null; VIEW = null; LISTALL = false;
     // kat met alleen plekken met kans 1–2 (bijv. caracal): die plekken dan meteen tonen
@@ -571,7 +645,7 @@ function bindHome(){
     const x = $('#catrow').scrollLeft; refreshHome(); const cr = $('#catrow'); if (cr) cr.scrollLeft = x;
   });
   const sa = $('#showAll'); if (sa) sa.onclick = () => { SHOWALL = !SHOWALL; $('#tops').innerHTML = topsHtml(); bindHome(); };
-  const q = $('#q'); if (q) q.oninput = () => { Q = q.value; $('#splist').innerHTML = speciesListHtml(); };
+  const q = $('#q'); if (q) q.oninput = () => { Q = q.value; $('#splist').innerHTML = speciesListHtml(); bindSpecies(); };
   const zi = $('#zIn'); if (zi) { zi.onclick = () => zoomBy(2); $('#zOut').onclick = () => zoomBy(.5); $('#zReset').onclick = () => { VIEW = null; LISTALL = false; drawHomeMap(); }; }
   drawHomeMap();
 }
@@ -604,15 +678,15 @@ function renderSpecies(no){
   const intro = T(P.intro), km = intro.match(/(Kans|Chance):\s*\d.*$/s);
   const story = km ? intro.slice(0, km.index).trim() : intro;
   const season1 = shortSeason(top.r);
-  $('#main').innerHTML = `
-  <div class="wrap"><p class="crumbs"><a href="#soorten">← ${esc(T(U.back))}</a></p>
+  const meta = [cnt(recs.length, 'wPlace1', 'wPlaces'), esc(`${T(U.bestChance)} ${best}`), esc(T(BIG.has(no) ? U.bigCats : U.smallCats))].join(SEP);
+  $('#main').innerHTML = `${skHtml(catName(c), `<i>${esc(c.la)}</i>`, meta)}${fabHtml('#soorten')}
+  <div class="wrap">
   <section class="sphead">
     <div class="heros"><div class="hstrip" id="hstrip">${c.photos.map((p,i) => `<figure class="hero"><div class="ph">${img(p, catName(c), i === 0)}</div><figcaption>${credit(p.cr)}${p.captive ? ` · ${esc(T(U.captive))}` : ''}</figcaption></figure>`).join('')}</div>
       ${c.photos.length > 1 ? `<div class="hdots">${c.photos.map((_,i) => `<button type="button" data-i="${i}" aria-label="${esc(T(U.photos))} ${i+1}"${i ? '' : ' class="on"'}></button>`).join('')}</div>` : ''}</div>
     <div class="idblock">
       <span class="lbl">№ ${c.no} · ${c.cont.map(contName).join(' · ')}</span>
-      <h1>${esc(catName(c))}</h1>
-      <p class="en">${esc(L==='nl'?c.en:c.nl)} · <span class="lat">${esc(c.la)}</span></p>
+      <p class="en">${esc(L==='nl'?c.en:c.nl)}</p>
       <div class="badges">${iucnHtml(c.iucn)}</div>
       <dl class="summary">
         <div><dt>${esc(T(U.bestPlace))}</dt><dd>${esc(T(top.s.name))}<small>${esc(T(top.s.country))}</small></dd></div>
@@ -699,14 +773,14 @@ function bindAlso(no, recs){
   sel.onchange = apply; if (ALSO && alsoCats(no, recs).includes(ALSO)) apply(); else ALSO = null;
 }
 function renderMissing(c){
-  $('#main').innerHTML = `<div class="wrap sec read"><h1>${esc(c ? catName(c) : '404')}</h1><p style="margin-top:12px">${esc(c ? T(U.soonPage) + '.' : T(U.notFound))}</p><p style="margin-top:16px"><a class="btnlink" href="#soorten">← ${esc(T(U.back))}</a></p></div>`;
+  $('#main').innerHTML = `${skHtml(c ? catName(c) : '404', '', '')}<div class="wrap sec read"><p style="margin-top:12px">${esc(c ? T(U.soonPage) + '.' : T(U.notFound))}</p><p style="margin-top:16px"><a class="btnlink" href="#soorten">← ${esc(T(U.back))}</a></p></div>`;
   return c ? catName(c) : '';
 }
 
 /* ---------- tekstpagina's ---------- */
 function renderText(id){
   const pg = D.text[id];
-  let html = `<div class="wrap sec"><div class="read prose"><span class="lbl">${esc(T(pg.eyebrow))}</span><h1>${esc(T(pg.title))}</h1>${T(pg.html)}`;
+  let html = `${skHtml(T(pg.title), esc(T(pg.eyebrow)), updatedHtml())}${fabHtml('#meer')}<div class="wrap sec" style="padding-top:12px"><div class="read prose">${T(pg.html)}`;
   if (id === 'europa') html += europaList();
   if (id === 'over') html += `<p><a class="kofi" href="${esc(KOFI_URL)}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 6h13a4 4 0 0 1 0 8h-1.1A6 6 0 0 1 10 19H9a5 5 0 0 1-5-5V6zm12 2v4h1a2 2 0 0 0 0-4h-1z"/></svg>${esc(L==='nl'?'Trakteer me op een koffie (Ko-fi)':'Buy me a coffee (Ko-fi)')}</a></p>`;
   if (id === 'over') html += `<p><a class="btnlink" href="#melden">${esc(L==='nl'?'Stuur me een melding':'Send me a report')} →</a></p>`;
@@ -728,8 +802,7 @@ const RP_TYPES = [['seen',{nl:'Ik heb een kat gezien',en:'I saw a cat'}],['missi
 function renderReport(no){
   const nl = L === 'nl', cats = D.cats.slice().sort((a,b) => catName(a).localeCompare(catName(b)));
   const today = new Date().toISOString().slice(0,10);
-  $('#main').innerHTML = `<div class="wrap sec"><div class="read prose">
-    <span class="lbl">${esc(nl?'Contact':'Contact')}</span><h1>${esc(T(U.navReport))}</h1>
+  $('#main').innerHTML = `${skHtml(T(U.navReport), esc(T(U.meerReport)), esc(T(U.reportSub)))}${fabHtml('#meer')}<div class="wrap sec" style="padding-top:12px"><div class="read prose">
     <p>${esc(nl?'Zelf een wilde kat gezien, een goede plek die hier ontbreekt, of iets dat niet (meer) klopt? Laat het weten. Zo blijft de gids eerlijk en actueel.':'Seen a wild cat yourself, know a good place that is missing, or found something that is wrong or out of date? Let me know. That keeps the guide honest and up to date.')}</p></div>
     <form class="rp-form" id="rp-form" onsubmit="return false">
       <fieldset><legend>${esc(nl?'Wat wil je melden?':'What would you like to report?')}</legend><div class="rp-types">
@@ -805,35 +878,79 @@ async function rpSend(){
 /* ---------- router ---------- */
 function route(keep){
   const h = (location.hash || (SGP ? '#soort-' + SGP.no : '#start')).slice(1);
-  let title = '', nav = '', page = 0;
+  let title = '', nav = '', page = 0, tab = '';
   const y = window.scrollY;
-  if (h === 'start' || h === '' || h === 'topspots' || h === 'kaart' || h === 'soorten') {
+  if (h === 'start' || h === '' || h === 'topspots' || h === 'kaart' || h === 'soorten' || h === 'meer') {
     if (h !== 'start' && h !== '') TAB = h;
-    nav = TAB === 'kaart' ? '' : TAB; renderHome();
+    tab = TAB; renderHome();
   }
-  else if (/^soort-\d+$/.test(h)) { nav = 'soorten'; page = +h.slice(6); title = renderSpecies(page); }
-  else if (/^melden(-\d+)?$/.test(h)) { nav = 'melden'; title = renderReport(+(h.split('-')[1] || 0)); }
-  else if (D.text[h]) { nav = h; title = renderText(h); }
+  else if (/^soort-\d+$/.test(h)) { tab = 'soorten'; page = +h.slice(6); title = renderSpecies(page); }
+  else if (/^melden(-\d+)?$/.test(h)) { tab = 'meer'; nav = 'melden'; title = renderReport(+(h.split('-')[1] || 0)); }
+  else if (D.text[h]) { tab = 'meer'; nav = h; title = renderText(h); }
   else { title = renderMissing(null); }
-  renderChrome({title, nav, page});
+  renderChrome({title, nav, page, tab});
+  fitSk();
   window.scrollTo(0, keep ? y : 0);
   if (keep) { drawHomeMap(); drawSpeciesMap(); }
 }
 window.addEventListener('hashchange', () => route(false));
-/* telefoon: balk met werelddelen en tabbladen weg bij omlaag scrollen, terug bij omhoog */
-let BARY = window.scrollY;
-window.addEventListener('scroll', () => {
-  const b = document.querySelector('.bar'), y = window.scrollY;
-  if (!b) { BARY = y; return; }
-  const i = document.querySelector('.intro'), lim = i ? i.offsetTop + i.offsetHeight + b.offsetHeight : 0;
-  if (y <= lim || y < BARY - 8) b.classList.remove('hid');
-  else if (y > BARY + 8) b.classList.add('hid');
-  if (Math.abs(y - BARY) > 8 || y <= lim) BARY = y;
-}, {passive: true});
+// testpagina: <base> wijst naar de map spottersgids, dus #-links zelf binnen deze pagina houden
+if (window.SG_TEST) document.addEventListener('click', e => {
+  const a = e.target.closest && e.target.closest('a[href^="#"]'); if (!a || e.defaultPrevented) return;
+  e.preventDefault(); location.hash = a.getAttribute('href');
+});
+window.addEventListener('resize', () => { clearTimeout(window.__fitT); window.__fitT = setTimeout(fitSk, 150); });
 route(false);
 try { const zs = sessionStorage.getItem('sg-spot'); if (zs && !SGP) { sessionStorage.removeItem('sg-spot'); if (SPOT[zs]) goSpot(zs); } } catch(e) {}
 })();
 
+(function(){var f=document.querySelector('footer.foot,footer.hs-foot');if(!f||f.querySelector('.jg-lp'))return;var d=document.createElement('div');d.className='jg-lp';d.setAttribute('aria-hidden','true');d.innerHTML="<svg viewBox='0 0 240 132' xmlns='http://www.w3.org/2000/svg'><defs><linearGradient id='jglp-v' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='#E2A843'/><stop offset='.62' stop-color='#E6AE4C'/><stop offset='1' stop-color='#F6DDA6'/></linearGradient><clipPath id='jglp-c'><path d='M64 96 C62 70 86 56 120 52 C150 48 182 50 200 62 C212 70 216 84 214 96 Z'/></clipPath></defs><ellipse cx='136' cy='97' rx='86' ry='3.2' fill='#000' opacity='.13'/><g class='jg-staart'><path d='M200 78 C214 82 222 90 222 102 C222 112 214 116 216 124 C217 129 222 130 226 127' fill='none' stroke='#3B2414' stroke-width='11' stroke-linecap='round'/><path d='M200 78 C214 82 222 90 222 102 C222 112 214 116 216 124 C217 129 222 130 226 127' fill='none' stroke='#E6AE4C' stroke-width='7' stroke-linecap='round'/><ellipse cx='214' cy='86' rx='3.2' ry='1.6' transform='rotate(30 214 86)' fill='#2E1C0F'/><ellipse cx='220' cy='96' rx='3.2' ry='1.6' transform='rotate(80 220 96)' fill='#2E1C0F'/><ellipse cx='221' cy='106' rx='3.2' ry='1.6' transform='rotate(95 221 106)' fill='#2E1C0F'/><ellipse cx='217' cy='116' rx='3.2' ry='1.6' transform='rotate(70 217 116)' fill='#2E1C0F'/><path d='M217 122 C218 127 221 128 224 126' stroke='#2E1C0F' stroke-width='5' fill='none' stroke-linecap='round'/></g><path d='M64 96 C62 70 86 56 120 52 C150 48 182 50 200 62 C212 70 216 84 214 96 Z' fill='url(#jglp-v)' stroke='#3B2414' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'/><g clip-path='url(#jglp-c)'><ellipse cx='100.0' cy='66.0' rx='5.1' ry='4.0' transform='rotate(10 100.0 66.0)' fill='#C98E34'/><path d='M105.5 68.3 A6.2 5.0 0 0 1 98.2 70.8' stroke='#2E1C0F' stroke-width='2.5' stroke-linecap='round' fill='none'/><path d='M95.1 69.1 A6.3 5.0 0 0 1 94.8 63.1' stroke='#2E1C0F' stroke-width='2.4' stroke-linecap='round' fill='none'/><path d='M99.4 60.8 A6.5 5.2 0 0 1 105.7 63.5' stroke='#2E1C0F' stroke-width='2.2' stroke-linecap='round' fill='none'/><ellipse cx='122.0' cy='61.0' rx='4.7' ry='3.7' transform='rotate(40 122.0 61.0)' fill='#C98E34'/><path d='M125.3 64.6 A5.6 4.5 0 0 1 118.9 64.7' stroke='#2E1C0F' stroke-width='1.8' stroke-linecap='round' fill='none'/><path d='M116.1 61.2 A5.9 4.7 0 0 1 120.5 56.5' stroke='#2E1C0F' stroke-width='1.9' stroke-linecap='round' fill='none'/><path d='M124.3 56.7 A5.9 4.7 0 0 1 127.9 61.1' stroke='#2E1C0F' stroke-width='2.4' stroke-linecap='round' fill='none'/><ellipse cx='145.0' cy='60.0' rx='5.1' ry='4.0' transform='rotate(-10 145.0 60.0)' fill='#C98E34'/><path d='M151.1 59.6 A6.2 4.9 0 0 1 145.2 64.9' stroke='#2E1C0F' stroke-width='2.9' stroke-linecap='round' fill='none'/><path d='M141.1 63.8 A6.2 5.0 0 0 1 139.7 57.4' stroke='#2E1C0F' stroke-width='1.9' stroke-linecap='round' fill='none'/><path d='M142.3 55.1 A6.6 5.3 0 0 1 149.1 55.8' stroke='#2E1C0F' stroke-width='2.9' stroke-linecap='round' fill='none'/><ellipse cx='168.0' cy='62.0' rx='4.7' ry='3.7' transform='rotate(25 168.0 62.0)' fill='#C98E34'/><path d='M172.9 65.3 A6.4 5.1 0 0 1 163.8 65.9' stroke='#2E1C0F' stroke-width='2.2' stroke-linecap='round' fill='none'/><path d='M162.0 63.8 A6.4 5.1 0 0 1 164.4 57.8' stroke='#2E1C0F' stroke-width='2.2' stroke-linecap='round' fill='none'/><path d='M169.0 57.1 A6.2 5.0 0 0 1 174.1 62.8' stroke='#2E1C0F' stroke-width='2.3' stroke-linecap='round' fill='none'/><ellipse cx='112.0' cy='79.0' rx='4.3' ry='3.4' transform='rotate(60 112.0 79.0)' fill='#C98E34'/><path d='M113.9 83.1 A5.5 4.4 0 0 1 107.4 81.4' stroke='#2E1C0F' stroke-width='1.8' stroke-linecap='round' fill='none'/><path d='M106.7 78.7 A5.3 4.3 0 0 1 112.2 74.8' stroke='#2E1C0F' stroke-width='2.6' stroke-linecap='round' fill='none'/><path d='M115.1 75.5 A5.4 4.3 0 0 1 116.5 81.4' stroke='#2E1C0F' stroke-width='2.4' stroke-linecap='round' fill='none'/><ellipse cx='134.0' cy='76.0' rx='4.7' ry='3.7' transform='rotate(5 134.0 76.0)' fill='#C98E34'/><path d='M140.0 77.2 A6.2 4.9 0 0 1 135.8 80.7' stroke='#2E1C0F' stroke-width='2.7' stroke-linecap='round' fill='none'/><path d='M131.8 80.7 A6.3 5.1 0 0 1 128.1 77.9' stroke='#2E1C0F' stroke-width='2.6' stroke-linecap='round' fill='none'/><path d='M128.5 74.9 A5.7 4.5 0 0 1 133.3 71.5' stroke='#2E1C0F' stroke-width='2.1' stroke-linecap='round' fill='none'/><path d='M136.3 71.9 A5.6 4.5 0 0 1 139.4 74.7' stroke='#2E1C0F' stroke-width='2.0' stroke-linecap='round' fill='none'/><ellipse cx='156.0' cy='77.0' rx='4.3' ry='3.4' transform='rotate(35 156.0 77.0)' fill='#C98E34'/><path d='M159.1 80.4 A5.3 4.2 0 0 1 155.1 81.2' stroke='#2E1C0F' stroke-width='1.8' stroke-linecap='round' fill='none'/><path d='M151.6 79.9 A5.7 4.6 0 0 1 150.4 76.2' stroke='#2E1C0F' stroke-width='2.0' stroke-linecap='round' fill='none'/><path d='M152.5 73.3 A5.8 4.6 0 0 1 157.6 72.6' stroke='#2E1C0F' stroke-width='2.3' stroke-linecap='round' fill='none'/><path d='M160.1 73.9 A5.7 4.5 0 0 1 161.6 77.6' stroke='#2E1C0F' stroke-width='1.8' stroke-linecap='round' fill='none'/><ellipse cx='92.0' cy='82.0' rx='3.5' ry='2.8' transform='rotate(15 92.0 82.0)' fill='#C98E34'/><path d='M95.4 84.0 A4.2 3.3 0 0 1 90.4 85.1' stroke='#2E1C0F' stroke-width='2.0' stroke-linecap='round' fill='none'/><path d='M88.3 84.4 A4.8 3.8 0 0 1 88.7 79.2' stroke='#2E1C0F' stroke-width='1.8' stroke-linecap='round' fill='none'/><path d='M91.3 78.6 A4.3 3.5 0 0 1 96.3 81.5' stroke='#2E1C0F' stroke-width='1.8' stroke-linecap='round' fill='none'/><ellipse cx='126.0' cy='90.0' rx='3.0' ry='2.4' transform='rotate(50 126.0 90.0)' fill='#C98E34'/><path d='M127.8 92.5 A3.6 2.9 0 0 1 122.9 91.5' stroke='#2E1C0F' stroke-width='1.8' stroke-linecap='round' fill='none'/><path d='M122.2 90.2 A3.8 3.0 0 0 1 125.0 87.1' stroke='#2E1C0F' stroke-width='1.8' stroke-linecap='round' fill='none'/><path d='M127.6 87.3 A3.7 3.0 0 0 1 129.4 91.2' stroke='#2E1C0F' stroke-width='1.8' stroke-linecap='round' fill='none'/><ellipse cx='148.0' cy='90.0' rx='2.8' ry='2.2' transform='rotate(20 148.0 90.0)' fill='#C98E34'/><path d='M150.8 91.6 A3.4 2.7 0 0 1 146.2 92.3' stroke='#2E1C0F' stroke-width='1.8' stroke-linecap='round' fill='none'/><path d='M144.8 91.5 A3.7 2.9 0 0 1 145.9 87.6' stroke='#2E1C0F' stroke-width='1.8' stroke-linecap='round' fill='none'/><path d='M148.7 87.1 A3.7 3.0 0 0 1 151.6 89.4' stroke='#2E1C0F' stroke-width='1.8' stroke-linecap='round' fill='none'/><ellipse cx='188.0' cy='70.0' rx='3.9' ry='3.1' transform='rotate(10 188.0 70.0)' fill='#C98E34'/><path d='M192.5 70.9 A4.6 3.7 0 0 1 189.2 73.6' stroke='#2E1C0F' stroke-width='1.9' stroke-linecap='round' fill='none'/><path d='M186.0 73.9 A5.2 4.2 0 0 1 182.8 70.6' stroke='#2E1C0F' stroke-width='1.8' stroke-linecap='round' fill='none'/><path d='M183.1 68.3 A5.4 4.3 0 0 1 187.8 65.7' stroke='#2E1C0F' stroke-width='2.1' stroke-linecap='round' fill='none'/><path d='M189.6 66.5 A4.7 3.8 0 0 1 192.6 69.1' stroke='#2E1C0F' stroke-width='1.8' stroke-linecap='round' fill='none'/><circle cx='110' cy='56' r='1.6' fill='#2E1C0F'/><circle cx='135' cy='54' r='1.6' fill='#2E1C0F'/><circle cx='158' cy='54' r='1.5' fill='#2E1C0F'/><circle cx='84' cy='70' r='1.6' fill='#2E1C0F'/></g><path d='M168 96 C164 80 172 66 188 66 C204 66 212 80 210 96' fill='url(#jglp-v)' stroke='#3B2414' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'/><ellipse cx='190.0' cy='78.0' rx='3.9' ry='3.1' transform='rotate(20 190.0 78.0)' fill='#C98E34'/><path d='M194.1 80.0 A4.8 3.8 0 0 1 188.3 81.6' stroke='#2E1C0F' stroke-width='1.8' stroke-linecap='round' fill='none'/><path d='M185.9 80.3 A5.0 4.0 0 0 1 186.6 75.1' stroke='#2E1C0F' stroke-width='2.1' stroke-linecap='round' fill='none'/><path d='M189.6 74.2 A4.8 3.8 0 0 1 194.7 77.3' stroke='#2E1C0F' stroke-width='2.1' stroke-linecap='round' fill='none'/><circle cx='178' cy='86' r='1.6' fill='#2E1C0F'/><circle cx='200' cy='88' r='1.5' fill='#2E1C0F'/><circle cx='196' cy='72' r='1.4' fill='#2E1C0F'/><path d='M150 96 C150 89 158 87 170 88 C178 89 180 93 180 96' fill='#F6DDA6' stroke='#3B2414' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'/><path d='M160 92 L160 96 M166 91 L166 96 M172 91 L172 96' stroke='#3B2414' stroke-width='1.4' stroke-linecap='round'/><path d='M52 76 L52 112 C52 121 71 121 71 112 L71 76' fill='#E6AE4C' stroke='#3B2414' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'/><path d='M54 106 C58 110 65 110 69 106 L69 113 C69 119 54 119 54 113 Z' fill='#F6DDA6'/><path d='M58.5 114 L58.5 119 M64.5 114 L64.5 119' stroke='#3B2414' stroke-width='1.4' stroke-linecap='round'/><circle cx='58' cy='90' r='1.7' fill='#2E1C0F'/><circle cx='65' cy='96' r='1.6' fill='#2E1C0F'/><circle cx='60' cy='101' r='1.4' fill='#2E1C0F'/><circle cx='66' cy='86' r='1.4' fill='#2E1C0F'/><path d='M78 76 L78 112 C78 121 97 121 97 112 L97 76' fill='#E6AE4C' stroke='#3B2414' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'/><path d='M80 106 C84 110 91 110 95 106 L95 113 C95 119 80 119 80 113 Z' fill='#F6DDA6'/><path d='M84.5 114 L84.5 119 M90.5 114 L90.5 119' stroke='#3B2414' stroke-width='1.4' stroke-linecap='round'/><circle cx='84' cy='90' r='1.7' fill='#2E1C0F'/><circle cx='91' cy='96' r='1.6' fill='#2E1C0F'/><circle cx='86' cy='101' r='1.4' fill='#2E1C0F'/><circle cx='92' cy='86' r='1.4' fill='#2E1C0F'/><g class='jg-kop'><g class='jg-oor-l'><path d='M58 34 C62 18 48 10 40 16 C34 22 34 34 37 46 Z' fill='#2E1C0F' stroke='#3B2414' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'/><path d='M55 32 C57 22 48 16 43 20 C39 24 38 32 40 40 Z' fill='#FBF1DC'/></g><g class='jg-oor-r'><path d='M82 34 C78 18 92 10 100 16 C106 22 106 34 103 46 Z' fill='#2E1C0F' stroke='#3B2414' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'/><path d='M85 32 C83 22 92 16 97 20 C101 24 102 32 100 40 Z' fill='#FBF1DC'/></g><path d='M70 22 C92 22 106 36 106 54 C106 66 100 74 92 80 C86 85 78 88 70 88 C62 88 54 85 48 80 C40 74 34 66 34 54 C34 36 48 22 70 22 Z' fill='#E6AE4C' stroke='#3B2414' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'/><circle cx='62' cy='31' r='1.7' fill='#2E1C0F'/><circle cx='70' cy='29' r='1.8' fill='#2E1C0F'/><circle cx='78' cy='31' r='1.7' fill='#2E1C0F'/><circle cx='66' cy='37' r='1.5' fill='#2E1C0F'/><circle cx='74' cy='37' r='1.5' fill='#2E1C0F'/><circle cx='42' cy='54' r='1.7' fill='#2E1C0F'/><circle cx='98' cy='54' r='1.7' fill='#2E1C0F'/><circle cx='45' cy='64' r='1.5' fill='#2E1C0F'/><circle cx='95' cy='64' r='1.5' fill='#2E1C0F'/><path d='M70 60 C78 60 86 64 86 70 C86 76 79 79 70 79 C61 79 54 76 54 70 C54 64 62 60 70 60 Z' fill='#FBF1DC'/><g class='jg-oog'><circle cx='56' cy='48' r='6.8' fill='#C9D94A' stroke='#3B2414' stroke-width='1.8'/><circle cx='56' cy='48.4' r='3.8' fill='#3B2414'/><circle cx='58.1' cy='46' r='1.6' fill='#fff'/><circle cx='54.4' cy='50.5' r='.8' fill='#fff'/><path d='M49.6 45.7 L46.4 44.5' stroke='#3B2414' stroke-width='1.5' stroke-linecap='round'/><path d='M51.4 42.9 L49.2 40.4' stroke='#3B2414' stroke-width='1.5' stroke-linecap='round'/><path d='M54.4 41.4 L53.5 38.1' stroke='#3B2414' stroke-width='1.5' stroke-linecap='round'/></g><g class='jg-oog'><circle cx='84' cy='48' r='6.8' fill='#C9D94A' stroke='#3B2414' stroke-width='1.8'/><circle cx='84' cy='48.4' r='3.8' fill='#3B2414'/><circle cx='86.1' cy='46' r='1.6' fill='#fff'/><circle cx='82.4' cy='50.5' r='.8' fill='#fff'/><path d='M90.4 45.7 L93.6 44.5' stroke='#3B2414' stroke-width='1.5' stroke-linecap='round'/><path d='M88.6 42.9 L90.8 40.4' stroke='#3B2414' stroke-width='1.5' stroke-linecap='round'/><path d='M85.6 41.4 L86.5 38.1' stroke='#3B2414' stroke-width='1.5' stroke-linecap='round'/></g><path d='M62 52 C64 56 65 59 66 62 M78 52 C76 56 75 59 74 62' stroke='#2E1C0F' stroke-width='1.6' fill='none' stroke-linecap='round'/><path d='M64 63 L76 63 C76 67 72 70 70 70 C68 70 64 67 64 63 Z' fill='#B5603A' stroke='#3B2414' stroke-width='1.6'/><path d='M70 70 L70 73 C68 76 64 76 62 74 M70 73 C72 76 76 76 78 74' stroke='#3B2414' stroke-width='1.6' fill='none' stroke-linecap='round'/><g stroke='#3B2414' stroke-width='1' stroke-linecap='round' fill='none' opacity='.85'><path d='M57 69 C46 66 36 66 26 68'/><path d='M57 72 C46 72 36 73 27 76'/><path d='M58 75 C48 77 40 80 32 85'/><path d='M83 69 C94 66 104 66 114 68'/><path d='M83 72 C94 72 104 73 113 76'/><path d='M82 75 C92 77 100 80 108 85'/></g></g></svg>";f.insertBefore(d,f.firstChild);d.addEventListener('click',function(){d.classList.remove('jg-tik');void d.offsetWidth;d.classList.add('jg-tik');setTimeout(function(){d.classList.remove('jg-tik')},1400)})})();
+(function(){
+var f=document.querySelector('footer.hs-foot,footer.foot');if(!f||f.querySelector('.jg-takbg'))return;f.classList.add('jg-tak');
+var bg=document.createElement('div');bg.className='jg-takbg';bg.setAttribute('aria-hidden','true');f.insertBefore(bg,f.firstChild);
+var LO='#3B2414',W0=0,H0=0;
+function rnd(z){var s=z;return function(){s=(s*9301+49297)%233280;return s/233280;};}
+function teken(){var w=Math.round(f.clientWidth),h=Math.round(bg.clientHeight);if(!w||!h||(w===W0&&h===H0))return;W0=w;H0=h;
+ var r=rnd(7),T=6,B=h-4,o='';
+ function rand(y0,a,p,f2){var d='';for(var x=-20;x<=w+20;x+=10){var y=y0+a*Math.sin(x/p+f2)+a*.45*Math.sin(x/(p*.37)+f2*2);d+=(x<=-20?'M':'L')+x+' '+y.toFixed(1)+' ';}return d;}
+ var top=rand(T+6,3,90,.4),bot=rand(B-6,4,70,1.3);
+ var lijf=top+'L'+(w+20)+' '+(B+10)+' '+bot.replace(/^M/,'L').split(' L').reverse().join(' L').replace(/^L?/,'L')+' L-20 '+(T)+' Z';
+ /* onderrand omkeren voor een gesloten vorm */
+ var pb=[];for(var x=w+20;x>=-20;x-=10){pb.push(x+' '+(B-6+4*Math.sin(x/70+1.3)+1.8*Math.sin(x/25.9+2.6)).toFixed(1));}
+ var pt=[];for(var x2=-20;x2<=w+20;x2+=10){pt.push(x2+' '+(T+6+3*Math.sin(x2/90+.4)+1.35*Math.sin(x2/33.3+.8)).toFixed(1));}
+ lijf='M'+pt.join(' L')+' L'+pb.join(' L')+' Z';
+ o+='<defs><linearGradient id="jgtk-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A2703F"/><stop offset=".09" stop-color="#8A5C33"/><stop offset=".22" stop-color="#734A29"/><stop offset=".8" stop-color="#6A4325"/><stop offset="1" stop-color="#4E301A"/></linearGradient>'
+  +'<clipPath id="jgtk-c"><path d="'+lijf+'"/></clipPath></defs>';
+ /* takje met bladeren rechts boven de tak */
+ var tx=w-70;o+='<g><path d="M'+tx+' '+(T+12)+' C'+(tx+6)+' '+(T-14)+' '+(tx+20)+' '+(T-30)+' '+(tx+34)+' '+(T-44)+'" stroke="'+LO+'" stroke-width="9" fill="none" stroke-linecap="round"/>'
+  +'<path d="M'+tx+' '+(T+12)+' C'+(tx+6)+' '+(T-14)+' '+(tx+20)+' '+(T-30)+' '+(tx+34)+' '+(T-44)+'" stroke="#7A4F2C" stroke-width="5" fill="none" stroke-linecap="round"/>';
+ function blad(x,y,a,s){return '<g transform="translate('+x+' '+y+') rotate('+a+') scale('+s+')"><path d="M0 0 C8 -10 26 -12 38 0 C26 12 8 10 0 0 Z" fill="#2F7A3B" stroke="#143A22" stroke-width="2" stroke-linejoin="round"/><path d="M2 0 L34 0" stroke="#1D5527" stroke-width="1.6" stroke-linecap="round"/></g>';}
+ o+=blad(tx+33,T-44,-40,1)+blad(tx+22,T-30,-150,.85)+blad(tx+14,T-14,-20,.8)+'</g>';
+ /* lijf van de tak */
+ o+='<path d="'+lijf+'" fill="url(#jgtk-g)"/>';
+ o+='<g clip-path="url(#jgtk-c)">';
+ /* bastlijnen alleen langs de randen; het midden blijft glad voor de tekst */
+ for(var i=0;i<Math.ceil(w/26);i++){var x0=r()*w,l=40+r()*110,y=T+12+r()*12,b2=(r()-.5)*3;
+  o+='<path d="M'+x0.toFixed(0)+' '+y.toFixed(1)+' q'+(l/2).toFixed(0)+' '+b2.toFixed(1)+' '+l.toFixed(0)+' '+(b2*.4).toFixed(1)+'" stroke="#4A2D17" stroke-opacity=".55" stroke-width="'+(1.4+r()*1.4).toFixed(1)+'" fill="none" stroke-linecap="round"/>';}
+ for(var j=0;j<Math.ceil(w/22);j++){var x1=r()*w,l2=40+r()*120,y2=B-14-r()*16,b3=(r()-.5)*3;
+  o+='<path d="M'+x1.toFixed(0)+' '+y2.toFixed(1)+' q'+(l2/2).toFixed(0)+' '+b3.toFixed(1)+' '+l2.toFixed(0)+' '+(b3*.4).toFixed(1)+'" stroke="#3E2512" stroke-opacity=".6" stroke-width="'+(1.6+r()*1.6).toFixed(1)+'" fill="none" stroke-linecap="round"/>';}
+ /* lichte glans langs de bovenrand */
+ o+='<path d="M-20 '+(T+11)+' L'+(w+20)+' '+(T+11)+'" stroke="#C08B52" stroke-opacity=".45" stroke-width="2" stroke-dasharray="60 26 18 30"/>';
+ /* twee knoesten aan de randen */
+ function knoest(x,y,s){return '<g transform="translate('+x+' '+y+') scale('+s+')"><ellipse rx="15" ry="6.5" fill="#4E301A"/><ellipse rx="10" ry="4" fill="none" stroke="#2E1A0C" stroke-width="2"/><ellipse rx="4.5" ry="1.8" fill="#2E1A0C"/></g>';}
+ o+=knoest(Math.min(w-40,w*.78),B-16,1)+knoest(Math.max(40,w*.16),B-20,.75);
+ o+='</g>';
+ /* omlijning boven en onder (zelfde lijn als de luipaard) */
+ o+='<path d="M'+pt.join(' L')+'" stroke="'+LO+'" stroke-width="3" fill="none" stroke-linejoin="round"/><path d="M'+pb.join(' L')+'" stroke="'+LO+'" stroke-width="3" fill="none" stroke-linejoin="round"/>';
+ bg.innerHTML='<svg viewBox="0 0 '+w+' '+h+'" xmlns="http://www.w3.org/2000/svg">'+o+'</svg>';
+ /* luipaard precies op de tak: buik (y=96 van 132 in zijn tekening) op het laagste punt van de bovenrand onder het lijf, zodat er nergens ruimte tussen zit */
+ var lp=f.querySelector('.jg-lp');if(lp){var sc=lp.clientWidth/240,x0=lp.offsetLeft+60*sc,x1=lp.offsetLeft+216*sc,m=-1e9;
+  for(var xx=Math.floor(x0/10)*10;xx<=x1+10;xx+=10){var yy=T+6+3*Math.sin(xx/90+.4)+1.35*Math.sin(xx/33.3+.8);if(yy>m)m=yy;}
+  lp.style.top=(m+1-96*sc).toFixed(1)+'px';}}
+teken();
+if(window.ResizeObserver)new ResizeObserver(function(){teken();}).observe(f);else window.addEventListener('resize',teken);
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(teken);
+})();
 /* Taalmenu: maakt van elke rij taalknoppen (.langsw met [data-setlang]-knoppen) één knop met een wereldbol en de
    huidige taalcode ("🌐 NL"). Tikken opent een lijst met de talen in hun eigen naam. De lijst bevat alleen de talen
    van de knoppen die de pagina zelf heeft, dus op een landpagina alleen de talen van dat land.

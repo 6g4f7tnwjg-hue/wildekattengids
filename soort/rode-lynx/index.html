@@ -1703,7 +1703,7 @@ function meerLijst(){var el=document.getElementById("nt-meerlist"),m=document.ge
     if(x.dataset.nav==="geboren"){var o=c.querySelector("svg");if(o)o.outerHTML=EXTRA_ICO.ster;}
     c.insertAdjacentHTML("beforeend",PIJL);return '<li'+(lc?' class="'+lc+'"':'')+'>'+c.outerHTML+'</li>';}).join("");
   mm();}
-function mm(){var b=document.getElementById("nw-sbar-start");if(!b)return;var me=b.querySelector('[data-k="meer"]'),op=document.documentElement.classList.contains("pagemode")&&/^#meer$/.test(location.hash);
+function mm(){var b=document.getElementById("nw-sbar-start");if(!b)return;var me=b.querySelector('[data-k="meer"]'),op=document.documentElement.classList.contains("pagemode")||/\/top10\//.test(location.pathname);
   if(!me)return;me.classList.toggle("on",op);if(op)b.querySelectorAll("[data-k]").forEach(function(x){if(x!==me)x.classList.remove("on");});
   else if(!b.querySelector(".on")&&!document.documentElement.classList.contains("katmode")){var h=b.querySelector('[data-k="home"]');if(h)h.classList.add("on");}}
 window.__NTMEER=meerLijst;
@@ -1781,6 +1781,10 @@ window.addEventListener("storage",favTel);document.addEventListener("click",func
   box.addEventListener("click",function(e){var b=e.target.closest(".nt-gt button");if(!b)return;var open=b.getAttribute("aria-expanded")!=="true";b.setAttribute("aria-expanded",String(open));b.closest(".nt-grp").querySelector(".nt-gg").hidden=!open;});
   new MutationObserver(verdeel).observe(sp,{childList:true});verdeel();
 })();
+/* losse schermen (onder Meer) openen altijd bovenaan, ook als de browser naar het anker springt (19-10-2026) */
+try{history.scrollRestoration="manual";}catch(_){}
+[].forEach.call(document.querySelectorAll("section.page"),function(pgs){new MutationObserver(function(){if(pgs.classList.contains("on")){window.scrollTo(0,0);setTimeout(function(){window.scrollTo(0,0);},0);setTimeout(function(){window.scrollTo(0,0);},120);}}).observe(pgs,{attributes:true,attributeFilter:["class"]});});
+if(document.querySelector("section.page.on"))setTimeout(function(){window.scrollTo(0,0);},120);
 /* zwevende terugknop: terug in de geschiedenis, anders naar Meer (startpagina) of de oude terugknop */
 (function(){var TB={nl:"Terug",en:"Back",fr:"Retour",de:"Zurück",it:"Indietro",es:"Volver"};
   var f=document.createElement("a");f.className="nt-fab";f.href="#";

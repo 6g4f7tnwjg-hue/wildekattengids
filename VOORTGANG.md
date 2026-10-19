@@ -2,6 +2,10 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 19 oktober 2026 – Kop startscherm landpagina's gelijk aan de andere koppen
+
+De groene kop van het startscherm (Kaart) op de landpagina's was net anders dan die van Locaties, Soorten en Meer: 1 px lager, vlag 2 px lager, smallere letterafstand in de titel en een hogere golf. Nu exact gelijk (gemeten in alle landen op 390 en 414 px). CSS in `bron/jungle.py` onder de `.nt-kop`-regels.
+
 ## 19 oktober 2026 – Scherm Locaties als kaartjes, knoppen zonder hout
 
 - Scherm Locaties op alle landpagina's: elke locatie een los kaartje met het aantal bevestigde soorten als goudgele badge rechtsboven ("1 onzeker" eronder als dat er is), het type-icoon bovenaan naast de naam en soortrondjes (foto's, bevestigd eerst, onzeker met stippelrand, maximaal 6 en dan "+n") in plaats van de afgekapte beschrijving. Volgorde ongewijzigd (meeste soorten eerst). Zoeken doorzoekt de beschrijving nog steeds. Code: `kaartje()` in `bron/test_ontwerp.py`, kleuren in `bron/jungle.py`.

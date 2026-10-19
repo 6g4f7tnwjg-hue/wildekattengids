@@ -503,6 +503,11 @@ html body .nt-kop .nt-meta,html body .nt-kop .nt-meta *{{color:{SUN}!important}}
 html body .nt-kop>*{{position:relative;z-index:2}}
 html body .nt-kop::before{{content:"";position:absolute;right:-30px;top:-12px;width:130px;height:160px;background:{monstera('#2F7A3B','#1D5527')} no-repeat center/contain;transform-origin:top center;animation:jw 6s ease-in-out infinite;z-index:1;pointer-events:none}}
 html body .nt-kop::after{{content:"";position:absolute;left:0;right:0;bottom:-1px;height:28px;background:{wave(BG)} no-repeat center/100% 100%;z-index:3;pointer-events:none}}
+/* startscherm landpagina's exact gelijk aan de koppen van Locaties, Soorten en Meer (19-10-2026): bovenkant, vlag, letterafstand titel, golf */
+html body .nt-kop{{margin-top:-1px!important;padding-top:21px!important}}
+html body .nt-kop h1.mast.hs-kop>svg{{align-self:flex-start!important;margin-top:6px!important}}
+html body .nt-kop h1.mast.hs-kop .hs-t,html body .nt-kop h1.mast.hs-kop .hs-t *{{letter-spacing:.03em!important}}
+html body .nt-kop::after{{height:24px!important}}
 html body .nt-lbl{{font-family:{DISP};font-size:1.1rem;letter-spacing:.04em;color:{OLIVE}!important;text-transform:uppercase;display:flex;align-items:center;gap:8px;margin-top:14px}}
 html body .nt-lbl::before{{content:"";flex:none;width:46px;height:20px;background:{paws('#C9561F')} center/contain no-repeat}}
 html body .nt-av{{border:3px solid {SUN}!important;box-shadow:0 2px 0 {WOOD_D}!important}}

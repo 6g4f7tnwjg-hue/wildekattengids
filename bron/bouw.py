@@ -352,7 +352,8 @@ DESC = ("Gids van J. Gelens: welke wilde katten – leeuw, tijger, luipaard, lyn
         "dierenparken en opvangcentra in Nederland, België, Luxemburg, Duitsland, Frankrijk, Oostenrijk, Zwitserland, Italië, Spanje, Portugal, het Verenigd Koninkrijk en Ierland kunt zien. Met kaart, routeplanner en recente geboortes.")
 st = sub1(st, "<title>Wilde katachtigen in de Benelux, Duitsland, Frankrijk, Oostenrijk, Zwitserland, Italië, Spanje, Portugal, het Verenigd Koninkrijk en Ierland</title>",
           f"<title>{TITLE}</title>\n" + seo("Wilde katachtigen in de Benelux, Duitsland, Frankrijk, Oostenrijk, Zwitserland, Italië, Spanje, Portugal, het Verenigd Koninkrijk en Ierland", DESC, SITE)
-          + '<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n')
+          + '<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n'
+          + f'<link rel="icon" href="{BASE}icon.svg" type="image/svg+xml">\n')
 st = sub1(st, '<meta charset="utf-8">', '<meta charset="utf-8"><script>window.__KATBASE="' + BASE + 'soort/";window.__HOMEURL="' + BASE
           + '";window.__IMGP=' + json.dumps(PATHS) + ';</script>')
 st = st.replace("<html>", '<html lang="nl">', 1)
@@ -585,3 +586,15 @@ except Exception as e:
 
 # jungle-stijl (18-10-2026): vormgeving "Expeditie" als losse laag over alle pagina's, als allerlaatste stap (zie bron/jungle.py)
 import jungle; jungle.maak()
+
+# één hoofdkop per pagina (19-10-2026): op /soort/<naam>/ en /top10/ zitten de koppen van de startpagina verborgen in de pagina.
+# Die worden h2, zodat de soortnaam (in #katview) de enige h1 is. Ze zijn op deze pagina's nooit zichtbaar (elke knop opent de startpagina).
+def een_hoofdkop(pad):
+    doc = rd(pad)
+    stukken = re.split(r'(<script\b.*?</script>|<style\b.*?</style>|<section id="katview">.*?</section>)', doc, flags=re.S)
+    for i in range(0, len(stukken), 2):
+        stukken[i] = re.sub(r"<(/?)h1\b", r"<\1h2", stukken[i])
+    wr(pad, "".join(stukken))
+for pad in [ROOT + "top10/index.html"] + [ROOT + "soort/" + d + "/index.html" for d in sorted(os.listdir(ROOT + "soort"))]:
+    if os.path.exists(pad):
+        een_hoofdkop(pad)

@@ -33,6 +33,10 @@ Daarna (ook in `test_ontwerp.py`): `maak_los2()` geeft de losse park- en soortpa
 
 `jungle.py` draait als allerlaatste stap van `bouw.py` en zet op alle pagina's (behalve `/<land>-oud/`, `/spottersgids/`, `/voorbeeld-jungle/` en doorverwijzingen) één blok `<!--jungle-->…<!--/jungle-->` voor `</body>`: lettertypen (Anton, Nunito) en CSS in de stijl "Expeditie" (donker junglegroen, bladeren, luipaardvlekken, golfrand, houten knoppen, goudgeel). Gegevens, teksten en indeling blijven ongewijzigd. Terugdraaien: `python3 bron/jungle.py --weg` en de regel onderaan `bouw.py` weghalen. Reservekopie van de site van vóór de jungle-stijl: tak `backup-voor-jungle`.
 
+## Vindbaarheid (19-10-2026)
+
+De titel van de startpagina staat in de `<head>` van `start.html` (stond eerst in de body, waardoor titel, beschrijving en deelplaatje van de startpagina buiten de kop vielen). De startpagina, de top 10 en de soortpagina's hebben een favicon (`/icon.svg`, pootje in junglekleuren; vast bestand in de hoofdmap). Na de jungle-stijl zet `een_hoofdkop()` onderaan `bouw.py` op `/soort/<naam>/` en `/top10/` de verborgen koppen van de startpagina om van h1 naar h2, zodat de soortnaam de enige h1 is. Die koppen zijn daar nooit zichtbaar (elke knop opent de startpagina), dus het beeld verandert niet.
+
 ## Telregel (18-10-2026)
 
 Overal op de site telt een getal bij een soort of locatie alleen **bevestigde** vermeldingen (status g, y, b of r); onzekere (w, en ook p en n) staan er apart achter ("10 soorten · 1 onzeker"). Zo telt ook "N soorten bevestigd op M locaties": M = locaties met een bevestigde kat. Uitzondering: het getal bij een filterknop voor regio of land met een gekozen soort, en "In beeld", tellen wat de kaart en de lijst tonen (dus ook onzekere). De groep "Onzeker" in de routeplanner (`UNSURE`) wordt in elke gids uit `R` berekend; niet meer met de hand bijhouden.

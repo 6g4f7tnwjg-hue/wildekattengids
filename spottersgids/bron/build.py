@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
 """Bouwt de Spottersgids (index.html) uit de KATalogue-gegevens en het onderzoek in data/.
 
-Gebruik:  python3 bron/build.py      (vanuit de map spottersgids)
+Gebruik:  python3 bron/build.py          (vanuit de map spottersgids)
+          python3 bron/build.py --test   testpagina in de Safari-stijl: bouwt alleen safari/ uit bron/template-safari.html
+                                         (noindex; soortpagina's openen binnen de testpagina; de live gids blijft ongewijzigd)
 """
-import json, os, re, sys
+import json, os, re, sys, subprocess
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 J = lambda *p: os.path.join(ROOT, *p)
 load = lambda p: json.load(open(J(p), encoding='utf-8'))
+TEST = '--test' in sys.argv
 
 # Soorten met een afgeronde soortpagina (per werelddeel uitgebreid)
 PAGES = [24, 27, 37, 4, 38, 42, 1, 30, 11, 12, 13, 40, 41, 2, 5, 6, 7, 8, 9, 10, 31, 32, 33, 34, 35, 36, 39, 3, 28, 14, 15, 29, 18, 16, 17, 19, 20, 21, 22, 23, 25, 26]
@@ -143,20 +146,72 @@ data = {'cats': cats, 'spots': list(spots.values()), 'pages': pages, 'sources': 
         **load('bron/borders.json')}   # landsgrenzen + landnamen voor de soortkaart (Natural Earth 110m via world-atlas)
 blob = json.dumps(data, ensure_ascii=False, separators=(',', ':'))
 datajs = 'window.SG_DATA=' + blob + ';\n'
-open(J('data.js'), 'w', encoding='utf-8').write(datajs)
+if not TEST:
+    open(J('data.js'), 'w', encoding='utf-8').write(datajs)
+
+# ---------- Safari-stijl: plaatjes als CSS-variabelen en de voet met de luipaard op de tak (uit bron/jungle.py) ----------
+sys.path.insert(0, J('..', 'bron'))
+import jungle
+def acacia():
+    """Acacia met een zachte zon erachter, voor de kop van elk scherm."""
+    return jungle.uri("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 210 168'>"
+        "<circle cx='132' cy='74' r='52' fill='#F2C14E' fill-opacity='.17'/>"
+        "<g fill='#6A4427'>"
+        "<path d='M104 170C106 148 106 132 100 118C96 108 88 100 76 93L80 88C92 94 100 101 106 111C108 99 114 89 126 80L130 85C121 93 115 103 113 117C111 133 113 151 116 170Z'/>"
+        "<path d='M120 92C128 86 140 84 150 86L149 90C140 89 130 91 123 96Z'/>"
+        "<path d='M24 86C18 76 34 66 52 69C58 58 78 53 96 58C108 47 134 45 150 54C166 49 190 56 196 68C208 72 208 84 196 88C182 94 160 92 146 90C130 97 104 97 88 92C70 97 42 97 24 86Z'/>"
+        "</g>"
+        "<g fill='#7B522F'><path d='M58 70C66 61 82 58 96 62C108 52 130 51 144 58C130 62 116 62 104 66C90 64 72 66 58 70Z'/></g>"
+        "</svg>")
+def grass():
+    """Hoog gras rechtsonder in de bovenbalk."""
+    import random
+    r, out = random.Random(3), ''
+    for i in range(26):
+        x = 8 + i * 5.4 + r.uniform(-2, 2); h = r.uniform(14, 34); lean = r.uniform(-12, 8)
+        out += f"<path d='M{x:.1f} 58Q{x + lean * .4:.1f} {58 - h * .6:.1f} {x + lean:.1f} {58 - h:.1f}' stroke-width='{r.uniform(2, 3.6):.1f}'/>"
+    return jungle.uri(f"<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 56' preserveAspectRatio='xMaxYMax meet'><g fill='none' stroke='#523420' stroke-linecap='round'>{out}</g></svg>")
+def tracks(col, op):
+    """Spoor van kattenpootjes (vier tenen, geen nagels) als achtergrondpatroon."""
+    def pootje(x, y, rot, s=1):
+        return (f"<g transform='translate({x} {y}) rotate({rot}) scale({s})'><path d='M0 7C-5 7-7 3-5.5 0S-2 -2 0 -2S4 -3 5.5 0S5 7 0 7Z'/>"
+                "<ellipse cx='-5.6' cy='-6' rx='1.9' ry='2.5'/><ellipse cx='-2' cy='-9.6' rx='1.9' ry='2.6'/><ellipse cx='2.2' cy='-9.6' rx='1.9' ry='2.6'/><ellipse cx='5.8' cy='-6' rx='1.9' ry='2.5'/></g>")
+    p = pootje(22, 118, 38) + pootje(44, 112, 30) + pootje(58, 86, 42) + pootje(80, 80, 34) + pootje(94, 54, 40) + pootje(116, 48, 32) + pootje(128, 20, 38, .9)
+    return jungle.uri(f"<svg xmlns='http://www.w3.org/2000/svg' width='160' height='140'><g fill='{col}' fill-opacity='{op}'>{p}</g></svg>")
+BG = '#F3EAD7'
+SAFARI_VARS = (':root{' + f'--i-acacia:{acacia()};--i-grass:{grass()};--i-tracks:{tracks("#7A5230", ".08")};'
+               f'--i-tracks-l:{tracks("#FFFFFF", ".06")};--i-wave:{jungle.wave(BG)};--i-paws:{jungle.paws("#C0602A")}' + '}\n')
+# Ko-fi-knop op de tak: koffiebruine tekst in plaats van het groen van de Bezoekersgids
+SAFARI_FOOT = 'html body .jg-tak .kofi,html body .jg-tak .kofi span{color:#3B2414!important}\nhtml body .foot.jg-tak{margin-bottom:0!important}\n'
+try:   # datum van de laatste wijziging in de gegevens (soortonderzoek, KATalogue, teksten)
+    UPDATED = subprocess.run(['git', 'log', '-1', '--format=%cs', '--', 'data', 'bron/katalogue.json'], cwd=ROOT, capture_output=True, text=True).stdout.strip()
+except Exception:
+    UPDATED = ''
 
 # Stijl en script uit de template naar gedeelde bestanden (één keer laden voor alle pagina's)
-tpl = open(J('bron', 'template.html'), encoding='utf-8').read()
+OUT = J('safari') if TEST else ROOT
+os.makedirs(OUT, exist_ok=True)
+PRE = 'safari/' if TEST else ''
+tpl = open(J('bron', 'template-safari.html' if TEST else 'template.html'), encoding='utf-8').read()
 m = re.search(r'<style>\n?(.*?)</style>', tpl, re.S); css = m.group(1)
-tpl = tpl[:m.start()] + '<link rel="stylesheet" href="style.css?v=__CSSVER__">' + tpl[m.end():]
+tpl = tpl[:m.start()] + f'<link rel="stylesheet" href="{PRE}style.css?v=__CSSVER__">' + tpl[m.end():]
 m = re.search(r"<script>\n?('use strict';.*?)</script>", tpl, re.S); js = m.group(1)
-tpl = tpl[:m.start()] + '<script src="app.js?v=__JSVER__"></script>' + tpl[m.end():]
-open(J('style.css'), 'w', encoding='utf-8').write(css)
+tpl = tpl[:m.start()] + f'<script src="{PRE}app.js?v=__JSVER__"></script>' + tpl[m.end():]
+if '--i-acacia' in css:   # Safari-stijl
+    css = SAFARI_VARS + css + '\n' + jungle.LP_CSS + jungle.TAK_CSS + SAFARI_FOOT
+    js = js.replace('__UPDATED__', UPDATED) + '\n' + jungle.LP_JS % json.dumps(jungle.svg()) + '\n' + jungle.TAK_JS
+open(os.path.join(OUT, 'style.css'), 'w', encoding='utf-8').write(css)
 # taalmenu (wereldbol met de huidige taal), hetzelfde script als de Bezoekersgids
 js = js + '\n' + open(J('..', 'bron', 'taalmenu.js'), encoding='utf-8').read()
-open(J('app.js'), 'w', encoding='utf-8').write(js)
+open(os.path.join(OUT, 'app.js'), 'w', encoding='utf-8').write(js)
 ver = lambda t: hashlib.md5(t.encode()).hexdigest()[:8]
 tpl = tpl.replace('__VER__', ver(datajs)).replace('__CSSVER__', ver(css)).replace('__JSVER__', ver(js))
+if TEST:
+    tpl = tpl.replace('<meta charset="utf-8">', '<meta charset="utf-8">\n<base href="../">\n<meta name="robots" content="noindex">', 1)
+    tpl = tpl.replace('<script src="data.js', '<script>window.SG_TEST=1;</script>\n<script src="data.js', 1)
+    open(os.path.join(OUT, 'index.html'), 'w', encoding='utf-8').write(tpl)
+    print('testpagina gebouwd: safari/index.html (+ safari/app.js, safari/style.css); live gids niet aangeraakt')
+    sys.exit(0)
 open(J('index.html'), 'w', encoding='utf-8').write(tpl)
 
 SITE = 'https://yeetkitty.github.io/wildekattengids/spottersgids/'

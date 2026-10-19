@@ -1,0 +1,1469 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Spottersgids voor wilde katten</title>
+<meta name="description" content="Waar je alle 42 wilde kattensoorten in het wild kunt zien, hoe groot je kans is en hoe je ze spot. Een gids van J. Gelens.">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Spottersgids voor wilde katten">
+<meta property="og:title" content="Spottersgids voor wilde katten">
+<meta property="og:description" content="Waar je alle 42 wilde kattensoorten in het wild kunt zien, hoe groot je kans is en hoe je ze spot.">
+<meta property="og:image" content="https://yeetkitty.github.io/wildekattengids/spottersgids/img/27-1.jpg">
+<meta property="og:url" content="https://yeetkitty.github.io/wildekattengids/spottersgids/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Barlow+Condensed:wght@500;600&display=swap">
+<style>
+/* Safari-stijl (19-10-2026): zelfde opbouw als de Bezoekersgids (donkere kop per scherm met golfrand, onderbalk met
+   vier schermen, Anton-koppen met pootjes, voet met de luipaard op een tak), maar in bruin: koffiebruin, zand, oker.
+   Plaatjes (acacia, gras, sporen, golf, pootjes) maakt bron/build.py en zet ze als --i-…-variabelen op :root. */
+:root{
+  --bg:#F3EAD7;          /* zand */
+  --paper:#FCF7EC;       /* kaartjes */
+  --ink:#2B1D12;         /* donkerbruin */
+  --muted:#6E5B45;
+  --line:#E2D3B6;
+  --olive:#5B3A1E;       /* zadelbruin: randen, gekozen knoppen */
+  --brown:#6B3F1D;       /* koppen in de pagina */
+  --dark:#3B2414;        /* koffiebruin: koppen en balken */
+  --dark2:#4C3020;
+  --sun:#F2C14E;         /* okergeel */
+  --cream:#F8EEDC;
+  --tan:#E6D2B2;
+  --wood:#9C6B36;
+  --accent:#B4541E;      /* terracotta */
+  --accent-ink:#FFF8EA;
+  --sea:#A9CFD3;
+  --land:#DCC89C;
+  --range:#A4461A;
+  --s5:#2F6A33; --s4:#6A8526; --s3:#B0861A; --s2:#B05F28; --s1:#8B8676;
+  --shadow:0 1px 2px rgba(59,36,20,.06),0 10px 24px -14px rgba(59,36,20,.38);
+  --disp:"Anton","Impact","Arial Narrow",sans-serif;
+  --display:"Nunito",system-ui,-apple-system,sans-serif;
+  --body:"Nunito",system-ui,-apple-system,sans-serif;
+  --label:"Barlow Condensed","Arial Narrow","Roboto Condensed",sans-serif;
+  --gut:max(16px,env(safe-area-inset-left,0px));
+  --gutr:max(16px,env(safe-area-inset-right,0px));
+  --head:56px;
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+html{background:var(--dark)}
+body{margin:0;background:var(--i-tracks),var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55;-webkit-text-size-adjust:100%;padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--dark)}
+a{color:inherit;text-decoration-color:color-mix(in srgb,var(--accent) 60%,transparent);text-underline-offset:3px}
+a:hover{color:var(--accent)}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+h1,h2,h3{font-family:var(--display);line-height:1.1;text-wrap:balance;margin:0}
+h1,h2{font-family:var(--disp);font-weight:400;text-transform:uppercase;letter-spacing:.01em;line-height:1.05}
+h1{font-size:clamp(2rem,6vw,3.2rem)}
+h2{font-size:clamp(1.5rem,4.6vw,1.9rem);color:var(--brown)}
+h3{font-size:1.2rem;font-weight:800}
+p{margin:0}
+.wrap{max-width:1120px;margin:0 auto;padding-left:var(--gut);padding-right:var(--gutr)}
+.read{max-width:44rem}
+.lbl{font-family:var(--label);font-weight:600;font-size:.8rem;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.lat{font-style:italic;font-weight:600}
+
+/* bovenbalk: koffiebruin met gras, merk zoals de Bezoekersgids */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:var(--i-grass) right -6px bottom/150px 56px no-repeat,var(--dark);color:var(--cream)}
+.top .wrap{display:flex;align-items:center;gap:8px;min-height:56px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0;color:var(--cream);margin-right:auto}
+.brand:hover{color:var(--cream)}
+.brand svg{flex:none;width:28px;height:28px;color:var(--sun)}
+.brand b{display:block;font-family:var(--disp);font-weight:400;font-size:1.3rem;line-height:1.15;letter-spacing:.02em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brand small{display:block;font-family:var(--label);font-weight:600;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--tan);white-space:nowrap}
+.langsw{flex:none;position:relative;display:inline-flex;border:1px solid var(--line);border-radius:99px;padding:2px}
+.langsw button{border:0;background:none;padding:4px 10px;border-radius:99px;font-family:var(--label);font-weight:600;letter-spacing:.06em;cursor:pointer;color:var(--muted)}
+.langsw button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.top .langsw.lm{border:0;padding:0}
+.top .lm .lm-btn{font-family:var(--label);font-size:16px;font-weight:600;letter-spacing:.06em;color:var(--cream);background:var(--dark2);border:1px solid #6A4A30;border-radius:99px;height:40px;padding:0 13px}
+.top .lm .lm-btn:hover,.top .lm .lm-btn[aria-expanded="true"]{background:var(--sun);color:var(--dark);border-color:var(--sun)}
+.top .lm .lm-pop{background:var(--paper);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);top:calc(100% + 8px)}
+.top .lm .lm-pop button{font-family:var(--body);font-weight:600;font-size:16px;color:var(--ink);letter-spacing:0}
+.top .lm .lm-pop button:hover,.top .lm .lm-pop button:focus-visible{background:color-mix(in srgb,var(--accent) 12%,transparent)}
+.top .lm .lm-pop button[aria-pressed="true"]{background:var(--dark);color:var(--sun)}
+.icobtn,.menubtn{flex:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid #6A4A30;background:var(--dark2);border-radius:10px;height:40px;min-width:42px;padding:0 10px;cursor:pointer;color:var(--cream)}
+.icobtn svg,.menubtn svg{display:block;width:21px;height:21px}
+.icobtn[aria-expanded="true"],.menubtn[aria-expanded="true"]{background:var(--sun);color:var(--dark);border-color:var(--sun)}
+.icobtn .t,.menubtn .t{font-weight:600;font-size:1rem}
+@media (max-width:820px){.icobtn .t,.menubtn .t{display:none}}
+/* menu (☰): lijst onder de balk, zoals de Bezoekersgids */
+.nav{position:absolute;left:0;right:0;top:100%;display:none;flex-direction:column;background:var(--paper);border-bottom:1px solid var(--line);box-shadow:var(--shadow);padding:6px max(var(--gutr),calc(50% - 544px)) 14px max(var(--gut),calc(50% - 544px))}
+.nav.open{display:flex}
+.nav a{display:flex;align-items:center;gap:14px;padding:13px 6px;font-size:1.08rem;font-weight:600;text-decoration:none;color:var(--ink);border-bottom:1px solid var(--line)}
+.nav a:hover{color:var(--accent)}
+.nav a[aria-current="page"]{color:var(--accent)}
+.nav .nico{flex:none;width:22px;height:22px;color:var(--accent)}
+.nav .mlbl{display:block;padding:16px 6px 2px}
+.nav .sub a{font-weight:500}
+.zdrop{position:absolute;left:0;right:0;top:100%;background:var(--paper);border-bottom:1px solid var(--line);box-shadow:var(--shadow);color:var(--ink)}
+.zdrop[hidden]{display:none}
+.zdrop .wrap{display:block;min-height:0;padding-block:12px 16px}
+.zoek{position:relative;max-width:640px}
+.zoek-box{display:flex;align-items:center;gap:8px;background:#fff;border:2px solid var(--olive);border-radius:99px;padding:0 16px}
+.zoek-box:focus-within{outline:2px solid var(--accent);outline-offset:1px}
+.zoek-box svg{width:18px;height:18px;flex:none;color:var(--muted)}
+.zoek-box input{all:unset;flex:1;min-width:0;font-family:var(--body);font-size:17px;color:var(--ink);padding:10px 0}
+.zoek-box input::placeholder{color:var(--muted);opacity:1}
+.zoek-box input::-webkit-search-cancel-button{-webkit-appearance:none}
+.zoek-x{all:unset;cursor:pointer;font-size:22px;line-height:1;color:var(--muted);padding:4px}
+.zoek-res{position:absolute;left:0;right:0;top:calc(100% + 6px);z-index:25;list-style:none;margin:0;padding:6px;background:var(--paper);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);max-height:min(60vh,420px);overflow:auto}
+.zoek-res[hidden]{display:none}
+.zoek-res li{margin:0}
+.zoek-res a{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:8px;text-decoration:none;color:var(--ink);min-width:0}
+.zoek-res a:hover,.zoek-res a:focus-visible,.zoek-res a.act{background:color-mix(in srgb,var(--accent) 12%,transparent);outline:none}
+.zoek-res b{display:block;font-weight:700;font-size:16px;overflow-wrap:anywhere}
+.zoek-res small{display:block;font-size:14px;color:var(--muted)}
+.zoek-res .ik{flex:none;width:36px;height:36px;border-radius:50%;object-fit:cover;background:var(--line)}
+.zoek-res .ik.loc{display:grid;place-items:center;color:var(--accent);background:var(--bg)}
+.zoek-res .ik.loc svg{width:18px;height:18px}
+.zoek-res .leeg{padding:8px 10px;color:var(--muted)}
+
+/* sections */
+main{display:block;min-height:70vh}
+.sec{padding-block:30px}
+.sec + .sec{padding-top:8px}
+.sechead{display:flex;align-items:baseline;justify-content:space-between;gap:8px 16px;flex-wrap:wrap;margin-bottom:16px}
+.sechead p{color:var(--muted);max-width:40rem}
+.sechead h2::after,.prose h2::after{content:"";display:block;width:46px;height:20px;margin-top:6px;background:var(--i-paws) left center/contain no-repeat}
+.screen{padding-top:2px}
+
+/* kop per scherm: koffiebruin met sporen, acacia en golfrand; 166 px hoog zoals de Bezoekersgids */
+.sk{position:relative;overflow:hidden;isolation:isolate;background:var(--i-tracks-l),var(--dark);color:var(--cream);height:166px;padding:21px 0 44px;margin-bottom:6px}
+.sk::before{content:"";position:absolute;right:-30px;bottom:12px;width:210px;height:168px;background:var(--i-acacia) no-repeat right bottom/contain;transform-origin:70% 100%;animation:sw 9s ease-in-out infinite;z-index:1;pointer-events:none}
+.sk::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:30px;background:var(--i-wave) no-repeat center/100% 100%;z-index:3;pointer-events:none}
+@keyframes sw{0%,100%{transform:rotate(-1.2deg)}50%{transform:rotate(1.2deg)}}
+.sk .wrap{position:relative;z-index:2}
+.sk-t{display:flex;align-items:flex-start;gap:12px;margin:0;font:400 var(--sk-fs,39px)/42.9px var(--disp);text-transform:uppercase;letter-spacing:normal;color:var(--cream);white-space:nowrap;overflow:hidden;padding-right:16px}
+.sk-tt{min-width:0;overflow:hidden;text-overflow:ellipsis}
+.sk-e{flex:none;display:block;width:44px;height:30px;margin-top:6px;border-radius:4px;box-shadow:0 0 0 1px rgba(0,0,0,.25)}
+.sk-s{margin:4px 0 0;font-size:16.8px;line-height:27.2px;color:var(--tan);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sk-s i{font-style:italic}
+.sk-m{margin:10px 0 0;font:600 13.76px/17px var(--label);letter-spacing:.06em;text-transform:uppercase;color:var(--sun);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sk-m i{font-style:normal}
+@media (min-width:821px){.sk::before{right:max(-20px,calc(50% - 600px));width:240px;height:176px}}
+
+/* labels "KIES EEN …:" met pootjes, keuzeknoppen */
+.slbl{display:flex;align-items:center;gap:8px;margin:4px 0 4px;font:400 1.15rem/1.3 var(--disp);letter-spacing:.04em;text-transform:uppercase;color:var(--brown)}
+.slbl::before{content:"";flex:none;width:46px;height:20px;background:var(--i-paws) center/contain no-repeat}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 8px;margin:0 0 6px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;background:var(--paper);color:var(--dark);border:1.5px solid var(--olive);border-radius:10px;box-shadow:0 2px 0 rgba(59,36,20,.16);padding:5px 13px;font-weight:800;cursor:pointer;white-space:nowrap;font-size:.95rem}
+.chip[aria-pressed="true"]{background:var(--dark);color:var(--sun);border-color:var(--dark);box-shadow:0 2px 0 rgba(0,0,0,.22)}
+
+/* onderbalk: Kaart · Soorten · Topspots · Meer */
+.bnav{position:fixed;left:0;right:0;bottom:0;z-index:70;background:var(--dark);padding:6px 4px calc(6px + env(safe-area-inset-bottom,0px))}
+.bnav nav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));max-width:640px;margin:0 auto}
+.bnav a{display:flex;flex-direction:column;align-items:center;gap:2px;padding:4px 2px;font:600 .76rem var(--body);color:#D9C3A1;text-align:center;position:relative;text-decoration:none;white-space:nowrap}
+.bnav a:hover{color:var(--cream)}
+.bnav svg{width:24px;height:24px}
+.bnav a.on{color:var(--sun);font-weight:800}
+.bnav a.on::after{content:"";position:absolute;bottom:-4px;left:22%;right:22%;height:3px;border-radius:3px;background:var(--sun)}
+.bnav a:focus-visible{outline:2px solid var(--sun);border-radius:8px}
+
+/* scherm Meer: lijst met ronde iconen */
+.ml{list-style:none;margin:6px 0 0;padding:0;background:var(--paper);border:1px solid var(--line);border-radius:16px;overflow:hidden;max-width:760px;box-shadow:var(--shadow)}
+.ml li{margin:0;border-top:1px solid var(--line)}
+.ml li:first-child{border-top:0}
+.ml a{display:flex;align-items:center;gap:14px;padding:14px 16px;color:var(--ink);text-decoration:none;font-size:1.05rem;font-weight:600}
+.ml a:hover{background:color-mix(in srgb,var(--sun) 14%,transparent);color:var(--ink)}
+.ml .mi{flex:none;width:40px;height:40px;border-radius:50%;background:var(--dark);color:var(--sun);display:flex;align-items:center;justify-content:center}
+.ml .mi svg{width:21px;height:21px}
+.ml .mt{flex:1;min-width:0}
+.ml .mt small{display:block;font-weight:400;font-size:.9rem;color:var(--muted)}
+.ml .pijl{flex:none;width:18px;height:18px;color:var(--olive)}
+
+/* zwevende terugknop op soort- en tekstpagina's */
+.fab{position:fixed;left:max(16px,env(safe-area-inset-left,0px));bottom:calc(84px + env(safe-area-inset-bottom,0px));z-index:60;display:flex;align-items:center;justify-content:center;width:54px;height:54px;border-radius:50%;background:var(--sun);color:var(--dark)!important;border:2px solid var(--dark);box-shadow:0 4px 14px rgba(0,0,0,.28);text-decoration:none!important;cursor:pointer}
+.fab svg{width:26px;height:26px}
+
+/* score */
+.score{display:inline-flex;align-items:center;gap:8px;white-space:nowrap}
+.pips{display:inline-flex;gap:3px}
+.pips i{width:9px;height:9px;border-radius:50%;border:1.5px solid var(--c);background:transparent}
+.pips i.on{background:var(--c)}
+.score b{font-family:var(--label);font-weight:600;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:var(--c)}
+.big .pips i{width:13px;height:13px}
+.big b{font-size:1rem}
+
+/* topspots */
+.tops{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.tcard{display:flex;flex-direction:column;background:var(--paper);border:1px solid var(--line);border-radius:10px;overflow:hidden;text-decoration:none;cursor:pointer;text-align:left;padding:0;box-shadow:var(--shadow);transition:transform .15s}
+.tcard:hover{transform:translateY(-2px);color:inherit}
+.tcard .ph{position:relative;aspect-ratio:16/10;background:var(--land);overflow:hidden}
+.tcard img{width:100%;height:100%;object-fit:cover;display:block}
+.tcard .tag{position:absolute;left:8px;top:8px;background:var(--paper);color:var(--ink);border-radius:4px;padding:2px 7px;font-family:var(--label);font-weight:600;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase}
+.tcard .bd{padding:12px 14px 14px;display:flex;flex-direction:column;gap:5px;flex:1;min-width:0}
+.tcard h3{font-size:1.15rem}
+.tcard .where{color:var(--muted);font-size:.95rem}
+.tcard .sp{font-weight:700}
+.tcard .ssn{font-size:.9rem;color:var(--muted);margin-top:auto}
+.tcard .bd .score b{white-space:normal}
+/* plekfoto als hoofdbeeld, rond soortfotootje erop */
+.tcard .avs{position:absolute;left:8px;bottom:8px;display:flex}
+.tcard .av{width:46px;height:46px;border-radius:50%;overflow:hidden;border:2px solid var(--paper);box-shadow:0 1px 4px rgba(0,0,0,.35);background:var(--land)}
+.tcard .av+.av{margin-left:-12px}
+.tcard .pcr{position:absolute;right:0;bottom:0;max-width:calc(100% - 70px);background:rgba(0,0,0,.45);color:#fff;font-size:.62rem;line-height:1.3;padding:2px 6px;border-top-left-radius:6px}
+@media (max-width:600px){
+  .tops{grid-template-columns:1fr;gap:10px}
+  .tcard{flex-direction:row}
+  .tcard .ph{flex:none;width:108px;aspect-ratio:auto}
+  .tcard:has(.ph.spot){flex-direction:column}
+  .tcard .ph.spot{width:auto;aspect-ratio:2/1}
+  .tcard .av{width:40px;height:40px}
+  .tcard .tag{display:none}
+  .tcard .bd{padding:10px 12px;gap:3px}
+  .tcard h3{font-size:1.05rem}
+  .tcard .ssn{display:none}
+}
+.morewrap{display:flex;justify-content:center;margin-top:16px}
+.btn{border:1px solid var(--ink);background:none;border-radius:99px;padding:9px 18px;font-weight:700;cursor:pointer}
+.btn:hover{background:var(--ink);color:var(--paper)}
+.empty{color:var(--muted);font-style:italic;padding:12px 0}
+.catrow{display:flex;gap:6px;overflow-x:auto;padding:2px 2px 12px;margin:0 0 4px;scrollbar-width:thin}
+.catbtn{flex:none;width:76px;display:flex;flex-direction:column;align-items:center;gap:4px;border:0;background:none;padding:4px 2px;cursor:pointer;border-radius:10px;font-size:.8rem;line-height:1.15;text-align:center}
+.catbtn .av{width:54px;height:54px;border-radius:50%;overflow:hidden;border:2px solid var(--line);background:var(--land);display:flex;align-items:center;justify-content:center;font-family:var(--label);font-weight:600;color:var(--paper)}
+.catbtn img{width:100%;height:100%;object-fit:cover;display:block}
+.catbtn.grey .av{filter:grayscale(1);opacity:.55}
+.catbtn.grey{color:var(--muted)}
+.catbtn[aria-pressed="true"]{background:color-mix(in srgb,var(--olive) 14%,transparent);font-weight:700}
+.catbtn[aria-pressed="true"] .av{border-color:var(--olive);box-shadow:0 0 0 2px var(--olive)}
+.catnote{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;margin:0 0 12px}
+.catnote b{font-family:var(--display);font-size:1.15rem}
+.map .mk.dim{opacity:.35}
+.also{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;padding:12px 14px;border-bottom:1px solid var(--line)}
+.also label{font-weight:700}
+.also select{font:inherit;font-size:16px;padding:6px 10px;border-radius:8px;border:1px solid var(--line);background:var(--paper);color:var(--ink);max-width:100%}
+.alsolist{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:6px}
+.alsolist li{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:center}
+
+/* kaart */
+.mapbox{background:var(--paper);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.mapscroll{overflow:hidden}
+.map{display:block;width:100%;height:auto;background:var(--sea);touch-action:manipulation}
+.map .land{fill:var(--land)}
+.map .brd{fill:none;stroke:color-mix(in srgb,var(--ink) 30%,transparent);stroke-width:.7;vector-effect:non-scaling-stroke;stroke-linejoin:round}
+.map .cl{font-family:var(--label);font-weight:600;letter-spacing:.04em;fill:color-mix(in srgb,var(--ink) 62%,transparent);text-anchor:middle;dominant-baseline:central;paint-order:stroke;stroke:var(--land);stroke-opacity:.8;pointer-events:none}
+.map .grat{stroke:color-mix(in srgb,var(--ink) 7%,transparent);fill:none}
+.map .rng{fill:var(--range);fill-opacity:.32;stroke:var(--range);stroke-opacity:.7;stroke-linejoin:round}
+.map .mk{cursor:pointer}
+.map .mk .dot{stroke:var(--paper);stroke-linejoin:round}
+.map .mk.sel .dot{stroke:var(--ink)}
+.map .mk text{font-family:var(--label);font-weight:600;fill:var(--paper);text-anchor:middle;dominant-baseline:central;pointer-events:none}
+.rp-form{display:grid;gap:16px;background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:12px;padding:16px;max-width:640px;margin-top:18px}
+.rp-form fieldset{border:0;margin:0;padding:0}
+.rp-form legend,.rp-l{display:block;font-weight:700;margin:0 0 6px}
+.rp-types{display:grid;gap:8px}
+.rp-types label{display:flex;gap:10px;align-items:flex-start;cursor:pointer}
+.rp-types input{width:19px;height:19px;margin:3px 0 0;accent-color:var(--accent);flex:none}
+.rp-form select,.rp-form input[type=date],.rp-form input[type=text],.rp-form textarea{font:inherit;font-size:16px;padding:9px 11px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);border-radius:8px;width:100%;max-width:440px;box-sizing:border-box}
+.rp-form select:focus,.rp-form input:focus,.rp-form textarea:focus{border-color:var(--accent);outline:none}
+.rp-form input[type=text]{margin-top:8px}
+.rp-form textarea{resize:vertical;display:block;min-height:96px}
+.rp-cnt{display:block;color:var(--muted);font-size:.85rem;margin-top:4px}
+.rp-sum{margin:0;padding:10px 12px;border:1.5px dashed var(--line);border-radius:8px;line-height:1.45}
+.rp-sum.leeg{color:var(--muted)}
+.rp-go{font:inherit;font-weight:700;padding:11px 18px;border:0;background:var(--olive);color:var(--paper);border-radius:99px;cursor:pointer;justify-self:start}
+.rp-go:disabled{opacity:.45;cursor:not-allowed}
+.rp-msg{margin:0;min-height:1.4em}
+.rp-msg.fout{color:#A3242B}
+.rp-msg.ok{color:var(--olive);font-weight:700}
+.rp-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.lgexp{flex-basis:100%;margin:0;font-size:.82rem;line-height:1.5}
+.lgexp b{color:var(--ink)}
+.maplegend{display:flex;flex-wrap:wrap;gap:6px 14px;padding:10px 14px;border-top:1px solid var(--line);font-size:.9rem;color:var(--muted);align-items:center}
+.maplegend span{display:inline-flex;align-items:center;gap:5px}
+.maplegend i{width:11px;height:11px;border-radius:50%;background:var(--c);display:inline-block}
+.maplegend svg{width:14px;height:14px}
+.panel{border-top:1px solid var(--line);padding:16px 14px 18px;scroll-margin-top:170px}
+.panel .hint{color:var(--muted)}
+.panel h3{font-size:1.35rem}
+.panel .meta{color:var(--muted);margin:2px 0 10px}
+/* startkaart: zoomen, filter op kans, lijst */
+.mapstage{position:relative}
+#mapwrap .map{touch-action:pan-y;user-select:none;-webkit-user-select:none}
+#mapwrap .map.pan{cursor:grab}
+#mapwrap .map.zoomed{touch-action:none;cursor:grab}
+.zoombtns{position:absolute;top:10px;right:10px;display:flex;flex-direction:column;gap:6px;z-index:2}
+.zoombtns button{width:36px;height:36px;border-radius:8px;border:1px solid var(--line);background:var(--paper);color:var(--ink);font:700 1.3rem/1 var(--body);cursor:pointer;box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center;padding:0}
+.zoombtns button svg{width:18px;height:18px}
+.zoombtns button:disabled{opacity:.4;cursor:default}
+.maplegend .lgbtn{border:1px solid var(--line);background:var(--paper);border-radius:99px;padding:3px 10px 3px 8px;font:inherit;color:var(--ink);cursor:pointer;display:inline-flex;align-items:center;gap:5px}
+.maplegend .lgbtn[aria-pressed="false"]{color:var(--muted);background:none;border-style:dashed}
+.maplegend .lgbtn[aria-pressed="false"] i{background:none;box-shadow:inset 0 0 0 2px var(--c)}
+.maplegend .lowbtn{border:0;background:none;color:var(--olive);font:inherit;font-weight:700;text-decoration:underline;text-underline-offset:2px;cursor:pointer;padding:3px 0}
+.maplist{border-top:1px solid var(--line);padding:16px 14px 18px}
+.maplist ol{list-style:none;margin:10px 0 0;padding:0}
+.maplist li+li{border-top:1px solid var(--line)}
+.maplist .pl{width:100%;display:flex;gap:10px;align-items:flex-start;text-align:left;background:none;border:0;padding:9px 4px;cursor:pointer;font:inherit;color:inherit;border-radius:6px}
+.maplist .pl:hover,.maplist .pl[aria-current="true"]{background:color-mix(in srgb,var(--olive) 10%,transparent)}
+.maplist .pl .d{flex:none;width:12px;height:12px;border-radius:50%;background:var(--c);margin-top:5px}
+.maplist .pl .d.st{background:none;color:var(--c);width:15px;height:15px;margin-top:3px}
+.maplist .pl b{display:block}
+.maplist .pl small{display:block;color:var(--muted);font-size:.92rem}
+.maplist .morewrap{margin-top:10px}
+.rec{border-top:1px dashed var(--line);padding-top:10px;margin-top:10px;display:grid;gap:4px}
+.rec:first-of-type{border-top:0;margin-top:0;padding-top:0}
+.rec .sp{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;font-weight:700;font-size:1.05rem}
+.facts{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:7px}
+.facts li{display:flex;gap:9px;align-items:flex-start;min-width:0}
+.facts svg{flex:none;width:18px;height:18px;margin-top:2px;fill:none;stroke:var(--muted);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.soon{display:inline-block;font-family:var(--label);font-weight:600;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line);border-radius:4px;padding:1px 7px;color:var(--muted);width:max-content}
+.btnlink{display:inline-flex;align-items:center;gap:6px;font-weight:700;color:var(--accent);text-decoration:none}
+.btnlink:hover{text-decoration:underline}
+
+/* soorten */
+.search{width:100%;max-width:420px;padding:10px 14px;border-radius:99px;border:1px solid var(--line);background:var(--paper);font:inherit;font-size:16px;color:var(--ink);margin-bottom:18px}
+.search:focus{outline:2px solid var(--accent);outline-offset:1px}
+.grouph{display:flex;align-items:baseline;gap:10px;margin:6px 0 12px}
+.grouph h3{font-size:1.25rem}
+.grouph span{font-family:var(--label);font-weight:600;color:var(--muted);letter-spacing:.06em}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px;margin-bottom:28px}
+.scard{display:flex;flex-direction:column;text-decoration:none;background:var(--paper);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.scard .ph{aspect-ratio:4/3;background:var(--land);overflow:hidden}
+.scard img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}
+.scard:hover img{transform:scale(1.04)}
+.scard .bd{padding:9px 11px 12px;display:flex;flex-direction:column;gap:3px;flex:1}
+.scard .nm{font-family:var(--display);font-weight:700;font-size:1.08rem;line-height:1.15}
+.scard .la{font-size:.85rem;color:var(--muted)}
+.scard .ft{margin-top:auto;padding-top:6px}
+.no{font-family:var(--label);font-weight:600;color:var(--muted);font-size:.78rem;letter-spacing:.06em}
+.soonlist{list-style:none;margin:0 0 10px;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:0 22px}
+.soonlist li{display:grid;grid-template-columns:52px 1fr auto;gap:10px;align-items:center;padding:7px 0;border-bottom:1px solid var(--line)}
+.soonlist img{width:52px;height:39px;object-fit:cover;border-radius:5px;display:block;filter:saturate(.75)}
+.soonlist li > div{min-width:0;line-height:1.25}
+.soonlist b{display:block;font-family:var(--display);font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.soonlist .la{font-size:.82rem;color:var(--muted);display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* soortpagina */
+.crumbs{padding-top:16px;font-size:.92rem;color:var(--muted)}
+.crumbs a{color:var(--muted)}
+.sphead{display:grid;gap:20px;padding-block:12px 18px;align-items:start}
+@media (min-width:860px){.sphead{grid-template-columns:1.1fr 1fr}}
+.heros{min-width:0}
+.hstrip{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+.hstrip::-webkit-scrollbar{display:none}
+.hstrip .hero{flex:0 0 100%;scroll-snap-align:start}
+.hdots{display:flex;justify-content:center;gap:4px;margin-top:2px}
+.hdots button{width:22px;height:22px;border:0;background:none;padding:0;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.hdots button::after{content:"";width:8px;height:8px;border-radius:50%;background:var(--line)}
+.hdots button.on::after{background:var(--ink)}
+.hero{margin:0}
+.hero .ph{aspect-ratio:4/3;max-width:100%;border-radius:12px;overflow:hidden;background:var(--land)}
+.hero img{width:100%;height:100%;object-fit:cover;display:block}
+figcaption{font-size:.82rem;color:var(--muted);margin-top:6px;overflow-wrap:anywhere}
+.idblock{display:flex;flex-direction:column;gap:10px;min-width:0}
+.idblock .en{font-size:1.1rem;color:var(--muted)}
+.badges{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.iucn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:99px;padding:3px 10px 3px 4px;font-size:.92rem;width:max-content;max-width:100%}
+.iucn b{font-family:var(--label);font-weight:600;letter-spacing:.05em;border-radius:99px;padding:1px 7px;color:#fff;background:var(--ic)}
+.summary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;background:var(--paper);border:1px solid var(--line);border-radius:12px;margin:0}
+.summary > div{padding:12px 14px;border-left:1px solid var(--line);min-width:0;display:grid;gap:4px;align-content:start}
+.summary > div:first-child{border-left:0}
+.summary dt{font-family:var(--label);font-weight:600;font-size:.75rem;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.summary dd{margin:0;font-weight:700;line-height:1.3}
+.summary dd small{display:block;font-weight:400;color:var(--muted)}
+.lead{font-family:var(--display);font-size:1.22rem;line-height:1.5;font-weight:500}
+.lead .kans{display:block;margin-top:10px;font-family:var(--label);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:1rem;color:var(--accent)}
+.jump{position:sticky;top:calc(env(safe-area-inset-top,0px) + var(--head));z-index:9;background:color-mix(in srgb,var(--bg) 94%,transparent);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-block:1px solid var(--line)}
+.jump .wrap{display:flex;gap:6px;overflow-x:auto;padding-block:8px;scrollbar-width:none}
+.jump .wrap::-webkit-scrollbar{display:none}
+.jump button{flex:none;border:1px solid var(--line);background:var(--paper);border-radius:99px;padding:5px 13px;font-weight:500;cursor:pointer;white-space:nowrap}
+.jump button:hover{border-color:var(--ink)}
+.jump button.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.anchor{scroll-margin-top:calc(env(safe-area-inset-top,0px) + var(--head) + 60px)}
+.spots:not(.all) > li.more{display:none}
+.spots{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.spot{background:var(--paper);border:1px solid var(--line);border-radius:12px;scroll-margin-top:calc(env(safe-area-inset-top,0px) + var(--head) + 60px)}
+.spot summary{list-style:none;display:flex;gap:12px;align-items:center;padding:12px 14px;cursor:pointer}
+.spot summary::-webkit-details-marker{display:none}
+.spot .rank{flex:none;width:32px;height:32px;border-radius:50%;background:var(--c);color:var(--paper);display:flex;align-items:center;justify-content:center;font-family:var(--label);font-weight:600;font-size:1.02rem}
+.spot .tt{min-width:0;flex:1;display:grid;gap:2px}
+.spot h3{font-size:1.18rem}
+.spot .where{color:var(--muted);font-size:.93rem}
+.spot .chev{flex:none;width:14px;height:14px;color:var(--muted);transition:transform .2s}
+.spot[open] .chev{transform:rotate(180deg)}
+.spot .sc-sum{flex:none}
+.spot[open] .sc-sum{display:none}
+.spot .ssn{display:flex;gap:6px;align-items:flex-start;font-size:.88rem;color:var(--muted);margin-top:2px}
+.spot .ssn svg{flex:none;width:14px;height:14px;margin-top:3px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.spot[open] .ssn{display:none}
+.spot .body{padding:0 14px 14px 58px;display:grid;gap:8px}
+@media (max-width:520px){.spot .body{padding-left:14px}.spot .sc-sum b{display:none}}
+.spot .why{font-size:1rem}
+.cite{font-size:.75rem;vertical-align:super;line-height:0;margin-left:2px;color:var(--muted);text-decoration:none}
+.cite:hover{color:var(--accent)}
+.tips{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.tips li{padding-left:26px;position:relative}
+.tips li::before{content:"";position:absolute;left:2px;top:.45em;width:12px;height:12px;border-radius:50% 50% 45% 45%;background:var(--olive);opacity:.85;
+  box-shadow:-5px -8px 0 -3px var(--olive),0 -10px 0 -3px var(--olive),5px -8px 0 -3px var(--olive)}
+.two{display:grid;gap:28px}
+.two:has(.fold){gap:8px 28px}
+.sec:has(.fold),.sec + .sec:has(.fold){padding-block:4px}
+@media (min-width:860px){.two{grid-template-columns:1fr 1fr}}
+.gallery{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;scrollbar-width:thin}
+.gallery figure{margin:0;flex:none;width:min(300px,78%);scroll-snap-align:start}
+.gallery .ph{aspect-ratio:4/3;border-radius:10px;overflow:hidden;background:var(--land)}
+.gallery img{width:100%;height:100%;object-fit:cover;display:block}
+/* inklapbare onderdelen op de soortpagina: alleen de kop, tik = open */
+.fold summary{list-style:none;display:flex;align-items:center;gap:10px;cursor:pointer;padding:10px 0;border-bottom:1px solid var(--line)}
+.fold summary::-webkit-details-marker{display:none}
+.fold summary h2{flex:1}
+.fold .cnt{color:var(--muted);font-weight:400}
+.fold .chev{flex:none;width:16px;height:16px;color:var(--muted);transition:transform .2s}
+.fold[open] .chev{transform:rotate(180deg)}
+.fold[open] summary{margin-bottom:14px}
+.sources{margin:0;padding-left:1.6em;display:grid;gap:6px;font-size:.95rem;overflow-wrap:anywhere}
+.note{font-size:.92rem;color:var(--muted)}
+.box{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:18px}
+.prose{display:grid;gap:14px}
+.prose h2{margin-top:18px}
+.prose h3{margin-top:8px}
+.prose ul{margin:0;padding-left:1.2em;display:grid;gap:6px}
+.kofi{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:700;padding:12px 20px;border-radius:99px;width:max-content;max-width:100%}
+.kofi:hover{color:var(--accent-ink);filter:brightness(1.07)}
+.kofi svg{width:22px;height:22px}
+.foot{border-top:1px solid var(--line);margin-top:40px;background:var(--paper)}
+.foot .wrap{padding-block:26px;display:flex;flex-wrap:wrap;gap:10px 28px;justify-content:space-between;color:var(--muted);font-size:.92rem}
+.foot nav{display:flex;flex-wrap:wrap;gap:6px 16px}
+.eurlist{display:grid;gap:14px}
+.eurrow{display:grid;grid-template-columns:96px 1fr;gap:14px;align-items:start;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:12px;text-decoration:none}
+.eurrow img{width:96px;height:72px;object-fit:cover;border-radius:8px;display:block}
+.eurrow > div{min-width:0;display:grid;gap:3px}
+.check{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.check li{display:grid;grid-template-columns:22px 1fr;gap:8px}
+.check li::before{content:"";width:14px;height:14px;border:1.5px solid var(--olive);border-radius:3px;margin-top:.3em}
+.scale{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:8px}
+.scale li{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center}
+
+/* ---------- Safari: onderdelen in de opbouw van de Bezoekersgids ---------- */
+.note{color:var(--muted)}
+.catrow{gap:4px;padding:2px 2px 10px;scrollbar-width:none}
+.catrow::-webkit-scrollbar{display:none}
+.catbtn{width:80px;font-size:.82rem;font-weight:600;padding:6px 2px;color:var(--ink);hyphens:auto;-webkit-hyphens:auto;overflow-wrap:anywhere}
+.catbtn .av{width:58px;height:58px;border:3px solid var(--sun);box-shadow:0 2px 0 var(--wood);background:var(--land);font-family:var(--disp);font-weight:400;font-size:1.25rem;color:var(--sun)}
+.catbtn .av.all{background:var(--dark)}
+.catbtn[aria-pressed="true"]{background:#EAD7B5;font-weight:800}
+.catbtn[aria-pressed="true"] .av{border-color:var(--dark);box-shadow:0 0 0 3px var(--sun)}
+.catbtn.grey .av{border-color:var(--line);box-shadow:none}
+.catnote b{font-weight:800;font-size:1.15rem}
+.mapbox{border:0;border-radius:18px;box-shadow:0 0 0 4px var(--dark),0 10px 24px -12px rgba(59,36,20,.5);margin:4px 4px 0;background:var(--paper)}
+.zoombtns button{background:var(--sun);color:var(--dark);border:1.5px solid var(--dark)}
+.zoombtns button:disabled{background:#EAD7B5;opacity:.75}
+.maplegend .lgbtn{background:#fff}
+.maplegend .lowbtn{color:var(--accent)}
+.mapnote{margin:16px 2px 12px}
+.lcard{background:var(--paper);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:16px 14px 14px}
+.lcard h3{font-size:1.2rem}
+.lcard .lsub{color:var(--muted);font-size:.95rem;margin-top:4px}
+.maplist{border-top:0;padding:0}
+.maplist .pl b{font-weight:800}
+.maplist .pl:hover,.maplist .pl[aria-current="true"]{background:color-mix(in srgb,var(--sun) 22%,transparent)}
+.panel h3{font-size:1.3rem}
+.tcard{border-radius:16px;box-shadow:0 2px 0 rgba(59,36,20,.08),0 8px 18px -12px rgba(59,36,20,.35)}
+.tcard .ph{border-bottom:3px solid var(--sun)}
+.tcard .sp{font-weight:800;color:var(--accent)}
+.tcard h3{font-weight:800}
+.btn{border:1.5px solid var(--dark);color:var(--dark);background:var(--paper);font-weight:800;box-shadow:0 2px 0 rgba(59,36,20,.16)}
+.btn:hover{background:var(--dark);color:var(--sun)}
+.box{border-radius:16px}
+details.box summary{font-weight:800}
+/* soorten: zoekveld, groepen grote/kleine katten, fotokaartjes */
+.zk{display:flex;align-items:center;gap:10px;height:48px;padding:0 18px;border:2px solid var(--olive);border-radius:99px;background:#fff;box-shadow:var(--shadow);max-width:520px;margin:6px 0 6px}
+.zk:focus-within{outline:2px solid var(--accent);outline-offset:2px}
+.zk svg{width:22px;height:22px;flex:none;color:var(--olive)}
+.zk input{flex:1;min-width:0;border:0;outline:0;background:transparent;font:inherit;font-size:16.8px;color:var(--ink);-webkit-appearance:none;appearance:none;padding:0}
+.zk input::placeholder{color:var(--muted);opacity:1}
+.zk input::-webkit-search-cancel-button{-webkit-appearance:none}
+.gt{margin:20px 0 10px}
+.gt button{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:8px;font:400 1.15rem/1.3 var(--disp);letter-spacing:.04em;text-transform:uppercase;color:var(--brown)}
+.gt button::before{content:"";flex:none;width:46px;height:20px;background:var(--i-paws) center/contain no-repeat}
+.gt button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+.gt .chv{width:20px;height:20px;flex:none;transition:transform .2s}
+.gt button[aria-expanded="false"] .chv{transform:rotate(180deg)}
+.grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin-bottom:10px}
+.grid[hidden]{display:none}
+.scard{border-radius:14px;box-shadow:0 2px 0 rgba(59,36,20,.08),0 8px 18px -12px rgba(59,36,20,.35);color:var(--ink)}
+.scard:hover{color:var(--ink)}
+.scard .ph{border-bottom:3px solid var(--sun)}
+.scard .bd{padding:9px 11px 11px;gap:2px}
+.scard .nm{font-weight:800;font-size:1.02rem}
+.scard .cnt{font-size:.88rem;color:var(--muted);line-height:1.35}
+.scard .ft{padding-top:5px}
+/* soortpagina */
+.sphead{padding-block:14px 18px}
+.hero .ph{border-radius:18px;box-shadow:0 0 0 4px var(--paper),0 8px 20px -10px rgba(0,0,0,.4)}
+.hstrip{padding:4px;margin:-4px}
+.hdots button.on::after{background:var(--dark)}
+.idblock .en{font-size:1.05rem}
+.summary{border-radius:14px}
+.summary dd{font-weight:800}
+.lead{font-family:var(--body);font-size:1.1rem;line-height:1.6;font-weight:400}
+.lead .kans{font-size:1rem;color:var(--accent)}
+.jump{top:calc(env(safe-area-inset-top,0px) + var(--head));background:color-mix(in srgb,var(--bg) 94%,transparent)}
+.jump button{background:var(--paper);border:1.5px solid var(--olive);border-radius:10px;font-weight:800;color:var(--dark)}
+.jump button:hover{border-color:var(--dark)}
+.jump button.on{background:var(--dark);color:var(--sun);border-color:var(--dark)}
+.spot{border-radius:16px;box-shadow:0 2px 0 rgba(59,36,20,.06)}
+.spot h3{font-weight:800}
+.fold summary h2{font-size:clamp(1.35rem,4.4vw,1.7rem)}
+.fold .cnt{font-family:var(--disp);color:var(--muted)}
+.tips li::before{background:var(--accent);box-shadow:-5px -8px 0 -3px var(--accent),0 -10px 0 -3px var(--accent),5px -8px 0 -3px var(--accent)}
+.eurrow{border-radius:16px;box-shadow:var(--shadow)}
+.eurrow b{font-weight:800}
+.prose h2{margin-top:22px}
+.rp-form{border-radius:16px;border-left-color:var(--sun)}
+.rp-go{background:var(--dark);color:var(--sun);font-weight:800}
+/* voet: Ko-fi op de tak (de tak en de luipaard komen uit bron/jungle.py, zoals in de Bezoekersgids) */
+.foot{border-top:0;margin-top:40px;background:var(--dark2)}
+.foot .wrap{display:block;padding-block:26px;color:var(--tan);font-size:.92rem}
+.kofibar{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;padding-bottom:18px;margin-bottom:16px;border-bottom:1px solid rgba(255,236,200,.3)}
+.kofibar p{flex:1 1 260px;font-size:1rem}
+.kofi{background:var(--sun);color:var(--dark)}
+.kofi:hover{color:var(--dark)}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#start" aria-label="Spottersgids – start">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><g fill="currentColor"><ellipse cx="16" cy="21" rx="7" ry="6"/><ellipse cx="7.5" cy="13" rx="2.8" ry="3.6"/><ellipse cx="13" cy="8.5" rx="2.8" ry="3.7"/><ellipse cx="19" cy="8.5" rx="2.8" ry="3.7"/><ellipse cx="24.5" cy="13" rx="2.8" ry="3.6"/></g></svg>
+      <span><b id="brandName">Spottersgids</b><small id="brandSub">wilde katten</small></span>
+    </a>
+    <button type="button" class="icobtn" id="zoekBtn" aria-expanded="false" aria-controls="zoekpaneel"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg><span class="t" id="zoekT">Zoeken</span></button>
+    <div class="langsw" role="group" aria-label="Taal / Language">
+      <button type="button" id="langNl" data-setlang="nl">NL</button><button type="button" id="langEn" data-setlang="en">EN</button>
+    </div>
+    <button type="button" class="menubtn" id="menuBtn" aria-expanded="false" aria-controls="nav" aria-label="Menu"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 5h16M2 10h16M2 15h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span class="t">Menu</span></button>
+  </div>
+  <nav class="nav" id="nav" aria-label="Menu"></nav>
+  <div class="zdrop" id="zoekpaneel" hidden><div class="wrap"><div class="zoek" role="search">
+    <label class="lbl" for="zoekIn" id="zoekL" style="display:block;margin-bottom:6px">Zoek een kat of een plek</label>
+    <div class="zoek-box"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>
+      <input id="zoekIn" type="search" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="zoekRes">
+      <button type="button" class="zoek-x" id="zoekX" hidden aria-label="Wissen / Clear">×</button></div>
+    <ul class="zoek-res" id="zoekRes" role="listbox" hidden></ul>
+  </div></div></div>
+</header>
+<main id="main"></main>
+<footer class="foot"><div class="wrap" id="foot"></div></footer>
+<div class="bnav" id="bnav"><nav id="bnavIn" aria-label="Menu"></nav></div>
+
+<script src="data.js?v=__VER__"></script>
+<script>
+'use strict';
+(function(){
+const D = window.SG_DATA;
+const SGP = window.SG_PAGE || null;   // losse soortpagina: {no, lang}
+const INIT_TITLE = document.title;
+const KOFI_URL = 'https://ko-fi.com/katalogue';
+const $ = s => document.querySelector(s);
+const $$ = s => Array.from(document.querySelectorAll(s));
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let L = 'nl';
+try { const s = localStorage.getItem('sg-lang'); if (s === 'en' || s === 'nl') L = s; else if (!/^nl/i.test(navigator.language || 'nl')) L = 'en'; } catch(e) {}
+try { const q = new URLSearchParams(location.search).get('lang'); if (q === 'nl' || q === 'en') { L = q; localStorage.setItem('sg-lang', L); } } catch(e) {}
+if (SGP) { L = SGP.lang; try { localStorage.setItem('sg-lang', L); } catch(e) {} }
+/* adres van een losse soortpagina (relatief t.o.v. de map spottersgids) */
+// testpagina (window.SG_TEST): soortpagina's binnen dezelfde pagina via #soort-<nr>
+const spHref = no => window.SG_TEST ? '#soort-' + no : (L === 'en' ? 'en/' : '') + D.slugs[L][no] + '/';
+const UPDATED = '__UPDATED__';   // datum (jjjj-mm-dd) van de laatste wijziging in de gegevens, gezet door build.py
+const T = o => o == null ? '' : (typeof o === 'string' ? o : (o[L] != null ? o[L] : o.nl));
+
+/* ---------- vaste teksten ---------- */
+const U = {
+  title:{nl:'Spottersgids voor wilde katten',en:"Wild Cat Spotter's Guide"},
+  brandSub:{nl:'wilde katten · J. Gelens',en:'wild cats · J. Gelens'},
+  navSpecies:{nl:'Soorten',en:'Species'}, navTop:{nl:'Topspots',en:'Top spots'}, navMap:{nl:'Kaart',en:'Map'},
+  navResp:{nl:'Verantwoord spotten',en:'Responsible spotting'}, navEur:{nl:'Katten in Europa',en:'Cats in Europe'},
+  navPack:{nl:'Paklijst',en:'Packing list'}, navAbout:{nl:'Over deze gids',en:'About this guide'}, navVisit:{nl:'Bezoekersgids: katten in dierentuinen',en:'Visitor’s Guide: cats in zoos'}, navKofi:{nl:'Steun de gids via Ko-fi',en:'Support the guide on Ko-fi'}, navReport:{nl:'Melden',en:'Report'}, navMore:{nl:'Meer',en:'More'}, srch:{nl:'Zoeken',en:'Search'}, srchL:{nl:'Zoek een kat of een plek',en:'Search for a cat or a place'}, srchPh:{nl:'Bijv. manoel, Pantanal of Botswana',en:'E.g. Pallas’s cat, Pantanal or Botswana'}, srchNone:{nl:'Niets gevonden',en:'Nothing found'},
+  sub:{nl:'Waar je alle 42 wilde kattensoorten in het wild kunt zien, hoe groot je kans is en hoe je ze vindt.',en:'Where to see all 42 wild cat species in the wild, how good your chances are and how to find them.'},
+  all:{nl:'Hele wereld',en:'Whole world'},
+  topSub:{nl:'Plekken waar je een soort (bijna) zeker ziet, mits je de tijd neemt en in het goede seizoen gaat.',en:'Places where you will (almost) certainly see a species, as long as you take your time and go in the right season.'},
+  showAll:{nl:'Toon alle topspots',en:'Show all top spots'}, showLess:{nl:'Toon minder',en:'Show fewer'},
+  mapSub:{nl:'Markers staan op het midden van een reservaat of gebied, nooit op een hol of vaste rustplek.',en:'Markers sit at the centre of a reserve or area, never on a den or regular resting place.'},
+  allCats:{nl:'Alle katten',en:'All cats'},
+  noSpot:{nl:'Nog geen spotplek; volgt binnenkort',en:'No spotting site yet; coming soon'},
+  catMap:{nl:'Waar zit welke kat? Kies een soort:',en:'Which cat lives where? Pick a species:'},
+  catShown:{nl:'plekken op de kaart',en:'places on the map'},
+  catShown1:{nl:'plek op de kaart',en:'place on the map'},
+  alsoLbl:{nl:'Ook te zien op deze plekken:',en:'Also seen at these places:'},
+  alsoNone:{nl:'— kies een kat —',en:'— pick a cat —'},
+  alsoAt:{nl:'zie je ook bij:',en:'can also be seen at:'},
+  zoomIn:{nl:'Inzoomen',en:'Zoom in'}, zoomOut:{nl:'Uitzoomen',en:'Zoom out'}, zoomReset:{nl:'Hele kaart tonen',en:'Show whole map'},
+  lgToggle:{nl:'Kans {n} tonen of verbergen',en:'Show or hide chance {n}'},
+  showLow:{nl:'Toon ook kans 1–2',en:'Also show chance 1–2'}, hideLow:{nl:'Verberg kans 1–2',en:'Hide chance 1–2'},
+  listMap:{nl:'Plekken op de kaart',en:'Places on the map'}, listView:{nl:'Plekken in beeld',en:'Places in view'},
+  listNone:{nl:'Geen plekken met deze kans in beeld.',en:'No places with this chance in view.'},
+  listAll:{nl:'Toon alle plekken',en:'Show all places'},
+  mapHint:{nl:'Tik op een marker om te zien welke katten je daar kunt vinden.',en:'Tap a marker to see which cats you can find there.'},
+  search:{nl:'Zoek een soort (NL, Engels of Latijn)',en:'Search a species (Dutch, English or Latin)'},
+  ready:{nl:'Klaar om te spotten',en:'Ready to spot'},
+  soon:{nl:'Volgt binnenkort',en:'Coming soon'},
+  noHits:{nl:'Geen soort gevonden.',en:'No species found.'},
+  soonPage:{nl:'Soortpagina volgt binnenkort',en:'Species page coming soon'},
+  toPage:{nl:'Naar de soortpagina',en:'Go to the species page'},
+  season:{nl:'Seizoen',en:'Season'}, time:{nl:'Tijdstip',en:'Time of day'}, trip:{nl:'Soort tocht',en:'Type of trip'},
+  bestPlace:{nl:'Beste plek',en:'Best place'}, bestTime:{nl:'Beste tijd',en:'Best time'},
+  jPlaces:{nl:'Plekken',en:'Places'}, jMap:{nl:'Kaart',en:'Map'}, jTips:{nl:'Tips',en:'Tips'}, jStatus:{nl:'Status',en:'Status'}, jSources:{nl:'Bronnen',en:'Sources'},
+  bestSpots:{nl:'De beste plekken',en:'The best places'},
+  bestSpotsSub:{nl:'Op volgorde van kans. Tik op een plek voor alle details.',en:'In order of chance. Tap a place for all details.'},
+  tips:{nl:'Spottips',en:'Spotting tips'},
+  habitat:{nl:'Leefgebied en spotplekken',en:'Range and spotting sites'},
+  habitatNote:{nl:'Gekleurd: leefgebied bij benadering (bron: De KATalogue, op basis van openbare verspreidingskaarten). Cijfers: de plekken hieronder; tik erop om de plek te openen.',en:'Shaded: approximate range (source: De KATalogue, based on public range maps). Numbers: the places listed below; tap one to open it.'},
+  status:{nl:'Status en bedreigingen',en:'Status and threats'},
+  threats:{nl:'Belangrijkste bedreigingen',en:'Main threats'},
+  photos:{nl:"Foto's",en:'Photos'}, captive:{nl:'in gevangenschap',en:'in captivity'},
+  sources:{nl:'Bronnen',en:'Sources'},
+  back:{nl:'Alle soorten',en:'All species'},
+  chance:{nl:'Kans',en:'Chance'},
+  legend:{nl:'Kans:',en:'Chance:'},
+  topStar:{nl:'topspot',en:'top spot'},
+  cont:{eur:{nl:'Europa',en:'Europe'},afr:{nl:'Afrika',en:'Africa'},asia:{nl:'Azië',en:'Asia'},nam:{nl:'Noord-Amerika',en:'North America'},sam:{nl:'Midden- en Zuid-Amerika',en:'Central & South America'}},
+  sc:{5:{nl:'bijna zeker',en:'almost certain'},4:{nl:'grote kans',en:'good chance'},3:{nl:'redelijke kans',en:'fair chance'},2:{nl:'kleine kans',en:'small chance'},1:{nl:'veel geluk nodig',en:'needs a lot of luck'}},
+  scaleTitle:{nl:'Zo lees je de kansscore',en:'How to read the chance score'},
+  scale:{5:{nl:'de meeste bezoekers met een goed geplande reis zien de soort',en:'most visitors on a well-planned trip see the species'},4:{nl:'grote kans',en:'good chance'},3:{nl:'redelijke kans',en:'fair chance'},2:{nl:'kleine kans',en:'small chance'},1:{nl:'alleen met veel geluk of via cameravallen',en:'only with a lot of luck or via camera traps'}},
+  iucn:{LC:{nl:'Niet bedreigd',en:'Least Concern'},NT:{nl:'Gevoelig',en:'Near Threatened'},VU:{nl:'Kwetsbaar',en:'Vulnerable'},EN:{nl:'Bedreigd',en:'Endangered'},CR:{nl:'Ernstig bedreigd',en:'Critically Endangered'},NE:{nl:'Niet beoordeeld',en:'Not Evaluated'},DD:{nl:'Onvoldoende gegevens',en:'Data Deficient'}},
+  footMade:{nl:'Een gids van J. Gelens. Soortgegevens, foto’s en verspreidingskaarten: De KATalogue. Plekken en kansen: zie de bronnen per soort.',en:'A guide by J. Gelens. Species data, photos and range maps: De KATalogue. Places and chances: see the sources on each species page.'},
+  photoPre:{nl:'foto:',en:'photo:'},
+  notFound:{nl:'Deze pagina bestaat niet (meer).',en:'This page does not exist.'},
+  /* schermkoppen en onderbalk (Safari-stijl) */
+  world:{nl:'Wereld',en:'World'}, navMoreT:{nl:'Meer',en:'More'},
+  skMap:{nl:'Wilde katten in het wild',en:'Wild cats in the wild'},
+  skSpecies:{nl:'Alle wilde katten en waar je ze ziet',en:'Every wild cat and where to see it'},
+  skTop:{nl:'Plekken waar je (bijna) zeker een kat ziet',en:'Places where you’ll (almost) surely see a cat'},
+  skMore:{nl:'Katten in Europa, spottips en meer',en:'Cats in Europe, spotting tips and more'},
+  wSpecies:{nl:'soorten',en:'species'}, wSpecies1:{nl:'soort',en:'species'}, wPlaces:{nl:'plekken',en:'places'}, wPlace1:{nl:'plek',en:'place'},
+  wTops:{nl:'topspots',en:'top spots'}, wTop1:{nl:'topspot',en:'top spot'}, wBig:{nl:'grote',en:'big'}, wSmall:{nl:'kleine',en:'small'},
+  bigCats:{nl:'Grote katten',en:'Big cats'}, smallCats:{nl:'Kleine katten',en:'Small cats'},
+  grpBig:{nl:'Pantherinae (grote katten)',en:'Pantherinae (big cats)'}, grpSmall:{nl:'Felinae (kleine katten)',en:'Felinae (small cats)'},
+  bestChance:{nl:'beste kans',en:'best chance'},
+  updated:{nl:'Bijgewerkt',en:'Updated'},
+  pickCont:{nl:'Kies een werelddeel:',en:'Choose a continent:'}, pickCat:{nl:'Kies een kat:',en:'Choose a cat:'},
+  inView:{nl:'In beeld',en:'In view'},
+  listSub:{nl:'Grootste kans eerst. Tik op een plek om hem op de kaart te zien.',en:'Best chance first. Tap a place to see it on the map.'},
+  back2:{nl:'Terug',en:'Back'},
+  meerReport:{nl:'Zelf een kat gezien of klopt er iets niet?',en:'Seen a cat yourself or found a mistake?'},
+  reportSub:{nl:'Gaat rechtstreeks naar de maker',en:'Goes straight to the author'}
+};
+const BIG = new Set([1,2,3,4,5,6,7]);   // Pantherinae: leeuw, tijger, jaguar, luipaard, sneeuwpanter, nevelpanter, soendanevelpanter
+const IUCN_COL = {LC:'#4C7A3A',NT:'#7E8C2A',VU:'#B8860B',EN:'#C25B1E',CR:'#A3242B',NE:'#7A7868',DD:'#7A7868'};
+const CONTS = ['eur','afr','asia','nam','sam'];
+
+/* ---------- data ---------- */
+const CATS = D.cats, BY = {}; CATS.forEach(c => BY[c.no] = c);
+const SPOTS = D.spots, SPOT = {}; SPOTS.forEach(s => SPOT[s.id] = s);
+const PAGES = D.pages;           // soortpagina's die af zijn
+const SRC = D.sources;           // globale bronnenlijst
+const BEST = {};                 // hoogste score per soort (alleen uit onderzochte plekken)
+SPOTS.forEach(s => s.recs.forEach(r => { if (!BEST[r.no] || r.score > BEST[r.no]) BEST[r.no] = r.score; }));
+const spotMax = s => Math.max(...s.recs.map(r => r.score));
+const isTop = s => s.recs.some(r => r.top);
+let FILTER = 'all', TAB = 'topspots', SEL = null, SHOWALL = false, Q = '', CAT = null, ALSO = null;
+// startkaart: zichtbare kansen (standaard 3–5), ingezoomd kader (null = niet ingezoomd), hele lijst tonen
+let SHOWN = new Set([3,4,5]), VIEW = null, LISTALL = false, DRAGGED = false;
+TAB = 'kaart';   // de kaart is de pagina die opent
+try { const f = localStorage.getItem('sg-cont'); if (f && (f === 'all' || CONTS.includes(f))) FILTER = f; } catch(e) {}
+const narrow = () => window.innerWidth < 600;
+
+/* ---------- kleine bouwstenen ---------- */
+const scoreHtml = (n, big, compact) => `<span class="score${big?' big':''}" style="--c:var(--s${n})" title="${esc(T(U.chance))} ${n}/5 · ${esc(T(U.sc[n]))}"><span class="pips" aria-hidden="true">${[1,2,3,4,5].map(i=>`<i class="${i<=n?'on':''}"></i>`).join('')}</span><b>${compact ? `${n}/5` : `${esc(T(U.chance))} ${n} · ${esc(T(U.sc[n]))}`}</b></span>`;
+const credit = cr => esc(String(cr || '').replace(/^foto:\s*/i, T(U.photoPre) + ' '));
+const catName = c => T({nl:c.nl, en:c.en});
+// foto's zijn losse bestanden; small = het kleine exemplaar voor ronde fotootjes en lijstjes
+const img = (p, alt, eager, small) => `<img src="${esc(small ? p.sm : p.src)}" alt="${esc(alt)}" loading="${eager?'eager':'lazy'}" decoding="async">`;
+const iucnHtml = code => `<span class="iucn" style="--ic:${IUCN_COL[code]||'#777'}"><b>${esc(code)}</b>${esc(T(U.iucn[code]||{nl:code,en:code}))}</span>`;
+const contName = c => T(U.cont[c]);
+// seizoen, tijdstip en soort tocht: één regel per stuk met een icoontje (label voor schermlezers en als tooltip)
+const FICO = {
+  season:'<rect x="3" y="4.5" width="14" height="12.5" rx="2"/><path d="M3 8.5h14M7 2.5v4M13 2.5v4"/>',
+  time:'<circle cx="10" cy="10" r="7.5"/><path d="M10 5.5V10l3 2"/>',
+  trip:'<path d="M2.5 13.5V10l2-4.5h9l2 4.5h2v3.5"/><path d="M2.5 10h15"/><circle cx="6" cy="14" r="1.8"/><circle cx="14" cy="14" r="1.8"/>'};
+const factsHtml = r => `<ul class="facts">${['season','time','trip'].filter(k => T(r[k])).map(k =>
+  `<li title="${esc(T(U[k]))}"><svg viewBox="0 0 20 20" aria-hidden="true">${FICO[k]}</svg><span><span class="sr">${esc(T(U[k]))}: </span>${esc(T(r[k]))}</span></li>`).join('')}</ul>`;
+const placeLine = s => [T(s.area), T(s.country)].filter(Boolean).join(' · ');
+const STAR = '<svg viewBox="-10 -10 20 20" aria-hidden="true"><path d="M0,-9 2.6,-3.2 8.6,-2.8 4,1.2 5.3,7.3 0,4.1 -5.3,7.3 -4,1.2 -8.6,-2.8 -2.6,-3.2Z" fill="currentColor"/></svg>';
+const CHEV = '<svg class="chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>';
+
+/* ---------- kaart ---------- */
+const W = 720, H = 284;
+const proj = (lat, lon) => [(lon + 180) * 2, (84 - lat) * 2];
+const BOX = { all:[0,0,720,284], eur:[330,22,140,82], afr:[318,70,162,174], asia:[404,34,290,164], nam:[8,12,262,130], sam:[108,110,206,176] };
+// maakt een uitsnede met verhouding r (breedte/hoogte) rond een kader
+function fit(b, r){
+  let [x,y,w,h] = b;
+  if (w/h > r){ const nh = w/r; y -= (nh-h)/2; h = nh; } else { const nw = h*r; x -= (nw-w)/2; w = nw; }
+  if (w > W){ w = W; h = w/r; } if (h > H){ h = H; w = Math.min(W, h*r); }
+  x = Math.max(0, Math.min(W-w, x)); y = Math.max(0, Math.min(H-h, y));
+  return [x,y,w,h];
+}
+// op een telefoon mag een werelddeel hoger worden, zodat het het scherm vult
+const ratioFor = b => narrow() ? Math.max(.8, Math.min(1, b[2]/b[3])) : Math.max(1.9, Math.min(W/H, b[2]/b[3]));
+const GRAT = (() => { let g=''; for(let lon=-150; lon<180; lon+=30) g+=`M${(lon+180)*2},0V284`; for(let lat=60; lat>-60; lat-=30) g+=`M0,${(84-lat)*2}H720`; return g; })();
+const starPath = (x, y, R) => { let d=''; for (let i=0;i<10;i++){ const a = -Math.PI/2 + i*Math.PI/5, rr = i%2 ? R*.48 : R; d += (i?'L':'M') + (x+rr*Math.cos(a)).toFixed(2) + ',' + (y+rr*Math.sin(a)).toFixed(2); } return d + 'Z'; };
+function mapSvg(opts){
+  const vb = opts.vb || (opts.world ? [0,0,W,H] : fit(opts.box, ratioFor(opts.box)));
+  const u = vb[2] / opts.cw;                       // kaarteenheden per schermpixel
+  const k = vb[2]/W, mr = opts.mr || 6.5;
+  const rng = opts.range ? `<path class="rng" d="${opts.range}" stroke-width="${.6*k}"/>` : '';
+  // markers in schermpixels; de schaal u houdt ze even groot, ook tijdens het zoomen
+  const mks = opts.markers.map(m => {
+    const [x,y] = proj(m.lat, m.lon);
+    const r = m.num ? 10 : mr;
+    const shape = m.star ? `<path class="dot" d="${starPath(0, 0, r*1.7)}" fill="var(--s${m.score})" stroke-width="1.6"/>`
+                         : `<circle class="dot" r="${r}" fill="var(--s${m.score})" stroke-width="1.6"/>`;
+    return `<g class="mk${m.sel?' sel':''}${m.dim?' dim':''}" data-id="${esc(m.id)}" data-x="${x}" data-y="${y}" transform="translate(${x} ${y}) scale(${u})" tabindex="0" role="button" aria-label="${esc(m.label)}">
+      <circle r="16" fill="transparent"/>${shape}
+      ${m.num?`<text font-size="13">${m.num}</text>`:''}</g>`;
+  }).join('');
+  // landsgrenzen en landnamen (alleen soortkaart); namen op schermgrootte, grootste landen eerst, niet over elkaar
+  let brd = '';
+  if (opts.borders) {
+    const [vx,vy,vw,vh] = vb, placed = [], fs = 11;
+    const lbl = D.labels.filter(l => l.w >= vw * .07 && l.x > vx + 4*u*fs && l.x < vx + vw - 4*u*fs && l.y > vy + fs*u && l.y < vy + vh - fs*u)
+      .sort((a,b) => b.w - a.w).filter(l => { const sx = (l.x - vx)/u, sy = (l.y - vy)/u;
+        if (placed.some(([px,py]) => Math.abs(px - sx) < 70 && Math.abs(py - sy) < 16)) return false; placed.push([sx,sy]); return true; });
+    brd = `<path class="brd" d="${D.borders}"/>` + lbl.map(l => `<text class="cl" x="${l.x}" y="${l.y}" font-size="${fs*u}" stroke-width="${2.5*u}">${esc(T(l))}</text>`).join('');
+  }
+  return `<svg class="map${opts.cls?' '+opts.cls:''}" viewBox="${vb.join(' ')}" role="img" aria-label="${esc(opts.label)}">
+    <path class="grat" d="${GRAT}" stroke-width="${.5*k}"/><path class="land" d="${D.land}"/>${rng}${brd}${mks}</svg>`;
+}
+function bboxOfPath(p){
+  const n = (p.match(/-?\d+\.?\d*/g) || []).map(Number); let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;
+  for (let i=0;i+1<n.length;i+=2){ x0=Math.min(x0,n[i]); x1=Math.max(x1,n[i]); y0=Math.min(y0,n[i+1]); y1=Math.max(y1,n[i+1]); }
+  return [x0,y0,x1,y1];
+}
+function legendHtml(withStar){
+  return `<div class="maplegend"><span>${esc(T(U.legend))}</span>${[5,4,3,2,1].map(n=>`<span><i style="--c:var(--s${n})"></i>${n}</span>`).join('')}${withStar?`<span style="color:var(--ink)">${STAR}<span style="color:var(--muted)">${esc(T(U.topStar))}</span></span>`:''}</div>`;
+}
+function bindMarkers(root, fn){
+  root.querySelectorAll('.mk').forEach(g => { g.onclick = () => fn(g.dataset.id); g.onkeydown = e => { if (e.key==='Enter'||e.key===' ') { e.preventDefault(); fn(g.dataset.id); } }; });
+}
+
+/* ---------- navigatie: onderbalk met vier schermen, menu (☰) en voet ---------- */
+const VISIT_URL = 'https://yeetkitty.github.io/wildekattengids/';
+const ICO = {
+  map:'<path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/>',
+  paw:'<ellipse cx="12" cy="15.5" rx="5" ry="4.3"/><ellipse cx="5.3" cy="10.5" rx="2" ry="2.6"/><ellipse cx="9.3" cy="6.7" rx="2" ry="2.7"/><ellipse cx="14.7" cy="6.7" rx="2" ry="2.7"/><ellipse cx="18.7" cy="10.5" rx="2" ry="2.6"/>',
+  star:'<path d="M12 3.5l2.6 5.3 5.9.9-4.25 4.1 1 5.8L12 16.9l-5.25 2.7 1-5.8L3.5 9.7l5.9-.9z"/>',
+  menu:'<path d="M4 6h16M4 12h16M4 18h16"/>',
+  eur:'<path d="M12 21s-6.5-6.2-6.5-11a6.5 6.5 0 0 1 13 0c0 4.8-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/>',
+  resp:'<path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/>',
+  pack:'<path d="M7 9a5 5 0 0 1 10 0v10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2z"/><path d="M10 4h4M7 14h10M10 14v3h4v-3"/>',
+  flag:'<path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/>',
+  info:'<circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/>',
+  visit:'<path d="M3 10l9-6 9 6"/><path d="M5 10v9M19 10v9M9.5 10v9M14.5 10v9M3 21h18"/>',
+  kofi:'<path d="M4 8h12v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M16 9h1.5a2.5 2.5 0 0 1 0 5H16"/><path d="M8 3v2M12 3v2"/>'};
+const svgI = (ic, cls) => `<svg${cls ? ` class="${cls}"` : ''} viewBox="0 0 24 24" aria-hidden="true" ${ic === 'paw' ? 'fill="currentColor"' : 'fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"'}>${ICO[ic]}</svg>`;
+const TABS = [['kaart','navMap','map'],['soorten','navSpecies','paw'],['topspots','navTop','star'],['meer','navMoreT','menu']];
+// menu (☰) en scherm Meer tonen dezelfde onderdelen
+const MENU = [['europa','navEur','eur'],['verantwoord','navResp','resp'],['paklijst','navPack','pack'],['melden','navReport','flag']];
+const MENU2 = [['over','navAbout','info']];
+function renderChrome(route){
+  document.documentElement.lang = L;
+  document.title = (SGP && route.page === SGP.no && L === SGP.lang) ? INIT_TITLE : (route.title ? `${route.title} · ${T(U.title)}` : T(U.title));
+  $('#brandName').textContent = L === 'nl' ? 'Spottersgids' : "Spotter's Guide";
+  $('#brandSub').textContent = T(U.brandSub);
+  const link = ([id,k,ic]) => `<a href="#${id}"${route.nav===id?' aria-current="page"':''}>${ic ? svgI(ic, 'nico') : ''}${esc(T(U[k]))}</a>`;
+  $('#nav').innerHTML = MENU.map(link).join('') + `<span class="lbl mlbl">${esc(T(U.navMore))}</span><div class="sub">${MENU2.map(([id,k]) => link([id,k])).join('')}`
+    + `<a href="${VISIT_URL}">${esc(T(U.navVisit))}</a><a href="${esc(KOFI_URL)}" target="_blank" rel="noopener">${esc(T(U.navKofi))} ☕</a></div>`;
+  $('#bnavIn').innerHTML = TABS.map(([id,k,ic]) => `<a href="#${id}" data-tab="${id}"${route.tab===id?' class="on" aria-current="page"':''}>${svgI(ic)}<span>${esc(T(U[k]))}</span></a>`).join('');
+  $('#zoekT').textContent = T(U.srch); $('#zoekBtn').setAttribute('aria-label', T(U.srch)); $('#zoekL').textContent = T(U.srchL); $('#zoekIn').placeholder = T(U.srchPh);
+  $('#langNl').setAttribute('aria-pressed', L==='nl'); $('#langEn').setAttribute('aria-pressed', L==='en');
+  const nl = L === 'nl';
+  $('#foot').innerHTML = `<div class="kofibar"><p><b>${esc(nl?'Vind je deze gids handig?':'Find this guide useful?')}</b> ${esc(nl?'Met een kleine bijdrage help je hem actueel te houden.':'A small contribution helps keep it up to date.')}</p>`
+    + `<a class="kofi" href="${esc(KOFI_URL)}" target="_blank" rel="noopener">☕ <span>${esc(nl?'Steun de gids op Ko-fi':'Support the guide on Ko-fi')}</span></a></div><p>${esc(T(U.footMade))}</p>`;
+  const h = $('.top').offsetHeight; if (h) document.documentElement.style.setProperty('--head', h + 'px');
+}
+// nog een keer op het scherm tikken waar je al bent: terug naar boven
+$('#bnavIn').addEventListener('click', e => { const a = e.target.closest('a'); if (a && !SGP && location.hash === a.getAttribute('href')) { e.preventDefault(); window.scrollTo({top:0, behavior:'smooth'}); } });
+$('#menuBtn').onclick = () => { closeZoek(); const o = $('#nav').classList.toggle('open'); $('#menuBtn').setAttribute('aria-expanded', o); };
+document.addEventListener('click', e => { const n = $('#nav'); if (n.classList.contains('open') && !n.contains(e.target) && !e.target.closest('#menuBtn')) { n.classList.remove('open'); $('#menuBtn').setAttribute('aria-expanded', false); } });
+/* kop per scherm */
+const GLOBE = '<svg class="sk-e" viewBox="0 0 44 30" aria-hidden="true"><rect width="44" height="30" rx="3" fill="#F2C14E"/><g fill="none" stroke="#3B2414" stroke-width="1.7"><circle cx="22" cy="15" r="10.5"/><ellipse cx="22" cy="15" rx="4.6" ry="10.5"/><path d="M11.5 15h21M13.2 9.8h17.6M13.2 20.2h17.6"/></g></svg>';
+const SEP = '<i> · </i>';
+const cnt = (n, one, many) => `${n} ${esc(T(n === 1 ? U[one] : U[many]))}`;
+const skHtml = (title, sub, meta) => `<header class="sk"><div class="wrap"><h1 class="sk-t">${GLOBE}<span class="sk-tt">${esc(title)}</span></h1>${sub ? `<p class="sk-s">${sub}</p>` : ''}<p class="sk-m">${meta || '&nbsp;'}</p></div></header>`;
+function updatedHtml(){
+  if (!/^\d{4}-\d\d-\d\d$/.test(UPDATED)) return '';
+  return `${esc(T(U.updated))} ${esc(new Date(UPDATED + 'T12:00').toLocaleDateString(L === 'nl' ? 'nl-NL' : 'en-GB', {day:'numeric', month:'long', year:'numeric'}))}`;
+}
+// lange titels (bijv. Midden- en Zuid-Amerika) kleiner maken tot ze passen
+function fitSk(){
+  $$('.sk-t').forEach(t => { const tt = t.querySelector('.sk-tt'); if (!tt) return; t.style.removeProperty('--sk-fs'); let fs = 39, n = 0;
+    while (tt.scrollWidth > tt.clientWidth + 1 && fs > 22 && n < 30) { fs--; n++; t.style.setProperty('--sk-fs', fs + 'px'); } });
+}
+if (document.fonts) { if (document.fonts.ready) document.fonts.ready.then(fitSk); if (document.fonts.addEventListener) document.fonts.addEventListener('loadingdone', fitSk); }
+window.addEventListener('load', fitSk);
+const fabHtml = href => `<a class="fab" href="${href}" aria-label="${esc(T(U.back2))}"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></a>`;
+/* ---------- zoeken (zoals in de Bezoekersgids): katten en plekken ---------- */
+const fold = x => String(x || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+const PIN = '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 21s-6.5-6.2-6.5-11a6.5 6.5 0 0 1 13 0c0 4.8-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>';
+let ZRES = [], ZACT = -1;
+function closeZoek(){ const p = $('#zoekpaneel'); if (!p) return; p.hidden = true; $('#zoekBtn').setAttribute('aria-expanded', false); $('#zoekRes').hidden = true; $('#zoekIn').setAttribute('aria-expanded', false); }
+function zoek(){
+  const inp = $('#zoekIn'), ul = $('#zoekRes'), q = fold(inp.value.trim());
+  $('#zoekX').hidden = !inp.value; ZACT = -1;
+  if (!q) { ul.hidden = true; inp.setAttribute('aria-expanded', false); ZRES = []; return; }
+  const hit = (xs) => { let b = 9; xs.forEach(x => { const f = fold(x); if (!f) return; if (f.startsWith(q)) b = Math.min(b, 0); else if (f.split(/[\s(),·–-]+/).some(w => w.startsWith(q))) b = Math.min(b, 1); else if (f.includes(q)) b = Math.min(b, 2); }); return b; };
+  const cats = CATS.map(c => ({c, r: hit([c.nl, c.en, c.la])})).filter(x => x.r < 9).sort((a,b) => a.r - b.r || catName(a.c).localeCompare(catName(b.c)));
+  const spots = SPOTS.map(s => ({s, r: hit([s.name.nl, s.name.en, s.area.nl, s.area.en, s.country.nl, s.country.en])})).filter(x => x.r < 9).sort((a,b) => a.r - b.r || T(a.s.name).localeCompare(T(b.s.name)));
+  ZRES = [...cats.slice(0, 8).map(x => ({t:'c', o:x.c})), ...spots.slice(0, 12).map(x => ({t:'s', o:x.s}))];
+  ul.innerHTML = ZRES.length ? ZRES.map((x, i) => x.t === 'c'
+    ? `<li><a href="${spHref(x.o.no)}" role="option" id="zr${i}">${img(x.o.photos[0], '', false, true).replace('<img ', '<img class="ik" ')}<span><b>${esc(catName(x.o))}</b><small class="lat">${esc(x.o.la)}</small></span></a></li>`
+    : `<li><a href="#kaart" data-zspot="${esc(x.o.id)}" role="option" id="zr${i}"><span class="ik loc">${PIN}</span><span><b>${esc(T(x.o.name))}</b><small>${esc(T(x.o.country))} · ${esc(x.o.recs.map(r => catName(BY[r.no])).join(', '))}</small></span></a></li>`).join('')
+    : `<li class="leeg">${esc(T(U.srchNone))}</li>`;
+  ul.hidden = false; inp.setAttribute('aria-expanded', true);
+}
+function zoekAct(i){ const as = $$('#zoekRes a'); as.forEach(a => a.classList.remove('act')); ZACT = i; if (as[i]) { as[i].classList.add('act'); as[i].scrollIntoView({block:'nearest'}); $('#zoekIn').setAttribute('aria-activedescendant', as[i].id); } }
+function goSpot(id){
+  const s = SPOT[id]; if (!s) return;
+  FILTER = 'all'; CAT = null; VIEW = null; LISTALL = false; BASEX = null; SHOWN.add(spotMax(s));
+  if (SGP) { try { sessionStorage.setItem('sg-spot', id); } catch(e) {} location.href = '#kaart'; return; }
+  TAB = 'kaart'; SEL = id;
+  if (location.hash !== '#kaart') { try { history.pushState(null, '', '#kaart'); } catch(e) {} }
+  route(false); selectSpot(id);
+}
+$('#zoekBtn').onclick = () => {
+  const p = $('#zoekpaneel'), open = p.hidden;
+  $('#nav').classList.remove('open'); $('#menuBtn').setAttribute('aria-expanded', false);
+  p.hidden = !open; $('#zoekBtn').setAttribute('aria-expanded', open);
+  if (open) { $('#zoekIn').focus(); zoek(); } else closeZoek();
+};
+$('#zoekIn').oninput = zoek;
+$('#zoekIn').onkeydown = e => {
+  const n = $$('#zoekRes a').length;
+  if (e.key === 'ArrowDown' && n) { e.preventDefault(); zoekAct((ZACT + 1) % n); }
+  else if (e.key === 'ArrowUp' && n) { e.preventDefault(); zoekAct((ZACT - 1 + n) % n); }
+  else if (e.key === 'Enter' && n) { e.preventDefault(); $$('#zoekRes a')[Math.max(ZACT, 0)].click(); }
+  else if (e.key === 'Escape') { closeZoek(); $('#zoekBtn').focus(); }
+};
+$('#zoekX').onclick = () => { $('#zoekIn').value = ''; zoek(); $('#zoekIn').focus(); };
+$('#zoekRes').addEventListener('click', e => {
+  const a = e.target.closest('a'); if (!a) return;
+  if (a.dataset.zspot) { e.preventDefault(); const id = a.dataset.zspot; closeZoek(); goSpot(id); return; }
+  closeZoek();
+});
+document.addEventListener('click', e => { const p = $('#zoekpaneel'); if (p && !p.hidden && !p.contains(e.target) && !e.target.closest('#zoekBtn')) closeZoek(); });
+$('#nav').addEventListener('click', e => { if (e.target.closest('a')) { $('#nav').classList.remove('open'); $('#menuBtn').setAttribute('aria-expanded', false); } });
+$$('.langsw [data-setlang]').forEach(b => b.onclick = () => { if (b.dataset.setlang === L) return; L = b.dataset.setlang; try { localStorage.setItem('sg-lang', L); } catch(e) {} if (SGP && !location.hash) { location.href = spHref(SGP.no); return; } route(true); });
+
+/* ---------- startpagina ---------- */
+function inFilter(cont){ return FILTER === 'all' || cont === FILTER; }
+function topspotList(){
+  const list = [];
+  SPOTS.forEach(s => { if (!inFilter(s.cont)) return;
+    const recs = s.recs.filter(r => r.top).sort((a,b) => b.score - a.score || a.no - b.no);
+    if (recs.length) list.push({s, r:recs[0], recs}); });
+  list.sort((a,b) => b.r.score - a.r.score || CONTS.indexOf(a.s.cont) - CONTS.indexOf(b.s.cont) || a.r.no - b.r.no);
+  return list;
+}
+function catsInFilter(){ return CATS.filter(c => FILTER === 'all' || c.cont.includes(FILTER)); }
+function topsHtml(){
+  const list = topspotList();
+  if (!list.length) return `<p class="empty">${esc(L==='nl'?'Geen topspots in dit werelddeel.':'No top spots on this continent.')}</p>`;
+  const shown = SHOWALL ? list : list.slice(0, 6);
+  return `<div class="tops">${shown.map(({s,r,recs}) => { const c = BY[r.no];
+    return `<button type="button" class="tcard" data-spot="${esc(s.id)}" data-no="${r.no}">
+      <div class="ph${s.photo ? ' spot' : ''}">${s.photo ? `${img(s.photo, T(s.name))}<span class="avs">${recs.slice(0, 3).map(x => `<span class="av">${img(BY[x.no].photos[0], catName(BY[x.no]), false, true)}</span>`).join('')}</span><span class="pcr">${s.photo.note ? `${esc(T(s.photo.note))} · ` : ''}${credit(s.photo.cr)}</span>` : img(c.photos[0], catName(c))}<span class="tag">${esc(contName(s.cont))}</span></div>
+      <div class="bd"><span class="sp">${recs.map(x => esc(catName(BY[x.no]))).join(' · ')}</span><h3>${esc(T(s.name))}</h3><span class="where">${esc(T(s.country))}</span>
+      ${scoreHtml(r.score)}<span class="ssn">${esc(T(r.season))}</span></div></button>`; }).join('')}</div>
+    ${list.length > 6 ? `<div class="morewrap"><button type="button" class="btn" id="showAll">${esc(SHOWALL ? T(U.showLess) : `${T(U.showAll)} (${list.length})`)}</button></div>` : ''}
+    <details class="box" style="margin-top:22px"><summary style="cursor:pointer;font-weight:700">${esc(T(U.scaleTitle))}</summary>
+    <ul class="scale">${[5,4,3,2,1].map(n=>`<li>${scoreHtml(n)}<span>${esc(T(U.scale[n]))}</span></li>`).join('')}</ul></details>`;
+}
+function panelHtml(){
+  const s = SEL && SPOT[SEL];
+  if (!s) return `<p class="hint">${esc(T(U.mapHint))}</p>`;
+  const recs = s.recs.slice().sort((a,b)=>b.score-a.score);
+  // soorten met precies dezelfde uitleg (uit één topspot) samen tonen
+  const groups = [];
+  recs.forEach(r => { const g = groups.find(x => T(x[0].why) === T(r.why)); if (g) g.push(r); else groups.push([r]); });
+  return `<h3>${esc(T(s.name))}</h3><p class="meta">${esc(placeLine(s))}</p>
+    ${groups.map(g => `<div class="rec">${g.map(r => `<div class="sp">${esc(catName(BY[r.no]))} ${scoreHtml(r.score)}</div>`).join('')}
+      <p>${esc(T(g[0].why))}</p>${factsHtml(g[0])}
+      ${g.map(r => `<p>${PAGES[r.no] ? `<a class="btnlink" href="${spHref(r.no)}">${esc(catName(BY[r.no]))}: ${esc(T(U.toPage).toLowerCase())} →</a>` : `<span class="soon">${esc(catName(BY[r.no]))} · ${esc(T(U.soonPage))}</span>`}</p>`).join('')}</div>`).join('')}`;
+}
+// plekken van één kat binnen het gekozen werelddeel
+const catSpots = no => SPOTS.filter(s => inFilter(s.cont) && s.recs.some(r => r.no === no));
+// katten in de fotorij: met plek in dit werelddeel (kleur) en zonder plek maar wel levend hier (grijs)
+function rowCats(){
+  const lives = CATS.filter(c => FILTER === 'all' || c.cont.includes(FILTER) || catSpots(c.no).length);
+  const withSpot = lives.filter(c => catSpots(c.no).length), grey = lives.filter(c => !catSpots(c.no).length);
+  return {withSpot, grey, total: lives.length};
+}
+function catRowHtml(){
+  const {withSpot, grey, total} = rowCats();
+  const btn = (c, g) => `<button type="button" class="catbtn${g?' grey':''}" data-cat="${c.no}" aria-pressed="${CAT===c.no}"><span class="av">${img(c.photos[0], '', false, true)}</span>${esc(catName(c))}</button>`;
+  const n = CAT ? catSpots(CAT).length : 0;
+  return `<p class="slbl">${esc(T(U.pickCat))}</p><div class="catrow" id="catrow">
+    <button type="button" class="catbtn" data-cat="" aria-pressed="${!CAT}"><span class="av all">${total}</span>${esc(T(U.allCats))}</button>
+    ${withSpot.map(c => btn(c, false)).join('')}${grey.map(c => btn(c, true)).join('')}</div>
+    ${CAT ? `<div class="catnote"><b>${esc(catName(BY[CAT]))}</b><span class="lat">${esc(BY[CAT].la)}</span>${n ? `<span class="note">${n} ${esc(n === 1 ? T(U.catShown1) : T(U.catShown))}</span>` : `<span class="soon">${esc(T(U.noSpot))}</span>`}${PAGES[CAT] ? `<a class="btnlink" href="${spHref(CAT)}">${esc(T(U.toPage))} →</a>` : (n ? `<span class="soon">${esc(T(U.soonPage))}</span>` : '')}</div>` : ''}`;
+}
+function mapTabHtml(){
+  const ico = d => `<svg viewBox="0 0 20 20" aria-hidden="true"><path d="${d}" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+  return `${contChipsHtml()}${catRowHtml()}
+    <div class="mapbox"><div class="mapstage"><div id="mapwrap"></div>
+      <div class="zoombtns"><button type="button" id="zIn" aria-label="${esc(T(U.zoomIn))}" title="${esc(T(U.zoomIn))}">${ico('M10 4v12M4 10h12')}</button>
+      <button type="button" id="zOut" aria-label="${esc(T(U.zoomOut))}" title="${esc(T(U.zoomOut))}">${ico('M4 10h12')}</button>
+      <button type="button" id="zReset" aria-label="${esc(T(U.zoomReset))}" title="${esc(T(U.zoomReset))}">${ico('M3 7V3h4M17 7V3h-4M3 13v4h4M17 13v4h-4')}</button></div></div>
+    <div id="maplegend"></div><div class="panel" id="panel" aria-live="polite">${panelHtml()}</div></div>
+    <p class="note mapnote">${esc(T(U.mapSub))}</p>
+    <div class="lcard"><div class="maplist" id="maplist"></div></div>`;
+}
+// keuzeknoppen voor het werelddeel (Kaart, Soorten en Topspots delen dezelfde keuze)
+function contChipsHtml(){
+  return `<p class="slbl">${esc(T(U.pickCont))}</p><div class="chips" role="group" aria-label="${esc(L==='nl'?'Filter per werelddeel':'Filter by continent')}">
+    ${['all',...CONTS].map(c => `<button type="button" class="chip" data-f="${c}" aria-pressed="${FILTER===c}">${esc(c==='all'?T(U.all):contName(c))}</button>`).join('')}</div>`;
+}
+// alle plekken voor de startkaart (nog niet gefilterd op kans) plus het kader en het leefgebied
+function homeData(){
+  let all, box = BOX[FILTER], range = null;
+  if (CAT) {   // één kat: alleen zijn plekken, kleur = kans voor die kat, met leefgebied
+    all = catSpots(CAT).map(s => ({s, r:s.recs.find(r => r.no === CAT)})).map(({s,r}) => ({s, id:s.id, lat:s.lat, lon:s.lon, score:r.score, star:r.top, label:`${T(s.name)}, ${T(s.country)}`}));
+    range = BY[CAT].range || null;
+    let [x0,y0,x1,y1] = range ? bboxOfPath(range) : [720,284,0,0];
+    all.forEach(m => { const [x,y] = proj(m.lat, m.lon); x0=Math.min(x0,x); x1=Math.max(x1,x); y0=Math.min(y0,y); y1=Math.max(y1,y); });
+    box = FILTER === 'all' ? [x0-12, y0-12, Math.max(60, x1-x0+24), Math.max(36, y1-y0+24)] : BOX[FILTER];
+  } else {
+    all = SPOTS.filter(s => inFilter(s.cont)).map(s => ({s, id:s.id, lat:s.lat, lon:s.lon, score:spotMax(s), star:isTop(s), label:`${T(s.name)}, ${T(s.country)}`}));
+  }
+  return {all, box, range};
+}
+const worldMode = () => FILTER === 'all' && !CAT && !VIEW;
+// wereldkaart op een telefoon: niet alles past, je ziet een venster dat je zijwaarts verschuift
+const narrowWorld = () => FILTER === 'all' && !CAT && narrow();
+let BASEX = null;   // linkerkant van dat venster (kaarteenheden); null = beginstand
+// het kader zonder inzoomen
+function baseVB(){
+  const mw = $('#mapwrap');
+  if (FILTER === 'all' && !CAT) {
+    if (!narrow() || !mw) return [0,0,W,H];
+    const w = Math.min(W, (mw.clientWidth || 360) * W / 960);
+    const x = BASEX === null ? (W-w) * .55 : BASEX;
+    return [Math.max(0, Math.min(W-w, x)), 0, w, H];
+  }
+  return fit(homeData().box, ratioFor(homeData().box));
+}
+const curVB = () => VIEW || baseVB();
+function clampView(v){
+  let [x,y,w,h] = v;
+  x = w <= W ? Math.max(0, Math.min(W-w, x)) : (W-w)/2;
+  y = h <= H ? Math.max(0, Math.min(H-h, y)) : (H-h)/2;
+  return [x,y,w,h];
+}
+// nieuw kader; zo ver uitgezoomd als het basiskader = niet meer ingezoomd
+function setView(v){
+  const full = baseVB()[2];
+  if (v[2] >= full - .5) { VIEW = null; if (narrowWorld()) BASEX = clampView([v[0], 0, full, H])[0]; }
+  else VIEW = clampView(v);
+}
+const MINW = 20;   // verst ingezoomd: 10 lengtegraden breed
+function zoomView(v, f, fx, fy){
+  const [x,y,w,h] = v, full = baseVB()[2];
+  const nw = Math.max(MINW, Math.min(full, w/f)), nh = nw * h / w;
+  return [x + fx*w - fx*nw, y + fy*h - fy*nh, nw, nh];
+}
+function zoomBy(f, fx = .5, fy = .5){ setView(zoomView(curVB(), f, fx, fy)); LISTALL = false; drawHomeMap(); }
+// tijdens een gebaar alleen het kader en de markerschaal bijwerken (snel, één keer per beeldje)
+let FRAME = null, RAF = 0;
+function liveView(v){
+  FRAME = clampView(v);
+  if (RAF) return;
+  RAF = requestAnimationFrame(() => {
+    RAF = 0;
+    const svg = $('#mapwrap svg'); if (!svg || !FRAME) return;
+    svg.setAttribute('viewBox', FRAME.join(' '));
+    const u = FRAME[2] / (svg.clientWidth || 360);
+    svg.querySelectorAll('.mk').forEach(g => g.setAttribute('transform', `translate(${g.dataset.x} ${g.dataset.y}) scale(${u})`));
+  });
+}
+// na een gebaar: het kader vastleggen zonder de kaart opnieuw op te bouwen (geen sprongetje)
+function commitView(){
+  if (!FRAME) return;
+  setView(FRAME); FRAME = null;
+  if (RAF) { cancelAnimationFrame(RAF); RAF = 0; }
+  const svg = $('#mapwrap svg');
+  if (svg) {   // het vastgelegde kader meteen tonen (bij helemaal uitzoomen: terug naar het basiskader)
+    const v = curVB(), u = v[2] / (svg.clientWidth || 360);
+    svg.setAttribute('viewBox', v.join(' '));
+    svg.querySelectorAll('.mk').forEach(g => g.setAttribute('transform', `translate(${g.dataset.x} ${g.dataset.y}) scale(${u})`));
+    svg.classList.toggle('zoomed', !!VIEW); svg.classList.toggle('pan', !VIEW && narrowWorld());
+  }
+  $('#zOut').disabled = $('#zReset').disabled = !VIEW;
+  $('#zIn').disabled = !!VIEW && VIEW[2] <= MINW + .5;
+  LISTALL = false; drawMapList(LASTMARKERS);
+}
+let LASTMARKERS = [];
+function drawHomeMap(){
+  const mw = $('#mapwrap'); if (!mw) return;
+  if (RAF) { cancelAnimationFrame(RAF); RAF = 0; } FRAME = null;
+  mw.className = 'mapscroll';
+  const cw = mw.clientWidth || 360;
+  const {all, box, range} = homeData();
+  const markers = all.filter(m => SHOWN.has(m.score)).map(m => ({...m, sel:SEL===m.id}));
+  markers.sort((a,b) => (a.sel - b.sel) || (a.score - b.score));
+  LASTMARKERS = markers;
+  mw.innerHTML = mapSvg({box, world:FILTER === 'all' && !CAT, vb:curVB(), cw, markers, range, mr:5, cls:VIEW?'zoomed':(narrowWorld()?'pan':''), label:T(U.navMap)});
+  bindMarkers(mw, id => { if (!DRAGGED) selectSpot(id); });
+  bindGestures(mw);
+  $('#zOut').disabled = $('#zReset').disabled = !VIEW;
+  $('#zIn').disabled = !!VIEW && VIEW[2] <= MINW + .5;
+  $('#maplegend').innerHTML = homeLegendHtml(all);
+  $$('#maplegend [data-sc]').forEach(b => b.onclick = () => { const n = +b.dataset.sc; SHOWN.has(n) ? SHOWN.delete(n) : SHOWN.add(n); afterFilter(); });
+  const lb = $('#lowBtn'); if (lb) lb.onclick = () => { const on = SHOWN.has(1) && SHOWN.has(2); [1,2].forEach(n => on ? SHOWN.delete(n) : SHOWN.add(n)); afterFilter(); };
+  drawMapList(markers);
+}
+function afterFilter(){
+  if (SEL && SPOT[SEL]) { const m = homeData().all.find(x => x.id === SEL); if (!m || !SHOWN.has(m.score)) { SEL = null; $('#panel').innerHTML = panelHtml(); } }
+  LISTALL = false; drawHomeMap();
+}
+function selectSpot(id){ SEL = id; drawHomeMap(); const p = $('#panel'); p.innerHTML = panelHtml(); p.scrollIntoView({block:'nearest', behavior:'smooth'}); }
+function homeLegendHtml(all){
+  const low = all.filter(m => m.score <= 2 && !SHOWN.has(m.score)).length, lowOn = SHOWN.has(1) && SHOWN.has(2);
+  return `<div class="maplegend"><span>${esc(T(U.legend))}</span>${[5,4,3,2,1].map(n => `<button type="button" class="lgbtn" data-sc="${n}" aria-pressed="${SHOWN.has(n)}" title="${esc(T(U.lgToggle).replace('{n}', n))}"><i style="--c:var(--s${n})"></i>${n}</button>`).join('')}
+    <span style="color:var(--ink)">${STAR}<span style="color:var(--muted)">${esc(T(U.topStar))}</span></span>
+    ${lowOn ? `<button type="button" class="lowbtn" id="lowBtn">${esc(T(U.hideLow))}</button>` : (low ? `<button type="button" class="lowbtn" id="lowBtn">${esc(T(U.showLow))} (${low})</button>` : '')}
+    <p class="lgexp">${[5,4,3,2,1].map(n => `<b>${n}</b> ${esc(T(U.sc[n]))}`).join(' · ')}</p></div>`;
+}
+// lijst van de plekken die op de kaart staan (bij inzoomen: alleen wat in beeld is)
+function drawMapList(markers){
+  const el = $('#maplist'); if (!el) return;
+  let list = markers;
+  if (VIEW) { const [x,y,w,h] = VIEW; list = list.filter(m => { const [px,py] = proj(m.lat, m.lon); return px >= x && px <= x+w && py >= y && py <= y+h; }); }
+  list = list.slice().sort((a,b) => b.score - a.score || b.star - a.star || T(a.s.name).localeCompare(T(b.s.name)));
+  const shown = LISTALL ? list : list.slice(0, 10);
+  const cats = m => CAT ? `${esc(catName(BY[CAT]))} · ${esc(T(U.chance).toLowerCase())} ${m.score}`
+    : m.s.recs.slice().sort((a,b) => b.score - a.score).map(r => `${esc(catName(BY[r.no]))} ${esc(T(U.chance).toLowerCase())} ${r.score}`).join(' · ');
+  el.innerHTML = `<h3>${esc(T(U.inView))}: ${cnt(list.length, 'wPlace1', 'wPlaces')}</h3><p class="lsub">${esc(T(U.listSub))}</p>
+    ${list.length ? `<ol>${shown.map(m => `<li><button type="button" class="pl" data-id="${esc(m.id)}"${SEL===m.id?' aria-current="true"':''}>
+      ${m.star ? `<span class="d st" style="--c:var(--s${m.score})">${STAR}</span>` : `<span class="d" style="--c:var(--s${m.score})"></span>`}
+      <span><b>${esc(T(m.s.name))}</b><small>${esc(T(m.s.country))} · ${cats(m)}</small></span></button></li>`).join('')}</ol>` : `<p class="empty">${esc(T(U.listNone))}</p>`}
+    ${list.length > 10 ? `<div class="morewrap"><button type="button" class="btn" id="listAll">${esc(LISTALL ? T(U.showLess) : `${T(U.listAll)} (${list.length})`)}</button></div>` : ''}`;
+  el.querySelectorAll('.pl').forEach(b => b.onclick = () => selectSpot(b.dataset.id));
+  const la = $('#listAll'); if (la) la.onclick = () => { LISTALL = !LISTALL; drawMapList(markers); if (!LISTALL) el.scrollIntoView({block:'nearest'}); };
+}
+// slepen (als ingezoomd), knijpen met twee vingers, ctrl+scroll / trackpad en dubbelklik
+function bindGestures(mw){
+  const svg = mw.querySelector('svg'); if (!svg) return;
+  const pts = new Map(); let g = null, endT = null, glide = 0, vel = null;
+  const frac = (cx, cy, r) => [(cx - r.left) / r.width, (cy - r.top) / r.height];
+  const canPan = () => !!VIEW || narrowWorld();
+  const stopGlide = () => { if (glide) { cancelAnimationFrame(glide); glide = 0; commitView(); } };
+  const begin = () => {
+    const r = svg.getBoundingClientRect(), vb = FRAME || curVB(), p = [...pts.values()];
+    g = {r, vb:vb.slice(), p0:p.map(q => ({...q})), d0: p.length === 2 ? Math.hypot(p[0].x-p[1].x, p[0].y-p[1].y) : 0};
+    vel = {x:0, y:0, t:performance.now(), px:p[0] ? p[0].x : 0, py:p[0] ? p[0].y : 0};
+  };
+  const move = e => {
+    if (!pts.has(e.pointerId)) return;
+    pts.set(e.pointerId, {x:e.clientX, y:e.clientY});
+    if (!g) return;
+    const p = [...pts.values()], {r, vb} = g, sx = vb[2] / r.width, sy = vb[3] / r.height;
+    if (p.length >= 2 && g.d0) {
+      const d = Math.hypot(p[0].x-p[1].x, p[0].y-p[1].y), m0 = [(g.p0[0].x+g.p0[1].x)/2, (g.p0[0].y+g.p0[1].y)/2], m = [(p[0].x+p[1].x)/2, (p[0].y+p[1].y)/2];
+      const [fx,fy] = frac(m0[0], m0[1], r), ax = vb[0] + fx*vb[2], ay = vb[1] + fy*vb[3];
+      const nv = zoomView(vb, d / g.d0, fx, fy), [gx,gy] = frac(m[0], m[1], r);
+      nv[0] = ax - gx*nv[2]; nv[1] = ay - gy*nv[3];
+      DRAGGED = true; vel = null; liveView(nv);
+    } else if (p.length === 1 && canPan()) {
+      const dx = p[0].x - g.p0[0].x, dy = p[0].y - g.p0[0].y;
+      if (Math.hypot(dx, dy) > 5) DRAGGED = true;
+      if (DRAGGED) {
+        liveView([vb[0] - dx*sx, vb[1] - (VIEW ? dy*sy : 0), vb[2], vb[3]]);
+        if (vel) { const t = performance.now(), dt = Math.max(1, t - vel.t), a = Math.min(1, dt / 50);
+          vel.x = vel.x*(1-a) + (p[0].x - vel.px)/dt*a; vel.y = vel.y*(1-a) + (p[0].y - vel.py)/dt*a; vel.t = t; vel.px = p[0].x; vel.py = p[0].y; }
+      }
+    }
+  };
+  // uitloop na het loslaten: de kaart glijdt nog even door en remt af
+  const startGlide = (r) => {
+    let vx = vel.x, vy = VIEW ? vel.y : 0, last = performance.now();
+    if (performance.now() - vel.t > 80 || Math.hypot(vx, vy) < .15) { commitView(); return; }
+    const step = now => {
+      const dt = Math.min(32, now - last); last = now;
+      const f = Math.pow(.995, dt); vx *= f; vy *= f;
+      const fr = FRAME || curVB(), sx = fr[2] / r.width, sy = fr[3] / r.height;
+      liveView([fr[0] - vx*dt*sx, fr[1] - vy*dt*sy, fr[2], fr[3]]);
+      if (Math.hypot(vx, vy) < .02) { glide = 0; commitView(); return; }
+      glide = requestAnimationFrame(step);
+    };
+    glide = requestAnimationFrame(step);
+  };
+  const up = e => {
+    if (!pts.delete(e.pointerId)) return;
+    if (pts.size) { begin(); vel = null; return; }
+    window.removeEventListener('pointermove', move); window.removeEventListener('pointerup', up); window.removeEventListener('pointercancel', up);
+    const r = g && g.r; g = null;
+    if (DRAGGED) {
+      if (e.type === 'pointerup' && vel && r) startGlide(r); else commitView();
+      setTimeout(() => { DRAGGED = false; }, 0);
+    }
+  };
+  svg.addEventListener('pointerdown', e => {
+    if (e.pointerType === 'mouse' && e.button !== 0) return;
+    stopGlide();
+    if (!pts.size) { DRAGGED = false; window.addEventListener('pointermove', move); window.addEventListener('pointerup', up); window.addEventListener('pointercancel', up); }
+    pts.set(e.pointerId, {x:e.clientX, y:e.clientY});
+    if (canPan() && e.pointerType === 'mouse') e.preventDefault();
+    begin();
+  });
+  svg.addEventListener('wheel', e => {
+    if (!e.ctrlKey) return;            // gewoon scrollen blijft de pagina scrollen
+    e.preventDefault(); stopGlide();
+    const [fx,fy] = frac(e.clientX, e.clientY, svg.getBoundingClientRect());
+    liveView(zoomView(FRAME || curVB(), Math.exp(-e.deltaY * .01), fx, fy));
+    clearTimeout(endT); endT = setTimeout(commitView, 150);
+  }, {passive:false});
+  svg.addEventListener('dblclick', e => { const [fx,fy] = frac(e.clientX, e.clientY, svg.getBoundingClientRect()); zoomBy(2, fx, fy); });
+}
+// scherm Soorten: zoekveld en fotokaartjes in twee groepen (grote en kleine katten), zoals de Bezoekersgids
+let GOPEN = {big:true, small:true};
+const CHEVUP = '<svg class="chv" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 12.5 10 7.5l5 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+function speciesTabHtml(){
+  return `${contChipsHtml()}<label class="zk"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>
+    <input id="q" type="search" placeholder="${esc(T(U.search))}" value="${esc(Q)}" autocomplete="off" spellcheck="false" enterkeyhint="search" aria-label="${esc(T(U.search))}"></label><div id="splist">${speciesListHtml()}</div>`;
+}
+function speciesListHtml(){
+  const q = fold(Q.trim());
+  const cats = catsInFilter().filter(c => !q || [c.nl, c.en, c.la].some(x => fold(x).includes(q)));
+  if (!cats.length) return `<p class="empty">${esc(T(U.noHits))}</p>`;
+  const card = c => {
+    const sp = catSpots(c.no), best = sp.length ? Math.max(...sp.map(s => s.recs.find(r => r.no === c.no).score)) : 0;
+    const inner = `<div class="ph">${img(c.photos[0], catName(c))}</div><div class="bd"><span class="nm">${esc(catName(c))}</span><span class="cnt">${cnt(sp.length, 'wPlace1', 'wPlaces')}</span>
+      <span class="ft">${best ? scoreHtml(best, false, true) : ''}</span></div>`;
+    return PAGES[c.no] ? `<a class="scard" href="${spHref(c.no)}">${inner}</a>` : `<div class="scard">${inner}</div>`;
+  };
+  const grp = (key, list, lbl) => { if (!list.length) return ''; const open = q ? true : GOPEN[key];
+    return `<div class="gt"><button type="button" data-g="${key}" aria-expanded="${open}">${esc(T(U[lbl]))}${CHEVUP}</button></div><div class="grid"${open ? '' : ' hidden'}>${list.map(card).join('')}</div>`; };
+  const az = list => list.sort((a,b) => catName(a).localeCompare(catName(b), L));   // op naam, zoals de Bezoekersgids
+  return grp('big', az(cats.filter(c => BIG.has(c.no))), 'grpBig') + grp('small', az(cats.filter(c => !BIG.has(c.no))), 'grpSmall');
+}
+function bindSpecies(){
+  $$('.gt button').forEach(b => b.onclick = () => { const k = b.dataset.g; GOPEN[k] = b.getAttribute('aria-expanded') !== 'true'; $('#splist').innerHTML = speciesListHtml(); bindSpecies(); });
+}
+// scherm Meer: lijst met ronde iconen
+const PIJL = '<svg class="pijl" viewBox="0 0 20 20" aria-hidden="true"><path d="M7.5 4.5 13 10l-5.5 5.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+function meerHtml(){
+  const row = (href, ic, label, ext) => `<li><a href="${esc(href)}"${ext ? ' target="_blank" rel="noopener"' : ''}><span class="mi">${svgI(ic)}</span><span class="mt">${esc(label)}</span>${PIJL}</a></li>`;
+  return `<ul class="ml">${[...MENU, ...MENU2].map(([id,k,ic]) => row('#' + id, ic, T(U[k]))).join('')}${row(VISIT_URL, 'visit', T(U.navVisit))}${row(KOFI_URL, 'kofi', T(U.navKofi), true)}</ul>`;
+}
+// kop van het scherm: titel, onderregel en goudgele regel met aantallen (volgt het gekozen werelddeel)
+function skForTab(){
+  if (TAB === 'kaart') {
+    const spots = SPOTS.filter(s => inFilter(s.cont)).length;
+    return skHtml(FILTER === 'all' ? T(U.world) : contName(FILTER), esc(T(U.skMap)),
+      [cnt(catsInFilter().length, 'wSpecies1', 'wSpecies'), cnt(spots, 'wPlace1', 'wPlaces'), cnt(topspotList().length, 'wTop1', 'wTops')].join(SEP));
+  }
+  if (TAB === 'soorten') {
+    const cs = catsInFilter(), b = cs.filter(c => BIG.has(c.no)).length;
+    return skHtml(T(U.navSpecies), esc(T(U.skSpecies)), [cnt(cs.length, 'wSpecies1', 'wSpecies'), `${b} ${esc(T(U.wBig))}`, `${cs.length - b} ${esc(T(U.wSmall))}`].join(SEP));
+  }
+  if (TAB === 'topspots') {
+    const l = topspotList(), sp = new Set(); l.forEach(x => x.recs.forEach(r => sp.add(r.no)));
+    return skHtml(T(U.navTop), esc(T(U.skTop)), [cnt(l.length, 'wTop1', 'wTops'), cnt(sp.size, 'wSpecies1', 'wSpecies')].join(SEP));
+  }
+  return skHtml(T(U.navMoreT), esc(T(U.skMore)), updatedHtml());
+}
+function tabBody(){
+  if (TAB === 'kaart') return mapTabHtml();
+  if (TAB === 'soorten') return speciesTabHtml();
+  if (TAB === 'meer') return meerHtml();
+  return `${contChipsHtml()}<p class="note" style="margin:2px 0 14px">${esc(T(U.topSub))}</p><div id="tops">${topsHtml()}</div>`;
+}
+function renderHome(){
+  $('#main').innerHTML = `${skForTab()}<section class="sec screen"><div class="wrap" id="tabbody">${tabBody()}</div></section>`;
+  bindHome(); fitSk();
+}
+function refreshHome(){ renderHome(); }
+function bindHome(){
+  $$('.chip[data-f]').forEach(b => b.onclick = () => {
+    FILTER = b.dataset.f; CAT = null; VIEW = null; LISTALL = false; BASEX = null; try { localStorage.setItem('sg-cont', FILTER); } catch(e) {}
+    if (SEL && SPOT[SEL] && !inFilter(SPOT[SEL].cont)) SEL = null;
+    const x = b.parentNode.scrollLeft; refreshHome(); const ch = $('.chips'); if (ch) ch.scrollLeft = x;
+  });
+  $$('.tcard').forEach(b => b.onclick = () => {
+    const no = +b.dataset.no;
+    if (PAGES[no]) { const h = spHref(no); if (h[0] === '#') location.hash = h; else location.href = h; return; }
+    SEL = b.dataset.spot; TAB = 'kaart'; try { history.replaceState(null, '', '#kaart'); } catch(e) {}
+    refreshHome(); renderChrome({tab:'kaart'}); const mb = $('.mapbox'); if (mb) mb.scrollIntoView({block:'start'});
+  });
+  bindSpecies();
+  $$('.catbtn').forEach(b => b.onclick = () => {
+    CAT = b.dataset.cat ? +b.dataset.cat : null; VIEW = null; LISTALL = false;
+    // kat met alleen plekken met kans 1–2 (bijv. caracal): die plekken dan meteen tonen
+    if (CAT) { const sc = catSpots(CAT).map(s => s.recs.find(r => r.no === CAT).score); if (sc.length && sc.every(n => !SHOWN.has(n))) sc.forEach(n => SHOWN.add(n)); }
+    if (SEL && CAT && !SPOT[SEL].recs.some(r => r.no === CAT)) SEL = null;
+    const x = $('#catrow').scrollLeft; refreshHome(); const cr = $('#catrow'); if (cr) cr.scrollLeft = x;
+  });
+  const sa = $('#showAll'); if (sa) sa.onclick = () => { SHOWALL = !SHOWALL; $('#tops').innerHTML = topsHtml(); bindHome(); };
+  const q = $('#q'); if (q) q.oninput = () => { Q = q.value; $('#splist').innerHTML = speciesListHtml(); bindSpecies(); };
+  const zi = $('#zIn'); if (zi) { zi.onclick = () => zoomBy(2); $('#zOut').onclick = () => zoomBy(.5); $('#zReset').onclick = () => { VIEW = null; LISTALL = false; drawHomeMap(); }; }
+  drawHomeMap();
+}
+let rsz; window.addEventListener('resize', () => { clearTimeout(rsz); rsz = setTimeout(() => { if ($('#mapwrap')) drawHomeMap(); if ($('#spmap')) drawSpeciesMap(); }, 200); });
+
+/* ---------- soortpagina ---------- */
+// eerste deel van de seizoenstekst (tot de eerste ; of haakje), voor samenvattingen
+const spotsMoreLbl = (n, all) => all ? T(U.showLess) : (L === 'nl' ? `Toon alle ${n} plekken` : `Show all ${n} places`);
+const showAllSpots = () => { const ol = $('#spotlist'), b = $('#moreSpots'); if (!ol || ol.classList.contains('all')) return; ol.classList.add('all'); if (b) b.textContent = spotsMoreLbl(0, true); };
+const shortSeason = r => T(r.season).split(/;\s*|\s\(/)[0].replace(/[.,]\s*$/, '');
+let SPMAP = null;
+function drawSpeciesMap(){
+  const el = $('#spmap'); if (!el || !SPMAP) return;
+  el.innerHTML = mapSvg({...SPMAP, cw: el.clientWidth || 360, borders: true});
+  bindMarkers(el, id => { const d = document.getElementById('plek-' + id); if (d) { showAllSpots(); d.open = true; d.scrollIntoView({block:'start', behavior:'smooth'}); } });
+}
+function renderSpecies(no){
+  const c = BY[no], P = PAGES[no];
+  if (!c || !P) return renderMissing(c);
+  const recs = P.spots.map(id => { const s = SPOT[id]; return {s, r:s.recs.find(r => r.no === no)}; });
+  const local = {}; P.sources.forEach((g,i) => local[g] = i+1);
+  const cite = ids => (ids||[]).filter(g => local[g]).sort((a,b) => local[a] - local[b]).map(g => `<a class="cite" href="#bron-${no}-${local[g]}">[${local[g]}]</a>`).join('');
+  const top = recs[0], best = top.r.score;
+  let [x0,y0,x1,y1] = c.range ? bboxOfPath(c.range) : [720,284,0,0];
+  recs.forEach(({s}) => { const [x,y] = proj(s.lat, s.lon); x0=Math.min(x0,x); x1=Math.max(x1,x); y0=Math.min(y0,y); y1=Math.max(y1,y); });
+  const pad = 12;
+  SPMAP = {box:[x0-pad, y0-pad, Math.max(50, x1-x0+2*pad), Math.max(30, y1-y0+2*pad)], range:c.range,
+    markers: recs.map(({s,r},i) => ({id:s.id, lat:s.lat, lon:s.lon, score:r.score, num:i+1, label:`${i+1}. ${T(s.name)}`})).reverse(),
+    label: T(U.habitat)+': '+catName(c)};
+  const intro = T(P.intro), km = intro.match(/(Kans|Chance):\s*\d.*$/s);
+  const story = km ? intro.slice(0, km.index).trim() : intro;
+  const season1 = shortSeason(top.r);
+  const meta = [cnt(recs.length, 'wPlace1', 'wPlaces'), esc(`${T(U.bestChance)} ${best}`), esc(T(BIG.has(no) ? U.bigCats : U.smallCats))].join(SEP);
+  $('#main').innerHTML = `${skHtml(catName(c), `<i>${esc(c.la)}</i>`, meta)}${fabHtml('#soorten')}
+  <div class="wrap">
+  <section class="sphead">
+    <div class="heros"><div class="hstrip" id="hstrip">${c.photos.map((p,i) => `<figure class="hero"><div class="ph">${img(p, catName(c), i === 0)}</div><figcaption>${credit(p.cr)}${p.captive ? ` · ${esc(T(U.captive))}` : ''}</figcaption></figure>`).join('')}</div>
+      ${c.photos.length > 1 ? `<div class="hdots">${c.photos.map((_,i) => `<button type="button" data-i="${i}" aria-label="${esc(T(U.photos))} ${i+1}"${i ? '' : ' class="on"'}></button>`).join('')}</div>` : ''}</div>
+    <div class="idblock">
+      <span class="lbl">№ ${c.no} · ${c.cont.map(contName).join(' · ')}</span>
+      <p class="en">${esc(L==='nl'?c.en:c.nl)}</p>
+      <div class="badges">${iucnHtml(c.iucn)}</div>
+      <dl class="summary">
+        <div><dt>${esc(T(U.bestPlace))}</dt><dd>${esc(T(top.s.name))}<small>${esc(T(top.s.country))}</small></dd></div>
+        <div><dt>${esc(T(U.bestTime))}</dt><dd>${esc(season1)}</dd></div>
+      </dl>
+      <p class="lead">${esc(story)}${km ? `<span class="kans">${esc(km[0])}</span>` : ''}</p>
+    </div>
+  </section></div>
+  <nav class="jump" aria-label="${esc(L==='nl'?'Snel naar':'Jump to')}"><div class="wrap">
+    ${[['kaartsec','jMap'],['plekken','jPlaces'],['tipssec','jTips'],['statussec','jStatus'],['bronnen','jSources']].map(([id,k]) => `<button type="button" data-go="${id}">${esc(T(U[k]))}</button>`).join('')}
+  </div></nav>
+  <div class="wrap">
+  <section class="sec anchor" id="kaartsec"><div class="sechead"><h2>${esc(T(U.habitat))}</h2></div>
+    <div class="mapbox">${alsoHtml(no, recs)}<div id="spmap"></div>${legendHtml(false)}<div class="panel"><p class="note">${esc(T(U.habitatNote))}</p></div></div></section>
+  <section class="sec anchor" id="plekken"><div class="sechead"><h2>${esc(T(U.bestSpots))}</h2><p>${esc(T(U.bestSpotsSub))}</p></div>
+    <ol class="spots" id="spotlist">${recs.map(({s,r},i) => `<li${i >= 3 ? ' class="more"' : ''}><details class="spot" id="plek-${esc(s.id)}" style="--c:var(--s${r.score})">
+      <summary><span class="rank">${i+1}</span><span class="tt"><h3>${esc(T(s.name))}</h3><span class="where">${esc(T(s.country))}</span>${shortSeason(r) ? `<span class="ssn"><svg viewBox="0 0 20 20" aria-hidden="true">${FICO.season}</svg>${esc(shortSeason(r))}</span>` : ''}</span><span class="sc-sum">${scoreHtml(r.score, false, true)}</span>${CHEV}</summary>
+      <div class="body"><p class="where">${esc(T(s.area))}</p>${scoreHtml(r.score)}
+      <p class="why">${esc(T(r.why))}${cite(r.src)}</p>${factsHtml(r)}</div></details></li>`).join('')}</ol>
+    ${recs.length > 3 ? `<div class="morewrap"><button type="button" class="btn" id="moreSpots">${esc(spotsMoreLbl(recs.length, false))}</button></div>` : ''}</section>
+  <section class="sec two">
+    <div class="anchor" id="tipssec"><details class="fold"><summary><h2>${esc(T(U.tips))} <span class="cnt">(${T(P.tips).length})</span></h2>${CHEV}</summary><ul class="tips">${T(P.tips).map(x=>`<li>${esc(x)}</li>`).join('')}</ul></details></div>
+    <div class="anchor" id="statussec"><details class="fold"><summary><h2>${esc(T(U.status))}</h2>${iucnHtml(c.iucn)}${CHEV}</summary><div class="box" style="display:grid;gap:12px">
+      <p>${esc(T(P.status))}${cite(P.statusSrc)}</p>
+      <h3>${esc(T(U.threats))}</h3><ul class="tips">${T(P.threats).map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div></details></div>
+  </section>
+  <section class="sec read anchor" id="bronnen"><details class="fold" id="srcbox"><summary><h2>${esc(T(U.sources))} <span class="cnt">(${P.sources.length})</span></h2>${CHEV}</summary>
+    <ol class="sources">${P.sources.map((g,i) => `<li id="bron-${no}-${i+1}"><a href="${esc(SRC[g].url)}" target="_blank" rel="noopener">${esc(T(SRC[g].title))}</a></li>`).join('')}</ol></details>
+    <p class="note" style="margin-top:14px">${esc(L==='nl'?'Foto’s, leefgebied en IUCN-status: De KATalogue.':'Photos, range and IUCN status: De KATalogue.')}</p>
+    <p style="margin-top:14px">${esc(L==='nl'?'Zelf deze kat gezien, of klopt er iets niet?':'Seen this cat yourself, or is something wrong?')} <a class="btnlink" href="#melden-${no}">${esc(L==='nl'?'Meld het hier':'Report it here')} →</a></p></section>
+  </div>`;
+  drawSpeciesMap(); bindAlso(no, recs);
+  $$('.jump button').forEach(b => b.onclick = () => { const el = document.getElementById(b.dataset.go); if (!el) return; const f = el.querySelector('.fold'); if (f) f.open = true; el.scrollIntoView({block:'start', behavior:'smooth'}); });
+  bindJumpSpy();
+  const mb = $('#moreSpots'); if (mb) mb.onclick = () => { const ol = $('#spotlist'); if (ol.classList.contains('all')) { ol.classList.remove('all'); mb.textContent = spotsMoreLbl(recs.length, false); $('#plekken').scrollIntoView({block:'start'}); } else showAllSpots(); };
+  const hs = $('#hstrip'), dots = $$('.hdots button');
+  if (hs && dots.length) {
+    dots.forEach(d => d.onclick = () => hs.scrollTo({left: +d.dataset.i * (hs.clientWidth + 10), behavior:'smooth'}));
+    hs.addEventListener('scroll', () => { const i = Math.round(hs.scrollLeft / (hs.clientWidth + 10)); dots.forEach((d,j) => d.classList.toggle('on', i === j)); }, {passive:true});
+  }
+  $$('.cite').forEach(a => a.onclick = e => { e.preventDefault(); const el = document.getElementById(a.getAttribute('href').slice(1)); if (el) { $('#srcbox').open = true; el.scrollIntoView({block:'center', behavior:'smooth'}); el.style.background='color-mix(in srgb,var(--accent) 18%,transparent)'; setTimeout(()=>el.style.background='',1600); } });
+  return catName(c);
+}
+// snelmenu: knop van het onderdeel waar je nu bent oplichten (en in beeld schuiven)
+let JUMPSPY = null;
+function bindJumpSpy(){
+  if (JUMPSPY) window.removeEventListener('scroll', JUMPSPY);
+  const btns = $$('.jump button'); if (!btns.length) { JUMPSPY = null; return; }
+  let cur = null;
+  JUMPSPY = () => {
+    const bar = $('.jump'); if (!bar || !bar.isConnected) return;
+    const lim = Math.max(bar.getBoundingClientRect().bottom + 40, innerHeight * .4);
+    let act = null;
+    btns.forEach(b => { const el = document.getElementById(b.dataset.go); if (el && el.getBoundingClientRect().top <= lim) act = b; });
+    if (innerHeight + scrollY >= document.documentElement.scrollHeight - 4) act = btns[btns.length - 1];   // onderaan: laatste onderdeel
+    if (act === cur) return; cur = act;
+    btns.forEach(b => b.classList.toggle('on', b === act));
+    if (act) { const w = act.parentNode; w.scrollTo({left: act.offsetLeft - (w.clientWidth - act.offsetWidth) / 2, behavior:'smooth'}); }
+  };
+  window.addEventListener('scroll', JUMPSPY, {passive:true}); JUMPSPY();
+}
+// andere katten die op dezelfde plekken voorkomen
+function alsoCats(no, recs){
+  const set = {};
+  recs.forEach(({s}) => s.recs.forEach(r => { if (r.no !== no) set[r.no] = true; }));
+  return Object.keys(set).map(Number).sort((a,b) => a - b);
+}
+function alsoHtml(no, recs){
+  const list = alsoCats(no, recs); if (!list.length) return '';
+  return `<div class="also"><label for="alsoSel">${esc(T(U.alsoLbl))}</label><select id="alsoSel"><option value="">${esc(T(U.alsoNone))}</option>${list.map(n => `<option value="${n}"${ALSO===n?' selected':''}>${esc(catName(BY[n]))}</option>`).join('')}</select><div id="alsoOut" style="flex-basis:100%"></div></div>`;
+}
+function bindAlso(no, recs){
+  const sel = $('#alsoSel'); if (!sel) return;
+  const base = SPMAP.markers.map(m => ({...m}));
+  const apply = () => {
+    const a = sel.value ? +sel.value : null; ALSO = a;
+    if (!a) { SPMAP.markers = base; $('#alsoOut').innerHTML = ''; drawSpeciesMap(); return; }
+    SPMAP.markers = base.map(m => { const r = SPOT[m.id].recs.find(x => x.no === a); return r ? {...m, score:r.score} : {...m, dim:true}; });
+    const shared = recs.map(({s}) => ({s, r:s.recs.find(x => x.no === a)})).filter(x => x.r);
+    $('#alsoOut').innerHTML = `<p class="note" style="margin-top:6px">${esc(catName(BY[a]))} ${esc(T(U.alsoAt))}</p><ul class="alsolist">${shared.map(({s,r}) => `<li><b>${esc(T(s.name))}</b>${scoreHtml(r.score, false, true)}</li>`).join('')}</ul>
+      <p style="margin-top:8px">${PAGES[a] ? `<a class="btnlink" href="${spHref(a)}">${esc(catName(BY[a]))}: ${esc(T(U.toPage).toLowerCase())} →</a>` : `<span class="soon">${esc(T(U.soonPage))}</span>`}</p>`;
+    drawSpeciesMap();
+  };
+  sel.onchange = apply; if (ALSO && alsoCats(no, recs).includes(ALSO)) apply(); else ALSO = null;
+}
+function renderMissing(c){
+  $('#main').innerHTML = `${skHtml(c ? catName(c) : '404', '', '')}<div class="wrap sec read"><p style="margin-top:12px">${esc(c ? T(U.soonPage) + '.' : T(U.notFound))}</p><p style="margin-top:16px"><a class="btnlink" href="#soorten">← ${esc(T(U.back))}</a></p></div>`;
+  return c ? catName(c) : '';
+}
+
+/* ---------- tekstpagina's ---------- */
+function renderText(id){
+  const pg = D.text[id];
+  let html = `${skHtml(T(pg.title), esc(T(pg.eyebrow)), updatedHtml())}${fabHtml('#meer')}<div class="wrap sec" style="padding-top:12px"><div class="read prose">${T(pg.html)}`;
+  if (id === 'europa') html += europaList();
+  if (id === 'over') html += `<p><a class="kofi" href="${esc(KOFI_URL)}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 6h13a4 4 0 0 1 0 8h-1.1A6 6 0 0 1 10 19H9a5 5 0 0 1-5-5V6zm12 2v4h1a2 2 0 0 0 0-4h-1z"/></svg>${esc(L==='nl'?'Trakteer me op een koffie (Ko-fi)':'Buy me a coffee (Ko-fi)')}</a></p>`;
+  if (id === 'over') html += `<p><a class="btnlink" href="#melden">${esc(L==='nl'?'Stuur me een melding':'Send me a report')} →</a></p>`;
+  if (pg.sources && pg.sources.length) html += `<h2>${esc(T(U.sources))}</h2><ol class="sources">${pg.sources.map(g => `<li><a href="${esc(SRC[g].url)}" target="_blank" rel="noopener">${esc(T(SRC[g].title))}</a></li>`).join('')}</ol>`;
+  html += `</div></div>`;
+  $('#main').innerHTML = html;
+  return T(pg.title);
+}
+function europaList(){
+  return `<div class="eurlist">${D.europe.map(e => { const c = BY[e.no], page = PAGES[e.no];
+    const inner = `${img(c.photos[0], catName(c), false, true)}<div><span class="lbl">${esc(T(e.where))}</span><b style="font-family:var(--display);font-size:1.15rem">${esc(catName(c))}</b><span class="lat">${esc(c.la)}</span>${BEST[e.no]?scoreHtml(BEST[e.no]):''}<span>${esc(T(e.text))}</span></div>`;
+    return page ? `<a class="eurrow" href="${spHref(e.no)}">${inner}</a>` : `<div class="eurrow">${inner}</div>`; }).join('')}</div>`;
+}
+
+/* ---------- melden (Web3Forms, gaat naar de maker; zelfde sleutel als de dierentuingids) ---------- */
+const W3F_KEY = '9494e3c0-9342-4457-a5d6-b795793b9ce4';
+const RP_TYPES = [['seen',{nl:'Ik heb een kat gezien',en:'I saw a cat'}],['missing',{nl:'Er ontbreekt een plek',en:'A place is missing'}],
+  ['wrong',{nl:'Informatie klopt niet of is verouderd',en:'Information is wrong or out of date'}],['other',{nl:'Iets anders',en:'Something else'}]];
+function renderReport(no){
+  const nl = L === 'nl', cats = D.cats.slice().sort((a,b) => catName(a).localeCompare(catName(b)));
+  const today = new Date().toISOString().slice(0,10);
+  $('#main').innerHTML = `${skHtml(T(U.navReport), esc(T(U.meerReport)), esc(T(U.reportSub)))}${fabHtml('#meer')}<div class="wrap sec" style="padding-top:12px"><div class="read prose">
+    <p>${esc(nl?'Zelf een wilde kat gezien, een goede plek die hier ontbreekt, of iets dat niet (meer) klopt? Laat het weten. Zo blijft de gids eerlijk en actueel.':'Seen a wild cat yourself, know a good place that is missing, or found something that is wrong or out of date? Let me know. That keeps the guide honest and up to date.')}</p></div>
+    <form class="rp-form" id="rp-form" onsubmit="return false">
+      <fieldset><legend>${esc(nl?'Wat wil je melden?':'What would you like to report?')}</legend><div class="rp-types">
+        ${RP_TYPES.map(([v,l]) => `<label><input type="radio" name="rp-type" value="${v}"><span>${esc(T(l))}</span></label>`).join('')}</div></fieldset>
+      <div><label class="rp-l" for="rp-cat">${esc(nl?'Soort':'Species')}</label>
+        <select id="rp-cat"><option value="0">${esc(nl?'Weet ik niet / geen':'Not sure / none')}</option>${cats.map(c => `<option value="${c.no}"${c.no===no?' selected':''}>${esc(catName(c))}</option>`).join('')}</select></div>
+      <div><label class="rp-l" for="rp-spot">${esc(nl?'Plek':'Place')}</label><select id="rp-spot"></select>
+        <input type="text" id="rp-spot2" maxlength="120" placeholder="${esc(nl?'Naam van de plek, gebied en land':'Name of the place, area and country')}" hidden></div>
+      <div><label class="rp-l" for="rp-date">${esc(nl?'Datum (van je waarneming of bezoek)':'Date (of your sighting or visit)')}</label><input type="date" id="rp-date" value="${today}" max="${today}"></div>
+      <div><label class="rp-l" for="rp-opm">${esc(nl?'Opmerkingen':'Comments')} <span style="font-weight:400;color:var(--muted)">(${esc(nl?'optioneel':'optional')})</span></label>
+        <textarea id="rp-opm" maxlength="500" placeholder="${esc(nl?'Bijvoorbeeld: tijdens een nachtrit, langs de bosrand, ongeveer 30 meter afstand':'For example: on a night drive, along the forest edge, about 30 metres away')}"></textarea><span class="rp-cnt" id="rp-cnt">0 / 500</span></div>
+      <div class="rp-hp" aria-hidden="true"><input type="text" id="rp-bot" tabindex="-1" autocomplete="off"></div>
+      <div><span class="rp-l">${esc(nl?'Je melding':'Your report')}</span><p class="rp-sum leeg" id="rp-sum"></p></div>
+      <button type="button" class="rp-go" id="rp-go" disabled>${esc(nl?'Plaats melding':'Submit report')}</button>
+      <p class="rp-msg" id="rp-msg" aria-live="polite"></p>
+    </form>
+    <p class="note" style="margin-top:14px;max-width:640px">${esc(nl?'Je melding gaat rechtstreeks naar de maker van de gids en is niet openbaar. Wil je een reactie, zet dan je e-mailadres bij Opmerkingen.':'Your report goes straight to the guide’s author and is not public. If you would like a reply, add your email address under Comments.')}</p></div>`;
+  const fillSpots = () => {
+    const c = +$('#rp-cat').value, P = c && PAGES[c];
+    const opts = P ? P.spots.map(id => `<option value="${esc(id)}">${esc(T(SPOT[id].name))}, ${esc(T(SPOT[id].country))}</option>`).join('') : '';
+    $('#rp-spot').innerHTML = opts + `<option value="_">${esc(nl?'Andere plek…':'Another place…')}</option>`;
+  };
+  fillSpots();
+  $('#rp-cat').onchange = () => { fillSpots(); rpUpdate(); };
+  $('#rp-form').addEventListener('input', rpUpdate); $('#rp-form').addEventListener('change', rpUpdate);
+  $('#rp-go').onclick = rpSend;
+  rpUpdate();
+  return T(U.navReport);
+}
+function rpData(){
+  const t = (document.querySelector('input[name="rp-type"]:checked') || {}).value || '';
+  const c = +$('#rp-cat').value, sp = $('#rp-spot').value, other = sp === '_';
+  $('#rp-spot2').hidden = !other;
+  const place = other ? $('#rp-spot2').value.trim() : (SPOT[sp] ? T(SPOT[sp].name) + ', ' + T(SPOT[sp].country) : '');
+  const placeNl = other ? place : (SPOT[sp] ? SPOT[sp].name.nl + ', ' + SPOT[sp].country.nl : '');
+  return {t, c, place, placeNl, date: $('#rp-date').value, opm: $('#rp-opm').value.trim()};
+}
+function rpUpdate(){
+  const d = rpData(), nl = L === 'nl', el = $('#rp-sum');
+  $('#rp-cnt').textContent = $('#rp-opm').value.length + ' / 500';
+  const type = RP_TYPES.find(([v]) => v === d.t), cat = d.c ? catName(BY[d.c]) : (nl ? 'onbekende soort' : 'unknown species');
+  const ok = !!type && (d.t !== 'seen' || !!d.c) && (d.t === 'other' || !!d.place);
+  if (!type) { el.className = 'rp-sum leeg'; el.textContent = nl ? 'Kies hierboven wat je wilt melden en waar.' : 'Choose above what you want to report and where.'; }
+  else {
+    const dt = d.date ? new Date(d.date + 'T12:00').toLocaleDateString(nl ? 'nl-NL' : 'en-GB', {day:'numeric', month:'short', year:'numeric'}) : '';
+    el.className = 'rp-sum';
+    el.textContent = `${T(type[1])}: ${cat}${d.place ? (nl ? ' bij ' : ' at ') + d.place : ''}${dt ? (nl ? ', op ' : ', on ') + dt : ''}.` +
+      (!ok ? (nl ? (d.t === 'seen' && !d.c ? ' Kies nog een soort.' : ' Kies of vul nog een plek in.') : (d.t === 'seen' && !d.c ? ' Please choose a species.' : ' Please choose or enter a place.')) : '');
+  }
+  $('#rp-go').disabled = !ok;
+}
+function rpMsg(t, cls){ const m = $('#rp-msg'); m.textContent = t; m.className = 'rp-msg' + (cls ? ' ' + cls : ''); }
+async function rpSend(){
+  const d = rpData(), nl = L === 'nl', btn = $('#rp-go');
+  if ($('#rp-bot').value) return;
+  const type = RP_TYPES.find(([v]) => v === d.t), catNl = d.c ? BY[d.c].nl : 'onbekend';
+  btn.disabled = true; rpMsg(nl ? 'Bezig met versturen…' : 'Sending…');
+  const body = {access_key: W3F_KEY, subject: `Melding Spottersgids: ${type[1].nl} – ${catNl}${d.placeNl ? ' – ' + d.placeNl : ''}`, from_name: 'Spottersgids voor wilde katten',
+    Melding: $('#rp-sum').textContent.trim(), Soort_melding: type[1].nl, Soort: catNl, Plek: d.placeNl || '-', Datum: d.date || '-', Opmerkingen: d.opm || '-',
+    Gids: 'Spottersgids', Pagina: location.href, Taal: L, botcheck: ''};
+  try {
+    const r = await fetch('https://api.web3forms.com/submit', {method:'POST', headers:{'Content-Type':'application/json', 'Accept':'application/json'}, body: JSON.stringify(body)});
+    const j = await r.json().catch(() => ({}));
+    if (!(r.ok && j.success)) throw new Error(j.message || r.status);
+    rpMsg(nl ? 'Bedankt! Je melding is verstuurd.' : 'Thank you! Your report has been sent.', 'ok');
+    $('#rp-opm').value = ''; document.querySelectorAll('input[name="rp-type"]').forEach(x => x.checked = false); rpUpdate();
+  } catch(e) {
+    rpMsg(nl ? 'Versturen is niet gelukt. Probeer het later opnieuw.' : 'Sending failed. Please try again later.', 'fout');
+    btn.disabled = false;
+  }
+}
+
+/* ---------- router ---------- */
+function route(keep){
+  const h = (location.hash || (SGP ? '#soort-' + SGP.no : '#start')).slice(1);
+  let title = '', nav = '', page = 0, tab = '';
+  const y = window.scrollY;
+  if (h === 'start' || h === '' || h === 'topspots' || h === 'kaart' || h === 'soorten' || h === 'meer') {
+    if (h !== 'start' && h !== '') TAB = h;
+    tab = TAB; renderHome();
+  }
+  else if (/^soort-\d+$/.test(h)) { tab = 'soorten'; page = +h.slice(6); title = renderSpecies(page); }
+  else if (/^melden(-\d+)?$/.test(h)) { tab = 'meer'; nav = 'melden'; title = renderReport(+(h.split('-')[1] || 0)); }
+  else if (D.text[h]) { tab = 'meer'; nav = h; title = renderText(h); }
+  else { title = renderMissing(null); }
+  renderChrome({title, nav, page, tab});
+  fitSk();
+  window.scrollTo(0, keep ? y : 0);
+  if (keep) { drawHomeMap(); drawSpeciesMap(); }
+}
+window.addEventListener('hashchange', () => route(false));
+// testpagina: <base> wijst naar de map spottersgids, dus #-links zelf binnen deze pagina houden
+if (window.SG_TEST) document.addEventListener('click', e => {
+  const a = e.target.closest && e.target.closest('a[href^="#"]'); if (!a || e.defaultPrevented) return;
+  e.preventDefault(); location.hash = a.getAttribute('href');
+});
+window.addEventListener('resize', () => { clearTimeout(window.__fitT); window.__fitT = setTimeout(fitSk, 150); });
+route(false);
+try { const zs = sessionStorage.getItem('sg-spot'); if (zs && !SGP) { sessionStorage.removeItem('sg-spot'); if (SPOT[zs]) goSpot(zs); } } catch(e) {}
+})();
+</script>
+</body>
+</html>

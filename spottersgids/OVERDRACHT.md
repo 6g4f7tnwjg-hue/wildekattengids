@@ -72,3 +72,8 @@ Topspot-regel in de bouw: plek met score 5 op een soortpagina = topspot; score 4
 - Testbranch: gebruiker verwijdert hem later zelf.
 - Iriomote (Bengaalse kat, ~100 dieren, score 2): uitgelegd (verkeer is hoofdbedreiging, tekst zegt stapvoets rijden); gebruiker 17-10-2026: laten staan.
 - Klein lay-outpuntje gezien (niet gevraagd): op brede schermen loopt "Kans 3 · redelijke kans" in het samenvattingsvak van de soortpagina iets buiten het vak.
+
+## Safari-stijl (testpagina, 19-10-2026)
+- Gebruiker wil de Spottersgids "meer als de Bezoekersgids": zelfde opbouw, maar bruin (Safari). Voorstel goedgekeurd: onderbalk **Kaart · Soorten · Topspots · Meer**, donkere kop per scherm (166 px, golfrand, acacia met zon, sporen), titel in Anton met wereldbol-embleem, onderregel en goudgele regel met aantallen; "Kies een werelddeel" en "Kies een kat" met pootjes; Soorten als fotoraster in twee groepen (Pantherinae/Felinae, op naam); Topspots met dezelfde kaartjes; Meer als lijst met ronde iconen; soort- en tekstpagina's met dezelfde kop en een zwevende terugknop; voet met de luipaard op de tak (uit `../bron/jungle.py`). Info, kansen, kaartfuncties, losse soortadressen en NL/EN blijven gelijk.
+- Testpagina: https://yeetkitty.github.io/wildekattengids/spottersgids/safari/ (noindex, niet gelinkt). Bron: `bron/template-safari.html`; bouwen met `python3 bron/build.py --test` (schrijft alleen `safari/`; soortpagina's openen in de testpagina via `#soort-<nr>`). De live gids gebruikt nog `bron/template.html`.
+- Na goedkeuring: `template-safari.html` wordt `template.html`, gewoon bouwen, `safari/` weghalen.

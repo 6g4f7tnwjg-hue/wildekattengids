@@ -2,6 +2,10 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 19 oktober 2026 – Knop "Naar boven" werkt weer
+
+Op de schermen van de landpagina's (Kaart, Locaties, Soorten, Meer-subpagina's) scrolde "Naar boven" naar de onderkant van de oude gidskop, die in het nieuwe ontwerp verborgen is: de pagina sprong maar een paar pixels. Nu gaat hij altijd helemaal naar boven (klik-afvanger in `bron/test_ontwerp.py`). Getest in alle landen.
+
 ## 19 oktober 2026 – Kop startscherm landpagina's gelijk aan de andere koppen
 
 De groene kop van het startscherm (Kaart) op de landpagina's was net anders dan die van Locaties, Soorten en Meer: 1 px lager, vlag 2 px lager, smallere letterafstand in de titel en een hogere golf. Nu exact gelijk (gemeten in alle landen op 390 en 414 px). CSS in `bron/jungle.py` onder de `.nt-kop`-regels.

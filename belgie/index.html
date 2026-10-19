@@ -2561,6 +2561,9 @@ function kaartje(i,l,nm,k,s,n,u){var b=LSP[i].filter(function(sp){return LBEV[i]
     '<span class="nt-n">'+(n?'<b class="nt-bdg">'+n+'</b><span class="nt-vh"> '+nsoort(n)+'</span>':'')+(u?'<small>'+u+' '+LS("onzeker","uncertain")+'</small>':'')+'</span>'+
     (alle.length?'<span class="nt-rjs" aria-hidden="true">'+rj+'</span><span class="nt-vh">'+E(namen)+'</span>':'')+'</li>';}
 
+/* knop "Naar boven" (19-10-2026): de gids scrolde naar de onderkant van zijn oude kop, die in dit ontwerp verborgen is (sprong maar een paar pixels). Nu altijd helemaal naar boven. */
+document.addEventListener("click",function(e){var t=e.target.closest&&e.target.closest("#totop");if(!t)return;e.preventDefault();e.stopImmediatePropagation();window.scrollTo({top:0,behavior:"smooth"});},true);
+
 /* ---------- kaart (startscherm) ---------- */
 function cats(){var el=$("#nt-cats");if(!el)return;
   var all=N.BIG.concat(N.SMALL).filter(function(s){return SPL[s];}).sort(function(a,b){return N.spName(a).localeCompare(N.spName(b));});

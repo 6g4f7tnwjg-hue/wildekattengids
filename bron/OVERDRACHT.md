@@ -30,7 +30,7 @@ Lees eerst `bron/LEESMIJ.md` (opbouw, bouw en de telregel), `bron/OPEN.md` (open
   - Zwevende gele terugknop linksonder (`.jg-terug`), alleen op Meer-subpagina's en detailpagina's; gaat terug naar Soorten/Locaties of klikt de bestaande terugknop.
   - Knoppen (landen, filters, typen, regio's) in stijl A "bladgroen" (19-10, vervangt het hout): `KNOP`/`KNOP_AAN`. Bolletjes voor de lijsten "Waar te zien" en "Katten hier".
   - Scherm Locaties (19-10): losse kaartjes met goudgele badge en soortrondjes (`kaartje()` in `test_ontwerp.py`); de lijst "In beeld" op het kaartscherm is ongewijzigd.
-  - Getekende luipaard op de rand van het Ko-fi-blok (ronde groene ogen met wimpers, snorharen, knipperen, kop kantelt, staart zwiept; tik = opkijken). Tekening in `svg()`/`oog()` in `jungle.py`.
+  - Voet als horizontale tak (19-10, `TAK_JS`/`TAK_CSS`): Ko-fi-tekst op de tak, luipaard ligt erop. Getekende luipaard (ronde groene ogen met wimpers, snorharen, knipperen, kop kantelt, staart zwiept; tik = opkijken). Tekening in `svg()`/`oog()` in `jungle.py`.
 - **Les:** gebruik geen MutationObserver die op `class`-wijzigingen in `#main` reageert en dan zelf HTML schrijft. Dat gaf een oneindige lus en de site reageerde niet meer op tikken (19-10, direct teruggedraaid). Teksten nu vooraf bouwen en alleen met CSS wisselen.
 - Bekend, niet door de stijl: op de kaart van Frankrijk, Duitsland en Spanje is de site zelf continu bezig (ook zonder jungle-laag). Tikken werkt, maar het kost mogelijk batterij. Nog niet uitgezocht.
 - Testpagina's (noindex, niet gelinkt): `/voorbeeld-jungle/` (drie stijlvoorbeelden, `test/` per paginasoort, `ogen/`).

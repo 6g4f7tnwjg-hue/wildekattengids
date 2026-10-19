@@ -537,25 +537,28 @@ html body .hs-kofi{{background:{SUN}!important;color:{JG}!important;border-color
 @media (min-width:1120px){{html body .nt-kop,html body .ip-head{{border-radius:22px}}}}
 """
 
-# voet als horizontale tak (VOORBEELD 19-10-2026, nog niet op de site): de luipaard ligt op een getekende tak,
+# voet als horizontale tak (19-10-2026, op alle pagina's): de luipaard ligt op een getekende tak,
 # de Ko-fi-tekst staat op de tak. De tak wordt in JS op de echte maat getekend (niet uitgerekt) en opnieuw
 # getekend als de voet van maat verandert (ResizeObserver op de voet; de tak zelf staat absoluut en verandert de maat niet).
 TAK_CSS = f"""
-html body .hs-foot.jg-tak{{background:transparent!important;border-top:0!important;margin-top:112px!important;padding:0 0 12px!important;position:relative;isolation:isolate}}
-html body .hs-foot.jg-tak .jg-takbg{{position:absolute;left:0;right:0;top:0;bottom:12px;z-index:0;pointer-events:none;overflow:visible}}
-html body .hs-foot.jg-tak .jg-takbg svg{{display:block;width:100%;height:100%;overflow:visible}}
-html body .hs-foot.jg-tak .hs-wrap{{position:relative;z-index:1;padding-top:50px!important;padding-bottom:40px!important}}
-html body .hs-foot.jg-tak .jg-lp{{z-index:3;top:-94px}}
-html body .hs-foot.jg-tak .hs-kofibar{{background:none!important;border:0!important;padding:0!important;margin:0 0 14px!important;box-shadow:none!important}}
-html body .hs-foot.jg-tak p,html body .hs-foot.jg-tak p *{{color:#FFF4DE!important}}
-html body .hs-foot.jg-tak .hs-kofibar p{{font-size:1.05rem;line-height:1.5;text-shadow:0 1px 0 rgba(40,20,5,.45)}}
-html body .hs-foot.jg-tak .hs-kofibar b,html body .hs-foot.jg-tak .hs-kofibar b *{{color:{SUN}!important}}
-html body .hs-foot.jg-tak .hs-kofi{{box-shadow:0 2px 0 {LO},0 6px 14px -6px rgba(0,0,0,.6)!important;border:2px solid {LO}!important}}
-html body .hs-foot.jg-tak .hs-wrap>p{{border-top:1px dashed rgba(255,236,200,.35)!important;padding-top:12px!important;margin-top:16px!important;font-size:.92rem;opacity:.9}}
+html body :is(.hs-foot,.foot).jg-tak{{background:transparent!important;border-top:0!important;margin-top:112px!important;padding:0 0 12px!important;position:relative;isolation:isolate}}
+html body .jg-tak .jg-takbg{{position:absolute;left:0;right:0;top:0;bottom:12px;z-index:0;pointer-events:none;overflow:visible}}
+html body .jg-tak .jg-takbg svg{{display:block;width:100%;height:100%;overflow:visible}}
+html body .jg-tak>:is(.hs-wrap,.wrap){{position:relative;z-index:1;padding-top:50px!important;padding-bottom:40px!important;background:none!important}}
+html body .jg-tak .jg-lp{{z-index:3;top:-94px}}
+html body .jg-tak :is(.hs-kofibar,.kofibar){{background:none!important;border:0!important;border-bottom:1px dashed rgba(255,236,200,.35)!important;border-radius:0!important;padding:0 0 16px!important;margin:0 0 12px!important;box-shadow:none!important}}
+html body .jg-tak :is(p,span,b),html body .jg-tak>:is(.hs-wrap,.wrap){{color:#FFF4DE!important}}
+html body .jg-tak :is(.hs-kofibar,.kofibar) p{{font-size:1.05rem;line-height:1.5;text-shadow:0 1px 0 rgba(40,20,5,.45)}}
+html body .jg-tak :is(.hs-kofibar,.kofibar) b,html body .jg-tak :is(.hs-kofibar,.kofibar) b span{{color:{SUN}!important}}
+html body .jg-tak :is(.hs-kofi,.kofi),html body .jg-tak :is(.hs-kofi,.kofi) span{{color:{JG}!important;text-shadow:none!important}}
+html body .jg-tak :is(.hs-kofi,.kofi){{background:{SUN}!important;box-shadow:0 2px 0 {LO},0 6px 14px -6px rgba(0,0,0,.6)!important;border:2px solid {LO}!important}}
+html body .jg-tak>:is(.hs-wrap,.wrap)>p,html body .jg-tak>.wrap{{font-size:.92rem}}
+html body .jg-tak>:is(.hs-wrap,.wrap)>p{{border:0!important;padding:0!important;margin:0!important;opacity:.9}}
+html body .jg-tak>.wrap :is(.kofibar) p{{font-size:1.05rem}}
 """
 
 TAK_JS = r"""(function(){
-var f=document.querySelector('footer.hs-foot');if(!f||f.querySelector('.jg-takbg'))return;f.classList.add('jg-tak');
+var f=document.querySelector('footer.hs-foot,footer.foot');if(!f||f.querySelector('.jg-takbg'))return;f.classList.add('jg-tak');
 var bg=document.createElement('div');bg.className='jg-takbg';bg.setAttribute('aria-hidden','true');f.insertBefore(bg,f.firstChild);
 var LO='#3B2414',W0=0,H0=0;
 function rnd(z){var s=z;return function(){s=(s*9301+49297)%233280;return s/233280;};}
@@ -644,8 +647,8 @@ def los_js(pad):
 
 def blok(html, pad=None):
     land = 'id="hs-top"' in html or "id='hs-top'" in html
-    css = GEDEELD + (LAND if land else EUROPA) + LP_CSS
-    js = LP_JS % json.dumps(svg()) + "(function(){var ts=document.querySelectorAll('.terug');for(var i=0;i<ts.length;i++){var t=ts[i],p=t.parentElement;if(!p||p.classList.contains('jg-kop'))continue;var k=document.createElement('div');k.className='jg-kop';p.insertBefore(k,t);var x=t.nextElementSibling;k.appendChild(t);while(x&&(x.tagName=='H1'||(x.tagName=='P'&&x.classList.contains('sub'))||x.classList.contains('kat-h'))){var n=x.nextElementSibling;k.appendChild(x);x=n;}}})();" + KOP_JS + los_js(pad) + DETAIL_JS
+    css = GEDEELD + (LAND if land else EUROPA) + LP_CSS + TAK_CSS
+    js = LP_JS % json.dumps(svg()) + TAK_JS + "(function(){var ts=document.querySelectorAll('.terug');for(var i=0;i<ts.length;i++){var t=ts[i],p=t.parentElement;if(!p||p.classList.contains('jg-kop'))continue;var k=document.createElement('div');k.className='jg-kop';p.insertBefore(k,t);var x=t.nextElementSibling;k.appendChild(t);while(x&&(x.tagName=='H1'||(x.tagName=='P'&&x.classList.contains('sub'))||x.classList.contains('kat-h'))){var n=x.nextElementSibling;k.appendChild(x);x=n;}}})();" + KOP_JS + los_js(pad) + DETAIL_JS
     return f'{BEGIN}{FONTS}<style id="jungle">{css}</style><script>{js}</script>{EIND}'
 
 def weg(html):

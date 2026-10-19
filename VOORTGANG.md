@@ -2,6 +2,10 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 19 oktober 2026 – Voet als horizontale tak
+
+Op alle pagina's met de jungle-stijl is de voet nu een getekende tak over de hele breedte: de luipaard ligt erop (buik precies op de bovenrand, poten en staart over de rand), rechts een takje met bladeren, en de Ko-fi-tekst, -knop en de regel "Samengesteld door J. Gelens" staan op de tak. De tak wordt in JS op de echte maat getekend (`TAK_JS`/`TAK_CSS` in `bron/jungle.py`), werkt voor `footer.hs-foot` (landpagina's, losse pagina's) en `footer.foot` (hoofdpagina, top 10, soortpagina's). Testpagina `/voorbeeld-jungle/tak/` weer weggehaald.
+
 ## 19 oktober 2026 – Knop "Naar boven" werkt weer
 
 Op de schermen van de landpagina's (Kaart, Locaties, Soorten, Meer-subpagina's) scrolde "Naar boven" naar de onderkant van de oude gidskop, die in het nieuwe ontwerp verborgen is: de pagina sprong maar een paar pixels. Nu gaat hij altijd helemaal naar boven (klik-afvanger in `bron/test_ontwerp.py`). Getest in alle landen.

@@ -2,6 +2,10 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 19 oktober 2026 – Top 10 bijgewerkt
+
+Op verzoek van de gebruiker (`bron/top10.json`, lijst `vast`). Nieuwe volgorde: Lumigny, Faunapark Flakkee, Le Domaine des Fauves, Pairi Daiza, Hoenderdaell / Stichting Leeuw, Jardim Zoológico de Lisboa, Safari Madrid, Felidae Barnim, Exmoor Zoo, La Torbiera. Eruit: ZooParc de Beauval, Zoo du Bassin d’Arcachon, Wilhelma, Zoo Leipzig en Safaripark Beekse Bergen. The Big Cat Sanctuary (VK, hoogste score buiten de lijst) bewust niet: te duur voor bezoekers. Uitlegzinnen voor de vijf nieuwe parken in zes talen. Alleen `top10` in de startgegevens is veranderd; top 10 gecontroleerd op 390 px in NL/EN/DE/ES.
+
 ## 19 oktober 2026 – Voet als horizontale tak
 
 Op alle pagina's met de jungle-stijl is de voet nu een getekende tak over de hele breedte: de luipaard ligt erop (buik precies op de bovenrand, poten en staart over de rand), rechts een takje met bladeren, en de Ko-fi-tekst, -knop en de regel "Samengesteld door J. Gelens" staan op de tak. De tak wordt in JS op de echte maat getekend (`TAK_JS`/`TAK_CSS` in `bron/jungle.py`), werkt voor `footer.hs-foot` (landpagina's, losse pagina's) en `footer.foot` (hoofdpagina, top 10, soortpagina's). Testpagina `/voorbeeld-jungle/tak/` weer weggehaald.

@@ -1671,7 +1671,7 @@ function RG_DECOR(){
     anchor.insertAdjacentHTML("beforebegin",'<p class="rg-lab" id="rg-lab"></p><div class="rg-bar" id="rg-bar" role="group"></div><p class="rg-count" id="rg-count" aria-live="polite" hidden></p>');
     bar=document.getElementById("rg-bar");
     bar.addEventListener("click",e=>{const b=e.target.closest(".rg-chip");if(!b)return;RG_F=b.dataset.r;RG_DECOR();render();});}
-  document.getElementById("rg-lab").textContent=T("Regio","Region","Região");
+  document.getElementById("rg-lab").textContent=T("Kies een regio","Choose a region","Escolhe uma região");
   bar.setAttribute("aria-label",T("Filter op regio","Filter by region","Filtrar por região"));
   bar.innerHTML=[["",LOCS.length,T("Alle regio’s","All regions","Todas as regiões")]].concat(keys.map(k=>[k,cnt[k],RG_NAME(k)]))
     .map(([k,n,l])=>`<button type="button" class="rg-chip" data-r="${esc(k)}" aria-pressed="${k===RG_F}">${esc(l)} <span class="n">${n}</span></button>`).join("");

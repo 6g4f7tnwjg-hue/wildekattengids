@@ -26,6 +26,7 @@ DOEL = "nederland-test"
 # Teksten die dit ontwerp zelf toevoegt, in de talen van de gidsen (Frans met "vous", de rest met "du/tu").
 TR = dict(NO.TR)
 TR.update({
+    "Kies een kat": {"fr": "Choisissez un félin", "de": "Wähle eine Katze", "it": "Scegli un felino", "es": "Elige un felino", "pt": "Escolhe um felino"},
     "Waar zit welke kat? Kies een soort:": {"fr": "Quel félin vit où ? Choisissez une espèce :", "de": "Welche Katze lebt wo? Wähle eine Art:",
                                             "it": "Quale felino vive dove? Scegli una specie:", "es": "¿Qué felino vive dónde? Elige una especie:",
                                             "pt": "Que felino vive onde? Escolhe uma espécie:"},
@@ -82,7 +83,7 @@ START = f"""
   <div class="nw-res" id="nw-res" role="listbox" hidden></div>
 </div>
 <div class="nt-rgw" id="nt-rgw" hidden><p class="nt-lbl" id="nt-rglab"></p><div class="nt-regs" id="nt-regs" role="group"></div></div>
-<p class="nt-lbl">{L("Waar zit welke kat? Kies een soort:", "Which cat lives where? Choose a species:")}</p>
+<p class="nt-lbl">{L("Kies een kat", "Choose a cat")}</p>
 <div class="nt-cats" id="nt-cats" role="group"></div>
 <p class="nt-mld" id="nt-mld" role="status" hidden></p>
 <p class="nt-spinfo" id="nt-spinfo" hidden></p>

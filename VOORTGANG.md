@@ -2,6 +2,12 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 19 oktober 2026 – Portugees als zevende taal van de hoofdpagina
+
+De hoofdpagina, top 10 en de soortpagina's (`/soort/…`) hebben nu ook Portugees (Europees Portugees), met knop PT in de taalkeuze. Aangepast: `start.html` (T() met 7e argument, vaste teksten `l-pt`, landnamen, maanden, statussen, IUCN, taalherkenning), `startdata.py` (soortnamen op index 8 in de locaties en 12 in `D.sp`, aantal jongen met eigen regels `_N_PT`), `bouw.py` (datum, locatietypes), `portugese_namen.json` (uit `SPPT` in de Portugese gids), `locatietypes.json` (`uitleg_pt`; de bestaande `pt`-namen ongewijzigd), `top10.json` (7e uitlegzin), `test_ontwerp.py` en `nieuw_ontwerp.py` (teksten van de Europa-laag, soortinfo uit `SPPT`). Gecontroleerd: alle schermen in PT (Chromium en WebKit, 414 px), en NL/EN/FR/DE/IT/ES tekst voor tekst gelijk aan de vorige versie; Portugal-gids ongewijzigd.
+
+Besloten: geen Franse overzeese gebieden, Zwitserland niet in het Frans (staan in `OPEN.md` onder "Bewust niet").
+
 ## 19 oktober 2026 – Europa-onderbalk opent bovenaan
 
 Op de hoofdpagina (en top 10) opent Kaart, Landen of Soorten in de onderbalk nu altijd bovenaan, ook als je eerst naar beneden had gescrold (`test_ontwerp.py`, klik op `#nw-sbar-start`). Getest in Chromium en WebKit op 414 px; geen doorlopende DOM-wijzigingen.

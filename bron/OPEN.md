@@ -7,12 +7,10 @@ Bijgehouden door Claude. Bijwerken als een punt is opgelost.
 - **Aantallen in het wild (`WILD`)**: onderzocht op 18-10-2026 (`bron/wild_onderzoek_2026-10.json`). Ingevuld: Geoffroy’s kat (ca. 528.000) en zandkat (ca. 27.300), beide IUCN-volwassen dieren. Niet ingevuld omdat ze niet passen bij de uitleg "volwassen dieren volgens de IUCN": rode lynx (2.352.276–3.571.681, alleen VS, alle dieren), Euraziatische lynx (> 69.500, eigen optelling van regio's), vissende kat (3.194–7.527, alle dieren, CatSG), marmerkat (> 10.000, alleen Wikipedia). De overige 18 hebben geen wereldwijde schatting (IUCN: onbekend). iucnredlist.org was niet te lezen (Cloudflare); bij toegang de nieuwste beoordelingen nalopen (o.a. Geoffroy’s kat 2025/2026, vissende kat 2025).
 - **Foto's van parken** in de locatiekaartjes, **desktopweergave** (Locaties in twee kolommen met kaart ernaast): later.
 
-- **Overzeese gebieden van Frankrijk** (bijv. Zoo de Guyane: jaguar, ocelot, margay): nog beslissen of ze erbij komen.
 - **Foto's van Franse parken**: veel locaties hebben nog geen foto (Commons gaf een limiet). Een rustige extra ronde.
 - **Maandelijkse controle**: een geplande taak die nieuws over geboortes, vertrek en aankomst zoekt en voorstellen doet.
 - **Volgend land**: het Verenigd Koninkrijk staat erin (14-10-2026, NL/EN/DE), Ierland ook (15-10-2026, NL/EN), Portugal ook (16-10-2026, NL/EN/PT). Keuze voor daarna volgt. Als de website sneller moet: de vaste JS van de deelstaatblokken één keer delen in plaats van per blok (scheelt ±4 MB).
 - **VK nagaan**: Longleat (eigen site geblokkeerd; alles uit nieuws), Whipsnade (eigen site geblokkeerd), Amazon World (Isle of Wight: oude pagina noemt ocelot en Geoffroy’s kat), Green Dragon Eco Farm (alleen Zootierliste: lynx en wilde kat; niet opgenomen), Mole Hall en Galloway Wildlife Park (mogelijk dicht), Borth Wild Animal Kingdom (katten 2020–2021 weg). Een officiële landelijke lijst van vergunde dierentuinen is niet openbaar; de nieuwste volledige lijst is een FOI-antwoord van APHA uit 2018–2019.
-- **Zwitserland in het Frans**: de gids is nu NL/EN/DE. Frans erbij kan met een tweede versie van elk regioblok (NL/EN/FR) die de pagina laadt bij de taalknop FR.
 - **Oostenrijk/Zwitserland nagaan**: Tiger’s World (Judenau, NÖ) — alleen op een toeristische site, eigen site niet te openen, niet opgenomen; Luchsgehege Loipersdorf (ligging en publiek onbekend); Parc animalier de Prêles (BE) niet nagelopen; Bioparc Genève houdt ook hybride wilde katten en savannahkatten (niet meegeteld).
 - **Fréjus (Var)**: dierentuin dicht sinds 30-8-2026; na eind november 2026 nagaan waar de katten zijn gebleven.
 - **Italië (15-10-2026)**:
@@ -29,7 +27,6 @@ Bijgehouden door Claude. Bijwerken als een punt is opgelost.
 - **Portugal (16-10-2026)**:
   - **Officiële lijst**: de DGAV-lijst “Parques Zoológicos Licenciados” is van 28-04-2021 (24 parken). Een nieuwere lijst opvragen bij de DGAV.
   - **Nagaan**: Europaradise (tijgers na de heropening in mei 2026?), Zoo da Maia (leeuw), Zoo de Lagos (ocelot weg? lynx Thea), Zoo Santo Inácio (cheetahs, alleen op de plattegrond), Lissabon (nevelpanter, aantal en geslacht; Euraziatische lynx in 2026), Parque Biológico de Gaia (komen de Iberische lynxen?).
-  - **Hoofdpagina in het Portugees**: de hoofdpagina heeft zes talen; Portugees is alleen een gidstaal. Eventueel later als zevende taal toevoegen.
 - **Ierland (15-10-2026)**:
   - **Top 10**: geen Iers park komt in de buurt (Fota en Emerald Park scoren 30; nummer 10 heeft 46). Niets veranderd.
   - **Officiële lijst**: de NPWS publiceert geen lijst van vergunde dierentuinen; de nieuwste volledige lijst is van 8-9-2022 (Kamervragen, 55 geïnspecteerde dierentuinen). Een actuele lijst kan bij zoos@npws.gov.ie of met een FOI-verzoek. “Oak Cottage” (Kilkenny) van die lijst niet thuisgebracht.
@@ -105,6 +102,9 @@ Bijgehouden door Claude. Bijwerken als een punt is opgelost.
 - **Dierentuin of dierenpark:** een park met EEP-dieren is niet automatisch lid van EAZA (Zoo di Napoli). Controleer het lidmaatschap altijd in de ledenlijst.
 
 ## Bewust niet in de gids (opnieuw bekijken als er iets verandert)
+
+- **Franse overzeese gebieden** (bijv. Zoo de Guyane): besloten op 19-10-2026, niet opnemen.
+- **Zwitserland in het Frans**: besloten op 19-10-2026, niet doen; de gids blijft NL/EN/DE.
 
 - **ROAAR (Trets)**: opvang van ex-circustijgers en -leeuwen; alleen bezoek voor peters (500 euro per jaar).
 - **Caresse de tigre (Seine-Maritime)**: omstreden opvang; geen bezoekinformatie, geen nieuws na 2023.

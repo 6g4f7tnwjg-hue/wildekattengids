@@ -598,10 +598,10 @@ BARCSS
 
 START_JS = """
 <script>(function(){
-var T={home:{nl:"Home",en:"Home",fr:"Accueil",de:"Start",it:"Home",es:"Inicio"},
-  landen:{nl:"Landen",en:"Countries",fr:"Pays",de:"Länder",it:"Paesi",es:"Países"},
-  soorten:{nl:"Soorten",en:"Species",fr:"Espèces",de:"Arten",it:"Specie",es:"Especies"},
-  meer:{nl:"Meer",en:"More",fr:"Plus",de:"Mehr",it:"Altro",es:"Más"}};
+var T={home:{nl:"Home",en:"Home",fr:"Accueil",de:"Start",it:"Home",es:"Inicio",pt:"Início"},
+  landen:{nl:"Landen",en:"Countries",fr:"Pays",de:"Länder",it:"Paesi",es:"Países",pt:"Países"},
+  soorten:{nl:"Soorten",en:"Species",fr:"Espèces",de:"Arten",it:"Specie",es:"Especies",pt:"Espécies"},
+  meer:{nl:"Meer",en:"More",fr:"Plus",de:"Mehr",it:"Altro",es:"Más",pt:"Mais"}};
 var bar=document.getElementById("nw-sbar-start");if(!bar)return;
 function lang(){var l=(document.documentElement.lang||"nl").slice(0,2);return T.home[l]?l:"en";}
 function labels(){var l=lang();bar.querySelectorAll("[data-k]").forEach(function(a){a.querySelector("span").textContent=T[a.dataset.k][l];});}

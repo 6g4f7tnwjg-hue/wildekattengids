@@ -92,12 +92,13 @@ fr = json.load(open(BRON + "franse_namen.json", encoding="utf8"))
 de_namen = json.load(open(BRON + "duitse_namen.json", encoding="utf8"))
 it_namen = json.load(open(BRON + "italiaanse_namen.json", encoding="utf8"))
 es_namen = json.load(open(BRON + "spaanse_namen.json", encoding="utf8"))
+pt_namen = json.load(open(BRON + "portugese_namen.json", encoding="utf8"))
 today = datetime.date.today()
 for c in F:
-    D[c] = bereken(DATA[c], D[c], today, fr, c, de_namen, it_namen, es_namen)
+    D[c] = bereken(DATA[c], D[c], today, fr, c, de_namen, it_namen, es_namen, pt_namen)
 for c in OUD_DEEL:
     D[c].pop("note", None)   # "alle 13 regio's" e.d. hoort niet meer bij één pagina
-D["sp"] = soorten(DATA, fr, today, de_namen, it_namen, es_namen)
+D["sp"] = soorten(DATA, fr, today, de_namen, it_namen, es_namen, pt_namen)
 # kenmerken per soort voor de soortpagina (uit de Nederlandse gids) en de pagina in de Spottersgids
 _nlg = DATA["nl"]["main"]; _bysci = {x[2]: x for x in _nlg["SPECIES"]}; _spen = _nlg.get("SPEN") or {}
 _kata = json.load(open(ROOT + "spottersgids/bron/katalogue.json", encoding="utf8"))
@@ -110,8 +111,8 @@ for _s in D["sp"]:
         for _c in (slug(_k["nl"]), slug(_k["nl"].replace("’", "").replace("'", ""))):
             if os.path.exists(ROOT + "spottersgids/" + _c + "/index.html"): _map = _c; break
     D["feit"][_s[0]] = [_r[4], _r[5], _r[6], _r[9], ((_spen.get(_r[0]) or ["", "", ""]) + ["", ""])[2], _map]
-D["lt"] = {"types": [{k: t[k] for k in ("nl", "en", "fr", "de", "it", "es", "uitleg", "uitleg_en", "uitleg_fr", "uitleg_de", "uitleg_it", "uitleg_es")} for t in LTJ["types"]],
-           "labels": [{k: l[k] for k in ("key", "nl", "en", "fr", "de", "it", "es", "icoon")} for l in LTJ["labels"]]}
+D["lt"] = {"types": [{k: t[k] for k in ("nl", "en", "fr", "de", "it", "es", "pt", "uitleg", "uitleg_en", "uitleg_fr", "uitleg_de", "uitleg_it", "uitleg_es", "uitleg_pt")} for t in LTJ["types"]],
+           "labels": [{k: l[k] for k in ("key", "nl", "en", "fr", "de", "it", "es", "pt", "icoon")} for l in LTJ["labels"]]}
 # top 10 om te bezoeken (bron/top10.json): vaste plaatsen, aangevuld met de hoogste score
 def top10(D):
     cfg = json.load(open(BRON + "top10.json", encoding="utf8"))
@@ -150,11 +151,13 @@ _MFR = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août
 _MDE = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
 _MIT = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"]
 _MES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"]
+_MPT = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
 _MEN = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 START, _n = re.subn(r'<p class="stamp">.*?</p>',
     f'<p class="stamp"><span class="l-nl">Bijgewerkt {today.day} {_MNL[today.month-1]} {today.year}</span><span class="l-en">Updated {today.day} {_MEN[today.month-1]} {today.year}</span>'
     f'<span class="l-fr">Mis à jour le {today.day} {_MFR[today.month-1]} {today.year}</span><span class="l-de">Aktualisiert am {today.day}. {_MDE[today.month-1]} {today.year}</span>'
-    f'<span class="l-it">Aggiornato al {today.day} {_MIT[today.month-1]} {today.year}</span><span class="l-es">Actualizado el {today.day} de {_MES[today.month-1]} de {today.year}</span></p>',
+    f'<span class="l-it">Aggiornato al {today.day} {_MIT[today.month-1]} {today.year}</span><span class="l-es">Actualizado el {today.day} de {_MES[today.month-1]} de {today.year}</span>'
+    f'<span class="l-pt">Atualizado a {today.day} de {_MPT[today.month-1]} de {today.year}</span></p>',
     START, count=1)
 assert _n == 1, "datum op de startpagina niet gevonden"
 wr(BRON + "start.html", START)

@@ -537,6 +537,82 @@ html body .hs-kofi{{background:{SUN}!important;color:{JG}!important;border-color
 @media (min-width:1120px){{html body .nt-kop,html body .ip-head{{border-radius:22px}}}}
 """
 
+# voet als horizontale tak (VOORBEELD 19-10-2026, nog niet op de site): de luipaard ligt op een getekende tak,
+# de Ko-fi-tekst staat op de tak. De tak wordt in JS op de echte maat getekend (niet uitgerekt) en opnieuw
+# getekend als de voet van maat verandert (ResizeObserver op de voet; de tak zelf staat absoluut en verandert de maat niet).
+TAK_CSS = f"""
+html body .hs-foot.jg-tak{{background:transparent!important;border-top:0!important;margin-top:112px!important;padding:0 0 12px!important;position:relative;isolation:isolate}}
+html body .hs-foot.jg-tak .jg-takbg{{position:absolute;left:0;right:0;top:0;bottom:12px;z-index:0;pointer-events:none;overflow:visible}}
+html body .hs-foot.jg-tak .jg-takbg svg{{display:block;width:100%;height:100%;overflow:visible}}
+html body .hs-foot.jg-tak .hs-wrap{{position:relative;z-index:1;padding-top:50px!important;padding-bottom:40px!important}}
+html body .hs-foot.jg-tak .jg-lp{{z-index:3;top:-94px}}
+html body .hs-foot.jg-tak .hs-kofibar{{background:none!important;border:0!important;padding:0!important;margin:0 0 14px!important;box-shadow:none!important}}
+html body .hs-foot.jg-tak p,html body .hs-foot.jg-tak p *{{color:#FFF4DE!important}}
+html body .hs-foot.jg-tak .hs-kofibar p{{font-size:1.05rem;line-height:1.5;text-shadow:0 1px 0 rgba(40,20,5,.45)}}
+html body .hs-foot.jg-tak .hs-kofibar b,html body .hs-foot.jg-tak .hs-kofibar b *{{color:{SUN}!important}}
+html body .hs-foot.jg-tak .hs-kofi{{box-shadow:0 2px 0 {LO},0 6px 14px -6px rgba(0,0,0,.6)!important;border:2px solid {LO}!important}}
+html body .hs-foot.jg-tak .hs-wrap>p{{border-top:1px dashed rgba(255,236,200,.35)!important;padding-top:12px!important;margin-top:16px!important;font-size:.92rem;opacity:.9}}
+"""
+
+TAK_JS = r"""(function(){
+var f=document.querySelector('footer.hs-foot');if(!f||f.querySelector('.jg-takbg'))return;f.classList.add('jg-tak');
+var bg=document.createElement('div');bg.className='jg-takbg';bg.setAttribute('aria-hidden','true');f.insertBefore(bg,f.firstChild);
+var LO='#3B2414',W0=0,H0=0;
+function rnd(z){var s=z;return function(){s=(s*9301+49297)%233280;return s/233280;};}
+function teken(){var w=Math.round(f.clientWidth),h=Math.round(bg.clientHeight);if(!w||!h||(w===W0&&h===H0))return;W0=w;H0=h;
+ var r=rnd(7),T=6,B=h-4,o='';
+ function rand(y0,a,p,f2){var d='';for(var x=-20;x<=w+20;x+=10){var y=y0+a*Math.sin(x/p+f2)+a*.45*Math.sin(x/(p*.37)+f2*2);d+=(x<=-20?'M':'L')+x+' '+y.toFixed(1)+' ';}return d;}
+ var top=rand(T+6,3,90,.4),bot=rand(B-6,4,70,1.3);
+ var lijf=top+'L'+(w+20)+' '+(B+10)+' '+bot.replace(/^M/,'L').split(' L').reverse().join(' L').replace(/^L?/,'L')+' L-20 '+(T)+' Z';
+ /* onderrand omkeren voor een gesloten vorm */
+ var pb=[];for(var x=w+20;x>=-20;x-=10){pb.push(x+' '+(B-6+4*Math.sin(x/70+1.3)+1.8*Math.sin(x/25.9+2.6)).toFixed(1));}
+ var pt=[];for(var x2=-20;x2<=w+20;x2+=10){pt.push(x2+' '+(T+6+3*Math.sin(x2/90+.4)+1.35*Math.sin(x2/33.3+.8)).toFixed(1));}
+ lijf='M'+pt.join(' L')+' L'+pb.join(' L')+' Z';
+ o+='<defs><linearGradient id="jgtk-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A2703F"/><stop offset=".09" stop-color="#8A5C33"/><stop offset=".22" stop-color="#734A29"/><stop offset=".8" stop-color="#6A4325"/><stop offset="1" stop-color="#4E301A"/></linearGradient>'
+  +'<clipPath id="jgtk-c"><path d="'+lijf+'"/></clipPath></defs>';
+ /* takje met bladeren rechts boven de tak */
+ var tx=w-70;o+='<g><path d="M'+tx+' '+(T+12)+' C'+(tx+6)+' '+(T-14)+' '+(tx+20)+' '+(T-30)+' '+(tx+34)+' '+(T-44)+'" stroke="'+LO+'" stroke-width="9" fill="none" stroke-linecap="round"/>'
+  +'<path d="M'+tx+' '+(T+12)+' C'+(tx+6)+' '+(T-14)+' '+(tx+20)+' '+(T-30)+' '+(tx+34)+' '+(T-44)+'" stroke="#7A4F2C" stroke-width="5" fill="none" stroke-linecap="round"/>';
+ function blad(x,y,a,s){return '<g transform="translate('+x+' '+y+') rotate('+a+') scale('+s+')"><path d="M0 0 C8 -10 26 -12 38 0 C26 12 8 10 0 0 Z" fill="#2F7A3B" stroke="#143A22" stroke-width="2" stroke-linejoin="round"/><path d="M2 0 L34 0" stroke="#1D5527" stroke-width="1.6" stroke-linecap="round"/></g>';}
+ o+=blad(tx+33,T-44,-40,1)+blad(tx+22,T-30,-150,.85)+blad(tx+14,T-14,-20,.8)+'</g>';
+ /* lijf van de tak */
+ o+='<path d="'+lijf+'" fill="url(#jgtk-g)"/>';
+ o+='<g clip-path="url(#jgtk-c)">';
+ /* bastlijnen alleen langs de randen; het midden blijft glad voor de tekst */
+ for(var i=0;i<Math.ceil(w/26);i++){var x0=r()*w,l=40+r()*110,y=T+12+r()*12,b2=(r()-.5)*3;
+  o+='<path d="M'+x0.toFixed(0)+' '+y.toFixed(1)+' q'+(l/2).toFixed(0)+' '+b2.toFixed(1)+' '+l.toFixed(0)+' '+(b2*.4).toFixed(1)+'" stroke="#4A2D17" stroke-opacity=".55" stroke-width="'+(1.4+r()*1.4).toFixed(1)+'" fill="none" stroke-linecap="round"/>';}
+ for(var j=0;j<Math.ceil(w/22);j++){var x1=r()*w,l2=40+r()*120,y2=B-14-r()*16,b3=(r()-.5)*3;
+  o+='<path d="M'+x1.toFixed(0)+' '+y2.toFixed(1)+' q'+(l2/2).toFixed(0)+' '+b3.toFixed(1)+' '+l2.toFixed(0)+' '+(b3*.4).toFixed(1)+'" stroke="#3E2512" stroke-opacity=".6" stroke-width="'+(1.6+r()*1.6).toFixed(1)+'" fill="none" stroke-linecap="round"/>';}
+ /* lichte glans langs de bovenrand */
+ o+='<path d="M-20 '+(T+11)+' L'+(w+20)+' '+(T+11)+'" stroke="#C08B52" stroke-opacity=".45" stroke-width="2" stroke-dasharray="60 26 18 30"/>';
+ /* twee knoesten aan de randen */
+ function knoest(x,y,s){return '<g transform="translate('+x+' '+y+') scale('+s+')"><ellipse rx="15" ry="6.5" fill="#4E301A"/><ellipse rx="10" ry="4" fill="none" stroke="#2E1A0C" stroke-width="2"/><ellipse rx="4.5" ry="1.8" fill="#2E1A0C"/></g>';}
+ o+=knoest(Math.min(w-40,w*.78),B-16,1)+knoest(Math.max(40,w*.16),B-20,.75);
+ o+='</g>';
+ /* omlijning boven en onder (zelfde lijn als de luipaard) */
+ o+='<path d="M'+pt.join(' L')+'" stroke="'+LO+'" stroke-width="3" fill="none" stroke-linejoin="round"/><path d="M'+pb.join(' L')+'" stroke="'+LO+'" stroke-width="3" fill="none" stroke-linejoin="round"/>';
+ bg.innerHTML='<svg viewBox="0 0 '+w+' '+h+'" xmlns="http://www.w3.org/2000/svg">'+o+'</svg>';}
+teken();
+if(window.ResizeObserver)new ResizeObserver(function(){teken();}).observe(f);else window.addEventListener('resize',teken);
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(teken);
+})();"""
+
+
+def voorbeeld_tak(bron='nederland'):
+    """Testpagina /voorbeeld-jungle/tak/: de gids van <bron> met de voet als tak (noindex, niet gelinkt)."""
+    s = open(os.path.join(ROOT, bron, 'index.html'), encoding='utf-8').read()
+    s = re.sub(r'<meta name="robots"[^>]*>', '', s)
+    s = s.replace('<head>', '<head><meta name="robots" content="noindex">', 1)
+    s = re.sub(r'<link rel="canonical"[^>]*>', '', s)
+    blk = f'<!--tak--><style id="jungle-tak">{TAK_CSS}</style><script>{TAK_JS}</script><!--/tak-->'
+    i = s.rfind('</body>')
+    s = s[:i] + blk + s[i:]
+    d = os.path.join(ROOT, 'voorbeeld-jungle', 'tak')
+    os.makedirs(d, exist_ok=True)
+    open(os.path.join(d, 'index.html'), 'w', encoding='utf-8').write(s)
+    print('voorbeeld tak:', os.path.relpath(d, ROOT))
+
+
 # losse park- en soortpagina's (/<land>/locatie/…, /<land>/soort/…): vlag, landnaam en sleutel voor het hartje (19-10-2026)
 CODE = {"nederland": "nl", "belgie": "be", "luxemburg": "lu", "duitsland": "de", "frankrijk": "fr", "oostenrijk": "at",
         "zwitserland": "ch", "verenigd-koninkrijk": "uk", "italie": "it", "spanje": "es", "ierland": "ie", "portugal": "pt"}

@@ -95,6 +95,25 @@ html body .jg-kop .terug{display:none!important}
 .nt-fab svg{width:26px;height:26px}
 html.pagemode .nt-fab,html.katmode .nt-fab{display:flex}
 html.pagemode:has(#meer.on) .nt-fab{display:none!important}
+/* menu: donkere tekst op de lichte achtergrond */
+html body #menu,html body #menu nav a,html body #menu nav a span{color:var(--ink,#22301F)!important}
+/* alle schermkoppen even hoog als de landgids */
+html body .jg-kop.nt-vk{height:166px!important;min-height:0!important;box-sizing:border-box!important;padding-top:21px!important;padding-bottom:44px!important}
+html body .jg-kop.nt-vk h1{font-size:39px!important;line-height:42.9px!important;letter-spacing:normal!important;margin:0!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+html body .jg-kop.nt-vk .nt-onder{margin:4px 0 0!important;font-size:16.8px!important;line-height:27.2px!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+html body .jg-kop.nt-vk .nt-goud{margin:10px 0 0!important;font-size:13.76px!important;line-height:17px!important;letter-spacing:.06em;min-height:17px}
+/* zoekbalk en groepen bij Soorten */
+.nt-spbox+#splist{display:none!important}
+.nt-zk{margin:0 0 12px}
+.nt-zk label{display:flex;align-items:center;gap:10px;height:48px;padding:0 18px;border:2px solid #1F5A33;border-radius:99px;background:#fff;box-shadow:0 1px 2px rgba(60,50,30,.06),0 10px 24px -14px rgba(60,50,30,.35)}
+.nt-zk svg{width:22px;height:22px;flex:none;color:#1F5A33}
+.nt-zk input{flex:1;min-width:0;border:0;outline:0;background:transparent;font:inherit;font-size:16.8px;color:#22301F;-webkit-appearance:none;appearance:none}
+.nt-gt{margin:18px 0 10px!important}
+.nt-gt button{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:8px;font:inherit;color:inherit;letter-spacing:inherit;text-transform:inherit}
+.nt-gt .nt-chev{width:20px;height:20px;flex:none;transition:transform .2s}
+.nt-gt button[aria-expanded="false"] .nt-chev{transform:rotate(180deg)}
+.nt-gg[hidden],.nt-grp[hidden],.nt-gg .scard[hidden]{display:none!important}
+.nt-geen2{color:var(--muted)}
 .nt-onder{margin:8px 0 0;color:#D3E4C2!important;font-size:1.08rem;line-height:1.55}
 .nt-goud{margin:8px 0 0;font-family:"Barlow Condensed","Arial Narrow","Roboto Condensed",sans-serif;font-weight:600;font-size:.86rem;letter-spacing:.06em;text-transform:uppercase;color:#F2C14E!important}
 .nt-goud *{color:#F2C14E!important}
@@ -1704,12 +1723,58 @@ if(iw&&tel&&document.getElementById("p-landen")&&!iw.querySelector(".nt-tk")){
   kk.innerHTML=["kaart","landen","soorten"].map(function(t){return '<div data-t="'+t+'"><h1>'+(t==="kaart"?EUV:"")+'<span class="nt-tt">'+L6j(KT[t].h)+'</span></h1><p class="sub">'+L6j(KT[t].s)+'</p><div class="meta"><p class="kop-tel nt-tel"></p></div></div>';}).join("");
   iw.appendChild(kk);HT.classList.add("nt-tk-on");
   var telBij=function(){var d=tel.textContent.split(" · "),k=kk.querySelector('[data-t="kaart"] .nt-tel'),a=kk.querySelector('[data-t="landen"] .nt-tel'),b=kk.querySelector('[data-t="soorten"] .nt-tel'),x=d.slice(0,2).join(" · "),y=d[2]||"",z=tel.textContent;
+    var gk=document.querySelectorAll('.nt-spbox [data-g="big"] .scard').length,kl=document.querySelectorAll('.nt-spbox [data-g="small"] .scard').length,ll=(HT.lang||"nl").slice(0,2);
+    var GW={nl:["grote","kleine"],en:["big","small"],fr:["grands","petits"],de:["groß","klein"],it:["grandi","piccoli"],es:["grandes","pequeños"]}[ll]||["big","small"];
+    if(gk+kl)y+=" · "+gk+" "+GW[0]+" · "+kl+" "+GW[1];
     if(k.textContent!==z)k.textContent=z;if(a.textContent!==x)a.textContent=x;if(b.textContent!==y)b.textContent=y;};
+  window.__NTTEL=telBij;
   new MutationObserver(telBij).observe(tel,{childList:true,characterData:true,subtree:true});telBij();
   var tabNu=function(){var t=["landen","soorten"].filter(function(x){var e=document.getElementById("p-"+x);return e&&e.classList.contains("on");})[0]||"kaart";if(HT.getAttribute("data-nt-tab")!==t)HT.setAttribute("data-nt-tab",t);};
   ["kaart","landen","soorten"].forEach(function(x){var e=document.getElementById("p-"+x);if(e)new MutationObserver(tabNu).observe(e,{attributes:true,attributeFilter:["class"]});});tabNu();}
-setTimeout(function(){var k=document.querySelector("#meer .jg-kop");if(!k||k.querySelector(".nt-onder"))return;var st=document.querySelector(".intro .stamp");
-  k.insertAdjacentHTML("beforeend",'<p class="nt-onder">'+L6j(KT.meer.s)+'</p>'+(st?'<p class="nt-goud">'+st.innerHTML+'</p>':''));},0);
+/* witte en gele regel in de groene kop van Meer en de schermen eronder (na de jungle-laag, dus pas na DOMContentLoaded) */
+var KR={meer:KT.meer.s,
+  favorieten:{nl:"Je bewaarde parken en soorten",en:"Your saved parks and species",fr:"Vos parcs et espèces enregistrés",de:"Deine gespeicherten Parks und Arten",it:"I tuoi parchi e specie salvati",es:"Tus parques y especies guardados"},
+  geboren:{nl:"Jongen in alle landen, nieuwste eerst",en:"Young in every country, newest first",fr:"Jeunes dans tous les pays, plus récents d’abord",de:"Jungtiere in allen Ländern, neueste zuerst",it:"Cuccioli in tutti i paesi, i più recenti prima",es:"Crías en todos los países, las más recientes primero"},
+  perpark:{nl:"Welk park heeft de meeste katten?",en:"Which park has the most cats?",fr:"Quel parc a le plus de félins ?",de:"Welcher Park hat die meisten Katzen?",it:"Quale parco ha più felini?",es:"¿Qué parque tiene más felinos?"},
+  typen:{nl:"Dierentuin, dierenpark, opvang en meer",en:"Zoo, animal park, sanctuary and more",fr:"Zoo, parc animalier, refuge et plus",de:"Zoo, Tierpark, Auffangstation und mehr",it:"Zoo, parco faunistico, centro di recupero e altro",es:"Zoo, parque de animales, santuario y más"},
+  over:{nl:"Wie, wat en waar de gegevens vandaan komen",en:"Who, what and where the information comes from",fr:"Qui, quoi et d’où viennent les données",de:"Wer, was und woher die Angaben stammen",it:"Chi, cosa e da dove vengono i dati",es:"Quién, qué y de dónde vienen los datos"},
+  top10:{nl:"De parken die een bezoek het meest waard zijn",en:"The parks most worth a visit",fr:"Les parcs qui valent le plus le détour",de:"Die Parks, die sich am meisten lohnen",it:"I parchi che valgono di più una visita",es:"Los parques que más merecen la visita"}};
+var FB={nl:"{n} bewaard",en:"{n} saved",fr:"{n} enregistrés",de:"{n} gespeichert",it:"{n} salvati",es:"{n} guardados"};
+function favTel(){var g=document.querySelector("#favorieten .nt-goud");if(!g)return;var n=0;try{n=favLees().length;}catch(_){}
+  var h=["nl","en","fr","de","it","es"].map(function(l){return '<span class="l-'+l+'">'+FB[l].replace("{n}",n)+'</span>';}).join("");if(g.innerHTML!==h)g.innerHTML=h;}
+function kopRegels(){var st=document.querySelector(".intro .stamp"),dt=st?st.innerHTML:"";
+  Object.keys(KR).forEach(function(id){var k=id==="top10"?(/\/top10\//.test(location.pathname)?document.querySelector("#katview .jg-kop"):null):document.querySelector("#"+id+" .jg-kop");
+    if(!k||k.querySelector(".nt-onder"))return;k.classList.add("nt-vk");
+    k.insertAdjacentHTML("beforeend",'<p class="nt-onder">'+L6j(KR[id])+'</p><p class="nt-goud">'+(id==="favorieten"?"":dt)+'</p>');});
+  favTel();}
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",function(){setTimeout(kopRegels,0);});else setTimeout(kopRegels,0);
+window.addEventListener("storage",favTel);document.addEventListener("click",function(){setTimeout(favTel,50);});
+/* Soorten op de startpagina zoals in de landgids: zoekbalk, grote en kleine katten (19-10-2026) */
+(function(){var sp=document.getElementById("splist");if(!sp||!document.getElementById("p-soorten"))return;
+  var BIG=["leeuw","tijger","luipaard","jaguar","sneeuwluipaard","nevelpanter"];
+  var GT={big:{nl:"Pantherinae (grote katten)",en:"Pantherinae (big cats)",fr:"Pantherinae (grands félins)",de:"Pantherinae (Großkatzen)",it:"Pantherinae (grandi felini)",es:"Pantherinae (grandes felinos)"},
+    small:{nl:"Felinae (kleine katten)",en:"Felinae (small cats)",fr:"Felinae (petits félins)",de:"Felinae (Kleinkatzen)",it:"Felinae (piccoli felini)",es:"Felinae (pequeños felinos)"}};
+  var ZP={nl:"Zoek een soort",en:"Search for a species",fr:"Chercher une espèce",de:"Art suchen",it:"Cerca una specie",es:"Busca una especie"};
+  var GEEN={nl:"Niets gevonden.",en:"Nothing found.",fr:"Aucun résultat.",de:"Nichts gefunden.",it:"Nessun risultato.",es:"No se ha encontrado nada."};
+  var ZS='<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>';
+  var CH='<svg class="nt-chev" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 15l6-6 6 6"/></svg>';
+  var box=document.createElement("div");box.className="nt-spbox";
+  box.innerHTML='<div class="nt-zk"><label>'+ZS+'<input type="search" id="nt-spz" autocomplete="off"></label></div><p class="nt-geen2" hidden>'+L6j(GEEN)+'</p>'
+    +["big","small"].map(function(g){return '<div class="nt-grp" data-g="'+g+'"><p class="lbl nt-gt"><button type="button" aria-expanded="true">'+L6j(GT[g])+CH+'</button></p><div class="grid nt-gg"></div></div>';}).join("");
+  sp.parentNode.insertBefore(box,sp);
+  var inp=box.querySelector("input");
+  function ph(){var l=(HT.lang||"nl").slice(0,2);inp.placeholder=ZP[l]||ZP.en;inp.setAttribute("aria-label",inp.placeholder);}ph();
+  new MutationObserver(ph).observe(HT,{attributes:true,attributeFilter:["lang"]});
+  function slug(a){var m=(a.getAttribute("href")||"").match(/soort\/([^\/]+)\//);return m?m[1]:"";}
+  function verdeel(){var c=[].slice.call(sp.children);if(!c.length)return;var gb=box.querySelector('[data-g="big"] .nt-gg'),gs=box.querySelector('[data-g="small"] .nt-gg');
+    gb.innerHTML="";gs.innerHTML="";c.forEach(function(a){(BIG.indexOf(slug(a))>=0?gb:gs).appendChild(a);});zoek();if(window.__NTTEL)window.__NTTEL();}
+  function zoek(){var q=inp.value.trim().toLowerCase(),tot=0;
+    box.querySelectorAll(".nt-grp").forEach(function(g){var n=0;g.querySelectorAll(".scard").forEach(function(a){var ok=!q||a.textContent.toLowerCase().indexOf(q)>=0;a.hidden=!ok;if(ok)n++;});g.hidden=!n;tot+=n;});
+    box.querySelector(".nt-geen2").hidden=!!tot;}
+  inp.addEventListener("input",zoek);
+  box.addEventListener("click",function(e){var b=e.target.closest(".nt-gt button");if(!b)return;var open=b.getAttribute("aria-expanded")!=="true";b.setAttribute("aria-expanded",String(open));b.closest(".nt-grp").querySelector(".nt-gg").hidden=!open;});
+  new MutationObserver(verdeel).observe(sp,{childList:true});verdeel();
+})();
 /* zwevende terugknop: terug in de geschiedenis, anders naar Meer (startpagina) of de oude terugknop */
 (function(){var TB={nl:"Terug",en:"Back",fr:"Retour",de:"Zurück",it:"Indietro",es:"Volver"};
   var f=document.createElement("a");f.className="nt-fab";f.href="#";

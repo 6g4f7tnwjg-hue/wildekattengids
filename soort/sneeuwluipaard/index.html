@@ -160,6 +160,8 @@ html body .jg-kop.nt-vk .nt-goud{margin:10px 0 0!important;font-size:13.76px!imp
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;0,700;0,800;1,500&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Barlow+Condensed:wght@500;600&display=swap" rel="stylesheet">
+<script>/* adres als #meer of #geboren (bijv. vanaf een soortpagina): meteen het losse scherm, geen flits van de kaart en geen sprong naar de sectie (19-10-2026) */
+(function(){if(/^#(geboren|perpark|typen|over|favorieten|meer)$/.test(location.hash)){try{history.scrollRestoration="manual";}catch(e){}document.documentElement.classList.add("pagemode");}})();</script>
 <script>
 (function(){
   /* oude/diepe links: #nl.soort.leeuw of #be/locatie/pakawi → naar de gids van dat land */
@@ -1556,7 +1558,12 @@ drawMap();applyLang(LANG,false);
 {const km=(location.hash||"").match(/^#kat\/([a-z0-9-]+)/);const k=window.__KAT||(km&&km[1]);
   if(k&&CANON[k])showKat(k,false);else if(window.__TOP||(!KB&&location.hash==="#top10"))showTop(false);else route();}
 /* bij een adres als #geboren springt de browser naar de sectie; de pagina hoort bovenaan te beginnen */
-if(PAGE||TOPV)addEventListener("load",()=>setTimeout(()=>window.scrollTo(0,0),0));
+/* Safari springt soms pas na het laden (of na de letters) naar de sectie: een paar keer terug naar boven, tot de bezoeker zelf scrolt */
+if(PAGE||TOPV){let zelf=false;const op=()=>{if(!zelf)window.scrollTo(0,0);},stop=()=>{zelf=true;};
+  ["touchstart","wheel","keydown"].forEach(t=>addEventListener(t,stop,{once:true,passive:true}));
+  op();document.addEventListener("DOMContentLoaded",op);addEventListener("pageshow",op);
+  addEventListener("load",()=>{[0,60,200,450,800].forEach(t=>setTimeout(op,t));});
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(op);}
 })();
 </script>
 

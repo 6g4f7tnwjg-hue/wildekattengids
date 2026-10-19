@@ -188,6 +188,24 @@ html.nt-zoek #start .nw-search{display:block}
 .nt-n b{font:800 1.15rem var(--hs-display);color:var(--ink)}
 .nt-full .nt-loc{grid-template-columns:30px minmax(0,1fr) auto;align-items:start}
 .nt-full .nt-ti{padding-top:2px}
+/* scherm Locaties: losse kaartjes (19-10-2026) */
+.nt-box:has(> .nt-full){background:none;border:0;padding:0;box-shadow:none;border-radius:0}
+.nt-full{display:flex;flex-direction:column;gap:10px}
+.nt-full .nt-kj{grid-template-columns:34px minmax(0,1fr) auto;grid-template-areas:"ic tx nb" "ic rj rj";gap:4px 12px;align-items:start;padding:14px 14px 14px 14px;border:1px solid var(--line);border-radius:16px;background:var(--card);box-shadow:var(--nw-shadow)}
+.nt-full .nt-kj:first-child{border-top:1px solid var(--line)}
+.nt-kj>.nt-ti{grid-area:ic;padding-top:1px}
+.nt-kj>.nt-ti svg{width:34px;height:34px}
+.nt-kj>.nt-lt{grid-area:tx;align-self:center}
+.nt-kj>.nt-n{grid-area:nb;display:flex;flex-direction:column;align-items:flex-end;gap:3px;padding-top:0}
+.nt-kj .nt-bdg{display:flex;align-items:center;justify-content:center;min-width:38px;height:38px;padding:0 6px;border-radius:99px;background:var(--nw-green);color:#FBF8F1;font:800 1.2rem var(--hs-display);line-height:1}
+.nt-kj>.nt-n small{font:600 .78rem var(--hs-label);color:var(--muted);white-space:nowrap}
+.nt-kj>.nt-rjs{grid-area:rj;display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.nt-rj{width:34px;height:34px;border-radius:50%;overflow:hidden;flex:none;border:2px solid var(--line);background:var(--nw-sage);display:flex;align-items:center;justify-content:center;box-sizing:border-box}
+.nt-rj img{width:100%;height:100%;object-fit:cover;display:block}
+.nt-rj i{font:700 .9rem var(--hs-body);font-style:normal;color:var(--ink)}
+.nt-rj.nt-rju{border-style:dashed;border-color:var(--muted)}
+.nt-rj.nt-rjm{font:700 .85rem var(--hs-body);color:var(--ink);background:var(--paper)}
+.nt-vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .nt-more{all:unset;box-sizing:border-box;cursor:pointer;display:inline-block;margin:6px 0 6px;padding:8px 16px;border:1px solid var(--line);border-radius:99px;background:var(--paper);font:600 .95rem var(--hs-body);color:var(--ink)}
 .nt-more:focus-visible{outline:2px solid var(--nw-terra)}
 .nt-uitl{margin:14px 2px 0;color:var(--muted);font-size:.92rem;line-height:1.5}
@@ -282,8 +300,21 @@ function chipNaam(b){var c=b.cloneNode(true);c.querySelectorAll(".n,svg").forEac
 function lijst(sp){var t=typ(),r=reg();return LOCS.map(function(l,i){return i;}).filter(function(i){return (!sp||LSP[i].indexOf(sp)>=0)&&(!t||tnl(i)===t)&&(!r||N.REGIO[LOCS[i][0]]===r);})
   .sort(function(a,b){return Object.keys(LBEV[b]).length-Object.keys(LBEV[a]).length||LSP[b].length-LSP[a].length||LOCS[a][0].localeCompare(LOCS[b][0]);});}
 function kaart(i,lang){var l=LOCS[i],nm=l[0],k=tk(nm),s=N.lslug(nm),n=Object.keys(LBEV[i]).length,u=LSP[i].length-n,d=lang&&DS[s];
+  if(lang)return kaartje(i,l,nm,k,s,n,u);
   return '<li class="nt-loc"><span class="nt-ti">'+ico(k)+'</span><span class="nt-lt"><a href="#locatie/'+s+'">'+E(nm)+'</a><small>'+E(l[1])+(k>=0?' · '+E(tnaam(k)):"")+'</small>'+
     (d?'<span class="nt-ds">'+d+'</span>':"")+'</span><span class="nt-n">'+(n?'<b>'+n+'</b> '+nsoort(n):'')+(u?(n?'<br>':'')+'<small>'+u+' '+LS("onzeker","uncertain")+'</small>':'')+'</span></li>';}
+
+/* scherm Locaties (19-10-2026): los kaartje per locatie, aantal als badge, soortrondjes (bevestigd eerst, onzeker met stippelrand) */
+var RMAX=6;
+function rondje(sp,onzeker){var p=PH[sp]&&PH[sp].src,nm=N.spName(sp);
+  return '<span class="nt-rj'+(onzeker?" nt-rju":"")+'" title="'+E(nm)+'">'+(p?'<img src="'+E(p)+'" alt="" loading="lazy">':'<i>'+E(nm.charAt(0))+'</i>')+'</span>';}
+function kaartje(i,l,nm,k,s,n,u){var b=LSP[i].filter(function(sp){return LBEV[i][sp];}),o=LSP[i].filter(function(sp){return !LBEV[i][sp];}),alle=b.concat(o);
+  var toon=alle.length>RMAX?alle.slice(0,RMAX-1):alle,rest=alle.length-toon.length;
+  var rj=toon.map(function(sp){return rondje(sp,!LBEV[i][sp]);}).join("")+(rest?'<span class="nt-rj nt-rjm">+'+rest+'</span>':"");
+  var namen=alle.map(function(sp){return N.spName(sp)+(LBEV[i][sp]?"":" ("+TX("onzeker","uncertain")+")");}).join(", ");
+  return '<li class="nt-loc nt-kj"><span class="nt-ti">'+ico(k)+'</span><span class="nt-lt"><a href="#locatie/'+s+'">'+E(nm)+'</a><small>'+E(l[1])+(k>=0?' · '+E(tnaam(k)):"")+'</small></span>'+
+    '<span class="nt-n">'+(n?'<b class="nt-bdg">'+n+'</b><span class="nt-vh"> '+nsoort(n)+'</span>':'')+(u?'<small>'+u+' '+LS("onzeker","uncertain")+'</small>':'')+'</span>'+
+    (alle.length?'<span class="nt-rjs" aria-hidden="true">'+rj+'</span><span class="nt-vh">'+E(namen)+'</span>':'')+'</li>';}
 
 /* ---------- kaart (startscherm) ---------- */
 function cats(){var el=$("#nt-cats");if(!el)return;

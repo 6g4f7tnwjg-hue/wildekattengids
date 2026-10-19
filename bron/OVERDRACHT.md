@@ -28,10 +28,11 @@ Lees eerst `bron/LEESMIJ.md` (opbouw, bouw en de telregel), `bron/OPEN.md` (open
   - Groene koppen met monsterablad en golfrand. Op de landpagina's zijn de koppen van Kaart, Locaties, Soorten, Meer en alle Meer-subpagina's (In het kort, Actueel, Kleur & hybriden, Routeplanner, Hoofdtabel, Over, Rapporteer) exact even hoog en gelijk opgebouwd: vlag + titel, lichte regel, goudgele regel (teksten in `KOP_JS`, per scherm vooraf klaargezet en met CSS `:has(#…​.nw-cur)` getoond, zodat er niets verspringt). Lange titels worden kleiner gemaakt in plaats van afgekapt.
   - Soort- en parkpagina's binnen een land (`#soort/…`, `#locatie/…` en de losse pagina's): één groene kop (`DETAIL_JS`), foto eronder, hartje rond op de foto. De losse pagina's krijgen vlag, landnaam en hartje via `window.__JGLOS` (`los_js()`, 19-10).
   - Zwevende gele terugknop linksonder (`.jg-terug`), alleen op Meer-subpagina's en detailpagina's; gaat terug naar Soorten/Locaties of klikt de bestaande terugknop.
-  - Houten, gelakte knoppen met ingebrande tekst (landen, filters, typen, regio's); bolletjes voor de lijsten "Waar te zien" en "Katten hier"; icoon en aantal in de locatielijst verticaal gecentreerd.
+  - Knoppen (landen, filters, typen, regio's) in stijl A "bladgroen" (19-10, vervangt het hout): `KNOP`/`KNOP_AAN`. Bolletjes voor de lijsten "Waar te zien" en "Katten hier".
+  - Scherm Locaties (19-10): losse kaartjes met goudgele badge en soortrondjes (`kaartje()` in `test_ontwerp.py`); de lijst "In beeld" op het kaartscherm is ongewijzigd.
   - Getekende luipaard op de rand van het Ko-fi-blok (ronde groene ogen met wimpers, snorharen, knipperen, kop kantelt, staart zwiept; tik = opkijken). Tekening in `svg()`/`oog()` in `jungle.py`.
 - **Les:** gebruik geen MutationObserver die op `class`-wijzigingen in `#main` reageert en dan zelf HTML schrijft. Dat gaf een oneindige lus en de site reageerde niet meer op tikken (19-10, direct teruggedraaid). Teksten nu vooraf bouwen en alleen met CSS wisselen.
-- Bekend, niet door de stijl: op de kaart van Frankrijk en Duitsland is de site zelf continu bezig (ook zonder jungle-laag). Tikken werkt, maar het kost mogelijk batterij. Nog niet uitgezocht.
+- Bekend, niet door de stijl: op de kaart van Frankrijk, Duitsland en Spanje is de site zelf continu bezig (ook zonder jungle-laag). Tikken werkt, maar het kost mogelijk batterij. Nog niet uitgezocht.
 - Testpagina's (noindex, niet gelinkt): `/voorbeeld-jungle/` (drie stijlvoorbeelden, `test/` per paginasoort, `ogen/`).
 
 ## Let op bij volgende wijzigingen

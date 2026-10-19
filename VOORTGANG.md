@@ -2,6 +2,11 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 19 oktober 2026 – Scherm Locaties als kaartjes, knoppen zonder hout
+
+- Scherm Locaties op alle landpagina's: elke locatie een los kaartje met het aantal bevestigde soorten als goudgele badge rechtsboven ("1 onzeker" eronder als dat er is), het type-icoon bovenaan naast de naam en soortrondjes (foto's, bevestigd eerst, onzeker met stippelrand, maximaal 6 en dan "+n") in plaats van de afgekapte beschrijving. Volgorde ongewijzigd (meeste soorten eerst). Zoeken doorzoekt de beschrijving nog steeds. Code: `kaartje()` in `bron/test_ontwerp.py`, kleuren in `bron/jungle.py`.
+- Knoppen (land, regio, type, filters) in stijl A "bladgroen": effen lichte knop met donkergroene rand, gekozen donkergroen met goudgele tekst (`KNOP`/`KNOP_AAN` in `bron/jungle.py`, vervangt `HOUT`).
+
 ## 19 oktober 2026 – Losse park- en soortpagina's net als de gids
 
 De losse pagina's (`/<land>/locatie/…`, `/<land>/soort/…`) hebben nu dezelfde kop als in de gids: landvlag voor de titel, "N locaties in <land>" bij soorten en het hartje rond op de foto. Het hartje gebruikt dezelfde favorieten (`nt-fav`) als de gids. Vlaggen en landnamen komen uit `bron/start.html`; code in `bron/jungle.py` (`los_js()`, `hart()` in `DETAIL_JS`).

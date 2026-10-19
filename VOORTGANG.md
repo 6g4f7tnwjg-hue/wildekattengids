@@ -4,6 +4,8 @@ Bijgehouden door Claude. Nieuwste bovenaan.
 
 ## 19 oktober 2026 – Top 10 bijgewerkt
 
+Later: de landknoppen boven de top 10 zijn weg (`renderTop` in `start.html`). In de Portugese gids zegt de vaste tekst bij Lissabon nu acht soorten in plaats van negen (NL/EN/PT), gelijk aan de gegevens.
+
 Op verzoek van de gebruiker (`bron/top10.json`, lijst `vast`). Nieuwe volgorde: Lumigny, Faunapark Flakkee, Le Domaine des Fauves, Pairi Daiza, Hoenderdaell / Stichting Leeuw, Jardim Zoológico de Lisboa, Safari Madrid, Felidae Barnim, Exmoor Zoo, La Torbiera. Eruit: ZooParc de Beauval, Zoo du Bassin d’Arcachon, Wilhelma, Zoo Leipzig en Safaripark Beekse Bergen. The Big Cat Sanctuary (VK, hoogste score buiten de lijst) bewust niet: te duur voor bezoekers. Uitlegzinnen voor de vijf nieuwe parken in zes talen. Alleen `top10` in de startgegevens is veranderd; top 10 gecontroleerd op 390 px in NL/EN/DE/ES.
 
 ## 19 oktober 2026 – Voet als horizontale tak

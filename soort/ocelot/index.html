@@ -71,6 +71,15 @@ html body{padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
 .kat-land li{display:grid!important;grid-template-columns:28px minmax(0,1fr) auto;gap:4px 12px;align-items:center}
 .kat-land li .nt-ti svg{width:28px;height:28px;display:block}
 .kat-land li .kl-go{font-weight:700}
+/* groene kop per scherm op de startpagina: Kaart groot, Landen/Soorten/Meer kort (19-10-2026) */
+.nt-tk>div{display:none}
+html[data-nt-tab="landen"] .nt-tk>[data-t="landen"],html[data-nt-tab="soorten"] .nt-tk>[data-t="soorten"]{display:block}
+html[data-nt-tab="landen"] .intro .wrap>h1,html[data-nt-tab="landen"] .intro .wrap>.sub,html[data-nt-tab="landen"] .intro .wrap>.meta,
+html[data-nt-tab="soorten"] .intro .wrap>h1,html[data-nt-tab="soorten"] .intro .wrap>.sub,html[data-nt-tab="soorten"] .intro .wrap>.meta{display:none}
+html[data-nt-tab="landen"] #p-landen>p.note:first-child,html[data-nt-tab="soorten"] #p-soorten>p.note:first-child{display:none}
+.nt-onder{margin:8px 0 0;color:#D3E4C2!important;font-size:1.08rem;line-height:1.55}
+.nt-goud{margin:8px 0 0;font-family:"Barlow Condensed","Arial Narrow","Roboto Condensed",sans-serif;font-weight:600;font-size:.86rem;letter-spacing:.06em;text-transform:uppercase;color:#F2C14E!important}
+.nt-goud *{color:#F2C14E!important}
 </style>
 </head><body>
 
@@ -1647,12 +1656,14 @@ window.__NTFAV=favLijst;
 /* ---------- scherm Meer: de links uit het menu als lijst, Favorieten bovenaan, Ko-fi niet (staat onderaan) ---------- */
 var PIJL='<svg class="nt-pijl" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>';
 var EXTRA_ICO={over:'<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="currentColor"/><circle cx="12" cy="7.4" r="1.5" fill="#FBF8F1"/><path d="M12 11v6.5" stroke="#FBF8F1" stroke-width="2.4" stroke-linecap="round"/></svg>',
+  ster:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L12 16.8l-5.4 2.9 1.1-6.1-4.5-4.2 6.1-.8z"/></svg>',
   spot:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6.5" cy="15.5" r="3.5"/><circle cx="17.5" cy="15.5" r="3.5"/><path d="M10 15h4M5 12l2-6h2l1 5M19 12l-2-6h-2l-1 5"/></svg>'};
 function meerLijst(){var el=document.getElementById("nt-meerlist"),m=document.getElementById("menu");if(!el||!m)return;
   var a=[].slice.call(m.querySelectorAll("nav a")).filter(function(x){return !/ko-fi\.com/.test(x.getAttribute("href")||"");});
   a.sort(function(x,y){return (y.dataset.nav==="favorieten")-(x.dataset.nav==="favorieten");});
   el.innerHTML=a.map(function(x){var c=x.cloneNode(true),lc=(x.className.match(/\bl-[a-z]{2}\b/)||[""])[0];c.removeAttribute("class");
     if(!c.querySelector("svg"))c.insertAdjacentHTML("afterbegin",x.dataset.nav==="over"?EXTRA_ICO.over:EXTRA_ICO.spot);
+    if(x.dataset.nav==="geboren"){var o=c.querySelector("svg");if(o)o.outerHTML=EXTRA_ICO.ster;}
     c.insertAdjacentHTML("beforeend",PIJL);return '<li'+(lc?' class="'+lc+'"':'')+'>'+c.outerHTML+'</li>';}).join("");
   mm();}
 function mm(){var b=document.getElementById("nw-sbar-start");if(!b)return;var me=b.querySelector('[data-k="meer"]'),op=document.documentElement.classList.contains("pagemode")&&/^#meer$/.test(location.hash);
@@ -1664,6 +1675,25 @@ window.addEventListener("popstate",function(){setTimeout(mm,0);});window.addEven
 if(location.hash==="#meer")setTimeout(meerLijst,0);
 document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest('#nw-sbar-start [data-k="meer"]');if(b&&b.dataset.start!==undefined||b&&document.getElementById("nt-meerlist"))setTimeout(function(){window.scrollTo(0,0);},30);});
 document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest("#nt-favlist .nt-hart");if(!b)return;var a=favLees();a.splice(+b.dataset.wi,1);favSchrijf(a);favLijst();});
+/* ---------- groene kop per scherm (19-10-2026): Kaart houdt de grote kop, Landen en Soorten krijgen een korte kop, Meer een regel eronder ---------- */
+var KT={landen:{h:{nl:"Landen",en:"Countries",fr:"Pays",de:"Länder",it:"Paesi",es:"Países"},
+    s:{nl:"Tik op een land voor de volledige gids",en:"Tap a country for its full guide",fr:"Touchez un pays pour ouvrir son guide complet",de:"Tippe auf ein Land für den ganzen Guide",it:"Tocca un paese per la guida completa",es:"Toca un país para ver su guía completa"}},
+  soorten:{h:{nl:"Soorten",en:"Species",fr:"Espèces",de:"Arten",it:"Specie",es:"Especies"},
+    s:{nl:"Waar zie je welke kat in Europa?",en:"Where can you see each cat in Europe?",fr:"Où voir chaque félin en Europe ?",de:"Wo siehst du welche Katze in Europa?",it:"Dove vedere ogni felino in Europa?",es:"¿Dónde ver cada felino en Europa?"}},
+  meer:{s:{nl:"Favorieten, top 10, geboortes en meer",en:"Favourites, top 10, births and more",fr:"Favoris, top 10, naissances et plus",de:"Favoriten, Top 10, Geburten und mehr",it:"Preferiti, top 10, nascite e altro",es:"Favoritos, top 10, nacimientos y más"}}};
+function L6j(o){return ["nl","en","fr","de","it","es"].map(function(l){return '<span class="l-'+l+'">'+o[l]+'</span>';}).join("");}
+var iw=document.querySelector(".intro .wrap"),tel=document.getElementById("kop-tel"),HT=document.documentElement;
+if(iw&&tel&&document.getElementById("p-landen")&&!iw.querySelector(".nt-tk")){
+  var kk=document.createElement("div");kk.className="nt-tk";
+  kk.innerHTML=["landen","soorten"].map(function(t){return '<div data-t="'+t+'"><h1>'+L6j(KT[t].h)+'</h1><p class="sub">'+L6j(KT[t].s)+'</p><div class="meta"><p class="kop-tel nt-tel"></p></div></div>';}).join("");
+  iw.appendChild(kk);
+  var telBij=function(){var d=tel.textContent.split(" · "),a=kk.querySelector('[data-t="landen"] .nt-tel'),b=kk.querySelector('[data-t="soorten"] .nt-tel'),x=d.slice(0,2).join(" · "),y=d[2]||"";
+    if(a.textContent!==x)a.textContent=x;if(b.textContent!==y)b.textContent=y;};
+  new MutationObserver(telBij).observe(tel,{childList:true,characterData:true,subtree:true});telBij();
+  var tabNu=function(){var t=["landen","soorten"].filter(function(x){var e=document.getElementById("p-"+x);return e&&e.classList.contains("on");})[0]||"kaart";if(HT.getAttribute("data-nt-tab")!==t)HT.setAttribute("data-nt-tab",t);};
+  ["kaart","landen","soorten"].forEach(function(x){var e=document.getElementById("p-"+x);if(e)new MutationObserver(tabNu).observe(e,{attributes:true,attributeFilter:["class"]});});tabNu();}
+setTimeout(function(){var k=document.querySelector("#meer .jg-kop");if(!k||k.querySelector(".nt-onder"))return;var st=document.querySelector(".intro .stamp");
+  k.insertAdjacentHTML("beforeend",'<p class="nt-onder">'+L6j(KT.meer.s)+'</p>'+(st?'<p class="nt-goud">'+st.innerHTML+'</p>':''));},0);
 /* hartje in het infovak van de kaart en op de soortpagina */
 function heeft(k,c,s){return favLees().some(function(x){return x.k===k&&x.c===c&&x.s===s;});}
 function wissel(k,c,s,extra){var a=favLees(),i=-1;a.forEach(function(x,j){if(i<0&&x.k===k&&x.c===c&&x.s===s)i=j;});

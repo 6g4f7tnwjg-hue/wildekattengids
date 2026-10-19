@@ -3080,7 +3080,11 @@ function teken(){var w=Math.round(f.clientWidth),h=Math.round(bg.clientHeight);i
  o+='</g>';
  /* omlijning boven en onder (zelfde lijn als de luipaard) */
  o+='<path d="M'+pt.join(' L')+'" stroke="'+LO+'" stroke-width="3" fill="none" stroke-linejoin="round"/><path d="M'+pb.join(' L')+'" stroke="'+LO+'" stroke-width="3" fill="none" stroke-linejoin="round"/>';
- bg.innerHTML='<svg viewBox="0 0 '+w+' '+h+'" xmlns="http://www.w3.org/2000/svg">'+o+'</svg>';}
+ bg.innerHTML='<svg viewBox="0 0 '+w+' '+h+'" xmlns="http://www.w3.org/2000/svg">'+o+'</svg>';
+ /* luipaard precies op de tak: buik (y=96 van 132 in zijn tekening) op het laagste punt van de bovenrand onder het lijf, zodat er nergens ruimte tussen zit */
+ var lp=f.querySelector('.jg-lp');if(lp){var sc=lp.clientWidth/240,x0=lp.offsetLeft+60*sc,x1=lp.offsetLeft+216*sc,m=-1e9;
+  for(var xx=Math.floor(x0/10)*10;xx<=x1+10;xx+=10){var yy=T+6+3*Math.sin(xx/90+.4)+1.35*Math.sin(xx/33.3+.8);if(yy>m)m=yy;}
+  lp.style.top=(m+1-96*sc).toFixed(1)+'px';}}
 teken();
 if(window.ResizeObserver)new ResizeObserver(function(){teken();}).observe(f);else window.addEventListener('resize',teken);
 if(document.fonts&&document.fonts.ready)document.fonts.ready.then(teken);

@@ -95,6 +95,9 @@ html body .jg-kop .terug{display:none!important}
 .nt-fab svg{width:26px;height:26px}
 html.pagemode .nt-fab,html.katmode .nt-fab{display:flex}
 html.pagemode:has(#meer.on) .nt-fab{display:none!important}
+/* zachte overgang tussen startpagina, top 10 en soortpagina's in plaats van een flits (19-10-2026) */
+@view-transition{navigation:auto}
+html{background:#163A22}
 /* menu: donkere tekst op de lichte achtergrond */
 html body #menu,html body #menu nav a,html body #menu nav a span{color:var(--ink,#22301F)!important}
 /* alle schermkoppen even hoog als de landgids */
@@ -1709,7 +1712,7 @@ function meerLijst(){var el=document.getElementById("nt-meerlist"),m=document.ge
     if(x.dataset.nav==="geboren"){var o=c.querySelector("svg");if(o)o.outerHTML=EXTRA_ICO.ster;}
     c.insertAdjacentHTML("beforeend",PIJL);return '<li'+(lc?' class="'+lc+'"':'')+'>'+c.outerHTML+'</li>';}).join("");
   mm();}
-function mm(){var b=document.getElementById("nw-sbar-start");if(!b)return;var me=b.querySelector('[data-k="meer"]'),op=document.documentElement.classList.contains("pagemode")||/\/top10\//.test(location.pathname);
+function mm(){var b=document.getElementById("nw-sbar-start");if(!b)return;var me=b.querySelector('[data-k="meer"]'),op=document.documentElement.classList.contains("pagemode")||/\/top10\//.test(location.pathname)||location.hash==="#top10";
   if(!me)return;me.classList.toggle("on",op);if(op)b.querySelectorAll("[data-k]").forEach(function(x){if(x!==me)x.classList.remove("on");});
   else if(!b.querySelector(".on")&&!document.documentElement.classList.contains("katmode")){var h=b.querySelector('[data-k="home"]');if(h)h.classList.add("on");}}
 window.__NTMEER=meerLijst;
@@ -1754,7 +1757,7 @@ var FB={nl:"{n} bewaard",en:"{n} saved",fr:"{n} enregistrés",de:"{n} gespeicher
 function favTel(){var g=document.querySelector("#favorieten .nt-goud");if(!g)return;var n=0;try{n=favLees().length;}catch(_){}
   var h=["nl","en","fr","de","it","es"].map(function(l){return '<span class="l-'+l+'">'+FB[l].replace("{n}",n)+'</span>';}).join("");if(g.innerHTML!==h)g.innerHTML=h;}
 function kopRegels(){var st=document.querySelector(".intro .stamp"),dt=st?st.innerHTML:"";
-  Object.keys(KR).forEach(function(id){var k=id==="top10"?(/\/top10\//.test(location.pathname)?document.querySelector("#katview .jg-kop"):null):document.querySelector("#"+id+" .jg-kop");
+  Object.keys(KR).forEach(function(id){var k=id==="top10"?((/\/top10\//.test(location.pathname)||location.hash==="#top10")?document.querySelector("#katview .jg-kop"):null):document.querySelector("#"+id+" .jg-kop");
     if(!k||k.querySelector(".nt-onder"))return;k.classList.add("nt-vk");
     if(id==="meer"&&window.__NTEUV){var h1=k.querySelector("h1");if(h1&&!h1.querySelector("svg")){h1.innerHTML='<span class="nt-tt">'+h1.innerHTML+'</span>';h1.insertAdjacentHTML("afterbegin",window.__NTEUV);}}
     k.insertAdjacentHTML("beforeend",'<p class="nt-onder">'+L6j(KR[id])+'</p><p class="nt-goud">'+(id==="favorieten"?"":dt)+'</p>');});
@@ -1791,6 +1794,16 @@ window.addEventListener("storage",favTel);document.addEventListener("click",func
 try{history.scrollRestoration="manual";}catch(_){}
 [].forEach.call(document.querySelectorAll("section.page"),function(pgs){new MutationObserver(function(){if(pgs.classList.contains("on")){window.scrollTo(0,0);setTimeout(function(){window.scrollTo(0,0);},0);setTimeout(function(){window.scrollTo(0,0);},120);}}).observe(pgs,{attributes:true,attributeFilter:["class"]});});
 if(document.querySelector("section.page.on"))setTimeout(function(){window.scrollTo(0,0);},120);
+/* top 10 in #katview: groene kop opnieuw zetten na elke opbouw (filter, taal, openen op de startpagina) */
+(function(){var kv=document.getElementById("katview");if(!kv)return;
+  function wrap(){if(!kv.querySelector(".toplist"))return;var t=kv.querySelector(".terug");if(!t||t.parentElement.classList.contains("jg-kop"))return;
+    var k=document.createElement("div");k.className="jg-kop";t.parentNode.insertBefore(k,t);var x=t.nextElementSibling;k.appendChild(t);
+    while(x&&(x.tagName==="H1"||(x.tagName==="P"&&x.classList.contains("sub"))||x.classList.contains("kat-h"))){var nx=x.nextElementSibling;k.appendChild(x);x=nx;}
+    var u=k.querySelectorAll(".sub, .kat-sum");for(var j=u.length-1;j>=0;j--){u[j].classList.add("jg-uitleg");k.parentNode.insertBefore(u[j],k.nextSibling);}
+    kopRegels();}
+  new MutationObserver(function(){setTimeout(wrap,0);}).observe(kv,{childList:true});setTimeout(wrap,0);})();
+function bovenaan(){if(document.querySelector("section.page.on")||location.hash==="#top10"){window.scrollTo(0,0);setTimeout(function(){window.scrollTo(0,0);},150);setTimeout(function(){window.scrollTo(0,0);},450);}}
+window.addEventListener("load",bovenaan);window.addEventListener("pageshow",bovenaan);
 /* zwevende terugknop: terug in de geschiedenis, anders naar Meer (startpagina) of de oude terugknop */
 (function(){var TB={nl:"Terug",en:"Back",fr:"Retour",de:"Zurück",it:"Indietro",es:"Volver"};
   var f=document.createElement("a");f.className="nt-fab";f.href="#";

@@ -2,6 +2,10 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 19 oktober 2026 – VK-gids: types langs de BIAZA/EAZA-regel
+
+Alle 88 VK-locaties vergeleken met de ledenlijst van BIAZA (biaza.org.uk/members/all, 127 leden) en EAZA (strapi.eaza.net/api/members en map.eaza.net). Van dierenpark naar dierentuin: Wingham Wildlife Park en Ponderosa Zoo (BIAZA-lid), Capel Manor Gardens en Fenn Bell Conservation Project (voorlopig BIAZA-lid). Alle andere "dierentuinen" zijn lid van BIAZA of EAZA (Cotswold, Howletts en Port Lympne alleen EAZA). Wildwood Escot onduidelijk (BIAZA-pagina van Wildwood Trust noemt alleen Kent), daarom ongewijzigd. Wildparken en opvangcentra vallen niet onder deze regel en zijn niet veranderd.
+
 ## 19 oktober 2026 – Aantallen in het wild aangevuld
 
 Op verzoek ingevuld als ondergrens in `WILD` van alle gidsen: marmerkat "> 10.000" (IUCN 2016, volwassen dieren), vissende kat "3.200–7.500" (volwassen dieren, bron onzeker), rode lynx "> 2.350.000" (alleen VS, alle dieren; Roberts & Crimmins) en Euraziatische lynx "> 69.500" (optelling per regio, alle dieren, Azië onvolledig). De uitleg op de site noemt "volwassen dieren volgens de IUCN"; voor de twee lynxen klopt dat strikt genomen niet.

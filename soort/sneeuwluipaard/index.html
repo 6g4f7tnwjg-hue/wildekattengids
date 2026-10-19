@@ -1769,6 +1769,8 @@ window.__NTMEER=meerLijst;
 new MutationObserver(function(){setTimeout(mm,0);}).observe(document.documentElement,{attributes:true,attributeFilter:["class"]});
 window.addEventListener("popstate",function(){setTimeout(mm,0);});window.addEventListener("hashchange",function(){setTimeout(mm,0);});
 if(location.hash==="#meer")setTimeout(meerLijst,0);
+/* Kaart, Landen en Soorten in de onderbalk openen altijd bovenaan (19-10-2026) */
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest('#nw-sbar-start [data-k="home"],#nw-sbar-start [data-k="landen"],#nw-sbar-start [data-k="soorten"]');if(!b||window.__KAT)return;var op=function(){window.scrollTo(0,0);};setTimeout(op,30);setTimeout(op,200);});
 document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest('#nw-sbar-start [data-k="meer"]');if(b&&b.dataset.start!==undefined||b&&document.getElementById("nt-meerlist"))setTimeout(function(){window.scrollTo(0,0);},30);});
 document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest("#nt-favlist .nt-hart");if(!b)return;var a=favLees();a.splice(+b.dataset.wi,1);favSchrijf(a);favLijst();});
 /* ---------- groene kop per scherm (19-10-2026): Kaart houdt de grote kop, Landen en Soorten krijgen een korte kop, Meer een regel eronder ---------- */

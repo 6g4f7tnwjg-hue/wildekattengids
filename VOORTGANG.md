@@ -2,6 +2,10 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 19 oktober 2026 – Europa-onderbalk opent bovenaan
+
+Op de hoofdpagina (en top 10) opent Kaart, Landen of Soorten in de onderbalk nu altijd bovenaan, ook als je eerst naar beneden had gescrold (`test_ontwerp.py`, klik op `#nw-sbar-start`). Getest in Chromium en WebKit op 414 px; geen doorlopende DOM-wijzigingen.
+
 ## 19 oktober 2026 – Top 10 bijgewerkt
 
 Later: de landknoppen boven de top 10 zijn weg (`renderTop` in `start.html`). In de Portugese gids zegt de vaste tekst bij Lissabon nu acht soorten in plaats van negen (NL/EN/PT), gelijk aan de gegevens.

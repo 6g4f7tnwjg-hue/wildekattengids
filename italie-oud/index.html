@@ -2050,7 +2050,7 @@ function zk(svg){if(svg.__zk)return svg.__zk;var b=svg.viewBox.baseVal;if(!b||!b
   svg.addEventListener("wheel",function(e){if(!e.ctrlKey&&!e.metaKey)return;e.preventDefault();var r=svg.getBoundingClientRect();
     zoomRond(svg,Math.exp(-e.deltaY*.01),st.v[0]+(e.clientX-r.left)/r.width*st.v[2],st.v[1]+(e.clientY-r.top)/r.height*st.v[3],true);},{passive:false});
   /* filters van de gids (regio, type) verbergen stippen: groepjes opnieuw maken */
-  new MutationObserver(function(){if(!st.busy)plan(svg);}).observe(svg,{attributes:true,attributeFilter:["class","hidden","style"],subtree:true});
+  st.obs=new MutationObserver(function(){if(!st.busy)plan(svg);});st.obs.observe(svg,{attributes:true,attributeFilter:["class","hidden","style"],subtree:true});
   return st;}
 function zet(svg,v,snel){var st=svg.__zk,B=st.base,w=Math.max(B[2]/MAXZ,Math.min(B[2],v[2])),h=w*B[3]/B[2];
   var x=Math.max(B[0],Math.min(B[0]+B[2]-w,v[0])),y=Math.max(B[1],Math.min(B[1]+B[3]-h,v[1]));st.v=[x,y,w,h];
@@ -2079,6 +2079,8 @@ function groepen(svg){var st=zk(svg);if(!st)return;st.busy=true;var u=st.v[2]/st
     x/=g.m.length;y/=g.m.length;var n=g.m.length,rr=n<10?10.5:12.5,jg=GEBON&&g.m.some(function(m){return m.classList.contains("hs-jong");});
     html+='<g class="hs-cl" role="button" tabindex="0" data-x="'+x.toFixed(1)+'" data-y="'+y.toFixed(1)+'" data-i="'+g.m.map(function(m){return m.dataset.i;}).join(",")+'" transform="translate('+x.toFixed(1)+' '+y.toFixed(1)+') scale('+u.toFixed(4)+')"><circle class="hs-clh-hit" r="'+(rr+4)+'"/><circle class="hs-cld" r="'+rr+'"/><text dy=".36em">'+n+'</text>'+(jg?'<circle class="hs-badge" cx="'+(rr*.72).toFixed(1)+'" cy="'+(-rr*.72).toFixed(1)+'" r="3.8"/>':"")+'</g>';});
   if(html)svg.insertAdjacentHTML("beforeend",html);
+  /* eigen wijzigingen niet als filterwijziging zien: anders tekende de kaart elk beeldje opnieuw (batterij) */
+  if(st.obs)st.obs.takeRecords();
   st.busy=false;}
 function openGroep(svg,g){var st=svg.__zk,ids=g.dataset.i.split(","),x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;
   ids.forEach(function(i){var m=svg.querySelector('.mk[data-i="'+i+'"]');if(!m)return;var c=midden(m);x0=Math.min(x0,c[0]);y0=Math.min(y0,c[1]);x1=Math.max(x1,c[0]);y1=Math.max(y1,c[1]);});

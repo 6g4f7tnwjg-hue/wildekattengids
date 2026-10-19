@@ -32,7 +32,7 @@ Lees eerst `bron/LEESMIJ.md` (opbouw, bouw en de telregel), `bron/OPEN.md` (open
   - Scherm Locaties (19-10): losse kaartjes met goudgele badge en soortrondjes (`kaartje()` in `test_ontwerp.py`); de lijst "In beeld" op het kaartscherm is ongewijzigd.
   - Voet als horizontale tak (19-10, `TAK_JS`/`TAK_CSS`): Ko-fi-tekst op de tak, luipaard ligt erop. Getekende luipaard (ronde groene ogen met wimpers, snorharen, knipperen, kop kantelt, staart zwiept; tik = opkijken). Tekening in `svg()`/`oog()` in `jungle.py`.
 - **Les:** gebruik geen MutationObserver die op `class`-wijzigingen in `#main` reageert en dan zelf HTML schrijft. Dat gaf een oneindige lus en de site reageerde niet meer op tikken (19-10, direct teruggedraaid). Teksten nu vooraf bouwen en alleen met CSS wisselen.
-- Bekend, niet door de stijl: op de kaart van Frankrijk, Duitsland en Spanje is de site zelf continu bezig (ook zonder jungle-laag). Tikken werkt, maar het kost mogelijk batterij. Nog niet uitgezocht.
+- Opgelost (19-10-2026): op kaarten met groepjes (o.a. Frankrijk, Duitsland, Spanje, Italië, VK) tekende de kaart elk beeldje opnieuw, doordat het groeperen zijn eigen wijzigingen als filterwijziging zag (`groepen()` in `huisstijl.py`, nu met `takeRecords()`).
 - Testpagina's (noindex, niet gelinkt): `/voorbeeld-jungle/` (drie stijlvoorbeelden, `test/` per paginasoort, `ogen/`).
 
 ## Let op bij volgende wijzigingen

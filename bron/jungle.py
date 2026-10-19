@@ -539,6 +539,15 @@ html body .hs-kofi{{background:{SUN}!important;color:{JG}!important;border-color
 @media (min-width:1120px){{html body .nt-kop,html body .ip-head{{border-radius:22px}}}}
 """
 
+# groene koppen over de volle schermbreedte (19-10-2026): op tablet liggend en desktop staan de koppen van
+# Meer, de tussenschermen, top 10, soort- en parkpagina's en het landstartscherm nu net als de Kaart-kop van
+# rand tot rand; de tekst blijft op dezelfde plek. Wordt een landscherm direct geopend (bijv. /nederland/#meer),
+# dan blijft de pagina bovenaan staan in plaats van de kop half onder de bovenbalk te schuiven.
+BREED = """
+html body .jg-kop,html body #katview .jg-kop,html body .nt-kop,html body :is(#main,#info) .nw-sbar:not(.nw-los){margin-left:calc(50% - 50vw)!important;margin-right:calc(50% - 50vw)!important;padding-left:calc(50vw - 50%)!important;padding-right:calc(50vw - 50%)!important;border-radius:0!important}
+html body #main>[id]{scroll-margin-top:100vh}
+"""
+
 # voet als horizontale tak (19-10-2026, op alle pagina's): de luipaard ligt op een getekende tak,
 # de Ko-fi-tekst staat op de tak. De tak wordt in JS op de echte maat getekend (niet uitgerekt) en opnieuw
 # getekend als de voet van maat verandert (ResizeObserver op de voet; de tak zelf staat absoluut en verandert de maat niet).
@@ -649,7 +658,7 @@ def los_js(pad):
 
 def blok(html, pad=None):
     land = 'id="hs-top"' in html or "id='hs-top'" in html
-    css = GEDEELD + (LAND if land else EUROPA) + LP_CSS + TAK_CSS
+    css = GEDEELD + (LAND if land else EUROPA) + LP_CSS + TAK_CSS + BREED
     js = LP_JS % json.dumps(svg()) + TAK_JS + "(function(){var ts=document.querySelectorAll('.terug');for(var i=0;i<ts.length;i++){var t=ts[i],p=t.parentElement;if(!p||p.classList.contains('jg-kop'))continue;var k=document.createElement('div');k.className='jg-kop';p.insertBefore(k,t);var x=t.nextElementSibling;k.appendChild(t);while(x&&(x.tagName=='H1'||(x.tagName=='P'&&x.classList.contains('sub'))||x.classList.contains('kat-h'))){var n=x.nextElementSibling;k.appendChild(x);x=n;}}})();" + KOP_JS + los_js(pad) + DETAIL_JS
     return f'{BEGIN}{FONTS}<style id="jungle">{css}</style><script>{js}</script>{EIND}'
 

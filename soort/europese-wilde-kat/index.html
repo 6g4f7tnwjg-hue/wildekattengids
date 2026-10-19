@@ -1915,6 +1915,10 @@ function katHart(){var kv=document.getElementById("katview");if(!kv)return;var h
   b.addEventListener("click",function(){wissel("sp","eu",s,{n:h.textContent.trim()});b.innerHTML=knop(heeft("sp","eu",s));});h.insertAdjacentElement("afterend",b);}
 if(kv)new MutationObserver(function(){setTimeout(katHart,0);}).observe(kv,{childList:true});katHart();
 if(location.hash==="#favorieten")setTimeout(favLijst,0);
+/* lijst opnieuw opbouwen telkens als het scherm Favorieten opent (19-10-2026) */
+(function(){var fp=document.getElementById("favorieten");if(!fp)return;
+  new MutationObserver(function(){if(fp.classList.contains("on")){favLijst();if(typeof favTel==="function")favTel();}}).observe(fp,{attributes:true,attributeFilter:["class"]});
+  window.addEventListener("pageshow",function(){if(fp.classList.contains("on"))favLijst();});})();
 /* onderbalk: Soorten aan op een soortpagina */
 var bar=document.getElementById("nw-sbar-start");
 if(bar&&window.__KAT){var s=bar.querySelector('[data-k="soorten"]');if(s)s.classList.add("on");}

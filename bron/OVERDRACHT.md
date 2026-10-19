@@ -1,4 +1,4 @@
-# Overdracht (19 oktober 2026, nacht)
+# Overdracht (19 oktober 2026, avond)
 
 Lees eerst `bron/LEESMIJ.md` (opbouw, bouw en de telregel), `bron/OPEN.md` (open punten) en bovenaan `VOORTGANG.md` (laatste wijzigingen).
 
@@ -34,6 +34,18 @@ Lees eerst `bron/LEESMIJ.md` (opbouw, bouw en de telregel), `bron/OPEN.md` (open
 - **Les:** gebruik geen MutationObserver die op `class`-wijzigingen in `#main` reageert en dan zelf HTML schrijft. Dat gaf een oneindige lus en de site reageerde niet meer op tikken (19-10, direct teruggedraaid). Teksten nu vooraf bouwen en alleen met CSS wisselen.
 - Opgelost (19-10-2026): op kaarten met groepjes (o.a. Frankrijk, Duitsland, Spanje, Italië, VK) tekende de kaart elk beeldje opnieuw, doordat het groeperen zijn eigen wijzigingen als filterwijziging zag (`groepen()` in `huisstijl.py`, nu met `takeRecords()`).
 - Testpagina's (noindex, niet gelinkt): `/voorbeeld-jungle/` (drie stijlvoorbeelden, `test/` per paginasoort, `ogen/`).
+
+## Avond 19-10-2026
+- **☰-menu's gelijk** (`huisstijl.py` voor de landen, `start.html` + `test_ontwerp.py` voor Europa). Het ☰-menu in een land is het menu van de hele Europa-gids; de onderbalk gaat over het land zelf.
+  - Europa: Favorieten, Top 10, Recent geboren, Parken op aantal soorten, Soorten locaties; onder MEER: Over, Spottersgids, Ko-fi.
+  - Landen: eerst Kaart (Europese kaart), Alle landen, Alle soorten, daarna hetzelfde blok. Favorieten (`fav` in `huisstijl.py`) wijst naar de Europese lijst `#favorieten`.
+  - Recent geboren heeft overal een ster; de MEER-kop is overal klein en grijs (override in `jungle.py`); Ko-fi-tekst overal "Steun de gids op Ko-fi".
+- **Safari en #meer**: losse schermen (#meer, #favorieten, #geboren, #perpark, #typen, #over) hebben dezelfde id als het adres, dus Safari sprong erheen en de kop viel onder de groene balk. Opgelost met `scroll-margin-top:100vh` op `section.page` en een vroeg script in `start.html` dat meteen `pagemode` zet (geen flits van de kaart). `bouw.py` zoekt `<script>\n(function(){` in `start.html`: zet nieuwe scripts in de kop altijd in een eigen `<script>`-blok.
+- **Batterij**: zie "Opgelost" hierboven (kaart tekende elk beeldje opnieuw).
+- **Kopjes boven de kaart** (met dubbele punt): Europa "Kies een land:" en "Kies een kat:"; landen "Kies een deelstaat:" / "Kies een regio:" / "Kies een provincie:" (in de gidsen zelf, `rg-lab`) en "Kies een kat:" (`test_ontwerp.py`). Nederland, België en Luxemburg hebben geen regioknoppen.
+- **Gekozen soort**: overal één regel "Naam · N locaties · Soortpagina →" (Europa: `catnote` in `start.html`, zonder Latijnse naam en zonder "Alle katten tonen"; landen: `spinfo()` in `test_ontwerp.py`).
+- **Top 10**: vlag vast links, lange plaatsnaam loopt ernaast door (`.toplist .plc`).
+- Controle deze avond met Playwright (Chromium en WebKit) op 414 px; WebKit-browser: `python3 -m playwright install webkit`. Een echte iPhone kan afwijken; laat de gebruiker het nakijken.
 
 ## Let op bij volgende wijzigingen
 - Vaste teksten in de gidsen (In het kort, regioblokken) bevatten getallen die met de hand zijn geschreven. Verandert een locatie of status, pas die zinnen dan in alle talen mee aan.

@@ -98,6 +98,36 @@ html.pagemode:has(#meer.on) .nt-fab{display:none!important}
 /* zachte overgang tussen startpagina, top 10 en soortpagina's in plaats van een flits (19-10-2026) */
 @view-transition{navigation:auto}
 html{background:#163A22}
+/* soortpagina Europa (19-10-2026) */
+html body #katview .nt-soortkop{margin:-18px calc(-1 * var(--gut,16px)) 18px!important}
+html body #katview .nt-soortkop .nt-h1{display:flex;align-items:flex-start;gap:12px;margin:0;font-family:Anton,Impact,"Arial Narrow",sans-serif;font-size:39px;line-height:42.9px;text-transform:uppercase;color:#F1F5E4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+html body #katview .nt-soortkop .nt-h1 svg{width:44px;height:30px;flex:none;margin-top:6px;border-radius:4px;box-shadow:0 0 0 1px rgba(30,35,24,.18)}
+html body #katview .nt-soortkop .nt-onder i{font-style:italic}
+html body #katview .nt-oud{background:none!important;margin:0!important;padding:0!important;min-height:0!important;height:auto!important;color:inherit!important;overflow:visible!important}
+html body #katview .nt-oud::before,html body #katview .nt-oud::after{display:none!important}
+html body #katview .nt-oud>.terug,html body #katview .nt-oud h1,html body #katview .nt-oud .kat-sci,html body #katview .nt-oud .kat-kern{display:none!important}
+html body #katview .nt-oud .kat-h{display:block!important}
+html body #katview .nt-oud .kat-foto{position:relative;margin:0 0 6px}
+html body #katview .nt-oud .kat-foto img{width:100%;border-radius:18px;box-shadow:0 0 0 4px #FBF8F1,0 8px 20px -10px rgba(0,0,0,.4)!important}
+html body #katview .nt-oud .kat-foto figcaption,html body #katview .nt-oud .kat-foto figcaption a{color:var(--muted)!important}
+html body #katview .kat-foto .nt-hw{position:absolute;top:12px;right:12px;margin:0!important;width:46px;height:46px;padding:0!important;border-radius:50%;background:#fff!important;justify-content:center;font-size:0!important;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+html body #katview .kat-foto .nt-hw .nt-hart{width:46px;height:46px}
+html body #katview .nt-h2{font-family:Anton,Impact,"Arial Narrow",sans-serif;text-transform:uppercase;font-size:1.7rem;line-height:1.1;color:#163A22;margin:26px 0 4px;font-weight:400}
+html body #katview .nt-paw{display:block;width:40px;height:16px;margin:0 0 12px}
+html body #katview .nt-oud .kat-feit{display:grid!important;grid-template-columns:1fr 1fr!important;gap:10px!important;margin:0!important;border:0!important;background:none!important;padding:0!important}
+html body #katview .nt-oud .kat-feit>div{background:#FBF8F1!important;border:1px solid var(--line,#DCD6C4)!important;border-radius:14px!important;padding:12px 14px!important;margin:0!important}
+html body #katview .nt-oud .kat-feit>div[hidden]{display:none!important}
+html body #katview .nt-oud .kat-feit dt{font-size:.85rem!important;color:var(--muted)!important;text-transform:none!important;letter-spacing:0!important;font-family:inherit!important;font-weight:400!important}
+html body #katview .nt-oud .kat-feit dd{font-size:1.15rem!important;font-weight:800!important;color:var(--ink,#22301F)!important;margin:4px 0 0!important}
+html body #katview .nt-leef{margin:0}
+html body #katview .nt-leef>div{padding:10px 0;border-bottom:1px dashed var(--line,#DCD6C4)}
+html body #katview .nt-leef>div:last-child{border-bottom:0}
+html body #katview .nt-leef dt{font-weight:800;font-size:.9rem;color:#163A22}
+html body #katview .nt-leef dd{margin:4px 0 0;font-size:1.05rem}
+html body #katview .nt-bz{background:#F6F8EC;border-left:4px solid #A9C98A;border-radius:6px;padding:14px 16px;margin:0 0 12px}
+html body #katview .nt-bz b{display:block;font-size:1.05rem;margin-bottom:4px}
+html body #katview .nt-bz p{margin:0}
+html body #katview .nt-oud .kat-spot{display:inline-block;margin:22px 0 4px}
 /* menu: donkere tekst op de lichte achtergrond */
 html body #menu,html body #menu nav a,html body #menu nav a span{color:var(--ink,#22301F)!important}
 /* alle schermkoppen even hoog als de landgids */
@@ -1795,6 +1825,54 @@ if(document.querySelector("section.page.on"))setTimeout(function(){window.scroll
   new MutationObserver(function(){setTimeout(wrap,0);}).observe(kv,{childList:true});setTimeout(wrap,0);})();
 function bovenaan(){if(document.querySelector("section.page.on")||location.hash==="#top10"){window.scrollTo(0,0);setTimeout(function(){window.scrollTo(0,0);},150);setTimeout(function(){window.scrollTo(0,0);},450);}}
 window.addEventListener("load",bovenaan);window.addEventListener("pageshow",bovenaan);
+/* soortpagina zoals in de landgids: groene kop, hartje op de foto, Kenmerken, Leefwijze en Bijzonder (19-10-2026) */
+(function(){var kv=document.getElementById("katview"),SI={"nl": ["Zuid- en Zuidoost-Azië", "Moerassen, mangroven, rivieren en wetlands", "Vooral vissen, maar ook kikkers, schaaldieren en kleine zoogdieren", "Solitair", "Een van de weinige katten die gespecialiseerd is in water.", "De vissende kat kan onder water jagen en heeft deels zwemvliezen tussen zijn tenen."], "staart": "20–30 cm", "leven": "Ongeveer 10–12 jaar", "en": ["South and Southeast Asia", "Swamps, mangroves, rivers and wetlands", "Mainly fish, but also frogs, crustaceans and small mammals", "Solitary", "One of the few cats specialised in hunting in water.", "The fishing cat can hunt underwater and has partly webbed toes."], "de": ["Süd- und Südostasien", "Sümpfe, Mangroven, Flüsse und Feuchtgebiete", "Vor allem Fische, aber auch Frösche, Krebstiere und kleine Säugetiere", "Einzelgänger", "Eine der wenigen Katzen, die auf die Jagd im Wasser spezialisiert sind.", "Die Fischkatze kann unter Wasser jagen und hat teilweise Schwimmhäute zwischen den Zehen."], "fr": ["Asie du Sud et Asie du Sud-Est", "Marais, mangroves, rivières et zones humides", "Surtout des poissons, mais aussi des grenouilles, des crustacés et de petits mammifères", "Solitaire", "L’un des rares félins spécialisés dans la chasse dans l’eau.", "Le chat pêcheur peut chasser sous l’eau et a des doigts en partie palmés."], "it": ["Asia meridionale e sudorientale", "Paludi, mangrovie, fiumi e zone umide", "Soprattutto pesci, ma anche rane, crostacei e piccoli mammiferi", "Solitario", "Uno dei pochi felini specializzati nella caccia in acqua.", "Il gatto pescatore può cacciare sott’acqua e ha le dita parzialmente palmate."], "es": ["Asia meridional y sudoriental", "Pantanos, manglares, ríos y humedales", "Sobre todo peces, pero también ranas, crustáceos y pequeños mamíferos", "Solitario", "Uno de los pocos felinos especializados en cazar en el agua.", "El gato pescador puede cazar bajo el agua y tiene los dedos parcialmente palmeados."]};if(!kv||!window.__KAT)return;
+  var LG=["nl","en","fr","de","it","es"],BIGS=["leeuw","tijger","luipaard","jaguar","sneeuwluipaard","nevelpanter"];
+  var W={kenm:{nl:"Kenmerken",en:"Characteristics",fr:"Caractéristiques",de:"Merkmale",it:"Caratteristiche",es:"Características"},
+    staart:{nl:"Staart",en:"Tail",fr:"Queue",de:"Schwanz",it:"Coda",es:"Cola"},leven:{nl:"Levensduur",en:"Lifespan",fr:"Longévité",de:"Lebensdauer",it:"Longevità",es:"Longevidad"},
+    leef:{nl:"Leefwijze",en:"Way of life",fr:"Mode de vie",de:"Lebensweise",it:"Stile di vita",es:"Modo de vida"},
+    l0:{nl:"Verspreiding",en:"Range",fr:"Répartition",de:"Verbreitung",it:"Distribuzione",es:"Distribución"},
+    l1:{nl:"Leefgebied",en:"Habitat",fr:"Habitat",de:"Lebensraum",it:"Habitat",es:"Hábitat"},
+    l2:{nl:"Voedsel",en:"Diet",fr:"Alimentation",de:"Nahrung",it:"Alimentazione",es:"Alimentación"},
+    l3:{nl:"Sociaal gedrag",en:"Social behaviour",fr:"Comportement social",de:"Sozialverhalten",it:"Comportamento sociale",es:"Comportamiento social"},
+    bijz:{nl:"Bijzonder",en:"Special",fr:"Particularités",de:"Besonderes",it:"Particolarità",es:"Curiosidades"},
+    b0:{nl:"Kenmerkend",en:"Distinctive",fr:"Caractéristique",de:"Typisch",it:"Caratteristico",es:"Distintivo"},
+    b1:{nl:"Wist je dat?",en:"Did you know?",fr:"Le saviez-vous ?",de:"Wusstest du?",it:"Lo sapevi?",es:"¿Sabías que…?"},
+    groot:{nl:"grote katten",en:"big cats",fr:"grands félins",de:"Großkatzen",it:"grandi felini",es:"grandes felinos"},
+    klein:{nl:"kleine katten",en:"small cats",fr:"petits félins",de:"Kleinkatzen",it:"piccoli felini",es:"pequeños felinos"}};
+  var JR={nl:["Ongeveer ","jaar","Onbekend"],en:["About ","years","Unknown"],fr:["Environ ","ans","Inconnu"],de:["Etwa ","Jahre","Unbekannt"],it:["Circa ","anni","Sconosciuto"],es:["Aproximadamente ","años","Desconocido"]};
+  function P(o){return LG.map(function(l){return '<span class="l-'+l+'">'+o[l]+'</span>';}).join("");}
+  function E(t){return String(t==null?"":t).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+  function D(i){return LG.map(function(l){var a=SI[l]||SI.en||SI.nl;return '<span class="l-'+l+'">'+E(a?a[i]:"")+'</span>';}).join("");}
+  function leven(){var x=SI.leven||"";return LG.map(function(l){var r=JR[l];return '<span class="l-'+l+'">'+E(x.replace(/^Ongeveer /,r[0]).replace(/ jaar$/," "+r[1]).replace(/^Onbekend$/,r[2]))+'</span>';}).join("");}
+  var PAW='<svg class="nt-paw" viewBox="0 0 40 16" aria-hidden="true"><g fill="#C8552B"><circle cx="6" cy="10" r="3.2"/><circle cx="3" cy="5" r="1.6"/><circle cx="7" cy="3.6" r="1.6"/><circle cx="11" cy="5.6" r="1.6"/><circle cx="24" cy="8" r="3.2"/><circle cx="21" cy="3" r="1.6"/><circle cx="25" cy="1.6" r="1.6"/><circle cx="29" cy="3.6" r="1.6"/></g></svg>';
+  function h2(o){return '<h2 class="nt-h2">'+P(o)+'</h2>'+PAW;}
+  function bouw(){if(kv.querySelector(".nt-soortkop"))return;var oud=kv.querySelector(".jg-kop.jg-foto");
+    if(!oud){var kh=kv.querySelector(".kat-h");if(!kh)return;oud=document.createElement("div");oud.className="jg-kop jg-foto";kh.parentNode.insertBefore(oud,kh);
+      var tg=kv.querySelector(":scope > .terug");if(tg)oud.appendChild(tg);oud.appendChild(kh);}
+    var h=oud.querySelector("h1"),sci=oud.querySelector(".kat-sci"),kern=oud.querySelector(".kat-kern");
+    var slug=window.__KAT,groot=BIGS.indexOf(slug)>=0,dl=kern?kern.textContent.split(" · ").slice(0,2).join(" · "):"";
+    var k=document.createElement("div");k.className="jg-kop nt-vk nt-soortkop";
+    k.innerHTML='<p class="nt-h1" role="heading" aria-level="1">'+(window.__NTEUV||"")+'<span class="nt-tt">'+E(h?h.textContent:"")+'</span></p><p class="nt-onder"><i>'+E(sci?sci.textContent:"")+'</i></p><p class="nt-goud">'+E(dl)+(dl?" · ":"")+P(groot?W.groot:W.klein)+'</p>';
+    kv.insertBefore(k,kv.firstChild);oud.classList.add("nt-oud");
+    /* hartje op de foto */
+    hart();setTimeout(hart,60);setTimeout(hart,400);
+    /* Kenmerken */
+    var f=oud.querySelector(".kat-feit");
+    if(f){f.insertAdjacentHTML("beforebegin",h2(W.kenm));var divs=[].slice.call(f.children);
+      var wild=divs.filter(function(d){return d.dataset.nt&&!d.classList.contains("wd");})[0]||divs[0];
+      if(SI.staart)f.insertAdjacentHTML("beforeend",'<div><dt>'+P(W.staart)+'</dt><dd>'+E(SI.staart)+'</dd></div>');
+      if(SI.leven)f.insertAdjacentHTML("beforeend",'<div><dt>'+P(W.leven)+'</dt><dd>'+leven()+'</dd></div>');
+      if(wild)f.appendChild(wild);
+      var wd=f.querySelector(".wd");if(wd&&SI.nl)wd.hidden=true;
+      if(SI.nl||SI.en){var o='<div class="nt-blok">'+h2(W.leef)+'<dl class="nt-leef">'+[0,1,2,3].map(function(i){return '<div><dt>'+P(W["l"+i])+'</dt><dd>'+D(i)+'</dd></div>';}).join("")+'</dl></div>'
+        +'<div class="nt-blok">'+h2(W.bijz)+[4,5].map(function(i){return '<div class="nt-bz"><b>'+P(W["b"+(i-4)])+'</b><p>'+D(i)+'</p></div>';}).join("")+'</div>';
+        f.insertAdjacentHTML("afterend",o);}}
+  }
+  function hart(){var fg=kv.querySelector(".kat-foto"),hw=kv.querySelector(".nt-hw");if(fg&&hw&&hw.parentNode!==fg)fg.appendChild(hw);}
+  new MutationObserver(function(){setTimeout(bouw,0);setTimeout(hart,30);}).observe(kv,{childList:true,subtree:true});
+  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",function(){setTimeout(bouw,30);});else setTimeout(bouw,30);
+})();
 /* zwevende terugknop: terug in de geschiedenis, anders naar Meer (startpagina) of de oude terugknop */
 (function(){var TB={nl:"Terug",en:"Back",fr:"Retour",de:"Zurück",it:"Indietro",es:"Volver"};
   var f=document.createElement("a");f.className="nt-fab";f.href="#";

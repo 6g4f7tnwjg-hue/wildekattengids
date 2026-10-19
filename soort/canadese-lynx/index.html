@@ -88,6 +88,13 @@ html body #meer .jg-kop{height:166px!important;min-height:0!important;box-sizing
 html body #meer .jg-kop h1{font-size:39px!important;line-height:42.9px!important;letter-spacing:normal!important;margin:0!important}
 html body #meer .jg-kop .nt-onder{margin:4px 0 0!important;font-size:16.8px!important;line-height:27.2px!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 html body #meer .jg-kop .nt-goud{margin:10px 0 0!important;font-size:13.76px!important;line-height:17px!important;letter-spacing:.06em}
+/* geen klein blaadje in de kop; Kaart-knop weg, zwevende terugknop (19-10-2026) */
+html body .intro .wrap::after{display:none!important}
+html body .jg-kop .terug{display:none!important}
+.nt-fab{position:fixed;left:16px;bottom:84px;z-index:60;display:none;align-items:center;justify-content:center;width:54px;height:54px;border-radius:50%;background:#F2C14E;color:#163A22!important;border:2px solid #163A22;box-shadow:0 4px 14px rgba(0,0,0,.28);text-decoration:none!important;cursor:pointer}
+.nt-fab svg{width:26px;height:26px}
+html.pagemode .nt-fab,html.katmode .nt-fab{display:flex}
+html.pagemode:has(#meer.on) .nt-fab{display:none!important}
 .nt-onder{margin:8px 0 0;color:#D3E4C2!important;font-size:1.08rem;line-height:1.55}
 .nt-goud{margin:8px 0 0;font-family:"Barlow Condensed","Arial Narrow","Roboto Condensed",sans-serif;font-weight:600;font-size:.86rem;letter-spacing:.06em;text-transform:uppercase;color:#F2C14E!important}
 .nt-goud *{color:#F2C14E!important}
@@ -1693,6 +1700,21 @@ if(iw&&tel&&document.getElementById("p-landen")&&!iw.querySelector(".nt-tk")){
   ["kaart","landen","soorten"].forEach(function(x){var e=document.getElementById("p-"+x);if(e)new MutationObserver(tabNu).observe(e,{attributes:true,attributeFilter:["class"]});});tabNu();}
 setTimeout(function(){var k=document.querySelector("#meer .jg-kop");if(!k||k.querySelector(".nt-onder"))return;var st=document.querySelector(".intro .stamp");
   k.insertAdjacentHTML("beforeend",'<p class="nt-onder">'+L6j(KT.meer.s)+'</p>'+(st?'<p class="nt-goud">'+st.innerHTML+'</p>':''));},0);
+/* zwevende terugknop: terug in de geschiedenis, anders naar Meer (startpagina) of de oude terugknop */
+(function(){var TB={nl:"Terug",en:"Back",fr:"Retour",de:"Zurück",it:"Indietro",es:"Volver"};
+  var f=document.createElement("a");f.className="nt-fab";f.href="#";
+  f.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>';
+  var lab=function(){var l=(document.documentElement.lang||"nl").slice(0,2);f.setAttribute("aria-label",TB[l]||TB.en);};lab();
+  new MutationObserver(lab).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});
+  document.body.appendChild(f);
+  var plek=function(){var b=document.getElementById("nw-sbar-start");if(b&&b.offsetHeight)f.style.bottom=(b.offsetHeight+14)+"px";};plek();window.addEventListener("resize",plek);setTimeout(plek,500);
+  f.addEventListener("click",function(e){e.preventDefault();
+    var eigen=document.referrer&&document.referrer.indexOf(location.origin+(window.__HOMEURL||"/wildekattengids/"))===0;
+    if(history.length>1&&(history.state||eigen)){history.back();return;}
+    if(document.getElementById("nt-meerlist")&&document.documentElement.classList.contains("pagemode")){location.hash="#meer";return;}
+    var t=[].slice.call(document.querySelectorAll(".terug")).filter(function(a){return a.getAttribute("href");})[0];
+    location.href=t?t.getAttribute("href"):(window.__HOMEURL||"/wildekattengids/");});
+})();
 /* hartje in het infovak van de kaart en op de soortpagina */
 function heeft(k,c,s){return favLees().some(function(x){return x.k===k&&x.c===c&&x.s===s;});}
 function wissel(k,c,s,extra){var a=favLees(),i=-1;a.forEach(function(x,j){if(i<0&&x.k===k&&x.c===c&&x.s===s)i=j;});

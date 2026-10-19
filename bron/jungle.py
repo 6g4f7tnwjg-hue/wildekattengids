@@ -467,7 +467,9 @@ html body .intro .wrap::after{{content:"";position:absolute;right:-6px;bottom:-3
 html body .chip{{{KNOP}}}
 html body .chip[aria-pressed="true"]{{{KNOP_AAN}}}
 html body .lbl{{font-family:{DISP};font-size:1.15rem;letter-spacing:.04em;color:{OLIVE};display:flex;align-items:center;gap:8px}}
+html body .menu .meer .lbl{{font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-size:.8rem;font-weight:600;letter-spacing:.09em;color:#5E6656;display:block}}
 html body .lbl::before{{content:"";flex:none;width:46px;height:20px;background:{paws('#C9561F')} center/contain no-repeat}}
+html body .menu .meer .lbl::before{{display:none}}
 html body .catbtn .av{{border:3px solid {SUN};box-shadow:0 2px 0 {WOOD_D}}}
 html body .catbtn[aria-pressed="true"]{{background:#D4E6BF!important}}
 html body .catbtn[aria-pressed="true"] .av{{border-color:{JG};box-shadow:0 0 0 3px {SUN}}}

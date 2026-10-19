@@ -1118,7 +1118,10 @@ def europa(pad, wild, av, idx, spn=None, soort=False, avb=None, info=None):
         doc = doc.replace('<section class="page" id="over"', FAVPAGE + '<section class="page" id="over"', 1)
     m = re.search(r'<a href="([^"]*)#geboren" data-nav="geboren">', doc)
     if m and 'data-nav="favorieten"' not in doc:
-        doc = doc.replace(m.group(0), f'<a href="{m.group(1)}#favorieten" data-nav="favorieten">{FAVICO}{L6("Favorieten", "Favourites")}</a>' + m.group(0), 1)
+        # Favorieten bovenaan het menu, voor de top 10 (19-10-2026); zelfde volgorde als het scherm Meer
+        fav = f'<a href="{m.group(1)}#favorieten" data-nav="favorieten">{FAVICO}{L6("Favorieten", "Favourites")}</a>'
+        t10 = re.search(r'<a href="[^"]*" data-nav="top10">', doc)
+        doc = doc.replace(t10.group(0) if t10 else m.group(0), fav + (t10.group(0) if t10 else m.group(0)), 1)
     js = (EU_JS.replace("WILDJSON", json.dumps(wild, ensure_ascii=False)).replace("AVJSON", json.dumps(av, ensure_ascii=False)).replace("AVBJSON", json.dumps(avb, ensure_ascii=False))
           .replace("IDXJSON", json.dumps(idx, ensure_ascii=False)).replace("SPNJSON", json.dumps(spn, ensure_ascii=False)).replace("FAVJS", FAVJS)
           .replace("SIJSON", json.dumps(info or {}, ensure_ascii=False)).replace("COLJSON", json.dumps(huisstijl.TCOL)).replace("GLYJSON", json.dumps(huisstijl.GLY)))

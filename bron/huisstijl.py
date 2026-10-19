@@ -24,6 +24,7 @@ L = {  # teksten in alle gidstalen
     "kaart": {"nl": "Kaart", "en": "Map", "fr": "Carte", "de": "Karte", "it": "Mappa", "es": "Mapa", "pt": "Mapa"},
     "landen": {"nl": "Alle landen", "en": "All countries", "fr": "Tous les pays", "de": "Alle Länder", "it": "Tutti i paesi", "es": "Todos los países", "pt": "Todos os países"},
     "soorten": {"nl": "Alle soorten", "en": "All species", "fr": "Toutes les espèces", "de": "Alle Arten", "it": "Tutte le specie", "es": "Todas las especies", "pt": "Todas as espécies"},
+    "fav": {"nl": "Favorieten", "en": "Favourites", "fr": "Favoris", "de": "Favoriten", "it": "Preferiti", "es": "Favoritos", "pt": "Favoritos"},
     "top10": {"nl": "Top 10 om te bezoeken", "en": "Top 10 to visit", "fr": "Top 10 à visiter", "de": "Top 10 zum Besuchen", "it": "Top 10 da visitare", "es": "Top 10 para visitar", "pt": "Top 10 a visitar"},
     "geboren": {"nl": "Recent geboren", "en": "Recently born", "fr": "Naissances récentes", "de": "Kürzlich geboren", "it": "Nati di recente", "es": "Nacimientos recientes", "pt": "Nascimentos recentes"},
     "perpark": {"nl": "Parken op aantal soorten", "en": "Parks by number of species", "fr": "Parcs par nombre d’espèces", "de": "Parks nach Zahl der Arten", "it": "Parchi per numero di specie", "es": "Parques por número de especies", "pt": "Parques por número de espécies"},
@@ -54,7 +55,8 @@ IC = {
     "landen": '<path d="M5 21V4h11l-2 4 2 4H5"/>',
     "soorten": '<ellipse cx="12" cy="15" rx="4.5" ry="4"/><circle cx="6.5" cy="9.5" r="1.8"/><circle cx="10" cy="6" r="1.8"/><circle cx="14" cy="6" r="1.8"/><circle cx="17.5" cy="9.5" r="1.8"/>',
     "top10": '<path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4a3 3 0 0 0 3 4M17 6h3a3 3 0 0 1-3 4M12 14v4M8 21h8"/>',
-    "geboren": '<path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/>',
+    "fav": '<path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/>',
+    "geboren": '<path d="M12 3l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L12 16.8l-5.4 2.9 1.1-6.1-4.5-4.2 6.1-.8z"/>',
     "perpark": '<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>',
     "typen": '<path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.5"/>',
     "over": '<circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/>',
@@ -64,15 +66,15 @@ def ic(k):
 
 def bovenbalk(langs, base, taal=True):
     """De bovenbalk van de startpagina. Bij taal=True komt de taalknop van de gids erin (het script verplaatst hem)."""
-    h = lambda k: base + ("top10/" if k == "top10" else "#" + k)
+    h = lambda k: base + ("top10/" if k == "top10" else "#favorieten" if k == "fav" else "#" + k)
     links = lambda ks: "".join(f'<a href="{h(k)}">{ic(k)}{t(k if k not in ("landen", "soorten") else k, langs)}</a>' for k in ks)
     return (f'<div class="hs-top" id="hs-top"><div class="hs-wrap">'
             f'<a class="hs-brand" href="{base}">{PAW}<span><b>{t("naam", langs)}</b><small>{t("sub", langs)} · J. Gelens</small></span></a>'
             f'<a class="hs-ico" href="{base}#zoek" aria-label="{L["zoek"][langs[0]]}">{ZOEK}<span class="t">{t("zoek", langs)}</span></a>'
             + ('<span id="hs-lang"></span>' if taal else "") +
             f'<button type="button" class="hs-ico" id="hs-menu-btn" aria-expanded="false" aria-controls="hs-menu" aria-label="Menu">{MENU}<span class="t">Menu</span></button></div>'
-            f'<div class="hs-drop" id="hs-menu" hidden><div class="hs-wrap"><nav aria-label="Menu"><div>{links(["kaart", "landen", "soorten", "top10"])}</div>'
-            f'<div>{links(["geboren", "perpark", "typen"])}<div class="hs-meer"><span class="hs-lbl">{t("meer", langs)}</span><a href="{h("over")}">{t("over", langs)}</a>{spot(langs, base)}'
+            f'<div class="hs-drop" id="hs-menu" hidden><div class="hs-wrap"><nav aria-label="Menu"><div>{links(["kaart", "landen", "soorten", "fav"])}</div>'
+            f'<div>{links(["top10", "geboren", "perpark", "typen"])}<div class="hs-meer"><span class="hs-lbl">{t("meer", langs)}</span><a href="{h("over")}">{t("over", langs)}</a>{spot(langs, base)}'
             f'<a href="https://ko-fi.com/katalogue" target="_blank" rel="noopener">{t("kofi", langs)} ☕</a></div></div></nav></div></div></div>')
 
 def voet(langs):

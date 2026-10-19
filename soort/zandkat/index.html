@@ -99,6 +99,10 @@ html.pagemode:has(#meer.on) .nt-fab{display:none!important}
 html body #menu,html body #menu nav a,html body #menu nav a span{color:var(--ink,#22301F)!important}
 /* alle schermkoppen even hoog als de landgids */
 html body .jg-kop.nt-vk{height:166px!important;min-height:0!important;box-sizing:border-box!important;padding-top:21px!important;padding-bottom:44px!important}
+html body .jg-kop.nt-vk::before{top:-14px!important;right:-34px!important;bottom:auto!important;left:auto!important;width:150px!important;height:180px!important}
+html body .jg-kop.nt-vk::after{height:30px!important}
+html body .jg-kop.nt-vk h1:has(svg){display:flex!important;align-items:flex-start;gap:12px}
+html body .jg-kop.nt-vk h1 svg{width:44px;height:30px;flex:none;margin-top:6px;border-radius:4px;box-shadow:0 0 0 1px rgba(30,35,24,.18)}
 html body .jg-kop.nt-vk h1{font-size:39px!important;line-height:42.9px!important;letter-spacing:normal!important;margin:0!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 html body .jg-kop.nt-vk .nt-onder{margin:4px 0 0!important;font-size:16.8px!important;line-height:27.2px!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 html body .jg-kop.nt-vk .nt-goud{margin:10px 0 0!important;font-size:13.76px!important;line-height:17px!important;letter-spacing:.06em;min-height:17px}
@@ -1714,8 +1718,8 @@ var iw=document.querySelector(".intro .wrap"),tel=document.getElementById("kop-t
 if(iw&&tel&&document.getElementById("p-landen")&&!iw.querySelector(".nt-tk")){
   var kk=document.createElement("div");kk.className="nt-tk";
   var EUV='<svg viewBox="0 0 30 20" aria-hidden="true" preserveAspectRatio="none"><rect width="30" height="20" fill="#003399"/><g fill="#FFCC00">'+[0,1,2,3,4,5,6,7,8,9,10,11].map(function(i){var a=i*Math.PI/6,x=15+6*Math.sin(a),y=10-6*Math.cos(a);return '<circle cx="'+x.toFixed(2)+'" cy="'+y.toFixed(2)+'" r=".9"/>';}).join("")+'</g></svg>';
-  kk.innerHTML=["kaart","landen","soorten"].map(function(t){return '<div data-t="'+t+'"><h1>'+(t==="kaart"?EUV:"")+'<span class="nt-tt">'+L6j(KT[t].h)+'</span></h1><p class="sub">'+L6j(KT[t].s)+'</p><div class="meta"><p class="kop-tel nt-tel"></p></div></div>';}).join("");
-  iw.appendChild(kk);HT.classList.add("nt-tk-on");
+  kk.innerHTML=["kaart","landen","soorten"].map(function(t){return '<div data-t="'+t+'"><h1>'+EUV+'<span class="nt-tt">'+L6j(KT[t].h)+'</span></h1><p class="sub">'+L6j(KT[t].s)+'</p><div class="meta"><p class="kop-tel nt-tel"></p></div></div>';}).join("");
+  iw.appendChild(kk);HT.classList.add("nt-tk-on");window.__NTEUV=EUV;
   var telBij=function(){var d=tel.textContent.split(" · "),k=kk.querySelector('[data-t="kaart"] .nt-tel'),a=kk.querySelector('[data-t="landen"] .nt-tel'),b=kk.querySelector('[data-t="soorten"] .nt-tel'),x=d.slice(0,2).join(" · "),y=d[2]||"",z=tel.textContent;
     var gk=document.querySelectorAll('.nt-spbox [data-g="big"] .scard').length,kl=document.querySelectorAll('.nt-spbox [data-g="small"] .scard').length,ll=(HT.lang||"nl").slice(0,2);
     var GW={nl:["grote","kleine"],en:["big","small"],fr:["grands","petits"],de:["groß","klein"],it:["grandi","piccoli"],es:["grandes","pequeños"]}[ll]||["big","small"];
@@ -1739,6 +1743,7 @@ function favTel(){var g=document.querySelector("#favorieten .nt-goud");if(!g)ret
 function kopRegels(){var st=document.querySelector(".intro .stamp"),dt=st?st.innerHTML:"";
   Object.keys(KR).forEach(function(id){var k=id==="top10"?(/\/top10\//.test(location.pathname)?document.querySelector("#katview .jg-kop"):null):document.querySelector("#"+id+" .jg-kop");
     if(!k||k.querySelector(".nt-onder"))return;k.classList.add("nt-vk");
+    if(id==="meer"&&window.__NTEUV){var h1=k.querySelector("h1");if(h1&&!h1.querySelector("svg")){h1.innerHTML='<span class="nt-tt">'+h1.innerHTML+'</span>';h1.insertAdjacentHTML("afterbegin",window.__NTEUV);}}
     k.insertAdjacentHTML("beforeend",'<p class="nt-onder">'+L6j(KR[id])+'</p><p class="nt-goud">'+(id==="favorieten"?"":dt)+'</p>');});
   favTel();}
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",function(){setTimeout(kopRegels,0);});else setTimeout(kopRegels,0);

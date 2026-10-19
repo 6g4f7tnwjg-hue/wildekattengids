@@ -35,6 +35,7 @@ TR.update({
     "Soorten": {"fr": "Espèces", "de": "Arten", "it": "Specie", "es": "Especies", "pt": "Espécies"},
     "Locaties": {"fr": "Lieux", "de": "Orte", "it": "Luoghi", "es": "Lugares", "pt": "Locais"},
     "Alle katten": {"fr": "Tous les félins", "de": "Alle Katzen", "it": "Tutti i felini", "es": "Todos los felinos", "pt": "Todos os felinos"},
+    "Soortpagina": {"fr": "Page de l’espèce", "de": "Artseite", "it": "Pagina della specie", "es": "Página de la especie", "pt": "Página da espécie"},
     "Meer over deze soort": {"fr": "En savoir plus sur cette espèce", "de": "Mehr über diese Art", "it": "Di più su questa specie",
                              "es": "Más sobre esta especie", "pt": "Mais sobre esta espécie"},
     "In beeld": {"fr": "Sur la carte", "de": "Im Bild", "it": "Sulla mappa", "es": "En el mapa", "pt": "No mapa"},
@@ -332,7 +333,7 @@ function cats(){var el=$("#nt-cats");if(!el)return;
     ja.map(function(s){return knop(s,false);}).join("")+(nee.length?'<span class="nt-sep" aria-hidden="true"></span>'+nee.map(function(s){return knop(s,true);}).join(""):"");
   el.setAttribute("aria-label",TX("Kies een soort","Choose a species"));}
 function spinfo(){var el=$("#nt-spinfo");if(!el)return;if(!SP){el.hidden=true;el.innerHTML="";return;}var b=nBev(SP),u=(SPL[SP]||[]).length-b;
-  el.innerHTML='<b>'+E(N.spName(SP))+'</b> · '+tel(b,u,nloc)+' · <a href="#soort/'+N.slug(SP)+'">'+LS("Meer over deze soort","More about this species")+' →</a>';el.hidden=false;}
+  el.innerHTML='<b>'+E(N.spName(SP))+'</b> · '+tel(b,u,nloc)+' · <a href="#soort/'+N.slug(SP)+'">'+LS("Soortpagina","Species page")+' →</a>';el.hidden=false;}
 function filt(){var set=SP?SPL[SP]||[]:null;$$("#nlmap .mk").forEach(function(m){var i=+m.dataset.i;m.classList.toggle("nt-uit",!!set&&set.indexOf(i)<0);});}
 function beeld(){var el=$("#nt-beeld");if(!el)return;var ids=lijst(SP),n=ids.length,show=MEER?ids:ids.slice(0,5);
   el.innerHTML='<h3>'+LS("In beeld","On the map")+': '+n+' '+nloc(n)+'</h3><p class="nt-note">'+LS("Meeste soorten eerst. Tik op een naam voor de katten en bezoekinformatie.","Most species first. Tap a name for its cats and visitor information.")+'</p>'+

@@ -343,10 +343,9 @@ p{margin:0}
 .catbtn img{width:100%;height:100%;object-fit:cover;display:block}
 .catbtn[aria-pressed="true"]{background:color-mix(in srgb,var(--olive) 14%,transparent);font-weight:700}
 .catbtn[aria-pressed="true"] .av{border-color:var(--olive);box-shadow:0 0 0 2px var(--olive)}
-.catnote{display:flex;flex-wrap:wrap;align-items:center;gap:4px 12px;margin:0 0 12px}
-.catnote b{font-family:var(--display);font-size:1.15rem}
-.catnote i{font-family:var(--display);font-style:italic;color:var(--muted)}
-.catnote .x{border:0;background:none;color:var(--muted);text-decoration:underline;cursor:pointer;padding:0}
+.catnote{margin:0 0 12px;font-size:1rem;color:var(--ink)}
+.catnote b{font-weight:700}
+.catnote a{color:#A65A35;font-weight:600;text-decoration:none;white-space:nowrap}
 .btnlink{display:inline-flex;align-items:center;gap:6px;font-weight:700;color:var(--accent);text-decoration:none}
 .btnlink:hover{text-decoration:underline}
 
@@ -1069,7 +1068,8 @@ function renderCatrow(){const el=$("catrow"),x=el.scrollLeft,list=SPL();
     list.map(s=>{const src=imgSrc(s[6]);return `<button type="button" class="catbtn" data-cat="${s[0]}" aria-pressed="${CAT===s[0]}"><span class="av">${src?`<img src="${src}" alt="" loading="lazy">`:""}</span>${esc(kname(s))}</button>`;}).join("");
   el.scrollLeft=x;
   const s=CAT&&SPBY[CAT];
-  $("catnote").innerHTML=s?`<div class="catnote"><b>${esc(kname(s))}</b><i>${esc(s[4])}</i><span class="note">${spCount(s)}</span><a class="btnlink" href="${KURL(s[0])}">${T("Soortpagina","Species page","Page de l’espèce","Artseite","Pagina della specie","Página de la especie")} →</a><button type="button" class="x" data-cat="">${T("Alle katten tonen","Show all cats","Afficher tous les félins","Alle Katzen zeigen","Mostra tutti i felini","Mostrar todos los felinos")}</button></div>`:"";
+  /* zelfde regel als in de landengidsen: naam · aantal locaties · Soortpagina (19-10-2026) */
+  $("catnote").innerHTML=s?`<p class="catnote"><b>${esc(kname(s))}</b> · ${spCount(s)} · <a href="${KURL(s[0])}">${T("Soortpagina","Species page","Page de l’espèce","Artseite","Pagina della specie","Página de la especie")} →</a></p>`:"";
 }
 document.addEventListener("click",e=>{const b=e.target.closest("[data-cat]");if(!b)return;
   CAT=b.dataset.cat||null;if(SEL&&CAT&&catAt(SEL[0],SEL[1])===null)SEL=null;

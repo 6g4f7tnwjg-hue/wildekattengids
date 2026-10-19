@@ -363,8 +363,10 @@ p{margin:0}
 .toplist .nr{grid-column:1;grid-row:1/span 5;width:34px;height:34px;border-radius:50%;background:var(--olive);color:var(--paper);display:flex;align-items:center;justify-content:center;font-family:var(--label);font-weight:600;font-size:1.1rem}
 .toplist h3{font-size:1.2rem;line-height:1.25}
 .toplist h3 a{text-decoration:none;border-bottom:1.5px solid color-mix(in srgb,var(--accent) 60%,transparent)}
-.toplist .plc{margin:0;font-size:.92rem;color:var(--muted);display:flex;align-items:center;gap:6px;flex-wrap:wrap}
-.toplist .plc svg{width:21px;height:14px;border-radius:2px;box-shadow:0 0 0 1px rgba(30,35,24,.2)}
+/* vlag vast links, lange plaatsnaam loopt ernaast door (19-10-2026) */
+.toplist .plc{margin:0;font-size:.92rem;line-height:1.45;color:var(--muted);display:flex;align-items:flex-start;gap:8px}
+.toplist .plc svg{flex:none;width:21px;height:14px;margin-top:calc(.725em - 7px);border-radius:2px;box-shadow:0 0 0 1px rgba(30,35,24,.2)}
+.toplist .plc>span{min-width:0}
 .toplist .why{margin:2px 0 0;font-size:1rem;line-height:1.5}
 .toplist .cats{display:flex;flex-wrap:wrap;gap:5px;margin:6px 0 0;padding:0;list-style:none}
 .toplist .cats li{border:1px solid var(--line);border-radius:99px;padding:1px 9px;font-size:.86rem;background:var(--bg)}

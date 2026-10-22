@@ -1,4 +1,8 @@
-# Overdracht (22 oktober 2026)
+# Overdracht (22 oktober 2026, avond)
+
+## 22 oktober 2026: Tsjechië
+- Nieuwe gids `/tsjechie/` (NL/EN/CS, bron `bron/gidsen/cz.html`), 44 locaties, 23 soorten, inclusief particuliere houders en circussen (besluit gebruiker). Zie `VOORTGANG.md`, `TWIJFELGEVALLEN.md` en `bron/OPEN.md` (Zoo Jihlava opnieuw nagaan).
+
 
 ## 22 oktober 2026: Denemarken
 - Nieuwe gids `/denemarken/` (NL/EN/DA, bron `bron/gidsen/dk.html`), 17 locaties, 15 soorten; zie bovenaan `VOORTGANG.md`, `TWIJFELGEVALLEN.md` en `bron/OPEN.md`.

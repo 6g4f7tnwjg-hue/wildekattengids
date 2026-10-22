@@ -2,6 +2,29 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 22 oktober 2026 – Tsjechië
+
+Nieuwe landpagina `tsjechie/` (bron: `bron/gidsen/cz.html`), in het Nederlands, Engels en Tsjechisch. Eén pagina met een filter per kraj (13 kraje met locaties; Karlovarský kraj heeft er geen) plus een groep “Reizende circussen”, met kaart, routeplanner, recente geboortes, soortpagina’s, filters op type en labels en het meldformulier. Duitsland, Polen, Slowakije en Oostenrijk staan grijs op de kaart.
+
+**Aantallen**
+- **44 locaties**, waarvan **37 met een bevestigde kat**: 15 dierentuinen (EAZA/UCSZOO), 1 safaripark (Dvůr Králové), 10 dierenparken, 8 particuliere houders (waarvan 3 circussen), 2 opvangcentra en het lynxverblijf van NP Šumava (Kvilda). Zeven locaties hebben alleen onzekere of niet te bezoeken katten (o.a. Kletečná, Zoopark Zvole, Animal Park Rabina, Ringelland).
+- **23 soorten bevestigd**: leeuw, tijger, luipaard, jaguar, sneeuwluipaard, cheetah, poema, jaguarundi, Euraziatische lynx, Canadese lynx, rode lynx, serval, caracal, ocelot, margay, Geoffroy’s kat, Bengaalse kat, Soendanese luipaardkat, vissende kat, roestkat, manoel, Europese wilde kat, zandkat. Afrikaanse wilde kat en moeraskat alleen onzeker (Jihlava, Nová Říše).
+- 175 vermeldingen in de hoofdtabel (zie `TWIJFELGEVALLEN.md` voor de onzekere).
+- Route met alle soorten in zes parken: Zoo Plzeň, Zoo Hluboká, Zoo Tábor, Othello Park, Zoo Olomouc, Zoo Ostrava (de ocelot alleen in het particuliere Othello Park).
+- Veel recente geboortes, o.a. cheetahs in Olomouc (6) en Praag (5), Sri Lanka-luipaarden in Ostrava (oktober 2026), Amoerpanters in Olomouc, leeuwen in Hodonín, servals in Dvůr Králové, tijgers in Hluboká.
+- Ruim 50 andere locaties onderzocht zonder katten (o.a. alle erkende dierentuinen zonder katten, minizoo’s, gesloten parken, circussen zonder katten).
+
+**Werkwijze**
+- Officiële lijst: ministerie van Milieu, dierentuinen met licentie (29, lijst van 27-03-2025). Daarnaast UCSZOO (15 Tsjechische leden), EAZA (14) en Zootierliste (463 Tsjechische vermeldingen).
+- Zeven onderzoeksagenten (lijsten, vijf regio’s, opvang/particulieren/circussen) en twee vervolgagenten (dierentuinen; particulieren en circussen). Besluit gebruiker (22-10-2026): circussen opnemen zoals in Italië; particuliere parken opnemen met kanttekening en status volgens toegang.
+- Type: dierentuin bij lidmaatschap van EAZA of UCSZOO; particuliere parken zonder dierentuinlicentie als “particuliere houder”.
+- Taxonomie: de Palawan-luipaardkat als Soendanese luipaardkat (Kitchener 2017); de Noord-Chinese luipaard als “Noord-Chinees (P. p. orientalis, voorheen P. p. japonensis)”.
+- De gids is met een script afgeleid van de Deense gids (Deens → Tsjechisch in de code, `SPCS`, `CSD` …), de vaste teksten door een vertaalagent vertaald, de gegevens via een vertaaltabel. Kaart uit GISCO NUTS 2024 (kraje = NUTS 3).
+
+**Gedeelde bestanden**: taal `cs` en land `cz` in alle gedeelde lagen (zoals bij Deens). `jungle.py`: in de kop van een soortpagina in het Tsjechisch het juiste meervoud (místo/místa/míst) en “v Česku”. Hoofdpagina: kaartkader iets breder (FULL 1140) zodat Oost-Tsjechië erop past; Polen, Slowakije en Hongarije grijs.
+
+**Gecontroleerd**: de Tsjechische pagina in NL/EN/CS op 390 px (Chromium): geen fouten, geen horizontaal scrollen, geen Deense of Portugese resten. Alle andere landpagina’s (ook Denemarken) tekst voor tekst gelijk aan de vorige versie; hoofdpagina, top 10 en soortpagina’s verschillen alleen door Tsjechië.
+
 ## 22 oktober 2026 – Denemarken
 
 Nieuwe landpagina `denemarken/` (bron: `bron/gidsen/dk.html`), in het Nederlands, Engels en Deens. Eén pagina met een filter per regio (de vijf Deense regio’s: Nordjylland, Midtjylland, Syddanmark, Sjælland, Hovedstaden), plus kaart, routeplanner, recente geboortes, soortpagina’s, filters op type en labels en het meldformulier. Duitsland en Zweden staan grijs op de kaart.

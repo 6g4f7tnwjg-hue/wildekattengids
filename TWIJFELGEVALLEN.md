@@ -4,6 +4,55 @@ Vermeldingen met de status “onzeker”: ze staan wel in de gids, maar tellen n
 
 Regel: bevestigd alleen met een recente bron (2025–2026); onzeker alleen met een concrete aanwijzing van na 2024; oudere aanwijzingen gaan naar “Eerder hier”.
 
+## Tsjechië
+
+Stand 22 oktober 2026. Let op: de eigen site van Zoo Jihlava was op 22-10-2026 de hele dag onbereikbaar; daar staan daarom negen kleine katten op onzeker. Opnieuw nagaan.
+
+| Locatie | Soort | Waarom twijfel | Bron |
+|---|---|---|---|
+| Zoo Praha (Praha (Troja)) | Poema | Aanwezig in de collectie, maar niet bevestigd dat ze voor publiek te zien zijn. | Jaarverslag Zoo Praha 2025 (pdf, gezien 22-10-2026); Zootierliste |
+| Zoopark Olovnice (Olovnice (Mělník)) | Caracal | Niet zelf op Facebook of in nieuws bevestigd. | Zootierliste (Facebookpagina park, geraadpleegd 19-03-2026) |
+| Ringelland (Habrkovice (Kutná Hora)) | Tijger | Geen bron uit 2025–2026 gevonden (geen nieuws, Facebook niet leesbaar). | Eigen site (laatst gewijzigd 15/18-04-2024, gezien 22-10-2026); Zootierliste (09/2022) |
+| Ringelland (Habrkovice (Kutná Hora)) | Tijger | Geen bron uit 2025–2026 gevonden. | Eigen site homepage (laatst gewijzigd 18-04-2024, gezien 22-10-2026) |
+| Ringelland (Habrkovice (Kutná Hora)) | Leeuw | Geen bron uit 2025–2026 gevonden. | Eigen site (2024, gezien 22-10-2026); Zootierliste (09/2022) |
+| Ringelland (Habrkovice (Kutná Hora)) | Luipaard | Geen bron uit 2025–2026 gevonden. | Eigen site 'O levhartech' (2024, gezien 22-10-2026); Zootierliste (09/2022) |
+| Ringelland (Habrkovice (Kutná Hora)) | Serval | Laatste gedateerde waarneming 2019. | Eigen site (2024); Zootierliste (bezoek 02/2019) |
+| Zoo Plzeň (Plzeň) | Cheetah | Volgens het jaarverslag zou zij in de eerste helft van 2026 terug naar Ústí gaan; niet bevestigd of dat is gebeurd. | Jaarverslag 2025 (eigen site, gezien 22-10-2026) |
+| Království lesa (Lipno nad Vltavou) | Europese wilde kat | De eigen site noemt alleen geiten, konijnen en vogels; niet bevestigd dat de kat te zien is. | Jaarverslag 2025 Zoo Hluboká (deponeringslijst) |
+| Zoopark Chomutov (Chomutov) | Manoel | Niet duidelijk of er na het vertrek van de poes naar Ostrava (2025) nog manoels in Chomutov zijn; de soortpagina gaf een foutmelding. | Eigen site: lexicon/adoptie (gezien 22-10-2026, ongedateerd); ZooChat 26-02-2025 |
+| Safari Park Dvůr Králové (Dvůr Králové nad Labem) | Caracal | Geen nieuws van 2025–2026 gevonden; de lexicon toont ook soorten die mogelijk weg zijn. | Eigen site: lexicon (gezien 22-10-2026, ongedateerd) |
+| Zoopark Doksy (Doksyland) (Doksy (Česká Lípa)) | Luipaard | Laatste gedateerde vermelding 2020; geen foto of bericht uit 2025–2026. | Eigen site (dierpagina's 2016, panterwelpen 2020; gezien 22-10-2026) |
+| Zoopark Doksy (Doksyland) (Doksy (Česká Lípa)) | Serval | Geen gedateerde bron na 2018. | Eigen site (gezien 22-10-2026); firmy.cz (ongedateerd) |
+| Zoopark Doksy (Doksyland) (Doksy (Česká Lípa)) | Poema | Facebookvideo zelf niet gezien; alleen via Zootierliste. | Zootierliste (FB-video 10-05-2026); firmy.cz (ongedateerd) |
+| Zoopark Doksy (Doksyland) (Doksy (Česká Lípa)) | Caracal | Alleen via Zootierliste; niet bevestigd door site of nieuws. | Zootierliste (FB-video 10-05-2026) |
+| Zoopark Stěžery (Stěžery (Hradec Králové)) | Caracal | Niet op de eigen site; dier niet gezien. | Zootierliste (bezoek 08/2026, bord, niet gezien) |
+| Zoo Jihlava (Jihlava) | Manoel | Eigen site (zoojihlava.cz) was op 22-10-2026 onbereikbaar (503); alleen bevestigd door een Zootierliste-bezoek, geen eigen of nieuwsbron 2025–2026 gevonden. | Zootierliste-bezoek 08/2025 |
+| Zoo Jihlava (Jihlava) | Margay | Eigen site (zoojihlava.cz) was op 22-10-2026 onbereikbaar (503); alleen bevestigd door een Zootierliste-bezoek, geen eigen of nieuwsbron 2025–2026 gevonden. | Zootierliste-bezoek 08/2025 |
+| Zoo Jihlava (Jihlava) | Geoffroy’s kat | Geen eigen of nieuwsbron 2025–2026 bereikbaar. | cs.wikipedia 'Zoologická zahrada Jihlava' (gezien 22-10-2026); Zootierliste (bezoek 08/2025) |
+| Zoo Jihlava (Jihlava) | Moeraskat | Eigen site (zoojihlava.cz) was op 22-10-2026 onbereikbaar (503); alleen bevestigd door een Zootierliste-bezoek, geen eigen of nieuwsbron 2025–2026 gevonden. | Jihlavský deník 22-09-2023; Zootierliste-bezoek 08/2025 |
+| Zoo Jihlava (Jihlava) | Afrikaanse wilde kat | Eigen site (zoojihlava.cz) was op 22-10-2026 onbereikbaar (503); alleen bevestigd door een Zootierliste-bezoek, geen eigen of nieuwsbron 2025–2026 gevonden. | Zootierliste-bezoek 09/2026; jaarverslag 2023 |
+| Zoo Jihlava (Jihlava) | Soendanese luipaardkat | Eigen site (zoojihlava.cz) was op 22-10-2026 onbereikbaar (503); alleen bevestigd door een Zootierliste-bezoek, geen eigen of nieuwsbron 2025–2026 gevonden. | Zootierliste-bezoek 08/2025 |
+| Zoo Jihlava (Jihlava) | Bengaalse kat | Mogelijk niet zichtbaar voor publiek; eigen site onbereikbaar op 22-10-2026. | Zootierliste-bezoek 08/2025 |
+| Zoo Jihlava (Jihlava) | Serval | Eigen site (zoojihlava.cz) was op 22-10-2026 onbereikbaar (503); alleen bevestigd door een Zootierliste-bezoek, geen eigen of nieuwsbron 2025–2026 gevonden. | Zootierliste-bezoek 08/2025 |
+| Zoo Jihlava (Jihlava) | Europese wilde kat | Eigen site (zoojihlava.cz) was op 22-10-2026 onbereikbaar (503); alleen bevestigd door een Zootierliste-bezoek, geen eigen of nieuwsbron 2025–2026 gevonden. | Zootierliste-bezoeken 04/2024 en 08/2025 |
+| Stanice Pavlov (Pavlov (Ledeč nad Sázavou)) | Europese wilde kat | De eigen site (ook de berichten) noemt geen wilde katten; mogelijk niet zichtbaar voor publiek. | Zootierliste (nieuwsbrief 2025) |
+| Zoo Sedlec (Sedlec (Mikulov)) | Sneeuwluipaard | Mogelijk alleen een lexiconpagina of gepland; geen nieuws over komst van een sneeuwluipaard. | Eigen site soortpagina (gezien 22-10-2026) |
+| Zoo Sedlec (Sedlec (Mikulov)) | Vissende kat | Geen aantal en geen andere bron. | Eigen site soortpagina (gezien 22-10-2026) |
+| Zookoutek Nová Říše (Vápovice (Nová Říše)) | Caracal | Niet in het nieuws over de serval genoemd; alleen Zootierliste/Facebook. | Zootierliste (7/2025) |
+| Zookoutek Nová Říše (Vápovice (Nová Říše)) | Vissende kat | Alleen Zootierliste/Facebook. | Zootierliste (FB 31-07-2025) |
+| Zookoutek Nová Říše (Vápovice (Nová Říše)) | Moeraskat | Alleen Zootierliste/Facebook. | Zootierliste (FB 02-07-2026) |
+| Exotika na ranči (Bítovany (Chrudim)) | Rode lynx | Mogelijk verwarring met de Euraziatische lynx. | Zootierliste (foto 6/2025) |
+| Family Park Česká Skalice (Česká Skalice) | Caracal | Geen bevestiging uit eigen bron of nieuws. | Zootierliste (homepage park 01-08-2025); CNN Prima News 19-05-2025 |
+
+### Niet open voor publiek of met kanttekening
+
+- **Zoopark Zvole** (poema’s, sinds augustus 2025 dicht, geen dierentuinlicentie), **Particuliere houder Kletečná** (ca. 16 tijgers, 2 leeuwen, 2 poema’s; strafzaak in Pelhřimov) en **Animal Park Rabina** (leeuwen en tijgers, sinds najaar 2024 dicht): status “niet open voor publiek”, tellen niet als bevestigd.
+- **Kočkovité šelmy Chvojenec**: alleen met een vooraf gereserveerd, begeleid bezoek (status “alleen met rondleiding”, telt als bevestigd). Soortpagina’s laatst bijgewerkt 10/2024–07/2025.
+- **Particuliere parken van circusfamilies** (Rekreační park Karlštejn, Zoopark Doksy, Ringelland): opgenomen op besluit van de gebruiker (22-10-2026), met type “particuliere houder”.
+- **Circussen** (Cirkus Humberto, Cirkus Bob Navarro King, Cirkus Šimek): als reizende locatie zonder plek op de kaart, zoals in Italië.
+- **Statek U Merlina**: poema Portos alleen op een soortpagina van juli 2025.
+- **Zoo Praha**: Amoer-luipaardkat bevestigd via het jaarverslag 2025 (2,2), mogelijk deels achter de schermen.
+
 ## Denemarken
 
 Stand 22 oktober 2026.

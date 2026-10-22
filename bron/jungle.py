@@ -290,7 +290,8 @@ function maak(){var info=document.getElementById('info');if(!info)return;var hd=
   var n=0;if(sec){var seen={};[].forEach.call(sec.querySelectorAll('a[href*="locatie"]'),function(a){var k=a.getAttribute('href');if(!seen[k]){seen[k]=1;n++;}});}
   var grp=hd.querySelector('.ip-tag.dark');
   meta.innerHTML=L.map(function(l){var g=tekst(grp,l),m2=/\(([^)]+)\)/.exec(g);g=m2?m2[1]:g;var ln=land?tekst(land,l):(J&&J.land||'');
-   return '<span class="l-'+l+'">'+esc(n+' '+(LW[l]||LW.en)+(ln?' '+(IN[l]||'in')+' '+ln:''))+(g?'<i> · </i>'+esc(g):'')+'</span>'}).join('');}
+   var w=l==='cs'?(n===1?'místo':(n>=2&&n<=4?'místa':'míst')):l==='da'&&n===1?'sted':(LW[l]||LW.en);if(l==='cs'&&ln==='Česko')ln='Česku';   /* Tsjechisch: meervoud en 6e naamval; Deens: enkelvoud */
+   return '<span class="l-'+l+'">'+esc(n+' '+w+(ln?' '+(IN[l]||'in')+' '+ln:''))+(g?'<i> · </i>'+esc(g):'')+'</span>'}).join('');}
  else{sub.innerHTML=tags.slice(1,2).concat(tags.slice(0,1)).map(function(x){return x.innerHTML}).join('<i> · </i>');
   meta.innerHTML=(alt?alt.innerHTML:'')+tags.slice(2).map(function(x){return '<i> · </i>'+x.innerHTML}).join('');}
  kop.appendChild(sub);kop.appendChild(meta);info.insertBefore(kop,hd);

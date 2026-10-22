@@ -1,13 +1,13 @@
 # Bron van de Wilde katachtigen-gids
 
 Alles wordt uit deze map gebouwd. Pas nooit de gegenereerde bestanden in de hoofdmap aan
-(`index.html`, `soort/`, `top10/`, `nederland/`, `belgie/`, `luxemburg/`, `duitsland/`, `frankrijk/`, `oostenrijk/`, `zwitserland/`, `verenigd-koninkrijk/`, `italie/`, `spanje/`, `ierland/`, `portugal/`, `denemarken/`, `sitemap.xml`): die worden bij elke bouw overschreven.
+(`index.html`, `soort/`, `top10/`, `nederland/`, `belgie/`, `luxemburg/`, `duitsland/`, `frankrijk/`, `oostenrijk/`, `zwitserland/`, `verenigd-koninkrijk/`, `italie/`, `spanje/`, `ierland/`, `portugal/`, `denemarken/`, `tsjechie/`, `sitemap.xml`): die worden bij elke bouw overschreven.
 
 ## Wat staat waar
 
 | Bestand | Inhoud |
 |---|---|
-| `gidsen/nl.html`, `be.html`, `lu.html`, `de.html`, `fr.html`, `at.html`, `ch.html`, `uk.html`, `it.html`, `es.html`, `ie.html`, `pt.html`, `dk.html` | De landengidsen. Alle gegevens (soorten, waarnemingen `R`, locaties `LOCS`, jongen `YOUNG`) staan in het script van de gids; Alle landen zijn één pagina; Duitsland, Frankrijk, Oostenrijk, Zwitserland, het VK, Italië, Spanje, Ierland en Portugal hebben een filter per deelstaat of regio (`REGIO`, `REGN`; Spanje per autonome gemeenschap, Ierland per provincie, Portugal per NUTS-regio). Talen (regel: Nederlands, Engels en de landstaal of -talen): NL/EN (Nederland, VK, Ierland), NL/EN/FR (België, Frankrijk), NL/EN/DE (Duitsland, Oostenrijk), NL/EN/FR/DE (Luxemburg), NL/EN/DE/FR/IT (Zwitserland), NL/EN/IT (Italië), NL/EN/ES (Spanje), NL/EN/PT (Portugal), NL/EN/DA (Denemarken; taalcode `da`, landcode `dk`). Een gids met één derde taal gebruikt `T(nl,en,x)` en `l-x`-elementen; Zwitserland en Luxemburg gebruiken de taaltabel `LGS` (`T(nl,en,...)` in de volgorde van `LGS`, woordenlijsten per taal zoals `SPFR`, `R5IT`, `ITD`). Foto's staan erin als `@@IMGn@@`. |
+| `gidsen/nl.html`, `be.html`, `lu.html`, `de.html`, `fr.html`, `at.html`, `ch.html`, `uk.html`, `it.html`, `es.html`, `ie.html`, `pt.html`, `dk.html`, `cz.html` | De landengidsen. Alle gegevens (soorten, waarnemingen `R`, locaties `LOCS`, jongen `YOUNG`) staan in het script van de gids; Alle landen zijn één pagina; Duitsland, Frankrijk, Oostenrijk, Zwitserland, het VK, Italië, Spanje, Ierland en Portugal hebben een filter per deelstaat of regio (`REGIO`, `REGN`; Spanje per autonome gemeenschap, Ierland per provincie, Portugal per NUTS-regio). Talen (regel: Nederlands, Engels en de landstaal of -talen): NL/EN (Nederland, VK, Ierland), NL/EN/FR (België, Frankrijk), NL/EN/DE (Duitsland, Oostenrijk), NL/EN/FR/DE (Luxemburg), NL/EN/DE/FR/IT (Zwitserland), NL/EN/IT (Italië), NL/EN/ES (Spanje), NL/EN/PT (Portugal), NL/EN/DA (Denemarken; taalcode `da`, landcode `dk`), NL/EN/CS (Tsjechië; taalcode `cs`, landcode `cz`). Een gids met één derde taal gebruikt `T(nl,en,x)` en `l-x`-elementen; Zwitserland en Luxemburg gebruiken de taaltabel `LGS` (`T(nl,en,...)` in de volgorde van `LGS`, woordenlijsten per taal zoals `SPFR`, `R5IT`, `ITD`). Foto's staan erin als `@@IMGn@@`. |
 | `start.html` | De startpagina. De gegevens in `const D` (kaartstippen, aantallen, recente geboortes) worden bij elke bouw opnieuw berekend uit de gidsen. Kaartvormen en de deelstaat-notitie blijven staan. Talen: Nederlands, Engels, Frans, Duits, Italiaans en Spaans (`T(nl,en,fr,de,it,es)` en `l-fr`/`l-de`/`l-it`/`l-es`-elementen). Onder de titel staat een regel met aantallen (landen · locaties · soorten), berekend uit `D`. Opbouw (16-10-2026, stijl van de Spottersgids): bovenbalk met zoeken, taal en menu; tabbladen Kaart · Landen · Soorten (`#kaart`, `#landen`, `#soorten`); de kaart filtert op land, soort, type en recente geboortes (rode stip); het menu opent de top 10 en de losse pagina’s `#geboren`, `#perpark`, `#typen` en `#over`. |
 | `../img/` | Alle foto's; `n.webp` hoort bij `@@IMGn@@`. Nieuwe foto: volgend nummer toevoegen. |
 | `artifact_kop.html`, `web_kop.html` | Vaste kopjes voor de Claude-pagina en de website. |
@@ -107,3 +107,12 @@ Alleen de Claude-pagina bouwen: `python3 bron/bouw.py --geen-web`.
 - **Kleine parken verstoppen katten.** Glad Zoo noemde de serval niet op “Vores dyr”, wel in het dagprogramma (voedering) en in de persfoto’s. Kijk bij kleine parken ook naar dagprogramma, parkkaart en mediabibliotheek (WordPress).
 - **Europakaart**: Zweden en Zuid-Noorwegen zijn aan `NBR` in `start.html` toegevoegd (GISCO NUTS 2024, geprojecteerd met `P`).
 - Het bouwscript van de gids (afgeleid van de Portugese gids, gegevens als JSON, Deens via een vertaaltabel) staat niet in de repo.
+
+## Tsjechië toevoegen: lessen (oktober 2026)
+
+- **Afgeleid van de Deense gids**: `da` → `cs` in de code; de vaste teksten zijn opnieuw vertaald. Taal `cs` staat in alle gedeelde lagen ná `da`.
+- **Tsjechisch verbuigt.** Vaste teksten in de gedeelde lagen gebruiken neutrale vormen; alleen de kop van een soortpagina (`jungle.py`) kiest místo/místa/míst en “v Česku”. Elders kan bij 2–4 een grammaticaal onjuiste vorm staan.
+- **Locaties zonder coördinaten** (circussen) slaat de kaart van de gids al over (`l[2]==null`); geef ze `REGIO` “circus” en een eigen groep in `REGN`/`REGORDER`, zoals in Italië.
+- **Particulieren en circussen** horen in Tsjechië bij het beeld (fokken van grote katten buiten dierentuinen sinds 2022 verboden, houden mag). Besluit van de gebruiker: opnemen met kanttekening.
+- **Europakaart**: het kaartkader (`FULL` en de `viewBox` van `#map` in `start.html`) is naar 1140 verbreed voor Oost-Tsjechië.
+- **Grenzen van regio’s** zijn met shapely uit NUTS 3 berekend (gedeelde randen zonder de landsgrens); de Deense methode met gedeelde punten miste stukken.

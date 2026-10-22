@@ -1,0 +1,590 @@
+{
+ "0000": {
+  "soort": "html",
+  "cs": "← Všechny země"
+ },
+ "0001": {
+  "soort": "html",
+  "cs": "Podpoř průvodce"
+ },
+ "0002": {
+  "soort": "html",
+  "cs": "Aktualizováno 16. října 2026"
+ },
+ "0003": {
+  "soort": "html",
+  "cs": "Divoké kočky"
+ },
+ "0004": {
+  "soort": "html",
+  "cs": "v českých zoologických zahradách a zooparcích"
+ },
+ "0005": {
+  "soort": "html",
+  "cs": "Serval · foto: J. Gelens"
+ },
+ "0006": {
+  "soort": "html",
+  "cs": "Onde podes ver leões, tigres, linces-ibéricos e outros felinos selvagens em Portugal? Por espécie e por parque, este guia mostra que felinos vivem onde, que crias nasceram recentemente e o que está prestes a mudar. E que percurso te permite ver todas as espécies."
+ },
+ "0007": {
+  "soort": "html",
+  "cs": "potvrzených druhů"
+ },
+ "0008": {
+  "soort": "html",
+  "cs": "lokalit s kočkami"
+ },
+ "0009": {
+  "soort": "html",
+  "cs": "Přehled"
+ },
+ "0010": {
+  "soort": "html",
+  "cs": "Lokality"
+ },
+ "0011": {
+  "soort": "html",
+  "cs": "Naplánuj si návštěvu"
+ },
+ "0012": {
+  "soort": "html",
+  "cs": "Hlavní tabulka"
+ },
+ "0013": {
+  "soort": "html",
+  "cs": "Aktuálně"
+ },
+ "0014": {
+  "soort": "html",
+  "cs": "Barvy &amp; hybridi"
+ },
+ "0015": {
+  "soort": "html",
+  "cs": "O průvodci"
+ },
+ "0016": {
+  "soort": "html",
+  "cs": "Nahlásit"
+ },
+ "0017": {
+  "soort": "html",
+  "cs": "Stručně"
+ },
+ "0018": {
+  "soort": "html",
+  "cs": "\n<div class=\"prose\">\n  <ul>\n    <li><strong>10 espécies confirmadas</strong> em 6 locais: 3 jardins zoológicos, 1 parque de animais, 1 parque de vida selvagem e 1 safari park. O Europaradise (parque de animais) tem apenas uma entrada incerta.</li>\n    <li><strong><a href=\"#locatie/jardim-zoologico-de-lisboa\">Jardim Zoológico de Lisboa</a></strong> tem de longe o maior número de espécies: oito, incluindo tigres-siberianos e tigres-de-sumatra, leopardos-da-pérsia, jaguares, uma pantera-nebulosa e os únicos linces-ibéricos que podes ver em Portugal.</li>\n    <li><strong>Lince-ibérico:</strong> só em Lisboa (Drago e Fábula, embaixadores da espécie). O centro nacional de reprodução perto de Silves não pode ser visitado; está a ser construído um recinto para linces no Parque Biológico de Gaia.</li>\n    <li><strong>Só num local:</strong> o lince-vermelho no <a href=\"#locatie/zoo-de-lagos\">Zoo de Lagos</a>, o único local no Algarve com felinos selvagens.</li>\n    <li><strong>Crias:</strong> três leopardos-da-pérsia em Lisboa (abril de 2026).</li>\n    <li><strong>Sem circos nem detentores privados:</strong> os animais selvagens em circos são proibidos (Lei 20/2019, período de transição até ao fim de 2025); o último tigre de circo foi para um centro de resgate em Espanha em 2026. Desde 2018, os particulares não podem manter felinos selvagens.</li>\n    <li><strong>Nos Açores e na Madeira</strong> não é possível ver felinos selvagens.</li>\n  </ul>\n  </div>\n"
+ },
+ "0019": {
+  "soort": "html",
+  "cs": "Celkový přehled"
+ },
+ "0020": {
+  "soort": "html",
+  "cs": "Kategorie"
+ },
+ "0021": {
+  "soort": "html",
+  "cs": "Počet"
+ },
+ "0022": {
+  "soort": "html",
+  "cs": "Druhy"
+ },
+ "0023": {
+  "soort": "html",
+  "cs": "Potvrzeno"
+ },
+ "0024": {
+  "soort": "html",
+  "cs": "Lev, Tygr, Levhart, Jaguár, Levhart obláčkový, Gepard, Rys ostrovid, Rys iberský, Rys červený, Serval"
+ },
+ "0025": {
+  "soort": "html",
+  "cs": "Nejisté"
+ },
+ "0026": {
+  "soort": "html",
+  "cs": "záznamy"
+ },
+ "0027": {
+  "soort": "html",
+  "cs": "Ocelot velký"
+ },
+ "0028": {
+  "soort": "html",
+  "cs": "Přehled"
+ },
+ "0029": {
+  "soort": "html",
+  "cs": "Klepni na druh a vyfiltruj hlavní tabulku. Číslo udává počet lokalit v tabulce."
+ },
+ "0030": {
+  "soort": "html",
+  "cs": "Pantherinae (velké kočky)"
+ },
+ "0031": {
+  "soort": "html",
+  "cs": "Felinae (malé kočky)"
+ },
+ "0032": {
+  "soort": "html",
+  "cs": "nejisté"
+ },
+ "0033": {
+  "soort": "html",
+  "cs": "V Česku k vidění nejsou (32 druhů)"
+ },
+ "0034": {
+  "soort": "html",
+  "cs": "Podle lokality"
+ },
+ "0035": {
+  "soort": "html",
+  "cs": "Všechny zoologické zahrady, zooparky, obory a safari parky v Česku, kde můžeš vidět divoké kočky. Klepni na tečku a uvidíš, které kočky tam žijí, nebo níže vyber region (regiony NUTS z roku 2024). Na Azorách a Madeiře divoké kočky k vidění nejsou; Španělsko (na mapě šedě) má vlastního průvodce."
+ },
+ "0036": {
+  "soort": "html",
+  "cs": "alespoň jeden potvrzený druh"
+ },
+ "0037": {
+  "soort": "html",
+  "cs": "jen nejisté záznamy"
+ },
+ "0038": {
+  "soort": "html",
+  "cs": "Schematická mapa"
+ },
+ "0039": {
+  "soort": "html",
+  "cs": "Nebo vyber lokalitu"
+ },
+ "0040": {
+  "soort": "html",
+  "cs": "Klepni na lokalitu na mapě."
+ },
+ "0041": {
+  "soort": "html",
+  "cs": "S kočkovitými šelmami (7 lokalit)"
+ },
+ "0042": {
+  "soort": "html",
+  "cs": "Norte"
+ },
+ "0043": {
+  "soort": "html",
+  "cs": "Leão, tigre, lince-euroasiático, chita."
+ },
+ "0044": {
+  "soort": "html",
+  "cs": "Tigre, lince-euroasiático. Incerto: leão."
+ },
+ "0045": {
+  "soort": "html",
+  "cs": "Centro"
+ },
+ "0046": {
+  "soort": "html",
+  "cs": "Incerto: tigre."
+ },
+ "0047": {
+  "soort": "html",
+  "cs": "Lince-euroasiático."
+ },
+ "0048": {
+  "soort": "html",
+  "cs": "Lisboa e Setúbal"
+ },
+ "0049": {
+  "soort": "html",
+  "cs": "Lince-ibérico, lince-euroasiático, chita, leão, tigre, leopardo, pantera-nebulosa, jaguar."
+ },
+ "0050": {
+  "soort": "html",
+  "cs": "Alentejo"
+ },
+ "0051": {
+  "soort": "html",
+  "cs": "Serval."
+ },
+ "0052": {
+  "soort": "html",
+  "cs": "Algarve"
+ },
+ "0053": {
+  "soort": "html",
+  "cs": "Lince-euroasiático, lince-vermelho, serval. Incerto: jaguatirica."
+ },
+ "0054": {
+  "soort": "html",
+  "cs": "Ingen kattedyr fundet"
+ },
+ "0055": {
+  "soort": "html",
+  "cs": "\n<ul class=\"loclist\">\n    <li><b>Não aberto ao público (centro de reprodução do lince-ibérico):</b> Centro Nacional de Reprodução do Lince Ibérico (Silves, Faro)</li>\n    <li><b>Previsto (lince-ibérico):</b> Parque Biológico de Gaia (Avintes, Porto)</li>\n    <li><b>Felinos no passado (tigre, chita), agora encerrado:</b> Omega Parque (Monchique, Faro)</li>\n    <li><b>Centros de resgate sem felinos à vista:</b> CERAS (Castelo Branco), CERVAS (Gouveia, Guarda), CRASSA (Santo André, Setúbal), Centro de Recuperação do Lobo Ibérico (Mafra, Lisboa), LxCRAS (Lisboa), Pangea (Alandroal, Évora), RIAS (Olhão, Faro)</li>\n    <li><b>Encerrado:</b> Aquário do Porto Pim (Horta, Açores), Mini-Zoo Parque Marechal Carmona (Cascais), Parque Zoológico da Povoação (São Miguel, Açores), Zoo-Oeste (Torres Vedras)</li>\n    <li><b>Verificado, sem felinos:</b> Aquamuseu do Rio Minho (Vila Nova de Cerveira), Aquário Vasco da Gama (Oeiras), Aquário da Madeira (Porto Moniz, Madeira), Aquashow Park (Quarteira), Borboletário Tropical (Constância), Castelo do Burro (Odemira), Centro de Educação Ambiental de Vinha de Mouros (Cabeceiras de Basto), Coudelaria de Alter (Alter do Chão), Estação Litoral da Aguda (Vila Nova de Gaia), Fluviário de Mora (Mora), Ilha das Aves (Ribeira Brava, Madeira), Jardim dos Loiros (Funchal, Madeira), Krazy World (Algoz, Silves), Mama-Adama Alpaca Farm (Grândola), Mini Zoo Queijaria Cachopas (Évora), Monte Palace Madeira (Funchal, Madeira), Monte Selvagem (Montemor-o-Novo), Oceanário de Lisboa (Lisboa), Parque Ambiental de Ribeira de Pena (Ribeira de Pena), Parque Biológico da Serra das Meadas (Lamego), Parque Biológico de Vinhais (Vinhais), Parque Biológico do Mezio (Arcos de Valdevez), Parque Ecológico de Gouveia (Gouveia), Parque Temático da Madeira (Santana, Madeira), Parque Terra Nostra (Furnas, Açores), Parque da Mina (Monchique), Quinta Pedagógica de Braga (Braga), Quinta Pedagógica de Silves (Silves), Quinta Pedagógica dos Olivais (Lisboa), Quinta das Palmeiras (Porto Santo), SEA LIFE Porto (Porto), Tapada Nacional de Mafra (Mafra), Zoo de Lourosa (Santa Maria da Feira), Zoomarine (Guia, Albufeira)</li>\n  </ul>\n"
+ },
+ "0056": {
+  "soort": "html",
+  "cs": "Om den officielle liste over zoologiske haver"
+ },
+ "0057": {
+  "soort": "html",
+  "cs": "\n<p>Em Portugal, todos os jardins zoológicos precisam de uma licença (Decreto-Lei 59/2003, alterado pelo Decreto-Lei 104/2012). Desde 2012, estas licenças são concedidas pela DGAV (Direção-Geral de Alimentação e Veterinária); o ICNF trata das espécies protegidas e CITES. Nos Açores e na Madeira, são responsáveis as autoridades regionais.</p>\n    <p>A DGAV publica uma lista “Parques Zoológicos Licenciados” com 24 parques licenciados, mas esta está datada de 28 de abril de 2021 (colocada online em maio de 2025). A lista está, portanto, <b>desatualizada</b>; não foi encontrada nenhuma versão mais recente.</p>\n    <p>Por isso, a lista deste guia foi elaborada a partir do Zootierliste (todos os felinos, detentores atuais e antigos), da lista da DGAV, das listas de membros da EAZA e da associação ibérica de jardins zoológicos AIZA e de notícias regionais, e depois verificada local a local no site oficial de cada parque.</p>\n    <p>Se um parque é designado neste guia como jardim zoológico ou como parque de animais depende da pertença à EAZA ou à AIZA. Os safari parks e os parques de vida selvagem mantêm o seu próprio tipo.</p>\n"
+ },
+ "0058": {
+  "soort": "html",
+  "cs": "Naplánuj si návštěvu"
+ },
+ "0059": {
+  "soort": "html",
+  "cs": "Naplánuj si trasu"
+ },
+ "0060": {
+  "soort": "html",
+  "cs": "Zaškrtni lokality, které chceš navštívit. Níže se hned ukáže, které kočkovité šelmy tam uvidíš a které ti ještě chybí."
+ },
+ "0061": {
+  "soort": "html",
+  "cs": "Trasa se 2 parky"
+ },
+ "0062": {
+  "soort": "html",
+  "cs": "Odškrtnout vše"
+ },
+ "0063": {
+  "soort": "html",
+  "cs": "Lokality"
+ },
+ "0064": {
+  "soort": "html",
+  "cs": "Anbefalinger"
+ },
+ "0065": {
+  "soort": "html",
+  "cs": "\n<ul class=\"prose\">\n    <li><strong>Todas as 10 espécies em dois parques:</strong>\n      <ul>\n        <li><strong>Jardim Zoológico de Lisboa</strong> (Lisboa): leão, tigre, leopardo, jaguar, pantera-nebulosa, chita, lince-euroasiático, lince-ibérico</li>\n        <li><strong>Zoo de Lagos</strong> (Barão de São João, Algarve): lince-vermelho, serval (e lince-euroasiático)</li>\n      </ul>\n    </li>\n    <li><strong>O serval</strong> também pode ser visto no Badoca Safari Park (Alentejo), no caminho de Lisboa para o Algarve. No norte, o Zoo Santo Inácio (leão, tigre, chita, lince) e o Zoo da Maia (tigre-branco, lince) são boas alternativas, mas aí não verás o lince-ibérico, o jaguar, a pantera-nebulosa nem o lince-vermelho.</li>\n    <li><strong>Lince-ibérico:</strong> o recinto em Lisboa tem muitos esconderijos; leva o teu tempo e vai de preferência cedo ou ao fim do dia.</li>\n    <li><strong>Os horários</strong> estão na página de cada parque: <a href=\"#locatie/jardim-zoologico-de-lisboa\">Jardim Zoológico de Lisboa</a>, <a href=\"#locatie/zoo-de-lagos\">Zoo de Lagos</a>, <a href=\"#locatie/badoca-safari-park\">Badoca Safari Park</a>, <a href=\"#locatie/zoo-santo-inacio\">Zoo Santo Inácio</a>.</li>\n    <li><strong>Tens dúvidas sobre um animal?</strong> Telefona ou envia um e-mail ao parque antes da tua visita. Todas as entradas incertas estão listadas em <a href=\"#onzeker\">Casos incertos</a>.</li>\n  </ul>\n"
+ },
+ "0066": {
+  "soort": "html",
+  "cs": "Hlavní tabulka"
+ },
+ "0067": {
+  "soort": "html",
+  "cs": "Zrušit filtry"
+ },
+ "0068": {
+  "soort": "html",
+  "cs": "Kočkovitá šelma"
+ },
+ "0069": {
+  "soort": "html",
+  "cs": "Poddruh"
+ },
+ "0070": {
+  "soort": "html",
+  "cs": "Lokalita"
+ },
+ "0071": {
+  "soort": "html",
+  "cs": "Obec"
+ },
+ "0072": {
+  "soort": "html",
+  "cs": "Počet"
+ },
+ "0073": {
+  "soort": "html",
+  "cs": "Zdroj"
+ },
+ "0074": {
+  "soort": "html",
+  "cs": "Ověřeno"
+ },
+ "0075": {
+  "soort": "html",
+  "cs": "Posuň tabulku do strany a uvidíš všechny sloupce."
+ },
+ "0076": {
+  "soort": "html",
+  "cs": "Aktuálně"
+ },
+ "0077": {
+  "soort": "html",
+  "cs": "Nová mláďata"
+ },
+ "0078": {
+  "soort": "html",
+  "cs": "Která mláďata koček teď můžeš v Česku vidět? Felinae (malé kočky) tu uvádíme do 1 roku, Pantherinae (velké kočky) do 2 let, protože velké kočky dospívají pomaleji. Mláďata bývají první týdny často uvnitř; zeptej se v parku, jestli už jsou k vidění."
+ },
+ "0079": {
+  "soort": "html",
+  "cs": "Možná na cestě"
+ },
+ "0080": {
+  "soort": "html",
+  "cs": "Plánováno, dočasně nebo není k vidění"
+ },
+ "0081": {
+  "soort": "html",
+  "cs": "\n<ul class=\"prose\">\n    <li><span class=\"st st-p\"><i></i></span> <strong>Parque Biológico de Gaia:</strong> em 2023 foram anunciados dois linces-ibéricos do centro de reprodução de Silves, com um recinto e um ponto de observação envidraçado. A construção ainda decorria em 2024; não está confirmado que os linces tenham chegado.</li>\n    <li><span class=\"st st-w\"><i></i></span> <strong>Europaradise:</strong> o parque reabriu em maio de 2026 após danos causados pela tempestade; não está confirmado que os tigres possam ser vistos.</li>\n    <li><strong>Jardim Zoológico de Lisboa:</strong> dois jovens tigres-siberianos (à vista desde junho de 2026) e um jovem macho de tigre-de-sumatra (maio de 2026) são novidade; desde 2025 há também um novo casal de jaguares (Pawa e Feliciana).</li>\n  </ul>\n  <p class=\"tlegend\"><span class=\"st st-p\"><i></i>Previsto</span> · <span class=\"st st-w\"><i></i>Incerto</span></p>\n"
+ },
+ "0082": {
+  "soort": "html",
+  "cs": "Barevné varianty a hybridi"
+ },
+ "0083": {
+  "soort": "html",
+  "cs": "Barevné varianty"
+ },
+ "0084": {
+  "soort": "html",
+  "cs": "\n<h3>Tigre-branco <a class=\"kv-sp\" href=\"#soort/tijger\">para o tigre</a></h3>\n  <ul class=\"prose\">\n    <li><a href=\"#locatie/zoo-da-maia\">Zoo da Maia</a></li>\n  </ul>\n  <p class=\"prose\">Um tigre-branco tem uma mutação recessiva no gene SLC45A2 e não é albino. Já não são reproduzidos no âmbito do programa europeu de reprodução; fora dos parques da EAZA ainda existem. Segundo o Zootierliste, os leopardos negros (Zoo da Maia) desapareceram por volta de 2024.</p>\n"
+ },
+ "0085": {
+  "soort": "html",
+  "cs": "Hybridi"
+ },
+ "0086": {
+  "soort": "html",
+  "cs": "\n<p class=\"prose\">Não foram encontrados ligres, tigrões nem outros híbridos de felinos selvagens. Desde 2018, os cruzamentos de gatos domésticos com felinos selvagens (como os gatos Savannah ou Bengal) não podem ser mantidos por particulares em Portugal, e não foi encontrado nenhum nos parques.</p>\n"
+ },
+ "0087": {
+  "soort": "html",
+  "cs": "O tomto přehledu"
+ },
+ "0088": {
+  "soort": "html",
+  "cs": "\n<div id=\"werkwijze-sv\">\n  <h3>Como foi feita esta visão geral</h3>\n<p class=\"prose\">Para todos os jardins zoológicos, parques de animais, parques de vida selvagem e safari parks portugueses com felinos, bem como centros de resgate, verificámos que felinos selvagens podem ser vistos. A lista de base vem do Zootierliste (todos os felinos, detentores atuais e antigos), da lista da DGAV de jardins zoológicos licenciados (2021) e das listas de membros da EAZA e da AIZA; depois procurámos, em cada região, parques, quintas pedagógicas e centros de resgate com felinos. Cada local foi verificado no seu site oficial, complementado com notícias portuguesas. Cada entrada indica a fonte e a data.</p>\n  <p class=\"prose\">Um felino conta se um visitante o puder ver, mesmo que só em certos dias. Por isso, os centros de resgate também contam. Os animais selvagens em circos são proibidos em Portugal (Lei 20/2019; o período de transição terminou no fim de 2025) e desde 2018 os particulares não podem manter felinos selvagens (Portaria 86/2018); não foi encontrado nenhum circo, centro de resgate ou detentor privado onde os visitantes possam ver felinos.</p>\n  <p class=\"prose\">As espécies seguem a norma da IUCN/SSC Cat Classification Task Force (Kitchener et al., 2017, <i>Cat News</i> Special Issue 11).</p>\n</div>\n<div id=\"statussen-sv\">\n  <h3>Co znamenají stavy</h3>\n<ul class=\"prose\">\n    <li><strong>Přítomno:</strong> zvíře tu žije a obvykle je k vidění.</li>\n    <li><strong>Dočasně není k vidění:</strong> zvíře tu žije, ale není vždy vidět, například protože je v horku uvnitř.</li>\n    <li><strong>Ohlášený odchod:</strong> park oznámil, že zvíře brzy odejde.</li>\n    <li><strong>Plánováno:</strong> příchod zvířete je ohlášen, ale zatím tu není.</li>\n    <li><strong>Nejisté:</strong> není jisté, zda tu zvíře (ještě) je nebo zda ho návštěvníci mohou vidět.</li>\n    <li><strong>Jen s průvodcem:</strong> zvíře žije na místě, kam se dostaneš jen s prohlídkou s průvodcem.</li>\n    <li><strong>Nepřístupné veřejnosti:</strong> zvíře tu žije, ale místo nelze volně navštívit.</li>\n  </ul>\n  <p class=\"note prose\">Parky jen zřídka uvádějí, kolik přesně mají zvířat. Proto je u většiny záznamů „neznámé“. Pokud je uvedeno „bez data“, zdroj neměl datum.</p>\n</div>\n<div id=\"onzeker-sv\">\n  <h3>Sporné případy</h3>\n<p class=\"prose\">Všechny záznamy se stavem „nejisté“ z hlavní tabulky. Seznam se sestavuje automaticky z tabulky.</p>\n  <ul class=\"prose tw-list\"></ul>\n  <p class=\"prose\">Tyto záznamy se nepočítají jako potvrzené. Chceš-li některé z těchto zvířat vidět, kontaktuj park před návštěvou.</p>\n</div>\n<div id=\"namen-sv\">\n  <h3>Navne og inddeling</h3>\n<ul class=\"prose\">\n    <li><strong>Lince-ibérico</strong> er den iberiske los, <strong>lince-euroasiático</strong> (eller <i>lince-dos-Cárpatos</i>) den eurasiske los og <strong>lince-vermelho</strong> rødlossen.</li>\n    <li><strong>Chita</strong> er gepard, <strong>pantera-nebulosa</strong> træleopard og <strong>leopardo-da-pérsia</strong> persisk leopard.</li>\n    <li><strong>Gato-bravo</strong> er den (europæiske) vildkat; den lever vildt i Portugal, men kan ikke ses i nogen park.</li>\n    <li><strong>Løve:</strong> siden 2017 skelner man mellem to underarter: den nordlige løve (<i>P. l. leo</i>), som den asiatiske løve hører til (Santo Inácio), og den sydlige løve (<i>P. l. melanochaita</i>), som Lissabons angolaløver hører til.</li>\n    <li><strong>Iberisk los:</strong> det nationale avlscenter (CNRLI, Silves) kan ikke besøges. Fritlevende losser, som i Vale do Guadiana, er ikke med i denne oversigt.</li>\n  </ul>\n</div>\n<div id=\"verdwenen-sv\">\n  <h3>Já não estão à vista</h3>\n<p class=\"prose\">A página de cada parque indica em “Antes aqui” que felinos lá existiam. De notar: os leopardos-das-neves do Zoo Santo Inácio (já não avistados em 2026), a tigre-de-sumatra Sigli em Lisboa (a mais velha da Europa, morreu em 2025) e os leopardos, pumas e jaguares do Zoo da Maia. Entre os parques encerrados com felinos conta-se o Omega Parque em Monchique (tigre, chita; encerrado em 2007). Os últimos felinos de circo foram para a AAP Primadomus em Espanha em 2022 e 2026.</p>\n</div>\n<div id=\"controle-sv\">\n  <h3>Fontes</h3>\n<p class=\"prose\"><strong>Listas oficiais:</strong> a lista da DGAV de jardins zoológicos licenciados (28-04-2021), as listas de membros da EAZA e da AIZA (outubro de 2026) e a legislação no Diário da República (Decreto-Lei 59/2003 e 104/2012, Lei 20/2019, Portaria 86/2018).</p>\n  <p class=\"prose\"><strong>Bases de dados:</strong> Zootierliste (todos os felinos, detenções atuais e antigas), usado apenas como complemento.</p>\n  <p class=\"prose\"><strong>Sites dos parques</strong>, com listas de animais, páginas das espécies, mapas e notícias (incluindo a Revista ZOO, a revista do Jardim Zoológico de Lisboa).</p>\n  <p class=\"prose\"><strong>Notícias:</strong> entre outros, Público, NiT, Postal do Algarve, Sul Informação, Barlavento e ZooChat (usado apenas como complemento).</p>\n</div>\n"
+ },
+ "0089": {
+  "soort": "html",
+  "cs": "Nahlásit"
+ },
+ "0090": {
+  "soort": "html",
+  "cs": "Viděl(a) jsi kočkovitou šelmu, která tu není, bylo nějaké zvíře přemístěno nebo uhynulo, nebo něco nesedí? Dej vědět. Hlášení stránku automaticky nemění: nejdřív je zkontrolujeme a zapracujeme do další verze."
+ },
+ "0091": {
+  "soort": "html",
+  "cs": "Co chceš nahlásit?"
+ },
+ "0092": {
+  "soort": "html",
+  "cs": "Viděl(a) jsem zvíře, které tu není"
+ },
+ "0093": {
+  "soort": "html",
+  "cs": "Zvíře bylo přemístěno nebo odešlo"
+ },
+ "0094": {
+  "soort": "html",
+  "cs": "Zvíře uhynulo"
+ },
+ "0095": {
+  "soort": "html",
+  "cs": "Viděl(a) jsem mláďata"
+ },
+ "0096": {
+  "soort": "html",
+  "cs": "Informace chybí nebo nesedí"
+ },
+ "0097": {
+  "soort": "html",
+  "cs": "Něco jiného"
+ },
+ "0098": {
+  "soort": "html",
+  "cs": "Lokalita"
+ },
+ "0099": {
+  "soort": "html",
+  "cs": "Druh"
+ },
+ "0100": {
+  "soort": "html",
+  "cs": "Datum tvé návštěvy"
+ },
+ "0101": {
+  "soort": "html",
+  "cs": "Poznámky"
+ },
+ "0102": {
+  "soort": "html",
+  "cs": "(nepovinné)"
+ },
+ "0103": {
+  "soort": "html",
+  "cs": "Tvoje hlášení"
+ },
+ "0104": {
+  "soort": "html",
+  "cs": "Odeslat hlášení"
+ },
+ "0105": {
+  "soort": "html",
+  "cs": "Po kliknutí se otevře okno pro komentář s tvým hlášením. Odešli ho odtamtud; můžeš ještě něco doplnit. Tvoje hlášení uvidí i ostatní návštěvníci, kteří na něj mohou reagovat, proto do něj nepiš osobní údaje. K nahlášení musíš být přihlášen(a) na claude.ai."
+ },
+ "0106": {
+  "soort": "html",
+  "cs": "Stav k 15. říjnu 2026."
+ },
+ "0107": {
+  "soort": "html",
+  "cs": "Je pro tebe průvodce užitečný?"
+ },
+ "0108": {
+  "soort": "html",
+  "cs": "Malým příspěvkem pomůžeš udržet ho aktuální."
+ },
+ "0109": {
+  "soort": "html",
+  "cs": "Podpoř průvodce na Ko-fi"
+ },
+ "0110": {
+  "soort": "html",
+  "cs": "Nahoru"
+ },
+ "0111": {
+  "soort": "const:SPSV",
+  "cs": "{\"Leeuw\": [\"Lev\", \"Lev pustinný\", \"Subsaharská Afrika a malá populace v Indii\", \"Savany, travnaté oblasti a řídké lesy\", \"Hlavně zebry, pakoně, antilopy a další kopytníci\", \"Společenský, obvykle žije ve skupinách\", \"Jediná kočkovitá šelma, která přirozeně žije ve skupinách.\", \"Lev dokáže odpočívat nebo spát asi 20 hodin denně.\"], \"Tijger\": [\"Tygr\", \"Tygr indický\", \"Asie\", \"Lesy, travnaté oblasti, bažiny a mangrovy\", \"Hlavně jeleni, divoká prasata a další velcí kopytníci\", \"Samotář\", \"Vzor pruhů má každý tygr jedinečný.\", \"Pruhovaná je i tygří kůže: kdybys tygra oholil, pruhy by byly pořád vidět.\"], \"Luipaard\": [\"Levhart\", \"Levhart skvrnitý\", \"Afrika a části Asie\", \"Lesy, savany, hory a polopouště\", \"Antilopy, opice, hlodavci a ptáci\", \"Samotář\", \"Levhart dokáže vytáhnout na strom kořist těžší, než je sám.\", \"Levharti jsou mimořádně přizpůsobiví a žijí ve velmi rozdílných prostředích.\"], \"Jaguar\": [\"Jaguár\", \"Jaguár americký\", \"Střední a Jižní Amerika\", \"Deštné lesy, bažiny, savany a mokřady\", \"Kapybary, kajmani, pekari, želvy a ryby\", \"Samotář\", \"Jaguár má na kočkovitou šelmu mimořádně silné čelisti.\", \"Jaguáři výborně plavou a často loví ve vodě.\"], \"Sneeuwluipaard\": [\"Irbis horský\", \"Sněžný levhart\", \"Hory Střední a Jižní Asie\", \"Vysoké skalnaté hory a alpínské oblasti\", \"Divoké ovce a kozy, sviště a drobní savci\", \"Samotář\", \"Obrovský ocas mu pomáhá udržet rovnováhu a slouží i jako teplá přikrývka.\", \"Irbis někdy žije ve výškách přes 5.000 metrů.\"], \"Nevelpanter\": [\"Levhart obláčkový\", \"\", \"Od Himálaje po jihovýchodní Asii\", \"Tropické lesy\", \"Opice, jeleni, ptáci a drobní savci\", \"Samotář\", \"Na svou velikost má mimořádně dlouhé špičáky.\", \"Levhart obláčkový skvěle šplhá a dokáže lézt i hlavou dolů po spodní straně větví.\"], \"Soenda-nevelpanter\": [\"Levhart Diardův\", \"Levhart bornejský\", \"Borneo a Sumatra\", \"Tropické deštné lesy\", \"Opice, jeleni, ptáci a drobní savci\", \"Samotář\", \"Jeho skvrny vypadají jasně jinak než u levharta obláčkového z pevniny.\", \"Levhart Diardův byl jako samostatný druh uznán teprve v roce 2006.\"], \"Cheetah\": [\"Gepard\", \"Gepard štíhlý\", \"Hlavně Afrika, malá populace v Íránu\", \"Savany, travnaté oblasti a polopouště\", \"Gazely, zajíci a malé až středně velké antilopy\", \"Většinou samotář; samci někdy tvoří koalice\", \"Nejrychlejší suchozemské zvíře na světě.\", \"Gepard při sprintu dosáhne rychlosti asi 100 km/h.\"], \"Poema\": [\"Puma\", \"Puma americká, kuguár\", \"Severní, Střední a Jižní Amerika\", \"Lesy, hory, pouště a travnaté oblasti\", \"Hlavně jeleni, ale i menší savci\", \"Samotář\", \"Puma má víc jmen než skoro kterákoli jiná divoká kočka.\", \"Puma, kuguár a horský lev jsou jména pro jeden a týž druh.\"], \"Jaguarundi\": [\"Jaguarundi\", \"\", \"Střední a Jižní Amerika\", \"Lesy, křoviny, savany a mokřady\", \"Hlodavci, ptáci, plazi a další drobná zvířata\", \"Většinou samotář\", \"Má dlouhé tělo a krátké nohy, trochu jako kuna.\", \"Na rozdíl od většiny koček loví jaguarundi hlavně ve dne. Existuje šedá a rezavě hnědá barevná forma.\"], \"Euraziatische lynx\": [\"Rys ostrovid\", \"Rys\", \"Evropa a velká část Asie\", \"Lesy, hory a tajga\", \"Hlavně srnci, zajíci a menší savci\", \"Samotář\", \"Štětičky na uších patří k nejnápadnějším znakům rysa.\", \"Rys ostrovid je největší ze všech rysů.\"], \"Canadese lynx\": [\"Rys kanadský\", \"\", \"Kanada, Aljaška a části USA\", \"Severské jehličnaté a horské lesy\", \"Hlavně zajíci měnliví\", \"Samotář\", \"Má obrovské tlapy, které fungují jako sněžnice.\", \"Když je zajíců měnlivých málo, vychová rys kanadský mnohem méně mláďat.\"], \"Iberische lynx\": [\"Rys iberský\", \"\", \"Španělsko a Portugalsko\", \"Středomořské křoviny a řídké lesy\", \"Hlavně králíci divocí\", \"Samotář\", \"Specialista, který je silně závislý na králících.\", \"Rys iberský patřil kdysi k nejohroženějším kočkám světa, ale v posledních letech jeho počty výrazně vzrostly.\"], \"Rode lynx\": [\"Rys červený\", \"Bobcat\", \"Severní Amerika\", \"Lesy, pouště, bažiny a travnaté oblasti\", \"Králíci, hlodavci, ptáci a plazi\", \"Samotář\", \"Má krátký ocas s tmavou špičkou.\", \"Rys červený se přizpůsobí skoro každému prostředí v Severní Americe.\"], \"Serval\": [\"Serval\", \"\", \"Afrika\", \"Travnaté oblasti, savany a mokřady\", \"Hlavně hlodavci, ptáci a žáby\", \"Samotář\", \"Má velmi dlouhé nohy a velmi velké uši.\", \"Díky dlouhým nohám vyskočí serval tak vysoko, že srazí ptáky v letu.\"], \"Caracal\": [\"Karakal\", \"Stepní rys\", \"Afrika, Blízký východ a části Asie\", \"Savany, suché lesy, polopouště a hory\", \"Ptáci, hlodavci, zajíci a malé antilopy\", \"Samotář\", \"Podle dlouhých černých štětiček na uších ho hned poznáš.\", \"Karakal dokáže jedním skokem srazit z hejna několik ptáků.\"], \"Afrikaanse goudkat\": [\"Kočka zlatá\", \"\", \"Střední a západní Afrika\", \"Tropické lesy a vlhké okraje lesů\", \"Hlodavci, ptáci, opice a malí kopytníci\", \"Samotář\", \"Srst se hodně liší, od rezavě hnědé po šedou.\", \"Navzdory jménu není kočka zlatá blízce příbuzná s kočkou Temminckovou (asijskou zlatou kočkou).\"], \"Aziatische goudkat\": [\"Kočka Temminckova\", \"Asijská zlatá kočka\", \"Jihovýchodní Asie\", \"Tropické a subtropické lesy\", \"Hlodavci, ptáci, plazi a malí kopytníci\", \"Samotář\", \"Vyskytuje se v několika barevných formách: zlaté, šedé a tmavě hnědé.\", \"Kočka Temminckova dokáže ulovit kořist mnohem větší, než je sama.\"], \"Borneo-goudkat\": [\"Kočka bornejská\", \"Bornejská zlatá kočka\", \"Jen na Borneu\", \"Tropické deštné lesy\", \"Drobní savci, ptáci a plazi\", \"Pravděpodobně samotář\", \"Jedna z nejméně prozkoumaných divokých koček na světě.\", \"Druh je tak vzácný, že vědci dlouho nevěděli skoro nic o tom, jak žije v přírodě.\"], \"Marmerkat\": [\"Kočka mramorovaná\", \"\", \"Od východní Himálaje po jihovýchodní Asii\", \"Tropické lesy\", \"Ptáci, veverky, hlodavci a plazi\", \"Samotář\", \"Má mramorovanou srst a velmi dlouhý ocas.\", \"Kočka mramorovaná tráví velkou část života vysoko v korunách stromů.\"], \"Ocelot\": [\"Ocelot velký\", \"\", \"Střední a Jižní Amerika\", \"Deštné lesy, mangrovy, savany a křoviny\", \"Hlodavci, ptáci, plazi a ryby\", \"Samotář\", \"Každý ocelot má jedinečný vzor skvrn.\", \"Oceloti výborně plavou, i když loví hlavně na zemi a na stromech.\"], \"Margay\": [\"Margay\", \"Ocelot dlouhoocasý\", \"Střední a Jižní Amerika\", \"Hlavně tropické lesy\", \"Drobní savci, ptáci, plazi a zvířata žijící na stromech\", \"Samotář\", \"Jeden z nejlepších šplhavců mezi malými kočkami.\", \"Margay dokáže kotníky otočit tak daleko, že sleze po kmeni hlavou dolů.\"], \"Noordelijke tijgerkat (oncilla)\": [\"Kočka tygrovitá severní (oncila)\", \"Savanová kočka tygrovitá\", \"Střední a severovýchodní Brazílie a části severu Jižní Ameriky\", \"Savany (cerrado), suché lesy a křoviny (caatinga)\", \"Hlodavci, ptáci, plazi a drobní savci\", \"Samotář\", \"Skvrnitou srstí připomíná malého levharta.\", \"Od roku 2024 se kočky tygrovité z And považují za samostatný druh, kočku tygrovitou obláčkovou. Tento druh je proto hlavně kočkou savan a suchých lesů.\"], \"Zuidelijke tijgerkat\": [\"Kočka tygrovitá jižní\", \"Atlantská kočka tygrovitá\", \"Jižní a jihovýchodní Brazílie, Paraguay a severovýchodní Argentina\", \"Atlantský les a přilehlé oblasti\", \"Hlodavci, ptáci, plazi a drobní savci\", \"Samotář\", \"V roce 2013 byla na základě DNA oddělena od kočky tygrovité severní.\", \"V jižní Brazílii se kočka tygrovitá jižní někdy kříží s kočkou slaništní.\"], \"Oostelijke tijgerkat\": [\"Kočka tygrovitá východní\", \"Snethlagové kočka tygrovitá\", \"Severovýchodní a střední Brazílie\", \"Caatinga (suchý trnitý les) a cerrado (savana)\", \"Hlodavci, ptáci, plazi a drobní savci\", \"Pravděpodobně samotář\", \"Žije hlavně v suché caatinze na severovýchodě Brazílie.\", \"Pojmenována po Emilii Snethlageové, německo-brazilské ornitoložce.\"], \"Wolkentijgerkat\": [\"Kočka tygrovitá obláčková\", \"Andská kočka tygrovitá\", \"Kostarika, Panama a Andy od Venezuely po severozápadní Argentinu\", \"Mlžné a horské lesy, většinou nad 1.500 metry\", \"Drobní savci, ptáci a plazi\", \"Pravděpodobně samotář\", \"Neobvyklou kresbou připomíná levharta obláčkového.\", \"Jako samostatný druh uznána v roce 2024.\"], \"Tilcayo\": [\"Tilcayo\", \"Kočka tilcayo\", \"Yungas v Bolívii\", \"Mlžné lesy Yungas\", \"Pravděpodobně drobní hlodavci (nalezeno v trusu)\", \"Neznámé\", \"Má světle hnědou srst s nepravidelnými rozetami.\", \"Popsána v roce 2026: první nový žijící druh kočky od roku 1923.\"], \"Geoffroy’s kat\": [\"Kočka slaništní\", \"Kočka Geoffroyova\", \"Jižní Amerika\", \"Travnaté oblasti, křoviny, lesy a mokřady\", \"Hlodavci, ptáci, plazi a ryby\", \"Samotář\", \"Dobrý plavec.\", \"Kočka slaništní se někdy postaví na zadní nohy, aby se rozhlédla přes trávu.\"], \"Kodkod\": [\"Kočka chilská\", \"Kodkod\", \"Chile a části Argentiny\", \"Deštné lesy mírného pásu a hustá vegetace\", \"Hlodavci, ptáci, plazi a drobní savci\", \"Samotář\", \"Nejmenší kočka Ameriky.\", \"Díky malým uším a kompaktnímu tělu se kočka chilská snadno pohybuje hustou vegetací.\"], \"Colocolo\": [\"Kočka pampová\", \"Colocolo\", \"Jižní Amerika, od And v Ekvádoru po Patagonii a Brazílii\", \"Travnaté oblasti, křoviny a otevřené horské oblasti\", \"Hlodavci, ptáci a plazi\", \"Samotář\", \"Kočky pampové patří k nejsložitějším skupinám v kočkovité rodině.\", \"Vědci se neshodnou, kolik druhů kočky pampové existuje. Studie z roku 2020 navrhla pět.\"], \"Andesbergkat\": [\"Kočka horská\", \"Kočka andská\", \"Andy v Argentině, Bolívii, Chile a Peru\", \"Vysoké Andy, skalnaté oblasti a suché travnaté oblasti\", \"Hlavně viskači horští, dále drobní savci a ptáci\", \"Samotář\", \"Jedna z nejvzácnějších koček Jižní Ameriky.\", \"Kočka horská je silně závislá na viskačích horských, velkých hlodavcích žijících na skalnatých svazích.\"], \"Bengaalse kat\": [\"Kočka bengálská\", \"\", \"Východní, jižní a jihovýchodní Asie\", \"Lesy, travnaté oblasti, zemědělská půda a mokřady\", \"Hlodavci, ptáci, plazi, obojživelníci a ryby\", \"Samotář\", \"Jedna z nejrozšířenějších malých divokých koček v Asii.\", \"Kočka bengálská je jedním z předků domácího plemene bengálská kočka.\"], \"Soendanese luipaardkat\": [\"Kočka sundská\", \"\", \"Jáva, Bali, Sumatra, Borneo a části Filipín\", \"Lesy, křoviny a zemědělská půda\", \"Hlodavci, ptáci, plazi a obojživelníci\", \"Samotář\", \"Dříve byla považována za poddruh kočky bengálské.\", \"Kočka sundská se od kočky bengálské z pevniny jasně liší geneticky i geograficky.\"], \"Vissende kat\": [\"Kočka rybářská\", \"\", \"Jižní a jihovýchodní Asie\", \"Bažiny, mangrovy, řeky a mokřady\", \"Hlavně ryby, ale i žáby, korýši a drobní savci\", \"Samotář\", \"Jedna z mála koček, které se specializují na lov ve vodě.\", \"Kočka rybářská umí lovit pod vodou a mezi prsty má částečně plovací blány.\"], \"Platkopkat\": [\"Kočka plochočelá\", \"\", \"Malajsie, Sumatra a Borneo\", \"Bažiny, řeky a nížinné deštné lesy\", \"Ryby, žáby, korýši a drobní savci\", \"Samotář\", \"Má velmi plochou hlavu a dlouhý úzký čenich.\", \"Oči má posazené daleko vpředu, takže umí přesně chytit kořist ve vodě.\"], \"Roestkat\": [\"Kočka cejlonská\", \"Kočka rezavá\", \"Indie, Srí Lanka a Nepál\", \"Lesy, travnaté oblasti a suché křoviny\", \"Hlodavci, ptáci, ještěrky a hmyz\", \"Samotář\", \"Jedna z nejmenších divokých koček na světě.\", \"Dospělá kočka cejlonská váží asi polovinu běžné domácí kočky.\"], \"Manoel\": [\"Manul\", \"Pallasova kočka\", \"Střední Asie\", \"Stepi, skalnaté oblasti a chladné horské kraje\", \"Pišťuchy, hlodavci a drobní ptáci\", \"Samotář\", \"Má mimořádně hustou srst a kulaté zornice.\", \"Mladí manulové v zoo jsou velmi náchylní k infekční nemoci toxoplazmóze. Pravděpodobně proto, že se v chladném a suchém prostředí, kde žijí, s parazitem skoro nesetkají.\"], \"Europese wilde kat\": [\"Kočka divoká\", \"Kočka divoká evropská\", \"Evropa, části západní Asie a Kavkaz\", \"Lesy, křoviny a hory\", \"Hlavně myši, potkani a další drobní savci\", \"Samotář\", \"Vypadá velmi podobně jako velká, statná domácí kočka.\", \"Kočka divoká se může křížit s domácími kočkami. Toto míšení je pro některé populace problém.\"], \"Afrikaanse wilde kat\": [\"Kočka plavá\", \"\", \"Afrika a části Blízkého východu\", \"Savany, stepi, okraje pouští a zemědělská půda\", \"Hlavně hlodavci, ptáci a plazi\", \"Samotář\", \"Předek kočky domácí.\", \"První domácí kočky pocházejí pravděpodobně z kočky plavé, asi před 10.000 lety.\"], \"Chinese bergkat\": [\"Kočka šedá\", \"Kočka čínská\", \"Čína, hlavně Tibetská náhorní plošina\", \"Vysokohorské travnaté oblasti, stepi a skalnaté oblasti\", \"Hlavně pišťuchy a hlodavci\", \"Samotář\", \"Přizpůsobená životu ve velké výšce a v chladu.\", \"Kočka šedá byla dlouho považována za poddruh kočky divoké, ale dnes je to samostatný druh.\"], \"Zandkat\": [\"Kočka pouštní\", \"Kočka arabská\", \"Severní Afrika, Blízký východ a Střední Asie\", \"Pouště a suché písčité oblasti\", \"Hlodavci, ještěrky, ptáci a hmyz\", \"Samotář\", \"Na spodní straně tlap má hustou srst, která ji chrání před horkým pískem.\", \"Kočka pouštní skoro nepije a většinu vody získá z kořisti.\"], \"Zwartvoetkat\": [\"Kočka černonohá\", \"\", \"Jižní Afrika\", \"Suché savany, travnaté oblasti a polopouště\", \"Hlodavci, ptáci, plazi a hmyz\", \"Samotář\", \"Jedna z nejmenších divokých koček na světě.\", \"Navzdory své velikosti dokáže kočka černonohá za jedinou noc ulovit několik kusů kořisti.\"], \"Moeraskat\": [\"Kočka bažinná\", \"Kočka rákosní\", \"Egypt, Blízký východ a jižní a jihovýchodní Asie\", \"Bažiny, rákosiny, travnaté oblasti a zemědělská půda\", \"Hlodavci, ptáci, ryby, žáby a plazi\", \"Samotář\", \"Má poměrně dlouhé nohy a velké uši.\", \"Kočka bažinná je jednou z mála malých koček, které pravidelně loví v rákosinách a močálech.\"]}"
+ },
+ "0112": {
+  "soort": "const:RP_TYPE_SV",
+  "cs": "{\"Jonge katten gezien\": \"Viděl(a) jsem mláďata\", \"Dier gezien dat hier niet staat\": \"Viděl(a) jsem zvíře, které tu není\", \"Dier is verplaatst of vertrokken\": \"Zvíře bylo přemístěno nebo odešlo\", \"Dier is overleden\": \"Zvíře uhynulo\", \"Informatie ontbreekt of klopt niet\": \"Informace chybí nebo nesedí\", \"Iets anders\": \"Něco jiného\"}"
+ },
+ "0113": {
+  "soort": "const:SVD",
+  "cs": "{\"Subspecies\": \"Poddruh\", \"Location\": \"Lokalita\", \"Town\": \"Obec\", \"Number\": \"Počet\", \"Source\": \"Zdroj\", \"Checked\": \"Ověřeno\", \"No entries for this combination. Clear the filters to see everything.\": \"Pro tuto kombinaci nejsou žádné záznamy. Zruš filtry a uvidíš vše.\", \"no confirmed species\": \"žádný potvrzený druh\", \" · uncertain: \": \" · nejisté: \", \" · possibly also: \": \" · možná také: \", \"location selected\": \"vybraná lokalita\", \"locations selected\": \"vybraných lokalit\", \"Pantherinae (big cats)\": \"Pantherinae (velké kočky)\", \"Felinae (small cats)\": \"Felinae (malé kočky)\", \"Uncertain\": \"Nejisté\", \"Unknown\": \"Neznámé\", \"This species is currently not on view in Spain.\": \"Tento druh teď v Česku není k vidění.\", \"Photo\": \"Foto\", \" (zoo)\": \" (zoo)\", \"public domain (CC0)\": \"volné dílo (CC0)\", \"Photo coming soon\": \"Foto brzy doplníme\", \"Back to the main table\": \"Zpět na hlavní tabulku\", \"Genus\": \"Rod\", \"Also known as\": \"Jiný název\", \"Key facts\": \"Základní údaje\", \"Length (without tail)\": \"Délka (bez ocasu)\", \"Weight\": \"Hmotnost\", \"Tail\": \"Ocas\", \"Lifespan\": \"Délka života\", \"In the wild (estimate)\": \"Ve volné přírodě (odhad)\", \"Estimated number of mature individuals in the wild according to the IUCN Red List (most recent assessment). “Unknown” means there is no reliable estimate.\": \"Odhadovaný počet dospělých jedinců ve volné přírodě podle Červeného seznamu IUCN (nejnovější hodnocení). „Neznámé“ znamená, že spolehlivý odhad neexistuje.\", \"The IUCN gives no figure for the jaguar; this estimate comes from a 2018 study.\": \"Pro jaguára IUCN žádné číslo neuvádí; tento odhad pochází ze studie z roku 2018.\", \"Way of life\": \"Způsob života\", \"Range\": \"Rozšíření\", \"Habitat\": \"Prostředí\", \"Diet\": \"Potrava\", \"Social behaviour\": \"Sociální chování\", \"Special features\": \"Zvláštnosti\", \"Characteristic\": \"Typický znak\", \"Did you know?\": \"Víš, že…?\", \"Previously on view at\": \"Dříve k vidění v\", \"Seen this species somewhere else, or is something wrong? Report it\": \"Viděl(a) jsi tento druh jinde, nebo něco nesedí? Nahlas to\", \"Other species\": \"Další druhy\", \"Previous\": \"Předchozí\", \"Next\": \"Další\", \"photo: J. Gelens\": \"foto: J. Gelens\", \"Back to the map\": \"Zpět na mapu\", \"Back to the locations\": \"Zpět na lokality\", \"About this location\": \"O této lokalitě\", \"Cats here\": \"Kočky zde\", \"Visiting\": \"Návštěva\", \"Opening hours\": \"Otevírací doba\", \"Previously here\": \"Dříve zde\", \"Other locations\": \"Další lokality\", \"Not certain whether the animal is (still) there or can be seen.\": \"Není jisté, zda tu zvíře (ještě) je nebo zda je k vidění.\", \"There are no doubtful cases at the moment.\": \"Momentálně tu nejsou žádné sporné případy.\", \"I don’t know\": \"Nevím\", \"Choose a location…\": \"Vyber lokalitu…\", \"Other location…\": \"Jiná lokalita…\", \"Name and town of the location\": \"Název a obec lokality\", \"Other location\": \"Jiná lokalita\", \"For example: two animals, in the new enclosure near the entrance\": \"Například: dvě zvířata, v novém výběhu u vchodu\", \"Reporting does not work in this view. Open the page on claude.ai and log in to submit a report.\": \"V tomto zobrazení hlášení nefunguje. Otevři stránku na claude.ai a přihlas se, abys mohl(a) hlášení odeslat.\", \"Choose above what you want to report and where.\": \"Nahoře vyber, co a kde chceš nahlásit.\", \"Species unknown\": \"Druh neznámý\", \"Report\": \"Hlášení\", \"visit\": \"návštěva\", \"Comment\": \"Poznámka\", \"First choose what you want to report.\": \"Nejdřív vyber, co chceš nahlásit.\", \"Enter the name of the location.\": \"Zadej název lokality.\", \"First choose a location.\": \"Nejdřív vyber lokalitu.\", \"The report window is still loading. Please try again in a moment.\": \"Okno pro hlášení se ještě načítá. Zkus to za chvíli znovu.\", \"The comment window is open. Send your report from there. Thank you!\": \"Okno pro komentář je otevřené. Odešli hlášení odtud. Díky!\", \"A comment window with text is already open. Send or close it first, then try again.\": \"Okno pro komentář s textem už je otevřené. Nejdřív ho odešli nebo zavři a pak to zkus znovu.\", \"Too many attempts. Wait a minute and try again.\": \"Příliš mnoho pokusů. Počkej minutu a zkus to znovu.\", \"Something went wrong opening the comment window. Please try again.\": \"Při otevírání okna pro komentář se něco pokazilo. Zkus to znovu.\", \"young\": \"mládě\", \"less than a month old\": \"méně než měsíc\", \"1 month old\": \"1 měsíc\", \"about \": \"asi \", \"born\": \"narozeno\", \"No young cats are currently known.\": \"Momentálně o žádných mláďatech nevíme.\", \"Nothing has been announced at the moment.\": \"Momentálně není nic ohlášeno.\", \"Search by species, location or town\": \"Hledej podle druhu, lokality nebo obce\", \"Search the table\": \"Hledat v tabulce\", \"All statuses\": \"Všechny stavy\", \"Where to see it in Spain\": \"Kde ho vidět v Česku\", \" — Wild cats in Spain\": \" — Divoké kočky v Česku\", \"public domain\": \"volné dílo\"}"
+ },
+ "0114": {
+  "soort": "const:LBL_SV",
+  "cs": "{g:\"Přítomno\",y:\"Dočasně není k vidění\",b:\"Ohlášený odchod\",p:\"Plánováno\",w:\"Nejisté\",r:\"Jen s průvodcem\",n:\"Nepřístupné veřejnosti\"}"
+ },
+ "0115": {
+  "soort": "const:TITLE_SV",
+  "cs": "\"Divoké kočky v českých zoologických zahradách a zooparcích — aktualizováno 22. října 2026\""
+ },
+ "0116": {
+  "soort": "const:MND_SV",
+  "cs": "[\"ledna\", \"února\", \"března\", \"dubna\", \"května\", \"června\", \"července\", \"srpna\", \"září\", \"října\", \"listopadu\", \"prosince\"]"
+ },
+ "0117": {
+  "soort": "T`",
+  "cs": "${rows.length} z ${R.length} záznamů",
+  "en": "${rows.length} of ${R.length} entries"
+ },
+ "0118": {
+  "soort": "T\"",
+  "cs": "druh",
+  "en": "species"
+ },
+ "0119": {
+  "soort": "T\"",
+  "cs": "arter",
+  "en": "species"
+ },
+ "0120": {
+  "soort": "T`",
+  "cs": "Viděl(a) jsi v ${esc(l[0])} něco jiného? Nahlas to",
+  "en": "Seen something different at ${esc(l[0])}? Report it"
+ },
+ "0121": {
+  "soort": "T`",
+  "cs": "z ${confAll.length} potvrzených druhů",
+  "en": "of ${confAll.length} confirmed species"
+ },
+ "0122": {
+  "soort": "T\"",
+  "cs": "Tento druh teď v Česku není k vidění.",
+  "en": "This species is currently not on view in Portugal."
+ },
+ "0123": {
+  "soort": "T`",
+  "cs": "Zpět na mapu: ${esc(LOCS[BACK][0])}",
+  "en": "Back to ${esc(LOCS[BACK][0])} on the map"
+ },
+ "0124": {
+  "soort": "T\"",
+  "cs": "Kde ho vidět v Česku",
+  "en": "Where to see it in Portugal"
+ },
+ "0125": {
+  "soort": "T\"",
+  "cs": "druh kočkovité šelmy",
+  "en": "cat species"
+ },
+ "0126": {
+  "soort": "T\"",
+  "cs": "kattarter",
+  "en": "cat species"
+ },
+ "0127": {
+  "soort": "T\"",
+  "cs": "nejisté",
+  "en": "uncertain"
+ },
+ "0128": {
+  "soort": "T`",
+  "cs": "Ověřeno: ${inf.checked}. Časy se mohou změnit; před návštěvou se podívej na web parku.",
+  "en": "Checked: ${inf.checked.replace(\"september\",\"September\")}. Times can change; check the park’s website before your visit."
+ },
+ "0129": {
+  "soort": "T`",
+  "cs": "Viděl(a) jsi v ${esc(l[0])} něco jiného? Nahlas to",
+  "en": "Seen something different at ${esc(l[0])}? Report it"
+ },
+ "0130": {
+  "soort": "T\"",
+  "cs": " — Divoké kočky v Česku",
+  "en": " — Wild cats in Portugal"
+ },
+ "0131": {
+  "soort": "T\"",
+  "cs": " — Divoké kočky v Česku",
+  "en": " — Wild cats in Portugal"
+ },
+ "0132": {
+  "soort": "T`",
+  "cs": "${m} ${m<5?\"měsíce\":\"měsíců\"}",
+  "en": "${m} months old"
+ },
+ "0133": {
+  "soort": "T\"",
+  "cs": "Mapa Česka se 7 lokalitami s kočkovitými šelmami",
+  "en": "Map of Portugal with 7 locations with cats"
+ },
+ "0134": {
+  "soort": "T\"",
+  "cs": "Filtrovat podle stavu",
+  "en": "Filter by status"
+ },
+ "0135": {
+  "soort": "T\"",
+  "cs": " — Divoké kočky v Česku",
+  "en": " — Wild cats in Portugal"
+ },
+ "0136": {
+  "soort": "T\"",
+  "cs": " — Divoké kočky v Česku",
+  "en": " — Wild cats in Portugal"
+ },
+ "0137": {
+  "soort": "T\"",
+  "cs": "Vyber region:",
+  "en": "Choose a region:"
+ },
+ "0138": {
+  "soort": "T\"",
+  "cs": "Filtrovat podle regionu",
+  "en": "Filter by region"
+ },
+ "0139": {
+  "soort": "T\"",
+  "cs": "Všechny regiony",
+  "en": "All regions"
+ },
+ "0140": {
+  "soort": "T`",
+  "cs": "${n} z ${LOCS.length} lokalit: ${RG_NAME(RG_F)}.",
+  "en": "${n} of ${LOCS.length} locations: ${RG_NAME(RG_F)}."
+ }
+}

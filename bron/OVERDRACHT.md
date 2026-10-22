@@ -1,3 +1,11 @@
+# Overdracht (22 oktober 2026)
+
+## 22 oktober 2026: Denemarken
+- Nieuwe gids `/denemarken/` (NL/EN/DA, bron `bron/gidsen/dk.html`), 17 locaties, 15 soorten; zie bovenaan `VOORTGANG.md`, `TWIJFELGEVALLEN.md` en `bron/OPEN.md`.
+- Deens (`da`) staat nu in alle gedeelde lagen; land `dk`. Lessen in `bron/LEESMIJ.md` onder “Denemarken toevoegen”.
+- Zweden en Zuid-Noorwegen grijs op de Europakaart (`NBR` in `start.html`).
+- De Claude-pagina (`_claude/claude.html`) is gebouwd maar niet opnieuw gepubliceerd.
+
 # Overdracht (19 oktober 2026, avond)
 
 Lees eerst `bron/LEESMIJ.md` (opbouw, bouw en de telregel), `bron/OPEN.md` (open punten) en bovenaan `VOORTGANG.md` (laatste wijzigingen).

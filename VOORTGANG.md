@@ -2,6 +2,31 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 22 oktober 2026 – Denemarken
+
+Nieuwe landpagina `denemarken/` (bron: `bron/gidsen/dk.html`), in het Nederlands, Engels en Deens. Eén pagina met een filter per regio (de vijf Deense regio’s: Nordjylland, Midtjylland, Syddanmark, Sjælland, Hovedstaden), plus kaart, routeplanner, recente geboortes, soortpagina’s, filters op type en labels en het meldformulier. Duitsland en Zweden staan grijs op de kaart.
+
+**Aantallen**
+- **17 locaties**, waarvan **15 met een bevestigde kat**: 4 dierentuinen (Zoo København, Odense Zoo, Aalborg Zoo, Randers Regnskov; EAZA/DAZA), 3 safariparken (Knuthenborg, Givskud Zoo – Zootopia, Ree Park), 7 dierenparken (Krokodille Zoo, Pangea Park Falster, Blåvand Zoo, Skærup Zoo, Jyllands Park Zoo, Munkholm Zoo, Glad Zoo) en 1 opvangcentrum (Odsherred Zoo Rescue). Zoopark Sydsjælland heeft alleen onzekere vermeldingen; Hansenberg Zoo (schoolzoo in Kolding) is alleen op de open dag te bezoeken.
+- **15 soorten bevestigd**: leeuw, tijger, luipaard, jaguar, nevelpanter, cheetah, poema, Euraziatische lynx, rode lynx, serval, caracal, ocelot, margay, vissende kat, zandkat.
+- 41 vermeldingen in de hoofdtabel, waarvan 5 onzeker (zie `TWIJFELGEVALLEN.md`).
+- Route met alle soorten in zes parken: Zoo København, Odsherred Zoo Rescue, Krokodille Zoo, Skærup Zoo, Ree Park, Randers Regnskov (alternatieven: Jyllands Park Zoo voor de caracal; Aalborg, Odense of Knuthenborg voor de tijger).
+- Recente geboortes: Amoerpanter in Kopenhagen (23-09-2026), 8 leeuwenwelpen in Givskud (mei en juni 2026), 2 zwarte jaguars in Randers (februari 2026), leeuwenwelpen in Ree Park (oktober 2025), Odense (september 2025) en Blåvand (witte leeuwen, juli 2025), 2 Amoertijgers in Kopenhagen (juli 2025).
+- Ruim 40 andere locaties onderzocht zonder katten (erkende aquaria en dierenparken, attractieparken, hertenparken, roofvogelcentra, circussen, gesloten).
+
+**Werkwijze**
+- Officiële lijst: Fødevarestyrelsen, “Godkendte zoologiske anlæg” (31 locaties, oktober 2026; formeel de lijst voor EU-handel, kleinere parken kunnen ontbreken). Daarnaast DAZA (15 leden), EAZA (12 Deense leden) en Zootierliste (alle ~200 kattenpagina’s, Aktuelle en Ehemalige: 91 Deense vermeldingen).
+- Zes onderzoeksagenten (lijsten, vier regio’s, opvang/particulieren/circussen) en één vervolgagent voor de open punten (o.a. Glad Zoo: serval gevonden; Hansenberg: lynx; Skærup: lynx naar “Eerder hier”). Eén JSON-formaat, samengevoegd met een script; regio’s bepaald uit de coördinaten (NUTS 2024).
+- Type: dierentuin bij lidmaatschap van EAZA of DAZA; safariparken en opvang houden hun eigen type.
+- Circussen: wilde katten (menagerieën) verboden sinds 1962. Particulieren mogen geen roofdieren houden (BEK 1261/2015).
+- De gids is met een script afgeleid van de Portugese gids: Portugees → Deens in de code (`SPDA`, `DAD`, `R1DA` …, `l-da`), de vaste teksten door een vertaalagent naar het Deens vertaald, daarna gegevens en tekstblokken (NL/EN, Deens via een vertaaltabel met de Engelse tekst als sleutel). Kaart uit GISCO NUTS 2024 (1:3 miljoen). Geen foto’s van parken gezocht.
+
+**Gedeelde bestanden**: taal `da` (Deens) toegevoegd aan `taalmenu.js`, `locatietypes.json`/`.js`, `huisstijl.py`, `jungle.py`, `nieuw_ontwerp.py`, `test_ontwerp.py`, `bouw.py` (meldformulier) en `startdata.py`; land `dk` in alle landenlijsten. Adressen: æ → ae en ø → oe in `slug()` (`startdata.py`, `test_ontwerp.py` en de Deense gids; komt in geen andere gids voor, dus andere adressen veranderen niet).
+
+**Hoofdpagina**: Denemarken heeft een vlag, kaartvorm en zoomknop, staat in “alle soorten”, “parken op aantal soorten”, het overzicht per land, het zoeken en de tellerregel (nu 13 landen · 521 locaties · 29 soorten). Zweden en Zuid-Noorwegen staan nu grijs op de Europakaart. Landenlijsten in titels en beschrijvingen (zeven talen) bijgewerkt. De hoofdpagina blijft zeven talen; Deens staat in het taalmenu van de Deense gids. De top 10 is niet veranderd.
+
+**Gecontroleerd**: de Deense pagina in NL/EN/DA op 390 en 414 px (Chromium): geen fouten, geen horizontaal scrollen, geen Portugese of Nederlandse resten in het Deens, regiofilter, kaart, locatie- en soortpagina’s. Alle andere landpagina’s tekst voor tekst gelijk aan de vorige versie; hoofdpagina, top 10 en soortpagina’s verschillen alleen door Denemarken. WebKit niet getest (niet geïnstalleerd).
+
 ## 19 oktober 2026 – VK-gids: types langs de BIAZA/EAZA-regel
 
 Alle 88 VK-locaties vergeleken met de ledenlijst van BIAZA (biaza.org.uk/members/all, 127 leden) en EAZA (strapi.eaza.net/api/members en map.eaza.net). Van dierenpark naar dierentuin: Wingham Wildlife Park en Ponderosa Zoo (BIAZA-lid), Capel Manor Gardens en Fenn Bell Conservation Project (voorlopig BIAZA-lid). Alle andere "dierentuinen" zijn lid van BIAZA of EAZA (Cotswold, Howletts en Port Lympne alleen EAZA). Wildwood Escot onduidelijk (BIAZA-pagina van Wildwood Trust noemt alleen Kent), daarom ongewijzigd. Wildparken en opvangcentra vallen niet onder deze regel en zijn niet veranderd.

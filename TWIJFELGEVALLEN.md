@@ -4,6 +4,29 @@ Vermeldingen met de status “onzeker”: ze staan wel in de gids, maar tellen n
 
 Regel: bevestigd alleen met een recente bron (2025–2026); onzeker alleen met een concrete aanwijzing van na 2024; oudere aanwijzingen gaan naar “Eerder hier”.
 
+## Denemarken
+
+Stand 22 oktober 2026.
+
+| Locatie | Soort | Waarom twijfel | Bron |
+|---|---|---|---|
+| Zoopark Sydsjælland (Næstved) | Tijger (Bengaals, incl. witte tijger “Elvis”) | Geen werkende eigen site (zoo-park.dk is overgenomen door casinoreclame), geen eigen posts gevonden. Nyhedspunkt (29-08-2026) schrijft dat er geen tijgers meer zijn; byennaestved.dk (16-10-2026) noemt Bengaalse tijgers en zegt dat het park bij de controle van augustus 2026 nog draaide. Ook niet zeker of het park open is. | VisitDenmark (ongedateerd); byennaestved.dk 16-10-2026; Nyhedspunkt 29-08-2026; Zootierliste (e-mail 2021) |
+| Zoopark Sydsjælland (Næstved) | Euraziatische lynx | Alleen byennaestved.dk (16-10-2026, waarschijnlijk overgenomen van Wikipedia) en Zootierliste (e-mail 2022). | byennaestved.dk; Zootierliste |
+| Blåvand Zoo (Blåvand) | Euraziatische lynx | Alleen getekend op de parkkaart van 2024 en “små kattedyr” op een ongedateerde pagina; bij een bezoek in 2022 geen lynx gezien. | blaavandzoo.dk parkkaart 2024; Zootierliste (07/2022) |
+| Munkholm Zoo (Balle) | Euraziatische lynx (“Altai-lynx”) | Twee verblijven op de parkkaart en een foto uit 2024; de huidige parkteksten (2026) noemen de lynx niet. | munkholmzoo.dk parkkaart (03-2024); Zootierliste (2022) |
+| Skærup Zoo (Børkop) | Vissende kat | Gezien en met bord bij een bezoek in 08/2025 (Zootierliste), maar niet op de eigen dierenlijst. | Zootierliste (08/2025); skaerup-zoo.dk |
+
+### Bevestigd met kanttekening of niet opgenomen
+
+- **Hansenberg Zoo (Kolding)**: Euraziatische lynx bevestigd op de eigen site, maar status “niet open voor publiek”: schoolzoo, alleen te bezoeken op de open dag (volgende: 23-01-2027). Telt daardoor niet als bevestigd.
+- **Munkholm Zoo**: servaljongen in 2026 alleen uit een bezoekersreview (Trustpilot, juli 2026); niet bij de recente geboortes gezet.
+- **Glad Zoo**: serval bevestigd met het dagprogramma 2026 (dagelijkse servalvoedering) en persfoto’s van maart 2026, maar niet op de pagina “Vores dyr”. Aantal onbekend.
+- **Jyllands Park Zoo**: leeuw, lynx, caracal en serval staan op de ongedateerde dierenlijst van de site (seizoen 2026); geen namen, aantallen of nieuws.
+- **Ree Park**: vissende kat en zandkat alleen op de eigen soortpagina’s (bijgewerkt in 2025); geen gedateerd nieuws. De eigen site blokkeert automatische toegang.
+- **Zoo København, leeuw**: ondersoort “zuidelijk” alleen volgens Zootierliste (Angolese kater uit Chorzów, juni 2026); de eigen site noemt geen ondersoort.
+- **Krokodille Zoo, poema**: jaartallen van de worpen spreken elkaar tegen (2024 of 2025); het aantal poema’s is onbekend.
+- **Skærup Zoo, jaguar**: of de twee welpen van januari 2024 er nog zijn, is niet gevonden.
+
 ## Portugal
 
 | Locatie | Soort | Waarom twijfel | Bron |

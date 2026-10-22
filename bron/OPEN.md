@@ -8,7 +8,7 @@ Bijgehouden door Claude. Bijwerken als een punt is opgelost.
 
 - **Foto's van Franse parken**: veel locaties hebben nog geen foto (Commons gaf een limiet). Een rustige extra ronde.
 - **Maandelijkse controle**: een geplande taak die nieuws over geboortes, vertrek en aankomst zoekt en voorstellen doet.
-- **Volgend land**: het Verenigd Koninkrijk staat erin (14-10-2026, NL/EN/DE), Ierland ook (15-10-2026, NL/EN), Portugal ook (16-10-2026, NL/EN/PT). Keuze voor daarna volgt. Als de website sneller moet: de vaste JS van de deelstaatblokken één keer delen in plaats van per blok (scheelt ±4 MB).
+- **Volgend land**: het Verenigd Koninkrijk staat erin (14-10-2026, NL/EN/DE), Ierland ook (15-10-2026, NL/EN), Portugal ook (16-10-2026, NL/EN/PT), Denemarken ook (22-10-2026, NL/EN/DA). Keuze voor daarna volgt. Als de website sneller moet: de vaste JS van de deelstaatblokken één keer delen in plaats van per blok (scheelt ±4 MB).
 - **VK nagaan**: Longleat (eigen site geblokkeerd; alles uit nieuws), Whipsnade (eigen site geblokkeerd), Amazon World (Isle of Wight: oude pagina noemt ocelot en Geoffroy’s kat), Green Dragon Eco Farm (alleen Zootierliste: lynx en wilde kat; niet opgenomen), Mole Hall en Galloway Wildlife Park (mogelijk dicht), Borth Wild Animal Kingdom (katten 2020–2021 weg). Een officiële landelijke lijst van vergunde dierentuinen is niet openbaar; de nieuwste volledige lijst is een FOI-antwoord van APHA uit 2018–2019.
 - **Oostenrijk/Zwitserland nagaan**: Tiger’s World (Judenau, NÖ) — alleen op een toeristische site, eigen site niet te openen, niet opgenomen; Luchsgehege Loipersdorf (ligging en publiek onbekend); Parc animalier de Prêles (BE) niet nagelopen; Bioparc Genève houdt ook hybride wilde katten en savannahkatten (niet meegeteld).
 - **Fréjus (Var)**: dierentuin dicht sinds 30-8-2026; na eind november 2026 nagaan waar de katten zijn gebleven.
@@ -26,6 +26,10 @@ Bijgehouden door Claude. Bijwerken als een punt is opgelost.
 - **Portugal (16-10-2026)**:
   - **Officiële lijst**: de DGAV-lijst “Parques Zoológicos Licenciados” is van 28-04-2021 (24 parken). Een nieuwere lijst opvragen bij de DGAV.
   - **Nagaan**: Europaradise (tijgers na de heropening in mei 2026?), Zoo da Maia (leeuw), Zoo de Lagos (ocelot weg? lynx Thea), Zoo Santo Inácio (cheetahs, alleen op de plattegrond), Lissabon (nevelpanter, aantal en geslacht; Euraziatische lynx in 2026), Parque Biológico de Gaia (komen de Iberische lynxen?).
+- **Denemarken (22-10-2026)**:
+  - **Nagaan**: Zoopark Sydsjælland (Næstved): open of niet, tijgers en lynx nog? (bronnen uit 2026 spreken elkaar tegen; Facebook van het park). Blåvand Zoo en Munkholm Zoo: lynx nog te zien? Skærup Zoo: vissende kat (alleen Zootierliste 08/2025). Munkholm: servaljongen 2026. Krokodille Zoo: aantal poema’s.
+  - **Officiële lijst**: de lijst van de Fødevarestyrelsen is de lijst voor EU-handel; een volledige lijst van alle vergunde dierenparken is niet openbaar. Kleine particuliere parken kunnen ontbreken.
+  - **Seizoen**: veel parken zijn in de winter dicht; openingstijden in het voorjaar van 2027 opnieuw nalopen.
 - **Ierland (15-10-2026)**:
   - **Top 10**: geen Iers park komt in de buurt (Fota en Emerald Park scoren 30; nummer 10 heeft 46). Niets veranderd.
   - **Officiële lijst**: de NPWS publiceert geen lijst van vergunde dierentuinen; de nieuwste volledige lijst is van 8-9-2022 (Kamervragen, 55 geïnspecteerde dierentuinen). Een actuele lijst kan bij zoos@npws.gov.ie of met een FOI-verzoek. “Oak Cottage” (Kilkenny) van die lijst niet thuisgebracht.

@@ -1145,6 +1145,7 @@ def europa(pad, wild, av, idx, spn=None, soort=False, avb=None, info=None):
 
 def slug_py(s):
     import unicodedata
+    s = s.replace("æ", "ae").replace("ø", "oe").replace("Æ", "Ae").replace("Ø", "Oe")
     s = "".join(c for c in unicodedata.normalize("NFD", s) if unicodedata.category(c) != "Mn").lower()
     s = re.sub(r"\(.*?\)", "", s)
     return re.sub(r"[^a-z0-9]+", "-", s).strip("-")

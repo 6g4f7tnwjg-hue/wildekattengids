@@ -5,6 +5,7 @@ PRIO = "grybnpw"   # welke status telt als er meerdere zijn: aanwezig gaat voor
 CONF = set("gybr")  # deze statussen tellen als "bevestigd"
 
 def slug(s):
+    s = s.replace("æ", "ae").replace("ø", "oe").replace("Æ", "Ae").replace("Ø", "Oe")   # Deense letters (22-10-2026)
     s = unicodedata.normalize("NFD", s)
     s = "".join(c for c in s if not unicodedata.combining(c)).lower()
     s = re.sub(r"\(.*?\)", "", s)

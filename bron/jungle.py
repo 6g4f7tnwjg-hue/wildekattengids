@@ -201,29 +201,29 @@ var sb=document.getElementById('nw-sbar');if(!sb||sb.classList.contains('nw-los'
 var kop=document.querySelector('.nt-kop');if(!kop)return;
 var vlag=kop.querySelector('h1 svg');var ond=kop.querySelector('.hs-onder');var meta=kop.querySelector('.nt-meta');var datum=kop.querySelector('.nw-datum');
 var T={
- loc:{nl:'Dierentuinen, parken en opvang',en:'Zoos, animal parks and sanctuaries',fr:'Zoos, parcs et refuges',de:'Zoos, Tierparks und Auffangstationen',it:'Zoo, parchi e centri di recupero',es:'Zoos, parques y santuarios',pt:'Zoos, parques e santuários',da:'Zoologiske haver, dyreparker og redningscentre'},
- sp:{nl:'Welke wilde katten je hier kunt zien',en:'Which wild cats you can see here',fr:'Les félins à voir ici',de:'Welche Wildkatzen du hier sehen kannst',it:'Quali felini puoi vedere qui',es:'Qué felinos puedes ver aquí',pt:'Que felinos podes ver aqui',da:'Hvilke vilde katte du kan se her'},
- meer:{nl:'Achtergrond, nieuws en routeplanner',en:'Background, news and route planner',fr:'Contexte, actualités et itinéraire',de:'Hintergrund, Neuigkeiten und Routenplaner',it:'Contesto, novità e percorso',es:'Contexto, novedades y ruta',pt:'Contexto, novidades e roteiro',da:'Baggrund, nyheder og ruteplanlægger'},
- locw:{nl:'locaties',en:'locations',fr:'lieux',de:'Orte',it:'luoghi',es:'lugares',pt:'locais',da:'steder'},
- spw:{nl:'soorten',en:'species',fr:'espèces',de:'Arten',it:'specie',es:'especies',pt:'espécies',da:'arter'},
- big:{nl:'grote',en:'big',fr:'grands',de:'groß',it:'grandi',es:'grandes',pt:'grandes',da:'store'},
- small:{nl:'kleine',en:'small',fr:'petits',de:'klein',it:'piccoli',es:'pequeños',pt:'pequenos',da:'små'},
- tldr:{nl:'De belangrijkste feiten op een rij',en:'The key facts at a glance',fr:'L’essentiel en bref',de:'Das Wichtigste auf einen Blick',it:'I fatti principali in breve',es:'Lo esencial de un vistazo',pt:'O essencial num relance',da:'De vigtigste fakta i korte træk'},
- actueel:{nl:'Geboortes, verhuizingen en nieuws',en:'Births, moves and news',fr:'Naissances, transferts et actualités',de:'Geburten, Umzüge und Neuigkeiten',it:'Nascite, trasferimenti e novità',es:'Nacimientos, traslados y noticias',pt:'Nascimentos, transferências e novidades',da:'Fødsler, flytninger og nyheder'},
- kleur:{nl:'Zwarte panters, witte tijgers en kruisingen',en:'Black panthers, white tigers and hybrids',fr:'Panthères noires, tigres blancs et hybrides',de:'Schwarze Panther, weiße Tiger und Hybriden',it:'Pantere nere, tigri bianche e ibridi',es:'Panteras negras, tigres blancos e híbridos',pt:'Panteras negras, tigres brancos e híbridos',da:'Sorte pantere, hvide tigre og krydsninger'},
- route:{nl:'Zo zie je de meeste soorten',en:'How to see the most species',fr:'Comment voir le plus d’espèces',de:'So siehst du die meisten Arten',it:'Come vedere più specie',es:'Cómo ver más especies',pt:'Como ver mais espécies',da:'Sådan ser du flest arter'},
- routeg:{nl:'{N} soorten in {P} parken',en:'{N} species in {P} parks',fr:'{N} espèces dans {P} parcs',de:'{N} Arten in {P} Parks',it:'{N} specie in {P} parchi',es:'{N} especies en {P} parques',pt:'{N} espécies em {P} parques',da:'{N} arter i {P} parker'},
- tabel:{nl:'Alle vermeldingen per soort en locatie',en:'All entries by species and location',fr:'Toutes les mentions par espèce et lieu',de:'Alle Einträge nach Art und Ort',it:'Tutte le segnalazioni per specie e luogo',es:'Todas las menciones por especie y lugar',pt:'Todas as menções por espécie e local',da:'Alle angivelser efter art og sted'},
- tabelg:{nl:'{V} vermeldingen',en:'{V} entries',fr:'{V} mentions',de:'{V} Einträge',it:'{V} segnalazioni',es:'{V} menciones',pt:'{V} menções',da:'{V} angivelser'},
- uitleg:{nl:'Hoe deze gids is gemaakt',en:'How this guide was made',fr:'Comment ce guide a été réalisé',de:'Wie dieser Guide entstanden ist',it:'Come è stata realizzata questa guida',es:'Cómo se hizo esta guía',pt:'Como este guia foi feito',da:'Sådan er guiden lavet'},
- uitlegg:{nl:'Bronnen: parken, ZooTrack en Zootierliste',en:'Sources: parks, ZooTrack and Zootierliste',fr:'Sources : parcs, ZooTrack et Zootierliste',de:'Quellen: Parks, ZooTrack und Zootierliste',it:'Fonti: parchi, ZooTrack e Zootierliste',es:'Fuentes: parques, ZooTrack y Zootierliste',pt:'Fontes: parques, ZooTrack e Zootierliste',da:'Kilder: parker, ZooTrack og Zootierliste'},
- rapporteer:{nl:'Iets gezien of klopt er iets niet?',en:'Seen something or spotted a mistake?',fr:'Vu quelque chose ou une erreur ?',de:'Etwas gesehen oder einen Fehler entdeckt?',it:'Visto qualcosa o un errore?',es:'¿Has visto algo o hay un error?',pt:'Viste algo ou há um erro?',da:'Har du set noget, eller er der en fejl?'},
- rapporteerg:{nl:'Meldingen worden eerst gecontroleerd',en:'Reports are checked first',fr:'Les signalements sont d’abord vérifiés',de:'Meldungen werden zuerst geprüft',it:'Le segnalazioni vengono prima verificate',es:'Los avisos se revisan primero',pt:'Os avisos são verificados primeiro',da:'Indberetninger bliver kontrolleret først'}};
-var MV={'Dierentuin':{nl:'dierentuinen',en:'zoos',fr:'zoos',de:'Zoos',it:'zoo',es:'zoos',pt:'zoos',da:'zoologiske haver'},
- 'Dierenpark':{nl:'dierenparken',en:'animal parks',fr:'parcs animaliers',de:'Tierparks',it:'parchi faunistici',es:'parques de animales',pt:'parques de animais',da:'dyreparker'},
- 'Safaripark':{nl:'safariparken',en:'safari parks',fr:'parcs safari',de:'Safariparks',it:'safari park',es:'safaris',pt:'safaris',da:'safariparker'},
- 'Attractiepark met dieren':{nl:'attractieparken',en:'theme parks',fr:"parcs d'attractions",de:'Freizeitparks',it:'parchi a tema',es:'parques temáticos',pt:'parques temáticos',da:'forlystelsesparker'},
- 'Opvang of sanctuary':{nl:'opvangcentra',en:'sanctuaries',fr:'refuges',de:'Auffangstationen',it:'centri di recupero',es:'santuarios',pt:'santuários',da:'redningscentre'}};
+ loc:{nl:'Dierentuinen, parken en opvang',en:'Zoos, animal parks and sanctuaries',fr:'Zoos, parcs et refuges',de:'Zoos, Tierparks und Auffangstationen',it:'Zoo, parchi e centri di recupero',es:'Zoos, parques y santuarios',pt:'Zoos, parques e santuários',da:'Zoologiske haver, dyreparker og redningscentre',cs:'Zoologické zahrady, zooparky a záchranné stanice'},
+ sp:{nl:'Welke wilde katten je hier kunt zien',en:'Which wild cats you can see here',fr:'Les félins à voir ici',de:'Welche Wildkatzen du hier sehen kannst',it:'Quali felini puoi vedere qui',es:'Qué felinos puedes ver aquí',pt:'Que felinos podes ver aqui',da:'Hvilke vilde katte du kan se her',cs:'Které divoké kočky tu uvidíš'},
+ meer:{nl:'Achtergrond, nieuws en routeplanner',en:'Background, news and route planner',fr:'Contexte, actualités et itinéraire',de:'Hintergrund, Neuigkeiten und Routenplaner',it:'Contesto, novità e percorso',es:'Contexto, novedades y ruta',pt:'Contexto, novidades e roteiro',da:'Baggrund, nyheder og ruteplanlægger',cs:'Souvislosti, novinky a plánovač trasy'},
+ locw:{nl:'locaties',en:'locations',fr:'lieux',de:'Orte',it:'luoghi',es:'lugares',pt:'locais',da:'steder',cs:'míst'},
+ spw:{nl:'soorten',en:'species',fr:'espèces',de:'Arten',it:'specie',es:'especies',pt:'espécies',da:'arter',cs:'druhů'},
+ big:{nl:'grote',en:'big',fr:'grands',de:'groß',it:'grandi',es:'grandes',pt:'grandes',da:'store',cs:'velké'},
+ small:{nl:'kleine',en:'small',fr:'petits',de:'klein',it:'piccoli',es:'pequeños',pt:'pequenos',da:'små',cs:'malé'},
+ tldr:{nl:'De belangrijkste feiten op een rij',en:'The key facts at a glance',fr:'L’essentiel en bref',de:'Das Wichtigste auf einen Blick',it:'I fatti principali in breve',es:'Lo esencial de un vistazo',pt:'O essencial num relance',da:'De vigtigste fakta i korte træk',cs:'To nejdůležitější v kostce'},
+ actueel:{nl:'Geboortes, verhuizingen en nieuws',en:'Births, moves and news',fr:'Naissances, transferts et actualités',de:'Geburten, Umzüge und Neuigkeiten',it:'Nascite, trasferimenti e novità',es:'Nacimientos, traslados y noticias',pt:'Nascimentos, transferências e novidades',da:'Fødsler, flytninger og nyheder',cs:'Narození, přesuny a novinky'},
+ kleur:{nl:'Zwarte panters, witte tijgers en kruisingen',en:'Black panthers, white tigers and hybrids',fr:'Panthères noires, tigres blancs et hybrides',de:'Schwarze Panther, weiße Tiger und Hybriden',it:'Pantere nere, tigri bianche e ibridi',es:'Panteras negras, tigres blancos e híbridos',pt:'Panteras negras, tigres brancos e híbridos',da:'Sorte pantere, hvide tigre og krydsninger',cs:'Černí panteři, bílí tygři a kříženci'},
+ route:{nl:'Zo zie je de meeste soorten',en:'How to see the most species',fr:'Comment voir le plus d’espèces',de:'So siehst du die meisten Arten',it:'Come vedere più specie',es:'Cómo ver más especies',pt:'Como ver mais espécies',da:'Sådan ser du flest arter',cs:'Jak uvidět co nejvíc druhů'},
+ routeg:{nl:'{N} soorten in {P} parken',en:'{N} species in {P} parks',fr:'{N} espèces dans {P} parcs',de:'{N} Arten in {P} Parks',it:'{N} specie in {P} parchi',es:'{N} especies en {P} parques',pt:'{N} espécies em {P} parques',da:'{N} arter i {P} parker',cs:'{N} druhů v {P} parcích'},
+ tabel:{nl:'Alle vermeldingen per soort en locatie',en:'All entries by species and location',fr:'Toutes les mentions par espèce et lieu',de:'Alle Einträge nach Art und Ort',it:'Tutte le segnalazioni per specie e luogo',es:'Todas las menciones por especie y lugar',pt:'Todas as menções por espécie e local',da:'Alle angivelser efter art og sted',cs:'Všechny zmínky podle druhu a místa'},
+ tabelg:{nl:'{V} vermeldingen',en:'{V} entries',fr:'{V} mentions',de:'{V} Einträge',it:'{V} segnalazioni',es:'{V} menciones',pt:'{V} menções',da:'{V} angivelser',cs:'Zmínky: {V}'},
+ uitleg:{nl:'Hoe deze gids is gemaakt',en:'How this guide was made',fr:'Comment ce guide a été réalisé',de:'Wie dieser Guide entstanden ist',it:'Come è stata realizzata questa guida',es:'Cómo se hizo esta guía',pt:'Como este guia foi feito',da:'Sådan er guiden lavet',cs:'Jak tento průvodce vznikl'},
+ uitlegg:{nl:'Bronnen: parken, ZooTrack en Zootierliste',en:'Sources: parks, ZooTrack and Zootierliste',fr:'Sources : parcs, ZooTrack et Zootierliste',de:'Quellen: Parks, ZooTrack und Zootierliste',it:'Fonti: parchi, ZooTrack e Zootierliste',es:'Fuentes: parques, ZooTrack y Zootierliste',pt:'Fontes: parques, ZooTrack e Zootierliste',da:'Kilder: parker, ZooTrack og Zootierliste',cs:'Zdroje: parky, ZooTrack a Zootierliste'},
+ rapporteer:{nl:'Iets gezien of klopt er iets niet?',en:'Seen something or spotted a mistake?',fr:'Vu quelque chose ou une erreur ?',de:'Etwas gesehen oder einen Fehler entdeckt?',it:'Visto qualcosa o un errore?',es:'¿Has visto algo o hay un error?',pt:'Viste algo ou há um erro?',da:'Har du set noget, eller er der en fejl?',cs:'Máš tip, nebo je tu chyba?'},
+ rapporteerg:{nl:'Meldingen worden eerst gecontroleerd',en:'Reports are checked first',fr:'Les signalements sont d’abord vérifiés',de:'Meldungen werden zuerst geprüft',it:'Le segnalazioni vengono prima verificate',es:'Los avisos se revisan primero',pt:'Os avisos são verificados primeiro',da:'Indberetninger bliver kontrolleret først',cs:'Hlášení nejdřív ověřujeme'}};
+var MV={'Dierentuin':{nl:'dierentuinen',en:'zoos',fr:'zoos',de:'Zoos',it:'zoo',es:'zoos',pt:'zoos',da:'zoologiske haver',cs:'zoologické zahrady'},
+ 'Dierenpark':{nl:'dierenparken',en:'animal parks',fr:'parcs animaliers',de:'Tierparks',it:'parchi faunistici',es:'parques de animales',pt:'parques de animais',da:'dyreparker',cs:'zooparky'},
+ 'Safaripark':{nl:'safariparken',en:'safari parks',fr:'parcs safari',de:'Safariparks',it:'safari park',es:'safaris',pt:'safaris',da:'safariparker',cs:'safari parky'},
+ 'Attractiepark met dieren':{nl:'attractieparken',en:'theme parks',fr:"parcs d'attractions",de:'Freizeitparks',it:'parchi a tema',es:'parques temáticos',pt:'parques temáticos',da:'forlystelsesparker',cs:'zábavní parky'},
+ 'Opvang of sanctuary':{nl:'opvangcentra',en:'sanctuaries',fr:'refuges',de:'Auffangstationen',it:'centri di recupero',es:'santuarios',pt:'santuários',da:'redningscentre',cs:'záchranné stanice'}};
 var langs=[].map.call(document.querySelectorAll('[data-setlang]'),function(b){return b.dataset.setlang});if(!langs.length)langs=['nl'];
 langs=langs.filter(function(l,i){return langs.indexOf(l)==i});
 function esc(t){return String(t).replace(/[<&>]/g,'');}
@@ -268,7 +268,7 @@ document.addEventListener('click',later);window.addEventListener('hashchange',la
 
 # soort- en parkpagina's binnen een land: één groene kop, foto eronder, hartje op de foto, zwevende terugknop (19-10-2026)
 DETAIL_JS = r"""(function(){
-var LW={nl:'locaties',en:'locations',fr:'lieux',de:'Orte',it:'luoghi',es:'lugares',pt:'locais',da:'steder'},IN={nl:'in',en:'in',fr:'en',de:'in',it:'in',es:'en',pt:'em',da:'i'};
+var LW={nl:'locaties',en:'locations',fr:'lieux',de:'Orte',it:'luoghi',es:'lugares',pt:'locais',da:'steder',cs:'míst'},IN={nl:'in',en:'in',fr:'en',de:'in',it:'in',es:'en',pt:'em',da:'i',cs:'v'};
 function langs(){var a=[].map.call(document.querySelectorAll('[data-setlang]'),function(b){return b.dataset.setlang});if(!a.length)a=[document.documentElement.lang||'nl'];return a.filter(function(l,i){return a.indexOf(l)==i});}
 function esc(t){return String(t).replace(/[<&>]/g,'');}
 function tekst(el,l){if(!el)return '';var x=el.querySelector('.l-'+l);return (x||el).textContent.trim();}
@@ -633,7 +633,7 @@ def voorbeeld_tak(bron='nederland'):
 
 # losse park- en soortpagina's (/<land>/locatie/…, /<land>/soort/…): vlag, landnaam en sleutel voor het hartje (19-10-2026)
 CODE = {"nederland": "nl", "belgie": "be", "luxemburg": "lu", "duitsland": "de", "frankrijk": "fr", "oostenrijk": "at",
-        "zwitserland": "ch", "verenigd-koninkrijk": "uk", "italie": "it", "spanje": "es", "ierland": "ie", "portugal": "pt", "denemarken": "dk"}
+        "zwitserland": "ch", "verenigd-koninkrijk": "uk", "italie": "it", "spanje": "es", "ierland": "ie", "portugal": "pt", "denemarken": "dk", "tsjechie": "cz"}
 _START = None
 def _start():
     global _START

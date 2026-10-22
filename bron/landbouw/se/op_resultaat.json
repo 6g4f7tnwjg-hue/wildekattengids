@@ -1,0 +1,169 @@
+{
+  "locaties": [
+    {
+      "naam": "Ystad Djurpark",
+      "plaats": "Skårby (Ystads kommun)",
+      "lan": "Skåne län",
+      "lon": 13.72,
+      "lat": 55.486,
+      "type": "Dierenpark",
+      "lidmaatschap": [],
+      "url": "https://www.ystaddjurpark.se/",
+      "uren": {
+        "nl": "Seizoen vanaf 1 mei t/m oktober (prijzen voor mei–oktober); gesloten op midzomeravond en 5-9-2026 (eigen site, gezien 22-10-2026)",
+        "en": "Season from 1 May through October (prices listed for May–October); closed on Midsummer Eve and 5-9-2026 (own website, seen 22-10-2026)"
+      },
+      "about": {
+        "nl": "Particulier dierenpark met zo'n 60 soorten, ca. 10 km ten noordwesten van Ystad; het zuidelijkste dierenpark van Zweden. Volgens de eigen site waren de servals hier de eerste in Scandinavië. Open voor publiek.",
+        "en": "Privately run animal park with about 60 species, some 10 km north-west of Ystad; Sweden's southernmost zoo. According to its own website its servals were the first in Scandinavia. Open to the public."
+      },
+      "earlier": {
+        "nl": "",
+        "en": ""
+      },
+      "katten": [
+        {
+          "soort": "Serval",
+          "ondersoort": "—",
+          "status": "g",
+          "toelichting": {
+            "nl": "Staat op de actuele dierenlijst en heeft een eigen soortpagina; de site spreekt van 'servalerna' (meervoud).",
+            "en": "On the current animal list with its own species page; the website speaks of 'servalerna' (plural)."
+          },
+          "aantal": {
+            "nl": "onbekend (meervoud op de site)",
+            "en": "unknown (plural on the website)"
+          },
+          "bron": "Eigen site dierenlijst djuren.ystaddjurpark.se en soortpagina /djuren/v/serval (gezien 22-10-2026, ongedateerd); Zootierliste (aanvullend)"
+        }
+      ],
+      "geboortes": [],
+      "kleur": ""
+    },
+    {
+      "naam": "Junsele Djurpark",
+      "plaats": "Junsele (Sollefteå kommun)",
+      "lan": "Västernorrlands län",
+      "lon": 16.855,
+      "lat": 63.699,
+      "type": "Dierenpark",
+      "lidmaatschap": [],
+      "url": "https://www.junseledjurpark.com/",
+      "uren": {
+        "nl": "Alleen zomer: 21-6 t/m 16-8-2026, 10–16 uur (eigen site, gezien 22-10-2026)",
+        "en": "Summer only: 21-6 to 16-8-2026, 10:00–16:00 (own website, seen 22-10-2026)"
+      },
+      "about": {
+        "nl": "Klein dierenpark (sinds 1965) bij camping en vakantiedorp in Junsele, met circa 20 diersoorten. Volgens de park is het de enige plek in Zweden met witte tijgers. Roofdiervoedering di, do en za om 12 uur. Open voor publiek (alleen in de zomer).",
+        "en": "Small animal park (since 1965) next to a campsite and holiday village in Junsele, with about 20 species. The park says it is the only place in Sweden with white tigers. Predator feeding Tue, Thu and Sat at 12:00. Open to the public (summer only)."
+      },
+      "earlier": {
+        "nl": "",
+        "en": ""
+      },
+      "katten": [
+        {
+          "soort": "Tijger",
+          "ondersoort": "Bengaals, incl. witte tijger",
+          "status": "g",
+          "toelichting": {
+            "nl": "Twee witte en één gele tijger. Het park noemt de witte tijger een kleurvariant van de Bengaalse tijger; Zootierliste vermeldt ze zonder ondersoort.",
+            "en": "Two white tigers and one yellow tiger. The park calls the white tiger a colour variant of the Bengal tiger; Zootierliste lists them without subspecies."
+          },
+          "aantal": {
+            "nl": "3 (2 witte, 1 gele)",
+            "en": "3 (2 white, 1 yellow)"
+          },
+          "bron": "Eigen site soortpagina /tigrar/ (bijgewerkt 19-05-2026, gezien 22-10-2026)"
+        },
+        {
+          "soort": "Euraziatische lynx",
+          "ondersoort": "onbekend",
+          "status": "g",
+          "toelichting": {
+            "nl": "Eén kater en één poes; staat ook op de parkplattegrond 2026 ('Lo').",
+            "en": "One male and one female; also shown on the 2026 park map ('Lo')."
+          },
+          "aantal": {
+            "nl": "2 (1 kater, 1 poes)",
+            "en": "2 (1 male, 1 female)"
+          },
+          "bron": "Eigen site soortpagina /lodjur/ (bijgewerkt 19-05-2026) en pagina /djurparken/ met kaart (bijgewerkt 25-05-2026), gezien 22-10-2026"
+        }
+      ],
+      "geboortes": [],
+      "kleur": "witte tijger"
+    }
+  ],
+  "zonder_katten": [
+    {
+      "naam": "Cirkus Brazil Jack",
+      "plaats": "Trollhättan (rondreizend)",
+      "reden": {
+        "nl": "Rondreizend circus; wilde katachtigen (roofdieren) zijn in Zweedse circussen verboden. Toert volgens SVT sinds eind jaren 1990 zonder wilde dieren (SVT 22-07-2015).",
+        "en": "Touring circus; wild cats (carnivores) are banned in Swedish circuses. According to SVT it has toured without wild animals since the late 1990s (SVT 22-07-2015)."
+      }
+    },
+    {
+      "naam": "Cirkus Scott",
+      "plaats": "rondreizend",
+      "reden": {
+        "nl": "Rondreizend circus; gestopt met wilde dieren (SVT 22-07-2015); roofdieren zijn in Zweedse circussen sowieso verboden.",
+        "en": "Touring circus; stopped using wild animals (SVT 22-07-2015); carnivores are banned in Swedish circuses anyway."
+      }
+    },
+    {
+      "naam": "Cirkus Maximum",
+      "plaats": "Halland (rondreizend)",
+      "reden": {
+        "nl": "Laatste Zweedse circus met wilde dieren (olifanten); stopte in januari 2018 met touren. Had toen alleen nog paarden, kamelen en ezels, geen katachtigen (SVT 19-01-2018).",
+        "en": "The last Swedish circus with wild animals (elephants); stopped touring in January 2018. By then it only had horses, camels and donkeys, no cats (SVT 19-01-2018)."
+      }
+    },
+    {
+      "naam": "Cirkus Saraffino",
+      "plaats": "rondreizend",
+      "reden": {
+        "nl": "Geen informatie over dieren gevonden; wilde katachtigen zijn in Zweedse circussen hoe dan ook verboden (Djurskyddsförordning 2019:66, 3 kap. 3 §).",
+        "en": "No information on animals found; wild cats are banned in Swedish circuses in any case (Animal Welfare Ordinance 2019:66, ch. 3 s. 3)."
+      }
+    },
+    {
+      "naam": "Frösö Zoo",
+      "plaats": "Östersund (Frösön)",
+      "reden": {
+        "nl": "Gesloten in 2019; had eerder een Amoertijger en drie leeuwen, die naar andere dierentuinen gingen (Wikipedia; MTV Uutiset, ongedateerd).",
+        "en": "Closed in 2019; previously had an Amur tiger and three lions, which went to other zoos (Wikipedia; MTV Uutiset, undated)."
+      }
+    },
+    {
+      "naam": "Blekinge Exotiska Värld",
+      "plaats": "Karlshamn",
+      "reden": {
+        "nl": "Tropenhuis gesloten wegens slechte financiën; de länsstyrelse vond ernstige gebreken. Geen katachtigen gemeld (SVT Blekinge, ongedateerd).",
+        "en": "Tropical house closed for financial reasons; the county board found serious shortcomings. No cats reported (SVT Blekinge, undated)."
+      }
+    },
+    {
+      "naam": "Tropikariet",
+      "plaats": "Helsingborg",
+      "reden": {
+        "nl": "Exotisch binnenpark (apen, lemuren, reptielen, vleerhonden); geen katachtigen gevonden in beschrijvingen (reisgidsen, ongedateerd; eigen dierenlijst niet gecontroleerd).",
+        "en": "Exotic indoor zoo (monkeys, lemurs, reptiles, fruit bats); no cats found in descriptions (travel guides, undated; own animal list not checked)."
+      }
+    }
+  ],
+  "open_punten": [
+    "Opvang: geen enkel Zweeds opvang- of viltrehabcentrum gevonden dat lynxen of andere katachtigen opvangt. Lynx (lo) is 'statens vilt'; gewonde dieren moeten bij de politie gemeld worden en worden meestal gedood. Viltrehab heeft een vergunning van de länsstyrelse nodig, en die geldt meestal alleen voor egels, hazen, eekhoorns en vogels (SVT Småland, ongedateerd; länsstyrelsen 'Råd om vilda djur').",
+    "Particulieren: geen nieuwsberichten uit 2023–2026 gevonden over in beslag genomen servals, caracals of andere wilde katten in Zweden. Er zijn ook geen particuliere houders bekend, en dat past bij het verbod (zie wetgeving). Zoekopdrachten in SVT/SR, bij de politie, de Tullverket en de länsstyrelse leverden alleen huiskatzaken op.",
+    "Geen toeristische lynxverblijven op boerderijen en geen onderzoekscentra met lynxen in gevangenschap gevonden. Lynxonderzoek (o.a. met GPS-halsbanden) gebeurt aan vrij levende dieren.",
+    "Ystad Djurpark: de soortpagina en de dierenlijst zijn ongedateerd; aantal en namen van de servals zijn onbekend. Status g op basis van de actuele dierenlijst plus Zootierliste. Lidmaatschap SDF/EAZA niet bevestigd.",
+    "Junsele Djurpark: lidmaatschap van SDF niet bevestigd. Een tijger (Nalin) viel ooit een verzorger aan (SVT, ongedateerd); niet bekend of Nalin er nog is.",
+    "Mogelijk overlap met andere agenten: Ystad Djurpark en Junsele Djurpark zijn gewone (kleine) dierenparken. Zootierliste noemt verder Ölands Djurpark (Amoertijger) en Vildriket in Järvsö (ex-Järvzoo, lynx), waarschijnlijk op de lijsten voor de grote parken. Niet door mij uitgewerkt.",
+    "Ingangsdatum van het roofdierverbod in circussen: het verbod staat al in 35 § van de oude Djurskyddsförordning (1988:539), gewijzigd bij SFS 1993:1485 en 2018:1204. De precieze oorspronkelijke tekst van 1988 is niet nagelezen; 'minstens sinds 1988/1994' is een voorzichtige formulering."
+  ],
+  "wetgeving": {
+    "circus": "Verboden. Djurskyddsförordning (2019:66), 3 kap. 3 § (in werking sinds 1-4-2019, onder Djurskyddslag 2018:1192): 'rovdjur med undantag för tamhundar och tamkatter' (naast apen, zeehonden, olifanten, neushoorns enz.) mogen niet rondreizend worden vertoond 'vid cirkus eller vid annan liknande verksamhet'. Dat geldt dus voor alle wilde katachtigen. De regel is niet nieuw: dezelfde lijst stond al in 35 § van de oude Djurskyddsförordning (1988:539), waar ook stond dat deze dieren in circus, variété e.d. 'inte visas offentligt vare sig vid föreställning eller i något annat sammanhang'. Die bepaling werd gewijzigd bij SFS 1993:1485 en bij SFS 2018:1204 (olifanten en zeeleeuwen/zeehonden erbij, per 1-1-2019 volgens Riksdag-motie 2019/20:2118). Jordbruksverket-voorschriften SJVFS 2019:4 (cirkusdjur, L 116) regelen alleen de houderij en de jaarlijkse controle door de länsstyrelse, geen soortenlijst. Al in een Riksdag-motie uit 2003 heet het dat roofdieren en apen niet meer als circusdier zijn toegestaan. Bronnen: lagen.nu/2019:66 en lagen.nu/1988:539 (gezien 22-10-2026); lagen.nu/sjvfs/2019:4; SVT 22-07-2015 en 19-01-2018 over Brazil Jack, Scott en Maximum (geen wilde dieren meer).",
+    "particulier": "In feite niet toegestaan. SJVFS 2019:15 (Jordbruksverket, sällskapsdjur en hobby, in werking 1-4-2019, opvolger van SJVFS 2014:17), 1 kap. 5 §: 'Det är inte tillåtet att hålla, förmedla eller sälja apor, rovdjur, rovfåglar ... eller hybrider mellan tamkatt och vilda kattdjur för sällskap och hobby'. 'Rovdjur' wordt daar gedefinieerd als de orde Carnivora, 'såsom kattdjur'. Ook F1–F4-kruisingen huiskat × wilde kat (bijv. vroege generaties Savannah en Bengaal) vallen eronder. Volgens 4 § mogen in het wild gevangen dieren niet als gezelschapsdier gehouden worden. Jordbruksverket ('Ovanliga sällskapsdjur', laatst nagekeken 02-02-2023) bevestigt: 'inte tillåtet att hålla apor, rovfåglar och rovdjur'. Er bestaat dus geen länsstyrelse-vergunning waarmee een particulier een serval of lynx als huisdier mag houden. Wilde katten mogen alleen in een door de länsstyrelse goedgekeurde dierentuin of 'liknande anläggning' (Djurskyddsförordning 2019:66, 3 kap. 6 §; houderijnormen per gewichtsklasse in SJVFS 2019:29, 6 kap.). De lynx is bovendien 'vilt': volgens Jaktförordning (1987:905) 41 a § mag vilt alleen met een vergunning van de länsstyrelse in een vilthägn of 'liknande anläggning' gehouden worden. Voor soorten op CITES/EU-bijlage A (o.a. lynx, tijger, luipaard) gelden daarnaast de artskyddsförordning (2007:845) en de vergunningen van Jordbruksverket. Bronnen: lagen.nu/sjvfs/2019:15, jordbruksverket.se/djur/hundar-katter-och-smadjur/ovanliga-sallskapsdjur, lagen.nu/1987:905 (gezien 22-10-2026)."
+  }
+}

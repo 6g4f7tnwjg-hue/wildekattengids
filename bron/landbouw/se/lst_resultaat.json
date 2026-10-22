@@ -1,0 +1,2209 @@
+{
+ "locaties": [
+  {
+   "naam": "Parken Zoo",
+   "plaats": "Eskilstuna",
+   "lan": "Södermanlands län",
+   "lon": 16.458,
+   "lat": 59.371,
+   "type": "Dierentuin",
+   "lidmaatschap": [
+    "EAZA"
+   ],
+   "url": "https://www.parkenzoo.se",
+   "uren": {
+    "nl": "niet onderzocht (lijstenonderzoek)",
+    "en": "not researched (list research)"
+   },
+   "about": {
+    "nl": "Vermelding uit het lijstenonderzoek; katten alleen volgens Zootierliste.",
+    "en": "Entry from the list research; cats according to Zootierliste only."
+   },
+   "earlier": {
+    "nl": "Zandkat (Arabisch (F. m. harrisoni); tot ca. 2020, Zootierliste); Euraziatische lynx (Noordelijk (L. l. lynx); tot ca. 1993, Zootierliste); Poema (onbekend; tot ca. 2012, Zootierliste); Manoel (Pallas’ kat) (Mongools (O. m. manul); tot ca. 2011, Zootierliste); Tijger (Bengaals, incl. witte tijger; tot ca. 2010, Zootierliste); Sneeuwluipaard (—; tot ca. 1989, Zootierliste); Luipaard (Afrikaans (P. p. pardus), incl. zwarte panter; tot ca. 2008, Zootierliste)",
+    "en": "Zandkat (Arabisch (F. m. harrisoni); until c. 2020, Zootierliste); Euraziatische lynx (Noordelijk (L. l. lynx); until c. 1993, Zootierliste); Poema (onbekend; until c. 2012, Zootierliste); Manoel (Pallas’ kat) (Mongools (O. m. manul); until c. 2011, Zootierliste); Tijger (Bengaals, incl. witte tijger; until c. 2010, Zootierliste); Sneeuwluipaard (—; until c. 1989, Zootierliste); Luipaard (Afrikaans (P. p. pardus), incl. zwarte panter; until c. 2008, Zootierliste)"
+   },
+   "katten": [
+    {
+     "soort": "Vissende kat",
+     "ondersoort": "—",
+     "status": "w",
+     "toelichting": {
+      "nl": "Alleen Zootierliste ('Aktuelle Haltung'; laatste aanwijzing 2022); niet bevestigd op eigen site of in nieuws door dit lijstenonderzoek.",
+      "en": "Zootierliste only ('current holding'; latest evidence 2022); not confirmed on own website or in news by this list research."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Zootierliste is vaak achterhaald; regio-inventaris moet dit bevestigen.",
+      "en": "Zootierliste is often outdated; to be confirmed by the regional inventory."
+     }
+    },
+    {
+     "soort": "Cheetah",
+     "ondersoort": "Zuidelijk (A. j. jubatus)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Alleen Zootierliste ('Aktuelle Haltung'; laatste aanwijzing 2026); niet bevestigd op eigen site of in nieuws door dit lijstenonderzoek.",
+      "en": "Zootierliste only ('current holding'; latest evidence 2026); not confirmed on own website or in news by this list research."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Zootierliste is vaak achterhaald; regio-inventaris moet dit bevestigen.",
+      "en": "Zootierliste is often outdated; to be confirmed by the regional inventory."
+     }
+    },
+    {
+     "soort": "Nevelpanter",
+     "ondersoort": "—",
+     "status": "w",
+     "toelichting": {
+      "nl": "Alleen Zootierliste ('Aktuelle Haltung'; laatste aanwijzing 2020); niet bevestigd op eigen site of in nieuws door dit lijstenonderzoek.",
+      "en": "Zootierliste only ('current holding'; latest evidence 2020); not confirmed on own website or in news by this list research."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Zootierliste is vaak achterhaald; regio-inventaris moet dit bevestigen.",
+      "en": "Zootierliste is often outdated; to be confirmed by the regional inventory."
+     }
+    },
+    {
+     "soort": "Leeuw",
+     "ondersoort": "Aziatisch (P. l. leo, voorheen P. l. persica)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Alleen Zootierliste ('Aktuelle Haltung'; laatste aanwijzing 2026); niet bevestigd op eigen site of in nieuws door dit lijstenonderzoek.",
+      "en": "Zootierliste only ('current holding'; latest evidence 2026); not confirmed on own website or in news by this list research."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Zootierliste is vaak achterhaald; regio-inventaris moet dit bevestigen.",
+      "en": "Zootierliste is often outdated; to be confirmed by the regional inventory."
+     }
+    },
+    {
+     "soort": "Jaguar",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "Alleen Zootierliste ('Aktuelle Haltung'; laatste aanwijzing 2026); niet bevestigd op eigen site of in nieuws door dit lijstenonderzoek.",
+      "en": "Zootierliste only ('current holding'; latest evidence 2026); not confirmed on own website or in news by this list research."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Zootierliste is vaak achterhaald; regio-inventaris moet dit bevestigen.",
+      "en": "Zootierliste is often outdated; to be confirmed by the regional inventory."
+     }
+    },
+    {
+     "soort": "Luipaard",
+     "ondersoort": "Amoer (P. p. orientalis)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Alleen Zootierliste ('Aktuelle Haltung'; laatste aanwijzing 2026); niet bevestigd op eigen site of in nieuws door dit lijstenonderzoek.",
+      "en": "Zootierliste only ('current holding'; latest evidence 2026); not confirmed on own website or in news by this list research."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Zootierliste is vaak achterhaald; regio-inventaris moet dit bevestigen.",
+      "en": "Zootierliste is often outdated; to be confirmed by the regional inventory."
+     }
+    },
+    {
+     "soort": "Tijger",
+     "ondersoort": "Sumatraans",
+     "status": "w",
+     "toelichting": {
+      "nl": "Alleen Zootierliste ('Aktuelle Haltung'; laatste aanwijzing 2026); niet bevestigd op eigen site of in nieuws door dit lijstenonderzoek.",
+      "en": "Zootierliste only ('current holding'; latest evidence 2026); not confirmed on own website or in news by this list research."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Zootierliste is vaak achterhaald; regio-inventaris moet dit bevestigen.",
+      "en": "Zootierliste is often outdated; to be confirmed by the regional inventory."
+     }
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Nordens Ark",
+   "plaats": "Hunnebostrand (Sotenäs)",
+   "lan": "Västra Götalands län",
+   "lon": 11.436,
+   "lat": 58.443,
+   "type": "Dierenpark",
+   "lidmaatschap": [
+    "EAZA"
+   ],
+   "url": "https://www.nordensark.se",
+   "uren": {
+    "nl": "niet onderzocht (lijstenonderzoek)",
+    "en": "not researched (list research)"
+   },
+   "about": {
+    "nl": "Vermelding uit het lijstenonderzoek; katten alleen volgens Zootierliste.",
+    "en": "Entry from the list research; cats according to Zootierliste only."
+   },
+   "earlier": {
+    "nl": "Europese wilde kat (Europees (F. s. silvestris); tot ca. 2021, Zootierliste)",
+    "en": "Europese wilde kat (Europees (F. s. silvestris); until c. 2021, Zootierliste)"
+   },
+   "katten": [
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "Noordelijk (L. l. lynx)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Alleen Zootierliste ('Aktuelle Haltung'; laatste aanwijzing 2023); niet bevestigd op eigen site of in nieuws door dit lijstenonderzoek.",
+      "en": "Zootierliste only ('current holding'; latest evidence 2023); not confirmed on own website or in news by this list research."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Zootierliste is vaak achterhaald; regio-inventaris moet dit bevestigen.",
+      "en": "Zootierliste is often outdated; to be confirmed by the regional inventory."
+     }
+    },
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "Karpatisch (L. l. carpathicus)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Alleen Zootierliste ('Aktuelle Haltung'; laatste aanwijzing 2025); niet bevestigd op eigen site of in nieuws door dit lijstenonderzoek.",
+      "en": "Zootierliste only ('current holding'; latest evidence 2025); not confirmed on own website or in news by this list research."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Zootierliste is vaak achterhaald; regio-inventaris moet dit bevestigen.",
+      "en": "Zootierliste is often outdated; to be confirmed by the regional inventory."
+     }
+    },
+    {
+     "soort": "Europese wilde kat",
+     "ondersoort": "Schots (F. s. grampia)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Alleen Zootierliste ('Aktuelle Haltung'; laatste aanwijzing 2023); niet bevestigd op eigen site of in nieuws door dit lijstenonderzoek.",
+      "en": "Zootierliste only ('current holding'; latest evidence 2023); not confirmed on own website or in news by this list research."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Zootierliste is vaak achterhaald; regio-inventaris moet dit bevestigen.",
+      "en": "Zootierliste is often outdated; to be confirmed by the regional inventory."
+     }
+    },
+    {
+     "soort": "Manoel (Pallas’ kat)",
+     "ondersoort": "Mongools (O. m. manul)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Alleen Zootierliste ('Aktuelle Haltung'; laatste aanwijzing 2025); niet bevestigd op eigen site of in nieuws door dit lijstenonderzoek.",
+      "en": "Zootierliste only ('current holding'; latest evidence 2025); not confirmed on own website or in news by this list research."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Zootierliste is vaak achterhaald; regio-inventaris moet dit bevestigen.",
+      "en": "Zootierliste is often outdated; to be confirmed by the regional inventory."
+     }
+    },
+    {
+     "soort": "Luipaard",
+     "ondersoort": "Amoer (P. p. orientalis)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Alleen Zootierliste ('Aktuelle Haltung'; laatste aanwijzing 2023); niet bevestigd op eigen site of in nieuws door dit lijstenonderzoek.",
+      "en": "Zootierliste only ('current holding'; latest evidence 2023); not confirmed on own website or in news by this list research."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Zootierliste is vaak achterhaald; regio-inventaris moet dit bevestigen.",
+      "en": "Zootierliste is often outdated; to be confirmed by the regional inventory."
+     }
+    },
+    {
+     "soort": "Luipaard",
+     "ondersoort": "Perzisch (P. p. tulliana)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Alleen Zootierliste ('Aktuelle Haltung'; laatste aanwijzing 2026); niet bevestigd op eigen site of in nieuws door dit lijstenonderzoek.",
+      "en": "Zootierliste only ('current holding'; latest evidence 2026); not confirmed on own website or in news by this list research."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Zootierliste is vaak achterhaald; regio-inventaris moet dit bevestigen.",
+      "en": "Zootierliste is often outdated; to be confirmed by the regional inventory."
+     }
+    },
+    {
+     "soort": "Tijger",
+     "ondersoort": "Amoer",
+     "status": "w",
+     "toelichting": {
+      "nl": "Alleen Zootierliste ('Aktuelle Haltung'; laatste aanwijzing 2021); niet bevestigd op eigen site of in nieuws door dit lijstenonderzoek.",
+      "en": "Zootierliste only ('current holding'; latest evidence 2021); not confirmed on own website or in news by this list research."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Zootierliste is vaak achterhaald; regio-inventaris moet dit bevestigen.",
+      "en": "Zootierliste is often outdated; to be confirmed by the regional inventory."
+     }
+    },
+    {
+     "soort": "Sneeuwluipaard",
+     "ondersoort": "—",
+     "status": "w",
+     "toelichting": {
+      "nl": "Alleen Zootierliste ('Aktuelle Haltung'; laatste aanwijzing 2023); niet bevestigd op eigen site of in nieuws door dit lijstenonderzoek.",
+      "en": "Zootierliste only ('current holding'; latest evidence 2023); not confirmed on own website or in news by this list research."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Zootierliste is vaak achterhaald; regio-inventaris moet dit bevestigen.",
+      "en": "Zootierliste is often outdated; to be confirmed by the regional inventory."
+     }
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Kolmårdens Djurpark",
+   "plaats": "Kolmården (Norrköping)",
+   "lan": "Östergötlands län",
+   "lon": 16.454,
+   "lat": 58.66,
+   "type": "Safaripark",
+   "lidmaatschap": [
+    "EAZA",
+    "SDF"
+   ],
+   "url": "https://www.kolmarden.com",
+   "uren": {
+    "nl": "niet onderzocht (lijstenonderzoek)",
+    "en": "not researched (list research)"
+   },
+   "about": {
+    "nl": "Vermelding uit het lijstenonderzoek; katten alleen volgens Zootierliste.",
+    "en": "Entry from the list research; cats according to Zootierliste only."
+   },
+   "earlier": {
+    "nl": "Leeuw (onbekend; tot ca. 2024, Zootierliste); Tijger (Bengaals; tot ca. 2006, Zootierliste)",
+    "en": "Leeuw (onbekend; until c. 2024, Zootierliste); Tijger (Bengaals; until c. 2006, Zootierliste)"
+   },
+   "katten": [
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "Noordelijk (L. l. lynx)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Alleen Zootierliste ('Aktuelle Haltung'; laatste aanwijzing 2024); niet bevestigd op eigen site of in nieuws door dit lijstenonderzoek.",
+      "en": "Zootierliste only ('current holding'; latest evidence 2024); not confirmed on own website or in news by this list research."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Zootierliste is vaak achterhaald; regio-inventaris moet dit bevestigen.",
+      "en": "Zootierliste is often outdated; to be confirmed by the regional inventory."
+     }
+    },
+    {
+     "soort": "Leeuw",
+     "ondersoort": "Aziatisch (P. l. leo, voorheen P. l. persica)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Alleen Zootierliste ('Aktuelle Haltung'; laatste aanwijzing 2025); niet bevestigd op eigen site of in nieuws door dit lijstenonderzoek.",
+      "en": "Zootierliste only ('current holding'; latest evidence 2025); not confirmed on own website or in news by this list research."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Zootierliste is vaak achterhaald; regio-inventaris moet dit bevestigen.",
+      "en": "Zootierliste is often outdated; to be confirmed by the regional inventory."
+     }
+    },
+    {
+     "soort": "Tijger",
+     "ondersoort": "Amoer",
+     "status": "w",
+     "toelichting": {
+      "nl": "Alleen Zootierliste ('Aktuelle Haltung'; laatste aanwijzing 2024); niet bevestigd op eigen site of in nieuws door dit lijstenonderzoek.",
+      "en": "Zootierliste only ('current holding'; latest evidence 2024); not confirmed on own website or in news by this list research."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Zootierliste is vaak achterhaald; regio-inventaris moet dit bevestigen.",
+      "en": "Zootierliste is often outdated; to be confirmed by the regional inventory."
+     }
+    },
+    {
+     "soort": "Sneeuwluipaard",
+     "ondersoort": "—",
+     "status": "w",
+     "toelichting": {
+      "nl": "Alleen Zootierliste ('Aktuelle Haltung'; laatste aanwijzing 2024); niet bevestigd op eigen site of in nieuws door dit lijstenonderzoek.",
+      "en": "Zootierliste only ('current holding'; latest evidence 2024); not confirmed on own website or in news by this list research."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Zootierliste is vaak achterhaald; regio-inventaris moet dit bevestigen.",
+      "en": "Zootierliste is often outdated; to be confirmed by the regional inventory."
+     }
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Borås Djurpark",
+   "plaats": "Borås",
+   "lan": "Västra Götalands län",
+   "lon": 12.948,
+   "lat": 57.742,
+   "type": "Dierentuin",
+   "lidmaatschap": [
+    "EAZA",
+    "SDF"
+   ],
+   "url": "https://www.borasdjurpark.se",
+   "uren": {
+    "nl": "niet onderzocht (lijstenonderzoek)",
+    "en": "not researched (list research)"
+   },
+   "about": {
+    "nl": "Vermelding uit het lijstenonderzoek; katten alleen volgens Zootierliste.",
+    "en": "Entry from the list research; cats according to Zootierliste only."
+   },
+   "earlier": {
+    "nl": "Euraziatische lynx (Noordelijk (L. l. lynx); tot ca. 2019, Zootierliste); Cheetah (Oost-Afrikaans (A. j. raineyi, nu A. j. jubatus); tot ca. 2005, Zootierliste); Leeuw (Zuidelijk (P. l. melanochaita); tot ca. 2014, Zootierliste); Tijger (Amoer; tot ca. 2022, Zootierliste); Leeuw (Zuidelijk (P. l. melanochaita) [ZTL: Nubisch]; tot ca. 2014, Zootierliste)",
+    "en": "Euraziatische lynx (Noordelijk (L. l. lynx); until c. 2019, Zootierliste); Cheetah (Oost-Afrikaans (A. j. raineyi, nu A. j. jubatus); until c. 2005, Zootierliste); Leeuw (Zuidelijk (P. l. melanochaita); until c. 2014, Zootierliste); Tijger (Amoer; until c. 2022, Zootierliste); Leeuw (Zuidelijk (P. l. melanochaita) [ZTL: Nubisch]; until c. 2014, Zootierliste)"
+   },
+   "katten": [
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "Karpatisch (L. l. carpathicus)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Alleen Zootierliste ('Aktuelle Haltung'; laatste aanwijzing 2024); niet bevestigd op eigen site of in nieuws door dit lijstenonderzoek.",
+      "en": "Zootierliste only ('current holding'; latest evidence 2024); not confirmed on own website or in news by this list research."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Zootierliste is vaak achterhaald; regio-inventaris moet dit bevestigen.",
+      "en": "Zootierliste is often outdated; to be confirmed by the regional inventory."
+     }
+    },
+    {
+     "soort": "Cheetah",
+     "ondersoort": "Zuidelijk (A. j. jubatus)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Alleen Zootierliste ('Aktuelle Haltung'; laatste aanwijzing 2024); niet bevestigd op eigen site of in nieuws door dit lijstenonderzoek.",
+      "en": "Zootierliste only ('current holding'; latest evidence 2024); not confirmed on own website or in news by this list research."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Zootierliste is vaak achterhaald; regio-inventaris moet dit bevestigen.",
+      "en": "Zootierliste is often outdated; to be confirmed by the regional inventory."
+     }
+    },
+    {
+     "soort": "Leeuw",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "Alleen Zootierliste ('Aktuelle Haltung'; laatste aanwijzing 2024); niet bevestigd op eigen site of in nieuws door dit lijstenonderzoek.",
+      "en": "Zootierliste only ('current holding'; latest evidence 2024); not confirmed on own website or in news by this list research."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Zootierliste is vaak achterhaald; regio-inventaris moet dit bevestigen.",
+      "en": "Zootierliste is often outdated; to be confirmed by the regional inventory."
+     }
+    },
+    {
+     "soort": "Leeuw",
+     "ondersoort": "Zuidelijk (P. l. melanochaita)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Alleen Zootierliste ('Aktuelle Haltung'; laatste aanwijzing 2024); niet bevestigd op eigen site of in nieuws door dit lijstenonderzoek.",
+      "en": "Zootierliste only ('current holding'; latest evidence 2024); not confirmed on own website or in news by this list research."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Zootierliste is vaak achterhaald; regio-inventaris moet dit bevestigen.",
+      "en": "Zootierliste is often outdated; to be confirmed by the regional inventory."
+     }
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Skansen",
+   "plaats": "Stockholm",
+   "lan": "Stockholms län",
+   "lon": 18.102,
+   "lat": 59.326,
+   "type": "Dierenpark",
+   "lidmaatschap": [
+    "EAZA",
+    "SDF"
+   ],
+   "url": "https://skansen.se",
+   "uren": {
+    "nl": "niet onderzocht (lijstenonderzoek)",
+    "en": "not researched (list research)"
+   },
+   "about": {
+    "nl": "Vermelding uit het lijstenonderzoek; katten alleen volgens Zootierliste.",
+    "en": "Entry from the list research; cats according to Zootierliste only."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "Noordelijk (L. l. lynx)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Alleen Zootierliste ('Aktuelle Haltung'; laatste aanwijzing 2025); niet bevestigd op eigen site of in nieuws door dit lijstenonderzoek.",
+      "en": "Zootierliste only ('current holding'; latest evidence 2025); not confirmed on own website or in news by this list research."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Zootierliste is vaak achterhaald; regio-inventaris moet dit bevestigen.",
+      "en": "Zootierliste is often outdated; to be confirmed by the regional inventory."
+     }
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Vildriket (fd Järvzoo)",
+   "plaats": "Järvsö (Ljusdal)",
+   "lan": "Gävleborgs län",
+   "lon": 16.152,
+   "lat": 61.71,
+   "type": "Wildpark",
+   "lidmaatschap": [
+    "EAZA",
+    "SDF"
+   ],
+   "url": "https://vildriket.se",
+   "uren": {
+    "nl": "niet onderzocht (lijstenonderzoek)",
+    "en": "not researched (list research)"
+   },
+   "about": {
+    "nl": "Vermelding uit het lijstenonderzoek; katten alleen volgens Zootierliste.",
+    "en": "Entry from the list research; cats according to Zootierliste only."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "Noordelijk (L. l. lynx)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Alleen Zootierliste ('Aktuelle Haltung'; laatste aanwijzing 2025); niet bevestigd op eigen site of in nieuws door dit lijstenonderzoek.",
+      "en": "Zootierliste only ('current holding'; latest evidence 2025); not confirmed on own website or in news by this list research."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Zootierliste is vaak achterhaald; regio-inventaris moet dit bevestigen.",
+      "en": "Zootierliste is often outdated; to be confirmed by the regional inventory."
+     }
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Skånes Djurpark",
+   "plaats": "Höör",
+   "lan": "Skåne län",
+   "lon": 13.535,
+   "lat": 55.964,
+   "type": "Dierenpark",
+   "lidmaatschap": [
+    "EAZA",
+    "SDF"
+   ],
+   "url": "https://www.skanesdjurpark.se",
+   "uren": {
+    "nl": "niet onderzocht (lijstenonderzoek)",
+    "en": "not researched (list research)"
+   },
+   "about": {
+    "nl": "Vermelding uit het lijstenonderzoek; katten alleen volgens Zootierliste.",
+    "en": "Entry from the list research; cats according to Zootierliste only."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Europese wilde kat",
+     "ondersoort": "Europees (F. s. silvestris)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Alleen Zootierliste ('Aktuelle Haltung'; laatste aanwijzing 2024); niet bevestigd op eigen site of in nieuws door dit lijstenonderzoek.",
+      "en": "Zootierliste only ('current holding'; latest evidence 2024); not confirmed on own website or in news by this list research."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Zootierliste is vaak achterhaald; regio-inventaris moet dit bevestigen.",
+      "en": "Zootierliste is often outdated; to be confirmed by the regional inventory."
+     }
+    },
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "Noordelijk (L. l. lynx)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Alleen Zootierliste ('Aktuelle Haltung'; laatste aanwijzing 2015); niet bevestigd op eigen site of in nieuws door dit lijstenonderzoek.",
+      "en": "Zootierliste only ('current holding'; latest evidence 2015); not confirmed on own website or in news by this list research."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Zootierliste is vaak achterhaald; regio-inventaris moet dit bevestigen.",
+      "en": "Zootierliste is often outdated; to be confirmed by the regional inventory."
+     }
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Ölands Djurpark",
+   "plaats": "Färjestaden (Mörbylånga)",
+   "lan": "Kalmar län",
+   "lon": 16.492,
+   "lat": 56.669,
+   "type": "Attractiepark met dieren",
+   "lidmaatschap": [
+    "EAZA",
+    "SDF"
+   ],
+   "url": "https://olandsdjurpark.com",
+   "uren": {
+    "nl": "niet onderzocht (lijstenonderzoek)",
+    "en": "not researched (list research)"
+   },
+   "about": {
+    "nl": "Vermelding uit het lijstenonderzoek; katten alleen volgens Zootierliste.",
+    "en": "Entry from the list research; cats according to Zootierliste only."
+   },
+   "earlier": {
+    "nl": "Euraziatische lynx (Noordelijk (L. l. lynx); tot ca. 2012, Zootierliste); Leeuw (onbekend; tot ca. 2019, Zootierliste)",
+    "en": "Euraziatische lynx (Noordelijk (L. l. lynx); until c. 2012, Zootierliste); Leeuw (onbekend; until c. 2019, Zootierliste)"
+   },
+   "katten": [
+    {
+     "soort": "Tijger",
+     "ondersoort": "Amoer",
+     "status": "w",
+     "toelichting": {
+      "nl": "Alleen Zootierliste ('Aktuelle Haltung'; laatste aanwijzing 2024); niet bevestigd op eigen site of in nieuws door dit lijstenonderzoek.",
+      "en": "Zootierliste only ('current holding'; latest evidence 2024); not confirmed on own website or in news by this list research."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Zootierliste is vaak achterhaald; regio-inventaris moet dit bevestigen.",
+      "en": "Zootierliste is often outdated; to be confirmed by the regional inventory."
+     }
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Ystad Djurpark",
+   "plaats": "Ystad",
+   "lan": "Skåne län",
+   "lon": 13.719,
+   "lat": 55.485,
+   "type": "Dierenpark",
+   "lidmaatschap": [
+    "EAZA",
+    "SDF"
+   ],
+   "url": "https://www.ystaddjurpark.se",
+   "uren": {
+    "nl": "niet onderzocht (lijstenonderzoek)",
+    "en": "not researched (list research)"
+   },
+   "about": {
+    "nl": "Vermelding uit het lijstenonderzoek; katten alleen volgens Zootierliste.",
+    "en": "Entry from the list research; cats according to Zootierliste only."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Serval",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "Alleen Zootierliste ('Aktuelle Haltung'; laatste aanwijzing 2024); niet bevestigd op eigen site of in nieuws door dit lijstenonderzoek.",
+      "en": "Zootierliste only ('current holding'; latest evidence 2024); not confirmed on own website or in news by this list research."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Zootierliste is vaak achterhaald; regio-inventaris moet dit bevestigen.",
+      "en": "Zootierliste is often outdated; to be confirmed by the regional inventory."
+     }
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Lycksele Djurpark",
+   "plaats": "Lycksele",
+   "lan": "Västerbottens län",
+   "lon": 18.663,
+   "lat": 64.585,
+   "type": "Wildpark",
+   "lidmaatschap": [
+    "EAZA",
+    "SDF"
+   ],
+   "url": "https://lyckseledjurpark.se",
+   "uren": {
+    "nl": "niet onderzocht (lijstenonderzoek)",
+    "en": "not researched (list research)"
+   },
+   "about": {
+    "nl": "Vermelding uit het lijstenonderzoek; katten alleen volgens Zootierliste.",
+    "en": "Entry from the list research; cats according to Zootierliste only."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "Noordelijk (L. l. lynx)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Alleen Zootierliste ('Aktuelle Haltung'; laatste aanwijzing 2018); niet bevestigd op eigen site of in nieuws door dit lijstenonderzoek.",
+      "en": "Zootierliste only ('current holding'; latest evidence 2018); not confirmed on own website or in news by this list research."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Zootierliste is vaak achterhaald; regio-inventaris moet dit bevestigen.",
+      "en": "Zootierliste is often outdated; to be confirmed by the regional inventory."
+     }
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Junsele Djurpark",
+   "plaats": "Junsele (Sollefteå)",
+   "lan": "Västernorrlands län",
+   "lon": 16.921,
+   "lat": 63.795,
+   "type": "Dierenpark",
+   "lidmaatschap": [],
+   "url": "",
+   "uren": {
+    "nl": "niet onderzocht (lijstenonderzoek)",
+    "en": "not researched (list research)"
+   },
+   "about": {
+    "nl": "Vermelding uit het lijstenonderzoek; katten alleen volgens Zootierliste.",
+    "en": "Entry from the list research; cats according to Zootierliste only."
+   },
+   "earlier": {
+    "nl": "Leeuw (Zuidelijk (P. l. melanochaita), witte leeuw; tot ca. 2006, Zootierliste)",
+    "en": "Leeuw (Zuidelijk (P. l. melanochaita), witte leeuw; until c. 2006, Zootierliste)"
+   },
+   "katten": [
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "Noordelijk (L. l. lynx)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Alleen Zootierliste ('Aktuelle Haltung'; laatste aanwijzing 2024); niet bevestigd op eigen site of in nieuws door dit lijstenonderzoek.",
+      "en": "Zootierliste only ('current holding'; latest evidence 2024); not confirmed on own website or in news by this list research."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Zootierliste is vaak achterhaald; regio-inventaris moet dit bevestigen.",
+      "en": "Zootierliste is often outdated; to be confirmed by the regional inventory."
+     }
+    },
+    {
+     "soort": "Tijger",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "Alleen Zootierliste ('Aktuelle Haltung'; laatste aanwijzing 2024); niet bevestigd op eigen site of in nieuws door dit lijstenonderzoek.",
+      "en": "Zootierliste only ('current holding'; latest evidence 2024); not confirmed on own website or in news by this list research."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Zootierliste is vaak achterhaald; regio-inventaris moet dit bevestigen.",
+      "en": "Zootierliste is often outdated; to be confirmed by the regional inventory."
+     }
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  }
+ ],
+ "zonder_katten": [
+  {
+   "naam": "Skansen-Akvariet",
+   "plaats": "Stockholm",
+   "reden": {
+    "nl": "geen katachtigen bij deze instelling in Zootierliste (aktuell en ehemalig, gezien 22-10-2026); eigen site niet gecontroleerd door lijstenonderzoek",
+    "en": "no felids listed for this institution on Zootierliste (current or former, checked 22-10-2026); own website not checked by list research"
+   }
+  },
+  {
+   "naam": "Furuviksparken",
+   "plaats": "Furuvik (Gävle)",
+   "reden": {
+    "nl": "geen katachtigen bij deze instelling in Zootierliste (aktuell en ehemalig, gezien 22-10-2026); eigen site niet gecontroleerd door lijstenonderzoek",
+    "en": "no felids listed for this institution on Zootierliste (current or former, checked 22-10-2026); own website not checked by list research"
+   }
+  },
+  {
+   "naam": "Myskoxcentrum",
+   "plaats": "Tännäs (Härjedalen)",
+   "reden": {
+    "nl": "geen katachtigen bij deze instelling in Zootierliste (aktuell en ehemalig, gezien 22-10-2026); eigen site niet gecontroleerd door lijstenonderzoek",
+    "en": "no felids listed for this institution on Zootierliste (current or former, checked 22-10-2026); own website not checked by list research"
+   }
+  },
+  {
+   "naam": "Universeum",
+   "plaats": "Göteborg",
+   "reden": {
+    "nl": "geen katachtigen bij deze instelling in Zootierliste (aktuell en ehemalig, gezien 22-10-2026); eigen site niet gecontroleerd door lijstenonderzoek",
+    "en": "no felids listed for this institution on Zootierliste (current or former, checked 22-10-2026); own website not checked by list research"
+   }
+  },
+  {
+   "naam": "Tropikariet i Helsingborg",
+   "plaats": "Helsingborg",
+   "reden": {
+    "nl": "geen katachtigen bij deze instelling in Zootierliste (aktuell en ehemalig, gezien 22-10-2026); eigen site niet gecontroleerd door lijstenonderzoek",
+    "en": "no felids listed for this institution on Zootierliste (current or former, checked 22-10-2026); own website not checked by list research"
+   }
+  },
+  {
+   "naam": "Tropicarium Kolmården",
+   "plaats": "Kolmården (Norrköping)",
+   "reden": {
+    "nl": "geen katachtigen bij deze instelling in Zootierliste (aktuell en ehemalig, gezien 22-10-2026); eigen site niet gecontroleerd door lijstenonderzoek",
+    "en": "no felids listed for this institution on Zootierliste (current or former, checked 22-10-2026); own website not checked by list research"
+   }
+  },
+  {
+   "naam": "Slottsskogens Djurpark",
+   "plaats": "Göteborg",
+   "reden": {
+    "nl": "geen katachtigen bij deze instelling in Zootierliste (aktuell en ehemalig, gezien 22-10-2026); eigen site niet gecontroleerd door lijstenonderzoek",
+    "en": "no felids listed for this institution on Zootierliste (current or former, checked 22-10-2026); own website not checked by list research"
+   }
+  },
+  {
+   "naam": "Malmö Museer – Akvariet",
+   "plaats": "Malmö",
+   "reden": {
+    "nl": "geen katachtigen bij deze instelling in Zootierliste (aktuell en ehemalig, gezien 22-10-2026); eigen site niet gecontroleerd door lijstenonderzoek",
+    "en": "no felids listed for this institution on Zootierliste (current or former, checked 22-10-2026); own website not checked by list research"
+   }
+  },
+  {
+   "naam": "Karolinska Institutet, Uppsala/Umeå/Göteborgs universitet",
+   "plaats": "diverse",
+   "reden": {
+    "nl": "onderzoeksinstellingen op de Jordbruksverket-lijst (avgränsade anläggningar), niet open voor publiek, geen dierentuin",
+    "en": "research institutions on the Jordbruksverket list (confined establishments), not open to the public, not zoos"
+   }
+  }
+ ],
+ "open_punten": [
+  "Officiële lijst: Zweden publiceert (voor zover gevonden) geen nationale lijst van djurparker met djurparkstillstånd (artskyddsförordningen 40 §) of godkännande (djurskyddsförordningen 3 kap. 6 §); dat loopt via 21 länsstyrelser. De gebruikte Jordbruksverket-lijst (avgränsade anläggningar, 05-10-2026) bevat alleen 16 dierentuinen/aquaria die EU-diergezondheidsstatus hebben (vooral EAZA-leden); kleinere vergunde parken zoals Junsele Djurpark (tijgers), Eriksbergs Vilt- och Naturpark, Öster Malma, Gotlands Djurpark e.d. ontbreken.",
+  "Slottsskogens Djurpark en Malmö Akvariet zijn SDF- en EAZA-lid maar staan niet op de Jordbruksverket-lijst; Parken Zoo en Nordens Ark zijn EAZA-lid en staan op de Jordbruksverket-lijst maar zijn (niet meer) SDF-lid.",
+  "SDF-ledenlijst bevat Bjørneparken (Noorwegen) en Korkeasaari (Finland) – buiten scope; 5 geassocieerde scholen en EAZA-leden SDF zelf en Visit Group (bedrijf) zijn geen dierenlocaties en staan niet in alle_instellingen.",
+  "Alle kattenvermeldingen in 'locaties' zijn uitsluitend Zootierliste (status w). 'laatst gezien' = hoogste jaartal van positieve aanwijzing in de ZTL-infobox (bezoek 'gesehen', TBL, bestand, transfer); bezoeken 'nicht gesehen' en toegangsdata van bronnen tellen niet mee.",
+  "Zootierliste-opvallendheden om na te gaan: Parken Zoo – vissende kat en nevelpanter bij ZTL-bezoek 06/2026 'nicht gesehen' (vissende kat: 'vormalige Haltung 2003 bis circa 2021/2022', toch als aktuell vermeld); zandkat Parken Zoo 06/2026 niet meer aanwezig; jaguar 'Avatar' (zwart) 09/2026 naar Artis; Sumatraanse tijgerkater 2026 naar Zoo Berlin.",
+  "Kolmården: ZTL 'Löwe' (Afrikaans) als ehemalig tot 2024, Aziatische leeuwen sinds 2025 (1,2 uit Schwerin/Aalborg). Borås: ZTL toont zowel 'Löwe' (onbekend, bestand 31-12-2024 3,1) als Transvaal-leeuw (kater uit Leipzig 2022) – waarschijnlijk dezelfde groep; Amoertijger Borås sinds 2022 weg.",
+  "Nordens Ark: Amoertijger bij ZTL-bezoek 07/2023 'nicht gesehen' (laatste aanwijzing 2021); Schotse wilde kat 07/2023 achter de schermen; Karpatische lynx sinds 2025 naast Noordelijke lynx; Perzisch luipaard 2024 een poes naar Keulen.",
+  "Skånes Djurpark: lynx bij ZTL-bezoek 06/2024 'nicht gesehen' (laatst gezien 2015); eigen site heeft wel soortpagina's /djur/lodjur en /djur/vildkatt (sitemap gezien 22-10-2026, inhoud niet gecontroleerd).",
+  "Lycksele Djurpark: lynx alleen ZTL-bezoek 2018 – zwakke vermelding. Junsele Djurpark: tijger (ondersoort onbekend) en lynx alleen TBL 2024; vroeger witte leeuwen (2006). Ölands Djurpark: Amoertijger (TBL 2024); leeuwen niet meer in TBL 2024.",
+  "Gesloten locaties met katten volgens ZTL: Orsa Rovdjurspark (Grönklitt, gesloten 2022: Amoertijger, Perzisch luipaard, sneeuwluipaard, lynx), Frösö Zoo (gesloten 2019: Amoertijger, leeuw, lynx), historisch Hällingsjö, Brovallen, Läckö Zoo, Steninge (leeuwen, ocelot). Nagaan of Orsa Grönklitt onder nieuwe eigenaar heropend is met katten.",
+  "Zootierliste-lijst van Zweedse instellingen (127 vermeldingen, incl. gesloten) is overgenomen in alle_instellingen; plaatsen/län via Nominatim (enkele handmatig gecorrigeerd: Furuvik, Hamneda, Isaberg/Hestra, Eriksberg/Karlshamn); Hissmossa (Ingelbo) län onzeker.",
+  "Circus: geen Zweeds circus met katten gevonden; oorspronkelijk jaar van het roofdierverbod in circussen niet geverifieerd (in elk geval al in djurskyddsförordningen 1988:539). Particulier: geen bekende privéhouders van wilde katten gevonden (beperkt gezocht)."
+ ],
+ "lijsten": {
+  "officieel": {
+   "url": "https://jordbruksverket.se/download/18.2bffa287196abf7b47ca39af/1772788231765/Lista-godkanda-avgransade-anlaggningar-tga.pdf",
+   "titel": "Godkända avgränsade anläggningar (Jordbruksverket; goedkeuring als 'confined establishment' onder Diergezondheidsverordening (EU) 2016/429 – opvolger van de Balai-lijst). Geen nationale publieke lijst van djurparkstillstånd (artskyddsförordningen 40 §, länsstyrelse) gevonden.",
+   "datum": "2026-10-05 (Uppdaterad op het document; gezien 22-10-2026)",
+   "aantal": 21,
+   "aantal_dierentuinen": 16,
+   "namen": [
+    "Borås Djurpark & Camping AB (SE CONF 046707, 2023-03-30)",
+    "Stiftelsen Skansen (SE CONF 033064, 2023-05-12)",
+    "Skansen-akvariet AB (SE CONF 324007, 2023-05-30)",
+    "Furuviksparken AB (SE CONF 067120, 2023-09-25)",
+    "Parken Zoo i Eskilstuna AB (SE CONF 086272, 2023-10-11)",
+    "Stiftelsen Nordens Ark (SE CONF 077746, 2023-10-12)",
+    "Ystad Djurpark AB (SE CONF 066448, 2023-11-08)",
+    "Myskoxecentrum i Härjedalen (SE CONF 328077, 2023-11-08)",
+    "Universeum AB (SE CONF 290633, 2023-11-29)",
+    "Skånes Djurpark Resort AB (SE CONF 012766, 2023-12-19)",
+    "Tropikariet i Helsingborg AB (SE CONF 283476, 2023-12-19)",
+    "Ölands Djurpark AB (SE CONF 069875, 2024-01-30)",
+    "Vildriket AB (SE CONF 075866, 2024-01-30)",
+    "Kolmårdens Djurpark AB (SE CONF 084489, 2024-02-16)",
+    "Lycksele Djurpark AB (SE CONF 039435, 2024-03-07)",
+    "Karolinska Institutet – Astrid Fagraeus Laboratorium (SE CONF 295805, 2024-05-16)",
+    "Tropicarium AB (SE CONF 309158, 2024-11-25)",
+    "Karolinska Institutet (CONF 000100, vattenbruk, 2025-12-19)",
+    "Uppsala universitet (CONF 000200, vattenbruk, 2025-12-19)",
+    "Umeå universitet (CONF 000300, vattenbruk, 2026-05-07)",
+    "Göteborgs universitet (CONF 000400, vattenbruk, 2026-09-28)"
+   ]
+  },
+  "sdf": [
+   "Bjørneparken (Norge)",
+   "Borås Djurpark",
+   "Furuviksparken",
+   "Vildriket (fd Järvzoo)",
+   "Kolmårdens Djurpark",
+   "Korkeasaari Zoo Högholmen (Finland)",
+   "Lycksele Djurpark",
+   "Malmö muséer – Akvariet",
+   "Skansen",
+   "Skånes Djurpark",
+   "Slottsskogen Djurpark",
+   "Tropikariet i Helsingborg",
+   "Universeum",
+   "Ystad Djurpark",
+   "Ölands Djurpark",
+   "[associerad] Spånga gymnasium",
+   "[associerad] Djurgymnasiet Stockholm",
+   "[associerad] Himmelstalundsgymnasiet",
+   "[associerad] Stiernhööksgymnasiet Rättvik",
+   "[associerad] Realgymnasiet"
+  ],
+  "sdf_bron": "https://www.djurparksforeningen.se/medlemmar/ (pagina bijgewerkt 29-10-2025, gezien 22-10-2026); 15 leden (13 in Zweden + Bjørneparken NO + Korkeasaari FI) en 5 geassocieerde scholen. Het domein svenskadjurparksforeningen.nu is niet meer bereikbaar.",
+  "eaza": [
+   "Borås Djurpark (Full member)",
+   "Furuviksparken (Full member)",
+   "Kolmården Wildlife Park (Full member)",
+   "Nordens Ark (Full member)",
+   "Ölands Djurpark (Full member)",
+   "Parken Zoo i Eskilstuna (Full member)",
+   "Skånes Djurpark (Full member)",
+   "Skansen Foundation, Zoological Department (Full member)",
+   "Skansen-Akvariet (Full member)",
+   "Slottsskogens Djurpark (Full member)",
+   "Myskoxcentrum (Full member)",
+   "Tropikariet i Helsingborg (Full member)",
+   "Tropicarium Kolmården (Full member)",
+   "Vildriket (Järvzoo) (Full Accredited Member)",
+   "Malmö Aquarium (Full Accredited Member)",
+   "Ystad Djurpark (Temporary member)",
+   "Lycksele Djurpark (Conditional Member)",
+   "Universeum (Conditional Member)",
+   "Swedish Association of Zoological Parks and Aquaria (SAZA/SDF) (Associate member)",
+   "Visit Group International, Göteborg (Corporate Member)"
+  ],
+  "eaza_bron": "https://strapi.eaza.net/api/members (Country=SE, gezien 22-10-2026); 20 Zweedse vermeldingen waarvan 18 dierentuinen/aquaria",
+  "circus": "Verboden. Djurskyddsförordningen (2019:66) 3 kap. 3 § (in werking 01-04-2019): o.a. 'rovdjur med undantag för tamhundar och tamkatter' (roofdieren behalve huishond en huiskat) mogen niet rondgereisd en vertoond worden 'vid cirkus eller vid annan liknande verksamhet'; de lijst omvat ook apen, zeehondachtigen, olifanten, neushoorns, nijlpaarden, hertachtigen (behalve rendier), giraffen, kangoeroes, roofvogels, loopvogels en krokodilachtigen. Hetzelfde verbod op roofdieren stond al in de oude djurskyddsförordningen (1988:539) 35 § (olifanten en zeehondachtigen toegevoegd bij Förordning 2018:1204, per 01-01-2019); het exacte oorspronkelijke jaar van het roofdierverbod is niet geverifieerd. Er is dus geen totaalverbod op alle wilde dieren in circussen, maar wel op alle wilde katten. Geen circussen met katten in Zweden gevonden; Riksdag-moties (o.a. 2024/25 SD 'Djur i cirkusverksamhet') bevestigen dat rovdjur niet meer zijn toegestaan. Bronnen: https://lagen.nu/2019:66 (3 kap. 3 §, gezien 22-10-2026); https://lagen.nu/1988:539 (35 §, gezien 22-10-2026); https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/djur-i-cirkusverksamhet_gr02mj251/",
+  "particulier": "Particulier houden als huisdier verboden: SJVFS 2019:15 (Jordbruksverkets föreskrifter om djur avsedda för sällskap och hobby) 4 kap. 5 §: 'Det är inte tillåtet att hålla, förmedla eller sälja apor, rovdjur, rovfåglar, hybrider mellan tamhund och vilda hunddjur eller hybrider mellan tamkatt och vilda kattdjur för sällskap och hobby' (uitzondering alleen tamiller en das); 4 kap. 4 §: in het wild gevangen dieren mogen niet als hobbydier gehouden worden. Dat geldt voor grote én kleine wilde katten (alle Felidae behalve de huiskat) en ook voor huiskat×wildkat-hybriden (F1-achtige Bengaal/Savannah e.d.). Er bestaat dus geen vergunningsroute voor privéhouders; wilde katten kunnen alleen legaal gehouden worden in een djurpark met godkännande van de länsstyrelse (djurskyddsförordningen 2019:66 3 kap. 6 §) en djurparkstillstånd (artskyddsförordningen 2007:845 40 §; definitie djurpark 1 §: permanent, vilda arter, ≥7 dagen per jaar open; dispens Naturvårdsverket 45 §). Geen bekende particuliere houders van wilde katten in Zweden gevonden. Bronnen: https://lagen.nu/sjvfs/2019:15 (gezien 22-10-2026); https://lagen.nu/2007:845 (40–45 §§); https://lagen.nu/2019:66; Djurskyddet Sverige brief aan landsbygdsminister 30-01-2024 (negatieve lijst) https://www.djurskyddet.se/wp-content/uploads/2024/01/Till-landsbygdsministern-om-exotiska-sallskapsdjur.pdf"
+ },
+ "alle_instellingen": [
+  {
+   "naam": "Borås Djurpark",
+   "plaats": "Borås",
+   "lan": "Västra Götalands län",
+   "bron": "officieel/sdf/eaza/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (vroeger; laatst gezien 2019)",
+    "Euraziatische lynx – Karpatisch (L. l. carpathicus) (laatst gezien 2024)",
+    "Cheetah – Zuidelijk (A. j. jubatus) (laatst gezien 2024)",
+    "Cheetah – Oost-Afrikaans (A. j. raineyi, nu A. j. jubatus) (vroeger; laatst gezien 2005)",
+    "Leeuw – onbekend (laatst gezien 2024)",
+    "Leeuw – Zuidelijk (P. l. melanochaita) (laatst gezien 2024)",
+    "Leeuw – Zuidelijk (P. l. melanochaita) (vroeger; laatst gezien 2014)",
+    "Tijger – Amoer (vroeger; laatst gezien 2022)",
+    "Leeuw – Zuidelijk (P. l. melanochaita) [ZTL: Nubisch] (vroeger; laatst gezien 2014)"
+   ],
+   "zootierliste_naam": "Boras (Djurpark)"
+  },
+  {
+   "naam": "Skansen",
+   "plaats": "Stockholm",
+   "lan": "Stockholms län",
+   "bron": "officieel/sdf/eaza/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (laatst gezien 2025)"
+   ],
+   "zootierliste_naam": "Stockholm (Zoo/Skansen)"
+  },
+  {
+   "naam": "Skansen-Akvariet",
+   "plaats": "Stockholm",
+   "lan": "Stockholms län",
+   "bron": "officieel/eaza/zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Stockholm (Skansen/Akvariet)"
+  },
+  {
+   "naam": "Furuviksparken",
+   "plaats": "Furuvik (Gävle)",
+   "lan": "Gävleborgs län",
+   "bron": "officieel/sdf/eaza/zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Furuvik (Furuviksparken)"
+  },
+  {
+   "naam": "Parken Zoo",
+   "plaats": "Eskilstuna",
+   "lan": "Södermanlands län",
+   "bron": "officieel/eaza/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Zandkat – Arabisch (F. m. harrisoni) (vroeger; laatst gezien 2020)",
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (vroeger; laatst gezien 1993)",
+    "Vissende kat – — (laatst gezien 2022)",
+    "Poema – onbekend (vroeger; laatst gezien 2012)",
+    "Cheetah – Zuidelijk (A. j. jubatus) (laatst gezien 2026)",
+    "Manoel (Pallas’ kat) – Mongools (O. m. manul) (vroeger; laatst gezien 2011)",
+    "Nevelpanter – — (laatst gezien 2020)",
+    "Leeuw – Aziatisch (P. l. leo, voorheen P. l. persica) (laatst gezien 2026)",
+    "Jaguar – onbekend (laatst gezien 2026)",
+    "Luipaard – Amoer (P. p. orientalis) (laatst gezien 2026)",
+    "Tijger – Bengaals, incl. witte tijger (vroeger; laatst gezien 2010)",
+    "Tijger – Sumatraans (laatst gezien 2026)",
+    "Sneeuwluipaard – — (vroeger; laatst gezien 1989)",
+    "Luipaard – Afrikaans (P. p. pardus), incl. zwarte panter (vroeger; laatst gezien 2008)"
+   ],
+   "zootierliste_naam": "Eskilstuna (Parken Zoo)"
+  },
+  {
+   "naam": "Nordens Ark",
+   "plaats": "Hunnebostrand (Sotenäs)",
+   "lan": "Västra Götalands län",
+   "bron": "officieel/eaza/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Europese wilde kat – Europees (F. s. silvestris) (vroeger; laatst gezien 2021)",
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (laatst gezien 2023)",
+    "Euraziatische lynx – Karpatisch (L. l. carpathicus) (laatst gezien 2025)",
+    "Europese wilde kat – Schots (F. s. grampia) (laatst gezien 2023)",
+    "Manoel (Pallas’ kat) – Mongools (O. m. manul) (laatst gezien 2025)",
+    "Luipaard – Amoer (P. p. orientalis) (laatst gezien 2023)",
+    "Luipaard – Perzisch (P. p. tulliana) (laatst gezien 2026)",
+    "Tijger – Amoer (laatst gezien 2021)",
+    "Sneeuwluipaard – — (laatst gezien 2023)"
+   ],
+   "zootierliste_naam": "Hunnebostrand (Nordens Ark)"
+  },
+  {
+   "naam": "Ystad Djurpark",
+   "plaats": "Ystad",
+   "lan": "Skåne län",
+   "bron": "officieel/sdf/eaza/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Serval – onbekend (laatst gezien 2024)"
+   ],
+   "zootierliste_naam": "Ystad (Djurpark)"
+  },
+  {
+   "naam": "Myskoxcentrum",
+   "plaats": "Tännäs (Härjedalen)",
+   "lan": "Jämtlands län",
+   "bron": "officieel/eaza/zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Tännäs (Myskoxcentrum)"
+  },
+  {
+   "naam": "Universeum",
+   "plaats": "Göteborg",
+   "lan": "Västra Götalands län",
+   "bron": "officieel/sdf/eaza/zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Göteborg (Aquarium Universeum)"
+  },
+  {
+   "naam": "Skånes Djurpark",
+   "plaats": "Höör",
+   "lan": "Skåne län",
+   "bron": "officieel/sdf/eaza/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Europese wilde kat – Europees (F. s. silvestris) (laatst gezien 2024)",
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (laatst gezien 2015)"
+   ],
+   "zootierliste_naam": "Höör (Skånes Djurpark)"
+  },
+  {
+   "naam": "Tropikariet i Helsingborg",
+   "plaats": "Helsingborg",
+   "lan": "Skåne län",
+   "bron": "officieel/sdf/eaza/zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Helsingborg (Tropicariet)"
+  },
+  {
+   "naam": "Ölands Djurpark",
+   "plaats": "Färjestaden (Mörbylånga)",
+   "lan": "Kalmar län",
+   "bron": "officieel/sdf/eaza/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (vroeger; laatst gezien 2012)",
+    "Leeuw – onbekend (vroeger; laatst gezien 2019)",
+    "Tijger – Amoer (laatst gezien 2024)"
+   ],
+   "zootierliste_naam": "Färjestaden (Ölands Djur & Nöjespark)"
+  },
+  {
+   "naam": "Vildriket (fd Järvzoo)",
+   "plaats": "Järvsö (Ljusdal)",
+   "lan": "Gävleborgs län",
+   "bron": "officieel/sdf/eaza/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (laatst gezien 2025)"
+   ],
+   "zootierliste_naam": "Järvsö (Vildriket - ehemals Järvzoo AB)"
+  },
+  {
+   "naam": "Kolmårdens Djurpark",
+   "plaats": "Kolmården (Norrköping)",
+   "lan": "Östergötlands län",
+   "bron": "officieel/sdf/eaza/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (laatst gezien 2024)",
+    "Leeuw – onbekend (vroeger; laatst gezien 2024)",
+    "Leeuw – Aziatisch (P. l. leo, voorheen P. l. persica) (laatst gezien 2025)",
+    "Tijger – Amoer (laatst gezien 2024)",
+    "Tijger – Bengaals (vroeger; laatst gezien 2006)",
+    "Sneeuwluipaard – — (laatst gezien 2024)"
+   ],
+   "zootierliste_naam": "Kolmarden (Tierpark)"
+  },
+  {
+   "naam": "Lycksele Djurpark",
+   "plaats": "Lycksele",
+   "lan": "Västerbottens län",
+   "bron": "officieel/sdf/eaza/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (laatst gezien 2018)"
+   ],
+   "zootierliste_naam": "Lycksele (Djurpark)"
+  },
+  {
+   "naam": "Tropicarium Kolmården",
+   "plaats": "Kolmården (Norrköping)",
+   "lan": "Östergötlands län",
+   "bron": "officieel/eaza/zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Kolmarden (Tropicarium)"
+  },
+  {
+   "naam": "Slottsskogens Djurpark",
+   "plaats": "Göteborg",
+   "lan": "Västra Götalands län",
+   "bron": "sdf/eaza/zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Göteborg (Slottsskogen Zoo)"
+  },
+  {
+   "naam": "Malmö Museer – Akvariet",
+   "plaats": "Malmö",
+   "lan": "Skåne län",
+   "bron": "sdf/eaza/zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Malmö (Aquarium & Tropicarium / Malmöhus)"
+  },
+  {
+   "naam": "Karolinska Institutet – Astrid Fagraeus Laboratorium",
+   "plaats": "Solna",
+   "lan": "Stockholms län",
+   "bron": "officieel",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": ""
+  },
+  {
+   "naam": "Karolinska Institutet (vattenbruk)",
+   "plaats": "Solna/Stockholm",
+   "lan": "Stockholms län",
+   "bron": "officieel",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": ""
+  },
+  {
+   "naam": "Uppsala universitet (vattenbruk)",
+   "plaats": "Uppsala",
+   "lan": "Uppsala län",
+   "bron": "officieel",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": ""
+  },
+  {
+   "naam": "Umeå universitet (vattenbruk)",
+   "plaats": "Umeå",
+   "lan": "Västerbottens län",
+   "bron": "officieel",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": ""
+  },
+  {
+   "naam": "Göteborgs universitet (vattenbruk)",
+   "plaats": "Göteborg",
+   "lan": "Västra Götalands län",
+   "bron": "officieel",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": ""
+  },
+  {
+   "naam": "Norrviken Trädgardars Fagelpark",
+   "plaats": "Båstad",
+   "lan": "Skåne län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Bastad (Norrviken Trädgardars Fagelpark - geschlossen in den 1980er Jahren)",
+   "opmerking": "gesloten volgens Zootierliste (gesloten in de jaren 1980)"
+  },
+  {
+   "naam": "Djurpark Tamarin",
+   "plaats": "Billesholm",
+   "lan": "Skåne län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Billesholm (Djurpark Tamarin - geschlossen seit 2011)",
+   "opmerking": "gesloten volgens Zootierliste (gesloten sinds 2011)"
+  },
+  {
+   "naam": "Älgens Hus",
+   "plaats": "Bjurholm",
+   "lan": "Västerbottens län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Bjurholm (Älgens Hus)"
+  },
+  {
+   "naam": "Naturum Sommen",
+   "plaats": "Blåvik",
+   "lan": "Östergötlands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Blavik (Naturum Sommen)"
+  },
+  {
+   "naam": "Ramnaparken",
+   "plaats": "Borås",
+   "lan": "Västra Götalands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Boras (Ramnaparken)"
+  },
+  {
+   "naam": "Tropikhus",
+   "plaats": "Borås",
+   "lan": "Västra Götalands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Boras (Tropikhus - geschlossen 2020)",
+   "opmerking": "gesloten volgens Zootierliste (gesloten 2020)"
+  },
+  {
+   "naam": "Sahlins Struts",
+   "plaats": "Borlänge",
+   "lan": "Dalarnas län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Borlänge (Sahlins Struts)"
+  },
+  {
+   "naam": "Resteröds djurpark",
+   "plaats": "Resteröd",
+   "lan": "Västra Götalands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Buddeberg (Resteröds djurpark - geschlossen 1964)",
+   "opmerking": "gesloten volgens Zootierliste (gesloten 1964)"
+  },
+  {
+   "naam": "Bottarve Museigard",
+   "plaats": "Burgsvik",
+   "lan": "Gotlands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Burgsvik (Bottarve Museigard)"
+  },
+  {
+   "naam": "Dalslands Moose Ranch",
+   "plaats": "Dals-Ed",
+   "lan": "Västra Götalands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Dals Ed (Dalslands Moose Ranch)"
+  },
+  {
+   "naam": "Naturum Kosterhavet",
+   "plaats": "Ekenäs",
+   "lan": "Västra Götalands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Ekenäs (Naturum Kosterhavet)"
+  },
+  {
+   "naam": "Värmlands Moose Park",
+   "plaats": "Ekshärad",
+   "lan": "Värmlands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Ekshärad (Värmlands Moose Park)"
+  },
+  {
+   "naam": "Skullaryd Älgpark",
+   "plaats": "Eksjö",
+   "lan": "Jönköpings län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Eksjö (Skullaryd Älgpark)"
+  },
+  {
+   "naam": "Eriksbergs Vilt- och Naturpark",
+   "plaats": "Eriksberg (Karlshamn)",
+   "lan": "Blekinge län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Eriksberg (Eriksbergs Vilt- och Naturpark)"
+  },
+  {
+   "naam": "Hällingsjö Djurpark",
+   "plaats": "Hällingsjö",
+   "lan": "Västra Götalands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [
+    "Ocelot – onbekend (vroeger; laatst gezien vóór 1962)",
+    "Leeuw – onbekend (vroeger; laatst gezien 1962)"
+   ],
+   "zootierliste_naam": "Eriksmyst (Hällingsjö Djurpark - geschlossen 1962)",
+   "opmerking": "gesloten volgens Zootierliste (gesloten 1962)"
+  },
+  {
+   "naam": "Räntemåla Gård",
+   "plaats": "Eringsboda",
+   "lan": "Blekinge län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Eringsboda (Räntemåla Gård)"
+  },
+  {
+   "naam": "Mössebergs Djurpark",
+   "plaats": "Falköping",
+   "lan": "Västra Götalands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Falköping (Mössebergs Djurpark)"
+  },
+  {
+   "naam": "Moose Adventure",
+   "plaats": "Falun",
+   "lan": "Dalarnas län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Falun (Moose Adventure - geschlossen)",
+   "opmerking": "gesloten volgens Zootierliste (gesloten)"
+  },
+  {
+   "naam": "Djurpark (Frösön)",
+   "plaats": "Frösön",
+   "lan": "Jämtlands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (vroeger; laatst gezien 2012)",
+    "Leeuw – onbekend (vroeger; laatst gezien 2012)",
+    "Tijger – Amoer (vroeger; laatst gezien 2012)"
+   ],
+   "zootierliste_naam": "Frösön (Djurpark - geschlossen 2019)",
+   "opmerking": "gesloten volgens Zootierliste (gesloten 2019)"
+  },
+  {
+   "naam": "Djurpark (Visby)",
+   "plaats": "Visby",
+   "lan": "Gotlands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Gotland (Djurpark - geschlossen 2005)",
+   "opmerking": "gesloten volgens Zootierliste (gesloten 2005)"
+  },
+  {
+   "naam": "Gotlands Djurpark",
+   "plaats": "Tofta",
+   "lan": "Gotlands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Gotlands Tofta (Gotlands Djurpark)"
+  },
+  {
+   "naam": "Samstorps Gård",
+   "plaats": "Gräddö",
+   "lan": "Stockholms län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Gräddö (Samstorps Gård)"
+  },
+  {
+   "naam": "Grönåsen Älg & Lantdjurspark",
+   "plaats": "Grönåsen",
+   "lan": "Kronobergs län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Grönåsen (Grönåsen Älg & Lantdjurspark)"
+  },
+  {
+   "naam": "Sjöfartsmuseet Akvariet",
+   "plaats": "Göteborg",
+   "lan": "Västra Götalands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Göteborg (Sjöfartsmuseet Akvariet)"
+  },
+  {
+   "naam": "Trädgårdsföreningen",
+   "plaats": "Göteborg",
+   "lan": "Västra Götalands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Göteborg (Trädgårdsföreningen)"
+  },
+  {
+   "naam": "Tropicarium",
+   "plaats": "Halmstad",
+   "lan": "Hallands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Halmstad (Tropicarium - geschlossen seit 2009)",
+   "opmerking": "gesloten volgens Zootierliste (gesloten sinds 2009)"
+  },
+  {
+   "naam": "Elinge Älgpark",
+   "plaats": "Hamneda (Ljungby)",
+   "lan": "Kronobergs län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Hamndeda (Elinge Älgpark)"
+  },
+  {
+   "naam": "Gårdsjö Älgpark",
+   "plaats": "Heby",
+   "lan": "Uppsala län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Heby (Gårdsjö Älgpark)"
+  },
+  {
+   "naam": "Djurparken / ex. Fågelparken",
+   "plaats": "Helsingborg",
+   "lan": "Skåne län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Helsingborg (Djurparken / ex. Fågelparken)"
+  },
+  {
+   "naam": "Fredriksdals museer och trädgårdar",
+   "plaats": "Helsingborg",
+   "lan": "Skåne län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Helsingborg (Fredriksdals museer och trädgårdar)"
+  },
+  {
+   "naam": "Ingelbo Moosepark",
+   "plaats": "Hissmossa",
+   "lan": "Västra Götalands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Hissmossa (Ingelbo Moosepark - geschlossen)",
+   "opmerking": "gesloten volgens Zootierliste (gesloten)"
+  },
+  {
+   "naam": "Lillfjärdens fågelreservat",
+   "plaats": "Hudiksvall",
+   "lan": "Gävleborgs län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Hudiksvall (Lillfjärdens fågelreservat - geschlossen)",
+   "opmerking": "gesloten volgens Zootierliste (gesloten)"
+  },
+  {
+   "naam": "Tjärnö Lovéncentret Akvarium",
+   "plaats": "Tjärnö",
+   "lan": "Västra Götalands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Hättebäck (Tjärnö Lovéncentret Akvarium)"
+  },
+  {
+   "naam": "Brovallens Djurpark",
+   "plaats": "Brovallen",
+   "lan": "Dalarnas län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [
+    "Leeuw – onbekend (vroeger; laatst gezien 1959)"
+   ],
+   "zootierliste_naam": "Igeltjärna (Brovallens Djurpark - geschlossen 1966)",
+   "opmerking": "gesloten volgens Zootierliste (gesloten 1966)"
+  },
+  {
+   "naam": "Djurpark (Ingelstad)",
+   "plaats": "Ingelstad",
+   "lan": "Kronobergs län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Ingelstad (Djurpark)"
+  },
+  {
+   "naam": "Isaberg Moose Park",
+   "plaats": "Hestra (Gislaved)",
+   "lan": "Jönköpings län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Isaberg (Isaberg Moose Park)"
+  },
+  {
+   "naam": "Djurpark (Junsele)",
+   "plaats": "Junsele",
+   "lan": "Västernorrlands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (laatst gezien 2024)",
+    "Leeuw – Zuidelijk (P. l. melanochaita), witte leeuw (vroeger; laatst gezien 2006)",
+    "Tijger – onbekend (laatst gezien 2024)"
+   ],
+   "zootierliste_naam": "Junsele (Djurpark)"
+  },
+  {
+   "naam": "Jönköpings Stadspark",
+   "plaats": "Jönköping",
+   "lan": "Jönköpings län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Jönköping (Jönköpings Stadspark)"
+  },
+  {
+   "naam": "Blekinge Exotiska Värld",
+   "plaats": "Karlshamn",
+   "lan": "Blekinge län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Karlshamn (Blekinge Exotiska Värld - geschlossen 2019)",
+   "opmerking": "gesloten volgens Zootierliste (gesloten 2019)"
+  },
+  {
+   "naam": "Djurparken Lillskogen",
+   "plaats": "Karlstad",
+   "lan": "Värmlands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Karlstad (Djurparken Lillskogen)"
+  },
+  {
+   "naam": "Safaripark (Kosta)",
+   "plaats": "Kosta",
+   "lan": "Kronobergs län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Kosta (Safaripark)"
+  },
+  {
+   "naam": "Naturum Vattenriket",
+   "plaats": "Kristianstad",
+   "lan": "Skåne län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Kristianstad (Naturum Vattenriket)"
+  },
+  {
+   "naam": "High Chaparral",
+   "plaats": "Kulltorp",
+   "lan": "Jönköpings län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Kulltorp (High Chaparral)"
+  },
+  {
+   "naam": "Söderåsens Älgpark",
+   "plaats": "Kågeröd",
+   "lan": "Skåne län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Kågeröd (Söderåsens Älgpark)"
+  },
+  {
+   "naam": "Laganland Älgpark",
+   "plaats": "Lagan",
+   "lan": "Kronobergs län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Lagan (Laganland Älgpark)"
+  },
+  {
+   "naam": "Fageldammen (Landskrona)",
+   "plaats": "Landskrona",
+   "lan": "Skåne län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Landskrona (Fageldammen)"
+  },
+  {
+   "naam": "Karlslunds Djurpark",
+   "plaats": "Landskrona",
+   "lan": "Skåne län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Landskrona (Karlslunds Djurpark)"
+  },
+  {
+   "naam": "Alpackagården i Kråkshult",
+   "plaats": "Lidhult",
+   "lan": "Kronobergs län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Lidhult (Alpackagården i Kråkshult)"
+  },
+  {
+   "naam": "Stadsnära Lantgård",
+   "plaats": "Lidköping",
+   "lan": "Västra Götalands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Lidköping (Stadsnära Lantgård)"
+  },
+  {
+   "naam": "Vänermuseet",
+   "plaats": "Lidköping",
+   "lan": "Västra Götalands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Lidköping (Vänermuseet)"
+  },
+  {
+   "naam": "Sälenfjällens Älgpark",
+   "plaats": "Sälen",
+   "lan": "Dalarnas län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Lima (Sälenfjällens Älgpark - geschlossen)",
+   "opmerking": "gesloten volgens Zootierliste (gesloten)"
+  },
+  {
+   "naam": "Cape Wild",
+   "plaats": "Luleå",
+   "lan": "Norrbottens län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Luleå (Cape Wild)"
+  },
+  {
+   "naam": "Botanical Garden (Lund)",
+   "plaats": "Lund",
+   "lan": "Skåne län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Lund (Botanical Garden)"
+  },
+  {
+   "naam": "Havets Hus",
+   "plaats": "Lysekil",
+   "lan": "Västra Götalands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Lysekil (Havets Hus)"
+  },
+  {
+   "naam": "Långshyttans Älgpark",
+   "plaats": "Långshyttan",
+   "lan": "Dalarnas län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Långshyttan (Långshyttans Älgpark)"
+  },
+  {
+   "naam": "Marint Kunskapscenter",
+   "plaats": "Malmö",
+   "lan": "Skåne län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Malmö (Marint Kunskapscenter)"
+  },
+  {
+   "naam": "Reptilcenter",
+   "plaats": "Malmö",
+   "lan": "Skåne län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Malmö (Reptilcenter)"
+  },
+  {
+   "naam": "Gripsholms hjorthage",
+   "plaats": "Mariefred",
+   "lan": "Södermanlands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Mariefred (Gripsholms hjorthage)"
+  },
+  {
+   "naam": "Smålandets Älgsafari",
+   "plaats": "Markaryd",
+   "lan": "Kronobergs län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Markaryd (Smålandets Älgsafari)"
+  },
+  {
+   "naam": "Vätternakvariet i Motala",
+   "plaats": "Motala",
+   "lan": "Östergötlands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Motala (Vätternakvariet i Motala - geschlossen 2025)",
+   "opmerking": "gesloten volgens Zootierliste (gesloten 2025)"
+  },
+  {
+   "naam": "Målilla Älgpark",
+   "plaats": "Målilla",
+   "lan": "Kalmar län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Målilla (Målilla Älgpark)"
+  },
+  {
+   "naam": "Naturum Kullaberg",
+   "plaats": "Mölle",
+   "lan": "Skåne län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Mölle (Naturum Kullaberg)"
+  },
+  {
+   "naam": "Laxens Hus",
+   "plaats": "Mörrum",
+   "lan": "Blekinge län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Mörrum (Laxens Hus)"
+  },
+  {
+   "naam": "Djurpark (Alingsås)",
+   "plaats": "Alingsås",
+   "lan": "Västra Götalands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Nolhaga (Djurpark)"
+  },
+  {
+   "naam": "Glasrikets Älgpark",
+   "plaats": "Nybro",
+   "lan": "Kalmar län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Nybro (Glasrikets Älgpark)"
+  },
+  {
+   "naam": "Öster Malma Wildpark",
+   "plaats": "Nyköping",
+   "lan": "Södermanlands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Nyköping (Öster Malma Wildpark)"
+  },
+  {
+   "naam": "Älgparken (Ockelbo)",
+   "plaats": "Ockelbo",
+   "lan": "Gävleborgs län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Ockelbo (Älgparken)"
+  },
+  {
+   "naam": "Rovdjurspark / vormals Björnpark",
+   "plaats": "Orsa",
+   "lan": "Dalarnas län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (vroeger; laatst gezien 2021)",
+    "Luipaard – Perzisch (P. p. tulliana) (vroeger; laatst gezien 2022)",
+    "Tijger – Amoer (vroeger; laatst gezien 2022)",
+    "Sneeuwluipaard – — (vroeger; laatst gezien 2022)"
+   ],
+   "zootierliste_naam": "Orsa Grönklitt (Rovdjurspark / vormals Björnpark - geschlossen 2022)",
+   "opmerking": "gesloten volgens Zootierliste (gesloten 2022)"
+  },
+  {
+   "naam": "Naturum Blekinge",
+   "plaats": "Ronneby",
+   "lan": "Blekinge län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Ronneby (Naturum Blekinge)"
+  },
+  {
+   "naam": "Ersboda 4H-gård",
+   "plaats": "Rönninge",
+   "lan": "Stockholms län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Rönninge (Ersboda 4H-gård)"
+  },
+  {
+   "naam": "Läckö Zoo",
+   "plaats": "Läckö",
+   "lan": "Västra Götalands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [
+    "Leeuw – onbekend (vroeger; laatst gezien 1962)"
+   ],
+   "zootierliste_naam": "Skateberg (Läckö Zoo - geschlossen 1964)",
+   "opmerking": "gesloten volgens Zootierliste (gesloten 1964)"
+  },
+  {
+   "naam": "Augustendals 4H-Klubb",
+   "plaats": "Solna",
+   "lan": "Stockholms län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Solna (Augustendals 4H-Klubb)"
+  },
+  {
+   "naam": "Djurpark (Steninge)",
+   "plaats": "Steninge",
+   "lan": "Hallands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [
+    "Leeuw – onbekend (vroeger; laatst gezien 1970)"
+   ],
+   "zootierliste_naam": "Steninge (Djurpark - geschlossen 1970)",
+   "opmerking": "gesloten volgens Zootierliste (gesloten 1970)"
+  },
+  {
+   "naam": "Djurpark (Stenkyrka)",
+   "plaats": "Stenkyrka",
+   "lan": "Gotlands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Stenkyrka (Djurpark)"
+  },
+  {
+   "naam": "Aquaria Vattenmuseum",
+   "plaats": "Stockholm",
+   "lan": "Stockholms län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Stockholm (Aquaria Vattenmuseum - geschlossen 2018)",
+   "opmerking": "gesloten volgens Zootierliste (gesloten 2018)"
+  },
+  {
+   "naam": "Aspuddsparkens Parklek",
+   "plaats": "Stockholm",
+   "lan": "Stockholms län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Stockholm (Aspuddsparkens Parklek)"
+  },
+  {
+   "naam": "Fjärilshuset - Haga Ocean (ehemals: Tropical Garden)",
+   "plaats": "Stockholm",
+   "lan": "Stockholms län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Stockholm (Fjärilshuset - Haga Ocean (ehemals: Tropical Garden))"
+  },
+  {
+   "naam": "Riddersviks 4H-Gård",
+   "plaats": "Stockholm",
+   "lan": "Stockholms län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Stockholm (Riddersviks 4H-Gård)"
+  },
+  {
+   "naam": "Fageldammarna i Surte",
+   "plaats": "Surte",
+   "lan": "Västra Götalands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Surte (Fageldammarna i Surte)"
+  },
+  {
+   "naam": "Naturum Takern",
+   "plaats": "Svanshals",
+   "lan": "Östergötlands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Svanshals (Naturum Takern)"
+  },
+  {
+   "naam": "Älgpark & Huskyfarm (Särna)",
+   "plaats": "Särna",
+   "lan": "Dalarnas län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Särna (Älgpark & Huskyfarm)"
+  },
+  {
+   "naam": "Torekällbergets Friluftsmuseum",
+   "plaats": "Södertälje",
+   "lan": "Stockholms län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Södertälje (Torekällbergets Friluftsmuseum)"
+  },
+  {
+   "naam": "Minizoo (Tibro)",
+   "plaats": "Tibro",
+   "lan": "Västra Götalands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Tibro (Minizoo)"
+  },
+  {
+   "naam": "Älgriket",
+   "plaats": "Tingsryd",
+   "lan": "Kronobergs län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Tingsryd (Älgriket)"
+  },
+  {
+   "naam": "Djurparken Traryds Skans",
+   "plaats": "Traryd",
+   "lan": "Kronobergs län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Traryd (Djurparken Traryds Skans)"
+  },
+  {
+   "naam": "Stadsparken i Trelleborg (Trelleborg)",
+   "plaats": "Trelleborg",
+   "lan": "Skåne län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Trelleborg (Stadsparken i Trelleborg)"
+  },
+  {
+   "naam": "Bisoncamp (Trädet)",
+   "plaats": "Trädet",
+   "lan": "Västra Götalands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Trädet (Bisoncamp)"
+  },
+  {
+   "naam": "Fun City",
+   "plaats": "Tvååker",
+   "lan": "Hallands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Tvaaker (Fun City - geschlossen 2012)",
+   "opmerking": "gesloten volgens Zootierliste (gesloten 2012)"
+  },
+  {
+   "naam": "Varbergs Tropikarium",
+   "plaats": "Tvååker",
+   "lan": "Hallands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Tvååker (Varbergs Tropikarium)"
+  },
+  {
+   "naam": "Emaus lantgard",
+   "plaats": "Uddevalla",
+   "lan": "Västra Götalands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Uddevalla (Emaus lantgard)"
+  },
+  {
+   "naam": "Holmsunds Tropikhus",
+   "plaats": "Umeå",
+   "lan": "Västerbottens län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Umeå (Holmsunds Tropikhus - geschlossen 2015)",
+   "opmerking": "gesloten volgens Zootierliste (gesloten 2015)"
+  },
+  {
+   "naam": "Älgens Hus",
+   "plaats": "Umeå",
+   "lan": "Västerbottens län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Umeå (Älgens Hus)"
+  },
+  {
+   "naam": "Kybacka Älgpark",
+   "plaats": "Valbo",
+   "lan": "Gävleborgs län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Valbo (Kybacka Älgpark - geschlossen)",
+   "opmerking": "gesloten volgens Zootierliste (gesloten)"
+  },
+  {
+   "naam": "Virum Älgpark",
+   "plaats": "Vimmerby",
+   "lan": "Kalmar län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Vimmerby (Virum Älgpark)"
+  },
+  {
+   "naam": "Hallagårdens Djurpark",
+   "plaats": "Vintrosa",
+   "lan": "Örebro län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Vintrosa (Hallagårdens Djurpark)"
+  },
+  {
+   "naam": "Vittangi Älgpark",
+   "plaats": "Vittangi",
+   "lan": "Norrbottens län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Vittangi (Vittangi Älgpark - geschlossen 2014)",
+   "opmerking": "gesloten volgens Zootierliste (gesloten 2014)"
+  },
+  {
+   "naam": "Björkö 4H-gård",
+   "plaats": "Vreta Kloster",
+   "lan": "Östergötlands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Vreta Kloster (Björkö 4H-gård)"
+  },
+  {
+   "naam": "Älgpark (Vrigstad)",
+   "plaats": "Vrigstad",
+   "lan": "Jönköpings län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Vrigstad (Älgpark - geschlossen)",
+   "opmerking": "gesloten volgens Zootierliste (gesloten)"
+  },
+  {
+   "naam": "Apladalen",
+   "plaats": "Värnamo",
+   "lan": "Jönköpings län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Värnamo (Apladalen)"
+  },
+  {
+   "naam": "Djäknebergets djurpark",
+   "plaats": "Västerås",
+   "lan": "Västmanlands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Västeras (Djäknebergets djurpark - geschlossen)",
+   "opmerking": "gesloten volgens Zootierliste (gesloten)"
+  },
+  {
+   "naam": "Naturum (Västervik)",
+   "plaats": "Västervik",
+   "lan": "Kalmar län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Västervik (Naturum)"
+  },
+  {
+   "naam": "Kungsbyns Djurpark",
+   "plaats": "Västerås",
+   "lan": "Västmanlands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Västerås (Kungsbyns Djurpark - geschlossen 2024)",
+   "opmerking": "gesloten volgens Zootierliste (gesloten 2024)"
+  },
+  {
+   "naam": "Tånga Heds 4H gård",
+   "plaats": "Vårgårda",
+   "lan": "Västra Götalands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Vårgårda (Tånga Heds 4H gård)"
+  },
+  {
+   "naam": "Hembygdspark (Ängelholm)",
+   "plaats": "Ängelholm",
+   "lan": "Skåne län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Ängelholm (Hembygdspark)"
+  },
+  {
+   "naam": "Djurpark (Åmål)",
+   "plaats": "Åmål",
+   "lan": "Västra Götalands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Amal (Djurpark)"
+  },
+  {
+   "naam": "Moose af Anneröd",
+   "plaats": "Anneröd",
+   "lan": "Västra Götalands län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Anneröd (Moose af Anneröd)"
+  },
+  {
+   "naam": "Visentpark (Avesta)",
+   "plaats": "Avesta",
+   "lan": "Dalarnas län",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [],
+   "zootierliste_naam": "Avesta (Visentpark)"
+  }
+ ]
+}

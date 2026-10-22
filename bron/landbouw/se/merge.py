@@ -16,7 +16,7 @@ def regio(lon,lat):
     return min(PL,key=lambda k:PL[k].distance(p))
 def norm(s): return re.sub(r'[^a-z0-9]','',unicodedata.normalize('NFD',s.lower()).encode('ascii','ignore').decode())
 L=[];Z=[]
-for p in ['sy','vg','om','no','op','lst']+[f'vv{i}' for i in range(1,6)]:
+for p in ['sy','vg','om','no','op']+[f'vv{i}' for i in range(1,6)]:
     if not os.path.exists(p+'_resultaat.json'): continue
     d=json.load(open(p+'_resultaat.json'))
     for l in d.get('locaties',[]):

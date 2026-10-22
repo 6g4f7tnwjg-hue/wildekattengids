@@ -1,0 +1,347 @@
+{
+  "locaties": [
+    {
+      "naam": "Kolmårdens Djurpark",
+      "plaats": "Kolmården (Norrköping)",
+      "lan": "Östergötlands län",
+      "lon": 16.451,
+      "lat": 58.664,
+      "type": "Dierentuin",
+      "lidmaatschap": [
+        "EAZA",
+        "SDF"
+      ],
+      "url": "https://www.kolmarden.com/",
+      "uren": {
+        "nl": "Seizoenspark: zomerseizoen, daarna Halloween (oktober–begin november) en Sagojul (vanaf eind november); dagtijden per dag in de kalender (eigen site, gezien 22-10-2026)",
+        "en": "Seasonal park: summer season, then Halloween (October–early November) and Sagojul (from late November); daily hours in the online calendar (own site, seen 22-10-2026)"
+      },
+      "about": {
+        "nl": "Grootste dierenpark van Scandinavië, met een safari-kabelbaan boven de leeuwen en Tiger World met een glazen tunnel. Lynxen leven ook vrij in de bossen van Östergötland; die tellen niet mee.",
+        "en": "Scandinavia's largest wildlife park, with a safari cable car above the lions and Tiger World with a glass tunnel. Lynx also live wild in the forests of Östergötland; they are not counted."
+      },
+      "earlier": {
+        "nl": "Afrikaanse leeuwen: zes dieren in 2024 geëuthanaseerd (oud/ziek) om plaats te maken voor Aziatische leeuwen (SVT 10-12-2025).",
+        "en": "African lions: six animals euthanised in 2024 (old/ill) to make room for Asiatic lions (SVT 10-12-2025)."
+      },
+      "katten": [
+        {
+          "soort": "Tijger",
+          "ondersoort": "Amoer",
+          "status": "g",
+          "toelichting": {
+            "nl": "In Tiger World; dagelijkse tijgerdemonstratie en betaalde exclusieve rondleiding.",
+            "en": "In Tiger World; daily tiger talk and paid exclusive guided tour."
+          },
+          "aantal": {
+            "nl": "onbekend (o.a. moeder Zima, vader Baïkal, vier welpen van 2026 en oudere zussen)",
+            "en": "unknown (incl. mother Zima, father Baïkal, four 2026 cubs and older sisters)"
+          },
+          "bron": "Eigen site soortpagina /djurpark/djur/tiger (gezien 22-10-2026); SVT 01-10-2026; NT 02-10-2026"
+        },
+        {
+          "soort": "Leeuw",
+          "ondersoort": "Aziatisch (P. l. leo, voorheen P. l. persica)",
+          "status": "g",
+          "toelichting": {
+            "nl": "Leeuwenverblijf van 2 ha in het safarideel, te zien vanaf de safari-kabelbaan; aangekomen in februari 2025.",
+            "en": "2-hectare lion enclosure in the safari area, seen from the safari cable car; arrived February 2025."
+          },
+          "aantal": {
+            "nl": "3 (kater Ravi, poezen Taara en Priya)",
+            "en": "3 (male Ravi, females Taara and Priya)"
+          },
+          "bron": "Eigen site soortpagina /djurpark/djur/lejon (gezien 22-10-2026); SVT 10-12-2025"
+        },
+        {
+          "soort": "Sneeuwluipaard",
+          "ondersoort": "—",
+          "status": "g",
+          "toelichting": {
+            "nl": "Op de dierenlijst van het park; geen recent nieuws gevonden.",
+            "en": "On the park's animal list; no recent news found."
+          },
+          "aantal": {
+            "nl": "onbekend",
+            "en": "unknown"
+          },
+          "bron": "Eigen site soortpagina /djurpark/djur/snoleopard (gezien 22-10-2026); Zootierliste (aanvullend)"
+        },
+        {
+          "soort": "Euraziatische lynx",
+          "ondersoort": "Noordelijk (L. l. lynx)",
+          "status": "g",
+          "toelichting": {
+            "nl": "Op de dierenlijst van het park (Scandinavische lynx).",
+            "en": "On the park's animal list (Scandinavian lynx)."
+          },
+          "aantal": {
+            "nl": "onbekend",
+            "en": "unknown"
+          },
+          "bron": "Eigen site soortpagina /djurpark/djur/lodjur (gezien 22-10-2026); Zootierliste (bezoek 08/2024, aanvullend)"
+        }
+      ],
+      "geboortes": [
+        {
+          "soort": "Tijger",
+          "geboren": "2026-06-03",
+          "n": {
+            "nl": "4 welpen",
+            "en": "4 cubs"
+          },
+          "x": {
+            "nl": "Tellus, Pluto, Jupiter en Vega (3 katers, 1 poes); moeder Zima, vader Baïkal, hun derde worp; sinds eind september/begin oktober 2026 buiten in Tiger World.",
+            "en": "Tellus, Pluto, Jupiter and Vega (3 males, 1 female); mother Zima, father Baïkal, their third litter; outdoors in Tiger World since late September/early October 2026."
+          },
+          "bron": "SVT 01-10-2026; NT 02-10-2026"
+        }
+      ],
+      "kleur": ""
+    },
+    {
+      "naam": "Parken Zoo",
+      "plaats": "Eskilstuna",
+      "lan": "Södermanlands län",
+      "lon": 16.48,
+      "lat": 59.371,
+      "type": "Attractiepark met dieren",
+      "lidmaatschap": [
+        "EAZA",
+        "SDF"
+      ],
+      "url": "https://parkenzoo.se/",
+      "uren": {
+        "nl": "Seizoenspark; herfst 2026: 24–31 okt 11.00–19.00, daarna gesloten tot het volgende seizoen (eigen site, gezien 22-10-2026)",
+        "en": "Seasonal park; autumn 2026: 24–31 Oct 11:00–19:00, then closed until next season (own site, seen 22-10-2026)"
+      },
+      "about": {
+        "nl": "Dierentuin met pretpark (attracties inbegrepen) aan de rand van Eskilstuna, sinds de jaren 1980 gespecialiseerd in katachtigen. Sinds 2026 nieuwe eigenaren; de witte tijger leeft nu alleen nog voort als mascotte ‘Flurry’.",
+        "en": "Zoo combined with an amusement park (rides included) on the edge of Eskilstuna, specialised in cats since the 1980s. New owners since 2026; the white tiger now lives on only as the mascot ‘Flurry’."
+      },
+      "earlier": {
+        "nl": "Witte (Bengaalse) tijgers, jarenlang het symbool van het park (eigen site 03-07-2026, zonder jaartal van vertrek). Vissende katten ook al 2003–ca. 2021/22 (Zootierliste). Sumatraanse tijger-jong ‘Toba’ in 2023 naar Attica Zoo; een kater in 2026 naar Zoo Berlin (Zootierliste).",
+        "en": "White (Bengal) tigers, for years the park's symbol (own site 03-07-2026, departure year not given). Fishing cats also kept 2003–c. 2021/22 (Zootierliste). Sumatran tiger cub ‘Toba’ went to Attica Zoo in 2023; a male went to Zoo Berlin in 2026 (Zootierliste)."
+      },
+      "katten": [
+        {
+          "soort": "Tijger",
+          "ondersoort": "Sumatraans",
+          "status": "g",
+          "toelichting": {
+            "nl": "EEP-deelname.",
+            "en": "EEP participant."
+          },
+          "aantal": {
+            "nl": "onbekend",
+            "en": "unknown"
+          },
+          "bron": "Eigen site soortpagina /djur/sumatratiger (gezien 22-10-2026); eigen site nieuws 07-07-2026; Zootierliste (bezoek 06/2026, aanvullend)"
+        },
+        {
+          "soort": "Leeuw",
+          "ondersoort": "Aziatisch (P. l. leo, voorheen P. l. persica)",
+          "status": "g",
+          "toelichting": {
+            "nl": "EEP-deelname.",
+            "en": "EEP participant."
+          },
+          "aantal": {
+            "nl": "onbekend",
+            "en": "unknown"
+          },
+          "bron": "Eigen site soortpagina /djur/asiatiskt-lejon (bijgewerkt 25-03-2026, gezien 22-10-2026); Zootierliste (bezoek 06/2026, aanvullend)"
+        },
+        {
+          "soort": "Luipaard",
+          "ondersoort": "Amoer (P. p. orientalis)",
+          "status": "g",
+          "toelichting": {
+            "nl": "EEP-deelname; ‘bedreigde soort van de maand’ augustus 2026.",
+            "en": "EEP participant; ‘threatened species of the month’ August 2026."
+          },
+          "aantal": {
+            "nl": "onbekend",
+            "en": "unknown"
+          },
+          "bron": "Eigen site soortpagina /djur/amurleopard (gezien 22-10-2026); eigen site nieuws 23-08-2026"
+        },
+        {
+          "soort": "Jaguar",
+          "ondersoort": "—",
+          "status": "g",
+          "toelichting": {
+            "nl": "EEP-deelname; soortpagina bijgewerkt 08-10-2026.",
+            "en": "EEP participant; species page updated 08-10-2026."
+          },
+          "aantal": {
+            "nl": "onbekend",
+            "en": "unknown"
+          },
+          "bron": "Eigen site soortpagina /djur/jaguar (gezien 22-10-2026); eigen site nieuws 07-07-2026"
+        },
+        {
+          "soort": "Cheetah",
+          "ondersoort": "Zuidelijk (A. j. jubatus)",
+          "status": "g",
+          "toelichting": {
+            "nl": "Zuidelijke cheetah volgens soortpagina; EEP-deelname.",
+            "en": "Southern cheetah according to the species page; EEP participant."
+          },
+          "aantal": {
+            "nl": "onbekend",
+            "en": "unknown"
+          },
+          "bron": "Eigen site soortpagina /djur/gepard (bijgewerkt 24-03-2026, gezien 22-10-2026); Zootierliste (bezoek 06/2026, aanvullend)"
+        },
+        {
+          "soort": "Vissende kat",
+          "ondersoort": "—",
+          "status": "g",
+          "toelichting": {
+            "nl": "Nieuw in 2026 (‘nyinflyttad’); volgens het park de enige in Zweden. EEP-deelname.",
+            "en": "New in 2026 (‘newly arrived’); according to the park the only ones in Sweden. EEP participant."
+          },
+          "aantal": {
+            "nl": "onbekend",
+            "en": "unknown"
+          },
+          "bron": "Eigen site soortpagina /djur/fiskarkatt (gezien 22-10-2026); eigen site nieuws 07-07-2026"
+        },
+        {
+          "soort": "Nevelpanter",
+          "ondersoort": "—",
+          "status": "w",
+          "toelichting": {
+            "nl": "Gehouden sinds 2008, Zweedse eerste kweek 2013.",
+            "en": "Kept since 2008, first Swedish breeding 2013."
+          },
+          "aantal": {
+            "nl": "onbekend",
+            "en": "unknown"
+          },
+          "bron": "Zootierliste (bezoek 06/2026: bord aanwezig, dier niet gezien); niet op dierenlijst eigen site (gezien 22-10-2026)",
+          "twijfel": {
+            "nl": "Staat niet (meer) in de dierenlijst van de eigen site; alleen een bord gezien in juni 2026 volgens Zootierliste. Mogelijk vertrokken.",
+            "en": "No longer in the park's own animal list; only a sign seen in June 2026 according to Zootierliste. Possibly gone."
+          }
+        }
+      ],
+      "geboortes": [],
+      "kleur": ""
+    },
+    {
+      "naam": "Skansen",
+      "plaats": "Stockholm (Djurgården)",
+      "lan": "Stockholms län",
+      "lon": 18.104,
+      "lat": 59.327,
+      "type": "Dierenpark",
+      "lidmaatschap": [
+        "EAZA",
+        "SDF"
+      ],
+      "url": "https://www.skansen.se/",
+      "uren": {
+        "nl": "Het hele jaar open; 4 okt–7 nov dagelijks 10.00–16.00, daarna doordeweeks 10.00–15.00 en weekend 10.00–16.00 (eigen site, gezien 22-10-2026)",
+        "en": "Open all year; 4 Oct–7 Nov daily 10:00–16:00, then weekdays 10:00–15:00 and weekends 10:00–16:00 (own site, seen 22-10-2026)"
+      },
+      "about": {
+        "nl": "Openluchtmuseum met een dierenpark voor Scandinavische dieren. In Lill-Skansen worden ook huiskatten getoond (niet meegeteld).",
+        "en": "Open-air museum with a zoo of Nordic animals. Domestic cats are also shown in Lill-Skansen (not counted)."
+      },
+      "earlier": {
+        "nl": "",
+        "en": ""
+      },
+      "katten": [
+        {
+          "soort": "Euraziatische lynx",
+          "ondersoort": "Noordelijk (L. l. lynx)",
+          "status": "g",
+          "toelichting": {
+            "nl": "Scandinavische lynx; lynx al gehouden sinds ca. 1905.",
+            "en": "Scandinavian lynx; lynx kept since about 1905."
+          },
+          "aantal": {
+            "nl": "onbekend",
+            "en": "unknown"
+          },
+          "bron": "Eigen site soortpagina /djuren/lodjur (gezien 22-10-2026); Zootierliste (bezoeken 03/2025 en 08/2025, aanvullend)"
+        }
+      ],
+      "geboortes": [],
+      "kleur": ""
+    }
+  ],
+  "zonder_katten": [
+    {
+      "naam": "Skansen-Akvariet",
+      "plaats": "Stockholm (Djurgården)",
+      "reden": {
+        "nl": "geen katachtigen op de dierenlijst (apen, reptielen, vissen e.d.) (eigen site, gezien 22-10-2026)",
+        "en": "no cats on the animal list (monkeys, reptiles, fish etc.) (own site, seen 22-10-2026)"
+      }
+    },
+    {
+      "naam": "Tropicarium Kolmården",
+      "plaats": "Kolmården (Norrköping)",
+      "reden": {
+        "nl": "tropenhuis met reptielen, apen, haaien en roggen; geen katachtigen (eigen site, gezien 22-10-2026)",
+        "en": "tropical house with reptiles, monkeys, sharks and rays; no cats (own site, seen 22-10-2026)"
+      }
+    },
+    {
+      "naam": "Aquaria Vattenmuseum",
+      "plaats": "Stockholm (Djurgården)",
+      "reden": {
+        "nl": "bestaat niet meer; het domein aquaria.se is nu een ongerelateerde blog (gezien 22-10-2026); nooit katachtigen",
+        "en": "no longer exists; the aquaria.se domain is now an unrelated blog (seen 22-10-2026); never had cats"
+      }
+    },
+    {
+      "naam": "Kungsbyn Temapark",
+      "plaats": "Kungsåra (Västerås)",
+      "reden": {
+        "nl": "themapark met boerderij-, Aziatische en Scandinavische hoefdieren en shows; geen katachtigen; site meldt ‘tijdelijk gesloten’ (eigen site, gezien 22-10-2026)",
+        "en": "theme park with farm, Asian and Nordic hoofed animals and shows; no cats; site says ‘temporarily closed’ (own site, seen 22-10-2026)"
+      }
+    },
+    {
+      "naam": "Öster Malma viltpark (Svenska Jägareförbundet)",
+      "plaats": "Nyköping",
+      "reden": {
+        "nl": "wildpark met eland, moeflon, edelhert, damhert en wild zwijn; geen katachtigen (toeristische vermelding, ongedateerd)",
+        "en": "wildlife park with moose, mouflon, red and fallow deer and wild boar; no cats (tourist listing, undated)"
+      }
+    },
+    {
+      "naam": "Gårdsjö älgpark",
+      "plaats": "Heby",
+      "reden": {
+        "nl": "elandenpark; geen katachtigen (OpenStreetMap; eigen site onbereikbaar 22-10-2026)",
+        "en": "moose park; no cats (OpenStreetMap; own site unreachable 22-10-2026)"
+      }
+    },
+    {
+      "naam": "4H-gårdar en kinderboerderijen in Stockholm (o.a. Akalla, Augustendal, Vallentuna, Hågelby)",
+      "plaats": "Stockholm e.o.",
+      "reden": {
+        "nl": "alleen huis- en boerderijdieren (OpenStreetMap, gezien 22-10-2026)",
+        "en": "domestic and farm animals only (OpenStreetMap, seen 22-10-2026)"
+      }
+    }
+  ],
+  "open_punten": [
+    "Kolmården: tweede tijgerworp met welpen ‘Lava’ en ‘Azka’ (vermoedelijk 2 poezen, ouders vermoedelijk Zima en Baïkal) alleen via ZooChat (Facebookpost park); geboortedatum onbekend (waarschijnlijk 2024). NT 02-10-2026 noemt ‘oudere zussen’ nog aanwezig. Als geboren na 22-10-2024 horen ze bij recente geboortes.",
+    "Kolmården: aantallen en namen van sneeuwluipaarden en lynxen niet gevonden; status g alleen op basis van de actuele soortpagina's.",
+    "Kolmården: geen cheetahs; niet op de dierenlijst (sitemap, gezien 22-10-2026). Of er vroeger cheetahs waren, niet gecontroleerd.",
+    "Parken Zoo: nevelpanter (sinds 2008) ontbreekt op de eigen dierenlijst; Zootierliste 06/2026 alleen bord, dier niet gezien → status w.",
+    "Parken Zoo: geen aantallen of geboortes 2025–2026 bij katten gevonden; een Sumatraanse tijgerkater ging in 2026 naar Zoo Berlin (Zootierliste; daar ‘Banyu (2)’, niet bevestigd dat hij uit Eskilstuna kwam).",
+    "Parken Zoo: vertrekjaar witte tijgers niet vastgesteld.",
+    "‘Ekenäs’ en ‘Brunnsvik’ uit de opdracht: geen dierenpark met die naam in deze län gevonden (Brunnsvik ligt in Ludvika, Dalarna). ‘Tropiska Huset/Tropikariet’: het enige Tropikhuset in deze län (Linköping, Trädgårdsföreningen) is een café, geen dierenlocatie; Tropikariet ligt in Helsingborg.",
+    "Örebro län en Västmanlands län: geen dierenparken met katten gevonden (OpenStreetMap, zoekopdrachten). Kleinere kinderboerderijen (o.a. ‘Minizoo’ bij Karlskoga, Vallby friluftsmuseum Västerås) niet apart gecontroleerd.",
+    "Uppsala län: geen dierenpark met katten gevonden.",
+    "Lidmaatschappen EAZA/SDF voor Kolmården, Parken Zoo en Skansen uit algemene kennis, niet op ledenlijst gecontroleerd (svenskadjurparksforeningen.se onbereikbaar via proxy)."
+  ]
+}

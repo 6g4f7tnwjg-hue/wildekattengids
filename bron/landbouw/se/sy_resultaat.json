@@ -1,0 +1,197 @@
+{
+  "locaties": [
+    {
+      "naam": "Skånes Djurpark",
+      "plaats": "Höör (Höörs kommun)",
+      "lan": "Skåne län",
+      "lon": 13.531,
+      "lat": 55.964,
+      "type": "Dierenpark",
+      "lidmaatschap": [
+        "EAZA",
+        "SDF"
+      ],
+      "url": "https://www.skanesdjurpark.se/",
+      "uren": {
+        "nl": "Seizoensgebonden (voorjaar t/m herfst, plus Halloween en 'Djurens jul'); exacte dagen en tijden in de kalender op de site (eigen site, gezien 22-10-2026)",
+        "en": "Seasonal (spring to autumn, plus Halloween and 'Djurens jul'); exact days and hours in the calendar on the website (own website, seen 22-10-2026)"
+      },
+      "about": {
+        "nl": "Groot park met alleen Noord-Europese dieren in ruime, bosrijke verblijven ('inga djur i bur'). Je moet soms even zoeken om de dieren te zien.",
+        "en": "Large park with only Nordic animals in spacious wooded enclosures ('no animals in cages'). You may need some patience to spot the animals."
+      },
+      "earlier": {
+        "nl": "",
+        "en": ""
+      },
+      "katten": [
+        {
+          "soort": "Euraziatische lynx",
+          "ondersoort": "Noordelijk (L. l. lynx)",
+          "status": "g",
+          "toelichting": {
+            "nl": "Groot bosverblijf; ze liggen graag in de zon in het bosje rechts bij het 'groene balkon' en klimmen in bomen.",
+            "en": "Large forest enclosure; they like to sunbathe in the copse to the right of the 'green balcony' and climb trees."
+          },
+          "aantal": {
+            "nl": "2 (Lina en Lotus)",
+            "en": "2 (Lina and Lotus)"
+          },
+          "bron": "Eigen site soortpagina /djur/lodjur en /rovdjur (gezien 22-10-2026); Zootierliste (bezoek 06/2024, aanvullend)"
+        },
+        {
+          "soort": "Europese wilde kat",
+          "ondersoort": "—",
+          "status": "g",
+          "toelichting": {
+            "nl": "Zitten graag hoog in bomen of op daken van de huisjes in het verblijf.",
+            "en": "Like to sit high in the trees or on the roofs of the huts in the enclosure."
+          },
+          "aantal": {
+            "nl": "onbekend",
+            "en": "unknown"
+          },
+          "bron": "Eigen site soortpagina /djur/vildkatt en /rovdjur (gezien 22-10-2026); Zootierliste (fok, bezoek 06/2024, aanvullend)"
+        }
+      ],
+      "geboortes": [],
+      "kleur": ""
+    },
+    {
+      "naam": "Ystad Djurpark",
+      "plaats": "Skårby (Ystads kommun)",
+      "lan": "Skåne län",
+      "lon": 13.72,
+      "lat": 55.486,
+      "type": "Dierenpark",
+      "lidmaatschap": [
+        "SDF"
+      ],
+      "url": "https://www.ystaddjurpark.se/",
+      "uren": {
+        "nl": "Seizoen van 1 mei tot en met oktober; gesloten op midzomeravond (eigen site, gezien 22-10-2026)",
+        "en": "Season from 1 May through October; closed on Midsummer Eve (own website, seen 22-10-2026)"
+      },
+      "about": {
+        "nl": "Particulier dierenpark op het platteland bij Ystad met zo'n 60 soorten, waaronder kapibara's, bizons en lemuren, plus speeltuinen en zwembaden.",
+        "en": "Private zoo in the countryside near Ystad with about 60 species, including capybaras, bison and lemurs, plus playgrounds and pools."
+      },
+      "earlier": {
+        "nl": "",
+        "en": ""
+      },
+      "katten": [
+        {
+          "soort": "Serval",
+          "ondersoort": "onbekend",
+          "status": "g",
+          "toelichting": {
+            "nl": "Volgens het park de eerste servals die ooit in Scandinavië woonden; op de homepage als 'Nyhet' uitgelicht.",
+            "en": "According to the park, the first servals ever kept in Scandinavia; featured as 'Nyhet' (news) on the homepage."
+          },
+          "aantal": {
+            "nl": "onbekend",
+            "en": "unknown"
+          },
+          "bron": "Eigen site homepage en dierenlijst + soortpagina /djuren/v/serval (gezien 22-10-2026); Zootierliste (3,1 in 10/2021, bezoek 10/2022, aanvullend)"
+        }
+      ],
+      "geboortes": [],
+      "kleur": ""
+    },
+    {
+      "naam": "Ölands Djur- och Nöjespark",
+      "plaats": "Färjestaden (Mörbylånga kommun), Öland",
+      "lan": "Kalmar län",
+      "lon": 16.487,
+      "lat": 56.668,
+      "type": "Attractiepark met dieren",
+      "lidmaatschap": [
+        "SDF",
+        "EAZA"
+      ],
+      "url": "https://olandsdjurpark.com/",
+      "uren": {
+        "nl": "Gesloten van 1 oktober 2026 tot en met 30 april 2027; seizoen mei–september, in mei 10–17 uur (eigen site, gezien 22-10-2026)",
+        "en": "Closed from 1 October 2026 to 30 April 2027; season May–September, in May 10am–5pm (own website, seen 22-10-2026)"
+      },
+      "about": {
+        "nl": "Dierenpark met kermis, waterpark en vakantiehuisjes bij Färjestaden op Öland. Het park kwam meermaals negatief in het nieuws (o.a. een stagiair die in 2017 alleen bij een tijger werd opgesloten).",
+        "en": "Zoo combined with a funfair, water park and holiday cabins near Färjestaden on Öland. The park repeatedly made negative headlines (including a trainee locked in alone with a tiger in 2017)."
+      },
+      "earlier": {
+        "nl": "Leeuwen: in 2016 nog in het park (SVT/TT over een incident bij de leeuwen); de eigen site noemt ze nog in ongedateerde tekst, maar de parkkaart van november 2025 heeft geen leeuwenverblijf. Twee gezonde tijgers werden vóór 2012 gedood (Sveriges Radio 2012).",
+        "en": "Lions: still at the park in 2016 (SVT/TT on an incident at the lion enclosure); the website still mentions them in undated text, but the park map of November 2025 shows no lion enclosure. Two healthy tigers were put down before 2012 (Sveriges Radio 2012)."
+      },
+      "katten": [
+        {
+          "soort": "Tijger",
+          "ondersoort": "Amoer",
+          "status": "g",
+          "toelichting": {
+            "nl": "Tijgerverblijf (nr. 22 op de parkkaart van november 2025). Alleen te zien in het zomerseizoen.",
+            "en": "Tiger enclosure (no. 22 on the park map of November 2025). Only on view during the summer season."
+          },
+          "aantal": {
+            "nl": "onbekend",
+            "en": "unknown"
+          },
+          "bron": "Eigen site parkkaart (geüpload 11-2025, gezien 22-10-2026); bezoekersrecensies Tripadvisor zomer 2025 (noemen tijgers); Zootierliste (Amoertijger, fok, TBL 2024, aanvullend)"
+        }
+      ],
+      "geboortes": [],
+      "kleur": ""
+    }
+  ],
+  "zonder_katten": [
+    {
+      "naam": "Tropikariet",
+      "plaats": "Helsingborg",
+      "reden": {
+        "nl": "Tropenhuis met lemuren, apen, reptielen en haaien; geen katachtigen op de site of in de EEP-lijst van het park (eigen site 22-10-2026)",
+        "en": "Tropical house with lemurs, monkeys, reptiles and sharks; no cats on the website or in the park's EEP list (own website 22-10-2026)"
+      }
+    },
+    {
+      "naam": "Malmö Museer – Akvariet",
+      "plaats": "Malmö",
+      "reden": {
+        "nl": "Aquarium/tropenhuis met vissen, reptielen en vogels; geen katachtigen (eigen site en Malmö stad, 2025–2026)",
+        "en": "Aquarium/tropical house with fish, reptiles and birds; no cats (own website and City of Malmö, 2025–2026)"
+      }
+    },
+    {
+      "naam": "Eriksberg Hotel & Nature Reserve (safaripark)",
+      "plaats": "Eriksberg (Karlshamns kommun)",
+      "reden": {
+        "nl": "Wildpark met wisenten, edelherten, damherten, Père Davidsherten en moeflons; geen katachtigen (eigen site 22-10-2026)",
+        "en": "Wildlife park with European bison, red, fallow and Père David’s deer and mouflon; no cats (own website 22-10-2026)"
+      }
+    },
+    {
+      "naam": "Kosta Safaripark",
+      "plaats": "Kosta (Lessebo kommun)",
+      "reden": {
+        "nl": "Rijpark met elanden, wisenten, edelherten, damherten, moeflons en wilde zwijnen; geen katachtigen (eigen site 22-10-2026)",
+        "en": "Drive-through park with moose, European bison, red and fallow deer, mouflon and wild boar; no cats (own website 22-10-2026)"
+      }
+    },
+    {
+      "naam": "Gotlands Djurpark (Gotland djur och lek)",
+      "plaats": "Eskelhem/Tofta, Gotland",
+      "reden": {
+        "nl": "Kleine boerderijdierentuin (kamelen, stokstaartjes, alpaca's); geen wilde katachtigen, wel huiskatten die bij het park horen (eigen site 22-10-2026)",
+        "en": "Small farm-style zoo (camels, meerkats, alpacas); no wild cats, only the park's domestic cats (own website 22-10-2026)"
+      }
+    }
+  ],
+  "open_punten": [
+    "Ölands Djurpark: tijgers bevestigd via parkkaart (11-2025) en bezoekersrecensies 2025, maar geen eigen soortpagina of nieuws met aantal/namen gevonden. Leeuwen: eigen site noemt ze nog in ongedateerde tekst, een (ongedateerde) recensie noemt leeuwen als hoogtepunt, maar niet op parkkaart 11-2025 en niet in Zootierliste; daarom bij 'earlier'. Graag laten controleren (bv. Instagram @olandsdjurpark).",
+    "Skånes Djurpark: aantal wilde katten en geslacht van de lynxen (Lina en Lotus) niet bevestigd; geen geboortes 2025–2026 gevonden. Ondersoort lynx afgeleid uit Zootierliste ('Europäischer Luchs' = L. l. lynx), niet van eigen site.",
+    "Ystad Djurpark: aantal servals onbekend (Zootierliste 10/2021: 3,1); geen nieuws over jongen gevonden.",
+    "EAZA-lidmaatschap van Ystad Djurpark en Tropikariet niet bevestigd (Tropikariet neemt wel deel aan EEP's); Ölands Djurpark noemt zichzelf EAZA-lid op eigen site.",
+    "Niet afzonderlijk gecontroleerd (vrijwel zeker zonder katten): elandenparken in Småland (Elinge, Målilla, Glasriket, Grönåsen, Älgriket, Virum, Smålandet, Laganland), Kamelranchen (Öland), High Chaparral (Hillerstorp), Astrid Lindgrens Värld (Vimmerby), kinderboerderijen/4H-gårdar. Blekinge Exotiska Värld (Karlshamn) is gesloten en verloor zijn vergunning; status van Tropikhuset Jönköping onbekend (laatste bericht 2003).",
+    "Halland: geen dierentuin of dierenpark met wilde dieren gevonden (alleen boerderijen zoals Olofstorp, Halmstad).",
+    "Jordbruksverket-lijst (bijgewerkt 05-10-2026) noemt in deze län alleen Ystad Djurpark, Skånes Djurpark, Tropikariet en Ölands Djurpark als erkende inrichtingen."
+  ]
+}

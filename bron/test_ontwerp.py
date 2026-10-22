@@ -26,38 +26,38 @@ DOEL = "nederland-test"
 # Teksten die dit ontwerp zelf toevoegt, in de talen van de gidsen (Frans met "vous", de rest met "du/tu").
 TR = dict(NO.TR)
 TR.update({
-    "Kies een kat:": {"fr": "Choisissez un félin :", "de": "Wähle eine Katze:", "it": "Scegli un felino:", "es": "Elige un felino:", "pt": "Escolhe um felino:"},
+    "Kies een kat:": {"fr": "Choisissez un félin :", "de": "Wähle eine Katze:", "it": "Scegli un felino:", "es": "Elige un felino:", "pt": "Escolhe um felino:", "da": "Vælg en kat:"},
     "Waar zit welke kat? Kies een soort:": {"fr": "Quel félin vit où ? Choisissez une espèce :", "de": "Welche Katze lebt wo? Wähle eine Art:",
                                             "it": "Quale felino vive dove? Scegli una specie:", "es": "¿Qué felino vive dónde? Elige una especie:",
-                                            "pt": "Que felino vive onde? Escolhe uma espécie:"},
-    "Hoofdtabel": {"fr": "Tableau principal", "de": "Haupttabelle", "it": "Tabella principale", "es": "Tabla principal", "pt": "Tabela principal"},
-    "Kaart": {"fr": "Carte", "de": "Karte", "it": "Mappa", "es": "Mapa", "pt": "Mapa"},
-    "Soorten": {"fr": "Espèces", "de": "Arten", "it": "Specie", "es": "Especies", "pt": "Espécies"},
-    "Locaties": {"fr": "Lieux", "de": "Orte", "it": "Luoghi", "es": "Lugares", "pt": "Locais"},
-    "Alle katten": {"fr": "Tous les félins", "de": "Alle Katzen", "it": "Tutti i felini", "es": "Todos los felinos", "pt": "Todos os felinos"},
-    "Soortpagina": {"fr": "Page de l’espèce", "de": "Artseite", "it": "Pagina della specie", "es": "Página de la especie", "pt": "Página da espécie"},
+                                            "pt": "Que felino vive onde? Escolhe uma espécie:", "da": "Hvilken kat bor hvor? Vælg en art:"},
+    "Hoofdtabel": {"fr": "Tableau principal", "de": "Haupttabelle", "it": "Tabella principale", "es": "Tabla principal", "pt": "Tabela principal", "da": "Hovedtabel"},
+    "Kaart": {"fr": "Carte", "de": "Karte", "it": "Mappa", "es": "Mapa", "pt": "Mapa", "da": "Kort"},
+    "Soorten": {"fr": "Espèces", "de": "Arten", "it": "Specie", "es": "Especies", "pt": "Espécies", "da": "Arter"},
+    "Locaties": {"fr": "Lieux", "de": "Orte", "it": "Luoghi", "es": "Lugares", "pt": "Locais", "da": "Steder"},
+    "Alle katten": {"fr": "Tous les félins", "de": "Alle Katzen", "it": "Tutti i felini", "es": "Todos los felinos", "pt": "Todos os felinos", "da": "Alle katte"},
+    "Soortpagina": {"fr": "Page de l’espèce", "de": "Artseite", "it": "Pagina della specie", "es": "Página de la especie", "pt": "Página da espécie", "da": "Artsside"},
     "Meer over deze soort": {"fr": "En savoir plus sur cette espèce", "de": "Mehr über diese Art", "it": "Di più su questa specie",
-                             "es": "Más sobre esta especie", "pt": "Mais sobre esta espécie"},
-    "In beeld": {"fr": "Sur la carte", "de": "Im Bild", "it": "Sulla mappa", "es": "En el mapa", "pt": "No mapa"},
+                             "es": "Más sobre esta especie", "pt": "Mais sobre esta espécie", "da": "Mere om denne art"},
+    "In beeld": {"fr": "Sur la carte", "de": "Im Bild", "it": "Sulla mappa", "es": "En el mapa", "pt": "No mapa", "da": "På kortet"},
     "Meeste soorten eerst. Tik op een naam voor de katten en bezoekinformatie.": {
         "fr": "Les lieux avec le plus d’espèces d’abord. Touchez un nom pour voir ses félins et les infos de visite.",
         "de": "Die meisten Arten zuerst. Tippe auf einen Namen für die Katzen und Besucherinfos.",
         "it": "Prima i luoghi con più specie. Tocca un nome per i felini e le informazioni per la visita.",
         "es": "Primero los lugares con más especies. Toca un nombre para ver sus felinos y la información de visita.",
-        "pt": "Primeiro os locais com mais espécies. Toca num nome para ver os felinos e a informação de visita."},
-    "Toon alle": {"fr": "Tout afficher", "de": "Alle zeigen", "it": "Mostra tutti", "es": "Mostrar todos", "pt": "Mostrar todos"},
-    "Onderzochte locaties": {"fr": "Lieux vérifiés", "de": "Geprüfte Orte", "it": "Luoghi verificati", "es": "Lugares comprobados", "pt": "Locais verificados"},
+        "pt": "Primeiro os locais com mais espécies. Toca num nome para ver os felinos e a informação de visita.", "da": "Steder med flest arter først. Tryk på et navn for at se kattene og besøgsinformationen."},
+    "Toon alle": {"fr": "Tout afficher", "de": "Alle zeigen", "it": "Mostra tutti", "es": "Mostrar todos", "pt": "Mostrar todos", "da": "Vis alle"},
+    "Onderzochte locaties": {"fr": "Lieux vérifiés", "de": "Geprüfte Orte", "it": "Luoghi verificati", "es": "Lugares comprobados", "pt": "Locais verificados", "da": "Undersøgte steder"},
     "Alle vermeldingen in één tabel": {"fr": "Toutes les mentions dans un tableau", "de": "Alle Einträge in einer Tabelle",
-                                       "it": "Tutte le segnalazioni in una tabella", "es": "Todas las menciones en una tabla", "pt": "Todas as menções numa tabela"},
+                                       "it": "Tutte le segnalazioni in una tabella", "es": "Todas las menciones en una tabla", "pt": "Todas as menções numa tabela", "da": "Alle angivelser i én tabel"},
     "Zwarte panter (zwart luipaard) in het wild, Tadoba (India)": {"fr": "Panthère noire (léopard noir) dans la nature, Tadoba (Inde)",
         "de": "Schwarzer Panther (schwarzer Leopard) in freier Wildbahn, Tadoba (Indien)", "it": "Pantera nera (leopardo nero) in natura, Tadoba (India)",
-        "es": "Pantera negra (leopardo negro) en libertad, Tadoba (India)", "pt": "Pantera-negra (leopardo-negro) na natureza, Tadoba (Índia)"},
-    "Zoek een soort": {"fr": "Rechercher une espèce", "de": "Art suchen", "it": "Cerca una specie", "es": "Busca una especie", "pt": "Procura uma espécie"},
+        "es": "Pantera negra (leopardo negro) en libertad, Tadoba (India)", "pt": "Pantera-negra (leopardo-negro) na natureza, Tadoba (Índia)", "da": "Sort panter (sort leopard) i naturen, Tadoba (Indien)"},
+    "Zoek een soort": {"fr": "Rechercher une espèce", "de": "Art suchen", "it": "Cerca una specie", "es": "Busca una especie", "pt": "Procura uma espécie", "da": "Søg efter en art"},
     "Zoek een park of plaats": {"fr": "Rechercher un parc ou une ville", "de": "Park oder Ort suchen", "it": "Cerca un parco o una località",
-                                "es": "Busca un parque o un lugar", "pt": "Procura um parque ou um local"},
-    "Niets gevonden.": {"fr": "Aucun résultat.", "de": "Nichts gefunden.", "it": "Nessun risultato.", "es": "No se ha encontrado nada.", "pt": "Nada encontrado."},
-    "onzeker": {"fr": "incertain", "de": "unsicher", "it": "incerto", "es": "incierto", "pt": "incerto"},
-    "Kies een soort": {"fr": "Choisissez une espèce", "de": "Wähle eine Art", "it": "Scegli una specie", "es": "Elige una especie", "pt": "Escolhe uma espécie"},
+                                "es": "Busca un parque o un lugar", "pt": "Procura um parque ou um local", "da": "Søg efter en park eller et sted"},
+    "Niets gevonden.": {"fr": "Aucun résultat.", "de": "Nichts gefunden.", "it": "Nessun risultato.", "es": "No se ha encontrado nada.", "pt": "Nada encontrado.", "da": "Intet fundet."},
+    "onzeker": {"fr": "incertain", "de": "unsicher", "it": "incerto", "es": "incierto", "pt": "incerto", "da": "usikker"},
+    "Kies een soort": {"fr": "Choisissez une espèce", "de": "Wähle eine Art", "it": "Scegli una specie", "es": "Elige una especie", "pt": "Escolhe uma espécie", "da": "Vælg en art"},
 })
 
 
@@ -251,7 +251,7 @@ var N=window.__NT,H=window.__HST||{};if(!N)return;
 var R=N.R,LOCS=N.LOCS,PH=N.PHOTOS||{};
 var $=function(s,r){return (r||document).querySelector(s);},$$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s));};
 function E(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
-function LS(nl,en){var t=T2[nl]||{},o='<span class="l-nl">'+nl+'</span><span class="l-en">'+en+'</span>';["fr","de","it","es","pt"].forEach(function(x){o+='<span class="l-'+x+'">'+(t[x]||en)+'</span>';});return o;}
+function LS(nl,en){var t=T2[nl]||{},o='<span class="l-nl">'+nl+'</span><span class="l-en">'+en+'</span>';["fr","de","it","es","pt","da"].forEach(function(x){o+='<span class="l-'+x+'">'+(t[x]||en)+'</span>';});return o;}
 function TX(nl,en){var t=T2[nl]||{},l=N.lang();return l==="nl"?nl:l==="en"?en:(t[l]||en);}
 var ARR='ARRSVG',ROWS='ROWSSVG',SRCH='SRCHSVG',T2=T2JSON;
 var html=document.documentElement;
@@ -294,7 +294,8 @@ var MLD={nl:["{k}: niet te zien in {p}.","Het filter op regio staat nu uit.","He
   de:["{k}: in {p} nicht zu sehen.","Der Regionsfilter ist jetzt aus.","Der Artenfilter ist jetzt aus."],
   it:["{k}: non visibile in {p}.","Il filtro per regione è disattivato.","Il filtro per specie è disattivato."],
   es:["{k}: no se puede ver en {p}.","El filtro por región está desactivado.","El filtro por especie está desactivado."],
-  pt:["{k}: não está visível em {p}.","O filtro por região está desligado.","O filtro por espécie está desligado."]};
+  pt:["{k}: não está visível em {p}.","O filtro por região está desligado.","O filtro por espécie está desligado."],
+  da:["{k}: kan ikke ses i {p}.","Filteret for region er nu slået fra.","Filteret for art er nu slået fra."]};
 var mldT=null;
 function melding(k,p,welk){var el=$("#nt-mld");if(!el)return;var t=MLD[N.lang()]||MLD.en;
   el.textContent=t[0].replace("{k}",k).replace("{p}",p)+" "+t[welk];el.hidden=false;clearTimeout(mldT);mldT=setTimeout(function(){el.hidden=true;},6000);}
@@ -389,7 +390,8 @@ var KL={nl:["{r} staat niet op de kaart.","Bekijk de {n} locaties hieronder","Be
   de:["{r} ist nicht auf der Karte.","Die {n} Orte stehen unten","Der Ort steht unten"],
   it:["{r} non è sulla mappa.","Vedi i {n} luoghi qui sotto","Vedi il luogo qui sotto"],
   es:["{r} no aparece en el mapa.","Mira los {n} lugares abajo","Mira el lugar abajo"],
-  pt:["{r} não aparece no mapa.","Vê os {n} locais abaixo","Vê o local abaixo"]};
+  pt:["{r} não aparece no mapa.","Vê os {n} locais abaixo","Vê o local abaixo"],
+  da:["{r} er ikke med på kortet.","Se de {n} steder nedenfor","Se stedet nedenfor"]};
 function kaartLeeg(){var k=$("#nt-kaart");if(!k)return;var o=$("#nt-kleeg");if(o)o.remove();var b=$('#rg-bar [aria-pressed="true"]');
   if(!b||!b.dataset.r)return;var zicht=$$("#nlmap .mk, #nlmap .hs-cl").some(function(m){return getComputedStyle(m).display!=="none";});if(zicht)return;
   var n=lijst(SP).length;if(!n)return;var t=KL[N.lang()]||KL.en,x=document.createElement("button");x.type="button";x.id="nt-kleeg";x.className="nt-kleeg";
@@ -457,7 +459,7 @@ function opbouw(){if(klaar)return true;
 if(!opbouw()){var n=0,iv=setInterval(function(){if(opbouw()||++n>80)clearInterval(iv);},100);}
 
 /* routeplanner: welke soorten je met je keuze al ziet (naast "Nog niet:") */
-var ALW={nl:"Al wel:",en:"Already:",fr:"Déjà :",de:"Schon dabei:",it:"Già:",es:"Ya:",pt:"Já:"};
+var ALW={nl:"Al wel:",en:"Already:",fr:"Déjà :",de:"Schon dabei:",it:"Già:",es:"Ya:",pt:"Já:",da:"Allerede:"};
 function alWel(){var sc=$("#rt-score"),sp=$("#rt-sp");if(!sc||!sp)return;var o=sc.querySelector(".nt-alwel");if(o)o.remove();
   var ja=$$(".rchip.on",sp).map(function(c){return (c.firstChild&&c.firstChild.nodeType===3?c.firstChild.textContent:c.textContent).trim();});
   if(!ja.length)return;var s=document.createElement("span");s.className="hs-mist nt-alwel";
@@ -566,7 +568,7 @@ def maak(land="nederland", map=None):
 
 # landcode <-> map
 CODE = {"nederland": "nl", "belgie": "be", "luxemburg": "lu", "duitsland": "de", "frankrijk": "fr", "oostenrijk": "at",
-        "zwitserland": "ch", "verenigd-koninkrijk": "uk", "italie": "it", "spanje": "es", "ierland": "ie", "portugal": "pt"}
+        "zwitserland": "ch", "verenigd-koninkrijk": "uk", "italie": "it", "spanje": "es", "ierland": "ie", "portugal": "pt", "denemarken": "dk"}
 
 # Favorieten voor alle landen samen (18-10-2026). Elk item: {k:"loc"|"sp", c:landcode of "eu", s:slug, n:naam, e:Engelse naam, p:plaats}.
 # Oude favorieten ("nw-fav", alleen slugs) worden bij het lezen overgenomen met c:"" (land nog onbekend).
@@ -579,7 +581,7 @@ function favSchrijf(a){try{localStorage.setItem(FK,JSON.stringify(a));}catch(e){
 """
 
 LIVE = ["nederland", "belgie", "luxemburg", "duitsland", "frankrijk", "oostenrijk", "zwitserland",
-        "verenigd-koninkrijk", "italie", "spanje", "ierland", "portugal"]   # landen met dit ontwerp (18-10-2026: alle)
+        "verenigd-koninkrijk", "italie", "spanje", "ierland", "portugal", "denemarken"]   # landen met dit ontwerp (18-10-2026: alle)
 
 
 def maak_alles():
@@ -640,21 +642,21 @@ def maak_los2():
 # zichtbaar onder de kaart; op de soortpagina's de geschatte aantallen in het wild in plaats van de IUCN-status
 # en locatiekaartjes met het type-icoon bij "Waar te zien".
 EU_MARK = 'id="nt-eu-css"'
-T6 = {"Meer": {"fr": "Plus", "de": "Mehr", "it": "Altro", "es": "Más", "pt": "Mais"},
-      "Favorieten": {"fr": "Favoris", "de": "Favoriten", "it": "Preferiti", "es": "Favoritos", "pt": "Favoritos"},
-      "Kaart": {"fr": "Carte", "de": "Karte", "it": "Mappa", "es": "Mapa", "pt": "Mapa"},
+T6 = {"Meer": {"fr": "Plus", "de": "Mehr", "it": "Altro", "es": "Más", "pt": "Mais", "da": "Mere"},
+      "Favorieten": {"fr": "Favoris", "de": "Favoriten", "it": "Preferiti", "es": "Favoritos", "pt": "Favoritos", "da": "Favoritter"},
+      "Kaart": {"fr": "Carte", "de": "Karte", "it": "Mappa", "es": "Mapa", "pt": "Mapa", "da": "Kort"},
       "Je bewaarde parken en soorten uit alle landen. Tik op het hartje bij een park of soort om het hier te zetten; je lijst blijft alleen op dit apparaat.": {
           "fr": "Vos parcs et espèces enregistrés, tous pays confondus. Touchez le cœur à côté d’un parc ou d’une espèce pour l’ajouter ici ; votre liste reste uniquement sur cet appareil.",
           "de": "Deine gespeicherten Parks und Arten aus allen Ländern. Tippe auf das Herz bei einem Park oder einer Art, um ihn hier zu speichern; deine Liste bleibt nur auf diesem Gerät.",
           "it": "I tuoi parchi e le tue specie salvati, da tutti i paesi. Tocca il cuore accanto a un parco o a una specie per salvarlo qui; la tua lista resta solo su questo dispositivo.",
           "es": "Tus parques y especies guardados de todos los países. Toca el corazón junto a un parque o una especie para guardarlo aquí; tu lista se queda solo en este dispositivo.",
-          "pt": "Os teus parques e espécies guardados de todos os países. Toca no coração junto a um parque ou a uma espécie para o guardar aqui; a tua lista fica só neste dispositivo."}}
+          "pt": "Os teus parques e espécies guardados de todos os países. Toca no coração junto a um parque ou a uma espécie para o guardar aqui; a tua lista fica só neste dispositivo.", "da": "Dine gemte parker og arter fra alle lande. Tryk på hjertet ved en park eller en art for at gemme den her; din liste bliver kun på denne enhed."}}
 
 
 def L6(nl, en):
     t = T6.get(nl, {})
     return (f'<span class="l-nl">{nl}</span><span class="l-en">{en}</span>'
-            + "".join(f'<span class="l-{x}">{t.get(x, en)}</span>' for x in ["fr", "de", "it", "es", "pt"]))
+            + "".join(f'<span class="l-{x}">{t.get(x, en)}</span>' for x in ["fr", "de", "it", "es", "pt", "da"]))
 
 
 FAVICO = ('<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round">'
@@ -672,6 +674,9 @@ ICO["b-flag"] = ('<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke
                  'stroke-linejoin="round"><path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/></svg>')
 EU_CSS = r"""
 <style id="nt-eu-css">
+/* Deens (alleen gidstaal van Denemarken): verbergen tenzij de pagina in het Deens staat */
+html:not(.da) .l-da{display:none!important}
+html.da .l-nl{display:none!important}
 .catbtn .av.nt-avu{border-style:dashed;border-color:var(--muted)}
 /* hoofdpagina in de opbouw van de landpagina's (bron/test_ontwerp.py) */
 .bar:has(#tabs){display:none!important}
@@ -799,9 +804,9 @@ EU_JS = r"""
 <script>(function(){
 /* hoofdpagina en soortpagina's in de opbouw van de landpagina's (bron/test_ontwerp.py) */
 var WILD=WILDJSON,COL=COLJSON,GLY=GLYJSON;
-var TX={wild:{nl:"In het wild (geschat)",en:"In the wild (estimated)",fr:"Dans la nature (estimation)",de:"In freier Wildbahn (geschätzt)",it:"In natura (stima)",es:"En libertad (estimación)",pt:"Na natureza (estimativa)"},
-  onb:{nl:"onbekend",en:"unknown",fr:"inconnu",de:"unbekannt",it:"sconosciuto",es:"desconocido",pt:"desconhecido"},
-  verspr:{nl:"Verspreiding",en:"Range",fr:"Répartition",de:"Verbreitung",it:"Distribuzione",es:"Distribución",pt:"Distribuição"}};
+var TX={wild:{nl:"In het wild (geschat)",en:"In the wild (estimated)",fr:"Dans la nature (estimation)",de:"In freier Wildbahn (geschätzt)",it:"In natura (stima)",es:"En libertad (estimación)",pt:"Na natureza (estimativa)",da:"I naturen (anslået)"},
+  onb:{nl:"onbekend",en:"unknown",fr:"inconnu",de:"unbekannt",it:"sconosciuto",es:"desconocido",pt:"desconhecido",da:"ukendt"},
+  verspr:{nl:"Verspreiding",en:"Range",fr:"Répartition",de:"Verbreitung",it:"Distribuzione",es:"Distribución",pt:"Distribuição",da:"Udbredelse"}};
 function lang(){var l=(document.documentElement.lang||"nl").slice(0,2);return TX.wild[l]?l:"en";}
 /* korte uitleg zolang er geen locatie gekozen is */
 var info=document.getElementById("info");
@@ -830,7 +835,8 @@ var MLD={nl:["{k}: niet te zien in {p}.","Het filter op land staat nu uit.","Het
   fr:["{k} : pas visible ici ({p}).","Le filtre par pays est désactivé.","Le filtre par espèce est désactivé."],
   de:["{k}: in {p} nicht zu sehen.","Der Länderfilter ist jetzt aus.","Der Artenfilter ist jetzt aus."],
   it:["{k}: non visibile in {p}.","Il filtro per paese è disattivato.","Il filtro per specie è disattivato."],
-  es:["{k}: no se puede ver en {p}.","El filtro por país está desactivado.","El filtro por especie está desactivado."],pt:["{k}: não se pode ver em {p}.","O filtro por país foi desligado.","O filtro por espécie foi desligado."]};
+  es:["{k}: no se puede ver en {p}.","El filtro por país está desactivado.","El filtro por especie está desactivado."],pt:["{k}: não se pode ver em {p}.","O filtro por país foi desligado.","O filtro por espécie foi desligado."],
+  da:["{k}: kan ikke ses i {p}.","Filteret for land er nu slået fra.","Filteret for art er nu slået fra."]};
 function land(){var b=zoom&&zoom.querySelector('.chip[aria-pressed="true"]');return b&&b.dataset.zoom!=="all"?b.dataset.zoom:"";}
 function soort(){var b=row&&row.querySelector('.catbtn[aria-pressed="true"]');return b?b.dataset.cat:"";}
 function naam(b){var c=b.cloneNode(true);c.querySelectorAll(".n,svg,.av").forEach(function(x){x.remove();});return c.textContent.trim();}
@@ -865,15 +871,15 @@ document.addEventListener("click",function(e){var b=e.target.closest&&e.target.c
 if(zoom&&row){[zoom,row].forEach(function(x){new MutationObserver(function(){setTimeout(pas,0);}).observe(x,{childList:true,subtree:true,attributes:true,attributeFilter:["aria-pressed"]});});pas();}
 /* ---------- favorieten (alle landen samen) ---------- */
 FAVJS
-var IDX=IDXJSON,SPN=SPNJSON,MAP={nl:"nederland",be:"belgie",lu:"luxemburg",de:"duitsland",fr:"frankrijk",at:"oostenrijk",ch:"zwitserland",uk:"verenigd-koninkrijk",it:"italie",es:"spanje",ie:"ierland",pt:"portugal"};
+var IDX=IDXJSON,SPN=SPNJSON,MAP={nl:"nederland",be:"belgie",lu:"luxemburg",de:"duitsland",fr:"frankrijk",at:"oostenrijk",ch:"zwitserland",uk:"verenigd-koninkrijk",it:"italie",es:"spanje",ie:"ierland",pt:"portugal",dk:"denemarken"};
 var BASE=(window.__HOMEURL||"/wildekattengids/");
 var HS='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.5A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z"/></svg>';
-var FT={bewaar:{nl:"Bewaar als favoriet",en:"Save as favourite",fr:"Ajouter aux favoris",de:"Als Favorit speichern",it:"Salva nei preferiti",es:"Guardar en favoritos",pt:"Guardar nos favoritos"},
-  in:{nl:"In je favorieten",en:"In your favourites",fr:"Dans vos favoris",de:"In deinen Favoriten",it:"Nei tuoi preferiti",es:"En tus favoritos",pt:"Nos teus favoritos"},
-  parken:{nl:"Parken",en:"Parks",fr:"Parcs",de:"Parks",it:"Parchi",es:"Parques",pt:"Parques"},soorten:{nl:"Soorten",en:"Species",fr:"Espèces",de:"Arten",it:"Specie",es:"Especies",pt:"Espécies"},
-  europa:{nl:"Europa (alle landen)",en:"Europe (all countries)",fr:"Europe (tous les pays)",de:"Europa (alle Länder)",it:"Europa (tutti i paesi)",es:"Europa (todos los países)",pt:"Europa (todos os países)"},
-  leeg:{nl:"Nog geen favorieten.",en:"No favourites yet.",fr:"Pas encore de favoris.",de:"Noch keine Favoriten.",it:"Ancora nessun preferito.",es:"Todavía no hay favoritos.",pt:"Ainda não há favoritos."},
-  weg:{nl:"Verwijder uit favorieten",en:"Remove from favourites",fr:"Retirer des favoris",de:"Aus Favoriten entfernen",it:"Rimuovi dai preferiti",es:"Quitar de favoritos",pt:"Remover dos favoritos"}};
+var FT={bewaar:{nl:"Bewaar als favoriet",en:"Save as favourite",fr:"Ajouter aux favoris",de:"Als Favorit speichern",it:"Salva nei preferiti",es:"Guardar en favoritos",pt:"Guardar nos favoritos",da:"Gem som favorit"},
+  in:{nl:"In je favorieten",en:"In your favourites",fr:"Dans vos favoris",de:"In deinen Favoriten",it:"Nei tuoi preferiti",es:"En tus favoritos",pt:"Nos teus favoritos",da:"I dine favoritter"},
+  parken:{nl:"Parken",en:"Parks",fr:"Parcs",de:"Parks",it:"Parchi",es:"Parques",pt:"Parques",da:"Parker"},soorten:{nl:"Soorten",en:"Species",fr:"Espèces",de:"Arten",it:"Specie",es:"Especies",pt:"Espécies",da:"Arter"},
+  europa:{nl:"Europa (alle landen)",en:"Europe (all countries)",fr:"Europe (tous les pays)",de:"Europa (alle Länder)",it:"Europa (tutti i paesi)",es:"Europa (todos los países)",pt:"Europa (todos os países)",da:"Europa (alle lande)"},
+  leeg:{nl:"Nog geen favorieten.",en:"No favourites yet.",fr:"Pas encore de favoris.",de:"Noch keine Favoriten.",it:"Ancora nessun preferito.",es:"Todavía no hay favoritos.",pt:"Ainda não há favoritos.",da:"Ingen favoritter endnu."},
+  weg:{nl:"Verwijder uit favorieten",en:"Remove from favourites",fr:"Retirer des favoris",de:"Aus Favoriten entfernen",it:"Rimuovi dai preferiti",es:"Quitar de favoritos",pt:"Remover dos favoritos",da:"Fjern fra favoritter"}};
 function L2(){var l=(document.documentElement.lang||"nl").slice(0,2);return FT.in[l]?l:"en";}
 function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
 /* oude favorieten zonder land: land opzoeken */
@@ -917,14 +923,14 @@ document.addEventListener("click",function(e){var b=e.target.closest&&e.target.c
 document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest('#nw-sbar-start [data-k="meer"]');if(b&&b.dataset.start!==undefined||b&&document.getElementById("nt-meerlist"))setTimeout(function(){window.scrollTo(0,0);},30);});
 document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest("#nt-favlist .nt-hart");if(!b)return;var a=favLees();a.splice(+b.dataset.wi,1);favSchrijf(a);favLijst();});
 /* ---------- groene kop per scherm (19-10-2026): Kaart houdt de grote kop, Landen en Soorten krijgen een korte kop, Meer een regel eronder ---------- */
-var KT={kaart:{h:{nl:"Europa",en:"Europe",fr:"Europe",de:"Europa",it:"Europa",es:"Europa",pt:"Europa"},
-    s:{nl:"Wilde katachtigen in dierentuinen en parken",en:"Wild cats in zoos and animal parks",fr:"Félins sauvages dans les zoos et parcs",de:"Wilde Katzen in Zoos und Tierparks",it:"Felini selvatici in zoo e parchi",es:"Felinos salvajes en zoos y parques",pt:"Felinos selvagens em jardins zoológicos e parques"}},
-  landen:{h:{nl:"Landen",en:"Countries",fr:"Pays",de:"Länder",it:"Paesi",es:"Países",pt:"Países"},
-    s:{nl:"Tik op een land voor de volledige gids",en:"Tap a country for its full guide",fr:"Touchez un pays pour ouvrir son guide complet",de:"Tippe auf ein Land für den ganzen Guide",it:"Tocca un paese per la guida completa",es:"Toca un país para ver su guía completa",pt:"Toca num país para ver o guia completo"}},
-  soorten:{h:{nl:"Soorten",en:"Species",fr:"Espèces",de:"Arten",it:"Specie",es:"Especies",pt:"Espécies"},
-    s:{nl:"Waar zie je welke kat in Europa?",en:"Where can you see each cat in Europe?",fr:"Où voir chaque félin en Europe ?",de:"Wo siehst du welche Katze in Europa?",it:"Dove vedere ogni felino in Europa?",es:"¿Dónde ver cada felino en Europa?",pt:"Onde ver cada felino na Europa?"}},
-  meer:{s:{nl:"Favorieten, top 10, geboortes en meer",en:"Favourites, top 10, births and more",fr:"Favoris, top 10, naissances et plus",de:"Favoriten, Top 10, Geburten und mehr",it:"Preferiti, top 10, nascite e altro",es:"Favoritos, top 10, nacimientos y más",pt:"Favoritos, top 10, nascimentos e mais"}}};
-function L6j(o){return ["nl","en","fr","de","it","es","pt"].map(function(l){return '<span class="l-'+l+'">'+o[l]+'</span>';}).join("");}
+var KT={kaart:{h:{nl:"Europa",en:"Europe",fr:"Europe",de:"Europa",it:"Europa",es:"Europa",pt:"Europa",da:"Europa"},
+    s:{nl:"Wilde katachtigen in dierentuinen en parken",en:"Wild cats in zoos and animal parks",fr:"Félins sauvages dans les zoos et parcs",de:"Wilde Katzen in Zoos und Tierparks",it:"Felini selvatici in zoo e parchi",es:"Felinos salvajes en zoos y parques",pt:"Felinos selvagens em jardins zoológicos e parques",da:"Vilde katte i zoologiske haver og parker"}},
+  landen:{h:{nl:"Landen",en:"Countries",fr:"Pays",de:"Länder",it:"Paesi",es:"Países",pt:"Países",da:"Lande"},
+    s:{nl:"Tik op een land voor de volledige gids",en:"Tap a country for its full guide",fr:"Touchez un pays pour ouvrir son guide complet",de:"Tippe auf ein Land für den ganzen Guide",it:"Tocca un paese per la guida completa",es:"Toca un país para ver su guía completa",pt:"Toca num país para ver o guia completo",da:"Tryk på et land for at se hele guiden"}},
+  soorten:{h:{nl:"Soorten",en:"Species",fr:"Espèces",de:"Arten",it:"Specie",es:"Especies",pt:"Espécies",da:"Arter"},
+    s:{nl:"Waar zie je welke kat in Europa?",en:"Where can you see each cat in Europe?",fr:"Où voir chaque félin en Europe ?",de:"Wo siehst du welche Katze in Europa?",it:"Dove vedere ogni felino in Europa?",es:"¿Dónde ver cada felino en Europa?",pt:"Onde ver cada felino na Europa?",da:"Hvor kan du se hvilken kat i Europa?"}},
+  meer:{s:{nl:"Favorieten, top 10, geboortes en meer",en:"Favourites, top 10, births and more",fr:"Favoris, top 10, naissances et plus",de:"Favoriten, Top 10, Geburten und mehr",it:"Preferiti, top 10, nascite e altro",es:"Favoritos, top 10, nacimientos y más",pt:"Favoritos, top 10, nascimentos e mais",da:"Favoritter, top 10, fødsler og mere"}}};
+function L6j(o){return ["nl","en","fr","de","it","es","pt","da"].map(function(l){return '<span class="l-'+l+'">'+o[l]+'</span>';}).join("");}
 var iw=document.querySelector(".intro .wrap"),tel=document.getElementById("kop-tel"),HT=document.documentElement;
 if(iw&&tel&&document.getElementById("p-landen")&&!iw.querySelector(".nt-tk")){
   var kk=document.createElement("div");kk.className="nt-tk";
@@ -933,7 +939,7 @@ if(iw&&tel&&document.getElementById("p-landen")&&!iw.querySelector(".nt-tk")){
   iw.appendChild(kk);HT.classList.add("nt-tk-on");window.__NTEUV=EUV;
   var telBij=function(){var d=tel.textContent.split(" · "),k=kk.querySelector('[data-t="kaart"] .nt-tel'),a=kk.querySelector('[data-t="landen"] .nt-tel'),b=kk.querySelector('[data-t="soorten"] .nt-tel'),x=d.slice(0,2).join(" · "),y=d[2]||"",z=tel.textContent;
     var gk=document.querySelectorAll('.nt-spbox [data-g="big"] .scard').length,kl=document.querySelectorAll('.nt-spbox [data-g="small"] .scard').length,ll=(HT.lang||"nl").slice(0,2);
-    var GW={nl:["grote","kleine"],en:["big","small"],fr:["grands","petits"],de:["groß","klein"],it:["grandi","piccoli"],es:["grandes","pequeños"],pt:["grandes","pequenos"]}[ll]||["big","small"];
+    var GW={nl:["grote","kleine"],en:["big","small"],fr:["grands","petits"],de:["groß","klein"],it:["grandi","piccoli"],es:["grandes","pequeños"],pt:["grandes","pequenos"],da:["store","små"]}[ll]||["big","small"];
     if(gk+kl)y+=" · "+gk+" "+GW[0]+" · "+kl+" "+GW[1];
     if(k.textContent!==z)k.textContent=z;if(a.textContent!==x)a.textContent=x;if(b.textContent!==y)b.textContent=y;};
   window.__NTTEL=telBij;
@@ -942,15 +948,15 @@ if(iw&&tel&&document.getElementById("p-landen")&&!iw.querySelector(".nt-tk")){
   ["kaart","landen","soorten"].forEach(function(x){var e=document.getElementById("p-"+x);if(e)new MutationObserver(tabNu).observe(e,{attributes:true,attributeFilter:["class"]});});tabNu();}
 /* witte en gele regel in de groene kop van Meer en de schermen eronder (na de jungle-laag, dus pas na DOMContentLoaded) */
 var KR={meer:KT.meer.s,
-  favorieten:{nl:"Je bewaarde parken en soorten",en:"Your saved parks and species",fr:"Vos parcs et espèces enregistrés",de:"Deine gespeicherten Parks und Arten",it:"I tuoi parchi e specie salvati",es:"Tus parques y especies guardados",pt:"Os teus parques e espécies guardados"},
-  geboren:{nl:"Jongen in alle landen, nieuwste eerst",en:"Young in every country, newest first",fr:"Jeunes dans tous les pays, plus récents d’abord",de:"Jungtiere in allen Ländern, neueste zuerst",it:"Cuccioli in tutti i paesi, i più recenti prima",es:"Crías en todos los países, las más recientes primero",pt:"Crias em todos os países, as mais recentes primeiro"},
-  perpark:{nl:"Welk park heeft de meeste katten?",en:"Which park has the most cats?",fr:"Quel parc a le plus de félins ?",de:"Welcher Park hat die meisten Katzen?",it:"Quale parco ha più felini?",es:"¿Qué parque tiene más felinos?",pt:"Que parque tem mais felinos?"},
-  typen:{nl:"Dierentuin, dierenpark, opvang en meer",en:"Zoo, animal park, sanctuary and more",fr:"Zoo, parc animalier, refuge et plus",de:"Zoo, Tierpark, Auffangstation und mehr",it:"Zoo, parco faunistico, centro di recupero e altro",es:"Zoo, parque de animales, santuario y más",pt:"Jardim zoológico, parque de animais, santuário e mais"},
-  over:{nl:"Wie, wat en waar de gegevens vandaan komen",en:"Who, what and where the information comes from",fr:"Qui, quoi et d’où viennent les données",de:"Wer, was und woher die Angaben stammen",it:"Chi, cosa e da dove vengono i dati",es:"Quién, qué y de dónde vienen los datos",pt:"Quem, o quê e de onde vêm os dados"},
-  top10:{nl:"De parken die een bezoek het meest waard zijn",en:"The parks most worth a visit",fr:"Les parcs qui valent le plus le détour",de:"Die Parks, die sich am meisten lohnen",it:"I parchi che valgono di più una visita",es:"Los parques que más merecen la visita",pt:"Os parques que mais merecem a visita"}};
-var FB={nl:"{n} bewaard",en:"{n} saved",fr:"{n} enregistrés",de:"{n} gespeichert",it:"{n} salvati",es:"{n} guardados",pt:"{n} guardados"};
+  favorieten:{nl:"Je bewaarde parken en soorten",en:"Your saved parks and species",fr:"Vos parcs et espèces enregistrés",de:"Deine gespeicherten Parks und Arten",it:"I tuoi parchi e specie salvati",es:"Tus parques y especies guardados",pt:"Os teus parques e espécies guardados",da:"Dine gemte parker og arter"},
+  geboren:{nl:"Jongen in alle landen, nieuwste eerst",en:"Young in every country, newest first",fr:"Jeunes dans tous les pays, plus récents d’abord",de:"Jungtiere in allen Ländern, neueste zuerst",it:"Cuccioli in tutti i paesi, i più recenti prima",es:"Crías en todos los países, las más recientes primero",pt:"Crias em todos os países, as mais recentes primeiro",da:"Unger i alle lande, nyeste først"},
+  perpark:{nl:"Welk park heeft de meeste katten?",en:"Which park has the most cats?",fr:"Quel parc a le plus de félins ?",de:"Welcher Park hat die meisten Katzen?",it:"Quale parco ha più felini?",es:"¿Qué parque tiene más felinos?",pt:"Que parque tem mais felinos?",da:"Hvilken park har flest katte?"},
+  typen:{nl:"Dierentuin, dierenpark, opvang en meer",en:"Zoo, animal park, sanctuary and more",fr:"Zoo, parc animalier, refuge et plus",de:"Zoo, Tierpark, Auffangstation und mehr",it:"Zoo, parco faunistico, centro di recupero e altro",es:"Zoo, parque de animales, santuario y más",pt:"Jardim zoológico, parque de animais, santuário e mais",da:"Zoologisk have, dyrepark, redningscenter og mere"},
+  over:{nl:"Wie, wat en waar de gegevens vandaan komen",en:"Who, what and where the information comes from",fr:"Qui, quoi et d’où viennent les données",de:"Wer, was und woher die Angaben stammen",it:"Chi, cosa e da dove vengono i dati",es:"Quién, qué y de dónde vienen los datos",pt:"Quem, o quê e de onde vêm os dados",da:"Hvem, hvad og hvor oplysningerne kommer fra"},
+  top10:{nl:"De parken die een bezoek het meest waard zijn",en:"The parks most worth a visit",fr:"Les parcs qui valent le plus le détour",de:"Die Parks, die sich am meisten lohnen",it:"I parchi che valgono di più una visita",es:"Los parques que más merecen la visita",pt:"Os parques que mais merecem a visita",da:"De parker, der er mest værd at besøge"}};
+var FB={nl:"{n} bewaard",en:"{n} saved",fr:"{n} enregistrés",de:"{n} gespeichert",it:"{n} salvati",es:"{n} guardados",pt:"{n} guardados",da:"{n} gemt"};
 function favTel(){var g=document.querySelector("#favorieten .nt-goud");if(!g)return;var n=0;try{n=favLees().length;}catch(_){}
-  var h=["nl","en","fr","de","it","es","pt"].map(function(l){return '<span class="l-'+l+'">'+FB[l].replace("{n}",n)+'</span>';}).join("");if(g.innerHTML!==h)g.innerHTML=h;}
+  var h=["nl","en","fr","de","it","es","pt","da"].map(function(l){return '<span class="l-'+l+'">'+FB[l].replace("{n}",n)+'</span>';}).join("");if(g.innerHTML!==h)g.innerHTML=h;}
 function kopRegels(){var st=document.querySelector(".intro .stamp"),dt=st?st.innerHTML:"";
   Object.keys(KR).forEach(function(id){var k=id==="top10"?((/\/top10\//.test(location.pathname)||location.hash==="#top10")?document.querySelector("#katview .jg-kop"):null):document.querySelector("#"+id+" .jg-kop");
     if(!k||k.querySelector(".nt-onder"))return;k.classList.add("nt-vk");
@@ -962,10 +968,10 @@ window.addEventListener("storage",favTel);document.addEventListener("click",func
 /* Soorten op de startpagina zoals in de landgids: zoekbalk, grote en kleine katten (19-10-2026) */
 (function(){var sp=document.getElementById("splist");if(!sp||!document.getElementById("p-soorten"))return;
   var BIG=["leeuw","tijger","luipaard","jaguar","sneeuwluipaard","nevelpanter"];
-  var GT={big:{nl:"Pantherinae (grote katten)",en:"Pantherinae (big cats)",fr:"Pantherinae (grands félins)",de:"Pantherinae (Großkatzen)",it:"Pantherinae (grandi felini)",es:"Pantherinae (grandes felinos)",pt:"Pantherinae (grandes felinos)"},
-    small:{nl:"Felinae (kleine katten)",en:"Felinae (small cats)",fr:"Felinae (petits félins)",de:"Felinae (Kleinkatzen)",it:"Felinae (piccoli felini)",es:"Felinae (pequeños felinos)",pt:"Felinae (pequenos felinos)"}};
-  var ZP={nl:"Zoek een soort",en:"Search for a species",fr:"Chercher une espèce",de:"Art suchen",it:"Cerca una specie",es:"Busca una especie",pt:"Procura uma espécie"};
-  var GEEN={nl:"Niets gevonden.",en:"Nothing found.",fr:"Aucun résultat.",de:"Nichts gefunden.",it:"Nessun risultato.",es:"No se ha encontrado nada.",pt:"Não foi encontrado nada."};
+  var GT={big:{nl:"Pantherinae (grote katten)",en:"Pantherinae (big cats)",fr:"Pantherinae (grands félins)",de:"Pantherinae (Großkatzen)",it:"Pantherinae (grandi felini)",es:"Pantherinae (grandes felinos)",pt:"Pantherinae (grandes felinos)",da:"Pantherinae (store katte)"},
+    small:{nl:"Felinae (kleine katten)",en:"Felinae (small cats)",fr:"Felinae (petits félins)",de:"Felinae (Kleinkatzen)",it:"Felinae (piccoli felini)",es:"Felinae (pequeños felinos)",pt:"Felinae (pequenos felinos)",da:"Felinae (små katte)"}};
+  var ZP={nl:"Zoek een soort",en:"Search for a species",fr:"Chercher une espèce",de:"Art suchen",it:"Cerca una specie",es:"Busca una especie",pt:"Procura uma espécie",da:"Søg efter en art"};
+  var GEEN={nl:"Niets gevonden.",en:"Nothing found.",fr:"Aucun résultat.",de:"Nichts gefunden.",it:"Nessun risultato.",es:"No se ha encontrado nada.",pt:"Não foi encontrado nada.",da:"Intet fundet."};
   var ZS='<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>';
   var CH='<svg class="nt-chev" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 15l6-6 6 6"/></svg>';
   var box=document.createElement("div");box.className="nt-spbox";
@@ -1001,20 +1007,20 @@ function bovenaan(){if(document.querySelector("section.page.on")||location.hash=
 window.addEventListener("load",bovenaan);window.addEventListener("pageshow",bovenaan);
 /* soortpagina zoals in de landgids: groene kop, hartje op de foto, Kenmerken, Leefwijze en Bijzonder (19-10-2026) */
 (function(){var kv=document.getElementById("katview"),SI=SIJSON;if(!kv||!window.__KAT)return;
-  var LG=["nl","en","fr","de","it","es","pt"],BIGS=["leeuw","tijger","luipaard","jaguar","sneeuwluipaard","nevelpanter"];
-  var W={kenm:{nl:"Kenmerken",en:"Characteristics",fr:"Caractéristiques",de:"Merkmale",it:"Caratteristiche",es:"Características",pt:"Características"},
-    staart:{nl:"Staart",en:"Tail",fr:"Queue",de:"Schwanz",it:"Coda",es:"Cola",pt:"Cauda"},leven:{nl:"Levensduur",en:"Lifespan",fr:"Longévité",de:"Lebensdauer",it:"Longevità",es:"Longevidad",pt:"Longevidade"},
-    leef:{nl:"Leefwijze",en:"Way of life",fr:"Mode de vie",de:"Lebensweise",it:"Stile di vita",es:"Modo de vida",pt:"Modo de vida"},
-    l0:{nl:"Verspreiding",en:"Range",fr:"Répartition",de:"Verbreitung",it:"Distribuzione",es:"Distribución",pt:"Distribuição"},
-    l1:{nl:"Leefgebied",en:"Habitat",fr:"Habitat",de:"Lebensraum",it:"Habitat",es:"Hábitat",pt:"Habitat"},
-    l2:{nl:"Voedsel",en:"Diet",fr:"Alimentation",de:"Nahrung",it:"Alimentazione",es:"Alimentación",pt:"Alimentação"},
-    l3:{nl:"Sociaal gedrag",en:"Social behaviour",fr:"Comportement social",de:"Sozialverhalten",it:"Comportamento sociale",es:"Comportamiento social",pt:"Comportamento social"},
-    bijz:{nl:"Bijzonder",en:"Special",fr:"Particularités",de:"Besonderes",it:"Particolarità",es:"Curiosidades",pt:"Curiosidades"},
-    b0:{nl:"Kenmerkend",en:"Distinctive",fr:"Caractéristique",de:"Typisch",it:"Caratteristico",es:"Distintivo",pt:"Distintivo"},
-    b1:{nl:"Wist je dat?",en:"Did you know?",fr:"Le saviez-vous ?",de:"Wusstest du?",it:"Lo sapevi?",es:"¿Sabías que…?",pt:"Sabias que…?"},
-    groot:{nl:"grote katten",en:"big cats",fr:"grands félins",de:"Großkatzen",it:"grandi felini",es:"grandes felinos",pt:"grandes felinos"},
-    klein:{nl:"kleine katten",en:"small cats",fr:"petits félins",de:"Kleinkatzen",it:"piccoli felini",es:"pequeños felinos",pt:"pequenos felinos"}};
-  var JR={nl:["Ongeveer ","jaar","Onbekend"],en:["About ","years","Unknown"],fr:["Environ ","ans","Inconnu"],de:["Etwa ","Jahre","Unbekannt"],it:["Circa ","anni","Sconosciuto"],es:["Aproximadamente ","años","Desconocido"],pt:["Cerca de ","anos","Desconhecido"]};
+  var LG=["nl","en","fr","de","it","es","pt","da"],BIGS=["leeuw","tijger","luipaard","jaguar","sneeuwluipaard","nevelpanter"];
+  var W={kenm:{nl:"Kenmerken",en:"Characteristics",fr:"Caractéristiques",de:"Merkmale",it:"Caratteristiche",es:"Características",pt:"Características",da:"Kendetegn"},
+    staart:{nl:"Staart",en:"Tail",fr:"Queue",de:"Schwanz",it:"Coda",es:"Cola",pt:"Cauda",da:"Hale"},leven:{nl:"Levensduur",en:"Lifespan",fr:"Longévité",de:"Lebensdauer",it:"Longevità",es:"Longevidad",pt:"Longevidade",da:"Levetid"},
+    leef:{nl:"Leefwijze",en:"Way of life",fr:"Mode de vie",de:"Lebensweise",it:"Stile di vita",es:"Modo de vida",pt:"Modo de vida",da:"Levevis"},
+    l0:{nl:"Verspreiding",en:"Range",fr:"Répartition",de:"Verbreitung",it:"Distribuzione",es:"Distribución",pt:"Distribuição",da:"Udbredelse"},
+    l1:{nl:"Leefgebied",en:"Habitat",fr:"Habitat",de:"Lebensraum",it:"Habitat",es:"Hábitat",pt:"Habitat",da:"Levested"},
+    l2:{nl:"Voedsel",en:"Diet",fr:"Alimentation",de:"Nahrung",it:"Alimentazione",es:"Alimentación",pt:"Alimentação",da:"Føde"},
+    l3:{nl:"Sociaal gedrag",en:"Social behaviour",fr:"Comportement social",de:"Sozialverhalten",it:"Comportamento sociale",es:"Comportamiento social",pt:"Comportamento social",da:"Social adfærd"},
+    bijz:{nl:"Bijzonder",en:"Special",fr:"Particularités",de:"Besonderes",it:"Particolarità",es:"Curiosidades",pt:"Curiosidades",da:"Særligt"},
+    b0:{nl:"Kenmerkend",en:"Distinctive",fr:"Caractéristique",de:"Typisch",it:"Caratteristico",es:"Distintivo",pt:"Distintivo",da:"Karakteristisk"},
+    b1:{nl:"Wist je dat?",en:"Did you know?",fr:"Le saviez-vous ?",de:"Wusstest du?",it:"Lo sapevi?",es:"¿Sabías que…?",pt:"Sabias que…?",da:"Vidste du?"},
+    groot:{nl:"grote katten",en:"big cats",fr:"grands félins",de:"Großkatzen",it:"grandi felini",es:"grandes felinos",pt:"grandes felinos",da:"store katte"},
+    klein:{nl:"kleine katten",en:"small cats",fr:"petits félins",de:"Kleinkatzen",it:"piccoli felini",es:"pequeños felinos",pt:"pequenos felinos",da:"små katte"}};
+  var JR={nl:["Ongeveer ","jaar","Onbekend"],en:["About ","years","Unknown"],fr:["Environ ","ans","Inconnu"],de:["Etwa ","Jahre","Unbekannt"],it:["Circa ","anni","Sconosciuto"],es:["Aproximadamente ","años","Desconocido"],pt:["Cerca de ","anos","Desconhecido"],da:["Omkring ","år","Ukendt"]};
   function P(o){return LG.map(function(l){return '<span class="l-'+l+'">'+o[l]+'</span>';}).join("");}
   function E(t){return String(t==null?"":t).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
   function D(i){return LG.map(function(l){var a=SI[l]||SI.en||SI.nl;return '<span class="l-'+l+'">'+E(a?a[i]:"")+'</span>';}).join("");}
@@ -1048,7 +1054,7 @@ window.addEventListener("load",bovenaan);window.addEventListener("pageshow",bove
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",function(){setTimeout(bouw,30);});else setTimeout(bouw,30);
 })();
 /* zwevende terugknop: terug in de geschiedenis, anders naar Meer (startpagina) of de oude terugknop */
-(function(){var TB={nl:"Terug",en:"Back",fr:"Retour",de:"Zurück",it:"Indietro",es:"Volver",pt:"Voltar"};
+(function(){var TB={nl:"Terug",en:"Back",fr:"Retour",de:"Zurück",it:"Indietro",es:"Volver",pt:"Voltar",da:"Tilbage"};
   var f=document.createElement("a");f.className="nt-fab";f.href="#";
   f.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>';
   var lab=function(){var l=(document.documentElement.lang||"nl").slice(0,2);f.setAttribute("aria-label",TB[l]||TB.en);};lab();
@@ -1089,8 +1095,8 @@ var bar=document.getElementById("nw-sbar-start");
 if(bar&&window.__KAT){var s=bar.querySelector('[data-k="soorten"]');if(s)s.classList.add("on");}
 })();</script>
 """
-EU_T_OUD = 'home:{nl:"Home",en:"Home",fr:"Accueil",de:"Start",it:"Home",es:"Inicio",pt:"Início"}'
-EU_T_NIEUW = 'home:{nl:"Kaart",en:"Map",fr:"Carte",de:"Karte",it:"Mappa",es:"Mapa",pt:"Mapa"}'
+EU_T_OUD = 'home:{nl:"Home",en:"Home",fr:"Accueil",de:"Start",it:"Home",es:"Inicio",pt:"Início",da:"Hjem"}'
+EU_T_NIEUW = 'home:{nl:"Kaart",en:"Map",fr:"Carte",de:"Karte",it:"Mappa",es:"Mapa",pt:"Mapa",da:"Kort"}'
 
 
 def europa(pad, wild, av, idx, spn=None, soort=False, avb=None, info=None):
@@ -1145,10 +1151,10 @@ def slug_py(s):
 
 
 def soortinfo():
-    """Leefwijze en Bijzonder per soort (slug) in nl/en/fr/de/it/es, uit de landengidsen in bron/gidsen."""
+    """Leefwijze en Bijzonder per soort (slug) in nl/en/fr/de/it/es/pt/da, uit de landengidsen in bron/gidsen."""
     import glob
     info = {}
-    taal = {"SPEN": "en", "SPFR": "fr", "SPDE": "de", "SPIT": "it", "SPES": "es", "SPPT": "pt"}
+    taal = {"SPEN": "en", "SPFR": "fr", "SPDE": "de", "SPIT": "it", "SPES": "es", "SPPT": "pt", "SPDA": "da"}
     for f in sorted(glob.glob(os.path.join(os.path.dirname(os.path.abspath(__file__)), "gidsen", "*.html"))):
         t = open(f, encoding="utf-8").read()
         i = t.find("const SPECIES=[")

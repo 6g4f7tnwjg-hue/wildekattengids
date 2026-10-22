@@ -25,32 +25,32 @@ IMG = BASE + "img/nieuw/"
 
 
 # Vertalingen van de teksten die het ontwerp zelf toevoegt; de rest komt uit de gids zelf.
-# Toon zoals de gidsen: Frans met "vous", Duits, Italiaans, Spaans en Portugees met "du/tu".
-TALEN = ["fr", "de", "it", "es", "pt"]
+# Toon zoals de gidsen: Frans met "vous", Duits, Italiaans, Spaans, Portugees en Deens met "du/tu".
+TALEN = ["fr", "de", "it", "es", "pt", "da"]
 TR = {
-    "Favorieten": {"fr": "Favoris", "de": "Favoriten", "it": "Preferiti", "es": "Favoritos", "pt": "Favoritos"},
-    "Terug": {"fr": "Retour", "de": "Zurück", "it": "Indietro", "es": "Volver", "pt": "Voltar"},
-    "Meer": {"fr": "Plus", "de": "Mehr", "it": "Altro", "es": "Más", "pt": "Mais"},
-    "Home": {"fr": "Accueil", "de": "Start", "it": "Home", "es": "Inicio", "pt": "Início"},
+    "Favorieten": {"fr": "Favoris", "de": "Favoriten", "it": "Preferiti", "es": "Favoritos", "pt": "Favoritos", "da": "Favoritter"},
+    "Terug": {"fr": "Retour", "de": "Zurück", "it": "Indietro", "es": "Volver", "pt": "Voltar", "da": "Tilbage"},
+    "Meer": {"fr": "Plus", "de": "Mehr", "it": "Altro", "es": "Más", "pt": "Mais", "da": "Mere"},
+    "Home": {"fr": "Accueil", "de": "Start", "it": "Home", "es": "Inicio", "pt": "Início", "da": "Hjem"},
     "Bewaar als favoriet": {"fr": "Ajouter aux favoris", "de": "Als Favorit speichern", "it": "Salva nei preferiti",
-                            "es": "Guardar en favoritos", "pt": "Guardar nos favoritos"},
+                            "es": "Guardar en favoritos", "pt": "Guardar nos favoritos", "da": "Gem som favorit"},
     "In je favorieten": {"fr": "Dans vos favoris", "de": "In deinen Favoriten", "it": "Nei tuoi preferiti",
-                         "es": "En tus favoritos", "pt": "Nos teus favoritos"},
+                         "es": "En tus favoritos", "pt": "Nos teus favoritos", "da": "I dine favoritter"},
     "Nog geen favorieten. Tik op het hartje bij een park of een soort om het hier te bewaren. Je lijst blijft alleen op dit apparaat.": {
         "fr": "Pas encore de favoris. Touchez le cœur à côté d’un parc ou d’une espèce pour l’enregistrer ici. Votre liste reste uniquement sur cet appareil.",
         "de": "Noch keine Favoriten. Tippe auf das Herz neben einem Park oder einer Art, um ihn hier zu speichern. Deine Liste bleibt nur auf diesem Gerät.",
         "it": "Ancora nessun preferito. Tocca il cuore accanto a un parco o a una specie per salvarlo qui. La tua lista resta solo su questo dispositivo.",
         "es": "Todavía no hay favoritos. Toca el corazón junto a un parque o una especie para guardarlo aquí. Tu lista se queda solo en este dispositivo.",
-        "pt": "Ainda não tens favoritos. Toca no coração junto a um parque ou a uma espécie para o guardar aqui. A tua lista fica só neste dispositivo."},
-    "soorten": {"fr": "espèces", "de": "Arten", "it": "specie", "es": "especies", "pt": "espécies"},
-    "locaties": {"fr": "lieux", "de": "Orte", "it": "luoghi", "es": "lugares", "pt": "locais"},
-    "soort": {"fr": "espèce", "de": "Art", "it": "specie", "es": "especie", "pt": "espécie"},
-    "locatie": {"fr": "lieu", "de": "Ort", "it": "luogo", "es": "lugar", "pt": "local"},
+        "pt": "Ainda não tens favoritos. Toca no coração junto a um parque ou a uma espécie para o guardar aqui. A tua lista fica só neste dispositivo.", "da": "Ingen favoritter endnu. Tryk på hjertet ved en park eller en art for at gemme den her. Din liste bliver kun på denne enhed."},
+    "soorten": {"fr": "espèces", "de": "Arten", "it": "specie", "es": "especies", "pt": "espécies", "da": "arter"},
+    "locaties": {"fr": "lieux", "de": "Orte", "it": "luoghi", "es": "lugares", "pt": "locais", "da": "steder"},
+    "soort": {"fr": "espèce", "de": "Art", "it": "specie", "es": "especie", "pt": "espécie", "da": "art"},
+    "locatie": {"fr": "lieu", "de": "Ort", "it": "luogo", "es": "lugar", "pt": "local", "da": "sted"},
     "Zoek een kat of een park": {"fr": "Rechercher un félin ou un parc", "de": "Katze oder Park suchen",
                                  "it": "Cerca un felino o un parco", "es": "Busca un felino o un parque",
-                                 "pt": "Procura um felino ou um parque"},
-    "Favoriet": {"fr": "Favori", "de": "Favorit", "it": "Preferito", "es": "Favorito", "pt": "Favorito"},
-    "Alle types": {"fr": "Tous les types", "de": "Alle Typen", "it": "Tutti i tipi", "es": "Todos los tipos", "pt": "Todos os tipos"},
+                                 "pt": "Procura um felino ou um parque", "da": "Søg efter en kat eller en park"},
+    "Favoriet": {"fr": "Favori", "de": "Favorit", "it": "Preferito", "es": "Favorito", "pt": "Favorito", "da": "Favorit"},
+    "Alle types": {"fr": "Tous les types", "de": "Alle Typen", "it": "Tutti i tipi", "es": "Todos los tipos", "pt": "Todos os tipos", "da": "Alle typer"},
 }
 
 
@@ -97,7 +97,7 @@ html.nw-fk #rg-lab,html.nw-fk #rg-bar,html.nw-fk #rg-count,html.nw-fk #lt-bar,ht
 .nw-fsel.on{background:var(--nw-green);border-color:var(--nw-green);color:#FBF8F1}
 .nw-fsel:focus-within{outline:2px solid var(--nw-terra);outline-offset:2px}
 /* talen die een pagina niet heeft, nooit tonen */
-html:not(.fr) .l-fr,html:not(.de) .l-de,html:not(.it) .l-it,html:not(.es) .l-es,html:not(.pt) .l-pt,html.fr .l-nl,html.de .l-nl,html.it .l-nl,html.es .l-nl,html.pt .l-nl{display:none!important}
+html:not(.fr) .l-fr,html:not(.de) .l-de,html:not(.it) .l-it,html:not(.es) .l-es,html:not(.pt) .l-pt,html:not(.da) .l-da,html.fr .l-nl,html.de .l-nl,html.it .l-nl,html.es .l-nl,html.pt .l-nl,html.da .l-nl{display:none!important}
 :root:root{--paper:#F5F0E4;--card:#FBF8F1;--ink:#22301F;--muted:#5E6656;--line:#E2DACB;--hs-olive:#2F4A32;--hs-accent:#A65A35;--gold:#A65A35;--bark:#2F4A32;--tan:#FBF8F1;--tan-deep:#E2DACB;
   --nw-sage:#E3EADB;--nw-peach:#F3E2D3;--nw-blue:#DDE6E6;--nw-lilac:#E6DDE8;--nw-rose:#F4E3DF;--nw-green:#2F4A32;--nw-terra:#A65A35;--nw-shadow:0 1px 2px rgba(60,50,30,.06),0 10px 24px -14px rgba(60,50,30,.35);--nw-top:var(--hs-head)}
 html body{background:var(--paper)!important;padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
@@ -286,7 +286,7 @@ var HEART='HEARTSVG',PAWI='PAWSVG',PINI='PINSVG',ARR='ARRSVG';
 var $=function(s,r){return (r||document).querySelector(s);},$$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s));};
 function E(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
 function TX(nl,en){var t=TRX[nl]||{},l=N.lang();return l==="nl"?nl:l==="en"?en:(t[l]||en);}
-function LS(nl,en){var t=TRX[nl]||{},o='<span class="l-nl">'+E(nl)+'</span><span class="l-en">'+E(en)+'</span>';["fr","de","it","es","pt"].forEach(function(x){o+='<span class="l-'+x+'">'+E(t[x]||en)+'</span>';});return o;}
+function LS(nl,en){var t=TRX[nl]||{},o='<span class="l-nl">'+E(nl)+'</span><span class="l-en">'+E(en)+'</span>';["fr","de","it","es","pt","da"].forEach(function(x){o+='<span class="l-'+x+'">'+E(t[x]||en)+'</span>';});return o;}
 function en(n){return (SPEN&&SPEN[n])?SPEN[n][0]:n;}
 var main=document.getElementById("main"),info=document.getElementById("info"),html=document.documentElement;
 var SCR=["tldr","locaties","soorten","route","actueel","kleur","uitleg","rapporteer","favorieten","meer"];
@@ -296,7 +296,7 @@ function naam(id){if(id==="locaties-kop"){var k=$("#locaties > h2 .ctog > span")
   var h=$("#"+id+" > h2 .ctog > span")||$("#"+id+" > h2");return h?h.innerHTML:"";}
 $$("[data-nw-lbl]").forEach(function(el){el.innerHTML=naam(el.getAttribute("data-nw-lbl"));});
 /* onderbalk: korte naam voor de routeplanner in talen waar de volledige naam niet past */
-var KORT={fr:"Itinéraire",it:"Percorso",es:"Ruta",pt:"Rota"};Object.keys(KORT).forEach(function(k){$$('[data-nw="route"] .l-'+k).forEach(function(x){x.textContent=KORT[k];});});
+var KORT={fr:"Itinéraire",it:"Percorso",es:"Ruta",pt:"Rota",da:"Rute"};Object.keys(KORT).forEach(function(k){$$('[data-nw="route"] .l-'+k).forEach(function(x){x.textContent=KORT[k];});});
 
 /* ---------- kop: titel, ondertitel en datum van de gids op de foto; inleiding naar In het kort ---------- */
 var hd=$("#main > header"),ht=document.getElementById("nw-htxt");
@@ -456,7 +456,7 @@ paint();apply();
 
 
 LANDEN = ["nederland", "belgie", "luxemburg", "duitsland", "frankrijk", "oostenrijk", "zwitserland",
-          "verenigd-koninkrijk", "italie", "spanje", "ierland", "portugal"]
+          "verenigd-koninkrijk", "italie", "spanje", "ierland", "portugal", "denemarken"]
 MARK = 'id="nw-htxt"'
 
 
@@ -598,10 +598,10 @@ BARCSS
 
 START_JS = """
 <script>(function(){
-var T={home:{nl:"Home",en:"Home",fr:"Accueil",de:"Start",it:"Home",es:"Inicio",pt:"Início"},
-  landen:{nl:"Landen",en:"Countries",fr:"Pays",de:"Länder",it:"Paesi",es:"Países",pt:"Países"},
-  soorten:{nl:"Soorten",en:"Species",fr:"Espèces",de:"Arten",it:"Specie",es:"Especies",pt:"Espécies"},
-  meer:{nl:"Meer",en:"More",fr:"Plus",de:"Mehr",it:"Altro",es:"Más",pt:"Mais"}};
+var T={home:{nl:"Home",en:"Home",fr:"Accueil",de:"Start",it:"Home",es:"Inicio",pt:"Início",da:"Hjem"},
+  landen:{nl:"Landen",en:"Countries",fr:"Pays",de:"Länder",it:"Paesi",es:"Países",pt:"Países",da:"Lande"},
+  soorten:{nl:"Soorten",en:"Species",fr:"Espèces",de:"Arten",it:"Specie",es:"Especies",pt:"Espécies",da:"Arter"},
+  meer:{nl:"Meer",en:"More",fr:"Plus",de:"Mehr",it:"Altro",es:"Más",pt:"Mais",da:"Mere"}};
 var bar=document.getElementById("nw-sbar-start");if(!bar)return;
 function lang(){var l=(document.documentElement.lang||"nl").slice(0,2);return T.home[l]?l:"en";}
 function labels(){var l=lang();bar.querySelectorAll("[data-k]").forEach(function(a){a.querySelector("span").textContent=T[a.dataset.k][l];});}

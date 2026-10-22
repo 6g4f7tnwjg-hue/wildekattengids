@@ -1,11 +1,11 @@
 /* Locatietypes en labels. Wordt door bron/bouw.py achter het script van elke gids (en elke deelstaat) gezet,
    zodat het bij de gegevens en functies van die gids kan. LT komt uit bron/locatietypes.json. */
-const LT_I=()=>({en:1,fr:2,de:3,it:4,es:5,pt:6})[LANG]||0;
-const LT_TX=(nl,en,fr,de,it,es,pt)=>[nl,en,fr!==undefined?fr:en,de!==undefined?de:en,it!==undefined?it:en,es!==undefined?es:en,pt!==undefined?pt:en][LT_I()];
+const LT_I=()=>({en:1,fr:2,de:3,it:4,es:5,pt:6,da:7})[LANG]||0;
+const LT_TX=(nl,en,fr,de,it,es,pt,da)=>[nl,en,fr!==undefined?fr:en,de!==undefined?de:en,it!==undefined?it:en,es!==undefined?es:en,pt!==undefined?pt:en,da!==undefined?da:en][LT_I()];
 const LT_KEY=nm=>{const i=LOCINFO[nm];return i&&i.type?i.type[0]:"";};
-const LT_NAME=nm=>{const i=LOCINFO[nm];if(!i||!i.type)return "";const t=LT.types.find(x=>x.nl===i.type[0]);return t?LT_TX(t.nl,t.en,t.fr,t.de,t.it,t.es,t.pt):(i.type[LT_I()]||i.type[0]);};
+const LT_NAME=nm=>{const i=LOCINFO[nm];if(!i||!i.type)return "";const t=LT.types.find(x=>x.nl===i.type[0]);return t?LT_TX(t.nl,t.en,t.fr,t.de,t.it,t.es,t.pt,t.da):(i.type[LT_I()]||i.type[0]);};
 const LT_LABS=nm=>(((LOCINFO[nm]||{}).labels)||[]).map(k=>LT.labels.find(l=>l.key===k)).filter(Boolean);
-const LT_LTXT=l=>LT_TX(l.nl,l.en,l.fr,l.de,l.it,l.es,l.pt);
+const LT_LTXT=l=>LT_TX(l.nl,l.en,l.fr,l.de,l.it,l.es,l.pt,l.da);
 const LT_BEP=nm=>LT_LABS(nm).filter(l=>LT.beperkt.includes(l.key));
 const LT_IDX=a=>{const m=(a.getAttribute("href")||"").match(/^#(?:[a-z-]+\/)?locatie\/(.+)$/);return m&&LOCBYSLUG[m[1]]!==undefined?LOCBYSLUG[m[1]]:-1;};
 let LT_F="";
@@ -39,8 +39,8 @@ function LT_DECOR(){
     mw.insertAdjacentHTML("beforebegin",'<div class="lt-bar" id="lt-bar" role="group"></div><p class="lt-count" id="lt-count" aria-live="polite"></p>');
     bar=document.getElementById("lt-bar");
     bar.addEventListener("click",e=>{const b=e.target.closest(".lt-chip");if(!b)return;LT_F=b.dataset.t;LT_DECOR();});}
-  bar.setAttribute("aria-label",LT_TX("Soort locatie","Type of location","Type de lieu","Art des Ortes","Tipo di luogo","Tipo de lugar","Tipo de local"));
-  bar.innerHTML=[["",LOCS.length,LT_TX("Alle","All","Tous","Alle","Tutti","Todos","Todos")]].concat(present.map(t=>[t.nl,cnt[t.nl],LT_TX(t.nl,t.en,t.fr,t.de,t.it,t.es,t.pt)]))
+  bar.setAttribute("aria-label",LT_TX("Soort locatie","Type of location","Type de lieu","Art des Ortes","Tipo di luogo","Tipo de lugar","Tipo de local","Type af sted"));
+  bar.innerHTML=[["",LOCS.length,LT_TX("Alle","All","Tous","Alle","Tutti","Todos","Todos","Alle")]].concat(present.map(t=>[t.nl,cnt[t.nl],LT_TX(t.nl,t.en,t.fr,t.de,t.it,t.es,t.pt,t.da)]))
     .map(([k,n,l])=>`<button type="button" class="lt-chip" data-t="${esc(k)}" aria-pressed="${k===LT_F}">${esc(l)} <span class="n">${n}</span></button>`).join("");
   LT_APPLY();
 }
@@ -55,7 +55,7 @@ function LT_APPLY(){
     const none=items.every(li=>li.hidden);ul.hidden=none;const g=ul.previousElementSibling;if(g&&g.classList.contains("group-title"))g.hidden=none;});
   const c=document.getElementById("lt-count");
   if(c){const n=LOCS.filter(l=>!off(l[0])).length;
-    c.textContent=LT_F?LT_TX(`${n} van de ${LOCS.length} locaties getoond.`,`Showing ${n} of ${LOCS.length} locations.`,`${n} lieux sur ${LOCS.length} affichés.`,`${n} von ${LOCS.length} Orten angezeigt.`,`${n} luoghi su ${LOCS.length} mostrati.`,`${n} de ${LOCS.length} lugares mostrados.`,`${n} de ${LOCS.length} locais mostrados.`):"";c.hidden=!LT_F;}
+    c.textContent=LT_F?LT_TX(`${n} van de ${LOCS.length} locaties getoond.`,`Showing ${n} of ${LOCS.length} locations.`,`${n} lieux sur ${LOCS.length} affichés.`,`${n} von ${LOCS.length} Orten angezeigt.`,`${n} luoghi su ${LOCS.length} mostrati.`,`${n} de ${LOCS.length} lugares mostrados.`,`${n} de ${LOCS.length} locais mostrados.`,`Viser ${n} af ${LOCS.length} steder.`):"";c.hidden=!LT_F;}
 }
 {const o=locHTML;locHTML=function(i){const h=o.apply(this,arguments);const t=LT_LABS(LOCS[i][0]).map(l=>`<span class="ip-tag">${l.icoon} ${esc(LT_LTXT(l))}</span>`).join("");
   return t?h.replace(/(<div class="ip-tags">[\s\S]*?)(<\/div>)/,(m,a,b)=>a+t+b):h;};}

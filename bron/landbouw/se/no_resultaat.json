@@ -1,0 +1,202 @@
+{
+  "locaties": [
+    {
+      "naam": "Junsele Djurpark",
+      "plaats": "Junsele (Sollefteå)",
+      "lan": "Västernorrlands län",
+      "lon": 16.855,
+      "lat": 63.699,
+      "type": "Dierenpark",
+      "lidmaatschap": [],
+      "url": "https://www.junseledjurpark.com/",
+      "uren": {
+        "nl": "Alleen 's zomers open: seizoen 2026 van 21 juni t/m 16 augustus, dagelijks 10–16 uur; nu (oktober) gesloten. Roofdiervoedering di, do en za om 12 uur (eigen site, gezien 22-10-2026)",
+        "en": "Summer only: 2026 season 21 June to 16 August, daily 10:00–16:00; closed now (October). Carnivore feeding Tue, Thu and Sat at 12:00 (own website, seen 22-10-2026)"
+      },
+      "about": {
+        "nl": "Kleine familiedierentuin uit 1965 in het binnenland van Västernorrland, met camping en speeltuin. Bekend om de witte tijgers; volgens de park-site de enige witte tijgers in Zweden.",
+        "en": "Small family zoo from 1965 in inland Västernorrland, with a campsite and play area. Known for its white tigers; according to the park website the only white tigers in Sweden."
+      },
+      "earlier": {
+        "nl": "",
+        "en": ""
+      },
+      "katten": [
+        {
+          "soort": "Tijger",
+          "ondersoort": "onbekend, incl. witte tijger",
+          "status": "g",
+          "toelichting": {
+            "nl": "Twee witte tijgers en één gewone (gele) tijger. Het park noemt de witte tijger een kleurvariant van de Bengaalse tijger, maar zegt niet van welke ondersoort zijn eigen dieren zijn. Geen EEP-dieren.",
+            "en": "Two white tigers and one normal-coloured (yellow) tiger. The park describes the white tiger as a colour variant of the Bengal tiger, but does not state the subspecies of its own animals. Not EEP animals."
+          },
+          "aantal": {
+            "nl": "3 (2 witte, 1 gele)",
+            "en": "3 (2 white, 1 yellow)"
+          },
+          "bron": "Eigen site soortpagina /tigrar/ (bijgewerkt 19-05-2026, gezien 22-10-2026); eigen site startpagina en parkkaart (gezien 22-10-2026); Zootierliste (aanvullend, TBL 2024)"
+        },
+        {
+          "soort": "Euraziatische lynx",
+          "ondersoort": "onbekend",
+          "status": "g",
+          "toelichting": {
+            "nl": "Lynxpaar in een eigen verblijf.",
+            "en": "A pair of lynx in their own enclosure."
+          },
+          "aantal": {
+            "nl": "2 (1 kater, 1 poes)",
+            "en": "2 (1 male, 1 female)"
+          },
+          "bron": "Eigen site soortpagina /lodjur/ (bijgewerkt 19-05-2026, gezien 22-10-2026); Zootierliste (aanvullend, TBL 2024)"
+        }
+      ],
+      "geboortes": [],
+      "kleur": "witte tijger"
+    },
+    {
+      "naam": "Lycksele Djurpark",
+      "plaats": "Lycksele",
+      "lan": "Västerbottens län",
+      "lon": 18.663,
+      "lat": 64.581,
+      "type": "Dierenpark",
+      "lidmaatschap": [
+        "SDF"
+      ],
+      "url": "https://lyckseledjurpark.se/",
+      "uren": {
+        "nl": "Vooral 's zomers open: 13 juni–9 augustus dagelijks 10–17 (laatste toegang 16 uur); 31 mei–12 juni en 11–17 augustus 10–16; rest van het jaar alleen op afspraak (eigen site, gezien 22-10-2026)",
+        "en": "Mainly open in summer: 13 June–9 August daily 10:00–17:00 (last entry 16:00); 31 May–12 June and 11–17 August 10:00–16:00; rest of the year by booking only (own website, seen 22-10-2026)"
+      },
+      "about": {
+        "nl": "Een van de noordelijkste dierentuinen van Zweden, met vooral Noordse dieren zoals beer, wolf, veelvraat en lynx. Lid van de Zweedse dierentuinvereniging SDF.",
+        "en": "One of Sweden's northernmost zoos, mainly with Nordic animals such as bear, wolf, wolverine and lynx. Member of the Swedish zoo association SDF."
+      },
+      "earlier": {
+        "nl": "",
+        "en": ""
+      },
+      "katten": [
+        {
+          "soort": "Euraziatische lynx",
+          "ondersoort": "onbekend",
+          "status": "g",
+          "toelichting": {
+            "nl": "Staat op de dierenlijst van de eigen site. In november 2014 ontsnapte hier een lynx.",
+            "en": "On the animal list of the park's website. A lynx escaped from the park in November 2014."
+          },
+          "aantal": {
+            "nl": "onbekend",
+            "en": "unknown"
+          },
+          "bron": "Eigen site soortpagina /djur/lodjur/ (bijgewerkt 22-06-2026, gezien 22-10-2026); Zootierliste (aanvullend, bezoek 04-2018)"
+        }
+      ],
+      "geboortes": [],
+      "kleur": ""
+    },
+    {
+      "naam": "Vildriket (voorheen Järvzoo)",
+      "plaats": "Järvsö (Ljusdal)",
+      "lan": "Gävleborgs län",
+      "lon": 16.14,
+      "lat": 61.713,
+      "type": "Wildpark",
+      "lidmaatschap": [
+        "EAZA",
+        "SDF"
+      ],
+      "url": "https://vildriket.se/",
+      "uren": {
+        "nl": "Het hele jaar dagelijks open, 10–15 uur; kerstavond 10–13 uur (eigen site, gezien 22-10-2026)",
+        "en": "Open daily all year, 10:00–15:00; Christmas Eve 10:00–13:00 (own website, seen 22-10-2026)"
+      },
+      "about": {
+        "nl": "Park met alleen Noordse dieren in grote natuurlijke verblijven langs een vlonderpad van ongeveer 3 km. Heette tot 2023 Järvzoo. Bij de ingang een tentoonstelling over de grote roofdieren.",
+        "en": "Park with only Nordic animals in large natural enclosures along a boardwalk of about 3 km. Called Järvzoo until 2023. Exhibition on the large predators at the entrance."
+      },
+      "earlier": {
+        "nl": "",
+        "en": ""
+      },
+      "katten": [
+        {
+          "soort": "Euraziatische lynx",
+          "ondersoort": "onbekend",
+          "status": "g",
+          "toelichting": {
+            "nl": "Lynx is een van de vaste soorten van het park (het park noemt de lynx 'Nordens tiger').",
+            "en": "Lynx is one of the park's regular species (the park calls the lynx 'the tiger of the North')."
+          },
+          "aantal": {
+            "nl": "onbekend",
+            "en": "unknown"
+          },
+          "bron": "Eigen site soortpagina /djur/lodjur/ (bijgewerkt 31-03-2026, gezien 22-10-2026); eigen site 'Planera besöket' (bijgewerkt 31-08-2026); Zootierliste (aanvullend, bezoek 09-2025)"
+        }
+      ],
+      "geboortes": [],
+      "kleur": ""
+    }
+  ],
+  "zonder_katten": [
+    {
+      "naam": "Orsa Rovdjurspark (Orsa Predator Park)",
+      "plaats": "Orsa (Grönklitt)",
+      "reden": {
+        "nl": "Gesloten. Dicht voor bezoekers sinds november 2022; alle dieren verhuisd, afbouw klaar per 31-01-2024 (SVT 19-09-2022 en 06-11-2023). Had eerder Amoertijger, Perzisch luipaard, sneeuwluipaard en lynx (Wikipedia; Zootierliste).",
+        "en": "Closed. Closed to visitors since November 2022; all animals rehomed, wind-down completed by 31-01-2024 (SVT 19-09-2022 and 06-11-2023). Formerly kept Amur tiger, Persian leopard, snow leopard and lynx (Wikipedia; Zootierliste)."
+      }
+    },
+    {
+      "naam": "Frösö Zoo",
+      "plaats": "Frösön (Östersund)",
+      "reden": {
+        "nl": "Gesloten in 2019. Had eerder Siberische (Amoer)tijgers en leeuwen (Wikipedia).",
+        "en": "Closed in 2019. Formerly kept Siberian (Amur) tigers and lions (Wikipedia)."
+      }
+    },
+    {
+      "naam": "Furuviksparken",
+      "plaats": "Furuvik (Gävle)",
+      "reden": {
+        "nl": "Geen katachtigen op de dierenlijst (eigen site, gezien 22-10-2026); dierenpark met vooral apen. Alleen 's zomers open.",
+        "en": "No cats on the animal list (own website, seen 22-10-2026); zoo mainly focused on primates. Summer season only."
+      }
+    },
+    {
+      "naam": "Myskoxcentrum i Härjedalen",
+      "plaats": "Tännäs (Härjedalen)",
+      "reden": {
+        "nl": "Muskusossencentrum; geen katachtigen.",
+        "en": "Musk ox centre; no cats."
+      }
+    },
+    {
+      "naam": "Avesta Visentpark",
+      "plaats": "Avesta",
+      "reden": {
+        "nl": "Wisentenpark; geen katachtigen.",
+        "en": "European bison park; no cats."
+      }
+    },
+    {
+      "naam": "Moose Garden",
+      "plaats": "Orrviken (Östersund)",
+      "reden": {
+        "nl": "Elandenpark; geen katachtigen.",
+        "en": "Moose park; no cats."
+      }
+    }
+  ],
+  "open_punten": [
+    "Junsele Djurpark: tijgers hebben geen opgegeven ondersoort; site noemt witte tijger kleurvariant van Bengaalse tijger. Waarschijnlijk generieke (niet-EEP) tijgers; label 'onbekend, incl. witte tijger' gekozen. Namen niet gevonden.",
+    "Junsele: hogakusten.com (2026) spreekt van 'zeldzame witte leeuwen' – vrijwel zeker een fout voor witte tijgers; eigen site en parkkaart noemen geen leeuwen.",
+    "Lycksele en Vildriket: aantal lynxen onbekend; geen recente lynxgeboortes gevonden (alleen beren/elanden in nieuws).",
+    "Vildriket: EAZA-lidmaatschap volgens sv.wikipedia en deelname aan EEP-programma's (eigen site 'Bevarande'); niet rechtstreeks in de EAZA-ledenlijst gecontroleerd. Jaar naamswijziging Järvzoo->Vildriket (2023) uit oudere pagina's afgeleid, niet hard bevestigd.",
+    "Norrbotten: geen dierentuin of dierenpark met katten gevonden. Ook in Dalarna en Jämtland na sluiting van Orsa en Frösö Zoo geen locaties met katten gevonden.",
+    "Niet gecontroleerd: Älgens Hus (Bjurholm), Jamtli (Östersund, alleen boerderijdieren) en kleinere kinderboerderijen; vermoedelijk zonder katten.",
+    "Rovdjurscentret De 5 Stora (Järvsö) was een tentoonstellingscentrum zonder levende katten; nu vermoedelijk opgenomen in Vildriket."
+  ]
+}

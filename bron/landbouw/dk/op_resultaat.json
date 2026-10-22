@@ -1,0 +1,239 @@
+{
+ "locaties": [
+  {
+   "naam": "Odsherred Zoo Rescue",
+   "plaats": "Asnæs (Odsherred)",
+   "regio": "Sjælland",
+   "lon": 11.49,
+   "lat": 55.827,
+   "type": "Opvangcentrum",
+   "lidmaatschap": [],
+   "url": "https://rescuezoo.dk/",
+   "uren": {
+    "nl": "Seizoen 2026: 11 april–half oktober, 10–16 uur (hoogseizoen 27 juni–7 aug. tot 18 uur); seizoen eindigde 18-10-2026, weer open met Pasen 2027 (eigen site, gezien 22-10-2026)",
+    "en": "Season 2026: 11 April–mid October, 10:00–16:00 (peak 27 June–7 Aug until 18:00); season ended 18-10-2026, reopens at Easter 2027 (own site, seen 22-10-2026)"
+   },
+   "about": {
+    "nl": "Enige opvang-dierentuin voor exotische dieren in Denemarken (erkende dierentuin, fonds). Dieren komen uit illegaal particulier bezit, smokkel, inbeslagnames, laboratoria en circussen; ze blijven hier permanent. Opvang: dieren wisselen, soms staan verblijven leeg.",
+    "en": "Denmark's only rescue zoo for exotic animals (licensed zoo, run by a foundation). Animals come from illegal private keeping, smuggling, seizures, laboratories and circuses and stay for life. Rescue centre: animals change, enclosures may be empty."
+   },
+   "earlier": {
+    "nl": "Een eerdere servalpoes overleed vóór juli 2021; serval Noah (uit België, 7 jaar bij particulier) kreeg hier een thuis, maar staat niet meer op de dierenlijst (eigen site, verhaal ongedateerd).",
+    "en": "An earlier female serval died before July 2021; serval Noah (from Belgium, 7 years with a private owner) was taken in but is no longer on the animal list (own site, story undated)."
+   },
+   "katten": [
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Zussen, in 2011 op 7 maanden oud weggehaald bij een kleine Deense dierentuin (2x2 m stal zonder daglicht). Niet voor fok. Opvang; dieren wisselen.",
+      "en": "Sisters, removed from a small Danish zoo in 2011 at seven months old (2x2 m stable without daylight). Not for breeding. Rescue centre; animals change."
+     },
+     "aantal": {
+      "nl": "2 (poezen Luna en Nala)",
+      "en": "2 (females Luna and Nala)"
+     },
+     "bron": "Eigen site dierenlijst en verhaal 'Luna and Nala' (gezien 22-10-2026)"
+    },
+    {
+     "soort": "Serval",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Isis: op 4-7-2021 in België in beslag genomen bij particulier (illegaal bezit, verwaarlozing). Nequ: maart 2024 uit krappe omstandigheden in België. Eigen binnenverblijf, delen om beurten één buitenverblijf. Opvang; dieren wisselen.",
+      "en": "Isis: seized from a private owner in Belgium on 4-7-2021 (illegal keeping, neglect). Nequ: arrived March 2024 from cramped conditions in Belgium. Separate indoor quarters, take turns in a shared outdoor enclosure. Rescue centre; animals change."
+     },
+     "aantal": {
+      "nl": "2 (poes Isis en kater Nequ)",
+      "en": "2 (female Isis and male Nequ)"
+     },
+     "bron": "Eigen site dierenlijst en verhaal 'Isis and Nequ' (gezien 22-10-2026)"
+    },
+    {
+     "soort": "Caracal",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "'Meerdere' caracals uit illegaal bezit, smokkel en inbeslagname. Kato: door de politie in Frankrijk weggehaald, via AAP (NL). Kaja: als kitten van 14 weken voorjaar 2023 anoniem op de parkeerplaats achtergelaten (in Duitsland gekocht, Denemarken binnengesmokkeld); nieuw verblijf met steun van het Deense ministerie van Cultuur. Opvang; dieren wisselen.",
+      "en": "'Several' caracals from illegal keeping, smuggling and seizures. Kato: removed by police in France, via AAP (NL). Kaja: left anonymously in the car park as a 14-week-old kitten in spring 2023 (bought in Germany, smuggled into Denmark); new enclosure funded by the Danish Ministry of Culture. Rescue centre; animals change."
+     },
+     "aantal": {
+      "nl": "minstens 2 (kater Kato en poes Kaja; site spreekt van 'meerdere')",
+      "en": "at least 2 (male Kato and female Kaja; site says 'several')"
+     },
+     "bron": "Eigen site dierenlijst en verhalen 'Kato', 'Kaja' (gezien 22-10-2026); TV2 Øst / sn.dk over Kaja (2023, ongedateerd in zoekresultaat)"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Munkholm Zoo",
+   "plaats": "Balle (Syddjurs)",
+   "regio": "Midtjylland",
+   "lon": 10.783,
+   "lat": 56.322,
+   "type": "Dierenpark",
+   "lidmaatschap": [],
+   "url": "https://munkholmzoo.dk/",
+   "uren": {
+    "nl": "Seizoen 2026: 21 maart–1 november, dagelijks; doorgaans 10–16 uur, weekends 10–17, week 27–32 tot 18 uur (eigen site, gezien 22-10-2026)",
+    "en": "Season 2026: 21 March–1 November, daily; usually 10:00–16:00, weekends 10:00–17:00, weeks 27–32 until 18:00 (own site, seen 22-10-2026)"
+   },
+   "about": {
+    "nl": "Kleine particuliere dierentuin op Djursland (ruim 80 soorten, 2 ha), sinds 2021 nieuwe eigenaren. Er lopen ook tamme huiskatten rond (bezoekersreview 2024).",
+    "en": "Small private zoo on Djursland (80+ species, 2 ha), new owners since 2021. Friendly domestic cats also roam the park (visitor review 2024)."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Serval",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Servals staan genoemd op de plattegrondpagina en de infopagina; het eetkraam heet 'Servalgrillen'.",
+      "en": "Servals are named on the park map page and the information page; the snack bar is called 'Servalgrillen'."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site 'Kort over haven' (bijgewerkt 03-06-2026) en 'Information' (gezien 22-10-2026)"
+    }
+   ],
+   "geboortes": [
+    {
+     "soort": "Serval",
+     "geboren": "2026 (vóór 04-07-2026, datum onbekend)",
+     "n": {
+      "nl": "onbekend aantal jongen",
+      "en": "unknown number of kittens"
+     },
+     "x": {
+      "nl": "Alleen bekend uit een bezoekersreview ('de schattigste serval-jongen'); niet bevestigd door het park.",
+      "en": "Known only from a visitor review ('the cutest serval kittens'); not confirmed by the park."
+     },
+     "bron": "Trustpilot-review Nadia Garner 04-07-2026"
+    }
+   ],
+   "kleur": ""
+  },
+  {
+   "naam": "Krokodille Zoo",
+   "plaats": "Eskilstrup (Guldborgsund)",
+   "regio": "Sjælland",
+   "lon": 11.909,
+   "lat": 54.863,
+   "type": "Dierentuin",
+   "lidmaatschap": [],
+   "url": "https://krokodillezoo.dk/",
+   "uren": {
+    "nl": "Open in schoolvakanties en seizoen; herfstvakantie 9–25 oktober 2026 10–16 uur, kerst 20–23 en 25–30 december 10–16 uur (eigen site, gezien 22-10-2026)",
+    "en": "Open in school holidays and season; autumn holiday 9–25 October 2026 10:00–16:00, Christmas 20–23 and 25–30 December 10:00–16:00 (own site, seen 22-10-2026)"
+   },
+   "about": {
+    "nl": "Krokodillendierentuin op Falster, met daarnaast enkele zoogdieren, waaronder twee kattensoorten.",
+    "en": "Crocodile zoo on Falster, also keeping some mammals, including two cat species."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Poema",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "In de rubriek 'Kattedyr'; homepage noemt 'onze majestueuze poema's' (meervoud).",
+      "en": "Listed under 'Kattedyr'; homepage mentions 'our majestic pumas' (plural)."
+     },
+     "aantal": {
+      "nl": "onbekend (meervoud)",
+      "en": "unknown (plural)"
+     },
+     "bron": "Eigen site soortpagina Puma (gepubliceerd 07-07-2026, bijgewerkt 14-07-2026)"
+    },
+    {
+     "soort": "Nevelpanter",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Op de site 'træleopard' (Neofelis nebulosa); homepage noemt 'de sierlijke træleoparder' (meervoud).",
+      "en": "Called 'træleopard' (Neofelis nebulosa) on the site; homepage mentions 'the graceful clouded leopards' (plural)."
+     },
+     "aantal": {
+      "nl": "onbekend (meervoud)",
+      "en": "unknown (plural)"
+     },
+     "bron": "Eigen site soortpagina Træleopard (gepubliceerd 03-07-2026, bijgewerkt 14-07-2026)"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  }
+ ],
+ "zonder_katten": [
+  {
+   "naam": "Cirkus Arena (wintersverblijf)",
+   "plaats": "Årslev (Slagelse)",
+   "reden": {
+    "nl": "Geen wilde katten: Denemarken verbiedt sinds 1962 wilde dieren in het circus; de uitzonderingen (olifanten, zeeleeuwen) vervielen in 2018 en de laatste circusolifanten gingen naar Knuthenborg (lex.dk, gezien 22-10-2026).",
+    "en": "No wild cats: Denmark has banned wild animals in circuses since 1962; the exemptions (elephants, sea lions) ended in 2018 and the last circus elephants went to Knuthenborg (lex.dk, seen 22-10-2026)."
+   }
+  },
+  {
+   "naam": "Cirkus Benneweis",
+   "plaats": "—",
+   "reden": {
+    "nl": "Geen wilde katten: had in 1959 nog 53 roofdieren, maar het verbod van 1962 maakte daar een einde aan; het circus stopte in 2015 (lex.dk; DR-interview 2020).",
+    "en": "No wild cats: still had 53 predators in 1959, but the 1962 ban ended that; the circus closed in 2015 (lex.dk; DR interview 2020)."
+   }
+  },
+  {
+   "naam": "Cirkus Dannebrog / Cirkus Trapez e.a.",
+   "plaats": "—",
+   "reden": {
+    "nl": "Geen wilde katten: Deense circussen mogen sinds 1962 geen wilde katachtigen tonen (wettelijk verbod).",
+    "en": "No wild cats: Danish circuses may not show wild cats since 1962 (legal ban)."
+   }
+  },
+  {
+   "naam": "Hillerød Zoo (voorheen Monkey World / Hillerød Mini Zoo)",
+   "plaats": "Hillerød",
+   "reden": {
+    "nl": "Geen katachtigen bekend (apen, papegaaien, kangoeroes, konijnen); door de gemeente gesloten wegens ontbrekende vergunningen, na heropening opnieuw gesloten (TV2 Kosmopol, ongedateerd). Site achter Cloudflare, niet te controleren.",
+    "en": "No cats known (monkeys, parrots, kangaroos, rabbits); closed by the municipality over missing permits, closed again after reopening (TV2 Kosmopol, undated). Website behind Cloudflare, could not be checked."
+   }
+  },
+  {
+   "naam": "Brændesgårdshaven (Joboland)",
+   "plaats": "Svaneke (Bornholm)",
+   "reden": {
+    "nl": "Geen katachtigen op de dierenlijst (apen, lemuren, neusberen, stokstaartjes e.a.) (eigen site 22-10-2026).",
+    "en": "No cats on the animal list (monkeys, lemurs, coatis, meerkats etc.) (own site 22-10-2026)."
+   }
+  },
+  {
+   "naam": "Falkecenter Samsø",
+   "plaats": "Samsø",
+   "reden": {
+    "nl": "Alleen roofvogels en uilen (VisitDenmark, ongedateerd).",
+    "en": "Birds of prey and owls only (VisitDenmark, undated)."
+   }
+  }
+ ],
+ "open_punten": [
+  "Geen Deens nieuws 2024–2026 gevonden over in beslag genomen servals, caracals of tijgers bij particulieren; het laatst gevonden geval is caracal Kaja (voorjaar 2023, anoniem afgegeven bij Odsherred Zoo Rescue; politie onderzocht verkoop via internet, TV2 Øst/sn.dk). Zoekmachine gaf voor Deense nieuwsbronnen weinig resultaten; niet uitgesloten dat er zaken zijn gemist.",
+  "Odsherred Zoo Rescue: aantal caracals onzeker ('meerdere'; Kato en Kaja met naam). Serval Noah staat in een ongedateerd verhaal maar niet op de dierenlijst; vermoedelijk overleden of verhaal van vóór 2021.",
+  "Munkholm Zoo: serval-jongen zomer 2026 alleen via bezoekersreview (Trustpilot 04-07-2026); aantal servals en jongen niet bevestigd. Oude ZooChat-post (2009) noemde regelmatige servalkweek. Munkholm en Krokodille Zoo zijn gewone parken; mogelijk dubbel met regio-agenten.",
+  "Geen 'tigerpark', 'kattepark', particuliere grote-kattencollectie of valkerij/natuurcentrum met lynx of wilde kat in Denemarken gevonden (Tigerpark Dassow ligt in Duitsland).",
+  "Geen nieuwe dierenparken of kattenverblijven aangekondigd voor 2025–2026 gevonden buiten bekende parken (bijv. nieuw leeuwenverblijf Aalborg Zoo, nieuws Givskud-leeuwenwelpen 07-2026: regio-agenten).",
+  "Vrij levende Europese wilde kat: niet in Denemarken; wel een waarneming in Sleeswijk-Holstein in de herfst van 2025, minder dan 200 km van de grens (lex.dk).",
+  "Blåvand Zoo: ontsnapte serval maart 2022 (TV2) – voor de regio-agent Syddanmark."
+ ]
+}

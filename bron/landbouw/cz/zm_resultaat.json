@@ -1,0 +1,913 @@
+{
+ "locaties": [
+  {
+   "naam": "Zoo Brno",
+   "plaats": "Brno (Bystrc)",
+   "kraj": "Jihomoravský",
+   "lon": 16.533,
+   "lat": 49.23,
+   "type": "Dierentuin",
+   "lidmaatschap": [
+    "EAZA",
+    "WAZA",
+    "UCSZOO"
+   ],
+   "url": "https://www.zoobrno.cz/",
+   "uren": {
+    "nl": "Dagelijks; sinds 1 oktober 9:00–17:00, november–februari 9:00–16:00; kassa sluit 1 uur eerder (eigen site, gezien 22-10-2026)",
+    "en": "Daily; from 1 October 9:00–17:00, November–February 9:00–16:00; ticket desks close 1 hour earlier (own site, seen 22-10-2026)"
+   },
+   "about": {
+    "nl": "Stadsdierentuin op de Mniší hora in Brno-Bystrc. De soortenlijst op de nieuwe website is onvolledig (tijger ontbreekt); het jaarverslag 2025 is gebruikt als controle. De zoo beheert ook het opvangcentrum Jinačovice (zonder katten).",
+    "en": "City zoo on Mniší hora in Brno-Bystrc. The species list on the new website is incomplete (the tiger is missing); the 2025 annual report was used as a check. The zoo also runs the Jinačovice rescue centre (no cats)."
+   },
+   "earlier": {
+    "nl": "Sumatraanse tijgerin Satu (in Brno sinds 2005) is in december 2025 op 21-jarige leeftijd ingeslapen (Brněnský deník 12-2025; jaarverslag 2025); kater Dandys verliet Brno eerder. Twee zandkatten (katers) staan in bruikleen buiten Brno (jaarverslag 2025). Mannelijke Sri Lanka-luipaard vertrokken/overleden in 2024 (jaarverslag 2024).",
+    "en": "Sumatran tigress Satu (in Brno since 2005) was euthanised in December 2025 aged 21 (Brněnský deník 12-2025; annual report 2025); male Dandys left Brno earlier. Two sand cats (males) are on loan outside Brno (annual report 2025). Male Sri Lankan leopard gone in 2024 (annual report 2024)."
+   },
+   "katten": [
+    {
+     "soort": "Tijger",
+     "ondersoort": "Sumatraans",
+     "status": "g",
+     "toelichting": {
+      "nl": "Nieuwe kater (7 jaar, geboren in NaturZoo Rheine) kwam op 26-09-2026 uit Zoo Krefeld; de zoo noemt geen naam. Al in de eerste week te zien, ligt vaak bij het glas. Een poes uit Indonesië is in onderhandeling.",
+      "en": "New male (7 years old, born at NaturZoo Rheine) arrived from Krefeld Zoo on 26-09-2026; the zoo does not use a name. Visible from the first week, often resting by the glass. A female from Indonesia is being negotiated."
+     },
+     "aantal": {
+      "nl": "1 (kater)",
+      "en": "1 (male)"
+     },
+     "bron": "Eigen site nieuws 26-09-2026 (gezien 22-10-2026); Expats.cz 18-10-2026; iROZHLAS 14-08-2026"
+    },
+    {
+     "soort": "Leeuw",
+     "ondersoort": "Zuidelijk (P. l. melanochaita)",
+     "status": "g",
+     "toelichting": {
+      "nl": "Congoleeuw (P. l. bleyenberghi). Groep in de bovenste zone bij het Afrikaanse dorp; jong poesje geboren eind juli 2025.",
+      "en": "Angolan/Congo lion (P. l. bleyenberghi). Group in the upper part near the African village; young female cub born late July 2025."
+     },
+     "aantal": {
+      "nl": "3 (kater, poes Kivu en jonge poes)",
+      "en": "3 (male, female Kivu and young female)"
+     },
+     "bron": "Eigen site soortpagina (gezien 22-10-2026); eigen site nieuws 02-10-2025; jaarverslag 2025"
+    },
+    {
+     "soort": "Canadese lynx",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "In de Beringie-zone.",
+      "en": "In the Beringia area."
+     },
+     "aantal": {
+      "nl": "onbekend (1,1 eind 2023 volgens Zootierliste)",
+      "en": "unknown (1.1 at end 2023 per Zootierliste)"
+     },
+     "bron": "Eigen site soortpagina en Beringie-pagina (gezien 22-10-2026); Zootierliste-bezoek 09/2026"
+    },
+    {
+     "soort": "Manoel (Pallas’ kat)",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "In de Beringie-zone (‘lesní cesta za manulem’).",
+      "en": "In the Beringia area."
+     },
+     "aantal": {
+      "nl": "2",
+      "en": "2"
+     },
+     "bron": "Eigen site soortpagina (gezien 22-10-2026); jaarverslag 2025 (2 dieren op 31-12-2025)"
+    },
+    {
+     "soort": "Margay",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "In het tropenpaviljoen (Tropické království/Exotárium); verhuisd naar het naastgelegen verblijf in 2025. In 2025 een jong grootgebracht.",
+      "en": "In the tropical house; moved to the neighbouring enclosure in 2025. One young reared in 2025."
+     },
+     "aantal": {
+      "nl": "3 (op 31-12-2025)",
+      "en": "3 (at 31-12-2025)"
+     },
+     "bron": "Eigen site soortpagina (gezien 22-10-2026); jaarverslag 2025"
+    },
+    {
+     "soort": "Luipaard",
+     "ondersoort": "Sri Lanka (P. p. kotiya)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Eén poes eind 2024; in augustus 2025 nog gezien door een bezoeker.",
+      "en": "One female at end of 2024; still seen by a visitor in August 2025."
+     },
+     "aantal": {
+      "nl": "1 (poes)",
+      "en": "1 (female)"
+     },
+     "bron": "Jaarverslag 2024; Zootierliste-bezoek 08/2025",
+     "twijfel": {
+      "nl": "Staat niet meer in de EEP-telling van 31-12-2025 in het jaarverslag 2025 en niet op de soortenlijst van de website; vertrek of overlijden niet gemeld.",
+      "en": "No longer in the EEP count of 31-12-2025 in the 2025 annual report and not on the website species list; no departure or death announced."
+     }
+    },
+    {
+     "soort": "Vissende kat",
+     "ondersoort": "—",
+     "status": "w",
+     "toelichting": {
+      "nl": "Paar (1,1) eind 2024, in 2023 gekomen uit Zoopark Na Hrádečku; in augustus 2025 nog gezien door een bezoeker.",
+      "en": "Pair (1.1) at end of 2024, arrived in 2023 from Zoopark Na Hrádečku; still seen by a visitor in August 2025."
+     },
+     "aantal": {
+      "nl": "onbekend (2 eind 2024)",
+      "en": "unknown (2 at end 2024)"
+     },
+     "bron": "Jaarverslag 2024; Zootierliste-bezoek 08/2025",
+     "twijfel": {
+      "nl": "Ontbreekt in de EEP- en ISB-tellingen van 31-12-2025 (jaarverslag 2025) en op de soortenlijst van de website.",
+      "en": "Missing from the EEP and ISB counts of 31-12-2025 (annual report 2025) and from the website species list."
+     }
+    }
+   ],
+   "geboortes": [
+    {
+     "soort": "Leeuw",
+     "geboren": "2025-07",
+     "n": {
+      "nl": "1 welp (poes)",
+      "en": "1 cub (female)"
+     },
+     "x": {
+      "nl": "Moeder Kivu (eerste worp na 8 jaar); geboren eind juli 2025 in het verblijf, met de ouders te zien. Naam mogelijk Binti (Blesk, ongedateerd).",
+      "en": "Mother Kivu (first litter in 8 years); born late July 2025 in the enclosure, on view with her parents. Name possibly Binti (Blesk, undated)."
+     },
+     "bron": "Eigen site nieuws 02-10-2025; jaarverslag 2025"
+    }
+   ],
+   "kleur": ""
+  },
+  {
+   "naam": "Zoo Hodonín",
+   "plaats": "Hodonín",
+   "kraj": "Jihomoravský",
+   "lon": 17.106,
+   "lat": 48.864,
+   "type": "Dierentuin",
+   "lidmaatschap": [
+    "UCSZOO",
+    "EAZA"
+   ],
+   "url": "https://www.zoo-hodonin.cz/",
+   "uren": {
+    "nl": "Dagelijks; oktober 9:00–17:00, november–februari 9:00–16:00, april–september 9:00–19:00; laatste toegang een half uur voor sluiting (eigen site, gezien 22-10-2026)",
+    "en": "Daily; October 9:00–17:00, November–February 9:00–16:00, April–September 9:00–19:00; last entry half an hour before closing (own site, seen 22-10-2026)"
+   },
+   "about": {
+    "nl": "Stadsdierentuin met een verwarmd roofdierenpaviljoen. De zoo wil op termijn overstappen op Sumatraanse tijgers; tot die tijd verblijft een Amoertijger uit Zoo Hluboká er tijdelijk. Let op: het domein zoohodonin.cz verwijst door naar een vreemde site; de juiste site is zoo-hodonin.cz.",
+    "en": "City zoo with a heated carnivore house. The zoo plans to switch to Sumatran tigers; until then an Amur tiger from Hluboká Zoo is staying temporarily. Note: the domain zoohodonin.cz redirects to an unrelated site; the correct site is zoo-hodonin.cz."
+   },
+   "earlier": {
+    "nl": "Het Amoertijgerpaar Raja (poes, ingeslapen maart 2026, 19 jaar) en Igor (kater, ingeslapen mei 2026, 16 jaar) kreeg hier 6 jongen (eigen site 05-03-2026 en 26-05-2026). De zwarte jaguarkater ging in oktober 2025 voor twee jaar in bruikleen naar Loro Parque, Tenerife (eigen site 15-10-2025). Eén van de drie jonge Berberleeuwen uit 2024 vertrok in maart 2026 naar Zoo Haifa (eigen site 26-03-2026).",
+    "en": "The Amur tiger pair Raja (female, euthanised March 2026, aged 19) and Igor (male, euthanised May 2026, aged 16) raised 6 cubs here (own site 05-03-2026 and 26-05-2026). The black male jaguar went on a two-year loan to Loro Parque, Tenerife, in October 2025 (own site 15-10-2025). One of the three young Barbary lions from 2024 left for Haifa Zoo in March 2026 (own site 26-03-2026)."
+   },
+   "katten": [
+    {
+     "soort": "Leeuw",
+     "ondersoort": "Noordelijk (P. l. leo)",
+     "status": "g",
+     "toelichting": {
+      "nl": "Berberleeuwen. Kweekpaar sinds 2022/2023; twee jonge katers uit september 2024 en twee welpen uit juni 2026 (sinds juli 2026 te zien in het roofdierenpaviljoen, achter glas en in een klein buitenverblijf).",
+      "en": "Barbary lions. Breeding pair since 2022/2023; two young males from September 2024 and two cubs from June 2026 (on view since July 2026 in the carnivore house, behind glass and in a small outdoor yard)."
+     },
+     "aantal": {
+      "nl": "6 (kater, poes van 6 jaar, 2 jonge katers, 2 welpen)",
+      "en": "6 (male, 6-year-old female, 2 young males, 2 cubs)"
+     },
+     "bron": "Eigen site soortpagina en nieuws 24-07-2026 en 26-03-2026 (gezien 22-10-2026)"
+    },
+    {
+     "soort": "Tijger",
+     "ondersoort": "Amoer",
+     "status": "g",
+     "toelichting": {
+      "nl": "Kater Oliver (14 jaar) uit Zoo Hluboká, sinds 4 juni 2026 tijdelijk hier; duur van het verblijf niet vastgelegd.",
+      "en": "Male Oliver (14 years old) from Hluboká Zoo, staying temporarily since 4 June 2026; length of stay not fixed."
+     },
+     "aantal": {
+      "nl": "1 (kater Oliver)",
+      "en": "1 (male Oliver)"
+     },
+     "bron": "Eigen site nieuws 05-06-2026; eigen soortpagina (bijgewerkt 21-09-2026, gezien 22-10-2026)"
+    },
+    {
+     "soort": "Jaguar",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Alleen de oudere poes is gebleven (circa 15 jaar); de kater is tijdelijk naar Tenerife. Modernisering van het verblijf gepland.",
+      "en": "Only the older female remains (about 15 years old); the male is temporarily in Tenerife. Enclosure modernisation planned."
+     },
+     "aantal": {
+      "nl": "1 (poes)",
+      "en": "1 (female)"
+     },
+     "bron": "Eigen site nieuws 15-10-2025 en soortpagina (gezien 22-10-2026)"
+    },
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "onbekend, incl. Karpatisch (L. l. carpathicus)",
+     "status": "g",
+     "toelichting": {
+      "nl": "Twee katers, alleen voor de expositie; één is volgens Zootierliste een Karpatische lynx.",
+      "en": "Two males, kept for display only; one is a Carpathian lynx according to Zootierliste."
+     },
+     "aantal": {
+      "nl": "2 (katers)",
+      "en": "2 (males)"
+     },
+     "bron": "Eigen site soortpagina (ongedateerd, gezien 22-10-2026); Zootierliste-bezoek 05/2025"
+    }
+   ],
+   "geboortes": [
+    {
+     "soort": "Leeuw",
+     "geboren": "2026-06-10",
+     "n": {
+      "nl": "2 welpen (kater en poes)",
+      "en": "2 cubs (male and female)"
+     },
+     "x": {
+      "nl": "Tweede worp van de zesjarige poes; sinds juli 2026 te zien in het roofdierenpaviljoen.",
+      "en": "Second litter of the six-year-old female; on view in the carnivore house since July 2026."
+     },
+     "bron": "Eigen site nieuws 24-07-2026"
+    }
+   ],
+   "kleur": ""
+  },
+  {
+   "naam": "Zoo Zlín",
+   "plaats": "Zlín (Lešná)",
+   "kraj": "Zlínský",
+   "lon": 17.716,
+   "lat": 49.273,
+   "type": "Dierentuin",
+   "lidmaatschap": [
+    "EAZA",
+    "WAZA",
+    "UCSZOO"
+   ],
+   "url": "https://www.zoozlin.eu/",
+   "uren": {
+    "nl": "Dagelijks; oktober 8:30–17:00 (kassa tot 16:30), november–december 8:30–16:00 (kassa tot 15:30); paviljoens vanaf 9:00 (eigen site, gezien 22-10-2026)",
+    "en": "Daily; October 8:30–17:00 (tickets until 16:30), November–December 8:30–16:00 (tickets until 15:30); houses open from 9:00 (own site, seen 22-10-2026)"
+   },
+   "about": {
+    "nl": "Dierentuin bij kasteel Lešná, ook bekend als Zoo Lešná. Sinds september 2025 heeft de zoo in de Afrika-zone Karibuni het eerste opvang- en kweekcentrum voor leeuwen in Tsjechië, ook voor leeuwen die de staat bij particulieren in beslag neemt.",
+    "en": "Zoo at Lešná castle, also known as Zoo Lešná. Since September 2025 its Africa area Karibuni has the first rescue and breeding centre for lions in Czechia, also for lions confiscated by the state from private keepers."
+   },
+   "earlier": {
+    "nl": "Amoertijger Ozzy (geboren mei 2024) vertrok in februari 2026 naar Zoo Lissabon; kater Jurik is overleden (eigen site 24-02-2026, 09-04-2026). Jonge kater jaguar Dany overleed in december 2022 (Zootierliste).",
+    "en": "Amur tiger Ozzy (born May 2024) left for Lisbon Zoo in February 2026; male Jurik has died (own site 24-02-2026, 09-04-2026). Young male jaguar Dany died in December 2022 (Zootierliste)."
+   },
+   "katten": [
+    {
+     "soort": "Leeuw",
+     "ondersoort": "Zuidelijk (P. l. melanochaita)",
+     "status": "g",
+     "toelichting": {
+      "nl": "Congoleeuwen (P. l. bleyenberghi): kater Abamboo, poes Kwale en hun twee dochters (oktober 2024) in het leeuwencentrum Karibuni. Hun zoon Takko woont in het oude leeuwenverblijf samen met de in beslag genomen poes Elsa (10 jaar, sinds mei 2026). Twee andere in beslag genomen poezen (sinds 18-03-2026, uit Rokycany) wisselen in Karibuni af met de familie.",
+      "en": "Congo lions (P. l. bleyenberghi): male Abamboo, female Kwale and their two daughters (October 2024) in the Karibuni lion centre. Their son Takko lives in the old lion enclosure with the confiscated female Elsa (10 years old, since May 2026). Two other confiscated females (since 18-03-2026, from Rokycany) alternate with the family in Karibuni."
+     },
+     "aantal": {
+      "nl": "7 (Abamboo, Kwale, Kalisha Zaheera, Siaraa Sali, Takka Zukato, Elsa en 2 in beslag genomen poezen)",
+      "en": "7 (Abamboo, Kwale, Kalisha Zaheera, Siaraa Sali, Takka Zukato, Elsa and 2 confiscated females)"
+     },
+     "bron": "Eigen site nieuws 19-03-2026, 29-05-2026, 03-07-2026, 07-08-2026 (gezien 22-10-2026); jaarverslag 2025"
+    },
+    {
+     "soort": "Tijger",
+     "ondersoort": "Amoer",
+     "status": "g",
+     "toelichting": {
+      "nl": "Poes Samba (7 jaar) en kater Ambasador (geboren mei 2024 in Zoo Münster, sinds begin maart 2026). Koppeling gepland voor mei 2026.",
+      "en": "Female Samba (7 years old) and male Ambasador (born May 2024 at Münster Zoo, here since early March 2026). Pairing planned for May 2026."
+     },
+     "aantal": {
+      "nl": "2 (poes Samba en kater Ambasador)",
+      "en": "2 (female Samba and male Ambasador)"
+     },
+     "bron": "Eigen site nieuws 09-04-2026 (gezien 22-10-2026); iROZHLAS 13-04-2026"
+    },
+    {
+     "soort": "Jaguar",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Kweekpaar Yuna (poes) en Akabo (zwarte kater, sinds november 2023) met dochter Mayara (juni 2025, zwart) in Jaguar Trek.",
+      "en": "Breeding pair Yuna (female) and Akabo (black male, since November 2023) with daughter Mayara (June 2025, black) in Jaguar Trek."
+     },
+     "aantal": {
+      "nl": "3 (Yuna, Akabo en Mayara)",
+      "en": "3 (Yuna, Akabo and Mayara)"
+     },
+     "bron": "Eigen site nieuws 15-07-2025 en 06-10-2025; jaarverslag 2025; Zootierliste-bezoek 08/2026"
+    }
+   ],
+   "geboortes": [
+    {
+     "soort": "Jaguar",
+     "geboren": "2025-06-11",
+     "n": {
+      "nl": "1 welp (poes)",
+      "en": "1 cub (female)"
+     },
+     "x": {
+      "nl": "Mayara, eerste jong van Yuna, vader Akabo; zwart zoals haar vader. Gedoopt op 04-10-2025; samen met de ouders in Jaguar Trek.",
+      "en": "Mayara, first cub of Yuna, father Akabo; black like her father. Named on 04-10-2025; with her parents in Jaguar Trek."
+     },
+     "bron": "Eigen site nieuws 20-06-2025, 15-07-2025, 06-10-2025; jaarverslag 2025"
+    }
+   ],
+   "kleur": "zwarte jaguar"
+  },
+  {
+   "naam": "Zoo Jihlava",
+   "plaats": "Jihlava",
+   "kraj": "Vysočina",
+   "lon": 15.596,
+   "lat": 49.397,
+   "type": "Dierentuin",
+   "lidmaatschap": [
+    "EAZA",
+    "WAZA",
+    "UCSZOO"
+   ],
+   "url": "https://zoojihlava.cz/",
+   "uren": {
+    "nl": "Elke dag open (365 dagen per jaar volgens de eigen site); actuele tijden niet te controleren, site onbereikbaar op 22-10-2026",
+    "en": "Open every day (365 days a year according to its own site); current hours could not be checked, site unreachable on 22-10-2026"
+   },
+   "about": {
+    "nl": "Stadsdierentuin in het dal van de Jihlávka, met veel kleine katten. Sinds juli 2026 hebben karakals en zandkatten een nieuw buitenverblijf bij de giraffen; de luipaardverblijven worden tot juni 2027 vernieuwd. De eigen site was tijdens dit onderzoek onbereikbaar, dus veel kleine katten konden alleen via Zootierliste worden gecontroleerd.",
+    "en": "Town zoo in the Jihlávka valley, with many small cats. Since July 2026 caracals and sand cats have a new outdoor enclosure near the giraffes; the leopard enclosures are being renovated until June 2027. The zoo's own site was unreachable during this research, so many small cats could only be checked via Zootierliste."
+   },
+   "earlier": {
+    "nl": "Perzische luipaarden (gehouden sinds 1982; 1,1 eind 2023, in augustus 2025 niet meer aangegeven volgens Zootierliste). De vorige lynxpoes ontsnapte eind 2022 (Novinky 20-07-2026).",
+    "en": "Persian leopards (kept since 1982; 1.1 at end 2023, no longer signed in August 2025 per Zootierliste). The previous female lynx escaped at the end of 2022 (Novinky 20-07-2026)."
+   },
+   "katten": [
+    {
+     "soort": "Tijger",
+     "ondersoort": "Sumatraans",
+     "status": "g",
+     "toelichting": {
+      "nl": "De zoo houdt Sumatraanse tijgers; een nieuw bosverblijf bij de giraffen en hyena’s is in studie. Poes Cinta kreeg hier in 2018 twee jongen.",
+      "en": "The zoo keeps Sumatran tigers; a new forest enclosure near the giraffes and hyenas is being studied. Female Cinta had two cubs here in 2018."
+     },
+     "aantal": {
+      "nl": "onbekend (1 poes eind 2023 volgens Zootierliste)",
+      "en": "unknown (1 female at end 2023 per Zootierliste)"
+     },
+     "bron": "Jihlavská Drbna 24-02-2025; Zootierliste-bezoek 08/2025"
+    },
+    {
+     "soort": "Sneeuwluipaard",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Twee verblijven (Himálaj); de dieren wisselen tijdens de renovatie tot juni 2027. In mei 2024 werd een tweeling geboren.",
+      "en": "Two enclosures (Himálaj); the animals alternate during the renovation until June 2027. Twins were born in May 2024."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Jihlavský deník 10-10-2025 en 04-07-2026; Zootierliste-bezoek 08/2025"
+    },
+    {
+     "soort": "Luipaard",
+     "ondersoort": "Sri Lanka (P. p. kotiya)",
+     "status": "g",
+     "toelichting": {
+      "nl": "Tijdens de renovatie van het buitenverblijf (tot juni 2027) in het binnenverblijf.",
+      "en": "Kept in the indoor enclosure during the renovation of the outdoor enclosure (until June 2027)."
+     },
+     "aantal": {
+      "nl": "onbekend (1,2 eind 2023 volgens Zootierliste)",
+      "en": "unknown (1.2 at end 2023 per Zootierliste)"
+     },
+     "bron": "Jihlavský deník 10-10-2025; Zootierliste-bezoek 08/2025"
+    },
+    {
+     "soort": "Caracal",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Paar met jongen in het nieuwe buitenverblijf bij het Afrikapaviljoen en de giraffen (geopend juli 2026).",
+      "en": "Pair with kittens in the new outdoor enclosure near the African house and the giraffes (opened July 2026)."
+     },
+     "aantal": {
+      "nl": "2 volwassen + jongen (aantal onbekend)",
+      "en": "2 adults + kittens (number unknown)"
+     },
+     "bron": "Jihlavský deník 04-07-2026; Novinky 20-07-2026; Zootierliste-bezoek 09/2026"
+    },
+    {
+     "soort": "Zandkat",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Paar, deelt het nieuwe buitenverblijf met de karakals; schuw.",
+      "en": "Pair, shares the new outdoor enclosure with the caracals; shy."
+     },
+     "aantal": {
+      "nl": "2 (paar)",
+      "en": "2 (pair)"
+     },
+     "bron": "Jihlavský deník 04-07-2026; Novinky 20-07-2026; Zootierliste-bezoek 09/2026"
+    },
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "Karpatisch (L. l. carpathicus)",
+     "status": "g",
+     "toelichting": {
+      "nl": "Nieuw jong paar uit Duitsland (poes uit Zoo Karlsruhe) en Frankrijk in een vernieuwd verblijf; kweek hervat na enkele jaren pauze.",
+      "en": "New young pair from Germany (female from Karlsruhe Zoo) and France in a renovated enclosure; breeding resumed after a few years' pause."
+     },
+     "aantal": {
+      "nl": "2 (paar)",
+      "en": "2 (pair)"
+     },
+     "bron": "Novinky 20-07-2026; Zootierliste (Zoo Karlsruhe FB 18-06-2026)"
+    },
+    {
+     "soort": "Manoel (Pallas’ kat)",
+     "ondersoort": "—",
+     "status": "w",
+     "toelichting": {
+      "nl": "Langjarige kweek; 3,3 in februari 2025 volgens Zootierliste.",
+      "en": "Long-term breeding; 3.3 in February 2025 per Zootierliste."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste-bezoek 08/2025",
+     "twijfel": {
+      "nl": "Eigen site (zoojihlava.cz) was op 22-10-2026 onbereikbaar (503); alleen bevestigd door een Zootierliste-bezoek, geen eigen of nieuwsbron 2025–2026 gevonden.",
+      "en": "Own site (zoojihlava.cz) was unreachable on 22-10-2026 (503); only confirmed by a Zootierliste visit, no own or news source 2025–2026 found."
+     }
+    },
+    {
+     "soort": "Margay",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "Gehouden sinds 2018.",
+      "en": "Kept since 2018."
+     },
+     "aantal": {
+      "nl": "onbekend (1,2 eind 2023)",
+      "en": "unknown (1.2 at end 2023)"
+     },
+     "bron": "Zootierliste-bezoek 08/2025",
+     "twijfel": {
+      "nl": "Eigen site (zoojihlava.cz) was op 22-10-2026 onbereikbaar (503); alleen bevestigd door een Zootierliste-bezoek, geen eigen of nieuwsbron 2025–2026 gevonden.",
+      "en": "Own site (zoojihlava.cz) was unreachable on 22-10-2026 (503); only confirmed by a Zootierliste visit, no own or news source 2025–2026 found."
+     }
+    },
+    {
+     "soort": "Geoffroy’s kat",
+     "ondersoort": "—",
+     "status": "w",
+     "toelichting": {
+      "nl": "Jihlava houdt het Europese stamboek (EEP); in 2025 kwam een paar uit Zoo Praha en volgens Zootierliste was er in 2025 kweek.",
+      "en": "Jihlava keeps the European studbook (EEP); in 2025 a pair arrived from Prague Zoo and according to Zootierliste there was breeding in 2025."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (bezoek 08/2025; Zoo Praha-mededelingen 02/2025 en 11/2025)",
+     "twijfel": {
+      "nl": "Eigen site (zoojihlava.cz) was op 22-10-2026 onbereikbaar (503); alleen bevestigd door een Zootierliste-bezoek, geen eigen of nieuwsbron 2025–2026 gevonden.",
+      "en": "Own site (zoojihlava.cz) was unreachable on 22-10-2026 (503); only confirmed by a Zootierliste visit, no own or news source 2025–2026 found."
+     }
+    },
+    {
+     "soort": "Moeraskat",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "In 2023 werd een zwart (melanistisch) jong geboren; beide ouders zijn ook zwart.",
+      "en": "A black (melanistic) kitten was born in 2023; both parents are black too."
+     },
+     "aantal": {
+      "nl": "onbekend (1,2 eind 2023)",
+      "en": "unknown (1.2 at end 2023)"
+     },
+     "bron": "Jihlavský deník 22-09-2023; Zootierliste-bezoek 08/2025",
+     "twijfel": {
+      "nl": "Eigen site (zoojihlava.cz) was op 22-10-2026 onbereikbaar (503); alleen bevestigd door een Zootierliste-bezoek, geen eigen of nieuwsbron 2025–2026 gevonden.",
+      "en": "Own site (zoojihlava.cz) was unreachable on 22-10-2026 (503); only confirmed by a Zootierliste visit, no own or news source 2025–2026 found."
+     }
+    },
+    {
+     "soort": "Afrikaanse wilde kat",
+     "ondersoort": "Gordons wilde kat (F. l. gordoni)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Gordons kat, al sinds 1992 gekweekt; een nieuw verblijf was gepland (jaarverslag 2023).",
+      "en": "Gordon's wildcat, bred since 1992; a new enclosure was planned (annual report 2023)."
+     },
+     "aantal": {
+      "nl": "onbekend (3,5 eind 2023)",
+      "en": "unknown (3.5 at end 2023)"
+     },
+     "bron": "Zootierliste-bezoek 09/2026; jaarverslag 2023",
+     "twijfel": {
+      "nl": "Eigen site (zoojihlava.cz) was op 22-10-2026 onbereikbaar (503); alleen bevestigd door een Zootierliste-bezoek, geen eigen of nieuwsbron 2025–2026 gevonden.",
+      "en": "Own site (zoojihlava.cz) was unreachable on 22-10-2026 (503); only confirmed by a Zootierliste visit, no own or news source 2025–2026 found."
+     }
+    },
+    {
+     "soort": "Soendanese luipaardkat",
+     "ondersoort": "Palawan (P. j. heaneyi)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Paar sinds 2018 (poes uit Tierpark Berlin).",
+      "en": "Pair since 2018 (female from Tierpark Berlin)."
+     },
+     "aantal": {
+      "nl": "onbekend (1,1 eind 2023)",
+      "en": "unknown (1.1 at end 2023)"
+     },
+     "bron": "Zootierliste-bezoek 08/2025",
+     "twijfel": {
+      "nl": "Eigen site (zoojihlava.cz) was op 22-10-2026 onbereikbaar (503); alleen bevestigd door een Zootierliste-bezoek, geen eigen of nieuwsbron 2025–2026 gevonden.",
+      "en": "Own site (zoojihlava.cz) was unreachable on 22-10-2026 (503); only confirmed by a Zootierliste visit, no own or news source 2025–2026 found."
+     }
+    },
+    {
+     "soort": "Bengaalse kat",
+     "ondersoort": "Amoer (P. b. euptilura)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Amurkatten, volgens Zootierliste achter de schermen; in augustus 2025 aangegeven maar niet gezien.",
+      "en": "Amur leopard cats, behind the scenes according to Zootierliste; signed but not seen in August 2025."
+     },
+     "aantal": {
+      "nl": "onbekend (2,1 eind 2023)",
+      "en": "unknown (2.1 at end 2023)"
+     },
+     "bron": "Zootierliste-bezoek 08/2025",
+     "twijfel": {
+      "nl": "Mogelijk niet zichtbaar voor publiek; eigen site onbereikbaar op 22-10-2026.",
+      "en": "Possibly not on public view; own site unreachable on 22-10-2026."
+     }
+    },
+    {
+     "soort": "Serval",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "Eind 2023 nog één kater; in augustus 2025 aangegeven maar niet gezien.",
+      "en": "One male left at end 2023; signed but not seen in August 2025."
+     },
+     "aantal": {
+      "nl": "onbekend (1 eind 2023)",
+      "en": "unknown (1 at end 2023)"
+     },
+     "bron": "Zootierliste-bezoek 08/2025",
+     "twijfel": {
+      "nl": "Eigen site (zoojihlava.cz) was op 22-10-2026 onbereikbaar (503); alleen bevestigd door een Zootierliste-bezoek, geen eigen of nieuwsbron 2025–2026 gevonden.",
+      "en": "Own site (zoojihlava.cz) was unreachable on 22-10-2026 (503); only confirmed by a Zootierliste visit, no own or news source 2025–2026 found."
+     }
+    },
+    {
+     "soort": "Europese wilde kat",
+     "ondersoort": "—",
+     "status": "w",
+     "toelichting": {
+      "nl": "Eind 2023 nog één kater; in april 2024 gezien, in augustus 2025 aangegeven maar niet gezien.",
+      "en": "One male left at end 2023; seen in April 2024, signed but not seen in August 2025."
+     },
+     "aantal": {
+      "nl": "onbekend (1 eind 2023)",
+      "en": "unknown (1 at end 2023)"
+     },
+     "bron": "Zootierliste-bezoeken 04/2024 en 08/2025",
+     "twijfel": {
+      "nl": "Eigen site (zoojihlava.cz) was op 22-10-2026 onbereikbaar (503); alleen bevestigd door een Zootierliste-bezoek, geen eigen of nieuwsbron 2025–2026 gevonden.",
+      "en": "Own site (zoojihlava.cz) was unreachable on 22-10-2026 (503); only confirmed by a Zootierliste visit, no own or news source 2025–2026 found."
+     }
+    }
+   ],
+   "geboortes": [
+    {
+     "soort": "Caracal",
+     "geboren": "2026",
+     "n": {
+      "nl": "jongen (aantal onbekend)",
+      "en": "kittens (number unknown)"
+     },
+     "x": {
+      "nl": "Jongen van het karakalpaar; zouden in het nieuwe buitenverblijf komen zodra ze wat groter zijn (juli 2026). Precieze geboortedatum niet gevonden.",
+      "en": "Kittens of the caracal pair; to move into the new outdoor enclosure once a bit older (July 2026). Exact birth date not found."
+     },
+     "bron": "Jihlavský deník 04-07-2026; Novinky 20-07-2026"
+    }
+   ],
+   "kleur": "zwarte moeraskat (melanisme)"
+  },
+  {
+   "naam": "Stanice Pavlov (záchranná stanice)",
+   "plaats": "Pavlov (bij Ledeč nad Sázavou)",
+   "kraj": "Vysočina",
+   "lon": 15.329,
+   "lat": 49.697,
+   "type": "Opvangcentrum",
+   "lidmaatschap": [],
+   "url": "https://stanicepavlov.cz/",
+   "uren": {
+    "nl": "Bezoekersseizoen voorjaar–september (juli–augustus dagelijks 9:00–16:00, september alleen weekend 10:00–15:00); oktober–maart alleen rondleiding op afspraak, minimaal 6 volwassenen (eigen site, gezien 22-10-2026)",
+    "en": "Visitor season spring–September (July–August daily 9:00–16:00, September weekends only 10:00–15:00); October–March guided tour by appointment only, at least 6 adults (own site, seen 22-10-2026)"
+   },
+   "about": {
+    "nl": "Opvangcentrum voor wilde dieren van Stanice Pavlov o.p.s.; op de bezoekersroute vooral roofvogels, uilen, otter, Europese nerts en vos. Dieren wisselen.",
+    "en": "Wildlife rescue centre run by Stanice Pavlov o.p.s.; the visitor route mainly shows birds of prey, owls, otter, European mink and fox. Animals change."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Europese wilde kat",
+     "ondersoort": "—",
+     "status": "w",
+     "toelichting": {
+      "nl": "Volgens Zootierliste kwam in april 2025 een paar (1,1) uit Alte Fasanerie Hanau (Duitsland). Opvang/kweek; dieren wisselen.",
+      "en": "According to Zootierliste a pair (1.1) arrived from Alte Fasanerie Hanau (Germany) in April 2025. Rescue/breeding; animals change."
+     },
+     "aantal": {
+      "nl": "onbekend (1,1 in 2025)",
+      "en": "unknown (1.1 in 2025)"
+     },
+     "bron": "Zootierliste (bron: nieuwsbrief 2025)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; de eigen site noemt geen wilde katten op de bezoekersroute. Mogelijk niet zichtbaar voor publiek.",
+      "en": "Zootierliste only; the station's own site mentions no wildcats on the visitor route. Possibly not on public view."
+     }
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Faunapark Sedlec",
+   "plaats": "Sedlec (bij Mikulov)",
+   "kraj": "Jihomoravský",
+   "lon": 16.693,
+   "lat": 48.779,
+   "type": "Dierenpark",
+   "lidmaatschap": [],
+   "url": "",
+   "uren": {
+    "nl": "Volgens oudere bronnen april–oktober dagelijks 9:00–17:00 (Slevomat, ongedateerd); niet bevestigd",
+    "en": "According to older sources April–October daily 9:00–17:00 (Slevomat, undated); not confirmed"
+   },
+   "about": {
+    "nl": "Kleine erkende dierentuin (licentie 2018) in het dorp Sedlec bij Mikulov, met vooral kleine exotische en huisdieren. Eigen website niet bereikbaar.",
+    "en": "Small licensed zoo (licence 2018) in the village of Sedlec near Mikulov, mainly small exotic and domestic animals. Own website not reachable."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Rode lynx",
+     "ondersoort": "—",
+     "status": "w",
+     "toelichting": {
+      "nl": "Paar (1,1) volgens Zootierliste; gezien in mei 2025.",
+      "en": "Pair (1.1) according to Zootierliste; seen in May 2025."
+     },
+     "aantal": {
+      "nl": "onbekend (1,1 eind 2022)",
+      "en": "unknown (1.1 at end 2022)"
+     },
+     "bron": "Zootierliste-bezoek 05/2025",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; geen eigen site of nieuwsbron gevonden.",
+      "en": "Zootierliste only; no own site or news source found."
+     }
+    },
+    {
+     "soort": "Serval",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "Eén kater volgens Zootierliste; gezien in mei 2025.",
+      "en": "One male according to Zootierliste; seen in May 2025."
+     },
+     "aantal": {
+      "nl": "onbekend (1 eind 2022)",
+      "en": "unknown (1 at end 2022)"
+     },
+     "bron": "Zootierliste-bezoek 05/2025",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; geen eigen site of nieuwsbron gevonden.",
+      "en": "Zootierliste only; no own site or news source found."
+     }
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Rodinný zookoutek Nová Říše",
+   "plaats": "Vápovice",
+   "kraj": "Vysočina",
+   "lon": 15.57,
+   "lat": 49.163,
+   "type": "Anders",
+   "lidmaatschap": [],
+   "url": "",
+   "uren": {
+    "nl": "Onbekend",
+    "en": "Unknown"
+   },
+   "about": {
+    "nl": "Kleine particuliere familiezoo bij Nová Říše, alleen bekend via Facebookposts (volgens Zootierliste). Toegankelijkheid voor publiek niet bevestigd.",
+    "en": "Small private family zoo near Nová Říše, known only through Facebook posts (according to Zootierliste). Public access not confirmed."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Caracal",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "Volgens Zootierliste gezien in juli 2025, met kweek.",
+      "en": "According to Zootierliste seen in July 2025, with breeding."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (gezien 7/2025)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste/Facebook; geen website of nieuws; openingstijden onbekend.",
+      "en": "Zootierliste/Facebook only; no website or news; opening hours unknown."
+     }
+    },
+    {
+     "soort": "Serval",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "Facebookpagina 31-07-2025 (via Zootierliste).",
+      "en": "Facebook page 31-07-2025 (via Zootierliste)."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (FB 31-07-2025)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste/Facebook.",
+      "en": "Zootierliste/Facebook only."
+     }
+    },
+    {
+     "soort": "Vissende kat",
+     "ondersoort": "—",
+     "status": "w",
+     "toelichting": {
+      "nl": "Facebookpost met foto 31-07-2025 (via Zootierliste).",
+      "en": "Facebook post with photo 31-07-2025 (via Zootierliste)."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (FB 31-07-2025)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste/Facebook.",
+      "en": "Zootierliste/Facebook only."
+     }
+    },
+    {
+     "soort": "Moeraskat",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "Facebookpost met foto 02-07-2026 (via Zootierliste).",
+      "en": "Facebook post with photo 02-07-2026 (via Zootierliste)."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (FB 02-07-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste/Facebook.",
+      "en": "Zootierliste/Facebook only."
+     }
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  }
+ ],
+ "zonder_katten": [
+  {
+   "naam": "Zoopark Vyškov",
+   "plaats": "Vyškov",
+   "reden": {
+    "nl": "Geen wilde katachtigen op de dierenlijst (eigen site 22-10-2026); alleen een huiskat van het ras Bengaal ('kočka domácí bengálská'). Park met vooral huisdierrassen, plus DinoPark.",
+    "en": "No wild cats on the animal list (own site 22-10-2026); only a domestic Bengal cat ('kočka domácí bengálská'). Park mainly with domestic breeds, plus a DinoPark."
+   }
+  },
+  {
+   "naam": "Záchranná stanice Jinačovice (Zoo Brno)",
+   "plaats": "Jinačovice",
+   "reden": {
+    "nl": "Opvangcentrum voor wilde dieren, geen expositie van katachtigen; open dagen alleen bij evenementen (eigen site 22-10-2026).",
+    "en": "Wildlife rescue centre, no cats on display; open only on event days (own site 22-10-2026)."
+   }
+  },
+  {
+   "naam": "Papouščí zoologická zahrada Bošovice",
+   "plaats": "Bošovice",
+   "reden": {
+    "nl": "Papegaaienpark; geen katachtigen (Wikipedia-lijst, 22-10-2026).",
+    "en": "Parrot zoo; no cats (Wikipedia list, 22-10-2026)."
+   }
+  },
+  {
+   "naam": "Podzámecká zahrada Kroměříž (minizoo)",
+   "plaats": "Kroměříž",
+   "reden": {
+    "nl": "Minizoo met apen en huisdieren; geen katachtigen genoemd (Vlk na cestách, bijgewerkt 06-03-2024).",
+    "en": "Mini zoo with monkeys and domestic animals; no cats mentioned (Vlk na cestách, updated 06-03-2024)."
+   }
+  },
+  {
+   "naam": "Fauna park Valašské Meziříčí",
+   "plaats": "Valašské Meziříčí",
+   "reden": {
+    "nl": "Kleine minizoo in een familietuin (vogels, lama’s, geiten, struisvogels); geen katachtigen genoemd (Vlk na cestách, 06-03-2024).",
+    "en": "Small mini zoo in a family garden (birds, llamas, goats, ostriches); no cats mentioned (Vlk na cestách, 06-03-2024)."
+   }
+  },
+  {
+   "naam": "Záchranná stanice Buchlovice",
+   "plaats": "Buchlovice",
+   "reden": {
+    "nl": "Opvangcentrum bij kasteel Buchlovice met hoefdieren en wilde zwijnen; geen katachtigen genoemd (Vlk na cestách, 06-03-2024).",
+    "en": "Rescue centre at Buchlovice castle with deer and wild boar; no cats mentioned (Vlk na cestách, 06-03-2024)."
+   }
+  },
+  {
+   "naam": "Zookoutek DDM Třebíč",
+   "plaats": "Třebíč",
+   "reden": {
+    "nl": "Schoolzookoutek met kleine exotische dieren; geen katachtigen bekend (Wikipedia-lijst, 22-10-2026).",
+    "en": "School zoo corner with small exotic animals; no cats known (Wikipedia list, 22-10-2026)."
+   }
+  },
+  {
+   "naam": "Zookoutek Zahrady Vysočiny",
+   "plaats": "Žďár nad Sázavou",
+   "reden": {
+    "nl": "Dierenhoek bij een tuincentrum (volières, weides); geen katachtigen bekend (Wikipedia-lijst, 22-10-2026).",
+    "en": "Animal corner at a garden centre (aviaries, paddocks); no cats known (Wikipedia list, 22-10-2026)."
+   }
+  }
+ ],
+ "open_punten": [
+  "Zoo Jihlava: eigen site zoojihlava.cz gaf op 22-10-2026 steeds 503 (ook het jaarverslag 2025-pdf). Manoel, margay, Geoffroy’s kat, moeraskat, Gordons kat, Palawan-luipaardkat, Amurkat, serval en Europese wilde kat daarom alleen via Zootierliste (bezoeken 08/2025–09/2026) → status w. Graag opnieuw controleren op zoojihlava.cz/zvirata en in het jaarverslag 2025.",
+  "Zoo Jihlava: aanwezigheid van een Sumatraanse tijgerin (Cinta, geb. ca. 2012) in 2026 niet met een 2026-bron bevestigd; laatste bronnen Drbna 24-02-2025 en Zootierliste-bezoek 08/2025.",
+  "Zoo Jihlava: Perzische luipaard naar 'earlier' gezet (laatste telling eind 2023; 08/2025 niet meer aangegeven volgens Zootierliste). Niet officieel bevestigd.",
+  "Zoo Brno: Sri Lanka-luipaardpoes en paar vissende katten staan nog in het jaarverslag 2024 en zijn in 08/2025 gezien, maar ontbreken in de EEP/ISB-tellingen op 31-12-2025 → w. Vertrek of dood niet gevonden.",
+  "Zoo Brno: leeuwenwelp — eigen nieuwsbericht 02-10-2025 zegt 'eind juli vorig jaar', maar het jaarverslag 2025 noemt de geboorte als succes van 2025 en de telling eind 2024 bevat nog geen welp; 2025 aangehouden. Naam 'Binti' alleen uit een ongedateerde Blesk-kop. Margay-jong 2025: datum onbekend, niet als recente geboorte opgenomen.",
+  "Zoo Zlín: drie Congoleeuwwelpen geboren in oktober 2024 (exacte datum onbekend; eigen site 06-12-2024, doop 26-04-2025 als 'halfjarig'). Mogelijk net jonger dan 2 jaar; niet als recente geboorte opgenomen. Ondersoort van de drie in beslag genomen poezen onbekend.",
+  "Zoo Hodonín: lidmaatschap EAZA niet op de eigen site gecontroleerd (wel EAZA-campagnes); de drie Berberleeuwen uit 2024 zijn geboren in september 2024, dus geen recente geboorte meer.",
+  "Stanice Pavlov (Vysočina): Europese wilde katten alleen via Zootierliste (1,1 uit Hanau, 04/2025); niet zeker of ze voor publiek zichtbaar zijn.",
+  "Faunapark Sedlec en Rodinný zookoutek Nová Říše (Vápovice): katten alleen via Zootierliste/Facebook; geen werkende eigen website gevonden. Toegankelijkheid Vápovice onbekend.",
+  "Kletečná (Pelhřimovsko, Vysočina): particuliere houder met ca. 16 tijgers, 2 leeuwen en 2 poema’s, deels in beslag genomen (iROZHLAS 20-08-2025); niet open voor publiek, daarom niet als locatie opgenomen.",
+  "Kandidaten 'Zoopark Rajnochovice', 'Zooland Zálesí' en 'Zoo Kristýna' niet gevonden in mijn regio’s; 'Zoo Větrovy' is Zoo Tábor (Jihočeský kraj). Lednice-Valtice: geen dierentuin met katten gevonden.",
+  "Buiten mijn regio’s gevonden via Zootierliste (voor andere agenten): Othello Park in Žáravice (Pardubický; tijger 1,1, ocelot 1,1, lynx, karakal, FB 08/2026) en Exotika na ranči in Bítovany (Pardubický; rode lynx foto 06/2025)."
+ ]
+}

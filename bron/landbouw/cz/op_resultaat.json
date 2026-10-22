@@ -1,0 +1,552 @@
+{
+ "locaties": [
+  {
+   "naam": "Doksyland – Zoopark Doksy",
+   "plaats": "Doksy",
+   "kraj": "Liberecký",
+   "lat": 50.569,
+   "lon": 14.653,
+   "type": "Dierenpark",
+   "lidmaatschap": [],
+   "url": "https://www.doksyland.cz/",
+   "uren": {
+    "nl": "Seizoensgebonden; seizoen 2026 liep tot 26/27-09-2026, nu gesloten tot het voorjaar (eigen site, gezien 22-10-2026)",
+    "en": "Seasonal; the 2026 season ran until 26/27 Sep 2026, now closed until spring (own site, seen 22-10-2026)"
+   },
+   "about": {
+    "nl": "Particulier zoopark van Robert Berousek (circusfamilie Berousek) aan de Máchova in Doksy, met ritjes op kamelen en pony's. Alleen contante betaling.",
+    "en": "Private zoo park run by Robert Berousek (Berousek circus family) on Máchova street in Doksy, with camel and pony rides. Cash only."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Tijger",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Witte tijger en gewone tijger op de dierenlijst.",
+      "en": "White tiger and normal-coloured tiger on the animal list."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site dierenlijst (gezien 22-10-2026, seizoen 2026); firmy.cz-vermelding (ongedateerd)"
+    },
+    {
+     "soort": "Leeuw",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Witte leeuw en gewone leeuw op de dierenlijst.",
+      "en": "White lion and normal-coloured lion on the animal list."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site dierenlijst (gezien 22-10-2026, seizoen 2026)"
+    },
+    {
+     "soort": "Luipaard",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "'Levhart' en 'panter' (zwart luipaard) op de dierenlijst.",
+      "en": "'Levhart' and 'panter' (black leopard) on the animal list."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site dierenlijst (gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen op de ongedateerde dierenlijst; geen foto of nieuws van 2025–2026.",
+      "en": "Only on the undated animal list; no 2025–2026 photo or news."
+     }
+    },
+    {
+     "soort": "Serval",
+     "ondersoort": "—",
+     "status": "w",
+     "toelichting": {
+      "nl": "Op de dierenlijst.",
+      "en": "On the animal list."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site dierenlijst (gezien 22-10-2026); firmy.cz (ongedateerd)",
+     "twijfel": {
+      "nl": "Alleen op de ongedateerde dierenlijst.",
+      "en": "Only on the undated animal list."
+     }
+    }
+   ],
+   "geboortes": [],
+   "kleur": "witte tijger / witte leeuw / zwarte panter"
+  },
+  {
+   "naam": "Exotika na ranči Bítovany",
+   "plaats": "Bítovany (Zaječice)",
+   "kraj": "Pardubický",
+   "lat": 49.9,
+   "lon": 15.863,
+   "type": "Dierenpark",
+   "lidmaatschap": [],
+   "url": "https://exotikanaranci.cz/",
+   "uren": {
+    "nl": "Ma gesloten, di–vr 13–17, za–zo 10–17 uur (eigen site, gezien 22-10-2026)",
+    "en": "Mon closed, Tue–Fri 13–17, Sat–Sun 10–17 (own site, seen 22-10-2026)"
+   },
+   "about": {
+    "nl": "Particulier familiepark (sinds 2017) bij Chrudim met boerderij- en exotische dieren. Op de site staat ook een caracal als beeld (standbeeld) in de rubriek 'Naše sochy'.",
+    "en": "Private family park (since 2017) near Chrudim with farm and exotic animals. The site also lists a caracal as a statue in its 'Our statues' section."
+   },
+   "earlier": {
+    "nl": "ČRo Pardubice (26-09-2021) noemde ook caracals, servals en een sneeuwluipaard (Jituše); niet recent bevestigd.",
+    "en": "ČRo Pardubice (26 Sep 2021) also mentioned caracals, servals and a snow leopard (Jituše); not recently confirmed."
+   },
+   "katten": [
+    {
+     "soort": "Poema",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "In het menu 'Šelmy'.",
+      "en": "In the 'Carnivores' menu."
+     },
+     "aantal": {
+      "nl": "onbekend (in 2021: Adam en Eva)",
+      "en": "unknown (in 2021: Adam and Eva)"
+     },
+     "bron": "Eigen site menu Šelmy (gezien 22-10-2026); ČRo Pardubice 26-09-2021"
+    },
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "In het menu 'Šelmy'.",
+      "en": "In the 'Carnivores' menu."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site menu Šelmy (gezien 22-10-2026)"
+    },
+    {
+     "soort": "Serval",
+     "ondersoort": "—",
+     "status": "w",
+     "toelichting": {
+      "nl": "Soortpagina bestaat (2020), staat niet meer in het menu.",
+      "en": "Species page exists (2020) but is no longer in the menu."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site soortpagina (laatst gewijzigd 24-05-2020, gezien 22-10-2026); Kudy z nudy (ongedateerd)",
+     "twijfel": {
+      "nl": "Geen bevestiging na 2024.",
+      "en": "No confirmation after 2024."
+     }
+    },
+    {
+     "soort": "Caracal",
+     "ondersoort": "—",
+     "status": "w",
+     "toelichting": {
+      "nl": "Soortpagina uit 2020; in het huidige menu alleen als standbeeld.",
+      "en": "Species page from 2020; in the current menu only as a statue."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site (pagina 24-05-2020 en 'sochy' 14-04-2022, gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Mogelijk alleen nog een beeld, geen levend dier.",
+      "en": "Possibly only a statue now, not a live animal."
+     }
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Ringelland",
+   "plaats": "Habrkovice (Záboří nad Labem)",
+   "kraj": "Středočeský",
+   "lat": 49.998,
+   "lon": 15.376,
+   "type": "Dierenpark",
+   "lidmaatschap": [],
+   "url": "https://www.ringelland.cz/",
+   "uren": {
+    "nl": "Dagelijks 10–16 uur; shows met dieren za–zo 14 uur in juli–augustus (min. 20 bezoekers) (eigen site, gezien 22-10-2026)",
+    "en": "Daily 10–16; animal shows Sat–Sun 14:00 in July–August (min. 20 visitors) (own site, seen 22-10-2026)"
+   },
+   "about": {
+    "nl": "Particulier dierenpark en circusmuseum van de circusfamilie Ringel (dresseurs van grote katten), sinds 2008 in Habrkovice bij Kutná Hora. Er zijn shows met de katten.",
+    "en": "Private animal park and circus museum of the Ringel circus family (big-cat trainers), in Habrkovice near Kutná Hora since 2008. Shows with the cats are held."
+   },
+   "earlier": {
+    "nl": "Tijgerwelpen gedoopt in 2013 en 2015; een leeuw (Aslan) en een poema genoemd in oudere bronnen (Turistika.cz 2013, Deník ongedateerd).",
+    "en": "Tiger cubs christened in 2013 and 2015; a lion (Aslan) and a puma mentioned in older sources (Turistika.cz 2013, Deník undated)."
+   },
+   "katten": [
+    {
+     "soort": "Tijger",
+     "ondersoort": "Amoer",
+     "status": "w",
+     "toelichting": {
+      "nl": "Amoertijger Altaj (kater, geb. 2019) en witte (Bengaalse) tijgers sinds voorjaar 2020; ook shows.",
+      "en": "Amur tiger Altaj (male, b. 2019) and white (Bengal) tigers since spring 2020; also shows."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site (ongedateerd, gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Site actief, maar jongste datum op de site is 2023; geen nieuws 2025–2026.",
+      "en": "Site is live, but its latest date is 2023; no 2025–2026 news."
+     }
+    },
+    {
+     "soort": "Luipaard",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "Titan (gevlekt) en Aura (zwart), handopgefokt, verhuisden in april 2016 naar hun verblijf.",
+      "en": "Titan (spotted) and Aura (black), hand-reared, moved to their enclosure in April 2016."
+     },
+     "aantal": {
+      "nl": "2 (Titan en Aura), stand onbekend",
+      "en": "2 (Titan and Aura), current status unknown"
+     },
+     "bron": "Eigen site luipaardpagina (ongedateerd, gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Geen bevestiging na 2024.",
+      "en": "No confirmation after 2024."
+     }
+    }
+   ],
+   "geboortes": [],
+   "kleur": "witte tijger / zwarte panter"
+  },
+  {
+   "naam": "Zoopark Zvole",
+   "plaats": "Zvole (okres Praha-západ)",
+   "kraj": "Středočeský",
+   "lat": 49.935,
+   "lon": 14.417,
+   "type": "Dierenpark",
+   "lidmaatschap": [],
+   "url": "",
+   "uren": {
+    "nl": "onbekend; werkt volgens de overheid zonder vergunning",
+    "en": "unknown; operates without a permit according to authorities"
+   },
+   "about": {
+    "nl": "Particuliere 'contact-zoo' van Tomáš Machač zonder dierentuinlicentie. Op 9-08-2025 ontsnapte een leeuw, verwondde een verzorger en werd door de politie doodgeschoten. Veterinairen stelden voor de overige grote katten weg te halen; gemeente Černošice beslist.",
+    "en": "Private 'contact zoo' of Tomáš Machač without a zoo licence. On 9 Aug 2025 a lion escaped, injured a keeper and was shot dead by police. Vets proposed removing the remaining big cats; the Černošice municipal office decides."
+   },
+   "earlier": {
+    "nl": "Leeuw (doodgeschoten 9-08-2025); een cheeta nog genoemd op 12-08-2025; een luipaard zou naar een particulier in Midden-Bohemen zijn gegaan (ČT24 2025). Poema's ontsnapten in 2018.",
+    "en": "Lion (shot 9 Aug 2025); a cheetah still mentioned on 12 Aug 2025; a leopard reportedly moved to a private keeper in Central Bohemia (ČT24 2025). Pumas escaped in 2018."
+   },
+   "katten": [
+    {
+     "soort": "Poema",
+     "ondersoort": "—",
+     "status": "w",
+     "toelichting": {
+      "nl": "Eigenaar zegt nog twee poema's te houden; wegname voorgesteld.",
+      "en": "Owner says he still keeps two pumas; removal proposed."
+     },
+     "aantal": {
+      "nl": "2",
+      "en": "2"
+     },
+     "bron": "Seznam Zprávy/ČTK 21-01-2026; ČT24 12-08-2025",
+     "twijfel": {
+      "nl": "Onbekend of het park open is en of de poema's al weg zijn.",
+      "en": "Unknown whether the park is open and whether the pumas have been removed."
+     }
+    },
+    {
+     "soort": "Cheetah",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "Genoemd na de leeuwincident; in januari 2026 niet meer genoemd.",
+      "en": "Mentioned after the lion incident; not mentioned in January 2026."
+     },
+     "aantal": {
+      "nl": "1",
+      "en": "1"
+     },
+     "bron": "ČT24 12-08-2025",
+     "twijfel": {
+      "nl": "Waarschijnlijk al weg; geen bevestiging.",
+      "en": "Probably gone; not confirmed."
+     }
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Particuliere houderij Kletečná (Váňa)",
+   "plaats": "Kletečná (Humpolec)",
+   "kraj": "Vysočina",
+   "lat": 49.506,
+   "lon": 15.297,
+   "type": "Anders",
+   "lidmaatschap": [],
+   "url": "",
+   "uren": {
+    "nl": "Niet open voor publiek",
+    "en": "Not open to the public"
+   },
+   "about": {
+    "nl": "Illegale particuliere houderij van Ladislav Váňa en Jana Svatošová. In augustus 2025 nam de stad 108 dieren in beslag, maar de grote katten bleven omdat er geen plek in opvangcentra was. Het aantal tijgers verdubbelde na 2024, ondanks het fokverbod sinds 2022. Rechtszaak in Pelhřimov liep nog in 2026.",
+    "en": "Illegal private holding of Ladislav Váňa and Jana Svatošová. In August 2025 the town seized 108 animals, but the big cats stayed because rescue centres had no space. Tiger numbers doubled after 2024 despite the 2022 breeding ban. Court case in Pelhřimov still running in 2026."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Tijger",
+     "ondersoort": "Amoer",
+     "status": "n",
+     "toelichting": {
+      "nl": "Particulier, niet te bezoeken; overdracht aan de staat beloofd maar nog niet gebeurd.",
+      "en": "Private, not open to visitors; handover to the state promised but not yet done."
+     },
+     "aantal": {
+      "nl": "16",
+      "en": "16"
+     },
+     "bron": "iROZHLAS 24-12-2025; Pelhřimovský deník (zitting 6-05-2026)"
+    },
+    {
+     "soort": "Leeuw",
+     "ondersoort": "onbekend",
+     "status": "n",
+     "toelichting": {
+      "nl": "Particulier, niet te bezoeken.",
+      "en": "Private, not open to visitors."
+     },
+     "aantal": {
+      "nl": "2",
+      "en": "2"
+     },
+     "bron": "iROZHLAS 24-12-2025; Pelhřimovský deník 2026"
+    },
+    {
+     "soort": "Poema",
+     "ondersoort": "—",
+     "status": "n",
+     "toelichting": {
+      "nl": "Particulier, niet te bezoeken.",
+      "en": "Private, not open to visitors."
+     },
+     "aantal": {
+      "nl": "2",
+      "en": "2"
+     },
+     "bron": "iROZHLAS 24-12-2025; Pelhřimovský deník 2026"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Animal Park Rabina (voorheen Biopark Štít)",
+   "plaats": "Klamoš",
+   "kraj": "Královéhradecký",
+   "lat": 50.126,
+   "lon": 15.501,
+   "type": "Dierenpark",
+   "lidmaatschap": [],
+   "url": "",
+   "uren": {
+    "nl": "Volgens ZooChat sinds najaar 2024 gesloten voor publiek (geen licentie)",
+    "en": "According to ZooChat closed to the public since autumn 2024 (no licence)"
+   },
+   "about": {
+    "nl": "Voormalig Biopark Štít van Antonín Hnízdil, waar in juli 2018 twee tijgers en een leeuw ontsnapten. In de winter 2023/24 verkocht aan Ladislav Rabina en heropend als Animal Park Rabina; daarna door de overheid gesloten.",
+    "en": "Former Biopark Štít of Antonín Hnízdil, where two tigers and a lion escaped in July 2018. Sold to Ladislav Rabina in winter 2023/24 and reopened as Animal Park Rabina; later closed by authorities."
+   },
+   "earlier": {
+    "nl": "Leeuw (ontsnapping 2018).",
+    "en": "Lion (2018 escape)."
+   },
+   "katten": [
+    {
+     "soort": "Tijger",
+     "ondersoort": "onbekend",
+     "status": "n",
+     "toelichting": {
+      "nl": "Meer dan tien grote katten, o.a. witte tijgers, nog ter plaatse.",
+      "en": "More than ten big cats, incl. white tigers, still on site."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "ZooChat-forum 05-2024 en later (ongedateerd)",
+     "twijfel": {
+      "nl": "Alleen forumbronnen.",
+      "en": "Forum sources only."
+     }
+    },
+    {
+     "soort": "Luipaard",
+     "ondersoort": "onbekend",
+     "status": "n",
+     "toelichting": {
+      "nl": "Zwarte luipaarden genoemd.",
+      "en": "Black leopards mentioned."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "ZooChat-forum 05-2024",
+     "twijfel": {
+      "nl": "Alleen forumbronnen.",
+      "en": "Forum sources only."
+     }
+    }
+   ],
+   "geboortes": [],
+   "kleur": "witte tijger / zwarte panter"
+  },
+  {
+   "naam": "Cirkus Šimek",
+   "plaats": "rondreizend (CZ/SK)",
+   "kraj": "—",
+   "lat": null,
+   "lon": null,
+   "type": "Anders",
+   "lidmaatschap": [],
+   "url": "http://www.cirkussimek.eu/",
+   "uren": {
+    "nl": "Seizoen 2026 met tournee; o.a. Olomouc 11–26-04-2026",
+    "en": "2026 season on tour; e.g. Olomouc 11–26 Apr 2026"
+   },
+   "about": {
+    "nl": "Reizend circus van Emil en Anna Šimek met een tijgernummer. Winterverblijf niet gevonden; bezoek daar niet bekend.",
+    "en": "Travelling circus of Emil and Anna Šimek with a tiger act. Winter quarters not found; visits there unknown."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Tijger",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Tijgers in de show ('ukázka tygrů'); alleen tijdens voorstellingen.",
+      "en": "Tigers in the show; only during performances."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site programma 2025 (gezien 22-10-2026); olomouc.cz agenda april 2026"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Cirkus Humberto (familie Navrátil)",
+   "plaats": "rondreizend; winterverblijf Stará Lysá",
+   "kraj": "Středočeský",
+   "lat": 50.229,
+   "lon": 14.794,
+   "type": "Anders",
+   "lidmaatschap": [],
+   "url": "",
+   "uren": {
+    "nl": "Tournee maart–november; winterverblijf niet open voor publiek bekend",
+    "en": "Tours March–November; winter quarters not known to be open"
+   },
+   "about": {
+    "nl": "Circus van Hynek Navrátil jr. met een leeuwengroep; de laatste legaal geboren circusleeuwen kwamen vóór het fokverbod van 2022. Toert ook in Duitsland (maart 2025).",
+    "en": "Circus of Hynek Navrátil Jr. with a lion group; the last legally born circus lions came before the 2022 breeding ban. Also tours Germany (March 2025)."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Leeuw",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "Leeuwengroep van 14 dieren; alleen tijdens voorstellingen.",
+      "en": "Group of 14 lions; only during performances."
+     },
+     "aantal": {
+      "nl": "14",
+      "en": "14"
+     },
+     "bron": "Czech Press Photo 2025 (fotoserie, ongedateerde foto's); Echo24 interview (ongedateerd, winterverblijf Stará Lysá)",
+     "twijfel": {
+      "nl": "Geen tourneeprogramma 2026 met leeuwen gevonden; winterverblijf uit ongedateerd interview.",
+      "en": "No 2026 programme with lions found; winter quarters from an undated interview."
+     }
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  }
+ ],
+ "zonder_katten": [
+  {
+   "naam": "Zoopark Zelčín",
+   "plaats": "Hořín",
+   "reden": {
+    "nl": "Contactdierenpark met vooral huisdieren, kangoeroes en emoes; geen katachtigen gevonden (Deník/Kudy z nudy, ongedateerd)",
+    "en": "Petting zoo with mainly domestic animals, kangaroos and emus; no felids found (Deník/Kudy z nudy, undated)"
+   }
+  },
+  {
+   "naam": "Zoopark Bašť (Ludvík Berousek)",
+   "plaats": "Bašť",
+   "reden": {
+    "nl": "Particuliere houderij met tijgers/leeuwen (tijgerzaak 2018); geen publieksopenstelling gevonden — zie open punten",
+    "en": "Private holding with tigers/lions (2018 tiger case); no public opening found — see open points"
+   }
+  }
+ ],
+ "open_punten": [
+  "Wetgeving: sinds 1-01-2022 is fokken van grote katachtigen (en mensapen) buiten erkende dierentuinen verboden (novela 501/2020 Sb. van wet 246/1992 Sb.; uitvoeringsbesluit 213/2022 Sb.). Houden blijft legaal; Tsjechië en Slowakije hebben volgens TRAFFIC tot 93% van de particuliere tijgers in Europa. MŽP schat ~200 grote katten bij particulieren.",
+  "Circussen: drieverbod geldt sinds 2004 alleen voor pasgeboren primaten, vinpotigen, walvisachtigen (excl. dolfijnen), neushoorns, nijlpaarden en giraffen; grote katten NIET verboden. Volgens Seznam Zprávy geldt een drieverbod voor wilde dieren geboren na 1-01-2022 — niet in de wettekst bevestigd. Een volledig circusverbod is in 2026 niet aangenomen; ANO-wetsvoorstel (debat PSP 30-06-2026) gaat over boetes en ruimere plaatsing van in beslag genomen grote katten.",
+  "Tijgerzaak 2018: Ludvík Berousek (Zoopark Bašť, Středočeský) kreeg 2 jaar voorwaardelijk + boete 338.000 Kč (Česká Lípa, juni 2019; in Liberec verzacht). Twee witte tijgerinnen uit Bašť in beslag genomen (aug. 2019), via Zoo Liberec naar Malkia Park (SK). Of Bašť nog katten heeft en open is: niet gevonden. Doksyland (Doksy) is van familielid Robert Berousek.",
+  "Opvang: Zoo Tábor heeft sinds 15-06-2024 een CITES-opvangcentrum (2 verblijven, max. 4 dieren; voor Amoertijgers, luipaarden, lynxen, wolven); geen kat daar bevestigd. Zoo Liberec is CITES-opvang: Amoertijger Tajmir (2025, nu FELIDA/FOUR PAWS NL) en leeuwin Elsa (in beslag genomen bij vechtsporter Karlos Vémola juli 2026, eind juli 2026 naar FELIDA, NL). Tijgerin Charlota (2022) ging via Zoo Hodonín naar Duitsland (2023). MŽP subsidieert opvang (115 mln Kč, 3 projecten goedgekeurd).",
+  "Kletečná: 16 tijgers, 2 leeuwen, 2 poema's in december 2025 nog ter plaatse; geen bericht over verhuizing tot oktober 2026 gevonden. Uitkomst rechtszaak (zitting 17-06-2026) onbekend.",
+  "Niet als vermelding opgenomen (geen bron na 2024): 'Kočkovité šelmy Chvojenec' (Pardubický; leeuwen incl. witte, tijgers, poema's, caracals, lynxen, servals, luipaarden volgens ČRo 2021; tijgeraanval op 66-jarige vrouw ~dec. 2020); 'Rekreační park a safari Karlštejn' (Středočeský; witte leeuw Leon, tijgers, gevlekte en zwarte luipaarden volgens Kudy z nudy, ongedateerd) — beide nagaan.",
+  "Cirkus Bob Navarro King (Bohumil Navrátil) adverteert 'drezura šelem' in tournee sept–nov 2026 (Opava, Šternberk, Rýmařov, Šumperk, Svitavy) zonder soortnaam; Cirkus Jo-Joo (Joo) had tijgers (ongedateerd SK-artikel), toert 2026 vooral in Slowakije. Cirkus Sultán (Karel Berousek) verliet in 2020 winterverblijf Přívory/Všetaty.",
+  "Volgens de SVS (ČT24 11-08-2025) zijn er nog vijf vergelijkbare particuliere 'contact-zoo's' in Tsjechië; niet geïdentificeerd.",
+  "Winterverblijf Cirkus Šimek niet gevonden (sponsor uit Holešov genoemd op site). Coördinaten Cirkus Humberto = Stará Lysá (dorp), niet exact.",
+  "iROZHLAS en enkele sites blokkeerden direct ophalen; deels op zoek-snippets gebaseerd."
+ ]
+}

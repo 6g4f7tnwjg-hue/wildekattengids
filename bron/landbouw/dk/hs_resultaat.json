@@ -1,0 +1,495 @@
+{
+ "locaties": [
+  {
+   "naam": "Zoologisk Have København (ZOO København)",
+   "plaats": "Frederiksberg (Frederiksberg Kommune)",
+   "lon": 12.523,
+   "lat": 55.672,
+   "type": "Dierentuin",
+   "lidmaatschap": [
+    "EAZA",
+    "WAZA",
+    "DAZA"
+   ],
+   "url": "https://www.zoo.dk/",
+   "uren": {
+    "nl": "Dagelijks 9–17 eind oktober 2026 (eigen site, gezien 22-10-2026)",
+    "en": "Daily 9am–5pm in late October 2026 (own website, seen 22-10-2026)"
+   },
+   "about": {
+    "nl": "Grote stadsdierentuin uit 1859 met drie grote katachtigen: Amoertijgers, Amoerpanters (met sinds maart 2026 een leopardenpad van 160 meter) en leeuwen. Het savannegebied wordt van eind oktober tot half december 2026 gerenoveerd; de leeuwen worden daarbij niet genoemd.",
+    "en": "Large city zoo from 1859 with three big cat species: Amur tigers, Amur leopards (with a 160-metre leopard trail since March 2026) and lions. The savanna area is being renovated from late October to mid-December 2026; the lions are not mentioned in that notice."
+   },
+   "earlier": {
+    "nl": "Poema’s: meerdere worpen tussen 1959 en 1978 (DR-correctie bij nieuws over Krokodille Zoo, 2023). Karakal: in het jaarverslag 2024 genoemd (tandoperatie, amyloïdose), niet op de huidige dierenlijst of plattegrond en niet op Zootierliste.",
+    "en": "Pumas: several litters between 1959 and 1978 (DR correction on Krokodille Zoo news, 2023). Caracal: mentioned in the 2024 annual report (dental surgery, amyloidosis), not on the current animal list or map and not on Zootierliste."
+   },
+   "katten": [
+    {
+     "soort": "Tijger",
+     "ondersoort": "Amoer",
+     "status": "g",
+     "toelichting": {
+      "nl": "Paar uit 2013: het vrouwtje is in ZOO geboren (18-04-2013), het mannetje kwam in maart 2022 uit Frankrijk. Twee jonge vrouwtjes uit 2025 zijn sinds 09-10-2025 buiten te zien. Een jong uit 2024 zou volgens het fokprogramma naar een andere dierentuin gaan.",
+      "en": "Pair born in 2013: the female was born at the zoo (18-04-2013), the male came from France in March 2022. Two young females from 2025 have been visible outdoors since 09-10-2025. A cub from 2024 was due to move to another zoo under the breeding programme."
+     },
+     "aantal": {
+      "nl": "minstens 4 (paar + 2 jonge vrouwtjes uit 2025); jong uit 2024 onbekend",
+      "en": "at least 4 (pair + 2 young females from 2025); 2024 cub unknown"
+     },
+     "bron": "Eigen site soortpagina amurtiger (gezien 22-10-2026); eigen nieuws 21-07-2025 en 09-10-2025; jaarverslag 2024; Zootierliste (bezoek 08/2026)"
+    },
+    {
+     "soort": "Luipaard",
+     "ondersoort": "Amoer (P. p. orientalis)",
+     "status": "g",
+     "toelichting": {
+      "nl": "Amoerpanters in het EAZA-fokprogramma. Sinds 18-03-2026 hebben ze een leopardenpad van 160 meter boven het bezoekerspad. Op 23-09-2026 is één jong geboren; dat zal pas na zo’n twee maanden te zien zijn.",
+      "en": "Amur leopards in the EAZA breeding programme. Since 18-03-2026 they have a 160-metre leopard trail above the visitor path. One cub was born on 23-09-2026; it is not expected to be visible for about two months."
+     },
+     "aantal": {
+      "nl": "onbekend (mannetje, vrouwtje en 1 jong uit 2026)",
+      "en": "unknown (male, female and 1 cub from 2026)"
+     },
+     "bron": "Eigen site soortpagina amurleopard en nieuws 24-09-2026, 18-03-2026"
+    },
+    {
+     "soort": "Leeuw",
+     "ondersoort": "Zuidelijk (P. l. melanochaita)",
+     "status": "g",
+     "toelichting": {
+      "nl": "Een groep met een volwassen mannetje en leeuwinnen. In 2024 zijn vijf welpen geboren. In maart 2026 zijn twee jonge mannetjes uit 2024 gedood omdat er geen nieuw thuis voor ze was. In 2026 kwam een mannetje (geboren 2023) uit Chorzów. Zootierliste noemt ze Angolese leeuwen; de eigen site noemt geen ondersoort.",
+      "en": "A pride with an adult male and lionesses. Five cubs were born in 2024. In March 2026 two young males from 2024 were put down because no new home could be found. In 2026 a male (born 2023) arrived from Chorzów. Zootierliste lists them as Angolan lions; the zoo’s own site gives no subspecies."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site soortpagina løve (gezien 22-10-2026); eigen nieuws 19-03-2026; jaarverslag 2024; Zootierliste (Chorzów Zoo FB 23-06-2026, bezoek 08/2026)"
+    }
+   ],
+   "geboortes": [
+    {
+     "soort": "Luipaard",
+     "geboren": "2026-09-23",
+     "n": {
+      "nl": "1 jong",
+      "en": "1 cub"
+     },
+     "x": {
+      "nl": "Geboren op woensdagavond; bij mama in de binnenstal, naar verwachting na ongeveer twee maanden te zien. Geslacht en naam nog niet bekend.",
+      "en": "Born on Wednesday evening; with its mother in the indoor stable, expected to be visible after about two months. Sex and name not yet known."
+     },
+     "bron": "Eigen site nieuws 24-09-2026 (geboortedatum afgeleid uit ‘onsdag aften’)"
+    },
+    {
+     "soort": "Tijger",
+     "geboren": "2025-07",
+     "n": {
+      "nl": "4 welpen, 2 overleefd",
+      "en": "4 cubs, 2 survived"
+     },
+     "x": {
+      "nl": "Moeder geboren in ZOO in 2013, vader uit Frankrijk. Eén welp stierf kort na de geboorte, één werd gedood vanwege een hartafwijking. De twee vrouwtjes zijn sinds 09-10-2025 buiten te zien. Geboren ca. begin juli 2025 (bericht van 21-07-2025: ‘12 dagen geleden’).",
+      "en": "Mother born at the zoo in 2013, father from France. One cub died soon after birth, one was put down because of a heart defect. The two females have been visible outdoors since 09-10-2025. Born around early July 2025 (news of 21-07-2025: ‘12 days ago’)."
+     },
+     "bron": "Eigen site nieuws 21-07-2025 en 09-10-2025"
+    }
+   ],
+   "kleur": ""
+  },
+  {
+   "naam": "Knuthenborg Safaripark",
+   "plaats": "Maribo/Bandholm (Lolland Kommune)",
+   "lon": 11.502,
+   "lat": 54.823,
+   "type": "Safaripark",
+   "lidmaatschap": [
+    "EAZA",
+    "DAZA"
+   ],
+   "url": "https://www.knuthenborg.dk/",
+   "uren": {
+    "nl": "Eind oktober 2026 vrijdag t/m zondag 10–17 (After Dark tot 21 uur); daarna weekenden in week 46–50 en 27–30 december (eigen site, gezien 22-10-2026)",
+    "en": "Late October 2026 Friday to Sunday 10am–5pm (After Dark until 9pm); then weekends in weeks 46–50 and 27–30 December (own website, seen 22-10-2026)"
+   },
+   "about": {
+    "nl": "Groot safaripark op Lolland. Tijgers en leeuwen wonen in de Tigerskoven, waar je te voet loopt (panoramaraam en loopbrug uit 2021).",
+    "en": "Large safari park on Lolland. Tigers and lions live in Tigerskoven, which you visit on foot (panoramic window and 2021 walkway)."
+   },
+   "earlier": {
+    "nl": "Tijgerin Svetlana stierf in 2023 (Zootierliste). In 2021 opende het tijgerbos met de gepensioneerde circustijger Keni en vier andere tijgers (persbericht 2021).",
+    "en": "Tigress Svetlana died in 2023 (Zootierliste). In 2021 the tiger forest opened with retired circus tiger Keni and four other tigers (press release 2021)."
+   },
+   "katten": [
+    {
+     "soort": "Tijger",
+     "ondersoort": "Amoer",
+     "status": "g",
+     "toelichting": {
+      "nl": "Twee broers (‘sibirisk tiger’ volgens het park). Volgens Zootierliste kwamen in 2021 twee mannetjes uit Beekse Bergen.",
+      "en": "Two brothers (‘Siberian tiger’ according to the park). According to Zootierliste two males came from Beekse Bergen in 2021."
+     },
+     "aantal": {
+      "nl": "2 (broers)",
+      "en": "2 (brothers)"
+     },
+     "bron": "Eigen site dyrene en soortpagina sibirisk tiger (gezien 22-10-2026); Zootierliste (bezoek 05/2024)"
+    },
+    {
+     "soort": "Leeuw",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Een fokgroep (1 mannetje, 4 leeuwinnen) bij het panoramaraam en een groep van 4 mannetjes op de loopbrugzijde. Volgens Zootierliste kwamen in 2022 drie leeuwinnen uit Oekraïne (via Poznań) en in 2024 drie mannetjes uit ZOO København. Het park noemt ze ‘afrikansk løve’.",
+      "en": "A breeding group (1 male, 4 lionesses) at the panoramic window and a group of 4 males seen from the walkway. According to Zootierliste three lionesses came from Ukraine (via Poznań) in 2022 and three males from Copenhagen Zoo in 2024. The park calls them ‘African lion’."
+     },
+     "aantal": {
+      "nl": "9 (5 mannetjes, 4 vrouwtjes) volgens de Deense site; de Engelse site noemt 8",
+      "en": "9 (5 males, 4 females) according to the Danish site; the English site says 8"
+     },
+     "bron": "Eigen site dyrene (DA en EN, gezien 22-10-2026); Zootierliste (bezoek 05/2024)"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Odsherred Zoo Rescue",
+   "plaats": "Asnæs (Odsherred Kommune)",
+   "lon": 11.491,
+   "lat": 55.827,
+   "type": "Opvangcentrum",
+   "lidmaatschap": [],
+   "url": "https://rescuezoo.dk/",
+   "uren": {
+    "nl": "Seizoen 2026 eindigde op 18-10-2026; weer open vanaf Pasen 2027, dan 10–16/17/18 uur afhankelijk van het seizoen (eigen site, gezien 22-10-2026)",
+    "en": "The 2026 season ended on 18-10-2026; reopens at Easter 2027, then 10am–4/5/6pm depending on season (own website, seen 22-10-2026)"
+   },
+   "about": {
+    "nl": "Eerste ‘rescue zoo’ van Denemarken (vroeger Odsherred Zoo Dyrepark) voor exotische dieren uit illegaal bezit, laboratoria, pelsfokkerij en inbeslagnames. Opvang; dieren wisselen. In de winter gesloten.",
+    "en": "Denmark’s first ‘rescue zoo’ (formerly Odsherred Zoo Dyrepark) for exotic animals from illegal ownership, laboratories, fur farming and seizures. Rescue centre; animals change. Closed in winter."
+   },
+   "earlier": {
+    "nl": "Serval Noah (7 jaar bij een particulier in België) kreeg volgens een verhaal op de site een thuis hier; niet duidelijk of hij nog leeft (de site waarschuwt dat sommige dieren uit verhalen al gestorven zijn).",
+    "en": "Serval Noah (7 years with a private owner in Belgium) was given a home here according to a story on the site; unclear whether he is still alive (the site warns that some animals in its stories have died)."
+   },
+   "katten": [
+    {
+     "soort": "Serval",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Isis werd op 04-07-2021 in België in beslag genomen; Nequ kwam in maart 2024 uit België. Ze hebben elk een binnenverblijf en gebruiken om beurten het buitenverblijf. Opvang; dieren wisselen.",
+      "en": "Isis was seized in Belgium on 04-07-2021; Nequ arrived from Belgium in March 2024. Each has an indoor enclosure and they take turns using the outdoor enclosure. Rescue centre; animals change."
+     },
+     "aantal": {
+      "nl": "2 (Isis en Nequ)",
+      "en": "2 (Isis and Nequ)"
+     },
+     "bron": "Eigen site dierenlijst en soortpagina (gezien 22-10-2026)"
+    },
+    {
+     "soort": "Caracal",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Meerdere karakals uit illegaal bezit en smokkel. Kaja werd in het voorjaar van 2023 als jong van 14 weken anoniem op de parkeerplaats achtergelaten; Kato werd in Frankrijk door de politie in beslag genomen. Opvang; dieren wisselen.",
+      "en": "Several caracals from illegal ownership and smuggling. Kaja was abandoned anonymously in the car park as a 14-week-old kitten in spring 2023; Kato was seized by police in France. Rescue centre; animals change."
+     },
+     "aantal": {
+      "nl": "minstens 2 (Kaja en Kato); site spreekt van ‘flere’",
+      "en": "at least 2 (Kaja and Kato); site says ‘several’"
+     },
+     "bron": "Eigen site dierenlijst en soortpagina’s (gezien 22-10-2026)"
+    },
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Zusjes Luna en Nala, in 2011 op zeven maanden oud weggehaald uit een kleine Deense dierentuin waar ze in een stal van 2×2 meter leefden.",
+      "en": "Sisters Luna and Nala, removed in 2011 at seven months old from a small Danish zoo where they lived in a 2×2-metre stable."
+     },
+     "aantal": {
+      "nl": "2 (Luna en Nala)",
+      "en": "2 (Luna and Nala)"
+     },
+     "bron": "Eigen site soortpagina’s los/loss en verhaal ‘Lossesøstrene’ (gezien 22-10-2026); Zootierliste"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Krokodille Zoo",
+   "plaats": "Eskilstrup (Guldborgsund Kommune, Falster)",
+   "lon": 11.909,
+   "lat": 54.863,
+   "type": "Dierentuin",
+   "lidmaatschap": [],
+   "url": "https://krokodillezoo.dk/",
+   "uren": {
+    "nl": "Het hele jaar vrijdag t/m zondag 10–16; in vakanties dagelijks (herfstvakantie 9–25 oktober 2026, 10–16) (eigen site, gezien 22-10-2026)",
+    "en": "All year Friday to Sunday 10am–4pm; daily in school holidays (autumn holiday 9–25 October 2026, 10am–4pm) (own website, seen 22-10-2026)"
+   },
+   "about": {
+    "nl": "Tropische dierentuin met een van de grootste krokodillencollecties ter wereld, plus nevelpanters en de enige poema’s van Denemarken. Dagelijks om 15.30 uur is er een ‘kattefodring’.",
+    "en": "Tropical zoo with one of the world’s largest crocodile collections, plus clouded leopards and Denmark’s only pumas. There is a daily ‘cat feeding’ at 3.30pm."
+   },
+   "katten": [
+    {
+     "soort": "Nevelpanter",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Twee nevelpanters, Sky en Neo (‘træleopard’, Neofelis nebulosa). Volgens Zootierliste kwam in 2023 een paar uit Howletts; eerste kweek in 2019.",
+      "en": "Two clouded leopards, Sky and Neo (‘træleopard’, Neofelis nebulosa). According to Zootierliste a pair came from Howletts in 2023; first breeding in 2019."
+     },
+     "aantal": {
+      "nl": "2 (Sky en Neo)",
+      "en": "2 (Sky and Neo)"
+     },
+     "bron": "Eigen site soortpagina træleopard (gezien 22-10-2026); Zootierliste (bezoeken 05/2026 en 08/2026)"
+    },
+    {
+     "soort": "Poema",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Een ‘pumafamilie’, de enige poema’s in Denemarken. Eerste welp geboren 28-05-2023, tweeling in de zomer van 2024 en volgens Ritzau/TV 2 Øst (01-04-2026) een tweeling in 2025, waarvan één vrouwtje zonder ogen geboren is maar gezond is.",
+      "en": "A ‘puma family’, the only pumas in Denmark. First cub born 28-05-2023, twins in summer 2024 and according to Ritzau/TV 2 Øst (01-04-2026) twins in 2025, one of them a female born without eyes but healthy."
+     },
+     "aantal": {
+      "nl": "onbekend (familiegroep)",
+      "en": "unknown (family group)"
+     },
+     "bron": "Eigen site soortpagina puma (gezien 22-10-2026); Kristeligt Dagblad/Ritzau 01-04-2026; Sjællandske 08-08-2024; Zootierliste (bezoek 08/2026)"
+    }
+   ],
+   "geboortes": [],
+   "kleur": "",
+   "earlier": {
+    "nl": "",
+    "en": ""
+   }
+  },
+  {
+   "naam": "Pangea Park Falster",
+   "plaats": "Nykøbing Falster (Guldborgsund Kommune)",
+   "lon": 11.891,
+   "lat": 54.766,
+   "type": "Dierenpark",
+   "lidmaatschap": [],
+   "url": "https://pangeapark.dk/falster/",
+   "uren": {
+    "nl": "Openingstijden wisselen per seizoen, meestal 10–16 of 10–17; eigen site toont geen vaste dagen (gezien 22-10-2026)",
+    "en": "Opening hours vary by season, usually 10am–4pm or 10am–5pm; own website shows no fixed days (seen 22-10-2026)"
+   },
+   "about": {
+    "nl": "Opvolger van Guldborgsund Zoo & Botanisk Have; Pangea Park nam het park in november 2024 over en heropende het begin 2025.",
+    "en": "Successor to Guldborgsund Zoo & Botanisk Have; Pangea Park took over the park in November 2024 and reopened it in early 2025."
+   },
+   "earlier": {
+    "nl": "Guldborgsund Zoo (Nykøbing Falster Zoo) had Amoertijgers in een tijgerkooi (ZooChat ca. 2008; Wikipedia ongedateerd).",
+    "en": "Guldborgsund Zoo (Nykøbing Falster Zoo) had Amur tigers in a tiger cage (ZooChat c. 2008; Wikipedia undated)."
+   },
+   "katten": [
+    {
+     "soort": "Serval",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Op de dierenlijst (pagina van 08-01-2026, bijgewerkt 23-04-2026) en in het openingsbericht van 2025 genoemd.",
+      "en": "On the animal list (page of 08-01-2026, updated 23-04-2026) and mentioned in the 2025 opening news."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site soortpagina serval (gezien 22-10-2026); Turistmonitor 2025"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "ZOOPARK Sydsjælland (ZOOPARK Næstved)",
+   "plaats": "Næstved (Næstved Kommune)",
+   "lon": 11.723,
+   "lat": 55.219,
+   "type": "Dierenpark",
+   "lidmaatschap": [],
+   "url": "",
+   "uren": {
+    "nl": "Seizoensopening van Pasen tot de herfstvakantie (Wikipedia); geen actuele tijden gevonden, de eigen site toont oude informatie uit 2020",
+    "en": "Seasonal opening from Easter to the autumn holiday (Wikipedia); no current hours found, the own website shows old 2020 information"
+   },
+   "about": {
+    "nl": "Kleine particuliere dierentuin, opvolger van het omstreden Næstved Zoo (2007–2010). Er is veel kritiek geweest op dierenwelzijn en de eigenaar; de eigen website is niet meer bruikbaar.",
+    "en": "Small private zoo, successor to the controversial Næstved Zoo (2007–2010). There has been much criticism of animal welfare and the owner; the zoo’s own website is no longer usable."
+   },
+   "earlier": {
+    "nl": "Næstved Zoo had in 2009 witte en gewone Bengaalse tijgers; tijgerin Raja kreeg in 2012 drie welpen, twee met ‘golden tabby’-kleur.",
+    "en": "Næstved Zoo had white and normal Bengal tigers in 2009; tigress Raja had three cubs in 2012, two with ‘golden tabby’ colouring."
+   },
+   "katten": [
+    {
+     "soort": "Tijger",
+     "ondersoort": "Bengaals, incl. witte tijger",
+     "status": "w",
+     "toelichting": {
+      "nl": "VisitDenmark noemt de witte tijger Elvis; een lokale gids (08-09-2026) noemt Bengaalse tijgers.",
+      "en": "VisitDenmark mentions white tiger Elvis; a local guide (08-09-2026) mentions Bengal tigers."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "VisitDenmark/Visit Sydsjælland & Møn (ongedateerd, gezien 22-10-2026); byennaestved.dk 08-09-2026; Zootierliste (e-mail 07-03-2021)",
+     "twijfel": {
+      "nl": "Geen eigen site en geen recent nieuws. Nyhedspunkt (29-08-2026) schrijft dat er nu geen tijgers zijn; de andere bronnen zijn ongedateerd of zwak.",
+      "en": "No own website and no recent news. Nyhedspunkt (29-08-2026) writes that there are no tigers now; the other sources are undated or weak."
+     }
+    },
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "Een lokale gids (08-09-2026) noemt ‘europæisk los’; Zootierliste heeft alleen een melding uit 2021/2022.",
+      "en": "A local guide (08-09-2026) mentions ‘European lynx’; Zootierliste only has a 2021/2022 report."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "byennaestved.dk 08-09-2026; Zootierliste (e-mail 09-01-2022)",
+     "twijfel": {
+      "nl": "Geen eigen site, geen nieuws of foto’s van na 2024 gevonden.",
+      "en": "No own website, no news or photos from after 2024 found."
+     }
+    }
+   ],
+   "geboortes": [],
+   "kleur": "witte tijger (onzeker)"
+  }
+ ],
+ "zonder_katten": [
+  {
+   "naam": "Pangea Park Sjælland",
+   "plaats": "Bjæverskov (Køge Kommune)",
+   "reden": {
+    "nl": "geen katachtigen op de dierenlijst (eigen site, WordPress-API, 22-10-2026)",
+    "en": "no cats on the animal list (own website, WordPress API, 22-10-2026)"
+   }
+  },
+  {
+   "naam": "Orøstrand Dyrepark",
+   "plaats": "Orø (Holbæk Kommune)",
+   "reden": {
+    "nl": "kleine dierentuin met o.a. apen, kangoeroes, krokodillen en kamelen; geen katachtigen genoemd (VisitDenmark, gezien 22-10-2026; eigen site niet bereikbaar)",
+    "en": "small zoo with monkeys, kangaroos, crocodiles and camels among others; no cats mentioned (VisitDenmark, seen 22-10-2026; own website not reachable)"
+   }
+  },
+  {
+   "naam": "Øens Dyr",
+   "plaats": "Masnedø (Vordingborg Kommune)",
+   "reden": {
+    "nl": "kleine dierentuin met tamme dieren; geen katachtigen genoemd (Visit Sydsjælland & Møn, gezien 22-10-2026)",
+    "en": "small zoo with tame animals; no cats mentioned (Visit South Zealand & Møn, seen 22-10-2026)"
+   }
+  },
+  {
+   "naam": "BonBon-Land",
+   "plaats": "Holme-Olstrup (Næstved Kommune)",
+   "reden": {
+    "nl": "attractiepark; geen katachtigen op de site (eigen site, 22-10-2026)",
+    "en": "amusement park; no cats on the website (own website, 22-10-2026)"
+   }
+  },
+  {
+   "naam": "Sommerland Sjælland",
+   "plaats": "Nørre Asmindrup (Odsherred Kommune)",
+   "reden": {
+    "nl": "attractiepark; geen katachtigen gevonden (VisitDenmark, 22-10-2026)",
+    "en": "amusement park; no cats found (VisitDenmark, 22-10-2026)"
+   }
+  },
+  {
+   "naam": "Hillerød Mini Zoo (voorheen Monkey World)",
+   "plaats": "Hillerød (Hillerød Kommune)",
+   "reden": {
+    "nl": "kleine opvang met papegaaien en apen; door de gemeente gesloten (TV 2 Kosmopol, ongedateerd) en in mei 2026 nog dicht (Sjællandske 13-05-2026); geen katachtigen genoemd",
+    "en": "small rescue with parrots and monkeys; closed by the municipality (TV 2 Kosmopol, undated) and still closed in May 2026 (Sjællandske 13-05-2026); no cats mentioned"
+   }
+  },
+  {
+   "naam": "Brændesgårdshaven",
+   "plaats": "Svaneke (Bornholms Regionskommune)",
+   "reden": {
+    "nl": "attractiepark met dierentuin (apen, lemuren, stokstaartjes, neusberen, lama’s); geen katachtigen op de dierenlijst (eigen site, 22-10-2026)",
+    "en": "amusement park with zoo (monkeys, lemurs, meerkats, coatis, llamas); no cats on the animal list (own website, 22-10-2026)"
+   }
+  },
+  {
+   "naam": "Bornholms Rovfugleshow – Dyrenes Oase",
+   "plaats": "Rønne (Bornholms Regionskommune)",
+   "reden": {
+    "nl": "roofvogels en reptielen; geen katachtigen (VisitDenmark, 22-10-2026)",
+    "en": "birds of prey and reptiles; no cats (VisitDenmark, 22-10-2026)"
+   }
+  },
+  {
+   "naam": "Bornholms Sommerfuglepark",
+   "plaats": "Nexø (Bornholms Regionskommune)",
+   "reden": {
+    "nl": "vlindertuin met vissen en vogels; geen katachtigen",
+    "en": "butterfly house with fish and birds; no cats"
+   }
+  },
+  {
+   "naam": "NaturBornholm",
+   "plaats": "Aakirkeby (Bornholms Regionskommune)",
+   "reden": {
+    "nl": "natuurcentrum met levende krokodillen; geen katachtigen",
+    "en": "nature centre with live crocodiles; no cats"
+   }
+  },
+  {
+   "naam": "Den Blå Planet (Danmarks Akvarium)",
+   "plaats": "Kastrup (Tårnby Kommune)",
+   "reden": {
+    "nl": "aquarium; geen katachtigen",
+    "en": "aquarium; no cats"
+   }
+  },
+  {
+   "naam": "Øresundsakvariet",
+   "plaats": "Helsingør (Helsingør Kommune)",
+   "reden": {
+    "nl": "aquarium; geen katachtigen",
+    "en": "aquarium; no cats"
+   }
+  },
+  {
+   "naam": "Jægersborg Dyrehave",
+   "plaats": "Klampenborg (Lyngby-Taarbæk Kommune)",
+   "reden": {
+    "nl": "hertenpark met vrij levende herten; geen katachtigen",
+    "en": "deer park with free-roaming deer; no cats"
+   }
+  }
+ ],
+ "open_punten": [
+  "ZOOPARK Sydsjælland (Næstved): tijgers (incl. witte tijger Elvis) en lynx niet bevestigd; eigen domein zoo-park.dk is overgenomen door casinospam met 2020-gegevens; Nyhedspunkt (29-08-2026) zegt ‘geen tijgers meer’, lokale gids (08-09-2026) zegt Bengaalse tijgers en lynx. Navragen bij park (kontakt@zoo-park.dk) of via Facebook/Instagram van het park.",
+  "ZOO København: karakal genoemd in jaarverslag 2024 (dierenartswerk), maar niet op dierenlijst, plattegrond of Zootierliste; niet opgenomen. Jaarverslag 2025 niet gevonden.",
+  "ZOO København leeuwen: ondersoort Angolees (Zuidelijk) alleen via Zootierliste; eigen site noemt geen ondersoort. Aantal onbekend.",
+  "Knuthenborg: Deense site zegt 9 leeuwen (1+4 fokgroep, 4 mannetjes), Engelse site 8 (5 mannetjes, 3 leeuwinnen). Tijgers volgens het park ‘sibirisk’; geen recent nieuws over geboortes.",
+  "Krokodille Zoo poema’s: Sjællandske (08-08-2024) meldt een tweeling in de zomer van 2024; Ritzau (01-04-2026) een tweeling in 2025 (blinde welp, onderzocht sept. 2025) als ‘tweede worp’. Mogelijk dezelfde of verschillende worpen; geboortedatum 2025 onbekend, waarschijnlijk ouder dan 1 jaar.",
+  "Odsherred Zoo Rescue: onduidelijk of serval Noah (verhaal op site) nog leeft of gelijk is aan Nequ; dierenlijst noemt alleen Isis en Nequ.",
+  "Pangea Park Falster: aantal servals onbekend; openingsdagen najaar 2026 niet duidelijk op de site.",
+  "Grøn Verden (klein tropisch park met apen en vogels, ZooChat ca. 2008): plaats en huidige status niet gevonden.",
+  "Geen DAZA-ledenlijst als tekst (alleen logo’s); lidmaatschappen van kleinere parken niet bevestigd. Officiële lijst van goedgekeurde zoologische anlæg (Fødevarestyrelsen, 33 in 2022) niet gevonden."
+ ]
+}

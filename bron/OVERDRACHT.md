@@ -1,3 +1,29 @@
+# Overdracht (22 oktober 2026, eind van de dag) — voor een nieuwe chat
+
+Lees eerst `bron/LEESMIJ.md` (opbouw, bouw, telregel en de lessen per land), **`bron/landbouw/LEESMIJ.md`** (zo maak je een nieuw land, stap voor stap), `bron/OPEN.md` en bovenaan `VOORTGANG.md`. Gebruik de skill “wilde-katachtigen-gids”.
+
+## Waar we staan
+- **14 landen** in de gids: NL, BE, LU, DE, FR, AT, CH, UK, IE, IT, ES, PT, **DK** (22-10-2026, NL/EN/DA) en **CZ** (22-10-2026, NL/EN/CS). Hoofdpagina: 14 landen · 565 locaties · 29 soorten.
+- Alles staat op `main` en is live (https://yeetkitty.github.io/wildekattengids/). De werktakken `denemarken-wip` en `tsjechie-wip` zijn volledig in `main` opgenomen en mogen weg.
+- **Nieuw**: `bron/landbouw/` met de bouwscripts en gegevens van Denemarken en Tsjechië (`gen.py`, `patch.py`, `teksten.py`, `_final.json`, vertaaltabellen, kaart). `python3 bron/landbouw/<land>/gen.py` maakt `bron/gidsen/<land>.html` opnieuw (byte voor byte gelijk aan de huidige gids). `bron/landbouw/kaart_maken.py` maakt de kaart van een nieuw land.
+
+## Volgend land
+- De gebruiker wil verder met een volgend land; welk land is nog niet gekozen. Eerder voorgesteld: **Zweden** (± 30–40 locaties; Kolmården, Borås, Nordens Ark, Orsa, Parken Zoo, Skånes Djurpark; vergunningen via Jordbruksverket, Svenska Djurparksföreningen), Polen (groot, veel opvang), Slowakije of Hongarije (buren van Tsjechië, al grijs op de Europakaart), Noorwegen (klein). Vraag eerst welk land; bij “wat stel je voor” alleen een voorstel.
+- Werkwijze: volg `bron/landbouw/LEESMIJ.md`; neem `bron/landbouw/cz/` als voorbeeld (meest recent, met particulieren en circussen). Talen: NL + EN + landstaal. Leg de afbakening vooraf voor (circussen, particulieren zonder vergunning). Besluit bij Tsjechië: circussen zoals in Italië; particulieren opnemen met kanttekening en status volgens toegang.
+- Valt het land buiten het kaartkader van de hoofdpagina (`FULL` en de viewBox van `#map` in `start.html`, nu breedte 1140 ≈ 19,7° O; boven 59° N), vergroot dan het kader (lessen Ierland/Tsjechië in `bron/LEESMIJ.md`). Buurlanden grijs: `NBR` in `start.html`.
+
+## Open punten (kort; details in `bron/OPEN.md`)
+- **Zoo Jihlava** (CZ): eigen site was onbereikbaar; negen kleine katten staan op onzeker. Opnieuw nagaan, in `bron/landbouw/cz/cz_final.json` op “g” zetten, `gen.py` en `bouw.py` draaien, en de getallen in `cz/teksten.py` aanpassen als ze veranderen.
+- **“1 locaties”**: in de kop van een soortpagina met één locatie staat in het Nederlands (en de andere talen behalve CS/DA) het meervoud (`jungle.py`, regel met `LW`). Aan de gebruiker gevraagd of dat rechtgezet moet worden; nog geen antwoord.
+- **Claude-pagina** (`_claude/claude.html`) is gebouwd maar niet opnieuw gepubliceerd.
+- **WebKit/Safari** niet getest voor DK en CZ (`python3 -m playwright install webkit`).
+- Particulieren en circussen in CZ zijn momentopnames (Ringelland, Kletečná, Zvole, Rabina, circussen).
+
+## Afspraken met de gebruiker (J. Gelens)
+- Antwoorden in het Nederlands, kort. Bij “wat stel je voor” alleen een voorstel. Alleen wijzigen wat gevraagd is. Na elke update de link naar wat veranderd is.
+- Tussenwerk committen op een werktak (de stop-hook vraagt om commit en push); pas naar `main` als alles gebouwd en gecontroleerd is.
+- Gebruik geen `pgrep`/`pkill -f` met een patroon dat in je eigen opdracht staat (dat stopt je eigen shell); stop processen op PID.
+
 # Overdracht (22 oktober 2026, avond)
 
 ## 22 oktober 2026: Tsjechië

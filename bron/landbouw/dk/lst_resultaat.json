@@ -1,0 +1,1653 @@
+{
+ "locaties": [
+  {
+   "naam": "Aalborg Zoo",
+   "plaats": "Aalborg",
+   "lon": 9.9,
+   "lat": 57.038,
+   "type": "Dierentuin",
+   "lidmaatschap": [
+    "EAZA",
+    "DAZA"
+   ],
+   "url": "https://aalborgzoo.dk/",
+   "uren": {
+    "nl": "niet onderzocht (basislijst)",
+    "en": "not researched (base list)"
+   },
+   "about": {
+    "nl": "Basislijst: katten hieronder alleen volgens Zootierliste.",
+    "en": "Base list: cats below only according to Zootierliste."
+   },
+   "earlier": {
+    "nl": "Poema (onbekend) tot ca. 1993; Cheetah (Zuidelijk (A. j. jubatus)) tot ca. 1993; Iberische lynx (—) tot ca. onbekend; Nevelpanter (—) tot ca. 2002; Leeuw (onbekend) tot ca. 2012; Luipaard (Perzisch) tot ca. 2012; Tijger (Amoer) tot ca. 2013 (Zootierliste, rubriek Ehemalige)",
+    "en": "Poema (onbekend) until c. 1993; Cheetah (Zuidelijk (A. j. jubatus)) until c. 1993; Iberische lynx (—) until c. unknown; Nevelpanter (—) until c. 2002; Leeuw (onbekend) until c. 2012; Luipaard (Perzisch) until c. 2012; Tijger (Amoer) until c. 2013 (Zootierliste, former holdings)"
+   },
+   "katten": [
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "Noordelijk (L. l. lynx)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Europäischer Luchs); laatst genoemd jaar 2024.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Europäischer Luchs); latest year mentioned 2024."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2024; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "seit 2018 Quellen/Nachweise: - Besuch 05/2019 (gesehen, ausgeschildert) - Besuch 06/2024 (gesehen, ausgeschildert)"
+    },
+    {
+     "soort": "Leeuw",
+     "ondersoort": "Aziatisch (P. l. leo, voorheen P. l. persica)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Asiatischer Löwe); laatst genoemd jaar 2026.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Asiatischer Löwe); latest year mentioned 2026."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2026; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "Seit 2012 Dänische Erstzucht 2015 Zucht Ehemals EEP-Koordination [bis 2023] - 2012: 0,2 Nachzuchten aus Zürich (Zoo) erhalten - 2014: 1,0 aus Singapur (Zoo) erhalten. - 2022: 0,2 aus Edinburgh (Zoo) erhalten. - 2026: 1,0 aus Schwerin (Zoo) erhalten - Nachzucht 2023: 0,0,7 Quellen/Nachweise: - Zoopresseschau vom 05.07.2014 - Besuch 05/2019 (gesehen, ausgeschildert) - Besuch 06/2024 (gesehen, ausgeschildert) - Besuch 04/2026 (gesehen, ausgeschildert) Gil&Chris"
+    },
+    {
+     "soort": "Tijger",
+     "ondersoort": "Sumatraans",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Sumatratiger); laatst genoemd jaar 2026.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Sumatratiger); latest year mentioned 2026."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2026; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "Seit 2012 Dänische Erstzucht: 2013 Regelmäßige Zucht - 2012: 0,1 aus Heidelberg (Tiergarten) erhalten. - 2013: 1,0 aus Rheine (Naturzoo) erhalten. - 2025: 0,1 aus Heidelberg /Tiergarten) erhalten. Quellen/Nachweise: - Besuch 05/2019 (gesehen, ausgeschildert) - Besuch 06/2024 (gesehen, ausgeschildert) - Besuch 04/2026 (gesehen, ausgeschildert) Gil&Chris"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Odsherreds Zoo Dyrepark",
+   "plaats": "Asnæs (Odsherred)",
+   "lon": 11.495,
+   "lat": 55.82,
+   "type": "Dierenpark",
+   "lidmaatschap": [],
+   "url": "https://www.odsherreds-zoo.dk/",
+   "uren": {
+    "nl": "niet onderzocht (basislijst)",
+    "en": "not researched (base list)"
+   },
+   "about": {
+    "nl": "Basislijst: katten hieronder alleen volgens Zootierliste.",
+    "en": "Base list: cats below only according to Zootierliste."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "Noordelijk (L. l. lynx)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Europäischer Luchs); laatst genoemd jaar 2022. Laatste aanwijzing van vóór 2024: eigen site/nieuws nodig.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Europäischer Luchs); latest year mentioned 2022. Latest evidence predates 2024: check own website/news."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2022; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "seit 2012 0.2 \"Nala\" und \"Luna\" Quellen/Nachweise: - Besuch 05/2018 (Gesehen, ausgeschildert) - Besuch 05/2022 (gesehen, ausgeschildert)"
+    },
+    {
+     "soort": "Caracal",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Karakal); laatst genoemd jaar 2022. Laatste aanwijzing van vóór 2024: eigen site/nieuws nodig.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Karakal); latest year mentioned 2022. Latest evidence predates 2024: check own website/news."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2022; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "seit 2021 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 09.01.2022 / nach Besuch 2021) - Besuch 05/2022 (gesehen, ausgeschildert)"
+    },
+    {
+     "soort": "Serval",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Serval); laatst genoemd jaar 2022. Laatste aanwijzing van vóór 2024: eigen site/nieuws nodig.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Serval); latest year mentioned 2022. Latest evidence predates 2024: check own website/news."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2022; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 09.01.2022 / nach Besuch 2021) - Besuch 05/2022 (gesehen, ausgeschildert)"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Munkholm Zoo",
+   "plaats": "Balle (Syddjurs)",
+   "lon": 10.783,
+   "lat": 56.322,
+   "type": "Dierenpark",
+   "lidmaatschap": [],
+   "url": "https://www.munkholmzoo.dk/",
+   "uren": {
+    "nl": "niet onderzocht (basislijst)",
+    "en": "not researched (base list)"
+   },
+   "about": {
+    "nl": "Basislijst: katten hieronder alleen volgens Zootierliste.",
+    "en": "Base list: cats below only according to Zootierliste."
+   },
+   "earlier": {
+    "nl": "Euraziatische lynx (onbekend) tot ca. 2021 (Zootierliste, rubriek Ehemalige)",
+    "en": "Euraziatische lynx (onbekend) until c. 2021 (Zootierliste, former holdings)"
+   },
+   "katten": [
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "Centraal-Aziatisch (L. l. isabellinus)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Zentralasiatischer Luchs); laatst genoemd jaar 2022. Laatste aanwijzing van vóór 2024: eigen site/nieuws nodig.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Zentralasiatischer Luchs); latest year mentioned 2022. Latest evidence predates 2024: check own website/news."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2022; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "seit 2013 - 2013: aus Skærup Zoo erhalten. - Bestand am 01.01.2022: 1,3 Quellen/Nachweise: - Besuch 06/2021 (gesehen, ausgeschildert) - MA 08/2022"
+    },
+    {
+     "soort": "Vissende kat",
+     "ondersoort": "—",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Fischkatze); laatst genoemd jaar 2021. Laatste aanwijzing van vóór 2024: eigen site/nieuws nodig.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Fischkatze); latest year mentioned 2021. Latest evidence predates 2024: check own website/news."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2021; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "Seit 2017 - 2017: 1,2 Nachzuchten aus Duisburg (Zoo) erhalten. Quellen/Nachweise: - MA 12/2016 - Besuch 06/2021 (nicht gesehen, aber ausgeschildert)"
+    },
+    {
+     "soort": "Serval",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Serval); laatst genoemd jaar 2021. Laatste aanwijzing van vóór 2024: eigen site/nieuws nodig.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Serval); latest year mentioned 2021. Latest evidence predates 2024: check own website/news."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2021; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "Zucht Quellen/Nachweise: Besuch 06/2021 (gesehen, ausgeschildert)"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Knuthenborg Safaripark",
+   "plaats": "Maribo/Bandholm (Lolland)",
+   "lon": 11.517,
+   "lat": 54.808,
+   "type": "Safaripark",
+   "lidmaatschap": [
+    "EAZA",
+    "DAZA"
+   ],
+   "url": "https://knuthenborg.dk/",
+   "uren": {
+    "nl": "niet onderzocht (basislijst)",
+    "en": "not researched (base list)"
+   },
+   "about": {
+    "nl": "Basislijst: katten hieronder alleen volgens Zootierliste.",
+    "en": "Base list: cats below only according to Zootierliste."
+   },
+   "earlier": {
+    "nl": "Tijger (onbekend) tot ca. 2023 (Zootierliste, rubriek Ehemalige)",
+    "en": "Tijger (onbekend) until c. 2023 (Zootierliste, former holdings)"
+   },
+   "katten": [
+    {
+     "soort": "Leeuw",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Löwe); laatst genoemd jaar 2024.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Löwe); latest year mentioned 2024."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2024; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "seit 2022 - 2022: Zugang 0,3 aus der Ukraine (über den Zoo Poznan erhalten) - 2024: Zugang 3,0 aus Kobenhavn (Zoo) Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 03.01.2023) - Besuch 05/2024"
+    },
+    {
+     "soort": "Tijger",
+     "ondersoort": "Amoer",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Amurtiger); laatst genoemd jaar 2024.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Amurtiger); latest year mentioned 2024."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2024; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "seit 1975 - 2015: 0,1 aus Banham (Zoo) erhalten. - 2021: 2,0 aus Hilvarenbeek (Safaripark Beekse Bergen) erhalten. - 2023: 0,1 \"Svetlana\" verstorben Quellen/Nachweise: - Besuch 06/2019 (gesehen, ausgeschildert) - Besuch 09/2020 (gesehen, ausgeschildert) - Besuch 05/2024"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Blåvand Zoo",
+   "plaats": "Blåvand (Varde)",
+   "lon": 8.156,
+   "lat": 55.548,
+   "type": "Dierenpark",
+   "lidmaatschap": [],
+   "url": "https://www.blaavandzoo.dk/",
+   "uren": {
+    "nl": "niet onderzocht (basislijst)",
+    "en": "not researched (base list)"
+   },
+   "about": {
+    "nl": "Basislijst: katten hieronder alleen volgens Zootierliste.",
+    "en": "Base list: cats below only according to Zootierliste."
+   },
+   "earlier": {
+    "nl": "Euraziatische lynx (onbekend) tot ca. 2022; Leeuw (onbekend) tot ca. 2014 (Zootierliste, rubriek Ehemalige)",
+    "en": "Euraziatische lynx (onbekend) until c. 2022; Leeuw (onbekend) until c. 2014 (Zootierliste, former holdings)"
+   },
+   "katten": [
+    {
+     "soort": "Serval",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Serval); laatst genoemd jaar 2021. Laatste aanwijzing van vóór 2024: eigen site/nieuws nodig.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Serval); latest year mentioned 2021. Latest evidence predates 2024: check own website/news."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2021; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "Bestand 10/2021: 0,3,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 09.11.2021)"
+    },
+    {
+     "soort": "Leeuw",
+     "ondersoort": "Zuidelijk (P. l. melanochaita)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Transvaal-Löwe); laatst genoemd jaar 2022. Laatste aanwijzing van vóór 2024: eigen site/nieuws nodig.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Transvaal-Löwe); latest year mentioned 2022. Latest evidence predates 2024: check own website/news."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2022; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "seit 2009 - 2009: 1,1 aus Olmense erhalten - 04/2021 : 0,1 birth (19/09/2017) from Amnéville (Zoo) Quellen/Nachweise: - ZB 2014 - Zoo d'Amnéville Facebook page : 25/024/2021 - Besuch 07/2022 (gesehen, ausgeschildert)"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Skærup Zoo",
+   "plaats": "Børkop (Vejle)",
+   "lon": 9.591,
+   "lat": 55.639,
+   "type": "Dierenpark",
+   "lidmaatschap": [],
+   "url": "https://www.skaerup-zoo.dk/",
+   "uren": {
+    "nl": "niet onderzocht (basislijst)",
+    "en": "not researched (base list)"
+   },
+   "about": {
+    "nl": "Basislijst: katten hieronder alleen volgens Zootierliste.",
+    "en": "Base list: cats below only according to Zootierliste."
+   },
+   "earlier": {
+    "nl": "Bengaalse kat (Amoer (P. b. euptilura)) tot ca. 2014; Europese wilde kat (—) tot ca. 2011; Bengaalse kat (P. b. bengalensis) tot ca. 2009; Caracal (onbekend) tot ca. 2017; Afrikaanse wilde kat (onbekend (Oman)) tot ca. 2012; Caracal (Zuidelijk) tot ca. 2017; Serval (onbekend) tot ca. 2011; Luipaard (Noord-Chinees (P. p. orientalis, voorheen P. p. japonensis)) tot ca. onbekend (Zootierliste, rubriek Ehemalige)",
+    "en": "Bengaalse kat (Amoer (P. b. euptilura)) until c. 2014; Europese wilde kat (—) until c. 2011; Bengaalse kat (P. b. bengalensis) until c. 2009; Caracal (onbekend) until c. 2017; Afrikaanse wilde kat (onbekend (Oman)) until c. 2012; Caracal (Zuidelijk) until c. 2017; Serval (onbekend) until c. 2011; Luipaard (Noord-Chinees (P. p. orientalis, voorheen P. p. japonensis)) until c. unknown (Zootierliste, former holdings)"
+   },
+   "katten": [
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "Centraal-Aziatisch (L. l. isabellinus)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Zentralasiatischer Luchs); laatst genoemd jaar 2025.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Zentralasiatischer Luchs); latest year mentioned 2025."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2025; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "seit 2010 Zucht (2019, 2021) - 2010: 2,2 Nachzuchten aus Berlin (Tierpark Friedrichsfelde) erhalten. - Bestand am 01.01.2022: 1,1 Quellen/Nachweise: - [BLA11JB10] Blaszkiewitz, B. (2011): Von Ringelschwanzkängurus, Atlashirschen und Goldtakinen - Die Entwicklung des Tierbestandes 2010 im Tierpark Berlin. - Zooplan 2011 (ausgeschildert) --- - Besuch 02/2017 - Besuch 08/2019 (gesehen, ausgeschildert) - Besuch 09/2020 (gesehen, ausgeschildert) - Besuch 09/2021 (gesehen, ausgeschildert) - Besuch 08/2025 (nicht gesehen, nicht ausgeschildert)"
+    },
+    {
+     "soort": "Vissende kat",
+     "ondersoort": "—",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Fischkatze); laatst genoemd jaar 2025.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Fischkatze); latest year mentioned 2025."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2025; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "Seit 2011 Quellen/Nachweise: - Besuch 02/2017 - Besuch 08/2019 (gesehen, ausgeschildert) - Besuch 09/2020 (gesehen, ausgeschildert) - Besuch 09/2021 (gesehen, ausgeschildert) - Besuch 08/2025 (gesehen, ausgeschildert)"
+    },
+    {
+     "soort": "Ocelot",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Ozelot); laatst genoemd jaar 2025.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Ozelot); latest year mentioned 2025."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2025; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "Zucht Quellen/Nachweise: - Zooplan 2011 (ausgeschildert) - Besuch 02/2017 - Besuch 08/2019 (gesehen, ausgeschildert) - Besuch 09/2020 (gesehen, ausgeschildert) - Besuch 09/2021 (nicht gesehen, ausgeschildert) - Besuch 08/2025 (gesehen, ausgeschildert)"
+    },
+    {
+     "soort": "Rode lynx",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Rotluchs); laatst genoemd jaar 2025.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Rotluchs); latest year mentioned 2025."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2025; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "seit 2014 Zucht Quellen/Nachweise: - Besuch 02/2017 - Besuch 08/2019 (nicht gesehen, ausgeschildert) - Besuch 09/2020 (gesehen, ausgeschildert) - Besuch 09/2021 (nicht gesehen, ausgeschildert) - Besuch 08/2025 (nicht gesehen, ausgeschildert)"
+    },
+    {
+     "soort": "Jaguar",
+     "ondersoort": "—",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Jaguar); laatst genoemd jaar 2025.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Jaguar); latest year mentioned 2025."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2025; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "seit 2009 Regelmäßige Zucht - 2009 1,0 Nachzucht aus Berlin (Zoo) und 0,1 Nachzucht aus Aschersleben (Zoo) erhalten. Quellen/Nachweise: - [BLA10Bo40i] Blaszkiewitz, B. (2010): Bongo 40, S. 149 - 186 ---- - map 2011 (ausgeschildert) - Besuch 02/2017 - Besuch 08/2019 (gesehen, ausgeschildert) - Besuch 09/2020 (gesehen, ausgeschildert) - Besuch 09/2021 (gesehen, ausgeschildert) - Besuch 08/2025 (nicht gesehen, nicht ausgeschildert)"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Ree Park Safari",
+   "plaats": "Ebeltoft (Syddjurs)",
+   "lon": 10.738,
+   "lat": 56.263,
+   "type": "Safaripark",
+   "lidmaatschap": [
+    "EAZA",
+    "DAZA"
+   ],
+   "url": "https://reepark.dk/",
+   "uren": {
+    "nl": "niet onderzocht (basislijst)",
+    "en": "not researched (base list)"
+   },
+   "about": {
+    "nl": "Basislijst: katten hieronder alleen volgens Zootierliste.",
+    "en": "Base list: cats below only according to Zootierliste."
+   },
+   "earlier": {
+    "nl": "Zwartvoetkat (—) tot ca. 2014; Leeuw (onbekend) tot ca. 2022; Leeuw (Zuidelijk (P. l. melanochaita)) tot ca. 2010; Tijger (Sumatraans) tot ca. 2021 (Zootierliste, rubriek Ehemalige)",
+    "en": "Zwartvoetkat (—) until c. 2014; Leeuw (onbekend) until c. 2022; Leeuw (Zuidelijk (P. l. melanochaita)) until c. 2010; Tijger (Sumatraans) until c. 2021 (Zootierliste, former holdings)"
+   },
+   "katten": [
+    {
+     "soort": "Zandkat",
+     "ondersoort": "Arabisch (F. m. harrisoni)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Arabische Sandkatze); laatst genoemd jaar 2024.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Arabische Sandkatze); latest year mentioned 2024."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2024; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "- Seit 2005 - Zooerstzucht 2005 - 2005: 1,2 aus Al Wabra (Wildlife Preservation) erhalten - Nachzucht 08.12.2005: 0,1 - 2007: 1,0 Nachzucht aus Poznan (Nowe Zoo) erhalten - 2008: 0,1 Nachzucht aus Novosibirsk (Zoo) erhalten ---- - Bestand 05/2022: 3,5,0 Quellen/Nachweise: - EAZA Yearbook 2007-2008 - Breton, G. (2012): International Studbook Arabian Sand Cat (Felis margarita). ---- - Besuch 02/2017 - pers. Mitt. (E-Mail an ZTL v.23.06.2022) - Besuch 07/2022 (gesehen, ausgeschildert) - Besuch 07/2024 (gesehen, ausgeschildert)"
+    },
+    {
+     "soort": "Vissende kat",
+     "ondersoort": "—",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Fischkatze); laatst genoemd jaar 2024.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Fischkatze); latest year mentioned 2024."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2024; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "Seit 2011 - Bestand 08/2021: 1,0,0 Quellen/Nachweise: - Besuch 02/2017 - pers. Mitt. (E-Mail an ZTL v. 20.09.2021) - Besuch 07/2022 (nicht gesehen, ausgeschildert) - Besuch 07/2024 (gesehen, ausgeschildert)"
+    },
+    {
+     "soort": "Cheetah",
+     "ondersoort": "Zuidelijk (A. j. jubatus)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Südafrikanischer Gepard); laatst genoemd jaar 2024.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Südafrikanischer Gepard); latest year mentioned 2024."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2024; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "regelmäßige Zucht Größte Zucht Europas (größtenteils auf abseits liegender Zuchtfarm) - Bestand am 12/2020: 3,4 Quellen/Nachweise: - Marker, L. (2011): International Cheetah (Acinonyx jubatus) Studbook. - Marker, L. (2020): International Cheetah (Acinonyx jubatus) Studbook. - Besuch 02/2017 - Besuch 05/2017 (gesehen, ausgeschildert, Tierpflegergespräch) - Besuch 07/2022 (gesehen, ausgeschildert) - Besuch 07/2024 (gesehen, ausgeschildert)"
+    },
+    {
+     "soort": "Leeuw",
+     "ondersoort": "Zuidelijk (P. l. melanochaita)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Angola-Löwe); laatst genoemd jaar 2024.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Angola-Löwe); latest year mentioned 2024."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2024; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "Zucht (2022): 0,0,11 (3 Löwinnen mit 0,04, 0,04 und 0,03 Jungtieren) Quellen/Nachweise: - Besuch 07/2022 (gesehen, ausgeschildert) - Besuch 07/2024 (gesehen, ausgeschildert)"
+    },
+    {
+     "soort": "Leeuw",
+     "ondersoort": "Zuidelijk (P. l. melanochaita)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Transvaal-Löwe); laatst genoemd jaar 2020. Laatste aanwijzing van vóór 2024: eigen site/nieuws nodig.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Transvaal-Löwe); latest year mentioned 2020. Latest evidence predates 2024: check own website/news."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2020; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "seit 10/2020 - 2020: 2.0 aus Saint Aignan (ZooParc de Beauval) erhalten. Quellen/Nachweise: Facebook 19.10.2020: https://www.facebook.com/reepark/posts/10157964347334163"
+    },
+    {
+     "soort": "Luipaard",
+     "ondersoort": "Noord-Chinees (P. p. orientalis, voorheen P. p. japonensis)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Chinaleopard); laatst genoemd jaar 2026.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Chinaleopard); latest year mentioned 2026."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2026; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "Seit 2012 Zooerstzucht 2013 Zucht - 2012: 0,1 Nachzucht (*2010) aus Lodz (Zoo) erhalten und 1,0 erhalten. - 2015: 1,0 Nachzucht (*2013) nach Eberswalde (Zoo) abgegeben. - 2018: 1,0 Nachzucht (*2016) nach Haag (Tierpark Stadt Haag) abgegeben. - 2020: 1,1 verstorben; 1,0 Nachzucht (*2018) nach Debrecen (Nagyerdei Kultúrpark)abgegeben; 1,0 Import aus Seoul (Zoo) über Hamburg (Tierpark Hagenbeck) erhalten. - 2026: 1,0 Nachzucht aus Hannover (Zoo) erhalten. - Bestand 31.12.2012: 1,1,0 - Bestand 31.12.2013: 2,1,0 - Bestand 31.12.2021: 1,1,0 - Bestand 18.04.2022: 2,3,0 - Nachzucht 2013: 1,0,0 - Nachz"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Krokodille Zoo (Danish Crocodile Exhibition)",
+   "plaats": "Eskilstrup (Guldborgsund)",
+   "lon": 11.909,
+   "lat": 54.863,
+   "type": "Dierentuin",
+   "lidmaatschap": [],
+   "url": "https://www.krokodillezoo.dk/",
+   "uren": {
+    "nl": "niet onderzocht (basislijst)",
+    "en": "not researched (base list)"
+   },
+   "about": {
+    "nl": "Basislijst: katten hieronder alleen volgens Zootierliste.",
+    "en": "Base list: cats below only according to Zootierliste."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Poema",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Puma); laatst genoemd jaar 2026.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Puma); latest year mentioned 2026."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2026; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "Zucht Quellen/Nachweise: - Besuch 10/2019 (gesehen, ausgeschildert) -Besuch 09/2020 (gesehen, ausgeschildert) - Besuch 08/2025 (gesehen, ausgeschildert) - Besuch 05/2026 (gesehen, ausgeschildert) Gil&Chris - Besuch 08/2026 (gesehen, ausgeschildert)"
+    },
+    {
+     "soort": "Nevelpanter",
+     "ondersoort": "—",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Indochina-Nebelparder); laatst genoemd jaar 2026.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Indochina-Nebelparder); latest year mentioned 2026."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2026; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "Seit 2014 Zooerstzucht 2019 - 2023: 1,1 aus Bekesbourne (Howletts Wild Animal Park) erhalten. Quellen/Nachweise: - Besuch 04/2015 (nicht gesehen, ausgeschildert) - Besuch 06/2015 (nicht gesehen,ausgeschildert) - Besuch 10/2019 (gesehen, ausgeschildert) - Besuch 09/2020 (nicht gesehen, ausgeschildert) - MA 10/2023 - Besuch 05/2026 (gesehen, ausgeschildert) Gil&Chris - Besuch 08/2026 (gesehen, ausgeschildert)"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Givskud Zoo – Zootopia",
+   "plaats": "Givskud (Vejle)",
+   "lon": 9.352,
+   "lat": 55.812,
+   "type": "Safaripark",
+   "lidmaatschap": [
+    "EAZA",
+    "DAZA"
+   ],
+   "url": "https://www.givskudzoo.dk/",
+   "uren": {
+    "nl": "niet onderzocht (basislijst)",
+    "en": "not researched (base list)"
+   },
+   "about": {
+    "nl": "Basislijst: katten hieronder alleen volgens Zootierliste.",
+    "en": "Base list: cats below only according to Zootierliste."
+   },
+   "earlier": {
+    "nl": "Leeuw (Zuidelijk (P. l. melanochaita)) tot ca. 2014 (Zootierliste, rubriek Ehemalige)",
+    "en": "Leeuw (Zuidelijk (P. l. melanochaita)) until c. 2014 (Zootierliste, former holdings)"
+   },
+   "katten": [
+    {
+     "soort": "Leeuw",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Löwe); laatst genoemd jaar 2025.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Löwe); latest year mentioned 2025."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2025; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "seit 1969 regelmäßige Zucht - mehrere Rudel, seit 2015 zusammen mit 3,0 Panthera Leo vernayi ----- Bestand am 31.12.1992: 8,24,0 Quellen/Nachweise: - [EAZATS1993] The 1993 EEP Tag Survey (ohne UA-Angabe gelistet) - TBL: 07.06.2022 ---- - Besuch 06/2019 (gesehen, ausgeschildert) - Besuch 08/2019 (gesehen, ausgeschildert) - Besuch 08/2021 (gesehen, ausgeschildert) - Besuch 07/2024 (gesehen, ausgeschildert) - Besuch 08/2025 (gesehen, ausgeschildert)"
+    },
+    {
+     "soort": "Leeuw",
+     "ondersoort": "Zuidelijk (P. l. melanochaita)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Kalahari-Löwe); laatst genoemd jaar 2025.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Kalahari-Löwe); latest year mentioned 2025."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2025; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "seit 2015 - 2015: 3,0 (*2013) Nachzuchten aus Basel (Zoo) erhalten. ---- - Haltung mit Panthera leo ssp. Quellen/Nachweise: - TBL: 07.06.2022 (nicht gelistet, nur ohne UA) ---- - Besuch 06/2019 (gesehen, ausgeschildert) - Besuch 08/2021 (gesehen, ausgeschildert) - Besuch 07/2024 (gesehen, ausgeschildert) - Besuch 08/2025 (gesehen, ohne UA ausgeschildert)"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Jyllands Park Zoo",
+   "plaats": "Haunstrup/Videbæk (Herning)",
+   "lon": 8.807,
+   "lat": 56.097,
+   "type": "Dierenpark",
+   "lidmaatschap": [],
+   "url": "https://www.jyllandsparkzoo.dk/",
+   "uren": {
+    "nl": "niet onderzocht (basislijst)",
+    "en": "not researched (base list)"
+   },
+   "about": {
+    "nl": "Basislijst: katten hieronder alleen volgens Zootierliste.",
+    "en": "Base list: cats below only according to Zootierliste."
+   },
+   "earlier": {
+    "nl": "Jaguar (—) tot ca. 2009; Luipaard (onbekend) tot ca. 2013; Luipaard (Afrikaans (P. p. pardus)) tot ca. 2013 (Zootierliste, rubriek Ehemalige)",
+    "en": "Jaguar (—) until c. 2009; Luipaard (onbekend) until c. 2013; Luipaard (Afrikaans (P. p. pardus)) until c. 2013 (Zootierliste, former holdings)"
+   },
+   "katten": [
+    {
+     "soort": "Caracal",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Karakal); laatst genoemd jaar 2022. Laatste aanwijzing van vóór 2024: eigen site/nieuws nodig.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Karakal); latest year mentioned 2022. Latest evidence predates 2024: check own website/news."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2022; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "regelmäßige Zucht - Bestand 07.06.2022: 1,1,0 Quellen/Nachweise: - Clark, K. (2012, 2017): International Studbook Caracal (Caracal caracal). - TBL: 07.06.2022"
+    },
+    {
+     "soort": "Serval",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Serval); laatst genoemd jaar 2022. Laatste aanwijzing van vóór 2024: eigen site/nieuws nodig.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Serval); latest year mentioned 2022. Latest evidence predates 2024: check own website/news."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2022; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "Zucht Bestand 10/2021: 1,3,0 Bestand 06/2022: 1,1,2 Quellen/Nachweise: - TBL: 07.06.2022 ---- - Besuch 08/2014 (gesehen) - pers. Mitt. (E-Mail an ZTL v. 09.11.2021)"
+    },
+    {
+     "soort": "Leeuw",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Löwe); laatst genoemd jaar 2022. Laatste aanwijzing van vóór 2024: eigen site/nieuws nodig.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Löwe); latest year mentioned 2022. Latest evidence predates 2024: check own website/news."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2022; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "- Bestand 07.06.2022: 1,1,0 Quellen/Nachweise: - TBL: 07.06.2022 ---- - Besuch 08/2014 (gesehen)"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Zoo København (Zoologisk Have i København)",
+   "plaats": "Frederiksberg (København)",
+   "lon": 12.524,
+   "lat": 55.672,
+   "type": "Dierentuin",
+   "lidmaatschap": [
+    "EAZA",
+    "DAZA"
+   ],
+   "url": "https://www.zoo.dk/",
+   "uren": {
+    "nl": "niet onderzocht (basislijst)",
+    "en": "not researched (base list)"
+   },
+   "about": {
+    "nl": "Basislijst: katten hieronder alleen volgens Zootierliste.",
+    "en": "Base list: cats below only according to Zootierliste."
+   },
+   "earlier": {
+    "nl": "Caracal (onbekend) tot ca. 2024; Moeraskat (onbekend) tot ca. 2005; Caracal (Zuidelijk) tot ca. 2017; Caracal (Arabisch) tot ca. 2018; Marmerkat (—) tot ca. 2004; Nevelpanter (—) tot ca. 1996; Luipaard (onbekend) tot ca. 2002; Luipaard (Noord-Chinees (P. p. orientalis, voorheen P. p. japonensis)) tot ca. 1986; Tijger (Sumatraans) tot ca. 2009; Tijger (Bengaals) tot ca. 1993; Sneeuwluipaard (—) tot ca. onbekend (Zootierliste, rubriek Ehemalige)",
+    "en": "Caracal (onbekend) until c. 2024; Moeraskat (onbekend) until c. 2005; Caracal (Zuidelijk) until c. 2017; Caracal (Arabisch) until c. 2018; Marmerkat (—) until c. 2004; Nevelpanter (—) until c. 1996; Luipaard (onbekend) until c. 2002; Luipaard (Noord-Chinees (P. p. orientalis, voorheen P. p. japonensis)) until c. 1986; Tijger (Sumatraans) until c. 2009; Tijger (Bengaals) until c. 1993; Sneeuwluipaard (—) until c. unknown (Zootierliste, former holdings)"
+   },
+   "katten": [
+    {
+     "soort": "Leeuw",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Löwe); laatst genoemd jaar 2026.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Löwe); latest year mentioned 2026."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2026; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "regelmäßige Zucht (2014) - 2021: 2,0 eigene nachzucht nach Neuseeland und 0,2 nach Barcelona (Zoo) abgegeben. - 2026: 1,0 nach Kerkrade / NL (GaiaZoo) abgegeben - Bestand 31.12.1992: 3,4 - Bestand 31.12.2009: 4,4 - Bestand 31.12.2010: 2,4 Nachzucht 2010: 1,3 - Bestand 31.12.2013: 2,4,0 - Bestand 31.12.2014: 1,2,0 - Bestand 31.12.2015: 5,3,0; Nachzucht 2015: 6,1,0 - Bestand 31.12.2017: 5,5,0; Nachzucht 2017: 7,5,2 (0,1,2 dns) - Bestand 31.12.2018: 1,4,3; Nachzucht 2018: 0,0,3 - Bestand 31.12.2019: 2,4,0; Nachzucht 2019: 1,3,2 (0,0,2 dns) - Nachzucht 2022: 0,0,3 - Nachzucht 2024: 3,2 Quellen/Nac"
+    },
+    {
+     "soort": "Leeuw",
+     "ondersoort": "Zuidelijk (P. l. melanochaita)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Angola-Löwe); laatst genoemd jaar 2026.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Angola-Löwe); latest year mentioned 2026."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2026; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "Seit 2026 - 2026: 1,0 Nachzucht (*2023) aus Chorzów (Silesian Zoological Garden) erhalten. Quellen/Nachweise: - FB-Mitteilung 'Chorzow Zoo' (23/06/2026) - Besuch 08/2026 (gesehen, ausgeschildert"
+    },
+    {
+     "soort": "Luipaard",
+     "ondersoort": "Amoer (P. p. orientalis)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Amurleopard); laatst genoemd jaar 2026.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Amurleopard); latest year mentioned 2026."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2026; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "Seit 2002 Zucht - 2018: 0,1 Nachzucht (*2016) aus Ieper (Bellewaerdepark) erhalten. - 2020: 0,2 Nachzuchten (*2019) nach Cases-de-Pêne (EcoZonia - Parc Animalier) abgegeben; 1,0 Nachzucht (*2019) verstorben. - 2021: 0,1 Nachzucht (*2020) nach Olomouc (Zoo) abgegeben. - 2023: 0,1 nach Cases-de-Pêne (EcoZonia - Parc Animalier) abgegeben; 0,1 Nachzucht (*2021) aus Leipzig (Zoo) erhalten. - Bestand am 31.12.2009: 1,2 - Bestand am 31.12.2010: 1,1,2 Nachzucht 2010: 0,1,4 (0,1,2) - Bestand am 31.12.2013: 2,2,0 - Bestand am 31.12.2014: 1,1,0 - Bestand am 31.12.2015: 1,1,0; Nachzucht 2015: 0,0,1 (dns) "
+    },
+    {
+     "soort": "Tijger",
+     "ondersoort": "Amoer",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Amurtiger); laatst genoemd jaar 2026.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Amurtiger); latest year mentioned 2026."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2026; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "Seit 1993 Zucht - Bestand am 31.12.2009: 3,3 - Bestand am 31.12.2010: 1,2 - Bestand am 31.12.2013: 1,4,0 - Bestand am 31.12.2014: 1,3,0 - Bestand am 31.12.2015: 0,4,0; Nachzucht 2015: 1,2,1 - Bestand am 31.12.2017: 0,3,0; Nachzucht 2017: 0,0,0 - Bestand am 31.12.2018: 1,1,0; Nachzucht 2018: 0,0,0 - Bestand am 31.12.2019: 1,1,0; Nachzucht 2019: 0,0,0 Quellen/Nachweise: - Seifert, S., & Müller, P. (2009): Tiger: International studbook. - TBL 2010, 2014, 2015, 2017, 2018, 2019 - Besuch 08/2017 (gesehen, ausgeschildert) - Besuch 09/2020 (gesehen, ausgeschildert) - Besuch 08/2026 (gesehen, ausgesch"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Hansenberg Zoo (Hansenberg Organia)",
+   "plaats": "Kolding",
+   "lon": 9.393,
+   "lat": 55.495,
+   "type": "Anders",
+   "lidmaatschap": [
+    "EAZA (associate)"
+   ],
+   "url": "https://www.hansenberg.dk/",
+   "uren": {
+    "nl": "niet onderzocht (basislijst)",
+    "en": "not researched (base list)"
+   },
+   "about": {
+    "nl": "Basislijst: katten hieronder alleen volgens Zootierliste.",
+    "en": "Base list: cats below only according to Zootierliste."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "Noordelijk (L. l. lynx)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Europäischer Luchs); laatst genoemd jaar onbekend. Laatste aanwijzing van vóór 2024: eigen site/nieuws nodig.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Europäischer Luchs); latest year mentioned unknown. Latest evidence predates 2024: check own website/news."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar onbekend; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "Zucht Unterartstatus nicht angeben womöglich eine andere Unterart Quellen/Nachweise: https://www.facebook.com/Vranderupvej/videos/n%C3%A5r-mor-tror-at-hun-kan-flytte-sin-killing-fra-sidste-%C3%A5r-ligesom-den-nye-fra-i-%C3%A5/1677898782416079/"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Glad Zoo",
+   "plaats": "Lintrup (Vejen)",
+   "lon": 8.966,
+   "lat": 55.41,
+   "type": "Dierenpark",
+   "lidmaatschap": [],
+   "url": "https://www.gladzoo.dk/",
+   "uren": {
+    "nl": "niet onderzocht (basislijst)",
+    "en": "not researched (base list)"
+   },
+   "about": {
+    "nl": "Basislijst: katten hieronder alleen volgens Zootierliste.",
+    "en": "Base list: cats below only according to Zootierliste."
+   },
+   "earlier": {
+    "nl": "Serval (onbekend) tot ca. 2016 (Zootierliste, rubriek Ehemalige)",
+    "en": "Serval (onbekend) until c. 2016 (Zootierliste, former holdings)"
+   },
+   "katten": [
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "Noordelijk (L. l. lynx)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Europäischer Luchs); laatst genoemd jaar 2022. Laatste aanwijzing van vóór 2024: eigen site/nieuws nodig.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Europäischer Luchs); latest year mentioned 2022. Latest evidence predates 2024: check own website/news."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2022; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "Quellen/Nachweise: - Besuch 07/2022 (gesehen, ausgeschildert)"
+    },
+    {
+     "soort": "Serval",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Serval); laatst genoemd jaar 2025.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Serval); latest year mentioned 2025."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2025; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "Quellen/Nachweise: - Besuch 08/2025 (gesehen, ausgeschildert)"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Zoopark Sydsjælland (FVST: Zoopark ApS)",
+   "plaats": "Næstved",
+   "lon": 11.722,
+   "lat": 55.222,
+   "type": "Dierenpark",
+   "lidmaatschap": [],
+   "url": "",
+   "uren": {
+    "nl": "niet onderzocht (basislijst)",
+    "en": "not researched (base list)"
+   },
+   "about": {
+    "nl": "Basislijst: katten hieronder alleen volgens Zootierliste.",
+    "en": "Base list: cats below only according to Zootierliste."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Eurasischer Luchs); laatst genoemd jaar 2022. Laatste aanwijzing van vóór 2024: eigen site/nieuws nodig.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Eurasischer Luchs); latest year mentioned 2022. Latest evidence predates 2024: check own website/news."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2022; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 09.01.2022 / nach Besuch 2021)"
+    },
+    {
+     "soort": "Tijger",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Tiger); laatst genoemd jaar 2021. Laatste aanwijzing van vóór 2024: eigen site/nieuws nodig.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Tiger); latest year mentioned 2021. Latest evidence predates 2024: check own website/news."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2021; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "weiße und wildfarbene Tiere Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 07.03.2021)"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Odense Zoo",
+   "plaats": "Odense",
+   "lon": 10.373,
+   "lat": 55.378,
+   "type": "Dierentuin",
+   "lidmaatschap": [
+    "EAZA",
+    "DAZA"
+   ],
+   "url": "https://www.odensezoo.dk/",
+   "uren": {
+    "nl": "niet onderzocht (basislijst)",
+    "en": "not researched (base list)"
+   },
+   "about": {
+    "nl": "Basislijst: katten hieronder alleen volgens Zootierliste.",
+    "en": "Base list: cats below only according to Zootierliste."
+   },
+   "earlier": {
+    "nl": "Caracal (onbekend) tot ca. 1997; Caracal (Damara) tot ca. 1997; Sneeuwluipaard (—) tot ca. 2013 (Zootierliste, rubriek Ehemalige)",
+    "en": "Caracal (onbekend) until c. 1997; Caracal (Damara) until c. 1997; Sneeuwluipaard (—) until c. 2013 (Zootierliste, former holdings)"
+   },
+   "katten": [
+    {
+     "soort": "Leeuw",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Löwe); laatst genoemd jaar 2025.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Löwe); latest year mentioned 2025."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2025; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "seit 1997 regelmäßige Zucht - 2011: 1,0 aus Knowsley (Safari Park) und 0,3 aus Aalborg (Zoo) erhalten. - Bestand 31.12.1997: 2,3,0 - Nachzucht 2021: 0,0,5 - Nachzucht 2024: 0,0,2 (DNS 0,0,2) Quellen/Nachweise: - TBL 1997 - Besuch 08/2018 (gesehen, ausgeschildert) - Instagram des Zoos (28.05.2021) - Instagram des Zoos (29.06.2021) - Besuch 09/2021 (gesehen, ausgeschildert) - Instagram von Odense Zoo (22/02/2024) - Besuch 10/2025 (gesehen, ausgeschildert)"
+    },
+    {
+     "soort": "Tijger",
+     "ondersoort": "Amoer",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Amurtiger); laatst genoemd jaar 2025.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Amurtiger); latest year mentioned 2025."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2025; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "seit 1986 Zooerstzucht 2012 Zucht - Bestand 31.12.1993: 1,1 - Bestand 31.12.1994: 1,1,0 - Bestand 31.12.1996: 1,0,0 - Bestand 31.12.1997: 1,1,0 Quellen/Nachweise: - TBL 1994, 1996, 1997 - [EAZATS1993] The 1993 EEP Tag Survey - Besuch 08/2018 (gesehen, ausgeschildert) - Besuch 09/2021 (gesehen, ausgeschildert) - Besuch 10/2025 (gesehen, ausgeschildert)"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Randers Regnskov",
+   "plaats": "Randers",
+   "lon": 10.033,
+   "lat": 56.457,
+   "type": "Dierentuin",
+   "lidmaatschap": [
+    "EAZA",
+    "DAZA"
+   ],
+   "url": "https://www.regnskoven.dk/",
+   "uren": {
+    "nl": "niet onderzocht (basislijst)",
+    "en": "not researched (base list)"
+   },
+   "about": {
+    "nl": "Basislijst: katten hieronder alleen volgens Zootierliste.",
+    "en": "Base list: cats below only according to Zootierliste."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Eurasischer Luchs); laatst genoemd jaar 2025.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Eurasischer Luchs); latest year mentioned 2025."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2025; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "seit 2021/2022 Zooerstzucht 2023 - Nachzucht 2023: 0,1 - Nachzucht 2024: 0,0,2 - Nachzucht 2025: 0,0,2 - Bestand 06/2025: 1,2,4 Quellen/Nachweise: - Instagram des Zoos (02/06/2023) - Instagram des Zoos (14/06/2024) ---- - Besuch 07/2022 (nicht gesehen, ausgeschildert) - Besuch 06/2024 (gesehen, ausgeschildert) - Besuch 06/2025 (gesehen, ausgeschildert"
+    },
+    {
+     "soort": "Margay",
+     "ondersoort": "Yucatán (L. w. yucatanicus)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Yucatán-Langschwanzkatze); laatst genoemd jaar 2026.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Yucatán-Langschwanzkatze); latest year mentioned 2026."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2026; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "Seit 2014 Dänische Erstzucht 2017 Zucht (2019) - vormalige Haltung: 1996 bis 2012/2013 - 2014: 0,1 aus Amsterdam (Natura Artis Magistra) - Bestand 04/2017: 1,1,0 - Bestand 12/2024: 1,1,0 - Bestand 09/2025: 1,1,1 Quellen/Nachweise: - EAZA Yearbook 2007-2008 - Harley, S. (2011): EEP Studbook Margay Leopardus wiedii. - Besuch 01/2014 (nicht gesehen, nicht ausgeschildert) - Besuch 02/2017 - Besuch 05/2017 (gesehen, ausgeschildert) - Besuch 09/2020 (gesehen, ausgeschildert) - Besuch 07/2022 (gesehen, ausgeschildert) - Besuch 06/2024 (gesehen, ausgeschildert) - Besuch 12/2024 (gesehen, ausgeschilder"
+    },
+    {
+     "soort": "Jaguar",
+     "ondersoort": "—",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste noemt deze soort als huidige houding (ZTL-naam: Jaguar); laatst genoemd jaar 2026.",
+      "en": "Zootierliste lists this species as currently kept (ZTL name: Jaguar); latest year mentioned 2026."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste, rubriek Aktuelle (laatst genoemd jaar 2026; gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste; nog niet bevestigd door eigen site of recent nieuws.",
+      "en": "Zootierliste only; not yet confirmed by own website or recent news."
+     },
+     "ztl_info": "seit 2014 Zucht 2022 (Zooerstzucht?) - 2014: 0,1 Nachzucht aus Borkop (Skaerup Zoo) erhalten. - 2015: 1,1 aus Zagreb Zoo - 2023: 1,0 (*2022) eigene Nachzucht nach Nesles (Le parc des Felins) abgegeben. - 2024: 0,1 (*2022) eigene nachzucht nach Opole (Zoo) abgegeben. - Bestand 09/2020: 1,1 - Nachzucht 2022: 1,1,0 - Nachzucht 2024: 1,1,0 (0,1,0 verstorben) - Bestand 04/2026: 2,3 (adult male, adult female, female born 10/2024, female born 02/2026, male born 02/2026) Quellen/Nachweise: - Zoopresseschau vom 10.01.2015 - Instagram des Zoos (21/06/2022) - Instagram des Zoos (12/01/2024) - Instagram d"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  }
+ ],
+ "zonder_katten": [
+  {
+   "naam": "Pangea Park Falster (voorheen Guldborgsund Zoo)",
+   "plaats": "Nykøbing Falster (Guldborgsund)",
+   "reden": {
+    "nl": "Zootierliste noemt hier alleen vroegere katten: Leeuw (onbekend) tot ca. 2006; Luipaard (onbekend) tot ca. 2006; Tijger (Amoer) tot ca. 2020",
+    "en": "Zootierliste lists only former cats here: Leeuw (onbekend) until c. 2006; Luipaard (onbekend) until c. 2006; Tijger (Amoer) until c. 2020"
+   }
+  },
+  {
+   "naam": "Nordisk Dyrepark",
+   "plaats": "Hobro (Mariagerfjord)",
+   "reden": {
+    "nl": "Zootierliste noemt hier alleen vroegere katten: Serval (onbekend) tot ca. onbekend",
+    "en": "Zootierliste lists only former cats here: Serval (onbekend) until c. unknown"
+   }
+  }
+ ],
+ "open_punten": [
+  "De FVST-lijst (31 kontrolobjekter, bijgewerkt 22-10-2026) is formeel de lijst van zoologische anlæg goedgekeurd voor intracommunautaire handel (Richtlijn 92/65/EEG, Balai); kleinere door FVST goedgekeurde parken zonder Balai-status (bijv. Nordisk Dyrepark Hobro, Lalandia, kleinere dyreparker) kunnen ontbreken. Geen andere volledige openbare lijst gevonden; geen recente Folketing-vraag met aantal gevonden.",
+  "Øresundsakvariet staat op de DAZA-ledenpagina maar niet op de FVST-lijst; Den Blå Planet en Jesperhus zijn EAZA-lid maar staan niet (meer) als logo op de DAZA-ledenpagina.",
+  "Skandinavisk Dyrepark (DAZA) staat niet in de EAZA-API (strapi.eaza.net, 22-10-2026).",
+  "Alle kattenvermeldingen in \"locaties\" zijn uitsluitend Zootierliste (status w); \"laatst genoemd jaar\" = hoogste jaartal in de ZTL-infobox (vaak laatste bezoek), geen bevestiging.",
+  "Zootierliste-vermeldingen met laatste jaar vóór 2024 (o.a. Odsherred, Munkholm, Glad Zoo lynx, Jyllands Park, Zoopark Sydsjælland, Blåvand) hebben extra controle nodig; Hansenberg-lynx heeft geen jaartal (alleen Facebook-video).",
+  "Zootierliste \"Randers Regnskov – Euraziatische lynx\" en \"Krokodille Zoo – poema/nevelpanter\" wijken af van het gangbare beeld; nagaan op eigen site.",
+  "Circus: formele inwerkingtreding van een totaalverbod op wilde dieren in circussen (dyrevelfærdslov 2020) niet in de wettekst geverifieerd."
+ ],
+ "lijsten": {
+  "officieel": {
+   "url": "https://pub.fvst.dk/publikationer/Liste_til_nettet_zoologiske_anlaeg.pdf (gelinkt vanaf https://foedevarestyrelsen.dk/dyr/autorisation-godkendelse-registrering-og-tilladelse/registrering-og-maerkning-af-dyr/zoologiske-haver)",
+   "titel": "Godkendte zoologiske anlæg / Approved Zoos (organen goedgekeurd o.g.v. art. 2(1)(c) Richtlijn 92/65/EEG)",
+   "datum": "2026-10-22 (Opdateret/Last update op het document)",
+   "aantal": 31,
+   "namen": [
+    "Ree Park - Ebeltoft safari (Ebeltoft)",
+    "Glad Zoo (Lintrup)",
+    "Skærup Zoo (Børkop)",
+    "Jesperhus Blomsterpark ApS (Nykøbing Mors)",
+    "Nordsøen Oceanarium (Hirtshals)",
+    "Kattegatcentret (Grenaa)",
+    "Danish Crocodile Exhibition (Eskilstrup)",
+    "Legoland ApS (Billund)",
+    "Fjord & Bælt (Kerteminde)",
+    "NaturBornholm (Aakirkeby)",
+    "Den Blå Planet (Kastrup)",
+    "Blåvand Zoo (Blåvand)",
+    "Knuthenborg Park og Safari (Maribo)",
+    "Danmarks Fugle Zoo - Frydenlund Fuglepark (Tommerup)",
+    "Munkholm Zoo (Balle)",
+    "Pangea Park Falster ApS (Nykøbing F)",
+    "Terrariet Vissenbjerg (Vissenbjerg)",
+    "Fiskeri og Søfartsmuseet (Esbjerg V)",
+    "Aalborg Zoologiske Have (Aalborg)",
+    "Zoopark Aps (Næstved)",
+    "AQUA Akvarium & Dyrepark (Silkeborg)",
+    "Odsherreds Zoo Dyrepark (Asnæs)",
+    "Hansenberg Organia (Kolding)",
+    "Randers Regnskov (Randers C)",
+    "Den selvejende institution Skandinavisk Dyrepark (Kolind)",
+    "Zoologisk Have I København (Frederiksberg)",
+    "Skolehjemmet Orøstrand (Holbæk)",
+    "Givskud Zoo Zootopia (Give)",
+    "Jyllands Park Zoo (Videbæk)",
+    "Odense Zoo (Odense C)",
+    "Brændesgårdshaven ApS (Svaneke)"
+   ]
+  },
+  "daza": [
+   "Aalborg Zoo",
+   "AQUA Akvarium & Dyrepark (Silkeborg)",
+   "Fiskeri- og Søfartsmuseet (Esbjerg)",
+   "Fjord&Bælt (Kerteminde)",
+   "Givskud Zoo – Zootopia",
+   "Kattegatcentret (Grenaa)",
+   "Knuthenborg Safaripark",
+   "Nordsøen Oceanarium (Hirtshals)",
+   "Odense Zoo",
+   "Øresundsakvariet (Helsingør, KU)",
+   "Randers Regnskov",
+   "Ree Park Safari",
+   "Skandinavisk Dyrepark (Kolind)",
+   "Terrariet (Vissenbjerg)",
+   "Zoo København"
+  ],
+  "daza_bron": "https://daza.dk/medlemsoversigt/ (logo-links, gezien 22-10-2026); 15 leden",
+  "eaza": [
+   "Aalborg Zoo (Full)",
+   "Copenhagen Zoo (Full)",
+   "Den Blå Planet (Full)",
+   "Givskud Zoo - ZOOTOPIA (Full)",
+   "Jesperhus Jungle Zoo (Full)",
+   "Kattegatcentret (Full)",
+   "Knuthenborg Safaripark (Full)",
+   "Nordsøen Oceanarium (Full)",
+   "Odense Zoo (Full)",
+   "Randers Regnskov, Tropical Zoo (Full)",
+   "Ree Park Safari (Full)",
+   "Terrariet Reptile Zoo (Full)",
+   "Hansenberg School (Associate)",
+   "DAZA (Associate)",
+   "Bio/Zoo Information (Corporate)",
+   "Brogaarden ApS (Corporate)",
+   "HMJ Design (Corporate)",
+   "Ny Vraa (Corporate)",
+   "Petjes World (Corporate)"
+  ],
+  "eaza_bron": "https://strapi.eaza.net/api/members (Country=DK, opgehaald 22-10-2026); 12 full, 2 associate, 5 corporate",
+  "circus": "Grote katten (leeuw, tijger enz.) mogen al decennia niet in Deense circussen: menagerieën met wilde dieren werden in 1962 verboden (herziening dyreværnsloven, lex.dk 'menageri'), en de circusbekendtgørelse (BEK nr. 1494 van 2015) liet alleen olifanten, zeeleeuwen en zebra's toe (antwoord minister bij B 126, 2018: 4 olifanten, 3 zeeleeuwen, 5 zebra's). In 2019 kocht de staat de laatste 4 circusolifanten (Ramboline, Lara, Djunga, Jenny; 11 mln DKK, AFP/The Local 01-09-2019), ze gingen naar Knuthenborg (Elefantprojektet met Cirkus Arena en Dyrenes Beskyttelse). Er waren dus in 2018-2019 geen katachtigen meer in Deense circussen en er is geen 'circuskatten-opvang' in DK. Of het algemene verbod op alle wilde dieren in circussen formeel van kracht is (verwacht in de nieuwe dyrevelfærdslov, lov nr. 133 van 25-02-2020) is niet uit de tekst geverifieerd.",
+  "particulier": "Particulier houden van roofdieren is verboden: Bekendtgørelse om forbud mod hold af særlige dyr (BEK nr. 1261 van 17-11-2015, Fødevarestyrelsen), bijlage 1: alle roofdieren (Carnivora) behalve tamme hond en kat (en enkele uitzonderingen zoals mangoesten, genetten, fennek, fret). Wilde katten (ook serval, caracal) mogen dus niet privé worden gehouden; dieren die al vóór de inwerkingtreding legaal werden gehouden mochten blijven met vergunning, mits gemerkt en zonder fokken, overdracht alleen naar goedgekeurde zoologische anlæg. Het verbod geldt niet voor door Fødevarestyrelsen goedgekeurde zoologische anlæg (dyrevelfærdsloven / BEK 1397 van 02-12-2015 om zoologiske haver). Geen bekende particuliere houders of opvangcentra voor wilde katten in DK gevonden (1 zoekopdracht naar inbeslagnames leverde niets op)."
+ },
+ "alle_instellingen": [
+  {
+   "naam": "Ree Park Safari",
+   "plaats": "Ebeltoft",
+   "bron": "officieel/daza/eaza/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Zandkat – Arabisch (F. m. harrisoni) (laatst gezien 2024)",
+    "Vissende kat (laatst gezien 2024)",
+    "Cheetah – Zuidelijk (A. j. jubatus) (laatst gezien 2024)",
+    "Leeuw – Zuidelijk (P. l. melanochaita) (laatst gezien 2024)",
+    "Leeuw – Zuidelijk (P. l. melanochaita) (laatst gezien 2020)",
+    "Luipaard – Noord-Chinees (P. p. orientalis, voorheen P. p. japonensis) (laatst gezien 2026)"
+   ]
+  },
+  {
+   "naam": "Glad Zoo",
+   "plaats": "Lintrup",
+   "bron": "officieel/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (laatst gezien 2022)",
+    "Serval (laatst gezien 2025)"
+   ]
+  },
+  {
+   "naam": "Skærup Zoo",
+   "plaats": "Børkop",
+   "bron": "officieel/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Euraziatische lynx – Centraal-Aziatisch (L. l. isabellinus) (laatst gezien 2025)",
+    "Vissende kat (laatst gezien 2025)",
+    "Ocelot (laatst gezien 2025)",
+    "Rode lynx (laatst gezien 2025)",
+    "Jaguar (laatst gezien 2025)"
+   ]
+  },
+  {
+   "naam": "Jesperhus Blomsterpark / Jesperhus Jungle Zoo",
+   "plaats": "Nykøbing Mors",
+   "bron": "officieel/eaza",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Nordsøen Oceanarium",
+   "plaats": "Hirtshals",
+   "bron": "officieel/daza/eaza",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Kattegatcentret",
+   "plaats": "Grenaa",
+   "bron": "officieel/daza/eaza",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Krokodille Zoo (Danish Crocodile Exhibition)",
+   "plaats": "Eskilstrup",
+   "bron": "officieel/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Poema (laatst gezien 2026)",
+    "Nevelpanter (laatst gezien 2026)"
+   ]
+  },
+  {
+   "naam": "Legoland Billund",
+   "plaats": "Billund",
+   "bron": "officieel",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Fjord&Bælt",
+   "plaats": "Kerteminde",
+   "bron": "officieel/daza",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "NaturBornholm",
+   "plaats": "Aakirkeby",
+   "bron": "officieel",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Den Blå Planet",
+   "plaats": "Kastrup",
+   "bron": "officieel/eaza",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Blåvand Zoo",
+   "plaats": "Blåvand",
+   "bron": "officieel/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Serval (laatst gezien 2021)",
+    "Leeuw – Zuidelijk (P. l. melanochaita) (laatst gezien 2022)"
+   ]
+  },
+  {
+   "naam": "Knuthenborg Safaripark",
+   "plaats": "Maribo",
+   "bron": "officieel/daza/eaza/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Leeuw (laatst gezien 2024)",
+    "Tijger – Amoer (laatst gezien 2024)"
+   ]
+  },
+  {
+   "naam": "Danmarks Fugle Zoo – Frydenlund Fuglepark",
+   "plaats": "Tommerup",
+   "bron": "officieel",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Munkholm Zoo",
+   "plaats": "Balle",
+   "bron": "officieel/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Euraziatische lynx – Centraal-Aziatisch (L. l. isabellinus) (laatst gezien 2022)",
+    "Vissende kat (laatst gezien 2021)",
+    "Serval (laatst gezien 2021)"
+   ]
+  },
+  {
+   "naam": "Pangea Park Falster (voorheen Guldborgsund Zoo)",
+   "plaats": "Nykøbing Falster",
+   "bron": "officieel/zootierliste",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Terrariet Vissenbjerg",
+   "plaats": "Vissenbjerg",
+   "bron": "officieel/daza/eaza",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Fiskeri- og Søfartsmuseet",
+   "plaats": "Esbjerg",
+   "bron": "officieel/daza",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Aalborg Zoo",
+   "plaats": "Aalborg",
+   "bron": "officieel/daza/eaza/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (laatst gezien 2024)",
+    "Leeuw – Aziatisch (P. l. leo, voorheen P. l. persica) (laatst gezien 2026)",
+    "Tijger – Sumatraans (laatst gezien 2026)"
+   ]
+  },
+  {
+   "naam": "Zoopark Sydsjælland (FVST: Zoopark ApS)",
+   "plaats": "Næstved",
+   "bron": "officieel/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Euraziatische lynx (laatst gezien 2022)",
+    "Tijger (laatst gezien 2021)"
+   ]
+  },
+  {
+   "naam": "AQUA Akvarium & Dyrepark",
+   "plaats": "Silkeborg",
+   "bron": "officieel/daza",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Odsherreds Zoo Dyrepark",
+   "plaats": "Asnæs",
+   "bron": "officieel/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (laatst gezien 2022)",
+    "Caracal (laatst gezien 2022)",
+    "Serval (laatst gezien 2022)"
+   ]
+  },
+  {
+   "naam": "Hansenberg Zoo (Hansenberg Organia)",
+   "plaats": "Kolding",
+   "bron": "officieel/eaza/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (laatst gezien jaar onbekend)"
+   ]
+  },
+  {
+   "naam": "Randers Regnskov",
+   "plaats": "Randers",
+   "bron": "officieel/daza/eaza/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Euraziatische lynx (laatst gezien 2025)",
+    "Margay – Yucatán (L. w. yucatanicus) (laatst gezien 2026)",
+    "Jaguar (laatst gezien 2026)"
+   ]
+  },
+  {
+   "naam": "Skandinavisk Dyrepark",
+   "plaats": "Kolind",
+   "bron": "officieel/daza",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Zoo København (Zoologisk Have i København)",
+   "plaats": "Frederiksberg",
+   "bron": "officieel/daza/eaza/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Leeuw (laatst gezien 2026)",
+    "Leeuw – Zuidelijk (P. l. melanochaita) (laatst gezien 2026)",
+    "Luipaard – Amoer (P. p. orientalis) (laatst gezien 2026)",
+    "Tijger – Amoer (laatst gezien 2026)"
+   ]
+  },
+  {
+   "naam": "Skolehjemmet Orøstrand",
+   "plaats": "Holbæk",
+   "bron": "officieel",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Givskud Zoo – Zootopia",
+   "plaats": "Givskud",
+   "bron": "officieel/daza/eaza/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Leeuw (laatst gezien 2025)",
+    "Leeuw – Zuidelijk (P. l. melanochaita) (laatst gezien 2025)"
+   ]
+  },
+  {
+   "naam": "Jyllands Park Zoo",
+   "plaats": "Haunstrup/Videbæk",
+   "bron": "officieel/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Caracal (laatst gezien 2022)",
+    "Serval (laatst gezien 2022)",
+    "Leeuw (laatst gezien 2022)"
+   ]
+  },
+  {
+   "naam": "Odense Zoo",
+   "plaats": "Odense",
+   "bron": "officieel/daza/eaza/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Leeuw (laatst gezien 2025)",
+    "Tijger – Amoer (laatst gezien 2025)"
+   ]
+  },
+  {
+   "naam": "Brændesgårdshaven",
+   "plaats": "Svaneke (Bornholm)",
+   "bron": "officieel",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Øresundsakvariet",
+   "plaats": "Helsingør",
+   "bron": "daza",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Nordisk Dyrepark",
+   "plaats": "Hobro",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": []
+  }
+ ]
+}

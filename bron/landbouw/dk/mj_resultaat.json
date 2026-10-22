@@ -1,0 +1,181 @@
+{
+  "locaties": [
+    {
+      "naam": "Ree Park",
+      "plaats": "Ebeltoft (Syddjurs)",
+      "lon": 10.737, "lat": 56.261,
+      "type": "Safaripark",
+      "lidmaatschap": ["EAZA", "DAZA"],
+      "url": "https://reepark.dk/",
+      "uren": {
+        "nl": "Seizoen 2026 gesloten; weer open voor ‘Jul i Ree Park’ op 5–6, 12–13 en 19–20 december 2026. Seizoen 2026 begon op 28 maart (eigen site, gezien 22-10-2026).",
+        "en": "Closed for the 2026 season; reopens for ‘Jul i Ree Park’ on 5–6, 12–13 and 19–20 December 2026. The 2026 season started on 28 March (own site, seen 22-10-2026)."
+      },
+      "about": {
+        "nl": "Safaripark op Djursland met dieren van vier continenten. Sinds 8 juli 2026 heet het park ‘Ree Park’ in plaats van ‘Ree Park Safari’ (eerder ‘Ree Park – Ebeltoft Safari’).",
+        "en": "Safari park on Djursland with animals from four continents. Since 8 July 2026 it is called ‘Ree Park’ instead of ‘Ree Park Safari’ (formerly ‘Ree Park – Ebeltoft Safari’)."
+      },
+      "earlier": {
+        "nl": "Sumatraanse tijgers (o.a. kater Asim en poes Gasha, welpen in 2015; nog genoemd in april 2019, migogaarhus.dk 11-04-2019). Niet meer op de dierenlijst van de huidige site (sitemap, gezien 22-10-2026).",
+        "en": "Sumatran tigers (incl. male Asim and female Gasha, cubs in 2015; still mentioned in April 2019, migogaarhus.dk 11-04-2019). No longer on the animal list of the current site (sitemap, seen 22-10-2026)."
+      },
+      "katten": [
+        {"soort": "Leeuw", "ondersoort": "onbekend", "status": "g",
+         "toelichting": {"nl": "Afrikaanse leeuwen; dagelijkse roofdierenvoedering om 12.00 uur in het seizoen.", "en": "African lions; daily predator feeding at 12:00 during the season."},
+         "aantal": {"nl": "onbekend (o.a. leeuwin Elsa en haar 3 welpen van oktober 2025)", "en": "unknown (incl. lioness Elsa and her 3 cubs from October 2025)"},
+         "bron": "Eigen site soortpagina /dyr/loeve/ (gezien 22-10-2026); migogaarhus.dk 30-10-2025 en 20-03-2026"},
+        {"soort": "Cheetah", "ondersoort": "onbekend", "status": "g",
+         "toelichting": {"nl": "Het park zegt sterk in te zetten op de fok van cheeta’s, samen met andere dierentuinen.", "en": "The park says it focuses strongly on cheetah breeding, together with other zoos."},
+         "aantal": {"nl": "onbekend", "en": "unknown"},
+         "bron": "Eigen site soortpagina /dyr/gepard-2/ (gezien 22-10-2026); migogaarhus.dk 20-03-2026"},
+        {"soort": "Luipaard", "ondersoort": "Noord-Chinees (P. p. japonensis)", "status": "g",
+         "toelichting": {"nl": "Kater Suresh (ca. 3,5 jaar, uit Zoo Hannover) kwam op 26-02-2026 aan; hij moet later samengezet worden met poes ShanXi voor de fok.", "en": "Male Suresh (about 3.5 years, from Hannover Zoo) arrived on 26-02-2026; he is to be paired later with female ShanXi for breeding."},
+         "aantal": {"nl": "2 (kater Suresh en poes ShanXi)", "en": "2 (male Suresh and female ShanXi)"},
+         "bron": "Eigen site soortpagina /dyr/nordkinesisk-leopard/ (gezien 22-10-2026); migogaarhus.dk 09-03-2026"},
+        {"soort": "Vissende kat", "ondersoort": "—", "status": "g",
+         "toelichting": {"nl": "Op de dierenlijst van de site (pagina bijgewerkt in 2025).", "en": "On the site’s animal list (page updated in 2025)."},
+         "aantal": {"nl": "onbekend", "en": "unknown"},
+         "bron": "Eigen site soortpagina /dyr/asiatisk-fiskekat/ (gezien 22-10-2026; sitemap 31-10-2025)"},
+        {"soort": "Zandkat", "ondersoort": "Arabisch (F. m. harrisoni)", "status": "g",
+         "toelichting": {"nl": "Arabische zandkat; op de dierenlijst van de site (pagina bijgewerkt december 2025).", "en": "Arabian sand cat; on the site’s animal list (page updated December 2025)."},
+         "aantal": {"nl": "onbekend", "en": "unknown"},
+         "bron": "Eigen site soortpagina /dyr/sandkat/ (gezien 22-10-2026; sitemap 03-12-2025)"}
+      ],
+      "geboortes": [
+        {"soort": "Leeuw", "geboren": "2025-10-04",
+         "n": {"nl": "3 welpen", "en": "3 cubs"},
+         "x": {"nl": "Moeder leeuwin Elsa; geboren in de nacht naar zaterdag 4 oktober 2025. Geslacht en namen niet bekendgemaakt. Het park verwachtte ze rond ‘Jul i Ree Park’ (december 2025) te tonen.", "en": "Mother lioness Elsa; born in the night to Saturday 4 October 2025. Sex and names not announced. The park expected to show them around ‘Jul i Ree Park’ (December 2025)."},
+         "bron": "migogaarhus.dk 30-10-2025"}
+      ],
+      "kleur": ""
+    },
+    {
+      "naam": "Randers Regnskov",
+      "plaats": "Randers (Randers)",
+      "lon": 10.032, "lat": 56.457,
+      "type": "Dierentuin",
+      "lidmaatschap": ["EAZA", "DAZA"],
+      "url": "https://regnskoven.dk/",
+      "uren": {
+        "nl": "Hele jaar open. 19/10–22/11/2026: werkdagen 10–16, weekend 10–17; 23/11–29/11 gesloten; 30/11–25/12 werkdagen 10–15, weekend 10–16; 26/12–30/12 dagelijks 10–16; 31/12 gesloten (eigen site, gezien 22-10-2026).",
+        "en": "Open all year. 19/10–22/11/2026: weekdays 10–16, weekends 10–17; 23/11–29/11 closed; 30/11–25/12 weekdays 10–15, weekends 10–16; 26/12–30/12 daily 10–16; 31/12 closed (own site, seen 22-10-2026)."
+      },
+      "about": {
+        "nl": "Tropische dierentuin met drie koepels (Zuid-Amerika, Afrika, Azië) en het buitendeel ‘Tidsrejsen’. Het park coördineert het Europese fokprogramma (EEP) voor de jaguar.",
+        "en": "Tropical zoo with three domes (South America, Africa, Asia) and the outdoor area ‘Tidsrejsen’ (Time Travel). The zoo coordinates the European breeding programme (EEP) for the jaguar."
+      },
+      "earlier": {"nl": "", "en": ""},
+      "katten": [
+        {"soort": "Jaguar", "ondersoort": "onbekend", "status": "g",
+         "toelichting": {"nl": "Binnen- en buitenverblijf; voedering buiten om 13.00/13.30 uur op vaste dagen. Moeder Chica is zwart.", "en": "Indoor and outdoor enclosure; outdoor feeding at 13:00/13:30 on set days. Mother Chica is black."},
+         "aantal": {"nl": "onbekend (o.a. poes Chica, dochter Sibba en 2 welpen van februari 2026, onder wie kater Markus; kater Bentor kwam in 2021)", "en": "unknown (incl. female Chica, daughter Sibba and 2 cubs from February 2026, among them male Markus; male Bentor arrived in 2021)"},
+         "bron": "Eigen site ‘Dagens aktiviteter’ en parkplattegrond juli 2026 (gezien 22-10-2026); TV2 Østjylland 04-03-2026; DR 20-05-2026; Amtsavisen 22-06-2021"},
+        {"soort": "Margay", "ondersoort": "—", "status": "g",
+         "toelichting": {"nl": "In de Zuid-Amerika-koepel (‘margaykat’). Randers is het enige park in Denemarken dat margays heeft gefokt.", "en": "In the South America dome (‘margaykat’). Randers is the only park in Denmark that has bred margays."},
+         "aantal": {"nl": "onbekend", "en": "unknown"},
+         "bron": "Eigen site parkplattegrond (brochure, geüpload juli 2026, gezien 22-10-2026); TV2 Østjylland ongedateerd"},
+        {"soort": "Euraziatische lynx", "ondersoort": "onbekend", "status": "g",
+         "toelichting": {"nl": "In het buitendeel Tidsrejsen (‘europæisk los’).", "en": "In the outdoor area Tidsrejsen (‘europæisk los’)."},
+         "aantal": {"nl": "onbekend", "en": "unknown"},
+         "bron": "Eigen site ‘Under åben himmel’ en parkplattegrond juli 2026 (gezien 22-10-2026); inspectierapport Rådet for zoologiske anlæg 2025"}
+      ],
+      "geboortes": [
+        {"soort": "Jaguar", "geboren": "2026-02-19",
+         "n": {"nl": "2 welpen", "en": "2 cubs"},
+         "x": {"nl": "Moeder Chica; beide zwart. Een van de twee is kater Markus (in mei 2026 drie maanden oud). Grote zus Sibba woont bij hen.", "en": "Mother Chica; both black. One of them is male Markus (three months old in May 2026). Older sister Sibba lives with them."},
+         "bron": "TV2 Østjylland 04-03-2026; DR 20-05-2026"}
+      ],
+      "kleur": "zwarte jaguar"
+    },
+    {
+      "naam": "Jyllands Park Zoo",
+      "plaats": "Haunstrup, Videbæk (Ringkøbing-Skjern; dichtbij Herning)",
+      "lon": 8.808, "lat": 56.095,
+      "type": "Dierenpark",
+      "lidmaatschap": [],
+      "url": "https://jyllandsparkzoo.dk/da",
+      "uren": {
+        "nl": "Seizoenspark: 2026 open van 29 maart t/m 13 september; nu gesloten, weer open op Palmzondag 2027 (eigen site, gezien 22-10-2026).",
+        "en": "Seasonal park: open 29 March to 13 September in 2026; now closed, reopens on Palm Sunday 2027 (own site, seen 22-10-2026)."
+      },
+      "about": {
+        "nl": "Familiedierenpark (vroeger Haunstrup Dyrepark) met ruim 350 dieren van ruim 70 soorten, een kleine kermis en een kinderboerderij.",
+        "en": "Family animal park (formerly Haunstrup Dyrepark) with over 350 animals of more than 70 species, a small funfair and a petting zoo."
+      },
+      "earlier": {"nl": "", "en": ""},
+      "katten": [
+        {"soort": "Leeuw", "ondersoort": "onbekend", "status": "g",
+         "toelichting": {"nl": "Op de dierenlijst van de site. In 2019 kwam een kater uit Odense Zoo, in 2020 twee zusters uit Borås Djurpark.", "en": "On the site’s animal list. A male came from Odense Zoo in 2019, two sisters from Borås Djurpark in 2020."},
+         "aantal": {"nl": "onbekend", "en": "unknown"},
+         "bron": "Eigen site ‘Oplev dyrene’ (gezien 22-10-2026); Herning Folkeblad 06-03-2020"},
+        {"soort": "Euraziatische lynx", "ondersoort": "onbekend", "status": "g",
+         "toelichting": {"nl": "Op de dierenlijst als ‘Europæisk los’.", "en": "On the animal list as ‘Europæisk los’."},
+         "aantal": {"nl": "onbekend", "en": "unknown"},
+         "bron": "Eigen site ‘Oplev dyrene’ (gezien 22-10-2026)"},
+        {"soort": "Caracal", "ondersoort": "onbekend", "status": "g",
+         "toelichting": {"nl": "Op de dierenlijst als ‘Karakal’.", "en": "On the animal list as ‘Karakal’."},
+         "aantal": {"nl": "onbekend", "en": "unknown"},
+         "bron": "Eigen site ‘Oplev dyrene’ (gezien 22-10-2026)"},
+        {"soort": "Serval", "ondersoort": "onbekend", "status": "g",
+         "toelichting": {"nl": "Op de dierenlijst en met een eigen soortpagina.", "en": "On the animal list and with its own species page."},
+         "aantal": {"nl": "onbekend", "en": "unknown"},
+         "bron": "Eigen site ‘Oplev dyrene’ en soortpagina /en/serval (gezien 22-10-2026)"}
+      ],
+      "geboortes": [],
+      "kleur": ""
+    },
+    {
+      "naam": "Munkholm Zoo",
+      "plaats": "Balle (Syddjurs)",
+      "lon": 10.783, "lat": 56.321,
+      "type": "Dierenpark",
+      "lidmaatschap": [],
+      "url": "https://munkholmzoo.dk/",
+      "uren": {
+        "nl": "Seizoen 2026: dagelijks open t/m 1 november 2026, in week 43–44 van 10 tot 16 uur (eigen site, gezien 22-10-2026).",
+        "en": "Season 2026: open daily until 1 November 2026, in weeks 43–44 from 10:00 to 16:00 (own site, seen 22-10-2026)."
+      },
+      "about": {
+        "nl": "Kleine familiedierentuin op Djursland met meer dan 400 dieren van zo’n 80 soorten, veel aai- en voederdieren.",
+        "en": "Small family zoo on Djursland with more than 400 animals of about 80 species, many of which can be petted or fed."
+      },
+      "earlier": {"nl": "", "en": ""},
+      "katten": [
+        {"soort": "Serval", "ondersoort": "onbekend", "status": "g",
+         "toelichting": {"nl": "Twee verblijven op de parkplattegrond; het café heet ‘Serval Grillen’.", "en": "Two enclosures on the park map; the café is called ‘Serval Grillen’."},
+         "aantal": {"nl": "onbekend", "en": "unknown"},
+         "bron": "Eigen site ‘Kort over haven’ en FAQ (gezien 22-10-2026); parkplattegrond 2024"},
+        {"soort": "Euraziatische lynx", "ondersoort": "Altai-lynx (volgens parkplattegrond)", "status": "w",
+         "toelichting": {"nl": "Twee verblijven ‘Altai los’ op de parkplattegrond van 2024.", "en": "Two enclosures ‘Altai los’ on the 2024 park map."},
+         "aantal": {"nl": "onbekend", "en": "unknown"},
+         "bron": "Eigen site parkplattegrond (afbeelding geüpload 03-2024, gezien 22-10-2026); Tripadvisor-recensie ongedateerd",
+         "twijfel": {"nl": "Alleen op de plattegrond uit 2024 en in een ongedateerde recensie; de huidige parkteksten noemen de lynx niet.", "en": "Only on the 2024 map and in an undated review; the current park texts do not mention the lynx."}}
+      ],
+      "geboortes": [],
+      "kleur": ""
+    }
+  ],
+  "zonder_katten": [
+    {"naam": "Skandinavisk Dyrepark", "plaats": "Kolind (Syddjurs)",
+     "reden": {"nl": "Geen katachtigen op de dierenlijst (ijsberen, bruine beren, wolven, vossen, herten e.a.; eigen site 22-10-2026). Een lynx-houtsculptuur (juli 2026) is geen levend dier.", "en": "No cats on the animal list (polar bears, brown bears, wolves, foxes, deer etc.; own site 22-10-2026). A wooden lynx sculpture (July 2026) is not a live animal."}},
+    {"naam": "AQUA Akvarium & Dyrepark", "plaats": "Silkeborg (Silkeborg)",
+     "reden": {"nl": "Zoetwateraquarium en dierenpark met Deense dieren; geen katachtigen op de soortpagina’s (o.a. otter, das, wasbeer, wasbeerhond; eigen site 22-10-2026).", "en": "Freshwater aquarium and animal park with Danish animals; no cats on the species pages (incl. otter, badger, raccoon, raccoon dog; own site 22-10-2026)."}},
+    {"naam": "Kattegatcentret", "plaats": "Grenaa (Norddjurs)",
+     "reden": {"nl": "Zeeaquarium (haaien, zeehonden); geen katachtigen.", "en": "Sea aquarium (sharks, seals); no cats."}},
+    {"naam": "Djurs Sommerland", "plaats": "Nimtofte (Syddjurs)",
+     "reden": {"nl": "Pretpark zonder wilde dieren; geen katachtigen (eigen site 22-10-2026).", "en": "Amusement park without wild animals; no cats (own site 22-10-2026)."}},
+    {"naam": "Marselisborg Dyrehave", "plaats": "Aarhus (Aarhus)",
+     "reden": {"nl": "Gratis hertenkamp met herten en wilde zwijnen; geen katachtigen.", "en": "Free deer park with deer and wild boar; no cats."}}
+  ],
+  "open_punten": [
+    "Ree Park: site (reepark.dk) zit achter Cloudflare; soortpagina’s alleen per stuk via Playwright met pauzes te lezen. Soortpagina’s geven geen aantallen of namen. Geen datumbron 2025–2026 buiten de site voor vissende kat en zandkat (wel soortpagina’s uit de vernieuwde site van okt–dec 2025).",
+    "Ree Park: de luipaard-ondersoort is volgens het park P. p. japonensis (Noord-Chinees); Kitchener et al. 2017 rekenen die tot P. p. orientalis. Kies het label in overleg.",
+    "Ree Park: Sumatraanse tijgers staan niet meer op de site; vertrekjaar niet gevonden (laatst genoemd april 2019).",
+    "Randers Regnskov: de site heeft geen dierenlijst; soorten komen uit de dagactiviteiten en de parkplattegrond (brochure juli 2026). Aantallen jaguars en de vader van het kuld van februari 2026 niet bevestigd. Een tweede jaguarkuld van mei 2024 (Amtsavisen 21-05-2024) valt buiten de 2-jaarsgrens.",
+    "Jyllands Park Zoo: domein jyllandspark.dk is onbereikbaar; de juiste site is jyllandsparkzoo.dk. De dierenlijst is ongedateerd maar staat op de site van seizoen 2026. Geen recent nieuws over de katten gevonden; geen namen of aantallen. Gemeente: adres Videbæk, OSM plaatst het park in Ringkøbing-Skjern.",
+    "Munkholm Zoo: Altai-lynx alleen op de plattegrond van 2024 (status w). Een ongedateerde recensie noemt servaljongen; datum niet te achterhalen.",
+    "Geen dierenparken met katachtigen gevonden in Viborg, Skive, Holstebro, Struer, Lemvig, Horsens, Hedensted of Odder. Zoeken leverde weinig op; kleine privéparken kunnen ontbreken. Givskud Zoo ligt in Region Syddanmark en Jesperhus (Mors) in Region Nordjylland.",
+    "Historisch: Aarhus Zoologiske Have (1932–1960) had leeuwen en tijgers; bestaat niet meer.",
+    "ZooChat en de holdinglijsten van Zootierliste waren niet bruikbaar (403 of door JavaScript geladen); niet als bron gebruikt."
+  ]
+}

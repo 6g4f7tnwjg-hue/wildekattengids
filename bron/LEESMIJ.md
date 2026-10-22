@@ -106,9 +106,11 @@ Alleen de Claude-pagina bouwen: `python3 bron/bouw.py --geen-web`.
 - **Officiële lijst**: de Fødevarestyrelsen-lijst (“Godkendte zoologiske anlæg”) is de lijst voor EU-handel. Kleine parken (Nordisk Dyrepark) staan er niet op: per regio zoeken blijft nodig.
 - **Kleine parken verstoppen katten.** Glad Zoo noemde de serval niet op “Vores dyr”, wel in het dagprogramma (voedering) en in de persfoto’s. Kijk bij kleine parken ook naar dagprogramma, parkkaart en mediabibliotheek (WordPress).
 - **Europakaart**: Zweden en Zuid-Noorwegen zijn aan `NBR` in `start.html` toegevoegd (GISCO NUTS 2024, geprojecteerd met `P`).
-- Het bouwscript van de gids (afgeleid van de Portugese gids, gegevens als JSON, Deens via een vertaaltabel) staat niet in de repo.
+- Het bouwscript en de gegevens van de gids staan in `bron/landbouw/dk/` (zie `bron/landbouw/LEESMIJ.md`).
 
 ## Tsjechië toevoegen: lessen (oktober 2026)
+
+- Bouwscript, gegevens en kaart staan in `bron/landbouw/cz/`; de werkwijze voor een nieuw land in `bron/landbouw/LEESMIJ.md`.
 
 - **Afgeleid van de Deense gids**: `da` → `cs` in de code; de vaste teksten zijn opnieuw vertaald. Taal `cs` staat in alle gedeelde lagen ná `da`.
 - **Tsjechisch verbuigt.** Vaste teksten in de gedeelde lagen gebruiken neutrale vormen; alleen de kop van een soortpagina (`jungle.py`) kiest místo/místa/míst en “v Česku”. Elders kan bij 2–4 een grammaticaal onjuiste vorm staan.

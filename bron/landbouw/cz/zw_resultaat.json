@@ -1,0 +1,775 @@
+{
+ "locaties": [
+  {
+   "naam": "Zoologická a botanická zahrada města Plzně (Zoo Plzeň)",
+   "plaats": "Plzeň",
+   "kraj": "Plzeňský",
+   "lon": 13.367,
+   "lat": 49.761,
+   "type": "Dierentuin",
+   "lidmaatschap": [
+    "EAZA",
+    "UCSZOO"
+   ],
+   "url": "https://zooplzen.cz/",
+   "uren": {
+    "nl": "Dagelijks open; maart–oktober 8:00–19:00, november–februari 9:00–17:00 (eigen site, gezien 22-10-2026)",
+    "en": "Open daily; March–October 8:00–19:00, November–February 9:00–17:00 (own website, seen 22-10-2026)"
+   },
+   "about": {
+    "nl": "Gecombineerde dierentuin en botanische tuin, een van de oudste van Tsjechië (1926), met een zeer brede kattencollectie. De dierenlijst op de nieuwe site is een selectie; het jaarverslag 2025 geeft de volledige stand.",
+    "en": "Combined zoo and botanical garden, one of the oldest in Czechia (1926), with a very broad cat collection. The animal lexicon on the new website is a selection; the 2025 annual report gives the full stock."
+   },
+   "earlier": {
+    "nl": "Soedanese cheeta-kater (overleden februari 2025) en een Soedanese cheetahpoes (overleden november 2025); Berberleeuw-fokkater (overleden februari 2025). Arabische wilde kat (Felis lybica gordoni) en ocelot zijn eigendom van Plzeň maar stonden eind 2025 elders (jaarverslag 2025).",
+    "en": "Northeast African cheetah male (died February 2025) and one female (died November 2025); breeding Barbary lion male (died February 2025). Arabian wildcat (Felis lybica gordoni) and ocelot are owned by Plzeň but were housed elsewhere at the end of 2025 (annual report 2025)."
+   },
+   "katten": [
+    {
+     "soort": "Leeuw",
+     "ondersoort": "Noordelijk (P. l. leo)",
+     "status": "g",
+     "toelichting": {
+      "nl": "Berberleeuw. Na de dood van de fokkater (feb. 2025) is een nieuwe kater toegewezen; eerst vertrekken in 2026 twee jonge katers uit eigen kweek.",
+      "en": "Barbary lion. After the breeding male died (Feb 2025) a new male was assigned; first two young males from the zoo's own breeding leave during 2026."
+     },
+     "aantal": {
+      "nl": "3 eind 2025 (2 katers, 1 poes)",
+      "en": "3 at end of 2025 (2 males, 1 female)"
+     },
+     "bron": "Jaarverslag 2025 (eigen site, gezien 22-10-2026)"
+    },
+    {
+     "soort": "Tijger",
+     "ondersoort": "Amoer",
+     "status": "g",
+     "toelichting": {
+      "nl": "Fokpaar; nog geen nakomelingen.",
+      "en": "Breeding pair; no offspring yet."
+     },
+     "aantal": {
+      "nl": "2 (kater en poes)",
+      "en": "2 (male and female)"
+     },
+     "bron": "Jaarverslag 2025 (eigen site, gezien 22-10-2026); soortpagina lexicon"
+    },
+    {
+     "soort": "Luipaard",
+     "ondersoort": "Noord-Chinees (P. p. japonensis)",
+     "status": "g",
+     "toelichting": {
+      "nl": "Noord-Chinese luipaard; fokpaar plus een jonge poes zonder staart waarvoor nog een plek wordt gezocht.",
+      "en": "North Chinese leopard; breeding pair plus a young tailless female for which a new home is being sought."
+     },
+     "aantal": {
+      "nl": "3 (1 kater, 2 poezen)",
+      "en": "3 (1 male, 2 females)"
+     },
+     "bron": "Jaarverslag 2025 (eigen site, gezien 22-10-2026); soortpagina lexicon 'levhart čínský'"
+    },
+    {
+     "soort": "Sneeuwluipaard",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Een poes; een jonge kater is toegewezen en komt eind 2026 of begin 2027.",
+      "en": "One female; a young male has been assigned and is due at the end of 2026 or early 2027."
+     },
+     "aantal": {
+      "nl": "1 (poes)",
+      "en": "1 (female)"
+     },
+     "bron": "Jaarverslag 2025 (eigen site, gezien 22-10-2026); soortpagina lexicon"
+    },
+    {
+     "soort": "Cheetah",
+     "ondersoort": "Soedanees (A. j. soemmeringii)",
+     "status": "g",
+     "toelichting": {
+      "nl": "Laatste poes van deze ondersoort in Plzeň (ruim 13 jaar oud).",
+      "en": "Last female of this subspecies at Plzeň (over 13 years old)."
+     },
+     "aantal": {
+      "nl": "1 (poes)",
+      "en": "1 (female)"
+     },
+     "bron": "Jaarverslag 2025 (eigen site, gezien 22-10-2026); soortpagina lexicon 'gepard súdánský'"
+    },
+    {
+     "soort": "Cheetah",
+     "ondersoort": "Zuidelijk (A. j. jubatus)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Kaapse cheetah-poes in opvang voor Zoo Ústí nad Labem tijdens verbouwing daar; terugkeer was verwacht in de eerste helft van 2026.",
+      "en": "Cape cheetah female housed for Ústí nad Labem Zoo during renovation there; return was expected in the first half of 2026."
+     },
+     "aantal": {
+      "nl": "1 (poes)",
+      "en": "1 (female)"
+     },
+     "bron": "Jaarverslag 2025 (eigen site, gezien 22-10-2026)",
+     "twijfel": {
+      "nl": "Volgens het jaarverslag zou zij in de eerste helft van 2026 terug naar Ústí gaan; niet bevestigd of dat is gebeurd.",
+      "en": "According to the annual report she was to return to Ústí in the first half of 2026; not confirmed whether that happened."
+     }
+    },
+    {
+     "soort": "Canadese lynx",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Paar te zien in het verblijf (jaarverslag 2025); 'buren van de lynxen' genoemd in nieuws van 10-09-2026.",
+      "en": "Pair on show (annual report 2025); 'neighbours of the lynxes' mentioned in news of 10-09-2026."
+     },
+     "aantal": {
+      "nl": "2 (kater en poes)",
+      "en": "2 (male and female)"
+     },
+     "bron": "Jaarverslag 2025; eigen site nieuws 10-09-2026"
+    },
+    {
+     "soort": "Rode lynx",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Drieling geboren mei 2025 (Tališka, Ríša, Míša); de jongen gaan in 2026 naar andere dierentuinen.",
+      "en": "Triplets born May 2025 (Tališka, Ríša, Míša); the young move to other zoos during 2026."
+     },
+     "aantal": {
+      "nl": "5 eind 2025 (ouderpaar + 3 jongen)",
+      "en": "5 at end of 2025 (pair + 3 young)"
+     },
+     "bron": "Jaarverslag 2025; Iris 4/2025 (eigen site, gezien 22-10-2026)"
+    },
+    {
+     "soort": "Bengaalse kat",
+     "ondersoort": "Palawan (P. b. heaneyi)",
+     "status": "g",
+     "toelichting": {
+      "nl": "Palawan-luipaardkat; in 2025 stierf een poes en vertrokken drie dieren.",
+      "en": "Palawan leopard cat; in 2025 one female died and three animals left."
+     },
+     "aantal": {
+      "nl": "1 (kater) eind 2025",
+      "en": "1 (male) at end of 2025"
+     },
+     "bron": "Jaarverslag 2025 (eigen site, gezien 22-10-2026)"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Jihočeská zoologická zahrada Hluboká nad Vltavou (Zoo Hluboká)",
+   "plaats": "Hluboká nad Vltavou",
+   "kraj": "Jihočeský",
+   "lon": 14.42,
+   "lat": 49.042,
+   "type": "Dierentuin",
+   "lidmaatschap": [
+    "EAZA",
+    "UCSZOO"
+   ],
+   "url": "https://www.zoohluboka.cz/",
+   "uren": {
+    "nl": "Elke dag open; jan–feb 8:30–16:00, maart 8:30–17:00, april–mei 8:30–18:00, juni–aug 8:30–19:00, sept 8:30–18:00, okt 8:30–17:00, nov–dec 8:30–16:00 (eigen site, gezien 22-10-2026)",
+    "en": "Open every day; Jan–Feb 8:30–16:00, March 8:30–17:00, April–May 8:30–18:00, June–Aug 8:30–19:00, Sept 8:30–18:00, Oct 8:30–17:00, Nov–Dec 8:30–16:00 (own website, seen 22-10-2026)"
+   },
+   "about": {
+    "nl": "Zuid-Boheemse dierentuin bij Ohrada, gericht op Europese en Euraziatische dieren. Heeft ook een opvangstation voor wilde dieren (niet als expositie).",
+    "en": "South Bohemian zoo at Ohrada, focused on European and Eurasian animals. Also runs a wildlife rescue station (not an exhibit)."
+   },
+   "earlier": {
+    "nl": "Tijgers uit eigen kweek (2021) vertrokken in 2024 naar Boedapest en Veszprém. Amoertijger-kater Oliver is op 09-06-2026 (voorlopig) naar Zoo Hodonín verhuisd.",
+    "en": "Tigers bred here (2021) left in 2024 for Budapest and Veszprém. Amur tiger male Oliver moved (for now) to Hodonín Zoo on 09-06-2026."
+   },
+   "katten": [
+    {
+     "soort": "Tijger",
+     "ondersoort": "Amoer",
+     "status": "g",
+     "toelichting": {
+      "nl": "Poes Altaica met haar drie welpen van augustus 2025; kater Oliver tijdelijk naar Hodonín (juni 2026).",
+      "en": "Female Altaica with her three cubs from August 2025; male Oliver temporarily moved to Hodonín (June 2026)."
+     },
+     "aantal": {
+      "nl": "4 (poes Altaica + 3 jongen: 1 kater, 2 poezen)",
+      "en": "4 (female Altaica + 3 cubs: 1 male, 2 females)"
+     },
+     "bron": "Eigen site nieuws 01-09-2025, 24-10-2025, 09-06-2026; jaarverslag 2025"
+    },
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "Karpatisch (L. l. carpathicus)",
+     "status": "g",
+     "toelichting": {
+      "nl": "Na wissel van de poes kweek in 2025: twee jongen geboren 9-5-2025.",
+      "en": "After a change of female, breeding in 2025: two kittens born 9-5-2025."
+     },
+     "aantal": {
+      "nl": "4 eind 2025 (2 katers, 2 poezen, incl. 2 jongen van 2025)",
+      "en": "4 at end of 2025 (2 males, 2 females, incl. 2 kittens of 2025)"
+     },
+     "bron": "Jaarverslag 2025; eigen site nieuws 14-07-2025"
+    },
+    {
+     "soort": "Zandkat",
+     "ondersoort": "F. m. harrisoni",
+     "status": "g",
+     "toelichting": {
+      "nl": "Drie jongen geboren 1-4-2025 (2 katers, 1 poes).",
+      "en": "Three kittens born 1-4-2025 (2 males, 1 female)."
+     },
+     "aantal": {
+      "nl": "6 eind 2025 (4 katers, 2 poezen)",
+      "en": "6 at end of 2025 (4 males, 2 females)"
+     },
+     "bron": "Jaarverslag 2025; eigen site nieuws 25-04-2025, 06-06-2025"
+    },
+    {
+     "soort": "Europese wilde kat",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Kweekgroep; in 2025 gingen dieren naar opvangstations (Vlašim, Aves) en naar Království lesa Lipno. Laatste jongen: juli 2024.",
+      "en": "Breeding group; in 2025 animals went to rescue stations (Vlašim, Aves) and to Království lesa Lipno. Last kittens: July 2024."
+     },
+     "aantal": {
+      "nl": "1 (poes) eind 2025",
+      "en": "1 (female) at end of 2025"
+     },
+     "bron": "Jaarverslag 2025 (eigen site, gezien 22-10-2026); soortpagina"
+    }
+   ],
+   "geboortes": [
+    {
+     "soort": "Tijger",
+     "geboren": "2025-08",
+     "n": {
+      "nl": "3 welpen",
+      "en": "3 cubs"
+     },
+     "x": {
+      "nl": "Moeder Altaica, vader Oliver; 1 kater en 2 poezen; sinds 23-10-2025 in het buitenverblijf te zien.",
+      "en": "Mother Altaica, father Oliver; 1 male and 2 females; on view in the outdoor enclosure since 23-10-2025."
+     },
+     "bron": "Eigen site nieuws 01-09-2025 en 24-10-2025"
+    }
+   ],
+   "kleur": ""
+  },
+  {
+   "naam": "Zoologická zahrada Tábor (ZOO Tábor)",
+   "plaats": "Tábor (Větrovy)",
+   "kraj": "Jihočeský",
+   "lon": 14.651,
+   "lat": 49.388,
+   "type": "Dierentuin",
+   "lidmaatschap": [],
+   "url": "https://www.zootabor.eu/",
+   "uren": {
+    "nl": "Dagelijks; september 9:00–18:00, oktober 9:00–17:00, juni–augustus 9:00–19:00; november–december alleen weekends, feestdagen en vakanties 9:00–16:00 (eigen site, gezien 22-10-2026)",
+    "en": "Daily; September 9:00–18:00, October 9:00–17:00, June–August 9:00–19:00; November–December weekends, holidays and school breaks only 9:00–16:00 (own website, seen 22-10-2026)"
+   },
+   "about": {
+    "nl": "Grootste particuliere dierentuin van Tsjechië (Tábor-Větrovy). Heeft sinds 2024 een CITES-opvangcentrum voor in beslag genomen koudeminnende roofdieren; een opvangcentrum voor warmteminnende katachtigen (o.a. leeuwen, servals, ocelotten, cheeta's) wordt gebouwd en is volgens de zoo in het voorjaar van 2027 klaar. In de dierentuin wonen ook drie huiskatten.",
+    "en": "Largest private zoo in Czechia (Tábor-Větrovy). Since 2024 it runs a CITES rescue centre for confiscated cold-adapted carnivores; a centre for warm-climate cats (e.g. lions, servals, ocelots, cheetahs) is under construction and due in spring 2027 according to the zoo. Three domestic cats also live at the zoo."
+   },
+   "earlier": {
+    "nl": "Geen aanwijzingen voor andere katsoorten.",
+    "en": "No indications of other cat species."
+   },
+   "katten": [
+    {
+     "soort": "Leeuw",
+     "ondersoort": "onbekend, incl. witte leeuw",
+     "status": "g",
+     "toelichting": {
+      "nl": "Twee paren: het oudere paar (kater Simba, geb. 2010) en sinds najaar 2024 de witte kater Gandalf (leucisme) met poes Aisha.",
+      "en": "Two pairs: the older pair (male Simba, born 2010) and since autumn 2024 white male Gandalf (leucism) with female Aisha."
+     },
+     "aantal": {
+      "nl": "4 (2 katers, 2 poezen)",
+      "en": "4 (2 males, 2 females)"
+     },
+     "bron": "Jaarverslag 2025 (gepubliceerd 08-2026); persbericht 07-07-2026 (verjaardag Gandalf en Aisha)"
+    },
+    {
+     "soort": "Tijger",
+     "ondersoort": "Amoer",
+     "status": "g",
+     "toelichting": {
+      "nl": "Kater Rocky, mascotte van de zoo; werd 15 jaar op 31-01-2026.",
+      "en": "Male Rocky, the zoo's mascot; turned 15 on 31-01-2026."
+     },
+     "aantal": {
+      "nl": "1 (kater Rocky)",
+      "en": "1 (male Rocky)"
+     },
+     "bron": "Persbericht 28-01-2026; jaarverslag 2025"
+    },
+    {
+     "soort": "Poema",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Poes Líla (12 jaar in april 2025) en een in 2025 van een particuliere houder overgenomen poes; in 2025 stierf één dier.",
+      "en": "Female Líla (12 in April 2025) and a female taken over from a private keeper in 2025; one animal died in 2025."
+     },
+     "aantal": {
+      "nl": "2 eind 2025",
+      "en": "2 at end of 2025"
+     },
+     "bron": "Jaarverslag 2025; persbericht 02-04-2025"
+    },
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "Karpatisch (L. l. carpathicus)",
+     "status": "g",
+     "toelichting": {
+      "nl": "Paar (sinds 2018).",
+      "en": "Pair (since 2018)."
+     },
+     "aantal": {
+      "nl": "2",
+      "en": "2"
+     },
+     "bron": "Jaarverslag 2025; eigen site soortpagina"
+    }
+   ],
+   "geboortes": [],
+   "kleur": "witte leeuw"
+  },
+  {
+   "naam": "ZOO Dvorec",
+   "plaats": "Borovany (Dvorec)",
+   "kraj": "Jihočeský",
+   "lon": 14.656,
+   "lat": 48.874,
+   "type": "Dierentuin",
+   "lidmaatschap": [
+    "CZAZA"
+   ],
+   "url": "https://www.zoodvorec.cz/",
+   "uren": {
+    "nl": "April–augustus dagelijks 9:00–18:00, september–oktober 9:00–17:00; in de winter beperkt open (eigen site, gezien 22-10-2026)",
+    "en": "April–August daily 9:00–18:00, September–October 9:00–17:00; limited opening in winter (own website, seen 22-10-2026)"
+   },
+   "about": {
+    "nl": "Particuliere dierentuin bij Borovany met de nadruk op grote katten; de leeuw is het wapendier. In november 2025 verbleef een sneeuwluipaard-kater er kort op doorreis naar een andere dierentuin.",
+    "en": "Private zoo near Borovany with a focus on big cats; the lion is its emblem. In November 2025 a male snow leopard stayed briefly on its way to another zoo."
+   },
+   "earlier": {
+    "nl": "Witte leeuwen: paar Agi en Tia (vanaf 2016; Tia overleden 2019), nesten in 2017 en 2018; witte leeuwin Leia vertrok op 08-10-2025 naar Zoo Bratislava (eigen site).",
+    "en": "White lions: pair Agi and Tia (from 2016; Tia died 2019), litters in 2017 and 2018; white lioness Leia left for Bratislava Zoo on 08-10-2025 (own website)."
+   },
+   "katten": [
+    {
+     "soort": "Tijger",
+     "ondersoort": "Bengaals, incl. witte tijger",
+     "status": "g",
+     "toelichting": {
+      "nl": "Witte tijgers Nena en Nanu (broer en zus, sinds 2013 uit Kernhof, Oostenrijk); 13 jaar op 17-05-2026.",
+      "en": "White tigers Nena and Nanu (siblings, since 2013 from Kernhof, Austria); turned 13 on 17-05-2026."
+     },
+     "aantal": {
+      "nl": "2 (Nena en Nanu)",
+      "en": "2 (Nena and Nanu)"
+     },
+     "bron": "Eigen site artikel 18-05-2026; soortpagina"
+    },
+    {
+     "soort": "Leeuw",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Kater Vratislav met de poezen Cruela en Sindy (5 jaar op 26-09-2026). De zoo zei in oktober 2025 de kweek van witte leeuwen voort te zetten, maar noemt geen ander wit dier bij naam.",
+      "en": "Male Vratislav with females Cruela and Sindy (5 years old on 26-09-2026). In October 2025 the zoo said it continues keeping white lions, but names no other white animal."
+     },
+     "aantal": {
+      "nl": "3 (Vratislav, Cruela, Sindy)",
+      "en": "3 (Vratislav, Cruela, Sindy)"
+     },
+     "bron": "Eigen site artikel 29-09-2026; artikel 01-10-2025"
+    },
+    {
+     "soort": "Serval",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Kater Tonda en poes Tonička (aangekomen 01-08-2025 uit particuliere kweek); in november 2025 naar het winterverblijf verhuisd.",
+      "en": "Male Tonda and female Tonička (arrived 01-08-2025 from a private breeder); moved to winter quarters in November 2025."
+     },
+     "aantal": {
+      "nl": "2 (Tonda en Tonička)",
+      "en": "2 (Tonda and Tonička)"
+     },
+     "bron": "Eigen site artikelen 06-10-2025 en 12-11-2025"
+    }
+   ],
+   "geboortes": [],
+   "kleur": "witte tijger"
+  },
+  {
+   "naam": "Zoo Na Hrádečku",
+   "plaats": "Horní Pěna",
+   "kraj": "Jihočeský",
+   "lon": 15.031,
+   "lat": 49.107,
+   "type": "Dierentuin",
+   "lidmaatschap": [
+    "UCSZOO"
+   ],
+   "url": "https://zoonahradecku.cz/",
+   "uren": {
+    "nl": "April–augustus dagelijks 9:00–18:00, september–oktober 9:00–17:00, november–maart 10:00–16:00 alleen weekends, feestdagen en vakanties (eigen site, gezien 22-10-2026)",
+    "en": "April–August daily 9:00–18:00, September–October 9:00–17:00, November–March 10:00–16:00 weekends, holidays and school breaks only (own website, seen 22-10-2026)"
+   },
+   "about": {
+    "nl": "Particuliere erkende dierentuin (sinds 2017) tussen Dolní en Horní Pěna bij Jindřichův Hradec.",
+    "en": "Private licensed zoo (since 2017) between Dolní and Horní Pěna near Jindřichův Hradec."
+   },
+   "earlier": {
+    "nl": "Drie servalpoezen vertrokken in 2025 naar Hongarije, Denemarken en Frankrijk (jaarverslag 2025).",
+    "en": "Three female servals left in 2025 for Hungary, Denmark and France (annual report 2025)."
+   },
+   "katten": [
+    {
+     "soort": "Leeuw",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Twee katers.",
+      "en": "Two males."
+     },
+     "aantal": {
+      "nl": "2 (katers)",
+      "en": "2 (males)"
+     },
+     "bron": "Jaarverslag 2025; dierenlijst eigen site (gezien 22-10-2026)"
+    },
+    {
+     "soort": "Poema",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Paar; de oudere kater wordt behandeld voor een goedaardig gezwel in de neus.",
+      "en": "Pair; the older male is being treated for a benign growth in the nose."
+     },
+     "aantal": {
+      "nl": "2 (kater en poes)",
+      "en": "2 (male and female)"
+     },
+     "bron": "Jaarverslag 2025; dierenlijst eigen site (gezien 22-10-2026)"
+    },
+    {
+     "soort": "Vissende kat",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "De poes werd in juli 2025 ingeslapen; de eerder in Brno ondergebrachte poes kwam terug en zit nu bij de kater.",
+      "en": "The female was euthanised in July 2025; the female previously placed in Brno returned and now lives with the male."
+     },
+     "aantal": {
+      "nl": "2 (kater en poes)",
+      "en": "2 (male and female)"
+     },
+     "bron": "Jaarverslag 2025; dierenlijst eigen site (gezien 22-10-2026)"
+    },
+    {
+     "soort": "Serval",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Nieuw paar in 2025: jonge poes uit Polen, oudere kater uit Duitsland; sinds december 2025 samen.",
+      "en": "New pair in 2025: young female from Poland, older male from Germany; together since December 2025."
+     },
+     "aantal": {
+      "nl": "2 (kater en poes)",
+      "en": "2 (male and female)"
+     },
+     "bron": "Jaarverslag 2025; dierenlijst eigen site (gezien 22-10-2026)"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Zoo Plasy (ZOO & Fantasy Golf Plasy)",
+   "plaats": "Plasy",
+   "kraj": "Plzeňský",
+   "lon": 13.39,
+   "lat": 49.933,
+   "type": "Dierenpark",
+   "lidmaatschap": [
+    "CZAZA"
+   ],
+   "url": "https://www.zooplasy.cz/",
+   "uren": {
+    "nl": "Dagelijks; mei–augustus 9:00–20:00, september–oktober en maart–april 10:00–18:00, november–februari 10:00–16:00 (eigen site, gezien 22-10-2026)",
+    "en": "Daily; May–August 9:00–20:00, September–October and March–April 10:00–18:00, November–February 10:00–16:00 (own website, seen 22-10-2026)"
+   },
+   "about": {
+    "nl": "Kleine particuliere dierentuin (sinds 2016, erkend 2024) met minigolf, gerund door Nadace Svět zvířat. De leeuwen krijgen anticonceptie; er wordt niet met hen gekweekt.",
+    "en": "Small private zoo (since 2016, licensed 2024) with mini golf, run by the Svět zvířat foundation. The lions receive contraception; they are not bred."
+   },
+   "earlier": {
+    "nl": "Ocelotten (paar), vermeld in een ongedateerd CNN Prima-artikel; niet meer op de dierenlijst of in het jaarverslag 2025.",
+    "en": "Ocelots (pair), mentioned in an undated CNN Prima article; no longer on the animal list or in the 2025 annual report."
+   },
+   "katten": [
+    {
+     "soort": "Leeuw",
+     "ondersoort": "Zuidelijk (P. l. melanochaita), incl. witte leeuw",
+     "status": "g",
+     "toelichting": {
+      "nl": "Een gewoon gekleurd paar en een wit paar ('lev jihoafrický bílý').",
+      "en": "One normally coloured pair and one white pair ('South African white lion')."
+     },
+     "aantal": {
+      "nl": "4 (2 katers, 2 poezen; waarvan 2 wit)",
+      "en": "4 (2 males, 2 females; 2 of them white)"
+     },
+     "bron": "Jaarverslag 2025; dierenlijst eigen site (gezien 22-10-2026)"
+    },
+    {
+     "soort": "Luipaard",
+     "ondersoort": "onbekend, incl. zwarte panter",
+     "status": "g",
+     "toelichting": {
+      "nl": "De dierenlijst noemt een gevlekte en een zwarte luipaard.",
+      "en": "The animal list names a spotted and a black leopard."
+     },
+     "aantal": {
+      "nl": "2 (kater en poes)",
+      "en": "2 (male and female)"
+     },
+     "bron": "Jaarverslag 2025; dierenlijst eigen site (gezien 22-10-2026)"
+    },
+    {
+     "soort": "Tijger",
+     "ondersoort": "Bengaals",
+     "status": "g",
+     "toelichting": {
+      "nl": "Eén kater ('tygr indický/bengálský').",
+      "en": "One male ('Indian/Bengal tiger')."
+     },
+     "aantal": {
+      "nl": "1 (kater)",
+      "en": "1 (male)"
+     },
+     "bron": "Jaarverslag 2025; dierenlijst eigen site (gezien 22-10-2026)"
+    },
+    {
+     "soort": "Serval",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Een van de servals heeft een oude elleboogbreuk en krijgt pijnbestrijding.",
+      "en": "One of the servals has an old elbow fracture and receives pain treatment."
+     },
+     "aantal": {
+      "nl": "3 (1 kater, 2 poezen)",
+      "en": "3 (1 male, 2 females)"
+     },
+     "bron": "Jaarverslag 2025; dierenlijst eigen site (gezien 22-10-2026)"
+    },
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Paar.",
+      "en": "Pair."
+     },
+     "aantal": {
+      "nl": "2 (kater en poes)",
+      "en": "2 (male and female)"
+     },
+     "bron": "Jaarverslag 2025; dierenlijst eigen site (gezien 22-10-2026)"
+    }
+   ],
+   "geboortes": [],
+   "kleur": "witte leeuw / zwarte panter"
+  },
+  {
+   "naam": "Návštěvnické centrum Kvilda (NP Šumava) – rysí výběh",
+   "plaats": "Kvilda",
+   "kraj": "Jihočeský",
+   "lon": 13.578,
+   "lat": 49.03,
+   "type": "Anders",
+   "lidmaatschap": [],
+   "url": "https://www.npsumava.cz/navstivte-sumavu/navstevnicka-centra/navstevnicke-centrum-kvilda/",
+   "uren": {
+    "nl": "Verblijven en uitkijkpunt het hele jaar vrij toegankelijk; gebouw o.a. juli–aug 8:30–17:00, okt 10:00–16:00, april grotendeels en november dicht (eigen site, gezien 22-10-2026)",
+    "en": "Enclosures and viewpoint freely accessible all year; building e.g. July–Aug 8:30–17:00, Oct 10:00–16:00, mostly closed in April and November (own website, seen 22-10-2026)"
+   },
+   "about": {
+    "nl": "Bezoekerscentrum van het Nationaal Park Šumava met een edelhertenverblijf (ca. 9 ha) en een lynxverblijf (ca. 0,5 ha) met overdekt uitkijkpunt; gratis. In het wild leven ook lynxen in de Šumava.",
+    "en": "Visitor centre of Šumava National Park with a red deer enclosure (approx. 9 ha) and a lynx enclosure (approx. 0.5 ha) with a covered viewpoint; free. Wild lynx also live in the Šumava."
+   },
+   "earlier": {
+    "nl": "Kater David (als jong aangereden, niet terug te zetten) woonde er eerder (ongedateerde/oudere bronnen).",
+    "en": "Male David (hit by a car as a kitten, could not be released) lived here earlier (undated/older sources)."
+   },
+   "katten": [
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Eén poes; volgens toeristische bronnen (2026) is dat Kate, in 2016 uit Duitsland gekomen. Is schuw en niet altijd te zien.",
+      "en": "One female; according to tourist sources (2026) this is Kate, who came from Germany in 2016. She is shy and not always visible."
+     },
+     "aantal": {
+      "nl": "1 (poes, vermoedelijk Kate)",
+      "en": "1 (female, probably Kate)"
+     },
+     "bron": "Eigen site FAQ 'Ve výběhu je 1 rys – kočka' (gezien 22-10-2026); pensionhelenahones.cz 2026"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Království lesa (Lipno)",
+   "plaats": "Lipno nad Vltavou",
+   "kraj": "Jihočeský",
+   "lon": 14.233,
+   "lat": 48.65,
+   "type": "Attractiepark met dieren",
+   "lidmaatschap": [],
+   "url": "https://www.kralovstvilesa.cz/",
+   "uren": {
+    "nl": "Seizoensgebonden; niet gecontroleerd",
+    "en": "Seasonal; not checked"
+   },
+   "about": {
+    "nl": "Bos-speelpark bij het boomkroonpad van Lipno met enkele dieren (geiten, konijnen, vogels).",
+    "en": "Forest adventure park next to the Lipno treetop walk with a few animals (goats, rabbits, birds)."
+   },
+   "earlier": {
+    "nl": "Geen.",
+    "en": "None."
+   },
+   "katten": [
+    {
+     "soort": "Europese wilde kat",
+     "ondersoort": "—",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zoo Hluboká meldt in haar jaarverslag 2025 een wilde kater die in Království lesa Lipno is ondergebracht.",
+      "en": "Hluboká Zoo's 2025 annual report lists a male wildcat placed at Království lesa Lipno."
+     },
+     "aantal": {
+      "nl": "1 (kater) volgens Zoo Hluboká",
+      "en": "1 (male) according to Hluboká Zoo"
+     },
+     "bron": "Jaarverslag 2025 Zoo Hluboká (deponeringslijst)",
+     "twijfel": {
+      "nl": "De eigen site van het park noemt alleen geiten, konijnen en vogels; niet bevestigd dat de kat voor publiek te zien is.",
+      "en": "The park's own website only mentions goats, rabbits and birds; not confirmed that the cat is on public view."
+     }
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  }
+ ],
+ "zonder_katten": [
+  {
+   "naam": "Krokodýlí ZOO a ochranářská farma Protivín",
+   "plaats": "Protivín",
+   "reden": {
+    "nl": "Erkende dierentuin gericht op krokodilachtigen; geen katachtigen gevonden (MŽP-lijst 2025, WZD)",
+    "en": "Licensed zoo focused on crocodilians; no cats found (MŽP list 2025, WZD)"
+   }
+  },
+  {
+   "naam": "Návštěvnické centrum Srní (NP Šumava)",
+   "plaats": "Srní",
+   "reden": {
+    "nl": "Alleen een wolvenverblijf; geen katachtigen (eigen site 22-10-2026)",
+    "en": "Wolf enclosure only; no cats (own website 22-10-2026)"
+   }
+  },
+  {
+   "naam": "Informační středisko NP Šumava Kašperské Hory",
+   "plaats": "Kašperské Hory",
+   "reden": {
+    "nl": "Informatiecentrum zonder dierenverblijven; het lynxverblijf van het NP ligt in Kvilda (eigen site 22-10-2026)",
+    "en": "Information centre without animal enclosures; the national park's lynx enclosure is at Kvilda (own website 22-10-2026)"
+   }
+  },
+  {
+   "naam": "Stanice pro handicapovaná zvířata NP Šumava",
+   "plaats": "Vimperk",
+   "reden": {
+    "nl": "Opvangstation; alleen woensdag met rondleiding open, geen katachtigen vermeld (eigen site 22-10-2026)",
+    "en": "Rescue station; open only on Wednesdays with a guided visit, no cats mentioned (own website 22-10-2026)"
+   }
+  },
+  {
+   "naam": "Akva-Tera Zoo Plzeň",
+   "plaats": "Plzeň",
+   "reden": {
+    "nl": "Aquarium/terrarium van Zoo Plzeň; geen katachtigen",
+    "en": "Aquarium/terrarium of Plzeň Zoo; no cats"
+   }
+  },
+  {
+   "naam": "Safari resort Hluboká u Borovan",
+   "plaats": "Hluboká u Borovan",
+   "reden": {
+    "nl": "Hoefdieren en huisdieren (bizons, herten, kamelen e.d.); geen katachtigen (WZD, ongedateerd)",
+    "en": "Hoofed and domestic animals (bison, deer, camels etc.); no cats (WZD, undated)"
+   }
+  },
+  {
+   "naam": "Zookoutek Feferské rybníčky",
+   "plaats": "Prachatice",
+   "reden": {
+    "nl": "Kleine zoohoek van de stedelijke bosdienst met inheemse hoefdieren; geen katachtigen (WZD, ongedateerd)",
+    "en": "Small zoo corner of the municipal forestry with native hoofed animals; no cats (WZD, undated)"
+   }
+  },
+  {
+   "naam": "Lesopark Amerika (zookoutek)",
+   "plaats": "Františkovy Lázně",
+   "reden": {
+    "nl": "Gemeentelijke zoohoek met geiten, varkens, lama's, wasberen en paarden; geen katachtigen (Komoot/Slevomat, 2018–2023)",
+    "en": "Municipal zoo corner with goats, pigs, llamas, raccoons and horses; no cats (Komoot/Slevomat, 2018–2023)"
+   }
+  },
+  {
+   "naam": "Minizoo a Motýlí dům Diana",
+   "plaats": "Karlovy Vary",
+   "reden": {
+    "nl": "Minizoo met vlinderhuis; geen katachtigen vermeld (brochure Karlovarský kraj 2024)",
+    "en": "Mini-zoo with butterfly house; no cats mentioned (Karlovy Vary region brochure 2024)"
+   }
+  },
+  {
+   "naam": "Minizoo Stará Role",
+   "plaats": "Karlovy Vary",
+   "reden": {
+    "nl": "Kleine minizoo; geen aanwijzing voor katachtigen gevonden (WZD)",
+    "en": "Small mini-zoo; no indication of cats found (WZD)"
+   }
+  }
+ ],
+ "open_punten": [
+  "Karlovarský kraj: geen erkende dierentuin (MŽP-lijst 2025) en geen locatie met wilde katten gevonden. 'Zoo/Zoopark Karlovy Vary', 'Zoo Akvárium Teplá' en 'Zoo Bezvěrov' bestaan voor zover te vinden niet.",
+  "'Zoo Větrovy' is dezelfde locatie als Zoo Tábor (adres Tábor-Větrovy).",
+  "'Šumava – výběh rysů' ligt in Kvilda (Jihočeský), niet in Kašperské Hory of Srní (Plzeňský); Srní heeft alleen wolven.",
+  "Zoo Plzeň: Kaapse cheetah-poes (lening van Ústí) zou in H1 2026 teruggaan – niet bevestigd. Jonge rode lynxen en twee jonge Berberleeuw-katers zouden in 2026 vertrekken – niet bevestigd; aantallen zijn stand 31-12-2025.",
+  "Zoo Plzeň: Palawan-luipaardkat (1 kater) alleen bevestigd via jaarverslag 2025, niet in het online lexicon.",
+  "Zoo Dvorec: onduidelijk of er na het vertrek van Leia (okt. 2025) nog witte leeuwen zijn (bijv. oude kater Agi); de zoo zegt 'kweek voort te zetten'. Kleur van Cruela en Sindy niet vermeld.",
+  "Zoo Hluboká: Europese wilde kat stond eind 2025 op 1 poes; niet bevestigd of zij in 2026 nog te zien is. Tijgerwelpen: geboortedatum alleen als 'half augustus 2025'.",
+  "Zoo Tábor: tweede leeuwenpaar – naam van de poes van Simba onbekend. Lidmaatschap van een dierentuinbond niet bevestigd.",
+  "Zoo Plasy: geen individuele namen in recente bronnen (leeuw 'Caligula' alleen in ongedateerd artikel). Ondersoort lynx en luipaard niet vermeld.",
+  "Království lesa Lipno: wilde kat alleen bekend uit de deponeringslijst van Zoo Hluboká (status w).",
+  "Zoo Dvorec: zichtbaarheid servals in de winter onzeker (verhuisd naar winterverblijf); zoo is in de winter beperkt open."
+ ]
+}

@@ -1,2 +1,5 @@
 _claude/
 __pycache__/
+
+bron/landbouw/*/kaart/*.geojson
+bron/landbouw/*/*_ontbreekt.json

@@ -1,0 +1,770 @@
+{
+ "locaties": [
+  {
+   "naam": "HANSENBERG Zoo (Hansenberg Organia)",
+   "plaats": "Vranderup, Kolding (Kolding Kommune)",
+   "lon": 9.393,
+   "lat": 55.495,
+   "type": "Anders",
+   "lidmaatschap": [
+    "EAZA (associate)"
+   ],
+   "url": "https://www.hansenberg.dk/eud-og-eux/dyrepasser/",
+   "uren": {
+    "nl": "Geen gewone openingstijden: schoolzoo van de dierverzorgersopleiding. Alleen te bezoeken op de jaarlijkse open dag (Åbent Hus 31-01-2026, 10–14 uur; volgende 23-01-2027) (eigen site, gezien 22-10-2026)",
+    "en": "No regular opening hours: school zoo of the animal-keeper course. Only open to visitors on the yearly open day (Åbent Hus 31-01-2026, 10am–2pm; next 23-01-2027) (own site, seen 22-10-2026)"
+   },
+   "about": {
+    "nl": "Schoolzoo van de beroepsschool HANSENBERG met ongeveer 45 diersoorten, waar leerlingen dierverzorger leren werken. EAZA-lid (associate). Bezoek alleen tijdens de open dag.",
+    "en": "School zoo of the HANSENBERG vocational college with about 45 species, where students train as animal keepers. EAZA (associate) member. Visits only during the open day."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "Noordelijk (L. l. lynx)",
+     "status": "n",
+     "toelichting": {
+      "nl": "De school noemt ‘den skandinaviske los’ als een van de soorten in de zoo, die in een internationaal fokprogramma zitten. Volgens Zootierliste (bron: Facebookvideo van de school) is er gekweekt. Niet open voor publiek, behalve op de open dag.",
+      "en": "The school names ‘den skandinaviske los’ (Scandinavian lynx) as one of the zoo’s species in an international breeding programme. According to Zootierliste (source: the school’s Facebook video) it has bred. Not open to the public except on the open day."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site pagina dyrepasser, rubriek ‘HANSENBERG ZOO’ (ongedateerd, gezien 22-10-2026); eigen site programma Åbent Hus 2026 (PDF); Zootierliste (zonder jaartal)"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Skærup Zoo",
+   "plaats": "Skærup bij Børkop (Vejle Kommune)",
+   "lon": 9.591,
+   "lat": 55.639,
+   "type": "Dierentuin",
+   "lidmaatschap": [],
+   "url": "https://skaerup-zoo.dk/",
+   "uren": {
+    "nl": "2026: 21/3–5/7 10–17, 6/7–2/8 10–19, 3/8–25/10 10–17, 26/10–8/11 10–16 uur (eigen site, gezien 22-10-2026)",
+    "en": "2026: 21/3–5/7 10am–5pm, 6/7–2/8 10am–7pm, 3/8–25/10 10am–5pm, 26/10–8/11 10am–4pm (own site, seen 22-10-2026)"
+   },
+   "about": {
+    "nl": "",
+    "en": ""
+   },
+   "earlier": {
+    "nl": "Centraal-Aziatische lynx (Euraziatische lynx): sinds 2010, kweek in 2019 en 2021, laatst gezien 09/2021; bij een bezoek in 08/2025 niet gezien en geen bord meer, en niet op de eigen dierenlijst (Zootierliste; eigen site 22-10-2026). Eerder ook caracal (tot 2017), serval (2008–2011), Europese wilde kat (2011), Bengaalse kat (2009, 2014) (Zootierliste).",
+    "en": "Central Asian lynx (Eurasian lynx): since 2010, bred in 2019 and 2021, last seen 09/2021; not seen and no sign during an 08/2025 visit, and not on the park’s own animal list (Zootierliste; own site 22-10-2026). Earlier also caracal (until 2017), serval (2008–2011), European wildcat (2011), leopard cat (2009, 2014) (Zootierliste)."
+   },
+   "katten": [
+    {
+     "soort": "Jaguar",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Op de eigen dierenlijst (rovdyr) en op de voorpagina (‘de fascinerende jaguarer’). JydskeVestkysten (23-03-2026) toont een jaguar van het park. Of de twee welpen van januari 2024 er nog zijn, is nergens te vinden.",
+      "en": "On the park’s own animal list (carnivores) and front page (‘the fascinating jaguars’). JydskeVestkysten (23-03-2026) shows one of the park’s jaguars. Whether the two cubs from January 2024 are still here could not be found."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site /dyrene-i-parken/rovdyr/jaguar en voorpagina (gezien 22-10-2026); JydskeVestkysten 23-03-2026; Zootierliste (bezoek 08/2025: niet gezien)"
+    },
+    {
+     "soort": "Ocelot",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Op de eigen dierenlijst; gezien bij een bezoek in 08/2025 (Zootierliste). Er is gekweekt.",
+      "en": "On the park’s own animal list; seen during an 08/2025 visit (Zootierliste). Has bred."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site /rovdyr/ozelot (gezien 22-10-2026); Zootierliste (bezoek 08/2025)"
+    },
+    {
+     "soort": "Rode lynx",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "‘Rødlos’ op de eigen dierenlijst. Bij een bezoek in 08/2025 niet gezien, wel een bord (Zootierliste).",
+      "en": "‘Rødlos’ (bobcat) on the park’s own animal list. Not seen but signed during an 08/2025 visit (Zootierliste)."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site /rovdyr/roedlos (gezien 22-10-2026); Zootierliste (bezoek 08/2025)"
+    },
+    {
+     "soort": "Vissende kat",
+     "ondersoort": "—",
+     "status": "w",
+     "toelichting": {
+      "nl": "Zootierliste meldt de vissende kat sinds 2011, gezien en met bord bij een bezoek in 08/2025. Hij staat niet op de eigen dierenlijst van de site.",
+      "en": "Zootierliste lists the fishing cat since 2011, seen and signed during an 08/2025 visit. It is not on the park’s own animal list."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (bezoek 08/2025); eigen site dierenlijst (gezien 22-10-2026: niet genoemd)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste (bezoek augustus 2025); de eigen dierenlijst noemt de soort niet en er is geen nieuws gevonden.",
+      "en": "Zootierliste only (August 2025 visit); the park’s own animal list does not name it and no news was found."
+     }
+    }
+   ],
+   "geboortes": [],
+   "kleur": "zwarte jaguar"
+  },
+  {
+   "naam": "Glad Zoo",
+   "plaats": "Lintrup (Vejen Kommune)",
+   "lon": 8.966,
+   "lat": 55.41,
+   "type": "Dierenpark",
+   "lidmaatschap": [],
+   "url": "https://www.gladzoo.dk/",
+   "uren": {
+    "nl": "Seizoenspark; dagprogramma loopt van 10 augustus tot 25 oktober 2026 (eigen site, gezien 22-10-2026)",
+    "en": "Seasonal park; the daily programme runs from 10 August to 25 October 2026 (own site, seen 22-10-2026)"
+   },
+   "about": {
+    "nl": "Kleine dierentuin (meer dan 70 soorten) van de sociale onderneming Glad Fonden.",
+    "en": "Small zoo (over 70 species) run by the social enterprise Glad Fonden."
+   },
+   "earlier": {
+    "nl": "Euraziatische lynx: foto ‘Europæisk los’ op de eigen site uit 2021 en gezien bij een bezoek in 07/2022 (Zootierliste); geen latere bevestiging. Het enige katachtige silhouet op de parkkaart 2026 is waarschijnlijk de serval.",
+    "en": "Eurasian lynx: photo ‘Europæisk los’ on the park’s own site from 2021 and seen during a 07/2022 visit (Zootierliste); no later confirmation. The only cat silhouette on the 2026 park map is probably the serval."
+   },
+   "katten": [
+    {
+     "soort": "Serval",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Dagelijks om 14.30 uur ‘Fodring af serval’ in het dagprogramma (10-08 t/m 25-10-2026). Persfoto’s ‘Serval’ en ‘serval hun’ (vrouwtje) geüpload in maart 2026. Gezien in 08/2025 (Zootierliste). Staat (nog) niet op de pagina ‘Vores dyr’.",
+      "en": "Daily ‘serval feeding’ at 2.30pm in the day programme (10-08 to 25-10-2026). Press photos ‘Serval’ and ‘serval hun’ (female) uploaded in March 2026. Seen in 08/2025 (Zootierliste). Not (yet) on the ‘Vores dyr’ page."
+     },
+     "aantal": {
+      "nl": "onbekend (minstens 1 vrouwtje)",
+      "en": "unknown (at least 1 female)"
+     },
+     "bron": "Eigen site ‘Dagens program’ en ‘Presse’ (gezien 22-10-2026); WordPress-mediabibliotheek (uploads 08/10-03-2026); Zootierliste (bezoek 08/2025)"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Zoologisk Have København (ZOO København)",
+   "plaats": "Frederiksberg (Frederiksberg Kommune)",
+   "lon": 12.523,
+   "lat": 55.672,
+   "type": "Dierentuin",
+   "lidmaatschap": [
+    "EAZA",
+    "WAZA",
+    "DAZA"
+   ],
+   "url": "https://www.zoo.dk/",
+   "uren": {
+    "nl": "",
+    "en": ""
+   },
+   "about": {
+    "nl": "",
+    "en": ""
+   },
+   "earlier": {
+    "nl": "Caracal: gehouden tot 2024; volgens de stamboekgegevens op Zootierliste was de stand op 31-12-2024 nul. In het jaarverslag 2024 komt een caracal voor (tandoperatie, amyloïdose). Niet meer op de dierenlijst.",
+    "en": "Caracal: kept until 2024; according to studbook data on Zootierliste the stock on 31-12-2024 was zero. The 2024 annual report mentions a caracal (dental surgery, amyloidosis). No longer on the animal list."
+   },
+   "katten": [
+    {
+     "soort": "Tijger",
+     "ondersoort": "Amoer",
+     "status": "g",
+     "toelichting": {
+      "nl": "Vrouwtje geboren in ZOO (18-04-2013), mannetje uit Frankrijk (sinds maart 2022, ook van 2013), een jong uit begin 2024 en twee vrouwtjes uit de worp van juli 2025. Van die worp van vier stierf er één kort na de geboorte en werd er één geëuthanaseerd (hartafwijking). De twee vrouwtjes zijn sinds 09-10-2025 buiten te zien.",
+      "en": "Female born at the zoo (18-04-2013), male from France (since March 2022, also born 2013), a cub from early 2024 and two females from the July 2025 litter. Of that litter of four, one died shortly after birth and one was euthanised (heart defect). The two females have been visible outdoors since 09-10-2025."
+     },
+     "aantal": {
+      "nl": "minstens 4 (paar + 2 jonge vrouwtjes uit 2025), mogelijk 5 met het jong uit 2024",
+      "en": "at least 4 (pair + 2 young females from 2025), possibly 5 with the 2024 cub"
+     },
+     "bron": "Eigen site nieuws 21-07-2025 en 09-10-2025, soortpagina amurtiger (gezien 22-10-2026); Zootierliste (bezoek 08/2026)"
+    },
+    {
+     "soort": "Leeuw",
+     "ondersoort": "Zuidelijk (P. l. melanochaita) voor de nieuwe kater; de rest onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Familiegroep. Op 18-03-2026 werden twee jonge mannetjes uit de worp van 2024 (3 mannetjes, 2 vrouwtjes) geëuthanaseerd omdat ze met hun vader in conflict zouden komen. Volgens Zootierliste ging in 2026 een mannetje naar GaiaZoo (Kerkrade) en kwam in juni 2026 een Angolese kater (geb. 2023) uit Chorzów (Polen). De eigen site noemt geen namen of ondersoort.",
+      "en": "Family group. On 18-03-2026 two young males from the 2024 litter (3 males, 2 females) were euthanised because they would come into conflict with their father. According to Zootierliste a male went to GaiaZoo (Kerkrade) in 2026 and an Angolan male (born 2023) arrived from Chorzów (Poland) in June 2026. The zoo’s own site gives no names or subspecies."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site nieuws ‘Regulering i løveflokken’ 19-03-2026 en soortpagina løve (gezien 22-10-2026); Zootierliste (Facebook Chorzów Zoo 23-06-2026, bezoek 08/2026)"
+    }
+   ],
+   "geboortes": [
+    {
+     "soort": "Tijger",
+     "geboren": "2025-07-09 (ca.; 12 dagen vóór 21-07-2025)",
+     "n": {
+      "nl": "4 welpen, 2 overleefden (vrouwtjes)",
+      "en": "4 cubs, 2 survived (females)"
+     },
+     "x": {
+      "nl": "Amoertijgers; moeder geboren in ZOO in 2013, vader uit Frankrijk. Eén welp stierf na enkele dagen, één werd later geëuthanaseerd (hartafwijking). De twee vrouwtjes zijn sinds 09-10-2025 buiten te zien.",
+      "en": "Amur tigers; mother born at the zoo in 2013, father from France. One cub died after a few days, one was later euthanised (heart defect). The two females have been visible outdoors since 09-10-2025."
+     },
+     "bron": "Eigen site nieuws 21-07-2025 en 09-10-2025"
+    }
+   ],
+   "kleur": ""
+  },
+  {
+   "naam": "ZOOPARK Sydsjælland (ZOOPARK Næstved)",
+   "plaats": "Næstved (Næstved Kommune)",
+   "lon": 11.722,
+   "lat": 55.222,
+   "type": "Dierenpark",
+   "lidmaatschap": [],
+   "url": "",
+   "uren": {
+    "nl": "Onbekend. De oude site zoo-park.dk toont nog de tijden van 2020 en is nu volgestopt met casinoreclame; whichmuseum meldt ‘tijdelijk gesloten’ (ongedateerd)",
+    "en": "Unknown. The old site zoo-park.dk still shows the 2020 hours and is now filled with casino ads; whichmuseum says ‘temporarily closed’ (undated)"
+   },
+   "about": {
+    "nl": "",
+    "en": ""
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Tijger",
+     "ondersoort": "Bengaals, incl. witte tijger",
+     "status": "w",
+     "toelichting": {
+      "nl": "Toeristische teksten (VisitDenmark/Visit Sydsjælland & Møn, ongedateerd) noemen de witte tijger Elvis; byennaestved.dk (16-10-2026) noemt Bengaalse tijgers en schrijft dat het park bij de laatste controle (augustus 2026) nog in bedrijf was. Nyhedspunkt (29-08-2026) schrijft daarentegen dat er nu geen tijgers en geen grote katten meer zijn.",
+      "en": "Tourist texts (VisitDenmark/Visit South Zealand & Møn, undated) mention white tiger Elvis; byennaestved.dk (16-10-2026) mentions Bengal tigers and says the park was still operating at the last inspection (August 2026). Nyhedspunkt (29-08-2026), however, says there are no tigers or big cats any more."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "VisitDenmark (ongedateerd, gezien 22-10-2026); byennaestved.dk (pagina gedateerd 16-10-2026); Nyhedspunkt 29-08-2026; Zootierliste (e-mail 07-03-2021)",
+     "twijfel": {
+      "nl": "Geen werkende eigen site, geen eigen posts gevonden en tegenstrijdige bronnen uit 2026; de naamsvermelding ‘Elvis’ staat alleen in ongedateerde toeristische teksten.",
+      "en": "No working own website, no posts by the park found and contradictory 2026 sources; the name ‘Elvis’ only appears in undated tourist texts."
+     }
+    },
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "Alleen genoemd door byennaestved.dk (16-10-2026, waarschijnlijk overgenomen van Wikipedia) en Zootierliste (e-mail 2022).",
+      "en": "Only mentioned by byennaestved.dk (16-10-2026, probably copied from Wikipedia) and Zootierliste (e-mail 2022)."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "byennaestved.dk (16-10-2026); Zootierliste (e-mail 09-01-2022)",
+     "twijfel": {
+      "nl": "Geen eigen bron, foto of nieuws van na 2022.",
+      "en": "No own source, photo or news after 2022."
+     }
+    }
+   ],
+   "geboortes": [],
+   "kleur": "witte tijger"
+  },
+  {
+   "naam": "Blåvand Zoo",
+   "plaats": "Blåvand (Varde Kommune)",
+   "lon": 8.157,
+   "lat": 55.547,
+   "type": "Dierenpark",
+   "lidmaatschap": [],
+   "url": "https://blaavandzoo.dk/",
+   "uren": {
+    "nl": "",
+    "en": ""
+   },
+   "about": {
+    "nl": "",
+    "en": ""
+   },
+   "earlier": {
+    "nl": "Serval: 3 vrouwtjes in 10/2021 (Zootierliste) en een ontsnapping in maart 2022 (DR 10-03-2022, TV Syd); niet op de parkkaart 2024 en geen latere bevestiging.",
+    "en": "Serval: 3 females in 10/2021 (Zootierliste) and an escape in March 2022 (DR 10-03-2022, TV Syd); not on the 2024 park map and no later confirmation."
+   },
+   "katten": [
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "Een lynx is duidelijk getekend in een eigen verblijf op de parkkaart van 2024. De ponydonatiepagina zegt dat het vlees naar ‘løver, dingoer og små kattedyr’ gaat.",
+      "en": "A lynx is clearly drawn in its own enclosure on the 2024 park map. The pony-donation page says the meat goes to ‘lions, dingoes and small cats’."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site parkkaart BlaavandZoo_Kort2024.jpg en pagina ‘Donere din pony til løver’ (gezien 22-10-2026); Zootierliste (bezoek 07/2022: niet gezien, geen bord)",
+     "twijfel": {
+      "nl": "Alleen de getekende kaart van 2024 en een ongedateerde zin over ‘kleine katachtigen’; geen dagprogramma, nieuws of gedateerde foto. Bij een bezoek in 2022 was er geen lynx te zien.",
+      "en": "Only the 2024 drawn map and an undated line about ‘small cats’; no day programme, news or dated photo. No lynx was seen during a 2022 visit."
+     }
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Munkholm Zoo",
+   "plaats": "Balle (Syddjurs)",
+   "lon": 10.783,
+   "lat": 56.321,
+   "type": "Dierenpark",
+   "lidmaatschap": [],
+   "url": "https://munkholmzoo.dk/",
+   "uren": {
+    "nl": "",
+    "en": ""
+   },
+   "about": {
+    "nl": "",
+    "en": ""
+   },
+   "earlier": {
+    "nl": "Vissende kat: sinds 2017 (1 mannetje, 2 vrouwtjes uit Duisburg); in 06/2021 alleen nog een bord (Zootierliste). Niet op de parkkaart van 2024 en niet in de huidige parkteksten.",
+    "en": "Fishing cat: since 2017 (1 male, 2 females from Duisburg); in 06/2021 only a sign left (Zootierliste). Not on the 2024 park map and not in current park texts."
+   },
+   "katten": [
+    {
+     "soort": "Serval",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Twee servalverblijven (nr. 9 en 10) op de parkkaart; de parkteksten noemen ‘eksotiske servaler’.",
+      "en": "Two serval enclosures (nos. 9 and 10) on the park map; the park texts mention ‘exotic servals’."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site ‘Kort over haven’ en parkkaart (gezien 22-10-2026)"
+    },
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "onbekend (park: ‘Altai los’; Zootierliste: Centraal-Aziatische lynx)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Twee verblijven ‘Altai los’ (nr. 12 en 13) op de parkkaart (geüpload 03-2024). In 2022: 1 mannetje en 3 vrouwtjes, in 2013 gekomen uit Skærup Zoo (Zootierliste).",
+      "en": "Two enclosures ‘Altai los’ (nos. 12 and 13) on the park map (uploaded 03-2024). In 2022: 1 male and 3 females, arrived from Skærup Zoo in 2013 (Zootierliste)."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site parkkaart kort-munkholm-zoo.png (03-2024) en foto ‘Los8’ (03-2024) (gezien 22-10-2026); Zootierliste (bestand 01-01-2022)",
+     "twijfel": {
+      "nl": "Alleen kaart en foto uit 2024; de huidige parkteksten (2026) noemen de lynx niet.",
+      "en": "Only a 2024 map and photo; the current park texts (2026) do not mention the lynx."
+     }
+    }
+   ],
+   "geboortes": [
+    {
+     "soort": "Serval",
+     "geboren": "2026 (vóór begin juli 2026, datum onbekend)",
+     "n": {
+      "nl": "onbekend aantal jongen",
+      "en": "unknown number of kittens"
+     },
+     "x": {
+      "nl": "Alleen bekend uit een bezoekersreview op Trustpilot (‘de schattigste serval-jongen’, juli 2026); niet door het park bevestigd.",
+      "en": "Known only from a visitor review on Trustpilot (‘the cutest serval kittens’, July 2026); not confirmed by the park."
+     },
+     "bron": "Trustpilot-review juli 2026 (datum 05-07 of 25-07-2026)"
+    }
+   ],
+   "kleur": ""
+  },
+  {
+   "naam": "GIVSKUD ZOO – ZOOTOPIA",
+   "plaats": "Givskud (Vejle Kommune)",
+   "lon": 9.352,
+   "lat": 55.808,
+   "type": "Safaripark",
+   "lidmaatschap": [
+    "EAZA",
+    "DAZA"
+   ],
+   "url": "https://www.givskudzoo.dk/",
+   "uren": {
+    "nl": "",
+    "en": ""
+   },
+   "about": {
+    "nl": "",
+    "en": ""
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Leeuw",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Kater Varis (uit Riga) is vader van twee worpen van elk vier welpen in 2026: 8 welpen, 5 mannetjes en 3 vrouwtjes. De vrouwtjes mogen blijven; voor de mannetjes zoekt het park later een andere dierentuin. Het park verwachtte in de nazomer mogelijk nog een worp; daarover is geen bericht gevonden.",
+      "en": "Male Varis (from Riga) fathered two litters of four cubs each in 2026: 8 cubs, 5 males and 3 females. The females may stay; the park will later look for other zoos for the males. The park expected a possible further litter in late summer; no report of it was found."
+     },
+     "aantal": {
+      "nl": "minstens 8 volwassen + 8 welpen uit 2026",
+      "en": "at least 8 adults + 8 cubs from 2026"
+     },
+     "bron": "TV 2 04-07-2026; TV Syd 04-07-2026; eigen site nieuws 02-07-2026 (nieuwsoverzicht gezien 22-10-2026, geen later leeuwennieuws)"
+    }
+   ],
+   "geboortes": [
+    {
+     "soort": "Leeuw",
+     "geboren": "2026-05-09",
+     "n": {
+      "nl": "4 welpen",
+      "en": "4 cubs"
+     },
+     "x": {
+      "nl": "Eerste worp; vader Varis. Sinds begin juli 2026 in het grote rijverblijf te zien.",
+      "en": "First litter; father Varis. Visible in the large drive-through enclosure since early July 2026."
+     },
+     "bron": "TV 2 04-07-2026; eigen site 02-07-2026"
+    },
+    {
+     "soort": "Leeuw",
+     "geboren": "2026-06 (ca. midden juni; ‘ongeveer drie weken’ vóór 04-07-2026)",
+     "n": {
+      "nl": "4 welpen",
+      "en": "4 cubs"
+     },
+     "x": {
+      "nl": "Tweede worp, andere eerste-keer-moeder; vader Varis. Samen met de eerste worp 8 welpen: 5 mannetjes, 3 vrouwtjes. In juli nog niet in het grote verblijf.",
+      "en": "Second litter, another first-time mother; father Varis. Together with the first litter 8 cubs: 5 males, 3 females. Not yet in the large enclosure in July."
+     },
+     "bron": "TV 2 04-07-2026"
+    }
+   ],
+   "kleur": ""
+  },
+  {
+   "naam": "Krokodille Zoo",
+   "plaats": "Eskilstrup (Guldborgsund Kommune, Falster)",
+   "lon": 11.909,
+   "lat": 54.863,
+   "type": "Dierentuin",
+   "lidmaatschap": [],
+   "url": "https://krokodillezoo.dk/",
+   "uren": {
+    "nl": "",
+    "en": ""
+   },
+   "about": {
+    "nl": "",
+    "en": ""
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Poema",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Enige poema’s in Denemarken. Eerste welp 28-05-2023. Poema Nala kreeg in 2025 een tweeling (‘tweede worp’ volgens Ritzau); één vrouwtje is zonder ogen geboren maar gezond (onderzocht in september 2025, nog zonder naam, naamwedstrijd gepland). Gezien in 05/2026 en 08/2026 (Zootierliste).",
+      "en": "The only pumas in Denmark. First cub 28-05-2023. Puma Nala had twins in 2025 (‘second litter’ according to Ritzau); one female was born without eyes but is healthy (examined in September 2025, not yet named, naming contest planned). Seen in 05/2026 and 08/2026 (Zootierliste)."
+     },
+     "aantal": {
+      "nl": "onbekend (minstens moeder Nala en 2 jongen uit 2025)",
+      "en": "unknown (at least mother Nala and 2 young from 2025)"
+     },
+     "bron": "Ritzau/Kristeligt Dagblad en TV 2 01-04-2026; eigen site soortpagina puma (gezien 22-10-2026); Zootierliste (bezoeken 05/2026, 08/2026)"
+    },
+    {
+     "soort": "Nevelpanter",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Twee nevelpanters, Sky en Neo. Volgens Zootierliste kwam in 2023 een paar (1 mannetje, 1 vrouwtje) uit Howletts (Engeland); dat zijn vrijwel zeker Sky en Neo. Soort sinds 2014 in het park, eerste kweek 2019.",
+      "en": "Two clouded leopards, Sky and Neo. According to Zootierliste a pair (1 male, 1 female) came from Howletts (England) in 2023; almost certainly Sky and Neo. Species in the park since 2014, first breeding 2019."
+     },
+     "aantal": {
+      "nl": "2 (Sky en Neo)",
+      "en": "2 (Sky and Neo)"
+     },
+     "bron": "Eigen site soortpagina træleopard (gezien 22-10-2026); Zootierliste (bezoeken 05/2026, 08/2026)"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Knuthenborg Safaripark",
+   "plaats": "Maribo/Bandholm (Lolland Kommune)",
+   "lon": 11.502,
+   "lat": 54.823,
+   "type": "Safaripark",
+   "lidmaatschap": [
+    "EAZA",
+    "DAZA"
+   ],
+   "url": "https://www.knuthenborg.dk/",
+   "uren": {
+    "nl": "",
+    "en": ""
+   },
+   "about": {
+    "nl": "",
+    "en": ""
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Leeuw",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Deense site: nieuwe fokgroep van 1 mannetje en 4 leeuwinnen bij het panoramaraam, en 4 mannetjes bij de loopbrug. In december 2024 waren er 10 leeuwen (5 mannetjes, 5 vrouwtjes), toen er 1 kater uit Givskud en 2 leeuwinnen uit Borås kwamen. Eerder kwamen de Oekraïense kater Akeru (juli 2024) en drie Oekraïense leeuwinnen (2022). Een leeuwenverblijf van ca. 40.000 m² is in aanbouw. Geen welpen gevonden.",
+      "en": "Danish site: new breeding group of 1 male and 4 lionesses at the panoramic window, and 4 males by the walkway. In December 2024 there were 10 lions (5 males, 5 females), when 1 male from Givskud and 2 lionesses from Borås arrived. Earlier the Ukrainian male Akeru (July 2024) and three Ukrainian lionesses (2022) came. A lion area of about 40,000 m² is being built. No cubs found."
+     },
+     "aantal": {
+      "nl": "9 volgens de Deense site (5 mannetjes, 4 vrouwtjes); 10 in december 2024",
+      "en": "9 according to the Danish site (5 males, 4 females); 10 in December 2024"
+     },
+     "bron": "Eigen site dyrene (gezien 22-10-2026); persberichten Knuthenborg 20-07-2024 en 17-12-2024 (via Ritzau)"
+    },
+    {
+     "soort": "Tijger",
+     "ondersoort": "Amoer",
+     "status": "g",
+     "toelichting": {
+      "nl": "Twee broers (‘sibirisk tiger’), in 2021 gekomen uit Beekse Bergen (Zootierliste). Namen niet gevonden. Geen welpen.",
+      "en": "Two brothers (‘Siberian tiger’), arrived from Beekse Bergen in 2021 (Zootierliste). Names not found. No cubs."
+     },
+     "aantal": {
+      "nl": "2 (broers)",
+      "en": "2 (brothers)"
+     },
+     "bron": "Eigen site dyrene (gezien 22-10-2026); Zootierliste (bezoek 05/2024)"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Ree Park",
+   "plaats": "Ebeltoft (Syddjurs)",
+   "lon": 10.737,
+   "lat": 56.261,
+   "type": "Safaripark",
+   "lidmaatschap": [
+    "EAZA",
+    "DAZA"
+   ],
+   "url": "https://reepark.dk/",
+   "uren": {
+    "nl": "",
+    "en": ""
+   },
+   "about": {
+    "nl": "",
+    "en": ""
+   },
+   "earlier": {
+    "nl": "Sumatraanse tijgers 2012–2020: in 2020 gingen het fokvrouwtje naar London Zoo en twee vrouwtjes naar Paignton (Zootierliste); geen tijgers op de huidige site. Zwartvoetkat 2012–2013/14 (Zootierliste). Geen aanwijzing voor sneeuwluipaarden.",
+    "en": "Sumatran tigers 2012–2020: in 2020 the breeding female went to London Zoo and two females to Paignton (Zootierliste); no tigers on the current site. Black-footed cat 2012–2013/14 (Zootierliste). No evidence of snow leopards."
+   },
+   "katten": [
+    {
+     "soort": "Luipaard",
+     "ondersoort": "Noord-Chinees (P. p. japonensis)",
+     "status": "g",
+     "toelichting": {
+      "nl": "Kater Suresh (ca. 3,5 jaar, uit Zoo Hannover) kwam op 26-02-2026; hij moet met poes ShanXi gaan fokken. Geen welpen in 2026 gevonden. De laatste worp was op 27-02-2024 (2 welpen van Jilin en Max), te oud voor ‘recente geboortes’.",
+      "en": "Male Suresh (about 3.5 years, from Hannover Zoo) arrived on 26-02-2026 to breed with female ShanXi. No cubs found in 2026. The last litter was on 27-02-2024 (2 cubs of Jilin and Max), too old for ‘recent births’."
+     },
+     "aantal": {
+      "nl": "onbekend (o.a. kater Suresh en poes ShanXi)",
+      "en": "unknown (incl. male Suresh and female ShanXi)"
+     },
+     "bron": "migogaarhus.dk 2026 (aankomst Suresh) en 08-03-2024; Zootierliste (2026)"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  }
+ ],
+ "zonder_katten": [],
+ "correcties": [
+  {
+   "locatie": "Glad Zoo",
+   "soort": "Serval",
+   "oud": "Geen katachtigen (sd_resultaat: ‘geen katachtigen op de dierenlijst’)",
+   "nieuw": "Serval aanwezig (g): dagelijks om 14.30 uur servalvoedering in het dagprogramma 2026 en persfoto’s uit maart 2026; de pagina ‘Vores dyr’ is alleen onvolledig. Glad Zoo moet uit ‘zonder_katten’.",
+   "bron": "gladzoo.dk Dagens program en Presse (gezien 22-10-2026); Zootierliste (bezoek 08/2025)"
+  },
+  {
+   "locatie": "Glad Zoo",
+   "soort": "Euraziatische lynx",
+   "oud": "w (alleen Zootierliste 2022)",
+   "nieuw": "Naar ‘Eerder hier’: laatste bewijs is een foto uit 2021 en een bezoek in 2022.",
+   "bron": "gladzoo.dk mediabibliotheek (foto 15-10-2021); Zootierliste (07/2022)"
+  },
+  {
+   "locatie": "Skærup Zoo",
+   "soort": "Euraziatische lynx (Centraal-Aziatisch)",
+   "oud": "w (Zootierliste ‘aktuell 2025’)",
+   "nieuw": "Naar ‘Eerder hier’: bij het bezoek in 08/2025 niet gezien en geen bord, en niet op de eigen dierenlijst; laatst gezien 2021.",
+   "bron": "Zootierliste (bezoek 08/2025); skaerup-zoo.dk dierenlijst (22-10-2026)"
+  },
+  {
+   "locatie": "Skærup Zoo",
+   "soort": "Vissende kat",
+   "oud": "w",
+   "nieuw": "Blijft w: gezien en met bord in 08/2025 (Zootierliste), maar niet op de eigen dierenlijst.",
+   "bron": "Zootierliste (bezoek 08/2025); skaerup-zoo.dk (22-10-2026)"
+  },
+  {
+   "locatie": "Skærup Zoo",
+   "soort": "Jaguar",
+   "oud": "‘kater Carlos en poes Caro’",
+   "nieuw": "De namen Carlos/Caro staan niet op de huidige soortpagina (Carlo is ook de naam van de parkmascotte); jaguar wel bevestigd door JydskeVestkysten 23-03-2026. Lot van de welpen van januari 2024 onbekend.",
+   "bron": "skaerup-zoo.dk /rovdyr/jaguar en /carlo-maskot (22-10-2026); jv.dk 23-03-2026"
+  },
+  {
+   "locatie": "HANSENBERG Zoo",
+   "soort": "Euraziatische lynx",
+   "oud": "w (alleen Zootierliste, zonder jaartal)",
+   "nieuw": "Bevestigd door de eigen site (‘den skandinaviske los’, in een fokprogramma), maar status n: schoolzoo, alleen open op de open dag (31-01-2026; volgende 23-01-2027).",
+   "bron": "hansenberg.dk pagina dyrepasser en programma Åbent Hus 2026 (gezien 22-10-2026)"
+  },
+  {
+   "locatie": "Zoologisk Have København",
+   "soort": "Caracal",
+   "oud": "In het jaarverslag 2024 genoemd, status onduidelijk",
+   "nieuw": "Weg: stamboekstand op 31-12-2024 nul (Zootierliste). Blijft bij ‘Eerder hier’.",
+   "bron": "Zootierliste (TBL 2017–2024)"
+  },
+  {
+   "locatie": "Zoologisk Have København",
+   "soort": "Leeuw",
+   "oud": "ondersoort en aantal onbekend",
+   "nieuw": "Twee jonge mannetjes uit 2024 op 18-03-2026 geëuthanaseerd; in 2026 een mannetje naar GaiaZoo en een Angolese kater (geb. 2023, Zuidelijk) uit Chorzów erbij. Geen namen gevonden.",
+   "bron": "zoo.dk 19-03-2026; Zootierliste (FB Chorzów 23-06-2026)"
+  },
+  {
+   "locatie": "Zoologisk Have København",
+   "soort": "Tijger",
+   "oud": "worp juli 2025, aantal onbekend",
+   "nieuw": "4 geboren rond 09-07-2025; 1 stierf na enkele dagen, 1 geëuthanaseerd (hartafwijking); 2 vrouwtjes leven en zijn sinds 09-10-2025 buiten te zien.",
+   "bron": "zoo.dk 21-07-2025 en 09-10-2025"
+  },
+  {
+   "locatie": "GIVSKUD ZOO",
+   "soort": "Leeuw",
+   "oud": "tweede worp: aantal en datum onbekend",
+   "nieuw": "Tweede worp: 4 welpen, ca. midden juni 2026. Totaal 8 welpen (5 mannetjes, 3 vrouwtjes), vader Varis.",
+   "bron": "TV 2 04-07-2026; TV Syd 04-07-2026"
+  },
+  {
+   "locatie": "Krokodille Zoo",
+   "soort": "Poema",
+   "oud": "worpen 2023, zomer 2024 en 2025",
+   "nieuw": "Ritzau (01-04-2026) noemt de tweeling van Nala uit 2025 ‘het tweede kuld’: er zijn dus waarschijnlijk maar twee worpen (2023: 1 welp; 2025: tweeling). De ‘tweeling zomer 2024’ is vermoedelijk dezelfde tweeling met een ander jaartal; niet op te lossen zonder het artikel van Sjællandske.",
+   "bron": "Kristeligt Dagblad/Ritzau 01-04-2026; TV 2 01-04-2026"
+  },
+  {
+   "locatie": "Krokodille Zoo",
+   "soort": "Nevelpanter",
+   "oud": "Sky en Neo, sinds onbekend",
+   "nieuw": "Paar sinds 2023 uit Howletts (Zootierliste); soort sinds 2014 in het park.",
+   "bron": "Zootierliste; krokodillezoo.dk soortpagina"
+  },
+  {
+   "locatie": "Munkholm Zoo",
+   "soort": "Vissende kat",
+   "oud": "w (lst)",
+   "nieuw": "Naar ‘Eerder hier’: niet op de parkkaart 2024 en in 2021 al niet meer gezien.",
+   "bron": "munkholmzoo.dk parkkaart (03-2024); Zootierliste (06/2021)"
+  },
+  {
+   "locatie": "Blåvand Zoo",
+   "soort": "Serval",
+   "oud": "w (lst)",
+   "nieuw": "Naar ‘Eerder hier’: niet op de parkkaart 2024, laatste bewijs maart 2022.",
+   "bron": "blaavandzoo.dk parkkaart 2024; DR 10-03-2022"
+  },
+  {
+   "locatie": "Knuthenborg Safaripark",
+   "soort": "Leeuw",
+   "oud": "9 of 8",
+   "nieuw": "Deense site (actueel): 9 (1+4 fokgroep, 4 mannetjes); december 2024: 10. De Engelse site (8) is verouderd.",
+   "bron": "knuthenborg.dk/da/dyrene; persbericht 17-12-2024"
+  },
+  {
+   "locatie": "Ree Park",
+   "soort": "Tijger / Sneeuwluipaard",
+   "oud": "tijgers weg?",
+   "nieuw": "Tijgers bevestigd weg sinds 2020. Geen sneeuwluipaarden (een ‘sneeuwluipaardverblijf’ uit 2012 op een Duitse bouwsite gaat vermoedelijk over het luipaardverblijf).",
+   "bron": "Zootierliste; heinze.de"
+  },
+  {
+   "locatie": "ZOOPARK Sydsjælland",
+   "soort": "Tijger",
+   "oud": "w",
+   "nieuw": "Blijft w; extra: de oude eigen site zoo-park.dk is overgenomen door casinoreclame en naestvedzoo.dk is geen officiële site (casino-SEO). Geen eigen posts gevonden.",
+   "bron": "zoo-park.dk en naestvedzoo.dk (gezien 22-10-2026)"
+  }
+ ],
+ "open_punten": [
+  "Skærup Zoo: zijn de jaguarwelpen van januari 2024 er nog? Niet gevonden. Zootierliste zag bij het bezoek van 08/2025 geen jaguar en geen bord; eigen site en JV (03-2026) noemen jaguars wel.",
+  "Skærup Zoo: vissende kat alleen via Zootierliste (08/2025), niet op de eigen dierenlijst.",
+  "Glad Zoo: aantal servals onbekend; de pagina ‘Vores dyr’ noemt de serval niet.",
+  "HANSENBERG Zoo: aantal lynxen en datum van de kweek (Facebookvideo) onbekend; de status hangt af van hoe de gids een schoolzoo met één open dag per jaar behandelt (n).",
+  "Zoo København: namen van de leeuwen en het precieze aantal niet gevonden; het jong uit 2024 van de tijgers is onbekend.",
+  "Givskud: het park verwachtte in de nazomer van 2026 mogelijk een derde worp; geen bericht gevonden.",
+  "Krokodille Zoo: poema-worp 2024 of 2025 (tegenstrijdige jaartallen); aantal poema’s onbekend.",
+  "Munkholm Zoo: servaljongen 2026 alleen uit een bezoekersreview; Altai-lynx alleen op de kaart van 2024.",
+  "ZOOPARK Sydsjælland: open of niet, en tijgers ja/nee, blijft onbeslist (bronnen uit 2026 spreken elkaar tegen). Facebook en Tripadvisor konden niet worden geopend.",
+  "Ree Park: eigen site blokkeert geautomatiseerde toegang (Cloudflare); luipaardjongen 2026 niet gevonden.",
+  "Breed zoeken: geen nieuwe Deense locaties met wilde katten gevonden buiten de bestaande resultaatbestanden (FVST-lijst, Wikipedia-categorie ‘Dyreparker i Danmark’ en zoekopdrachten naar serval/los/karakal/tiger en kleine eilanden)."
+ ]
+}

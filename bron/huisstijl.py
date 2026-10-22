@@ -18,24 +18,24 @@ def lettertypen(doc):
     return re.sub(r"\bLiterata\b", "Alegreya Sans", doc)
 
 L = {  # teksten in alle gidstalen
-    "naam": {"nl": "Bezoekersgids", "en": "Visitor’s Guide", "fr": "Guide du visiteur", "de": "Besucherführer", "it": "Guida per visitatori", "es": "Guía del visitante", "pt": "Guia do visitante", "da": "Besøgsguide", "cs": "Průvodce pro návštěvníky"},
-    "sub": {"nl": "Wilde katten", "en": "Wild cats", "fr": "Félins sauvages", "de": "Wilde Katzen", "it": "Felini selvatici", "es": "Felinos salvajes", "pt": "Felinos selvagens", "da": "Vilde katte", "cs": "Divoké kočky"},
-    "zoek": {"nl": "Zoeken", "en": "Search", "fr": "Chercher", "de": "Suchen", "it": "Cerca", "es": "Buscar", "pt": "Pesquisar", "da": "Søg", "cs": "Hledat"},
-    "kaart": {"nl": "Kaart", "en": "Map", "fr": "Carte", "de": "Karte", "it": "Mappa", "es": "Mapa", "pt": "Mapa", "da": "Kort", "cs": "Mapa"},
-    "landen": {"nl": "Alle landen", "en": "All countries", "fr": "Tous les pays", "de": "Alle Länder", "it": "Tutti i paesi", "es": "Todos los países", "pt": "Todos os países", "da": "Alle lande", "cs": "Všechny země"},
-    "soorten": {"nl": "Alle soorten", "en": "All species", "fr": "Toutes les espèces", "de": "Alle Arten", "it": "Tutte le specie", "es": "Todas las especies", "pt": "Todas as espécies", "da": "Alle arter", "cs": "Všechny druhy"},
-    "fav": {"nl": "Favorieten", "en": "Favourites", "fr": "Favoris", "de": "Favoriten", "it": "Preferiti", "es": "Favoritos", "pt": "Favoritos", "da": "Favoritter", "cs": "Oblíbené"},
-    "top10": {"nl": "Top 10 om te bezoeken", "en": "Top 10 to visit", "fr": "Top 10 à visiter", "de": "Top 10 zum Besuchen", "it": "Top 10 da visitare", "es": "Top 10 para visitar", "pt": "Top 10 a visitar", "da": "Top 10 at besøge", "cs": "Top 10 k návštěvě"},
-    "geboren": {"nl": "Recent geboren", "en": "Recently born", "fr": "Naissances récentes", "de": "Kürzlich geboren", "it": "Nati di recente", "es": "Nacimientos recientes", "pt": "Nascimentos recentes", "da": "Nyfødte", "cs": "Nedávno narozená mláďata"},
-    "perpark": {"nl": "Parken op aantal soorten", "en": "Parks by number of species", "fr": "Parcs par nombre d’espèces", "de": "Parks nach Zahl der Arten", "it": "Parchi per numero di specie", "es": "Parques por número de especies", "pt": "Parques por número de espécies", "da": "Parker efter antal arter", "cs": "Parky podle počtu druhů"},
-    "typen": {"nl": "Soorten locaties", "en": "Types of location", "fr": "Types de lieux", "de": "Arten von Orten", "it": "Tipi di luogo", "es": "Tipos de lugar", "pt": "Tipos de local", "da": "Typer af steder", "cs": "Typy míst"},
-    "over": {"nl": "Over deze gids", "en": "About this guide", "fr": "À propos de ce guide", "de": "Über diesen Guide", "it": "Informazioni su questa guida", "es": "Sobre esta guía", "pt": "Sobre este guia", "da": "Om denne guide", "cs": "O tomto průvodci"},
-    "meer": {"nl": "Meer", "en": "More", "fr": "Plus", "de": "Mehr", "it": "Altro", "es": "Más", "pt": "Mais", "da": "Mere", "cs": "Více"},
-    "spot": {"nl": "Spottersgids: katten in het wild", "en": "Spotter’s Guide: cats in the wild", "fr": "Spotter’s Guide : félins dans la nature (en anglais)", "de": "Spotter’s Guide: Katzen in freier Wildbahn (auf Englisch)", "it": "Spotter’s Guide: felini in natura (in inglese)", "es": "Spotter’s Guide: felinos en libertad (en inglés)", "pt": "Spotter’s Guide: felinos na natureza (em inglês)", "da": "Spotter’s Guide: katte i naturen (på engelsk)", "cs": "Spotter’s Guide: kočky v přírodě (anglicky)"},
-    "kofi": {"nl": "Steun de gids op Ko-fi", "en": "Support the guide on Ko-fi", "fr": "Soutenir le guide sur Ko-fi", "de": "Den Guide auf Ko-fi unterstützen", "it": "Sostieni la guida su Ko-fi", "es": "Apoya la guía en Ko-fi", "pt": "Apoia o guia no Ko-fi", "da": "Støt guiden på Ko-fi", "cs": "Podpoř průvodce na Ko-fi"},
-    "kofi_t": {"nl": "Vind je deze gids handig?", "en": "Find this guide useful?", "fr": "Ce guide vous est utile ?", "de": "Findest du diesen Guide nützlich?", "it": "Trovi utile questa guida?", "es": "¿Te resulta útil esta guía?", "pt": "Este guia é útil para ti?", "da": "Synes du, at guiden er nyttig?", "cs": "Je ti průvodce užitečný?"},
-    "kofi_s": {"nl": "Met een kleine bijdrage help je hem actueel te houden.", "en": "A small contribution helps keep it up to date.", "fr": "Une petite contribution aide à le tenir à jour.", "de": "Ein kleiner Beitrag hilft, ihn aktuell zu halten.", "it": "Con un piccolo contributo aiuti a tenerla aggiornata.", "es": "Una pequeña aportación ayuda a mantenerla al día.", "pt": "Uma pequena contribuição ajuda a mantê-lo atualizado.", "da": "Et lille bidrag hjælper med at holde den opdateret.", "cs": "Malý příspěvek pomáhá udržovat ho aktuální."},
-    "door": {"nl": "Samengesteld door J. Gelens. Bronnen en foto’s staan in de gids.", "en": "Compiled by J. Gelens. Sources and photos are listed in the guide.", "fr": "Rédigé par J. Gelens. Les sources et les photos figurent dans le guide.", "de": "Zusammengestellt von J. Gelens. Quellen und Fotos stehen im Guide.", "it": "Compilata da J. Gelens. Fonti e foto si trovano nella guida.", "es": "Elaborado por J. Gelens. Las fuentes y las fotos figuran en la guía.", "pt": "Compilado por J. Gelens. As fontes e as fotos estão no guia.", "da": "Samlet af J. Gelens. Kilder og fotos står i guiden.", "cs": "Sestavil J. Gelens. Zdroje a fotky najdeš v průvodci."},
+    "naam": {"nl": "Bezoekersgids", "en": "Visitor’s Guide", "fr": "Guide du visiteur", "de": "Besucherführer", "it": "Guida per visitatori", "es": "Guía del visitante", "pt": "Guia do visitante", "da": "Besøgsguide", "cs": "Průvodce pro návštěvníky", "sv": "Besöksguide"},
+    "sub": {"nl": "Wilde katten", "en": "Wild cats", "fr": "Félins sauvages", "de": "Wilde Katzen", "it": "Felini selvatici", "es": "Felinos salvajes", "pt": "Felinos selvagens", "da": "Vilde katte", "cs": "Divoké kočky", "sv": "Vilda katter"},
+    "zoek": {"nl": "Zoeken", "en": "Search", "fr": "Chercher", "de": "Suchen", "it": "Cerca", "es": "Buscar", "pt": "Pesquisar", "da": "Søg", "cs": "Hledat", "sv": "Sök"},
+    "kaart": {"nl": "Kaart", "en": "Map", "fr": "Carte", "de": "Karte", "it": "Mappa", "es": "Mapa", "pt": "Mapa", "da": "Kort", "cs": "Mapa", "sv": "Karta"},
+    "landen": {"nl": "Alle landen", "en": "All countries", "fr": "Tous les pays", "de": "Alle Länder", "it": "Tutti i paesi", "es": "Todos los países", "pt": "Todos os países", "da": "Alle lande", "cs": "Všechny země", "sv": "Alla länder"},
+    "soorten": {"nl": "Alle soorten", "en": "All species", "fr": "Toutes les espèces", "de": "Alle Arten", "it": "Tutte le specie", "es": "Todas las especies", "pt": "Todas as espécies", "da": "Alle arter", "cs": "Všechny druhy", "sv": "Alla arter"},
+    "fav": {"nl": "Favorieten", "en": "Favourites", "fr": "Favoris", "de": "Favoriten", "it": "Preferiti", "es": "Favoritos", "pt": "Favoritos", "da": "Favoritter", "cs": "Oblíbené", "sv": "Favoriter"},
+    "top10": {"nl": "Top 10 om te bezoeken", "en": "Top 10 to visit", "fr": "Top 10 à visiter", "de": "Top 10 zum Besuchen", "it": "Top 10 da visitare", "es": "Top 10 para visitar", "pt": "Top 10 a visitar", "da": "Top 10 at besøge", "cs": "Top 10 k návštěvě", "sv": "Topp 10 att besöka"},
+    "geboren": {"nl": "Recent geboren", "en": "Recently born", "fr": "Naissances récentes", "de": "Kürzlich geboren", "it": "Nati di recente", "es": "Nacimientos recientes", "pt": "Nascimentos recentes", "da": "Nyfødte", "cs": "Nedávno narozená mláďata", "sv": "Nyfödda"},
+    "perpark": {"nl": "Parken op aantal soorten", "en": "Parks by number of species", "fr": "Parcs par nombre d’espèces", "de": "Parks nach Zahl der Arten", "it": "Parchi per numero di specie", "es": "Parques por número de especies", "pt": "Parques por número de espécies", "da": "Parker efter antal arter", "cs": "Parky podle počtu druhů", "sv": "Parker efter antal arter"},
+    "typen": {"nl": "Soorten locaties", "en": "Types of location", "fr": "Types de lieux", "de": "Arten von Orten", "it": "Tipi di luogo", "es": "Tipos de lugar", "pt": "Tipos de local", "da": "Typer af steder", "cs": "Typy míst", "sv": "Typer av platser"},
+    "over": {"nl": "Over deze gids", "en": "About this guide", "fr": "À propos de ce guide", "de": "Über diesen Guide", "it": "Informazioni su questa guida", "es": "Sobre esta guía", "pt": "Sobre este guia", "da": "Om denne guide", "cs": "O tomto průvodci", "sv": "Om guiden"},
+    "meer": {"nl": "Meer", "en": "More", "fr": "Plus", "de": "Mehr", "it": "Altro", "es": "Más", "pt": "Mais", "da": "Mere", "cs": "Více", "sv": "Mer"},
+    "spot": {"nl": "Spottersgids: katten in het wild", "en": "Spotter’s Guide: cats in the wild", "fr": "Spotter’s Guide : félins dans la nature (en anglais)", "de": "Spotter’s Guide: Katzen in freier Wildbahn (auf Englisch)", "it": "Spotter’s Guide: felini in natura (in inglese)", "es": "Spotter’s Guide: felinos en libertad (en inglés)", "pt": "Spotter’s Guide: felinos na natureza (em inglês)", "da": "Spotter’s Guide: katte i naturen (på engelsk)", "cs": "Spotter’s Guide: kočky v přírodě (anglicky)", "sv": "Spotter’s Guide: katter i det vilda (på engelska)"},
+    "kofi": {"nl": "Steun de gids op Ko-fi", "en": "Support the guide on Ko-fi", "fr": "Soutenir le guide sur Ko-fi", "de": "Den Guide auf Ko-fi unterstützen", "it": "Sostieni la guida su Ko-fi", "es": "Apoya la guía en Ko-fi", "pt": "Apoia o guia no Ko-fi", "da": "Støt guiden på Ko-fi", "cs": "Podpoř průvodce na Ko-fi", "sv": "Stöd guiden på Ko-fi"},
+    "kofi_t": {"nl": "Vind je deze gids handig?", "en": "Find this guide useful?", "fr": "Ce guide vous est utile ?", "de": "Findest du diesen Guide nützlich?", "it": "Trovi utile questa guida?", "es": "¿Te resulta útil esta guía?", "pt": "Este guia é útil para ti?", "da": "Synes du, at guiden er nyttig?", "cs": "Je ti průvodce užitečný?", "sv": "Tycker du att guiden är användbar?"},
+    "kofi_s": {"nl": "Met een kleine bijdrage help je hem actueel te houden.", "en": "A small contribution helps keep it up to date.", "fr": "Une petite contribution aide à le tenir à jour.", "de": "Ein kleiner Beitrag hilft, ihn aktuell zu halten.", "it": "Con un piccolo contributo aiuti a tenerla aggiornata.", "es": "Una pequeña aportación ayuda a mantenerla al día.", "pt": "Uma pequena contribuição ajuda a mantê-lo atualizado.", "da": "Et lille bidrag hjælper med at holde den opdateret.", "cs": "Malý příspěvek pomáhá udržovat ho aktuální.", "sv": "Ett litet bidrag hjälper till att hålla den uppdaterad."},
+    "door": {"nl": "Samengesteld door J. Gelens. Bronnen en foto’s staan in de gids.", "en": "Compiled by J. Gelens. Sources and photos are listed in the guide.", "fr": "Rédigé par J. Gelens. Les sources et les photos figurent dans le guide.", "de": "Zusammengestellt von J. Gelens. Quellen und Fotos stehen im Guide.", "it": "Compilata da J. Gelens. Fonti e foto si trovano nella guida.", "es": "Elaborado por J. Gelens. Las fuentes y las fotos figuran en la guía.", "pt": "Compilado por J. Gelens. As fontes e as fotos estão no guia.", "da": "Samlet af J. Gelens. Kilder og fotos står i guiden.", "cs": "Sestavil J. Gelens. Zdroje a fotky najdeš v průvodci.", "sv": "Sammanställd av J. Gelens. Källor och foton finns i guiden."},
 }
 def t(k, langs):
     if len(langs) == 1:
@@ -396,8 +396,8 @@ alles();
 JS2 = r"""<script>
 (function(){
 /* gidspagina overzichtelijker (17-10-2026): kaart en overzicht open bovenaan, compacte hoofdtabel, korter plan, hoofdletters */
-var ONB=/^(onbekend|unknown|inconnu|inconnue|unbekannt|sconosciuto|non noto|desconocido|desconhecido|ukendt|neznámé)$/i;
-var MIST={nl:"Nog niet:",en:"Not yet:",fr:"Pas encore :",de:"Noch nicht:",it:"Non ancora:",es:"Aún no:",pt:"Ainda não:",da:"Endnu ikke:",cs:"Zatím ne:"};
+var ONB=/^(onbekend|unknown|inconnu|inconnue|unbekannt|sconosciuto|non noto|desconocido|desconhecido|ukendt|neznámé|okänd|okänt)$/i;
+var MIST={nl:"Nog niet:",en:"Not yet:",fr:"Pas encore :",de:"Noch nicht:",it:"Non ancora:",es:"Aún no:",pt:"Ainda não:",da:"Endnu ikke:",cs:"Zatím ne:",sv:"Inte än:"};
 function taal(){var l=(document.documentElement.lang||"nl").slice(0,2);return MIST[l]?l:"nl";}
 function open(b){var t=b&&b.querySelector(":scope > h2 .ctog");if(t&&t.getAttribute("aria-expanded")==="false")t.click();}
 var klaar=false;
@@ -414,8 +414,8 @@ function opbouw(){if(klaar)return;var w=document.getElementById("main")||documen
   /* In het kort: tabel Totaaloverzicht weg (alleen de korte punten blijven) */
   document.querySelectorAll("#tldr .tscroll").forEach(function(t){if(!t.querySelector(".tw-n"))return;t.classList.add("hs-weg");var h=t.previousElementSibling;if(h&&h.tagName==="H3"&&!h.classList.contains("rg-kop"))h.classList.add("hs-weg");});
   /* nieuwe namen voor twee kopjes (kop en tabblad) */
-  var NAAM={soorten:{nl:"Per kat",en:"By cat",fr:"Par félin",de:"Nach Katze",it:"Per felino",es:"Por felino",pt:"Por felino",da:"Efter kat",cs:"Podle kočky"},
-    route:{nl:"Routeplanner",en:"Route planner",fr:"Planificateur d’itinéraire",de:"Routenplaner",it:"Pianificatore di percorso",es:"Planificador de ruta",pt:"Planeador de rotas",da:"Ruteplanlægger",cs:"Plánovač trasy"}};
+  var NAAM={soorten:{nl:"Per kat",en:"By cat",fr:"Par félin",de:"Nach Katze",it:"Per felino",es:"Por felino",pt:"Por felino",da:"Efter kat",cs:"Podle kočky",sv:"Per katt"},
+    route:{nl:"Routeplanner",en:"Route planner",fr:"Planificateur d’itinéraire",de:"Routenplaner",it:"Pianificatore di percorso",es:"Planificador de ruta",pt:"Planeador de rotas",da:"Ruteplanlægger",cs:"Plánovač trasy",sv:"Ruttplanerare"}};
   Object.keys(NAAM).forEach(function(id){var el=[document.querySelector("#"+id+" > h2 .ctog > span"),nav.querySelector('a[href="#'+id+'"]')];
     el.forEach(function(e){if(!e)return;var sp=e.querySelectorAll("[class^='l-']");if(sp.length)sp.forEach(function(x){var l=x.className.slice(2);if(NAAM[id][l])x.textContent=NAAM[id][l];});else e.textContent=NAAM[id].nl;});});
   /* hoofdtabel onder Per kat: de lijst staat direct onder de soortknoppen (17-10-2026) */
@@ -460,11 +460,13 @@ UITLEG = {"nl": "Kleur en icoon tonen het soort locatie (zie de knoppen boven de
           "it": "Colore e icona indicano il tipo di luogo (vedi i pulsanti sopra la mappa; toccane uno per filtrare).", "es": "El color y el icono indican el tipo de lugar (mira los botones encima del mapa; toca uno para filtrar).",
           "pt": "A cor e o ícone mostram o tipo de local (vê os botões acima do mapa; toca num para filtrar).",
           "da": "Farve og ikon viser typen af sted (se knapperne over kortet; tryk på en for at filtrere).",
-          "cs": "Barva a ikona ukazují typ místa (viz tlačítka nad mapou; klepnutím na jedno filtruješ)."}
+          "cs": "Barva a ikona ukazují typ místa (viz tlačítka nad mapou; klepnutím na jedno filtruješ).",
+          "sv": "Färg och ikon visar typen av plats (se knapparna ovanför kartan; tryck på en för att filtrera)."}
 ONZ = {"nl": "open stip: alleen onzekere vermeldingen", "en": "open dot: uncertain entries only", "fr": "point vide : mentions incertaines seulement",
        "de": "offener Punkt: nur unsichere Einträge", "it": "punto vuoto: solo segnalazioni incerte", "es": "punto vacío: solo menciones inciertas", "pt": "ponto vazio: só menções incertas",
        "da": "åben prik: kun usikre angivelser",
-       "cs": "prázdná tečka: jen nejisté zmínky"}
+       "cs": "prázdná tečka: jen nejisté zmínky",
+       "sv": "öppen prick: bara osäkra uppgifter"}
 LANDNAAM = {
     "nl": {"nl": "Nederland", "en": "Netherlands"}, "be": {"nl": "België", "en": "Belgium", "fr": "Belgique"},
     "lu": {"nl": "Luxemburg", "en": "Luxembourg", "fr": "Luxembourg", "de": "Luxemburg"}, "de": {"nl": "Duitsland", "en": "Germany", "de": "Deutschland"},
@@ -473,18 +475,20 @@ LANDNAAM = {
     "it": {"nl": "Italië", "en": "Italy", "it": "Italia"}, "es": {"nl": "Spanje", "en": "Spain", "es": "España"},
     "ie": {"nl": "Ierland", "en": "Ireland"}, "pt": {"nl": "Portugal", "en": "Portugal", "pt": "Portugal"},
     "dk": {"nl": "Denemarken", "en": "Denmark", "da": "Danmark"},
-    "cz": {"nl": "Tsjechië", "en": "Czechia", "cs": "Česko"}}
+    "cz": {"nl": "Tsjechië", "en": "Czechia", "cs": "Česko"},
+    "se": {"nl": "Zweden", "en": "Sweden", "sv": "Sverige"}}
 ONDER = {"nl": "Wilde katachtigen in dierentuinen en parken", "en": "Wild cats in zoos and animal parks", "fr": "Félins sauvages dans les zoos et parcs animaliers",
          "de": "Wilde Katzen in Zoos und Tierparks", "it": "Felini selvatici in zoo e parchi faunistici", "es": "Felinos salvajes en zoos y parques de animales",
          "pt": "Felinos selvagens em zoos e parques de animais",
          "da": "Vilde katte i zoologiske haver og dyreparker",
-         "cs": "Divoké kočkovité šelmy v zoologických zahradách a zooparcích"}
+         "cs": "Divoké kočkovité šelmy v zoologických zahradách a zooparcích",
+         "sv": "Vilda kattdjur i djurparker och parker"}
 def kopdata(c, langs, vlag):
     return {"land": {l: LANDNAAM[c][l] for l in langs}, "onder": {l: ONDER[l] for l in langs}, "vlag": vlag}
 
-GEB = {'nl': 'Recent geboren', 'en': 'Recently born', 'fr': 'Naissances récentes', 'de': 'Kürzlich geboren', 'it': 'Nati di recente', 'es': 'Nacimientos recientes', 'pt': 'Nascimentos recentes', 'da': 'Nyfødte', 'cs': 'Nedávno narozená mláďata'}
-ALLEEN = {'nl': 'Alleen deze tonen', 'en': 'Show only these', 'fr': 'N’afficher que ceux-ci', 'de': 'Nur diese zeigen', 'it': 'Mostra solo questi', 'es': 'Mostrar solo estos', 'pt': 'Mostrar só estes', 'da': 'Vis kun disse', 'cs': 'Zobrazit jen tyto'}
-TERUG = {'nl': 'Alle locaties tonen', 'en': 'Show all locations', 'fr': 'Afficher tous les lieux', 'de': 'Alle Orte zeigen', 'it': 'Mostra tutti i luoghi', 'es': 'Mostrar todos los lugares', 'pt': 'Mostrar todos os locais', 'da': 'Vis alle steder', 'cs': 'Zobrazit všechna místa'}
+GEB = {'nl': 'Recent geboren', 'en': 'Recently born', 'fr': 'Naissances récentes', 'de': 'Kürzlich geboren', 'it': 'Nati di recente', 'es': 'Nacimientos recientes', 'pt': 'Nascimentos recentes', 'da': 'Nyfødte', 'cs': 'Nedávno narozená mláďata', 'sv': 'Nyfödda'}
+ALLEEN = {'nl': 'Alleen deze tonen', 'en': 'Show only these', 'fr': 'N’afficher que ceux-ci', 'de': 'Nur diese zeigen', 'it': 'Mostra solo questi', 'es': 'Mostrar solo estos', 'pt': 'Mostrar só estes', 'da': 'Vis kun disse', 'cs': 'Zobrazit jen tyto', 'sv': 'Visa bara dessa'}
+TERUG = {'nl': 'Alle locaties tonen', 'en': 'Show all locations', 'fr': 'Afficher tous les lieux', 'de': 'Alle Orte zeigen', 'it': 'Mostra tutti i luoghi', 'es': 'Mostrar todos los lugares', 'pt': 'Mostrar todos os locais', 'da': 'Vis alle steder', 'cs': 'Zobrazit všechna místa', 'sv': 'Visa alla platser'}
 def kaartdata(types, locinfo, langs):
     """types: de lijst uit locatietypes.json; locinfo: {locatienaam: typenaam (nl)}."""
     idx = {t["nl"]: k for k, t in enumerate(types)}

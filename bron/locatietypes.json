@@ -12,6 +12,7 @@
       "pt": "Jardim zoológico",
       "da": "Zoologisk have",
       "cs": "Zoologická zahrada",
+      "sv": "Zoo",
       "uitleg": "Wetenschappelijk geleide dierentuin, lid van EAZA of een landelijke zoobond (NVD, VdZ, UIZA, AIZA, BIAZA).",
       "uitleg_en": "Scientifically managed zoo, member of EAZA or a national zoo association (NVD, VdZ, UIZA, AIZA, BIAZA).",
       "uitleg_fr": "Zoo à gestion scientifique, membre de l’EAZA ou d’une association nationale de zoos (NVD, VdZ, UIZA, AIZA, BIAZA).",
@@ -20,7 +21,8 @@
       "uitleg_es": "Zoo con gestión científica, miembro de EAZA o de una asociación nacional de zoos (NVD, VdZ, UIZA, AIZA, BIAZA).",
       "uitleg_pt": "Jardim zoológico com gestão científica, membro da EAZA ou de uma associação nacional de jardins zoológicos (NVD, VdZ, UIZA, AIZA, BIAZA).",
       "uitleg_da": "Videnskabeligt ledet zoologisk have, medlem af EAZA eller en national zooforening (NVD, VdZ, UIZA, AIZA, BIAZA).",
-      "uitleg_cs": "Vědecky vedená zoologická zahrada, která je členem EAZA nebo národní asociace zoologických zahrad (NVD, VdZ, UIZA, AIZA, BIAZA)."
+      "uitleg_cs": "Vědecky vedená zoologická zahrada, která je členem EAZA nebo národní asociace zoologických zahrad (NVD, VdZ, UIZA, AIZA, BIAZA).",
+      "uitleg_sv": "Vetenskapligt ledd djurpark, medlem i EAZA eller en nationell djurparksförening (som Svenska Djurparksföreningen, NVD, VdZ, BIAZA)."
     },
     {
       "key": "dierenpark",
@@ -33,6 +35,7 @@
       "pt": "Parque de animais",
       "da": "Dyrepark",
       "cs": "Zoopark",
+      "sv": "Djurpark",
       "uitleg": "Kleinere dierentuin of Tierpark die niet bij zo'n bond is aangesloten, ook als het park bij een winkel of kinderboerderij hoort.",
       "uitleg_en": "Smaller zoo or Tierpark that is not a member of such an association, also when the park belongs to a shop or a children's farm.",
       "uitleg_fr": "Petit zoo ou Tierpark qui n’est pas membre d’une telle association, même lorsque le parc dépend d’un magasin ou d’une ferme pour enfants.",
@@ -41,7 +44,8 @@
       "uitleg_es": "Zoo más pequeño o Tierpark que no pertenece a ninguna de esas asociaciones, también cuando el parque depende de una tienda o de una granja escuela.",
       "uitleg_pt": "Jardim zoológico mais pequeno ou Tierpark que não pertence a nenhuma dessas associações, também quando o parque depende de uma loja ou de uma quinta pedagógica.",
       "uitleg_da": "Mindre zoo eller Tierpark, der ikke er medlem af en sådan forening, også når parken hører til en butik eller en børnebondegård.",
-      "uitleg_cs": "Menší zoo nebo zoopark, který není členem takové asociace, i když patří k obchodu nebo k dětské farmě."
+      "uitleg_cs": "Menší zoo nebo zoopark, který není členem takové asociace, i když patří k obchodu nebo k dětské farmě.",
+      "uitleg_sv": "Djurpark som inte är med i en sådan förening, även när parken hör till en butik eller en barnbondgård."
     },
     {
       "key": "wildpark",
@@ -54,6 +58,7 @@
       "pt": "Parque de fauna",
       "da": "Vildtpark",
       "cs": "Obora",
+      "sv": "Viltpark",
       "uitleg": "Vooral inheemse dieren, vaak in een bos of op een groot terrein. Hier zie je de meeste lynxen en wilde katten.",
       "uitleg_en": "Mostly native animals, often in a forest or on a large site. This is where you see most lynxes and wildcats.",
       "uitleg_fr": "Surtout des animaux indigènes, souvent en forêt ou sur un grand terrain. C’est là que l’on voit le plus de lynx et de chats sauvages.",
@@ -62,7 +67,8 @@
       "uitleg_es": "Sobre todo animales autóctonos, a menudo en un bosque o en un terreno amplio. Aquí ves la mayoría de los linces y gatos monteses.",
       "uitleg_pt": "Sobretudo animais autóctones, muitas vezes numa floresta ou num terreno amplo. É aqui que vês a maioria dos linces e gatos-bravos.",
       "uitleg_da": "Mest hjemmehørende dyr, ofte i en skov eller på et stort område. Her ser du de fleste losser og vildkatte.",
-      "uitleg_cs": "Většinou původní zvířata, často v lese nebo na velkém pozemku. Tady uvidíš nejvíc rysů a divokých koček."
+      "uitleg_cs": "Většinou původní zvířata, často v lese nebo na velkém pozemku. Tady uvidíš nejvíc rysů a divokých koček.",
+      "uitleg_sv": "Mest inhemska djur, ofta i en skog eller på ett stort område. Här ser du flest lodjur och vildkatter."
     },
     {
       "key": "safaripark",
@@ -75,6 +81,7 @@
       "pt": "Safari park",
       "da": "Safaripark",
       "cs": "Safari park",
+      "sv": "Safaripark",
       "uitleg": "Je rijdt of vaart langs de dieren, met je eigen auto, een bus of een boot.",
       "uitleg_en": "You drive or sail past the animals, in your own car, a bus or a boat.",
       "uitleg_fr": "On passe devant les animaux en voiture, en bus ou en bateau.",
@@ -83,7 +90,8 @@
       "uitleg_es": "Pasas junto a los animales con tu propio coche, en autobús o en barco.",
       "uitleg_pt": "Passas junto aos animais no teu próprio carro, de autocarro ou de barco.",
       "uitleg_da": "Du kører eller sejler forbi dyrene, i din egen bil, en bus eller en båd.",
-      "uitleg_cs": "Kolem zvířat projíždíš nebo proplouváš, vlastním autem, autobusem nebo lodí."
+      "uitleg_cs": "Kolem zvířat projíždíš nebo proplouváš, vlastním autem, autobusem nebo lodí.",
+      "uitleg_sv": "Du kör eller åker båt förbi djuren, i din egen bil, en buss eller en båt."
     },
     {
       "key": "attractiepark",
@@ -96,6 +104,7 @@
       "pt": "Parque temático com animais",
       "da": "Forlystelsespark med dyr",
       "cs": "Zábavní park se zvířaty",
+      "sv": "Nöjespark med djur",
       "uitleg": "Pretpark waar de dieren een deel van het aanbod zijn.",
       "uitleg_en": "Theme park where the animals are part of what's on offer.",
       "uitleg_fr": "Parc d’attractions où les animaux font partie de l’offre.",
@@ -104,7 +113,8 @@
       "uitleg_es": "Parque de atracciones en el que los animales forman parte de la oferta.",
       "uitleg_pt": "Parque de diversões em que os animais fazem parte da oferta.",
       "uitleg_da": "Forlystelsespark, hvor dyrene er en del af tilbuddet.",
-      "uitleg_cs": "Zábavní park, kde jsou zvířata součástí nabídky."
+      "uitleg_cs": "Zábavní park, kde jsou zvířata součástí nabídky.",
+      "uitleg_sv": "Nöjespark där djuren är en del av utbudet."
     },
     {
       "key": "natuurcentrum",
@@ -117,6 +127,7 @@
       "pt": "Centro de natureza e reprodução",
       "da": "Natur- og avlscenter",
       "cs": "Přírodní a chovné centrum",
+      "sv": "Natur- och avelscenter",
       "uitleg": "Werkt aan het behoud van een soort, bijvoorbeeld met kweek voor uitzetting of voorlichting over de wilde kat.",
       "uitleg_en": "Works to conserve a species, for example by breeding for release or teaching about the wildcat.",
       "uitleg_fr": "Œuvre à la conservation d’une espèce, par exemple par l’élevage en vue de réintroductions ou la sensibilisation au chat sauvage.",
@@ -125,7 +136,8 @@
       "uitleg_es": "Trabaja en la conservación de una especie, por ejemplo con cría para la reintroducción o con divulgación sobre el gato montés.",
       "uitleg_pt": "Trabalha na conservação de uma espécie, por exemplo com reprodução para reintrodução ou com divulgação sobre o gato-bravo.",
       "uitleg_da": "Arbejder for at bevare en art, for eksempel med avl til udsætning eller formidling om vildkatten.",
-      "uitleg_cs": "Pracuje na záchraně druhu, například chovem pro vypouštění do přírody nebo osvětou o divoké kočce."
+      "uitleg_cs": "Pracuje na záchraně druhu, například chovem pro vypouštění do přírody nebo osvětou o divoké kočce.",
+      "uitleg_sv": "Arbetar för att bevara en art, till exempel med avel för utsättning eller information om vildkatten."
     },
     {
       "key": "opvang",
@@ -138,6 +150,7 @@
       "pt": "Centro de acolhimento ou santuário",
       "da": "Redningscenter eller fristed",
       "cs": "Záchranná stanice nebo útočiště",
+      "sv": "Räddningscenter eller fristad",
       "uitleg": "Neemt afgestane of in beslag genomen katten op. Welke dieren er zitten, wisselt, en vaak is het maar beperkt open.",
       "uitleg_en": "Takes in surrendered or confiscated cats. The animals change, and it is often only open on a limited basis.",
       "uitleg_fr": "Accueille des félins cédés ou saisis. Les animaux changent et l’accès est souvent limité.",
@@ -146,7 +159,8 @@
       "uitleg_es": "Acoge felinos cedidos o decomisados. Los animales cambian, y a menudo solo abre de forma limitada.",
       "uitleg_pt": "Acolhe felinos cedidos ou apreendidos. Os animais mudam, e muitas vezes só abre de forma limitada.",
       "uitleg_da": "Tager imod afleverede eller beslaglagte katte. Dyrene skifter, og der er ofte kun begrænset åbent.",
-      "uitleg_cs": "Přijímá odevzdané nebo zabavené kočky. Zvířata se mění a otevřeno bývá často jen omezeně."
+      "uitleg_cs": "Přijímá odevzdané nebo zabavené kočky. Zvířata se mění a otevřeno bývá často jen omezeně.",
+      "uitleg_sv": "Tar emot inlämnade eller beslagtagna katter. Djuren byts ut, och ofta är det bara öppet i begränsad omfattning."
     },
     {
       "key": "particulier",
@@ -159,6 +173,7 @@
       "pt": "Particular",
       "da": "Privat dyreholder",
       "cs": "Soukromý chovatel",
+      "sv": "Privat djurhållare",
       "uitleg": "Circus, artiest of privépersoon die bezoekers ontvangt, bijvoorbeeld bij voorstellingen of op open dagen.",
       "uitleg_en": "Circus, performer or private person who receives visitors, for example at shows or on open days.",
       "uitleg_fr": "Cirque, dresseur ou particulier qui reçoit des visiteurs, par exemple lors de spectacles ou de journées portes ouvertes.",
@@ -167,7 +182,8 @@
       "uitleg_es": "Circo, artista o particular que recibe visitantes, por ejemplo en espectáculos o jornadas de puertas abiertas.",
       "uitleg_pt": "Circo, artista ou particular que recebe visitantes, por exemplo em espetáculos ou dias abertos.",
       "uitleg_da": "Cirkus, artist eller privatperson, der tager imod besøgende, for eksempel ved forestillinger eller på åbne dage.",
-      "uitleg_cs": "Cirkus, artista nebo soukromá osoba, která přijímá návštěvníky, například při představeních nebo o dnech otevřených dveří."
+      "uitleg_cs": "Cirkus, artista nebo soukromá osoba, která přijímá návštěvníky, například při představeních nebo o dnech otevřených dveří.",
+      "uitleg_sv": "Cirkus, artist eller privatperson som tar emot besökare, till exempel vid föreställningar eller på öppna dagar."
     }
   ],
   "labels": [
@@ -182,7 +198,8 @@
       "es": "Dormir en el parque",
       "pt": "Dormir no parque",
       "da": "Overnatning i parken",
-      "cs": "Přespání v parku"
+      "cs": "Přespání v parku",
+      "sv": "Övernattning i parken"
     },
     {
       "key": "rondleiding",
@@ -195,7 +212,8 @@
       "es": "Solo con visita guiada o cita previa",
       "pt": "Só com visita guiada ou marcação",
       "da": "Kun med rundvisning eller efter aftale",
-      "cs": "Jen s průvodcem nebo po domluvě"
+      "cs": "Jen s průvodcem nebo po domluvě",
+      "sv": "Bara med guidad tur eller efter överenskommelse"
     },
     {
       "key": "leden",
@@ -208,7 +226,8 @@
       "es": "Solo para socios",
       "pt": "Só para sócios",
       "da": "Kun for medlemmer",
-      "cs": "Jen pro členy"
+      "cs": "Jen pro členy",
+      "sv": "Bara för medlemmar"
     },
     {
       "key": "bezoekdagen",
@@ -221,7 +240,8 @@
       "es": "Solo en días de visita",
       "pt": "Só em dias de visita",
       "da": "Kun på besøgsdage",
-      "cs": "Jen v návštěvní dny"
+      "cs": "Jen v návštěvní dny",
+      "sv": "Bara på besöksdagar"
     },
     {
       "key": "seizoen",
@@ -234,7 +254,8 @@
       "es": "Parque de temporada, cerrado en invierno",
       "pt": "Parque sazonal, fechado no inverno",
       "da": "Sæsonpark, lukket om vinteren",
-      "cs": "Sezónní park, v zimě zavřeno"
+      "cs": "Sezónní park, v zimě zavřeno",
+      "sv": "Säsongspark, stängd på vintern"
     },
     {
       "key": "nietdagelijks",
@@ -247,7 +268,8 @@
       "es": "No abre todos los días",
       "pt": "Não abre todos os dias",
       "da": "Ikke åbent hver dag",
-      "cs": "Není otevřeno každý den"
+      "cs": "Není otevřeno každý den",
+      "sv": "Inte öppet varje dag"
     },
     {
       "key": "gratis",
@@ -260,7 +282,8 @@
       "es": "Entrada gratuita",
       "pt": "Entrada gratuita",
       "da": "Gratis adgang",
-      "cs": "Vstup zdarma"
+      "cs": "Vstup zdarma",
+      "sv": "Gratis inträde"
     },
     {
       "key": "reistrond",
@@ -273,7 +296,8 @@
       "es": "Itinerante",
       "pt": "Itinerante",
       "da": "Rejser rundt",
-      "cs": "Putovní"
+      "cs": "Putovní",
+      "sv": "Reser runt"
     }
   ],
   "beperkt_toegankelijk": [

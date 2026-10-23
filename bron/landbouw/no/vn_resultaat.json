@@ -1,0 +1,166 @@
+{
+  "locaties": [
+    {
+      "naam": "Polar Park",
+      "plaats": "Bardu",
+      "fylke": "Troms",
+      "lon": 18.11,
+      "lat": 68.692,
+      "type": "Dierenpark",
+      "lidmaatschap": [],
+      "url": "https://www.polarpark.no",
+      "uren": {
+        "nl": "Het hele jaar open, behalve 17 mei en 24 december. Winter (1 sep–20 jun) 10:00–15:30, zomer (21 jun–31 aug) 10:00–18:00. Roofdierrondleiding ’s winters in het weekend, ’s zomers dagelijks om 13:00 (Visit Narvik, gezien 23-10-2026; eigen site niet bereikbaar)",
+        "en": "Open all year except 17 May and 24 December. Winter (1 Sep–20 Jun) 10:00–15:30, summer (21 Jun–31 Aug) 10:00–18:00. Predator guiding at weekends in winter, daily at 13:00 in summer (Visit Narvik, seen 23-10-2026; park's own site not reachable)"
+      },
+      "about": {
+        "nl": "De noordelijkste dierenpark ter wereld, in het Salangsdalen. Ongeveer 110 hectare met 12 grote verblijven voor Noordse dieren: bruine beer, wolf, lynx, veelvraat, poolvos, eland, edelhert, muskusos en rendier.",
+        "en": "The world's northernmost animal park, in the Salangsdalen valley. About 110 hectares with 12 large enclosures for Nordic animals: brown bear, wolf, lynx, wolverine, arctic fox, moose, red deer, muskox and reindeer."
+      },
+      "earlier": {
+        "nl": "",
+        "en": ""
+      },
+      "katten": [
+        {
+          "soort": "Euraziatische lynx",
+          "ondersoort": "onbekend",
+          "status": "g",
+          "toelichting": {
+            "nl": "Groot bosverblijf; de lynxen zijn niet altijd te zien. Ze horen bij de dagelijkse roofdierrondleiding.",
+            "en": "Large forest enclosure; the lynx are not always visible. They are part of the predator guiding."
+          },
+          "aantal": {
+            "nl": "onbekend (4 in juli 2024 volgens de dierenlijst van het park, via Wikipedia)",
+            "en": "unknown (4 in July 2024 according to the park's animal list, via Wikipedia)"
+          },
+          "bron": "Visit Narvik parkpagina (ongedateerd, gezien 23-10-2026); schoolbezoek Storsteinnes skole 19-05-2026 (‘gaupe’ gezien); Wikipedia (dierenlijst juli 2024); Zootierliste (bezoek 07/2023)"
+        }
+      ],
+      "geboortes": [],
+      "kleur": ""
+    },
+    {
+      "naam": "Park Nordica",
+      "plaats": "Trones (Namsskogan)",
+      "fylke": "Trøndelag",
+      "lon": 12.848,
+      "lat": 64.743,
+      "type": "Dierenpark",
+      "lidmaatschap": [],
+      "url": "https://www.park-nordica.com/no",
+      "uren": {
+        "nl": "Elke dag 10:00–16:00. Sinds 6 september laagseizoen: dieren te zien, maar attracties, café, restaurant en voerrondes dicht; ‘tot nader order’ open (eigen site, gezien 23-10-2026). Seizoen 2026 begon op 23 mei.",
+        "en": "Daily 10:00–16:00. Low season since 6 September: animals can be seen, but rides, café, restaurant and feeding rounds are closed; open ‘until further notice’ (own site, seen 23-10-2026). The 2026 season started on 23 May."
+      },
+      "about": {
+        "nl": "Vroeger Namsskogan Familiepark (sinds 1989). Na het faillissement in februari 2025 heropend op 23 mei 2026 onder nieuwe eigenaar en nieuwe naam. Noordse dieren zoals beer, wolf, lynx, veelvraat, otter en poolvos. De oude site namsskogan-familiepark.no is nu een casinosite.",
+        "en": "Formerly Namsskogan Familiepark (since 1989). After bankruptcy in February 2025 it reopened on 23 May 2026 under a new owner and a new name. Nordic animals such as bear, wolf, lynx, wolverine, otter and arctic fox. The old site namsskogan-familiepark.no is now a casino site."
+      },
+      "earlier": {
+        "nl": "",
+        "en": ""
+      },
+      "katten": [
+        {
+          "soort": "Euraziatische lynx",
+          "ondersoort": "onbekend",
+          "status": "g",
+          "toelichting": {
+            "nl": "Twee lynxen, in 2019 gekomen uit Langedrag Naturpark.",
+            "en": "Two lynx, arrived from Langedrag Naturpark in 2019."
+          },
+          "aantal": {
+            "nl": "2 (Ingun en poes Korse)",
+            "en": "2 (Ingun and female Korse)"
+          },
+          "bron": "Eigen site, pagina Nordiske rovdyr (gezien 23-10-2026); persfoto ‘Gaupen Ingun’ bij opening 23-05-2026; SNL (bijgewerkt 09-07-2026); Zootierliste (bezoek 06/2026)"
+        }
+      ],
+      "geboortes": [],
+      "kleur": ""
+    }
+  ],
+  "zonder_katten": [
+    {
+      "naam": "Kongeparken",
+      "plaats": "Ålgård (Gjesdal)",
+      "reden": {
+        "nl": "Attractiepark; geen katachtigen. ‘Dyrene i Afrika’ staat als rit/attractie op de lijst, geen dierenverblijf (eigen site 23-10-2026)",
+        "en": "Amusement park; no cats. ‘Dyrene i Afrika’ is listed as a ride/attraction, not an animal exhibit (own site 23-10-2026)"
+      }
+    },
+    {
+      "naam": "Haugaland Zoo",
+      "plaats": "Torvastad (Karmøy)",
+      "reden": {
+        "nl": "Vogel- en familiepark (papegaaien, emoe, alpaca, geiten); geen katachtigen op de dierenlijst (eigen site 23-10-2026)",
+        "en": "Bird and family park (parrots, emu, alpaca, goats); no cats on the animal list (own site 23-10-2026)"
+      }
+    },
+    {
+      "naam": "Akvariet i Bergen",
+      "plaats": "Bergen",
+      "reden": {
+        "nl": "Aquarium met tropische afdeling (krokodillen, slangen, kikkers); geen katachtigen op de soortenlijst (eigen site 23-10-2026)",
+        "en": "Aquarium with a tropical section (crocodiles, snakes, frogs); no cats on the species list (own site 23-10-2026)"
+      }
+    },
+    {
+      "naam": "Sognefjord Akvarium",
+      "plaats": "Balestrand (Sogndal)",
+      "reden": {
+        "nl": "Klein zeeaquarium met lokale zeedieren; geen katachtigen. Seizoen en huidige status niet bevestigd",
+        "en": "Small sea aquarium with local marine life; no cats. Season and current status not confirmed"
+      }
+    },
+    {
+      "naam": "Atlanterhavsparken",
+      "plaats": "Ålesund",
+      "reden": {
+        "nl": "Zeeaquarium (vissen, zeehonden, otters, pinguïns); geen katachtigen (eigen site 23-10-2026)",
+        "en": "Sea aquarium (fish, seals, otters, penguins); no cats (own site 23-10-2026)"
+      }
+    },
+    {
+      "naam": "Polaria",
+      "plaats": "Tromsø",
+      "reden": {
+        "nl": "Arctisch belevingscentrum en aquarium (zeehonden); geen katachtigen (eigen site 23-10-2026)",
+        "en": "Arctic experience centre and aquarium (seals); no cats (own site 23-10-2026)"
+      }
+    },
+    {
+      "naam": "Lofotakvariet (SKREI)",
+      "plaats": "Kabelvåg (Vågan)",
+      "reden": {
+        "nl": "Aquarium met vissen en zeedieren uit de zee rond Lofoten; geen katachtigen (Visit Lofoten 23-10-2026)",
+        "en": "Aquarium with fish and marine life from the seas around Lofoten; no cats (Visit Lofoten 23-10-2026)"
+      }
+    },
+    {
+      "naam": "Saltstraumen Opplevelsessenter",
+      "plaats": "Saltstraumen (Bodø)",
+      "reden": {
+        "nl": "Belevingscentrum over vis en zalm; geen katachtigen. Huidige status onduidelijk (nieuwe eigenaar)",
+        "en": "Visitor centre about fish and salmon; no cats. Current status unclear (new owner)"
+      }
+    },
+    {
+      "naam": "Svalbard",
+      "plaats": "Longyearbyen",
+      "reden": {
+        "nl": "Geen dierentuin of dierenpark op Svalbard",
+        "en": "No zoo or animal park on Svalbard"
+      }
+    }
+  ],
+  "open_punten": [
+    "Polar Park: eigen site polarpark.no blokkeert automatische toegang (Vercel-beveiliging, HTTP 429); dierenlijst en aantal lynxen dus niet op de eigen site gecontroleerd. Aanwezigheid bevestigd via Visit Narvik (ongedateerd), schoolbezoek 19-05-2026 en Zootierliste (07/2023). Aantal: 4 in juli 2024 (Wikipedia, naar parksite).",
+    "Polar Park: schoolverslag 19-05-2026 zegt ‘Her er gaupa lillebrun. Vi så ikke faren som gjemte seg’ — mogelijk een jong (‘vader’ genoemd), maar geen geboortebericht gevonden. Graag controleren op de eigen site/Facebook.",
+    "Park Nordica: geslacht van Ingun niet expliciet vermeld (Korse wordt ‘hun’ genoemd). De homepage kopt ‘Se dyrene hele oktober’ — onduidelijk of het park in de winter dichtgaat; FAQ zegt ‘inntil videre’ open.",
+    "Park Nordica: lidmaatschap (EAZA/SDF) niet gevonden.",
+    "Kongeparken: inhoud van de attractie ‘Dyrene i Afrika’ niet te openen; vermoedelijk een rit met figuren, geen levende dieren.",
+    "Kleinere boerderijen/familieparken (Soma gård Sandnes, Hakallegarden Vanylven, Hundeidvik familiepark Sykkylven, Sápmi Park Karasjok) niet apart gecontroleerd; geen aanwijzingen voor katachtigen gevonden (ook niet in Zootierliste, waar in deze fylker alleen Polar Park en Park Nordica met lynx staan)."
+  ]
+}

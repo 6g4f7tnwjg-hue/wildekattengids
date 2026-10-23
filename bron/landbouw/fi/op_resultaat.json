@@ -1,0 +1,151 @@
+{
+ "locaties": [
+  {
+   "naam": "Kuusamon Suurpetokeskus",
+   "plaats": "Kuusamo (Keskiranta)",
+   "maakunta": "Pohjois-Pohjanmaa",
+   "lon": 29.133,
+   "lat": 65.685,
+   "type": "Dierenpark",
+   "lidmaatschap": [],
+   "url": "https://kuusamon-suurpetokeskus.fi/",
+   "uren": {
+    "nl": "Alleen met gids; rondleidingen vertrekken elk uur vanaf 10.15 uur. Weer open sinds 07-07-2026 (eerder deze zomer dicht). Seizoen en winteropening niet vermeld (eigen site, gezien 23-10-2026).",
+    "en": "Guided visits only; tours leave hourly from 10:15. Reopened on 07-07-2026 (closed earlier this summer). Season and winter opening not stated (own website, seen 23-10-2026)."
+   },
+   "about": {
+    "nl": "Particulier ‘roofdiercentrum’ van Sulo Karjalainen met een dierentuinvergunning van Ruokavirasto; opgericht begin jaren 90 voor weesberenwelpen. Bezoek alleen met een rondleiding. Het centrum ligt al jaren onder vuur (vergunningsstrijd, veroordelingen voor dierenwelzijnsdelict in 2025); de directie trad in het voorjaar van 2026 af en Ruokavirasto onderzoekt of het de taken van een dierentuin nog vervult (Yle 07-07-2026 en 19-07-2026).",
+    "en": "Private 'large carnivore centre' run by Sulo Karjalainen under a zoo permit from the Finnish Food Authority; founded in the early 1990s for orphaned bear cubs. Visits only on a guided tour. The centre has been controversial for years (permit dispute, animal-welfare convictions in 2025); its CEO and board resigned in spring 2026 and the Food Authority is checking whether it still fulfils a zoo's duties (Yle 07-07-2026 and 19-07-2026)."
+   },
+   "earlier": {
+    "nl": "In 2024 werd hier een lynxwelp geboren die later naar Polen zou gaan (eigen site, bericht 10-09-2024).",
+    "en": "A lynx kitten was born here in 2024 and was to move to Poland later (own website, post of 10-09-2024)."
+   },
+   "katten": [
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "Noordelijk (L. l. lynx)",
+     "status": "r",
+     "toelichting": {
+      "nl": "Lynxverblijf; alleen te zien tijdens de rondleiding. Ondersoort volgens Zootierliste (‘Northern lynx’). Toekomst van het centrum onzeker.",
+      "en": "Lynx enclosure; only seen on the guided tour. Subspecies per Zootierliste ('Northern lynx'). Future of the centre uncertain."
+     },
+     "aantal": {
+      "nl": "4",
+      "en": "4"
+     },
+     "bron": "Yle 19-07-2026 (‘neljä ilvestä’); eigen site soortpagina en voorpagina (gezien 23-10-2026); Zootierliste (bezoek 09/2018, alleen voor ondersoort)"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Kiteen Eläinpuisto",
+   "plaats": "Kitee (Puhos)",
+   "maakunta": "Pohjois-Karjala",
+   "lon": 29.898,
+   "lat": 62.045,
+   "type": "Dierenpark",
+   "lidmaatschap": [],
+   "url": "https://kiteezoo.fi/",
+   "uren": {
+    "nl": "Volgens persbericht dagelijks open in het seizoen; eigen site kiteezoo.fi is in onderhoud (gezien 23-10-2026). Zoekresultaat van een Pajarinhovi-pagina noemt seizoen 15-04 t/m 31-10-2026 (niet zelf bevestigd).",
+    "en": "Open daily in season according to a press release; own site kiteezoo.fi is under maintenance (seen 23-10-2026). A search snippet from a Pajarinhovi page gives the season as 15-04 to 31-10-2026 (not confirmed)."
+   },
+   "about": {
+    "nl": "Particulier dierenpark (familie Keskimäki) bij reiscentrum Pajarinhovi, sinds 1996; volgens eigen zeggen het grootste particuliere dierenpark van Finland, met een wandelroute van 2 km en ca. 50 soorten. In het dierenhuis woont een ‘afrikankissa’ (persbericht 23-06-2026); welke kat dat is, is onduidelijk. Mogelijk ook in de lijst van de dierentuin-onderzoekers.",
+    "en": "Private animal park (Keskimäki family) at the Pajarinhovi resort, since 1996; it calls itself Finland's largest private animal park, with a 2 km trail and about 50 species. The animal house has an 'afrikankissa' ('African cat', press release 23-06-2026); which cat this is remains unclear. May overlap with the zoo researchers' list."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "Noordelijk (L. l. lynx)",
+     "status": "w",
+     "toelichting": {
+      "nl": "Lynxen langs de wandelroute volgens toeristische pagina’s; ondersoort volgens Zootierliste.",
+      "en": "Lynx along the trail according to tourism pages; subspecies per Zootierliste."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Visit Rajamailla, kohdepagina (ongedateerd, gezien 23-10-2026); Karjalan Pyhäjärvi ry (ongedateerd); Zootierliste (bezoek 07/2017, e-mail 01/2019)",
+     "twijfel": {
+      "nl": "Alleen ongedateerde toeristische pagina’s en Zootierliste (2019); het persbericht voor het 30-jarig bestaan (23-06-2026) noemt geen lynx, en de eigen site is offline.",
+      "en": "Only undated tourism pages and Zootierliste (2019); the 30th-anniversary press release (23-06-2026) does not mention lynx, and the park's own site is offline."
+     }
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  }
+ ],
+ "zonder_katten": [
+  {
+   "naam": "Korkeasaaren Villieläinsairaala (wildopvang van Korkeasaari)",
+   "plaats": "Helsinki",
+   "reden": {
+    "nl": "Wildopvang, niet open voor publiek. Twee weeslynxen (opgevangen eind 2024) zaten achter de schermen; één ging in het voorjaar van 2025 naar Vildriket (Zweden), het vrouwtje eind juli/begin augustus 2026 naar Ähtäri. Neemt nu geen lynxen meer op wegens plaatsgebrek (Korkeasaari 17-08-2026).",
+    "en": "Wildlife hospital, not open to the public. Two orphaned lynx (taken in late 2024) were kept off-show; one went to Vildriket (Sweden) in spring 2025, the female to Ähtäri in late July/early August 2026. No longer takes in lynx for lack of places (Korkeasaari 17-08-2026)."
+   }
+  },
+  {
+   "naam": "Kankaanpään eläinsuojeluyhdistys",
+   "plaats": "Kankaanpää",
+   "reden": {
+    "nl": "Dierenbeschermingsvereniging die in juli 2024 tijdelijk drie weeslynxwelpen opving (Yle 03-07-2024); geen aanwijzing dat er nu katten zijn.",
+    "en": "Animal welfare society that briefly took in three orphaned lynx kittens in July 2024 (Yle 03-07-2024); no sign of any cats now."
+   }
+  },
+  {
+   "naam": "Nordic Wildlife Care",
+   "plaats": "Mustasaari",
+   "reden": {
+    "nl": "Wildopvang; geen katachtigen gevonden in berichtgeving (alleen zeehonden, reeën e.d.); AVI verbood het blijvend houden van wilde dieren.",
+    "en": "Wildlife rehabilitation centre; no felids found in reports (seals, roe deer etc.); the regional agency banned keeping wild animals permanently."
+   }
+  },
+  {
+   "naam": "Zoolandia",
+   "plaats": "Lieto",
+   "reden": {
+    "nl": "Alleen landbouw- en huisdieren op de dierenpagina (geiten, ezel, lama’s, schapen, kippen, pauw; eigen site, pagina gewijzigd 22-09-2025, gezien 23-10-2026).",
+    "en": "Only farm and domestic animals on the animal page (goats, donkey, llamas, sheep, chickens, peafowl; own website, page modified 22-09-2025, seen 23-10-2026)."
+   }
+  },
+  {
+   "naam": "Sirkus Finlandia",
+   "plaats": "Raasepori (Bollsta), reizend",
+   "reden": {
+    "nl": "Programma 50-jarig jubileum 2026 bestaat alleen uit artiesten, geen dierennummers (eigen site, gezien 23-10-2026). Wilde katten in circussen zijn in Finland verboden.",
+    "en": "The 2026 50th-anniversary programme lists only human performers, no animal acts (own website, seen 23-10-2026). Wild cats in circuses are banned in Finland."
+   }
+  },
+  {
+   "naam": "Sirkus Florentina / Sirkus Magnum",
+   "plaats": "reizend",
+   "reden": {
+    "nl": "Geen actuele informatie gevonden; wilde katten zijn in Finse circussen hoe dan ook verboden.",
+    "en": "No current information found; wild cats are banned in Finnish circuses in any case."
+   }
+  }
+ ],
+ "open_punten": [
+  "Kiteen Eläinpuisto: lynx alleen bevestigd door ongedateerde toeristische pagina’s en Zootierliste (2019); eigen site kiteezoo.fi in onderhoud. Mogelijk overlap met de agenten voor de grote dierentuinen.",
+  "Kiteen Eläinpuisto: persbericht 23-06-2026 noemt een ‘afrikankissa’ in het dierenhuis. Kan een serval, Afrikaanse wilde kat of een huiskat(ras) zijn – niet te bevestigen; niet opgenomen.",
+  "Kuusamon Suurpetokeskus: openingstijden na het seizoen 2026 onbekend; voortbestaan onzeker (Yle 19-07-2026). Ruokavirasto had in juli 2026 een toezichtsprocedure lopen.",
+  "Geen enkele particuliere houder van echte wilde katten (of toegankelijke lynxboerderij, onderzoeksstation of dierenwinkel met katten) gevonden. Laatste bekende hybride-zaak: savannah-katten in Joensuu (veroordeling 03-04-2023, hof bevestigd 31-08-2023).",
+  "De 1996-circusregel (MMM-besluit 22/EEO/96 van 02-08-1996) alleen indirect bevestigd via schriftelijke vraag KK 693/1999; de tekst zelf niet ingezien.",
+  "De positieve lijst voor gezelschapsdieren (§ 8 wet 693/2023, per regeringsbesluit) was in oktober 2026 nog niet gevonden als vastgesteld besluit.",
+  "Kankaanpää-lynxwelpen (juli 2024): bestemming onbekend; mogelijk dezelfde als de twee welpen van Korkeasaari (eind 2024), niet te bevestigen."
+ ],
+ "wetgeving": {
+  "circus": "Wilde katten zijn in Finse circussen verboden. Al sinds het MMM-besluit 22/EEO/96 van 02-08-1996 waren ‘petoeläimet’ (roofdieren, dus ook alle wilde katten), apen, zeehonden en olifanten in circussen niet toegestaan (aangehaald in schriftelijke vraag KK 693/1999; zie ook eerder besluit 667/1986). De nieuwe dierenwelzijnswet (Laki eläinten hyvinvoinnista 693/2023, in werking 01-01-2024) maakt dit een positieve lijst: § 8 lid 2 en bijlage 1 punt 2 staan in circussen en reizende dierenshows alleen gedomesticeerde vormen toe (hond, kat Felis silvestris catus, geit, varken, paard, ezel), plus rat, muis, cavia, konijn, hamster, gerbil, enkele vogels, papegaaien en ongewervelden. Overgangsregel (§ 120): dieren die al vóór 01-01-2024 in bezit waren, mogen tot hun dood blijven, met melding aan Ruokavirasto binnen 6 maanden. Een circus heeft daarnaast een vergunning van Ruokavirasto nodig. Bron: Finlex 693/2023 (gezien 23-10-2026); eduskunta.fi KK 693/1999. Sirkus Finlandia 2026: geen dierennummers (eigen site).",
+  "particulier": "Particulieren mogen in Finland in de praktijk geen wilde katten of katten-hybriden houden. (1) Vreemde soorten: volgens de vreemde-soortenwet 1709/2015 en regeringsbesluit 704/2019 (eerder 1725/2015) zijn alle uitheemse roofdieren (Carnivora, dus alle niet-Finse wilde katten) en ‘kruisingen van huiskat en een andere kattensoort in de generaties F1–F4’ (zoals savannah F1–F4) nationaal schadelijke invasieve soorten: houden, fokken, vervoeren, verkopen en loslaten verboden sinds 01-01-2016. Dieren die vóór 01-01-2016 legaal als huisdier waren verkregen, mogen tot hun dood blijven; F5 en later valt erbuiten. Uitzondering alleen voor dierentuinen met vergunning en wetenschap; sinds 15-08-2023 (besluit 912/2023) niet meer voor nieuwe dieren in ‘permanente dierenshows’. (2) Lynx (inheems): § 28 wet 693/2023 verbiedt een wild gewerveld dier in huis te nemen, behalve met een vergunning onder natuurbeschermings- of jachtwet; weeslynxen mogen alleen met toestemming naar een dierentuin (Korkeasaari 17-08-2026). (3) Wet 693/2023 § 8 voorziet ook in een positieve lijst voor gezelschapsdieren via regeringsbesluit (nog in voorbereiding). Concreet geval: Joensuu, savannah-katten (F1) uit Rusland gesmokkeld; vrouw veroordeeld tot 60 dagen voorwaardelijk en een dierenhoudverbod (Pohjois-Karjalan käräjäoikeus, Yle 03-04-2023), hof Itä-Suomi liet het vonnis staan (Yle 31-08-2023). Bronnen: Finlex 704/2019 en 693/2023 (gezien 23-10-2026); Yle 16-09-2022, 03-04-2023, 31-08-2023."
+ }
+}

@@ -12,7 +12,7 @@ def code():
     s = s.replace('lang="sv">SV<', 'lang="nb">NB<')
     # datum: Noors "22. oktober 2026"
     a = 'return D?(LANG==="de"?`${D}. ${mn} ${Y}`'; assert s.count(a) == 1; s = s.replace(a, 'return D?((LANG==="de"||LANG==="nb")?`${D}. ${mn} ${Y}`')
-    a = 'LANG==="nb"?x.replace("ca. ","ca ")'; assert s.count(a) == 1; s = s.replace(a, 'LANG==="nb"?x.replace("ca. ","ca. ")')
+    a = 'LANG==="nb"?x.replace("ca. ","ca ")'; assert s.count(a) == 1; s = s.replace(a + '.replace(/\\./g,"\\u00a0")', 'LANG==="nb"?x.replace(/\\./g,"\\u00a0").replace("ca\\u00a0 ","ca. ")')
     for x, y in [('nb:["odaterad","version","nederländska Wikipedia"]', 'nb:["udatert","versjon","nederlandsk Wikipedia"]'), ('nb:["Cirka ","år","Okänd"]', 'nb:["Cirka ","år","Ukjent"]')]:
         assert s.count(x) == 1, x; s = s.replace(x, y)
     s = re.sub(r"const MND_NB1=\[.*?\];", 'const MND_NB1=["januar", "februar", "mars", "april", "mai", "juni", "juli", "august", "september", "oktober", "november", "desember"];', s)

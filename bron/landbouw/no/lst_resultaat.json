@@ -1,0 +1,141 @@
+{
+ "locaties": [],
+ "zonder_katten": [
+  {
+   "naam": "Akvariet i Bergen (Bergen Aquarium)",
+   "plaats": "Bergen",
+   "reden": {
+    "nl": "Aquarium (EAZA-lid); geen katachtigen in Zootierliste, huidig of vroeger (gezien 23-10-2026).",
+    "en": "Aquarium (EAZA member); no cats listed on Zootierliste, current or former (checked 23-10-2026)."
+   }
+  },
+  {
+   "naam": "Atlanterhavsparken",
+   "plaats": "Ålesund",
+   "reden": {
+    "nl": "Aquarium (EAZA-lid); geen katachtigen in Zootierliste, huidig of vroeger (gezien 23-10-2026).",
+    "en": "Aquarium (EAZA member); no cats listed on Zootierliste, current or former (checked 23-10-2026)."
+   }
+  }
+ ],
+ "open_punten": [
+  "Geen openbare officiële lijst van Noorse dyreparker gevonden. Dierentuinen moeten fremvisning melden bij Mattilsynet (FOR-2016-09-05-1035 § 10) en hebben voor soorten buiten vedlegg 1 (dus alle wilde katten) een tillatelse van Mattilsynet nodig (§ 4); er is geen gepubliceerd register. Rådet for dyreetikk (uitspraak ca. dec. 2021) noemt 'kun 13 dyreparker' zonder namen en stelt dat een database ontbreekt. Mogelijk via innsyn bij Mattilsynet op te vragen.",
+  "EAZA (strapi.eaza.net/api/members, 456 leden, gezien 23-10-2026): slechts 3 Noorse leden, waarvan alleen Kristiansand Dyrepark katten heeft; de andere twee zijn aquaria.",
+  "SDF-ledenlijst (djurparksforeningen.se/medlemmar via WebFetch 23-10-2026; directe download gaf 403) noemt als enige Noorse lid Bjørneparken. Svenska Wikipedia (lijst uit 2017) noemde ook 'Kristiansands djurpark' en 'Dyreparken' (= hetzelfde park): Dyreparken lijkt geen SDF-lid meer te zijn.",
+  "Geen Noorse brancheorganisatie van dierenparken gevonden (gezocht op o.a. 'Norske dyreparkers forening', 'dyreparkforbund').",
+  "Zootierliste is voor Noorwegen dun: Langedrag (lynx, laatst 2018), Bjørneparken (lynx 2019, Amoerluipaard 2,0 sinds 2020, alleen e-mailmelding 2020), Polar Park (lynx 2023) en het Berberleeuwvrouwtje van Kristiansand (alleen FB-melding 2022) moeten door regio-agenten bevestigd worden met eigen site/nieuws.",
+  "Serval Niño (in beslag genomen bij particuliere eigenaar in Os, Vestland) zat sinds nov. 2024 tijdelijk in Kristiansand Dyrepark en verhuisde in mei 2025 naar Tangen Dyrepark (Stange, Innlandet) (Hamar Arbeiderblad/h-avis 26-05-2025); Zootierliste: Tangen, serval gezien 06/2026. Regio-agent Innlandet: bevestigen.",
+  "Haugaland Zoo (Torvastad, Karmøy): nevelpanter 2017–2018(?) volgens Zootierliste (bezoek 07/2017, e-mail 07/2018); huidige dierenlijst controleren.",
+  "Nieuwe viltressurslov per 1 juli 2026: volgens Miljødirektoratet (hoorzitting 29-04-2026) valt 'veel meer soorten' onder het verbod op houden van vilt; gevolgen voor exotische katten in parken niet uitgewerkt op die pagina.",
+  "Zootierliste vermeldt geen enkele vroegere Noorse houding van tijger, leeuw, sneeuwluipaard enz. buiten de huidige; historische Noorse katten (bv. eerdere parken) zijn daar dus niet te vinden."
+ ],
+ "lijsten": {
+  "officieel": {
+   "url": "https://www.mattilsynet.no/dyr/dyrevelferd/fremvisning-av-dyr/besoksgard-eller-dyrehage",
+   "titel": "Mattilsynet: Besøksgård, dyrehage og akvarium (meldeplikt/tillatelse fremvisning av dyr); regelgeving: Forskrift om dyrevelferd ved fremvisning av dyr, FOR-2016-09-05-1035 (in werking 01-01-2017, laatst gewijzigd FOR-2021-01-19-133)",
+   "datum": "ongedateerd (gezien 23-10-2026)",
+   "aantal": null,
+   "namen": [],
+   "toelichting": "Er bestaat geen gepubliceerde lijst van 'godkjente dyreparker' of 'godkjente avgrensede anlegg' voor zoogdieren in Noorwegen. Mattilsynet publiceert alleen EU-lijsten voor dierlijke bijproducten, diergezondheid e.d. Rådet for dyreetikk (ca. dec. 2021, https://www.radetfordyreetikk.no/etiske-grenseoppganger-for-hold-av-dyr-i-dyrepark/): 'Det er kun 13 dyreparker her i landet' (geen namen)."
+  },
+  "eaza": [
+   "Kristiansand Dyrepark (Dyreparken i Kristiansand)",
+   "Bergen Aquarium (Akvariet i Bergen)",
+   "Atlanterhavsparken"
+  ],
+  "eaza_bron": "https://strapi.eaza.net/api/members (Country=NO; 456 leden totaal; Kristiansand en Bergen 'Full member', Atlanterhavsparken 'Full Accredited Member'), gezien 23-10-2026",
+  "sdf": [
+   "Bjørneparken (Flå)"
+  ],
+  "sdf_bron": "https://www.djurparksforeningen.se/medlemmar, gezien 23-10-2026 (15 medlemmar, 5 associerade; alleen Bjørneparken in Noorwegen). Oudere lijst (sv.wikipedia, bron 2017) noemde ook Dyreparken i Kristiansand.",
+  "noors": [],
+  "noors_bron": "Geen Noorse vereniging van dierentuinen/dierenparken gevonden (zoekopdrachten 23-10-2026). Noorse parken zijn hoogstens lid van EAZA/WAZA (Dyreparken) of SDF (Bjørneparken).",
+  "circus": "Wilde katten in circussen zijn in Noorwegen feitelijk al sinds de jaren 1960 niet toegestaan: 'Et felles nordisk forbud mot fremvisning av ville rovdyr, slik som store kattedyr og bjørn, kom i stand i 1960-årene' (NOAH/underholdningsdyr.no, Lovverket, bijgewerkt 24-04-2026); Rådet for dyreetikk (juni 1997): 'På sirkusforestillinger i Norge ser man derfor hverken løver eller bjørner'. Huidig recht: Forskrift om dyrevelferd ved fremvisning av dyr (FOR-2016-09-05-1035, in werking 01-01-2017) § 4: circussen moeten per seizoen voor alle dieren tillatelse vragen; Mattilsynet geeft 'normalt berre løyve til å vise fram dyr av domestiserte artar' (mattilsynet.no, Vise frem dyr i sirkus, ongedateerd). Vedlegg 1 (zonder tillatelse) bevat van de katachtigen alleen de huiskat. Olifanten expliciet verboden sinds 2017 (Nettavisen 10-09-2016). Geen formeel wettelijk verbod met naam 'wilde dieren', wel een feitelijk verbod via vergunningspraktijk.",
+  "particulier": "Particulier houden van exotische katten is verboden: Forskrift om forbud mot å innføre, omsette og holde eksotiske dyr (FOR-2017-05-11-597, in werking 15-08-2017, verving de regeling van 1976) § 2: 'Det er forbudt å innføre, omsette og holde eksotiske pattedyr, reptiler og amfibier'; dispensatie alleen 'i særlige tilfeller' (§ 5), maar Mattilsynet: 'Det gis ingen dispensasjoner' voor dieren buiten de reptielenlijst. Inheemse wilde katten (lynx/gaupe) zijn 'vilt': houden verboden zonder vergunning (viltloven § 7, viltforskriften; dierenparken kunnen vergunning krijgen van Miljødirektoratet, restrictief). Kruisingen: Mattilsynet (verklaring in Dyreliv.no, 11-01-2024) beschouwt kat-hybriden F1–F4 (savannah, bengaal e.d.) als exotische dieren (verboden); vanaf F5 toegestaan, tenzij het dier zich als wilde kat gedraagt. Bekend geval: serval 'Niño' in Os (Vestland), illegaal uit Rusland ingevoerd; eigenares in nov. 2024 door Hordaland tingrett veroordeeld tot 30 uur taakstraf en verbeurdverklaring (TV 2 / Klar Tale 18-11-2024; NRK 27-06-2023). Het dier ging naar Kristiansand Dyrepark (nov. 2024) en in mei 2025 naar Tangen Dyrepark (h-avis 26-05-2025). Nieuwe viltressurslov per 01-07-2026 breidt het verbod op houden van vilt uit (Miljødirektoratet 29-04-2026). Geen aparte opvangcentra voor (exotische) katten gevonden; in beslag genomen dieren gaan naar dierenparken."
+ },
+ "alle_instellingen": [
+  {
+   "naam": "Kristiansand Dyrepark (Dyreparken)",
+   "plaats": "Kristiansand",
+   "fylke": "Agder",
+   "bron": "eaza/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Tijger – Amoer (laatst gezien 2026)",
+    "Leeuw – onbekend (laatst gezien 2026)",
+    "Leeuw – Noordelijk (P. l. leo) [ZTL 'Berberlöwe', 0,1 geb. 2019 uit Dvůr Králové via Antwerpen] (laatst gezien 2022)",
+    "Cheeta – Zuidelijk (A. j. jubatus) (laatst gezien 2026)",
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (laatst gezien 2026)"
+   ]
+  },
+  {
+   "naam": "Bjørneparken (vroeger Vassfaret Bjørnepark)",
+   "plaats": "Flå",
+   "fylke": "Buskerud",
+   "bron": "sdf/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Luipaard – Amoer (P. p. orientalis) [2,0 sinds 2020] (laatst gezien 2020)",
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (laatst gezien 2019)"
+   ]
+  },
+  {
+   "naam": "Polar Park",
+   "plaats": "Bardu",
+   "fylke": "Troms",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (laatst gezien 2023)"
+   ]
+  },
+  {
+   "naam": "Park Nordica (vroeger Namsskogan Familiepark)",
+   "plaats": "Trones (Namsskogan)",
+   "fylke": "Trøndelag",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (laatst gezien 2026)"
+   ]
+  },
+  {
+   "naam": "Langedrag Naturpark",
+   "plaats": "Nesbyen / Tunhovd (Nore og Uvdal)",
+   "fylke": "Buskerud",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (laatst gezien 2018)"
+   ]
+  },
+  {
+   "naam": "Tangen Dyrepark",
+   "plaats": "Tangen (Stange)",
+   "fylke": "Innlandet",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [
+    "Serval – onbekend (laatst gezien 2026)"
+   ]
+  },
+  {
+   "naam": "Haugaland Zoo",
+   "plaats": "Torvastad (Karmøy)",
+   "fylke": "Rogaland",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [
+    "Nevelpanter – onbekend [ZTL 'Indochina-Nebelparder', ehemalig 2017–2018?] (laatst gezien 2018)"
+   ]
+  },
+  {
+   "naam": "Akvariet i Bergen",
+   "plaats": "Bergen",
+   "fylke": "Vestland",
+   "bron": "eaza",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Atlanterhavsparken",
+   "plaats": "Ålesund",
+   "fylke": "Møre og Romsdal",
+   "bron": "eaza",
+   "katten_volgens_zootierliste": []
+  }
+ ],
+ "bronnen_zootierliste": "Zootierliste (soortpagina's Kleinkatzen/Großkatzen, Aktuelle + Ehemalige Haltungen, gezien 23-10-2026)"
+}

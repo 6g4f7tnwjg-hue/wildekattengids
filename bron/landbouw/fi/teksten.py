@@ -32,9 +32,9 @@ def tldr():
     nl = f'''<div class="l-nl">
 <div class="prose">
   <ul>
-    <li><strong>8 soorten bevestigd</strong> op 5 locaties: 3 dierentuinen (lid van EAZA), 1 dierenpark en 1 roofdierpark dat je alleen met een gids bezoekt.</li>
+    <li><strong>8 soorten bevestigd</strong> op 4 locaties: 3 dierentuinen (lid van EAZA) en 1 roofdierpark dat je alleen met een gids bezoekt. In {KIT} is de lynx onzeker.</li>
     <li><strong>{KOR}</strong> in Helsinki heeft ze alle acht: leeuw, tijger, Amoerluipaard, sneeuwluipaard, lynx, Amoer-luipaardkat, manoel en Europese wilde kat. Je ziet in Finland dus alle soorten in één park.</li>
-    <li><strong>De Euraziatische lynx</strong>, de wilde kat van Finland zelf, woont in alle vijf parken, tot in Lapland ({RAN}).</li>
+    <li><strong>De Euraziatische lynx</strong>, de wilde kat van Finland zelf, woont in alle vier parken, tot in Lapland ({RAN}).</li>
     <li><strong>Jonge katten:</strong> twee Amoerluipaarden (juli 2026) en drie manoels (mei 2026) in {KOR}.</li>
     <li><strong>Seizoen:</strong> {KOR} en {RAN} zijn het hele jaar open; {AHT} na een faillissement in 2025 alleen in de schoolvakanties, {KIT} en {KUU} vooral in de zomer.</li>
     <li><strong>Geen particulieren en geen circussen:</strong> uitheemse roofdieren mogen in Finland sinds 2016 niet particulier worden gehouden, en in circussen mogen alleen gedomesticeerde dieren optreden.</li>
@@ -44,9 +44,9 @@ def tldr():
     en = f'''<div class="l-en">
 <div class="prose">
   <ul>
-    <li><strong>8 species confirmed</strong> at 5 locations: 3 zoos (EAZA members), 1 animal park and 1 predator park you can only visit with a guide.</li>
+    <li><strong>8 species confirmed</strong> at 4 locations: 3 zoos (EAZA members) and 1 predator park you can only visit with a guide. The lynx at {KIT} is uncertain.</li>
     <li><strong>{KOR}</strong> in Helsinki has all eight: lion, tiger, Amur leopard, snow leopard, lynx, Amur leopard cat, Pallas’s cat and European wildcat. So in Finland you can see every species in one park.</li>
-    <li><strong>The Eurasian lynx</strong>, Finland’s own wild cat, lives in all five parks, as far north as Lapland ({RAN}).</li>
+    <li><strong>The Eurasian lynx</strong>, Finland’s own wild cat, lives in all four parks, as far north as Lapland ({RAN}).</li>
     <li><strong>Young cats:</strong> two Amur leopards (July 2026) and three Pallas’s cats (May 2026) at {KOR}.</li>
     <li><strong>Season:</strong> {KOR} and {RAN} are open all year; {AHT} only in school holidays since a bankruptcy in 2025, {KIT} and {KUU} mainly in summer.</li>
     <li><strong>No private keepers and no circuses:</strong> since 2016 exotic predators may not be kept privately in Finland, and only domesticated animals may perform in circuses.</li>
@@ -56,9 +56,9 @@ def tldr():
     fi = f'''<div class="l-fi">
 <div class="prose">
   <ul>
-    <li><strong>8 lajia varmistettu</strong> 5 paikassa: 3 eläintarhaa (EAZAn jäseniä), 1 eläinpuisto ja 1 suurpetokeskus, johon pääsee vain oppaan kanssa.</li>
+    <li><strong>8 lajia varmistettu</strong> 4 paikassa: 3 eläintarhaa (EAZAn jäseniä) ja 1 suurpetokeskus, johon pääsee vain oppaan kanssa. Ilves on epävarma: {KIT}.</li>
     <li><strong>{KOR}</strong> Helsingissä on kaikki kahdeksan: leijona, tiikeri, amurinleopardi, lumileopardi, ilves, amurinleopardikissa, manuli ja villikissa. Suomessa näet siis kaikki lajit yhdessä puistossa.</li>
-    <li><strong>Ilves</strong>, Suomen oma luonnonvarainen kissaeläin, asuu kaikissa viidessä puistossa, Lappia myöten ({RAN}).</li>
+    <li><strong>Ilves</strong>, Suomen oma luonnonvarainen kissaeläin, asuu kaikissa neljässä puistossa, Lappia myöten ({RAN}).</li>
     <li><strong>Poikaset:</strong> kaksi amurinleopardia (heinäkuu 2026) ja kolme manulia (toukokuu 2026): {KOR}.</li>
     <li><strong>Kausi:</strong> {KOR} ja {RAN} ovat auki ympäri vuoden; {AHT} vuoden 2025 konkurssin jälkeen vain koulujen lomilla, {KIT} ja {KUU} lähinnä kesällä.</li>
     <li><strong>Ei yksityisiä eikä sirkuksia:</strong> vieraslajisia petoeläimiä ei Suomessa ole saanut pitää yksityisesti vuodesta 2016, ja sirkuksissa saa esiintyä vain kotieläimiä.</li>
@@ -113,21 +113,21 @@ OFFICIEEL = [
 ADVIES = [
  f"""<ul class="prose">
     <li><strong>Alle 8 soorten in één park:</strong> {KOR} (Helsinki), het hele jaar open. De manoelkater is meestal niet te zien; kom vroeg of bij het voeren.</li>
-    <li><strong>De lynx</strong> zie je ook in {RAN} (Lapland, met ook de Amoer-luipaardkat), {AHT}, {KIT} en {KUU} (alleen met een gids).</li>
+    <li><strong>De lynx</strong> zie je ook in {RAN} (Lapland, met ook de Amoer-luipaardkat), {AHT} en {KUU} (alleen met een gids); in {KIT} is hij onzeker.</li>
     <li><strong>{AHT}</strong> is alleen in de schoolvakanties open; kijk vóór je bezoek op de site.</li>
     <li><strong>Twijfel je over een dier?</strong> Bel of mail dan vóór je bezoek met het park.</li>
   </ul>
 """,
  f"""<ul class="prose">
     <li><strong>All 8 species in one park:</strong> {KOR} (Helsinki), open all year. The male Pallas’s cat is usually out of sight; come early or at feeding time.</li>
-    <li><strong>The lynx</strong> can also be seen at {RAN} (Lapland, also with the Amur leopard cat), {AHT}, {KIT} and {KUU} (guided visits only).</li>
+    <li><strong>The lynx</strong> can also be seen at {RAN} (Lapland, also with the Amur leopard cat), {AHT} and {KUU} (guided visits only); at {KIT} it is uncertain.</li>
     <li><strong>{AHT}</strong> is only open in school holidays; check the website before you go.</li>
     <li><strong>Not sure about an animal?</strong> Call or email the park before your visit.</li>
   </ul>
 """,
  f"""<ul class="prose">
     <li><strong>Kaikki 8 lajia yhdessä puistossa:</strong> {KOR} (Helsinki), auki ympäri vuoden. Manulikoiras on yleensä piilossa; tule aikaisin tai ruokinta-aikaan.</li>
-    <li><strong>Ilveksen</strong> näet myös näissä: {RAN} (Lappi, myös amurinleopardikissa), {AHT}, {KIT} ja {KUU} (vain oppaan kanssa).</li>
+    <li><strong>Ilveksen</strong> näet myös näissä: {RAN} (Lappi, myös amurinleopardikissa), {AHT} ja {KUU} (vain oppaan kanssa); epävarma: {KIT}.</li>
     <li><strong>{AHT}</strong> on auki vain koulujen lomilla; tarkista verkkosivulta ennen käyntiä.</li>
     <li><strong>Epävarma eläimestä?</strong> Soita tai lähetä sähköpostia puistoon ennen käyntiä.</li>
   </ul>
@@ -135,23 +135,26 @@ ADVIES = [
 
 GEPLAND = [
  f"""<ul class="prose">
-    <li><strong>{AHT}:</strong> na het faillissement van oktober 2025 alleen open in de schoolvakanties; de sneeuwluipaardpoes Juma wordt niet meer genoemd.</li>
+    <li><strong>{AHT}:</strong> na het faillissement van oktober 2025 alleen open in de schoolvakanties; de sneeuwluipaardpoes Juma is er niet meer.</li>
     <li><strong>{KUU}:</strong> de directie trad in 2026 af; de toekomst van het park is onzeker.</li>
     <li><strong>Seizoen voorbij:</strong> {KIT} sloot op 25 oktober 2026.</li>
+    <li><span class="st st-w"><i></i></span> <strong>Onzeker:</strong> de lynx van {KIT} (geen eigen bron uit 2025–2026).</li>
   </ul>
   <p class="tlegend"><span class="st st-p"><i></i>Gepland</span> · <span class="st st-w"><i></i>Onzeker</span></p>
 """,
  f"""<ul class="prose">
-    <li><strong>{AHT}:</strong> since the bankruptcy of October 2025 only open in school holidays; the female snow leopard Juma is no longer mentioned.</li>
+    <li><strong>{AHT}:</strong> since the bankruptcy of October 2025 only open in school holidays; the female snow leopard Juma is no longer there.</li>
     <li><strong>{KUU}:</strong> the management resigned in 2026; the park’s future is uncertain.</li>
     <li><strong>Season over:</strong> {KIT} closed on 25 October 2026.</li>
+    <li><span class="st st-w"><i></i></span> <strong>Uncertain:</strong> the lynx at {KIT} (no own source from 2025–2026).</li>
   </ul>
   <p class="tlegend"><span class="st st-p"><i></i>Planned</span> · <span class="st st-w"><i></i>Uncertain</span></p>
 """,
  f"""<ul class="prose">
-    <li><strong>{AHT}:</strong> lokakuun 2025 konkurssin jälkeen auki vain koulujen lomilla; lumileopardinaarasta Jumaa ei enää mainita.</li>
+    <li><strong>{AHT}:</strong> lokakuun 2025 konkurssin jälkeen auki vain koulujen lomilla; lumileopardinaaras Juma ei ole enää siellä.</li>
     <li><strong>{KUU}:</strong> johto erosi vuonna 2026; puiston tulevaisuus on epävarma.</li>
     <li><strong>Kausi on ohi:</strong> {KIT} sulkeutui 25. lokakuuta 2026.</li>
+    <li><span class="st st-w"><i></i></span> <strong>Epävarma:</strong> ilves, {KIT} (ei omaa lähdettä vuosilta 2025–2026).</li>
   </ul>
   <p class="tlegend"><span class="st st-p"><i></i>Suunniteltu</span> · <span class="st st-w"><i></i>Epävarma</span></p>
 """]

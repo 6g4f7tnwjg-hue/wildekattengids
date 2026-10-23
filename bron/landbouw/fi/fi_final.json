@@ -20,8 +20,8 @@
     "en": "Finland's largest zoo, on an island in Helsinki. Most cats live in the Kissalaakso (Cat Valley); the lynx lives in the Korpi area and the Pallas's cats behind the tropical houses. Korkeasaari also runs a wildlife hospital (Villieläinsairaala), which is not open to the public."
    },
    "earlier": {
-    "nl": "Bengaalse kat (luipaardkat) tot 2005, terug sinds 2019 (eigen site). In 2024–2026 verzorgde de wildopvang twee wees-lynxwelpen achter de schermen; één ging in 2025 naar Vildriket (Zweden), de andere in juli/augustus 2026 naar Ähtärin eläinpuisto (eigen site 17-08-2026). Leeuwen: in oktober 2025 waren er nog drie leeuwinnen, nu noemt de soortpagina er twee.",
-    "en": "Leopard cat until 2005, back since 2019 (own website). In 2024–2026 the wildlife hospital cared for two orphaned lynx cubs behind the scenes; one went to Vildriket (Sweden) in 2025, the other to Ähtäri Zoo in July/August 2026 (own website 17-08-2026). Lions: in October 2025 there were still three lionesses; the species page now lists two."
+    "nl": "Bengaalse kat (luipaardkat) tot 2005, terug sinds 2019 (eigen site). In 2024–2026 verzorgde de wildopvang twee wees-lynxwelpen achter de schermen; één ging in 2025 naar Vildriket (Zweden), de andere eind juli/begin augustus 2026 naar Ähtärin eläinpuisto (eigen nieuws 17-08-2026). Leeuwen: kater Szimba werd begin 2025 ingeslapen (Yle); in oktober 2025 waren er drie leeuwinnen (eigen nieuws 08-10-2025), sinds de bijgewerkte soortpagina (25-02-2026) nog maar twee; wat er met de derde gebeurde, is niet bekendgemaakt. Sneeuwluipaardkater Lux/Vallu ging in 2024 naar Ähtäri.",
+    "en": "Leopard cat until 2005, back since 2019 (own website). In 2024–2026 the wildlife hospital cared for two orphaned lynx cubs behind the scenes; one went to Vildriket (Sweden) in 2025, the other to Ähtäri Zoo in late July/early August 2026 (own news 17-08-2026). Lions: male Szimba was put down in early 2025 (Yle); in October 2025 there were three lionesses (own news 08-10-2025), but the updated species page (25-02-2026) lists only two; what happened to the third has not been announced. Snow leopard male Lux/Vallu moved to Ähtäri in 2024."
    },
    "katten": [
     {
@@ -32,14 +32,14 @@
      },
      "status": "g",
      "toelichting": {
-      "nl": "Aziatische leeuwen in het Kissalaakso; jonge kater Tarak kwam in oktober 2025 uit Zoo Schwerin.",
-      "en": "Asiatic lions in the Kissalaakso; young male Tarak arrived from Zoo Schwerin in October 2025."
+      "nl": "Aziatische leeuwen in het Kissalaakso; jonge kater Tarak kwam in oktober 2025 uit Zoo Schwerin. In oktober 2025 waren er nog drie leeuwinnen, nu twee.",
+      "en": "Asiatic lions in the Kissalaakso; young male Tarak arrived from Zoo Schwerin in October 2025. In October 2025 there were still three lionesses, now two."
      },
      "aantal": {
-      "nl": "3 (kater Tarak, geb. 2023; poezen Kalyana, geb. 2010, en Arja, geb. 2017)",
-      "en": "3 (male Tarak, b. 2023; females Kalyana, b. 2010, and Arja, b. 2017)"
+      "nl": "3: kater Tarak (geb. 2023) en 2 poezen, Kalyana (geb. 2010) en Arja (geb. 2017)",
+      "en": "3: male Tarak (b. 2023) and 2 females, Kalyana (b. 2010) and Arja (b. 2017)"
      },
-     "bron": "Eigen site soortpagina aasianleijona (gezien 23-10-2026); eigen nieuws 08-10-2025",
+     "bron": "Eigen site soortpagina aasianleijona (bijgewerkt 25-02-2026, gezien 23-10-2026); eigen nieuws 08-10-2025",
      "twijfel": null
     },
     {
@@ -57,7 +57,7 @@
       "nl": "3 (poes Sibiri, haar dochter Odeya, geb. 2022, en kater Odris, geb. 2023)",
       "en": "3 (female Sibiri, her daughter Odeya, b. 2022, and male Odris, b. 2023)"
      },
-     "bron": "Eigen site soortpagina amurintiikeri (gezien 23-10-2026); eigen nieuws 13-11-2025",
+     "bron": "Eigen site soortpagina amurintiikeri (bijgewerkt 29-01-2026, gezien 23-10-2026); eigen nieuws 13-11-2025",
      "twijfel": null
     },
     {
@@ -68,14 +68,14 @@
      },
      "status": "g",
      "toelichting": {
-      "nl": "Amoerluipaarden in het Kissalaakso; eind juli 2026 kreeg het paar zijn eerste jongen.",
-      "en": "Amur leopards in the Kissalaakso; the pair had their first cubs at the end of July 2026."
+      "nl": "Amoerluipaarden in het Kissalaakso. Eind juli 2026 kreeg het paar zijn eerste jongen; de welpen gaan sinds begin september af en toe met de moeder naar buiten.",
+      "en": "Amur leopards in the Kissalaakso. The pair had their first cubs at the end of July 2026; since early September the cubs go outside now and then with their mother."
      },
      "aantal": {
-      "nl": "4 (kater Timba, poes Youmi en hun 2 welpen Sasha en Sienna)",
-      "en": "4 (male Timba, female Youmi and their 2 cubs Sasha and Sienna)"
+      "nl": "4 (kater Timba, geb. 2018; poes Youmi, geb. 2019; welpen Sasha en Sienna, geb. eind juli 2026)",
+      "en": "4 (male Timba, b. 2018; female Youmi, b. 2019; cubs Sasha and Sienna, b. late July 2026)"
      },
-     "bron": "Eigen site soortpagina amurinleopardi (gezien 23-10-2026); eigen nieuws 03-09-2026 en 04-09-2026",
+     "bron": "Eigen site soortpagina amurinleopardi (bijgewerkt 03-09-2026, gezien 23-10-2026); eigen nieuws 03-09-2026 en 04-09-2026 (bijgewerkt 11-09-2026)",
      "twijfel": null
     },
     {
@@ -119,14 +119,14 @@
      },
      "status": "g",
      "toelichting": {
-      "nl": "Amoer-luipaardkatten in het Kissalaakso (wilde soort, niet de huiskat Bengaal).",
-      "en": "Amur leopard cats in the Kissalaakso (wild species, not the domestic Bengal breed)."
+      "nl": "Amoer-luipaardkatten in het Kissalaakso (wilde soort, niet de huiskat Bengaal). De soortpagina noemt alleen Mesi en haar moeder; of de kater van 2019 er nog is, staat er niet.",
+      "en": "Amur leopard cats in the Kissalaakso (wild species, not the domestic Bengal breed). The species page names only Mesi and her mother; it does not say whether the 2019 male is still there."
      },
      "aantal": {
       "nl": "2 (poes Mesi, geb. 2020, en haar moeder)",
       "en": "2 (female Mesi, b. 2020, and her mother)"
      },
-     "bron": "Eigen site soortpagina amurinleopardikissa (gezien 23-10-2026)",
+     "bron": "Eigen site soortpagina amurinleopardikissa (bijgewerkt 25-02-2025, gezien 23-10-2026)",
      "twijfel": null
     },
     {
@@ -134,14 +134,14 @@
      "ondersoort": "—",
      "status": "g",
      "toelichting": {
-      "nl": "Poes Mimi en haar jongen in het manoelverblijf achter de tropenhuizen. Kater Arkas woont meestal in een achterverblijf en is dan niet te zien.",
-      "en": "Female Mimi and her kittens in the Pallas's cat enclosure behind the tropical houses. Male Arkas usually lives in a back enclosure out of public view."
+      "nl": "Poes Mimi en haar drie jongen van mei 2026 in het manoelverblijf achter de tropenhuizen (jongen sinds 26-06-2026 buiten te zien). Kater Arkas woont meestal in een achterverblijf van het Kissalaakso en is dan niet te zien. De jongen vertrekken met 8–9 maanden naar andere dierentuinen.",
+      "en": "Female Mimi and her three kittens from May 2026 in the Pallas's cat enclosure behind the tropical houses (kittens on view outdoors since 26 June 2026). Male Arkas usually lives in a back enclosure of the Kissalaakso out of public view. The kittens move to other zoos at 8–9 months."
      },
      "aantal": {
       "nl": "5 (poes Mimi, geb. 2019; kater Arkas, geb. 2022, meestal niet te zien; 3 jongen van mei 2026)",
       "en": "5 (female Mimi, b. 2019; male Arkas, b. 2022, usually off show; 3 kittens from May 2026)"
      },
-     "bron": "Eigen site soortpagina manuli (gezien 23-10-2026); eigen nieuws 02-07-2026",
+     "bron": "Eigen site soortpagina manuli (bijgewerkt 07-09-2026, gezien 23-10-2026); eigen nieuws 02-07-2026",
      "twijfel": null
     },
     {
@@ -169,10 +169,10 @@
       "en": "2 cubs"
      },
      "x": {
-      "nl": "Amoerluipaarden Sasha en Sienna, kater en poes; moeder Youmi, vader Timba. Eerste jongen van dit paar, eerste Amoerluipaard-geboorte in Korkeasaari sinds 2015. Begin september al af en toe buiten met de moeder.",
-      "en": "Amur leopards Sasha and Sienna, one male and one female; mother Youmi, father Timba. The pair's first cubs and the first Amur leopard birth at Korkeasaari since 2015. Already going outside now and then with their mother in early September."
+      "nl": "Amoerluipaarden Sasha en Sienna, een kater en een poes (welke naam bij welk geslacht hoort, staat er niet bij); moeder Youmi, vader Timba. Eerste jongen van dit paar en eerste Amoerluipaard-geboorte in Korkeasaari sinds 2015. Namen gekozen uit bijna 20.000 voorstellen. Begin september 2026 al af en toe buiten met de moeder.",
+      "en": "Amur leopards Sasha and Sienna, one male and one female (which name belongs to which sex is not stated); mother Youmi, father Timba. The pair's first cubs and the first Amur leopard birth at Korkeasaari since 2015. Names chosen from almost 20,000 suggestions. Already going outside now and then with their mother in early September 2026."
      },
-     "bron": "Eigen nieuws 03-09-2026 en 04-09-2026 (bijgewerkt 11-09-2026)",
+     "bron": "Eigen nieuws 03-09-2026 (bijgewerkt 18-09-2026) en 04-09-2026 (bijgewerkt 11-09-2026)",
      "approx": true
     },
     {
@@ -183,8 +183,8 @@
       "en": "3 kittens"
      },
      "x": {
-      "nl": "1 kater en 2 poezen; moeder Mimi, vader Arkas. Sinds eind juni buiten te zien. Derde nest van dit paar; de jongen vertrekken met 8–9 maanden naar andere dierentuinen.",
-      "en": "1 male and 2 females; mother Mimi, father Arkas. On view outdoors since late June. The pair's third litter; the kittens move to other zoos at 8–9 months."
+      "nl": "1 kater en 2 poezen, namen niet bekendgemaakt; moeder Mimi, vader Arkas. Sinds vrijdag 26-06-2026 buiten te zien. Derde en grootste nest van dit paar; de jongen vertrekken met 8–9 maanden (begin 2027) naar andere dierentuinen.",
+      "en": "1 male and 2 females, names not announced; mother Mimi, father Arkas. On view outdoors since Friday 26 June 2026. The pair's third and largest litter; the kittens move to other zoos at 8–9 months (early 2027)."
      },
      "bron": "Eigen nieuws 02-07-2026",
      "approx": true
@@ -205,16 +205,16 @@
    ],
    "url": "https://mesizoo.fi/",
    "uren": {
-    "nl": "Niet het hele jaar open. Herfstvakantie 10–25-10-2026 dagelijks 10–18 uur; daarna alleen op groepsreservering, kerstmarkt 12-12-2026 10–18 uur, krokusvakantie (week 8–10) 10–16 uur (eigen site, gezien 23-10-2026). Zomertijden 2026 niet gevonden.",
-    "en": "Not open all year. Autumn holiday 10–25 Oct 2026 daily 10:00–18:00; afterwards only by group booking, Christmas market 12 Dec 2026 10:00–18:00, winter holiday (weeks 8–10) 10:00–16:00 (own website, seen 23-10-2026). Summer 2026 hours not found."
+    "nl": "Niet het hele jaar open. Winter 2026–2027: alleen joulumarkkinat (kerstmarkt) za 12-12-2026 10–18 uur en de krokusvakantieweken (week 8–10, ca. 15-02 t/m 07-03-2027) dagelijks 10–16 uur; daarbuiten alleen op groepsreservering (min. 10 personen). Herfstvakantie 10–25-10-2026 was dagelijks 10–18 uur (eigen site, pagina openingstijden bijgewerkt 18-10-2026, gezien 23-10-2026).",
+    "en": "Not open all year. Winter 2026–2027: only the Christmas market on Sat 12 Dec 2026 10:00–18:00 and the winter-holiday weeks (weeks 8–10, approx. 15 Feb–7 Mar 2027) daily 10:00–16:00; otherwise group bookings only (min. 10 people). The autumn holiday 10–25 Oct 2026 was daily 10:00–18:00 (own website, opening-hours page updated 18-10-2026, seen 23-10-2026)."
    },
    "about": {
     "nl": "Oudste natuurlijke dierenpark van Finland (1973), met vooral noordelijke dieren in ruime bosverblijven. Het bedrijf ging in oktober 2025 failliet en het park sloot op 26-10-2025; de vereniging Vieraile ja Välität ry bleef voor de dieren zorgen en sinds 2026 runt MesiZoo Oy het park weer, met openingen in vakanties. De reuzenpanda’s gingen eind 2024 terug naar China.",
     "en": "Finland’s oldest naturalistic zoo (1973), mainly northern species in large forest enclosures. The company went bankrupt in October 2025 and the park closed on 26 Oct 2025; the association Vieraile ja Välität ry kept caring for the animals and since 2026 MesiZoo Oy runs the park again, opening in holiday periods. The giant pandas returned to China at the end of 2024."
    },
    "earlier": {
-    "nl": "Sneeuwluipaarden sinds 2003 (eerste fok 2006). Kater Jamal (geb. 2015, uit Great Yarmouth) overleed in 2023 (eigen site 19-06-2023). Poes Juma werd in het voorjaar van 2024 aan Vallu gekoppeld (eigen site 19-04-2024), maar de soortpagina noemt nu alleen Vallu.",
-    "en": "Snow leopards since 2003 (first breeding 2006). Male Jamal (born 2015, from Great Yarmouth) died in 2023 (own website 19-06-2023). Female Juma was paired with Vallu in spring 2024 (own website 19-04-2024), but the species page now names only Vallu."
+    "nl": "Sneeuwluipaarden sinds 2003 (eerste fok 2006). Kater Jamal (geb. 2015, uit Great Yarmouth) overleed in 2023 (eigen site 19-06-2023). Poes Juma (uit Krefeld, sinds 2019) werd in het voorjaar van 2024 aan Vallu gekoppeld (eigen site 19-04-2024) en was in mei 2025 nog hier (Maaseudun Tulevaisuus 01-05-2025); de soortpagina (bijgewerkt 18-06-2026) noemt alleen Vallu. Of Juma is overleden of verhuisd, is niet bekendgemaakt. Na het faillissement daalde het aantal dieren van 200 naar 130 (Yle 22-02-2026).",
+    "en": "Snow leopards since 2003 (first breeding 2006). Male Jamal (born 2015, from Great Yarmouth) died in 2023 (own website 19-06-2023). Female Juma (from Krefeld, here since 2019) was paired with Vallu in spring 2024 (own website 19-04-2024) and was still here in May 2025 (Maaseudun Tulevaisuus 01-05-2025); the species page (updated 18-06-2026) names only Vallu. Whether Juma died or moved has not been announced. After the bankruptcy the number of animals fell from 200 to 130 (Yle 22-02-2026)."
    },
    "katten": [
     {
@@ -222,14 +222,14 @@
      "ondersoort": "—",
      "status": "g",
      "toelichting": {
-      "nl": "Kater Vallu (in Korkeasaari ‘Lux’ genoemd) kwam in 2024 uit Korkeasaari. Tijdens de avondevenementen van de herfstvakantie 2026 waren er rondleidingen bij de sneeuwluipaard.",
-      "en": "Male Vallu (called ‘Lux’ at Korkeasaari) came from Korkeasaari in 2024. Guided talks at the snow leopard were held during the autumn holiday evening events of 2026."
+      "nl": "Kater Vallu (in Korkeasaari ‘Lux’ genoemd) kwam in 2024 uit Korkeasaari en is nu de enige sneeuwluipaard. Tijdens de avondevenementen in de herfstvakantie 2026 waren er rondleidingen bij de sneeuwluipaard.",
+      "en": "Male Vallu (called ‘Lux’ at Korkeasaari) came from Korkeasaari in 2024 and is now the only snow leopard. Guided talks at the snow leopard were held during the autumn holiday evening events of 2026."
      },
      "aantal": {
       "nl": "1 (kater Vallu)",
       "en": "1 (male Vallu)"
      },
-     "bron": "Eigen site soortpagina lumileopardi (ongedateerd, gezien 23-10-2026); eigen site ‘Syyslomalla tapahtuu!’ 17-09-2026; eigen site 19-04-2024; Zootierliste (aanvullend)",
+     "bron": "Eigen site soortpagina lumileopardi (bijgewerkt 18-06-2026, gezien 23-10-2026: ‘nykyään asustelee uroslumileopardi Vallu’); eigen site ‘Syyslomalla tapahtuu!’ 17-09-2026",
      "twijfel": null
     },
     {
@@ -240,14 +240,14 @@
      },
      "status": "g",
      "toelichting": {
-      "nl": "Lynxverblijf sinds de opening in 1973; er zijn ook gevonden weeswelpen opgenomen. Lynxen genoemd in de vakantieberichten van februari en maart 2026.",
-      "en": "Lynx enclosure since the opening in 1973; orphaned wild cubs have also been taken in. Lynx mentioned in the holiday posts of February and March 2026."
+      "nl": "Lynxverblijf sinds de opening in 1973; er worden ook gevonden weeswelpen opgenomen. Eind juli/begin augustus 2026 kwam een jonge poes (geb. voorjaar 2024, als wees gevonden en opgevangen in Korkeasaari) bij de oudere lynx, die eerder met een andere poes in het verblijf woonde.",
+      "en": "Lynx enclosure since the opening in 1973; orphaned wild cubs are also taken in. In late July/early August 2026 a young female (born spring 2024, found as an orphan and raised at Korkeasaari) joined the older lynx, which had previously shared the enclosure with another female."
      },
      "aantal": {
-      "nl": "onbekend",
-      "en": "unknown"
+      "nl": "minstens 2 (een oudere lynx en een jonge poes, geb. 2024, sinds zomer 2026)",
+      "en": "at least 2 (an older lynx and a young female, b. 2024, since summer 2026)"
      },
-     "bron": "Eigen site soortpagina ilves (ongedateerd, gezien 23-10-2026); eigen site 17-02-2026 en 06-03-2026; Zootierliste (aanvullend)",
+     "bron": "Korkeasaari eigen nieuws 17-08-2026; eigen site soortpagina ilves (bijgewerkt 18-06-2026, gezien 23-10-2026); eigen site 17-02-2026 en 06-03-2026",
      "twijfel": null
     }
    ],
@@ -277,8 +277,8 @@
     "en": "Finland’s northernmost zoo with about 50 northern and Arctic species, including Finland’s only polar bears. ‘Tiger Park’ is a children’s climbing park, not a tiger enclosure."
    },
    "earlier": {
-    "nl": "",
-    "en": ""
+    "nl": "Manoel: staat niet (meer) op de dierenlijst van de eigen site (sitemap gezien 23-10-2026) en wordt in 2025–2026 nergens genoemd; volgens eerdere gegevens tot ca. 2023 hier, vertrekdatum niet bevestigd.",
+    "en": "Pallas's cat: no longer on the animal list of the park's website (sitemap seen 23-10-2026) and not mentioned anywhere in 2025–2026; according to earlier data here until about 2023, departure date not confirmed."
    },
    "katten": [
     {
@@ -296,7 +296,7 @@
       "nl": "3 (Qatinka, Lusija en Jakobine)",
       "en": "3 (Qatinka, Lusija and Jakobine)"
      },
-     "bron": "Eigen site soortpagina ilves (bijgewerkt 21-07-2025); eigen site zomerprogramma 2026 (25-05-2026, 10-07-2026); Ranua Resort Retkiesite 2026 (PDF, 12-2025)",
+     "bron": "Eigen site soortpagina ilves (bijgewerkt 21-07-2025); eigen site ‘Kesän ohjelmat alkavat eläinpuistossa’ 25-05-2026 (lynxpresentatie ma, do, za); Ranua Resort Retkiesite 2026 (PDF, 12-2025; namen)",
      "twijfel": null
     },
     {
@@ -307,14 +307,14 @@
      },
      "status": "g",
      "toelichting": {
-      "nl": "Op de site ‘amurinleopardikissa’, Prionailurus bengalensis euptilurus (Amoerkat). Volgens Zootierliste sinds 2023 in Ranua.",
-      "en": "Listed as ‘amurinleopardikissa’, Prionailurus bengalensis euptilurus (Amur leopard cat). According to Zootierliste at Ranua since 2023."
+      "nl": "Op de site ‘amurinleopardikissa’, Prionailurus bengalensis euptilurus. Poes Maia (geb. 2020 in Korkeasaari) kwam in 2023 uit Korkeasaari.",
+      "en": "Listed as ‘amurinleopardikissa’, Prionailurus bengalensis euptilurus. Female Maia (born 2020 at Korkeasaari) came from Korkeasaari in 2023."
      },
      "aantal": {
-      "nl": "onbekend",
-      "en": "unknown"
+      "nl": "minstens 1 (poes Maia)",
+      "en": "at least 1 (female Maia)"
      },
-     "bron": "Eigen site soortpagina amurinleopardikissa (bijgewerkt 21-07-2025); eigen site ‘Onnenpäiviä koko perheelle’ 23-05-2025; Zootierliste (aanvullend, ‘seit 2023’)",
+     "bron": "Eigen site soortpagina amurinleopardikissa (bijgewerkt 21-07-2025, gezien 23-10-2026); eigen site ‘Onnenpäiviä koko perheelle’ 23-05-2025; Korkeasaari soortpagina amurinleopardikissa (25-02-2025: Maia naar Ranua)",
      "twijfel": null
     }
    ],
@@ -332,16 +332,16 @@
    "lidmaatschap": [],
    "url": "https://kuusamon-suurpetokeskus.fi/",
    "uren": {
-    "nl": "Zomerseizoen; in 2026 open sinds 07-07-2026, vanaf 10 uur, alleen met gids (rondleidingen elk uur) (eigen site, gezien 23-10-2026). Sluitingsdatum van het seizoen niet vermeld.",
-    "en": "Summer season; in 2026 open since 7 July 2026, from 10:00, guided visits only (tours every hour) (own website, seen 23-10-2026). Season end not stated."
+    "nl": "Alleen met gids; rondleidingen vertrekken elk uur vanaf 10.15 uur. Seizoen 2026 open sinds 07-07-2026 (‘Avoinna klo 10 alkaen’); kahvila en winkel deze zomer dicht. Een einddatum of opening na de zomer wordt niet genoemd (eigen site, gezien 23-10-2026).",
+    "en": "Guided visits only; tours leave hourly from 10:15. 2026 season open since 7 July 2026 (‘open from 10:00’); café and shop closed this summer. No closing date or post-summer opening is given (own website, seen 23-10-2026)."
    },
    "about": {
-    "nl": "Particulier roofdierpark, begonnen in de jaren 90 als opvang voor verweesde berenwelpen; vooral beren, verder lynxen, rendieren, een vos en wolfhonden. Het park was in 2022–2023 dicht na ingrijpen van de overheid; in 2025 werden de eigenaar en de toenmalige directeur veroordeeld voor dierenmishandeling van een berenwelp, en in 2026 traden directeur en bestuur af (Yle 07-07-2026).",
-    "en": "Private predator park, started in the 1990s as a refuge for orphaned bear cubs; mainly bears, plus lynx, reindeer, a fox and wolfdogs. The park was closed in 2022–2023 after action by the authorities; in 2025 the owner and the then managing director were convicted of an animal welfare offence involving a bear cub, and in 2026 the director and board resigned (Yle 07-07-2026)."
+    "nl": "Particulier ‘roofdiercentrum’ van Sulo Karjalainen, begonnen begin jaren 90 als opvang voor weesberenwelpen; nu beren, lynxen, rendieren, een vos en wolfhonden. Bezoek alleen met rondleiding. Het centrum ligt al jaren onder vuur (vergunningsstrijd 2022–2023, veroordelingen voor dierenmishandeling in 2025, in hoger beroep). In 2026 traden directeur en bestuur af; Ruokavirasto onderzoekt of het nog de taken van een dierentuin vervult, en de 85-jarige Karjalainen zegt dat het centrum kan stoppen als hij de kracht niet vindt (Yle 07-07-2026 en 19-07-2026).",
+    "en": "Private ‘large carnivore centre’ of Sulo Karjalainen, started in the early 1990s as a refuge for orphaned bear cubs; now bears, lynx, reindeer, a fox and wolfdogs. Visits only on a guided tour. The centre has been controversial for years (permit dispute 2022–2023, animal-welfare convictions in 2025, under appeal). In 2026 the director and board resigned; the Finnish Food Authority is checking whether it still fulfils a zoo's duties, and 85-year-old Karjalainen says the centre may close if he cannot find the strength (Yle 07-07-2026 and 19-07-2026)."
    },
    "earlier": {
-    "nl": "",
-    "en": ""
+    "nl": "In 2024 werd hier een lynxwelp geboren die later naar Polen zou gaan (eigen site, bericht 10-09-2024).",
+    "en": "A lynx kitten was born here in 2024 and was to move to Poland later (own website, post of 10-09-2024)."
    },
    "katten": [
     {
@@ -352,14 +352,14 @@
      },
      "status": "r",
      "toelichting": {
-      "nl": "Lynxen staan op de eigen site; het terrein is alleen met een gids te bezoeken.",
-      "en": "Lynx are listed on the park’s website; the grounds can only be visited on a guided tour."
+      "nl": "Lynxverblijf; alleen te zien tijdens de rondleiding. Toekomst van het centrum onzeker.",
+      "en": "Lynx enclosure; only seen on the guided tour. Future of the centre uncertain."
      },
      "aantal": {
-      "nl": "onbekend (meerdere)",
-      "en": "unknown (several)"
+      "nl": "4",
+      "en": "4"
      },
-     "bron": "Eigen site voorpagina en ‘Eläimet’ (gezien 23-10-2026); Yle 31-07-2024; Kaleva/STT 09-04-2024; Zootierliste (aanvullend)",
+     "bron": "Yle 19-07-2026 (‘neljä ilvestä’); eigen site voorpagina en ‘Eläimet’ (gezien 23-10-2026)",
      "twijfel": null
     }
    ],
@@ -380,12 +380,12 @@
    "lidmaatschap": [],
    "url": "https://kiteezoo.fi/",
    "uren": {
-    "nl": "Zomerseizoen 2026: 30-04 11–16 uur, 1-05 t/m 14-06 10–17 uur, 15-06 t/m 7-08 9–19 uur, 8-08 t/m 31-08 10–17 uur, 1-09 t/m 25-10 11–15 uur (Visit Rajamailla, gezien 23-10-2026). Winterperiode met afwijkende tijden en prijzen; eigen site was in onderhoud.",
-    "en": "Summer season 2026: 30 Apr 11:00–16:00, 1 May–14 Jun 10:00–17:00, 15 Jun–7 Aug 9:00–19:00, 8–31 Aug 10:00–17:00, 1 Sep–25 Oct 11:00–15:00 (Visit Rajamailla, seen 23-10-2026). Winter period with different hours and prices; the park’s own site was under maintenance."
+    "nl": "Seizoen 2026: 30-04 11–16 uur, 1-05 t/m 14-06 10–17 uur, 15-06 t/m 7-08 9–19 uur, 8-08 t/m 31-08 10–17 uur, 1-09 t/m 25-10 11–15 uur; zomertarief 15-04 t/m 31-10, in de winter andere prijzen (Visit Rajamailla, gezien 23-10-2026). Eigen site kiteezoo.fi in onderhoud. Rondleidingen (ook ’s nachts) via Pajarinhovi.",
+    "en": "2026 season: 30 Apr 11:00–16:00, 1 May–14 Jun 10:00–17:00, 15 Jun–7 Aug 9:00–19:00, 8–31 Aug 10:00–17:00, 1 Sep–25 Oct 11:00–15:00; summer prices 15 Apr–31 Oct, different prices in winter (Visit Rajamailla, seen 23-10-2026). Own site kiteezoo.fi under maintenance. Guided tours (also at night) via Pajarinhovi."
    },
    "about": {
-    "nl": "Grootste particuliere dierenpark van Finland (sinds 1996, familie Keskimäki) bij vakantiecentrum Pajarinhovi, met ongeveer 50 soorten langs een bospad van 2 km, zoals beer, lynx, jaks en alpaca’s. In een persbericht van juni 2026 staat een ‘afrikankissa’ in het dierenhuis; welk dier dat is, is niet duidelijk.",
-    "en": "Finland’s largest private zoo (since 1996, Keskimäki family) at the Pajarinhovi holiday centre, with about 50 species along a 2 km forest trail, including bear, lynx, yaks and alpacas. A June 2026 press release mentions an ‘afrikankissa’ (‘African cat’) in the small-animal house; which animal that is remains unclear."
+    "nl": "Grootste particuliere dierenpark van Finland (sinds juni 1996, familie Keskimäki) bij vakantiecentrum Pajarinhovi, met ongeveer 50 soorten (bijna 200 dieren) langs een bospad van 2 km, zoals beer, lynx, jaks en alpaca’s. Het persbericht voor het 30-jarig bestaan (Pajarinhovi via kitee.fi, 23-06-2026) noemt een ‘afrikankissa’ in het dierenhuis voor kleine dieren; dat is geen gangbare Finse naam voor een wilde katachtige (Afrikaanse wilde kat = afrikanvillikissa, serval = servaali) en waarschijnlijk een huiskat of ander klein dier, daarom niet opgenomen.",
+    "en": "Finland’s largest private zoo (since June 1996, Keskimäki family) at the Pajarinhovi holiday centre, with about 50 species (almost 200 animals) along a 2 km forest trail, including bear, lynx, yaks and alpacas. The 30th-anniversary press release (Pajarinhovi via kitee.fi, 23-06-2026) mentions an ‘afrikankissa’ (‘African cat’) in the small-animal house; this is not a usual Finnish name for a wild cat (African wildcat = afrikanvillikissa, serval = servaali) and is probably a domestic cat or another small animal, so it is not listed."
    },
    "earlier": {
     "nl": "",
@@ -398,17 +398,20 @@
       "nl": "onbekend",
       "en": "unknown"
      },
-     "status": "g",
+     "status": "w",
      "toelichting": {
-      "nl": "Lynxen langs de wandelroute.",
-      "en": "Lynx along the walking trail."
+      "nl": "Lynxen langs de wandelroute volgens de regionale toeristische site (‘uljaita ilveksiä’, pagina met seizoen 2026).",
+      "en": "Lynx along the walking trail according to the regional tourism site (‘magnificent lynxes’, page with the 2026 season)."
      },
      "aantal": {
       "nl": "onbekend",
       "en": "unknown"
      },
-     "bron": "Visit Rajamailla parkpagina met seizoen 2026 (gezien 23-10-2026); Zootierliste (aanvullend, bezoek 2017, e-mail 2019)",
-     "twijfel": null
+     "bron": "Visit Rajamailla kohdepagina (met openingstijden 2026, tekst ongedateerd, gezien 23-10-2026); Karjalan Pyhäjärvi ry (ongedateerd); Pajarinhovi rondleidingspagina (bijgewerkt 2021); Zootierliste (aanvullend, bezoek 2017, e-mail 2019)",
+     "twijfel": {
+      "nl": "Geen bevestiging van het park zelf of uit het nieuws in 2025–2026: de eigen site is offline, het persbericht van 23-06-2026 noemt beer, davidushert, kippen en de ‘afrikankissa’ maar geen lynx. Alleen de toeristische tekst (op een pagina met de tijden van 2026) en oudere bronnen noemen lynxen.",
+      "en": "No confirmation from the park itself or from the news in 2025–2026: the own site is offline, and the 23-06-2026 press release mentions bear, Père David's deer, chickens and the ‘afrikankissa’ but no lynx. Only the tourism text (on a page with 2026 hours) and older sources mention lynx."
+     }
     }
    ],
    "geboortes": [],

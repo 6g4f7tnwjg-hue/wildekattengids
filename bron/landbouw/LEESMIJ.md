@@ -1,4 +1,4 @@
-# Landbouw: zo zijn Denemarken, Tsjechië, Zweden, Noorwegen, Finland en Polen gemaakt (en zo maak je het volgende land)
+# Landbouw: zo zijn Denemarken, Tsjechië, Zweden, Noorwegen, Finland, Polen en Hongarije gemaakt (en zo maak je het volgende land)
 
 Per land een map (`dk/`, `cz/`, `se/`, `no/`, `fi/`, `pl/`) met alles waaruit de gids `bron/gidsen/<land>.html` gebouwd is. Na een wijziging in de gegevens: `python3 bron/landbouw/<land>/gen.py` (schrijft `bron/gidsen/<land>.html`) en daarna `python3 bron/bouw.py`.
 

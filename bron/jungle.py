@@ -499,6 +499,7 @@ html body .hs-top .hs-ico[aria-expanded="true"]{{background:{SUN}!important;colo
 html body .nt-kop{{position:relative;overflow:hidden;isolation:isolate;background:{rosettes('#FFFFFF','.07')},{JG};margin:0 -20px!important;padding:20px 20px 44px;color:#F1F5E4}}
 html body .nt-kop h1.mast.hs-kop,html body .nt-kop h1.mast.hs-kop .m2,html body .nt-kop h1.mast.hs-kop span{{color:#F1F5E4!important;font-family:{DISP}!important;font-weight:400!important;letter-spacing:.01em!important}}
 html body .nt-kop h1.mast.hs-kop{{font-size:clamp(2.2rem,10vw,3.2rem)!important}}
+html.hu body .nt-kop h1.mast.hs-kop{{font-size:clamp(1.9rem,8.5vw,3.2rem)!important}}   /* Hongaars: “Magyarország” is één lang woord */
 html body #nt-kaart .map .land{{fill:#A3CC80!important;stroke:#6FA552!important}}
 html body #nt-kaart .map .water,html body #nt-kaart .map{{fill:#86C8D9}}
 html body #nt-kaart .map .water{{fill:#86C8D9!important;stroke:#6FA552!important}}

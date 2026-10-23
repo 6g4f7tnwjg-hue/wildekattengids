@@ -46,7 +46,7 @@ def tldr():
     <li><strong>Maar op één plek te zien:</strong> de nevelpanter ({SZE}), Geoffroy’s kat ({SOS}) en de manoel ({BUD}).</li>
     <li><strong>Jonge katten:</strong> Amoertijgers in {BUD} (2025), een manoel in {BUD} en drie servals in {SOS} (mei 2026), en bij {MAG} leeuwen, een tijger en een serval (2026).</li>
     <li><strong>Witte tijgers en witte leeuwen</strong> zie je vooral in {MAG}, {GYR}, {PEC} en {CSA}; zwarte panters in {KEC}.</li>
-    <li><strong>Circussen:</strong> geen Hongaars circus heeft in 2025–2026 nog grote katten gevonden; vanaf 1 januari 2027 zijn alle wilde katten in circussen verboden. De leeuwen en tijgers van de circusfamilie Richter wonen sinds 2022 in {RIC}.</li>
+    <li><strong>Circussen:</strong> in 2025–2026 is geen Hongaars circus met grote katten gevonden; vanaf 1 januari 2027 zijn alle wilde katten in circussen verboden. De leeuwen en tijgers van de circusfamilie Richter wonen sinds 2022 in {RIC}.</li>
   </ul>
   </div>
 </div>'''

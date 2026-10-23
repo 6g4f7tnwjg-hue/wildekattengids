@@ -4,6 +4,14 @@ Vermeldingen met de status “onzeker”: ze staan wel in de gids, maar tellen n
 
 Regel: bevestigd alleen met een recente bron (2025–2026); onzeker alleen met een concrete aanwijzing van na 2024; oudere aanwijzingen gaan naar “Eerder hier”.
 
+## Hongarije
+
+Stand 23 oktober 2026. Geen vermeldingen op onzeker. Aandachtspunten:
+- **Hortobágyi Vadaspark**: Europese wilde kat alleen met rondleiding (status r).
+- **Állatkert Csácsi-hegy** (Zalaegerszeg): particulier park met witte tijgers; sinds december 2024 dierentuinvergunning, na jaren van procedures.
+- **MaganZOO** en **Mecske Zoo**: particuliere parken; geen namen van eigenaren in de gids.
+- **Eötvös Cirkusz**: leeuwen en tijgers tot ten minste 2019; nu niet bevestigd (bij “circussen zonder katten”).
+
 ## Polen
 
 Stand 23 oktober 2026.

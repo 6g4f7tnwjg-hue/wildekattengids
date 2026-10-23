@@ -55,6 +55,9 @@ for old, (nm, pl, ty, lab) in E.items():
 cs = loc("Állatkert Csácsi-hegy")
 cs["about"] = {"nl": "Particulier dierenpark met kinderboerderij en opvang (sinds 2014) met ongeveer 140 dieren, ook afgedankte circusdieren. Na jarenlange procedures over de tijgers kreeg het in december 2024 een dierentuinvergunning en een groter tijgerverblijf.",
                "en": "Private animal park with petting zoo and animal home (since 2014), with about 140 animals including retired circus animals. After years of disputes over the tigers it received a zoo licence in December 2024 and an enlarged tiger enclosure."}
+mz = loc("Mecske Zoo")
+mz["about"] = {"nl": "Kleine particuliere dierentuin en opvang voor afgestane exotische dieren; sinds 2024 onder de naam Mecske Zoo. Organiseerde in 2025 een ‘servalweekend’.",
+               "en": "Small private zoo and rescue for surrendered exotic animals; named Mecske Zoo since 2024. Held a ‘serval weekend’ in 2025."}
 assert len(L) == len(E), sorted(set(l["naam"] for l in L) - {v[0] for v in E.values()})
 
 LAB = {

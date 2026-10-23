@@ -2,6 +2,27 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 23 oktober 2026 – Hongarije
+
+Nieuwe landpagina `hongarije/` (bron: `bron/gidsen/hu.html`, gebouwd met `bron/landbouw/hu/gen.py`), in het Nederlands, Engels en Hongaars (land- en taalcode `hu`). Eén pagina met een filter per megye (13 met locaties), met kaart, routeplanner, recente geboortes, soortpagina’s, filters en het meldformulier. De buurlanden staan grijs op de kaart.
+
+**Aantallen**
+- **20 locaties, alle met een bevestigde kat**: 11 dierentuinen (EAZA of MÁSZ), 6 andere vergunde dierenparken (o.a. Richter Safari Park, MaganZOO, Zoo Gyöngyös, Csácsi-hegy), 2 opvangcentra (Medveotthon Veresegyház, Mecske Zoo) en het wildpark van Hortobágy (alleen met rondleiding).
+- **16 soorten bevestigd**: leeuw, tijger, luipaard, jaguar, sneeuwluipaard, nevelpanter, cheetah, poema, Euraziatische lynx, rode lynx, serval, caracal, Geoffroy’s kat, manoel, Europese wilde kat, moeraskat.
+- 81 vermeldingen in de hoofdtabel, geen onzeker.
+- Route met alle soorten in vijf parken: Szegedi Vadaspark, Zoo Budapest, Szentendrei Kisállatkert, Zoo Gyöngyös, Sóstó Zoo.
+- Recente geboortes: Amoertijgers in Boedapest (13-04-2025), manoel in Boedapest (05-2026), Sumatraanse tijgers (12-2024) en servals (05-2026) in Sóstó, leeuwen, een tijger en een serval bij MaganZOO (2026).
+
+**Werkwijze**
+- Officiële lijst: geen openbaar register; rondvraag bij alle megyék (april 2025, 45 locaties met dierentuinvergunning), NÉBIH-lijst, EAZA (9), MÁSZ (13 leden), Zootierliste.
+- Afbakening zoals Tsjechië en Polen: particulieren en circussen opgenomen met kanttekening; geen namen van particulieren. Geen circus met katten gevonden in 2025–2026; vanaf 1 januari 2027 een verbod op wilde katten in circussen.
+- Type: dierentuin bij lidmaatschap van EAZA of MÁSZ; andere vergunde parken dierenpark.
+- Vier onderzoeksagenten, een lijstagent en één vervolgagent. De gids is met een script afgeleid van de Poolse (`bron/landbouw/hu/tools/basis_omzetten.py`); Hongaars enkelvoud na een getal (“16 faj”, “20 hely”).
+
+**Gedeelde bestanden**: taal en land `hu` in alle gedeelde lagen; in `jungle.py` een kleinere koptitel voor het Hongaars (“Magyarország” paste niet op 390 px). Hoofdpagina: Hongarije in alle lijsten (nu 19 landen).
+
+**Gecontroleerd**: de Hongaarse pagina in NL/EN/HU op 390 px (Chromium): geen fouten, geen horizontaal scrollen, geen Poolse resten. Overige pagina’s vergeleken met de vorige versie.
+
 ## 23 oktober 2026 – Polen
 
 Nieuwe landpagina `polen/` (bron: `bron/gidsen/pl.html`, gebouwd met `bron/landbouw/pl/gen.py`), in het Nederlands, Engels en Pools (land- en taalcode `pl`). Eén pagina met een filter per woiwodschap (13 met locaties), met kaart, routeplanner, recente geboortes, soortpagina’s, filters en het meldformulier. Duitsland, Tsjechië, Slowakije en Litouwen staan grijs op de kaart.

@@ -647,6 +647,16 @@ def _start():
         _START = (vl, nm)
     return _START
 
+# Laptop/muis: horizontale rijen (katten, landen, filters) met het muiswiel en door slepen laten schuiven
+SCHUIF_JS = r"""(function(){if(window.__jgSchuif||!window.matchMedia||!matchMedia('(pointer:fine)').matches)return;window.__jgSchuif=1;
+function rij(e){for(;e&&e!==document.body&&e.nodeType===1;e=e.parentElement){if(e.scrollWidth>e.clientWidth+2){var o=getComputedStyle(e).overflowX;if(o==='auto'||o==='scroll')return e}}return null}
+document.addEventListener('wheel',function(ev){if(ev.ctrlKey||Math.abs(ev.deltaX)>=Math.abs(ev.deltaY))return;var r=rij(ev.target);if(!r)return;var d=ev.deltaY*(ev.deltaMode===1?16:1),m=r.scrollWidth-r.clientWidth;if((d<0&&r.scrollLeft<=0)||(d>0&&r.scrollLeft>=m-1))return;ev.preventDefault();r.scrollLeft+=d},{passive:false});
+var s=null;document.addEventListener('pointerdown',function(ev){if(ev.pointerType!=='mouse'||ev.button!==0)return;var r=rij(ev.target);if(r)s={r:r,x:ev.clientX,l:r.scrollLeft,v:0}});
+document.addEventListener('pointermove',function(ev){if(!s)return;var dx=ev.clientX-s.x;if(!s.v&&Math.abs(dx)>5){s.v=1;s.r.style.cursor='grabbing';s.r.style.userSelect='none'}if(s.v)s.r.scrollLeft=s.l-dx});
+document.addEventListener('pointerup',function(){if(!s)return;var v=s.v;s.r.style.cursor='';s.r.style.userSelect='';s=null;if(v){var k=function(e){e.stopPropagation();e.preventDefault()};document.addEventListener('click',k,true);setTimeout(function(){document.removeEventListener('click',k,true)},0)}});
+document.addEventListener('dragstart',function(ev){if(s&&rij(ev.target))ev.preventDefault()});
+})();"""
+
 def los_js(pad):
     if not pad:
         return ''
@@ -662,7 +672,7 @@ def los_js(pad):
 def blok(html, pad=None):
     land = 'id="hs-top"' in html or "id='hs-top'" in html
     css = GEDEELD + (LAND if land else EUROPA) + LP_CSS + TAK_CSS + BREED
-    js = LP_JS % json.dumps(svg()) + TAK_JS + "(function(){var ts=document.querySelectorAll('.terug');for(var i=0;i<ts.length;i++){var t=ts[i],p=t.parentElement;if(!p||p.classList.contains('jg-kop'))continue;var k=document.createElement('div');k.className='jg-kop';p.insertBefore(k,t);var x=t.nextElementSibling;k.appendChild(t);while(x&&(x.tagName=='H1'||(x.tagName=='P'&&x.classList.contains('sub'))||x.classList.contains('kat-h'))){var n=x.nextElementSibling;k.appendChild(x);x=n;}}})();" + KOP_JS + los_js(pad) + DETAIL_JS
+    js = LP_JS % json.dumps(svg()) + TAK_JS + SCHUIF_JS + "(function(){var ts=document.querySelectorAll('.terug');for(var i=0;i<ts.length;i++){var t=ts[i],p=t.parentElement;if(!p||p.classList.contains('jg-kop'))continue;var k=document.createElement('div');k.className='jg-kop';p.insertBefore(k,t);var x=t.nextElementSibling;k.appendChild(t);while(x&&(x.tagName=='H1'||(x.tagName=='P'&&x.classList.contains('sub'))||x.classList.contains('kat-h'))){var n=x.nextElementSibling;k.appendChild(x);x=n;}}})();" + KOP_JS + los_js(pad) + DETAIL_JS
     return f'{BEGIN}{FONTS}<style id="jungle">{css}</style><script>{js}</script>{EIND}'
 
 def weg(html):

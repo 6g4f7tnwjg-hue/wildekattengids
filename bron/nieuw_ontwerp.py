@@ -220,8 +220,8 @@ html:not(.nw-scherm) #nw-sbar{display:none!important}
 @media (min-width:900px){
   html body{padding-bottom:0}
   :root:root{--nw-top:calc(var(--hs-head) + 54px)}
-  .nw-bar{position:fixed;top:calc(env(safe-area-inset-top,0px) + var(--hs-head));bottom:auto;border-top:0;border-bottom:1px solid var(--line);padding:4px}
-  .nw-bar nav{display:flex;justify-content:center;gap:6px;max-width:none}
+  .nw-bar{position:fixed;top:calc(env(safe-area-inset-top,0px) + var(--hs-head));bottom:auto;border-top:0;border-bottom:1px solid var(--line);padding:4px;height:54px;box-sizing:border-box;display:flex;align-items:center}   /* even hoog als de ruimte (54px) boven #main/#info: anders een lichte streep */
+  .nw-bar nav{display:flex;justify-content:center;gap:6px;max-width:none;flex:1}
   .nw-bar a{flex-direction:row;gap:8px;font-size:.98rem;padding:8px 14px;border-radius:99px}
   .nw-bar a svg{width:20px;height:20px}
   .nw-bar .on{background:var(--nw-sage)}.nw-bar .on::after{display:none}

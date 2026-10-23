@@ -1,0 +1,2749 @@
+{
+ "locaties": [
+  {
+   "naam": "Fővárosi Állat- és Növénykert",
+   "plaats": "Budapest (XIV. kerület, Városliget)",
+   "megye": "Budapest",
+   "lon": 19.078,
+   "lat": 47.519,
+   "type": "Dierentuin",
+   "lidmaatschap": [
+    "EAZA",
+    "WAZA",
+    "MÁASZ"
+   ],
+   "url": "https://zoobudapest.com/",
+   "uren": {
+    "nl": "Elke dag open. Oktober: ma–vr 9:00–17:00, za/zo 9:00–17:30; november–februari 9:00–16:00 (eigen site, gezien 23-10-2026)",
+    "en": "Open every day. October: Mon–Fri 9:00–17:00, Sat/Sun 9:00–17:30; November–February 9:00–16:00 (own website, seen 23-10-2026)"
+   },
+   "about": {
+    "nl": "De oudste dierentuin van Hongarije (1866), in het Városliget-park. Het wildopvangcentrum (Vadállatmentő Központ) van de dierentuin vangt ook verweesde Europese wilde katten op en zet ze weer uit; die zijn niet te zien.",
+    "en": "Hungary's oldest zoo (1866), in Városliget park. The zoo's wildlife rescue centre (Vadállatmentő Központ) also rears orphaned European wildcats and releases them; these are not on show."
+   },
+   "earlier": {
+    "nl": "Tijger Pablo (in beslag genomen bij een drugsinval in Tiszafüred, 2025) zat van december 2025 tot 19-03-2026 tijdelijk in het India-huis en verhuisde toen naar de Medveotthon in Veresegyház (Origo 02-01-2026; Medveotthon 16-03-2026). Tussen eind 2023 en januari 2024 waren er geen tijgers (Zootierliste). Manoelpoes Borsika kreeg in 2022 zes jongen (Telex 21-05-2022).",
+    "en": "Tiger Pablo (seized in a drug raid in Tiszafüred, 2025) was kept temporarily in the India House from December 2025 until 19-03-2026, then moved to the Medveotthon in Veresegyház (Origo 02-01-2026; Medveotthon 16-03-2026). There were no tigers between late 2023 and January 2024 (Zootierliste). Pallas's cat female Borsika had six kittens in 2022 (Telex 21-05-2022)."
+   },
+   "katten": [
+    {
+     "soort": "Leeuw",
+     "ondersoort": "Aziatisch (P. l. leo, voorheen P. l. persica)",
+     "status": "g",
+     "toelichting": {
+      "nl": "Aziatische leeuwen; sinds 2010 in Budapest, sindsdien zeven jongen grootgebracht.",
+      "en": "Asiatic lions; kept in Budapest since 2010, seven cubs raised since then."
+     },
+     "aantal": {
+      "nl": "3 (kater Basil, geb. 2009; poezen Ginni, geb. 2012, en Kharia, geb. 2014)",
+      "en": "3 (male Basil, b. 2009; females Ginni, b. 2012, and Kharia, b. 2014)"
+     },
+     "bron": "Adoptiepagina's Állatkerti Alapítvány (gezien 23-10-2026); Zootierliste (bezoek 08/2024)"
+    },
+    {
+     "soort": "Tijger",
+     "ondersoort": "Amoer",
+     "status": "g",
+     "toelichting": {
+      "nl": "Siberische tijgers in het nagymacska-verblijf; in april 2025 twee welpen geboren.",
+      "en": "Siberian tigers in the big-cat enclosures; two cubs born in April 2025."
+     },
+     "aantal": {
+      "nl": "3 (kater Dáriusz/‘Igor’, geb. 2017 in Debrecen; poes Agnes, geb. 2021 in Hluboká; dochter Léna, geb. 13-04-2025)",
+      "en": "3 (male Dáriusz/‘Igor’, b. 2017 in Debrecen; female Agnes, b. 2021 in Hluboká; daughter Léna, b. 13-04-2025)"
+     },
+     "bron": "Adoptiepagina's Állatkerti Alapítvány (gezien 23-10-2026); Origo 29-07-2026"
+    },
+    {
+     "soort": "Luipaard",
+     "ondersoort": "Perzisch",
+     "status": "g",
+     "toelichting": {
+      "nl": "Perzische luipaarden (P. p. saxicolor); de dierentuin fokt deze ondersoort sinds 2003.",
+      "en": "Persian leopards (P. p. saxicolor); the zoo has bred this subspecies since 2003."
+     },
+     "aantal": {
+      "nl": "2 (kater Akhum, geb. 2016 in Champrépus; poes Banu, geb. 2017 in Jászberény)",
+      "en": "2 (male Akhum, b. 2016 in Champrépus; female Banu, b. 2017 in Jászberény)"
+     },
+     "bron": "Adoptiepagina's Állatkerti Alapítvány (gezien 23-10-2026); Zootierliste (bezoek 08/2024)"
+    },
+    {
+     "soort": "Manoel",
+     "ondersoort": "Mongools (O. m. manul)",
+     "status": "g",
+     "toelichting": {
+      "nl": "Verblijf naast het India-huis; de dieren zijn er om beurten te zien. Manoels sinds 2013.",
+      "en": "Enclosure next to the India House; the animals are shown in turns. Pallas's cats kept since 2013."
+     },
+     "aantal": {
+      "nl": "3 (kater Bohus, geb. 2018; poes Lucy, geb. 19-06-2025, uit Košice; hun zoon II. Borisz, geb. 2026)",
+      "en": "3 (male Bohus, b. 2018; female Lucy, b. 19-06-2025, from Košice; their son II. Borisz, b. 2026)"
+     },
+     "bron": "Adoptiepagina's Állatkerti Alapítvány (gezien 23-10-2026); Telex 06-06-2026; Zootierliste (ondersoort)"
+    }
+   ],
+   "geboortes": [
+    {
+     "soort": "Tijger",
+     "geboren": "2025-04-13",
+     "n": {
+      "nl": "2 welpen; 1 overleden",
+      "en": "2 cubs; 1 died"
+     },
+     "x": {
+      "nl": "Moeder Agnes, vader Dáriusz. Poes Léna leeft; broer Szása stierf in augustus 2025 aan een hersenbloeding. Sinds 12-06-2025 te zien.",
+      "en": "Mother Agnes, father Dáriusz. Female Léna survives; brother Szása died of a brain haemorrhage in August 2025. On show since 12-06-2025."
+     },
+     "bron": "welovebudapest 28-04-2025 en 13-06-2025; 444.hu 19-08-2025; Állatkerti Alapítvány (Léna)"
+    },
+    {
+     "soort": "Manoel",
+     "geboren": "2026-05",
+     "n": {
+      "nl": "1 jong (kater)",
+      "en": "1 kitten (male)"
+     },
+     "x": {
+      "nl": "Moeder Lucy, vader Bohus; naam II. Borisz via publieksstemming. Telex noemt mei 2026, de adoptiepagina april 2026. Te zien bij het India-huis.",
+      "en": "Mother Lucy, father Bohus; named II. Borisz by public vote. Telex says May 2026, the adoption page April 2026. On show next to the India House."
+     },
+     "bron": "Telex 06-06-2026; Állatkerti Alapítvány (gezien 23-10-2026)"
+    }
+   ],
+   "kleur": "",
+   "_bron": "bu",
+   "regio": "budapest"
+  },
+  {
+   "naam": "Veresegyházi Medveotthon",
+   "plaats": "Veresegyház",
+   "megye": "Pest",
+   "lon": 19.255,
+   "lat": 47.631,
+   "type": "Sanctuary",
+   "lidmaatschap": [
+    "MÁASZ"
+   ],
+   "url": "https://medveotthon.hu/",
+   "uren": {
+    "nl": "Elke dag open behalve 25-12 en 01-01. Kassa oktober 9:00–17:00, november–januari 9:00–16:00, april–september 9:00–18:00 (eigen site, gezien 23-10-2026)",
+    "en": "Open daily except 25 Dec and 1 Jan. Ticket office October 9:00–17:00, November–January 9:00–16:00, April–September 9:00–18:00 (own website, seen 23-10-2026)"
+   },
+   "about": {
+    "nl": "Opvang voor geredde dieren (beren, wolven, grote katten), veel uit circussen of particulier bezit. Volgens de eigen site de grootste leeuwengroep van Hongarije.",
+    "en": "Sanctuary for rescued animals (bears, wolves, big cats), many from circuses or private keeping. According to its website, the largest group of lions in Hungary."
+   },
+   "earlier": {
+    "nl": "Leeuw Nara (broer van Nolen) is overleden (eigen site, ongedateerd).",
+    "en": "Lion Nara (Nolen's brother) has died (own website, undated)."
+   },
+   "katten": [
+    {
+     "soort": "Leeuw",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Opvang; de leeuwen kwamen sinds 2019 uit circussen (o.a. Noel-tanya) en Hongaarse dierentuinen. Ze leven in drie verblijven; Leonardo is niet zichtbaar voor bezoekers.",
+      "en": "Sanctuary; the lions came from circuses (incl. Noel-tanya) and Hungarian zoos since 2019. They live in three enclosures; Leonardo is not visible to visitors."
+     },
+     "aantal": {
+      "nl": "9 (Midra, Bóbita, Star, Sena, D’Artagnan, Mira, Many, Nolen en Leonardo; 8 te zien)",
+      "en": "9 (Midra, Bóbita, Star, Sena, D’Artagnan, Mira, Many, Nolen and Leonardo; 8 on show)"
+     },
+     "bron": "Eigen site leeuwenpagina en adoptieplatform ticketbase (gezien 23-10-2026)"
+    },
+    {
+     "soort": "Tijger",
+     "ondersoort": "Amoer",
+     "status": "g",
+     "toelichting": {
+      "nl": "Pablo, als welp in beslag genomen bij een drugsinval in Tiszafüred (eind 2025), sinds 19-03-2026 hier. Kan na 15:30 binnen zitten.",
+      "en": "Pablo, seized as a cub in a drug raid in Tiszafüred (late 2025), here since 19-03-2026. May be indoors after 15:30."
+     },
+     "aantal": {
+      "nl": "1 (kater Pablo, geb. ca. september 2025)",
+      "en": "1 (male Pablo, b. c. September 2025)"
+     },
+     "bron": "Eigen site 16-03-2026 en 22-09-2026 (ondersoort bevestigd); Origo 02-01-2026"
+    },
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Lynxverblijf aan de bosrand.",
+      "en": "Lynx enclosure at the forest edge."
+     },
+     "aantal": {
+      "nl": "2–3 (adoptie: Freya en Huey; soortpagina spreekt van een ‘lynxfamilie van drie’)",
+      "en": "2–3 (adoption: Freya and Huey; species page mentions a ‘lynx family of three’)"
+     },
+     "bron": "Adoptieplatform ticketbase en eigen soortpagina (beide ongedateerd, gezien 23-10-2026)"
+    }
+   ],
+   "geboortes": [],
+   "kleur": "",
+   "_bron": "bu",
+   "regio": "pest"
+  },
+  {
+   "naam": "Budakeszi Vadaspark",
+   "plaats": "Budakeszi",
+   "megye": "Pest",
+   "lon": 18.923,
+   "lat": 47.525,
+   "type": "Wildpark",
+   "lidmaatschap": [
+    "MÁASZ"
+   ],
+   "url": "https://budakeszivadaspark.hu/",
+   "uren": {
+    "nl": "Elke dag open, nu 9:00–18:00 (eigen site, gezien 23-10-2026)",
+    "en": "Open daily, currently 9:00–18:00 (own website, seen 23-10-2026)"
+   },
+   "about": {
+    "nl": "Wildpark van Pilisi Parkerdő met inheemse dieren in het bos aan de rand van Budapest. Het park leidt een beschermingsprogramma voor de Europese wilde kat: verweesde jongen (bv. Felícia uit de Börzsöny, 2026) worden achter de schermen grootgebracht en weer uitgezet; die zijn niet te zien.",
+    "en": "Wildlife park run by Pilisi Parkerdő with native animals in the woods on the edge of Budapest. The park runs a European wildcat conservation programme: orphaned kittens (e.g. Felícia from the Börzsöny, 2026) are reared off-show and released; these are not on view."
+   },
+   "earlier": {
+    "nl": "Lynx Hubert overleed in 2017 (444.hu 03-11-2017).",
+    "en": "Lynx Hubert died in 2017 (444.hu 03-11-2017)."
+   },
+   "katten": [
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "Karpatisch (L. l. carpathicus)",
+     "status": "g",
+     "toelichting": {
+      "nl": "Twee lynxen in aparte verblijven; ze mogen niet samen fokken. Het ministerie van Defensie adopteerde ze in 2025. De site noemt alleen Csabi expliciet Karpatisch.",
+      "en": "Two lynxes in separate enclosures; they are not allowed to breed together. The Ministry of Defence adopted them in 2025. The website names only Csabi as Carpathian."
+     },
+     "aantal": {
+      "nl": "2 (kater Csabi, geb. 2009; poes Rita)",
+      "en": "2 (male Csabi, b. 2009; female Rita)"
+     },
+     "bron": "HVG 12-05-2025; eigen site ‘Állataink’ (gezien 23-10-2026); Zootierliste"
+    },
+    {
+     "soort": "Europese wilde kat",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Twee katers in aparte verblijven; ze verstoppen zich goed.",
+      "en": "Two males in separate enclosures; they hide well."
+     },
+     "aantal": {
+      "nl": "2 (kater Szilveszter, geb. 2011; kater Félix, als jong gered)",
+      "en": "2 (male Szilveszter, b. 2011; male Félix, rescued as a kitten)"
+     },
+     "bron": "Eigen site ‘Állataink’ (gezien 23-10-2026); welovebudapest 07-10-2025"
+    }
+   ],
+   "geboortes": [],
+   "kleur": "",
+   "_bron": "bu",
+   "regio": "pest"
+  },
+  {
+   "naam": "Szentendrei Kisállatkert",
+   "plaats": "Szentendre",
+   "megye": "Pest",
+   "lon": 19.056,
+   "lat": 47.69,
+   "type": "Dierenpark",
+   "lidmaatschap": [],
+   "url": "https://www.szentendrezoo.hu/",
+   "uren": {
+    "nl": "Di, wo, vr, za, zo 10:00–17:00; ma en do dicht (eigen site, gezien 23-10-2026); in de winter vaak alleen in het weekend",
+    "en": "Tue, Wed, Fri, Sat, Sun 10:00–17:00; closed Mon and Thu (own website, seen 23-10-2026); in winter often weekends only"
+   },
+   "about": {
+    "nl": "Kleine dierentuin bij het Skanzen, gerund door een stichting die ook jaarlijks honderden in nood geraakte wilde dieren opvangt. Geredde wilde katten worden hier soms grootgebracht en weer uitgezet (Julcsi, vrijgelaten 2025).",
+    "en": "Small zoo next to the Skanzen open-air museum, run by a foundation that also takes in hundreds of wild animals in need each year. Rescued wildcats are sometimes reared here and released (Julcsi, released 2025)."
+   },
+   "katten": [
+    {
+     "soort": "Rode lynx",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Staat op de dierenlijst en de adoptiepagina.",
+      "en": "Listed on the animal list and the adoption page."
+     },
+     "aantal": {
+      "nl": "2 (Főnök en Kicsi Joe)",
+      "en": "2 (Főnök and Kicsi Joe)"
+     },
+     "bron": "Eigen site dierenlijst en adoptiepagina (ongedateerd, gezien 23-10-2026); Zootierliste (website 27-01-2024)"
+    },
+    {
+     "soort": "Europese wilde kat",
+     "ondersoort": "—",
+     "status": "w",
+     "toelichting": {
+      "nl": "Staat op de dierenlijst van de site.",
+      "en": "Listed on the website's animal list."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site soortpagina (ongedateerd, gezien 23-10-2026); jaaroverzicht 2025 (02-01-2026)",
+     "twijfel": {
+      "nl": "De enige wilde kat die in de jaaroverzichten 2024–2025 genoemd wordt (Julcsi) is in 2025 vrijgelaten; onduidelijk of er nu een vaste wilde kat te zien is.",
+      "en": "The only wildcat mentioned in the 2024–2025 year reviews (Julcsi) was released in 2025; unclear whether a resident wildcat is on show now."
+     }
+    }
+   ],
+   "geboortes": [],
+   "kleur": "",
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "_bron": "bu",
+   "regio": "pest"
+  },
+  {
+   "naam": "ZOO Szigetbecse",
+   "plaats": "Szigetbecse",
+   "megye": "Pest",
+   "lon": 18.963,
+   "lat": 47.124,
+   "type": "Dierenpark",
+   "lidmaatschap": [],
+   "url": "https://szigetbecsezoo.hu/",
+   "uren": {
+    "nl": "Elke dag 10:00–17:00 (eigen site, gezien 23-10-2026; elders op de site ook vr–zo tot 18:00)",
+    "en": "Daily 10:00–17:00 (own website, seen 23-10-2026; elsewhere on the site also Fri–Sun until 18:00)"
+   },
+   "about": {
+    "nl": "Particulier dierenpark op het Csepel-eiland, deel van het Duna-Sziget/Vadvirág Élménybirtok. Er worden ook Savannah-katten (F1, F5/F6; kruising serval × huiskat) gehouden; die tellen niet mee.",
+    "en": "Private animal park on Csepel Island, part of the Duna-Sziget/Vadvirág Élménybirtok. Savannah cats (F1, F5/F6; serval × domestic cat hybrids) are also kept; these do not count."
+   },
+   "earlier": {
+    "nl": "Eerder samen met een tijger (gewone kleur), jaar onbekend (Zootierliste).",
+    "en": "Previously together with a tiger (normal colour), year unknown (Zootierliste)."
+   },
+   "katten": [
+    {
+     "soort": "Leeuw",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Door het park ‘Afrikaanse leeuw’ genoemd. In het weekend leeuwenvoedering om 17:00.",
+      "en": "Labelled ‘African lion’ by the park. Weekend lion feeding at 17:00."
+     },
+     "aantal": {
+      "nl": "1 (poes Leila)",
+      "en": "1 (female Leila)"
+     },
+     "bron": "Eigen site dierenlijst en programma (sept. 2026, gezien 23-10-2026); Zootierliste (bezoek 08/2026, naam)"
+    }
+   ],
+   "geboortes": [],
+   "kleur": "",
+   "_bron": "bu",
+   "regio": "pest"
+  },
+  {
+   "naam": "Richter Safari Park",
+   "plaats": "Nagykőrös",
+   "megye": "Pest",
+   "lon": 19.723,
+   "lat": 47.053,
+   "type": "Safaripark",
+   "lidmaatschap": [],
+   "url": "https://safaripark.hu/",
+   "uren": {
+    "nl": "Sinds september 2026 vr–zo 10:00–17:00 (eigen site, gezien 23-10-2026)",
+    "en": "Since September 2026 Fri–Sun 10:00–17:00 (own website, seen 23-10-2026)"
+   },
+   "about": {
+    "nl": "Enige autosafaripark van Hongarije, opgericht door de circusfamilie Richter (Magyar Nemzeti Cirkusz), dat zijn wilde dieren uit de piste haalde. Met een ‘roofdiersafari’ rijden bezoekers in een kooivoertuig het verblijf van de grote katten in.",
+    "en": "Hungary's only drive-through safari park, founded by the Richter circus family (Magyar Nemzeti Cirkusz), which retired its wild animals from the ring. On the ‘predator safari’ visitors ride into the big-cat enclosure in a caged vehicle."
+   },
+   "earlier": {
+    "nl": "Witte tijgers, samen met gewone tijgers, jaar onbekend (Zootierliste). In 2023 kwamen zes tijgers en twee leeuwen uit een Italiaans circus (Economx 28-05-2023).",
+    "en": "White tigers, kept with normal-coloured tigers, year unknown (Zootierliste). In 2023 six tigers and two lions arrived from an Italian circus (Economx 28-05-2023)."
+   },
+   "katten": [
+    {
+     "soort": "Leeuw",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Te zien vanaf de safariroute en tijdens de roofdiersafari.",
+      "en": "Seen from the safari route and on the predator safari."
+     },
+     "aantal": {
+      "nl": "4 (1 kater, 3 poezen)",
+      "en": "4 (1 male, 3 females)"
+     },
+     "bron": "Eigen site dierenlijst (gezien 23-10-2026); Zootierliste (bezoek 10/2026, aantal)"
+    },
+    {
+     "soort": "Tijger",
+     "ondersoort": "Bengaals",
+     "status": "g",
+     "toelichting": {
+      "nl": "Gewone kleur; volgens Zootierliste in ZIMS als Bengaalse tijger geregistreerd (ondersoort niet bevestigd door het park).",
+      "en": "Normal colour; according to Zootierliste registered in ZIMS as Bengal tiger (subspecies not confirmed by the park)."
+     },
+     "aantal": {
+      "nl": "onbekend (6 aangekomen in 2023)",
+      "en": "unknown (6 arrived in 2023)"
+     },
+     "bron": "Eigen site dierenlijst (gezien 23-10-2026); Zootierliste (bezoek 10/2026); Economx 28-05-2023"
+    }
+   ],
+   "geboortes": [],
+   "kleur": "",
+   "_bron": "bu",
+   "regio": "pest"
+  },
+  {
+   "naam": "Nyíregyházi Állatpark (Sóstó Zoo)",
+   "plaats": "Nyíregyháza",
+   "megye": "Szabolcs-Szatmár-Bereg",
+   "lon": 21.726,
+   "lat": 47.999,
+   "type": "Dierentuin",
+   "lidmaatschap": [
+    "EAZA",
+    "MÁSZ"
+   ],
+   "url": "https://sostozoo.hu",
+   "uren": {
+    "nl": "Elke dag open; 28-09 t/m 25-10-2026 9:00–17:00 (kassa en dierenhuizen tot 16:30), vanaf 25-10-2026 9:00–16:00 (kassa tot 15:00) (eigen site, gezien 23-10-2026)",
+    "en": "Open daily; 28 Sep–25 Oct 2026 9:00–17:00 (ticket desk and animal houses until 16:30), from 25 Oct 2026 9:00–16:00 (ticket desk until 15:00) (own website, seen 23-10-2026)"
+   },
+   "about": {
+    "nl": "Grootste kattencollectie van het land, verdeeld over themawerelden (Zöld Piramis, Viktória-ház, Tarzan ösvénye, Andok Kalandok). In de wereld Kárpát-medence staat ook de huiskat op de dierenlijst.",
+    "en": "The country's largest cat collection, spread over themed worlds (Zöld Piramis, Viktória House, Tarzan's Trail, Andes Adventures). The domestic cat is also on the animal list of the Carpathian Basin world."
+   },
+   "earlier": {
+    "nl": "Euraziatische lynx (gezien 09/2022, in 08/2025 niet meer gezien of bebord; Zootierliste); rode lynx (vanaf 2023, in 08/2025 niet gezien; Zootierliste); zwarte panter (luipaard, 2008–2022; Zootierliste); een Transvaal-leeuwin 2009–2011 (Zootierliste).",
+    "en": "Eurasian lynx (seen 09/2022, not seen or signed in 08/2025; Zootierliste); bobcat (from 2023, not seen in 08/2025; Zootierliste); black panther (leopard, 2008–2022; Zootierliste); a Transvaal lioness 2009–2011 (Zootierliste)."
+   },
+   "katten": [
+    {
+     "soort": "Tijger",
+     "ondersoort": "Amoer",
+     "status": "g",
+     "toelichting": {
+      "nl": "In de Zöld Piramis. Kater kwam in het najaar van 2025 uit Zoo Magdeburg (EEP) bij de hier geboren poes Irina; in januari 2026 begon het paar te 'daten'. Vader Boris stierf in 2025.",
+      "en": "In the Green Pyramid. The male came from Zoo Magdeburg (EEP) in autumn 2025 to join the locally born female Irina; the pair started courting in January 2026. Father Boris died in 2025."
+     },
+     "aantal": {
+      "nl": "2 (poes Irina en kater Kratz)",
+      "en": "2 (female Irina and male Kratz)"
+     },
+     "bron": "Eigen site soortpagina (gezien 23-10-2026); 444.hu 15-01-2026; Zootierliste (naam Kratz, stand 31-12-2025)"
+    },
+    {
+     "soort": "Tijger",
+     "ondersoort": "Sumatraans",
+     "status": "g",
+     "toelichting": {
+      "nl": "In het Viktória-ház. Eerste kweek in december 2024 (tweeling); zoon Harun verhuisde in oktober 2026 via het EEP naar Nederland, de andere welp stierf in 2025.",
+      "en": "In the Victoria House. First breeding in December 2024 (twins); son Harun moved to the Netherlands via the EEP in October 2026, the other cub died in 2025."
+     },
+     "aantal": {
+      "nl": "2 (kater Gio en poes Sabah)",
+      "en": "2 (male Gio and female Sabah)"
+     },
+     "bron": "Eigen site soortpagina (gezien 23-10-2026); eigen nieuws 06-10-2026; HelloVidék 13-02-2025; Zootierliste (stand 31-12-2025)"
+    },
+    {
+     "soort": "Tijger",
+     "ondersoort": "Maleis (P. t. jacksoni)",
+     "status": "g",
+     "toelichting": {
+      "nl": "In de Zöld Piramis. Losse kater; de poes stierf in 2024.",
+      "en": "In the Green Pyramid. A single male; the female died in 2024."
+     },
+     "aantal": {
+      "nl": "1 (kater Sandokan)",
+      "en": "1 (male Sandokan)"
+     },
+     "bron": "Eigen site soortpagina (gezien 23-10-2026); Origo 29-07-2026; Zootierliste (gezien 06/2025 en 08/2025)"
+    },
+    {
+     "soort": "Tijger",
+     "ondersoort": "Bengaals, incl. witte tijger",
+     "status": "w",
+     "toelichting": {
+      "nl": "Witte tijgers staan nog op de site (fokpaar Iceboy en Hópihe), maar volgens Zootierliste stierf het laatste dier in 2026.",
+      "en": "White tigers are still on the website (breeding pair Iceboy and Hópihe), but according to Zootierliste the last animal died in 2026."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site soortpagina (gezien 23-10-2026, ongedateerd); Origo 29-07-2026 (foto); Zootierliste (laatste dier gestorven 2026, bij bezoek 09/2026 niet gezien)",
+     "twijfel": {
+      "nl": "Eigen site noemt ze nog, maar Zootierliste meldt dat het laatste witte dier in 2026 stierf en in 09/2026 niet meer te zien of bebord was; geen nieuwsbericht gevonden.",
+      "en": "The website still lists them, but Zootierliste reports the last white tiger died in 2026 and was not seen or signed in 09/2026; no news report found."
+     }
+    },
+    {
+     "soort": "Leeuw",
+     "ondersoort": "onbekend, incl. witte leeuw (Zuidelijk, P. l. melanochaita)",
+     "status": "g",
+     "toelichting": {
+      "nl": "In Tarzan ösvénye. Meerdere groepen, waaronder witte leeuwen (Krugerleeuw) uit eigen kweek. In 2021 gingen drie leeuwen naar Miskolc.",
+      "en": "On Tarzan's Trail. Several groups, including white lions (Kruger lions) bred here. Three lions moved to Miskolc in 2021."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site soortpagina (gezien 23-10-2026); Zootierliste (gezien 08/2025); hvg.hu/MTI (ongedateerd, geboorte drie witte leeuwen)"
+    },
+    {
+     "soort": "Luipaard",
+     "ondersoort": "Afrikaans (P. p. pardus) volgens eigen site",
+     "status": "g",
+     "toelichting": {
+      "nl": "In Tarzan ösvénye. Zootierliste noemt hier echter Noord-Chinese luipaarden (twee groepen, 08/2025).",
+      "en": "On Tarzan's Trail. Zootierliste, however, lists North Chinese leopards here (two groups, 08/2025)."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site soortpagina (gezien 23-10-2026); Zootierliste (gezien 08/2025)"
+    },
+    {
+     "soort": "Luipaard",
+     "ondersoort": "Perzisch",
+     "status": "g",
+     "toelichting": {
+      "nl": "In de Zöld Piramis; in het EEP sinds 2009, met kweek.",
+      "en": "In the Green Pyramid; in the EEP since 2009, with breeding."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site soortpagina (gezien 23-10-2026); Zootierliste (gezien 08/2025)"
+    },
+    {
+     "soort": "Sneeuwluipaard",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "In de Zöld Piramis.",
+      "en": "In the Green Pyramid."
+     },
+     "aantal": {
+      "nl": "onbekend (1,1 in 2021)",
+      "en": "unknown (1.1 in 2021)"
+     },
+     "bron": "Eigen site soortpagina (gezien 23-10-2026); Zootierliste (gezien 08/2025)"
+    },
+    {
+     "soort": "Jaguar",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "In Andok Kalandok; regelmatig kweek (o.a. poes Taima, 2017).",
+      "en": "In Andes Adventures; regular breeding (e.g. female Taima, 2017)."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site soortpagina (gezien 23-10-2026); Zootierliste (gezien 08/2025)"
+    },
+    {
+     "soort": "Cheetah",
+     "ondersoort": "Zuidelijk (A. j. jubatus)",
+     "status": "g",
+     "toelichting": {
+      "nl": "In Tarzan ösvénye.",
+      "en": "On Tarzan's Trail."
+     },
+     "aantal": {
+      "nl": "onbekend (1,2 in 12/2020)",
+      "en": "unknown (1.2 in 12/2020)"
+     },
+     "bron": "Eigen site soortpagina (gezien 23-10-2026); Zootierliste (stamboek 2020; gezien 08/2025)"
+    },
+    {
+     "soort": "Poema",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Staat in de fotogalerij 'Lakóink' (bewoners), niet in een themawereld; kweek in 2022.",
+      "en": "Shown in the 'Lakóink' (residents) photo gallery, not in a themed world; bred in 2022."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site Lakóink-galerij (gezien 23-10-2026, foto's 2023); Zootierliste (gezien 08/2025)"
+    },
+    {
+     "soort": "Geoffroy’s kat",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "In het Viktória-ház; eerste kweek in 2020.",
+      "en": "In the Victoria House; first breeding in 2020."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site soortpagina (gezien 23-10-2026); Zootierliste (gezien 08/2025)"
+    },
+    {
+     "soort": "Serval",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "Niet op de eigen site; bij een bezoek in 08/2025 zijn twee dieren gezien.",
+      "en": "Not on the website; two animals were seen during a visit in 08/2025."
+     },
+     "aantal": {
+      "nl": "2 (08/2025)",
+      "en": "2 (08/2025)"
+     },
+     "bron": "Zootierliste (gezien 08/2025)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste (bezoekersmelding 08/2025); niet op de eigen site of in het nieuws.",
+      "en": "Only Zootierliste (visitor report 08/2025); not on the website or in the news."
+     }
+    },
+    {
+     "soort": "Europese wilde kat",
+     "ondersoort": "—",
+     "status": "w",
+     "toelichting": {
+      "nl": "Niet op de eigen site; bij een bezoek in 08/2025 gezien en bebord.",
+      "en": "Not on the website; seen and signed during a visit in 08/2025."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Zootierliste (gezien 08/2025)",
+     "twijfel": {
+      "nl": "Alleen Zootierliste (bezoekersmelding 08/2025); de wereld Kárpát-medence op de eigen site noemt de soort niet.",
+      "en": "Only Zootierliste (visitor report 08/2025); the Carpathian Basin world on the website does not list the species."
+     }
+    }
+   ],
+   "geboortes": [
+    {
+     "soort": "Tijger",
+     "geboren": "2024-12",
+     "n": {
+      "nl": "2 welpen (Sumatraanse tijger)",
+      "en": "2 cubs (Sumatran tiger)"
+     },
+     "x": {
+      "nl": "Twee katers van Gio en Sabah, eerste kweek van deze ondersoort hier. Eén welp stierf in 2025; Harun verhuisde in oktober 2026 naar Nederland, dus nu niet meer te zien.",
+      "en": "Two males of Gio and Sabah, the first breeding of this subspecies here. One cub died in 2025; Harun moved to the Netherlands in October 2026, so neither can be seen now."
+     },
+     "bron": "Eigen nieuws 06-10-2026; HelloVidék 13-02-2025; Zootierliste"
+    }
+   ],
+   "kleur": "witte leeuw; witte tijger (onzeker)",
+   "_bron": "no",
+   "regio": "szabolcs-szatmar-bereg"
+  },
+  {
+   "naam": "Debreceni Állat- és Növénykert (Zoo Debrecen)",
+   "plaats": "Debrecen",
+   "megye": "Hajdú-Bihar",
+   "lon": 21.634,
+   "lat": 47.552,
+   "type": "Dierentuin",
+   "lidmaatschap": [
+    "EAZA",
+    "MÁSZ"
+   ],
+   "url": "https://zoodebrecen.hu",
+   "uren": {
+    "nl": "Elke dag; oktober 9:00–17:00, november–februari 9:00–16:00, maart 9:00–16:00 (weekend tot 17:00), april–september 9:00–18:00; kassa en dierenhuizen sluiten een half uur eerder (eigen site, gezien 23-10-2026)",
+    "en": "Daily; October 9:00–17:00, November–February 9:00–16:00, March 9:00–16:00 (weekends until 17:00), April–September 9:00–18:00; ticket desks and animal houses close half an hour earlier (own website, seen 23-10-2026)"
+   },
+   "about": {
+    "nl": "Eerste dierentuin buiten Budapest (1958), in het Nagyerdő-bos, samen met een pretpark. De site heeft geen dierenlijst; de katten blijken uit het dagprogramma met voederingen.",
+    "en": "Hungary's first zoo outside Budapest (1958), in the Nagyerdő forest, combined with an amusement park. The website has no animal list; the cats appear in the daily feeding programme."
+   },
+   "earlier": {
+    "nl": "Palawan-luipaardkat (Prionailurus, vanaf 2017, kweek 2018 en 2020; infostart 11/2018, Gulf Today 04/2020; geen recentere bron); Amoertijgers Mischa en Dana (gestorven 2025), Daria (2025 naar Landau) en Dáriusz (2024 naar Budapest) (Zootierliste).",
+    "en": "Palawan leopard cat (Prionailurus, from 2017, bred 2018 and 2020; infostart 11/2018, Gulf Today 04/2020; no newer source); Amur tigers Mischa and Dana (died 2025), Daria (to Landau 2025) and Dáriusz (to Budapest 2024) (Zootierliste)."
+   },
+   "katten": [
+    {
+     "soort": "Tijger",
+     "ondersoort": "Amoer",
+     "status": "g",
+     "toelichting": {
+      "nl": "Voedering 'Lecsapnak a szibériai tigrisek' op maandag, woensdag en vrijdag om 13:30. Rózi werd op 29-07-2010 in Engeland geboren en kwam in 2014.",
+      "en": "Feeding 'The Siberian tigers strike' on Monday, Wednesday and Friday at 13:30. Rózi was born in England on 29-07-2010 and arrived in 2014."
+     },
+     "aantal": {
+      "nl": "1 (poes Rózi)",
+      "en": "1 (female Rózi)"
+     },
+     "bron": "Eigen site programma (gezien 23-10-2026); Origo 29-07-2026; Zootierliste (stand 31-12-2025: 0,1)"
+    },
+    {
+     "soort": "Leeuw",
+     "ondersoort": "Aziatisch (P. l. leo, voorheen P. l. persica)",
+     "status": "g",
+     "toelichting": {
+      "nl": "Voedering 'Ázsiai oroszlán' op dinsdag, donderdag en zaterdag om 13:30.",
+      "en": "Asiatic lion feeding on Tuesday, Thursday and Saturday at 13:30."
+     },
+     "aantal": {
+      "nl": "onbekend (1,1 in 06/2023)",
+      "en": "unknown (1.1 in 06/2023)"
+     },
+     "bron": "Eigen site programma (gezien 23-10-2026); Állatkertek Éjszakája 28-08-2026 (eigen site); Zootierliste"
+    },
+    {
+     "soort": "Luipaard",
+     "ondersoort": "Noord-Chinees (P. p. japonensis)",
+     "status": "g",
+     "toelichting": {
+      "nl": "Programma 'Akcióban a leopárd' elke zaterdag om 9:45. Kater Coolio (geb. 2018) kwam in 2020 uit Ree Park (DK), een poes in 2023 uit Thoiry; in januari 2024 werd een welp geboren.",
+      "en": "Programme 'Leopard in action' every Saturday at 9:45. Male Coolio (b. 2018) came from Ree Park (DK) in 2020, a female from Thoiry in 2023; a cub was born in January 2024."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site programma (gezien 23-10-2026); Daily News Hungary 17-07-2020 (bijgewerkt 01-05-2025); hvg.hu 31-01-2024; Zootierliste"
+    }
+   ],
+   "geboortes": [],
+   "kleur": "",
+   "_bron": "no",
+   "regio": "hajdu-bihar"
+  },
+  {
+   "naam": "Miskolci Állatkert",
+   "plaats": "Miskolc",
+   "megye": "Borsod-Abaúj-Zemplén",
+   "lon": 20.656,
+   "lat": 48.126,
+   "type": "Dierentuin",
+   "lidmaatschap": [
+    "EAZA (kandidaat-lid)"
+   ],
+   "url": "https://miskolczoo.hu",
+   "uren": {
+    "nl": "Elke dag; oktober 9:00–18:00 (kassa tot 17:00), november 9:00–17:00, december–januari 9:00–16:00, april–september 9:00–19:00 (eigen site, gezien 23-10-2026)",
+    "en": "Daily; October 9:00–18:00 (ticket desk until 17:00), November 9:00–17:00, December–January 9:00–16:00, April–September 9:00–19:00 (own website, seen 23-10-2026)"
+   },
+   "about": {
+    "nl": "Vroeger Vadaspark, in het Csanyik-dal naast het Bükk Nationaal Park. Neemt deel aan EEP's voor Karpatische lynx, Perzische luipaard en Amoertijger; is ook opvang voor inheemse wilde dieren.",
+    "en": "Formerly a wildlife park, in the Csanyik valley next to Bükk National Park. Takes part in EEPs for Carpathian lynx, Persian leopard and Amur tiger; also a rescue station for native wildlife."
+   },
+   "earlier": {
+    "nl": "Europese wilde katten met kweek vanaf 2012 (Zootierliste, site 2017); Perzische luipaard-welp geboren in 2023 (444.hu 08-03-2023).",
+    "en": "European wildcats with breeding from 2012 (Zootierliste, website 2017); Persian leopard cub born in 2023 (444.hu 08-03-2023)."
+   },
+   "katten": [
+    {
+     "soort": "Leeuw",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "De eerste leeuwen van het park, sinds 2021 in het Száhel-verblijf, afkomstig uit Nyíregyháza.",
+      "en": "The park's first lions, in the Sahel exhibit since 2021, from Nyíregyháza."
+     },
+     "aantal": {
+      "nl": "3 (kater Zeusz, poezen Nala en Kiara)",
+      "en": "3 (male Zeusz, females Nala and Kiara)"
+     },
+     "bron": "Eigen site soortpagina (gezien 23-10-2026); eigen nieuws 'Ez történt 2025-ben' 06-01-2026"
+    },
+    {
+     "soort": "Tijger",
+     "ondersoort": "Amoer",
+     "status": "g",
+     "toelichting": {
+      "nl": "Twee zussen, geboren in 2013 in de dierentuin van Boedapest; sinds 2017 in Miskolc. Geen kweek.",
+      "en": "Two sisters, born in 2013 at Budapest Zoo; in Miskolc since 2017. No breeding."
+     },
+     "aantal": {
+      "nl": "2 (poezen)",
+      "en": "2 (females)"
+     },
+     "bron": "Eigen site soortpagina (gezien 23-10-2026); Zootierliste (gezien 01/2025)"
+    },
+    {
+     "soort": "Luipaard",
+     "ondersoort": "Perzisch",
+     "status": "g",
+     "toelichting": {
+      "nl": "Poes Tareca kwam in 2012 uit Lissabon, kater Azhar in 2022 uit Augsburg (EEP). In 2023 werd een welp geboren.",
+      "en": "Female Tareca came from Lisbon in 2012, male Azhar from Augsburg in 2022 (EEP). A cub was born in 2023."
+     },
+     "aantal": {
+      "nl": "2 (poes Tareca en kater Azhar)",
+      "en": "2 (female Tareca and male Azhar)"
+     },
+     "bron": "Eigen site soortpagina (gezien 23-10-2026); 444.hu 08-03-2023"
+    },
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "Karpatisch (L. l. carpathicus)",
+     "status": "g",
+     "toelichting": {
+      "nl": "Poes Siba uit Chomutov; in mei 2026 kwam een 13-jarige kater uit de dierentuin van Bratislava (EEP).",
+      "en": "Female Siba from Chomutov; in May 2026 a 13-year-old male arrived from Bratislava Zoo (EEP)."
+     },
+     "aantal": {
+      "nl": "2 (poes Siba en een kater)",
+      "en": "2 (female Siba and a male)"
+     },
+     "bron": "Eigen nieuws 21-05-2026; eigen site soortpagina (gezien 23-10-2026)"
+    },
+    {
+     "soort": "Caracal",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "In het Száhel-verblijf; voedering zaterdag en zondag om 15:30.",
+      "en": "In the Sahel exhibit; feeding on Saturday and Sunday at 15:30."
+     },
+     "aantal": {
+      "nl": "1 (kater Durrell, uit Dvůr Králové)",
+      "en": "1 (male Durrell, from Dvůr Králové)"
+     },
+     "bron": "Eigen site soortpagina en voederschema (gezien 23-10-2026)"
+    },
+    {
+     "soort": "Moeraskat",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Kater Margus kwam in 2023 uit Jihlava, de poes (van oorsprong uit Israël) in 2024. In 2025 werden voor het eerst jongen grootgebracht.",
+      "en": "Male Margus came from Jihlava in 2023, the female (originally from Israel) in 2024. In 2025 kittens were raised for the first time."
+     },
+     "aantal": {
+      "nl": "2 volwassenen (kater Margus en een poes), plus jongen uit 2025 (aantal onbekend)",
+      "en": "2 adults (male Margus and a female), plus 2025 kittens (number unknown)"
+     },
+     "bron": "Eigen site soortpagina (gezien 23-10-2026); eigen nieuws 'Ez történt 2025-ben' 06-01-2026"
+    },
+    {
+     "soort": "Europese wilde kat",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Een kater van één jaar kwam in april 2026 uit Tierpark Chemnitz. De soortpagina is nog niet openbaar.",
+      "en": "A one-year-old male arrived from Tierpark Chemnitz in April 2026. The species page is not public yet."
+     },
+     "aantal": {
+      "nl": "1 (kater)",
+      "en": "1 (male)"
+     },
+     "bron": "Eigen nieuws 23-04-2026"
+    }
+   ],
+   "geboortes": [],
+   "kleur": "",
+   "_bron": "no",
+   "regio": "borsod-abauj-zemplen"
+  },
+  {
+   "naam": "Gyöngyösi Állatkert",
+   "plaats": "Gyöngyös",
+   "megye": "Heves",
+   "lon": 19.912,
+   "lat": 47.791,
+   "type": "Dierentuin",
+   "lidmaatschap": [],
+   "url": "https://gyongyos-zoo.hu",
+   "uren": {
+    "nl": "Elke dag; januari–februari en november–december 9:00–16:30, maart 9:00–17:30, april–oktober 9:00–18:00 (eigen site, gezien 23-10-2026)",
+    "en": "Daily; January–February and November–December 9:00–16:30, March 9:00–17:30, April–October 9:00–18:00 (own website, seen 23-10-2026)"
+   },
+   "about": {
+    "nl": "Kleine particuliere dierentuin (Gyöngyösi Állatkert Kft., sinds 2008) aan de rand van de Mátra. De tijgers vallen niet onder het EEP. Voederingen van woensdag tot zondag.",
+    "en": "Small privately run zoo (Gyöngyösi Állatkert Kft., since 2008) at the edge of the Mátra hills. The tigers are not part of the EEP. Feedings from Wednesday to Sunday."
+   },
+   "earlier": {
+    "nl": "Canadese lynx (1,1 uit Bratislava in 2017, gezien 06/2019; Zootierliste); leeuw Zimba, de eerste bewoner, stierf in 2026 (eigen nieuws 07-08-2026).",
+    "en": "Canada lynx (1.1 from Bratislava in 2017, seen 06/2019; Zootierliste); lion Zimba, the first resident, died in 2026 (own news 07-08-2026)."
+   },
+   "katten": [
+    {
+     "soort": "Tijger",
+     "ondersoort": "Amoer",
+     "status": "g",
+     "toelichting": {
+      "nl": "Wisselen tussen de verblijven; de kater is gecastreerd.",
+      "en": "Rotate between enclosures; the male is castrated."
+     },
+     "aantal": {
+      "nl": "3 (Léna, Kátya en Igor)",
+      "en": "3 (Léna, Kátya and Igor)"
+     },
+     "bron": "Eigen nieuws 26-07-2025; Zootierliste (gezien 09/2026: 1,2)"
+    },
+    {
+     "soort": "Leeuw",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Leeuwendag 09-08-2026 ter nagedachtenis aan Zimba, met voedering van Elza en Linua.",
+      "en": "Lion day on 09-08-2026 in memory of Zimba, with a feeding of Elza and Linua."
+     },
+     "aantal": {
+      "nl": "2 (Elza en Linua)",
+      "en": "2 (Elza and Linua)"
+     },
+     "bron": "Eigen nieuws 07-08-2026"
+    },
+    {
+     "soort": "Luipaard",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Voedering om 14:00 op leeuwendag 2026; er werden eerder welpen geboren.",
+      "en": "Feeding at 14:00 on lion day 2026; cubs have been born here before."
+     },
+     "aantal": {
+      "nl": "onbekend (1,1 in 02/2026)",
+      "en": "unknown (1.1 in 02/2026)"
+     },
+     "bron": "Eigen nieuws 07-08-2026; eigen site soortpagina (gezien 23-10-2026); Zootierliste"
+    },
+    {
+     "soort": "Serval",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Twee opgevangen servals; op leeuwendag 2026 werd over hen verteld.",
+      "en": "Two rescued servals; a talk about them was given on lion day 2026."
+     },
+     "aantal": {
+      "nl": "2 (Addis en Abeba)",
+      "en": "2 (Addis and Abeba)"
+     },
+     "bron": "Eigen nieuws 07-08-2026"
+    },
+    {
+     "soort": "Caracal",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Poes Gigi, geboren op 12-01-2023 in Duitsland en met de hand grootgebracht, kwam in 2023.",
+      "en": "Female Gigi, born 12-01-2023 in Germany and hand-reared, arrived in 2023."
+     },
+     "aantal": {
+      "nl": "1 (poes Gigi)",
+      "en": "1 (female Gigi)"
+     },
+     "bron": "Eigen nieuws 25-08-2023 en 26-07-2025; eigen site soortpagina (gezien 23-10-2026)"
+    },
+    {
+     "soort": "Poema",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Genoemd bij de voederingen tijdens de tijgerdagen 2025.",
+      "en": "Mentioned in the feedings during the 2025 tiger days."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen nieuws 26-07-2025; eigen site soortpagina (gezien 23-10-2026)"
+    },
+    {
+     "soort": "Moeraskat",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Op de site 'mocsári hiúz' genoemd.",
+      "en": "Called 'mocsári hiúz' (swamp lynx) on the website."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site soortpagina (gezien 23-10-2026, ongedateerd); Zootierliste (gezien 05/2024)"
+    }
+   ],
+   "geboortes": [],
+   "kleur": "",
+   "_bron": "no",
+   "regio": "heves"
+  },
+  {
+   "naam": "Jászberényi Állat- és Növénykert",
+   "plaats": "Jászberény",
+   "megye": "Jász-Nagykun-Szolnok",
+   "lon": 19.868,
+   "lat": 47.494,
+   "type": "Dierentuin",
+   "lidmaatschap": [],
+   "url": "https://jaszberenyzoo.hu",
+   "uren": {
+    "nl": "Elke dag; april–augustus 9:00–18:00 (weekend tot 19:00), september 9:00–18:00, oktober en maart 9:00–17:00, november–februari 9:00–16:00 (eigen site, gezien 23-10-2026)",
+    "en": "Daily; April–August 9:00–18:00 (weekends until 19:00), September 9:00–18:00, October and March 9:00–17:00, November–February 9:00–16:00 (own website, seen 23-10-2026)"
+   },
+   "about": {
+    "nl": "Kleine stadsdierentuin. Volgens de eigen site zijn grote dieren door ruimtegebrek vervangen door kleinere soorten. Ook opvang voor inheemse wilde dieren.",
+    "en": "Small town zoo. According to its website, large animals have been replaced by smaller species for lack of space. Also a rescue station for native wildlife."
+   },
+   "earlier": {
+    "nl": "Leeuw en moeraskat (gezien 05/2018; Zootierliste).",
+    "en": "Lion and jungle cat (seen 05/2018; Zootierliste)."
+   },
+   "katten": [
+    {
+     "soort": "Luipaard",
+     "ondersoort": "Perzisch",
+     "status": "w",
+     "toelichting": {
+      "nl": "Staat in de fotogalerij 'Lakóink' (bewoners) op de eigen site.",
+      "en": "Shown in the 'Lakóink' (residents) photo gallery on the website."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site Lakóink (gezien 23-10-2026; pagina laatst gewijzigd 21-12-2023); Zootierliste (gezien 05/2018); kop szoljon.hu ca. 10/2025 (niet gelezen)",
+     "twijfel": {
+      "nl": "Alleen een ongedateerde galerij (laatst gewijzigd eind 2023) en een niet te openen kop op szoljon.hu ('Itt látták a perzsa leopárdot… Berényben', ca. oktober 2025); geen bevestiging uit 2025–2026.",
+      "en": "Only an undated gallery (last changed late 2023) and an unopenable szoljon.hu headline ('Itt látták a perzsa leopárdot… Berényben', c. October 2025); no confirmation from 2025–2026."
+     }
+    },
+    {
+     "soort": "Vissende kat",
+     "ondersoort": "—",
+     "status": "w",
+     "toelichting": {
+      "nl": "Staat in de fotogalerij 'Lakóink'; in 2017 kwam een poes uit Duisburg.",
+      "en": "Shown in the 'Lakóink' gallery; a female came from Duisburg in 2017."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site Lakóink (gezien 23-10-2026; pagina laatst gewijzigd 21-12-2023); Zootierliste (gezien 05/2018)",
+     "twijfel": {
+      "nl": "Alleen een ongedateerde galerij (laatst gewijzigd eind 2023); geen bron uit 2025–2026.",
+      "en": "Only an undated gallery (last changed late 2023); no source from 2025–2026."
+     }
+    }
+   ],
+   "geboortes": [],
+   "kleur": "",
+   "_bron": "no",
+   "regio": "jasz-nagykun-szolnok"
+  },
+  {
+   "naam": "Hortobágyi Vadaspark (Pusztaszafari)",
+   "plaats": "Hortobágy (Malomháza)",
+   "megye": "Hajdú-Bihar",
+   "lon": 21.136,
+   "lat": 47.552,
+   "type": "Wildpark",
+   "lidmaatschap": [],
+   "url": "https://www.hnp.hu/hu/szervezeti-egyseg/turizmus/vadaspark/oldal/mit-lathatok-vadaspark",
+   "uren": {
+    "nl": "Het hele jaar open, alleen met de parkbus vanaf Hortobágy Infó (bij de Negenbogenbrug); op 1–3 november 2026 dicht (eigen site Hortobágyi Nemzeti Park, gezien 23-10-2026)",
+    "en": "Open all year, only by park bus from Hortobágy Infó (by the Nine-Arch Bridge); closed 1–3 November 2026 (Hortobágy National Park website, seen 23-10-2026)"
+   },
+   "about": {
+    "nl": "Wildpark van het Hortobágy Nationaal Park met dieren van de oude poesta (wolf, jakhals, Przewalskipaard, oeros). Alleen georganiseerd te bezoeken.",
+    "en": "Wildlife park of Hortobágy National Park showing animals of the old puszta (wolf, jackal, Przewalski's horse, aurochs). Visits only on organised trips."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Europese wilde kat",
+     "ondersoort": "—",
+     "status": "r",
+     "toelichting": {
+      "nl": "Wilde katten in een verblijf met gracht (vernieuwd en vergroot in 2018). Alleen te zien via de parkbus/georganiseerd bezoek.",
+      "en": "Wildcats in a moated enclosure (renovated and enlarged in 2018). Only visible via the park bus/organised visit."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site HNP (gezien 23-10-2026, ongedateerd); programturizmus.hu (okt. 2026); Zootierliste (gezien 10/2022)"
+    }
+   ],
+   "geboortes": [],
+   "kleur": "",
+   "_bron": "no",
+   "regio": "hajdu-bihar"
+  },
+  {
+   "naam": "Szegedi Vadaspark",
+   "plaats": "Szeged",
+   "megye": "Csongrád-Csanád",
+   "lon": 20.117,
+   "lat": 46.25,
+   "type": "Dierentuin",
+   "lidmaatschap": [
+    "EAZA",
+    "MÁSZ"
+   ],
+   "url": "https://zooszeged.hu/",
+   "uren": {
+    "nl": "Elke dag open; kassa 9.00–17.00 in oktober, 9.00–16.00 in november–maart, tot 19.00 in juni–augustus; 24 en 31 december tot 14.00 (eigen site, gezien 23-10-2026)",
+    "en": "Open daily; ticket office 9:00–17:00 in October, 9:00–16:00 November–March, until 19:00 June–August; 24 and 31 December until 14:00 (own site, seen 23-10-2026)"
+   },
+   "about": {
+    "nl": "Grootste dierentuin van Hongarije qua oppervlakte, met een ruime collectie katachtigen, van cheeta’s tot nevelpanters. De site werd in 2026 vernieuwd; enkele soortpagina’s zijn nog ‘in opbouw’.",
+    "en": "Hungary’s largest zoo by area, with a wide range of cats, from cheetahs to clouded leopards. The website was rebuilt in 2026; some species pages are still ‘under construction’."
+   },
+   "earlier": {
+    "nl": "Amoertijgers Igor (2005–2026, ingeslapen maart 2026) en zijn broer Borisz (overleden 2024); Noord-Chinese luipaard Poldi (geboren hier 05-04-2024) verhuisde in maart 2026 naar de Kecskeméti Vadaskert (eigen site 08-04-2026 en 16-04-2026; Délmagyar 03-2026). Sneeuwluipaarden Ghandi en Gongga kweekten hier meermaals, o.a. een drieling in 2012.",
+    "en": "Amur tigers Igor (2005–2026, euthanised March 2026) and his brother Borisz (died 2024); North Chinese leopard Poldi (born here 05-04-2024) moved to Kecskemét Vadaskert in March 2026 (own site 08-04-2026 and 16-04-2026; Délmagyar 03-2026). Snow leopards Ghandi and Gongga bred here several times, incl. triplets in 2012."
+   },
+   "katten": [
+    {
+     "soort": "Leeuw",
+     "ondersoort": "Zuidelijk (P. l. melanochaita)",
+     "status": "g",
+     "toelichting": {
+      "nl": "Bordje ‘Zuid-Afrikaanse leeuw (Panthera leo krugeri)’; de soortpagina bespreekt de witte kleurvariant, maar zegt niet dat deze dieren wit zijn. Dagelijkse ‘Animal talk & feeding’ bij de leeuwen (sept. 2026).",
+      "en": "Signed as ‘South African lion (Panthera leo krugeri)’; the species page discusses the white colour morph but does not say these animals are white. Daily ‘Animal talk & feeding’ at the lions (Sept 2026)."
+     },
+     "aantal": {
+      "nl": "2 (kater Timba, geb. 2011, uit Frankrijk; poes Nadja, geb. 2011, uit Belgrado)",
+      "en": "2 (male Timba, b. 2011, from France; female Nadja, b. 2011, from Belgrade)"
+     },
+     "bron": "Eigen site soortpagina (gezien 23-10-2026); eigen site Animal talk&feeding 08-09-2026; Zootierliste (aanvullend)"
+    },
+    {
+     "soort": "Tijger",
+     "ondersoort": "Amoer",
+     "status": "g",
+     "toelichting": {
+      "nl": "Na de dood van Igor (maart 2026) kondigde het park een nieuwe tijger aan na renovatie van het verblijf. Délmagyar noemt op 31-07-2026 ‘de Siberische tijger’ als een van de dieren die het meest last hebben van de hitte. Volgens Zootierliste kwam in 2026 een kater uit Panthera Park (Turá); bordje ‘Amoertijger’, herkomst uit een particulier park, dus raszuiverheid onbekend.",
+      "en": "After Igor’s death (March 2026) the zoo announced a new tiger after renovation of the enclosure. Délmagyar (31-07-2026) mentions ‘the Siberian tiger’ among the animals suffering most from the heat. According to Zootierliste a male came from Panthera Park (Turá) in 2026; signed as Amur tiger, origin a private park, so purity unknown."
+     },
+     "aantal": {
+      "nl": "1 (kater, naam onbekend)",
+      "en": "1 (male, name unknown)"
+     },
+     "bron": "Eigen site ‘Viszlát, Igor!’ 16-04-2026; Délmagyar 31-07-2026; Zootierliste (aanvullend, ‘Website 31.07.2026’)"
+    },
+    {
+     "soort": "Luipaard",
+     "ondersoort": "Noord-Chinees (P. p. japonensis)",
+     "status": "g",
+     "toelichting": {
+      "nl": "Kweekpaar in het EEP; Poldi’s jongere broer of zus leefde in april 2026 nog bij de moeder en moet ‘binnenkort’ verhuizen.",
+      "en": "Breeding pair in the EEP; Poldi’s younger sibling still lived with the mother in April 2026 and is due to move ‘soon’."
+     },
+     "aantal": {
+      "nl": "onbekend (kater Chang, poes Shaian uit Thoiry, plus een jong)",
+      "en": "unknown (male Chang, female Shaian from Thoiry, plus one young)"
+     },
+     "bron": "Eigen site soortpagina en nieuws 08-04-2026; Délmagyar 03-2026"
+    },
+    {
+     "soort": "Sneeuwluipaard",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Kweekpaar; het park hoopt op jongen.",
+      "en": "Breeding pair; the zoo hopes for cubs."
+     },
+     "aantal": {
+      "nl": "2 (poes Karma, gekomen 2024; kater Tai Lung, gekomen eind 2025)",
+      "en": "2 (female Karma, arrived 2024; male Tai Lung, arrived late 2025)"
+     },
+     "bron": "Eigen site nieuws 30-04-2026; Délmagyar 30-04-2026 en 31-07-2026"
+    },
+    {
+     "soort": "Jaguar",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Dagelijkse ‘Animal talk & feeding’ (sept. 2026); in 2015 werd hier een zwarte jaguar geboren.",
+      "en": "Daily ‘Animal talk & feeding’ (Sept 2026); a black jaguar was born here in 2015."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site soortpagina (bijgewerkt 09-10-2026) en Animal talk&feeding 08-09-2026; schoolprogramma (30-09-2026)"
+    },
+    {
+     "soort": "Cheetah",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Bordje Acinonyx jubatus; Zootierliste noemt ze ‘Zuid-Afrikaanse cheeta’, maar de eigen site noemt geen ondersoort.",
+      "en": "Signed Acinonyx jubatus; Zootierliste lists them as South African cheetahs, but the zoo’s own site names no subspecies."
+     },
+     "aantal": {
+      "nl": "2 (broers Kani en Ruan, geb. 2017, sinds december 2023 uit Salzburg)",
+      "en": "2 (brothers Kani and Ruan, b. 2017, from Salzburg since December 2023)"
+     },
+     "bron": "Eigen site soortpagina (gezien 23-10-2026); Animal talk&feeding 07-09-2026"
+    },
+    {
+     "soort": "Nevelpanter",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "In het Azië-huis.",
+      "en": "In the Asia house."
+     },
+     "aantal": {
+      "nl": "2 (Tempó, uit Frankrijk, en Zafíra, uit Engeland; beide geb. 2011, sinds 2012)",
+      "en": "2 (Tempó, from France, and Zafíra, from England; both b. 2011, here since 2012)"
+     },
+     "bron": "Eigen site soortpagina (gezien 23-10-2026); Zootierliste (aanvullend)"
+    },
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "Karpatisch (L. l. carpathicus)",
+     "status": "g",
+     "toelichting": {
+      "nl": "In het Europese deel van het park.",
+      "en": "In the European section of the park."
+     },
+     "aantal": {
+      "nl": "1 (Árpi)",
+      "en": "1 (Árpi)"
+     },
+     "bron": "Eigen site soortpagina (bijgewerkt 15-04-2026); schoolprogramma (30-09-2026)"
+    },
+    {
+     "soort": "Poema",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Soortpagina in april 2026 opnieuw aangemaakt, maar zonder dieren of namen; geen recent nieuws.",
+      "en": "Species page recreated in April 2026 but without animals or names; no recent news."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site soortpagina 13-04-2026; Zootierliste (aanvullend, bezoek 2017)"
+    },
+    {
+     "soort": "Europese wilde kat",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Soortpagina ‘Vadmacska’ staat op de dierenlijst, maar is nog ‘in opbouw’.",
+      "en": "Species page ‘Vadmacska’ is on the animal list but still ‘under construction’."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site dierenlijst en soortpagina 24-04-2026; Zootierliste (aanvullend, Facebook 2024)"
+    }
+   ],
+   "geboortes": [],
+   "kleur": "",
+   "_bron": "zu",
+   "regio": "csongrad-csanad"
+  },
+  {
+   "naam": "Kittenberger Kálmán Növény- és Vadaspark (Veszprémi Állatkert)",
+   "plaats": "Veszprém",
+   "megye": "Veszprém",
+   "lon": 17.894,
+   "lat": 47.093,
+   "type": "Dierentuin",
+   "lidmaatschap": [
+    "MÁSZ"
+   ],
+   "url": "https://veszpremzoo.hu/",
+   "uren": {
+    "nl": "Elke dag open; 1–24 oktober werkdagen 9.00–15.30, weekend 9.00–16.30; 25 oktober–30 november werkdagen 9.00–15.00, weekend 9.00–16.00; zomer 9.00–18.00 (eigen site, gezien 23-10-2026)",
+    "en": "Open daily; 1–24 October weekdays 9:00–15:30, weekends 9:00–16:30; 25 October–30 November weekdays 9:00–15:00, weekends 9:00–16:00; summer 9:00–18:00 (own site, seen 23-10-2026)"
+   },
+   "about": {
+    "nl": "Dierentuin op 15 km van het Balatonmeer. In mei 2024 opende een nieuw katachtigencomplex voor tijgers, sneeuwluipaarden en lynxen, met een glazen uitkijkplatform bij de tijgers.",
+    "en": "Zoo 15 km from Lake Balaton. A new big-cat complex for tigers, snow leopards and lynx opened in May 2024, with a glass viewing platform at the tigers."
+   },
+   "earlier": {
+    "nl": "Een kater en twee poezen leeuw ‘niet van zuivere ondersoort’ verlieten het park vóór 2022 (Veol 04-2022).",
+    "en": "A male and two female lions ‘not of a pure subspecies’ left before 2022 (Veol 04-2022)."
+   },
+   "katten": [
+    {
+     "soort": "Tijger",
+     "ondersoort": "Amoer",
+     "status": "g",
+     "toelichting": {
+      "nl": "Bordje ‘Siberische tijger’. In 2024 kwam een tijgerpaar naar het nieuwe complex; volgens Zootierliste een kater (geb. 2021) uit Hluboká (2024) en in 2026 een poes uit Kristiansand (Noorwegen).",
+      "en": "Signed ‘Siberian tiger’. A tiger pair moved into the new complex in 2024; according to Zootierliste a male (b. 2021) from Hluboká (2024) and in 2026 a female from Kristiansand (Norway)."
+     },
+     "aantal": {
+      "nl": "onbekend (vermoedelijk 2)",
+      "en": "unknown (probably 2)"
+     },
+     "bron": "Eigen site dierenlijst (bijgewerkt 19-10-2026); eigen nieuws 30-05-2024; Zootierliste (aanvullend)"
+    },
+    {
+     "soort": "Leeuw",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Volgens Veol (2022) twee raszuivere poezen, geb. juli 2020, uit Dvůr Králové; Zootierliste noemt in 2022 dieren uit Amersfoort en Gelsenkirchen. De eigen site noemt geen ondersoort of namen.",
+      "en": "According to Veol (2022) two purebred females, b. July 2020, from Dvůr Králové; Zootierliste lists animals from Amersfoort and Gelsenkirchen in 2022. The zoo’s own site gives no subspecies or names."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site dierenlijst (bijgewerkt 06-10-2026); Veol 04-2022; Zootierliste (aanvullend)"
+    },
+    {
+     "soort": "Sneeuwluipaard",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "In het katachtigencomplex (2024); EEP-soort volgens de eigen site.",
+      "en": "In the big-cat complex (2024); EEP species according to the zoo."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site dierenlijst (bijgewerkt 06-10-2026); eigen nieuws 30-05-2024"
+    },
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "Karpatisch (L. l. carpathicus)",
+     "status": "g",
+     "toelichting": {
+      "nl": "In het katachtigencomplex (2024).",
+      "en": "In the big-cat complex (2024)."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site dierenlijst (bijgewerkt 26-08-2026); eigen nieuws 30-05-2024"
+    }
+   ],
+   "geboortes": [],
+   "kleur": "",
+   "_bron": "zu",
+   "regio": "veszprem"
+  },
+  {
+   "naam": "Xantus János Állatkert",
+   "plaats": "Győr",
+   "megye": "Győr-Moson-Sopron",
+   "lon": 17.67,
+   "lat": 47.694,
+   "type": "Dierentuin",
+   "lidmaatschap": [
+    "MÁSZ"
+   ],
+   "url": "https://zoogyor.com/",
+   "uren": {
+    "nl": "Elke dag open; op 23-10-2026 10.00–21.00 (met avondlichtshow Wild Light Park) (eigen site, gezien 23-10-2026)",
+    "en": "Open daily; on 23-10-2026 10:00–21:00 (with the Wild Light Park evening light show) (own site, seen 23-10-2026)"
+   },
+   "about": {
+    "nl": "Stadsdierentuin van Győr (sinds 1967). Bekend om zijn witte tijgers en witte leeuw; een nieuw servalverblijf werd in 2026 gebouwd en er zouden nieuwe leeuwen komen.",
+    "en": "Győr’s city zoo (since 1967). Known for its white tigers and white lion; a new serval enclosure was being built in 2026 and new lions may arrive."
+   },
+   "earlier": {
+    "nl": "Vroeger ook normaal gekleurde tijgers en regelmatige tijgerkweek; tijgerpoezen uit Győr gingen in 2016 naar Pécs (Zootierliste). Leeuwin Kíra (overleden Pécs 2026) werd hier geboren.",
+    "en": "Formerly also normally coloured tigers and regular tiger breeding; tigresses from Győr went to Pécs in 2016 (Zootierliste). Lioness Kíra (died in Pécs 2026) was born here."
+   },
+   "katten": [
+    {
+     "soort": "Tijger",
+     "ondersoort": "Bengaals, incl. witte tijger",
+     "status": "g",
+     "toelichting": {
+      "nl": "Bordje ‘Bengaalse tijger’; alleen witte tijgers. Volgens Zootierliste een moeder met volwassen dochter.",
+      "en": "Signed ‘Bengal tiger’; white tigers only. According to Zootierliste a mother with her adult daughter."
+     },
+     "aantal": {
+      "nl": "onbekend (volgens Zootierliste 2 poezen)",
+      "en": "unknown (2 females according to Zootierliste)"
+     },
+     "bron": "Eigen site dierenlijst en soortpagina (gezien 23-10-2026); HÉSZ 06-10-2026; Zootierliste (aanvullend, bezoek 10/2026)"
+    },
+    {
+     "soort": "Leeuw",
+     "ondersoort": "Zuidelijk (P. l. melanochaita)",
+     "status": "g",
+     "toelichting": {
+      "nl": "Witte leeuw (de soortpagina noemt de Kruger-leeuw); bij de dierdemonstraties in oktober 2026 genoemd. Zootierliste zag de leeuw in 10/2026 niet. Volgens Kisalföld (april 2026) komen er mogelijk nieuwe leeuwen.",
+      "en": "White lion (the species page refers to the Kruger lion); mentioned at the animal presentations in October 2026. Zootierliste did not see the lion in 10/2026. According to Kisalföld (April 2026) new lions may arrive."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site soortpagina (gezien 23-10-2026); HÉSZ 06-10-2026; Kisalföld 04-2026"
+    },
+    {
+     "soort": "Jaguar",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "In het Zuid-Amerikaanse deel.",
+      "en": "In the South American section."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site dierenlijst (gezien 23-10-2026); Zootierliste (aanvullend, gezien 10/2026)"
+    },
+    {
+     "soort": "Serval",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Nieuw verblijf werd in voorjaar 2026 gebouwd.",
+      "en": "A new enclosure was being built in spring 2026."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site dierenlijst en soortpagina (gezien 23-10-2026); Kisalföld 04-2026; Zootierliste (aanvullend, gezien 09/2025 en 10/2026)"
+    }
+   ],
+   "geboortes": [],
+   "kleur": "witte tijger, witte leeuw",
+   "_bron": "zu",
+   "regio": "gyor-moson-sopron"
+  },
+  {
+   "naam": "Pécsi Állatkert és Akvárium-Terrárium (PécsZoo)",
+   "plaats": "Pécs",
+   "megye": "Baranya",
+   "lon": 18.226,
+   "lat": 46.095,
+   "type": "Dierentuin",
+   "lidmaatschap": [
+    "MÁSZ"
+   ],
+   "url": "https://pecszoo.hu/",
+   "uren": {
+    "nl": "Ma–vr 9.00–17.30, za–zo 9.00–18.00 (eigen site, gezien 23-10-2026)",
+    "en": "Mon–Fri 9:00–17:30, Sat–Sun 9:00–18:00 (own site, seen 23-10-2026)"
+   },
+   "about": {
+    "nl": "Dierentuin op de Mecsek-heuvels boven Pécs, met openbare voederingen bij de leeuwen.",
+    "en": "Zoo on the Mecsek hills above Pécs, with public feedings at the lions."
+   },
+   "earlier": {
+    "nl": "Leeuwin Kíra (22 jaar, geboren in Győr) werd in september 2026 ingeslapen; eerder leefden hier ook de leeuwen Leo en Noni (Bama 09-2026).",
+    "en": "Lioness Kíra (22, born in Győr) was euthanised in September 2026; lions Leo and Noni also lived here earlier (Bama 09-2026)."
+   },
+   "katten": [
+    {
+     "soort": "Leeuw",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Bordje ‘Afrikaanse leeuw’; leeuwenvoedering in het weekend om 12 uur (Bama 05-2026). Na de dood van Kíra blijft o.a. kater Moro.",
+      "en": "Signed ‘African lion’; lion feeding at weekends at 12:00 (Bama 05-2026). After Kíra’s death, male Moro among others remains."
+     },
+     "aantal": {
+      "nl": "onbekend (o.a. Moro)",
+      "en": "unknown (incl. Moro)"
+     },
+     "bron": "Eigen site dierenlijst (bijgewerkt 15-09-2026) en voederingen (04-09-2026); Bama 05-2026 en 09-2026"
+    },
+    {
+     "soort": "Tijger",
+     "ondersoort": "Bengaals, incl. witte tijger",
+     "status": "g",
+     "toelichting": {
+      "nl": "Witte Bengaalse tijgers; volgens Zootierliste twee poezen uit Győr (2016).",
+      "en": "White Bengal tigers; according to Zootierliste two females from Győr (2016)."
+     },
+     "aantal": {
+      "nl": "onbekend (volgens Zootierliste 2 poezen)",
+      "en": "unknown (2 females according to Zootierliste)"
+     },
+     "bron": "Eigen site dierenlijst (bijgewerkt 15-09-2026); Zootierliste (aanvullend, gezien 06/2026)"
+    },
+    {
+     "soort": "Luipaard",
+     "ondersoort": "Perzisch",
+     "status": "g",
+     "toelichting": {
+      "nl": "Bordje ‘Perzische luipaard (Panthera pardus saxicolor)’.",
+      "en": "Signed ‘Persian leopard (Panthera pardus saxicolor)’."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site dierenlijst (bijgewerkt 15-09-2026); Zootierliste (aanvullend, gezien 06/2026)"
+    },
+    {
+     "soort": "Poema",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "",
+      "en": ""
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site dierenlijst (bijgewerkt 15-09-2026); Zootierliste (aanvullend, gezien 06/2026)"
+    },
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "Karpatisch (L. l. carpathicus)",
+     "status": "g",
+     "toelichting": {
+      "nl": "",
+      "en": ""
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site dierenlijst (bijgewerkt 15-09-2026)"
+    },
+    {
+     "soort": "Serval",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "",
+      "en": ""
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site dierenlijst (bijgewerkt 15-09-2026); Zootierliste (aanvullend, gezien 06/2026)"
+    }
+   ],
+   "geboortes": [],
+   "kleur": "witte tijger",
+   "_bron": "zu",
+   "regio": "baranya"
+  },
+  {
+   "naam": "Kecskeméti Vadaskert",
+   "plaats": "Kecskemét",
+   "megye": "Bács-Kiskun",
+   "lon": 19.717,
+   "lat": 46.898,
+   "type": "Dierentuin",
+   "lidmaatschap": [
+    "MÁSZ"
+   ],
+   "url": "https://zookecskemet.hu/",
+   "uren": {
+    "nl": "Elke dag open, 9.00–18.30 (kassa tot 17.45; zomertijden sinds 14 maart) (eigen site, gezien 23-10-2026)",
+    "en": "Open daily, 9:00–18:30 (ticket office until 17:45; summer hours since 14 March) (own site, seen 23-10-2026)"
+   },
+   "about": {
+    "nl": "Kleine stadsdierentuin (ca. 3 ha, sinds 1971) met tijger-, leeuwen- en luipaardverblijven. Sinds maart 2026 woont hier ook de Noord-Chinese luipaard Poldi uit Szeged.",
+    "en": "Small city zoo (c. 3 ha, since 1971) with tiger, lion and leopard enclosures. Since March 2026 it is also home to North Chinese leopard Poldi from Szeged."
+   },
+   "earlier": {
+    "nl": "Euraziatische (Karpatische) lynx en moeraskat staan alleen in Zootierliste met een bezoek uit 2018; geen recente bevestiging.",
+    "en": "Eurasian (Carpathian) lynx and jungle cat appear only in Zootierliste with a 2018 visit; no recent confirmation."
+   },
+   "katten": [
+    {
+     "soort": "Tijger",
+     "ondersoort": "Amoer",
+     "status": "g",
+     "toelichting": {
+      "nl": "Bordje ‘Siberische tijger’; niet in het EEP. Eerste kweek 2021; volgens Zootierliste (09/2025) een moeder met haar twee volwassen jongen.",
+      "en": "Signed ‘Siberian tiger’; not in the EEP. First breeding in 2021; according to Zootierliste (09/2025) a mother with her two adult young."
+     },
+     "aantal": {
+      "nl": "onbekend (volgens Zootierliste 3)",
+      "en": "unknown (3 according to Zootierliste)"
+     },
+     "bron": "Eigen site adoptielijst (adopties 14-10-2026 e.a.); Zootierliste (aanvullend, bezoek 09/2025)"
+    },
+    {
+     "soort": "Luipaard",
+     "ondersoort": "zwarte panter",
+     "status": "g",
+     "toelichting": {
+      "nl": "Zwarte panters; volgens Zootierliste een groep van twee katers. Poldi zou later bij hen worden gezet.",
+      "en": "Black panthers; according to Zootierliste a group of two males. Poldi is to be housed with them later."
+     },
+     "aantal": {
+      "nl": "2 (volgens Baon; Zootierliste: 2 katers)",
+      "en": "2 (according to Baon; Zootierliste: 2 males)"
+     },
+     "bron": "Eigen site adoptielijst (adopties 01-10-2026 e.a.); Baon 04-2026; Zootierliste (aanvullend, 09/2025)"
+    },
+    {
+     "soort": "Luipaard",
+     "ondersoort": "Noord-Chinees (P. p. japonensis)",
+     "status": "g",
+     "toelichting": {
+      "nl": "Handopgefokte kater uit Szeged; voorlopig in een apart buitenverblijf, niet altijd zichtbaar.",
+      "en": "Hand-reared male from Szeged; for now in a separate outdoor enclosure, not always visible."
+     },
+     "aantal": {
+      "nl": "1 (kater Poldi, geb. 05-04-2024)",
+      "en": "1 (male Poldi, b. 05-04-2024)"
+     },
+     "bron": "Baon 04-2026; eigen site adoptielijst (‘Kínai leopárd (Poldi)’ 06-08-2026); Szegedi Vadaspark 08-04-2026"
+    },
+    {
+     "soort": "Leeuw",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "‘Afrikaanse leeuwen’ volgens de adoptielijst.",
+      "en": "‘African lions’ according to the adoption list."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site adoptielijst (adopties 26-09-2026 e.a.)"
+    }
+   ],
+   "geboortes": [],
+   "kleur": "zwarte panter",
+   "_bron": "zu",
+   "regio": "bacs-kiskun"
+  },
+  {
+   "naam": "MaganZOO Állat- és Szabadidőpark",
+   "plaats": "Felsőlajos",
+   "megye": "Bács-Kiskun",
+   "lon": 19.492,
+   "lat": 47.049,
+   "type": "Particuliere houder",
+   "lidmaatschap": [],
+   "url": "https://maganzoo.hu/",
+   "uren": {
+    "nl": "Elke dag open, 9.00–18.00, ook op feestdagen (winter 10.00–16.00) (eigen site, gezien 23-10-2026)",
+    "en": "Open daily, 9:00–18:00, also on public holidays (winter 10:00–16:00) (own site, seen 23-10-2026)"
+   },
+   "about": {
+    "nl": "Particulier dierenpark van Tóth Tibor (vroeger Abonyi Vadaspark) met een grote groep tijgers en leeuwen, die hier geregeld jongen krijgen; jongen worden vaak met de hand grootgebracht en bij voederingen getoond. Geen lid van MÁSZ/EAZA; de tijgers zitten niet in het EEP.",
+    "en": "Private animal park of Tibor Tóth (formerly Abonyi Vadaspark) with a large group of tigers and lions that breed regularly; cubs are often hand-reared and shown at feedings. Not a MÁSZ/EAZA member; the tigers are not in the EEP."
+   },
+   "earlier": {
+    "nl": "Leeuw Mungo, het eerste handopgefokte dier van het park, overleed in 2025 (eigen site 20-10-2025). Witte tijgerwelpen van 2021 en 2023 zijn deels naar andere parken gegaan.",
+    "en": "Lion Mungo, the park’s first hand-reared animal, died in 2025 (own site 20-10-2025). White tiger cubs from 2021 and 2023 partly went to other parks."
+   },
+   "katten": [
+    {
+     "soort": "Tijger",
+     "ondersoort": "Bengaals, incl. witte tijger",
+     "status": "g",
+     "toelichting": {
+      "nl": "Witte Bengaalse tijgers (ook bijna streeploze ‘sneeuwtijgers’); particuliere kweek.",
+      "en": "White Bengal tigers (including almost stripeless ‘snow tigers’); private breeding."
+     },
+     "aantal": {
+      "nl": "onbekend (o.a. Mohan en Shakira, Mohini en Begum)",
+      "en": "unknown (incl. Mohan and Shakira, Mohini and Begum)"
+     },
+     "bron": "Eigen site dierenlijst (gezien 23-10-2026); eigen nieuws 08-03-2025"
+    },
+    {
+     "soort": "Tijger",
+     "ondersoort": "Amoer",
+     "status": "g",
+     "toelichting": {
+      "nl": "Bordje ‘Siberische tijger’; niet in het EEP.",
+      "en": "Signed ‘Siberian tiger’; not in the EEP."
+     },
+     "aantal": {
+      "nl": "onbekend (o.a. Szibir en Jana, Káma en Kumala)",
+      "en": "unknown (incl. Szibir and Jana, Káma and Kumala)"
+     },
+     "bron": "Eigen site dierenlijst (gezien 23-10-2026); Zootierliste (aanvullend)"
+    },
+    {
+     "soort": "Leeuw",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "‘Afrikaanse (bruine) leeuwen’; welpen geboren eind januari 2026.",
+      "en": "‘African (brown) lions’; cubs born late January 2026."
+     },
+     "aantal": {
+      "nl": "onbekend (o.a. Cecil en Kora, Morogoro en Zahara met 3 welpen)",
+      "en": "unknown (incl. Cecil and Kora, Morogoro and Zahara with 3 cubs)"
+     },
+     "bron": "Eigen site dierenlijst en nieuws 06-02-2026"
+    },
+    {
+     "soort": "Leeuw",
+     "ondersoort": "Zuidelijk (P. l. melanochaita)",
+     "status": "g",
+     "toelichting": {
+      "nl": "Witte ‘Kruger-leeuwen’.",
+      "en": "White ‘Kruger lions’."
+     },
+     "aantal": {
+      "nl": "onbekend (o.a. Mombasa en Nala)",
+      "en": "unknown (incl. Mombasa and Nala)"
+     },
+     "bron": "Eigen site dierenlijst (gezien 23-10-2026); eigen nieuws 2024"
+    },
+    {
+     "soort": "Canadese lynx",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Op de dierenlijst, zonder namen of datum.",
+      "en": "On the animal list, without names or date."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site dierenlijst (gezien 23-10-2026)"
+    },
+    {
+     "soort": "Serval",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Niet op de dierenlijst, maar een servaljong werd in april 2026 dagelijks bij de voedering getoond.",
+      "en": "Not on the animal list, but a serval kitten was shown daily at feedings in April 2026."
+     },
+     "aantal": {
+      "nl": "onbekend (minstens 1 jong)",
+      "en": "unknown (at least 1 kitten)"
+     },
+     "bron": "Eigen site nieuws 29-04-2026; Origo 07-2026"
+    }
+   ],
+   "geboortes": [
+    {
+     "soort": "Leeuw",
+     "geboren": "2026-01 (eind januari)",
+     "n": {
+      "nl": "3 welpen",
+      "en": "3 cubs"
+     },
+     "x": {
+      "nl": "Salaam (kater), Arusha en Nuha (poezen); moeder Zahara, vader Morogoro; bij goed weer af en toe in het buitenverblijf",
+      "en": "Salaam (male), Arusha and Nuha (females); mother Zahara, father Morogoro; occasionally in the outdoor enclosure in good weather"
+     },
+     "bron": "Eigen site nieuws 06-02-2026"
+    },
+    {
+     "soort": "Tijger",
+     "geboren": "2026-03",
+     "n": {
+      "nl": "1 welp (Gracie)",
+      "en": "1 cub (Gracie)"
+     },
+     "x": {
+      "nl": "Poes Gracie, met de fles gevoed door eigenaar Tóth Tibor; vermoedelijk het ‘kleine tijgertje’ dat vanaf april 2026 bij de voederingen te zien was",
+      "en": "Female Gracie, bottle-fed by owner Tibor Tóth; probably the ‘little tiger’ shown at feedings from April 2026"
+     },
+     "bron": "Origo 07-2026; eigen site nieuws 29-04-2026"
+    },
+    {
+     "soort": "Tijger",
+     "geboren": "onbekend (vóór maart 2025)",
+     "n": {
+      "nl": "4 witte welpen",
+      "en": "4 white cubs"
+     },
+     "x": {
+      "nl": "Limma, Kuala, Ashar en Daisi, witte Bengaalse tijgers, vanaf 01-03-2025 aan het publiek getoond; geboortedatum en verblijf nu onbekend",
+      "en": "Limma, Kuala, Ashar and Daisi, white Bengal tigers, shown to the public from 01-03-2025; birth date and current whereabouts unknown"
+     },
+     "bron": "Eigen site nieuws 25-02-2025 en 08-03-2025"
+    },
+    {
+     "soort": "Serval",
+     "geboren": "2026 (datum onbekend)",
+     "n": {
+      "nl": "minstens 1 jong",
+      "en": "at least 1 kitten"
+     },
+     "x": {
+      "nl": "Vanaf april 2026 dagelijks om 11 en 15 uur bij de voedering te zien",
+      "en": "Shown daily at 11:00 and 15:00 feedings from April 2026"
+     },
+     "bron": "Eigen site nieuws 29-04-2026"
+    }
+   ],
+   "kleur": "witte tijger, witte leeuw",
+   "_bron": "zu",
+   "regio": "bacs-kiskun"
+  },
+  {
+   "naam": "Állatkert, Állatsimogató és Állatotthon a Csácsi-hegyen",
+   "plaats": "Zalaegerszeg",
+   "megye": "Zala",
+   "lon": 16.879,
+   "lat": 46.841,
+   "type": "Particuliere houder",
+   "lidmaatschap": [],
+   "url": "https://www.facebook.com/p/%C3%81llatkert-%C3%81llatsimogat%C3%B3-%C3%A9s-%C3%81llatotthon-Zalaegerszegen-A-Cs%C3%A1csi-Hegyen-100063571510646/",
+   "uren": {
+    "nl": "Geen vaste openingstijden gevonden; zie de Facebookpagina van het park (gezien 23-10-2026)",
+    "en": "No fixed opening hours found; see the park’s Facebook page (seen 23-10-2026)"
+   },
+   "about": {
+    "nl": "Particulier kinderboerderij-dierenpark en opvang (sinds 2014) van Kovács Zoltán en Hemera Mónika, met ca. 140 dieren, ook afgedankte circusdieren. Na jarenlange procedures over de tijgers kreeg het in december 2024 een dierentuinvergunning en een vergroot tijgerverblijf.",
+    "en": "Private petting zoo and animal home (since 2014) run by Zoltán Kovács and Mónika Hemera, with about 140 animals, including retired circus animals. After years of disputes over the tigers it received a zoo licence in December 2024 and an enlarged tiger enclosure."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Tijger",
+     "ondersoort": "Bengaals, incl. witte tijger",
+     "status": "g",
+     "toelichting": {
+      "nl": "Witte tijgers (ook bijna streeploos); ouders in 2018 uit MaganZOO Felsőlajos, twee jongen geboren in juli 2022 en met de fles grootgebracht. In maart 2026 de ‘sterren van het park’.",
+      "en": "White tigers (also almost stripeless); parents from MaganZOO Felsőlajos in 2018, two cubs born July 2022 and bottle-raised. In March 2026 the ‘stars of the park’."
+     },
+     "aantal": {
+      "nl": "4 (ouderpaar en 2 jongen van 2022)",
+      "en": "4 (parent pair and 2 young from 2022)"
+     },
+     "bron": "Zaol 03-2026 en 01-2025; ZalaMédia 06-02-2025; Zootierliste (aanvullend)"
+    }
+   ],
+   "geboortes": [],
+   "kleur": "witte tijger",
+   "_bron": "zu",
+   "regio": "zala"
+  },
+  {
+   "naam": "Mecske Zoo (voorheen RepZOOtic Animal Center)",
+   "plaats": "Erdősmecske",
+   "megye": "Baranya",
+   "lon": 18.51,
+   "lat": 46.178,
+   "type": "Particuliere houder",
+   "lidmaatschap": [
+    "Magyar Magánállatkertek és Akváriumok Egyesülete"
+   ],
+   "url": "https://www.mecskezoo.hu/",
+   "uren": {
+    "nl": "Seizoensgebonden (winterpauze ca. november–februari); actuele dagen en tijden op de eigen site/Facebook (eigen site, gezien 23-10-2026)",
+    "en": "Seasonal (winter break c. November–February); current days and times on its own site/Facebook (own site, seen 23-10-2026)"
+   },
+   "about": {
+    "nl": "Kleine particuliere dierentuin en opvang voor afgestane exotische dieren, opgericht door Sharon Oplinus (uit België) en Baracs András; sinds 2024 onder de naam Mecske Zoo. Organiseerde in 2025 een ‘servalweekend’.",
+    "en": "Small private zoo and rescue for surrendered exotic animals, founded by Sharon Oplinus (from Belgium) and András Baracs; named Mecske Zoo since 2024. Held a ‘serval weekend’ in 2025."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Serval",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Opvang; dieren kunnen wisselen.",
+      "en": "Rescue centre; animals may change."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site ‘Lakóink’ (gezien 23-10-2026); eigen nieuws 14-03-2025; Zootierliste (aanvullend, gezien 06/2026)"
+    },
+    {
+     "soort": "Rode lynx",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Opvang; dieren kunnen wisselen.",
+      "en": "Rescue centre; animals may change."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site ‘Lakóink’ (gezien 23-10-2026); Zootierliste (aanvullend, gezien 06/2026)"
+    },
+    {
+     "soort": "Moeraskat",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Opvang; dieren kunnen wisselen.",
+      "en": "Rescue centre; animals may change."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site ‘Lakóink’ (gezien 23-10-2026); Zootierliste (aanvullend, gezien 06/2026)"
+    }
+   ],
+   "geboortes": [],
+   "kleur": "",
+   "_bron": "zu",
+   "regio": "baranya"
+  },
+  {
+   "naam": "MaganZOO Állat- és Szabadidőpark",
+   "plaats": "Felsőlajos",
+   "megye": "Bács-Kiskun",
+   "lon": 19.492,
+   "lat": 47.049,
+   "type": "Particuliere houder",
+   "lidmaatschap": [],
+   "url": "https://maganzoo.hu/",
+   "uren": {
+    "nl": "Dagelijks 9–18 uur, ook op feestdagen; rond de jaarwisseling 10–16 uur (eigen site, gezien 23-10-2026)",
+    "en": "Daily 9am–6pm, including public holidays; around New Year 10am–4pm (own website, seen 23-10-2026)"
+   },
+   "about": {
+    "nl": "Particuliere dierentuin (begonnen in Abony, sinds 2015 in Felsőlajos) met veel grote katten; vrij toegankelijk voor publiek met kaartje. Kweekt regelmatig leeuwen en (witte) tijgers en toont jongen bij ‘showvoederingen’.",
+    "en": "Privately owned zoo (started in Abony, in Felsőlajos since 2015) with many big cats; open to the public with a ticket. Regularly breeds lions and (white) tigers and shows cubs at ‘feeding shows’."
+   },
+   "earlier": {
+    "nl": "Leeuw Mungo (kater, 2007–2025) overleden 12-10-2025 (eigen site 20-10-2025). Witte leeuw Malaika geboren voorjaar 2024 (eigen site 15-04-2024). In de begintijd in Abony werden tijgers door de overheid in beslag genomen wegens ontbrekende vergunning (pinkdex.hu 02-09-2021).",
+    "en": "Lion Mungo (male, 2007–2025) died 12-10-2025 (own website 20-10-2025). White lion Malaika born spring 2024 (own website 15-04-2024). In the early Abony years tigers were confiscated by the authorities for lack of a permit (pinkdex.hu 02-09-2021)."
+   },
+   "katten": [
+    {
+     "soort": "Leeuw",
+     "ondersoort": "onbekend, incl. witte leeuw (‘fehér krugeri’)",
+     "status": "g",
+     "toelichting": {
+      "nl": "Afrikaanse leeuwen, bruin en wit; ouderpaar Morogoro en Zahara kreeg eind januari 2026 drie welpen. Dierenlijst noemt ook Zinua, Cecil en Kora.",
+      "en": "African lions, tawny and white; breeding pair Morogoro and Zahara had three cubs in late January 2026. Animal list also names Zinua, Cecil and Kora."
+     },
+     "aantal": {
+      "nl": "onbekend (minstens 6 incl. 3 welpen van 2026)",
+      "en": "unknown (at least 6 incl. 3 cubs of 2026)"
+     },
+     "bron": "Eigen site Hírek 06-02-2026 en dierenlijst (gezien 23-10-2026); hirado.hu 18-02-2026"
+    },
+    {
+     "soort": "Tijger",
+     "ondersoort": "Amoer",
+     "status": "g",
+     "toelichting": {
+      "nl": "‘Szibériai tigris’ volgens het park: Szibir, Jana, Káma en Kumala op de dierenlijst. Jana kreeg in 2023 een welp (Nadia). In april 2026 werd ‘de kleine tijger’ dagelijks getoond.",
+      "en": "‘Siberian tiger’ according to the park: Szibir, Jana, Káma and Kumala on the animal list. Jana had a cub (Nadia) in 2023. In April 2026 ‘the little tiger’ was shown daily."
+     },
+     "aantal": {
+      "nl": "onbekend (dierenlijst: 4)",
+      "en": "unknown (animal list: 4)"
+     },
+     "bron": "Eigen site dierenlijst (gezien 23-10-2026); eigen site Hírek 05-08-2023 en 29-04-2026"
+    },
+    {
+     "soort": "Tijger",
+     "ondersoort": "Bengaals, incl. witte tijger",
+     "status": "g",
+     "toelichting": {
+      "nl": "‘Fehér bengáli tigris’ (witte Bengaalse tijger) volgens het park: Mohan, Shakira, Mohini, Begum op de lijst. Vier witte welpen (Limma, Kuala, Ashar, Daisi) werden vanaf 1 maart 2025 getoond; geboortedatum niet vermeld. Afkomst/zuiverheid van de ondersoort niet onafhankelijk bevestigd.",
+      "en": "‘White Bengal tiger’ according to the park: Mohan, Shakira, Mohini, Begum on the list. Four white cubs (Limma, Kuala, Ashar, Daisi) were shown from 1 March 2025; birth date not given. Origin/purity of the subspecies not independently confirmed."
+     },
+     "aantal": {
+      "nl": "onbekend (minstens 4 volwassen + 4 jongen van eind 2024/begin 2025)",
+      "en": "unknown (at least 4 adults + 4 young born late 2024/early 2025)"
+     },
+     "bron": "Eigen site dierenlijst (gezien 23-10-2026); eigen site Hírek 25-02-2025 en 08-03-2025"
+    },
+    {
+     "soort": "Serval",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Een servalwelp werd in april 2026 dagelijks bij de voederingen getoond (11 en 15 uur). Niet op de (verouderde) dierenlijst.",
+      "en": "A serval kitten was shown daily at feeding times (11am and 3pm) in April 2026. Not on the (outdated) animal list."
+     },
+     "aantal": {
+      "nl": "onbekend (minstens 1 jong)",
+      "en": "unknown (at least 1 kitten)"
+     },
+     "bron": "Eigen site Hírek 29-04-2026"
+    },
+    {
+     "soort": "Canadese lynx",
+     "ondersoort": "—",
+     "status": "w",
+     "toelichting": {
+      "nl": "Staat op de dierenlijst van de eigen site, maar die lijst is deels verouderd (noemt nog de in 2025 overleden leeuw Mungo).",
+      "en": "Listed on the park's animal list, but that list is partly outdated (still names lion Mungo, who died in 2025)."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site dierenlijst (gezien 23-10-2026); szallas.hu bezoekersinfo (ongedateerd)",
+     "twijfel": {
+      "nl": "Alleen op een verouderde dierenlijst; geen recente post of nieuws over de lynx gevonden.",
+      "en": "Only on an outdated animal list; no recent post or news about the lynx found."
+     }
+    }
+   ],
+   "geboortes": [
+    {
+     "soort": "Leeuw",
+     "geboren": "2026-01 (eind januari)",
+     "n": {
+      "nl": "3 welpen",
+      "en": "3 cubs"
+     },
+     "x": {
+      "nl": "Salaam (mannetje), Arusha en Nuha (vrouwtjes); moeder Zahara, vader Morogoro; vanaf februari 2026 af en toe buiten te zien",
+      "en": "Salaam (male), Arusha and Nuha (females); mother Zahara, father Morogoro; occasionally visible outdoors from February 2026"
+     },
+     "bron": "Eigen site Hírek 06-02-2026; hirado.hu 18-02-2026"
+    }
+   ],
+   "kleur": "witte tijger / witte leeuw",
+   "_bron": "op",
+   "regio": "bacs-kiskun"
+  },
+  {
+   "naam": "Veresegyházi Medveotthon",
+   "plaats": "Veresegyház",
+   "megye": "Pest",
+   "lon": 19.255,
+   "lat": 47.631,
+   "type": "Opvang of sanctuary",
+   "lidmaatschap": [],
+   "url": "https://medveotthon.hu/",
+   "uren": {
+    "nl": "Dagelijks; apr–sep 9–18, okt 9–17, nov–jan 9–16, feb–mrt 9–17 uur; gesloten 25-12 en 1-1 (eigen site, gezien 23-10-2026)",
+    "en": "Daily; Apr–Sep 9am–6pm, Oct 9am–5pm, Nov–Jan 9am–4pm, Feb–Mar 9am–5pm; closed 25 Dec and 1 Jan (own website, seen 23-10-2026)"
+   },
+   "about": {
+    "nl": "Opvangpark (‘elsősorban menhely’) voor beren, wolven en grote katten uit circussen en slechte particuliere houderij; vrij toegankelijk voor publiek met kaartje. De leeuwen kwamen vanaf 2019 uit circussen en een particuliere houder in Érd; tijger Pablo is het in 2025 in Tiszafüred in beslag genomen welpje. Opvang; dieren kunnen wisselen.",
+    "en": "Sanctuary park (‘primarily a shelter’) for bears, wolves and big cats from circuses and poor private keeping; open to the public with a ticket. The lions arrived from 2019 from circuses and a private keeper in Érd; tiger Pablo is the cub seized in Tiszafüred in 2025. Sanctuary; animals may change."
+   },
+   "earlier": {
+    "nl": "Leeuwin Nara (zus van Nolen, kwam in 2019 als welp) is overleden (eigen site, jaartal niet vermeld).",
+    "en": "Lioness Nara (Nolen's sister, arrived as a cub in 2019) has died (own website, year not given)."
+   },
+   "katten": [
+    {
+     "soort": "Leeuw",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Negen geredde leeuwen in drie verblijven: Midra en Bóbita (handopgefokt), Star, Sena, D’Artagnan, Mira, Many, Nolen (met aangeboren afwijking aan de achterpoten) en Leonardo, die niet voor bezoekers zichtbaar is.",
+      "en": "Nine rescued lions in three enclosures: Midra and Bóbita (hand-reared), Star, Sena, D’Artagnan, Mira, Many, Nolen (congenital hind-leg defect) and Leonardo, who is not visible to visitors."
+     },
+     "aantal": {
+      "nl": "9 (8 zichtbaar)",
+      "en": "9 (8 visible)"
+     },
+     "bron": "Eigen site soortpagina Oroszlánok (gezien 23-10-2026)"
+    },
+    {
+     "soort": "Tijger",
+     "ondersoort": "Amoer",
+     "status": "g",
+     "toelichting": {
+      "nl": "Pablo, jonge kater, in november 2025 gevonden bij een politie-inval in Tiszafüred, tijdelijk in de Fővárosi Állatkert, sinds 19-03-2026 hier (zichtbaar vanaf 20-03-2026). DNA-onderzoek wees op Amoertijger (P. t. altaica). Tijdens gewenning soms na 15.30 uur binnen.",
+      "en": "Pablo, young male, found during a police raid in Tiszafüred in November 2025, temporarily at Budapest Zoo, here since 19-03-2026 (on view from 20-03-2026). Genetic testing showed Amur tiger (P. t. altaica). During acclimatisation sometimes indoors after 3.30pm."
+     },
+     "aantal": {
+      "nl": "1 (kater Pablo)",
+      "en": "1 (male Pablo)"
+     },
+     "bron": "Eigen site 16-03-2026 en 22-09-2026; HVG 03-12-2025; Index 08-12-2025"
+    },
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Lynxen (Lynx lynx) in een eigen verblijf; geen namen of aantal op de site.",
+      "en": "Lynxes (Lynx lynx) in their own enclosure; no names or number on the website."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site soortpagina Hiúzok (gezien 23-10-2026)"
+    }
+   ],
+   "geboortes": [],
+   "kleur": "",
+   "_bron": "op",
+   "regio": "pest"
+  },
+  {
+   "naam": "Richter Safari Park",
+   "plaats": "Nagykőrös",
+   "megye": "Pest",
+   "lon": 19.725,
+   "lat": 47.056,
+   "type": "Particuliere houder",
+   "lidmaatschap": [],
+   "url": "https://safaripark.hu/",
+   "uren": {
+    "nl": "Seizoen 2026 tot 1 november; vanaf september vr–zo 10–17 uur (eigen site, gezien 23-10-2026)",
+    "en": "2026 season until 1 November; from September Fri–Sun 10am–5pm (own website, seen 23-10-2026)"
+   },
+   "about": {
+    "nl": "Particulier safaripark van de circusfamilie Richter (Magyar Nemzeti Cirkusz), vrij toegankelijk met kaartje; autosafari en ‘roofdiersafari’ met traliewagens tussen leeuwen en tijgers. De eigen wilde circusdieren van het Magyar Nemzeti Cirkusz wonen hier sinds 2022. Het park heeft ook circusvoorstellingen en olifantentraining.",
+    "en": "Private safari park of the Richter circus family (Magyar Nemzeti Cirkusz), open to the public with a ticket; drive-through safari and a ‘predator safari’ in caged vehicles among lions and tigers. The Magyar Nemzeti Cirkusz's own wild circus animals have lived here since 2022. The park also has circus shows and elephant training."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Leeuw",
+     "ondersoort": "onbekend, incl. witte leeuw",
+     "status": "g",
+     "toelichting": {
+      "nl": "Leeuwen in het roofdierverblijf; volgens een toeristische site ook witte leeuwen.",
+      "en": "Lions in the predator enclosure; according to a tourism site also white lions."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site Állataink (gezien 23-10-2026); gotravel.hu (ongedateerd); hiros.hu ca. 2023 (6 tijgers en 2 leeuwen bij aankomst)"
+    },
+    {
+     "soort": "Tijger",
+     "ondersoort": "onbekend, incl. witte tijger",
+     "status": "g",
+     "toelichting": {
+      "nl": "Tijgers, waaronder witte tijgers, in het roofdierverblijf; bij de opening van het verblijf (ca. 2023) zes tijgers. Ondersoort niet vermeld.",
+      "en": "Tigers, including white tigers, in the predator enclosure; six tigers when the enclosure opened (c. 2023). Subspecies not stated."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site Állataink (gezien 23-10-2026); pénzcentrum.hu 22-02-2023; hiros.hu ca. 2023"
+    }
+   ],
+   "geboortes": [],
+   "kleur": "witte tijger / witte leeuw",
+   "_bron": "op",
+   "regio": "pest"
+  },
+  {
+   "naam": "Gyöngyösi Állatkert",
+   "plaats": "Gyöngyös",
+   "megye": "Heves",
+   "lon": 19.912,
+   "lat": 47.791,
+   "type": "Particuliere houder",
+   "lidmaatschap": [
+    "Magyar Magánállatkertek és Akváriumok Egyesülete"
+   ],
+   "url": "https://gyongyos-zoo.hu/",
+   "uren": {
+    "nl": "Dagelijks; jan–feb 9–16.30, mrt 9–17.30, apr–okt 9–18, nov–dec 9–16.30 uur (eigen site, gezien 23-10-2026)",
+    "en": "Daily; Jan–Feb 9am–4.30pm, Mar 9am–5.30pm, Apr–Oct 9am–6pm, Nov–Dec 9am–4.30pm (own website, seen 23-10-2026)"
+   },
+   "about": {
+    "nl": "Particuliere dierentuin (Gyöngyösi Állatkert Kft.) van bijna 2 hectare met bijna 100 soorten, vrij toegankelijk met kaartje; lid van de vereniging van Hongaarse privédierentuinen. Neemt ook geredde dieren op (o.a. twee servals).",
+    "en": "Privately run zoo (Gyöngyösi Állatkert Kft.) of almost 2 hectares with nearly 100 species, open to the public with a ticket; member of the Hungarian association of private zoos. Also takes in rescued animals (incl. two servals)."
+   },
+   "earlier": {
+    "nl": "Leeuw Zimba, ‘stichtende bewoner’, overleden in 2026 (eigen site 07-08-2026).",
+    "en": "Lion Zimba, ‘founding resident’, died in 2026 (own website 07-08-2026)."
+   },
+   "katten": [
+    {
+     "soort": "Leeuw",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Leeuwinnen Elza en Linua (voederdemonstratie 09-08-2026).",
+      "en": "Lionesses Elza and Linua (feeding demonstration 09-08-2026)."
+     },
+     "aantal": {
+      "nl": "2 (Elza en Linua)",
+      "en": "2 (Elza and Linua)"
+     },
+     "bron": "Eigen site 07-08-2026; dierenlijst (gezien 23-10-2026)"
+    },
+    {
+     "soort": "Tijger",
+     "ondersoort": "Amoer",
+     "status": "g",
+     "toelichting": {
+      "nl": "‘Szibériai tigris’: Léna, Kátya en Igor.",
+      "en": "‘Siberian tiger’: Léna, Kátya and Igor."
+     },
+     "aantal": {
+      "nl": "3 (Léna, Kátya, Igor)",
+      "en": "3 (Léna, Kátya, Igor)"
+     },
+     "bron": "Eigen site 26-07-2025; dierenlijst (gezien 23-10-2026)"
+    },
+    {
+     "soort": "Luipaard",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Luipaarden met voederdemonstraties (2025 en 09-08-2026).",
+      "en": "Leopards with feeding demonstrations (2025 and 09-08-2026)."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site 26-07-2025 en 07-08-2026; dierenlijst (gezien 23-10-2026)"
+    },
+    {
+     "soort": "Poema",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Poema’s met voederdemonstraties in juli 2025.",
+      "en": "Pumas with feeding demonstrations in July 2025."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site 26-07-2025; dierenlijst (gezien 23-10-2026)"
+    },
+    {
+     "soort": "Caracal",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Poes Gigi, geboren 12-01-2023, in 2023 uit Duitsland gekomen, handopgefokt.",
+      "en": "Female Gigi, born 12-01-2023, arrived from Germany in 2023, hand-reared."
+     },
+     "aantal": {
+      "nl": "minstens 1 (poes Gigi)",
+      "en": "at least 1 (female Gigi)"
+     },
+     "bron": "Eigen site 25-08-2023 en 26-07-2025; dierenlijst (gezien 23-10-2026)"
+    },
+    {
+     "soort": "Serval",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Twee geredde servals, Addis en Abeba.",
+      "en": "Two rescued servals, Addis and Abeba."
+     },
+     "aantal": {
+      "nl": "2 (Addis en Abeba)",
+      "en": "2 (Addis and Abeba)"
+     },
+     "bron": "Eigen site 07-08-2026"
+    },
+    {
+     "soort": "Moeraskat",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Staat als ‘mocsári hiúz’ (= moeraskat, Felis chaus) op de dierenlijst; soortpagina zonder details.",
+      "en": "Listed as ‘mocsári hiúz’ (= jungle cat, Felis chaus) on the animal list; species page without details."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site dierenlijst (gezien 23-10-2026)"
+    }
+   ],
+   "geboortes": [],
+   "kleur": "",
+   "_bron": "op",
+   "regio": "heves"
+  },
+  {
+   "naam": "Mecske Zoo (voorheen RepZootic)",
+   "plaats": "Erdősmecske",
+   "megye": "Baranya",
+   "lon": 18.51,
+   "lat": 46.178,
+   "type": "Opvang of sanctuary",
+   "lidmaatschap": [
+    "Magyar Magánállatkertek és Akváriumok Egyesülete"
+   ],
+   "url": "https://www.mecskezoo.hu/",
+   "uren": {
+    "nl": "Za en zo 10–17 uur; winterpauze van november tot het voorjaar (eigen site, gezien 23-10-2026; nieuws 10-11-2024 en 16-02-2025)",
+    "en": "Sat and Sun 10am–5pm; winter break from November until spring (own website, seen 23-10-2026; news 10-11-2024 and 16-02-2025)"
+   },
+   "about": {
+    "nl": "Kleine particuliere dierentuin (sinds 2018, vergund) van een Belgische oprichtster, die vooral werkt als blijvende opvang voor afgedankte exotische dieren; vrij toegankelijk met kaartje in het seizoen. Opvang; dieren kunnen wisselen. Er leeft ook een Savannah (huiskat-hybride; telt niet mee).",
+    "en": "Small privately owned zoo (since 2018, licensed) founded by a Belgian owner, working mainly as a permanent refuge for unwanted exotic animals; open to the public with a ticket in season. Sanctuary; animals may change. A Savannah (domestic-cat hybrid; not counted) also lives here."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Serval",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Serval met eigen ‘servalweekend’ en voederdemonstratie (15–16 maart 2025).",
+      "en": "Serval with its own ‘serval weekend’ and feeding demonstration (15–16 March 2025)."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site 14-03-2025; Lakóink (gezien 23-10-2026)"
+    },
+    {
+     "soort": "Moeraskat",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "‘Mocsári macska’ (moeraskat) met voederdemonstratie in maart 2025.",
+      "en": "‘Mocsári macska’ (jungle cat) with feeding demonstration in March 2025."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site 14-03-2025; Lakóink (gezien 23-10-2026)"
+    },
+    {
+     "soort": "Rode lynx",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "‘Vörös hiúz’ op de bewonerslijst van de eigen site.",
+      "en": "‘Vörös hiúz’ (bobcat) on the residents list of the own website."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site Lakóink (gezien 23-10-2026)"
+    }
+   ],
+   "geboortes": [],
+   "kleur": "",
+   "_bron": "op",
+   "regio": "baranya"
+  },
+  {
+   "naam": "Szentendrei Kisállatkert",
+   "plaats": "Szentendre",
+   "megye": "Pest",
+   "lon": 19.056,
+   "lat": 47.69,
+   "type": "Opvang of sanctuary",
+   "lidmaatschap": [
+    "Magyar Magánállatkertek és Akváriumok Egyesülete"
+   ],
+   "url": "https://www.szentendrezoo.hu/",
+   "uren": {
+    "nl": "Nov–mrt za–zo 10–16; apr–okt di, wo, vr–zo 10–17 (mei–aug tot 18) uur (eigen site, gezien 23-10-2026)",
+    "en": "Nov–Mar Sat–Sun 10am–4pm; Apr–Oct Tue, Wed, Fri–Sun 10am–5pm (May–Aug until 6pm) (own website, seen 23-10-2026)"
+   },
+   "about": {
+    "nl": "Kleine particuliere dierentuin (sinds 2020) met een opvangcentrum voor gewonde inheemse wilde dieren (stichting); vrij toegankelijk met kaartje. Opvang; dieren wisselen, opgevangen inheemse dieren worden zo mogelijk vrijgelaten.",
+    "en": "Small private zoo (since 2020) with a rescue centre for injured native wildlife (foundation); open to the public with a ticket. Sanctuary; animals change, rescued native animals are released where possible."
+   },
+   "earlier": {
+    "nl": "Wilde kat Julcsi (opgevangen kitten uit de buurt van Komló, kwam 2024) werd in 2025 vrijgelaten in het Duna-Dráva Nationaal Park (eigen site, jaaroverzichten 2024 en 2025).",
+    "en": "Wildcat Julcsi (rescued kitten from near Komló, arrived 2024) was released in Duna-Dráva National Park in 2025 (own website, annual reviews 2024 and 2025)."
+   },
+   "katten": [
+    {
+     "soort": "Rode lynx",
+     "ondersoort": "—",
+     "status": "w",
+     "toelichting": {
+      "nl": "‘Vörös hiúz’ heeft een soortpagina en staat op de dierenlijst.",
+      "en": "‘Vörös hiúz’ (bobcat) has a species page and is on the animal list."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site soortpagina en Állataink (gezien 23-10-2026)",
+     "twijfel": {
+      "nl": "Alleen ongedateerde soortpagina; de dierenlijst is niet bijgewerkt (noemt nog de wilde kat die in 2025 werd vrijgelaten).",
+      "en": "Only an undated species page; the animal list is not up to date (still shows the wildcat released in 2025)."
+     }
+    },
+    {
+     "soort": "Europese wilde kat",
+     "ondersoort": "onbekend",
+     "status": "w",
+     "toelichting": {
+      "nl": "‘Vadmacska’ staat op de dierenlijst en heeft een soortpagina; opvangdieren worden vrijgelaten.",
+      "en": "‘Vadmacska’ (wildcat) is on the animal list and has a species page; rescued animals are released."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site soortpagina en Állataink (gezien 23-10-2026); jaaroverzicht 2025",
+     "twijfel": {
+      "nl": "De bekende wilde kat (Julcsi) is in 2025 vrijgelaten; onduidelijk of er nog een wilde kat te zien is.",
+      "en": "The known wildcat (Julcsi) was released in 2025; unclear whether a wildcat is still on view."
+     }
+    }
+   ],
+   "geboortes": [],
+   "kleur": "",
+   "_bron": "op",
+   "regio": "pest"
+  }
+ ],
+ "zonder_katten": [
+  {
+   "naam": "Tropicarium",
+   "plaats": "Budapest (XXII. kerület)",
+   "reden": {
+    "nl": "Aquarium en tropisch huis; geen katachtigen op de site (eigen site, gezien 23-10-2026)",
+    "en": "Aquarium and tropical house; no cats on the website (own website, seen 23-10-2026)"
+   },
+   "_bron": "bu"
+  },
+  {
+   "naam": "Margitszigeti Kisállatkert",
+   "plaats": "Budapest (Margitsziget)",
+   "reden": {
+    "nl": "Kleine dependance van de Fővárosi Állatkert; geen katachtigen bekend (eigen site Fővárosi Állatkert, gezien 23-10-2026)",
+    "en": "Small branch of Budapest Zoo; no cats known (Budapest Zoo website, seen 23-10-2026)"
+   },
+   "_bron": "bu"
+  },
+  {
+   "naam": "Mókaliget Mókus- és Madárpark",
+   "plaats": "Budapest (IV. kerület, Újpest)",
+   "reden": {
+    "nl": "Eekhoorn- en vogelpark; geen katachtigen vermeld (programturizmus.hu, gezien 23-10-2026)",
+    "en": "Squirrel and bird park; no cats listed (programturizmus.hu, seen 23-10-2026)"
+   },
+   "_bron": "bu"
+  },
+  {
+   "naam": "Egzotikus Állatpark Előszállás",
+   "plaats": "Előszállás (Fejér)",
+   "reden": {
+    "nl": "Geen katachtigen op de dierenlijst van 43 soorten (eigen site, gezien 23-10-2026)",
+    "en": "No cats on the list of 43 species (own website, seen 23-10-2026)"
+   },
+   "_bron": "bu"
+  },
+  {
+   "naam": "Pákozdi Pagony (Pákozd-Sukorói Arborétum és Vadaspark)",
+   "plaats": "Pákozd (Fejér)",
+   "reden": {
+    "nl": "Arboretum met wildpark; geen katachtigen vermeld (programturizmus.hu, gezien 23-10-2026)",
+    "en": "Arboretum with game park; no cats listed (programturizmus.hu, seen 23-10-2026)"
+   },
+   "_bron": "bu"
+  },
+  {
+   "naam": "Soponyai Ökoturisztikai Látogatóközpont",
+   "plaats": "Soponya (Fejér)",
+   "reden": {
+    "nl": "Bezoekerscentrum met grof wild en vogels; geen katachtigen vermeld (programturizmus.hu, gezien 23-10-2026)",
+    "en": "Visitor centre with game animals and birds; no cats listed (programturizmus.hu, seen 23-10-2026)"
+   },
+   "_bron": "bu"
+  },
+  {
+   "naam": "Dinnyési Parasztudvar",
+   "plaats": "Dinnyés (Fejér)",
+   "reden": {
+    "nl": "Boerderij met inheemse huisdierrassen; geen katachtigen (programturizmus.hu, gezien 23-10-2026)",
+    "en": "Farm with native livestock breeds; no cats (programturizmus.hu, seen 23-10-2026)"
+   },
+   "_bron": "bu"
+  },
+  {
+   "naam": "Vácdukai Vadaspark",
+   "plaats": "Vácduka (Pest)",
+   "reden": {
+    "nl": "Klein wildpark in opbouw met bosdieren; geen katachtigen vermeld (programturizmus.hu, gezien 23-10-2026)",
+    "en": "Small game park under development with forest animals; no cats listed (programturizmus.hu, seen 23-10-2026)"
+   },
+   "_bron": "bu"
+  },
+  {
+   "naam": "Szigethalmi Családi Vadaspark",
+   "plaats": "Szigethalom (Pest)",
+   "reden": {
+    "nl": "Familiewildpark met kinderboerderij; geen katachtigen vermeld (programturizmus.hu, gezien 23-10-2026)",
+    "en": "Family game park with petting zoo; no cats listed (programturizmus.hu, seen 23-10-2026)"
+   },
+   "_bron": "bu"
+  },
+  {
+   "naam": "Barka Állatsimogató",
+   "plaats": "Dunakeszi (Pest)",
+   "reden": {
+    "nl": "Kinderboerderij; geen katachtigen (programturizmus.hu, gezien 23-10-2026)",
+    "en": "Petting farm; no cats (programturizmus.hu, seen 23-10-2026)"
+   },
+   "_bron": "bu"
+  },
+  {
+   "naam": "Bíróréti Állatsimogató",
+   "plaats": "Esztergom (Komárom-Esztergom)",
+   "reden": {
+    "nl": "Kinderboerderij; geen katachtigen vermeld (programturizmus.hu, gezien 23-10-2026)",
+    "en": "Petting farm; no cats listed (programturizmus.hu, seen 23-10-2026)"
+   },
+   "_bron": "bu"
+  },
+  {
+   "naam": "Noliland Állatsimogató",
+   "plaats": "Kocs (Komárom-Esztergom)",
+   "reden": {
+    "nl": "Kinderboerderij met ‘bijzondere dieren’, alleen op afspraak; geen katachtigen gevonden (programturizmus.hu, gezien 23-10-2026)",
+    "en": "Petting farm with ‘special animals’, by appointment only; no cats found (programturizmus.hu, seen 23-10-2026)"
+   },
+   "_bron": "bu"
+  },
+  {
+   "naam": "Fővárosi Nagycirkusz",
+   "plaats": "Budapest (Városliget)",
+   "reden": {
+    "nl": "Vast circus zonder eigen dierenbestand; geen katachtigen in 2025–2026 gevonden. Vanaf 01-01-2027 verbiedt een regeringsbesluit wilde katten in het circus (vegconomist 14-08-2026)",
+    "en": "Permanent circus without its own animal collection; no cats found in 2025–2026. A government decree bans wild cats in circuses from 01-01-2027 (vegconomist 14-08-2026)"
+   },
+   "_bron": "bu"
+  },
+  {
+   "naam": "Magyar Nemzeti Cirkusz (familie Richter)",
+   "plaats": "–",
+   "reden": {
+    "nl": "Rondreizend circus; heeft zijn wilde dieren al jaren geleden uit het programma gehaald (Economx 28-05-2023); de grote katten van de familie staan in het Richter Safari Park",
+    "en": "Travelling circus; withdrew its wild animals from the programme years ago (Economx 28-05-2023); the family's big cats live at Richter Safari Park"
+   },
+   "_bron": "bu"
+  },
+  {
+   "naam": "Tisza-tavi Ökocentrum",
+   "plaats": "Poroszló (Heves)",
+   "reden": {
+    "nl": "Aquarium en kleine dierentuin (otters, jakhalzen, vogels); geen katachtigen bekend (zoo-gids pw.wzd.cz, ongedateerd, gezien 23-10-2026)",
+    "en": "Aquarium and small zoo (otters, jackals, birds); no cats known (zoo directory pw.wzd.cz, undated, seen 23-10-2026)"
+   },
+   "_bron": "no"
+  },
+  {
+   "naam": "Mátra Múzeum (aquarium-terrarium)",
+   "plaats": "Gyöngyös (Heves)",
+   "reden": {
+    "nl": "Alleen aquarium en terrarium (zoo-gids pw.wzd.cz, ongedateerd, gezien 23-10-2026)",
+    "en": "Aquarium and terrarium only (zoo directory pw.wzd.cz, undated, seen 23-10-2026)"
+   },
+   "_bron": "no"
+  },
+  {
+   "naam": "Bagolyvár Vadaspark",
+   "plaats": "Szolnok (Jász-Nagykun-Szolnok)",
+   "reden": {
+    "nl": "Vooral inheemse bosdieren en huisdieren; geen katachtigen bekend (zoo-gids pw.wzd.cz, ongedateerd, gezien 23-10-2026)",
+    "en": "Mainly native forest and domestic animals; no cats known (zoo directory pw.wzd.cz, undated, seen 23-10-2026)"
+   },
+   "_bron": "no"
+  },
+  {
+   "naam": "Éden Madárpark",
+   "plaats": "Rákóczifalva (Jász-Nagykun-Szolnok)",
+   "reden": {
+    "nl": "Vogelpark (zoo-gids pw.wzd.cz, ongedateerd, gezien 23-10-2026)",
+    "en": "Bird park (zoo directory pw.wzd.cz, undated, seen 23-10-2026)"
+   },
+   "_bron": "no"
+  },
+  {
+   "naam": "Hortobágyi Pusztai Állatpark",
+   "plaats": "Hortobágy (Hajdú-Bihar)",
+   "reden": {
+    "nl": "Oude Hongaarse huisdierrassen; geen katachtigen (zoo-gids pw.wzd.cz, ongedateerd, gezien 23-10-2026)",
+    "en": "Old Hungarian domestic breeds; no cats (zoo directory pw.wzd.cz, undated, seen 23-10-2026)"
+   },
+   "_bron": "no"
+  },
+  {
+   "naam": "Hortobágyi Madárpark",
+   "plaats": "Hortobágy (Hajdú-Bihar)",
+   "reden": {
+    "nl": "Vogelopvang en -park (zoo-gids pw.wzd.cz, ongedateerd, gezien 23-10-2026)",
+    "en": "Bird hospital and bird park (zoo directory pw.wzd.cz, undated, seen 23-10-2026)"
+   },
+   "_bron": "no"
+  },
+  {
+   "naam": "Nyírjesi Füvészkert és Vadaspark",
+   "plaats": "Balassagyarmat (Nógrád)",
+   "reden": {
+    "nl": "Hertachtigen, jakhalzen, neusberen e.d.; geen katachtigen bekend (zoo-gids pw.wzd.cz, ongedateerd, gezien 23-10-2026)",
+    "en": "Deer, jackals, coatis etc.; no cats known (zoo directory pw.wzd.cz, undated, seen 23-10-2026)"
+   },
+   "_bron": "no"
+  },
+  {
+   "naam": "Cserhát Állatkert (minizoo)",
+   "plaats": "Kétbodony (Nógrád)",
+   "reden": {
+    "nl": "Minizoo met vooral huisdieren en vogels; geen katachtigen bekend (zoo-gids pw.wzd.cz, ongedateerd, gezien 23-10-2026)",
+    "en": "Mini-zoo with mostly domestic animals and birds; no cats known (zoo directory pw.wzd.cz, undated, seen 23-10-2026)"
+   },
+   "_bron": "no"
+  },
+  {
+   "naam": "Seholsziget szabadidőpark",
+   "plaats": "Nőtincs (Nógrád)",
+   "reden": {
+    "nl": "Papegaaien, lama's en huisdieren (zoo-gids pw.wzd.cz, ongedateerd, gezien 23-10-2026)",
+    "en": "Parrots, llamas and domestic animals (zoo directory pw.wzd.cz, undated, seen 23-10-2026)"
+   },
+   "_bron": "no"
+  },
+  {
+   "naam": "Füvészkert és vadállat-menhely",
+   "plaats": "Nagyecsed (Szabolcs-Szatmár-Bereg)",
+   "reden": {
+    "nl": "Terrarium, vogels, wasberen, neusberen, makaak; geen katachtigen bekend (zoo-gids pw.wzd.cz, ongedateerd, gezien 23-10-2026)",
+    "en": "Terrarium, birds, raccoons, coatis, macaque; no cats known (zoo directory pw.wzd.cz, undated, seen 23-10-2026)"
+   },
+   "_bron": "no"
+  },
+  {
+   "naam": "Váll-tó Vadaspark",
+   "plaats": "Vállaj (Szabolcs-Szatmár-Bereg)",
+   "reden": {
+    "nl": "Minizoo met inheems wild en huisdieren (zoo-gids pw.wzd.cz, ongedateerd, gezien 23-10-2026)",
+    "en": "Mini-zoo with native game and domestic animals (zoo directory pw.wzd.cz, undated, seen 23-10-2026)"
+   },
+   "_bron": "no"
+  },
+  {
+   "naam": "Mini Zoo Komló",
+   "plaats": "Komló",
+   "reden": {
+    "nl": "Geen wilde katachtigen gevonden; Bama (03-2024) noemt alleen een tamme ‘bengáli macska’, vermoedelijk het huiskatras Bengaal (niet bevestigd). Eigen site blokkeert automatische toegang.",
+    "en": "No wild cats found; Bama (03-2024) only mentions a tame ‘bengáli macska’, probably the Bengal domestic cat breed (not confirmed). Own site blocks automated access."
+   },
+   "_bron": "zu"
+  },
+  {
+   "naam": "Nagykanizsai Mini Zoo (voorheen Korpavári Állatsimogató és Teknősfarm)",
+   "plaats": "Nagykanizsa",
+   "reden": {
+    "nl": "Geen katachtigen vermeld; vooral landschildpadden, huisdieren en inheemse opvangdieren (eigen site, gezien 23-10-2026)",
+    "en": "No cats listed; mainly tortoises, domestic animals and native rescued wildlife (own site, seen 23-10-2026)"
+   },
+   "_bron": "zu"
+  },
+  {
+   "naam": "Zoo Kisfalud Állatpark és Szabadidőpark",
+   "plaats": "Kisfalud",
+   "reden": {
+    "nl": "Geen katachtigen gevonden in beschikbare beschrijvingen (ca. 60 soorten, vooral huis- en inheemse dieren; Programturizmus, ongedateerd); eigen dierenlijst niet gevonden",
+    "en": "No cats found in available descriptions (c. 60 species, mainly domestic and native animals; Programturizmus, undated); no own animal list found"
+   },
+   "_bron": "zu"
+  },
+  {
+   "naam": "Körösvölgyi Látogatóközpont és Állatpark",
+   "plaats": "Szarvas",
+   "reden": {
+    "nl": "Geen katachtigen vermeld; inheemse fauna zoals wisent, wolf, eland en vale gier (beschrijvingen KMNP/Programturizmus, gezien 23-10-2026)",
+    "en": "No cats listed; native fauna such as European bison, wolf, elk and griffon vulture (KMNP/Programturizmus descriptions, seen 23-10-2026)"
+   },
+   "_bron": "zu"
+  },
+  {
+   "naam": "Afrika Múzeum és Állatkert",
+   "plaats": "Balatonederics",
+   "reden": {
+    "nl": "Levende dieren zijn zebra’s, kamelen, struisvogels e.d.; leeuwen en luipaarden alleen als jachttrofeeën (diverse toeristische bronnen, 2026)",
+    "en": "Live animals are zebras, camels, ostriches etc.; lions and leopards only as hunting trophies (various tourism sources, 2026)"
+   },
+   "_bron": "zu"
+  },
+  {
+   "naam": "Bella Állatpark",
+   "plaats": "Siófok",
+   "reden": {
+    "nl": "Kinderboerderij-dierenpark; de opsomming noemt alleen ‘macskafélék’ tussen huisdieren, vermoedelijk huiskatten; geen wilde katachtige bevestigd (Programturizmus, ongedateerd)",
+    "en": "Petting-zoo-style animal park; its list only mentions ‘cats’ among domestic animals, probably domestic cats; no wild cat confirmed (Programturizmus, undated)"
+   },
+   "_bron": "zu"
+  },
+  {
+   "naam": "Magyar Nemzeti Cirkusz (reizend circus)",
+   "plaats": "–",
+   "reden": {
+    "nl": "Geen wilde katten meer in het circus: de eigen wilde dieren gingen in 2022 naar het Richter Safari Park in Nagykőrös (HVG 13-05-2026; Origo/Magyar Hírlap 08-2026).",
+    "en": "No wild cats in the circus any more: its own wild animals moved to Richter Safari Park in Nagykőrös in 2022 (HVG 13-05-2026; Origo/Magyar Hírlap 08-2026)."
+   },
+   "_bron": "op"
+  },
+  {
+   "naam": "Richter Flórián Cirkusz (reizend circus)",
+   "plaats": "–",
+   "reden": {
+    "nl": "Stopte in 2015 met grotekattennummers; heeft nog olifant Szandra, geen katachtigen (Magyar Narancs 01-09-2026; Magyar Hírlap 08-08-2026).",
+    "en": "Stopped big-cat acts in 2015; still has elephant Szandra, no cats (Magyar Narancs 01-09-2026; Magyar Hírlap 08-08-2026)."
+   },
+   "_bron": "op"
+  },
+  {
+   "naam": "Fővárosi Nagycirkusz / Budapest Nagycirkusz",
+   "plaats": "Budapest",
+   "reden": {
+    "nl": "Geen eigen dieren; programma’s 2026 (festival januari, ‘Mirázs – Örökség’) zonder grote katten. Volgens het Pest Vármegyei Kormányhivatal raakt het circusverbod in Budapest en Pest slechts 6 dieren (olifant, alligator, 4 pythons), geen katten (Magyar Narancs 01-09-2026).",
+    "en": "No own animals; 2026 programmes (January festival, ‘Mirázs – Örökség’) without big cats. According to the Pest County Government Office the circus ban affects only 6 animals in Budapest and Pest (elephant, alligator, 4 pythons), no cats (Magyar Narancs 01-09-2026)."
+   },
+   "_bron": "op"
+  },
+  {
+   "naam": "Hungária Cirkusz en overige circussen in Budapest/Pest",
+   "plaats": "–",
+   "reden": {
+    "nl": "Volgens de officiële telling van het Pest Vármegyei Kormányhivatal geen katachtigen in vergunde circusmenagerieën in Budapest en Pest (Magyar Narancs 01-09-2026).",
+    "en": "According to the official count of the Pest County Government Office no cats in licensed circus menageries in Budapest and Pest (Magyar Narancs 01-09-2026)."
+   },
+   "_bron": "op"
+  },
+  {
+   "naam": "Vaste circusmenagerieën Szabolcs-Szatmár-Bereg",
+   "plaats": "Szabolcs-Szatmár-Bereg",
+   "reden": {
+    "nl": "Twee vergund: één zonder dieren, één met twee pony’s (Magyar Narancs 01-09-2026).",
+    "en": "Two licensed: one without animals, one with two ponies (Magyar Narancs 01-09-2026)."
+   },
+   "_bron": "op"
+  }
+ ]
+}

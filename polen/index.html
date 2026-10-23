@@ -355,6 +355,287 @@ h1.mast .m1{display:block;font-size:clamp(52px,13vw,108px);line-height:.9;letter
 h1.mast .m2{display:block;margin-top:10px;font-family:"Alegreya Sans",Georgia,serif;font-style:italic;font-weight:400;font-size:clamp(26px,5.6vw,40px);line-height:1.15;letter-spacing:0;color:var(--bark);
   padding-top:12px;background:var(--strip) 0 0/48px 10px repeat-x;max-width:20ch}
 </style>
+
+<style id="nw-css">
+/* ---- nieuw ontwerp (bron/nieuw_ontwerp.py) ---- */
+/* lange weblinks (bijv. bij "Website") laten afbreken in plaats van de pagina te verbreden */
+#info dd,#info dd a{overflow-wrap:anywhere}
+/* filters bij Locaties als keuzeknoppen */
+html.nw-fk #rg-lab,html.nw-fk #rg-bar,html.nw-fk #rg-count,html.nw-fk #lt-bar,html.nw-fk #lt-count{display:none!important}
+.nw-filters{display:flex;gap:8px;margin:6px 0 12px}
+.nw-fsel{position:relative;flex:1;min-width:0;display:flex;align-items:center;gap:6px;height:44px;padding:0 12px 0 16px;border-radius:99px;border:1px solid var(--line);background:var(--card);box-shadow:var(--nw-shadow);color:var(--ink);font:500 .98rem var(--hs-body);cursor:pointer}
+.nw-fsel .nw-fv{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.nw-fsel svg{flex:none;width:18px;height:18px}
+.nw-fsel select{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer;font-size:16px}
+.nw-fsel.on{background:var(--nw-green);border-color:var(--nw-green);color:#FBF8F1}
+.nw-fsel:focus-within{outline:2px solid var(--nw-terra);outline-offset:2px}
+/* talen die een pagina niet heeft, nooit tonen */
+html:not(.fr) .l-fr,html:not(.de) .l-de,html:not(.it) .l-it,html:not(.es) .l-es,html:not(.pt) .l-pt,html:not(.da) .l-da,html:not(.cs) .l-cs,html:not(.sv) .l-sv,html:not(.nb) .l-nb,html:not(.fi) .l-fi,html:not(.pl) .l-pl,html.fr .l-nl,html.de .l-nl,html.it .l-nl,html.es .l-nl,html.pt .l-nl,html.da .l-nl,html.cs .l-nl,html.sv .l-nl,html.nb .l-nl,html.fi .l-nl,html.pl .l-nl{display:none!important}
+:root:root{--paper:#F5F0E4;--card:#FBF8F1;--ink:#22301F;--muted:#5E6656;--line:#E2DACB;--hs-olive:#2F4A32;--hs-accent:#A65A35;--gold:#A65A35;--bark:#2F4A32;--tan:#FBF8F1;--tan-deep:#E2DACB;
+  --nw-sage:#E3EADB;--nw-peach:#F3E2D3;--nw-blue:#DDE6E6;--nw-lilac:#E6DDE8;--nw-rose:#F4E3DF;--nw-green:#2F4A32;--nw-terra:#A65A35;--nw-shadow:0 1px 2px rgba(60,50,30,.06),0 10px 24px -14px rgba(60,50,30,.35);--nw-top:var(--hs-head)}
+html body{background:var(--paper)!important;padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
+html body nav.toc,html body #main>header{display:none!important}
+h2{color:var(--nw-green)!important}
+table th{background:var(--nw-sage)!important;color:var(--ink)!important}
+#totop{bottom:calc(84px + env(safe-area-inset-bottom,0px))!important}
+/* schermen: startscherm of precies één onderdeel */
+html:not(.nw-scherm) #main>*:not(#start){display:none!important}
+html.nw-scherm #main>*:not(.nw-cur):not(#nw-sbar){display:none!important}
+html.nw-scherm .nw-cur>h2{display:none!important}
+html.nw-scherm .nw-cur{margin:0!important;padding:0!important;border:0!important;background:none!important;box-shadow:none!important}
+/* schermbalk met terugknop */
+.nw-sbar{position:sticky;top:calc(env(safe-area-inset-top,0px) + var(--nw-top));z-index:40;display:flex;align-items:center;gap:8px;margin:0 -16px 14px;padding:8px 16px;background:color-mix(in srgb,var(--paper) 94%,transparent);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+html:not(.nw-scherm) #nw-sbar{display:none!important}
+.nw-back{all:unset;box-sizing:border-box;cursor:pointer;display:inline-flex;align-items:center;gap:2px;height:38px;padding:0 12px 0 6px;border-radius:99px;border:1px solid var(--line);background:var(--card);font:500 .98rem var(--hs-body);color:var(--ink);flex:none}
+.nw-back svg{width:20px;height:20px}
+.nw-back:focus-visible{outline:2px solid var(--nw-terra)}
+.nw-stitle{margin:0!important;font-family:var(--hs-display)!important;font-weight:800;font-size:clamp(1.25rem,5.4vw,1.7rem)!important;line-height:1.15;color:var(--nw-green)!important;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#info .ip-top{display:none!important}
+#info .nw-sbar{margin-top:0}
+/* kop met de serval-foto */
+.nw-hero{position:relative;margin:12px 0 0;border-radius:22px;overflow:hidden;background:var(--card);border:1px solid var(--line);box-shadow:var(--nw-shadow)}
+.nw-hero>img{display:block;width:100%;height:clamp(165px,44vw,320px);object-fit:cover;object-position:50% 32%}
+.nw-htxt{padding:14px 18px 0}
+.nw-stats{display:grid;grid-template-columns:repeat(2,minmax(0,240px));gap:12px;margin:14px 18px 0;padding-top:14px;border-top:1px solid var(--line)}
+.nw-datum{padding:8px 18px 16px}
+.nw-foto{margin:0 0 18px!important;max-width:720px}
+.nw-foto img{display:block;width:100%!important;max-width:100%!important;height:auto!important;aspect-ratio:4/3;object-fit:cover;border-radius:18px!important;margin:0!important;box-shadow:var(--nw-shadow)!important}
+.nw-foto p{margin:6px 2px 0!important;font-size:.82rem!important;color:var(--muted)!important}
+.nw-stats a{align-items:center!important;gap:10px!important}
+.nw-si{flex:none;display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%}
+.nw-si svg{width:22px;height:22px}
+.nw-si1{background:#F3E2D6;color:#8A4A2B}
+.nw-si1 svg{width:25px;height:25px}
+.nw-si2{background:#E1EADF;color:#2F4A33}
+.nw-stats a>span:last-child{display:inline-flex;align-items:baseline;gap:7px}
+.nw-stats a{display:inline-flex;align-items:baseline;gap:7px;color:var(--muted);text-decoration:none;font-size:1rem}
+.nw-stats a strong{font-family:var(--hs-display);font-weight:800;font-size:clamp(1.9rem,8vw,2.4rem);line-height:1;color:var(--ink,#22301f)}
+.nw-htxt h1.mast.hs-kop{margin:0 0 2px!important;font-size:clamp(1.9rem,8.5vw,3rem)!important}
+.nw-htxt .hs-onder{margin:0!important;font-size:clamp(1rem,4.2vw,1.2rem)!important}
+.nw-datum .stamp.hs-stamp{display:block!important;background:none!important;padding:0!important;margin:0!important;color:var(--muted)!important;font-size:.92rem!important}
+.nw-cred{position:absolute;top:10px;right:12px;z-index:1;margin:0!important;font-size:.72rem!important;color:#FFF8EC!important;background:rgba(20,24,14,.5);padding:2px 9px;border-radius:99px;max-width:none!important}
+/* zoeken */
+.nw-search{position:relative;margin:14px 0 0;z-index:5}
+.nw-search label{display:flex;align-items:center;gap:10px;background:#FFFDF8;border:1px solid var(--line);border-radius:99px;padding:0 18px;height:54px;box-shadow:var(--nw-shadow)}
+.nw-search label:focus-within{border-color:var(--nw-green);box-shadow:0 0 0 2px color-mix(in srgb,var(--nw-green) 25%,transparent),var(--nw-shadow)}
+.nw-search label svg{width:22px;height:22px;flex:none;color:var(--ink)}
+.nw-search input{all:unset;flex:1;min-width:0;font:400 1.05rem var(--hs-body);color:var(--ink)}
+.nw-search input:focus-visible{outline:none!important}
+.nw-search input::placeholder{color:#8A8F80}
+.nw-res{position:absolute;left:0;right:0;top:60px;background:#FFFDF8;border:1px solid var(--line);border-radius:18px;box-shadow:var(--nw-shadow);padding:6px;max-height:60vh;overflow:auto}
+.nw-res[hidden]{display:none}
+.nw-res a{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:12px;color:var(--ink);text-decoration:none}
+.nw-res a:hover,.nw-res a.on{background:var(--nw-sage)}
+.nw-res .nw-ri{flex:none;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--nw-peach);color:var(--nw-terra)}
+.nw-res .nw-ri svg{width:18px;height:18px}
+.nw-res a.loc .nw-ri{background:var(--nw-sage);color:var(--nw-green)}
+.nw-res b{font-weight:600}
+.nw-res small{display:block;color:var(--muted);font-size:.85rem}
+.nw-res .nw-none{padding:10px 12px;color:var(--muted);margin:0}
+/* kleine knoppen */
+.nw-quick{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:14px 0 0}
+.nw-quick a{display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;padding:12px 4px 10px;border-radius:20px;border:1px solid var(--line);text-decoration:none;color:var(--ink);background:var(--card);box-shadow:var(--nw-shadow);min-width:0}
+.nw-quick .nw-qi{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.nw-quick a:nth-child(1) .nw-qi{background:var(--nw-lilac);color:#4E3A5A}.nw-quick a:nth-child(2) .nw-qi{background:var(--nw-blue);color:#2F4A52}.nw-quick a:nth-child(3) .nw-qi{background:var(--nw-rose);color:#B4483F}.nw-quick a:nth-child(4) .nw-qi{background:var(--nw-sage);color:var(--nw-green)}
+.nw-quick .nw-qi svg{width:24px;height:24px}
+.nw-quick b{font-family:var(--hs-body);font-weight:600;font-size:clamp(.74rem,3.1vw,.98rem);line-height:1.2;color:var(--ink)}
+/* tegels */
+.nw-tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:16px 0 0}
+.nw-tile{position:relative;display:flex;flex-direction:column;justify-content:space-between;min-height:150px;padding:14px;border-radius:22px;overflow:hidden;text-decoration:none;color:var(--ink);border:1px solid var(--line);background-size:cover;background-position:right center;box-shadow:var(--nw-shadow)}
+.nw-tile::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--tb) 0,color-mix(in srgb,var(--tb) 88%,transparent) 48%,transparent 85%)}
+.nw-tile>*{position:relative}
+.nw-tile .nw-ti{width:30px;height:30px;color:var(--tc)}
+.nw-tile .nw-ti svg{width:30px;height:30px}
+.nw-tile small{display:block;font-size:clamp(.78rem,3.2vw,.95rem);color:var(--ink);margin-top:3px}
+.nw-tile small.nw-cnt{display:inline-flex;align-items:baseline;gap:5px;margin-top:8px;padding:3px 12px 4px;border-radius:99px;background:rgba(255,253,248,.92);box-shadow:0 1px 3px rgba(60,50,30,.12);font-size:clamp(.82rem,3.4vw,1rem);font-weight:600;color:var(--tc)}
+.nw-tile small.nw-cnt strong{font-family:var(--hs-display);font-weight:800;font-size:clamp(1.25rem,5.4vw,1.6rem);line-height:1;color:var(--tc)}
+.nw-tile b{display:flex;align-items:center;gap:2px;font-family:var(--hs-display);font-weight:800;font-size:clamp(1.1rem,4.6vw,1.65rem);line-height:1.08;color:var(--tc);max-width:82%}
+.nw-arr{width:18px;height:18px;flex:none}
+.nw-t1{--tb:var(--nw-peach);--tc:#7A3F22;background-image:url(/wildekattengids/img/nieuw/tegel-jaguar.webp)}
+.nw-t2{--tb:var(--nw-sage);--tc:var(--nw-green);background-image:url(/wildekattengids/img/nieuw/tegel-lynx.webp)}
+.nw-t3{--tb:var(--nw-blue);--tc:#2F4A52;background-image:url(/wildekattengids/img/nieuw/tegel-sneeuwluipaard.webp)}
+.nw-t4{--tb:var(--nw-lilac);--tc:#4E3A5A;background-image:url(/wildekattengids/img/nieuw/tegel-witte-leeuw.webp)}
+.nw-strip{display:flex;align-items:center;gap:12px;margin:12px 0 0;padding:16px;border-radius:22px;background:var(--nw-terra);color:#FFF8EE!important;text-decoration:none;box-shadow:var(--nw-shadow)}
+.nw-strip svg{width:24px;height:24px;flex:none}
+.nw-strip b{flex:1;font-family:var(--hs-display);font-size:1.2rem}
+.nw-strip .nw-arr{width:20px;height:20px}
+/* favorieten */
+.nw-favs{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.nw-favs li{display:flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:6px 6px 6px 14px}
+.nw-favs a{flex:1;color:var(--ink);font-weight:600;text-decoration:none}
+.nw-favs small{display:block;color:var(--muted);font-weight:400}
+.nw-favh{font-family:var(--hs-label);font-weight:600;font-size:.82rem;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin:14px 0 6px}
+.nw-empty{color:var(--muted)}
+.nw-heart{all:unset;box-sizing:border-box;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;color:#B4483F;flex:none;vertical-align:middle}
+.nw-heart svg{width:22px;height:22px}
+.nw-heart svg path{fill:transparent;stroke:currentColor;stroke-width:2}
+.nw-heart[aria-pressed="true"] svg path{fill:currentColor}
+.nw-heart:focus-visible{outline:2px solid var(--nw-terra)}
+.loclist li{position:relative}
+.loclist li>.nw-heart{position:absolute;top:4px;right:4px}
+.loclist li>b{padding-right:34px;display:inline-block}
+#info .nw-hwrap{all:unset;box-sizing:border-box;cursor:pointer;display:inline-flex;align-items:center;gap:4px;font:500 .95rem var(--hs-body);color:var(--ink);margin:2px 0 10px;background:var(--nw-rose);border-radius:99px;padding:0 14px 0 2px}
+/* meer */
+.nw-meer{list-style:none;margin:0;padding:0;background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.nw-meer a{display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:1px solid var(--line);color:var(--ink);text-decoration:none;font-size:1.05rem;font-weight:500}
+.nw-meer li:last-child a{border-bottom:0}
+.nw-meer a>svg:first-child{width:22px;height:22px;flex:none;color:var(--nw-terra)}
+.nw-meer a .nw-arr{margin-left:auto;color:var(--muted)}
+.nw-mlbl{font-family:var(--hs-label);font-weight:600;font-size:.82rem;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin:20px 4px 8px}
+/* onderbalk */
+.nw-bar{position:fixed;left:0;right:0;bottom:0;z-index:70;background:color-mix(in srgb,#FBF8F1 96%,transparent);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-top:1px solid var(--line);padding:6px 4px calc(6px + env(safe-area-inset-bottom,0px))}
+.nw-bar nav{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));max-width:640px;margin:0 auto}
+.nw-bar a{display:flex;flex-direction:column;align-items:center;gap:2px;padding:4px 2px;font:500 .76rem var(--hs-body);color:var(--muted);text-align:center;position:relative;text-decoration:none;white-space:nowrap}
+.nw-bar svg{width:24px;height:24px}
+.nw-bar .on{color:var(--nw-green);font-weight:700}
+.nw-bar .on::after{content:"";position:absolute;bottom:-4px;left:22%;right:22%;height:3px;border-radius:3px;background:var(--nw-green)}
+.nw-bar a:focus-visible{outline:2px solid var(--nw-terra);border-radius:8px}
+@media (min-width:900px){
+  html body{padding-bottom:0}
+  :root:root{--nw-top:calc(var(--hs-head) + 54px)}
+  .nw-bar{position:fixed;top:calc(env(safe-area-inset-top,0px) + var(--hs-head));bottom:auto;border-top:0;border-bottom:1px solid var(--line);padding:4px}
+  .nw-bar nav{display:flex;justify-content:center;gap:6px;max-width:none}
+  .nw-bar a{flex-direction:row;gap:8px;font-size:.98rem;padding:8px 14px;border-radius:99px}
+  .nw-bar a svg{width:20px;height:20px}
+  .nw-bar .on{background:var(--nw-sage)}.nw-bar .on::after{display:none}
+  #totop{bottom:24px!important}
+  html body #main,html body #info{margin-top:54px}
+  .nw-hero>img{height:340px}
+  .nw-quick{gap:16px}.nw-tiles{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.nw-tile{min-height:190px;padding:18px}
+  .nw-search{margin:16px 0 0}
+}
+@media (max-width:380px){.nw-quick{gap:7px}.nw-quick a{padding:12px 2px 10px;border-radius:20px}.nw-tiles{gap:9px}.nw-tile{padding:12px;min-height:130px}}
+</style>
+
+<style id="nt-css">
+/* ---- testontwerp (bron/test_ontwerp.py) ---- */
+.nt-weg{display:none!important}
+.nt-bar nav{grid-template-columns:repeat(4,minmax(0,1fr))}
+/* kop zoals op de hoofdpagina: titel, ondertitel, één regel met aantallen */
+.nt-kop{margin:18px 0 0}
+.nt-kop .nw-htxt{padding:0}
+.nt-kop h1.mast.hs-kop{margin:0!important;font-size:clamp(1.8rem,7.6vw,2.6rem)!important}
+.nt-kop .hs-onder{margin:4px 0 0!important;font-size:1.05rem!important}
+.nt-meta{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 14px;margin-top:10px}
+.nt-meta .nw-stats{display:flex;flex-wrap:wrap;gap:2px 14px;margin:0;padding:0;border:0}
+.nt-meta .nw-stats a{display:inline;font:600 .86rem var(--hs-label);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-decoration:none}
+.nt-meta .nw-stats a strong{font:inherit;color:var(--ink)}
+.nt-meta .nw-datum{padding:0}
+.nt-meta .nw-datum .stamp.hs-stamp{font:600 .86rem var(--hs-label)!important;letter-spacing:.06em!important;text-transform:uppercase!important;color:var(--muted)!important}
+/* zoeken: klapt open via het vergrootglas bovenaan, zoals op de hoofdpagina */
+#start .nw-search{display:none}
+html.nt-zoek #start .nw-search{display:block}
+/* soortrondjes */
+.nt-lbl{font:600 .8rem var(--hs-label);letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin:18px 0 6px}
+.nt-cats{display:flex;gap:4px;overflow-x:auto;margin:0 -16px 6px;padding:2px 16px 8px;scrollbar-width:none;scroll-snap-type:x proximity}
+.nt-cats::-webkit-scrollbar{display:none}
+.nt-cat{all:unset;box-sizing:border-box;flex:none;width:78px;display:flex;flex-direction:column;align-items:center;gap:5px;padding:6px 2px 7px;border-radius:12px;cursor:pointer;font:500 .8rem/1.15 var(--hs-body);text-align:center;color:var(--ink);scroll-snap-align:start}
+.nt-av{width:56px;height:56px;border-radius:50%;overflow:hidden;border:2px solid var(--line);background:var(--nw-sage);display:flex;align-items:center;justify-content:center;flex:none}
+.nt-av img{width:100%;height:100%;object-fit:cover;display:block}
+.nt-av.nt-avu{border-style:dashed;border-color:var(--muted)}
+.nt-av.nt-all{background:var(--nw-green);border-color:var(--nw-green);color:#FBF8F1;font:600 1.1rem var(--hs-label)}
+.nt-cat[aria-pressed="true"]{background:color-mix(in srgb,var(--nw-green) 13%,transparent);font-weight:700}
+.nt-cat[aria-pressed="true"] .nt-av{border-color:var(--nw-green);box-shadow:0 0 0 2px var(--nw-green)}
+.nt-cat:focus-visible{outline:2px solid var(--nw-terra);outline-offset:1px}
+.nt-zoek{margin:0 0 12px!important}
+.nt-zoek label{height:48px!important}
+.nt-geen{color:var(--muted);margin:8px 2px}
+.nt-sc[hidden],#nt-zsgeen[hidden]{display:none!important}
+#nt-kaart{position:relative}
+.nt-kleeg{all:unset;box-sizing:border-box;cursor:pointer;position:absolute;left:50%;top:60%;transform:translate(-50%,-50%);width:min(78%,320px);display:flex;flex-direction:column;gap:4px;align-items:center;text-align:center;padding:14px 16px;border-radius:16px;background:color-mix(in srgb,var(--card) 94%,transparent);border:1px solid var(--line);box-shadow:var(--nw-shadow);font:400 .98rem var(--hs-body);color:var(--ink)}
+.nt-kleeg b{font-weight:700}
+.nt-kleeg span{color:var(--nw-terra);font-weight:600}
+.nt-kleeg:focus-visible{outline:2px solid var(--nw-terra)}
+.nt-grijs{opacity:.42}
+.nt-grijs .nt-av,.nt-grijs svg{filter:grayscale(1)}
+.nt-sep{flex:none;width:1px;align-self:stretch;margin:8px 4px;background:var(--line)}
+.nt-mld{margin:0 0 10px;padding:8px 12px;border-radius:12px;background:var(--nw-peach);color:var(--ink);font-size:.95rem}
+.nt-spinfo{margin:0 0 10px;font-size:1rem;color:var(--ink)}
+.nt-spinfo a{color:var(--nw-terra);font-weight:600;text-decoration:none;white-space:nowrap}
+/* kaart en lijst */
+.nt-grid{display:grid;gap:14px;grid-template-columns:minmax(0,1fr);align-items:start}
+#nt-kaart .map{margin:0}
+#start .hs-lgt{display:none!important}
+.nt-types{display:flex;gap:6px;overflow-x:auto;margin:0 -16px;padding:8px 16px 2px;scrollbar-width:none}
+.nt-types::-webkit-scrollbar,#lt-bar::-webkit-scrollbar{display:none}
+.nt-types .lt-chip,#lt-bar .lt-chip,.nt-regs .rg-chip,#rg-bar .rg-chip{flex:none;white-space:nowrap}
+#lt-bar,#rg-bar{flex-wrap:nowrap!important;overflow-x:auto;margin:0 -16px 6px!important;padding:2px 16px 4px;scrollbar-width:none}
+#rg-bar::-webkit-scrollbar,.nt-regs::-webkit-scrollbar{display:none}
+.nt-regs{display:flex;gap:6px;overflow-x:auto;margin:0 -16px;padding:2px 16px 2px;scrollbar-width:none}
+.nt-rgw .nt-lbl{margin-top:16px}
+.nt-regs .rg-chip,.nt-types .lt-chip{font-size:.92rem}
+#nt-sel .mapinfo{border-radius:14px;min-height:0}
+#nt-sel .mapinfo:has(> .empty){background:none;border:0;padding:0 2px}
+#nt-sel .mapinfo .empty{font-size:.95rem}
+.nt-beeld,.nt-box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px 10px;box-shadow:var(--nw-shadow)}
+.nt-beeld h3{margin:0;font:800 1.25rem var(--hs-display);color:var(--ink)}
+.nt-note{margin:2px 0 6px;color:var(--muted);font-size:.92rem}
+.nt-list{list-style:none;margin:0;padding:0}
+.nt-loc{position:relative;display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:2px 12px;align-items:center;padding:11px 0;border-top:1px solid var(--line);margin:0}
+.nt-loc:first-child{border-top:0}
+.nt-ti svg{width:30px;height:30px;display:block}
+.nt-lt{min-width:0}
+.nt-lt a{font:700 1.05rem/1.25 var(--hs-body);color:var(--ink);text-decoration:none}
+.nt-lt a::after{content:"";position:absolute;inset:0}
+.nt-lt a:focus-visible{outline:none}
+.nt-loc:focus-within{outline:2px solid var(--nw-terra);outline-offset:2px;border-radius:8px}
+.nt-lt small{display:block;color:var(--muted);font-size:.9rem;line-height:1.35}
+.nt-ds{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;color:var(--muted);font-size:.9rem;line-height:1.4;margin-top:3px}
+.nt-n{font:600 .88rem var(--hs-label);letter-spacing:.03em;color:var(--muted);white-space:nowrap;text-align:right;align-self:start;padding-top:2px}
+.nt-n b{font:800 1.15rem var(--hs-display);color:var(--ink)}
+.nt-full .nt-loc{grid-template-columns:30px minmax(0,1fr) auto;align-items:start}
+.nt-full .nt-ti{padding-top:2px}
+/* scherm Locaties: losse kaartjes (19-10-2026) */
+.nt-box:has(> .nt-full){background:none;border:0;padding:0;box-shadow:none;border-radius:0}
+.nt-full{display:flex;flex-direction:column;gap:10px}
+.nt-full .nt-kj{grid-template-columns:34px minmax(0,1fr) auto;grid-template-areas:"ic tx nb" "ic rj rj";gap:4px 12px;align-items:start;padding:14px 14px 14px 14px;border:1px solid var(--line);border-radius:16px;background:var(--card);box-shadow:var(--nw-shadow)}
+.nt-full .nt-kj:first-child{border-top:1px solid var(--line)}
+.nt-kj>.nt-ti{grid-area:ic;padding-top:1px}
+.nt-kj>.nt-ti svg{width:34px;height:34px}
+.nt-kj>.nt-lt{grid-area:tx;align-self:center}
+.nt-kj>.nt-n{grid-area:nb;display:flex;flex-direction:column;align-items:flex-end;gap:3px;padding-top:0}
+.nt-kj .nt-bdg{display:flex;align-items:center;justify-content:center;min-width:38px;height:38px;padding:0 6px;border-radius:99px;background:var(--nw-green);color:#FBF8F1;font:800 1.2rem var(--hs-display);line-height:1}
+.nt-kj>.nt-n small{font:600 .78rem var(--hs-label);color:var(--muted);white-space:nowrap}
+.nt-kj>.nt-rjs{grid-area:rj;display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.nt-rj{width:34px;height:34px;border-radius:50%;overflow:hidden;flex:none;border:2px solid var(--line);background:var(--nw-sage);display:flex;align-items:center;justify-content:center;box-sizing:border-box}
+.nt-rj img{width:100%;height:100%;object-fit:cover;display:block}
+.nt-rj i{font:700 .9rem var(--hs-body);font-style:normal;color:var(--ink)}
+.nt-rj.nt-rju{border-style:dashed;border-color:var(--muted)}
+.nt-rj.nt-rjm{font:700 .85rem var(--hs-body);color:var(--ink);background:var(--paper)}
+.nt-vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.nt-more{all:unset;box-sizing:border-box;cursor:pointer;display:inline-block;margin:6px 0 6px;padding:8px 16px;border:1px solid var(--line);border-radius:99px;background:var(--paper);font:600 .95rem var(--hs-body);color:var(--ink)}
+.nt-more:focus-visible{outline:2px solid var(--nw-terra)}
+.nt-uitl{margin:14px 2px 0;color:var(--muted);font-size:.92rem;line-height:1.5}
+.map .mk.nt-uit{display:none}
+/* "Aanwezig" is de gewone stand: alleen afwijkingen tonen (niet in de hoofdtabel, daar is het een kolom) */
+#mapinfo .st-g,#info .st-g{display:none!important}
+/* soorten: fotokaartjes zoals op de hoofdpagina */
+#soorten .hint,#soorten .legend-mini{display:none!important}
+.chips[data-group]>.chip{display:none!important}
+.chips[data-group]:not([hidden]){display:block!important}
+.nt-spg{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin:6px 0 18px}
+.nt-sc{display:flex;flex-direction:column;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;color:var(--ink);box-shadow:var(--nw-shadow)}
+.nt-sc .ph{aspect-ratio:4/3;background:var(--nw-sage);overflow:hidden}
+.nt-sc img{width:100%;height:100%;object-fit:cover;display:block}
+.nt-sc .bd{padding:8px 11px 11px;display:flex;flex-direction:column;gap:2px}
+.nt-sc .nm{font:700 1.06rem/1.15 var(--hs-display)}
+.nt-sc small{font-size:.86rem;color:var(--muted)}
+.nt-sc.nt-uns{border-style:dashed}
+.nt-sc:focus-visible{outline:2px solid var(--nw-terra);outline-offset:2px}
+.nt-link{display:flex;align-items:center;gap:12px;margin:8px 0 0;padding:14px 16px;border-radius:16px;border:1px solid var(--line);background:var(--card);color:var(--ink);text-decoration:none;font-weight:600;box-shadow:var(--nw-shadow)}
+.nt-link svg{width:22px;height:22px;flex:none;color:var(--nw-terra)}
+.nt-link .nw-arr{margin-left:auto;color:var(--muted)}
+.nt-uitleg-h{margin-top:28px!important}
+/* bij openen via een adres met # niet onder de vaste balken terechtkomen */
+#main>section,#main>.board{scroll-margin-top:calc(var(--nw-top) + 70px)}
+@media (min-width:900px){
+  .nt-kop{margin-top:22px}
+  .nt-cats,.nt-types,.nt-regs,#lt-bar,#rg-bar{margin-left:0!important;margin-right:0!important;padding-left:2px;padding-right:2px}
+  .nt-grid{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:18px}
+  .nt-side{position:sticky;top:calc(var(--nw-top) + 14px)}
+  .nt-spg{grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:16px}
+}
+</style>
 </head>
 <body>
 <script>(function(){var l=null;try{l=localStorage.getItem("lang");}catch(e){}
@@ -528,6 +809,28 @@ section::before,.board::before,.ip-sec::before,footer::before{display:none!impor
 <script>document.getElementById("naar-landen").addEventListener("click",function(e){e.preventDefault();try{sessionStorage.removeItem("land");}catch(x){}try{history.replaceState(null,"",location.pathname+location.search);}catch(x){}location.href="/wildekattengids/";});</script>
 
 <div class="wrap" id="main">
+
+<div id="start">
+<div class="nt-kop">
+  <div class="nw-htxt" id="nw-htxt"></div>
+  <div class="nt-meta"><div class="nw-stats"><a href="#soorten"><span class="nw-nsp"></span></a><a href="#locaties"><span class="nw-nloc"></span></a></div></div>
+</div>
+<div class="nw-search">
+  <label><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg><input type="search" id="nw-q" autocomplete="off" aria-controls="nw-res"></label>
+  <div class="nw-res" id="nw-res" role="listbox" hidden></div>
+</div>
+<div class="nt-rgw" id="nt-rgw" hidden><p class="nt-lbl" id="nt-rglab"></p><div class="nt-regs" id="nt-regs" role="group"></div></div>
+<p class="nt-lbl"><span class="l-nl">Kies een kat:</span><span class="l-en">Choose a cat:</span><span class="l-fr">Choisissez un félin :</span><span class="l-de">Wähle eine Katze:</span><span class="l-it">Scegli un felino:</span><span class="l-es">Elige un felino:</span><span class="l-pt">Escolhe um felino:</span><span class="l-da">Vælg en kat:</span><span class="l-cs">Vyber si kočku:</span><span class="l-sv">Välj en katt:</span><span class="l-nb">Velg en katt:</span><span class="l-fi">Valitse kissa:</span><span class="l-pl">Wybierz kota:</span></p>
+<div class="nt-cats" id="nt-cats" role="group"></div>
+<p class="nt-mld" id="nt-mld" role="status" hidden></p>
+<p class="nt-spinfo" id="nt-spinfo" hidden></p>
+<div class="nt-grid">
+  <div class="nt-mapcol"><div id="nt-kaart"></div><div class="nt-types" id="nt-types" role="group"></div></div>
+  <div class="nt-side"><div id="nt-sel"></div><div class="nt-beeld" id="nt-beeld"></div></div>
+</div>
+</div>
+<div class="nw-sbar" id="nw-sbar"><button type="button" class="nw-back"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg><span class="l-nl">Terug</span><span class="l-en">Back</span><span class="l-fr">Retour</span><span class="l-de">Zurück</span><span class="l-it">Indietro</span><span class="l-es">Volver</span><span class="l-pt">Voltar</span><span class="l-da">Tilbage</span><span class="l-cs">Zpět</span><span class="l-sv">Tillbaka</span><span class="l-nb">Tilbake</span><span class="l-fi">Takaisin</span><span class="l-pl">Wstecz</span></button><h2 class="nw-stitle" id="nw-stitle"></h2></div>
+
 
 <header>
   <svg class="paw" viewBox="0 0 64 64" aria-hidden="true" fill="#5A3E2B"><path d="M32 33 C22 33 17 43 19 49 C21 54 27 53 32 52 C37 53 43 54 45 49 C47 43 42 33 32 33 Z"/><ellipse cx="16" cy="28" rx="4.3" ry="5.5" transform="rotate(-25 16 28)"/><ellipse cx="25" cy="19" rx="4.5" ry="6" transform="rotate(-8 25 19)"/><ellipse cx="39" cy="19" rx="4.5" ry="6" transform="rotate(8 39 19)"/><ellipse cx="48" cy="28" rx="4.3" ry="5.5" transform="rotate(25 48 28)"/></svg>
@@ -1048,6 +1351,10 @@ section::before,.board::before,.ip-sec::before,footer::before{display:none!impor
 </div>
 </div></section>
 
+
+<section id="tabel"><h2><span class="l-nl">Hoofdtabel</span><span class="l-en">Main table</span><span class="l-fr">Tableau principal</span><span class="l-de">Haupttabelle</span><span class="l-it">Tabella principale</span><span class="l-es">Tabla principal</span><span class="l-pt">Tabela principal</span><span class="l-da">Hovedtabel</span><span class="l-cs">Hlavní tabulka</span><span class="l-sv">Huvudtabell</span><span class="l-nb">Hovedtabell</span><span class="l-fi">Päätaulukko</span><span class="l-pl">Tabela główna</span></h2></section>
+<section id="favorieten"><h2><span class="l-nl">Favorieten</span><span class="l-en">Favourites</span><span class="l-fr">Favoris</span><span class="l-de">Favoriten</span><span class="l-it">Preferiti</span><span class="l-es">Favoritos</span><span class="l-pt">Favoritos</span><span class="l-da">Favoritter</span><span class="l-cs">Oblíbené</span><span class="l-sv">Favoriter</span><span class="l-nb">Favoritter</span><span class="l-fi">Suosikit</span><span class="l-pl">Ulubione</span></h2><div id="nw-favs"></div></section>
+<section id="meer"><h2><span class="l-nl">Meer</span><span class="l-en">More</span><span class="l-fr">Plus</span><span class="l-de">Mehr</span><span class="l-it">Altro</span><span class="l-es">Más</span><span class="l-pt">Mais</span><span class="l-da">Mere</span><span class="l-cs">Více</span><span class="l-sv">Mer</span><span class="l-nb">Mer</span><span class="l-fi">Lisää</span><span class="l-pl">Więcej</span></h2><div id="nw-meer"></div></section>
 <section id="rapporteer">
   <h2><span class="l-nl">Rapporteer</span><span class="l-en">Report</span><span class="l-pl">Zgłoś</span></h2>
   <p class="prose" style="margin-top:0"><span class="l-nl">Zag je een katachtige die hier niet staat, is een dier verhuisd of overleden, of klopt er iets niet? Laat het weten. Meldingen passen de pagina niet vanzelf aan: ze worden eerst gecontroleerd en verwerkt in de volgende versie.</span><span class="l-en">Did you see a cat that is not listed here, has an animal moved or died, or is something wrong? Let us know. Reports do not change the page automatically: they are checked first and included in the next version.</span><span class="l-pl">Widzisz kota, którego tu nie ma, zwierzę się przeniosło lub padło, albo coś się nie zgadza? Daj nam znać. Zgłoszenia nie zmieniają strony automatycznie: najpierw je sprawdzamy, a potem dodajemy do następnej wersji.</span></p>
@@ -1220,7 +1527,7 @@ const LIFE={en:["About ","years","Unknown"],de:["Etwa ","Jahre","Unbekannt"],fr:
 const LI=()=>Math.max(0,LGS.indexOf(LANG));
 const pk=a=>a[LI()]||(LANG!=="nl"?a[1]:"")||a[0];
 const FRD={};
-const PLD={"Subspecies": "Podgatunek", "Location": "Miejsce", "Town": "Miejscowość", "Number": "Liczba", "Source": "Źródło", "Checked": "Sprawdzono", "No entries for this combination. Clear the filters to see everything.": "Brak wpisów dla tej kombinacji. Wyczyść filtry, aby zobaczyć wszystko.", "no confirmed species": "brak potwierdzonych gatunków", " · uncertain: ": " · niepewne: ", " · possibly also: ": " · może też: ", "location selected": "wybrane miejsce", "locations selected": "wybrane miejsca", "Pantherinae (big cats)": "Pantherinae (duże koty)", "Felinae (small cats)": "Felinae (małe koty)", "Uncertain": "Niepewne", "Unknown": "Nieznana", "This species is currently not on view in Spain.": "Tego gatunku nie można obecnie zobaczyć w Polsce.", "Photo": "Zdjęcie", " (zoo)": " (zoo)", "public domain (CC0)": "domena publiczna (CC0)", "Photo coming soon": "Zdjęcie wkrótce", "Back to the main table": "Powrót do tabeli głównej", "Genus": "Rodzaj", "Also known as": "Znany też jako", "Key facts": "Podstawowe informacje", "Length (without tail)": "Długość (bez ogona)", "Weight": "Waga", "Tail": "Ogon", "Lifespan": "Długość życia", "In the wild (estimate)": "Na wolności (szacunek)", "Estimated number of mature individuals in the wild according to the IUCN Red List (most recent assessment). “Unknown” means there is no reliable estimate.": "Szacunkowa liczba dorosłych osobników na wolności według Czerwonej listy IUCN (najnowsza ocena). „Nieznana” oznacza, że nie ma wiarygodnego szacunku.", "The IUCN gives no figure for the jaguar; this estimate comes from a 2018 study.": "IUCN nie podaje liczby dla jaguara; ten szacunek pochodzi z badania z 2018 roku.", "Way of life": "Tryb życia", "Range": "Zasięg", "Habitat": "Środowisko", "Diet": "Pożywienie", "Social behaviour": "Zachowania społeczne", "Special features": "Cechy szczególne", "Characteristic": "Cecha rozpoznawcza", "Did you know?": "Czy wiesz, że…?", "Previously on view at": "Dawniej można było zobaczyć w", "Seen this species somewhere else, or is something wrong? Report it": "Widzisz ten gatunek gdzie indziej albo coś się nie zgadza? Zgłoś to", "Other species": "Inne gatunki", "Previous": "Poprzedni", "Next": "Następny", "photo: J. Gelens": "zdjęcie: J. Gelens", "Back to the map": "Powrót do mapy", "Back to the locations": "Powrót do miejsc", "About this location": "O tym miejscu", "Cats here": "Koty w tym miejscu", "Visiting": "Zwiedzanie", "Opening hours": "Godziny otwarcia", "Previously here": "Dawniej tutaj", "Other locations": "Inne miejsca", "Not certain whether the animal is (still) there or can be seen.": "Nie wiadomo na pewno, czy zwierzę (nadal) tu jest i czy można je zobaczyć.", "There are no doubtful cases at the moment.": "Obecnie nie ma niepewnych przypadków.", "I don’t know": "Nie wiem", "Choose a location…": "Wybierz miejsce…", "Other location…": "Inne miejsce…", "Name and town of the location": "Nazwa i miejscowość", "Other location": "Inne miejsce", "For example: two animals, in the new enclosure near the entrance": "Na przykład: dwa zwierzęta, na nowym wybiegu przy wejściu", "Reporting does not work in this view. Open the page on claude.ai and log in to submit a report.": "W tym widoku zgłaszanie nie działa. Otwórz stronę w claude.ai i zaloguj się, aby wysłać zgłoszenie.", "Choose above what you want to report and where.": "Wybierz powyżej, co i gdzie chcesz zgłosić.", "Species unknown": "Gatunek nieznany", "Report": "Zgłoszenie", "visit": "wizyta", "Comment": "Komentarz", "First choose what you want to report.": "Najpierw wybierz, co chcesz zgłosić.", "Enter the name of the location.": "Wpisz nazwę miejsca.", "First choose a location.": "Najpierw wybierz miejsce.", "The report window is still loading. Please try again in a moment.": "Okno zgłoszenia jeszcze się ładuje. Spróbuj ponownie za chwilę.", "The comment window is open. Send your report from there. Thank you!": "Okno komentarza jest otwarte. Wyślij zgłoszenie stamtąd. Dziękujemy!", "A comment window with text is already open. Send or close it first, then try again.": "Okno komentarza z tekstem jest już otwarte. Najpierw je wyślij lub zamknij, a potem spróbuj ponownie.", "Too many attempts. Wait a minute and try again.": "Zbyt wiele prób. Odczekaj chwilę i spróbuj ponownie.", "Something went wrong opening the comment window. Please try again.": "Nie udało się otworzyć okna komentarza. Spróbuj ponownie.", "young": "młode", "less than a month old": "poniżej miesiąca", "1 month old": "1 mies.", "about ": "ok. ", "born": "urodzone", "No young cats are currently known.": "Obecnie nie znamy żadnych młodych.", "Nothing has been announced at the moment.": "Obecnie nic nie zapowiedziano.", "Search by species, location or town": "Szukaj według gatunku, miejsca lub miejscowości", "Search the table": "Szukaj w tabeli", "All statuses": "Wszystkie statusy", "Where to see it in Spain": "Gdzie zobaczysz go w Polsce", " — Wild cats in Spain": " — Dzikie koty w Polsce", "public domain": "domena publiczna"};
+const PLD={"Subspecies": "Podgatunek", "Location": "Miejsce", "Town": "Miejscowość", "Number": "Liczba", "Source": "Źródło", "Checked": "Sprawdzono", "No entries for this combination. Clear the filters to see everything.": "Brak wpisów dla tej kombinacji. Wyczyść filtry, aby zobaczyć wszystko.", "no confirmed species": "brak potwierdzonych gatunków", " · uncertain: ": " · niepewne: ", " · possibly also: ": " · może też: ", "location selected": "wybrane miejsce", "locations selected": "wybrane miejsca", "Pantherinae (big cats)": "Pantherinae (duże koty)", "Felinae (small cats)": "Felinae (małe koty)", "Uncertain": "Niepewne", "Unknown": "Nieznana", "This species is currently not on view in Spain.": "Tego gatunku nie można obecnie zobaczyć w Polsce.", "Photo": "Zdjęcie", " (zoo)": " (zoo)", "public domain (CC0)": "domena publiczna (CC0)", "Photo coming soon": "Zdjęcie wkrótce", "Back to the main table": "Powrót do tabeli głównej", "Genus": "Rodzaj", "Also known as": "Znany też jako", "Key facts": "Podstawowe informacje", "Length (without tail)": "Długość (bez ogona)", "Weight": "Waga", "Tail": "Ogon", "Lifespan": "Długość życia", "In the wild (estimate)": "Na wolności (szacunek)", "Estimated number of mature individuals in the wild according to the IUCN Red List (most recent assessment). “Unknown” means there is no reliable estimate.": "Szacunkowa liczba dorosłych osobników na wolności według Czerwonej listy IUCN (najnowsza ocena). „Nieznana” oznacza, że nie ma wiarygodnego szacunku.", "The IUCN gives no figure for the jaguar; this estimate comes from a 2018 study.": "IUCN nie podaje liczby dla jaguara; ten szacunek pochodzi z badania z 2018 roku.", "Way of life": "Tryb życia", "Range": "Zasięg", "Habitat": "Środowisko", "Diet": "Pożywienie", "Social behaviour": "Zachowania społeczne", "Special features": "Cechy szczególne", "Characteristic": "Cecha rozpoznawcza", "Did you know?": "Czy wiesz, że…?", "Previously on view at": "Dawniej można było zobaczyć w", "Seen this species somewhere else, or is something wrong? Report it": "Widzisz ten gatunek gdzie indziej albo coś się nie zgadza? Zgłoś to", "Other species": "Inne gatunki", "Previous": "Poprzedni", "Next": "Następny", "photo: J. Gelens": "zdjęcie: J. Gelens", "Back to the map": "Powrót do mapy", "Back to the locations": "Powrót do miejsc", "About this location": "O tym miejscu", "Cats here": "Koty w tym miejscu", "Visiting": "Zwiedzanie", "Opening hours": "Godziny otwarcia", "Previously here": "Dawniej tutaj", "Other locations": "Inne miejsca", "Not certain whether the animal is (still) there or can be seen.": "Nie wiadomo na pewno, czy zwierzę (nadal) tu jest i czy można je zobaczyć.", "There are no doubtful cases at the moment.": "Obecnie nie ma niepewnych przypadków.", "I don’t know": "Nie wiem", "Choose a location…": "Wybierz miejsce…", "Other location…": "Inne miejsce…", "Name and town of the location": "Nazwa i miejscowość", "Other location": "Inne miejsce", "For example: two animals, in the new enclosure near the entrance": "Na przykład: dwa zwierzęta, na nowym wybiegu przy wejściu", "Reporting does not work in this view. Open the page on claude.ai and log in to submit a report.": "W tym widoku zgłaszanie nie działa. Otwórz stronę w claude.ai i zaloguj się, aby wysłać zgłoszenie.", "Choose above what you want to report and where.": "Wybierz powyżej, co i gdzie chcesz zgłosić.", "Species unknown": "Gatunek nieznany", "Report": "Zgłoszenie", "visit": "wizyta", "Comment": "Komentarz", "First choose what you want to report.": "Najpierw wybierz, co chcesz zgłosić.", "Enter the name of the location.": "Wpisz nazwę miejsca.", "First choose a location.": "Najpierw wybierz miejsce.", "The report window is still loading. Please try again in a moment.": "Okno zgłoszenia jeszcze się ładuje. Spróbuj ponownie za chwilę.", "The comment window is open. Send your report from there. Thank you!": "Okno komentarza jest otwarte. Wyślij zgłoszenie stamtąd. Dziękujemy!", "A comment window with text is already open. Send or close it first, then try again.": "Okno komentarza z tekstem jest już otwarte. Najpierw je wyślij lub zamknij, a potem spróbuj ponownie.", "Too many attempts. Wait a minute and try again.": "Zbyt wiele prób. Odczekaj chwilę i spróbuj ponownie.", "Something went wrong opening the comment window. Please try again.": "Nie udało się otworzyć okna komentarza. Spróbuj ponownie.", "young": "młode", "less than a month old": "poniżej miesiąca", "1 month old": "1 mies", "about ": "ok. ", "born": "urodzone", "No young cats are currently known.": "Obecnie nie znamy żadnych młodych.", "Nothing has been announced at the moment.": "Obecnie nic nie zapowiedziano.", "Search by species, location or town": "Szukaj według gatunku, miejsca lub miejscowości", "Search the table": "Szukaj w tabeli", "All statuses": "Wszystkie statusy", "Where to see it in Spain": "Gdzie zobaczysz go w Polsce", " — Wild cats in Spain": " — Dzikie koty w Polsce", "public domain": "domena publiczna"};
 const T=(nl,en,...x)=>{if(LANG==="nl")return nl;if(LANG==="en")return en;const v=x[LI()-2];if(v!==undefined)return v;const d=(XT(LANG)||{D:{}}).D;return d[en]!==undefined?d[en]:en;};
 const FRM=new Map([[R1EN,R1FR],[R5EN,R5FR],[R6EN,R6FR]]);
 const PLM=new Map([[R1EN,R1PL],[R5EN,R5PL],[R6EN,R6PL]]);
@@ -1680,7 +1987,7 @@ function hasYoung(loc,sp){return youngNow().some(y=>y.loc===loc&&y.sp===sp);}
 const YTAG=()=>`<span class="ytag">${T("jongen","young")}</span>`;
 function yDate(y){const [Y,M,D]=y.born.split("-").map(Number);const mn=(LANG==="en"?MND_EN:LANG==="nl"?MND_NL:XT(LANG).MND)[M-1];const d=(LANG==="fr"&&D===1)?"1er":D;return D?(LANG==="de"?`${D}. ${mn} ${Y}`:`${d} ${mn} ${Y}`):(LANG==="pl"?`${MND_PL1[M-1]} ${Y}`:`${mn} ${Y}`);}
 function yAge(y){const m=yMonths(y),ap=y.approx||y.born.split("-").length<3;
-  const core=m<1?T("jonger dan een maand","less than a month old"):m===1?T("1 maand oud","1 month old"):T(`${m} maanden oud`,`${m} months old`,`${m} mies.`);
+  const core=m<1?T("jonger dan een maand","less than a month old"):m===1?T("1 maand oud","1 month old"):T(`${m} maanden oud`,`${m} months old`,`${m} mies`);
   return (ap&&m>=1?T("ongeveer ","about "):"")+core;}
 function yName(y){const nm=y.sub?pk(y.sub):spName(y.sp);return SP[y.sp]?`<a href="#soort/${slug(y.sp)}">${esc(nm)}</a>`:esc(nm);}
 function yLoc(loc){const li=LOCS.findIndex(l=>l[4].includes(loc));return li>=0?`<a href="#locatie/${lslug(LOCS[li][0])}">${esc(loc)}</a>, ${esc(LOCS[li][1])}`:esc(loc);}
@@ -1837,6 +2144,8 @@ applyLang(LANG,false);
 
 
 
+window.__NW={R:R,LOCS:LOCS,SPECIES:SPECIES,SPEN:SPEN,BYSLUG:BYSLUG,LOCBYSLUG:LOCBYSLUG,slug:slug,lslug:lslug,lang:function(){return LANG;}};
+window.__NT={SPEN:SPEN,R:R,LOCS:LOCS,PHOTOS:PHOTOS,BIG:BIG,SMALL:SMALL,UNSURE:UNSURE,spName:spName,slug:slug,lslug:lslug,locCount:locCount,REGIO:REGIO,lang:function(){return LANG;}};
 })();
 </script>
 <script>
@@ -2092,6 +2401,410 @@ function mist(){var sc=document.getElementById("rt-score"),sp=document.getElemen
 /* locatiekaartjes: tekst begint met een hoofdletter */
 function hoofd(){document.querySelectorAll(".loclist.cards li > span:not(.plc)").forEach(function(s){var n=s.firstChild;if(n&&n.nodeType===3&&/^\s*[a-zà-ÿ]/.test(n.textContent))n.textContent=n.textContent.replace(/^(\s*)(.)/,function(_,a,c){return a+c.toUpperCase();});});}
 opbouw();if(!klaar){document.addEventListener("DOMContentLoaded",opbouw);var n=0,iv=setInterval(function(){opbouw();if(klaar||++n>40)clearInterval(iv);},100);}
+})();
+</script>
+
+<div class="nw-bar nt-bar"><nav aria-label="Menu">
+  <a href="#start" data-nw="start"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg><span class="l-nl">Kaart</span><span class="l-en">Map</span><span class="l-fr">Carte</span><span class="l-de">Karte</span><span class="l-it">Mappa</span><span class="l-es">Mapa</span><span class="l-pt">Mapa</span><span class="l-da">Kort</span><span class="l-cs">Mapa</span><span class="l-sv">Karta</span><span class="l-nb">Kart</span><span class="l-fi">Kartta</span><span class="l-pl">Mapa</span></a>
+  <a href="#locaties" data-nw="locaties"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.6a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.4" r="2.5"/></svg><span class="l-nl">Locaties</span><span class="l-en">Locations</span><span class="l-fr">Lieux</span><span class="l-de">Orte</span><span class="l-it">Luoghi</span><span class="l-es">Lugares</span><span class="l-pt">Locais</span><span class="l-da">Steder</span><span class="l-cs">Místa</span><span class="l-sv">Platser</span><span class="l-nb">Steder</span><span class="l-fi">Paikat</span><span class="l-pl">Miejsca</span></a>
+  <a href="#soorten" data-nw="soorten"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><ellipse cx="12" cy="15.5" rx="5" ry="4.3"/><ellipse cx="5.3" cy="10.5" rx="2" ry="2.6"/><ellipse cx="9.3" cy="6.7" rx="2" ry="2.7"/><ellipse cx="14.7" cy="6.7" rx="2" ry="2.7"/><ellipse cx="18.7" cy="10.5" rx="2" ry="2.6"/></svg><span class="l-nl">Soorten</span><span class="l-en">Species</span><span class="l-fr">Espèces</span><span class="l-de">Arten</span><span class="l-it">Specie</span><span class="l-es">Especies</span><span class="l-pt">Espécies</span><span class="l-da">Arter</span><span class="l-cs">Druhy</span><span class="l-sv">Arter</span><span class="l-nb">Arter</span><span class="l-fi">Lajit</span><span class="l-pl">Gatunki</span></a>
+  <a href="#meer" data-nw="meer"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg><span class="l-nl">Meer</span><span class="l-en">More</span><span class="l-fr">Plus</span><span class="l-de">Mehr</span><span class="l-it">Altro</span><span class="l-es">Más</span><span class="l-pt">Mais</span><span class="l-da">Mere</span><span class="l-cs">Více</span><span class="l-sv">Mer</span><span class="l-nb">Mer</span><span class="l-fi">Lisää</span><span class="l-pl">Więcej</span></a>
+</nav></div>
+
+<script>
+(function(){
+var N=window.__NW;if(!N)return;
+var R=N.R,LOCS=N.LOCS,SPECIES=N.SPECIES,SPEN=N.SPEN,BYSLUG=N.BYSLUG,LOCBYSLUG=N.LOCBYSLUG,slug=N.slug,lslug=N.lslug;
+var HEART='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.5A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z"/></svg>',PAWI='<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><ellipse cx="12" cy="15.5" rx="5" ry="4.3"/><ellipse cx="5.3" cy="10.5" rx="2" ry="2.6"/><ellipse cx="9.3" cy="6.7" rx="2" ry="2.7"/><ellipse cx="14.7" cy="6.7" rx="2" ry="2.7"/><ellipse cx="18.7" cy="10.5" rx="2" ry="2.6"/></svg>',PINI='<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg>',ARR='<svg class="nw-arr" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>';
+var SVG={"pin":'<svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 12l11-4 14 5 11-4v27l-11 4-14-5-11 4z" fill="#C9D6BC"/><path d="M17 8v27M31 13v27" stroke="#9DB28E" stroke-width="2"/><path d="M33 4a8 8 0 0 0-8 8c0 6 8 14 8 14s8-8 8-14a8 8 0 0 0-8-8z" fill="#2F4A32"/><circle cx="33" cy="12" r="3" fill="#F5F0E4"/></svg>',"paw":'<svg viewBox="0 0 48 48" aria-hidden="true" fill="#A65A35"><ellipse cx="24" cy="31" rx="10" ry="8.5"/><ellipse cx="10.5" cy="21" rx="4" ry="5.2"/><ellipse cx="18.5" cy="13.5" rx="4" ry="5.4"/><ellipse cx="29.5" cy="13.5" rx="4" ry="5.4"/><ellipse cx="37.5" cy="21" rx="4" ry="5.2"/></svg>',"cal":'<svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="9" width="36" height="32" rx="5" fill="#4C6670"/><rect x="6" y="9" width="36" height="9" rx="4" fill="#3A515A"/><rect x="10" y="21" width="28" height="16" rx="2" fill="#DDE6E6"/><path d="M15 5v8M33 5v8" stroke="#3A515A" stroke-width="3.4" stroke-linecap="round"/><path d="M19 23v12M29 23v12M12 27h24M12 32h24" stroke="#4C6670" stroke-width="1.8"/></svg>',"heart":'<svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 41S6 30 6 17.5A9.5 9.5 0 0 1 24 13a9.5 9.5 0 0 1 18 4.5C42 30 24 41 24 41z" fill="#C2564F"/></svg>',"search":'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>',"tbl":'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M3 14h18M9 9v11"/></svg>',"news":'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/><path d="M9 15l2 2 4-4"/></svg>',"dna":'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 3c0 6 10 6 10 12s-10 6-10 6M17 3c0 6-10 6-10 12"/><path d="M8.5 7h7M8.5 17h7"/></svg>',"info":'<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="currentColor"/><circle cx="12" cy="7.2" r="1.6" fill="#F5F0E4"/><path d="M12 11v7" stroke="#F5F0E4" stroke-width="2.6" stroke-linecap="round"/></svg>',"flag":'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4h11l-2 4 2 4H5"/></svg>',"back":'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>',"b-home":'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>',"b-map":'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg>',"b-paw":'<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><ellipse cx="12" cy="15.5" rx="5" ry="4.3"/><ellipse cx="5.3" cy="10.5" rx="2" ry="2.6"/><ellipse cx="9.3" cy="6.7" rx="2" ry="2.7"/><ellipse cx="14.7" cy="6.7" rx="2" ry="2.7"/><ellipse cx="18.7" cy="10.5" rx="2" ry="2.6"/></svg>',"b-route":'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.5"/></svg>',"b-heart":'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.5A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z"/></svg>',"b-menu":'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>',"b-pin":'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.6a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.4" r="2.5"/></svg>',"rows":'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 6h13M8 12h13M8 18h13"/><circle cx="3.5" cy="6" r="1.2" fill="currentColor"/><circle cx="3.5" cy="12" r="1.2" fill="currentColor"/><circle cx="3.5" cy="18" r="1.2" fill="currentColor"/></svg>',"b-flag":'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/></svg>'};
+var TRX={"Favorieten": {"fr": "Favoris", "de": "Favoriten", "it": "Preferiti", "es": "Favoritos", "pt": "Favoritos", "da": "Favoritter", "cs": "Oblíbené", "sv": "Favoriter", "nb": "Favoritter", "fi": "Suosikit", "pl": "Ulubione"}, "Terug": {"fr": "Retour", "de": "Zurück", "it": "Indietro", "es": "Volver", "pt": "Voltar", "da": "Tilbage", "cs": "Zpět", "sv": "Tillbaka", "nb": "Tilbake", "fi": "Takaisin", "pl": "Wstecz"}, "Meer": {"fr": "Plus", "de": "Mehr", "it": "Altro", "es": "Más", "pt": "Mais", "da": "Mere", "cs": "Více", "sv": "Mer", "nb": "Mer", "fi": "Lisää", "pl": "Więcej"}, "Home": {"fr": "Accueil", "de": "Start", "it": "Home", "es": "Inicio", "pt": "Início", "da": "Hjem", "cs": "Domů", "sv": "Hem", "nb": "Hjem", "fi": "Etusivu", "pl": "Start"}, "Bewaar als favoriet": {"fr": "Ajouter aux favoris", "de": "Als Favorit speichern", "it": "Salva nei preferiti", "es": "Guardar en favoritos", "pt": "Guardar nos favoritos", "da": "Gem som favorit", "cs": "Uložit do oblíbených", "sv": "Spara som favorit", "nb": "Lagre som favoritt", "fi": "Tallenna suosikiksi", "pl": "Zapisz w ulubionych"}, "In je favorieten": {"fr": "Dans vos favoris", "de": "In deinen Favoriten", "it": "Nei tuoi preferiti", "es": "En tus favoritos", "pt": "Nos teus favoritos", "da": "I dine favoritter", "cs": "V tvých oblíbených", "sv": "Bland dina favoriter", "nb": "I favorittene dine", "fi": "Suosikeissasi", "pl": "W twoich ulubionych"}, "Nog geen favorieten. Tik op het hartje bij een park of een soort om het hier te bewaren. Je lijst blijft alleen op dit apparaat.": {"fr": "Pas encore de favoris. Touchez le cœur à côté d’un parc ou d’une espèce pour l’enregistrer ici. Votre liste reste uniquement sur cet appareil.", "de": "Noch keine Favoriten. Tippe auf das Herz neben einem Park oder einer Art, um ihn hier zu speichern. Deine Liste bleibt nur auf diesem Gerät.", "it": "Ancora nessun preferito. Tocca il cuore accanto a un parco o a una specie per salvarlo qui. La tua lista resta solo su questo dispositivo.", "es": "Todavía no hay favoritos. Toca el corazón junto a un parque o una especie para guardarlo aquí. Tu lista se queda solo en este dispositivo.", "pt": "Ainda não tens favoritos. Toca no coração junto a um parque ou a uma espécie para o guardar aqui. A tua lista fica só neste dispositivo.", "da": "Ingen favoritter endnu. Tryk på hjertet ved en park eller en art for at gemme den her. Din liste bliver kun på denne enhed.", "cs": "Zatím žádné oblíbené. Klepni na srdíčko u parku nebo druhu a uložíš ho sem. Tvůj seznam zůstává jen v tomto zařízení.", "sv": "Inga favoriter än. Tryck på hjärtat vid en park eller en art för att spara den här. Din lista finns bara på den här enheten.", "nb": "Ingen favoritter ennå. Trykk på hjertet ved en park eller en art for å lagre den her. Listen din blir bare på denne enheten.", "fi": "Ei vielä suosikkeja. Napauta puiston tai lajin kohdalla olevaa sydäntä, niin se tallentuu tänne. Listasi pysyy vain tällä laitteella.", "pl": "Nie masz jeszcze ulubionych. Stuknij serduszko przy parku albo gatunku, żeby go tu zapisać. Twoja lista zostaje tylko na tym urządzeniu."}, "soorten": {"fr": "espèces", "de": "Arten", "it": "specie", "es": "especies", "pt": "espécies", "da": "arter", "cs": "druhů", "sv": "arter", "nb": "arter", "fi": "lajia", "pl": "gatunków"}, "locaties": {"fr": "lieux", "de": "Orte", "it": "luoghi", "es": "lugares", "pt": "locais", "da": "steder", "cs": "míst", "sv": "platser", "nb": "steder", "fi": "paikkaa", "pl": "miejsc"}, "soort": {"fr": "espèce", "de": "Art", "it": "specie", "es": "especie", "pt": "espécie", "da": "art", "cs": "druh", "sv": "art", "nb": "art", "fi": "laji", "pl": "gatunek"}, "locatie": {"fr": "lieu", "de": "Ort", "it": "luogo", "es": "lugar", "pt": "local", "da": "sted", "cs": "místo", "sv": "plats", "nb": "sted", "fi": "paikka", "pl": "miejsce"}, "Zoek een kat of een park": {"fr": "Rechercher un félin ou un parc", "de": "Katze oder Park suchen", "it": "Cerca un felino o un parco", "es": "Busca un felino o un parque", "pt": "Procura um felino ou um parque", "da": "Søg efter en kat eller en park", "cs": "Hledej kočku nebo park", "sv": "Sök efter en katt eller en park", "nb": "Søk etter en katt eller en park", "fi": "Hae kissaa tai puistoa", "pl": "Szukaj kota albo parku"}, "Favoriet": {"fr": "Favori", "de": "Favorit", "it": "Preferito", "es": "Favorito", "pt": "Favorito", "da": "Favorit", "cs": "Oblíbené", "sv": "Favorit", "nb": "Favoritt", "fi": "Suosikki", "pl": "Ulubione"}, "Alle types": {"fr": "Tous les types", "de": "Alle Typen", "it": "Tutti i tipi", "es": "Todos los tipos", "pt": "Todos os tipos", "da": "Alle typer", "cs": "Všechny typy", "sv": "Alla typer", "nb": "Alle typer", "fi": "Kaikki tyypit", "pl": "Wszystkie rodzaje"}};
+var $=function(s,r){return (r||document).querySelector(s);},$$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s));};
+function E(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+function TX(nl,en){var t=TRX[nl]||{},l=N.lang();return l==="nl"?nl:l==="en"?en:(t[l]||en);}
+function LS(nl,en){var t=TRX[nl]||{},o='<span class="l-nl">'+E(nl)+'</span><span class="l-en">'+E(en)+'</span>';["fr","de","it","es","pt","da","cs","sv","nb","fi","pl"].forEach(function(x){o+='<span class="l-'+x+'">'+E(t[x]||en)+'</span>';});return o;}
+function en(n){return (SPEN&&SPEN[n])?SPEN[n][0]:n;}
+var main=document.getElementById("main"),info=document.getElementById("info"),html=document.documentElement;
+var SCR=["tldr","locaties","soorten","route","actueel","kleur","uitleg","rapporteer","favorieten","meer","tabel"];
+
+/* ---------- namen van de knoppen: uit de tabbladen en kopjes van de gids ---------- */
+var NTN={"soorten": "<span class=\"l-nl\">Soorten</span><span class=\"l-en\">Species</span><span class=\"l-fr\">Espèces</span><span class=\"l-de\">Arten</span><span class=\"l-it\">Specie</span><span class=\"l-es\">Especies</span><span class=\"l-pt\">Espécies</span><span class=\"l-da\">Arter</span><span class=\"l-cs\">Druhy</span><span class=\"l-sv\">Arter</span><span class=\"l-nb\">Arter</span><span class=\"l-fi\">Lajit</span><span class=\"l-pl\">Gatunki</span>", "locaties": "<span class=\"l-nl\">Locaties</span><span class=\"l-en\">Locations</span><span class=\"l-fr\">Lieux</span><span class=\"l-de\">Orte</span><span class=\"l-it\">Luoghi</span><span class=\"l-es\">Lugares</span><span class=\"l-pt\">Locais</span><span class=\"l-da\">Steder</span><span class=\"l-cs\">Místa</span><span class=\"l-sv\">Platser</span><span class=\"l-nb\">Steder</span><span class=\"l-fi\">Paikat</span><span class=\"l-pl\">Miejsca</span>", "locaties-kop": "<span class=\"l-nl\">Locaties</span><span class=\"l-en\">Locations</span><span class=\"l-fr\">Lieux</span><span class=\"l-de\">Orte</span><span class=\"l-it\">Luoghi</span><span class=\"l-es\">Lugares</span><span class=\"l-pt\">Locais</span><span class=\"l-da\">Steder</span><span class=\"l-cs\">Místa</span><span class=\"l-sv\">Platser</span><span class=\"l-nb\">Steder</span><span class=\"l-fi\">Paikat</span><span class=\"l-pl\">Miejsca</span>"};
+function naam(id){if(NTN[id])return NTN[id];if(id==="locaties-kop"){var k=$("#locaties > h2 .ctog > span");return k?k.innerHTML:naam("locaties");}var a=$('nav.toc a[href="#'+id+'"]');if(a)return a.innerHTML;
+  var h=$("#"+id+" > h2 .ctog > span")||$("#"+id+" > h2");return h?h.innerHTML:"";}
+$$("[data-nw-lbl]").forEach(function(el){el.innerHTML=naam(el.getAttribute("data-nw-lbl"));});
+/* onderbalk: korte naam voor de routeplanner in talen waar de volledige naam niet past */
+var KORT={fr:"Itinéraire",it:"Percorso",es:"Ruta",pt:"Rota",da:"Rute",cs:"Trasa",sv:"Rutt",nb:"Rute",fi:"Reitti",pl:"Trasa"};Object.keys(KORT).forEach(function(k){$$('[data-nw="route"] .l-'+k).forEach(function(x){x.textContent=KORT[k];});});
+
+/* ---------- kop: titel, ondertitel en datum van de gids op de foto; inleiding naar In het kort ---------- */
+var hd=$("#main > header"),ht=document.getElementById("nw-htxt");
+["h1.mast",".hs-onder"].forEach(function(s){var x=hd&&hd.querySelector(s);if(x)ht.appendChild(x);});
+var stp=hd&&hd.querySelector(".stamp.hs-stamp");if(stp){var sw=document.createElement("div");sw.className="nw-datum";sw.appendChild(stp);$(".nw-stats").after(sw);}
+var fig=hd&&hd.querySelector("figure.hero");
+var cnt=$$("header .counts b");
+function PLV(h,n,f){var m=n%10,c=n%100;return h.replace(/(<span class="l-pl">)[^<]*/,"$1"+(n===1?f[0]:m>=2&&m<=4&&(c<12||c>14)?f[1]:f[2]));}   /* Pools: vorm per getal */
+if(cnt[0])$$(".nw-nsp").forEach(function(s){s.innerHTML="<strong>"+cnt[0].textContent+"</strong> "+PLV(cnt[0].textContent.trim()==="1"?LS("soort","species"):LS("soorten","species"),+cnt[0].textContent.trim(),["gatunek","gatunki","gatunków"]);});
+if(cnt[1])$$(".nw-nloc").forEach(function(s){s.innerHTML="<strong>"+cnt[1].textContent+"</strong> "+PLV(cnt[1].textContent.trim()==="1"?LS("locatie","location"):LS("locaties","locations"),+cnt[1].textContent.trim(),["miejsce","miejsca","miejsc"]);});
+var tb=$("#tldr > .cbody")||$("#tldr");
+if(hd&&tb){var lede=hd.querySelector(".lede"),co=hd.querySelector(".counts");if(co)tb.insertBefore(co,tb.firstChild);if(lede)tb.insertBefore(lede,tb.firstChild);}
+if(fig){if(tb){fig.className="nw-foto";tb.insertBefore(fig,tb.firstChild);}else fig.remove();}
+var ab=$("#actueel > .cbody")||$("#actueel");if(ab){var cf=document.createElement("figure");cf.className="nw-foto";cf.innerHTML='<img src="/wildekattengids/img/nieuw/cheeta-welp.webp" alt="Jonge cheeta" loading="lazy"><p><span class="l-nl">Jonge cheeta · foto: J. Gelens</span><span class="l-en">Cheetah cub · photo: J. Gelens</span></p>';var h2=ab.querySelector(":scope > h2");if(h2&&h2.parentNode===ab)h2.after(cf);else ab.insertBefore(cf,ab.firstChild);}
+
+/* ---------- zoeken ---------- */
+var q=document.getElementById("nw-q"),res=document.getElementById("nw-res");
+function ph(){q.placeholder=TX("Zoek een kat of een park","Search for a cat or a park");q.setAttribute("aria-label",q.placeholder);}
+ph();new MutationObserver(ph).observe(html,{attributes:true,attributeFilter:["class","lang"]});
+function norm(s){return String(s).toLowerCase().replace(/ł/g,"l").normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/[’']/g,"");}
+var SEEN={};R.forEach(function(r){SEEN[r[0]]=1;});
+var ITEMS=[];
+SPECIES.forEach(function(a){ITEMS.push({k:"sp",h:"#soort/"+slug(a[0]),nl:a[0],en:en(a[0]),sub:a[2],seen:!!SEEN[a[0]],t:norm(a[0]+" "+en(a[0])+" "+a[1]+" "+a[2])});});
+LOCS.forEach(function(l){ITEMS.push({k:"loc",h:"#locatie/"+lslug(l[0]),nl:l[0],en:l[0],sub:l[1],seen:true,t:norm(l[0]+" "+l[1]+" "+(l[4]||[]).join(" "))});});
+var NIET=(function(){var g=$$("#soorten .group-title").pop();return g?g.innerHTML.replace(/\s*\(\d+[^)]*\)\s*/,""):"";})();
+var cur=-1;
+function show(){var v=norm(q.value.trim());cur=-1;
+  if(!v){res.hidden=true;res.innerHTML="";return;}
+  var w=v.split(/\s+/);
+  var hit=ITEMS.filter(function(it){return w.every(function(x){return it.t.indexOf(x)>=0;});});
+  hit.sort(function(a,b){var sa=+(norm(a.nl).indexOf(v)===0||norm(a.en).indexOf(v)===0),sb=+(norm(b.nl).indexOf(v)===0||norm(b.en).indexOf(v)===0);return (sb-sa)||(b.seen-a.seen);});
+  hit=hit.slice(0,8);
+  res.innerHTML=hit.length?hit.map(function(it){
+    var sub=it.k==="loc"?E(it.sub):(it.seen?"<em>"+E(it.sub)+"</em>":"<em>"+E(it.sub)+"</em>");
+    return '<a role="option" class="'+it.k+'" href="'+it.h+'"><span class="nw-ri">'+(it.k==="loc"?PINI:PAWI)+'</span><span><b>'+LS(it.nl,it.en)+'</b><small>'+sub+'</small></span></a>';}).join("")
+    :'<p class="nw-none">—</p>';
+  res.hidden=false;}
+q.addEventListener("input",show);q.addEventListener("focus",show);
+q.addEventListener("keydown",function(e){var as=$$("a",res);if(!as.length)return;
+  if(e.key==="ArrowDown"||e.key==="ArrowUp"){e.preventDefault();cur=(cur+(e.key==="ArrowDown"?1:-1)+as.length)%as.length;as.forEach(function(a,i){a.classList.toggle("on",i===cur);});}
+  else if(e.key==="Enter"){e.preventDefault();var t=as[cur>=0?cur:0];sluit();location.hash=t.getAttribute("href").slice(1);}
+  else if(e.key==="Escape"){sluit();}});
+function sluit(){res.hidden=true;q.value="";q.blur();}
+res.addEventListener("click",function(e){if(e.target.closest("a"))setTimeout(sluit,0);});
+document.addEventListener("click",function(e){if(!e.target.closest(".nw-search"))res.hidden=true;});
+var tz=$('.hs-top a.hs-ico[href$="#zoek"]');
+if(tz){tz.href="#start";tz.addEventListener("click",function(e){e.preventDefault();
+  if(location.hash!=="#start")location.hash="start";setTimeout(function(){window.scrollTo(0,0);q.focus();},60);});}
+
+/* ---------- favorieten (alleen in deze browser bewaard) ---------- */
+
+var FK="nt-fav";
+function favLees(){var a=null;try{a=JSON.parse(localStorage.getItem(FK)||"null");}catch(e){}
+  if(!Array.isArray(a)){a=[];try{var o=JSON.parse(localStorage.getItem("nw-fav")||"null");if(o){(o.loc||[]).forEach(function(x){a.push({k:"loc",c:"",s:x});});(o.sp||[]).forEach(function(x){a.push({k:"sp",c:"",s:x});});}}catch(e){}}
+  return a;}
+function favSchrijf(a){try{localStorage.setItem(FK,JSON.stringify(a));}catch(e){}}
+var LAND="pl";
+function hier(x){if(x.c===LAND)return true;if(x.c)return false;return x.k==="loc"?LOCBYSLUG[x.s]!==undefined:!!BYSLUG[x.s];}
+function F(){var a=favLees(),o={loc:[],sp:[]};a.forEach(function(x){if(hier(x)&&o[x.k])o[x.k].push(x.s);});return o;}
+function has(k,s){return F()[k].indexOf(s)>=0;}
+function toggle(k,s){var a=favLees(),i=-1;a.forEach(function(x,j){if(i<0&&x.k===k&&x.s===s&&hier(x))i=j;});
+  if(i>=0)a.splice(i,1);else{var it={k:k,c:LAND,s:s};
+    if(k==="loc"){var l=LOCS[LOCBYSLUG[s]];if(l){it.n=l[0];it.p=l[1];}}else{var b=BYSLUG[s];if(b){it.n=b[0];it.e=en(b[0]);it.p=b[2];}}a.push(it);}
+  favSchrijf(a);paint();}
+function lbl(on){return on?LS("In je favorieten","In your favourites"):LS("Bewaar als favoriet","Save as favourite");}
+function btn(k,s){var on=has(k,s);return '<button type="button" class="nw-heart" data-fk="'+k+'" data-fs="'+E(s)+'" aria-pressed="'+on+'" aria-label="'+TX("Favoriet","Favourite")+'">'+HEART+'</button>';}
+document.addEventListener("click",function(e){var b=e.target.closest(".nw-hwrap")||e.target.closest(".nw-heart");if(!b||!b.dataset.fk)return;e.preventDefault();e.stopPropagation();toggle(b.dataset.fk,b.dataset.fs);});
+function renderFavs(){var f=F(),a=[],b=[];
+  f.loc.forEach(function(s){var i=LOCBYSLUG[s];if(i===undefined)return;a.push('<li><a href="#locatie/'+s+'">'+E(LOCS[i][0])+'<small>'+E(LOCS[i][1])+'</small></a>'+btn("loc",s)+'</li>');});
+  f.sp.forEach(function(s){var x=BYSLUG[s];if(!x)return;b.push('<li><a href="#soort/'+s+'">'+LS(x[0],en(x[0]))+'<small><em>'+E(x[2])+'</em></small></a>'+btn("sp",s)+'</li>');});
+  var out="";
+  if(a.length)out+='<p class="nw-favh">'+naam("locaties")+'</p><ul class="nw-favs">'+a.join("")+'</ul>';
+  if(b.length)out+='<p class="nw-favh">'+naam("soorten")+'</p><ul class="nw-favs">'+b.join("")+'</ul>';
+  document.getElementById("nw-favs").innerHTML=out||'<p class="nw-empty">'+LS("Nog geen favorieten. Tik op het hartje bij een park of een soort om het hier te bewaren. Je lijst blijft alleen op dit apparaat.","No favourites yet. Tap the heart next to a park or a species to keep it here. Your list stays on this device only.")+'</p>';
+  var n=f.loc.length+f.sp.length;$$(".nw-nfav").forEach(function(s){s.textContent=n?String(n):"";});}
+function listHearts(){$$(".loclist li").forEach(function(li){var a=li.querySelector(':scope > b > a[href^="#locatie/"]');if(!a)return;
+  var s=decodeURIComponent(a.getAttribute("href").slice(9)),old=li.querySelector(":scope > .nw-heart"),w=document.createElement("span");
+  w.innerHTML=btn("loc",s);if(old)old.replaceWith(w.firstChild);else li.appendChild(w.firstChild);});}
+
+/* ---------- Meer: overige onderdelen en de links uit het menu van de site ---------- */
+(function(){var ic={route:"b-route",actueel:"news",tldr:"tbl",kleur:"dna",favorieten:"b-heart",tabel:"rows",uitleg:"info",rapporteer:"flag"};
+  var own=["tldr","actueel","kleur","route","tabel","uitleg","rapporteer"].map(function(id){
+    return '<li><a href="#'+id+'">'+(SVG[ic[id]]||"")+'<span>'+(id==="favorieten"?LS("Favorieten","Favourites"):naam(id))+'</span>'+ARR+'</a></li>';}).join("");
+  var site="";
+  var brand=$(".hs-top .hs-brand b");
+  document.getElementById("nw-meer").innerHTML='<ul class="nw-meer">'+own+'</ul>'+(site?'<p class="nw-mlbl">'+(brand?brand.innerHTML:"")+'</p><ul class="nw-meer">'+site+'</ul>':"");})();
+
+/* ---------- schermen ---------- */
+/* binnenkomst via een regiolink (bijv. /frankrijk/bretagne/): het regiofilter staat al aan, dus meteen het scherm Locaties tonen */
+if(window.__RGINIT&&!location.hash){try{history.replaceState(null,"","#locaties");}catch(e){}}
+var stack=[location.hash||"#start"],pos={},curY=window.scrollY,popped=false;
+window.addEventListener("scroll",function(){curY=window.scrollY;},{passive:true});
+function screenOf(el){while(el&&el.parentElement!==main)el=el.parentElement;return el&&SCR.indexOf(el.id)>=0?el:null;}
+function parentOf(h){if(/^#locatie\//.test(h))return "locaties";if(/^#soort\//.test(h))return "soorten";return "start";}
+function terug(){if(stack.length>1)history.back();else location.hash=parentOf(location.hash);}
+document.addEventListener("click",function(e){if(e.target.closest(".nw-back")){e.preventDefault();terug();}});
+var bar=$$(".nw-bar [data-nw]"),busy=false;
+function mark(id){bar.forEach(function(a){var on=a.dataset.nw===id;a.classList.toggle("on",on);if(on)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current");});}
+function infoBar(){if(info.hidden)return;var h=decodeURIComponent(location.hash||""),m=h.match(/^#(locatie|soort)\/(.+)$/);if(!m)return;
+  busy=true;
+  if(!info.querySelector(".nw-sbar")){var b=document.createElement("div");b.className="nw-sbar";
+    b.innerHTML='<button type="button" class="nw-back">'+SVG.back+LS("Terug","Back")+'</button><span class="nw-stitle">'+naam(m[1]==="locatie"?"locaties":"soorten")+'</span>';
+    info.insertBefore(b,info.firstChild);}
+  var k=m[1]==="locatie"?"loc":"sp",s=m[2],t=info.querySelector("h1");
+  var old=info.querySelector(".nw-hwrap");if(old)old.remove();
+  if(t){var w=document.createElement("button");w.type="button";w.className="nw-hwrap";w.dataset.fk=k;w.dataset.fs=s;w.setAttribute("aria-pressed",String(has(k,s)));
+    w.innerHTML=btn(k,s).replace(/^<button[^>]*>/,'<span class="nw-heart" aria-pressed="'+has(k,s)+'">').replace(/<\/button>$/,"</span>")+lbl(has(k,s));t.insertAdjacentElement("afterend",w);}
+  busy=false;}
+new MutationObserver(function(){if(!busy)infoBar();}).observe(info,{childList:true});
+function paint(){renderFavs();listHearts();infoBar();}
+function apply(){
+  var h=decodeURIComponent(location.hash||"");
+  SCR.concat(["start"]).forEach(function(id){html.classList.remove("nw-op-"+id);});
+  $$(".nw-cur").forEach(function(x){x.classList.remove("nw-cur");});
+  if(main.hidden){html.classList.remove("nw-scherm");infoBar();mark(parentOf(h));
+    if(popped&&pos[h]!=null)window.scrollTo(0,pos[h]);else window.scrollTo(0,0);return;}
+  var t=h.length>1&&document.getElementById(h.slice(1)),sc=t&&screenOf(t);
+  if(sc){html.classList.add("nw-scherm","nw-op-"+sc.id);sc.classList.add("nw-cur");
+    var cb=sc.querySelector(":scope > .cbody"),tg=sc.querySelector(":scope > h2 .ctog");if(cb)cb.hidden=false;if(tg)tg.setAttribute("aria-expanded","true");
+    document.getElementById("nw-stitle").innerHTML=sc.id==="favorieten"?LS("Favorieten","Favourites"):sc.id==="meer"?LS("Meer","More"):naam(sc.id);
+    mark(["locaties","soorten"].indexOf(sc.id)>=0?sc.id:"meer");
+    if(popped&&pos[h]!=null)window.scrollTo(0,pos[h]);
+    else if(t===sc)window.scrollTo(0,0);
+    else{var y=t.getBoundingClientRect().top+window.scrollY-(document.getElementById("nw-sbar").offsetHeight+80);window.scrollTo(0,Math.max(0,y));}
+  }else{html.classList.remove("nw-scherm");html.classList.add("nw-op-start");mark("start");
+    window.scrollTo(0,popped&&pos[h]!=null?pos[h]:0);}
+}
+window.addEventListener("hashchange",function(){
+  var h=location.hash||"#start",prev=stack[stack.length-1];pos[prev]=curY;
+  if(stack.length>1&&stack[stack.length-2]===h){stack.pop();popped=true;}else{stack.push(h);popped=false;}
+  apply();setTimeout(function(){apply();popped=false;},0);});
+paint();apply();
+})();
+</script>
+
+<script>
+(function(){
+/* testontwerp (bron/test_ontwerp.py): kaart als startscherm, fotokaartjes per soort, één lijst met locaties */
+var N=window.__NT,H=window.__HST||{};if(!N)return;
+var R=N.R,LOCS=N.LOCS,PH=N.PHOTOS||{};
+var $=function(s,r){return (r||document).querySelector(s);},$$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s));};
+function E(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+function LS(nl,en){var t=T2[nl]||{},o='<span class="l-nl">'+nl+'</span><span class="l-en">'+en+'</span>';["fr","de","it","es","pt","da","cs","sv","nb","fi","pl"].forEach(function(x){o+='<span class="l-'+x+'">'+(t[x]||en)+'</span>';});return o;}
+function TX(nl,en){var t=T2[nl]||{},l=N.lang();return l==="nl"?nl:l==="en"?en:(t[l]||en);}
+var ARR='<svg class="nw-arr" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>',ROWS='<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 6h13M8 12h13M8 18h13"/><circle cx="3.5" cy="6" r="1.2" fill="currentColor"/><circle cx="3.5" cy="12" r="1.2" fill="currentColor"/><circle cx="3.5" cy="18" r="1.2" fill="currentColor"/></svg>',SRCH='<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>',T2={"Favorieten": {"fr": "Favoris", "de": "Favoriten", "it": "Preferiti", "es": "Favoritos", "pt": "Favoritos", "da": "Favoritter", "cs": "Oblíbené", "sv": "Favoriter", "nb": "Favoritter", "fi": "Suosikit", "pl": "Ulubione"}, "Terug": {"fr": "Retour", "de": "Zurück", "it": "Indietro", "es": "Volver", "pt": "Voltar", "da": "Tilbage", "cs": "Zpět", "sv": "Tillbaka", "nb": "Tilbake", "fi": "Takaisin", "pl": "Wstecz"}, "Meer": {"fr": "Plus", "de": "Mehr", "it": "Altro", "es": "Más", "pt": "Mais", "da": "Mere", "cs": "Více", "sv": "Mer", "nb": "Mer", "fi": "Lisää", "pl": "Więcej"}, "Home": {"fr": "Accueil", "de": "Start", "it": "Home", "es": "Inicio", "pt": "Início", "da": "Hjem", "cs": "Domů", "sv": "Hem", "nb": "Hjem", "fi": "Etusivu", "pl": "Start"}, "Bewaar als favoriet": {"fr": "Ajouter aux favoris", "de": "Als Favorit speichern", "it": "Salva nei preferiti", "es": "Guardar en favoritos", "pt": "Guardar nos favoritos", "da": "Gem som favorit", "cs": "Uložit do oblíbených", "sv": "Spara som favorit", "nb": "Lagre som favoritt", "fi": "Tallenna suosikiksi", "pl": "Zapisz w ulubionych"}, "In je favorieten": {"fr": "Dans vos favoris", "de": "In deinen Favoriten", "it": "Nei tuoi preferiti", "es": "En tus favoritos", "pt": "Nos teus favoritos", "da": "I dine favoritter", "cs": "V tvých oblíbených", "sv": "Bland dina favoriter", "nb": "I favorittene dine", "fi": "Suosikeissasi", "pl": "W twoich ulubionych"}, "Nog geen favorieten. Tik op het hartje bij een park of een soort om het hier te bewaren. Je lijst blijft alleen op dit apparaat.": {"fr": "Pas encore de favoris. Touchez le cœur à côté d’un parc ou d’une espèce pour l’enregistrer ici. Votre liste reste uniquement sur cet appareil.", "de": "Noch keine Favoriten. Tippe auf das Herz neben einem Park oder einer Art, um ihn hier zu speichern. Deine Liste bleibt nur auf diesem Gerät.", "it": "Ancora nessun preferito. Tocca il cuore accanto a un parco o a una specie per salvarlo qui. La tua lista resta solo su questo dispositivo.", "es": "Todavía no hay favoritos. Toca el corazón junto a un parque o una especie para guardarlo aquí. Tu lista se queda solo en este dispositivo.", "pt": "Ainda não tens favoritos. Toca no coração junto a um parque ou a uma espécie para o guardar aqui. A tua lista fica só neste dispositivo.", "da": "Ingen favoritter endnu. Tryk på hjertet ved en park eller en art for at gemme den her. Din liste bliver kun på denne enhed.", "cs": "Zatím žádné oblíbené. Klepni na srdíčko u parku nebo druhu a uložíš ho sem. Tvůj seznam zůstává jen v tomto zařízení.", "sv": "Inga favoriter än. Tryck på hjärtat vid en park eller en art för att spara den här. Din lista finns bara på den här enheten.", "nb": "Ingen favoritter ennå. Trykk på hjertet ved en park eller en art for å lagre den her. Listen din blir bare på denne enheten.", "fi": "Ei vielä suosikkeja. Napauta puiston tai lajin kohdalla olevaa sydäntä, niin se tallentuu tänne. Listasi pysyy vain tällä laitteella.", "pl": "Nie masz jeszcze ulubionych. Stuknij serduszko przy parku albo gatunku, żeby go tu zapisać. Twoja lista zostaje tylko na tym urządzeniu."}, "soorten": {"fr": "espèces", "de": "Arten", "it": "specie", "es": "especies", "pt": "espécies", "da": "arter", "cs": "druhů", "sv": "arter", "nb": "arter", "fi": "lajia", "pl": "gatunków"}, "locaties": {"fr": "lieux", "de": "Orte", "it": "luoghi", "es": "lugares", "pt": "locais", "da": "steder", "cs": "míst", "sv": "platser", "nb": "steder", "fi": "paikkaa", "pl": "miejsc"}, "soort": {"fr": "espèce", "de": "Art", "it": "specie", "es": "especie", "pt": "espécie", "da": "art", "cs": "druh", "sv": "art", "nb": "art", "fi": "laji", "pl": "gatunek"}, "locatie": {"fr": "lieu", "de": "Ort", "it": "luogo", "es": "lugar", "pt": "local", "da": "sted", "cs": "místo", "sv": "plats", "nb": "sted", "fi": "paikka", "pl": "miejsce"}, "Zoek een kat of een park": {"fr": "Rechercher un félin ou un parc", "de": "Katze oder Park suchen", "it": "Cerca un felino o un parco", "es": "Busca un felino o un parque", "pt": "Procura um felino ou um parque", "da": "Søg efter en kat eller en park", "cs": "Hledej kočku nebo park", "sv": "Sök efter en katt eller en park", "nb": "Søk etter en katt eller en park", "fi": "Hae kissaa tai puistoa", "pl": "Szukaj kota albo parku"}, "Favoriet": {"fr": "Favori", "de": "Favorit", "it": "Preferito", "es": "Favorito", "pt": "Favorito", "da": "Favorit", "cs": "Oblíbené", "sv": "Favorit", "nb": "Favoritt", "fi": "Suosikki", "pl": "Ulubione"}, "Alle types": {"fr": "Tous les types", "de": "Alle Typen", "it": "Tutti i tipi", "es": "Todos los tipos", "pt": "Todos os tipos", "da": "Alle typer", "cs": "Všechny typy", "sv": "Alla typer", "nb": "Alle typer", "fi": "Kaikki tyypit", "pl": "Wszystkie rodzaje"}, "Kies een kat:": {"fr": "Choisissez un félin :", "de": "Wähle eine Katze:", "it": "Scegli un felino:", "es": "Elige un felino:", "pt": "Escolhe um felino:", "da": "Vælg en kat:", "cs": "Vyber si kočku:", "sv": "Välj en katt:", "nb": "Velg en katt:", "fi": "Valitse kissa:", "pl": "Wybierz kota:"}, "Waar zit welke kat? Kies een soort:": {"fr": "Quel félin vit où ? Choisissez une espèce :", "de": "Welche Katze lebt wo? Wähle eine Art:", "it": "Quale felino vive dove? Scegli una specie:", "es": "¿Qué felino vive dónde? Elige una especie:", "pt": "Que felino vive onde? Escolhe uma espécie:", "da": "Hvilken kat bor hvor? Vælg en art:", "cs": "Která kočka žije kde? Vyber si druh:", "sv": "Vilken katt bor var? Välj en art:", "nb": "Hvilken katt bor hvor? Velg en art:", "fi": "Mikä kissa asuu missä? Valitse laji:", "pl": "Który kot mieszka gdzie? Wybierz gatunek:"}, "Hoofdtabel": {"fr": "Tableau principal", "de": "Haupttabelle", "it": "Tabella principale", "es": "Tabla principal", "pt": "Tabela principal", "da": "Hovedtabel", "cs": "Hlavní tabulka", "sv": "Huvudtabell", "nb": "Hovedtabell", "fi": "Päätaulukko", "pl": "Tabela główna"}, "Kaart": {"fr": "Carte", "de": "Karte", "it": "Mappa", "es": "Mapa", "pt": "Mapa", "da": "Kort", "cs": "Mapa", "sv": "Karta", "nb": "Kart", "fi": "Kartta", "pl": "Mapa"}, "Soorten": {"fr": "Espèces", "de": "Arten", "it": "Specie", "es": "Especies", "pt": "Espécies", "da": "Arter", "cs": "Druhy", "sv": "Arter", "nb": "Arter", "fi": "Lajit", "pl": "Gatunki"}, "Locaties": {"fr": "Lieux", "de": "Orte", "it": "Luoghi", "es": "Lugares", "pt": "Locais", "da": "Steder", "cs": "Místa", "sv": "Platser", "nb": "Steder", "fi": "Paikat", "pl": "Miejsca"}, "Alle katten": {"fr": "Tous les félins", "de": "Alle Katzen", "it": "Tutti i felini", "es": "Todos los felinos", "pt": "Todos os felinos", "da": "Alle katte", "cs": "Všechny kočky", "sv": "Alla katter", "nb": "Alle katter", "fi": "Kaikki kissat", "pl": "Wszystkie koty"}, "Soortpagina": {"fr": "Page de l’espèce", "de": "Artseite", "it": "Pagina della specie", "es": "Página de la especie", "pt": "Página da espécie", "da": "Artsside", "cs": "Stránka druhu", "sv": "Artsida", "nb": "Artsside", "fi": "Lajisivu", "pl": "Strona gatunku"}, "Meer over deze soort": {"fr": "En savoir plus sur cette espèce", "de": "Mehr über diese Art", "it": "Di più su questa specie", "es": "Más sobre esta especie", "pt": "Mais sobre esta espécie", "da": "Mere om denne art", "cs": "Více o tomto druhu", "sv": "Mer om den här arten", "nb": "Mer om denne arten", "fi": "Lisää tästä lajista", "pl": "Więcej o tym gatunku"}, "In beeld": {"fr": "Sur la carte", "de": "Im Bild", "it": "Sulla mappa", "es": "En el mapa", "pt": "No mapa", "da": "På kortet", "cs": "Na mapě", "sv": "På kartan", "nb": "På kartet", "fi": "Kartalla", "pl": "Na mapie"}, "Meeste soorten eerst. Tik op een naam voor de katten en bezoekinformatie.": {"fr": "Les lieux avec le plus d’espèces d’abord. Touchez un nom pour voir ses félins et les infos de visite.", "de": "Die meisten Arten zuerst. Tippe auf einen Namen für die Katzen und Besucherinfos.", "it": "Prima i luoghi con più specie. Tocca un nome per i felini e le informazioni per la visita.", "es": "Primero los lugares con más especies. Toca un nombre para ver sus felinos y la información de visita.", "pt": "Primeiro os locais com mais espécies. Toca num nome para ver os felinos e a informação de visita.", "da": "Steder med flest arter først. Tryk på et navn for at se kattene og besøgsinformationen.", "cs": "Místa s nejvíce druhy jsou nahoře. Klepni na název a uvidíš kočky a informace pro návštěvu.", "sv": "Platser med flest arter först. Tryck på ett namn för att se katterna och besöksinformationen.", "nb": "Steder med flest arter først. Trykk på et navn for å se kattene og besøksinformasjonen.", "fi": "Eniten lajeja ensin. Napauta nimeä, niin näet kissat ja vierailutiedot.", "pl": "Najpierw miejsca z największą liczbą gatunków. Stuknij nazwę, żeby zobaczyć koty i informacje dla odwiedzających."}, "Toon alle": {"fr": "Tout afficher", "de": "Alle zeigen", "it": "Mostra tutti", "es": "Mostrar todos", "pt": "Mostrar todos", "da": "Vis alle", "cs": "Zobrazit vše", "sv": "Visa alla", "nb": "Vis alle", "fi": "Näytä kaikki", "pl": "Pokaż wszystkie"}, "Onderzochte locaties": {"fr": "Lieux vérifiés", "de": "Geprüfte Orte", "it": "Luoghi verificati", "es": "Lugares comprobados", "pt": "Locais verificados", "da": "Undersøgte steder", "cs": "Prověřená místa", "sv": "Undersökta platser", "nb": "Undersøkte steder", "fi": "Tutkitut paikat", "pl": "Sprawdzone miejsca"}, "Alle vermeldingen in één tabel": {"fr": "Toutes les mentions dans un tableau", "de": "Alle Einträge in einer Tabelle", "it": "Tutte le segnalazioni in una tabella", "es": "Todas las menciones en una tabla", "pt": "Todas as menções numa tabela", "da": "Alle angivelser i én tabel", "cs": "Všechny zmínky v jedné tabulce", "sv": "Alla uppgifter i en tabell", "nb": "Alle oppføringer i én tabell", "fi": "Kaikki merkinnät yhdessä taulukossa", "pl": "Wszystkie wzmianki w jednej tabeli"}, "Zwarte panter (zwart luipaard) in het wild, Tadoba (India)": {"fr": "Panthère noire (léopard noir) dans la nature, Tadoba (Inde)", "de": "Schwarzer Panther (schwarzer Leopard) in freier Wildbahn, Tadoba (Indien)", "it": "Pantera nera (leopardo nero) in natura, Tadoba (India)", "es": "Pantera negra (leopardo negro) en libertad, Tadoba (India)", "pt": "Pantera-negra (leopardo-negro) na natureza, Tadoba (Índia)", "da": "Sort panter (sort leopard) i naturen, Tadoba (Indien)", "cs": "Černý panter (černý levhart) v přírodě, Tadoba (Indie)", "sv": "Svart panter (svart leopard) i det vilda, Tadoba (Indien)", "nb": "Svart panter (svart leopard) i naturen, Tadoba (India)", "fi": "Musta pantteri (musta leopardi) luonnossa, Tadoba (Intia)", "pl": "Czarna pantera (czarny lampart) na wolności, Tadoba (Indie)"}, "Zoek een soort": {"fr": "Rechercher une espèce", "de": "Art suchen", "it": "Cerca una specie", "es": "Busca una especie", "pt": "Procura uma espécie", "da": "Søg efter en art", "cs": "Hledej druh", "sv": "Sök efter en art", "nb": "Søk etter en art", "fi": "Hae lajia", "pl": "Szukaj gatunku"}, "Zoek een park of plaats": {"fr": "Rechercher un parc ou une ville", "de": "Park oder Ort suchen", "it": "Cerca un parco o una località", "es": "Busca un parque o un lugar", "pt": "Procura um parque ou um local", "da": "Søg efter en park eller et sted", "cs": "Hledej park nebo místo", "sv": "Sök efter en park eller en plats", "nb": "Søk etter en park eller et sted", "fi": "Hae puistoa tai paikkaa", "pl": "Szukaj parku albo miejsca"}, "Niets gevonden.": {"fr": "Aucun résultat.", "de": "Nichts gefunden.", "it": "Nessun risultato.", "es": "No se ha encontrado nada.", "pt": "Nada encontrado.", "da": "Intet fundet.", "cs": "Nic nenalezeno.", "sv": "Inget hittades.", "nb": "Ingenting funnet.", "fi": "Mitään ei löytynyt.", "pl": "Nic nie znaleziono."}, "onzeker": {"fr": "incertain", "de": "unsicher", "it": "incerto", "es": "incierto", "pt": "incerto", "da": "usikker", "cs": "nejisté", "sv": "osäker", "nb": "usikker", "fi": "epävarma", "pl": "niepewne"}, "Kies een soort": {"fr": "Choisissez une espèce", "de": "Wähle eine Art", "it": "Scegli una specie", "es": "Elige una especie", "pt": "Escolhe uma espécie", "da": "Vælg en art", "cs": "Vyber si druh", "sv": "Välj en art", "nb": "Velg en art", "fi": "Valitse laji", "pl": "Wybierz gatunek"}};
+var html=document.documentElement;
+
+/* soorten per locatie en locaties per soort (zelfde koppeling als de gids: naam in LOCS[i][4]) */
+var LSP=[],SPL={};
+LOCS.forEach(function(l,i){var s={};R.forEach(function(r){if(l[4].indexOf(r[2])>=0)s[r[0]]=1;});LSP[i]=Object.keys(s);
+  LSP[i].forEach(function(sp){(SPL[sp]=SPL[sp]||[]).push(i);});});
+/* soorten zonder enige bevestigde vermelding (alleen onzeker of gepland): stippellijn */
+/* bevestigd = aanwezig, tijdelijk niet zichtbaar, vertrek aangekondigd of alleen met rondleiding (zelfde regel als de gids en de hoofdpagina) */
+function bevR(r){return String(r[4]).split("+").some(function(c){return "gybr".indexOf(c)>=0&&c;});}
+var BEV={},LBEV=[];R.forEach(function(r){if(bevR(r))BEV[r[0]]=1;});
+LOCS.forEach(function(l,i){var s={};R.forEach(function(r){if(l[4].indexOf(r[2])>=0&&bevR(r))s[r[0]]=1;});LBEV[i]=s;});
+function onz(sp){return !BEV[sp];}
+/* met een regio gekozen: alleen onzeker als de soort in die regio nergens bevestigd is */
+function onzR(sp,r){if(!r)return onz(sp);return !(SPL[sp]||[]).some(function(i){return inReg(i,r)&&LBEV[i][sp];});}
+/* aantal locaties met een bevestigde vermelding van een soort, en met alleen onzekere */
+function nBev(sp){return (SPL[sp]||[]).filter(function(i){return LBEV[i][sp];}).length;}
+function tel(b,u,eenheid){return (b?b+' '+eenheid(b):'')+(u?(b?' · ':'')+u+' '+LS("onzeker","uncertain"):'');}
+function tk(nm){var k=H.loc?H.loc[nm]:undefined;return k===undefined?-1:k;}
+function tnl(i){var k=tk(LOCS[i][0]);return k<0||!H.nm?"":H.nm.nl[k];}
+function tnaam(k){if(k<0||!H.nm)return "";return (H.nm[N.lang()]||H.nm.en||H.nm.nl)[k]||"";}
+function ico(k){var c=k<0||!H.col?"#8B8676":H.col[k];return '<svg viewBox="-8 -8 16 16" aria-hidden="true" style="color:'+c+'"><circle r="8" fill="currentColor"/><g fill="#F0EEE2" style="color:#F0EEE2">'+(k<0||!H.gly?'<circle r="2"/>':H.gly[k])+'</g></svg>';}
+function nsoort(n){return n===1?LS("soort","species"):LS("soorten","species");}
+function nloc(n){return n===1?LS("locatie","location"):LS("locaties","locations");}
+
+/* beschrijving per locatie uit de lijst van de gids */
+var DS={};
+function leesDS(){$$("#locaties .loclist.cards li").forEach(function(li){var a=li.querySelector('a[href^="#locatie/"]');if(!a)return;
+  var s=a.getAttribute("href").slice(9),o="";$$(":scope > span[class^='l-']",li).forEach(function(x){o+=x.outerHTML;});DS[s]=o;});}
+
+var SP=null,MEER=false;
+function typ(){var b=$('#lt-bar [aria-pressed="true"]');return b?b.dataset.t:"";}
+function reg(){var b=$('#rg-bar [aria-pressed="true"]');return b&&N.REGIO?b.dataset.r:"";}
+function inReg(i,r){return N.REGIO&&N.REGIO[LOCS[i][0]]===r;}
+/* melding als een grijze knop het andere filter uitzet */
+var MLD={nl:["{k}: niet te zien in {p}.","Het filter op regio staat nu uit.","Het filter op soort staat nu uit."],
+  en:["{k}: not on view in {p}.","The region filter is now off.","The species filter is now off."],
+  fr:["{k} : pas visible ici ({p}).","Le filtre par région est désactivé.","Le filtre par espèce est désactivé."],
+  de:["{k}: in {p} nicht zu sehen.","Der Regionsfilter ist jetzt aus.","Der Artenfilter ist jetzt aus."],
+  it:["{k}: non visibile in {p}.","Il filtro per regione è disattivato.","Il filtro per specie è disattivato."],
+  es:["{k}: no se puede ver en {p}.","El filtro por región está desactivado.","El filtro por especie está desactivado."],
+  pt:["{k}: não está visível em {p}.","O filtro por região está desligado.","O filtro por espécie está desligado."],
+  da:["{k}: kan ikke ses i {p}.","Filteret for region er nu slået fra.","Filteret for art er nu slået fra."],
+  cs:["{k}: zde není k vidění ({p}).","Filtr podle regionu je teď vypnutý.","Filtr podle druhu je teď vypnutý."],
+  sv:["{k}: finns inte att se i {p}.","Filtret för region är nu avstängt.","Filtret för art är nu avstängt."],
+  nb:["{k}: kan ikke sees i {p}.","Filteret for region er nå slått av.","Filteret for art er nå slått av."],
+  fi:["{k}: ei nähtävissä ({p}).","Aluesuodatin on nyt pois päältä.","Lajisuodatin on nyt pois päältä."],
+  pl:["{k}: nie do zobaczenia ({p}).","Filtr regionu jest teraz wyłączony.","Filtr gatunku jest teraz wyłączony."]};
+var mldT=null;
+function melding(k,p,welk){var el=$("#nt-mld");if(!el)return;var t=MLD[N.lang()]||MLD.en;
+  el.textContent=t[0].replace("{k}",k).replace("{p}",p)+" "+t[welk];el.hidden=false;clearTimeout(mldT);mldT=setTimeout(function(){el.hidden=true;},6000);}
+function chipNaam(b){var c=b.cloneNode(true);c.querySelectorAll(".n,svg").forEach(function(x){x.remove();});return c.textContent.trim();}
+function lijst(sp){var t=typ(),r=reg();return LOCS.map(function(l,i){return i;}).filter(function(i){return (!sp||LSP[i].indexOf(sp)>=0)&&(!t||tnl(i)===t)&&(!r||N.REGIO[LOCS[i][0]]===r);})
+  .sort(function(a,b){return Object.keys(LBEV[b]).length-Object.keys(LBEV[a]).length||LSP[b].length-LSP[a].length||LOCS[a][0].localeCompare(LOCS[b][0]);});}
+function kaart(i,lang){var l=LOCS[i],nm=l[0],k=tk(nm),s=N.lslug(nm),n=Object.keys(LBEV[i]).length,u=LSP[i].length-n,d=lang&&DS[s];
+  if(lang)return kaartje(i,l,nm,k,s,n,u);
+  return '<li class="nt-loc"><span class="nt-ti">'+ico(k)+'</span><span class="nt-lt"><a href="#locatie/'+s+'">'+E(nm)+'</a><small>'+E(l[1])+(k>=0?' · '+E(tnaam(k)):"")+'</small>'+
+    (d?'<span class="nt-ds">'+d+'</span>':"")+'</span><span class="nt-n">'+(n?'<b>'+n+'</b> '+nsoort(n):'')+(u?(n?'<br>':'')+'<small>'+u+' '+LS("onzeker","uncertain")+'</small>':'')+'</span></li>';}
+
+/* scherm Locaties (19-10-2026): los kaartje per locatie, aantal als badge, soortrondjes (bevestigd eerst, onzeker met stippelrand) */
+var RMAX=6;
+function rondje(sp,onzeker){var p=PH[sp]&&PH[sp].src,nm=N.spName(sp);
+  return '<span class="nt-rj'+(onzeker?" nt-rju":"")+'" title="'+E(nm)+'">'+(p?'<img src="'+E(p)+'" alt="" loading="lazy">':'<i>'+E(nm.charAt(0))+'</i>')+'</span>';}
+function kaartje(i,l,nm,k,s,n,u){var b=LSP[i].filter(function(sp){return LBEV[i][sp];}),o=LSP[i].filter(function(sp){return !LBEV[i][sp];}),alle=b.concat(o);
+  var toon=alle.length>RMAX?alle.slice(0,RMAX-1):alle,rest=alle.length-toon.length;
+  var rj=toon.map(function(sp){return rondje(sp,!LBEV[i][sp]);}).join("")+(rest?'<span class="nt-rj nt-rjm">+'+rest+'</span>':"");
+  var namen=alle.map(function(sp){return N.spName(sp)+(LBEV[i][sp]?"":" ("+TX("onzeker","uncertain")+")");}).join(", ");
+  return '<li class="nt-loc nt-kj"><span class="nt-ti">'+ico(k)+'</span><span class="nt-lt"><a href="#locatie/'+s+'">'+E(nm)+'</a><small>'+E(l[1])+(k>=0?' · '+E(tnaam(k)):"")+'</small></span>'+
+    '<span class="nt-n">'+(n?'<b class="nt-bdg">'+n+'</b><span class="nt-vh"> '+nsoort(n)+'</span>':'')+(u?'<small>'+u+' '+LS("onzeker","uncertain")+'</small>':'')+'</span>'+
+    (alle.length?'<span class="nt-rjs" aria-hidden="true">'+rj+'</span><span class="nt-vh">'+E(namen)+'</span>':'')+'</li>';}
+
+/* knop "Naar boven" (19-10-2026): de gids scrolde naar de onderkant van zijn oude kop, die in dit ontwerp verborgen is (sprong maar een paar pixels). Nu altijd helemaal naar boven. */
+document.addEventListener("click",function(e){var t=e.target.closest&&e.target.closest("#totop");if(!t)return;e.preventDefault();e.stopImmediatePropagation();window.scrollTo({top:0,behavior:"smooth"});},true);
+
+/* ---------- kaart (startscherm) ---------- */
+function cats(){var el=$("#nt-cats");if(!el)return;
+  var all=N.BIG.concat(N.SMALL).filter(function(s){return SPL[s];}).sort(function(a,b){return N.spName(a).localeCompare(N.spName(b));});
+  /* met een regio gekozen: katten die daar niet zitten grijs en achteraan */
+  var r=reg(),ok=function(s){return !r||(SPL[s]||[]).some(function(i){return inReg(i,r);});};
+  var ja=all.filter(ok),nee=all.filter(function(s){return !ok(s);});
+  var hn=$(".nw-nsp strong"),num=r?ja.filter(function(s){return !onzR(s,r);}).length:(hn?hn.textContent:all.length);
+  function knop(s,grijs){var p=PH[s]&&PH[s].src;return '<button type="button" class="nt-cat'+(grijs?" nt-grijs":"")+'" data-sp="'+E(s)+'" aria-pressed="'+(SP===s)+'"><span class="nt-av'+((grijs?onz(s):onzR(s,r))?" nt-avu":"")+'">'+(p?'<img src="'+E(p)+'" alt="" loading="lazy">':"")+'</span><span>'+E(N.spName(s))+'</span></button>';}
+  el.innerHTML='<button type="button" class="nt-cat" data-sp="" aria-pressed="'+(!SP)+'"><span class="nt-av nt-all">'+num+'</span><span>'+LS("Alle katten","All cats")+'</span></button>'+
+    ja.map(function(s){return knop(s,false);}).join("")+(nee.length?'<span class="nt-sep" aria-hidden="true"></span>'+nee.map(function(s){return knop(s,true);}).join(""):"");
+  el.setAttribute("aria-label",TX("Kies een soort","Choose a species"));}
+function spinfo(){var el=$("#nt-spinfo");if(!el)return;if(!SP){el.hidden=true;el.innerHTML="";return;}var b=nBev(SP),u=(SPL[SP]||[]).length-b;
+  el.innerHTML='<b>'+E(N.spName(SP))+'</b> · '+tel(b,u,nloc)+' · <a href="#soort/'+N.slug(SP)+'">'+LS("Soortpagina","Species page")+' →</a>';el.hidden=false;}
+function filt(){var set=SP?SPL[SP]||[]:null;$$("#nlmap .mk").forEach(function(m){var i=+m.dataset.i;m.classList.toggle("nt-uit",!!set&&set.indexOf(i)<0);});}
+function beeld(){var el=$("#nt-beeld");if(!el)return;var ids=lijst(SP),n=ids.length,show=MEER?ids:ids.slice(0,5);
+  el.innerHTML='<h3>'+LS("In beeld","On the map")+': '+n+' '+nloc(n)+'</h3><p class="nt-note">'+LS("Meeste soorten eerst. Tik op een naam voor de katten en bezoekinformatie.","Most species first. Tap a name for its cats and visitor information.")+'</p>'+
+    '<ul class="nt-list">'+show.map(function(i){return kaart(i,false);}).join("")+'</ul>'+
+    (n>5&&!MEER?'<button type="button" class="nt-more" id="nt-more">'+LS("Toon alle","Show all")+' ('+n+')</button>':"");}
+document.addEventListener("click",function(e){
+  var c=e.target.closest&&e.target.closest(".nt-cat");
+  if(c&&c.classList.contains("nt-grijs")){var rb=$('#rg-bar [aria-pressed="true"]'),pn=rb?chipNaam(rb):"",al=$('#rg-bar .rg-chip[data-r=""]');
+    SP=c.dataset.sp;MEER=false;if(al)al.click();cats();spinfo();filt();beeld();regs();melding(N.spName(SP),pn,1);return;}
+  if(c){SP=c.dataset.sp||null;MEER=false;cats();spinfo();filt();beeld();regs();setTimeout(kaartLeeg,30);return;}
+  if(e.target.closest&&e.target.closest("#nt-more")){MEER=true;beeld();return;}
+  var t=e.target.closest&&e.target.closest("#nt-types .lt-chip");
+  if(t){var o=$$("#lt-bar .lt-chip").filter(function(b){return b.dataset.t===t.dataset.t;})[0];if(o)o.click();return;}
+  var g=e.target.closest&&e.target.closest("#nt-regs .rg-chip");
+  if(g&&g.classList.contains("nt-grijs")&&SP){var kn=N.spName(SP);SP=null;MEER=false;cats();spinfo();filt();melding(kn,chipNaam(g),2);}
+  if(g){var o2=$$("#rg-bar .rg-chip").filter(function(b){return b.dataset.r===g.dataset.r;})[0];if(o2)o2.click();}});
+function types(){var bar=$("#lt-bar"),el=$("#nt-types");if(!el)return;if(!bar){el.hidden=true;return;}el.innerHTML=bar.innerHTML;el.setAttribute("aria-label",bar.getAttribute("aria-label")||"");
+  var r=reg();if(r)$$(".lt-chip",el).forEach(function(b){var t=b.dataset.t||"",nn=b.querySelector(".n");if(!nn)return;nn.textContent=LOCS.filter(function(l,i){return inReg(i,r)&&(!t||tnl(i)===t);}).length;});}
+function regs(){var bar=$("#rg-bar"),el=$("#nt-regs"),w=$("#nt-rgw");if(!bar||!el)return;w.hidden=false;el.innerHTML=bar.innerHTML;el.setAttribute("aria-label",bar.getAttribute("aria-label")||"");
+  /* met een soort gekozen: regio's zonder die soort grijs en achteraan, bij de rest het aantal locaties met die soort */
+  if(SP){var grijs=[];$$(".rg-chip",el).forEach(function(b){var r=b.dataset.r,n=r?(SPL[SP]||[]).filter(function(i){return inReg(i,r);}).length:(SPL[SP]||[]).length,nn=b.querySelector(".n");
+      if(nn)nn.textContent=n;if(r&&!n){b.classList.add("nt-grijs");grijs.push(b);}});
+    if(grijs.length){var sp=document.createElement("span");sp.className="nt-sep";sp.setAttribute("aria-hidden","true");el.appendChild(sp);grijs.forEach(function(b){el.appendChild(b);});}}
+  var lab=$("#rg-lab");$("#nt-rglab").textContent=lab?lab.textContent:"";}
+
+/* ---------- zoekvelden boven Locaties en Soorten ---------- */
+function nrm(x){return String(x).toLowerCase().replace(/ł/g,"l").normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[’']/g,"").replace(/<[^>]*>/g," ");}
+var ZL="",ZS="";
+function zoekveld(id,nl,en){var d=document.createElement("div");d.className="nw-search nt-zoek";
+  d.innerHTML='<label>'+SRCH+'<input type="search" id="'+id+'" autocomplete="off"></label>';d.dataset.nl=nl;d.dataset.en=en;return d;}
+function zph(){[["nt-zl","Zoek een park of plaats","Search for a park or town"],["nt-zs","Zoek een soort","Search for a species"]].forEach(function(z){var i=document.getElementById(z[0]);if(i){i.placeholder=TX(z[1],z[2]);i.setAttribute("aria-label",i.placeholder);}});}
+function geen(){return '<p class="nt-geen">'+LS("Niets gevonden.","Nothing found.")+'</p>';}
+/* ---------- locaties ---------- */
+function locs(){var el=$("#nt-loclist");if(!el)return;var q=nrm(ZL.trim()),ids=lijst(null);
+  if(q){var w=q.split(/\s+/);ids=ids.filter(function(i){var l=LOCS[i],t=nrm(l[0]+" "+l[1]+" "+(l[4]||[]).join(" ")+" "+(DS[N.lslug(l[0])]||""));return w.every(function(x){return t.indexOf(x)>=0;});});}
+  el.innerHTML=ids.length?ids.map(function(i){return kaart(i,true);}).join(""):geen();}
+function zoekSoort(){var q=nrm(ZS.trim()),w=q?q.split(/\s+/):[],n=0;
+  $$(".nt-spg .nt-sc").forEach(function(a){var t=nrm(a.textContent+" "+(a.dataset.sp||"")),ok=w.every(function(x){return t.indexOf(x)>=0;});a.hidden=!ok;if(ok)n++;});
+  $$(".chips[data-group]").forEach(function(box){var vis=$$(".nt-sc",box).some(function(a){return !a.hidden;}),g=box.previousElementSibling;
+    if(q){box.classList.toggle("nt-weg",!vis);if(g&&g.classList.contains("group-title"))g.classList.toggle("nt-weg",!vis);}
+    else{box.classList.remove("nt-weg");if(g)g.classList.remove("nt-weg");}});
+  var e=$("#nt-zsgeen");if(e)e.hidden=!(q&&!n);}
+
+/* ---------- soorten ---------- */
+function spgrid(){setTimeout(zoekSoort,0);$$(".chips[data-group]").forEach(function(box){var g=box.querySelector(":scope > .nt-spg");if(!g){g=document.createElement("div");g.className="nt-spg";box.appendChild(g);}
+  g.innerHTML=$$(":scope > .chip[data-sp]",box).map(function(c){var sp=c.dataset.sp,p=PH[sp]&&PH[sp].src,b=nBev(sp),u=(SPL[sp]||[]).length-b;
+    return '<a class="nt-sc'+(onz(sp)?" nt-uns":"")+'" data-sp="'+E(sp+" "+(N.SPEN&&N.SPEN[sp]?N.SPEN[sp][0]:""))+'" href="#soort/'+N.slug(sp)+'"><span class="ph">'+(p?'<img src="'+E(p)+'" alt="" loading="lazy">':"")+'</span><span class="bd"><span class="nm">'+E(N.spName(sp))+'</span><small>'+tel(b,u,nloc)+'</small></span></a>';}).join("");});}
+
+/* kaart zonder stippen voor de gekozen regio (bijv. de Canarische Eilanden): melding met verwijzing naar de lijst */
+var KL={nl:["{r} staat niet op de kaart.","Bekijk de {n} locaties hieronder","Bekijk de locatie hieronder"],
+  en:["{r} is not on the map.","See the {n} locations below","See the location below"],
+  fr:["{r} n’apparaît pas sur la carte.","Voir les {n} lieux ci-dessous","Voir le lieu ci-dessous"],
+  de:["{r} ist nicht auf der Karte.","Die {n} Orte stehen unten","Der Ort steht unten"],
+  it:["{r} non è sulla mappa.","Vedi i {n} luoghi qui sotto","Vedi il luogo qui sotto"],
+  es:["{r} no aparece en el mapa.","Mira los {n} lugares abajo","Mira el lugar abajo"],
+  pt:["{r} não aparece no mapa.","Vê os {n} locais abaixo","Vê o local abaixo"],
+  da:["{r} er ikke med på kortet.","Se de {n} steder nedenfor","Se stedet nedenfor"],
+  cs:["{r} není na mapě.","Podívej se na místa níže ({n})","Podívej se na místo níže"],
+  sv:["{r} finns inte på kartan.","Se de {n} platserna nedan","Se platsen nedan"],
+  nb:["{r} er ikke på kartet.","Se de {n} stedene nedenfor","Se stedet nedenfor"],
+  fi:["{r} ei ole kartalla.","Katso {n} paikkaa alta","Katso paikka alta"],
+  pl:["{r} nie ma na mapie.","Zobacz miejsca poniżej ({n})","Zobacz miejsce poniżej"]};
+function kaartLeeg(){var k=$("#nt-kaart");if(!k)return;var o=$("#nt-kleeg");if(o)o.remove();var b=$('#rg-bar [aria-pressed="true"]');
+  if(!b||!b.dataset.r)return;var zicht=$$("#nlmap .mk, #nlmap .hs-cl").some(function(m){return getComputedStyle(m).display!=="none";});if(zicht)return;
+  var n=lijst(SP).length;if(!n)return;var t=KL[N.lang()]||KL.en,x=document.createElement("button");x.type="button";x.id="nt-kleeg";x.className="nt-kleeg";
+  x.innerHTML='<b>'+E(t[0].replace("{r}",chipNaam(b)))+'</b><span>'+E((n===1?t[2]:t[1]).replace("{n}",n))+' ↓</span>';
+  x.addEventListener("click",function(){var bl=$("#nt-beeld");if(bl)bl.scrollIntoView({behavior:"smooth",block:"start"});});k.appendChild(x);}
+/* bij een gekozen regio inzoomen op de locaties van die regio (18-10-2026) */
+var ZR=null;
+function regioZoom(){var svg=$("#nlmap"),r=reg();if(!svg||!window.__HSZOOM||r===ZR)return;ZR=r;
+  if(!r){window.__HSZOOM(svg,null);return;}
+  var b=svg.viewBox.baseVal,st=svg.__zk,B=st?st.base:[b.x,b.y,b.width,b.height],x0=1e9,y0=1e9,x1=-1e9,y1=-1e9,n=0;
+  $$(".mk",svg).forEach(function(m){var i=+m.dataset.i;if(!LOCS[i]||!inReg(i,r))return;var d=m.querySelector(".dot");if(!d)return;
+    var x=+d.getAttribute("cx"),y=+d.getAttribute("cy");x0=Math.min(x0,x);x1=Math.max(x1,x);y0=Math.min(y0,y);y1=Math.max(y1,y);n++;});
+  if(!n){window.__HSZOOM(svg,null);return;}
+  var asp=B[3]/B[2],w=Math.max((x1-x0)*1.5,(y1-y0)*1.5/asp,B[2]/4),h=w*asp;
+  window.__HSZOOM(svg,[(x0+x1)/2-w/2,(y0+y1)/2-h/2,w,h]);}
+function alles(){setTimeout(kaartLeeg,30);setTimeout(regioZoom,40);cats();spinfo();filt();beeld();types();regs();locs();spgrid();}
+
+/* ---------- opbouw: wachten tot de gids en de huisstijl klaar zijn ---------- */
+var klaar=false;
+function opbouw(){if(klaar)return true;
+  var map=$("#locaties .mapwrap .map"),reg=$("#soorten .hs-reg"),bar=$("#lt-bar")||$("#rg-bar");
+  if(!map||!reg||!$("#nlmap .mk")||!$(".chips[data-group] .chip"))return false;klaar=true;
+  var loc=$("#locaties"),lb=$("#locaties > .cbody")||loc;
+  /* kaart en infovak naar het startscherm */
+  $("#nt-kaart").appendChild(map);var mi=$("#mapinfo");if(mi)$("#nt-sel").appendChild(mi);
+  var mw=$("#locaties .mapwrap");if(mw)mw.classList.add("nt-weg");
+  /* Locaties: één lijst met kaartjes; uitleg onderaan; onderzochte locaties zonder katten naar Over */
+  leesDS();
+  var cnt=$("#lt-count")||$("#rg-count")||$("#lt-bar")||$("#rg-bar"),ul=document.createElement("div");ul.className="nt-box";ul.innerHTML='<ul class="nt-list nt-full" id="nt-loclist"></ul>';
+  if(cnt)cnt.insertAdjacentElement("afterend",ul);else lb.insertBefore(ul,lb.firstChild);
+  var intro=$(":scope > p.prose",lb);if(intro){intro.classList.add("nt-uitl");ul.insertAdjacentElement("afterend",intro);}
+  /* de lijst "Met katachtigen" vervalt (de kaartjes vervangen hem); de rest (geen katten gevonden, over de lijst) naar Over */
+  var det=$$("details",lb),ub=$("#uitleg > .cbody")||$("#uitleg"),weg=[];
+  det.forEach(function(d){if(d.querySelector("ul.loclist.cards"))d.classList.add("nt-weg");});
+  var bl=$$(".rg-blok",lb).filter(function(b){return b.parentElement===lb;});
+  if(bl.length)bl.forEach(function(b){if(!$$("details:not(.nt-weg)",b).length)b.classList.add("nt-weg");weg.push(b);});
+  else det.forEach(function(d){if(!d.classList.contains("nt-weg"))weg.push(d);else if(d.parentElement===lb)weg.push(d);});
+  if(ub&&weg.some(function(x){return !x.classList.contains("nt-weg");})){var h=document.createElement("h3");h.className="nt-uitleg-h";h.innerHTML=LS("Onderzochte locaties","Locations checked");ub.appendChild(h);}
+  if(ub)weg.forEach(function(x){ub.appendChild(x);});
+  /* foto van een zwarte panter boven Kleur & hybriden (Wikimedia Commons, CC BY-SA 4.0) */
+  var kb=$("#kleur > .cbody")||$("#kleur");if(kb&&!$(".nt-kfoto",kb)){var kf=document.createElement("figure");kf.className="nw-foto nt-kfoto";
+    var cr=' · <a href="https://commons.wikimedia.org/wiki/File:Melanistic_leopard_at_Tadoba.jpg" target="_blank" rel="noopener">Atul.rewild, Wikimedia Commons</a> · CC BY-SA 4.0';
+    kf.innerHTML='<img src="/wildekattengids/img/nieuw/zwarte-panter.webp" alt="" loading="lazy" style="aspect-ratio:4/3;object-position:50% 45%"><p>'+LS("Zwarte panter (zwart luipaard) in het wild, Tadoba (India)","Black panther (black leopard) in the wild, Tadoba (India)")+cr+'</p>';
+    kb.insertBefore(kf,kb.firstChild);}
+  /* zoekvelden */
+  var zl=zoekveld("nt-zl");lb.insertBefore(zl,lb.firstChild);
+  var sb0=$("#soorten > .cbody")||$("#soorten"),zs=zoekveld("nt-zs");sb0.insertBefore(zs,sb0.firstChild);
+  var zg=document.createElement("div");zg.id="nt-zsgeen";zg.hidden=true;zg.innerHTML=geen();zs.insertAdjacentElement("afterend",zg);
+  $("#nt-zl").addEventListener("input",function(){ZL=this.value;locs();});
+  $("#nt-zs").addEventListener("input",function(){ZS=this.value;zoekSoort();});
+  zph();
+  /* hoofdtabel als eigen scherm */
+  var tb=$("#tabel > .cbody")||$("#tabel");tb.appendChild(reg);
+  var sb=$("#soorten > .cbody")||$("#soorten"),lk=document.createElement("a");lk.className="nt-link";lk.href="#tabel";
+  lk.innerHTML=ROWS+'<span>'+LS("Alle vermeldingen in één tabel","All entries in one table")+'</span>'+ARR;sb.appendChild(lk);
+  alles();
+  ["lt-bar","rg-bar"].forEach(function(id){var b=document.getElementById(id);if(b)new MutationObserver(function(){types();regs();cats();beeld();locs();setTimeout(kaartLeeg,30);setTimeout(regioZoom,40);}).observe(b,{childList:true,subtree:true,attributes:true,attributeFilter:["aria-pressed"]});});
+  new MutationObserver(function(){leesDS();alles();zph();}).observe(html,{attributes:true,attributeFilter:["lang"]});
+  /* na een tik op de kaart het infovak in beeld brengen als het onder de rand valt */
+  $("#nt-kaart").addEventListener("click",function(e){if(!e.target.closest(".mk"))return;setTimeout(function(){var m=$("#mapinfo");if(!m)return;var r=m.getBoundingClientRect();
+    if(r.top>innerHeight-140)window.scrollBy({top:r.top-innerHeight+Math.min(r.height,300)+90,behavior:"smooth"});},60);});
+  /* binnenkomst met een # (bijv. #soorten): bovenaan het scherm beginnen */
+  if(/^#(soorten|locaties|route|actueel|kleur|uitleg|rapporteer|tldr|tabel|meer|favorieten)$/.test(location.hash))window.scrollTo(0,0);
+  return true;}
+if(!opbouw()){var n=0,iv=setInterval(function(){if(opbouw()||++n>80)clearInterval(iv);},100);}
+
+/* routeplanner: welke soorten je met je keuze al ziet (naast "Nog niet:") */
+var ALW={nl:"Al wel:",en:"Already:",fr:"Déjà :",de:"Schon dabei:",it:"Già:",es:"Ya:",pt:"Já:",da:"Allerede:",cs:"Už ano:",sv:"Redan:",nb:"Allerede:",fi:"Jo mukana:",pl:"Już są:"};
+function alWel(){var sc=$("#rt-score"),sp=$("#rt-sp");if(!sc||!sp)return;var o=sc.querySelector(".nt-alwel");if(o)o.remove();
+  var ja=$$(".rchip.on",sp).map(function(c){return (c.firstChild&&c.firstChild.nodeType===3?c.firstChild.textContent:c.textContent).trim();});
+  if(!ja.length)return;var s=document.createElement("span");s.className="hs-mist nt-alwel";
+  s.innerHTML='<b>'+(ALW[N.lang()]||ALW.en)+'</b> '+ja.map(E).join(", ");
+  var m=sc.querySelector(".hs-mist:not(.nt-alwel)");if(m)sc.insertBefore(s,m);else sc.appendChild(s);}
+(function(){var sp=$("#rt-sp");if(sp)new MutationObserver(function(){setTimeout(alWel,0);}).observe(sp,{childList:true,subtree:true});
+  new MutationObserver(function(){setTimeout(alWel,0);}).observe(html,{attributes:true,attributeFilter:["lang"]});setTimeout(alWel,0);})();
+/* zoeken klapt open via het vergrootglas bovenaan */
+var q=$("#nw-q"),tz=$('.hs-top a.hs-ico[href="#start"]')||$('.hs-top a.hs-ico[href$="#zoek"]');
+if(tz)tz.addEventListener("click",function(){html.classList.add("nt-zoek");});
+if(q)q.addEventListener("blur",function(){setTimeout(function(){if(!q.value&&document.activeElement!==q)html.classList.remove("nt-zoek");},200);});
 })();
 </script>
 <!--jungle--><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Nunito:wght@400;600;700;800&display=swap"><style id="jungle">

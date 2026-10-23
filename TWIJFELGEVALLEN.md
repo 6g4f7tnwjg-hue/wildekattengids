@@ -4,6 +4,14 @@ Vermeldingen met de status “onzeker”: ze staan wel in de gids, maar tellen n
 
 Regel: bevestigd alleen met een recente bron (2025–2026); onzeker alleen met een concrete aanwijzing van na 2024; oudere aanwijzingen gaan naar “Eerder hier”.
 
+## Noorwegen
+
+Stand 23 oktober 2026. Geen onzekere vermeldingen. Dun onderbouwd (nagaan bij een volgende ronde):
+- Bjørneparken – Amoerluipaard: alleen kater Zino bevestigd; de komst van poes Mila (gepland mei 2026) niet.
+- Bjørneparken – lynx Flora: alleen het dierenmenu van de eigen site (2026).
+- Tangen Dyrepark – tweede serval (Seraphine, sinds juni 2026): alleen koppen van artikelen achter een betaalmuur.
+- Dyreparken – aantallen tijgers, cheetahs en lynxen onbekend; of het cheetahhuis na augustus 2026 weer open is.
+
 ## Zweden
 
 Stand 22 oktober 2026. Twee onzekere vermeldingen; daarnaast een paar “bevestigde” die alleen op de eigen soortpagina of parkkaart rusten.

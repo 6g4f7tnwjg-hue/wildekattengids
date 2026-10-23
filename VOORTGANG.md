@@ -2,6 +2,31 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 23 oktober 2026 – Noorwegen
+
+Nieuwe landpagina `noorwegen/` (bron: `bron/gidsen/no.html`, gebouwd met `bron/landbouw/no/gen.py`), in het Nederlands, Engels en Noors (bokmål; taalcode `nb`, landcode `no`). Eén pagina met een filter per fylke (5 fylker met locaties), met kaart, routeplanner, recente geboortes, soortpagina’s, filters en het meldformulier. Zweden en Finland staan grijs op de kaart.
+
+**Aantallen**
+- **6 locaties**, alle met een bevestigde kat: 2 dierentuinen (Dyreparken, EAZA; Bjørneparken, SDF), 1 dierenpark (Tangen Dyrepark) en 3 wildparken met Noordse dieren (Langedrag, Polar Park, Park Nordica).
+- **6 soorten bevestigd**: tijger, leeuw, luipaard (Amoerluipaard), cheetah, Euraziatische lynx, serval. De lynx in 5 parken.
+- 10 vermeldingen in de hoofdtabel, geen onzekere.
+- Route met alle soorten in drie parken: Dyreparken, Bjørneparken, Tangen Dyrepark.
+- Recente geboortes in Dyreparken: 4 cheetahs (6-8-2026), 4 leeuwen (29-4-2026) en 5 leeuwen (19-5-2025, 4 in leven).
+- 23 andere locaties zonder katten (aquaria, attractieparken, circussen); Haugaland Zoo had rond 2017–2018 een nevelpanter.
+
+**Werkwijze**
+- Er is geen officiële lijst: parken melden zich bij Mattilsynet en hebben voor elke wilde soort een vergunning nodig (FOR-2016-09-05-1035). Gebruikt: EAZA (3 Noorse leden), SDF (Bjørneparken) en Zootierliste.
+- Particulieren mogen sinds 2017 geen uitheemse wilde katten houden (FOR-2017-05-11-597, ook hybriden F1–F4); in circussen alleen gedomesticeerde dieren.
+- Vier onderzoeksagenten en één vervolgagent. Type: dierentuin bij lidmaatschap van EAZA of SDF; parken met alleen Noordse dieren in grote verblijven als wildpark.
+- Ondersoort alleen als een bron hem noemt: lynx en leeuw (Dyreparken) staan op onbekend.
+- De gids is met een script afgeleid van de Zweedse (`bron/landbouw/no/tools/basis_omzetten.py`), vaste teksten door een vertaalagent; Noorse datums als “23. oktober 2026”.
+
+**Gedeelde bestanden**: taal `nb` en land `no` in alle gedeelde lagen; locatietypes in het Noors: dierentuin = “Dyrehage”, dierenpark = “Dyrepark”. Hoofdpagina: Noorwegen in alle lijsten; kaartkader naar 71,4° N en 31,7° O (Finnmark), Finland grijs. Nu 16 landen.
+
+**Ook**: Tsjechische gids: Iberische lynx “Španělsko a Portugalsko” (was “Španělsko a Česko”).
+
+**Gecontroleerd**: de Noorse pagina in NL/EN/NB op 390 px (Chromium): geen fouten, geen horizontaal scrollen, geen Zweedse of Portugese resten. Overige pagina’s vergeleken met de vorige versie.
+
 ## 23 oktober 2026 – Zweden
 
 Nieuwe landpagina `zweden/` (bron: `bron/gidsen/se.html`, gebouwd met `bron/landbouw/se/gen.py`), in het Nederlands, Engels en Zweeds. Eén pagina met een filter per län (9 län met locaties), met kaart, routeplanner, recente geboortes, soortpagina’s, filters op type en labels en het meldformulier. Noorwegen, Finland en Denemarken staan grijs op de kaart.

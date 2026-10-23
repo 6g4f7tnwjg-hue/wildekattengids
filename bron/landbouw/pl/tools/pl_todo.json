@@ -1,0 +1,595 @@
+{
+ "0000": {
+  "soort": "html",
+  "fi": "← Kaikki maat"
+ },
+ "0001": {
+  "soort": "html",
+  "fi": "Tue opasta"
+ },
+ "0002": {
+  "soort": "html",
+  "fi": "Päivitetty 16. lokakuuta 2026"
+ },
+ "0003": {
+  "soort": "html",
+  "fi": "Luonnonvaraiset kissaeläimet"
+ },
+ "0004": {
+  "soort": "html",
+  "fi": "suomalaisissa eläintarhoissa"
+ },
+ "0005": {
+  "soort": "html",
+  "fi": "Servaali · kuva: J. Gelens"
+ },
+ "0006": {
+  "soort": "html",
+  "fi": "Missä näet leijonia, tiikereitä, pardinilveksiä ja muita luonnonvaraisia kissaeläimiä Portugalissa? Tämä opas kertoo lajeittain ja puistoittain, mitkä kissaeläimet asuvat missäkin, mitä pentuja on syntynyt äskettäin ja mikä muuttuu pian. Ja millä reitillä näet kaikki lajit."
+ },
+ "0007": {
+  "soort": "html",
+  "fi": "vahvistettua lajia"
+ },
+ "0008": {
+  "soort": "html",
+  "fi": "paikkaa, joissa on kissaeläimiä"
+ },
+ "0009": {
+  "soort": "html",
+  "fi": "Yleiskatsaus"
+ },
+ "0010": {
+  "soort": "html",
+  "fi": "Paikat"
+ },
+ "0011": {
+  "soort": "html",
+  "fi": "Suunnittele vierailusi"
+ },
+ "0012": {
+  "soort": "html",
+  "fi": "Päätaulukko"
+ },
+ "0013": {
+  "soort": "html",
+  "fi": "Ajankohtaista"
+ },
+ "0014": {
+  "soort": "html",
+  "fi": "Värit &amp; risteymät"
+ },
+ "0015": {
+  "soort": "html",
+  "fi": "Tietoa oppaasta"
+ },
+ "0016": {
+  "soort": "html",
+  "fi": "Ilmoita"
+ },
+ "0017": {
+  "soort": "html",
+  "fi": "Lyhyesti"
+ },
+ "0018": {
+  "soort": "html",
+  "fi": "\n<div class=\"prose\">\n  <ul>\n    <li><strong>10 vahvistettua lajia</strong> 6 paikassa: 3 eläintarhaa, 1 pieni eläintarha, 1 villieläinpuisto ja 1 safaripuisto. Europaradisesta (eläintarha) on vain yksi epävarma merkintä.</li>\n    <li><strong><a href=\"#locatie/jardim-zoologico-de-lisboa\">Jardim Zoológico de Lisboa</a></strong> on selvästi lajirikkain: kahdeksan lajia, muun muassa siperiantiikereitä ja sumatrantiikereitä, persianleopardeja, jaguaareja, pilvileopardi ja ainoat pardinilvekset, jotka voit nähdä Portugalissa.</li>\n    <li><strong>Pardinilves:</strong> vain Lissabonissa (Drago ja Fábula, lajinsa lähettiläät). Kansallinen kasvatuskeskus Silvesin lähellä ei ole avoinna yleisölle; Parque Biológico de Gaiaan rakennetaan ilvesaitausta.</li>\n    <li><strong>Vain yhdessä paikassa:</strong> punailves eläintarhassa <a href=\"#locatie/zoo-de-lagos\">Zoo de Lagos</a>, joka on Algarven ainoa paikka, jossa on luonnonvaraisia kissaeläimiä.</li>\n    <li><strong>Pentuja:</strong> kolme persianleopardia Lissabonissa (huhtikuu 2026).</li>\n    <li><strong>Ei sirkuksia eikä yksityisiä pitäjiä:</strong> villieläimet on kielletty sirkuksissa (laki 20/2019, siirtymäaika vuoden 2025 loppuun); viimeinen sirkustiikeri muutti pelastuskeskukseen Espanjaan vuonna 2026. Vuodesta 2018 yksityishenkilöt eivät ole saaneet pitää luonnonvaraisia kissaeläimiä.</li>\n    <li><strong>Azoreilla ja Madeiralla</strong> ei ole nähtävissä luonnonvaraisia kissaeläimiä.</li>\n  </ul>\n  </div>\n"
+ },
+ "0019": {
+  "soort": "html",
+  "fi": "Kokonaiskuva"
+ },
+ "0020": {
+  "soort": "html",
+  "fi": "Luokka"
+ },
+ "0021": {
+  "soort": "html",
+  "fi": "Määrä"
+ },
+ "0022": {
+  "soort": "html",
+  "fi": "Lajit"
+ },
+ "0023": {
+  "soort": "html",
+  "fi": "Vahvistettu"
+ },
+ "0024": {
+  "soort": "html",
+  "fi": "Leijona, Tiikeri, Leopardi, Jaguaari, Pilvileopardi, Gepardi, Ilves, Pardinilves, Punailves, Servaali"
+ },
+ "0025": {
+  "soort": "html",
+  "fi": "Epävarmat"
+ },
+ "0026": {
+  "soort": "html",
+  "fi": "merkintää"
+ },
+ "0027": {
+  "soort": "html",
+  "fi": "Oselotti"
+ },
+ "0028": {
+  "soort": "html",
+  "fi": "Yleiskatsaus"
+ },
+ "0029": {
+  "soort": "html",
+  "fi": "Napsauta lajia, niin päätaulukko suodattuu. Luku kertoo, monessako taulukon paikassa laji on."
+ },
+ "0030": {
+  "soort": "html",
+  "fi": "Pantherinae (isot kissat)"
+ },
+ "0031": {
+  "soort": "html",
+  "fi": "Felinae (pienet kissat)"
+ },
+ "0032": {
+  "soort": "html",
+  "fi": "epävarma"
+ },
+ "0033": {
+  "soort": "html",
+  "fi": "Ei nähtävissä Suomessa (32 lajia)"
+ },
+ "0034": {
+  "soort": "html",
+  "fi": "Paikoittain"
+ },
+ "0035": {
+  "soort": "html",
+  "fi": "Kaikki Suomen eläintarhat, villieläinpuistot ja safaripuistot, joissa voit nähdä luonnonvaraisia kissaeläimiä. Napsauta pistettä nähdäksesi, mitkä kissaeläimet siellä asuvat, tai valitse alta alue (NUTS-alueet vuodelta 2024). Azoreilla ja Madeiralla ei ole nähtävissä luonnonvaraisia kissaeläimiä; Espanjalla (harmaa kartalla) on oma oppaansa."
+ },
+ "0036": {
+  "soort": "html",
+  "fi": "vähintään yksi vahvistettu laji"
+ },
+ "0037": {
+  "soort": "html",
+  "fi": "vain epävarmoja merkintöjä"
+ },
+ "0038": {
+  "soort": "html",
+  "fi": "Kaaviokartta"
+ },
+ "0039": {
+  "soort": "html",
+  "fi": "Tai valitse paikka"
+ },
+ "0040": {
+  "soort": "html",
+  "fi": "Napsauta paikkaa kartalla."
+ },
+ "0041": {
+  "soort": "html",
+  "fi": "Kissaeläimiä (7 paikkaa)"
+ },
+ "0042": {
+  "soort": "html",
+  "fi": "Norte"
+ },
+ "0043": {
+  "soort": "html",
+  "fi": "Leijona, tiikeri, ilves, gepardi."
+ },
+ "0044": {
+  "soort": "html",
+  "fi": "Tiikeri, ilves. Epävarma: leijona."
+ },
+ "0045": {
+  "soort": "html",
+  "fi": "Centro"
+ },
+ "0046": {
+  "soort": "html",
+  "fi": "Epävarma: tiikeri."
+ },
+ "0047": {
+  "soort": "html",
+  "fi": "Ilves."
+ },
+ "0048": {
+  "soort": "html",
+  "fi": "Lisboa e Setúbal"
+ },
+ "0049": {
+  "soort": "html",
+  "fi": "Pardinilves, ilves, gepardi, leijona, tiikeri, leopardi, pilvileopardi, jaguaari."
+ },
+ "0050": {
+  "soort": "html",
+  "fi": "Alentejo"
+ },
+ "0051": {
+  "soort": "html",
+  "fi": "Servaali."
+ },
+ "0052": {
+  "soort": "html",
+  "fi": "Algarve"
+ },
+ "0053": {
+  "soort": "html",
+  "fi": "Ilves, punailves, servaali. Epävarma: oselotti."
+ },
+ "0054": {
+  "soort": "html",
+  "fi": "Kissaeläimiä ei löytynyt"
+ },
+ "0055": {
+  "soort": "html",
+  "fi": "\n<ul class=\"loclist\">\n    <li><b>Ei avoinna yleisölle (pardinilveksen kasvatuskeskus):</b> Centro Nacional de Reprodução do Lince Ibérico (Silves, Faro)</li>\n    <li><b>Suunnitteilla (pardinilves):</b> Parque Biológico de Gaia (Avintes, Porto)</li>\n    <li><b>Ennen kissaeläimiä (tiikeri, gepardi), nyt suljettu:</b> Omega Parque (Monchique, Faro)</li>\n    <li><b>Pelastuskeskukset, joissa ei ole nähtävissä kissaeläimiä:</b> CERAS (Castelo Branco), CERVAS (Gouveia, Guarda), CRASSA (Santo André, Setúbal), Centro de Recuperação do Lobo Ibérico (Mafra, Lisboa), LxCRAS (Lisboa), Pangea (Alandroal, Évora), RIAS (Olhão, Faro)</li>\n    <li><b>Suljettu:</b> Aquário do Porto Pim (Horta, Azorit), Mini-Zoo Parque Marechal Carmona (Cascais), Parque Zoológico da Povoação (São Miguel, Azorit), Zoo-Oeste (Torres Vedras)</li>\n    <li><b>Tarkistettu, ei kissaeläimiä:</b> Aquamuseu do Rio Minho (Vila Nova de Cerveira), Aquário Vasco da Gama (Oeiras), Aquário da Madeira (Porto Moniz, Madeira), Aquashow Park (Quarteira), Borboletário Tropical (Constância), Castelo do Burro (Odemira), Centro de Educação Ambiental de Vinha de Mouros (Cabeceiras de Basto), Coudelaria de Alter (Alter do Chão), Estação Litoral da Aguda (Vila Nova de Gaia), Fluviário de Mora (Mora), Ilha das Aves (Ribeira Brava, Madeira), Jardim dos Loiros (Funchal, Madeira), Krazy World (Algoz, Silves), Mama-Adama Alpaca Farm (Grândola), Mini Zoo Queijaria Cachopas (Évora), Monte Palace Madeira (Funchal, Madeira), Monte Selvagem (Montemor-o-Novo), Oceanário de Lisboa (Lisboa), Parque Ambiental de Ribeira de Pena (Ribeira de Pena), Parque Biológico da Serra das Meadas (Lamego), Parque Biológico de Vinhais (Vinhais), Parque Biológico do Mezio (Arcos de Valdevez), Parque Ecológico de Gouveia (Gouveia), Parque Temático da Madeira (Santana, Madeira), Parque Terra Nostra (Furnas, Azorit), Parque da Mina (Monchique), Quinta Pedagógica de Braga (Braga), Quinta Pedagógica de Silves (Silves), Quinta Pedagógica dos Olivais (Lisboa), Quinta das Palmeiras (Porto Santo), SEA LIFE Porto (Porto), Tapada Nacional de Mafra (Mafra), Zoo de Lourosa (Santa Maria da Feira), Zoomarine (Guia, Albufeira)</li>\n  </ul>\n"
+ },
+ "0056": {
+  "soort": "html",
+  "fi": "Tietoa virallisesta eläintarhaluettelosta"
+ },
+ "0057": {
+  "soort": "html",
+  "fi": "\n<p>Portugalissa jokaisella eläintarhalla on oltava lupa (asetus 59/2003, muutettu asetuksella 104/2012). Vuodesta 2012 lupia on myöntänyt DGAV (Direção-Geral de Alimentação e Veterinária); ICNF vastaa suojelluista lajeista ja CITES-asioista. Azoreilla ja Madeiralla vastuu on alueellisilla viranomaisilla.</p>\n    <p>DGAV julkaisee luetteloa ”Parques Zoológicos Licenciados”, jossa on 24 luvan saanutta puistoa, mutta se on päivätty 28. huhtikuuta 2021 (julkaistu verkossa toukokuussa 2025). Luettelo on siis <b>vanhentunut</b>; uudempaa versiota ei ole löytynyt.</p>\n    <p>Siksi tämän oppaan luettelo on koottu Zootierlistestä (kaikki kissaeläimet, nykyiset ja entiset pitäjät), DGAV:n luettelosta, EAZA:n ja iberialaisen eläintarhajärjestön AIZA:n jäsenluetteloista sekä alueellisista uutisista, ja sen jälkeen tarkistettu paikka kerrallaan jokaisen puiston virallisilta verkkosivuilta.</p>\n    <p>Se, kutsutaanko puistoa tässä oppaassa eläintarhaksi vai pieneksi eläintarhaksi, riippuu EAZA- tai AIZA-jäsenyydestä. Safaripuistot ja villieläinpuistot pitävät oman tyyppinsä.</p>\n"
+ },
+ "0058": {
+  "soort": "html",
+  "fi": "Suunnittele vierailusi"
+ },
+ "0059": {
+  "soort": "html",
+  "fi": "Suunnittele reittisi"
+ },
+ "0060": {
+  "soort": "html",
+  "fi": "Rastita paikat, joissa haluat käydä. Alta näet heti, mitä kissaeläimiä niissä näet ja mitkä vielä puuttuvat."
+ },
+ "0061": {
+  "soort": "html",
+  "fi": "Reitti, jossa 2 puistoa"
+ },
+ "0062": {
+  "soort": "html",
+  "fi": "Poista kaikki rastit"
+ },
+ "0063": {
+  "soort": "html",
+  "fi": "Paikat"
+ },
+ "0064": {
+  "soort": "html",
+  "fi": "Vinkit"
+ },
+ "0065": {
+  "soort": "html",
+  "fi": "\n<ul class=\"prose\">\n    <li><strong>Kaikki 10 lajia kahdessa puistossa:</strong>\n      <ul>\n        <li><strong>Jardim Zoológico de Lisboa</strong> (Lissabon): leijona, tiikeri, leopardi, jaguaari, pilvileopardi, gepardi, ilves, pardinilves</li>\n        <li><strong>Zoo de Lagos</strong> (Barão de São João, Algarve): punailves, servaali (ja ilves)</li>\n      </ul>\n    </li>\n    <li><strong>Servaalin</strong> näet myös Badoca Safari Parkissa (Alentejo), matkalla Lissabonista Algarveen. Pohjoisessa Zoo Santo Inácio (leijona, tiikeri, gepardi, ilves) ja Zoo da Maia (valkoinen tiikeri, ilves) ovat hyviä vaihtoehtoja, mutta niissä et näe pardinilvestä, jaguaaria, pilvileopardia etkä punailvestä.</li>\n    <li><strong>Pardinilves:</strong> Lissabonin aitauksessa on paljon piilopaikkoja; varaa aikaa ja mene mieluiten aikaisin tai myöhään päivällä.</li>\n    <li><strong>Aukioloajat</strong> löydät kunkin puiston sivulta: <a href=\"#locatie/jardim-zoologico-de-lisboa\">Jardim Zoológico de Lisboa</a>, <a href=\"#locatie/zoo-de-lagos\">Zoo de Lagos</a>, <a href=\"#locatie/badoca-safari-park\">Badoca Safari Park</a>, <a href=\"#locatie/zoo-santo-inacio\">Zoo Santo Inácio</a>.</li>\n    <li><strong>Epävarma jostain eläimestä?</strong> Soita tai lähetä sähköpostia puistoon ennen käyntiä. Kaikki epävarmat merkinnät löydät kohdasta <a href=\"#onzeker\">Epävarmat tapaukset</a>.</li>\n  </ul>\n"
+ },
+ "0066": {
+  "soort": "html",
+  "fi": "Päätaulukko"
+ },
+ "0067": {
+  "soort": "html",
+  "fi": "Tyhjennä suodattimet"
+ },
+ "0068": {
+  "soort": "html",
+  "fi": "Kissaeläin"
+ },
+ "0069": {
+  "soort": "html",
+  "fi": "Alalaji"
+ },
+ "0070": {
+  "soort": "html",
+  "fi": "Paikka"
+ },
+ "0071": {
+  "soort": "html",
+  "fi": "Kaupunki"
+ },
+ "0072": {
+  "soort": "html",
+  "fi": "Määrä"
+ },
+ "0073": {
+  "soort": "html",
+  "fi": "Lähde"
+ },
+ "0074": {
+  "soort": "html",
+  "fi": "Tarkistettu"
+ },
+ "0075": {
+  "soort": "html",
+  "fi": "Vieritä taulukkoa sivusuunnassa nähdäksesi kaikki sarakkeet."
+ },
+ "0076": {
+  "soort": "html",
+  "fi": "Ajankohtaista"
+ },
+ "0077": {
+  "soort": "html",
+  "fi": "Uudet pennut"
+ },
+ "0078": {
+  "soort": "html",
+  "fi": "Mitä kissanpentuja voit nähdä Suomessa juuri nyt? Felinae (pienet kissat) otamme mukaan 1-vuotiaiksi asti, Pantherinae (isot kissat) 2-vuotiaiksi asti, koska isot kissat kasvavat hitaammin. Pennut ovat usein sisällä ensimmäiset viikot; kysy puistosta, ovatko ne jo nähtävissä."
+ },
+ "0079": {
+  "soort": "html",
+  "fi": "Ehkä tulossa"
+ },
+ "0080": {
+  "soort": "html",
+  "fi": "Suunnitteilla, tilapäisesti tai ei nähtävissä"
+ },
+ "0081": {
+  "soort": "html",
+  "fi": "\n<ul class=\"prose\">\n    <li><span class=\"st st-p\"><i></i></span> <strong>Parque Biológico de Gaia:</strong> Vuonna 2023 kerrottiin, että Silvesin kasvatuskeskuksesta tulee kaksi pardinilvestä ja niille aitaus ja lasitettu näköalapaikka. Rakentaminen oli vielä kesken vuonna 2024; ilvesten saapumista ei ole vahvistettu.</li>\n    <li><span class=\"st st-w\"><i></i></span> <strong>Europaradise:</strong> puisto avattiin uudelleen toukokuussa 2026 myrskytuhojen jälkeen; ei ole vahvistettu, ovatko tiikerit nähtävissä.</li>\n    <li><strong>Jardim Zoológico de Lisboa:</strong> uusia ovat kaksi nuorta siperiantiikeriä (nähtävissä kesäkuusta 2026) ja nuori sumatrantiikeriuros (toukokuu 2026); vuodesta 2025 siellä on myös uusi jaguaaripari (Pawa ja Feliciana).</li>\n  </ul>\n  <p class=\"tlegend\"><span class=\"st st-p\"><i></i>Suunnitteilla</span> · <span class=\"st st-w\"><i></i>Epävarma</span></p>\n"
+ },
+ "0082": {
+  "soort": "html",
+  "fi": "Värimuunnokset ja risteymät"
+ },
+ "0083": {
+  "soort": "html",
+  "fi": "Värimuunnokset"
+ },
+ "0084": {
+  "soort": "html",
+  "fi": "\n<h3>Valkoinen tiikeri <a class=\"kv-sp\" href=\"#soort/tijger\">tiikerin sivulle</a></h3>\n  <ul class=\"prose\">\n    <li><a href=\"#locatie/zoo-da-maia\">Zoo da Maia</a></li>\n  </ul>\n  <p class=\"prose\">Valkoisella tiikerillä on resessiivinen mutaatio SLC45A2-geenissä, eikä se ole albiino. Niitä ei enää kasvateta eurooppalaisessa kasvatusohjelmassa; EAZA-puistojen ulkopuolella niitä on yhä. Zootierlisten mukaan mustat leopardit (Zoo da Maia) katosivat noin vuonna 2024.</p>\n"
+ },
+ "0085": {
+  "soort": "html",
+  "fi": "Risteymät"
+ },
+ "0086": {
+  "soort": "html",
+  "fi": "\n<p class=\"prose\">Ligereitä, tiikoneita tai muita luonnonvaraisten kissaeläinten risteymiä ei löytynyt. Vuodesta 2018 yksityishenkilöt eivät ole Portugalissa saaneet pitää kesykissojen ja luonnonvaraisten kissaeläinten risteymiä (kuten savannah- tai bengalinkissoja), eikä sellaisia löytynyt puistoista.</p>\n"
+ },
+ "0087": {
+  "soort": "html",
+  "fi": "Tietoa tästä katsauksesta"
+ },
+ "0088": {
+  "soort": "html",
+  "fi": "\n<div id=\"werkwijze-pl\">\n  <h3>Näin katsaus on tehty</h3>\n<p class=\"prose\">Olemme tarkistaneet kaikista Portugalin eläintarhoista, villieläinpuistoista ja safaripuistoista, joissa on kissaeläimiä, sekä pelastuskeskuksista, mitä luonnonvaraisia kissaeläimiä niissä voi nähdä. Perusluettelo on peräisin Zootierlistestä (kaikki kissaeläimet, nykyiset ja entiset pitäjät), DGAV:n luettelosta luvan saaneista eläintarhoista (2021) sekä EAZA:n ja AIZA:n jäsenluetteloista; sen jälkeen etsimme jokaiselta alueelta puistoja, opetusmaatiloja ja pelastuskeskuksia, joissa on kissaeläimiä. Jokainen paikka on tarkistettu sen virallisilta verkkosivuilta, ja tietoja on täydennetty portugalilaisilla uutisilla. Jokaisessa merkinnässä on lähde ja päivämäärä.</p>\n  <p class=\"prose\">Kissaeläin lasketaan mukaan, jos kävijä voi nähdä sen, vaikka vain tiettyinä päivinä. Siksi mukana ovat myös pelastuskeskukset. Villieläimet on kielletty sirkuksissa Portugalissa (laki 20/2019; siirtymäaika päättyi vuoden 2025 lopussa), ja vuodesta 2018 yksityishenkilöt eivät ole saaneet pitää luonnonvaraisia kissaeläimiä (asetus 86/2018); yhtään sirkusta, pelastuskeskusta tai yksityistä pitäjää, jossa kävijät voisivat nähdä kissaeläimiä, ei löytynyt.</p>\n  <p class=\"prose\">Lajit noudattavat IUCN/SSC Cat Classification Task Forcen standardia (Kitchener et al., 2017, <i>Cat News</i> Special Issue 11).</p>\n</div>\n<div id=\"statussen-pl\">\n  <h3>Mitä tilat tarkoittavat</h3>\n<ul class=\"prose\">\n    <li><strong>Täällä:</strong> eläin asuu täällä ja on yleensä nähtävissä.</li>\n    <li><strong>Tilapäisesti ei nähtävissä:</strong> eläin asuu täällä, mutta ei ole aina näkyvillä, esimerkiksi koska se on helteellä sisällä.</li>\n    <li><strong>Ilmoitettu siirto:</strong> puisto on kertonut, että eläin muuttaa pian pois.</li>\n    <li><strong>Suunnitteilla:</strong> eläimen saapumisesta on ilmoitettu, mutta se ei ole vielä tullut.</li>\n    <li><strong>Epävarma:</strong> ei ole varmaa, onko eläin (yhä) täällä tai voivatko kävijät nähdä sen.</li>\n    <li><strong>Vain opastetulla kierroksella:</strong> eläin asuu paikassa, johon pääset vain opastetulla kierroksella.</li>\n    <li><strong>Ei avoinna yleisölle:</strong> eläin asuu täällä, mutta paikassa ei voi vierailla vapaasti.</li>\n  </ul>\n  <p class=\"note prose\">Puistot kertovat harvoin tarkasti, montako eläintä niillä on. Siksi useimmissa merkinnöissä lukee ”tuntematon”. Jos lukee ”ei päivämäärää”, lähteessä ei ollut päivämäärää.</p>\n</div>\n<div id=\"onzeker-pl\">\n  <h3>Epävarmat tapaukset</h3>\n<p class=\"prose\">Kaikki päätaulukon merkinnät, joiden tila on ”epävarma”. Luettelo muodostetaan automaattisesti taulukosta.</p>\n  <ul class=\"prose tw-list\"></ul>\n  <p class=\"prose\">Näitä merkintöjä ei lasketa vahvistetuiksi. Jos haluat nähdä jonkin näistä eläimistä, ota yhteyttä puistoon ennen käyntiä.</p>\n</div>\n<div id=\"namen-pl\">\n  <h3>Nimet ja luokittelu</h3>\n<ul class=\"prose\">\n    <li><strong>Lince-ibérico</strong> on pardinilves, <strong>lince-euroasiático</strong> (tai <i>lince-dos-Cárpatos</i>) ilves ja <strong>lince-vermelho</strong> punailves.</li>\n    <li><strong>Chita</strong> on gepardi, <strong>pantera-nebulosa</strong> pilvileopardi ja <strong>leopardo-da-pérsia</strong> persianleopardi.</li>\n    <li><strong>Gato-bravo</strong> on (eurooppalainen) villikissa; se elää luonnossa Portugalissa, mutta sitä ei voi nähdä missään puistossa.</li>\n    <li><strong>Leijona:</strong> vuodesta 2017 on erotettu kaksi alalajia: pohjoinen leijona (<i>P. l. leo</i>), johon aasianleijona kuuluu (Santo Inácio), ja eteläinen leijona (<i>P. l. melanochaita</i>), johon Lissabonin angolanleijonat kuuluvat.</li>\n    <li><strong>Pardinilves:</strong> kansallisessa kasvatuskeskuksessa (CNRLI, Silves) ei voi vierailla. Luonnonvaraiset ilvekset, kuten Vale do Guadianan ilvekset, eivät ole mukana tässä katsauksessa.</li>\n  </ul>\n</div>\n<div id=\"verdwenen-pl\">\n  <h3>Ei enää nähtävissä</h3>\n<p class=\"prose\">Kunkin puiston sivulla kohdassa ”Ennen täällä” kerrotaan, mitä kissaeläimiä siellä on ollut. Mainitsemisen arvoisia: Zoo Santo Inácion lumileopardit (ei enää nähty vuonna 2026), Lissabonin sumatrantiikeri Sigli (Euroopan vanhin, kuoli vuonna 2025) sekä Zoo da Maian leopardit, puumat ja jaguaarit. Suljetuista puistoista, joissa oli kissaeläimiä, mainittakoon Omega Parque Monchiquessa (tiikeri, gepardi; suljettu vuonna 2007). Viimeiset sirkuskissaeläimet muuttivat AAP Primadomukseen Espanjaan vuosina 2022 ja 2026.</p>\n</div>\n<div id=\"controle-pl\">\n  <h3>Lähteet</h3>\n<p class=\"prose\"><strong>Viralliset luettelot:</strong> DGAV:n luettelo luvan saaneista eläintarhoista (28-04-2021), EAZA:n ja AIZA:n jäsenluettelot (lokakuu 2026) sekä Diário da Repúblican lainsäädäntö (asetukset 59/2003 ja 104/2012, laki 20/2019, asetus 86/2018).</p>\n  <p class=\"prose\"><strong>Tietokannat:</strong> Zootierliste (kaikki kissaeläimet, nykyiset ja entiset pitäjät), käytetty vain täydentävänä lähteenä.</p>\n  <p class=\"prose\"><strong>Puistojen verkkosivut</strong>, joilla on eläinluetteloita, lajisivuja, karttoja ja uutisia (muun muassa Revista ZOO, Jardim Zoológico de Lisboan lehti).</p>\n  <p class=\"prose\"><strong>Uutiset:</strong> muun muassa Público, NiT, Postal do Algarve, Sul Informação, Barlavento ja ZooChat (käytetty vain täydentävänä lähteenä).</p>\n</div>\n"
+ },
+ "0089": {
+  "soort": "html",
+  "fi": "Ilmoita"
+ },
+ "0090": {
+  "soort": "html",
+  "fi": "Oletko nähnyt kissaeläimen, jota ei ole tässä, onko eläin muuttanut tai kuollut, tai onko jokin väärin? Kerro meille. Ilmoitukset eivät muuta sivua automaattisesti: tarkistamme ne ensin ja lisäämme ne seuraavaan versioon."
+ },
+ "0091": {
+  "soort": "html",
+  "fi": "Mistä haluat ilmoittaa?"
+ },
+ "0092": {
+  "soort": "html",
+  "fi": "Näin eläimen, jota ei ole tässä"
+ },
+ "0093": {
+  "soort": "html",
+  "fi": "Eläin on siirretty tai lähtenyt puistosta"
+ },
+ "0094": {
+  "soort": "html",
+  "fi": "Eläin on kuollut"
+ },
+ "0095": {
+  "soort": "html",
+  "fi": "Näin pentuja"
+ },
+ "0096": {
+  "soort": "html",
+  "fi": "Tietoa puuttuu tai se ei pidä paikkaansa"
+ },
+ "0097": {
+  "soort": "html",
+  "fi": "Jotain muuta"
+ },
+ "0098": {
+  "soort": "html",
+  "fi": "Paikka"
+ },
+ "0099": {
+  "soort": "html",
+  "fi": "Laji"
+ },
+ "0100": {
+  "soort": "html",
+  "fi": "Käyntisi päivämäärä"
+ },
+ "0101": {
+  "soort": "html",
+  "fi": "Huomiot"
+ },
+ "0102": {
+  "soort": "html",
+  "fi": "(valinnainen)"
+ },
+ "0103": {
+  "soort": "html",
+  "fi": "Ilmoituksesi"
+ },
+ "0104": {
+  "soort": "html",
+  "fi": "Lähetä ilmoitus"
+ },
+ "0105": {
+  "soort": "html",
+  "fi": "Kun napsautat, avautuu kommenttiikkuna, jossa on ilmoituksesi. Lähetä se sieltä; voit vielä lisätä jotain. Muut kävijät näkevät myös ilmoituksesi ja voivat vastata siihen, joten älä kirjoita henkilötietoja. Ilmoittaaksesi sinun on oltava kirjautuneena claude.ai-palveluun."
+ },
+ "0106": {
+  "soort": "html",
+  "fi": "Tilanne 15. lokakuuta 2026."
+ },
+ "0107": {
+  "soort": "html",
+  "fi": "Onko oppaasta sinulle hyötyä?"
+ },
+ "0108": {
+  "soort": "html",
+  "fi": "Pienellä tuella autat pitämään sen ajan tasalla."
+ },
+ "0109": {
+  "soort": "html",
+  "fi": "Tue opasta Ko-fissa"
+ },
+ "0110": {
+  "soort": "html",
+  "fi": "Ylös"
+ },
+ "0111": {
+  "soort": "const:SPPL",
+  "fi": "{\"Leeuw\": [\"Leijona\", \"Afrikanleijona\", \"Saharan eteläpuolinen Afrikka ja pieni kanta Intiassa\", \"Savannit, ruohotasangot ja avoimet metsät\", \"Ennen kaikkea seeprat, gnuut, antiloopit ja muut sorkka- ja kavioeläimet\", \"Sosiaalinen, elää yleensä ryhmissä\", \"Ainoa kissaeläin, joka elää luonnostaan ryhmissä.\", \"Leijona voi levätä tai nukkua noin 20 tuntia vuorokaudessa.\"], \"Tijger\": [\"Tiikeri\", \"Bengalintiikeri\", \"Aasia\", \"Metsät, ruohotasangot, suot ja mangrovemetsät\", \"Ennen kaikkea hirvieläimet, villisiat ja muut suuret sorkkaeläimet\", \"Elää yksin\", \"Jokaisella tiikerillä on ainutlaatuinen raitakuvio.\", \"Myös tiikerin iho on raidallinen: jos ajelisit tiikerin karvat pois, raidat näkyisivät yhä.\"], \"Luipaard\": [\"Leopardi\", \"Pantteri\", \"Afrikka ja osa Aasiaa\", \"Metsät, savannit, vuoret ja puoliaavikot\", \"Antiloopit, apinat, jyrsijät ja linnut\", \"Elää yksin\", \"Leopardi pystyy raahaamaan itseään painavamman saaliin puuhun.\", \"Leopardit sopeutuvat poikkeuksellisen hyvin ja elävät hyvin erilaisissa ympäristöissä.\"], \"Jaguar\": [\"Jaguaari\", \"\", \"Väli- ja Etelä-Amerikka\", \"Sademetsät, suot, savannit ja kosteikot\", \"Kapybarat, kaimaanit, pekarit, kilpikonnat ja kalat\", \"Elää yksin\", \"Jaguaarilla on kissaeläimeksi poikkeuksellisen vahvat leuat.\", \"Jaguaarit ovat erinomaisia uimareita ja saalistavat usein vedessä.\"], \"Sneeuwluipaard\": [\"Lumileopardi\", \"Irbis\", \"Keski- ja Etelä-Aasian vuoret\", \"Korkeat, kivikkoiset vuoret ja alpiiniset alueet\", \"Villilampaat ja -vuohet, murmelit ja pienet nisäkkäät\", \"Elää yksin\", \"Valtava häntä auttaa sitä pitämään tasapainon ja toimii myös lämpimänä peittona.\", \"Lumileopardi elää joskus yli 5.000 metrin korkeudessa.\"], \"Nevelpanter\": [\"Pilvileopardi\", \"\", \"Himalajalta Kaakkois-Aasiaan\", \"Trooppiset metsät\", \"Apinat, hirvieläimet, linnut ja pienet nisäkkäät\", \"Elää yksin\", \"Sillä on kokoonsa nähden poikkeuksellisen pitkät kulmahampaat.\", \"Pilvileopardi on taitava kiipeilijä ja pystyy kiipeämään jopa pää alaspäin oksien alapuolella.\"], \"Soenda-nevelpanter\": [\"Sundanpilvileopardi\", \"Borneonpilvileopardi\", \"Borneo ja Sumatra\", \"Trooppiset sademetsät\", \"Apinat, hirvieläimet, linnut ja pienet nisäkkäät\", \"Elää yksin\", \"Täplät näyttävät selvästi erilaisilta kuin mantereen pilvileopardilla.\", \"Sundanpilvileopardi tunnustettiin omaksi lajikseen vasta vuonna 2006.\"], \"Cheetah\": [\"Gepardi\", \"\", \"Ennen kaikkea Afrikka, pieni kanta Iranissa\", \"Savannit, ruohotasangot ja puoliaavikot\", \"Gasellit, jänikset ja pienet tai keskikokoiset antiloopit\", \"Elää enimmäkseen yksin; urokset muodostavat joskus liittoumia\", \"Maailman nopein maaeläin.\", \"Gepardi voi pikajuoksussa yltää noin 100 km/h nopeuteen.\"], \"Poema\": [\"Puuma\", \"Kuguaari, vuorileijona\", \"Pohjois-, Väli- ja Etelä-Amerikka\", \"Metsät, vuoret, aavikot ja ruohotasangot\", \"Ennen kaikkea hirvieläimet, mutta myös pienemmät nisäkkäät\", \"Elää yksin\", \"Puumalla on enemmän nimiä kuin melkein millään muulla luonnonvaraisella kissaeläimellä.\", \"Puuma, kuguaari ja vuorileijona ovat saman lajin nimiä.\"], \"Jaguarundi\": [\"Jaguarundi\", \"\", \"Väli- ja Etelä-Amerikka\", \"Metsät, pensaikot, savannit ja kosteikot\", \"Jyrsijät, linnut, matelijat ja muut pienet eläimet\", \"Elää enimmäkseen yksin\", \"Sillä on pitkä ruumis ja lyhyet jalat, vähän kuin näädällä.\", \"Toisin kuin useimmat kissat jaguarundi saalistaa enimmäkseen päivällä. Siitä on harmaa ja punaruskea värimuoto.\"], \"Euraziatische lynx\": [\"Ilves\", \"Euraasianilves\", \"Eurooppa ja suuri osa Aasiaa\", \"Metsät, vuoret ja taiga\", \"Ennen kaikkea metsäkauriit, jänikset ja pienemmät nisäkkäät\", \"Elää yksin\", \"Korvatupsut ovat ilveksen näkyvimpiä tuntomerkkejä.\", \"Ilves on ilveslajeista suurin.\"], \"Canadese lynx\": [\"Kanadanilves\", \"\", \"Kanada, Alaska ja osa Yhdysvaltoja\", \"Pohjoiset havumetsät ja vuoristometsät\", \"Ennen kaikkea amerikanjänis\", \"Elää yksin\", \"Sillä on valtavat tassut, jotka toimivat kuin lumikengät.\", \"Kun amerikanjäniksiä on vähän, kanadanilvekselle syntyy paljon vähemmän pentuja.\"], \"Iberische lynx\": [\"Pardinilves\", \"Iberianilves\", \"Espanja ja Portugali\", \"Välimeren pensaikot ja avoimet metsät\", \"Ennen kaikkea villikanit\", \"Elää yksin\", \"Erikoistuja, joka on vahvasti riippuvainen kaneista.\", \"Pardinilves oli aikoinaan yksi maailman uhanalaisimmista kissaeläimistä, mutta viime vuosina sen määrä on kasvanut voimakkaasti.\"], \"Rode lynx\": [\"Punailves\", \"Bobcat\", \"Pohjois-Amerikka\", \"Metsät, aavikot, suot ja ruohotasangot\", \"Kanit, jyrsijät, linnut ja matelijat\", \"Elää yksin\", \"Sillä on lyhyt häntä, jonka kärki on tumma.\", \"Punailves sopeutuu lähes kaikkiin Pohjois-Amerikan ympäristöihin.\"], \"Serval\": [\"Servaali\", \"\", \"Afrikka\", \"Ruohotasangot, savannit ja kosteikot\", \"Ennen kaikkea jyrsijät, linnut ja sammakot\", \"Elää yksin\", \"Sillä on hyvin pitkät jalat ja hyvin suuret korvat.\", \"Pitkien jalkojensa ansiosta servaali hyppää niin korkealle, että se voi napata lentäviä lintuja.\"], \"Caracal\": [\"Karakal\", \"Aavikkoilves\", \"Afrikka, Lähi-itä ja osa Aasiaa\", \"Savannit, kuivat metsät, puoliaavikot ja vuoret\", \"Linnut, jyrsijät, jänikset ja pienet antiloopit\", \"Elää yksin\", \"Tunnistat sen heti pitkistä mustista korvatupsuista.\", \"Karakal voi napata useita lintuja parvesta yhdellä ainoalla hypyllä.\"], \"Afrikaanse goudkat\": [\"Afrikankultakissa\", \"\", \"Keski- ja Länsi-Afrikka\", \"Trooppiset metsät ja kosteat metsänreunat\", \"Jyrsijät, linnut, apinat ja pienet sorkkaeläimet\", \"Elää yksin\", \"Turkki vaihtelee paljon punaruskeasta harmaaseen.\", \"Nimestään huolimatta afrikankultakissa ei ole läheistä sukua aasiankultakissalle (Temminckin kissalle).\"], \"Aziatische goudkat\": [\"Aasiankultakissa\", \"Temminckin kissa\", \"Kaakkois-Aasia\", \"Trooppiset ja subtrooppiset metsät\", \"Jyrsijät, linnut, matelijat ja pienet sorkkaeläimet\", \"Elää yksin\", \"Siitä on useita värimuotoja: kullanvärinen, harmaa ja tummanruskea.\", \"Aasiankultakissa pystyy pyydystämään saaliita, jotka ovat paljon sitä itseään suurempia.\"], \"Borneo-goudkat\": [\"Borneonkissa\", \"Borneonkultakissa\", \"Vain Borneolla\", \"Trooppiset sademetsät\", \"Pienet nisäkkäät, linnut ja matelijat\", \"Elää luultavasti yksin\", \"Yksi maailman huonoimmin tunnetuista luonnonvaraisista kissaeläimistä.\", \"Laji on niin harvinainen, että tutkijat tiesivät pitkään tuskin mitään sen elämästä luonnossa.\"], \"Marmerkat\": [\"Marmorikissa\", \"\", \"Itäiseltä Himalajalta Kaakkois-Aasiaan\", \"Trooppiset metsät\", \"Linnut, oravat, jyrsijät ja matelijat\", \"Elää yksin\", \"Sillä on marmoroitu turkki ja hyvin pitkä häntä.\", \"Marmorikissa viettää suuren osan elämästään korkealla puiden latvoissa.\"], \"Ocelot\": [\"Oselotti\", \"\", \"Väli- ja Etelä-Amerikka\", \"Sademetsät, mangrovemetsät, savannit ja pensaikot\", \"Jyrsijät, linnut, matelijat ja kalat\", \"Elää yksin\", \"Jokaisella oselotilla on ainutlaatuinen täpläkuvio.\", \"Oselotit ovat erinomaisia uimareita, vaikka ne saalistavat enimmäkseen maassa ja puissa.\"], \"Margay\": [\"Margay\", \"Pitkähäntäinen tiikerikissa\", \"Väli- ja Etelä-Amerikka\", \"Ennen kaikkea trooppiset metsät\", \"Pienet nisäkkäät, linnut, matelijat ja puissa elävät eläimet\", \"Elää yksin\", \"Yksi pienten kissojen parhaista kiipeilijöistä.\", \"Margay pystyy kääntämään nilkkojaan niin paljon, että se kiipeää puunrunkoa alas pää edellä.\"], \"Noordelijke tijgerkat (oncilla)\": [\"Pohjantiikerikissa (oncilla)\", \"Savannitiikerikissa\", \"Keski- ja Koillis-Brasilia sekä osa pohjoista Etelä-Amerikkaa\", \"Savannit (cerrado), kuivat metsät ja pensaikot (caatinga)\", \"Jyrsijät, linnut, matelijat ja pienet nisäkkäät\", \"Elää yksin\", \"Täplikkään turkkinsa ansiosta se muistuttaa pientä leopardia.\", \"Vuodesta 2024 Andien tiikerikissoja on pidetty omana lajinaan, pilvitiikerikissana. Tämä laji on siksi ennen kaikkea savannien ja kuivien metsien kissa.\"], \"Zuidelijke tijgerkat\": [\"Etelätiikerikissa\", \"Atlantinmetsän tiikerikissa\", \"Etelä- ja Kaakkois-Brasilia, Paraguay ja Koillis-Argentiina\", \"Atlantin rannikkometsä ja sen lähialueet\", \"Jyrsijät, linnut, matelijat ja pienet nisäkkäät\", \"Elää yksin\", \"Vuonna 2013 se erotettiin pohjantiikerikissasta DNA:n perusteella.\", \"Etelä-Brasiliassa etelätiikerikissa risteytyy joskus geoffroynkissan kanssa.\"], \"Oostelijke tijgerkat\": [\"Itätiikerikissa\", \"Snethlagen tiikerikissa\", \"Koillis- ja Keski-Brasilia\", \"Caatinga (kuiva piikkimetsä) ja cerrado (savanni)\", \"Jyrsijät, linnut, matelijat ja pienet nisäkkäät\", \"Elää luultavasti yksin\", \"Se elää ennen kaikkea Koillis-Brasilian kuivassa caatingassa.\", \"Nimetty saksalais-brasilialaisen lintutieteilijän Emilie Snethlagen mukaan.\"], \"Wolkentijgerkat\": [\"Pilvitiikerikissa\", \"Andientiikerikissa\", \"Costa Rica, Panama ja Andit Venezuelasta Luoteis-Argentiinaan\", \"Pilvimetsät ja vuoristometsät, enimmäkseen yli 1.500 metrin korkeudessa\", \"Pienet nisäkkäät, linnut ja matelijat\", \"Elää luultavasti yksin\", \"Epätavallisen kuviointinsa vuoksi se muistuttaa pilvileopardia.\", \"Tunnustettu omaksi lajikseen vuonna 2024.\"], \"Tilcayo\": [\"Tilcayo\", \"Tilcayonkissa\", \"Yungas Boliviassa\", \"Yungasin pilvimetsät\", \"Luultavasti pienet jyrsijät (löydetty ulosteista)\", \"Tuntematon\", \"Sillä on vaaleanruskea turkki ja epäsäännölliset ruusukkeet.\", \"Kuvattu vuonna 2026: ensimmäinen uusi elävä kissalaji sitten vuoden 1923.\"], \"Geoffroy’s kat\": [\"Geoffroynkissa\", \"\", \"Etelä-Amerikka\", \"Ruohotasangot, pensaikot, metsät ja kosteikot\", \"Jyrsijät, linnut, matelijat ja kalat\", \"Elää yksin\", \"Hyvä uimari.\", \"Geoffroynkissa nousee joskus takajaloilleen nähdäkseen ruohon yli.\"], \"Kodkod\": [\"Kodkod\", \"Chilenkissa\", \"Chile ja osa Argentiinaa\", \"Lauhkeat sademetsät ja tiheä kasvillisuus\", \"Jyrsijät, linnut, matelijat ja pienet nisäkkäät\", \"Elää yksin\", \"Amerikan pienin kissa.\", \"Pienten korviensa ja tiiviin ruumiinsa ansiosta kodkod pääsee helposti tiheän kasvillisuuden läpi.\"], \"Colocolo\": [\"Pampaskissa\", \"Colocolo\", \"Etelä-Amerikka, Ecuadorin Andeilta Patagoniaan ja Brasiliaan\", \"Ruohotasangot, pensaikot ja avoimet vuoristoalueet\", \"Jyrsijät, linnut ja matelijat\", \"Elää yksin\", \"Pampaskissat ovat kissaeläinten heimon monimutkaisimpia ryhmiä.\", \"Tutkijat ovat eri mieltä siitä, montako pampaskissalajia on. Vuoden 2020 tutkimus ehdotti viittä.\"], \"Andesbergkat\": [\"Andienkissa\", \"Andienvuorikissa\", \"Andit Argentiinassa, Boliviassa, Chilessä ja Perussa\", \"Korkeat Andit, kivikkoiset alueet ja kuivat ruohotasangot\", \"Ennen kaikkea vuoriviskakat, myös pienet nisäkkäät ja linnut\", \"Elää yksin\", \"Yksi Etelä-Amerikan harvinaisimmista kissoista.\", \"Andienkissa on vahvasti riippuvainen vuoriviskakoista, suurista jyrsijöistä, jotka elävät kivikkoisilla rinteillä.\"], \"Bengaalse kat\": [\"Leopardikissa\", \"Bengalinkissa\", \"Itä-, Etelä- ja Kaakkois-Aasia\", \"Metsät, ruohotasangot, viljelymaat ja kosteikot\", \"Jyrsijät, linnut, matelijat, sammakkoeläimet ja kalat\", \"Elää yksin\", \"Yksi Aasian laajimmalle levinneistä pienistä luonnonvaraisista kissoista.\", \"Leopardikissa on yksi bengalinkissa-kotikissarodun kantamuodoista.\"], \"Soendanese luipaardkat\": [\"Sundanleopardikissa\", \"\", \"Jaava, Bali, Sumatra, Borneo ja osa Filippiinejä\", \"Metsät, pensaikot ja viljelymaat\", \"Jyrsijät, linnut, matelijat ja sammakkoeläimet\", \"Elää yksin\", \"Sitä pidettiin aiemmin leopardikissan alalajina.\", \"Sundanleopardikissa eroaa selvästi mantereen leopardikissasta sekä geneettisesti että maantieteellisesti.\"], \"Vissende kat\": [\"Kalastajakissa\", \"\", \"Etelä- ja Kaakkois-Aasia\", \"Suot, mangrovemetsät, joet ja kosteikot\", \"Ennen kaikkea kalat, mutta myös sammakot, äyriäiset ja pienet nisäkkäät\", \"Elää yksin\", \"Yksi harvoista kissoista, jotka ovat erikoistuneet saalistamaan vedessä.\", \"Kalastajakissa pystyy saalistamaan veden alla, ja sen varpaiden välissä on osittaiset uimaräpylät.\"], \"Platkopkat\": [\"Litteäpääkissa\", \"\", \"Malesia, Sumatra ja Borneo\", \"Alankojen suot, joet ja sademetsät\", \"Kalat, sammakot, äyriäiset ja pienet nisäkkäät\", \"Elää yksin\", \"Sillä on hyvin litteä pää ja pitkä, kapea kuono.\", \"Silmät ovat kaukana edessä, joten se pystyy pyydystämään saalista vedestä hyvin tarkasti.\"], \"Roestkat\": [\"Ruostekissa\", \"Ruostetäpläkissa\", \"Intia, Sri Lanka ja Nepal\", \"Metsät, ruohotasangot ja kuivat pensaikot\", \"Jyrsijät, linnut, liskot ja hyönteiset\", \"Elää yksin\", \"Yksi maailman pienimmistä luonnonvaraisista kissoista.\", \"Aikuinen ruostekissa painaa noin puolet tavallisen kotikissan painosta.\"], \"Manoel\": [\"Manuli\", \"Pallaksenkissa\", \"Keski-Aasia\", \"Arot, kivikkoiset alueet ja kylmät vuoristoseudut\", \"Piiskut, jyrsijät ja pienet linnut\", \"Elää yksin\", \"Sillä on poikkeuksellisen tiheä turkki ja pyöreät pupillit.\", \"Nuoret manulit ovat eläintarhoissa hyvin alttiita toksoplasmoosille. Luultavasti siksi, että ne eivät juuri koskaan kohtaa loista kylmässä ja kuivassa elinympäristössään.\"], \"Europese wilde kat\": [\"Villikissa\", \"Eurooppalainen villikissa\", \"Eurooppa, osa Länsi-Aasiaa ja Kaukasus\", \"Metsät, pensaikot ja vuoret\", \"Ennen kaikkea hiiret, rotat ja muut pienet nisäkkäät\", \"Elää yksin\", \"Se muistuttaa paljon isoa, vankkaa kotikissaa.\", \"Villikissa voi risteytyä kotikissojen kanssa. Risteytyminen on ongelma joillekin kannoille.\"], \"Afrikaanse wilde kat\": [\"Afrikanvillikissa\", \"Nubiankissa\", \"Afrikka ja osa Lähi-itää\", \"Savannit, arot, aavikoiden reuna-alueet ja viljelymaat\", \"Ennen kaikkea jyrsijät, linnut ja matelijat\", \"Elää yksin\", \"Kotikissan kantamuoto.\", \"Ensimmäiset kotikissat polveutuvat luultavasti afrikanvillikissasta, noin 10.000 vuoden takaa.\"], \"Chinese bergkat\": [\"Kiinanvuorikissa\", \"Kiinanaavikkokissa\", \"Kiina, ennen kaikkea Tiibetin ylänkö\", \"Korkealla sijaitsevat ruohotasangot, arot ja kivikkoiset alueet\", \"Ennen kaikkea piiskut ja jyrsijät\", \"Elää yksin\", \"Sopeutunut elämään korkealla ja kylmässä.\", \"Kiinanvuorikissaa pidettiin pitkään villikissan alalajina, mutta nykyään se on oma lajinsa.\"], \"Zandkat\": [\"Aavikkokissa\", \"Hiekkakissa\", \"Pohjois-Afrikka, Lähi-itä ja Keski-Aasia\", \"Aavikot ja kuivat hiekka-alueet\", \"Jyrsijät, liskot, linnut ja hyönteiset\", \"Elää yksin\", \"Sen tassujen alla on tiheä turkki, joka suojaa kuumalta hiekalta.\", \"Aavikkokissa juo tuskin koskaan ja saa suurimman osan vedestään saaliistaan.\"], \"Zwartvoetkat\": [\"Mustajalkakissa\", \"\", \"Eteläinen Afrikka\", \"Kuivat savannit, ruohotasangot ja puoliaavikot\", \"Jyrsijät, linnut, matelijat ja hyönteiset\", \"Elää yksin\", \"Yksi maailman pienimmistä luonnonvaraisista kissoista.\", \"Pienestä koostaan huolimatta mustajalkakissa pystyy pyydystämään useita saaliita yhden ainoan yön aikana.\"], \"Moeraskat\": [\"Viidakkokissa\", \"Suokissa\", \"Egypti, Lähi-itä sekä Etelä- ja Kaakkois-Aasia\", \"Suot, kaislikot, ruohotasangot ja viljelymaat\", \"Jyrsijät, linnut, kalat, sammakot ja matelijat\", \"Elää yksin\", \"Sillä on melko pitkät jalat ja suuret korvat.\", \"Viidakkokissa on yksi harvoista pienistä kissoista, jotka saalistavat säännöllisesti kaislikoissa ja soilla.\"]}"
+ },
+ "0112": {
+  "soort": "const:RP_TYPE_PL",
+  "fi": "{\"Jonge katten gezien\": \"Näin pentuja\", \"Dier gezien dat hier niet staat\": \"Näin eläimen, jota ei ole tässä\", \"Dier is verplaatst of vertrokken\": \"Eläin on siirretty tai lähtenyt puistosta\", \"Dier is overleden\": \"Eläin on kuollut\", \"Informatie ontbreekt of klopt niet\": \"Tietoa puuttuu tai se ei pidä paikkaansa\", \"Iets anders\": \"Jotain muuta\"}"
+ },
+ "0113": {
+  "soort": "const:PLD",
+  "fi": "{\"Subspecies\": \"Alalaji\", \"Location\": \"Paikka\", \"Town\": \"Kaupunki\", \"Number\": \"Määrä\", \"Source\": \"Lähde\", \"Checked\": \"Tarkistettu\", \"No entries for this combination. Clear the filters to see everything.\": \"Tällä yhdistelmällä ei ole merkintöjä. Tyhjennä suodattimet nähdäksesi kaiken.\", \"no confirmed species\": \"ei vahvistettuja lajeja\", \" · uncertain: \": \" · epävarma: \", \" · possibly also: \": \" · ehkä myös: \", \"location selected\": \"paikka valittu\", \"locations selected\": \"paikkaa valittu\", \"Pantherinae (big cats)\": \"Pantherinae (isot kissat)\", \"Felinae (small cats)\": \"Felinae (pienet kissat)\", \"Uncertain\": \"Epävarma\", \"Unknown\": \"Tuntematon\", \"This species is currently not on view in Spain.\": \"Tätä lajia ei voi tällä hetkellä nähdä Suomessa.\", \"Photo\": \"Kuva\", \" (zoo)\": \" (eläintarha)\", \"public domain (CC0)\": \"vapaa tekijänoikeuksista (CC0)\", \"Photo coming soon\": \"Kuva tulossa pian\", \"Back to the main table\": \"Takaisin päätaulukkoon\", \"Genus\": \"Suku\", \"Also known as\": \"Tunnetaan myös nimellä\", \"Key facts\": \"Perustiedot\", \"Length (without tail)\": \"Pituus (ilman häntää)\", \"Weight\": \"Paino\", \"Tail\": \"Häntä\", \"Lifespan\": \"Elinikä\", \"In the wild (estimate)\": \"Luonnossa (arvio)\", \"Estimated number of mature individuals in the wild according to the IUCN Red List (most recent assessment). “Unknown” means there is no reliable estimate.\": \"Aikuisten yksilöiden arvioitu määrä luonnossa IUCN:n punaisen listan mukaan (viimeisin arviointi). ”Tuntematon” tarkoittaa, ettei luotettavaa arviota ole.\", \"The IUCN gives no figure for the jaguar; this estimate comes from a 2018 study.\": \"IUCN ei anna jaguaarille lukua; tämä arvio on peräisin vuoden 2018 tutkimuksesta.\", \"Way of life\": \"Elintavat\", \"Range\": \"Levinneisyys\", \"Habitat\": \"Elinympäristö\", \"Diet\": \"Ravinto\", \"Social behaviour\": \"Sosiaalinen käyttäytyminen\", \"Special features\": \"Erityispiirteet\", \"Characteristic\": \"Tuntomerkki\", \"Did you know?\": \"Tiesitkö?\", \"Previously on view at\": \"Ennen nähtävissä paikassa\", \"Seen this species somewhere else, or is something wrong? Report it\": \"Oletko nähnyt tämän lajin muualla, tai onko jokin väärin? Ilmoita siitä\", \"Other species\": \"Muut lajit\", \"Previous\": \"Edellinen\", \"Next\": \"Seuraava\", \"photo: J. Gelens\": \"kuva: J. Gelens\", \"Back to the map\": \"Takaisin karttaan\", \"Back to the locations\": \"Takaisin paikkoihin\", \"About this location\": \"Tietoa tästä paikasta\", \"Cats here\": \"Kissaeläimet täällä\", \"Visiting\": \"Vierailu\", \"Opening hours\": \"Aukioloajat\", \"Previously here\": \"Ennen täällä\", \"Other locations\": \"Muut paikat\", \"Not certain whether the animal is (still) there or can be seen.\": \"Ei ole varmaa, onko eläin (yhä) täällä tai voiko sen nähdä.\", \"There are no doubtful cases at the moment.\": \"Tällä hetkellä epävarmoja tapauksia ei ole.\", \"I don’t know\": \"En tiedä\", \"Choose a location…\": \"Valitse paikka…\", \"Other location…\": \"Muu paikka…\", \"Name and town of the location\": \"Paikan nimi ja kaupunki\", \"Other location\": \"Muu paikka\", \"For example: two animals, in the new enclosure near the entrance\": \"Esimerkiksi: kaksi eläintä, uudessa aitauksessa sisäänkäynnin lähellä\", \"Reporting does not work in this view. Open the page on claude.ai and log in to submit a report.\": \"Ilmoittaminen ei toimi tässä näkymässä. Avaa sivu claude.ai-palvelussa ja kirjaudu sisään lähettääksesi ilmoituksen.\", \"Choose above what you want to report and where.\": \"Valitse yltä, mistä haluat ilmoittaa ja missä.\", \"Species unknown\": \"Laji tuntematon\", \"Report\": \"Ilmoitus\", \"visit\": \"käynti\", \"Comment\": \"Kommentti\", \"First choose what you want to report.\": \"Valitse ensin, mistä haluat ilmoittaa.\", \"Enter the name of the location.\": \"Kirjoita paikan nimi.\", \"First choose a location.\": \"Valitse ensin paikka.\", \"The report window is still loading. Please try again in a moment.\": \"Ilmoitusikkuna latautuu vielä. Yritä hetken päästä uudelleen.\", \"The comment window is open. Send your report from there. Thank you!\": \"Kommenttiikkuna on auki. Lähetä ilmoituksesi sieltä. Kiitos!\", \"A comment window with text is already open. Send or close it first, then try again.\": \"Kommenttiikkuna, jossa on tekstiä, on jo auki. Lähetä tai sulje se ensin ja yritä sitten uudelleen.\", \"Too many attempts. Wait a minute and try again.\": \"Liian monta yritystä. Odota hetki ja yritä uudelleen.\", \"Something went wrong opening the comment window. Please try again.\": \"Kommenttiikkunan avaamisessa tapahtui virhe. Yritä uudelleen.\", \"young\": \"pentuja\", \"less than a month old\": \"alle kuukauden\", \"1 month old\": \"1 kuukausi\", \"about \": \"noin \", \"born\": \"syntynyt\", \"No young cats are currently known.\": \"Tällä hetkellä emme tiedä yhtään pentua.\", \"Nothing has been announced at the moment.\": \"Tällä hetkellä mitään ei ole ilmoitettu.\", \"Search by species, location or town\": \"Hae lajin, paikan tai kaupungin mukaan\", \"Search the table\": \"Hae taulukosta\", \"All statuses\": \"Kaikki tilat\", \"Where to see it in Spain\": \"Täällä näet sen Suomessa\", \" — Wild cats in Spain\": \" — Luonnonvaraiset kissaeläimet Suomessa\", \"public domain\": \"vapaa tekijänoikeuksista\"}"
+ },
+ "0114": {
+  "soort": "const:LBL_PL",
+  "fi": "{g:\"Täällä\",y:\"Tilapäisesti ei nähtävissä\",b:\"Ilmoitettu siirto\",p:\"Suunnitteilla\",w:\"Epävarma\",r:\"Vain opastetulla kierroksella\",n:\"Ei avoinna yleisölle\"}"
+ },
+ "0115": {
+  "soort": "const:TITLE_PL",
+  "fi": "\"Luonnonvaraiset kissaeläimet suomalaisissa eläintarhoissa — päivitetty 23. lokakuuta 2026\""
+ },
+ "0116": {
+  "soort": "const:MND_PL",
+  "fi": "[\"tammikuuta\", \"helmikuuta\", \"maaliskuuta\", \"huhtikuuta\", \"toukokuuta\", \"kesäkuuta\", \"heinäkuuta\", \"elokuuta\", \"syyskuuta\", \"lokakuuta\", \"marraskuuta\", \"joulukuuta\"]"
+ },
+ "0117": {
+  "soort": "T`",
+  "fi": "${rows.length}/${R.length} merkintää",
+  "en": "${rows.length} of ${R.length} entries"
+ },
+ "0118": {
+  "soort": "T\"",
+  "fi": "laji",
+  "en": "species"
+ },
+ "0119": {
+  "soort": "T\"",
+  "fi": "lajia",
+  "en": "species"
+ },
+ "0120": {
+  "soort": "T`",
+  "fi": "Näitkö jotain muuta paikassa ${esc(l[0])}? Ilmoita siitä",
+  "en": "Seen something different at ${esc(l[0])}? Report it"
+ },
+ "0121": {
+  "soort": "T`",
+  "fi": "/ ${confAll.length} vahvistetusta lajista",
+  "en": "of ${confAll.length} confirmed species"
+ },
+ "0122": {
+  "soort": "T\"",
+  "fi": "valittua paikkaa",
+  "en": "locations selected"
+ },
+ "0123": {
+  "soort": "T\"",
+  "fi": "Tätä lajia ei voi tällä hetkellä nähdä Suomessa.",
+  "en": "This species is currently not on view in Portugal."
+ },
+ "0124": {
+  "soort": "T`",
+  "fi": "Takaisin karttaan: ${esc(LOCS[BACK][0])}",
+  "en": "Back to ${esc(LOCS[BACK][0])} on the map"
+ },
+ "0125": {
+  "soort": "T\"",
+  "fi": "Täällä näet sen Suomessa",
+  "en": "Where to see it in Portugal"
+ },
+ "0126": {
+  "soort": "T\"",
+  "fi": "kissalaji",
+  "en": "cat species"
+ },
+ "0127": {
+  "soort": "T\"",
+  "fi": "kissalajia",
+  "en": "cat species"
+ },
+ "0128": {
+  "soort": "T\"",
+  "fi": "epävarmaa",
+  "en": "uncertain"
+ },
+ "0129": {
+  "soort": "T`",
+  "fi": "Tarkistettu: ${inf.checked}. Ajat voivat muuttua; katso puiston verkkosivut ennen käyntiä.",
+  "en": "Checked: ${inf.checked.replace(\"september\",\"September\")}. Times can change; check the park’s website before your visit."
+ },
+ "0130": {
+  "soort": "T`",
+  "fi": "Näitkö jotain muuta paikassa ${esc(l[0])}? Ilmoita siitä",
+  "en": "Seen something different at ${esc(l[0])}? Report it"
+ },
+ "0131": {
+  "soort": "T\"",
+  "fi": " — Luonnonvaraiset kissaeläimet Suomessa",
+  "en": " — Wild cats in Portugal"
+ },
+ "0132": {
+  "soort": "T\"",
+  "fi": " — Luonnonvaraiset kissaeläimet Suomessa",
+  "en": " — Wild cats in Portugal"
+ },
+ "0133": {
+  "soort": "T`",
+  "fi": "${m} kuukautta",
+  "en": "${m} months old"
+ },
+ "0134": {
+  "soort": "T\"",
+  "fi": "Suomen kartta, jossa 7 paikkaa, joissa on kissaeläimiä",
+  "en": "Map of Portugal with 7 locations with cats"
+ },
+ "0135": {
+  "soort": "T\"",
+  "fi": "Suodata tilan mukaan",
+  "en": "Filter by status"
+ },
+ "0136": {
+  "soort": "T\"",
+  "fi": " — Luonnonvaraiset kissaeläimet Suomessa",
+  "en": " — Wild cats in Portugal"
+ },
+ "0137": {
+  "soort": "T\"",
+  "fi": " — Luonnonvaraiset kissaeläimet Suomessa",
+  "en": " — Wild cats in Portugal"
+ },
+ "0138": {
+  "soort": "T\"",
+  "fi": "Valitse alue:",
+  "en": "Choose a region:"
+ },
+ "0139": {
+  "soort": "T\"",
+  "fi": "Suodata alueen mukaan",
+  "en": "Filter by region"
+ },
+ "0140": {
+  "soort": "T\"",
+  "fi": "Kaikki alueet",
+  "en": "All regions"
+ },
+ "0141": {
+  "soort": "T`",
+  "fi": "${n}/${LOCS.length} paikkaa: ${RG_NAME(RG_F)}.",
+  "en": "${n} of ${LOCS.length} locations: ${RG_NAME(RG_F)}."
+ }
+}

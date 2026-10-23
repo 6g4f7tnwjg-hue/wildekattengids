@@ -6,6 +6,7 @@ CONF = set("gybr")  # deze statussen tellen als "bevestigd"
 
 def slug(s):
     s = s.replace("æ", "ae").replace("ø", "oe").replace("Æ", "Ae").replace("Ø", "Oe")   # Deense letters (22-10-2026)
+    s = s.replace("ł", "l").replace("Ł", "L")   # Poolse letters (23-10-2026)
     s = unicodedata.normalize("NFD", s)
     s = "".join(c for c in s if not unicodedata.combining(c)).lower()
     s = re.sub(r"\(.*?\)", "", s)
@@ -30,7 +31,7 @@ def _vert(nl, regels):
         nl = re.sub(a, b, nl)
     return nl
 # talen van elke gids na Nederlands en Engels (zelfde volgorde als de vakken in de gids)
-GTAAL = {"nl": [], "be": ["fr"], "lu": ["fr", "de"], "de": ["de"], "fr": ["fr"], "at": ["de"], "ch": ["de", "fr", "it"], "uk": [], "it": ["it"], "es": ["es"], "ie": [], "pt": ["pt"], "dk": ["da"], "cz": ["cs"], "se": ["sv"], "no": ["nb"], "fi": ["fi"]}
+GTAAL = {"nl": [], "be": ["fr"], "lu": ["fr", "de"], "de": ["de"], "fr": ["fr"], "at": ["de"], "ch": ["de", "fr", "it"], "uk": [], "it": ["it"], "es": ["es"], "ie": [], "pt": ["pt"], "dk": ["da"], "cz": ["cs"], "se": ["sv"], "no": ["nb"], "fi": ["fi"], "pl": ["pl"]}
 def n4(n, land):
     """[nl, en, fr, de, it, es, pt] voor 'aantal jongen': uit de gids zelf als die de taal heeft, anders vertaald met vaste regels."""
     vak = lambda l: (n[2 + GTAAL.get(land, []).index(l)] if l in GTAAL.get(land, []) and len(n) > 2 + GTAAL[land].index(l) else "")

@@ -28,8 +28,8 @@ import huisstijl
 
 BASE = "/wildekattengids/"
 SITE = "https://yeetkitty.github.io" + BASE
-F = {"nl": "nederland", "be": "belgie", "lu": "luxemburg", "de": "duitsland", "fr": "frankrijk", "at": "oostenrijk", "ch": "zwitserland", "uk": "verenigd-koninkrijk", "it": "italie", "es": "spanje", "ie": "ierland", "pt": "portugal", "dk": "denemarken", "cz": "tsjechie", "se": "zweden", "no": "noorwegen", "fi": "finland"}
-LAND = {"nl": "Nederland", "be": "België", "lu": "Luxemburg", "de": "Duitsland", "fr": "Frankrijk", "at": "Oostenrijk", "ch": "Zwitserland", "uk": "Verenigd Koninkrijk", "it": "Italië", "es": "Spanje", "ie": "Ierland", "pt": "Portugal", "dk": "Denemarken", "cz": "Tsjechië", "se": "Zweden", "no": "Noorwegen", "fi": "Finland"}
+F = {"nl": "nederland", "be": "belgie", "lu": "luxemburg", "de": "duitsland", "fr": "frankrijk", "at": "oostenrijk", "ch": "zwitserland", "uk": "verenigd-koninkrijk", "it": "italie", "es": "spanje", "ie": "ierland", "pt": "portugal", "dk": "denemarken", "cz": "tsjechie", "se": "zweden", "no": "noorwegen", "fi": "finland", "pl": "polen"}
+LAND = {"nl": "Nederland", "be": "België", "lu": "Luxemburg", "de": "Duitsland", "fr": "Frankrijk", "at": "Oostenrijk", "ch": "Zwitserland", "uk": "Verenigd Koninkrijk", "it": "Italië", "es": "Spanje", "ie": "Ierland", "pt": "Portugal", "dk": "Denemarken", "cz": "Tsjechië", "se": "Zweden", "no": "Noorwegen", "fi": "Finland", "pl": "Polen"}
 STATES = {"bayern": "Bayern", "nedersaksen": "Nedersaksen", "nrw": "Noordrijn-Westfalen", "saksen": "Saksen", "berlijn": "Berlijn", "hamburg": "Hamburg", "bremen": "Bremen", "saarland": "Saarland", "sleeswijk-holstein": "Sleeswijk-Holstein", "hessen": "Hessen", "brandenburg": "Brandenburg", "mecklenburg-voor-pommeren": "Mecklenburg-Voor-Pommeren", "rijnland-palts": "Rijnland-Palts", "thueringen": "Thüringen", "saksen-anhalt": "Saksen-Anhalt", "baden-wuerttemberg": "Baden-Württemberg"}
 REGIOS = {"auvergne-rhone-alpes": "Auvergne-Rhône-Alpes", "bourgogne-franche-comte": "Bourgogne-Franche-Comté", "bretagne": "Bretagne", "centre-val-de-loire": "Centre-Val de Loire", "corsica": "Corsica", "grand-est": "Grand Est", "hauts-de-france": "Hauts-de-France", "ile-de-france": "Île-de-France", "normandie": "Normandië", "nouvelle-aquitaine": "Nouvelle-Aquitaine", "occitanie": "Occitanie", "pays-de-la-loire": "Pays de la Loire", "provence-alpes-cote-dazur": "Provence-Alpes-Côte d’Azur"}
 # landen met één blok per deelstaat of regio (alleen de blokken die in de gids staan tellen)
@@ -218,7 +218,8 @@ NOTE = {"nl": "Je melding gaat rechtstreeks naar de maker van de gids en is niet
         "cs": "Tvoje hlášení jde přímo autorovi průvodce a není veřejné. Pokud chceš odpověď, napiš do poznámek svou e-mailovou adresu.",
         "sv": "Din rapport går direkt till guidens författare och är inte offentlig. Om du vill ha svar, skriv din e-postadress under Kommentarer.",
         "nb": "Meldingen din går rett til forfatteren av guiden og er ikke offentlig. Vil du ha svar, skriv e-postadressen din under Kommentarer.",
-        "fi": "Ilmoituksesi menee suoraan oppaan tekijälle eikä ole julkinen. Jos haluat vastauksen, kirjoita sähköpostiosoitteesi kohtaan Huomautukset."}
+        "fi": "Ilmoituksesi menee suoraan oppaan tekijälle eikä ole julkinen. Jos haluat vastauksen, kirjoita sähköpostiosoitteesi kohtaan Huomautukset.",
+        "pl": "Twoje zgłoszenie trafia bezpośrednio do autora przewodnika i nie jest publiczne. Jeśli chcesz odpowiedzi, wpisz swój adres e-mail w Uwagach."}
 RPWEB0 = r'''async function rpWeb(d){
   const btn=rpEl("rp-go");btn.disabled=true;rpMsg(T("Bezig met versturen…","Sending…"@@SEND@@));
   const body={access_key:window.__W3F.key,subject:"Melding gids "+window.__W3F.land+": "+d.type+" – "+d.loc,from_name:"Wilde katachtigen-gids",
@@ -236,11 +237,11 @@ RPWEB0 = r'''async function rpWeb(d){
   btn.disabled=false;
 }
 '''
-RPTXT = {"SEND": {"fr": "Envoi en cours…", "de": "Wird gesendet…", "it": "Invio in corso…", "es": "Enviando…", "pt": "A enviar…", "da": "Sender…", "cs": "Odesílám…", "sv": "Skickar…", "nb": "Sender…", "fi": "Lähetetään…"},
-         "OK": {"fr": "Merci ! Votre signalement a été envoyé.", "de": "Danke! Deine Meldung wurde gesendet.", "it": "Grazie! La tua segnalazione è stata inviata.", "es": "¡Gracias! Tu aviso se ha enviado.", "pt": "Obrigado! O teu aviso foi enviado.", "da": "Tak! Din melding er sendt.", "cs": "Děkujeme! Tvoje hlášení bylo odesláno.", "sv": "Tack! Din rapport har skickats.", "nb": "Takk! Meldingen din er sendt.", "fi": "Kiitos! Ilmoituksesi on lähetetty."},
-         "FOUT": {"fr": "L’envoi a échoué. Veuillez réessayer plus tard.", "de": "Senden fehlgeschlagen. Bitte versuche es später noch einmal.", "it": "Invio non riuscito. Riprova più tardi.", "es": "No se ha podido enviar. Inténtalo de nuevo más tarde.", "pt": "Não foi possível enviar. Tenta novamente mais tarde.", "da": "Afsendelsen mislykkedes. Prøv igen senere.", "cs": "Odeslání se nezdařilo. Zkus to prosím později.", "sv": "Det gick inte att skicka. Försök igen senare.", "nb": "Det gikk ikke å sende. Prøv igjen senere.", "fi": "Lähetys epäonnistui. Yritä myöhemmin uudelleen."}}
+RPTXT = {"SEND": {"fr": "Envoi en cours…", "de": "Wird gesendet…", "it": "Invio in corso…", "es": "Enviando…", "pt": "A enviar…", "da": "Sender…", "cs": "Odesílám…", "sv": "Skickar…", "nb": "Sender…", "fi": "Lähetetään…", "pl": "Wysyłanie…"},
+         "OK": {"fr": "Merci ! Votre signalement a été envoyé.", "de": "Danke! Deine Meldung wurde gesendet.", "it": "Grazie! La tua segnalazione è stata inviata.", "es": "¡Gracias! Tu aviso se ha enviado.", "pt": "Obrigado! O teu aviso foi enviado.", "da": "Tak! Din melding er sendt.", "cs": "Děkujeme! Tvoje hlášení bylo odesláno.", "sv": "Tack! Din rapport har skickats.", "nb": "Takk! Meldingen din er sendt.", "fi": "Kiitos! Ilmoituksesi on lähetetty.", "pl": "Dziękujemy! Twoje zgłoszenie zostało wysłane."},
+         "FOUT": {"fr": "L’envoi a échoué. Veuillez réessayer plus tard.", "de": "Senden fehlgeschlagen. Bitte versuche es später noch einmal.", "it": "Invio non riuscito. Riprova più tardi.", "es": "No se ha podido enviar. Inténtalo de nuevo más tarde.", "pt": "Não foi possível enviar. Tenta novamente mais tarde.", "da": "Afsendelsen mislykkedes. Prøv igen senere.", "cs": "Odeslání se nezdařilo. Zkus to prosím později.", "sv": "Det gick inte att skicka. Försök igen senare.", "nb": "Det gikk ikke å sende. Prøv igjen senere.", "fi": "Lähetys epäonnistui. Yritä myöhemmin uudelleen.", "pl": "Nie udało się wysłać. Spróbuj ponownie później."}}
 # talen van elke gids na Nederlands en Engels, in de volgorde van T(nl,en,…) in die gids
-GTAAL = {"nl": [], "be": ["fr"], "lu": ["fr", "de"], "de": ["de"], "fr": ["fr"], "at": ["de"], "ch": ["de", "fr", "it"], "uk": [], "it": ["it"], "es": ["es"], "ie": [], "pt": ["pt"], "dk": ["da"], "cz": ["cs"], "se": ["sv"], "no": ["nb"], "fi": ["fi"]}
+GTAAL = {"nl": [], "be": ["fr"], "lu": ["fr", "de"], "de": ["de"], "fr": ["fr"], "at": ["de"], "ch": ["de", "fr", "it"], "uk": [], "it": ["it"], "es": ["es"], "ie": [], "pt": ["pt"], "dk": ["da"], "cz": ["cs"], "se": ["sv"], "no": ["nb"], "fi": ["fi"], "pl": ["pl"]}
 def rpweb(c):
     t = RPWEB0
     for k, v in RPTXT.items():
@@ -304,6 +305,8 @@ CTRY = {
            "Welke wilde katten zie je in Noorse dierentuinen en dierenparken, van Kristiansand Dyrepark tot Polar Park? Per fylke, per soort en per park, met kaart, routeplanner en recente geboortes."),
     "fi": ("Wilde katachtigen in Finland – welke wilde katten in welke dierentuin?",
            "Welke wilde katten zie je in Finse dierentuinen en dierenparken, van Korkeasaari tot Ähtäri en Ranua? Per landschap, per soort en per park, met kaart, routeplanner en recente geboortes."),
+    "pl": ("Wilde katachtigen in Polen – welke wilde katten in welke dierentuin?",
+           "Welke wilde katten zie je in Poolse dierentuinen, dierenparken, safariparken en opvangcentra, van Zoo Wrocław tot Zoo Warszawa? Per woiwodschap, per soort en per park, met kaart, routeplanner en recente geboortes."),
     "de": ("Wilde katachtigen in Duitsland – welke wilde katten in welke dierentuin?",
            "Welke wilde katten zie je in Duitse dierentuinen, Tierparks en Wildparks? Per deelstaat, per soort en per park, met kaart, routeplanner en recente geboortes."),
 }
@@ -362,11 +365,11 @@ fmap = "{" + ",".join(f'{c}:"{BASE}{v}/"' for c, v in F.items()) + "}"
 st = sub1(st, "window.openCountry=function(c,h){",
           f"window.__F={fmap};\n  window.openCountry=function(c,h){{location.replace(window.__F[c]+(h?\"#\"+h:\"\"));return;")
 st = st.replace("${c}.html", "${window.__F[c]}").replace("${ZOOM}.html", "${window.__F[ZOOM]}")
-TITLE = "Wilde katachtigen in de Benelux, Duitsland, Frankrijk, Oostenrijk, Zwitserland, Italië, Spanje, Portugal, Denemarken, Zweden, Noorwegen, Finland, Tsjechië, het Verenigd Koninkrijk en Ierland – waar zie je welke wilde kat?"
+TITLE = "Wilde katachtigen in de Benelux, Duitsland, Frankrijk, Oostenrijk, Zwitserland, Italië, Spanje, Portugal, Denemarken, Zweden, Noorwegen, Finland, Polen, Tsjechië, het Verenigd Koninkrijk en Ierland – waar zie je welke wilde kat?"
 DESC = ("Gids van J. Gelens: welke wilde katten – leeuw, tijger, luipaard, lynx, serval, manoel en meer – je in dierentuinen, "
-        "dierenparken en opvangcentra in Nederland, België, Luxemburg, Duitsland, Frankrijk, Oostenrijk, Zwitserland, Italië, Spanje, Portugal, Denemarken, Zweden, Noorwegen, Finland, Tsjechië, het Verenigd Koninkrijk en Ierland kunt zien. Met kaart, routeplanner en recente geboortes.")
-st = sub1(st, "<title>Wilde katachtigen in de Benelux, Duitsland, Frankrijk, Oostenrijk, Zwitserland, Italië, Spanje, Portugal, Denemarken, Zweden, Noorwegen, Finland, Tsjechië, het Verenigd Koninkrijk en Ierland</title>",
-          f"<title>{TITLE}</title>\n" + seo("Wilde katachtigen in de Benelux, Duitsland, Frankrijk, Oostenrijk, Zwitserland, Italië, Spanje, Portugal, Denemarken, Zweden, Noorwegen, Finland, Tsjechië, het Verenigd Koninkrijk en Ierland", DESC, SITE)
+        "dierenparken en opvangcentra in Nederland, België, Luxemburg, Duitsland, Frankrijk, Oostenrijk, Zwitserland, Italië, Spanje, Portugal, Denemarken, Zweden, Noorwegen, Finland, Polen, Tsjechië, het Verenigd Koninkrijk en Ierland kunt zien. Met kaart, routeplanner en recente geboortes.")
+st = sub1(st, "<title>Wilde katachtigen in de Benelux, Duitsland, Frankrijk, Oostenrijk, Zwitserland, Italië, Spanje, Portugal, Denemarken, Zweden, Noorwegen, Finland, Polen, Tsjechië, het Verenigd Koninkrijk en Ierland</title>",
+          f"<title>{TITLE}</title>\n" + seo("Wilde katachtigen in de Benelux, Duitsland, Frankrijk, Oostenrijk, Zwitserland, Italië, Spanje, Portugal, Denemarken, Zweden, Noorwegen, Finland, Polen, Tsjechië, het Verenigd Koninkrijk en Ierland", DESC, SITE)
           + '<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n'
           + f'<link rel="icon" href="{BASE}icon.svg" type="image/svg+xml">\n')
 st = sub1(st, '<meta charset="utf-8">', '<meta charset="utf-8"><script>window.__KATBASE="' + BASE + 'soort/";window.__HOMEURL="' + BASE
@@ -386,12 +389,12 @@ for s in D["sp"]:
 def kat_page(s, locs, inhoud=""):
     conf = [(c, l) for c, l, x in locs if x in CONFC]
     landen = [LAND[c] for c in F if any(cc == c for cc, l in conf)]
-    title = f"{s[1]} in Nederland, België, Luxemburg, Duitsland, Frankrijk, Oostenrijk, Zwitserland, Italië, Spanje, Portugal, Denemarken, Zweden, Noorwegen, Finland, Tsjechië, het Verenigd Koninkrijk en Ierland: waar zie je hem? – Wilde katachtigen-gids"
+    title = f"{s[1]} in Nederland, België, Luxemburg, Duitsland, Frankrijk, Oostenrijk, Zwitserland, Italië, Spanje, Portugal, Denemarken, Zweden, Noorwegen, Finland, Polen, Tsjechië, het Verenigd Koninkrijk en Ierland: waar zie je hem? – Wilde katachtigen-gids"
     if conf:
         desc = kort(f"Waar zie je een {s[1].lower() if s[1] != 'Geoffroy’s kat' else s[1]}? In {opsomming(landen)} op {len(conf)} {'locatie' if len(conf) == 1 else 'locaties'}: "
                     + ", ".join(l[0] for c, l in conf[:6]) + ". Met kaart en recente geboortes.")
     else:
-        desc = kort(f"{s[1]} ({s[4]}): vermeldingen in dierentuinen en dierenparken in de Benelux, Duitsland, Frankrijk, Oostenrijk, Zwitserland, Italië, Spanje, Portugal, Denemarken, Zweden, Noorwegen, Finland, Tsjechië, het Verenigd Koninkrijk en Ierland, met kaart en recente geboortes.")
+        desc = kort(f"{s[1]} ({s[4]}): vermeldingen in dierentuinen en dierenparken in de Benelux, Duitsland, Frankrijk, Oostenrijk, Zwitserland, Italië, Spanje, Portugal, Denemarken, Zweden, Noorwegen, Finland, Polen, Tsjechië, het Verenigd Koninkrijk en Ierland, met kaart en recente geboortes.")
     url = SITE + "soort/" + s[0] + "/"
     img = SITE + PATHS[s[6]][len(BASE):] if s[6] is not None else SITE + "voorbeeld.jpg"
     doc = re.sub(r"<title>.*?</title>.*?<meta name=\"twitter:card\"[^>]*>\n", "", st, count=1, flags=re.S)
@@ -405,7 +408,7 @@ for s, locs in KATS:
     wr(ROOT + "soort/" + s[0] + "/index.html", kat_page(s, locs))
 # top 10 om te bezoeken (/top10/)
 def top_page():
-    title = "Top 10 dierentuinen om wilde katten te zien – Benelux, Duitsland, Frankrijk, Oostenrijk, Zwitserland, Italië, Spanje, Portugal, Denemarken, Zweden, Noorwegen, Finland, Tsjechië, het Verenigd Koninkrijk en Ierland"
+    title = "Top 10 dierentuinen om wilde katten te zien – Benelux, Duitsland, Frankrijk, Oostenrijk, Zwitserland, Italië, Spanje, Portugal, Denemarken, Zweden, Noorwegen, Finland, Polen, Tsjechië, het Verenigd Koninkrijk en Ierland"
     namen = [D[t["c"]]["locs"][t["i"]][0] for t in D["top10"]]
     desc = kort("De tien parken waar je de meeste en de bijzonderste wilde katten ziet: " + ", ".join(namen) + ".")
     doc = re.sub(r"<title>.*?</title>.*?<meta name=\"twitter:card\"[^>]*>\n", "", st, count=1, flags=re.S)

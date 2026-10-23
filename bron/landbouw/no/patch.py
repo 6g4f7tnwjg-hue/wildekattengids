@@ -40,6 +40,10 @@ LAB = {
  "Karpatisch (L. l. carpathicus)": ("Karpatisch (L. l. carpathicus)", "Carpathian (L. l. carpathicus)"),
  "onbekend": ("onbekend", "unknown"), "—": None,
 }
+# ondersoort alleen als de bron hem noemt: lynx (eigen keuze van de vervolgagent) en leeuw (herkomst Mufasa onbekend) terug naar onbekend
+for l in L:
+    for k in l["katten"]:
+        if k["soort"] == "Euraziatische lynx" or (k["soort"] == "Leeuw" and l["naam"] == "Dyreparken"): k["ondersoort"] = "onbekend"
 for l in L:
     for k in l["katten"]:
         o = k["ondersoort"]; o = o if isinstance(o, str) else o.get("nl")

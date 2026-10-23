@@ -38,7 +38,7 @@ def tldr():
     <li><strong>Maar op één plek te zien:</strong> de tijger, de leeuw en de cheetah ({DYR}), de Amoerluipaard ({BJO}) en de serval ({TAN}).</li>
     <li><strong>Jonge katten:</strong> vier cheetahs (augustus 2026) en leeuwenwelpen uit april 2026 en mei 2025 in {DYR}.</li>
     <li><strong>Bijzonder:</strong> in {LAN} kun je met een begeleider het lynxverblijf in en overnachten in een hut midden tussen de lynxen.</li>
-    <li><strong>Geen particulieren en geen circussen:</strong> uitheemse wilde katten mogen in Noorwegen niet als huisdier worden gehouden en niet in een circus optreden. De serval van {TAN} is een in beslag genomen huisdier.</li>
+    <li><strong>Geen particulieren en geen circussen:</strong> uitheemse wilde katten mogen in Noorwegen niet als huisdier worden gehouden en niet in een circus optreden. De serval Niño in {TAN} is een in beslag genomen huisdier.</li>
   </ul>
   </div>
 </div>'''
@@ -50,7 +50,7 @@ def tldr():
     <li><strong>Only in one place:</strong> the tiger, the lion and the cheetah ({DYR}), the Amur leopard ({BJO}) and the serval ({TAN}).</li>
     <li><strong>Young cats:</strong> four cheetahs (August 2026) and lion cubs from April 2026 and May 2025 at {DYR}.</li>
     <li><strong>Special:</strong> at {LAN} you can enter the lynx enclosure with a guide and stay overnight in a cabin among the lynxes.</li>
-    <li><strong>No private keepers and no circuses:</strong> in Norway exotic wild cats may not be kept as pets or shown in circuses. The serval at {TAN} is a confiscated pet.</li>
+    <li><strong>No private keepers and no circuses:</strong> in Norway exotic wild cats may not be kept as pets or shown in circuses. The serval Niño at {TAN} is a confiscated pet.</li>
   </ul>
   </div>
 </div>'''
@@ -62,7 +62,7 @@ def tldr():
     <li><strong>Bare ett sted:</strong> tiger, løve og gepard ({DYR}), amurleopard ({BJO}) og serval ({TAN}).</li>
     <li><strong>Unger:</strong> fire geparder (august 2026) og løveunger fra april 2026 og mai 2025 i {DYR}.</li>
     <li><strong>Spesielt:</strong> på {LAN} kan du bli med inn i gaupeinnhegningen og overnatte i en hytte midt blant gaupene.</li>
-    <li><strong>Ingen privatpersoner og ingen sirkus:</strong> i Norge er det forbudt å holde eksotiske ville kattedyr som kjæledyr eller vise dem i sirkus. Servalen på {TAN} er et beslaglagt kjæledyr.</li>
+    <li><strong>Ingen privatpersoner og ingen sirkus:</strong> i Norge er det forbudt å holde eksotiske ville kattedyr som kjæledyr eller vise dem i sirkus. Servalen Niño på {TAN} er et beslaglagt kjæledyr.</li>
   </ul>
   </div>
 </div>'''

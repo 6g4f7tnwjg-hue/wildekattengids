@@ -1,0 +1,608 @@
+{
+ "locaties": [
+  {
+   "naam": "Dyreparken",
+   "plaats": "Kristiansand",
+   "lon": 8.142,
+   "lat": 58.186,
+   "type": "Dierentuin",
+   "lidmaatschap": [
+    "EAZA"
+   ],
+   "url": "https://www.dyreparken.no/",
+   "uren": {
+    "nl": "Het hele jaar open; buiten het seizoen meestal 10–15 uur, per dag in de kalender (eigen site, gezien 22-10-2026)",
+    "en": "Open all year; off-season usually 10am–3pm, check the daily calendar (own site, seen 22-10-2026)"
+   },
+   "about": {
+    "nl": "Grootste dierentuin van Noorwegen, gecombineerd met attractiepark (Kardemomme By, Kaptein Sabeltann). Katten in Tigerens Rike (Amoertijger), het leeuwengebied, het cheetahverblijf en Nordisk Villmark (lynx). In september 2026 weigerde Mattilsynet een plan om vijf huiskatten als muizenvangers vrij in het park te laten lopen.",
+    "en": "Norway's largest zoo, combined with an amusement park (Kardemomme By, Captain Sabertooth). Cats in Tigerens Rike (Amur tiger), the lion area, the cheetah enclosure and Nordisk Villmark (lynx). In September 2026 Mattilsynet refused a plan to let five domestic cats roam the park as mousers."
+   },
+   "earlier": {
+    "nl": "Serval Niño (in beslag genomen, illegaal ingevoerd) zat hier tijdelijk van eind 2024 tot voorjaar 2025 en ging daarna naar Tangen Dyrepark (NRK 21-11-2024). Amoertijger Altai, hier geboren in 2022, vertrok in februari 2025 naar Yorkshire Wildlife Park (TV 2 11-10-2026).",
+    "en": "Serval Niño (seized, illegally imported) was kept here temporarily from late 2024 to spring 2025 and then moved to Tangen Dyrepark (NRK 21-11-2024). Amur tiger Altai, born here in 2022, left for Yorkshire Wildlife Park in February 2025 (TV 2 11-10-2026)."
+   },
+   "katten": [
+    {
+     "soort": "Tijger",
+     "ondersoort": {
+      "nl": "Amoer",
+      "en": "Amur"
+     },
+     "status": "g",
+     "toelichting": {
+      "nl": "Amoertijgers in Tigerens Rike, met dagelijkse dierpresentatie.",
+      "en": "Amur tigers in Tigerens Rike, with a daily keeper talk."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site soortpagina /dyr/tiger/ (bijgewerkt 18-09-2026, gezien 22-10-2026) en /opplevelser/dyrepresentasjon-amurtiger/ (bijgewerkt 15-09-2026)",
+     "twijfel": null
+    },
+    {
+     "soort": "Leeuw",
+     "ondersoort": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "status": "g",
+     "toelichting": {
+      "nl": "Kweekpaar Mufasa (uit Frankrijk) en Kira (uit België), sinds 2022; EAZA-kweekprogramma. Jongen uit 2025 en 2026 in de groep. Het Løvehuset was na de geboorte in april 2026 tijdelijk dicht.",
+      "en": "Breeding pair Mufasa (from France) and Kira (from Belgium), here since 2022; EAZA breeding programme. Cubs from 2025 and 2026 in the group. The lion house closed for a while after the April 2026 birth."
+     },
+     "aantal": {
+      "nl": "onbekend (minstens kater Mufasa, poes Kira en hun jongen van 2025 en 2026)",
+      "en": "unknown (at least male Mufasa, female Kira and their 2025 and 2026 cubs)"
+     },
+     "bron": "Eigen site persberichten 30-04-2026, 05-06-2025, nieuwsbericht 2022; soortpagina /alledyr/love-2/ (bijgewerkt 18-09-2026)",
+     "twijfel": null
+    },
+    {
+     "soort": "Cheetah",
+     "ondersoort": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "status": "g",
+     "toelichting": {
+      "nl": "EAZA-kweekprogramma. Poes Leia (uit Borås) en kater Haraka (uit Wilhelma) kwamen in de winter van 2025–2026; in november 2025 kwamen twee broers uit Wilhelma. Poes Cannelle kreeg in oktober 2024 vier jongen (één stierf in december 2024). Het cheetahhuis was na de geboorte in augustus 2026 dicht voor bezoekers.",
+      "en": "EAZA breeding programme. Female Leia (from Borås) and male Haraka (from Wilhelma) arrived in winter 2025–2026; two brothers from Wilhelma arrived in November 2025. Female Cannelle had four cubs in October 2024 (one died in December 2024). The cheetah house was closed to visitors after the August 2026 birth."
+     },
+     "aantal": {
+      "nl": "onbekend (o.a. Leia, Haraka, Cannelle en vier jongen van augustus 2026)",
+      "en": "unknown (incl. Leia, Haraka, Cannelle and four cubs from August 2026)"
+     },
+     "bron": "Eigen site persberichten 14-11-2025, 06-08-2026, 19-08-2026, 16-10-2024; soortpagina /alledyr/gepard/ (bijgewerkt 18-09-2026); Aftenbladet 23-12-2024",
+     "twijfel": null
+    },
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "status": "g",
+     "toelichting": {
+      "nl": "In Nordisk Villmark, met dierpresentatie. In mei 2025 werden lynxjongen geboren.",
+      "en": "In Nordisk Villmark, with a keeper talk. Lynx kittens were born in May 2025."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site soortpagina /alledyr/gaupe-2/ (bijgewerkt 20-05-2026), /opplevelser/gaupe/ (bijgewerkt 09-10-2026); persbericht 05-06-2025",
+     "twijfel": null
+    }
+   ],
+   "geboortes": [
+    {
+     "soort": "Cheetah",
+     "geboren": "2026-08-06",
+     "n": {
+      "nl": "4 welpen",
+      "en": "4 cubs"
+     },
+     "x": {
+      "nl": "1 poes en 3 katers; moeder Leia (5), vader Haraka (8); eerste worp van Leia. Op 19-08-2026 was het cheetahhuis nog dicht voor bezoekers.",
+      "en": "1 female and 3 males; mother Leia (5), father Haraka (8); Leia's first litter. On 19-08-2026 the cheetah house was still closed to visitors."
+     },
+     "bron": "Eigen site persberichten 06-08-2026 en 19-08-2026"
+    },
+    {
+     "soort": "Leeuw",
+     "geboren": "2026-04-29",
+     "n": {
+      "nl": "4 welpen (voorlopige telling)",
+      "en": "4 cubs (preliminary count)"
+     },
+     "x": {
+      "nl": "Moeder Kira (8), vader Mufasa (8). Het Løvehuset ging tijdelijk dicht.",
+      "en": "Mother Kira (8), father Mufasa (8). The lion house closed temporarily."
+     },
+     "bron": "Eigen site persbericht 30-04-2026; NTB 30-04-2026"
+    },
+    {
+     "soort": "Leeuw",
+     "geboren": "2025-05-19",
+     "n": {
+      "nl": "5 welpen",
+      "en": "5 cubs"
+     },
+     "x": {
+      "nl": "3 katers en 2 poezen; moeder Kira, vader Mufasa; voor het eerst buiten eind juli 2025.",
+      "en": "3 males and 2 females; mother Kira, father Mufasa; first outside in late July 2025."
+     },
+     "bron": "Eigen site persbericht 05-06-2025; Aftenbladet 20-05-2025 en 28-07-2025"
+    }
+   ],
+   "kleur": "",
+   "regio": "agder",
+   "labels": []
+  },
+  {
+   "naam": "Bjørneparken",
+   "plaats": "Flå",
+   "lon": 9.442,
+   "lat": 60.435,
+   "type": "Dierentuin",
+   "lidmaatschap": [
+    "SDF"
+   ],
+   "url": "https://bjorneparken.no/",
+   "uren": {
+    "nl": "Seizoenspark (vanaf 1 april); seizoen 2026 voorbij, tickets voor 2027 volgen (eigen site, gezien 22-10-2026)",
+    "en": "Seasonal park (from 1 April); 2026 season over, 2027 tickets coming soon (own site, seen 22-10-2026)"
+   },
+   "about": {
+    "nl": "Dierenpark met vooral Noordse roofdieren (beren, wolven, lynx, vossen) in grote bosverblijven, plus Amoerluipaard. Volgens NRK sprong er ooit een wilde lynx het park in.",
+    "en": "Animal park with mainly Nordic predators (bears, wolves, lynx, foxes) in large forest enclosures, plus Amur leopard. According to NRK a wild lynx once jumped into the park."
+   },
+   "earlier": {
+    "nl": "Amoerluipaard Igor, broer van Zino, kwam in 2020 en ging later in het kweekprogramma naar EcoZonia (Frankrijk); jaartal niet bevestigd.",
+    "en": "Amur leopard Igor, Zino's brother, arrived in 2020 and later moved to EcoZonia (France) within the breeding programme; year not confirmed."
+   },
+   "katten": [
+    {
+     "soort": "Luipaard",
+     "ondersoort": {
+      "nl": "Amoer (P. p. orientalis)",
+      "en": "Amur (P. p. orientalis)"
+     },
+     "status": "g",
+     "toelichting": {
+      "nl": "Kater Zino, sinds 2020; EAZA-kweekprogramma. Het park verwachtte in mei 2026 poes Mila uit Pittsburgh Zoo (VS), maar haar komst is niet bevestigd.",
+      "en": "Male Zino, here since 2020; EAZA breeding programme. The park expected female Mila from Pittsburgh Zoo (USA) in May 2026, but her arrival is not confirmed."
+     },
+     "aantal": {
+      "nl": "1 (kater Zino), mogelijk ook poes Mila",
+      "en": "1 (male Zino), possibly also female Mila"
+     },
+     "bron": "Eigen site /amurleopard/ en voorpagina (gezien 22-10-2026); NRK 03-04-2026; NRK januari 2025",
+     "twijfel": null
+    },
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "status": "g",
+     "toelichting": {
+      "nl": "Poes Flora, hoog in het park.",
+      "en": "Female Flora, high up in the park."
+     },
+     "aantal": {
+      "nl": "1 (poes Flora)",
+      "en": "1 (female Flora)"
+     },
+     "bron": "Eigen site /gaupe/ (ongedateerd, gezien 22-10-2026); voorpagina noemt Gaupe onder Rovdyr",
+     "twijfel": null
+    }
+   ],
+   "geboortes": [],
+   "kleur": "",
+   "regio": "buskerud",
+   "labels": [
+    "seizoen"
+   ]
+  },
+  {
+   "naam": "Langedrag Naturpark",
+   "plaats": "Tunhovd (Nore og Uvdal)",
+   "lon": 8.879,
+   "lat": 60.448,
+   "type": "Wildpark",
+   "lidmaatschap": [],
+   "url": "https://www.langedrag.no/",
+   "uren": {
+    "nl": "362 dagen per jaar open, dagelijks 10–18 uur; dicht 17 mei, 24 en 25 december (eigen site, gezien 22-10-2026)",
+    "en": "Open 362 days a year, daily 10am–6pm; closed 17 May, 24 and 25 December (own site, seen 22-10-2026)"
+   },
+   "about": {
+    "nl": "Bergboerderij en natuurpark op ongeveer 1000 m hoogte met Noordse dieren. Lynx dagelijks te zien bij het voeren; bezoekers vanaf 15 jaar kunnen tegen betaling mee de lynxverblijf in, en je kunt overnachten in de hut Gaupestugu midden in het lynxverblijf.",
+    "en": "Mountain farm and nature park at about 1000 m with Nordic animals. Lynx visible daily at feeding; visitors aged 15+ can pay to enter the lynx enclosure, and you can stay overnight in the Gaupestugu cabin inside the lynx enclosure."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "status": "g",
+     "toelichting": {
+      "nl": "Gesocialiseerde lynxen in de 'gaupegården'; voeren dagelijks rond 14 uur, betaald lynxbezoek elke dag.",
+      "en": "Socialised lynx in the 'gaupegården'; feeding daily around 2pm, paid lynx visits every day."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site /dyr/gaupe/ (bijgewerkt 09-05-2024), /dagsprogram/ en /priser-langedrag/ (gezien 22-10-2026)",
+     "twijfel": null
+    }
+   ],
+   "geboortes": [],
+   "kleur": "",
+   "regio": "buskerud",
+   "labels": [
+    "overnachten"
+   ]
+  },
+  {
+   "naam": "Tangen Dyrepark",
+   "plaats": "Tangen (Stange)",
+   "lon": 11.308,
+   "lat": 60.631,
+   "type": "Dierenpark",
+   "lidmaatschap": [],
+   "url": "https://www.tangendyrepark.no/",
+   "uren": {
+    "nl": "Seizoenspark, 10–17 uur op open dagen (kalender); nu dicht voor de winter, weer open in mei 2027 (eigen site, gezien 22-10-2026)",
+    "en": "Seasonal park, 10am–5pm on open days (calendar); now closed for winter, reopening May 2027 (own site, seen 22-10-2026)"
+   },
+   "about": {
+    "nl": "Dierenpark bij de E6 met ruim 30 soorten, Noordse en exotische dieren. De serval is een in beslag genomen, illegaal ingevoerd dier dat hier een vaste plek kreeg.",
+    "en": "Animal park by the E6 with over 30 species, Nordic and exotic. The serval is a seized, illegally imported animal that was given a permanent home here."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Serval",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Kater Niño, illegaal uit Rusland ingevoerd (2021), in 2024 in beslag genomen, eerst tijdelijk in Dyreparken, sinds voorjaar 2025 hier. Gecastreerd, dus geen jongen. Kiest zelf of hij zichtbaar is; de beste kans is rond het voeren (12–13 uur en ca. 16 uur). Een poes uit een Belgisch opvangcentrum is aangeboden als gezelschap, nog geen besluit (november 2025).",
+      "en": "Male Niño, illegally imported from Russia (2021), seized in 2024, first kept temporarily at Dyreparken, here since spring 2025. Neutered, so no kittens. He chooses whether to be visible; best chance around feeding (12–1pm and about 4pm). A female from a Belgian rescue centre has been offered as a companion, no decision yet (November 2025)."
+     },
+     "aantal": {
+      "nl": "1 (kater Niño)",
+      "en": "1 (male Niño)"
+     },
+     "bron": "Eigen site /serval en /våre-dyr (gezien 22-10-2026); Bergensavisen (ba.no) 09-11-2025; Stange Vestbygd ongedateerd (ca. mei 2025)",
+     "twijfel": null
+    }
+   ],
+   "geboortes": [],
+   "kleur": "",
+   "regio": "innlandet",
+   "labels": [
+    "seizoen"
+   ]
+  },
+  {
+   "naam": "Polar Park",
+   "plaats": "Bardu",
+   "lon": 18.11,
+   "lat": 68.692,
+   "type": "Wildpark",
+   "lidmaatschap": [],
+   "url": "https://www.polarpark.no",
+   "uren": {
+    "nl": "Het hele jaar open, behalve 17 mei en 24 december. Winter (1 sep–20 jun) 10:00–15:30, zomer (21 jun–31 aug) 10:00–18:00. Roofdierrondleiding ’s winters in het weekend, ’s zomers dagelijks om 13:00 (Visit Narvik, gezien 23-10-2026; eigen site niet bereikbaar)",
+    "en": "Open all year except 17 May and 24 December. Winter (1 Sep–20 Jun) 10:00–15:30, summer (21 Jun–31 Aug) 10:00–18:00. Predator guiding at weekends in winter, daily at 13:00 in summer (Visit Narvik, seen 23-10-2026; park's own site not reachable)"
+   },
+   "about": {
+    "nl": "De noordelijkste dierenpark ter wereld, in het Salangsdalen. Ongeveer 110 hectare met 12 grote verblijven voor Noordse dieren: bruine beer, wolf, lynx, veelvraat, poolvos, eland, edelhert, muskusos en rendier.",
+    "en": "The world's northernmost animal park, in the Salangsdalen valley. About 110 hectares with 12 large enclosures for Nordic animals: brown bear, wolf, lynx, wolverine, arctic fox, moose, red deer, muskox and reindeer."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "status": "g",
+     "toelichting": {
+      "nl": "Groot bosverblijf; de lynxen zijn niet altijd te zien. Ze horen bij de dagelijkse roofdierrondleiding.",
+      "en": "Large forest enclosure; the lynx are not always visible. They are part of the predator guiding."
+     },
+     "aantal": {
+      "nl": "onbekend (4 in juli 2024 volgens de dierenlijst van het park, via Wikipedia)",
+      "en": "unknown (4 in July 2024 according to the park's animal list, via Wikipedia)"
+     },
+     "bron": "Visit Narvik parkpagina (ongedateerd, gezien 23-10-2026); schoolbezoek Storsteinnes skole 19-05-2026 (‘gaupe’ gezien); Wikipedia (dierenlijst juli 2024); Zootierliste (bezoek 07/2023)",
+     "twijfel": null
+    }
+   ],
+   "geboortes": [],
+   "kleur": "",
+   "regio": "troms",
+   "labels": []
+  },
+  {
+   "naam": "Park Nordica",
+   "plaats": "Trones (Namsskogan)",
+   "lon": 12.848,
+   "lat": 64.743,
+   "type": "Wildpark",
+   "lidmaatschap": [],
+   "url": "https://www.park-nordica.com/no",
+   "uren": {
+    "nl": "Elke dag 10:00–16:00. Sinds 6 september laagseizoen: dieren te zien, maar attracties, café, restaurant en voerrondes dicht; ‘tot nader order’ open (eigen site, gezien 23-10-2026). Seizoen 2026 begon op 23 mei.",
+    "en": "Daily 10:00–16:00. Low season since 6 September: animals can be seen, but rides, café, restaurant and feeding rounds are closed; open ‘until further notice’ (own site, seen 23-10-2026). The 2026 season started on 23 May."
+   },
+   "about": {
+    "nl": "Vroeger Namsskogan Familiepark (sinds 1989). Na het faillissement in februari 2025 heropend op 23 mei 2026 onder nieuwe eigenaar en nieuwe naam. Noordse dieren zoals beer, wolf, lynx, veelvraat, otter en poolvos. De oude site namsskogan-familiepark.no is nu een casinosite.",
+    "en": "Formerly Namsskogan Familiepark (since 1989). After bankruptcy in February 2025 it reopened on 23 May 2026 under a new owner and a new name. Nordic animals such as bear, wolf, lynx, wolverine, otter and arctic fox. The old site namsskogan-familiepark.no is now a casino site."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "status": "g",
+     "toelichting": {
+      "nl": "Twee lynxen, in 2019 gekomen uit Langedrag Naturpark.",
+      "en": "Two lynx, arrived from Langedrag Naturpark in 2019."
+     },
+     "aantal": {
+      "nl": "2 (Ingun en poes Korse)",
+      "en": "2 (Ingun and female Korse)"
+     },
+     "bron": "Eigen site, pagina Nordiske rovdyr (gezien 23-10-2026); persfoto ‘Gaupen Ingun’ bij opening 23-05-2026; SNL (bijgewerkt 09-07-2026); Zootierliste (bezoek 06/2026)",
+     "twijfel": null
+    }
+   ],
+   "geboortes": [],
+   "kleur": "",
+   "regio": "trondelag",
+   "labels": []
+  }
+ ],
+ "zonder_katten": [
+  {
+   "naam": "Oslo Reptilpark",
+   "plaats": "Oslo",
+   "reden": {
+    "nl": "geen katachtigen; reptielen, vissen, spinnen en apen (eigen site, gezien 22-10-2026)",
+    "en": "no cats; reptiles, fish, spiders and monkeys (own site, seen 22-10-2026)"
+   },
+   "_bron": "zo"
+  },
+  {
+   "naam": "Den Lille Dyrehage (Opplev Tropisk)",
+   "plaats": "Brokelandsheia (Gjerstad)",
+   "reden": {
+    "nl": "geen katachtigen; o.a. kleine apen, lemuren, stokstaartjes, krokodillen, kangoeroes (eigen site, gezien 22-10-2026)",
+    "en": "no cats; incl. small monkeys, lemurs, meerkats, crocodiles, kangaroos (own site, seen 22-10-2026)"
+   },
+   "_bron": "zo"
+  },
+  {
+   "naam": "Foldvik Familiepark",
+   "plaats": "Stavern (Larvik)",
+   "reden": {
+    "nl": "attractiepark met boerderijdieren; alleen huiskatten (VisitNorway, ongedateerd)",
+    "en": "amusement park with farm animals; domestic cats only (VisitNorway, undated)"
+   },
+   "_bron": "zo"
+  },
+  {
+   "naam": "Barnas Dyrepark – Lindesnes",
+   "plaats": "Svennevik (Lindesnes)",
+   "reden": {
+    "nl": "alleen huis- en boerderijdieren en vogels (Wikipedia, bijgewerkt 12-2023)",
+    "en": "only domestic/farm animals and birds (Wikipedia, edited 12-2023)"
+   },
+   "_bron": "zo"
+  },
+  {
+   "naam": "Hunderfossen Eventyrpark",
+   "plaats": "Lillehammer",
+   "reden": {
+    "nl": "attractiepark; dieren alleen op de aangrenzende kinderboerderij Barnas Gård (diverse bronnen, ongedateerd)",
+    "en": "amusement park; animals only at the adjoining Barnas Gård petting farm (various sources, undated)"
+   },
+   "_bron": "zo"
+  },
+  {
+   "naam": "Snilsberg Familiepark",
+   "plaats": "Gaupen (Ringsaker)",
+   "reden": {
+    "nl": "alleen konijnen en cavia's als aaidieren (eigen site, gezien 22-10-2026)",
+    "en": "only rabbits and guinea pigs as petting animals (own site, seen 22-10-2026)"
+   },
+   "_bron": "zo"
+  },
+  {
+   "naam": "Lilleputthammer",
+   "plaats": "Øyer",
+   "reden": {
+    "nl": "attractiepark zonder katachtigen op de site (eigen site, gezien 22-10-2026)",
+    "en": "amusement park, no cats on the website (own site, seen 22-10-2026)"
+   },
+   "_bron": "zo"
+  },
+  {
+   "naam": "Hjorteparken Mork",
+   "plaats": "Blaker (Lillestrøm)",
+   "reden": {
+    "nl": "herten, pony's, geiten, emoe en andere boerderijdieren; geen katachtigen (Barnas Norge, ongedateerd)",
+    "en": "deer, ponies, goats, emu and other farm animals; no cats (Barnas Norge, undated)"
+   },
+   "_bron": "zo"
+  },
+  {
+   "naam": "Drøbak Akvarium",
+   "plaats": "Drøbak (Frogn)",
+   "reden": {
+    "nl": "zeeaquarium, geen katachtigen",
+    "en": "marine aquarium, no cats"
+   },
+   "_bron": "zo"
+  },
+  {
+   "naam": "Risør Akvarium",
+   "plaats": "Risør",
+   "reden": {
+    "nl": "zeeaquarium, geen katachtigen",
+    "en": "marine aquarium, no cats"
+   },
+   "_bron": "zo"
+  },
+  {
+   "naam": "Kongeparken",
+   "plaats": "Ålgård (Gjesdal)",
+   "reden": {
+    "nl": "Attractiepark; geen katachtigen. ‘Dyrene i Afrika’ staat als rit/attractie op de lijst, geen dierenverblijf (eigen site 23-10-2026)",
+    "en": "Amusement park; no cats. ‘Dyrene i Afrika’ is listed as a ride/attraction, not an animal exhibit (own site 23-10-2026)"
+   },
+   "_bron": "vn"
+  },
+  {
+   "naam": "Haugaland Zoo",
+   "plaats": "Torvastad (Karmøy)",
+   "reden": {
+    "nl": "Vogel- en familiepark (papegaaien, emoe, alpaca, geiten); geen katachtigen op de dierenlijst (eigen site 23-10-2026)",
+    "en": "Bird and family park (parrots, emu, alpaca, goats); no cats on the animal list (own site 23-10-2026)"
+   },
+   "_bron": "vn"
+  },
+  {
+   "naam": "Akvariet i Bergen",
+   "plaats": "Bergen",
+   "reden": {
+    "nl": "Aquarium met tropische afdeling (krokodillen, slangen, kikkers); geen katachtigen op de soortenlijst (eigen site 23-10-2026)",
+    "en": "Aquarium with a tropical section (crocodiles, snakes, frogs); no cats on the species list (own site 23-10-2026)"
+   },
+   "_bron": "vn"
+  },
+  {
+   "naam": "Sognefjord Akvarium",
+   "plaats": "Balestrand (Sogndal)",
+   "reden": {
+    "nl": "Klein zeeaquarium met lokale zeedieren; geen katachtigen. Seizoen en huidige status niet bevestigd",
+    "en": "Small sea aquarium with local marine life; no cats. Season and current status not confirmed"
+   },
+   "_bron": "vn"
+  },
+  {
+   "naam": "Atlanterhavsparken",
+   "plaats": "Ålesund",
+   "reden": {
+    "nl": "Zeeaquarium (vissen, zeehonden, otters, pinguïns); geen katachtigen (eigen site 23-10-2026)",
+    "en": "Sea aquarium (fish, seals, otters, penguins); no cats (own site 23-10-2026)"
+   },
+   "_bron": "vn"
+  },
+  {
+   "naam": "Polaria",
+   "plaats": "Tromsø",
+   "reden": {
+    "nl": "Arctisch belevingscentrum en aquarium (zeehonden); geen katachtigen (eigen site 23-10-2026)",
+    "en": "Arctic experience centre and aquarium (seals); no cats (own site 23-10-2026)"
+   },
+   "_bron": "vn"
+  },
+  {
+   "naam": "Lofotakvariet (SKREI)",
+   "plaats": "Kabelvåg (Vågan)",
+   "reden": {
+    "nl": "Aquarium met vissen en zeedieren uit de zee rond Lofoten; geen katachtigen (Visit Lofoten 23-10-2026)",
+    "en": "Aquarium with fish and marine life from the seas around Lofoten; no cats (Visit Lofoten 23-10-2026)"
+   },
+   "_bron": "vn"
+  },
+  {
+   "naam": "Saltstraumen Opplevelsessenter",
+   "plaats": "Saltstraumen (Bodø)",
+   "reden": {
+    "nl": "Belevingscentrum over vis en zalm; geen katachtigen. Huidige status onduidelijk (nieuwe eigenaar)",
+    "en": "Visitor centre about fish and salmon; no cats. Current status unclear (new owner)"
+   },
+   "_bron": "vn"
+  },
+  {
+   "naam": "Svalbard",
+   "plaats": "Longyearbyen",
+   "reden": {
+    "nl": "Geen dierentuin of dierenpark op Svalbard",
+    "en": "No zoo or animal park on Svalbard"
+   },
+   "_bron": "vn"
+  },
+  {
+   "naam": "Cirkus Arnardo",
+   "plaats": "Rondreizend circus (thuisbasis Arendal), heel Noorwegen",
+   "reden": {
+    "nl": "Geen wilde katachtigen. Sinds 2017 is voor dieren in een circus een vergunning van Mattilsynet nodig, die alleen voor gedomesticeerde soorten wordt gegeven. De voorstelling van 2026 noemt geen soorten ('mooie dieren'). Volgens Dagbladet (ca. 2014) waren het toen kamelen, paarden, huiskatten, honden, lama's en pony's; de olifanten gingen rond 2014–2015 met pensioen.",
+    "en": "No wild cats. Since 2017 a circus needs a Mattilsynet permit for animals, and permits are only given for domesticated species. The 2026 show lists no species ('beautiful animals'). According to Dagbladet (c. 2014) the animals were then camels, horses, domestic cats, dogs, llamas and ponies; the elephants were retired around 2014–2015."
+   },
+   "_bron": "op"
+  },
+  {
+   "naam": "Cirkus Agora",
+   "plaats": "Rondreizend circus, heel Noorwegen",
+   "reden": {
+    "nl": "Geen aanwijzing voor wilde katachtigen (zoekresultaten 23-10-2026). Wilde katten zijn in Noorse circussen in de praktijk uitgesloten (zie wetgeving).",
+    "en": "No sign of wild cats (search results 23-10-2026). Wild cats are in practice excluded from Norwegian circuses (see legislation)."
+   },
+   "_bron": "op"
+  },
+  {
+   "naam": "Cirkus Merano",
+   "plaats": "Rondreizend circus (o.a. Voldsløkka, Oslo, september 2026)",
+   "reden": {
+    "nl": "Geen wilde katachtigen. De aankondigingen van 2026 noemen acrobatiek, humor en evenwichtsacts, geen dieren. Vroeger had het circus olifanten. Volgens het archief van de Universiteit van Sheffield stopte het oude bedrijf in 2015; onduidelijk is of het huidige Merano daarop voortbouwt.",
+    "en": "No wild cats. The 2026 listings mention acrobatics, humour and balancing acts, no animals. The circus used to have elephants. According to the University of Sheffield archive the old company stopped in 2015; it is unclear whether today's Merano continues it."
+   },
+   "_bron": "op"
+  },
+  {
+   "naam": "Cirkus Dannevig",
+   "plaats": "onbekend",
+   "reden": {
+    "nl": "Geen circus met deze naam gevonden (zoekopdracht 23-10-2026). Mogelijk wordt het Deense Cirkus Dannebrog bedoeld, dat in 2016 failliet ging.",
+    "en": "No circus by this name found (search 23-10-2026). Possibly the Danish Cirkus Dannebrog is meant, which went bankrupt in 2016."
+   },
+   "_bron": "op"
+  }
+ ],
+ "checked": "23-10-2026",
+ "route": [
+  "Dyreparken",
+  "Bjørneparken",
+  "Tangen Dyrepark"
+ ]
+}

@@ -2,6 +2,27 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 23 oktober 2026 – Polen
+
+Nieuwe landpagina `polen/` (bron: `bron/gidsen/pl.html`, gebouwd met `bron/landbouw/pl/gen.py`), in het Nederlands, Engels en Pools (land- en taalcode `pl`). Eén pagina met een filter per woiwodschap (13 met locaties), met kaart, routeplanner, recente geboortes, soortpagina’s, filters en het meldformulier. Duitsland, Tsjechië, Slowakije en Litouwen staan grijs op de kaart.
+
+**Aantallen**
+- **30 locaties**, waarvan **28 met een bevestigde kat**: 13 dierentuinen (EAZA of RDPOZiA), 7 andere vergunde dierenparken (o.a. Borysew, Romanówka, Canpol, Łączna), 5 particuliere minizoo’s (servals, caracal), 1 opvang (Klekusiowo), 1 lynxcentrum (Jabłonowo) en het wisentreservaat van Białowieża. Zoo Lubin (lynx gepland) en een particuliere houder in Czchów (niet te bezoeken) tellen niet als bevestigd.
+- **21 soorten bevestigd**: leeuw, tijger, luipaard, jaguar, sneeuwluipaard, nevelpanter, cheetah, poema, jaguarundi, Euraziatische lynx, rode lynx, serval, caracal, ocelot, Geoffroy’s kat, Bengaalse kat (Amoer-luipaardkat), vissende kat, roestkat, manoel, Europese wilde kat, zandkat.
+- 112 vermeldingen in de hoofdtabel, 5 onzeker (zie `TWIJFELGEVALLEN.md`).
+- Route met alle soorten in vijf parken: Zoo Kraków, Śląski Ogród Zoologiczny (Chorzów), Zoo Wrocław, Zoo Romanówka, Zoo Toruń.
+- Recente geboortes o.a.: sneeuwluipaarden in Warschau (11-07-2026), leeuwen in Łódź (24-07-2026), zandkatten in Gdańsk en lynxen in Chorzów (2026), Amoertijgers in Opole (01-08-2025) en Płock (2025), sneeuwluipaarden in Chorzów (19-04-2025), zwarte luipaarden in Borysew (02-07-2025).
+
+**Werkwijze**
+- Officiële lijst: GDOŚ (25 vergunde dierentuinen, ongedateerd, gezien 23-10-2026); EAZA (12 Poolse dierentuinen), RDPOZiA (18 leden), Zootierliste.
+- Afbakening zoals Tsjechië: particulieren en circussen opgenomen met kanttekening; geen namen van particulieren. Grote katten, cheetah, poema en jaguarundi zijn voor particulieren en (sinds 18-12-2021) circussen verboden; serval niet. Geen circus met katten gevonden in 2025–2026.
+- Type: dierentuin bij lidmaatschap van EAZA of RDPOZiA; andere vergunde parken dierenpark; minizoo’s zonder vergunning particuliere houder.
+- Zes onderzoeksagenten en één vervolgagent. De gids is met een script afgeleid van de Finse (`bron/landbouw/pl/tools/basis_omzetten.py`); Poolse getalvormen waar mogelijk per getal, anders “gatunki: 5”.
+
+**Gedeelde bestanden**: taal en land `pl` in alle gedeelde lagen; Poolse ł → l in adressen (`startdata.py`, `test_ontwerp.py`, gids-JS, `gen.py`) en in het zoeken; geen bestaand adres verandert. Hoofdpagina: Polen in alle lijsten (nu 18 landen).
+
+**Gecontroleerd**: de Poolse pagina in NL/EN/PL op 390 px (Chromium): geen fouten, geen horizontaal scrollen, geen Finse resten. Overige pagina’s vergeleken met de vorige versie.
+
 ## 23 oktober 2026 – Finland
 
 Nieuwe landpagina `finland/` (bron: `bron/gidsen/fi.html`, gebouwd met `bron/landbouw/fi/gen.py`), in het Nederlands, Engels en Fins (land- en taalcode `fi`). Eén pagina met een filter per landschap (maakunta; 5 met locaties), met kaart, routeplanner, recente geboortes, soortpagina’s, filters en het meldformulier. Zweden, Noorwegen en Estland staan grijs op de kaart.

@@ -4,6 +4,18 @@ Vermeldingen met de status “onzeker”: ze staan wel in de gids, maar tellen n
 
 Regel: bevestigd alleen met een recente bron (2025–2026); onzeker alleen met een concrete aanwijzing van na 2024; oudere aanwijzingen gaan naar “Eerder hier”.
 
+## Polen
+
+Stand 23 oktober 2026.
+
+| Locatie | Soort | Waarom twijfel | Bron |
+|---|---|---|---|
+| Nowe Zoo Poznań | Europese wilde kat, jaguarundi, Bengaalse kat | Alleen Zootierliste (05/2025); niet op de eigen site of in nieuws 2025–2026. | Zootierliste |
+| Zoo Romanówka | Vissende kat | Alleen Zootierliste (04/2025); niet op de eigen dierenlijst. | Zootierliste |
+| Zoo Borysew | Euraziatische lynx | Geen eigen bron uit 2025–2026. | Zootierliste |
+
+**Dun onderbouwd**: Zoo Zamość – Sri Lanka-luipaard en leeuw (alleen een gids in Tygodnik Zamojski, 06-2026); Zoo Opole – veel soorten alleen via de parkkaart (07-2026); minizoo’s Żużela en Zaczarnie – alleen nieuws en een reisblog (2026); Zoo Łączna – dicht na inbeslagname (13-10-2026).
+
 ## Finland
 
 Stand 23 oktober 2026.

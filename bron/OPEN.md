@@ -8,7 +8,7 @@ Bijgehouden door Claude. Bijwerken als een punt is opgelost.
 
 - **Foto's van Franse parken**: veel locaties hebben nog geen foto (Commons gaf een limiet). Een rustige extra ronde.
 - **Maandelijkse controle**: een geplande taak die nieuws over geboortes, vertrek en aankomst zoekt en voorstellen doet.
-- **Volgend land**: het Verenigd Koninkrijk staat erin (14-10-2026, NL/EN/DE), Ierland ook (15-10-2026, NL/EN), Portugal ook (16-10-2026, NL/EN/PT), Denemarken ook (22-10-2026, NL/EN/DA), Tsjechië ook (22-10-2026, NL/EN/CS), Zweden ook (23-10-2026, NL/EN/SV), Noorwegen ook (23-10-2026, NL/EN/NB), Finland ook (23-10-2026, NL/EN/FI). Keuze voor daarna volgt. Als de website sneller moet: de vaste JS van de deelstaatblokken één keer delen in plaats van per blok (scheelt ±4 MB).
+- **Volgend land**: het Verenigd Koninkrijk staat erin (14-10-2026, NL/EN/DE), Ierland ook (15-10-2026, NL/EN), Portugal ook (16-10-2026, NL/EN/PT), Denemarken ook (22-10-2026, NL/EN/DA), Tsjechië ook (22-10-2026, NL/EN/CS), Zweden ook (23-10-2026, NL/EN/SV), Noorwegen ook (23-10-2026, NL/EN/NB), Finland ook (23-10-2026, NL/EN/FI), Polen ook (23-10-2026, NL/EN/PL). Keuze voor daarna volgt. Als de website sneller moet: de vaste JS van de deelstaatblokken één keer delen in plaats van per blok (scheelt ±4 MB).
 - **VK nagaan**: Longleat (eigen site geblokkeerd; alles uit nieuws), Whipsnade (eigen site geblokkeerd), Amazon World (Isle of Wight: oude pagina noemt ocelot en Geoffroy’s kat), Green Dragon Eco Farm (alleen Zootierliste: lynx en wilde kat; niet opgenomen), Mole Hall en Galloway Wildlife Park (mogelijk dicht), Borth Wild Animal Kingdom (katten 2020–2021 weg). Een officiële landelijke lijst van vergunde dierentuinen is niet openbaar; de nieuwste volledige lijst is een FOI-antwoord van APHA uit 2018–2019.
 - **Oostenrijk/Zwitserland nagaan**: Tiger’s World (Judenau, NÖ) — alleen op een toeristische site, eigen site niet te openen, niet opgenomen; Luchsgehege Loipersdorf (ligging en publiek onbekend); Parc animalier de Prêles (BE) niet nagelopen; Bioparc Genève houdt ook hybride wilde katten en savannahkatten (niet meegeteld).
 - **Fréjus (Var)**: dierentuin dicht sinds 30-8-2026; na eind november 2026 nagaan waar de katten zijn gebleven.
@@ -32,6 +32,10 @@ Bijgehouden door Claude. Bijwerken als een punt is opgelost.
   - **Circussen**: momentopnames; Cirkus Šimek (waar in oktober 2026?), Humberto (winterverblijf). Een verbod op wilde dieren in circussen is er (nog) niet.
   - **Officiële lijst**: de lijst van het ministerie is van 27-03-2025; een lijst van 2026 opvragen.
   - **Kleine katten in kleine parken** (Doksy, Stěžery, Nová Říše, Sedlec, Exotika): vaak alleen via Zootierliste/Facebook.
+- **Polen (23-10-2026)**:
+  - **Nagaan**: Zoo Łączna (vergunning ingetrokken? waar blijven de servals; vijf servals bij Rebelia GOGH), Czchów (uitspraak rechtszaak; wat gebeurt er met de leeuwen en de tijger), Poznań (kleine katten), Zamość en Opole (bevestiging door de dierentuin zelf), Zoo Lubin (lynxverblijf geopend?), Bydgoszcz (nieuw lynxcomplex).
+  - **Minizoo’s met servals**: er zijn er vermoedelijk meer dan gevonden; particuliere servals zonder adres of toegang zijn bewust niet opgenomen.
+  - **Getalvormen**: “niepewne” en “wybrane miejsca” staan vast in de vorm voor 2–4; bij 5 of meer grammaticaal onjuist.
 - **Finland (23-10-2026)**:
   - **Nagaan**: Kitee Zoo (lynx nog aanwezig? wat is de “afrikankissa”?), Ranua (aantal Amoer-luipaardkatten), Korkeasaari (derde leeuwin), Kuusamon Suurpetokeskus (open in 2027?), Ähtäri (openingen in 2027).
   - **Talen**: Zweeds is ook een officiële taal van Finland, maar niet toegevoegd (NL/EN/FI).

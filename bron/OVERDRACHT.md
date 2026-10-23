@@ -7,6 +7,8 @@ Lees eerst `bron/LEESMIJ.md` (opbouw, bouw, telregel en de lessen per land), **`
 - Zweden: 11 locaties, 11 soorten; bron in `bron/landbouw/se/` (`patch.py` → `se_final.json`, `teksten.py`, `gen.py`). De Europakaart is naar het noorden vergroot (tot 69,4° N).
 - Open voor Zweden: zie `bron/OPEN.md` (Nordens Ark: Amoerluipaard en wilde kat; Öland: tijger).
 - Tsjechische gids: Iberische lynx “Španělsko a Česko” rechtgezet (23-10-2026).
+- **Afspraak (23-10-2026):** kleine opmaakfixes na testen meteen naar `main` pushen, zonder eerst te vragen. Nieuwe landen en inhoud: wel eerst vragen.
+- Laptop (23-10-2026): menubalk ook op landpagina's onderaan; pijltjes, muiswiel en slepen bij schuifrijen (`SCHUIF_JS` in `bron/jungle.py`).
 - Pushen naar `main` werd op 23-10-2026 door de automatische toestemmingscontrole geblokkeerd; vraag de gebruiker of het mag.
 
 # Overdracht (22 oktober 2026, eind van de dag) — voor een nieuwe chat

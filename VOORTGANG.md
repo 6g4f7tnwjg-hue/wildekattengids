@@ -2,6 +2,29 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 23 oktober 2026 – Finland
+
+Nieuwe landpagina `finland/` (bron: `bron/gidsen/fi.html`, gebouwd met `bron/landbouw/fi/gen.py`), in het Nederlands, Engels en Fins (land- en taalcode `fi`). Eén pagina met een filter per landschap (maakunta; 5 met locaties), met kaart, routeplanner, recente geboortes, soortpagina’s, filters en het meldformulier. Zweden, Noorwegen en Estland staan grijs op de kaart.
+
+**Aantallen**
+- **5 locaties**, waarvan **4 met een bevestigde kat**: 3 dierentuinen (EAZA: Korkeasaari, Ähtäri Zoo, Ranua Wildlife Park) en het roofdierpark Kuusamon Suurpetokeskus (alleen met gids). Kitee Zoo heeft alleen een onzekere lynx.
+- **8 soorten bevestigd**: leeuw (Aziatisch), tijger (Amoer), luipaard (Amoer), sneeuwluipaard, Euraziatische lynx, Bengaalse kat (Amoer-luipaardkat), manoel, Europese wilde kat. Korkeasaari heeft ze alle acht (route: één park).
+- 14 vermeldingen in de hoofdtabel, 1 onzeker (Kitee, lynx).
+- Recente geboortes in Korkeasaari: 2 Amoerluipaarden (eind juli 2026) en 3 manoels (begin mei 2026).
+- 21 andere locaties zonder katten (aquaria, kinderboerderijen, wildopvang, circussen).
+
+**Werkwijze**
+- Geen openbare lijst van dierentuinvergunningen (sinds 2026 Ruokavirasto); gebruikt: Yle (juli 2025, 12 dierentuinen), EAZA, Suomen eläintarhayhdistys, SDF en Zootierliste.
+- Particulieren mogen sinds 2016 geen uitheemse roofdieren houden (ook hybriden F1–F4); in circussen alleen gedomesticeerde dieren (wet 693/2023).
+- Vier onderzoeksagenten en één vervolgagent. Type: dierentuin bij lidmaatschap van EAZA.
+- De gids is met een script afgeleid van de Noorse (`bron/landbouw/fi/tools/basis_omzetten.py`), vaste teksten door een vertaalagent. Finse datums: “23. lokakuuta 2026”, alleen maand: “lokakuu 2026” (`MND_FI1`). In de landteksten geen naamvalsuitgangen achter parknamen met een link.
+
+**Gedeelde bestanden**: taal `fi` en land `fi` in alle gedeelde lagen; locatietypes in het Fins (dierentuin = “Eläintarha”, dierenpark = “Eläinpuisto”). Kop van een soortpagina: “1 paikka / N paikkaa Suomessa”. Hoofdpagina: Finland in alle lijsten, grijs vlak van Finland weg.
+
+**Ook**: Noors: aantallen in het wild “ca. 5 000” (dubbele spatie weg); “ukjent” en “tuntematon” worden als onbekend herkend.
+
+**Gecontroleerd**: de Finse pagina in NL/EN/FI op 390 px (Chromium): geen fouten, geen horizontaal scrollen, geen Noorse of Zweedse resten. Overige pagina’s vergeleken met de vorige versie.
+
 ## 23 oktober 2026 – Noorwegen
 
 Nieuwe landpagina `noorwegen/` (bron: `bron/gidsen/no.html`, gebouwd met `bron/landbouw/no/gen.py`), in het Nederlands, Engels en Noors (bokmål; taalcode `nb`, landcode `no`). Eén pagina met een filter per fylke (5 fylker met locaties), met kaart, routeplanner, recente geboortes, soortpagina’s, filters en het meldformulier. Zweden en Finland staan grijs op de kaart.

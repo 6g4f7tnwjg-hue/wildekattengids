@@ -4,6 +4,16 @@ Vermeldingen met de status “onzeker”: ze staan wel in de gids, maar tellen n
 
 Regel: bevestigd alleen met een recente bron (2025–2026); onzeker alleen met een concrete aanwijzing van na 2024; oudere aanwijzingen gaan naar “Eerder hier”.
 
+## Finland
+
+Stand 23 oktober 2026.
+
+| Locatie | Soort | Waarom twijfel | Bron |
+|---|---|---|---|
+| Kitee Zoo (Kitee) | Euraziatische lynx | Geen eigen bron of nieuws uit 2025–2026; alleen een toeristische tekst (Visit Rajamailla) en Zootierliste (2019). Eigen site offline. | Visit Rajamailla (gezien 23-10-2026); Zootierliste |
+
+**Dun onderbouwd**: Ranua – Amoer-luipaardkat (soortpagina 2025, aantal onbekend); Korkeasaari – derde leeuwin (sinds 2026 niet meer genoemd); Kuusamon Suurpetokeskus – toekomst onzeker.
+
 ## Noorwegen
 
 Stand 23 oktober 2026. Geen onzekere vermeldingen. Dun onderbouwd (nagaan bij een volgende ronde):

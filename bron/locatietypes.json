@@ -14,6 +14,7 @@
       "cs": "Zoologická zahrada",
       "sv": "Zoo",
       "nb": "Dyrehage",
+      "fi": "Eläintarha",
       "uitleg": "Wetenschappelijk geleide dierentuin, lid van EAZA of een landelijke zoobond (NVD, VdZ, UIZA, AIZA, BIAZA).",
       "uitleg_en": "Scientifically managed zoo, member of EAZA or a national zoo association (NVD, VdZ, UIZA, AIZA, BIAZA).",
       "uitleg_fr": "Zoo à gestion scientifique, membre de l’EAZA ou d’une association nationale de zoos (NVD, VdZ, UIZA, AIZA, BIAZA).",
@@ -24,7 +25,8 @@
       "uitleg_da": "Videnskabeligt ledet zoologisk have, medlem af EAZA eller en national zooforening (NVD, VdZ, UIZA, AIZA, BIAZA).",
       "uitleg_cs": "Vědecky vedená zoologická zahrada, která je členem EAZA nebo národní asociace zoologických zahrad (NVD, VdZ, UIZA, AIZA, BIAZA).",
       "uitleg_sv": "Vetenskapligt ledd djurpark, medlem i EAZA eller en nationell djurparksförening (som Svenska Djurparksföreningen, NVD, VdZ, BIAZA).",
-      "uitleg_nb": "Vitenskapelig ledet dyrehage, medlem av EAZA eller en nasjonal dyrehageforening (NVD, VdZ, UIZA, AIZA, BIAZA)."
+      "uitleg_nb": "Vitenskapelig ledet dyrehage, medlem av EAZA eller en nasjonal dyrehageforening (NVD, VdZ, UIZA, AIZA, BIAZA).",
+      "uitleg_fi": "Tieteellisesti johdettu eläintarha, joka on EAZAn tai kansallisen eläintarhayhdistyksen (kuten Suomen eläintarhayhdistyksen, NVD:n tai VdZ:n) jäsen."
     },
     {
       "key": "dierenpark",
@@ -39,6 +41,7 @@
       "cs": "Zoopark",
       "sv": "Djurpark",
       "nb": "Dyrepark",
+      "fi": "Eläinpuisto",
       "uitleg": "Kleinere dierentuin of Tierpark die niet bij zo'n bond is aangesloten, ook als het park bij een winkel of kinderboerderij hoort.",
       "uitleg_en": "Smaller zoo or Tierpark that is not a member of such an association, also when the park belongs to a shop or a children's farm.",
       "uitleg_fr": "Petit zoo ou Tierpark qui n’est pas membre d’une telle association, même lorsque le parc dépend d’un magasin ou d’une ferme pour enfants.",
@@ -49,7 +52,8 @@
       "uitleg_da": "Mindre zoo eller Tierpark, der ikke er medlem af en sådan forening, også når parken hører til en butik eller en børnebondegård.",
       "uitleg_cs": "Menší zoo nebo zoopark, který není členem takové asociace, i když patří k obchodu nebo k dětské farmě.",
       "uitleg_sv": "Djurpark som inte är med i en sådan förening, även när parken hör till en butik eller en barnbondgård.",
-      "uitleg_nb": "Dyrepark som ikke er med i en slik forening, også når parken hører til en butikk eller en barnegård."
+      "uitleg_nb": "Dyrepark som ikke er med i en slik forening, også når parken hører til en butikk eller en barnegård.",
+      "uitleg_fi": "Eläinpuisto, joka ei kuulu tällaiseen yhdistykseen, myös silloin kun puisto kuuluu kauppaan tai kotieläintilaan."
     },
     {
       "key": "wildpark",
@@ -64,6 +68,7 @@
       "cs": "Obora",
       "sv": "Viltpark",
       "nb": "Viltpark",
+      "fi": "Villieläinpuisto",
       "uitleg": "Vooral inheemse dieren, vaak in een bos of op een groot terrein. Hier zie je de meeste lynxen en wilde katten.",
       "uitleg_en": "Mostly native animals, often in a forest or on a large site. This is where you see most lynxes and wildcats.",
       "uitleg_fr": "Surtout des animaux indigènes, souvent en forêt ou sur un grand terrain. C’est là que l’on voit le plus de lynx et de chats sauvages.",
@@ -74,7 +79,8 @@
       "uitleg_da": "Mest hjemmehørende dyr, ofte i en skov eller på et stort område. Her ser du de fleste losser og vildkatte.",
       "uitleg_cs": "Většinou původní zvířata, často v lese nebo na velkém pozemku. Tady uvidíš nejvíc rysů a divokých koček.",
       "uitleg_sv": "Mest inhemska djur, ofta i en skog eller på ett stort område. Här ser du flest lodjur och vildkatter.",
-      "uitleg_nb": "Mest stedegne dyr, ofte i en skog eller på et stort område. Her ser du flest gauper og villkatter."
+      "uitleg_nb": "Mest stedegne dyr, ofte i en skog eller på et stort område. Her ser du flest gauper og villkatter.",
+      "uitleg_fi": "Enimmäkseen kotoperäisiä eläimiä, usein metsässä tai laajalla alueella. Täällä näet eniten ilveksiä ja villikissoja."
     },
     {
       "key": "safaripark",
@@ -89,6 +95,7 @@
       "cs": "Safari park",
       "sv": "Safaripark",
       "nb": "Safaripark",
+      "fi": "Safaripuisto",
       "uitleg": "Je rijdt of vaart langs de dieren, met je eigen auto, een bus of een boot.",
       "uitleg_en": "You drive or sail past the animals, in your own car, a bus or a boat.",
       "uitleg_fr": "On passe devant les animaux en voiture, en bus ou en bateau.",
@@ -99,7 +106,8 @@
       "uitleg_da": "Du kører eller sejler forbi dyrene, i din egen bil, en bus eller en båd.",
       "uitleg_cs": "Kolem zvířat projíždíš nebo proplouváš, vlastním autem, autobusem nebo lodí.",
       "uitleg_sv": "Du kör eller åker båt förbi djuren, i din egen bil, en buss eller en båt.",
-      "uitleg_nb": "Du kjører eller tar båten forbi dyrene, i din egen bil, en buss eller en båt."
+      "uitleg_nb": "Du kjører eller tar båten forbi dyrene, i din egen bil, en buss eller en båt.",
+      "uitleg_fi": "Kuljet eläinten ohi omalla autolla, bussilla tai veneellä."
     },
     {
       "key": "attractiepark",
@@ -114,6 +122,7 @@
       "cs": "Zábavní park se zvířaty",
       "sv": "Nöjespark med djur",
       "nb": "Fornøyelsespark med dyr",
+      "fi": "Huvipuisto, jossa on eläimiä",
       "uitleg": "Pretpark waar de dieren een deel van het aanbod zijn.",
       "uitleg_en": "Theme park where the animals are part of what's on offer.",
       "uitleg_fr": "Parc d’attractions où les animaux font partie de l’offre.",
@@ -124,7 +133,8 @@
       "uitleg_da": "Forlystelsespark, hvor dyrene er en del af tilbuddet.",
       "uitleg_cs": "Zábavní park, kde jsou zvířata součástí nabídky.",
       "uitleg_sv": "Nöjespark där djuren är en del av utbudet.",
-      "uitleg_nb": "Fornøyelsespark der dyrene er en del av tilbudet."
+      "uitleg_nb": "Fornøyelsespark der dyrene er en del av tilbudet.",
+      "uitleg_fi": "Huvipuisto, jossa eläimet ovat osa tarjontaa."
     },
     {
       "key": "natuurcentrum",
@@ -139,6 +149,7 @@
       "cs": "Přírodní a chovné centrum",
       "sv": "Natur- och avelscenter",
       "nb": "Natur- og avlssenter",
+      "fi": "Luonto- ja kasvatuskeskus",
       "uitleg": "Werkt aan het behoud van een soort, bijvoorbeeld met kweek voor uitzetting of voorlichting over de wilde kat.",
       "uitleg_en": "Works to conserve a species, for example by breeding for release or teaching about the wildcat.",
       "uitleg_fr": "Œuvre à la conservation d’une espèce, par exemple par l’élevage en vue de réintroductions ou la sensibilisation au chat sauvage.",
@@ -149,7 +160,8 @@
       "uitleg_da": "Arbejder for at bevare en art, for eksempel med avl til udsætning eller formidling om vildkatten.",
       "uitleg_cs": "Pracuje na záchraně druhu, například chovem pro vypouštění do přírody nebo osvětou o divoké kočce.",
       "uitleg_sv": "Arbetar för att bevara en art, till exempel med avel för utsättning eller information om vildkatten.",
-      "uitleg_nb": "Jobber for å bevare en art, for eksempel med avl for utsetting eller formidling om villkatten."
+      "uitleg_nb": "Jobber for å bevare en art, for eksempel med avl for utsetting eller formidling om villkatten.",
+      "uitleg_fi": "Tekee työtä lajin suojelemiseksi, esimerkiksi kasvattamalla eläimiä luontoon palautettaviksi tai kertomalla villikissasta."
     },
     {
       "key": "opvang",
@@ -164,6 +176,7 @@
       "cs": "Záchranná stanice nebo útočiště",
       "sv": "Räddningscenter eller fristad",
       "nb": "Redningssenter eller fristed",
+      "fi": "Eläinten pelastuskeskus",
       "uitleg": "Neemt afgestane of in beslag genomen katten op. Welke dieren er zitten, wisselt, en vaak is het maar beperkt open.",
       "uitleg_en": "Takes in surrendered or confiscated cats. The animals change, and it is often only open on a limited basis.",
       "uitleg_fr": "Accueille des félins cédés ou saisis. Les animaux changent et l’accès est souvent limité.",
@@ -174,7 +187,8 @@
       "uitleg_da": "Tager imod afleverede eller beslaglagte katte. Dyrene skifter, og der er ofte kun begrænset åbent.",
       "uitleg_cs": "Přijímá odevzdané nebo zabavené kočky. Zvířata se mění a otevřeno bývá často jen omezeně.",
       "uitleg_sv": "Tar emot inlämnade eller beslagtagna katter. Djuren byts ut, och ofta är det bara öppet i begränsad omfattning.",
-      "uitleg_nb": "Tar imot innleverte eller beslaglagte katter. Dyrene skifter, og ofte er det bare begrenset åpent."
+      "uitleg_nb": "Tar imot innleverte eller beslaglagte katter. Dyrene skifter, og ofte er det bare begrenset åpent.",
+      "uitleg_fi": "Ottaa vastaan luovutettuja tai takavarikoituja kissoja. Eläimet vaihtuvat, ja usein paikka on avoinna vain rajoitetusti."
     },
     {
       "key": "particulier",
@@ -189,6 +203,7 @@
       "cs": "Soukromý chovatel",
       "sv": "Privat djurhållare",
       "nb": "Privat dyreholder",
+      "fi": "Yksityinen eläintenpitäjä",
       "uitleg": "Circus, artiest of privépersoon die bezoekers ontvangt, bijvoorbeeld bij voorstellingen of op open dagen.",
       "uitleg_en": "Circus, performer or private person who receives visitors, for example at shows or on open days.",
       "uitleg_fr": "Cirque, dresseur ou particulier qui reçoit des visiteurs, par exemple lors de spectacles ou de journées portes ouvertes.",
@@ -199,7 +214,8 @@
       "uitleg_da": "Cirkus, artist eller privatperson, der tager imod besøgende, for eksempel ved forestillinger eller på åbne dage.",
       "uitleg_cs": "Cirkus, artista nebo soukromá osoba, která přijímá návštěvníky, například při představeních nebo o dnech otevřených dveří.",
       "uitleg_sv": "Cirkus, artist eller privatperson som tar emot besökare, till exempel vid föreställningar eller på öppna dagar.",
-      "uitleg_nb": "Sirkus, artist eller privatperson som tar imot besøkende, for eksempel ved forestillinger eller på åpne dager."
+      "uitleg_nb": "Sirkus, artist eller privatperson som tar imot besøkende, for eksempel ved forestillinger eller på åpne dager.",
+      "uitleg_fi": "Sirkus, esiintyjä tai yksityishenkilö, joka ottaa vastaan kävijöitä, esimerkiksi esityksissä tai avoimien ovien päivinä."
     }
   ],
   "labels": [
@@ -216,7 +232,8 @@
       "da": "Overnatning i parken",
       "cs": "Přespání v parku",
       "sv": "Övernattning i parken",
-      "nb": "Overnatting i parken"
+      "nb": "Overnatting i parken",
+      "fi": "Yöpyminen puistossa"
     },
     {
       "key": "rondleiding",
@@ -231,7 +248,8 @@
       "da": "Kun med rundvisning eller efter aftale",
       "cs": "Jen s průvodcem nebo po domluvě",
       "sv": "Bara med guidad tur eller efter överenskommelse",
-      "nb": "Bare med omvisning eller etter avtale"
+      "nb": "Bare med omvisning eller etter avtale",
+      "fi": "Vain opastetulla kierroksella tai sopimuksesta"
     },
     {
       "key": "leden",
@@ -246,7 +264,8 @@
       "da": "Kun for medlemmer",
       "cs": "Jen pro členy",
       "sv": "Bara för medlemmar",
-      "nb": "Bare for medlemmer"
+      "nb": "Bare for medlemmer",
+      "fi": "Vain jäsenille"
     },
     {
       "key": "bezoekdagen",
@@ -261,7 +280,8 @@
       "da": "Kun på besøgsdage",
       "cs": "Jen v návštěvní dny",
       "sv": "Bara på besöksdagar",
-      "nb": "Bare på besøksdager"
+      "nb": "Bare på besøksdager",
+      "fi": "Vain vierailupäivinä"
     },
     {
       "key": "seizoen",
@@ -276,7 +296,8 @@
       "da": "Sæsonpark, lukket om vinteren",
       "cs": "Sezónní park, v zimě zavřeno",
       "sv": "Säsongspark, stängd på vintern",
-      "nb": "Sesongpark, stengt om vinteren"
+      "nb": "Sesongpark, stengt om vinteren",
+      "fi": "Kausipuisto, suljettu talvella"
     },
     {
       "key": "nietdagelijks",
@@ -291,7 +312,8 @@
       "da": "Ikke åbent hver dag",
       "cs": "Není otevřeno každý den",
       "sv": "Inte öppet varje dag",
-      "nb": "Ikke åpent hver dag"
+      "nb": "Ikke åpent hver dag",
+      "fi": "Ei auki joka päivä"
     },
     {
       "key": "gratis",
@@ -306,7 +328,8 @@
       "da": "Gratis adgang",
       "cs": "Vstup zdarma",
       "sv": "Gratis inträde",
-      "nb": "Gratis inngang"
+      "nb": "Gratis inngang",
+      "fi": "Vapaa pääsy"
     },
     {
       "key": "reistrond",
@@ -321,7 +344,8 @@
       "da": "Rejser rundt",
       "cs": "Putovní",
       "sv": "Reser runt",
-      "nb": "Reiser rundt"
+      "nb": "Reiser rundt",
+      "fi": "Kiertävä"
     }
   ],
   "beperkt_toegankelijk": [

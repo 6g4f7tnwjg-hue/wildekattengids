@@ -5,7 +5,7 @@
    Wordt door bron/bouw.py in de startpagina en in elke gids gezet. */
 (function(){
 if(window.__TAALMENU)return;window.__TAALMENU=1;
-var NAMEN={nl:"Nederlands",en:"English",fr:"Français",de:"Deutsch",it:"Italiano",es:"Español",pt:"Português",da:"Dansk",cs:"Čeština",sv:"Svenska",nb:"Norsk"};
+var NAMEN={nl:"Nederlands",en:"English",fr:"Français",de:"Deutsch",it:"Italiano",es:"Español",pt:"Português",da:"Dansk",cs:"Čeština",sv:"Svenska",nb:"Norsk",fi:"Suomi"};
 var css=".langsw.lm{display:inline-block;border:0;border-radius:0;overflow:visible;flex:none}"+
 ".lm .lm-btn{all:unset;box-sizing:border-box;cursor:pointer;display:inline-flex;align-items:center;gap:5px;font-family:\"Bricolage Grotesque\",system-ui,sans-serif;font-size:13px;font-weight:600;line-height:1.3;color:#2A1C12;border:1.5px solid #2A1C12;border-radius:999px;padding:3px 10px;white-space:nowrap;background:transparent}"+
 ".lm .lm-btn:hover,.lm .lm-btn[aria-expanded=\"true\"]{background:#2A1C12;color:#EAD9B3}"+

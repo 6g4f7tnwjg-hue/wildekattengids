@@ -1,0 +1,637 @@
+{
+ "locaties": [],
+ "zonder_katten": [
+  {
+   "naam": "Ogród Zoologiczny w Lubinie",
+   "plaats": "Lubin",
+   "reden": {
+    "nl": "Geen katachtigen volgens Zootierliste (gezien 23-10-2026); eigen site niet gecontroleerd. Officiële zoo (GDOŚ) en RDPOZiA-lid.",
+    "en": "No cats according to Zootierliste (checked 23-10-2026); own website not checked. Licensed zoo (GDOŚ) and RDPOZiA member."
+   }
+  },
+  {
+   "naam": "Akwarium Gdyńskie",
+   "plaats": "Gdynia",
+   "reden": {
+    "nl": "Aquarium (alleen waterdieren); officiële zoo (GDOŚ) en RDPOZiA-lid.",
+    "en": "Aquarium (aquatic animals only); licensed zoo (GDOŚ) and RDPOZiA member."
+   }
+  },
+  {
+   "naam": "Ogród Zoologiczny Dolina Charlotty",
+   "plaats": "Strzelinko (Słupsk)",
+   "reden": {
+    "nl": "Geen katachtigen volgens Zootierliste (gezien 23-10-2026); eigen site niet gecontroleerd.",
+    "en": "No cats according to Zootierliste (checked 23-10-2026); own website not checked."
+   }
+  },
+  {
+   "naam": "Ogród Zoologiczny w Sosnowcu",
+   "plaats": "Sosnowiec",
+   "reden": {
+    "nl": "Geen katachtigen volgens Zootierliste (gezien 23-10-2026); eigen site niet gecontroleerd.",
+    "en": "No cats according to Zootierliste (checked 23-10-2026); own website not checked."
+   }
+  },
+  {
+   "naam": "Zoo Safari Świerkocin",
+   "plaats": "Świerkocin (Witnica)",
+   "reden": {
+    "nl": "Gesloten (2017 volgens Zootierliste); had leeuwen tot 2015 en Europese wilde kat tot 2015.",
+    "en": "Closed (2017 according to Zootierliste); had lions and European wildcats until 2015."
+   }
+  },
+  {
+   "naam": "Papugarnia Carmen",
+   "plaats": "Katowice",
+   "reden": {
+    "nl": "Alleen een oude vermelding van luipaarden (1992/1993, Zootierliste); geen recente katten.",
+    "en": "Only an old record of leopards (1992/1993, Zootierliste); no recent cats."
+   }
+  }
+ ],
+ "open_punten": [
+  "GDOŚ-wykaz ogrodów zoologicznych (gov.pl/web/gdos/wykaz-ogrodow-zoologicznych-w-polsce) heeft geen publicatie- of bijwerkdatum op de pagina; gezien 23-10-2026, 25 zoo's in 13 woiwodschappen (geen in lubuskie, podkarpackie, zachodniopomorskie). Een PL-artikel noemt '15 van de 25 zoo's' als RDPOZiA-lid; radazoo.com toont nu 18.",
+  "ZOO FARMA / Zoo Łączna staat nog op de GDOŚ-lijst, maar GDOŚ startte 05-08-2026 een intrekkingsprocedure en het park is volgens een kop op walbrzyszek.com sinds 17-10-2026 gesloten (strafzaak, dieren in beslag, tijger naar Nederland). Status van de overige katten (leeuwen? serval?) onbekend.",
+  "RDPOZiA: oude domeinen radazoo.org (doorverwijzing naar gokwebsite) en radazoo.pl (webwinkel) zijn niet meer van de vereniging; ledenlijst van http://radazoo.com/czlonkowie/ (alleen via http; https-certificaat ongeldig), gezien 23-10-2026. Wikipedia en EAZA (website radazoo.org) zijn verouderd.",
+  "EAZA-lijst: Zoo Bydgoszcz, Borysew, Romanówka, Canpol, Akcent ZOO, Lubin, Sosnowiec, Kadzidłowo, Nowy Tomyśl, Ustroń, Dolina Charlotty en Akwarium Gdyńskie zijn geen EAZA-lid; Toruń is 'Conditional', Lisów 'Candidate'.",
+  "Zootierliste is voor kleine particuliere parken onvolledig: slechts 31 Poolse instellingen met katten. Particuliere houders, minizoo's (≤15 soorten, geen zoo-vergunning nodig) en safariparken met katten moeten via nieuws/eigen sites worden gezocht (bv. Czchów: 2 leeuwen + tijger, niet op ZTL).",
+  "'Laatst gezien' = hoogste jaartal in de ZTL-infobox (jaarverslag, bezoek, FB-post), ook als dat bezoek 'nicht gesehen' meldt; geen bevestiging. Voorbeelden: Zoo Łączna lynx staat als 'ehemalig' maar het bezoek 09/2024 meldt 'gesehen'; Bydgoszcz poema 2024 'nicht gesehen, ausgeschildert'.",
+  "Twijfelachtige ZTL-labels: 'Bengalkatze' (P. b. bengalensis) in Poznań en 'Amurkatze' in Poznań/Romanówka: controleer of het de wilde luipaardkat is (geen Bengaal-huiskat). Jaguar en Jaguarundi in Romanówka zonder jaartal (alleen 'Facebook-Seite'/bezoek 09/24).",
+  "Romanówka (Zoo Wojciechów) heeft volgens ZTL een rode lynx sinds 2026 en Geoffroy’s kat-nakweek 2026 – via eigen site/FB bevestigen.",
+  "Geen recent nieuws (2025–2026) gevonden over Poolse circussen met grote katten; gemeentelijke circusverboden niet volledig geïnventariseerd.",
+  "Centralny Azyl dla Zwierząt bestaat nog niet fysiek (planning 2028); de eerste 'pupil' is een beer (OKO.press). Geen GDOŚ-azyl voor grote katten."
+ ],
+ "lijsten": {
+  "officieel": {
+   "url": "https://www.gov.pl/web/gdos/wykaz-ogrodow-zoologicznych-w-polsce",
+   "titel": "Wykaz ogrodów zoologicznych w Polsce (Generalna Dyrekcja Ochrony Środowiska; zezwolenia GDOŚ op grond van art. 67–69 ustawy o ochronie przyrody)",
+   "datum": "ongedateerd (geen datum op de pagina; gezien 23-10-2026)",
+   "aantal": 25,
+   "namen": [
+    "ZOO Wrocław Sp. z o.o. (Wrocław)",
+    "ZOO FARMA (Łączna 25, Mieroszów)",
+    "Ogród Zoologiczny w Lubinie (Lubin)",
+    "Ogród Zoologiczny w Bydgoszczy (Bydgoszcz)",
+    "Ogród Zoobotaniczny w Toruniu (Toruń)",
+    "Ogród Zoologiczny im. Stefana Milera w Zamościu (Zamość)",
+    "Ogród Zoologiczny w Romanówce (Romanówka, Wojciechów)",
+    "Miejski Ogród Zoologiczny w Łodzi Sp. z o.o. (Łódź)",
+    "ZOO Borysew Sp. z o.o. (Borysew, Poddębice)",
+    "Miejski Park i Ogród Zoologiczny w Krakowie (Kraków)",
+    "Miejski Ogród Zoologiczny w Płocku Sp. z o.o. (Płock)",
+    "Miejski Ogród Zoologiczny w Warszawie (Warszawa)",
+    "Ogród Zoologiczny w Opolu Sp. z o.o. (Opole)",
+    "Akcent ZOO (Białystok)",
+    "Akwarium Gdyńskie (Gdynia)",
+    "Gdański Ogród Zoologiczny (Gdańsk-Oliwa)",
+    "Ogród Zoologiczny CANPOL (Sieroczyn, Człuchów)",
+    "Ogród Zoologiczny Dolina Charlotty (Strzelinko, Słupsk)",
+    "Śląski Ogród Zoologiczny w Chorzowie (Chorzów)",
+    "Leśny Park Niespodzianek (Ustroń)",
+    "Ogród Zoologiczny w Sosnowcu (Sosnowiec)",
+    "Ogród Zoologiczny w Lisowie (Lisów, Morawica)",
+    "Park Dzikich Zwierząt w Kadzidłowie (Kadzidłowo, Ruciane-Nida)",
+    "Ogród Zoologiczny - Poznań (Poznań)",
+    "Ogród Zoologiczny w Nowym Tomyślu (Nowy Tomyśl)"
+   ]
+  },
+  "eaza": [
+   "Antonina and Jan Żabiński Municipal Zoological Garden in Warsaw (Full)",
+   "Gdański Ogród Zoologiczny (Full)",
+   "Miejski Ogród Zoologiczny w Płocku (Zoo Płock) (Full)",
+   "Ogród Zoologiczny Opole (Full)",
+   "Orientarium Zoo Łódź (Full)",
+   "Poznań Zoo (Full)",
+   "Śląski Ogród Zoologiczny, Chorzów (Full)",
+   "Stefan Miler Zoological Garden, Zamość (Full)",
+   "Zoo Wrocław (Full)",
+   "Miejski Park i Ogród Zoologiczny w Krakowie (Full Accredited Member)",
+   "Toruń Zoobotanical Garden (Conditional Member)",
+   "Zoo Leśne Zacisze, Lisów (Candidate for Membership)",
+   "Association of Directors of Polish Zoological Gardens and Aquariums (RDPOZiA) (Associate)",
+   "ArtSystemDeco, Kraków (Corporate)",
+   "Granum Animal Nutrition (Corporate)"
+  ],
+  "eaza_bron": "https://strapi.eaza.net/api/members?filters[Country][$eq]=PL (opgehaald 23-10-2026): 15 records – 9 Full, 1 Full Accredited (Kraków), 1 Conditional (Toruń), 1 Candidate (Leśne Zacisze Lisów), 1 Associate (RDPOZiA), 2 Corporate",
+  "rdpozia": [
+   "Ogród Zoologiczny w Bydgoszczy (Bydgoszcz)",
+   "ZOO Charlotta (Dolina Charlotty, Strzelinko)",
+   "Śląski Ogród Zoologiczny (Chorzów)",
+   "Gdański Ogród Zoologiczny (Gdańsk)",
+   "Akwarium Gdyńskie MIR (Gdynia)",
+   "ZOO Kadzidłowo (Kadzidłowo)",
+   "Fundacja Miejski Park i Ogród Zoologiczny w Krakowie (Kraków)",
+   "Ogród Zoologiczny „Leśne Zacisze” (Lisów)",
+   "Ogród Zoologiczny w Lubinie (Lubin)",
+   "Miejski Ogród Zoologiczny w Łodzi Sp. z o.o. (Łódź)",
+   "Ogród Zoologiczny w Opolu (Opole)",
+   "Miejski Ogród Zoologiczny w Płocku Sp. z o.o. (Płock)",
+   "Ogród Zoologiczny w Poznaniu (Poznań)",
+   "Ogród Zoologiczny w Sosnowcu (Sosnowiec)",
+   "Ogród Zoobotaniczny w Toruniu (Toruń)",
+   "Miejski Ogród Zoologiczny im. Antoniny i Jana Żabińskich w Warszawie (Warszawa)",
+   "ZOO Wrocław sp. z o.o. (Wrocław)",
+   "Ogród Zoologiczny im. Stefana Milera w Zamościu (Zamość)"
+  ],
+  "rdpozia_bron": "http://radazoo.com/czlonkowie/ (Rada Polskich Ogrodów Zoologicznych i Akwariów, RPOZiA; gezien 23-10-2026): 18 leden; KRS 0000097178 (rejestr.io). Voorzitter sinds 15-05-2024: Izabela Krause (Zoo Gdańsk).",
+  "circus": "Geen landelijk verbod op circusoptredens met wilde dieren, maar wel een feitelijke stop voor grote katten: sinds 18-12-2021 (ustawa z 11-08-2021 o gatunkach obcych, Dz.U. 2021 poz. 1718, art. 44 pkt 7) staan circussen niet meer bij de uitzonderingen in art. 73 ust. 2 ustawy o ochronie przyrody (vóór 2021: 'nie dotyczą ogrodów zoologicznych, cyrków i placówek naukowych', tekst jednolity Dz.U. 2018 poz. 142). Circussen mogen dus geen 'gevaarlijke' dieren meer houden of invoeren: categorie I = alle Pantherinae (leeuw, tijger, luipaard, jaguar, sneeuwluipaard, nevelpanter), cheeta, poema, jaguarundi en hun hybriden; categorie II = alle lynxen, caracal, Aziatische goudkat, Borneo-goudkat (rozporządzenie MŚ 03-08-2011, Dz.U. 2011 nr 173 poz. 1037, bijlagen 1 en 2). Overgangsregel (art. 49 ustawy o gatunkach obcych): dieren die op 18-12-2021 in een circus zaten moesten binnen 6 maanden bij de RDOŚ worden gemeld (dan mogen ze blijven onder de oude regel) of worden overgedragen; de gemeenteraad kan bij uchwała (akt prawa miejscowego) het houden van zulke gemelde circusdieren op gemeentegrond verbieden (art. 49 ust. 7). Fokken/aanschaf van nieuwe grote katten door circussen is dus niet meer toegestaan; alleen oude, gemelde dieren mogen nog optreden. Gemeentelijke verboden: tientallen steden (o.a. Łódź, Wrocław; '33 steden' in een ouder artikel van dziendobrypomorze.pl, ongedateerd) weigeren gemeentegrond voor circussen met dieren; bestuursrechters vernietigden zulke verboden eerder als ze zonder wettelijke grondslag waren (bv. Gliwice; rp.pl, bezprawnik.pl). Landelijke wetsvoorstellen voor een volledig circusverbod (o.a. Piekarska/KO) zijn niet aangenomen; in de Sejm-database (term 10, opgehaald 23-10-2026) staat geen lopend circusvoorstel. Geen Pools circus met grote katten 2025–2026 gevonden (niet uitputtend gezocht). Bronnen: tekst jednolity ustawy o ochronie przyrody Dz.U. 2026 poz. 1315 (art. 73, 127); Dz.U. 2022 poz. 916 met art. 49–50 ustawy o gatunkach obcych; api.sejm.gov.pl (23-10-2026).",
+  "particulier": "Art. 73 ust. 1 ustawy o ochronie przyrody (tekst jednolity Dz.U. 2026 poz. 1315, obwieszczenie 04-09-2026) verbiedt bezit, houden, invoer en verkoop/ruil/verhuur/schenking aan onbevoegden van levende dieren van soorten die gevaarlijk zijn voor mensen. Uitgezonderd (ust. 2): ogrody zoologiczne en wetenschappelijke instellingen; voor bezit ook ośrodki rehabilitacji, azyle dla zwierząt en het Centralny Azyl dla Zwierząt. Lijst: rozporządzenie Ministra Środowiska van 03-08-2011 w sprawie gatunków zwierząt niebezpiecznych dla życia i zdrowia ludzi (Dz.U. 2011 nr 173 poz. 1037, van kracht): categorie I (bijlage 1, poz. 239–242): 'wielkie koty – wszystkie gatunki' Pantherinae spp., gepard, jaguarundi, puma; categorie II (bijlage 2, poz. 292–295): Lynx spp., Pardofelis temminckii, Pardofelis badia, Caracal caracal. Hybriden: bijlage 1 poz. 258 (minstens één voorouder uit cat. I → cat. I) en bijlage 2 poz. 308; bijlage 3 poz. 38 geeft hybriden dezelfde huisvestingseisen als de gekruiste soorten. Voor categorie I is geen ontheffing mogelijk: particulieren mogen geen leeuw, tijger, luipaard, jaguar, sneeuwluipaard, nevelpanter, cheeta, poema of jaguarundi houden. Voor categorie II (lynx, caracal, goudkatten) kan de RDOŚ van de verblijfplaats een zezwolenie geven (art. 73 ust. 4–10: dierenartsverklaring powiatowy lekarz weterynarii, registratie, controles, intrekking). Serval, ocelot, Bengaalse kat e.d. staan niet op de lijst (wel CITES/EU 338/97-registratie, art. 64). Straf: art. 127 pkt 3 – 3 maanden tot 5 jaar cel; ontsnapping door onvoorzichtigheid is een overtreding (art. 131 pkt 4a). Een plek met ≤15 wilde soorten (en beperkt aantal dieren) is wettelijk geen 'ogród zoologiczny' (art. 5 pkt 11) en heeft geen GDOŚ-zezwolenie nodig, maar valt dan wél onder art. 73: minizoo's kunnen dus legaal servals, maar geen grote katten houden. Opvang: een azyl dla zwierząt heeft een GDOŚ-zezwolenie nodig (art. 76a; fokken verboden, art. 76c). De GDOŚ-wykaz azyli (gov.pl/web/gdos/wykaz-azyli-dla-zwierzat, gezien 23-10-2026) bevat 12 regio-blokken met vooral wasberen, schildpadden, nutria’s; geen enkel azyl voor grote katten (één particulier azyl in Śrem mag CITES-Felidae 'z wyjątkiem dużych kotów i gatunków niebezpiecznych' houden). Het Centralny Azyl dla Zwierząt (ustawa 04-11-2022, tekst jednolity Dz.U. 2026 poz. 1049; zetel Warszawianka, gm. Lesznowola) bestaat nog niet fysiek: ontwerpcontract 31-03-2026, eerste fase gepland 2028 (Polskie Radio Rzeszów; zero.pl; OKO.press). In beslag genomen grote katten gaan daarom naar dierentuinen, vooral Zoo Poznań (o.a. tijgers van het transport Italië–Dagestan aan de Wit-Russische grens, okt. 2019; leeuwen/tijgers uit een opvang bij Kyiv, 2022; jonge leeuw uit Rybnik, ca. 2017; Poznań houdt zulke dieren vaak buiten het zicht van bezoekers, TVN24), of naar het buitenland. Bekende gevallen 2023–2026: (1) Zoo Łączna / ZOO FARMA (Łączna, gm. Mieroszów, dolnośląskie; staat op de GDOŚ-lijst!): RDOŚ Wrocław-controle 07-2024 t/m 09-2025 vond o.a. ontbrekende herkomstdocumentatie; GDOŚ startte 05-08-2026 een procedure tot intrekking van het zoo-zezwolenie; medio oktober 2026 actie van Prokuratura Okręgowa w Świdnicy, eigenaar en 4 anderen aangehouden, volgens een kop op walbrzyszek.com 'tot nader order' gesloten (17-10-2026; niet zelf gelezen), honderden dieren als bewijs in beslag; 21 dieren, waaronder een Bengaalse tijger (MKiŚ-toestemming voor 1 tijger, infowet.pl 16-10-2026), naar Nederland (Dierenpark Hoenderdaell en Stichting Leeuw); terugkeer van de tijger naar Polen overwogen (walbrzyszek.com 19-10-2026; walbrzych.naszemiasto.pl; zero.pl; TVN24). Leeuwen werden in berichten genoemd (styl.fm) – aantal en verblijf onbekend. (2) Czchów (pow. brzeski, małopolskie): Łukasz Chamioło houdt twee leeuwen en een Bengaalse tijger in verblijven bij zijn huis 'al jaren'; volgens de verdediging komt de tijger uit een Duits circus; strafzaak wegens dierenmishandeling bij Sąd Rejonowy w Brzesku (onderzoek sinds 2025; zitting 12-08-2026, volgende 09-09-2026); de gemeente voert een procedure tot afname maar besliste nog niet (Radio ESKA Kraków 12-08-2026; TVN24; Gazeta Krakowska). Juridische basis voor het houden niet gevonden. Bronnen: Dz.U. 2026 poz. 1315; Dz.U. 2011 nr 173 poz. 1037 (api.sejm.gov.pl, opgehaald 23-10-2026); gov.pl/web/gdos/azyle-dla-zwierzat."
+ },
+ "alle_instellingen": [
+  {
+   "naam": "ZOO Wrocław Sp. z o.o.",
+   "plaats": "Wrocław",
+   "woj": "dolnośląskie",
+   "bron": "officieel/eaza/rdpozia/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Roestkat – Sri Lanka (P. r. phillipsi) (laatst gezien 2026)",
+    "Tijger – Sumatraans (laatst gezien 2026)",
+    "Euraziatische lynx – onbekend (laatst gezien 2025)",
+    "Europese wilde kat – onbekend (laatst gezien 2025)",
+    "Leeuw – onbekend (laatst gezien 2025)",
+    "Manoel – Mongools/Siberisch (O. m. manul) (laatst gezien 2025)",
+    "Nevelpanter – — (laatst gezien 2025)",
+    "Sneeuwluipaard – — (laatst gezien 2025)",
+    "Leeuw – Zuidelijk (P. l. melanochaita) (vroeger; laatst gezien 2025)",
+    "Serval (vroeger; laatst gezien 2012)",
+    "Tijger – Amoer (vroeger; laatst gezien 2010)",
+    "Jaguar (vroeger; laatst gezien 1967)",
+    "Tijger – Zuid-Chinees (volgens ZTL) (vroeger; laatst gezien 1961)",
+    "Geoffroy’s kat (vroeger; laatst gezien geen jaartal in ZTL)",
+    "Kodkod (vroeger; laatst gezien geen jaartal in ZTL)",
+    "Ocelot (vroeger; laatst gezien geen jaartal in ZTL)",
+    "Poema (vroeger; laatst gezien geen jaartal in ZTL)",
+    "Tijger – onbekend (vroeger; laatst gezien geen jaartal in ZTL)"
+   ]
+  },
+  {
+   "naam": "ZOO FARMA (Zoo Łączna)",
+   "plaats": "Łączna (gm. Mieroszów)",
+   "woj": "dolnośląskie",
+   "bron": "officieel/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Serval (laatst gezien 2024)",
+    "Tijger – onbekend (laatst gezien 2024)",
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (vroeger; laatst gezien 2024)",
+    "Leeuw – onbekend (vroeger; laatst gezien geen jaartal in ZTL)"
+   ]
+  },
+  {
+   "naam": "Ogród Zoologiczny w Lubinie",
+   "plaats": "Lubin",
+   "woj": "dolnośląskie",
+   "bron": "officieel/rdpozia",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Ogród Zoologiczny w Bydgoszczy",
+   "plaats": "Bydgoszcz",
+   "woj": "kujawsko-pomorskie",
+   "bron": "officieel/rdpozia/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Euraziatische lynx – onbekend (laatst gezien 2024)",
+    "Europese wilde kat – onbekend (laatst gezien 2024)",
+    "Poema (laatst gezien 2024)",
+    "Serval (laatst gezien 2024)",
+    "Sneeuwluipaard – — (laatst gezien 2024)",
+    "Tijger – Amoer (laatst gezien 2024)"
+   ]
+  },
+  {
+   "naam": "Ogród Zoobotaniczny w Toruniu",
+   "plaats": "Toruń",
+   "woj": "kujawsko-pomorskie",
+   "bron": "officieel/eaza/rdpozia/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Caracal (laatst gezien 2024)",
+    "Caracal – Zuidelijk (laatst gezien 2024)",
+    "Euraziatische lynx – Karpatisch (L. l. carpathicus) (laatst gezien 2024)",
+    "Vissende kat (laatst gezien 2024)",
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (vroeger; laatst gezien 2016)"
+   ]
+  },
+  {
+   "naam": "Ogród Zoologiczny im. Stefana Milera w Zamościu",
+   "plaats": "Zamość",
+   "woj": "lubelskie",
+   "bron": "officieel/eaza/rdpozia/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Euraziatische lynx – onbekend (laatst gezien 2024)",
+    "Geoffroy’s kat (laatst gezien 2024)",
+    "Leeuw – onbekend (laatst gezien 2024)",
+    "Luipaard – Sri Lanka (P. p. kotiya) (laatst gezien 2024)",
+    "Tijger – Amoer (laatst gezien 2024)",
+    "Leeuw – Zuidelijk (P. l. melanochaita) (laatst gezien 2021)",
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (laatst gezien 2020)",
+    "Jaguarundi (vroeger; laatst gezien 2020)",
+    "Moeraskat (vroeger; laatst gezien 2018)",
+    "Nevelpanter – — (vroeger; laatst gezien 2018)",
+    "Roestkat – Sri Lanka (P. r. phillipsi) (vroeger; laatst gezien 2015)",
+    "Zandkat – Arabisch (F. m. harrisoni) (vroeger; laatst gezien 2014)",
+    "Serval (vroeger; laatst gezien 2013)",
+    "Poema (vroeger; laatst gezien 2011)",
+    "Bengaalse kat – Amoer (P. b. euptilura) (vroeger; laatst gezien 2010)",
+    "Jaguar (vroeger; laatst gezien geen jaartal in ZTL)"
+   ]
+  },
+  {
+   "naam": "Ogród Zoologiczny w Romanówce (Zoo Wojciechów, „Lublin Zoo” bij ZTL)",
+   "plaats": "Romanówka (gm. Wojciechów)",
+   "woj": "lubelskie",
+   "bron": "officieel/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Geoffroy’s kat (laatst gezien 2026)",
+    "Rode lynx (laatst gezien 2026)",
+    "Vissende kat (laatst gezien 2025)",
+    "Bengaalse kat – Amoer (P. b. euptilura) (laatst gezien 2024)",
+    "Caracal (laatst gezien 2024)",
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (laatst gezien 2024)",
+    "Jaguarundi (laatst gezien 2024)",
+    "Leeuw – Zuidelijk (P. l. melanochaita) (laatst gezien 2024)",
+    "Luipaard – onbekend (laatst gezien 2024)",
+    "Poema (laatst gezien 2024)",
+    "Serval (laatst gezien 2024)",
+    "Jaguar (laatst gezien geen jaartal in ZTL)"
+   ]
+  },
+  {
+   "naam": "Miejski Ogród Zoologiczny w Łodzi (Orientarium Zoo Łódź)",
+   "plaats": "Łódź",
+   "woj": "łódzkie",
+   "bron": "officieel/eaza/rdpozia/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (laatst gezien 2025)",
+    "Europese wilde kat – onbekend (laatst gezien 2025)",
+    "Leeuw – Aziatisch (P. l. leo, voorheen P. l. persica) (laatst gezien 2025)",
+    "Manoel – Mongools/Siberisch (O. m. manul) (laatst gezien 2025)",
+    "Roestkat – Sri Lanka (P. r. phillipsi) (laatst gezien 2025)",
+    "Tijger – Sumatraans (laatst gezien 2025)",
+    "Vissende kat (laatst gezien 2025)",
+    "Tijger – Amoer (vroeger; laatst gezien 2026)",
+    "Cheetah – Zuidelijk (A. j. jubatus) (vroeger; laatst gezien 2018)",
+    "Luipaard – Noord-Chinees (P. p. orientalis, voorheen P. p. japonensis) (vroeger; laatst gezien 2013)",
+    "Sneeuwluipaard – — (vroeger; laatst gezien 2013)",
+    "Caracal (vroeger; laatst gezien 2012)",
+    "Serval (vroeger; laatst gezien 2011)",
+    "Euraziatische lynx – onbekend (vroeger; laatst gezien 2010)",
+    "Zwartvoetkat (vroeger; laatst gezien 2002)",
+    "Leeuw – onbekend (vroeger; laatst gezien 1997)",
+    "Jaguar (vroeger; laatst gezien 1993)",
+    "Poema (vroeger; laatst gezien 1993)",
+    "Bengaalse kat – Amoer (P. b. euptilura) (vroeger; laatst gezien geen jaartal in ZTL)",
+    "Tijger – Javaans (volgens ZTL) (vroeger; laatst gezien geen jaartal in ZTL)"
+   ]
+  },
+  {
+   "naam": "ZOO Borysew Sp. z o.o. (Zoo Safari Borysew)",
+   "plaats": "Borysew (gm. Poddębice)",
+   "woj": "łódzkie",
+   "bron": "officieel/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (laatst gezien 2025)",
+    "Leeuw – Zuidelijk (P. l. melanochaita) (laatst gezien 2025)",
+    "Luipaard – Noord-Chinees (P. p. orientalis, voorheen P. p. japonensis) (laatst gezien 2025)",
+    "Luipaard – onbekend, zwarte panters (laatst gezien 2025)",
+    "Poema (laatst gezien 2025)",
+    "Serval (laatst gezien 2025)",
+    "Tijger – onbekend, witte tijgers (laatst gezien 2025)"
+   ]
+  },
+  {
+   "naam": "Miejski Park i Ogród Zoologiczny w Krakowie",
+   "plaats": "Kraków",
+   "woj": "małopolskie",
+   "bron": "officieel/eaza/rdpozia/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (laatst gezien 2025)",
+    "Europese wilde kat – onbekend (laatst gezien 2025)",
+    "Geoffroy’s kat (laatst gezien 2025)",
+    "Jaguar (laatst gezien 2025)",
+    "Jaguarundi (laatst gezien 2025)",
+    "Leeuw – Aziatisch (P. l. leo, voorheen P. l. persica) (laatst gezien 2025)",
+    "Luipaard – Noord-Chinees (P. p. orientalis, voorheen P. p. japonensis) (laatst gezien 2025)",
+    "Manoel – Mongools/Siberisch (O. m. manul) (laatst gezien 2025)",
+    "Ocelot (laatst gezien 2025)",
+    "Serval (laatst gezien 2025)",
+    "Sneeuwluipaard – — (laatst gezien 2025)",
+    "Tijger – Amoer (laatst gezien 2025)",
+    "Zandkat – Arabisch (F. m. harrisoni) (laatst gezien 2025)",
+    "Moeraskat (vroeger; laatst gezien 2024)",
+    "Caracal (vroeger; laatst gezien 2022)",
+    "Leeuw – onbekend (vroeger; laatst gezien 2017)",
+    "Tijger – onbekend (vroeger; laatst gezien 2014)",
+    "Tijger – Sumatraans (vroeger; laatst gezien geen jaartal in ZTL)"
+   ]
+  },
+  {
+   "naam": "Miejski Ogród Zoologiczny w Płocku Sp. z o.o.",
+   "plaats": "Płock",
+   "woj": "mazowieckie",
+   "bron": "officieel/eaza/rdpozia/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Leeuw – onbekend (laatst gezien 2025)",
+    "Luipaard – Perzisch (P. p. tulliana) (laatst gezien 2025)",
+    "Sneeuwluipaard – — (laatst gezien 2025)",
+    "Tijger – Amoer (laatst gezien 2025)",
+    "Tijger – Sumatraans (vroeger; laatst gezien 2009)"
+   ]
+  },
+  {
+   "naam": "Miejski Ogród Zoologiczny im. Antoniny i Jana Żabińskich w Warszawie",
+   "plaats": "Warszawa",
+   "woj": "mazowieckie",
+   "bron": "officieel/eaza/rdpozia/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Cheetah – Zuidelijk (A. j. jubatus) (laatst gezien 2025)",
+    "Geoffroy’s kat (laatst gezien 2025)",
+    "Leeuw – onbekend (laatst gezien 2025)",
+    "Luipaard – Amoer (P. p. orientalis) (laatst gezien 2025)",
+    "Manoel – Mongools/Siberisch (O. m. manul) (laatst gezien 2025)",
+    "Serval (laatst gezien 2025)",
+    "Sneeuwluipaard – — (laatst gezien 2025)",
+    "Jaguar (vroeger; laatst gezien 2022)",
+    "Tijger – Sumatraans (vroeger; laatst gezien 2022)",
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (vroeger; laatst gezien 2016)",
+    "Caracal (vroeger; laatst gezien 2012)",
+    "Luipaard – Sri Lanka (P. p. kotiya) (vroeger; laatst gezien 2010)",
+    "Ocelot – Colombiaans (volgens ZTL) (vroeger; laatst gezien 2005)",
+    "Euraziatische lynx – onbekend (vroeger; laatst gezien 1993)",
+    "Europese wilde kat – onbekend (vroeger; laatst gezien 1993)",
+    "Luipaard – onbekend (vroeger; laatst gezien 1993)",
+    "Ocelot (vroeger; laatst gezien 1993)",
+    "Poema (vroeger; laatst gezien 1993)",
+    "Tijger – Amoer (vroeger; laatst gezien 1993)",
+    "Bengaalse kat – Amoer (P. b. euptilura) (vroeger; laatst gezien geen jaartal in ZTL)"
+   ]
+  },
+  {
+   "naam": "Ogród Zoologiczny w Opolu Sp. z o.o.",
+   "plaats": "Opole",
+   "woj": "opolskie",
+   "bron": "officieel/eaza/rdpozia/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Caracal (laatst gezien 2025)",
+    "Cheetah – Zuidelijk (A. j. jubatus) (laatst gezien 2025)",
+    "Euraziatische lynx – Karpatisch (L. l. carpathicus) (laatst gezien 2025)",
+    "Europese wilde kat – onbekend (laatst gezien 2025)",
+    "Jaguar (laatst gezien 2025)",
+    "Leeuw – Zuidelijk (P. l. melanochaita) (laatst gezien 2025)",
+    "Ocelot (laatst gezien 2025)",
+    "Serval (laatst gezien 2025)",
+    "Sneeuwluipaard – — (laatst gezien 2025)",
+    "Tijger – Amoer (laatst gezien 2025)",
+    "Poema (vroeger; laatst gezien 2023)",
+    "Leeuw – onbekend (vroeger; laatst gezien 2021)",
+    "Jaguarundi (vroeger; laatst gezien 2020)",
+    "Manoel – Mongools/Siberisch (O. m. manul) (vroeger; laatst gezien 2016)",
+    "Tijger – Sumatraans (vroeger; laatst gezien 2009)",
+    "Luipaard – onbekend (vroeger; laatst gezien 1993)"
+   ]
+  },
+  {
+   "naam": "Akcent ZOO",
+   "plaats": "Białystok",
+   "woj": "podlaskie",
+   "bron": "officieel/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (laatst gezien 2020)",
+    "Europese wilde kat – onbekend (laatst gezien 2018)"
+   ]
+  },
+  {
+   "naam": "Akwarium Gdyńskie (MIR-PIB)",
+   "plaats": "Gdynia",
+   "woj": "pomorskie",
+   "bron": "officieel/rdpozia",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Gdański Ogród Zoologiczny",
+   "plaats": "Gdańsk-Oliwa",
+   "woj": "pomorskie",
+   "bron": "officieel/eaza/rdpozia/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Cheetah – Zuidelijk (A. j. jubatus) (laatst gezien 2025)",
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (laatst gezien 2025)",
+    "Europese wilde kat – onbekend (laatst gezien 2025)",
+    "Leeuw – Zuidelijk (P. l. melanochaita) (laatst gezien 2025)",
+    "Manoel – Mongools/Siberisch (O. m. manul) (laatst gezien 2025)",
+    "Serval (laatst gezien 2025)",
+    "Zandkat – Arabisch (F. m. harrisoni) (laatst gezien 2025)",
+    "Poema (vroeger; laatst gezien 2025)",
+    "Tijger – Amoer (vroeger; laatst gezien 2025)",
+    "Luipaard – Perzisch (P. p. tulliana) (vroeger; laatst gezien 2024)",
+    "Caracal (vroeger; laatst gezien 2017)",
+    "Sneeuwluipaard – — (vroeger; laatst gezien 2013)",
+    "Tijger – Sumatraans (vroeger; laatst gezien 2009)",
+    "Leeuw – onbekend (vroeger; laatst gezien 1999)"
+   ]
+  },
+  {
+   "naam": "Ogród Zoologiczny CANPOL",
+   "plaats": "Sieroczyn (gm. Człuchów)",
+   "woj": "pomorskie",
+   "bron": "officieel/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Tijger – Amoer (laatst gezien 2025)",
+    "Leeuw – onbekend (laatst gezien 2024)"
+   ]
+  },
+  {
+   "naam": "Ogród Zoologiczny Dolina Charlotty (ZOO Charlotta)",
+   "plaats": "Strzelinko (gm. Słupsk)",
+   "woj": "pomorskie",
+   "bron": "officieel/rdpozia",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Śląski Ogród Zoologiczny",
+   "plaats": "Chorzów",
+   "woj": "śląskie",
+   "bron": "officieel/eaza/rdpozia/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Caracal (laatst gezien 2025)",
+    "Cheetah – Zuidelijk (A. j. jubatus) (laatst gezien 2025)",
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (laatst gezien 2025)",
+    "Geoffroy’s kat (laatst gezien 2025)",
+    "Leeuw – Zuidelijk (P. l. melanochaita) (laatst gezien 2025)",
+    "Poema (laatst gezien 2025)",
+    "Serval (laatst gezien 2025)",
+    "Sneeuwluipaard – — (laatst gezien 2025)",
+    "Tijger – Amoer (laatst gezien 2025)",
+    "Tijger – onbekend (vroeger; laatst gezien 2025)",
+    "Euraziatische lynx – onbekend (vroeger; laatst gezien 2020)",
+    "Luipaard – Perzisch (P. p. tulliana) (vroeger; laatst gezien 2019)",
+    "Leeuw – onbekend (vroeger; laatst gezien 2016)",
+    "Moeraskat (vroeger; laatst gezien 2013)",
+    "Bengaalse kat – Amoer (P. b. euptilura) (vroeger; laatst gezien 2010)",
+    "Euraziatische lynx – Siberisch (L. l. wrangeli, volgens ZTL) (vroeger; laatst gezien 2010)",
+    "Jaguar (vroeger; laatst gezien 2010)",
+    "Tijger – Bengaals (vroeger; laatst gezien 2010)",
+    "Luipaard – onbekend (vroeger; laatst gezien 1998)",
+    "Ocelot (vroeger; laatst gezien 1998)"
+   ]
+  },
+  {
+   "naam": "Leśny Park Niespodzianek",
+   "plaats": "Ustroń",
+   "woj": "śląskie",
+   "bron": "officieel/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Europese wilde kat – onbekend (laatst gezien 2021)"
+   ]
+  },
+  {
+   "naam": "Ogród Zoologiczny w Sosnowcu",
+   "plaats": "Sosnowiec",
+   "woj": "śląskie",
+   "bron": "officieel/rdpozia",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Ogród Zoologiczny „Leśne Zacisze”",
+   "plaats": "Lisów (gm. Morawica)",
+   "woj": "świętokrzyskie",
+   "bron": "officieel/eaza/rdpozia/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Serval (laatst gezien 2024)",
+    "Leeuw – onbekend (laatst gezien 2019)",
+    "Leeuw – Aziatisch (P. l. leo, voorheen P. l. persica) (vroeger; laatst gezien 2020)"
+   ]
+  },
+  {
+   "naam": "Park Dzikich Zwierząt w Kadzidłowie",
+   "plaats": "Kadzidłowo (gm. Ruciane-Nida)",
+   "woj": "warmińsko-mazurskie",
+   "bron": "officieel/rdpozia/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (laatst gezien 2020)",
+    "Europese wilde kat – onbekend (laatst gezien 2020)"
+   ]
+  },
+  {
+   "naam": "Ogród Zoologiczny – Poznań (Nowe Zoo en Stare Zoo)",
+   "plaats": "Poznań",
+   "woj": "wielkopolskie",
+   "bron": "officieel/eaza/rdpozia/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Bengaalse kat – Amoer (P. b. euptilura) (laatst gezien 2025)",
+    "Bengaalse kat – P. b. bengalensis (laatst gezien 2025)",
+    "Caracal (laatst gezien 2025)",
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (laatst gezien 2025)",
+    "Euraziatische lynx – onbekend (laatst gezien 2025)",
+    "Europese wilde kat – onbekend (laatst gezien 2025)",
+    "Jaguarundi (laatst gezien 2025)",
+    "Leeuw – onbekend (laatst gezien 2025)",
+    "Manoel – Mongools/Siberisch (O. m. manul) (laatst gezien 2025)",
+    "Margay – Yucatán (L. w. yucatanicus) (laatst gezien 2025)",
+    "Tijger – Amoer (laatst gezien 2025)",
+    "Tijger – onbekend (laatst gezien 2025)",
+    "Caracal – Turkmeens (volgens ZTL) (vroeger; laatst gezien 2018)",
+    "Zandkat – Arabisch (F. m. harrisoni) (vroeger; laatst gezien 2016)",
+    "Sneeuwluipaard – — (vroeger; laatst gezien 2013)",
+    "Tijger – Sumatraans (vroeger; laatst gezien 2009)",
+    "Leeuw – Aziatisch (P. l. leo, voorheen P. l. persica) [Stare Zoo] (vroeger; laatst gezien 2007)",
+    "Vissende kat (vroeger; laatst gezien 2001)",
+    "Canadese lynx (vroeger; laatst gezien 1993)",
+    "Jaguar [Stare Zoo] (vroeger; laatst gezien 1993)",
+    "Luipaard – onbekend [Stare Zoo] (vroeger; laatst gezien 1993)",
+    "Ocelot (vroeger; laatst gezien 1993)",
+    "Luipaard – Noord-Chinees (P. p. orientalis, voorheen P. p. japonensis) (vroeger; laatst gezien 1986)"
+   ]
+  },
+  {
+   "naam": "Ogród Zoologiczny w Nowym Tomyślu",
+   "plaats": "Nowy Tomyśl",
+   "woj": "wielkopolskie",
+   "bron": "officieel/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (laatst gezien 2024)"
+   ]
+  },
+  {
+   "naam": "Rezerwat Pokazowy Żubrów (Białowieski Park Narodowy)",
+   "plaats": "Białowieża",
+   "woj": "podlaskie",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [
+    "Euraziatische lynx – onbekend (laatst gezien 2018)"
+   ]
+  },
+  {
+   "naam": "Dobronianka Minizoo",
+   "plaats": "Dobroń",
+   "woj": "łódzkie",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [
+    "Serval (laatst gezien 2022)"
+   ]
+  },
+  {
+   "naam": "Zwierzyniec Kopytkowo",
+   "plaats": "Izdebnik (gm. Lanckorona; aanname)",
+   "woj": "małopolskie",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [
+    "Serval (laatst gezien 2024)"
+   ]
+  },
+  {
+   "naam": "Papugarnia Carmen",
+   "plaats": "Katowice",
+   "woj": "śląskie",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [
+    "Luipaard – onbekend (vroeger; laatst gezien 1993)"
+   ]
+  },
+  {
+   "naam": "Mazurskie Mini Zoo",
+   "plaats": "Kąp (gm. Giżycko)",
+   "woj": "warmińsko-mazurskie",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [
+    "Serval (laatst gezien 2023)"
+   ]
+  },
+  {
+   "naam": "MiniZoo Mantadia",
+   "plaats": "Łódź",
+   "woj": "łódzkie",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [
+    "Serval (laatst gezien 2023)"
+   ]
+  },
+  {
+   "naam": "Lemur Park",
+   "plaats": "Rumia",
+   "woj": "pomorskie",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [
+    "Serval (laatst gezien 2024)"
+   ]
+  },
+  {
+   "naam": "Park Edukacyjny Zoo-Egzotyczne Kaszuby",
+   "plaats": "Sierakowice",
+   "woj": "pomorskie",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [
+    "Serval (laatst gezien 2024)"
+   ]
+  },
+  {
+   "naam": "Zoo Safari Świerkocin (gesloten 2017 volgens ZTL)",
+   "plaats": "Świerkocin (gm. Witnica)",
+   "woj": "lubuskie",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [
+    "Europese wilde kat – onbekend (vroeger; laatst gezien 2015)",
+    "Leeuw – Zuidelijk (P. l. melanochaita) (vroeger; laatst gezien 2015)",
+    "Leeuw – onbekend (vroeger; laatst gezien 2012)"
+   ]
+  }
+ ]
+}

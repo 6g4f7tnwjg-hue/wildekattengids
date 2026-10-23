@@ -28,7 +28,7 @@ RIN, RAB, DVO, PLA, CHL, UST = L("Ringelland"), L("Animal Park Rabina"), L("Zoo 
 HRA, FAU, EXO, HUM, BOB, SIM = L("Zoo Na Hrádečku"), L("Faunapark Horní Lipová"), L("Exotika na ranči"), L("Cirkus Humberto"), L("Cirkus Bob Navarro King"), L("Cirkus Šimek")
 
 # losse vervangingen in het sjabloon (regex -> tekst)
-CS_VERV = [("v Portugalsku", "v Česku"), ("V Portugalsku", "V Česku"), ("Portugalsko", "Česko"), ("portugalských", "českých"), ("portugalské", "české")]
+CS_VERV = [("v Portugalsku", "v Česku"), ("V Portugalsku", "V Česku"), ("portugalských", "českých"), ("portugalské", "české")]
 VAST = [
  (r'<p class="stamp">.*?</p>', '<p class="stamp"><span class="l-nl">Stand 22 oktober 2026</span><span class="l-en">Updated 22 October 2026</span><span class="l-cs">Aktualizováno 22. října 2026</span></p>'),
  (r'<p class="lede">.*?</p>', '<p class="lede">'

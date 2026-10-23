@@ -7,7 +7,7 @@ def code():
     s = re.sub(r"\b(SP|R1|R5|R6|R7)CS\b", r"\1SV", s)
     s = re.sub(r"\bCS(D|M)\b", r"SV\1", s)
     s = re.sub(r"\b(RP_TYPE|ROUTENOTE|EARLIER|LBL|TITLE|MND)_CS(1?)\b", r"\1_SV\2", s)
-    s = s.replace('"cs"', '"sv"').replace("l-cs", "l-sv").replace("html.cs", "html.sv").replace('-cs"', '-sv"')
+    s = s.replace("html:not(.cs)", "html:not(.sv)").replace('"cs"', '"sv"').replace("l-cs", "l-sv").replace("html.cs", "html.sv").replace('-cs"', '-sv"')
     s = re.sub(r"\bcs:", "sv:", s)
     s = s.replace('lang="cs">CS<', 'lang="sv">SV<')
     # datum: Zweeds "22 oktober 2026" en "oktober 2026"
@@ -17,6 +17,8 @@ def code():
                  ('T("soorten","species",bySp.size<5?"druhy":"druhů")', 'T("soorten","species","arter")'),
                  ('T("soorten katachtigen","cat species",nb<5?"druhy kočkovitých šelem":"druhů kočkovitých šelem")', 'T("soorten katachtigen","cat species","kattarter")')]:
         assert s.count(a) >= 1, a; s = s.replace(a, b)
+    for x, y in [('sv:["bez data","revize","nizozemská Wikipedie"]', 'sv:["odaterad","version","nederländska Wikipedia"]'), ('sv:["Asi ","let","Neznámé"]', 'sv:["Cirka ","år","Okänd"]')]:
+        assert s.count(x) == 1, x; s = s.replace(x, y)
     s = re.sub(r"const MND_SV1=\[.*?\];", 'const MND_SV1=["januari", "februari", "mars", "april", "maj", "juni", "juli", "augusti", "september", "oktober", "november", "december"];', s)
     return s
 def strlit(s, i):
@@ -79,5 +81,7 @@ else:
         x = SV[f"{n:04d}"]
         if not isinstance(x, str): x = json.dumps(x, ensure_ascii=False)
         s = s[:a] + x + s[b:]
+    # pas na het invoegen: een nieuwe letterlijke tekst zou de nummering van de stukken verschuiven
+    x = 'chosen.length<5?"vybrané lokality":"vybraných lokalit"'; assert s.count(x) == 1; s = s.replace(x, '"valda platser"')
     open(D + "se_basis.html", "w", encoding="utf8").write(s)
     print("se_basis.html geschreven")

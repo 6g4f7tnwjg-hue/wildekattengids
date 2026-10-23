@@ -232,7 +232,7 @@ details > summary{border-radius:10px}
 .jsrc{display:block;font-size:13px;color:var(--muted);margin-top:6px}
 #actueel h3{margin-top:26px}
 /* ===== tweetaligheid ===== */
-html.en .l-nl,html.sv .l-nl,html:not(.en) .l-en,html:not(.cs) .l-sv{display:none!important}
+html.en .l-nl,html.sv .l-nl,html:not(.en) .l-en,html:not(.sv) .l-sv{display:none!important}
 .langsw{position:absolute;top:16px;right:62px;display:inline-flex;border:1.5px solid #2A1C12;border-radius:999px;overflow:hidden;font-family:"Bricolage Grotesque",sans-serif;font-size:13px;z-index:3}
 .langsw button{all:unset;cursor:pointer;padding:4px 11px;color:#2A1C12;font-weight:600;line-height:1.3}
 .langsw button[aria-pressed="true"]{background:#2A1C12;color:var(--tan)}
@@ -972,8 +972,8 @@ let LANG=window.__LANG||"nl";
 const LGS=["nl", "en", "sv"];
 let XTC=null;
 const XT=l=>{if(!XTC)XTC={fr:{get SP(){try{return SPFR;}catch(e){return {};}},get R1(){try{return R1FR;}catch(e){return {};}},get R5(){try{return R5FR;}catch(e){return {};}},get R6(){try{return R6FR;}catch(e){return {};}},get R7(){try{return R7FR;}catch(e){return {};}},get RP(){try{return RP_TYPE_FR;}catch(e){return {};}},get EA(){try{return EARLIER_FR;}catch(e){return {};}},get RN(){try{return ROUTENOTE_FR;}catch(e){return {};}},get D(){try{return FRD;}catch(e){return {};}},get M(){try{return FRM;}catch(e){return {};}},get LBL(){try{return LBL_FR;}catch(e){return {};}},get TITLE(){try{return TITLE_FR;}catch(e){return {};}},get MND(){try{return MND_FR;}catch(e){return {};}}},sv:{get SP(){try{return SPSV;}catch(e){return {};}},get R1(){try{return R1SV;}catch(e){return {};}},get R5(){try{return R5SV;}catch(e){return {};}},get R6(){try{return R6SV;}catch(e){return {};}},get R7(){try{return R7SV;}catch(e){return {};}},get RP(){try{return RP_TYPE_SV;}catch(e){return {};}},get EA(){try{return EARLIER_SV;}catch(e){return {};}},get RN(){try{return ROUTENOTE_SV;}catch(e){return {};}},get D(){try{return SVD;}catch(e){return {};}},get M(){try{return SVM;}catch(e){return {};}},get LBL(){try{return LBL_SV;}catch(e){return {};}},get TITLE(){try{return TITLE_SV;}catch(e){return {};}},get MND(){try{return MND_SV;}catch(e){return {};}}}};return XTC[l]||null;};
-const SRCW={en:["undated","revision","Dutch Wikipedia"],de:["undatiert","Revision","niederländische Wikipedia"],fr:["non daté","révision","Wikipédia néerlandais"],sv:["bez data","revize","nizozemská Wikipedie"]};
-const LIFE={en:["About ","years","Unknown"],de:["Etwa ","Jahre","Unbekannt"],fr:["Environ ","ans","Inconnu"],sv:["Asi ","let","Neznámé"]};
+const SRCW={en:["undated","revision","Dutch Wikipedia"],de:["undatiert","Revision","niederländische Wikipedia"],fr:["non daté","révision","Wikipédia néerlandais"],sv:["odaterad","version","nederländska Wikipedia"]};
+const LIFE={en:["About ","years","Unknown"],de:["Etwa ","Jahre","Unbekannt"],fr:["Environ ","ans","Inconnu"],sv:["Cirka ","år","Okänd"]};
 const LI=()=>Math.max(0,LGS.indexOf(LANG));
 const pk=a=>a[LI()]||(LANG!=="nl"?a[1]:"")||a[0];
 const FRD={};
@@ -1169,7 +1169,7 @@ function rtUpd(){
   const confAll=ALLSP.filter(s=>!UNSURE.has(s));
   const nSeen=confAll.filter(s=>seen.has(s)).length;
   const mb=maybe.size?T(" · mogelijk ook: "," · possibly also: ")+esc([...maybe].map(spName).join(", ")):"";
-  document.getElementById("rt-score").innerHTML=`<b>${nSeen}</b> ${T(`van ${confAll.length} bevestigde soorten`,`of ${confAll.length} confirmed species`,`av ${confAll.length} bekräftade arter`)}<br><span>${chosen.length} ${chosen.length===1?T("locatie gekozen","location selected"):T("locaties gekozen","locations selected",chosen.length<5?"vybrané lokality":"vybraných lokalit")}${mb}</span>`;
+  document.getElementById("rt-score").innerHTML=`<b>${nSeen}</b> ${T(`van ${confAll.length} bevestigde soorten`,`of ${confAll.length} confirmed species`,`av ${confAll.length} bekräftade arter`)}<br><span>${chosen.length} ${chosen.length===1?T("locatie gekozen","location selected"):T("locaties gekozen","locations selected","valda platser")}${mb}</span>`;
   const where=s=>info.filter(x=>x.conf.includes(s)).map(x=>x.name);
   const chip=s=>{const on=seen.has(s), m=!on&&maybe.has(s);
     return `<span class="rchip${on?" on":m?" maybe":""}">${esc(spName(s))}${!on&&!m&&where(s).length?` <small>${esc(where(s).slice(0,3).join(", "))}${where(s).length>3?"…":""}</small>`:""}</span>`;};

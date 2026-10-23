@@ -2,6 +2,28 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 23 oktober 2026 – Zweden
+
+Nieuwe landpagina `zweden/` (bron: `bron/gidsen/se.html`, gebouwd met `bron/landbouw/se/gen.py`), in het Nederlands, Engels en Zweeds. Eén pagina met een filter per län (9 län met locaties), met kaart, routeplanner, recente geboortes, soortpagina’s, filters op type en labels en het meldformulier. Noorwegen, Finland en Denemarken staan grijs op de kaart.
+
+**Aantallen**
+- **11 locaties**, alle met een bevestigde kat: 10 dierentuinen (lid van EAZA of de Svenska Djurparksföreningen: Kolmården, Parken Zoo, Nordens Ark, Borås, Skånes Djurpark, Ystad, Öland, Skansen, Vildriket, Lycksele) en 1 dierenpark (Junsele, alleen ’s zomers).
+- **11 soorten bevestigd**: leeuw, tijger, luipaard, jaguar, sneeuwluipaard, cheetah, Euraziatische lynx, serval, vissende kat, manoel, Europese wilde kat. De lynx in 8 parken.
+- 29 vermeldingen in de hoofdtabel, waarvan 2 onzeker (Nordens Ark: Amoerluipaard en wilde kat; zie `TWIJFELGEVALLEN.md`).
+- Route met alle soorten in vier parken: Parken Zoo, Nordens Ark, Skånes Djurpark, Ystad Djurpark.
+- Recente geboortes: 4 Amoertijgers in Kolmården (3-6-2026) en 2 in het voorjaar van 2025, 3 Perzische luipaarden in Nordens Ark (mei 2026).
+- Ruim 40 andere locaties onderzocht zonder katten (o.a. Furuviksparken, Universeum, Slottsskogen, Tropikariet, elandenparken, circussen). Orsa Rovdjurspark (dicht sinds 2022) en Frösö Zoo (dicht sinds 2019) staan bij “Gesloten”.
+
+**Werkwijze**
+- Officiële lijst: er is geen openbare landelijke lijst van dierentuinvergunningen (länsstyrelse). Gebruikt: Jordbruksverket “godkända avgränsade anläggningar” (05-10-2026), SDF (13 Zweedse leden), EAZA (18 Zweedse dierentuinen/aquaria) en Zootierliste (62 Zweedse vermeldingen bij 17 instellingen).
+- Afbakening: particulieren mogen in Zweden geen wilde katten houden (SJVFS 2019:15) en roofdieren zijn in circussen verboden (Djurskyddsförordning 2019:66); er waren dus geen particulieren of circussen op te nemen.
+- Zes onderzoeksagenten (lijsten, vier gebieden, opvang/particulieren/circussen) en één vervolgagent (twijfelgevallen). Type: dierentuin bij lidmaatschap van EAZA of SDF.
+- De gids is met een script afgeleid van de Tsjechische (`bron/landbouw/se/tools/basis_omzetten.py`: Tsjechisch → Zweeds in de code, vaste teksten door een vertaalagent), gegevens via een vertaaltabel (`sv.json`, `bron_vert.json`). Kaart uit GISCO NUTS 2024 (län = NUTS 3).
+
+**Gedeelde bestanden**: taal `sv` en land `se` in alle gedeelde lagen (zoals bij Tsjechisch); locatietypes in het Zweeds: dierentuin = “Zoo”, dierenpark = “Djurpark”. `jungle.py`: “1 plats / N platser i Sverige”. Hoofdpagina: Zweden met vlag, kaartvorm en zoomknop in alle lijsten; kaartkader naar het noorden vergroot (tot 69,4° N), Noorwegen en Finland grijs; landenlijsten in titels en beschrijvingen bijgewerkt (nu 15 landen · 576 locaties · 30 soorten).
+
+**Gecontroleerd**: de Zweedse pagina in NL/EN/SV op 390 px (Chromium): geen fouten, geen horizontaal scrollen, geen Tsjechische, Deense of Portugese resten. Alle andere landpagina’s (alle talen) tekst voor tekst gelijk aan de vorige versie; hoofdpagina, top 10 en de soortpagina’s verschillen alleen door Zweden. WebKit niet getest.
+
 ## 22 oktober 2026 – Tsjechië
 
 Nieuwe landpagina `tsjechie/` (bron: `bron/gidsen/cz.html`), in het Nederlands, Engels en Tsjechisch. Eén pagina met een filter per kraj (13 kraje met locaties; Karlovarský kraj heeft er geen) plus een groep “Reizende circussen”, met kaart, routeplanner, recente geboortes, soortpagina’s, filters op type en labels en het meldformulier. Duitsland, Polen, Slowakije en Oostenrijk staan grijs op de kaart.

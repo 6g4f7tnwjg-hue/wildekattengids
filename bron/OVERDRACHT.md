@@ -1,3 +1,13 @@
+# Overdracht (23 oktober 2026) — voor een nieuwe chat
+
+Lees eerst `bron/LEESMIJ.md` (opbouw, bouw, telregel en de lessen per land), **`bron/landbouw/LEESMIJ.md`** (zo maak je een nieuw land), `bron/OPEN.md` en bovenaan `VOORTGANG.md`. Gebruik de skill “wilde-katachtigen-gids”.
+
+## Waar we staan
+- **15 landen** in de gids: NL, BE, LU, DE, FR, AT, CH, UK, IE, IT, ES, PT, DK, CZ en **SE** (Zweden, 23-10-2026, NL/EN/SV). Hoofdpagina: 15 landen · 576 locaties · 30 soorten.
+- Zweden: 11 locaties, 11 soorten; bron in `bron/landbouw/se/` (`patch.py` → `se_final.json`, `teksten.py`, `gen.py`). De Europakaart is naar het noorden vergroot (tot 69,4° N).
+- Open voor Zweden: zie `bron/OPEN.md` (Nordens Ark: Amoerluipaard en wilde kat; Öland: tijger).
+- **Wacht op de gebruiker**: de Tsjechische gids noemt bij de Iberische lynx “Španělsko a Česko” (moet “Španělsko a Portugalsko” zijn); gevraagd of dat rechtgezet mag worden.
+
 # Overdracht (22 oktober 2026, eind van de dag) — voor een nieuwe chat
 
 Lees eerst `bron/LEESMIJ.md` (opbouw, bouw, telregel en de lessen per land), **`bron/landbouw/LEESMIJ.md`** (zo maak je een nieuw land, stap voor stap), `bron/OPEN.md` en bovenaan `VOORTGANG.md`. Gebruik de skill “wilde-katachtigen-gids”.

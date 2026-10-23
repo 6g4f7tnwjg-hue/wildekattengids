@@ -4,6 +4,21 @@ Vermeldingen met de status “onzeker”: ze staan wel in de gids, maar tellen n
 
 Regel: bevestigd alleen met een recente bron (2025–2026); onzeker alleen met een concrete aanwijzing van na 2024; oudere aanwijzingen gaan naar “Eerder hier”.
 
+## Zweden
+
+Stand 22 oktober 2026. Twee onzekere vermeldingen; daarnaast een paar “bevestigde” die alleen op de eigen soortpagina of parkkaart rusten.
+
+| Locatie | Soort | Waarom twijfel | Bron |
+|---|---|---|---|
+| Nordens Ark (Hunnebostrand) | Luipaard (Amoer) | Geen bevestiging uit 2025–2026; de twee luipaardverblijven lijken in 2026 door de Perzische luipaarden gebruikt te worden. Mogelijk geen Amoerluipaard meer. | Eigen site soortpagina (gezien 22-10-2026); Zootierliste (laatst gezien 07/2023) |
+| Nordens Ark (Hunnebostrand) | Europese wilde kat | Fokdieren voor Schotland; “een kweekpaar in het publieksdeel” is een plan uit 2020; in 07/2023 achter de schermen. | Eigen site; Zootierliste (07/2023) |
+
+**Bevestigd, maar dun onderbouwd** (nagaan bij een volgende ronde):
+- Ölands Djurpark – Amoertijger: alleen de parkkaart (11/2025) en een bezoekersrecensie (08/2025); naam en aantal onbekend.
+- Skånes Djurpark – lynx en wilde kat, Lycksele, Skansen en Vildriket – lynx: alleen de eigen soortpagina's en dierenlijsten (Zootierliste 2025 voor Skansen en Vildriket); geen nieuws.
+- Junsele Djurpark – tijgers en lynx: eigen soortpagina's (bijgewerkt mei 2026); site op 22-10-2026 deels onbereikbaar.
+- Parken Zoo – jaguar: na het vertrek van Avatar (09/2026) vermoedelijk 1–2 gevlekte poezen (soortpagina bijgewerkt 08-10-2026); niet met naam bevestigd. Vissende kat: “nyinflyttad” 2026, door Zootierliste in 06/2026 niet gezien.
+
 ## Tsjechië
 
 Stand 22 oktober 2026. Let op: de eigen site van Zoo Jihlava was op 22-10-2026 de hele dag onbereikbaar; daar staan daarom negen kleine katten op onzeker. Opnieuw nagaan.

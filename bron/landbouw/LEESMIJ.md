@@ -1,6 +1,6 @@
-# Landbouw: zo zijn Denemarken en Tsjechië gemaakt (en zo maak je het volgende land)
+# Landbouw: zo zijn Denemarken, Tsjechië en Zweden gemaakt (en zo maak je het volgende land)
 
-Per land een map (`dk/`, `cz/`) met alles waaruit de gids `bron/gidsen/<land>.html` gebouwd is. Na een wijziging in de gegevens: `python3 bron/landbouw/<land>/gen.py` (schrijft `bron/gidsen/<land>.html`) en daarna `python3 bron/bouw.py`.
+Per land een map (`dk/`, `cz/`, `se/`) met alles waaruit de gids `bron/gidsen/<land>.html` gebouwd is. Na een wijziging in de gegevens: `python3 bron/landbouw/<land>/gen.py` (schrijft `bron/gidsen/<land>.html`) en daarna `python3 bron/bouw.py`.
 
 ## Bestanden per land
 
@@ -23,7 +23,7 @@ Per land een map (`dk/`, `cz/`) met alles waaruit de gids `bron/gidsen/<land>.ht
 1. **Voorstel en akkoord** van de gebruiker (land, talen: NL + EN + landstaal).
 2. **Map** `bron/landbouw/<code>/`; `OPDRACHT.md` kopiëren en aanpassen (land, zoektermen in de landstaal, lidmaatschap van de landelijke zoobond).
 3. **Onderzoek** met agenten, elk een eigen voorvoegsel en hulpmap: lijsten (officieel, zoobond, EAZA, Zootierliste per soort), 4–5 regio’s, opvang/particulieren/circussen. Daarna vervolgagenten voor gaten (vergelijk met de officiële lijst en Zootierliste) en zwakke vermeldingen. Afbakening die de gebruiker moet beslissen (circussen, particulieren zonder vergunning) vooraf voorleggen.
-4. **Sjabloon**: neem `cz/cz_basis.html` (of `dk/dk_basis.html`), hernoem de taal in de code (`l-cs` → `l-xx`, `SPCS` → `SPXX`, `CSD` → `XXD`, `R1CS` …, `"cs"`, `html.cs`, ids `-cs`) met een script, en laat een vertaalagent de vaste teksten (niet de landblokken) naar de nieuwe taal vertalen.
+4. **Sjabloon**: neem `cz/cz_basis.html` (of `dk/dk_basis.html`; voor Zweden is dit gescript in `se/tools/basis_omzetten.py`, ook `html:not(.cs)` hernoemen), hernoem de taal in de code (`l-cs` → `l-xx`, `SPCS` → `SPXX`, `CSD` → `XXD`, `R1CS` …, `"cs"`, `html.cs`, ids `-cs`) met een script, en laat een vertaalagent de vaste teksten (niet de landblokken) naar de nieuwe taal vertalen.
 5. **Gedeelde lagen**: een agent zet taal en land in `test_ontwerp.py`, `nieuw_ontwerp.py`, `huisstijl.py`, `jungle.py`, `locatietypes.js/json`, `taalmenu.js` (achteraan in elke talenlijst; zie de commits van Deens en Tsjechisch). Zelf: `bouw.py` (`F`, `LAND`, `NOTE`, `RPTXT`, `GTAAL`, `CTRY`, landenlijsten in titels), `startdata.py` (`GTAAL`), `start.html` (regex-landenlijsten, `C`, `ORDER`, `FLAG`, `LBL`, kaartlijsten, `D.<code>.poly`, landenlijsten in zeven talen, eventueel `FULL`/viewBox en buurlanden `NBR`).
 6. **Kaart**: `python3 bron/landbouw/kaart_maken.py <map> <LANDCODE> <2|3> lon0 lat0 lon1 lat1 BUREN` (GISCO NUTS 2024, 1:3 miljoen; vereist `pip install shapely`). Het script print de waarden voor `LON0`, `LAT0`, `KX` en de randen in `gen.py`. Voor de regio van elke locatie: `merge.py` (punt-in-polygoon op dezelfde NUTS-bestanden).
 7. **Gegevens**: `merge.py` → `patch.py` (redactie) → `gen.py` → ontbrekende vertalingen laten vertalen (`*_ontbreekt.json` → `<taal>.json`, `bron_vert.json`) → `gen.py` opnieuw.

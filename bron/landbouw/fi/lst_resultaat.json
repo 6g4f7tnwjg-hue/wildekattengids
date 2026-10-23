@@ -1,0 +1,312 @@
+{
+ "locaties": [],
+ "zonder_katten": [
+  {
+   "naam": "Maretarium",
+   "plaats": "Kotka",
+   "reden": {
+    "nl": "Aquarium (Oostzee- en zoetwatervissen); geen katachtigen. Volgens Zootierliste nooit katten (23-10-2026).",
+    "en": "Aquarium (Baltic and freshwater fish); no cats. Zootierliste lists no cats ever (23-10-2026)."
+   }
+  },
+  {
+   "naam": "Sea Life Helsinki",
+   "plaats": "Helsinki",
+   "reden": {
+    "nl": "Aquarium; geen katachtigen (Zootierliste 23-10-2026).",
+    "en": "Aquarium; no cats (Zootierliste 23-10-2026)."
+   }
+  },
+  {
+   "naam": "Särkänniemen akvaario",
+   "plaats": "Tampere",
+   "reden": {
+    "nl": "Aquarium; geen katachtigen (Zootierliste 23-10-2026).",
+    "en": "Aquarium; no cats (Zootierliste 23-10-2026)."
+   }
+  },
+  {
+   "naam": "Tropicario",
+   "plaats": "Helsinki",
+   "reden": {
+    "nl": "Tropisch dierenhuis (reptielen, amfibieën); geen katachtigen (Zootierliste 23-10-2026).",
+    "en": "Tropical animal house (reptiles, amphibians); no cats (Zootierliste 23-10-2026)."
+   }
+  },
+  {
+   "naam": "Visenttipuisto",
+   "plaats": "Kuusamo",
+   "reden": {
+    "nl": "Alleen wisenten (1 soort volgens fi.wikipedia); geen katachtigen.",
+    "en": "Only European bison (1 species per fi.wikipedia); no cats."
+   }
+  },
+  {
+   "naam": "Hirvikartano",
+   "plaats": "Jämsä",
+   "reden": {
+    "nl": "Elandenpark (3 soorten volgens fi.wikipedia); geen katachtigen bekend.",
+    "en": "Moose park (3 species per fi.wikipedia); no cats known."
+   }
+  }
+ ],
+ "open_punten": [
+  "Er bestaat geen openbare officiële lijst van vergunde dierentuinen. Ruokavirasto (pagina 'Eläinnäyttelyt, eläintarhat ja sirkukset', bijgewerkt 03-03-2026) noemt geen lijst; het register (693/2023 § 'rekisteri') is niet openbaar. Als vervanging: Yle 09-07-2025 ('12 eläintarhaa') + de tabel op fi.wikipedia 'Eläintarha' die daarop steunt. Wie vergunningen geeft: tot eind 2025 de AVI's, sinds 1-1-2026 Ruokavirasto (wetswijziging 639/2025 van 693/2023). Een WOB/tietopyyntö bij Ruokavirasto zou de echte lijst opleveren.",
+  "Telling '12 eläintarhaa' (Yle 2025) is niet per naam door Yle gegeven; de 12 namen komen uit fi.wikipedia. Zoolandia (Lieto) staat zowel bij eläintarhat als bij eläinpuistot/-näyttelyt: mogelijk inmiddels pysyvä eläinnäyttely.",
+  "Kuusamon Suurpetokeskus: AVI trok de dierentuinvergunning in sept. 2022 in; de hallinto-oikeus (Pohjois-Suomi) vernietigde dat besluit (MTV, ca. 2023). Openingsstatus en of er nog lynxen zijn: door locatie-agent nagaan (ZTL laatst 2018).",
+  "EAZA (strapi.eaza.net, 23-10-2026): Ähtäri Zoo staat nu als 'Conditional Member' (record bijgewerkt 13-10-2026); Korkeasaari en Ranua 'Full member'.",
+  "SEY: geen eigen website/ledenlijst gevonden; ledenlijst uit fi.wikipedia (stand 2024, gebaseerd op Korkeasaari 01-04-2022 en Ähtäri-nieuws). Ähtäri-site gaf alleen een botcontrole. Wikipedia noemt bij Ähtäri-bericht 'Ranua Resort' i.p.v. Ranuan eläinpuisto (zelfde exploitant).",
+  "Zootierliste-gegevens voor Finland zijn grotendeels oud (veel 'laatst gezien' 2017–2019); alleen Korkeasaari (leeuw 2025, manoel 2025, sneeuwluipaard 2024) en Ranua (Amoer-luipaardkat 2023) hebben recente bronnen. Nooit als enige bron gebruiken.",
+  "Zootierliste vermeldt een margay (Yucatán, 0,1) achter de schermen in Korkeasaari (11/2022) – nagaan of hij nog leeft en zichtbaar is.",
+  "Ysitien lemmikki (Leppälahti): gemeente/maakunta niet gecontroleerd (vermoedelijk Laukaa, Keski-Suomi).",
+  "Geen bekende recente gevallen in het nieuws van particulier gehouden grote katten of servals in Finland gevonden (alleen een onbevestigde forumpost over een ontsnapte serval).",
+  "Åland (Ahvenanmaa): geen instellingen met katten gevonden in EAZA/SEY/SDF/Zootierliste."
+ ],
+ "lijsten": {
+  "officieel": {
+   "url": "https://yle.fi/a/74-20171451 (telling) + https://fi.wikipedia.org/wiki/El%C3%A4intarha (namen, tabel 'Nykyiset eläintarhat'); Ruokavirasto-pagina: https://www.ruokavirasto.fi/elaimet/elainten-hyvinvointi/elainsuojelu-pitopaikoissa/elainnayttelyt-elaintarhat-ja-sirkukset/",
+   "titel": "Geen openbare officiële lijst. Vervanging: Yle 'Laki eläinten hyvinvoinnista muuttui, ja seuraukset näkyvät nyt eläintarhoilla' (enquête bij regionale hoofddierenartsen/AVI) + fi.wikipedia-tabel 'Nykyiset eläintarhat'",
+   "datum": "09-07-2025 (Yle); Ruokavirasto-pagina bijgewerkt 03-03-2026",
+   "aantal": 12,
+   "namen": [
+    "Kiteen eläinpuisto (Kitee)",
+    "Korkeasaaren eläintarha (Helsinki)",
+    "Kuusamon Suurpetokeskus (Kuusamo)",
+    "Lomamäen lemmikkipuisto (Inkoo)",
+    "Maretarium (Kotka)",
+    "Merimaailma Sea Life Helsinki (Helsinki)",
+    "Ranuan eläinpuisto (Ranua)",
+    "Särkänniemen akvaario (Tampere)",
+    "Tropicario (Helsinki)",
+    "Visenttipuisto (Kuusamo)",
+    "Zoolandia (Lieto)",
+    "Ähtärin eläinpuisto (Ähtäri)"
+   ]
+  },
+  "eaza": [
+   "Korkeasaari Zoo (Helsinki) – Full member",
+   "Ranua Wildlife Park (Ranua) – Full member",
+   "Ähtäri Zoo (Ähtäri) – Conditional Member (bijgewerkt 13-10-2026)"
+  ],
+  "eaza_bron": "https://strapi.eaza.net/api/members (alle 456 leden, 5 pagina's, gefilterd op Country=FI/AX), opgehaald 23-10-2026",
+  "sey": [
+   "Korkeasaaren eläintarha",
+   "Luonnonvarakeskus (Luke)",
+   "Maretarium",
+   "Ranuan eläinpuisto (Ranua Resort)",
+   "Ravintola Hirvikartano",
+   "Sea Life Helsinki",
+   "Särkänniemi",
+   "Tropicario",
+   "Ähtärin eläinpuisto"
+  ],
+  "sey_bron": "https://fi.wikipedia.org/wiki/Suomen_el%C3%A4intarhayhdistys ('Nykyisin (2024)'; laatste bewerking 02-09-2026), op basis van Korkeasaari 01-04-2022 en Ähtäri Zoo-nieuws; SEY is een niet-geregistreerd netwerk zonder eigen site",
+  "sdf": [
+   "Korkeasaari Zoo Högholmen (Helsinki)"
+  ],
+  "sdf_bron": "https://djurparksforeningen.se/medlemmar/ (pagina 29-10-2025, opgehaald 23-10-2026); 15 leden, enige Finse: Korkeasaari (lid sinds 2021, Korkeasaari 05-03-2021)",
+  "circus": "Wilde katten mogen in Finland NIET in circussen of rondreizende dierenshows. Laki eläinten hyvinvoinnista 693/2023 (in werking 1-1-2024) § 8 lid 2 + bijlage 1 punt 2: in circussen en rondreizende shows alleen tamme hond, kat, geit, varken, paard, ezel (en kruisingen), rat, muis, cavia, konijn, goudhamster (Finlex, geraadpleegd 23-10-2026). Dieren die vóór 1-1-2024 al in bezit waren mogen tot hun dood blijven (overgangsbepaling). Ruokavirasto-tabel 'Eläinlajikohtaiset pitovaatimukset pitomuodoittain' (16-07-2025): 'Kissaeläimet (pl. kesykissa)' en 'Ilves': 'Ei saa pitää kiertävässä eläinnäyttelyssä / Ei saa pitää sirkuksessa'. Ook in dierentuinen mogen wilde dieren niet in shows met aangeleerde kunstjes optreden. Vergunning voor dierentuin/expositie/circus: sinds 1-1-2026 Ruokavirasto (wijziging 639/2025), daarvoor de AVI's. Bronnen: https://www.finlex.fi/fi/laki/ajantasa/2023/20230693 ; https://www.ruokavirasto.fi/globalassets/liite_elainlajien-vaatimukset-taulukko_luvanvarainen-elaintenpito.pdf",
+  "particulier": "693/2023 § 8: als huisdier mogen alleen soorten van een positieve lijst (valtioneuvoston asetus) worden gehouden; Ruokavirasto kan per geval uitzondering geven. Voor huisdieren is die lijst nog niet vastgesteld (stand 2025, o.a. Kaijuli); wie een dier buiten de lijsten hield moest dat binnen 6 maanden na 1-1-2024 bij Ruokavirasto melden ('Ilmoitus eläimen hallussapidosta', pagina 24-03-2026: 'Vain listalla oleviin eläinlajeihin kuuluvia eläimiä saa pitää'; voor een wild dier is een vergunning van ELY-keskus of Riistakeskus nodig). Lynx: beschermd (Habitatrichtlijn) en wild onder jachtwet; bezit alleen met vergunning. Grote katten vallen onder CITES/EU 338/97; Ruokavirasto geeft in principe geen invoervergunning voor wilde dieren als huisdier. Hybriden: invoer van F1–F4-kruisingen van huiskat met wilde kat (bv. Savannah F1–F4) is verboden (Eläintieto.fi, 'Seura- ja harrastuseläinten hyvinvointi', ongedateerd ca. 2021); Bengaal (verder dan F4) is gewoon huiskat. Opvang: zorg voor hulpbehoevende wilde dieren is meldingsplichtig (693/2023 § 61); niet-vrij te laten dieren mogen alleen naar een dierentuin, anders inslapen – er is geen opvangcentrum voor uitheemse katachtigen. Bekende gevallen: geen in het nieuws gevonden. Bronnen: https://www.finlex.fi/fi/laki/ajantasa/2023/20230693 ; https://www.ruokavirasto.fi/elaimet/elaintenpidon-luvat-ja-ilmoitukset/ilmoitus-elaimen-hallussapidosta/ ; https://www.elaintieto.fi/reports/elainten-hyvinvointi-suomessa-raportti-julkaistaan-osissa-vuoden-2021-aikana/seura-ja-harrastuselainten-hyvinvointi/",
+  "zootierliste_bron": "zootierliste.de, Felidae-soortpagina's (Aktuelle + Ehemalige Haltungen), opgehaald 23-10-2026"
+ },
+ "alle_instellingen": [
+  {
+   "naam": "Korkeasaaren eläintarha (Korkeasaari Zoo / Högholmen)",
+   "plaats": "Helsinki",
+   "maakunta": "Uusimaa",
+   "bron": "officieel/eaza/sey/sdf/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Leeuw – Aziatisch (P. l. leo, voorheen P. l. persica) (laatst gezien 2025; ZTL: kater 'Tarak' uit Schwerin 10/2025)",
+    "Tijger – Amoer (laatst gezien 2022; ZTL: nakweek 2022)",
+    "Luipaard – Amoer (P. p. orientalis) (laatst gezien 2021; ZTL: poes 'Inga' uit Wenen 2020)",
+    "Sneeuwluipaard – — (laatst gezien 2024; ZTL: 0,2 uit Basel 2024)",
+    "Manoel – Mongools/Siberisch (O. m. manul) (laatst gezien 2025; ZTL: bestand 02/2025 2,1, nakweek 2024)",
+    "Bengaalse kat – Amoer (P. b. euptilura) (laatst gezien 2020; ZTL: sinds 2019, eerste kweek 2020)",
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (laatst gezien 2018)",
+    "Europese wilde kat – onbekend (laatst gezien 2018)",
+    "Margay – Yucatán (volgens ZTL) (laatst gezien 2022; 0,1 achter de schermen)",
+    "EERDER Bengaalse kat – onbekend (jaren 1960 tot ca. 2002; nakweek 2000)",
+    "EERDER Leeuw – onbekend (vanaf 1935; laatst 1992, 0,2)",
+    "EERDER Aziatische goudkat – onbekend (1965–1990)",
+    "EERDER Cheetah – Zuidelijk (A. j. jubatus) (1970–1980)",
+    "EERDER Cheetah – onbekend (jaren 1960, bron 1968)",
+    "EERDER Luipaard – Noord-Chinees (volgens ZTL) (1972–1976)",
+    "EERDER Luipaard – onbekend, incl. zwarte panter (jaren 1960, bron 1968)",
+    "EERDER Nevelpanter – Indochinees (volgens ZTL) (1967–1971)",
+    "EERDER Jaguar – onbekend (jaren 1960, bron 1968)",
+    "EERDER Poema – onbekend (vanaf 1954, bron 1968)",
+    "EERDER Canadese lynx – onbekend (jaren 1960, bron 1968)",
+    "EERDER Caracal – onbekend (jaren 1960, bron 1968)",
+    "EERDER Ocelot – onbekend (jaren 1960, bron 1968)",
+    "EERDER Noordelijke tijgerkat (oncilla) – onbekend (jaren 1960, bron 1968)",
+    "EERDER Margay – onbekend (1971–1972)",
+    "EERDER Moeraskat – onbekend (jaren 1960, bron 1968)",
+    "EERDER Afrikaanse wilde kat – Zuidwest-Afrikaans (volgens ZTL) (jaren 1960, bron 1968)",
+    "EERDER Serval – onbekend (geen jaartal in ZTL)"
+   ]
+  },
+  {
+   "naam": "Ranuan eläinpuisto (Ranua Zoo / Ranua Wildlife Park)",
+   "plaats": "Ranua",
+   "maakunta": "Lappi",
+   "bron": "officieel/eaza/sey/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (laatst gezien 2017)",
+    "Bengaalse kat – Amoer (P. b. euptilura) (laatst gezien 2023; ZTL: sinds 2023)",
+    "EERDER Manoel – Mongools/Siberisch (O. m. manul) (2013–2023; kater uit Banham, overleden 2023)"
+   ]
+  },
+  {
+   "naam": "Ähtärin eläinpuisto (Ähtäri Zoo)",
+   "plaats": "Ähtäri (Inha)",
+   "maakunta": "Etelä-Pohjanmaa",
+   "bron": "officieel/eaza/sey/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (laatst gezien 2017)",
+    "Sneeuwluipaard – — (laatst gezien 2021; ZTL: bestand 10/2021 1,1)"
+   ]
+  },
+  {
+   "naam": "Kiteen eläinpuisto (Kitee Zoo)",
+   "plaats": "Kitee (Puhos)",
+   "maakunta": "Pohjois-Karjala",
+   "bron": "officieel/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (laatst gezien 2019)",
+    "EERDER Europese wilde kat – onbekend (laatste bron 2019)"
+   ]
+  },
+  {
+   "naam": "Kuusamon Suurpetokeskus",
+   "plaats": "Kuusamo (Keskiranta)",
+   "maakunta": "Pohjois-Pohjanmaa",
+   "bron": "officieel/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (laatst gezien 2018)"
+   ]
+  },
+  {
+   "naam": "Lomamäen lemmikkipuisto",
+   "plaats": "Inkoo",
+   "maakunta": "Uusimaa",
+   "bron": "officieel",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Maretarium",
+   "plaats": "Kotka",
+   "maakunta": "Kymenlaakso",
+   "bron": "officieel/sey",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Sea Life Helsinki (Merimaailma)",
+   "plaats": "Helsinki",
+   "maakunta": "Uusimaa",
+   "bron": "officieel/sey",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Särkänniemi (akvaario; ook Koiramäki)",
+   "plaats": "Tampere",
+   "maakunta": "Pirkanmaa",
+   "bron": "officieel/sey",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Tropicario",
+   "plaats": "Helsinki",
+   "maakunta": "Uusimaa",
+   "bron": "officieel/sey",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Visenttipuisto",
+   "plaats": "Kuusamo",
+   "maakunta": "Pohjois-Pohjanmaa",
+   "bron": "officieel",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Eläinmaa Zoolandia",
+   "plaats": "Lieto",
+   "maakunta": "Varsinais-Suomi",
+   "bron": "officieel",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Hirvikartano",
+   "plaats": "Jämsä",
+   "maakunta": "Keski-Suomi",
+   "bron": "sey",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Luonnonvarakeskus (Luke) – geen bezoekerspark",
+   "plaats": "—",
+   "maakunta": "—",
+   "bron": "sey",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Haltialan kotieläintila",
+   "plaats": "Helsinki",
+   "maakunta": "Uusimaa",
+   "bron": "wikipedia (pysyvä eläinnäyttely/kotieläinpiha)",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Heinolan lintutarhat",
+   "plaats": "Heinola",
+   "maakunta": "Päijät-Häme",
+   "bron": "wikipedia",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Kuopion eläinpuisto",
+   "plaats": "Kuopio",
+   "maakunta": "Pohjois-Savo",
+   "bron": "wikipedia",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Orimattilan kotieläinpuisto",
+   "plaats": "Orimattila",
+   "maakunta": "Päijät-Häme",
+   "bron": "wikipedia",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Elämyspiha PikkuKili",
+   "plaats": "Lieksa",
+   "maakunta": "Pohjois-Karjala",
+   "bron": "wikipedia; eläintarhalupa ingetrokken (Yle 09-07-2025)",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Ysitien lemmikki",
+   "plaats": "Leppälahti",
+   "maakunta": "Keski-Suomi (te controleren)",
+   "bron": "wikipedia",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Suvenniemen Eläintieteellinen asema (gesloten 1939)",
+   "plaats": "Kajaani (Kuluntalahti)",
+   "maakunta": "Kainuu",
+   "bron": "zootierliste (historisch)",
+   "katten_volgens_zootierliste": [
+    "EERDER Euraziatische lynx – Noordelijk (L. l. lynx) (1928)",
+    "EERDER Cheetah – onbekend (vóór 1939, poes 'Suzie')",
+    "EERDER Luipaard – onbekend (vóór 1939)"
+   ]
+  },
+  {
+   "naam": "Kukka- ja eläinpuisto Escurial (gesloten 2023)",
+   "plaats": "Liminga",
+   "maakunta": "Pohjois-Pohjanmaa",
+   "bron": "wikipedia (historisch)",
+   "katten_volgens_zootierliste": []
+  }
+ ]
+}

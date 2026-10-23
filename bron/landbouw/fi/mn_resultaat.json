@@ -1,0 +1,255 @@
+{
+  "locaties": [
+    {
+      "naam": "Ähtärin eläinpuisto (Ähtäri Zoo / MesiZoo)",
+      "plaats": "Ähtäri",
+      "maakunta": "Etelä-Pohjanmaa",
+      "lon": 24.18,
+      "lat": 62.54,
+      "type": "Dierentuin",
+      "lidmaatschap": [
+        "EAZA"
+      ],
+      "url": "https://mesizoo.fi/",
+      "uren": {
+        "nl": "Niet het hele jaar open. Herfstvakantie 10–25-10-2026 dagelijks 10–18 uur; daarna alleen op groepsreservering, kerstmarkt 12-12-2026 10–18 uur, krokusvakantie (week 8–10) 10–16 uur (eigen site, gezien 23-10-2026). Zomertijden 2026 niet gevonden.",
+        "en": "Not open all year. Autumn holiday 10–25 Oct 2026 daily 10:00–18:00; afterwards only by group booking, Christmas market 12 Dec 2026 10:00–18:00, winter holiday (weeks 8–10) 10:00–16:00 (own website, seen 23-10-2026). Summer 2026 hours not found."
+      },
+      "about": {
+        "nl": "Oudste natuurlijke dierenpark van Finland (1973), met vooral noordelijke dieren in ruime bosverblijven. Het bedrijf ging in oktober 2025 failliet en het park sloot op 26-10-2025; de vereniging Vieraile ja Välität ry bleef voor de dieren zorgen en sinds 2026 runt MesiZoo Oy het park weer, met openingen in vakanties. De reuzenpanda’s gingen eind 2024 terug naar China.",
+        "en": "Finland’s oldest naturalistic zoo (1973), mainly northern species in large forest enclosures. The company went bankrupt in October 2025 and the park closed on 26 Oct 2025; the association Vieraile ja Välität ry kept caring for the animals and since 2026 MesiZoo Oy runs the park again, opening in holiday periods. The giant pandas returned to China at the end of 2024."
+      },
+      "earlier": {
+        "nl": "Sneeuwluipaarden sinds 2003 (eerste fok 2006). Kater Jamal (geb. 2015, uit Great Yarmouth) overleed in 2023 (eigen site 19-06-2023). Poes Juma werd in het voorjaar van 2024 aan Vallu gekoppeld (eigen site 19-04-2024), maar de soortpagina noemt nu alleen Vallu.",
+        "en": "Snow leopards since 2003 (first breeding 2006). Male Jamal (born 2015, from Great Yarmouth) died in 2023 (own website 19-06-2023). Female Juma was paired with Vallu in spring 2024 (own website 19-04-2024), but the species page now names only Vallu."
+      },
+      "katten": [
+        {
+          "soort": "Sneeuwluipaard",
+          "ondersoort": "—",
+          "status": "g",
+          "toelichting": {
+            "nl": "Kater Vallu (in Korkeasaari ‘Lux’ genoemd) kwam in 2024 uit Korkeasaari. Tijdens de avondevenementen van de herfstvakantie 2026 waren er rondleidingen bij de sneeuwluipaard.",
+            "en": "Male Vallu (called ‘Lux’ at Korkeasaari) came from Korkeasaari in 2024. Guided talks at the snow leopard were held during the autumn holiday evening events of 2026."
+          },
+          "aantal": {
+            "nl": "1 (kater Vallu)",
+            "en": "1 (male Vallu)"
+          },
+          "bron": "Eigen site soortpagina lumileopardi (ongedateerd, gezien 23-10-2026); eigen site ‘Syyslomalla tapahtuu!’ 17-09-2026; eigen site 19-04-2024; Zootierliste (aanvullend)"
+        },
+        {
+          "soort": "Euraziatische lynx",
+          "ondersoort": "onbekend",
+          "status": "g",
+          "toelichting": {
+            "nl": "Lynxverblijf sinds de opening in 1973; er zijn ook gevonden weeswelpen opgenomen. Lynxen genoemd in de vakantieberichten van februari en maart 2026.",
+            "en": "Lynx enclosure since the opening in 1973; orphaned wild cubs have also been taken in. Lynx mentioned in the holiday posts of February and March 2026."
+          },
+          "aantal": {
+            "nl": "onbekend",
+            "en": "unknown"
+          },
+          "bron": "Eigen site soortpagina ilves (ongedateerd, gezien 23-10-2026); eigen site 17-02-2026 en 06-03-2026; Zootierliste (aanvullend)"
+        }
+      ],
+      "geboortes": [],
+      "kleur": ""
+    },
+    {
+      "naam": "Ranuan eläinpuisto (Ranua Wildlife Park, Ranua Resort)",
+      "plaats": "Ranua",
+      "maakunta": "Lappi",
+      "lon": 26.463,
+      "lat": 65.941,
+      "type": "Dierentuin",
+      "lidmaatschap": [
+        "EAZA"
+      ],
+      "url": "https://ranuaresort.com/elainpuisto/",
+      "uren": {
+        "nl": "Dagelijks open, het hele jaar; nu 10–16 uur (eigen site, gezien 23-10-2026). In de zomer langer, met enkele avondopeningen (‘Iltavillit’).",
+        "en": "Open daily all year; currently 10:00–16:00 (own website, seen 23-10-2026). Longer in summer, with some evening openings (‘Iltavillit’)."
+      },
+      "about": {
+        "nl": "Noordelijkste dierentuin van Finland met ongeveer 50 noordelijke en arctische soorten, waaronder de enige ijsberen van Finland. ‘Tiger Park’ is een klimpark voor kinderen, geen tijgerverblijf.",
+        "en": "Finland’s northernmost zoo with about 50 northern and Arctic species, including Finland’s only polar bears. ‘Tiger Park’ is a children’s climbing park, not a tiger enclosure."
+      },
+      "earlier": {
+        "nl": "",
+        "en": ""
+      },
+      "katten": [
+        {
+          "soort": "Euraziatische lynx",
+          "ondersoort": "onbekend",
+          "status": "g",
+          "toelichting": {
+            "nl": "Lynxen in het EEP; in Ranua geboren lynxen gingen naar het herintroductieproject in de Harz (Duitsland). Zomer 2026: dierpresentatie bij de lynx op ma, do en za om 11.45 uur.",
+            "en": "Lynx in the EEP; lynx born at Ranua went to the reintroduction project in the Harz (Germany). Summer 2026: lynx talk on Mon, Thu and Sat at 11:45."
+          },
+          "aantal": {
+            "nl": "3 (Qatinka, Lusija en Jakobine)",
+            "en": "3 (Qatinka, Lusija and Jakobine)"
+          },
+          "bron": "Eigen site soortpagina ilves (bijgewerkt 21-07-2025); eigen site zomerprogramma 2026 (25-05-2026, 10-07-2026); Ranua Resort Retkiesite 2026 (PDF, 12-2025)"
+        },
+        {
+          "soort": "Bengaalse kat",
+          "ondersoort": "Amoer (P. b. euptilura)",
+          "status": "g",
+          "toelichting": {
+            "nl": "Op de site ‘amurinleopardikissa’, Prionailurus bengalensis euptilurus (Amoerkat). Volgens Zootierliste sinds 2023 in Ranua.",
+            "en": "Listed as ‘amurinleopardikissa’, Prionailurus bengalensis euptilurus (Amur leopard cat). According to Zootierliste at Ranua since 2023."
+          },
+          "aantal": {
+            "nl": "onbekend",
+            "en": "unknown"
+          },
+          "bron": "Eigen site soortpagina amurinleopardikissa (bijgewerkt 21-07-2025); eigen site ‘Onnenpäiviä koko perheelle’ 23-05-2025; Zootierliste (aanvullend, ‘seit 2023’)"
+        }
+      ],
+      "geboortes": [],
+      "kleur": ""
+    },
+    {
+      "naam": "Kuusamon Suurpetokeskus",
+      "plaats": "Kuusamo",
+      "maakunta": "Pohjois-Pohjanmaa",
+      "lon": 29.133,
+      "lat": 65.685,
+      "type": "Dierenpark",
+      "lidmaatschap": [],
+      "url": "https://kuusamon-suurpetokeskus.fi/",
+      "uren": {
+        "nl": "Zomerseizoen; in 2026 open sinds 07-07-2026, vanaf 10 uur, alleen met gids (rondleidingen elk uur) (eigen site, gezien 23-10-2026). Sluitingsdatum van het seizoen niet vermeld.",
+        "en": "Summer season; in 2026 open since 7 July 2026, from 10:00, guided visits only (tours every hour) (own website, seen 23-10-2026). Season end not stated."
+      },
+      "about": {
+        "nl": "Particulier roofdierpark, begonnen in de jaren 90 als opvang voor verweesde berenwelpen; vooral beren, verder lynxen, rendieren, een vos en wolfhonden. Het park was in 2022–2023 dicht na ingrijpen van de overheid; in 2025 werden de eigenaar en de toenmalige directeur veroordeeld voor dierenmishandeling van een berenwelp, en in 2026 traden directeur en bestuur af (Yle 07-07-2026).",
+        "en": "Private predator park, started in the 1990s as a refuge for orphaned bear cubs; mainly bears, plus lynx, reindeer, a fox and wolfdogs. The park was closed in 2022–2023 after action by the authorities; in 2025 the owner and the then managing director were convicted of an animal welfare offence involving a bear cub, and in 2026 the director and board resigned (Yle 07-07-2026)."
+      },
+      "earlier": {
+        "nl": "",
+        "en": ""
+      },
+      "katten": [
+        {
+          "soort": "Euraziatische lynx",
+          "ondersoort": "onbekend",
+          "status": "r",
+          "toelichting": {
+            "nl": "Lynxen staan op de eigen site; het terrein is alleen met een gids te bezoeken.",
+            "en": "Lynx are listed on the park’s website; the grounds can only be visited on a guided tour."
+          },
+          "aantal": {
+            "nl": "onbekend (meerdere)",
+            "en": "unknown (several)"
+          },
+          "bron": "Eigen site voorpagina en ‘Eläimet’ (gezien 23-10-2026); Yle 31-07-2024; Kaleva/STT 09-04-2024; Zootierliste (aanvullend)"
+        }
+      ],
+      "geboortes": [],
+      "kleur": ""
+    },
+    {
+      "naam": "Kiteen Eläinpuisto (Kitee Zoo)",
+      "plaats": "Kitee (Puhos)",
+      "maakunta": "Pohjois-Karjala",
+      "lon": 29.898,
+      "lat": 62.045,
+      "type": "Dierenpark",
+      "lidmaatschap": [],
+      "url": "https://kiteezoo.fi/",
+      "uren": {
+        "nl": "Zomerseizoen 2026: 30-04 11–16 uur, 1-05 t/m 14-06 10–17 uur, 15-06 t/m 7-08 9–19 uur, 8-08 t/m 31-08 10–17 uur, 1-09 t/m 25-10 11–15 uur (Visit Rajamailla, gezien 23-10-2026). Winterperiode met afwijkende tijden en prijzen; eigen site was in onderhoud.",
+        "en": "Summer season 2026: 30 Apr 11:00–16:00, 1 May–14 Jun 10:00–17:00, 15 Jun–7 Aug 9:00–19:00, 8–31 Aug 10:00–17:00, 1 Sep–25 Oct 11:00–15:00 (Visit Rajamailla, seen 23-10-2026). Winter period with different hours and prices; the park’s own site was under maintenance."
+      },
+      "about": {
+        "nl": "Grootste particuliere dierenpark van Finland (sinds 1996, familie Keskimäki) bij vakantiecentrum Pajarinhovi, met ongeveer 50 soorten langs een bospad van 2 km, zoals beer, lynx, jaks en alpaca’s. In een persbericht van juni 2026 staat een ‘afrikankissa’ in het dierenhuis; welk dier dat is, is niet duidelijk.",
+        "en": "Finland’s largest private zoo (since 1996, Keskimäki family) at the Pajarinhovi holiday centre, with about 50 species along a 2 km forest trail, including bear, lynx, yaks and alpacas. A June 2026 press release mentions an ‘afrikankissa’ (‘African cat’) in the small-animal house; which animal that is remains unclear."
+      },
+      "earlier": {
+        "nl": "",
+        "en": ""
+      },
+      "katten": [
+        {
+          "soort": "Euraziatische lynx",
+          "ondersoort": "onbekend",
+          "status": "g",
+          "toelichting": {
+            "nl": "Lynxen langs de wandelroute.",
+            "en": "Lynx along the walking trail."
+          },
+          "aantal": {
+            "nl": "onbekend",
+            "en": "unknown"
+          },
+          "bron": "Visit Rajamailla parkpagina met seizoen 2026 (gezien 23-10-2026); Zootierliste (aanvullend, bezoek 2017, e-mail 2019)"
+        }
+      ],
+      "geboortes": [],
+      "kleur": ""
+    }
+  ],
+  "zonder_katten": [
+    {
+      "naam": "Kuopion eläinpuisto",
+      "plaats": "Kuopio (Vehmasmäki)",
+      "reden": {
+        "nl": "Kinderboerderij; geen wilde katachtigen op de dierenlijst, alleen huiskatten Maltti, Valtti en Mikki (eigen site 23-10-2026).",
+        "en": "Petting farm; no wild cats on the animal list, only domestic cats Maltti, Valtti and Mikki (own website 23-10-2026)."
+      }
+    },
+    {
+      "naam": "Kukka- ja eläinpuisto Escurial",
+      "plaats": "Liminka",
+      "reden": {
+        "nl": "Gesloten sinds 2024 (‘toistaiseksi suljettu’, eigen site 23-10-2026; Yrittäjät 15-04-2024).",
+        "en": "Closed since 2024 (‘closed until further notice’, own website 23-10-2026; Yrittäjät 15-04-2024)."
+      }
+    },
+    {
+      "naam": "PikkuKili (elämyspuisto)",
+      "plaats": "Lieksa (Kelvä)",
+      "reden": {
+        "nl": "Kinderboerderij/belevingspark met boerderijdieren; geen aanwijzing voor katachtigen gevonden (eigen site niet bereikbaar, 23-10-2026).",
+        "en": "Farm-animal petting park; no indication of wild cats found (own website unreachable, 23-10-2026)."
+      }
+    },
+    {
+      "naam": "Nordic Wildlife Care",
+      "plaats": "Mustasaari",
+      "reden": {
+        "nl": "Opvang voor wilde dieren, niet open voor publiek; lynxwelpen alleen tijdelijk in 2022 vermeld, geen recente aanwijzing (Yle 26-08-2025).",
+        "en": "Wildlife rehabilitation centre, not open to the public; lynx cubs only mentioned temporarily in 2022, no recent indication (Yle 26-08-2025)."
+      }
+    },
+    {
+      "naam": "Kuusamon visenttipuisto",
+      "plaats": "Kuusamo",
+      "reden": {
+        "nl": "Wisentpark (genoemd in MTV-overzicht 01-10-2022); geen katachtigen bekend, actuele status niet gevonden.",
+        "en": "European bison park (listed in MTV overview 01-10-2022); no cats known, current status not found."
+      }
+    },
+    {
+      "naam": "Kalajoen kotieläinpuisto / Toivosen kotieläinpuisto / Sinkkolan kotieläinpiha / Rukan kotieläinpiha Erä-Susi / Konijänkän kotieläinpiha / Ilonka / Eeron piha / Leskelän Mummon Hevospiha",
+      "plaats": "Kalajoki / Kälviä (Kokkola) / Joensuu / Ruka (Kuusamo) / Äkäslompolo (Kolari) / Ivalo (Inari) / Leppävirta / Juuka",
+      "reden": {
+        "nl": "Kinderboerderijen en boerderijbelevingen met huisdieren, husky’s en rendieren; geen wilde katachtigen bekend (Wikipedia-lijst kotieläinpuistot en toeristische sites, 23-10-2026).",
+        "en": "Petting farms and farm experiences with domestic animals, huskies and reindeer; no wild cats known (Wikipedia list of petting farms and tourism sites, 23-10-2026)."
+      }
+    }
+  ],
+  "open_punten": [
+    "Ähtäri: de soortpagina’s staan op een site die ‘wordt bijgewerkt’. De sneeuwluipaardpagina noemt alleen kater Vallu; wat er met poes Juma (gekoppeld in april 2024) is gebeurd, is niet gevonden (overleden of verhuisd?).",
+    "Ähtäri: zomeropeningstijden 2026 niet gevonden; EAZA-lidmaatschap na het faillissement (10-2025) en de doorstart met MesiZoo Oy (2026) niet bevestigd. De site noemt EAZA nog. Aantal lynxen onbekend.",
+    "Ranua: lidmaatschap van SEY niet bevestigd (de vereniging is in 2001 in Ranua opgericht). Aantal Amoerkatten onbekend; geen recente geboortes van katten gevonden.",
+    "Lynx-ondersoort: Zootierliste zet de lynxen van Ähtäri, Ranua, Kuusamo en Kitee onder ‘Europäischer Luchs’ (L. l. lynx), maar bij Ähtäri en Ranua staat ‘ohne UA-Angabe’; daarom overal ‘onbekend’ ingevuld.",
+    "Kitee: eigen site in onderhoud. Een persbericht van Pajarinhovi (kitee.fi, 23-06-2026) noemt een ‘afrikankissa’ in het dierenhuis. Dat kan een Afrikaanse wilde kat zijn, maar ook een huiskat of een tikfout (bijv. ‘afrikansiili’ = egel). Niet bevestigd, daarom niet opgenomen; nagaan bij het park.",
+    "Kuusamon Suurpetokeskus: eigen site (oktober 2026) zegt ‘lynxen’ zonder aantal; einde van het seizoen 2026 niet vermeld. Bezoek alleen met gids, daarom status r.",
+    "Geen andere dierenparken met katten gevonden in Etelä-Savo, Pohjois-Savo, Keski-Suomi, Pohjanmaa, Keski-Pohjanmaa en Kainuu (wel kinderboerderijen). Natuurcentra zoals Petola (Kuhmo) en kijkhutten voor wilde dieren tellen niet mee."
+  ]
+}

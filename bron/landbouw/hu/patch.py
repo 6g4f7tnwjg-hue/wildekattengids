@@ -70,6 +70,14 @@ LAB = {
  "Afrikaans (P. p. pardus) volgens eigen site": ("Afrikaans (P. p. pardus)", "African (P. p. pardus)"),
  "zwarte panter": ("onbekend, zwarte panter", "unknown, black panther"),
  "Maleis (P. t. jacksoni)": ("Maleis (P. t. jacksoni)", "Malayan (P. t. jacksoni)"),
+ "Maleis (P. t. tigris, voorheen P. t. jacksoni)": ("Maleis (P. t. tigris, voorheen P. t. jacksoni)", "Malayan (P. t. tigris, formerly P. t. jacksoni)"),
+ "Noord-Chinees (P. p. orientalis, voorheen P. p. japonensis)": ("Noord-Chinees (P. p. orientalis, voorheen P. p. japonensis)", "North Chinese (P. p. orientalis, formerly P. p. japonensis)"),
+ "Afrikaans (P. p. pardus)": ("Afrikaans (P. p. pardus)", "African (P. p. pardus)"),
+ "Zuidelijk (P. l. melanochaita), wit": ("Zuidelijk (P. l. melanochaita), wit", "Southern (P. l. melanochaita), white"),
+ "onbekend, incl. witte leeuw": ("onbekend, incl. witte leeuw", "unknown, incl. white lion"),
+ "onbekend, incl. witte leeuw (‘fehér krugeri’)": ("onbekend, incl. witte leeuw", "unknown, incl. white lion"),
+ "onbekend, incl. witte tijger": ("onbekend, incl. witte tijger", "unknown, incl. white tiger"),
+ "onbekend, zwarte panter": ("onbekend, zwarte panter", "unknown, black panther"),
  "onbekend, incl. witte leeuw (Zuidelijk, P. l. melanochaita)": ("Zuidelijk (P. l. melanochaita), incl. witte leeuw", "Southern (P. l. melanochaita), incl. white lion"),
  "Zuidelijk (A. j. jubatus)": ("Zuidelijk (A. j. jubatus)", "Southern (A. j. jubatus)"),
  "Noordelijk (L. l. lynx)": ("Noordelijk (L. l. lynx)", "Northern (L. l. lynx)"),
@@ -111,7 +119,7 @@ for z in Z:
     seen.add(k); ZZ.append(z)
 M["zonder_katten"] = ZZ
 M["checked"] = "23-10-2026"
-M["route"] = []
+M["route"] = ["Szegedi Vadaspark", "Zoo Budapest", "Szentendrei Kisállatkert", "Zoo Gyöngyös", "Sóstó Zoo"]
 json.dump(M, open(D + "hu_final.json", "w", encoding="utf8"), ensure_ascii=False, indent=1)
 CONF = set("gybr")
 for l in sorted(L, key=lambda l: l["regio"]):

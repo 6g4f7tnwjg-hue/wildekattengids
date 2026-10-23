@@ -14,6 +14,10 @@ for v in V1["locaties"]:   # vv1 levert volledige records
     v = copy.deepcopy(v); old = [i for i, l in enumerate(L) if l["naam"] == v["naam"]]
     if old: L[old[0]] = v
     else: L.append(v)
+# locaties zonder (overgebleven) katten naar "zonder katten"
+LEEG = [l for l in L if not l["katten"]]
+L = [l for l in L if l["katten"]]
+M["zonder_katten"] = M["zonder_katten"] + [{"naam": l["naam"], "plaats": l["plaats"], "reden": {"nl": "Geen katten meer bevestigd. " + (l.get("earlier") or {}).get("nl", ""), "en": "No cats confirmed any more. " + (l.get("earlier") or {}).get("en", "")}} for l in LEEG]
 for l in L:
     l["regio"] = regio(l.get("lon"), l.get("lat")); l.pop("woj", None); l.pop("_bron", None)
     if l["naam"] in V1.get("lidmaatschap", {}): l["lidmaatschap"] = V1["lidmaatschap"][l["naam"]]
@@ -29,8 +33,6 @@ E = {
  "Ogród Zoologiczny CANPOL": ("Zoo Canpol", "Sieroczyn (Człuchów)", "Dierenpark", ["gratis"]),
  "Akcent ZOO": ("Akcent Zoo", "Białystok", "Dierenpark", []),
  "Rezerwat Pokazowy Żubrów (Białowieski Park Narodowy)": ("Wisentreservaat Białowieża", "Białowieża", "Wildpark", []),
- "Lemur Park": ("Lemur Park", "Rumia", "Particuliere houder", []),
- "Park Edukacyjny Zoo-Egzotyczne Kaszuby": ("Zoo-Egzotyczne Kaszuby", "Tuchlino (Sierakowice)", "Particuliere houder", []),
  "ZOO Wrocław": ("Zoo Wrocław", "Wrocław", "Dierentuin", []),
  "Nowe Zoo (Ogród Zoologiczny w Poznaniu)": ("Nowe Zoo Poznań", "Poznań", "Dierentuin", []),
  "Ogród Zoologiczny w Opolu (Zoo Opole)": ("Zoo Opole", "Opole", "Dierentuin", []),
@@ -55,7 +57,6 @@ E = {
  "Farma Goławice – Mini Zoo": ("Farma Goławice", "Goławice Drugie (Pomiechówek)", "Particuliere houder", ["rondleiding"]),
  "Hacjenda Alpaka – Mini ZOO Nowy Sącz": ("Hacjenda Alpaka", "Ubiad (Chełmiec)", "Particuliere houder", ["rondleiding"]),
  "Mini Zoo Zaczarnie": ("Mini Zoo Zaczarnie", "Zaczarnie (Lisia Góra)", "Particuliere houder", []),
- "MiniZooPark Walim": ("MiniZooPark Walim", "Walim (Stara Kornica)", "Particuliere houder", []),
 }
 for old, (nm, pl, ty, lab) in E.items():
     l = loc(old); l["naam"], l["plaats"], l["type"], l["labels"] = nm, pl, ty, lab
@@ -107,7 +108,7 @@ for z in Z:
     seen.add(k); ZZ.append(z)
 M["zonder_katten"] = ZZ
 M["checked"] = "23-10-2026"
-M["route"] = []
+M["route"] = ["Zoo Kraków", "Śląski Ogród Zoologiczny", "Zoo Wrocław", "Zoo Romanówka", "Zoo Toruń"]
 json.dump(M, open(D + "pl_final.json", "w", encoding="utf8"), ensure_ascii=False, indent=1)
 CONF = set("gybr")
 for l in sorted(L, key=lambda l: l["regio"]):

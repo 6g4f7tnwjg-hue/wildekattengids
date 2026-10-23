@@ -20,8 +20,8 @@
     "en": "Poland's largest zoo by area (124 ha), in a wooded valley in Oliwa. Highlights: Poland's only sand cats (since 2015, breeding) and a Pallas's cat pair that bred in 2025."
    },
    "earlier": {
-    "nl": "Amoertijgers (Magda en Dominik; bij het verblijf nog in 2022 op eigen site; volgens Zootierliste tot 2024/begin 2025, geen soortpagina meer); Perzisch luipaard (tot ten minste 2024, Zootierliste); poema (tot ca. 2024, verblijf in 2025 naar de manoelen, Zootierliste); caracal (tot 2015, Zootierliste); Sumatraanse tijger (stamboek, jaar onbekend); sneeuwluipaard (1992–2006, Zootierliste).",
-    "en": "Amur tigers (Magda and Dominik; still on own site in 2022; per Zootierliste until 2024/early 2025, no species page now); Persian leopard (until at least 2024, Zootierliste); puma (until c. 2024, enclosure given to the Pallas's cats in 2025, Zootierliste); caracal (until 2015, Zootierliste); Sumatran tiger (studbook, year unknown); snow leopard (1992–2006, Zootierliste)."
+    "nl": "Amoertijgers (Magda en Dominik; bij het verblijf nog in 2022 op eigen site; volgens Zootierliste tot 2024/begin 2025, geen soortpagina meer); Perzisch luipaard (tot ten minste 2024, Zootierliste); poema (tot ca. 2024, verblijf in 2025 naar de manoelen, Zootierliste); caracal (tot 2015, Zootierliste); Sumatraanse tijger (stamboek, jaar onbekend); sneeuwluipaard (1992–2006, Zootierliste). Serval: 2 in 2020; laatst gezien 06/2024, in 05/2025 alleen een bord (Zootierliste); niet op de dierenlijst van de eigen site. Trojmiasto.pl meldde dat de zoo ‘opnieuw een serval’ verloor: poes Nala, een van de oudste servals in Europa (22 jaar volgens een Facebookvideo van de zoo); datum niet vastgesteld.",
+    "en": "Amur tigers (Magda and Dominik; still on own site in 2022; per Zootierliste until 2024/early 2025, no species page now); Persian leopard (until at least 2024, Zootierliste); puma (until c. 2024, enclosure given to the Pallas's cats in 2025, Zootierliste); caracal (until 2015, Zootierliste); Sumatran tiger (studbook, year unknown); snow leopard (1992–2006, Zootierliste). Serval: 2 in 2020; last seen 06/2024, only a sign in 05/2025 (Zootierliste); not on the zoo's own animal list. Trojmiasto.pl reported that the zoo lost ‘another serval’: female Nala, one of the oldest servals in Europe (22 years old according to a zoo Facebook video); date not established."
    },
    "katten": [
     {
@@ -125,24 +125,6 @@
      },
      "bron": "Eigen site soortpagina (gezien 23-10-2026); Zootierliste (bezoek 05/2025: gezien)",
      "twijfel": null
-    },
-    {
-     "soort": "Serval",
-     "ondersoort": "—",
-     "status": "w",
-     "toelichting": {
-      "nl": "Staat niet op de dierenlijst van de eigen site.",
-      "en": "Not on the zoo's own animal list."
-     },
-     "aantal": {
-      "nl": "onbekend (2 in 2020)",
-      "en": "unknown (2 in 2020)"
-     },
-     "bron": "Zootierliste (bezoek 06/2024 gezien; 05/2025 niet gezien, wel bord)",
-     "twijfel": {
-      "nl": "Alleen Zootierliste; bij bezoek in mei 2025 niet gezien en geen soortpagina op de eigen site.",
-      "en": "Zootierliste only; not seen on a May 2025 visit and no species page on the zoo's own site."
-     }
     }
    ],
    "geboortes": [
@@ -180,14 +162,47 @@
     "en": "May–Aug 9am–7pm; Sep 9am–6pm; Apr 9am–6pm; Oct and Mar 9am–5pm; Nov–Feb 9am–4pm. Closed Mondays Oct–Apr. Last entry 30 min before closing (own site, seen 23-10-2026)"
    },
    "about": {
-    "nl": "Dierentuin in het bos- en recreatiepark Myślęcinek, vooral gericht op Poolse dieren. In 2026 wordt een nieuw lynxcomplex met drie verblijven gebouwd (opening gepland najaar 2026).",
-    "en": "Zoo in the Myślęcinek forest and leisure park, focused mainly on Polish wildlife. A new lynx complex with three enclosures is being built in 2026 (opening planned autumn 2026)."
+    "nl": "Dierentuin in het bos- en recreatiepark Myślęcinek, oorspronkelijk gericht op Poolse dieren, sinds 2004 ook met exoten (ruim 1400 dieren, 200 soorten). In 2026 wordt een nieuw lynxcomplex met drie verblijven gebouwd (opening gepland najaar 2026).",
+    "en": "Zoo in the Myślęcinek forest and leisure park, originally focused on Polish wildlife, with exotic species since 2004 (over 1,400 animals, 200 species). A new lynx complex with three enclosures is being built in 2026 (opening planned autumn 2026)."
    },
    "earlier": {
-    "nl": "",
-    "en": ""
+    "nl": "Amoertijger Yardan-Altaj (sinds 2014, uit Emmen) stierf in november 2022 op 19-jarige leeftijd (Bydgoszcz Informuje 06-11-2022). Europese wilde kat: op oude soortpagina’s van de eigen site (2021–2022); Zootierliste zag in 09/2024 alleen nog een bord; geen bron 2025–2026. Serval: 1 kater in 2020, laatst gezien 09/2024 (Zootierliste). Poema: paar sinds 2017 met jongen in 2018–2019; in 09/2024 alleen een bord (Zootierliste).",
+    "en": "Amur tiger Yardan-Altaj (here since 2014, from Emmen) died in November 2022 aged 19 (Bydgoszcz Informuje 06-11-2022). European wildcat: on old species pages of the own website (2021–2022); in 09/2024 Zootierliste found only a sign; no 2025–2026 source. Serval: 1 male in 2020, last seen 09/2024 (Zootierliste). Puma: pair since 2017 with young in 2018–2019; in 09/2024 only a sign (Zootierliste)."
    },
    "katten": [
+    {
+     "soort": "Tijger",
+     "ondersoort": {
+      "nl": "Amoer",
+      "en": "Amur"
+     },
+     "status": "g",
+     "toelichting": {
+      "nl": "Tijgerin Ania (Amoertijger, sinds 2018, uit Zoo Kraków) is ‘de grootste attractie’ van de zoo; extra aandacht op Wereldtijgerdag 2025. Sinds de dood van kater Yardan-Altaj (november 2022) leeft zij alleen.",
+      "en": "Tigress Ania (Amur tiger, here since 2018, from Kraków Zoo) is the zoo's ‘biggest attraction’; special attention on World Tiger Day 2025. She has lived alone since male Yardan-Altaj died (November 2022)."
+     },
+     "aantal": {
+      "nl": "1 (tijgerin Ania)",
+      "en": "1 (tigress Ania)"
+     },
+     "bron": "TVP3 Bydgoszcz 29-07-2025; eigen site 24-07-2024; Bydgoszcz Informuje (2022)",
+     "twijfel": null
+    },
+    {
+     "soort": "Sneeuwluipaard",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Kater Buba (geboren ca. 2022 in Zoo Płock, hier sinds oktober 2023). In het voorjaar van 2026 kwam poes Kajla erbij; de twee leren elkaar nog door het hek kennen.",
+      "en": "Male Buba (born c. 2022 at Płock Zoo, here since October 2023). Female Kajla joined in spring 2026; the two are still getting acquainted through the fence."
+     },
+     "aantal": {
+      "nl": "2 (kater Buba en poes Kajla)",
+      "en": "2 (male Buba and female Kajla)"
+     },
+     "bron": "Bydgoszcz Informuje 27-04-2026; eigen site 19-10-2023",
+     "twijfel": null
+    },
     {
      "soort": "Euraziatische lynx",
      "ondersoort": {
@@ -196,108 +211,15 @@
      },
      "status": "g",
      "toelichting": {
-      "nl": "Nieuw lynxcomplex in aanbouw (EU-project, opening gepland najaar 2026). Lynxjong Lolek geboren 2022.",
-      "en": "New lynx complex under construction (EU project, opening planned autumn 2026). Lynx cub Lolek born 2022."
+      "nl": "Het paar Lala en Leon zit tijdelijk in een ander verblijf terwijl het nieuwe lynxcomplex met drie verblijven wordt gebouwd (EU-project, opening gepland najaar 2026). Lynxjong Lolek geboren 2022.",
+      "en": "The pair Lala and Leon is temporarily in another enclosure while the new lynx complex with three enclosures is built (EU project, opening planned autumn 2026). Lynx cub Lolek born 2022."
      },
      "aantal": {
-      "nl": "2 (kater Leo en poes Lala)",
-      "en": "2 (male Leo and female Lala)"
+      "nl": "2 (paar Lala en Leon)",
+      "en": "2 (pair Lala and Leon)"
      },
-     "bron": "Eigen site nieuws 13-01-2026, 28-01-2026, 15-05-2026",
+     "bron": "Eigen site nieuws 13-01-2026, 28-01-2026, 15-05-2026; Bydgoszcz Informuje 27-04-2026",
      "twijfel": null
-    },
-    {
-     "soort": "Tijger",
-     "ondersoort": {
-      "nl": "Amoer",
-      "en": "Amur"
-     },
-     "status": "w",
-     "toelichting": {
-      "nl": "'Tygrys syberyjski' op de eigen site.",
-      "en": "'Siberian tiger' on own site."
-     },
-     "aantal": {
-      "nl": "1 (tijgerin Ania) of meer",
-      "en": "1 (tigress Ania) or more"
-     },
-     "bron": "Eigen site 24-07-2024; Zootierliste (bezoek 09/2024 gezien)",
-     "twijfel": {
-      "nl": "Laatste concrete bron 2024; in 2025–2026 niet meer apart genoemd (wel 'Serca w Prążkach'-workshop over katten, feb 2025).",
-      "en": "Last concrete source 2024; not named separately in 2025–2026 (only a cat workshop 'Hearts in Stripes', Feb 2025)."
-     }
-    },
-    {
-     "soort": "Sneeuwluipaard",
-     "ondersoort": "—",
-     "status": "w",
-     "toelichting": {
-      "nl": "Kater Buba, geboren ca. 2022 in Zoo Płock, sinds oktober 2023 hier.",
-      "en": "Male Buba, born c. 2022 at Płock Zoo, here since October 2023."
-     },
-     "aantal": {
-      "nl": "1 (kater Buba)",
-      "en": "1 (male Buba)"
-     },
-     "bron": "Eigen site 19-10-2023 en 16-11-2023; Zootierliste (bezoek 09/2024 gezien)",
-     "twijfel": {
-      "nl": "Geen bron uit 2025–2026 gevonden.",
-      "en": "No 2025–2026 source found."
-     }
-    },
-    {
-     "soort": "Europese wilde kat",
-     "ondersoort": "—",
-     "status": "w",
-     "toelichting": {
-      "nl": "Op de soortenlijst van de eigen site.",
-      "en": "On the zoo's own species list."
-     },
-     "aantal": {
-      "nl": "onbekend (3 in 2020)",
-      "en": "unknown (3 in 2020)"
-     },
-     "bron": "Eigen site soortenlijst (ongedateerd, gezien 23-10-2026); Zootierliste (09/2024: bord, niet gezien)",
-     "twijfel": {
-      "nl": "Geen gedateerde bron uit 2025–2026.",
-      "en": "No dated 2025–2026 source."
-     }
-    },
-    {
-     "soort": "Serval",
-     "ondersoort": "—",
-     "status": "w",
-     "toelichting": {
-      "nl": "Niet op de eigen site vermeld.",
-      "en": "Not mentioned on the zoo's own site."
-     },
-     "aantal": {
-      "nl": "onbekend (1 kater in 2020)",
-      "en": "unknown (1 male in 2020)"
-     },
-     "bron": "Zootierliste (bezoek 09/2024 gezien)",
-     "twijfel": {
-      "nl": "Alleen Zootierliste, laatste bezoek 2024.",
-      "en": "Zootierliste only, last visit 2024."
-     }
-    },
-    {
-     "soort": "Poema",
-     "ondersoort": "—",
-     "status": "w",
-     "toelichting": {
-      "nl": "Niet op de eigen site vermeld; volgens Zootierliste paar sinds 2017 met jongen in 2018–2019.",
-      "en": "Not mentioned on the zoo's own site; per Zootierliste a pair since 2017 with young in 2018–2019."
-     },
-     "aantal": {
-      "nl": "onbekend (2 in 2020)",
-      "en": "unknown (2 in 2020)"
-     },
-     "bron": "Zootierliste (09/2024: bord, niet gezien)",
-     "twijfel": {
-      "nl": "Alleen Zootierliste; in 2024 niet gezien.",
-      "en": "Zootierliste only; not seen in 2024."
-     }
     }
    ],
    "geboortes": [],
@@ -312,6 +234,7 @@
    "lat": 53.009,
    "type": "Dierentuin",
    "lidmaatschap": [
+    "EAZA (voorwaardelijk lid)",
     "RDPOZiA"
    ],
    "url": "https://www.zoo.torun.pl",
@@ -538,96 +461,6 @@
    "labels": []
   },
   {
-   "naam": "Lemur Park",
-   "plaats": "Rumia",
-   "lon": 18.38,
-   "lat": 54.585,
-   "type": "Particuliere houder",
-   "lidmaatschap": [],
-   "url": "https://lemurpark.pl",
-   "uren": {
-    "nl": "Niet te bevestigen (eigen site blokkeert automatische toegang)",
-    "en": "Could not be confirmed (own site blocks automated access)"
-   },
-   "about": {
-    "nl": "Particulier familiepark met lemuren, stokstaartjes, aaidieren en een doolhof.",
-    "en": "Private family park with lemurs, meerkats, petting animals and a maze."
-   },
-   "earlier": {
-    "nl": "",
-    "en": ""
-   },
-   "katten": [
-    {
-     "soort": "Serval",
-     "ondersoort": "—",
-     "status": "w",
-     "toelichting": {
-      "nl": "Volgens Zootierliste in september 2024 gezien, met bord.",
-      "en": "Seen with a sign in September 2024 according to Zootierliste."
-     },
-     "aantal": {
-      "nl": "onbekend",
-      "en": "unknown"
-     },
-     "bron": "Zootierliste (bezoek 09/2024)",
-     "twijfel": {
-      "nl": "Alleen Zootierliste; eigen site niet leesbaar; een reisplatform meldt het park als tijdelijk gesloten.",
-      "en": "Zootierliste only; own site not readable; a travel platform lists the park as temporarily closed."
-     }
-    }
-   ],
-   "geboortes": [],
-   "kleur": "",
-   "regio": "pomorskie",
-   "labels": []
-  },
-  {
-   "naam": "Zoo-Egzotyczne Kaszuby",
-   "plaats": "Tuchlino (Sierakowice)",
-   "lon": 17.86,
-   "lat": 54.311,
-   "type": "Particuliere houder",
-   "lidmaatschap": [],
-   "url": "https://pomorskie.travel/punkty-poi/park-edukacyjny-zoo-egzotyczne-kaszuby-w-tuchlinie/",
-   "uren": {
-    "nl": "Onbekend",
-    "en": "Unknown"
-   },
-   "about": {
-    "nl": "Particuliere overdekte expositie van exotische dieren met rondleiding (vooral reptielen, vogels en kleine zoogdieren).",
-    "en": "Private indoor exhibition of exotic animals with guided tours (mainly reptiles, birds and small mammals)."
-   },
-   "earlier": {
-    "nl": "",
-    "en": ""
-   },
-   "katten": [
-    {
-     "soort": "Serval",
-     "ondersoort": "—",
-     "status": "w",
-     "toelichting": {
-      "nl": "Volgens Zootierliste in september 2024 gezien, met bord.",
-      "en": "Seen with a sign in September 2024 according to Zootierliste."
-     },
-     "aantal": {
-      "nl": "onbekend",
-      "en": "unknown"
-     },
-     "bron": "Zootierliste (bezoek 09/2024)",
-     "twijfel": {
-      "nl": "Alleen Zootierliste; het domein zookaszuby.pl staat in oktober 2026 te koop, mogelijk gesloten.",
-      "en": "Zootierliste only; the domain zookaszuby.pl is for sale in October 2026, possibly closed."
-     }
-    }
-   ],
-   "geboortes": [],
-   "kleur": "",
-   "regio": "pomorskie",
-   "labels": []
-  },
-  {
    "naam": "Zoo Wrocław",
    "plaats": "Wrocław",
    "lon": 17.075,
@@ -806,8 +639,8 @@
     "en": "The large, wooded part of Poznań zoo on Biała Góra. The zoo takes in rescued and confiscated animals; according to the map the lions live in the 'asylum for rescued animals'. Domestic cats cared for by the zoo also live on the grounds."
    },
    "earlier": {
-    "nl": "In 2019 kwamen tien tijgers uit een vastgelopen transport naar Poznań; vijf gingen naar Spanje, de katers Gogh en Kan bleven (nieuws 2019–2021; huidige stand onbekend). In 2022 vingen ze 9 leeuwen, 6 tijgers en 2 caracals uit Oekraïne op, die daarna naar opvangcentra in o.a. Nederland, België, Spanje en Zuid-Afrika gingen. Een leeuwin met drie welpen uit Donetsk (juni 2023) vertrok in 2024 naar Yorkshire Wildlife Park (IFAW).",
-    "en": "In 2019 ten tigers from a stranded transport came to Poznań; five went to Spain, males Gogh and Kan stayed (news 2019–2021; current status unknown). In 2022 the zoo took in 9 lions, 6 tigers and 2 caracals from Ukraine, which later went on to sanctuaries in e.g. the Netherlands, Belgium, Spain and South Africa. A lioness with three cubs from Donetsk (June 2023) moved to Yorkshire Wildlife Park in 2024 (IFAW)."
+    "nl": "In 2019 kwamen tien tijgers uit een vastgelopen transport naar Poznań; vijf gingen naar Spanje, de katers Gogh en Kan bleven (nieuws 2019–2021; huidige stand onbekend). In 2022 vingen ze 9 leeuwen, 6 tijgers en 2 caracals uit Oekraïne op, die daarna naar opvangcentra in o.a. Nederland, België, Spanje en Zuid-Afrika gingen. Een leeuwin met drie welpen uit Donetsk (juni 2023) vertrok in 2024 naar Yorkshire Wildlife Park (IFAW). Margay: een kater uit La Boissière-du-Doré (2024, Zootierliste); in 05/2025 alleen nog een bord, dier niet gezien; geen bevestiging door de zoo.",
+    "en": "In 2019 ten tigers from a stranded transport came to Poznań; five went to Spain, males Gogh and Kan stayed (news 2019–2021; current status unknown). In 2022 the zoo took in 9 lions, 6 tigers and 2 caracals from Ukraine, which later went on to sanctuaries in e.g. the Netherlands, Belgium, Spain and South Africa. A lioness with three cubs from Donetsk (June 2023) moved to Yorkshire Wildlife Park in 2024 (IFAW). Margay: a male from La Boissière-du-Doré (2024, Zootierliste); in 05/2025 only a sign remained, animal not seen; never confirmed by the zoo."
    },
    "katten": [
     {
@@ -908,8 +741,8 @@
      },
      "bron": "Zootierliste (bezoek 05/2025)",
      "twijfel": {
-      "nl": "Geen bevestiging op de eigen site of in het nieuws van 2025–2026.",
-      "en": "No confirmation on the zoo's own website or in 2025–2026 news."
+      "nl": "Alleen Zootierliste (gezien 05/2025). Niet genoemd in de berichten (80 stuks, 2025–2026), pagina’s of het educatieaanbod van de eigen site; geen nieuws gevonden.",
+      "en": "Zootierliste only (seen 05/2025). Not mentioned in the zoo's own news posts (80 posts, 2025–2026), pages or education offer; no news found."
      }
     },
     {
@@ -926,8 +759,8 @@
      },
      "bron": "Zootierliste (bezoek 05/2025)",
      "twijfel": {
-      "nl": "Geen bevestiging op de eigen site of in het nieuws van 2025–2026.",
-      "en": "No confirmation on the zoo's own website or in 2025–2026 news."
+      "nl": "Alleen Zootierliste (gezien 05/2025). Niet genoemd in de berichten (80 stuks, 2025–2026), pagina’s of het educatieaanbod van de eigen site; geen nieuws gevonden.",
+      "en": "Zootierliste only (seen 05/2025). Not mentioned in the zoo's own news posts (80 posts, 2025–2026), pages or education offer; no news found."
      }
     },
     {
@@ -944,26 +777,8 @@
      },
      "bron": "Zootierliste (bezoek 05/2025)",
      "twijfel": {
-      "nl": "Geen bevestiging op de eigen site of in het nieuws van 2025–2026; ondersoort Amoer (P. b. euptilura) alleen volgens Zootierliste.",
-      "en": "No confirmation on the zoo's own website or in 2025–2026 news; subspecies Amur (P. b. euptilura) only according to Zootierliste."
-     }
-    },
-    {
-     "soort": "Margay",
-     "ondersoort": "—",
-     "status": "w",
-     "toelichting": {
-      "nl": "Zootierliste meldt een kater uit La Boissière-du-Doré (2024); bord gezien in 05/2025, dier niet.",
-      "en": "Zootierliste lists a male from La Boissière-du-Doré (2024); sign seen in 05/2025, animal not seen."
-     },
-     "aantal": {
-      "nl": "1 (kater) volgens Zootierliste",
-      "en": "1 (male) according to Zootierliste"
-     },
-     "bron": "Zootierliste (MA 05/2024; bezoek 05/2025)",
-     "twijfel": {
-      "nl": "Alleen Zootierliste; dier in 2025 niet gezien, geen bevestiging door de zoo.",
-      "en": "Zootierliste only; animal not seen in 2025, no confirmation by the zoo."
+      "nl": "Alleen Zootierliste (gezien 05/2025). Niet genoemd in de berichten (80 stuks, 2025–2026), pagina’s of het educatieaanbod van de eigen site; geen nieuws gevonden.",
+      "en": "Zootierliste only (seen 05/2025). Not mentioned in the zoo's own news posts (80 posts, 2025–2026), pages or education offer; no news found."
      }
     }
    ],
@@ -1287,10 +1102,10 @@
    "lat": 52.31,
    "type": "Dierenpark",
    "lidmaatschap": [],
-   "url": "",
+   "url": "https://www.facebook.com/p/Park-Miejski-ZOO-Nowy-Tomy%C5%9Bl-100068576627774/",
    "uren": {
-    "nl": "Niet bevestigd",
-    "en": "Not confirmed"
+    "nl": "Dagelijks 10:00–18:00, ook op feestdagen (Nasze Miasto Nowy Tomyśl 01-05-2025). Toegang voor individuele bezoekers gratis (toeristische site, ongedateerd).",
+    "en": "Daily 10:00–18:00, including holidays (Nasze Miasto Nowy Tomyśl 01-05-2025). Free admission for individual visitors (tourist website, undated)."
    },
    "about": {
     "nl": "Kleine stadsdierentuin in het park (sinds 1974), met ongeveer 200 dieren van zo’n 45 soorten. Erkend door de GDOŚ.",
@@ -1307,20 +1122,17 @@
       "nl": "onbekend",
       "en": "unknown"
      },
-     "status": "w",
+     "status": "g",
      "toelichting": {
-      "nl": "Zootierliste meldt een lynx (gezien en met bord, 09/2024).",
-      "en": "Zootierliste lists a lynx (seen, with sign, 09/2024)."
+      "nl": "Lynxen horen volgens de lokale krant (voorjaar 2026) bij de populairste dieren van de zoo, samen met lemuren en ezels.",
+      "en": "According to the local newspaper (spring 2026), the lynxes are among the zoo's most popular animals, together with lemurs and donkeys."
      },
      "aantal": {
-      "nl": "onbekend",
-      "en": "unknown"
+      "nl": "onbekend (meer dan één)",
+      "en": "unknown (more than one)"
      },
-     "bron": "Zootierliste (bezoek 09/2024)",
-     "twijfel": {
-      "nl": "Alleen Zootierliste; geen eigen site of nieuws gevonden die de lynx bevestigen.",
-      "en": "Zootierliste only; no website or news found confirming the lynx."
-     }
+     "bron": "Nasze Miasto Nowy Tomyśl 11-06-2026; Zootierliste (bezoek 09/2024)",
+     "twijfel": null
     }
    ],
    "geboortes": [],
@@ -1334,7 +1146,9 @@
    "lon": 16.213,
    "lat": 51.393,
    "type": "Dierentuin",
-   "lidmaatschap": [],
+   "lidmaatschap": [
+    "RDPOZiA"
+   ],
    "url": "https://zoolubin.pl/",
    "uren": {
     "nl": "Het hele jaar open, gratis toegang (eigen site, gezien 23-10-2026)",
@@ -1536,8 +1350,8 @@
     "en": "Municipal zoo with the large Orientarium pavilion (2022). In July 2026 Asiatic lions were born here for the first time in over 20 years."
    },
    "earlier": {
-    "nl": "Europese wilde kat: op Zootierliste bij bezoeken in 2024 en 2025 niet gezien en geen bordje. Leeuwin Tycia (geboren 2005) stierf in februari 2025 (eigen site).",
-    "en": "European wildcat: not seen and no sign during Zootierliste visits in 2024 and 2025. Lioness Tycia (born 2005) died in February 2025 (own website)."
+    "nl": "Europese wilde kat: op Zootierliste bij bezoeken in 2024 en 2025 niet gezien en geen bordje. Leeuwin Tycia (geboren 2005) stierf in februari 2025 (eigen site). Vissende kat (‘taraj’): een kater uit Děčín, genoemd op de eigen site op 15-02-2024; Zootierliste zag hem in 06/2024, in 05/2025 alleen nog een bordje. Niet genoemd in de berichten van de eigen site 2025–2026.",
+    "en": "European wildcat: not seen and no sign during Zootierliste visits in 2024 and 2025. Lioness Tycia (born 2005) died in February 2025 (own website). Fishing cat (‘taraj’): a male from Děčín, mentioned on the own website on 15-02-2024; Zootierliste saw him in 06/2024, only a sign in 05/2025. Not mentioned in the zoo's news posts 2025–2026."
    },
    "katten": [
     {
@@ -1626,24 +1440,6 @@
      },
      "bron": "Eigen site soortpagina 'kotek rudy' (gezien 23-10-2026); Zootierliste (bordje 05/2025, ondersoort)",
      "twijfel": null
-    },
-    {
-     "soort": "Vissende kat",
-     "ondersoort": "—",
-     "status": "w",
-     "toelichting": {
-      "nl": "Volgens Zootierliste in 06/2024 gezien en in 05/2025 nog een bordje.",
-      "en": "Per Zootierliste seen in 06/2024 and still signed in 05/2025."
-     },
-     "aantal": {
-      "nl": "onbekend",
-      "en": "unknown"
-     },
-     "bron": "Zootierliste (bezoek 05/2025)",
-     "twijfel": {
-      "nl": "Geen soortpagina op de eigen site en geen recent nieuws; alleen Zootierliste.",
-      "en": "No species page on the own website and no recent news; Zootierliste only."
-     }
     }
    ],
    "geboortes": [
@@ -1919,8 +1715,8 @@
      },
      "bron": "Zootierliste (bezoek 05/2025)",
      "twijfel": {
-      "nl": "Niet op de dierenlijst van de eigen site en niet in recent nieuws.",
-      "en": "Not on the own website’s animal list and not in recent news."
+      "nl": "Niet op de dierenlijst of in berichten van de eigen site (t/m 20-10-2026) en niet in recent nieuws; alleen Zootierliste (05/2025) en een oud artikel van National Geographic Polska (ca. 2018).",
+      "en": "Not on the own website's animal list or in its posts (up to 20-10-2026) and not in recent news; only Zootierliste (05/2025) and an old National Geographic Polska article (c. 2018)."
      }
     }
    ],
@@ -1959,12 +1755,12 @@
     "en": "November–February 9:00–15:00, March and October 9:00–16:00, April–September 9:00–18:00; closed 1 January and 25 December (own website, seen 23-10-2026)"
    },
    "about": {
-    "nl": "Stadsdierentuin uit 1918. De eigen site heeft soortpagina’s zonder datum; nieuws over de katten ontbreekt.",
-    "en": "Municipal zoo from 1918. The own website has undated species pages; there is no news about the cats."
+    "nl": "Stadsdierentuin uit 1918. De eigen site heeft soortpagina’s zonder datum; in het nieuws van de zoo (2024–2026) komen de katten niet voor.",
+    "en": "Municipal zoo from 1918. The own website has undated species pages; the cats do not appear in the zoo's news (2024–2026)."
    },
    "earlier": {
-    "nl": "",
-    "en": ""
+    "nl": "Geoffroy’s kat: soortpagina ‘kot argentyński’ staat nog op de eigen site (ongedateerd), maar Zootierliste zag in 09/2024 alleen een bordje; geen bron 2025–2026. Eerder ook jaguarundi (tot 2020), moeraskat en nevelpanter (tot 2018), roestkat (tot 2015), zandkat (tot 2014), serval (tot 2013), poema (tot 2011) en Amoer-luipaardkat (tot 2010) (Zootierliste).",
+    "en": "Geoffroy's cat: species page ‘kot argentyński’ is still on the own website (undated), but Zootierliste saw only a sign in 09/2024; no 2025–2026 source. Formerly also jaguarundi (until 2020), jungle cat and clouded leopard (until 2018), rusty-spotted cat (until 2015), sand cat (until 2014), serval (until 2013), puma (until 2011) and Amur leopard cat (until 2010) (Zootierliste)."
    },
    "katten": [
     {
@@ -2009,38 +1805,17 @@
       "nl": "Sri Lanka (P. p. kotiya)",
       "en": "Sri Lankan (P. p. kotiya)"
      },
-     "status": "w",
+     "status": "g",
      "toelichting": {
-      "nl": "Soortpagina ‘pantera cejlońska’ op de eigen site.",
-      "en": "Species page ‘pantera cejlońska’ on the own website."
+      "nl": "Soortpagina ‘pantera cejlońska’ (Panthera pardus kotiya); in een gids van de regionale krant uit 2026 genoemd als een van de blikvangers.",
+      "en": "Species page ‘pantera cejlońska’ (Panthera pardus kotiya); named as one of the highlights in a 2026 guide by the regional newspaper."
      },
      "aantal": {
       "nl": "onbekend",
       "en": "unknown"
      },
-     "bron": "Eigen site soortpagina (ongedateerd, gezien 23-10-2026); Zootierliste (gezien 09/2024)",
-     "twijfel": {
-      "nl": "Soortpagina zonder datum; laatste concrete waarneming 09/2024 (Zootierliste); niet op de adoptielijst 2026.",
-      "en": "Undated species page; last concrete sighting 09/2024 (Zootierliste); not on the 2026 adoption list."
-     }
-    },
-    {
-     "soort": "Geoffroy’s kat",
-     "ondersoort": "—",
-     "status": "w",
-     "toelichting": {
-      "nl": "Soortpagina ‘kot argentyński’ op de eigen site.",
-      "en": "Species page ‘kot argentyński’ on the own website."
-     },
-     "aantal": {
-      "nl": "onbekend",
-      "en": "unknown"
-     },
-     "bron": "Eigen site soortpagina (ongedateerd, gezien 23-10-2026); Zootierliste (bordje, niet gezien 09/2024)",
-     "twijfel": {
-      "nl": "In 09/2024 alleen een bordje gezien, het dier niet; soortpagina zonder datum.",
-      "en": "In 09/2024 only a sign was seen, not the animal; undated species page."
-     }
+     "bron": "Tygodnik Zamojski 16-06-2026 (bijgewerkt 08-09-2026); eigen site soortpagina (ongedateerd, gezien 23-10-2026); Zootierliste (gezien 09/2024)",
+     "twijfel": null
     },
     {
      "soort": "Leeuw",
@@ -2048,20 +1823,17 @@
       "nl": "Zuidelijk (P. l. melanochaita)",
       "en": "Southern (P. l. melanochaita)"
      },
-     "status": "w",
+     "status": "g",
      "toelichting": {
-      "nl": "Zootierliste noemt Angolese leeuw.",
-      "en": "Zootierliste lists Angolan lion."
+      "nl": "‘Lew angolski’ (Angolese leeuw) volgens de regionale krant (2026) een blikvanger van de zoo. Kater Akashinga kwam in 2021, poes Ora woont er ook (Zamościopedia, ongedateerd).",
+      "en": "‘Lew angolski’ (Angolan lion), a highlight of the zoo according to the regional newspaper (2026). Male Akashinga arrived in 2021; female Ora also lives here (Zamościopedia, undated)."
      },
      "aantal": {
-      "nl": "onbekend",
-      "en": "unknown"
+      "nl": "onbekend (kater Akashinga en poes Ora, ongedateerd)",
+      "en": "unknown (male Akashinga and female Ora, undated)"
      },
-     "bron": "Zootierliste (gezien 09/2024)",
-     "twijfel": {
-      "nl": "Geen soortpagina op de eigen site, niet op de adoptielijst 2026; alleen toeristische overzichten zonder datum noemen leeuwen.",
-      "en": "No species page on the own website, not on the 2026 adoption list; only undated tourist listings mention lions."
-     }
+     "bron": "Tygodnik Zamojski 16-06-2026 (bijgewerkt 08-09-2026); Zamościopedia (ongedateerd); Zootierliste (gezien 09/2024)",
+     "twijfel": null
     }
    ],
    "geboortes": [],
@@ -2078,16 +1850,16 @@
    "lidmaatschap": [],
    "url": "https://www.zoowojciechow.pl/",
    "uren": {
-    "nl": "Onbekend; eigen site was niet bereikbaar (23-10-2026)",
-    "en": "Unknown; own website could not be reached (23-10-2026)"
+    "nl": "Dagelijks 10:00–18:00 (‘sezon otwarty’; eigen site, gezien 23-10-2026). Toegang volwassenen 40 zł, kinderen 30 zł.",
+    "en": "Daily 10:00–18:00 (‘season open’; own website, seen 23-10-2026). Admission adults PLN 40, children PLN 30."
    },
    "about": {
-    "nl": "Kleine particuliere dierentuin (sinds 2011, met GDOŚ-vergunning) bij Wojciechów, ongeveer 15 km ten westen van Lublin, met veel kleine katten. Leeuw Tabo (14) stierf eind maart 2026.",
-    "en": "Small private zoo (since 2011, GDOŚ-licensed) near Wojciechów, about 15 km west of Lublin, with many small cat species. Lion Tabo (14) died in late March 2026."
+    "nl": "Kleine particuliere dierentuin (sinds 2011, met GDOŚ-vergunning) in Romanówka bij Wojciechów, ongeveer 15 km ten westen van Lublin, met ruim 50 soorten en veel kleine katten. Bekend werd hij door de witte leeuw Tabo, die eind maart 2026 stierf; sindsdien staat het leeuwenverblijf leeg.",
+    "en": "Small private zoo (since 2011, GDOŚ-licensed) in Romanówka near Wojciechów, about 15 km west of Lublin, with over 50 species and many small cats. It became known for white lion Tabo, who died in late March 2026; the lion enclosure has been empty since."
    },
    "earlier": {
-    "nl": "Leeuw Tabo stierf eind maart 2026 (Super Express Lublin 31-03-2026).",
-    "en": "Lion Tabo died in late March 2026 (Super Express Lublin 31-03-2026)."
+    "nl": "Leeuw: de witte leeuw Tabo (14) stierf eind maart 2026; het verblijf staat sindsdien leeg (Super Express Lublin 31-03-2026). Zootierliste zag in 09/2024 ook twee leeuwinnen; daarover is niets recents bekend. De eigen dierenlijst noemt nog ‘lew afrykański’, waarschijnlijk niet bijgewerkt. Euraziatische lynx en serval: laatst gezien 09/2024 (Zootierliste), niet meer op de dierenlijst van de eigen site (23-10-2026).",
+    "en": "Lion: white lion Tabo (14) died in late March 2026; the enclosure has been empty since (Super Express Lublin 31-03-2026). Zootierliste also saw two lionesses in 09/2024; nothing recent is known about them. The zoo's own animal list still shows ‘African lion’, probably not updated. Eurasian lynx and serval: last seen 09/2024 (Zootierliste), no longer on the zoo's own animal list (23-10-2026)."
    },
    "katten": [
     {
@@ -2095,36 +1867,15 @@
      "ondersoort": "—",
      "status": "g",
      "toelichting": {
-      "nl": "Jaguar Rambo kwam in maart 2026 uit Italië.",
-      "en": "Jaguar Rambo arrived from Italy in March 2026."
+      "nl": "Jaguar Rambo kwam in maart 2026 uit Italië; eigen soortpagina.",
+      "en": "Jaguar Rambo arrived from Italy in March 2026; own species page."
      },
      "aantal": {
       "nl": "1 (Rambo)",
       "en": "1 (Rambo)"
      },
-     "bron": "Super Express Lublin 27-03-2026",
+     "bron": "Super Express Lublin 27-03-2026; Eigen site, dierenlijst ‘Zwierzęta’ (gezien 23-10-2026)",
      "twijfel": null
-    },
-    {
-     "soort": "Leeuw",
-     "ondersoort": {
-      "nl": "Zuidelijk (P. l. melanochaita)",
-      "en": "Southern (P. l. melanochaita)"
-     },
-     "status": "w",
-     "toelichting": {
-      "nl": "Zootierliste zag in 09/2024 een kater en twee poezen (Transvaal-leeuw); de kater Tabo stierf in 03/2026.",
-      "en": "Zootierliste saw one male and two females (Transvaal lion) in 09/2024; male Tabo died in 03/2026."
-     },
-     "aantal": {
-      "nl": "onbekend (mogelijk 2 poezen)",
-      "en": "unknown (possibly 2 females)"
-     },
-     "bron": "Zootierliste (gezien 09/2024); Super Express Lublin 31-03-2026",
-     "twijfel": {
-      "nl": "Onbekend of de leeuwinnen er nog zijn.",
-      "en": "Unknown whether the lionesses are still there."
-     }
     },
     {
      "soort": "Luipaard",
@@ -2132,149 +1883,92 @@
       "nl": "onbekend",
       "en": "unknown"
      },
-     "status": "w",
+     "status": "g",
      "toelichting": {
-      "nl": "",
-      "en": ""
+      "nl": "‘Lampart plamisty’ op de dierenlijst.",
+      "en": "‘Lampart plamisty’ on the animal list."
      },
      "aantal": {
       "nl": "onbekend",
       "en": "unknown"
      },
-     "bron": "Zootierliste (gezien 09/2024)",
-     "twijfel": {
-      "nl": "Alleen Zootierliste; eigen site niet bereikbaar.",
-      "en": "Zootierliste only; own website unreachable."
-     }
+     "bron": "Eigen site, dierenlijst ‘Zwierzęta’ (gezien 23-10-2026); Zootierliste (gezien 09/2024)",
+     "twijfel": null
     },
     {
      "soort": "Poema",
      "ondersoort": "—",
-     "status": "w",
+     "status": "g",
      "toelichting": {
-      "nl": "",
-      "en": ""
+      "nl": "‘Puma płowa’ op de dierenlijst; de site noemt de poema’s ook bij de attracties.",
+      "en": "‘Puma płowa’ on the animal list; the site also mentions the pumas among its attractions."
      },
      "aantal": {
       "nl": "onbekend",
       "en": "unknown"
      },
-     "bron": "Zootierliste (gezien 09/2024); Arche Nałęczów toeristische pagina (ongedateerd)",
-     "twijfel": {
-      "nl": "Geen bron uit 2025–2026.",
-      "en": "No source from 2025–2026."
-     }
-    },
-    {
-     "soort": "Euraziatische lynx",
-     "ondersoort": {
-      "nl": "Noordelijk (L. l. lynx)",
-      "en": "Northern (L. l. lynx)"
-     },
-     "status": "w",
-     "toelichting": {
-      "nl": "",
-      "en": ""
-     },
-     "aantal": {
-      "nl": "onbekend",
-      "en": "unknown"
-     },
-     "bron": "Zootierliste (gezien 09/2024)",
-     "twijfel": {
-      "nl": "Alleen Zootierliste.",
-      "en": "Zootierliste only."
-     }
+     "bron": "Eigen site, dierenlijst ‘Zwierzęta’ (gezien 23-10-2026); Zootierliste (gezien 09/2024)",
+     "twijfel": null
     },
     {
      "soort": "Rode lynx",
      "ondersoort": "—",
-     "status": "w",
+     "status": "g",
      "toelichting": {
-      "nl": "",
-      "en": ""
+      "nl": "‘Ryś rudy’ op de dierenlijst, met nieuwe soortpagina; Zootierliste verwijst naar een Facebookpost van het park (2026).",
+      "en": "‘Ryś rudy’ on the animal list, with a new species page; Zootierliste refers to a Facebook post by the park (2026)."
      },
      "aantal": {
       "nl": "onbekend",
       "en": "unknown"
      },
-     "bron": "Zootierliste, verwijzing naar Facebook van het park (geraadpleegd 28-03-2026)",
-     "twijfel": {
-      "nl": "Alleen via Zootierliste; de Facebookpost zelf niet gezien.",
-      "en": "Only via Zootierliste; the Facebook post itself not seen."
-     }
-    },
-    {
-     "soort": "Serval",
-     "ondersoort": "—",
-     "status": "w",
-     "toelichting": {
-      "nl": "",
-      "en": ""
-     },
-     "aantal": {
-      "nl": "onbekend",
-      "en": "unknown"
-     },
-     "bron": "Zootierliste (gezien 09/2024)",
-     "twijfel": {
-      "nl": "Alleen Zootierliste.",
-      "en": "Zootierliste only."
-     }
+     "bron": "Eigen site, dierenlijst ‘Zwierzęta’ (gezien 23-10-2026); Zootierliste (geraadpleegd 28-03-2026)",
+     "twijfel": null
     },
     {
      "soort": "Caracal",
      "ondersoort": "—",
-     "status": "w",
+     "status": "g",
      "toelichting": {
-      "nl": "Verblijf gefotografeerd door een bezoeker (ZooChat, januari 2025).",
-      "en": "Enclosure photographed by a visitor (ZooChat, January 2025)."
+      "nl": "‘Karakal stepowy’ op de dierenlijst.",
+      "en": "‘Karakal stepowy’ on the animal list."
      },
      "aantal": {
       "nl": "onbekend",
       "en": "unknown"
      },
-     "bron": "Zootierliste (gezien 09/2024); ZooChat-verslag 01/2025",
-     "twijfel": {
-      "nl": "Geen eigen bron of nieuws.",
-      "en": "No own source or news."
-     }
+     "bron": "Eigen site, dierenlijst ‘Zwierzęta’ (gezien 23-10-2026); ZooChat-verslag 01/2025",
+     "twijfel": null
     },
     {
      "soort": "Jaguarundi",
      "ondersoort": "—",
-     "status": "w",
+     "status": "g",
      "toelichting": {
-      "nl": "",
-      "en": ""
+      "nl": "‘Jaguarundi amerykański’ op de dierenlijst.",
+      "en": "‘Jaguarundi amerykański’ on the animal list."
      },
      "aantal": {
       "nl": "onbekend",
       "en": "unknown"
      },
-     "bron": "Zootierliste (gezien 09/2024)",
-     "twijfel": {
-      "nl": "Alleen Zootierliste.",
-      "en": "Zootierliste only."
-     }
+     "bron": "Eigen site, dierenlijst ‘Zwierzęta’ (gezien 23-10-2026); Zootierliste (gezien 09/2024)",
+     "twijfel": null
     },
     {
-     "soort": "Vissende kat",
+     "soort": "Geoffroy’s kat",
      "ondersoort": "—",
-     "status": "w",
+     "status": "g",
      "toelichting": {
-      "nl": "",
-      "en": ""
+      "nl": "Op de site als ‘kot argentyński’.",
+      "en": "Listed as ‘kot argentyński’."
      },
      "aantal": {
       "nl": "onbekend",
       "en": "unknown"
      },
-     "bron": "Zootierliste (gezien 04/2025)",
-     "twijfel": {
-      "nl": "Alleen Zootierliste.",
-      "en": "Zootierliste only."
-     }
+     "bron": "Eigen site, dierenlijst ‘Zwierzęta’ (gezien 23-10-2026); Zootierliste (2026)",
+     "twijfel": null
     },
     {
      "soort": "Bengaalse kat",
@@ -2282,37 +1976,34 @@
       "nl": "Amoer (P. b. euptilura)",
       "en": "Amur (P. b. euptilura)"
      },
-     "status": "w",
+     "status": "g",
      "toelichting": {
-      "nl": "Wilde luipaardkat (Amurkatze), niet het huiskatras.",
-      "en": "Wild leopard cat (Amur leopard cat), not the domestic breed."
+      "nl": "Op de site als ‘kot amurski’, uitdrukkelijk de grootste ondersoort van de wilde luipaardkat (niet het huiskatras).",
+      "en": "Listed as ‘kot amurski’, explicitly the largest subspecies of the wild leopard cat (not the domestic breed)."
      },
      "aantal": {
       "nl": "onbekend",
       "en": "unknown"
      },
-     "bron": "Zootierliste (gezien 09/2024)",
-     "twijfel": {
-      "nl": "Alleen Zootierliste.",
-      "en": "Zootierliste only."
-     }
+     "bron": "Eigen site, dierenlijst ‘Zwierzęta’ (gezien 23-10-2026); Zootierliste (gezien 09/2024)",
+     "twijfel": null
     },
     {
-     "soort": "Geoffroy’s kat",
+     "soort": "Vissende kat",
      "ondersoort": "—",
      "status": "w",
      "toelichting": {
-      "nl": "",
-      "en": ""
+      "nl": "Volgens Zootierliste gezien in 04/2025.",
+      "en": "Seen in 04/2025 according to Zootierliste."
      },
      "aantal": {
       "nl": "onbekend",
       "en": "unknown"
      },
-     "bron": "Zootierliste (gezien 09/2024)",
+     "bron": "Zootierliste (gezien 04/2025)",
      "twijfel": {
-      "nl": "Alleen Zootierliste.",
-      "en": "Zootierliste only."
+      "nl": "Staat niet op de dierenlijst van de eigen site (23-10-2026), die in 2026 wel is bijgewerkt (jaguar, rode lynx). Mogelijk weg; geen bericht van het park.",
+      "en": "Not on the zoo's own animal list (23-10-2026), which was updated in 2026 (jaguar, bobcat). Possibly gone; no statement from the park."
      }
     }
    ],
@@ -2328,6 +2019,7 @@
    "lat": 50.689,
    "type": "Dierentuin",
    "lidmaatschap": [
+    "EAZA (kandidaat-lid)",
     "RDPOZiA"
    ],
    "url": "https://www.lesne-zacisze.net/",
@@ -2403,8 +2095,8 @@
     "en": "Large zoo in Park Śląski between Chorzów and Katowice. According to its own site (February 2025) it keeps eight wild cat species; an Amur tiger was added in July 2025."
    },
    "earlier": {
-    "nl": "Amoertijgers Tajga (overleden maart 2024) en Saga (overleden 1-2-2025) (eigen site 03-02-2025). Jachtluipaardwelpen in 2011 en 2019 (eigen site). Vier Angolese leeuwenwelpen geboren 2-9-2023; waar die nu zijn is niet bekend (eigen site 02-11-2023).",
-    "en": "Amur tigers Tajga (died March 2024) and Saga (died 1-2-2025) (own site 03-02-2025). Cheetah cubs in 2011 and 2019 (own site). Four Angolan lion cubs born 2-9-2023; their current whereabouts are unknown (own site 02-11-2023)."
+    "nl": "Amoertijgers Tajga (overleden maart 2024) en Saga (overleden 1-2-2025) (eigen site 03-02-2025). Jachtluipaardwelpen in 2011 en 2019 (eigen site). Vier Angolese leeuwenwelpen geboren 2-9-2023; waar die nu zijn is niet bekend (eigen site 02-11-2023). Serval: de poes ging op 25-02-2025 naar Zoopark Na Hrádečku (Tsjechië) om daar met een kater uit Munkholm Zoo te kweken (ZooChat 25-02-2025, met link naar het Tsjechische park); in 05/2025 geen serval en geen bordje meer (Zootierliste). De dierenlijst van de eigen site noemt de soort nog.",
+    "en": "Amur tigers Tajga (died March 2024) and Saga (died 1-2-2025) (own site 03-02-2025). Cheetah cubs in 2011 and 2019 (own site). Four Angolan lion cubs born 2-9-2023; their current whereabouts are unknown (own site 02-11-2023). Serval: the female moved to Zoopark Na Hrádečku (Czechia) on 25-02-2025 to breed with a male from Munkholm Zoo (ZooChat 25-02-2025, linking the Czech park); in 05/2025 no serval and no sign (Zootierliste). The zoo's own animal list still shows the species."
    },
    "katten": [
     {
@@ -2538,24 +2230,6 @@
      },
      "bron": "Eigen site dierenlijst/API (gezien 23-10-2026); eigen site 18-02-2025; Zootierliste (gezien 05/2025)",
      "twijfel": null
-    },
-    {
-     "soort": "Serval",
-     "ondersoort": "—",
-     "status": "w",
-     "toelichting": {
-      "nl": "Staat nog op de dierenlijst van de site.",
-      "en": "Still on the website's animal list."
-     },
-     "aantal": {
-      "nl": "onbekend",
-      "en": "unknown"
-     },
-     "bron": "Eigen site dierenlijst/API (gezien 23-10-2026); eigen site 18-02-2025; Zootierliste",
-     "twijfel": {
-      "nl": "Volgens Zootierliste ging de poes in 2025 naar Zoopark Na Hrádečku (Tsjechië) en was er in mei 2025 geen serval en geen bordje meer. Geen recente bevestiging.",
-      "en": "According to Zootierliste the female went to Zoopark Na Hrádečku (Czechia) in 2025, and in May 2025 there was no serval and no sign. No recent confirmation."
-     }
     }
    ],
    "geboortes": [
@@ -2599,7 +2273,6 @@
    "type": "Dierentuin",
    "lidmaatschap": [
     "EAZA",
-    "WAZA",
     "RDPOZiA"
    ],
    "url": "https://zoo-krakow.pl/",
@@ -2612,8 +2285,8 @@
     "en": "City zoo in the Las Wolski forest. Many cat species, from tiger and lion to Pallas’s cat and sand cat. Public tiger feeding on weekdays at 12:00."
    },
    "earlier": {
-    "nl": "De Aziatische leeuwenkater die hier sinds 2014 woonde, ging in februari 2024 naar Zoo Ostrava (Zoo Ostrava). Bengaalse tijgers in het verleden (Radio Kraków, ongedateerd).",
-    "en": "The Asiatic lion male that lived here since 2014 moved to Ostrava Zoo in February 2024 (Ostrava Zoo). Bengal tigers in the past (Radio Kraków, undated)."
+    "nl": "De Aziatische leeuwenkater die hier sinds 2014 woonde, ging in februari 2024 naar Zoo Ostrava (Zoo Ostrava). Bengaalse tijgers in het verleden (Radio Kraków, ongedateerd). Jaguarundi: jongen in 2016 (eigen site); Zootierliste zag er nog een in 05/2025, maar hij staat niet op de dierenlijst van de eigen site en een bezoeker vond er op 05-04-2026 geen (ZooChat). Europese wilde kat: laatst gezien 05/2024, in 05/2025 alleen een bordje (Zootierliste). Moeraskat: tot 2024 (Zootierliste; bezoeker vond ze in april 2026 niet). Caracal tot 2022 (Zootierliste).",
+    "en": "The Asiatic lion male that lived here since 2014 moved to Ostrava Zoo in February 2024 (Ostrava Zoo). Bengal tigers in the past (Radio Kraków, undated). Jaguarundi: young in 2016 (own site); Zootierliste still saw one in 05/2025, but it is not on the zoo's own animal list and a visitor found none on 05-04-2026 (ZooChat). European wildcat: last seen 05/2024, only a sign in 05/2025 (Zootierliste). Jungle cat: until 2024 (Zootierliste; a visitor could not find them in April 2026). Caracal until 2022 (Zootierliste)."
    },
    "katten": [
     {
@@ -2657,14 +2330,14 @@
      "ondersoort": "—",
      "status": "g",
      "toelichting": {
-      "nl": "In het paviljoen voor warmteminnende katten.",
-      "en": "In the pavilion for warmth-loving cats."
+      "nl": "In het paviljoen voor warmteminnende katten (2017). In 2016 kwamen een zwarte poes uit Novosibirsk bij de zwarte kater Moki; of de huidige jaguars zwart zijn, is niet recent bevestigd.",
+      "en": "In the pavilion for warmth-loving cats (2017). In 2016 a black female from Novosibirsk joined the black male Moki; whether the current jaguars are black has not been confirmed recently."
      },
      "aantal": {
       "nl": "onbekend",
       "en": "unknown"
      },
-     "bron": "Eigen site soortpagina (gezien 23-10-2026); Zootierliste (gezien 05/2025)",
+     "bron": "Eigen site soortpagina (gezien 23-10-2026); eigen site 14-07-2016; Radio Kraków (2017); Zootierliste (gezien 05/2025)",
      "twijfel": null
     },
     {
@@ -2682,7 +2355,7 @@
       "nl": "onbekend",
       "en": "unknown"
      },
-     "bron": "Eigen site soortpagina (gezien 23-10-2026); Zootierliste (gezien 05/2025)",
+     "bron": "Eigen site soortpagina (gezien 23-10-2026); Zootierliste (gezien 05/2025); ZooChat-bezoekverslag 05-04-2026 (gezien)",
      "twijfel": null
     },
     {
@@ -2730,7 +2403,7 @@
       "nl": "onbekend",
       "en": "unknown"
      },
-     "bron": "Eigen site soortpagina (gezien 23-10-2026); Zootierliste (gezien 05/2025)",
+     "bron": "Eigen site soortpagina (gezien 23-10-2026); Zootierliste (gezien 05/2025); ZooChat-bezoekverslag 05-04-2026 (gezien)",
      "twijfel": null
     },
     {
@@ -2745,7 +2418,7 @@
       "nl": "onbekend",
       "en": "unknown"
      },
-     "bron": "Eigen site soortpagina (gezien 23-10-2026); Zootierliste (gezien 05/2025)",
+     "bron": "Eigen site soortpagina (gezien 23-10-2026); Zootierliste (gezien 05/2025); ZooChat-bezoekverslag 05-04-2026 (verblijf, dier niet gezien)",
      "twijfel": null
     },
     {
@@ -2760,7 +2433,7 @@
       "nl": "onbekend",
       "en": "unknown"
      },
-     "bron": "Eigen site soortpagina (gezien 23-10-2026); Zootierliste (gezien 09/2024)",
+     "bron": "Eigen site soortpagina (gezien 23-10-2026); Zootierliste (gezien 09/2024); ZooChat-bezoekverslag 05-04-2026 (gezien)",
      "twijfel": null
     },
     {
@@ -2793,44 +2466,8 @@
       "nl": "2 (kater en poes, stand 02/2025)",
       "en": "2 (male and female, as of 02/2025)"
      },
-     "bron": "Eigen site soortpagina (gezien 23-10-2026); Zootierliste (stand 02/2025, gezien 05/2025)",
+     "bron": "Eigen site soortpagina (gezien 23-10-2026); Zootierliste (stand 02/2025, gezien 05/2025); ZooChat-bezoekverslag 05-04-2026 (gezien)",
      "twijfel": null
-    },
-    {
-     "soort": "Jaguarundi",
-     "ondersoort": "—",
-     "status": "w",
-     "toelichting": {
-      "nl": "Niet op de dierenlijst van de eigen site.",
-      "en": "Not on the zoo's own animal list."
-     },
-     "aantal": {
-      "nl": "onbekend",
-      "en": "unknown"
-     },
-     "bron": "Zootierliste (gezien 05/2025)",
-     "twijfel": {
-      "nl": "Alleen Zootierliste meldt de jaguarundi (gezien mei 2025); de eigen site noemt hem niet.",
-      "en": "Only Zootierliste reports the jaguarundi (seen May 2025); the zoo's own site does not list it."
-     }
-    },
-    {
-     "soort": "Europese wilde kat",
-     "ondersoort": "—",
-     "status": "w",
-     "toelichting": {
-      "nl": "Niet op de dierenlijst van de eigen site.",
-      "en": "Not on the zoo's own animal list."
-     },
-     "aantal": {
-      "nl": "onbekend",
-      "en": "unknown"
-     },
-     "bron": "Zootierliste (gezien 05/2024, niet gezien 05/2025)",
-     "twijfel": {
-      "nl": "Laatst gezien in mei 2024 volgens Zootierliste; in mei 2025 alleen nog een bordje. Mogelijk weg.",
-      "en": "Last seen in May 2024 according to Zootierliste; in May 2025 only a sign remained. Possibly gone."
-     }
     }
    ],
    "geboortes": [],
@@ -3201,51 +2838,6 @@
    "kleur": "",
    "regio": "malopolskie",
    "labels": []
-  },
-  {
-   "naam": "MiniZooPark Walim",
-   "plaats": "Walim (Stara Kornica)",
-   "lon": 22.951,
-   "lat": 52.221,
-   "type": "Particuliere houder",
-   "lidmaatschap": [],
-   "url": "",
-   "uren": {
-    "nl": "Weekend 10–19 u (PolskaDlaDzieci, ongedateerd).",
-    "en": "Weekends 10am–7pm (PolskaDlaDzieci, undated)."
-   },
-   "about": {
-    "nl": "Kleine particuliere minizoo bij Łosice met lemuren, apen, alpaca's, een kameel en een serval.",
-    "en": "Small private mini zoo near Łosice with lemurs, monkeys, alpacas, a camel and a serval."
-   },
-   "earlier": {
-    "nl": "",
-    "en": ""
-   },
-   "katten": [
-    {
-     "soort": "Serval",
-     "ondersoort": "—",
-     "status": "w",
-     "toelichting": {
-      "nl": "Alleen in een ongedateerde vermelding op een gidsensite.",
-      "en": "Only in an undated listing on a guide website."
-     },
-     "aantal": {
-      "nl": "onbekend",
-      "en": "unknown"
-     },
-     "bron": "PolskaDlaDzieci.pl (ongedateerd), gezien 23-10-2026",
-     "twijfel": {
-      "nl": "Geen eigen site en geen gedateerde bron 2025–2026 gevonden.",
-      "en": "No own website and no dated 2025–2026 source found."
-     }
-    }
-   ],
-   "geboortes": [],
-   "kleur": "",
-   "regio": "mazowieckie",
-   "labels": []
   }
  ],
  "zonder_katten": [
@@ -3363,6 +2955,15 @@
    "reden": {
     "nl": "Geen katachtigen bekend (Zootierliste, gezien 23-10-2026); verder geen informatie gevonden.",
     "en": "No cats known (Zootierliste, seen 23-10-2026); no further information found."
+   },
+   "_bron": "zu"
+  },
+  {
+   "naam": "Mini-Zoo Park Strzelnica",
+   "plaats": "Ruda Śląska",
+   "reden": {
+    "nl": "Geen katachtigen bekend (Zootierliste, gezien 23-10-2026).",
+    "en": "No cats known (Zootierliste, seen 23-10-2026)."
    },
    "_bron": "zu"
   },
@@ -3485,8 +3086,38 @@
     "en": "State shelter for seized animals exists only on paper: no site, in 2025 four animals (parrots, owl, bear) passed straight on; construction planned 2028–2031 (zero.pl 21-10-2026). Declined the cats from Czchów and Łączna."
    },
    "_bron": "op"
+  },
+  {
+   "naam": "Lemur Park",
+   "plaats": "Rumia",
+   "reden": {
+    "nl": "Geen katten meer bevestigd. Serval: gezien met bord in 09/2024 (Zootierliste); geen latere bron.",
+    "en": "No cats confirmed any more. Serval: seen with a sign in 09/2024 (Zootierliste); no later source."
+   }
+  },
+  {
+   "naam": "Park Edukacyjny Zoo-Egzotyczne Kaszuby",
+   "plaats": "Tuchlino (gem. Sierakowice)",
+   "reden": {
+    "nl": "Geen katten meer bevestigd. Serval: gezien met bord in 09/2024 (Zootierliste); geen latere bron.",
+    "en": "No cats confirmed any more. Serval: seen with a sign in 09/2024 (Zootierliste); no later source."
+   }
+  },
+  {
+   "naam": "MiniZooPark Walim",
+   "plaats": "Walim (gmina Stara Kornica)",
+   "reden": {
+    "nl": "Geen katten meer bevestigd. Serval: alleen in een ongedateerde vermelding op PolskaDlaDzieci.pl en als hashtag bij video’s van een privé-TikTokaccount; recente beschrijvingen (2025–2026) noemen geen serval.",
+    "en": "No cats confirmed any more. Serval: only in an undated listing on PolskaDlaDzieci.pl and as a hashtag on videos of a private TikTok account; recent descriptions (2025–2026) do not mention a serval."
+   }
   }
  ],
  "checked": "23-10-2026",
- "route": []
+ "route": [
+  "Zoo Kraków",
+  "Śląski Ogród Zoologiczny",
+  "Zoo Wrocław",
+  "Zoo Romanówka",
+  "Zoo Toruń"
+ ]
 }

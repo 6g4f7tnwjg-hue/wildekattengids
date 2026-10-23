@@ -56,6 +56,7 @@ for l in L:
         if k["status"] != "w": k["twijfel"] = None
         elif not k.get("twijfel"): k["twijfel"] = {"nl": k["toelichting"]["nl"], "en": k["toelichting"]["en"]}
     for g in l.get("geboortes", []):
+        if g["n"]["nl"] == "5 welpen, 4 in leven": g["n"] = {"nl": "5 welpen", "en": "5 cubs"}   # alleen het aantal in n; de rest staat in x
         b = g["geboren"]; ap = bool(re.search(r"[a-z(]", b)) or len(b.split(" ")[0].split("-")) < 3
         g["geboren"] = b.split(" ")[0]
         if ap: g["approx"] = True

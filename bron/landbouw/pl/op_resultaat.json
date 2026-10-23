@@ -1,0 +1,459 @@
+{
+ "locaties": [
+  {
+   "naam": "Fun Animals (particuliere houder, Czchów)",
+   "plaats": "Czchów (gmina Czchów)",
+   "woj": "małopolskie",
+   "lon": 20.673,
+   "lat": 49.834,
+   "type": "Particuliere houder",
+   "lidmaatschap": [],
+   "url": "",
+   "uren": {
+    "nl": "Niet open voor publiek (privéterrein bij een woonhuis; TVN24 10-04-2026).",
+    "en": "Not open to the public (private property next to a house; TVN24 10-04-2026)."
+   },
+   "about": {
+    "nl": "Een man houdt sinds ongeveer 2019 twee leeuwen en een Bengaalse tijger in kooien in zijn tuin, ingeschreven als 'circus' (Fun Animals). Volgens politie en OM was het circus fictief: er waren nooit voorstellingen. Sinds april 2026 loopt een strafproces bij de rechtbank in Brzesko (dierenmishandeling, illegaal bezit, valse papieren); de gemeente onderzoekt inbeslagname, maar vond nog geen opvangplek. Geen publieke toegang; alleen genoemd als bekend geval.",
+    "en": "Since about 2019 a man has kept two lions and a Bengal tiger in cages in his garden, registered as a 'circus' (Fun Animals). Police and prosecutors say the circus was fictitious: no shows were ever held. A criminal trial (cruelty, illegal possession, false documents) has been running at the Brzesko court since April 2026; the municipality is looking at seizure but has found no place for the animals. No public access; listed only as a known case."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Leeuw",
+     "ondersoort": "onbekend",
+     "status": "n",
+     "toelichting": {
+      "nl": "Particuliere houder, niet open voor publiek. Pers noemt ze 'Afrikaanse leeuwen'; volgens de eigenaar als welpen uit een dierentuin gekomen. Rechtszaak loopt (stand oktober 2026).",
+      "en": "Private keeper, not open to the public. Press calls them 'African lions'; according to the owner they came from a zoo as cubs. Court case ongoing (October 2026)."
+     },
+     "aantal": {
+      "nl": "2 (namen volgens Gazeta Krakowska: Diego, Amira en Samir voor de drie katten samen; verdeling onbekend)",
+      "en": "2 (names per Gazeta Krakowska: Diego, Amira and Samir for the three cats together; which is which unknown)"
+     },
+     "bron": "TVN24 (eind okt. 2025) en 10-04-2026; Radio Kraków 30-10-2025; Radio ESKA Kraków (eind okt. 2025); OKO.press 18-11-2025; Super Express (rechtszitting, 2026, ongedateerd); Gazeta Krakowska (koptekst, okt. 2026)"
+    },
+    {
+     "soort": "Tijger",
+     "ondersoort": "Bengaals",
+     "status": "n",
+     "toelichting": {
+      "nl": "Particuliere houder, niet open voor publiek. Volgens de eigenaar afkomstig uit een Duits circus; OM verwijt hem een valse aankoopdatum. Rechtszaak loopt.",
+      "en": "Private keeper, not open to the public. According to the owner it came from a German circus; prosecutors accuse him of a false purchase date. Court case ongoing."
+     },
+     "aantal": {
+      "nl": "1",
+      "en": "1"
+     },
+     "bron": "TVN24 (eind okt. 2025) en 10-04-2026; Radio ESKA Kraków (eind okt. 2025); OKO.press 18-11-2025"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "ZOO Łączna",
+   "plaats": "Łączna (gmina Mieroszów)",
+   "woj": "dolnośląskie",
+   "lon": 16.14,
+   "lat": 50.67,
+   "type": "Dierentuin",
+   "lidmaatschap": [],
+   "url": "https://zoolaczna.pl/",
+   "uren": {
+    "nl": "Gesloten tot nader order na de actie van justitie op 13–14 oktober 2026 (eigen site, gezien 23-10-2026).",
+    "en": "Closed until further notice after the prosecutors' action of 13–14 October 2026 (own site, seen 23-10-2026)."
+   },
+   "about": {
+    "nl": "Particuliere familiedierentuin (sinds 2012 erkend als dierentuin, als 'ZOO FARMA' in het GDOŚ-register). Op 13 oktober 2026 haalden justitie en dierenorganisaties ruim 30 dieren weg wegens vermoedelijke verwaarlozing; vijf mensen kregen een aanklacht. De Bengaalse tijger ging naar Nederland (Landgoed Hoenderdaell). Van de zeven servals kwamen er twee op 20-10-2026 terug; vijf (o.a. een poes met jongen) zitten elders. Zaak loopt; heropening onzeker.",
+    "en": "Privately owned family zoo (licensed as a zoo since 2012, listed as 'ZOO FARMA' in the GDOŚ register). On 13 October 2026 prosecutors and animal groups removed more than 30 animals over suspected neglect; five people were charged. The Bengal tiger went to the Netherlands (Landgoed Hoenderdaell). Of the seven servals, two returned on 20-10-2026; five (incl. a female with young) are elsewhere. Case ongoing; reopening uncertain."
+   },
+   "earlier": {
+    "nl": "Bengaalse tijger (in 2021 tijgerin 'Solaris' op de eigen site): op 13-10-2026 door justitie naar Nederland gebracht (prokuratura via zero.pl 15-10-2026; newsmaxpolska 2026). Lynx: alleen een oude 'voer de lynxen'-pagina (2021, bijgewerkt 2024), niet bevestigd voor 2025–2026.",
+    "en": "Bengal tiger (tigress 'Solaris' on the own site in 2021): moved to the Netherlands by prosecutors on 13-10-2026 (prosecutors via zero.pl 15-10-2026; newsmaxpolska 2026). Lynx: only an old 'feed the lynxes' page (2021, updated 2024), not confirmed for 2025–2026."
+   },
+   "katten": [
+    {
+     "soort": "Serval",
+     "ondersoort": "—",
+     "status": "y",
+     "toelichting": {
+      "nl": "Twee servals op 20-10-2026 teruggebracht uit opvang Klekusiowo en onder veterinaire controle; dierentuin voorlopig gesloten. Vijf andere servals bij Rebelia GOGH (E. Zgrabczyńska) en elders.",
+      "en": "Two servals returned from the Klekusiowo rescue centre on 20-10-2026 and under veterinary checks; zoo closed for now. Five other servals with Rebelia GOGH (E. Zgrabczyńska) and elsewhere."
+     },
+     "aantal": {
+      "nl": "2 (van oorspronkelijk 7)",
+      "en": "2 (of originally 7)"
+     },
+     "bron": "czadrow24.pl 20-10-2026; nowaruda24.pl 20-10-2026; walbrzych.dlawas.info 14-10-2026; eigen site gezien 23-10-2026"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Dzika Zagroda w Jabłonowie (Zachodniopomorskie Towarzystwo Przyrodnicze)",
+   "plaats": "Jabłonowo (gmina Mirosławiec)",
+   "woj": "zachodniopomorskie",
+   "lon": 16.297,
+   "lat": 53.331,
+   "type": "Opvang of sanctuary",
+   "lidmaatschap": [],
+   "url": "http://dzika-zagroda.pl/",
+   "uren": {
+    "nl": "Mei–okt: di–zo 10–18 u, toegang elk heel uur; nov–apr: één weekend per maand 10–16 u; groepen (min. 10) op afspraak. Volw. 25 zł (eigen site, gezien 23-10-2026).",
+    "en": "May–Oct: Tue–Sun 10am–6pm, entry on the hour; Nov–Apr: one weekend a month 10am–4pm; groups (10+) by appointment. Adult 25 zł (own site, seen 23-10-2026)."
+   },
+   "about": {
+    "nl": "Toon- en kweekverblijf van een natuurvereniging (ZTP) voor wisenten en lynxen, onderdeel van het herintroductieproject van de laaglandlynx in West-Pommeren (sinds 2015 lynxen). Vanaf een loopbrug en uitkijktoren te zien. Vrij levende lynxen in de regio tellen niet mee.",
+    "en": "Show and breeding enclosure of a nature society (ZTP) for European bison and lynx, part of the lowland lynx reintroduction project in West Pomerania (lynx since 2015). Viewed from a walkway and lookout tower. Free-living lynx in the region are not counted."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Euraziatische lynx",
+     "ondersoort": "onbekend",
+     "status": "g",
+     "toelichting": {
+      "nl": "Kweek- en toonverblijf voor herintroductie ('ryś nizinny', laaglandlynx); jongen worden later uitgezet, dieren wisselen.",
+      "en": "Breeding and display enclosure for reintroduction ('lowland lynx'); young are later released, animals change."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site (pagina Oferta, bijgewerkt 19-05-2026; bericht 05-12-2025 'przyjrzeć się z bliska tajemniczym rysiom'), gezien 23-10-2026; rysie.org gezien 23-10-2026"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Ośrodek Rehabilitacji Dzikich Zwierząt Klekusiowo",
+   "plaats": "Tomaszów Bolesławiecki (gmina Warta Bolesławiecka)",
+   "woj": "dolnośląskie",
+   "lon": 15.682,
+   "lat": 51.26,
+   "type": "Opvang of sanctuary",
+   "lidmaatschap": [],
+   "url": "https://klekusiowo.pl/",
+   "uren": {
+    "nl": "Individueel bezoek mogelijk (bijdrage 15 zł), groepen op afspraak; geen vaste openingstijden op de site (eigen site, gezien 23-10-2026).",
+    "en": "Individual visits possible (donation 15 zł), groups by appointment; no fixed hours on the site (own site, seen 23-10-2026)."
+   },
+   "about": {
+    "nl": "Opvang- en revalidatiecentrum voor vooral inheemse wilde dieren, met agroturistiek. Heeft volgens de beheerder twee servals uit eerdere inbeslagnames in vaste opvang; in oktober 2026 ving het tijdelijk ook twee servals uit ZOO Łączna op (inmiddels terug). Niet alle dieren zijn voor bezoekers te zien.",
+    "en": "Rescue and rehabilitation centre mainly for native wildlife, with farm stay. According to the manager it permanently houses two servals from earlier seizures; in October 2026 it also briefly took two servals from ZOO Łączna (since returned). Not all animals can be seen by visitors."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Serval",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Opvang; dieren wisselen. Niet zeker dat de servals voor bezoekers zichtbaar zijn: vooraf navragen.",
+      "en": "Rescue centre; animals change. Not certain the servals are on view for visitors: ask in advance."
+     },
+     "aantal": {
+      "nl": "2 (uit eerdere interventies)",
+      "en": "2 (from earlier interventions)"
+     },
+     "bron": "Bolec.info okt. 2026 (interview beheerder); eigen site (bezoekpagina) gezien 23-10-2026"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Farma Goławice – Mini Zoo",
+   "plaats": "Goławice Drugie (gmina Pomiechówek)",
+   "woj": "mazowieckie",
+   "lon": 20.701,
+   "lat": 52.499,
+   "type": "Particuliere houder",
+   "lidmaatschap": [],
+   "url": "https://farmagolawice.pl/",
+   "uren": {
+    "nl": "Za–zo, toegang om 10.00 en 13.00 u met gids; juli–aug di–zo 10–16 u; reservering verplicht (eigen site, gezien 23-10-2026).",
+    "en": "Sat–Sun, entry at 10am and 1pm with a guide; July–Aug Tue–Sun 10am–4pm; booking required (own site, seen 23-10-2026)."
+   },
+   "about": {
+    "nl": "Particuliere boerderij met minizoo (150–190 dieren) ca. 50 km van Warschau; bezoek via begeleide rondes. Caracal is een 'gevaarlijke soort' categorie II en vereist een vergunning van de RDOŚ.",
+    "en": "Private farm with a mini zoo (150–190 animals) about 50 km from Warsaw; visits by guided rounds. The caracal is a category II 'dangerous species' and needs a permit from the regional environment directorate (RDOŚ)."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Caracal",
+     "ondersoort": "—",
+     "status": "r",
+     "toelichting": {
+      "nl": "Op de actuele dierenlijst ('karakal stepowy'); bezoek alleen met begeleide ronde en reservering.",
+      "en": "On the current animal list ('karakal stepowy'); visits only on a guided round with booking."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site soortpagina (bijgewerkt 19-05-2025) en dierenlijst/sitemap (bijgewerkt 23-07-2026), gezien 23-10-2026"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Hacjenda Alpaka – Mini ZOO Nowy Sącz",
+   "plaats": "Ubiad (gmina Chełmiec)",
+   "woj": "małopolskie",
+   "lon": 20.71,
+   "lat": 49.683,
+   "type": "Particuliere houder",
+   "lidmaatschap": [],
+   "url": "https://hacjendaalpaka.pl/mini-zoo/",
+   "uren": {
+    "nl": "Bezoek na telefonische reservering; kinderen tot 12 j. 30 zł, volw. 40 zł (eigen site, gezien 23-10-2026).",
+    "en": "Visits by phone booking; children under 12 30 zł, adults 40 zł (own site, seen 23-10-2026)."
+   },
+   "about": {
+    "nl": "Agroturistiek met particuliere minizoo bij Nowy Sącz, met o.a. lemuren, stokstaartjes en een serval.",
+    "en": "Farm stay with a private mini zoo near Nowy Sącz, with lemurs, meerkats and a serval, among others."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Serval",
+     "ondersoort": "—",
+     "status": "r",
+     "toelichting": {
+      "nl": "'Serwal sawannowy' op de dierenlijst; bezoek alleen na reservering.",
+      "en": "'Serwal sawannowy' on the animal list; visits only by booking."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Eigen site mini-zoo-pagina (bijgewerkt 06-07-2026), gezien 23-10-2026"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Mini Zoo Żużela",
+   "plaats": "Żużela (gmina Krapkowice)",
+   "woj": "opolskie",
+   "lon": 18.013,
+   "lat": 50.426,
+   "type": "Particuliere houder",
+   "lidmaatschap": [],
+   "url": "",
+   "uren": {
+    "nl": "Niet gevonden (geen eigen site gevonden).",
+    "en": "Not found (no own website found)."
+   },
+   "about": {
+    "nl": "Particuliere minizoo naast de brandweerkazerne, sinds ca. 2022, met ongeveer 300 dieren; de serval zit vlak bij het bezoekerspad.",
+    "en": "Private mini zoo next to the fire station, since about 2022, with around 300 animals; the serval is close to the visitor path."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Serval",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Genoemd als bewoner in regionaal nieuws juli 2026.",
+      "en": "Named as a resident in regional news, July 2026."
+     },
+     "aantal": {
+      "nl": "1",
+      "en": "1"
+     },
+     "bron": "Tygodnik Krapkowicki 03-07-2026"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "Mini Zoo Zaczarnie",
+   "plaats": "Zaczarnie (gmina Lisia Góra)",
+   "woj": "małopolskie",
+   "lon": 21.041,
+   "lat": 50.068,
+   "type": "Particuliere houder",
+   "lidmaatschap": [],
+   "url": "",
+   "uren": {
+    "nl": "Za–zo 12–18 u; volw. 25 zł (Turysta.org 07-06-2026, niet de eigen site).",
+    "en": "Sat–Sun noon–6pm; adult 25 zł (Turysta.org 07-06-2026, not the own website)."
+   },
+   "about": {
+    "nl": "Kleine particuliere minizoo bij Tarnów, met vooral boerderijdieren en een serval.",
+    "en": "Small private mini zoo near Tarnów, mostly farm animals plus a serval."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Serval",
+     "ondersoort": "—",
+     "status": "g",
+     "toelichting": {
+      "nl": "Genoemd in een bezoekverslag (reisblog) van juni 2026; geen eigen site gevonden.",
+      "en": "Named in a visitor report (travel blog) from June 2026; no own website found."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "Turysta.org 07-06-2026"
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  },
+  {
+   "naam": "MiniZooPark Walim",
+   "plaats": "Walim (gmina Stara Kornica)",
+   "woj": "mazowieckie",
+   "lon": 22.951,
+   "lat": 52.221,
+   "type": "Particuliere houder",
+   "lidmaatschap": [],
+   "url": "",
+   "uren": {
+    "nl": "Weekend 10–19 u (PolskaDlaDzieci, ongedateerd).",
+    "en": "Weekends 10am–7pm (PolskaDlaDzieci, undated)."
+   },
+   "about": {
+    "nl": "Kleine particuliere minizoo bij Łosice met lemuren, apen, alpaca's, een kameel en een serval.",
+    "en": "Small private mini zoo near Łosice with lemurs, monkeys, alpacas, a camel and a serval."
+   },
+   "earlier": {
+    "nl": "",
+    "en": ""
+   },
+   "katten": [
+    {
+     "soort": "Serval",
+     "ondersoort": "—",
+     "status": "w",
+     "toelichting": {
+      "nl": "Alleen in een ongedateerde vermelding op een gidsensite.",
+      "en": "Only in an undated listing on a guide website."
+     },
+     "aantal": {
+      "nl": "onbekend",
+      "en": "unknown"
+     },
+     "bron": "PolskaDlaDzieci.pl (ongedateerd), gezien 23-10-2026",
+     "twijfel": {
+      "nl": "Geen eigen site en geen gedateerde bron 2025–2026 gevonden.",
+      "en": "No own website and no dated 2025–2026 source found."
+     }
+    }
+   ],
+   "geboortes": [],
+   "kleur": ""
+  }
+ ],
+ "zonder_katten": [
+  {
+   "naam": "Cyrk Zalewski",
+   "plaats": "–",
+   "label": "reistrond",
+   "lon": null,
+   "lat": null,
+   "reden": {
+    "nl": "Reizend circus; programma 2025–2026 zonder wilde katten (in 2025 alleen een hond in de piste, Portal Cyrkowy 11-11-2025). In 2016 nog 4 leeuwen en 1 tijger (Viva-rapport 2016).",
+    "en": "Travelling circus; 2025–2026 programme without wild cats (in 2025 only a dog in the ring, Portal Cyrkowy 11-11-2025). In 2016 still 4 lions and 1 tiger (Viva report 2016)."
+   }
+  },
+  {
+   "naam": "Cyrk Korona",
+   "plaats": "–",
+   "label": "reistrond",
+   "lon": null,
+   "lat": null,
+   "reden": {
+    "nl": "Reizend circus; programma 2025 alleen acrobatiek en artiesten, geen dieren genoemd (wroclaw.pl, voorstelling 01-06-2025).",
+    "en": "Travelling circus; 2025 programme only acrobatics and artists, no animals mentioned (wroclaw.pl, show 01-06-2025)."
+   }
+  },
+  {
+   "naam": "Cyrk Arlekin",
+   "plaats": "–",
+   "label": "reistrond",
+   "lon": null,
+   "lat": null,
+   "reden": {
+    "nl": "Reizend circus; werkt al jaren zonder dieren (eerste Poolse circus zonder dierennummers, Strajk.eu, ongedateerd ca. 2016); geen aanwijzing voor katten in 2025–2026.",
+    "en": "Travelling circus; has worked without animals for years (first Polish circus without animal acts, Strajk.eu, undated c. 2016); no sign of cats in 2025–2026."
+   }
+  },
+  {
+   "naam": "Cyrk Arena",
+   "plaats": "–",
+   "label": "reistrond",
+   "lon": null,
+   "lat": null,
+   "reden": {
+    "nl": "Reizend circus; had rond 2020 leeuwen van een Tsjechische dresseur (Fundacja Viva, ongedateerd); geen bron voor katten in 2025–2026 gevonden. Sinds 18-12-2021 mogen circussen geen nieuwe grote katten meer houden.",
+    "en": "Travelling circus; had lions from a Czech trainer around 2020 (Fundacja Viva, undated); no source for cats in 2025–2026 found. Since 18-12-2021 circuses may not acquire new big cats."
+   }
+  },
+  {
+   "naam": "Centralny Azyl dla Zwierząt (CAdZ)",
+   "plaats": "Warszawianka (gmina Lesznowola)",
+   "reden": {
+    "nl": "Staatsopvang voor in beslag genomen dieren bestaat alleen op papier: geen locatie, in 2025 vier dieren (papegaaien, uil, beer) direct doorgegeven; bouw gepland 2028–2031 (zero.pl 21-10-2026). Weigerde de katten uit Czchów en Łączna.",
+    "en": "State shelter for seized animals exists only on paper: no site, in 2025 four animals (parrots, owl, bear) passed straight on; construction planned 2028–2031 (zero.pl 21-10-2026). Declined the cats from Czchów and Łączna."
+   }
+  },
+  {
+   "naam": "Mazurskie Mini Zoo w Kąpie",
+   "plaats": "Kąp (gmina Giżycko)",
+   "reden": {
+    "nl": "Serval alleen genoemd in een artikel van 27-08-2023 (mazury.com.pl); geen nieuwere bron gevonden, dus niet opgenomen.",
+    "en": "Serval only mentioned in an article of 27-08-2023 (mazury.com.pl); no newer source found, so not listed."
+   }
+  }
+ ],
+ "open_punten": [
+  "ZOO Łączna staat als erkende dierentuin in het GDOŚ-register en valt mogelijk ook onder een regio-agent: ontdubbelen bij samenvoegen. Toestand wijzigt dagelijks (servals terug 20-10-2026, tijger in NL; terugkeer tijger 'als gezondheid het toelaat' volgens OM Świdnica).",
+  "Vijf servals uit Łączna (o.a. poes met jongen, waarschijnlijk 2026 geboren) zitten bij 'Rebelia GOGH' van Ewa Zgrabczyńska (oud-directeur Zoo Poznań); locatie en publieke toegang onbekend.",
+  "Czchów: namen Diego, Amira en Samir alleen uit de kop van Gazeta Krakowska (artikel zelf niet leesbaar, 403); welke naam bij welk dier hoort is onbekend. Volgende zitting volgens Gazeta Krakowska in december 2026.",
+  "Particuliere servals zonder publieke toegang niet als locatie opgenomen (privacy, geen adres): ontsnapte serval 'Shira' uit een hodowla in powiat niżański (TVN24 14-10-2026, terug bij eigenaar); serval bij Kierszek/Warschau (o2.pl 19-02-2026); hodowla in powiat wielicki met lynx en 6 servals (glos24 22-08-2024, onderzoek OM Kraków-Nowa Huta, uitkomst onbekend); serval ontsnapt in Bartąg bij Olsztyn (30-07-2025 volgens zoeksnippet, artikel niet gelezen).",
+  "Lynx-revalidatiecentrum Nadleśnictwo Spychowo (geopend 04-12-2025, LIFE-project) en ZTP-kweekverblijf Dłusko: niet open voor publiek; geen bevestiging dat er nu lynxen zitten. Ook revalidatiecentra (Białowieża, Napromek) vangen soms lynxen op: geen 2025–2026-bron gevonden.",
+  "Minizoo's met servals zijn waarschijnlijk talrijker dan hier vermeld (serval is geen 'gevaarlijke soort'); deze lijst is niet volledig. Żużela, Zaczarnie en Walim hebben geen eigen website met dierenlijst.",
+  "Cyrk Mediolan en Cyrk Prezentacje: geen enkele bron 2025–2026 gevonden; status onbekend (gezien de wet zeer waarschijnlijk zonder grote katten).",
+  "Puma Nubia (in beslag genomen privédier) zit al jaren in Zoo Chorzów: valt onder de dierentuinen. Pysząca (nep-circus, 2017 geruimd: tijgers, luipaarden, poema's, lynxen, caracal) bestaat niet meer.",
+  "Dzika Zagroda Jabłonowo: aantal lynxen niet gevonden; ondersoort volgens ZTP 'laaglandlynx' (niet als formeel label ingevuld)."
+ ],
+ "wetgeving": {
+  "circus": "Circussen mogen sinds 18-12-2021 geen gevaarlijke dieren (alle grote katten, cheeta, poema, jaguarundi = categorie I) meer houden: de wet op uitheemse soorten van 11-08-2021 (Dz.U. 2021 poz. 1718, art. 44 pkt 7) schrapte de circusuitzondering in art. 73 ust. 2 van de natuurbeschermingswet. Overgangsregel (art. 49): dieren die toen al in een circus waren, moesten vóór 18-06-2022 bij de RDOŚ gemeld of afgestaan worden; gemelde dieren mogen tot hun dood blijven, gemeenten mogen ze op gemeentegrond verbieden. Er is geen algemeen verbod op andere circusdieren (honden, paarden). In 2025–2026 vonden we geen Pools circus met wilde katten in het programma. Bronnen: Dz.U. 2021 poz. 1718 (eli.gov.pl, art. 44, 49, 60); RDOŚ Poznań 'Gatunki niebezpieczne' (gov.pl, gezien 23-10-2026); Salamandra Magazyn 15-12-2021; TVN24 10-04-2026; Portal Cyrkowy 11-11-2025.",
+  "particulier": "Art. 73 van de natuurbeschermingswet (tekst Dz.U. 2022 poz. 916) verbiedt bezit en invoer van 'voor mensen gevaarlijke soorten'. Uitgezonderd: erkende dierentuinen en onderzoeksinstellingen, en (alleen voor houden) revalidatiecentra en vergunde 'azyle' (GDOŚ-vergunning, art. 76a). Categorie I (alle Pantherinae, cheeta, poema, jaguarundi) is voor particulieren dus verboden; categorie II (alle lynxen, Aziatische goudkat, Borneo-goudkat, caracal) mag alleen met een vergunning van de RDOŚ (art. 73 ust. 4). De serval staat niet op de lijst (wel CITES-registratie), wat verklaart waarom servals vaak in minizoo's en bij particulieren zitten. Overtreding is sinds 18-12-2021 een misdrijf. Bronnen: Dz.U. 2022 poz. 916 art. 73; Rozporządzenie MŚ 03-08-2011 (Dz.U. 2011 nr 173 poz. 1037, bijlagen 1–2, kopie warszawa19115.pl); Dz.U. 2021 poz. 1718; RDOŚ Bydgoszcz 'Azyle dla zwierząt' (gov.pl, gezien 23-10-2026)."
+ }
+}

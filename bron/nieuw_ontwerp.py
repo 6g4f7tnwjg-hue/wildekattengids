@@ -217,16 +217,7 @@ html:not(.nw-scherm) #nw-sbar{display:none!important}
 .nw-bar .on{color:var(--nw-green);font-weight:700}
 .nw-bar .on::after{content:"";position:absolute;bottom:-4px;left:22%;right:22%;height:3px;border-radius:3px;background:var(--nw-green)}
 .nw-bar a:focus-visible{outline:2px solid var(--nw-terra);border-radius:8px}
-@media (min-width:900px){
-  html body{padding-bottom:0}
-  :root:root{--nw-top:calc(var(--hs-head) + 54px)}
-  .nw-bar{position:fixed;top:calc(env(safe-area-inset-top,0px) + var(--hs-head));bottom:auto;border-top:0;border-bottom:1px solid var(--line);padding:4px;height:54px;box-sizing:border-box;display:flex;align-items:center}   /* even hoog als de ruimte (54px) boven #main/#info: anders een lichte streep */
-  .nw-bar nav{display:flex;justify-content:center;gap:6px;max-width:none;flex:1}
-  .nw-bar a{flex-direction:row;gap:8px;font-size:.98rem;padding:8px 14px;border-radius:99px}
-  .nw-bar a svg{width:20px;height:20px}
-  .nw-bar .on{background:var(--nw-sage)}.nw-bar .on::after{display:none}
-  #totop{bottom:24px!important}
-  html body #main,html body #info{margin-top:54px}
+@media (min-width:900px){   /* menubalk ook op een breed scherm onderaan, zoals op de hoofdpagina */
   .nw-hero>img{height:340px}
   .nw-quick{gap:16px}.nw-tiles{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.nw-tile{min-height:190px;padding:18px}
   .nw-search{margin:16px 0 0}

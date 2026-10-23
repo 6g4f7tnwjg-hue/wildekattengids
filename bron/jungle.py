@@ -335,7 +335,6 @@ html body h1,html body h2{{font-family:{DISP}!important;font-weight:400!importan
 html body h3{{font-family:{BODY};font-weight:800}}
 html body .jg-blad{{pointer-events:none}}
 html body .nw-bar{{background:{JG}!important;border-top:0!important;-webkit-backdrop-filter:none;backdrop-filter:none}}
-@media (min-width:900px){{html body .nw-bar{{top:calc(env(safe-area-inset-top,0px) + var(--hs-head) - 1px)!important;border-bottom:0!important}}}}   /* laptop: geen lichte lijntjes boven en onder de menubalk */
 html body .nw-bar a,html body .nw-bar a:hover,html body .nw-bar a:visited{{color:#BFD9A8!important}}
 html body .nw-bar a.on{{color:{SUN}!important}}
 html body .nw-bar a.on::before,html body .nw-bar a.on::after{{background:{SUN}!important}}

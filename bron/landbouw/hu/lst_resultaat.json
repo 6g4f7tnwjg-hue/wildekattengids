@@ -1,0 +1,696 @@
+{
+ "locaties": [],
+ "zonder_katten": [
+  {
+   "naam": "Tropicarium-Oceanarium",
+   "plaats": "Budapest",
+   "reden": {
+    "nl": "Aquarium/terrarium (haaien, reptielen); geen katachtigen volgens Zootierliste (gezien 23-10-2026). Vergunde dierentuin.",
+    "en": "Aquarium/terrarium (sharks, reptiles); no cats according to Zootierliste (checked 23-10-2026). Licensed zoo."
+   }
+  },
+  {
+   "naam": "Tisza-tavi Ökocentrum",
+   "plaats": "Poroszló",
+   "reden": {
+    "nl": "Zoetwateraquarium en natuurcentrum; geen katachtigen volgens Zootierliste (gezien 23-10-2026); eigen site niet gecontroleerd. Vergunde dierentuin, MÁSZ-lid.",
+    "en": "Freshwater aquarium and nature centre; no cats according to Zootierliste (checked 23-10-2026); own website not checked. Licensed zoo, MÁSZ member."
+   }
+  },
+  {
+   "naam": "Bodorka Vízivilág Látogatóközpont",
+   "plaats": "Balatonfüred",
+   "reden": {
+    "nl": "Zoetwateraquarium (vissen van het Balatonmeer); geen katachtigen. Vergunde dierentuin.",
+    "en": "Freshwater aquarium (Lake Balaton fish); no cats. Licensed zoo."
+   }
+  },
+  {
+   "naam": "Garda Aquarium és Halászati Múzeum",
+   "plaats": "Tihany",
+   "reden": {
+    "nl": "Aquarium en visserijmuseum; geen katachtigen. Vergunde dierentuin.",
+    "en": "Aquarium and fishing museum; no cats. Licensed zoo."
+   }
+  },
+  {
+   "naam": "Papagájmentő Alapítvány",
+   "plaats": "Győr",
+   "reden": {
+    "nl": "Opvang voor papegaaien; geen katachtigen. Vergunde dierentuin.",
+    "en": "Parrot rescue; no cats. Licensed zoo."
+   }
+  },
+  {
+   "naam": "Madárkórház Alapítvány",
+   "plaats": "Hortobágy",
+   "reden": {
+    "nl": "Vogelziekenhuis/opvang voor vogels; geen katachtigen. Vergunde dierentuin.",
+    "en": "Bird hospital/rescue; no cats. Licensed zoo."
+   }
+  },
+  {
+   "naam": "Festetics madárpark",
+   "plaats": "Keszthely",
+   "reden": {
+    "nl": "Vogelpark; geen katachtigen. Vergunde dierentuin.",
+    "en": "Bird park; no cats. Licensed zoo."
+   }
+  },
+  {
+   "naam": "Pilikáni madár- és liliputi világ",
+   "plaats": "Cserszegtomaj",
+   "reden": {
+    "nl": "Vogelpark met miniatuurwereld; geen katachtigen. Vergunde dierentuin.",
+    "en": "Bird park with miniature world; no cats. Licensed zoo."
+   }
+  },
+  {
+   "naam": "Teknős Park",
+   "plaats": "Kőröshegy",
+   "reden": {
+    "nl": "Schildpaddenpark; geen katachtigen. Vergunde dierentuin.",
+    "en": "Turtle park; no cats. Licensed zoo."
+   }
+  },
+  {
+   "naam": "Mátra Múzeum",
+   "plaats": "Gyöngyös",
+   "reden": {
+    "nl": "Natuurhistorisch museum (vivarium); geen katachtigen volgens Zootierliste (gezien 23-10-2026). Vergunde dierentuin.",
+    "en": "Natural history museum (vivarium); no cats according to Zootierliste (checked 23-10-2026). Licensed zoo."
+   }
+  }
+ ],
+ "open_punten": [
+  "Er is geen openbaar online register van vergunde dierentuinen (állatkerti működési engedély). De beste lijst is een rondvraag van Cafeteria TREND bij alle vármegyei natuurbeschermingsautoriteiten (begin april 2025), gepubliceerd in IrányAdó Magazin 17-06-2025: 45 locaties, geen in Komárom-Esztergom, Nógrád, Tolna en Vas. Niet officieel gepubliceerd door de overheid; nieuwe vergunningen na april 2025 ontbreken.",
+  "Aanvullende officiële lijst: NÉBIH ‘Körülhatárolt létesítmények’ (EU 2019/2035, gezien versie 17-10-2024): 13 dierentuinen (Pécs, Miskolc, Szeged, Budapest Zoo, Tropicarium, Győr, Jászberény, Nyíregyháza, Tisza-tavi Ökocentrum, Gyöngyös, Veszprém, Hortobágyi Vadaspark, Debrecen). Alle staan ook op de 45-lijst.",
+  "Op de 45-lijst niet gecontroleerd op katten (geen gegevens in Zootierliste, eigen sites niet bekeken): Mini ZOO Komló, MancsRanch (Pécs), Körösvölgyi Állatpark (Szarvas), Zoo Előszállás, Kimba Állatpark (Töltéstava), Bagolyvár Vadaspark (Szolnok), Kenguru Park (Tiszaderzs), Szigethalmi Családi Vadaspark, Törökmezői Kis-Állatpark (Nagymaros), RoBirtok (Kosd), Bella Állatpark (Siófok), Afrika Múzeum és Állatkert (Balatonederics), Nagykanizsai Mini Zoo. Deze moeten de parkagenten nalopen.",
+  "‘Balaton Expressz Nemzetközi Szállítmányozási Kft.’ (Fejér) staat op de vergunde lijst maar is een transportbedrijf; wat voor dierencollectie (mogelijk circus-/showdieren) en waar, is onbekend.",
+  "Pusztaottlakai Vadaspark: Zootierliste noemt het ‘geschlossen’ (wilde kat tot 2017), maar het staat in april 2025 nog op de vergunde lijst. Status nagaan.",
+  "MagánZOO Felsőlajos (Tóth Tibor e.v.): Zootierliste laatst bezocht 11/2021 (Amoertijgers, witte tijgers, witte leeuw). Een besluit van de Bács-Kiskun Kormányhivatal uit 2023 (kormanyhivatalok.hu …/05759-16-toth-tibor-e.v.-felsolajos-maganzoo-hatarozat2.pdf) bestaat, maar de site was ‘om veiligheidsredenen’ offline – inhoud niet gelezen.",
+  "MÁSZ heet nu Magyar Állatkertek és Akváriumok Szövetsége (MÁASZ); 13 leden (incl. Tisza-tavi Ökocentrum en Medveotthon Veresegyház, niet in EAZA). Gyöngyös, Safari Park Nagykőrös en Felsőlajos zijn geen lid.",
+  "Zootierliste-jaartallen zijn het laatste jaar dat in de bronnen van ZTL voorkomt (bezoek, website, e-mail); bij veel parken (Szeged, Kecskemét, Jászberény, Veszprém) zijn de katten sinds 2017–2018 niet meer bevestigd. Szeged: tijger sinds 2026 uit Panthera Park Turá (Slowakije), op het bord ‘Amoer’ (ZTL: ondersoort onbekend); de oude Amoertijgers zijn weg.",
+  "Ondersoortlabels uit ZTL: ‘Javatiger’ in Budapest (1929–ca. 1976) is twijfelachtig; ‘Noord-Chinees’ luipaard (P. p. japonensis) valt nu onder P. p. orientalis; Palawan-luipaardkat in Debrecen is volgens Kitchener et al. 2017 Soendanese luipaardkat (P. javanensis).",
+  "Circusverbod (124/2026 Korm. rendelet) gaat pas in op 01-01-2027; tot dan zijn grote katten in circussen legaal. Het aantal en de verblijfplaats van circuskatten (bijv. familie Richter) is niet uitgezocht."
+ ],
+ "lijsten": {
+  "officieel": {
+   "url": "https://www.iranyadomagazin.hu/szakmai-cikkek/allatkert/",
+   "titel": "Állatkerti működési engedéllyel rendelkező létesítmények (rondvraag van Cafeteria TREND bij de vármegyei natuurbeschermingsautoriteiten, begin april 2025; gepubliceerd in IrányAdó Magazin, ‘Állatkert?’, Fata László). Aanvullend officieel: NÉBIH ‘Körülhatárolt létesítmények / Confined establishments (Magyarország)’ 17-10-2024, https://nebih.gov.hu/documents/10182/0/K%C3%B6r%C3%BClhat%C3%A1rolt+l%C3%A9tes%C3%ADtm%C3%A9nyek_2024.10.17.pdf (13 dierentuinregels).",
+   "datum": "rondvraag april 2025; artikel 17-06-2025 (gezien 23-10-2026)",
+   "aantal": 45,
+   "namen": [
+    "Kecskeméti Vadaskert (Kecskemét, Bács-Kiskun)",
+    "MagánZOO Állat- és Szabadidő Park (Felsőlajos, Bács-Kiskun)",
+    "Pécsi Állatkert Közhasznú Nonprofit Kft. (Pécs, Baranya)",
+    "Mini ZOO Komló (Komló, Baranya)",
+    "MancsRanch Állatkert és Állatotthon (Pécs, Baranya)",
+    "Mecske ZOO (Erdősmecske, Baranya)",
+    "Körösvölgyi Állatpark (Szarvas, Békés)",
+    "Pusztaottlakai Vadaspark (Pusztaottlaka, Békés)",
+    "Miskolci Állatkert és Kultúrpark (Miskolc, Borsod-Abaúj-Zemplén)",
+    "Szegedi Vadaspark (Szeged, Csongrád-Csanád)",
+    "Balaton Expressz Nemzetközi Szállítmányozási Kft. (Fejér; plaats niet genoemd)",
+    "Zoo Előszállás – Közösen az Állatokért Egyesület (Előszállás, Fejér)",
+    "Xantus János Állatkert Közhasznú Nonprofit Kft. (Győr, Győr-Moson-Sopron)",
+    "Papagájmentő Alapítvány (Győr, Győr-Moson-Sopron)",
+    "Kimba Állatpark (Töltéstava, Győr-Moson-Sopron)",
+    "Nagyerdei Kultúrpark Nonprofit Kft. (Debrecen, Hajdú-Bihar)",
+    "Madárkórház Alapítvány (Hajdú-Bihar)",
+    "Hortobágyi Vadaspark (Hortobágy, Hajdú-Bihar)",
+    "Gyöngyösi Állatkert (Gyöngyös, Heves)",
+    "Tisza-tavi Ökocentrum (Poroszló, Heves)",
+    "Mátra Múzeum – Gyöngyös (Heves)",
+    "Jászberényi Állat- és Növénykert (Jászberény, Jász-Nagykun-Szolnok)",
+    "Bagolyvár Vadaspark (Szolnok, Jász-Nagykun-Szolnok)",
+    "Kenguru Park (Tiszaderzs, Jász-Nagykun-Szolnok)",
+    "Budakeszi Vadaspark (Pest)",
+    "Fővárosi Állat- és Növénykert (Budapest; bevoegd: Pest)",
+    "Szentendrei Kisállatkert (Pest)",
+    "Szigethalmi Családi Vadaspark és Vadmentő Központ (Pest)",
+    "Tropicarium-Ocenarium (Budapest; bevoegd: Pest)",
+    "Veresegyházi Medveotthon (Pest)",
+    "Safari Park (Nagykőrös, Pest)",
+    "Törökmezői Kis-Állatpark (Nagymaros, Pest)",
+    "ROBIRTOK Kft. – RoBirtok Élményközpont (Kosd, Pest)",
+    "Vadvirád Állat- és Élménypark (Szigetbecse, Pest)",
+    "Teknős Park (Kőröshegy, Somogy)",
+    "Bella Állatpark (Siófok, Somogy)",
+    "Nyíregyházi Állatpark (Nyíregyháza, Szabolcs-Szatmár-Bereg)",
+    "Kittenberger Kálmán Növény- és Vadaspark (Veszprém)",
+    "Afrika Múzeum és Állatkert (Balatonederics, Veszprém)",
+    "Bodorka Vízivilág Látogatóközpont (Balatonfüred, Veszprém)",
+    "Garda Aquarium és Halászati Múzeum (Tihany, Veszprém)",
+    "Nagykanizsai Mini Zoo (Nagykanizsa, Zala)",
+    "Festetics madárpark (Keszthely, Zala)",
+    "Pilikáni madár- és liliputi világ (Cserszegtomaj, Zala)",
+    "Csácsi Hegyi Állatsimogató és Állatotthon Egyesület (Zalaegerszeg-Csács, Zala)"
+   ]
+  },
+  "eaza": [
+   "Budapest Fovaros Allat-Es Novenykertje (Full member)",
+   "Kittenberger Kálmán Növény- és Vadaspark, Veszprém (Full member)",
+   "Nagyerdei Kultúrpark Nonprofit Kft., Debrecen (Full member)",
+   "Nyíregyházi Állatpark Nonprofit Kft. (Sóstó Zoo) (Full member)",
+   "Pécs Zoo (Full member)",
+   "Szeged Zoo (Full member)",
+   "Zoo Győr - Xantus János Állatkert (Full member)",
+   "Jászberény Zoo (Full Accredited Member)",
+   "Miskolc Zoo (Candidate for Membership)",
+   "Association of Hungarian Zoos (Magyar Állatkertek Szövetsége - MÁSZ) (Associate member)"
+  ],
+  "eaza_bron": "https://strapi.eaza.net/api/members?filters[Country][$eq]=HU (opgehaald 23-10-2026): 10 records – 7 Full, 1 Full Accredited (Jászberény, bijgewerkt 20-05-2026), 1 Candidate (Miskolc, bijgewerkt 26-11-2025), 1 Associate (MÁSZ).",
+  "masz": [
+   "Budakeszi Vadaspark (Budakeszi)",
+   "Fővárosi Állat- és Növénykert (Budapest)",
+   "Nagyerdei Kultúrpark (Debrecen)",
+   "Xantus János Állatkert (Győr)",
+   "Jászberényi Állat- és Növénykert (Jászberény)",
+   "Kecskeméti Vadaskert (Kecskemét)",
+   "Miskolci Állatkert (Miskolc)",
+   "Nyíregyházi Állatpark (Nyíregyháza)",
+   "Pécsi Állatkert (Pécs)",
+   "Tisza-tavi Ökocentrum (Poroszló)",
+   "Szegedi Vadaspark (Szeged)",
+   "Medveotthon (Veresegyház)",
+   "Kittenberger Kálmán Növény- és Vadaspark (Veszprém)"
+  ],
+  "masz_bron": "https://zoo.hu/a-magyar-allatkertek-es-akvariumok-szovetsegenek-tagjai/ (Magyar Állatkertek és Akváriumok Szövetsége – MÁASZ, gezien 23-10-2026): 13 leden getoond; tekst: ‘1983-ban alapított … ma már 13 tagja van’.",
+  "circus": "Tot en met 31-12-2026: 85/2015. (XII. 17.) FM rendelet § 4 lid 2–3: ‘különösen veszélyes’ dieren (bijlage 1, o.a. leeuw, tijger, luipaard, jaguar, sneeuwluipaard, cheeta, poema) mogen alleen in een állatkert of in een cirkuszi menazséria worden gehouden; circussen mochten ze houden én fokken (net.jogtar.hu, a1500085.fm, gezien 23-10-2026). Al sinds 2010 mogen in het wild gevangen CITES-I-dieren niet meer in een circus worden aangeschaft of opgevoerd (222/2007. (VIII. 29.) Korm. rendelet § 10 lid 5). NIEUW: 124/2026. (VIII. 13.) Korm. rendelet (Magyar Közlöny 13-08-2026, regering-Tisza, minister Gajdos László) voegt § 2/A toe aan 222/2007 Korm. rendelet: vanaf 01-01-2027 is het verboden dieren uit o.a. de familie macskafélék (Felidae spp., behalve de huiskat Felis catus) in een circusmenagerie aan te schaffen, te fokken, te houden, af te richten, te tonen en op te laten treden; ook hybriden tot en met de 4e generatie (§ 2/A lid 2). Overgangsregel (§ 10 lid 5a–5b): dieren die op 01-01-2027 legaal in een circus zitten mogen daar levenslang blijven (of zolang ze bij de menagerie horen), maar niet meer fokken, getraind, getoond of opgevoerd worden; een lopende fokvergunning blijft geldig tot ze afloopt, zonder verlenging. Tegelijk wijzigt 3/2026. (VIII. 13.) ÉKFM rendelet de 85/2015-regeling (§ 4 lid 3, § 25 lid 4) in dezelfde zin. Bronnen: net.jogtar.hu/jogszabaly?docid=a0700222.kor&timeshift=20270101 en ?docid=a1500085.fm&timeshift=20270101 (gezien 23-10-2026); Telex 13-08-2026 (telex.hu/belfold/2026/08/13/cirkusz-rendelet-tiltas-allatok-zsirafok-vizilovak-macskafelek-fokak-elefantok); HVG 14-08-2026; 444 14-08-2026. Hoeveel grote katten nu nog in Hongaarse circussen zitten (o.a. familie Richter, die ook Safari Park Nagykőrös heeft) is in deze bronnen niet geteld.",
+  "particulier": "85/2015. (XII. 17.) FM rendelet a veszélyes állatfajokról (sinds ca. 16-01-2016; volgt de oudere 8/1999. (VIII. 13.) KöM-rendelet op – die opvolging niet in de tekst zelf gecontroleerd). Bijlage 1 ‘különösen veszélyes’ (zeer gevaarlijk): leeuw, tijger, luipaard, jaguar, sneeuwluipaard, cheeta, poema → alleen in een állatkert (en tot 31-12-2026 in een circus); particulieren krijgen geen vergunning (§ 4 lid 2). Bijlage 2 ‘közepesen veszélyes’ (matig gevaarlijk): nevelpanter, Soenda-nevelpanter, caracal, serval, Afrikaanse en Aziatische goudkat, rode lynx, Canadese lynx, ocelot → een particulier (natuurlijke persoon) of organisatie kan een houdvergunning krijgen bij de natuurbeschermingsautoriteit (vármegyei kormányhivatal) met vakbekwaamheid, instemming van ⅔ van de buren en veiligheidseisen (§ 5; bijlage 4 pt. 7.14: volledig overdekt verblijf). Dieren die al vóór 2016 werden gehouden mochten blijven na registratie/chip vóór 01-03-2016, maar fokken met zeer gevaarlijke dieren buiten dierentuinen (en circussen) is verboden (§ 25). Hybriden: de regeling geldt ook voor hybriden met andere wilde soorten en voor hybriden met huisdieren tot en met de 4e generatie (§ 1 lid 1 b, lid 2 c) – dus ook een Savannah F1–F4 (serval × huiskat) valt onder de vergunningsplicht. Inheemse soorten (Euraziatische lynx, Europese wilde kat) zijn beschermd en vallen onder 348/2006. (XII. 23.) Korm. rendelet (houden alleen met vergunning). Een dierentuin heeft een működési engedély nodig volgens 3/2001. (II. 23.) KöM–FVM–NKÖM–BM együttes rendelet; bevoegd is de natuurbeschermingsafdeling van het vármegyei kormányhivatal (Budapest/Pest: Pest Vármegyei Kormányhivatal). Bekende gevallen: november 2025 vond de politie in Tiszafüred een illegale tijgerwelp (‘Pablo’, 2–3 maanden) bij een man; hij ging naar Zoo Budapest (quarantaine) en in 2026 naar de Veresegyházi Medveotthon; DNA wees uit dat het een zuivere Amoertijger is (Telex 03-12-2025 en 08-12-2025; Origo 09-2026; Zootierliste). Dezelfde man werd in september 2026 opnieuw opgepakt met een penseelaapje (Origo/Agroinform 09-2026). Opvang voor in beslag genomen grote katten: geen officieel opvangcentrum; in de praktijk Zoo Budapest en de Medveotthon Veresegyház (ook vergunde dierentuin en MÁSZ-lid). Bronnen: net.jogtar.hu/jogszabaly?docid=a1500085.fm (gezien 23-10-2026); zoo.hu/konyvtar/torvenyek-rendeletek/ (MÁASZ, ‘de gevaarlijkste soorten mogen in Hongarije alleen door dierentuinen worden gehouden’); telex.hu/belfold/2025/12/08/vadallatok-tartasa-magyarorszag-tigris; origo.hu/kek-hirek/2026/09/selyemmajom-tigris-letartoztattak-a-tiszafuredi-ferfit."
+ },
+ "alle_instellingen": [
+  {
+   "naam": "Kecskeméti Vadaskert",
+   "plaats": "Kecskemét",
+   "megye": "Bács-Kiskun",
+   "bron": "officieel/masz/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Luipaard – onbekend, incl. zwarte panter (laatst gezien 2025)",
+    "Tijger – Amoer (laatst gezien 2025)",
+    "Euraziatische lynx – Karpatisch (L. l. carpathicus) (laatst gezien 2018)",
+    "Leeuw – onbekend (laatst gezien 2018)",
+    "Moeraskat – onbekend (laatst gezien 2018)",
+    "Luipaard – Noord-Chinees (P. p. orientalis, voorheen P. p. japonensis) (vroeger; laatst gezien 2018)",
+    "Tijger – onbekend (vroeger; laatst gezien 2018)"
+   ]
+  },
+  {
+   "naam": "MagánZOO Állat- és Szabadidő Park",
+   "plaats": "Felsőlajos",
+   "megye": "Bács-Kiskun",
+   "bron": "officieel/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Tijger – Amoer (laatst gezien 2021)",
+    "Tijger – onbekend, incl. witte tijger (laatst gezien 2021)",
+    "Leeuw – onbekend, incl. witte leeuw (laatst gezien 2017)",
+    "Euraziatische lynx – Karpatisch (L. l. carpathicus) (vroeger; laatst gezien 2017)"
+   ]
+  },
+  {
+   "naam": "Pécsi Állatkert Közhasznú Nonprofit Kft. (Pécs Zoo)",
+   "plaats": "Pécs",
+   "megye": "Baranya",
+   "bron": "officieel/eaza/masz/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Leeuw – onbekend (laatst gezien 2026)",
+    "Luipaard – Perzisch (laatst gezien 2026)",
+    "Poema – onbekend (laatst gezien 2026)",
+    "Serval – onbekend (laatst gezien 2026)",
+    "Tijger – onbekend, incl. witte tijger (bord: Bengaals) (laatst gezien 2026)",
+    "Euraziatische lynx – Karpatisch (L. l. carpathicus) (laatst gezien 2018)",
+    "Luipaard – Noord-Chinees (P. p. orientalis, voorheen P. p. japonensis) (vroeger; laatst gezien 1994)"
+   ]
+  },
+  {
+   "naam": "Mini ZOO Komló",
+   "plaats": "Komló",
+   "megye": "Baranya",
+   "bron": "officieel",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "MancsRanch Állatkert és Állatotthon",
+   "plaats": "Pécs",
+   "megye": "Baranya",
+   "bron": "officieel",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Mecske ZOO (vroeger RepZOOtic Animal Center)",
+   "plaats": "Erdősmecske",
+   "megye": "Baranya",
+   "bron": "officieel/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Moeraskat – onbekend (laatst gezien 2026)",
+    "Rode lynx – onbekend (laatst gezien 2026)",
+    "Serval – onbekend (laatst gezien 2026)"
+   ]
+  },
+  {
+   "naam": "Körösvölgyi Állatpark",
+   "plaats": "Szarvas",
+   "megye": "Békés",
+   "bron": "officieel",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Pusztaottlakai Vadaspark",
+   "plaats": "Pusztaottlaka",
+   "megye": "Békés",
+   "bron": "officieel/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Europese wilde kat – onbekend (vroeger; laatst gezien 2017)"
+   ]
+  },
+  {
+   "naam": "Miskolci Állatkert és Kultúrpark (Miskolc Zoo)",
+   "plaats": "Miskolc",
+   "megye": "Borsod-Abaúj-Zemplén",
+   "bron": "officieel/eaza/masz/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Tijger – Amoer (laatst gezien 2025)",
+    "Caracal – onbekend (laatst gezien 2024)",
+    "Luipaard – Perzisch (laatst gezien 2023)",
+    "Leeuw – onbekend (laatst gezien 2021)",
+    "Moeraskat – onbekend (laatst gezien 2021)",
+    "Euraziatische lynx – Karpatisch (L. l. carpathicus) (laatst gezien 2017)",
+    "Europese wilde kat – onbekend (laatst gezien 2017)",
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (vroeger; laatst gezien 2017)",
+    "Tijger – onbekend (vroeger; laatst gezien 2016)"
+   ]
+  },
+  {
+   "naam": "Szegedi Vadaspark (Szeged Zoo)",
+   "plaats": "Szeged",
+   "megye": "Csongrád-Csanád",
+   "bron": "officieel/eaza/masz/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Tijger – onbekend (bord: Amoer) (laatst gezien 2026)",
+    "Europese wilde kat – onbekend (laatst gezien 2024)",
+    "Luipaard – Noord-Chinees (P. p. orientalis, voorheen P. p. japonensis) (laatst gezien 2022)",
+    "Cheetah – Zuidelijk (A. j. jubatus) (laatst gezien 2021)",
+    "Sneeuwluipaard (laatst gezien 2021)",
+    "Nevelpanter (laatst gezien 2018)",
+    "Jaguar (laatst gezien 2017)",
+    "Leeuw – Zuidelijk (P. l. melanochaita) (laatst gezien 2017)",
+    "Poema – onbekend (laatst gezien 2017)",
+    "Tijger – Amoer (vroeger; laatst gezien 2026)",
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (vroeger; laatst gezien 2017)",
+    "Manoel – Mongools/Siberisch (O. m. manul) (vroeger; laatst gezien 2017)",
+    "Leeuw – Zuidelijk (P. l. melanochaita) (vroeger; laatst gezien 2014)",
+    "Luipaard – Perzisch (vroeger; laatst gezien 1996)",
+    "Luipaard – Amoer (P. p. orientalis) (vroeger; laatst gezien 1994)",
+    "Bengaalse kat – onbekend (vroeger; laatst gezien 1993)",
+    "Moeraskat – onbekend (vroeger; laatst gezien 1993)"
+   ]
+  },
+  {
+   "naam": "Balaton Expressz Nemzetközi Szállítmányozási Kft.",
+   "plaats": "onbekend",
+   "megye": "Fejér",
+   "bron": "officieel",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Zoo Előszállás – Közösen az Állatokért Egyesület",
+   "plaats": "Előszállás",
+   "megye": "Fejér",
+   "bron": "officieel",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Xantus János Állatkert Közhasznú Nonprofit Kft. (Zoo Győr)",
+   "plaats": "Győr",
+   "megye": "Győr-Moson-Sopron",
+   "bron": "officieel/eaza/masz/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Jaguar (laatst gezien 2026)",
+    "Leeuw – Zuidelijk (P. l. melanochaita) (laatst gezien 2026)",
+    "Leeuw – onbekend (laatst gezien 2026)",
+    "Serval – onbekend (laatst gezien 2026)",
+    "Tijger – onbekend, incl. witte tijger (bord: Bengaals) (laatst gezien 2026)",
+    "Caracal – onbekend (vroeger; laatst gezien 2012)"
+   ]
+  },
+  {
+   "naam": "Papagájmentő Alapítvány",
+   "plaats": "Győr",
+   "megye": "Győr-Moson-Sopron",
+   "bron": "officieel",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Kimba Állatpark",
+   "plaats": "Töltéstava",
+   "megye": "Győr-Moson-Sopron",
+   "bron": "officieel",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Nagyerdei Kultúrpark Nonprofit Kft. (Debreceni Állatkert)",
+   "plaats": "Debrecen",
+   "megye": "Hajdú-Bihar",
+   "bron": "officieel/eaza/masz/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Tijger – Amoer (laatst gezien 2025)",
+    "Leeuw – Aziatisch (P. l. leo, voorheen P. l. persica) (laatst gezien 2023)",
+    "Luipaard – Noord-Chinees (P. p. orientalis, voorheen P. p. japonensis) (laatst gezien 2023)",
+    "Soendanese luipaardkat – Palawan (P. javanensis, ZTL: P. b. heaneyi) (laatst gezien 2021)",
+    "Leeuw – onbekend (vroeger; laatst gezien 2008)",
+    "Europese wilde kat – onbekend (vroeger; laatst gezien 1993)",
+    "Luipaard – onbekend, incl. zwarte panter (vroeger; laatst gezien 1993)",
+    "Moeraskat – onbekend (vroeger; laatst gezien 1993)",
+    "Poema – onbekend (vroeger; laatst gezien 1993)"
+   ]
+  },
+  {
+   "naam": "Madárkórház Alapítvány",
+   "plaats": "Hortobágy",
+   "megye": "Hajdú-Bihar",
+   "bron": "officieel",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Hortobágyi Vadaspark (Pusztaszafari)",
+   "plaats": "Hortobágy (Malomháza)",
+   "megye": "Hajdú-Bihar",
+   "bron": "officieel/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Europese wilde kat – onbekend (laatst gezien 2022)"
+   ]
+  },
+  {
+   "naam": "Gyöngyösi Állatkert",
+   "plaats": "Gyöngyös",
+   "megye": "Heves",
+   "bron": "officieel/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Luipaard – onbekend (laatst gezien 2026)",
+    "Tijger – Amoer (laatst gezien 2026)",
+    "Moeraskat – onbekend (laatst gezien 2024)",
+    "Canadese lynx (laatst gezien 2019)",
+    "Poema – onbekend (laatst gezien 2019)",
+    "Leeuw – onbekend (laatst gezien 2017)",
+    "Tijger – onbekend (vroeger; laatst gezien 2017)"
+   ]
+  },
+  {
+   "naam": "Tisza-tavi Ökocentrum",
+   "plaats": "Poroszló",
+   "megye": "Heves",
+   "bron": "officieel/masz",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Mátra Múzeum",
+   "plaats": "Gyöngyös",
+   "megye": "Heves",
+   "bron": "officieel",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Jászberényi Állat- és Növénykert (Jászberény Zoo)",
+   "plaats": "Jászberény",
+   "megye": "Jász-Nagykun-Szolnok",
+   "bron": "officieel/eaza/masz/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Leeuw – onbekend (laatst gezien 2018)",
+    "Luipaard – Perzisch (laatst gezien 2018)",
+    "Moeraskat – onbekend (laatst gezien 2018)",
+    "Vissende kat – onbekend (laatst gezien 2018)",
+    "Leeuw – Aziatisch (P. l. leo, voorheen P. l. persica) (vroeger; laatst gezien 2024)"
+   ]
+  },
+  {
+   "naam": "Bagolyvár Vadaspark",
+   "plaats": "Szolnok",
+   "megye": "Jász-Nagykun-Szolnok",
+   "bron": "officieel",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Kenguru Park",
+   "plaats": "Tiszaderzs",
+   "megye": "Jász-Nagykun-Szolnok",
+   "bron": "officieel",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Budakeszi Vadaspark",
+   "plaats": "Budakeszi",
+   "megye": "Pest",
+   "bron": "officieel/masz/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Euraziatische lynx – Karpatisch (L. l. carpathicus) (laatst gezien 2017)"
+   ]
+  },
+  {
+   "naam": "Fővárosi Állat- és Növénykert (Zoo Budapest)",
+   "plaats": "Budapest",
+   "megye": "Budapest",
+   "bron": "officieel/eaza/masz/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Tijger – Amoer (laatst gezien 2026)",
+    "Manoel – Mongools/Siberisch (O. m. manul) (laatst gezien 2025)",
+    "Leeuw – Aziatisch (P. l. leo, voorheen P. l. persica) (laatst gezien 2024)",
+    "Luipaard – Perzisch (laatst gezien 2024)",
+    "Tijger – onbekend (vroeger; laatst gezien 2026)",
+    "Leeuw – Noordelijk (P. l. leo) (vroeger; laatst gezien 2014)",
+    "Leeuw – onbekend (vroeger; laatst gezien 2013)",
+    "Serval – onbekend (vroeger; laatst gezien 2008)",
+    "Europese wilde kat – onbekend (vroeger; laatst gezien 2004)",
+    "Jaguarundi (vroeger; laatst gezien 2003)",
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (vroeger; laatst gezien 2002)",
+    "Poema – onbekend (vroeger; laatst gezien 2002)",
+    "Jaguar (vroeger; laatst gezien 1998)",
+    "Sneeuwluipaard (vroeger; laatst gezien 1996)",
+    "Bengaalse kat – Amoer (P. b. euptilura) (vroeger; laatst gezien 1993)",
+    "Euraziatische lynx – Siberisch (L. l. wrangeli, volgens ZTL) (vroeger; laatst gezien 1993)",
+    "Jaguar – Amazone (volgens ZTL) (vroeger; laatst gezien 1993)",
+    "Luipaard – onbekend, incl. zwarte panter (vroeger; laatst gezien 1993)",
+    "Cheetah – onbekend (vroeger; laatst gezien 1990)",
+    "Ocelot – onbekend (vroeger; laatst gezien 1988)",
+    "Tijger – Javaans (volgens ZTL; twijfelachtig) (vroeger; laatst gezien 1976)",
+    "Tijger – Sumatraans (vroeger; laatst gezien 1971)",
+    "Caracal – onbekend (vroeger; laatst gezien 1966)",
+    "Euraziatische lynx – Karpatisch (L. l. carpathicus) (vroeger; laatst gezien 1958)",
+    "Tijger – Bengaals (vroeger; laatst gezien 1944)",
+    "Luipaard – Indochinees (P. p. delacouri, volgens ZTL) (vroeger; laatst gezien geen jaartal in ZTL)"
+   ]
+  },
+  {
+   "naam": "Szentendrei Kisállatkert",
+   "plaats": "Szentendre",
+   "megye": "Pest",
+   "bron": "officieel/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Rode lynx – onbekend (laatst gezien 2024)"
+   ]
+  },
+  {
+   "naam": "Szigethalmi Családi Vadaspark és Vadmentő Központ",
+   "plaats": "Szigethalom",
+   "megye": "Pest",
+   "bron": "officieel",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Tropicarium-Oceanarium",
+   "plaats": "Budapest",
+   "megye": "Budapest",
+   "bron": "officieel",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Veresegyházi Medveotthon",
+   "plaats": "Veresegyház",
+   "megye": "Pest",
+   "bron": "officieel/masz/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Tijger – Amoer (laatst gezien 2026)"
+   ]
+  },
+  {
+   "naam": "Safari Park (Richter)",
+   "plaats": "Nagykőrös",
+   "megye": "Pest",
+   "bron": "officieel/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Leeuw – onbekend (laatst gezien 2026)",
+    "Tijger – onbekend (laatst gezien 2026)"
+   ]
+  },
+  {
+   "naam": "Törökmezői Kis-Állatpark",
+   "plaats": "Nagymaros",
+   "megye": "Pest",
+   "bron": "officieel",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "ROBIRTOK Kft. – RoBirtok Élményközpont",
+   "plaats": "Kosd",
+   "megye": "Pest",
+   "bron": "officieel",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Vadvirád Állat- és Élménypark",
+   "plaats": "Szigetbecse",
+   "megye": "Pest",
+   "bron": "officieel/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Leeuw – onbekend (laatst gezien 2026)",
+    "Tijger – onbekend (bord: Amoer) (vroeger; laatst gezien 2026)"
+   ]
+  },
+  {
+   "naam": "Teknős Park",
+   "plaats": "Kőröshegy",
+   "megye": "Somogy",
+   "bron": "officieel",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Bella Állatpark",
+   "plaats": "Siófok",
+   "megye": "Somogy",
+   "bron": "officieel",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Nyíregyházi Állatpark Nonprofit Kft. (Sóstó Zoo)",
+   "plaats": "Nyíregyháza",
+   "megye": "Szabolcs-Szatmár-Bereg",
+   "bron": "officieel/eaza/masz/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Cheetah – Zuidelijk (A. j. jubatus) (laatst gezien 2025)",
+    "Euraziatische lynx – Noordelijk (L. l. lynx) (laatst gezien 2025)",
+    "Europese wilde kat – onbekend (laatst gezien 2025)",
+    "Geoffroy’s kat (laatst gezien 2025)",
+    "Jaguar (laatst gezien 2025)",
+    "Leeuw – Zuidelijk (P. l. melanochaita) (laatst gezien 2025)",
+    "Leeuw – onbekend (laatst gezien 2025)",
+    "Luipaard – Noord-Chinees (P. p. orientalis, voorheen P. p. japonensis) (laatst gezien 2025)",
+    "Luipaard – Perzisch (laatst gezien 2025)",
+    "Poema – onbekend (laatst gezien 2025)",
+    "Rode lynx – onbekend (laatst gezien 2025)",
+    "Serval – onbekend (laatst gezien 2025)",
+    "Sneeuwluipaard (laatst gezien 2025)",
+    "Tijger – Amoer (laatst gezien 2025)",
+    "Tijger – Maleis (P. t. tigris, voorheen P. t. jacksoni) (laatst gezien 2025)",
+    "Tijger – Sumatraans (laatst gezien 2025)",
+    "Tijger – onbekend, incl. witte tijger (vroeger; laatst gezien 2026)",
+    "Canadese lynx (vroeger; laatst gezien 2023)",
+    "Luipaard – onbekend, incl. zwarte panter (vroeger; laatst gezien 2022)",
+    "Leeuw – Zuidelijk (P. l. melanochaita) (vroeger; laatst gezien 2014)",
+    "Nevelpanter (vroeger; laatst gezien 2008)",
+    "Vissende kat – onbekend (vroeger; laatst gezien 2001)"
+   ]
+  },
+  {
+   "naam": "Kittenberger Kálmán Növény- és Vadaspark (Veszprémi Állatkert)",
+   "plaats": "Veszprém",
+   "megye": "Veszprém",
+   "bron": "officieel/eaza/masz/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Tijger – Amoer (laatst gezien 2026)",
+    "Leeuw – onbekend (laatst gezien 2022)",
+    "Euraziatische lynx – Karpatisch (L. l. carpathicus) (laatst gezien 2018)",
+    "Sneeuwluipaard (laatst gezien 2018)",
+    "Serval – onbekend (vroeger; laatst gezien 2026)",
+    "Luipaard – Sri Lanka (P. p. kotiya) (vroeger; laatst gezien 2013)",
+    "Poema – onbekend (vroeger; laatst gezien 2009)",
+    "Tijger – Sumatraans (vroeger; laatst gezien 2009)",
+    "Europese wilde kat – onbekend (vroeger; laatst gezien 1993)",
+    "Jaguar (vroeger; laatst gezien 1993)",
+    "Luipaard – onbekend (vroeger; laatst gezien 1993)",
+    "Moeraskat – onbekend (vroeger; laatst gezien 1993)",
+    "Ocelot – onbekend (vroeger; laatst gezien 1993)"
+   ]
+  },
+  {
+   "naam": "Afrika Múzeum és Állatkert",
+   "plaats": "Balatonederics",
+   "megye": "Veszprém",
+   "bron": "officieel",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Bodorka Vízivilág Látogatóközpont",
+   "plaats": "Balatonfüred",
+   "megye": "Veszprém",
+   "bron": "officieel",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Garda Aquarium és Halászati Múzeum",
+   "plaats": "Tihany",
+   "megye": "Veszprém",
+   "bron": "officieel",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Nagykanizsai Mini Zoo",
+   "plaats": "Nagykanizsa",
+   "megye": "Zala",
+   "bron": "officieel",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Festetics madárpark",
+   "plaats": "Keszthely",
+   "megye": "Zala",
+   "bron": "officieel",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Pilikáni madár- és liliputi világ",
+   "plaats": "Cserszegtomaj",
+   "megye": "Zala",
+   "bron": "officieel",
+   "katten_volgens_zootierliste": []
+  },
+  {
+   "naam": "Csácsi Hegyi Állatsimogató és Állatotthon Egyesület",
+   "plaats": "Zalaegerszeg (Csács)",
+   "megye": "Zala",
+   "bron": "officieel/zootierliste",
+   "katten_volgens_zootierliste": [
+    "Tijger – onbekend, incl. witte tijger (laatst gezien 2022)",
+    "Leeuw – onbekend (vroeger; laatst gezien 2023)"
+   ]
+  },
+  {
+   "naam": "Abonyi magánállatkert (gesloten 2015)",
+   "plaats": "Abony",
+   "megye": "Pest",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [
+    "Tijger – Amoer (vroeger; laatst gezien 2015)"
+   ]
+  },
+  {
+   "naam": "Füles Bástya Zoo (gesloten)",
+   "plaats": "Győr",
+   "megye": "Győr-Moson-Sopron",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [
+    "Tijger – Amoer (vroeger; laatst gezien 2012)",
+    "Luipaard – onbekend (vroeger; laatst gezien 1993)"
+   ]
+  },
+  {
+   "naam": "Noel Tanya (gesloten 2017)",
+   "plaats": "Érd",
+   "megye": "Pest",
+   "bron": "zootierliste",
+   "katten_volgens_zootierliste": [
+    "Leeuw – onbekend (vroeger; laatst gezien 2017)",
+    "Poema – onbekend (vroeger; laatst gezien 2017)"
+   ]
+  }
+ ]
+}

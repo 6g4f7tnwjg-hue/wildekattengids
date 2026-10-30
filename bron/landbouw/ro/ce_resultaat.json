@@ -1,0 +1,405 @@
+{
+  "locaties": [
+    {
+      "naam": "Grădina Zoologică Brașov (Zoo Brașov)",
+      "plaats": "Brașov (wijk Noua)",
+      "judet": "Brașov",
+      "lon": 25.632,
+      "lat": 45.613,
+      "type": "Dierentuin",
+      "lidmaatschap": [
+        "EAZA"
+      ],
+      "url": "https://zoobrasov.ro/",
+      "uren": {
+        "nl": "Di–zo; 1 mrt–30 sep 09:00–19:00, 1 okt–28 feb 09:00–18:00; maandag dicht, behalve in schoolvakanties en op feestdagen (eigen site, gezien 30-10-2026)",
+        "en": "Tue–Sun; 1 Mar–30 Sep 09:00–19:00, 1 Oct–28 Feb 09:00–18:00; closed Mondays except school holidays and public holidays (own website, seen 30-10-2026)"
+      },
+      "about": {
+        "nl": "Gemeentelijke dierentuin bij het Noua-meer, sinds 2014 vernieuwd en sinds september 2025 het enige volwaardige EAZA-lid van Roemenië. Erkend door het milieuagentschap ANMAP (vergunning 225/2014). Het tropenhuis is nog in aanbouw.",
+        "en": "Municipal zoo by Lake Noua, rebuilt and reopened in 2014; since September 2025 Romania's only full EAZA member. Licensed by the environment agency ANMAP (licence 225/2014). The tropical house is still under construction."
+      },
+      "earlier": {
+        "nl": "Witte tijger: in 2016 en mei 2022 gemeld (Zootierliste, bezoek 05-2022); staat niet meer op de soortenlijst van de eigen site (oktober 2026). Witte leeuwen: Mediafax meldde ooit twee witte leeuwen; zie ook de oude witte leeuw bij Leeuw.",
+        "en": "White tiger: reported in 2016 and May 2022 (Zootierliste, visit 05-2022); no longer on the species list of the zoo's website (October 2026). White lions: Mediafax once reported two white lions; see also the old white lion under Lion."
+      },
+      "katten": [
+        {
+          "soort": "Leeuw",
+          "ondersoort": "onbekend",
+          "status": "g",
+          "toelichting": {
+            "nl": "Staat als ‘Leu african’ op de soortenlijst. In januari 2025 was er ook een oude witte leeuw (21 jaar, in 2018 overgenomen na de brand bij Circul Globus); of die nog leeft, is niet bekend.",
+            "en": "Listed as ‘African lion’. In January 2025 there was also an old white lion (21 years, taken in from Circul Globus after the 2018 fire); whether it is still alive is not known."
+          },
+          "aantal": {
+            "nl": "onbekend",
+            "en": "unknown"
+          },
+          "bron": "Eigen site soortenlijst en soortpagina ‘Leu african’ (gezien 30-10-2026); Observator/Digi24 jan. 2025 (witte leeuw); Zootierliste (bezoek 05-2022)"
+        },
+        {
+          "soort": "Tijger",
+          "ondersoort": "Amoer",
+          "status": "g",
+          "toelichting": {
+            "nl": "Siberische tijger (Panthera tigris altaica) op de soortenlijst en in het adoptieprogramma.",
+            "en": "Siberian tiger (Panthera tigris altaica) on the species list and in the adoption programme."
+          },
+          "aantal": {
+            "nl": "onbekend",
+            "en": "unknown"
+          },
+          "bron": "Eigen site soortpagina ‘Tigru siberian’ en adoptiepagina (gezien 30-10-2026); Zootierliste (bezoek 05-2022)"
+        },
+        {
+          "soort": "Jaguar",
+          "ondersoort": "—",
+          "status": "g",
+          "toelichting": {
+            "nl": "Op de soortenlijst en in het adoptieprogramma. In 2017 kwam jaguarwijfje Francesca uit Zoo Sibiu; of zij er nog is, is niet bevestigd.",
+            "en": "On the species list and in the adoption programme. In 2017 the female jaguar Francesca came from Zoo Sibiu; whether she is still here is not confirmed."
+          },
+          "aantal": {
+            "nl": "onbekend",
+            "en": "unknown"
+          },
+          "bron": "Eigen site soortpagina ‘Jaguar’ en adoptiepagina (gezien 30-10-2026); Mediafax 2017 (Francesca)"
+        },
+        {
+          "soort": "Sneeuwluipaard",
+          "ondersoort": "—",
+          "status": "y",
+          "toelichting": {
+            "nl": "Op de eigen site ‘momentan indisponibil’ (momenteel niet te zien); de adoptiepagina is verwijderd. In oktober 2025 vierde het park nog de Dag van de Sneeuwluipaard met Amalia en Aslan. Het nationale ANMAP-rapport telt eind 2025 nog sneeuwluipaarden in Roemenië.",
+            "en": "Marked ‘momentan indisponibil’ (currently not on view) on the zoo's website; the adoption page has been removed. In October 2025 the zoo still celebrated Snow Leopard Day with Amalia and Aslan. The national ANMAP report still counts snow leopards in Romania at the end of 2025."
+          },
+          "aantal": {
+            "nl": "2 (Amalia en Aslan, stand oktober 2025)",
+            "en": "2 (Amalia and Aslan, as of October 2025)"
+          },
+          "bron": "Eigen site soortenlijst (gezien 30-10-2026); Monitorul Expres 22-10-2025; ANMAP Raport anual zoo 2025 (gepubliceerd 06-2026)"
+        },
+        {
+          "soort": "Euraziatische lynx",
+          "ondersoort": "Karpatisch (L. l. carpathicus)",
+          "status": "g",
+          "toelichting": {
+            "nl": "Het park noemt hem ‘râs carpatin’ (Karpatische lynx); op de soortpagina staat alleen Lynx lynx. In 2021 kwamen twee wijfjes uit het Kittenberger-dierenpark in Veszprém (Hongarije).",
+            "en": "The zoo calls it ‘râs carpatin’ (Carpathian lynx); the species page only gives Lynx lynx. In 2021 two females came from Kittenberger Zoo in Veszprém (Hungary)."
+          },
+          "aantal": {
+            "nl": "onbekend (2 wijfjes in 2021)",
+            "en": "unknown (2 females in 2021)"
+          },
+          "bron": "Eigen site soortpagina ‘Râs carpatin’ en adoptiepagina (gezien 30-10-2026); Zootierliste (e-mail park 12-2021, bezoek 05-2022)"
+        }
+      ],
+      "geboortes": [],
+      "kleur": "witte leeuw (laatst gemeld januari 2025)"
+    },
+    {
+      "naam": "Grădina Zoologică Târgu Mureș",
+      "plaats": "Târgu Mureș (Platoul Cornești)",
+      "judet": "Mureș",
+      "lon": 24.595,
+      "lat": 46.552,
+      "type": "Dierentuin",
+      "lidmaatschap": [
+        "EAZA (kandidaat-lid)",
+        "FGZAR"
+      ],
+      "url": "https://zootirgumures.ro/",
+      "uren": {
+        "nl": "Dagelijks; 1 mrt–31 okt 09:00–18:00, 1 nov–28 feb 09:00–16:00 (laatste toegang op die tijd, park daarna nog een uur open) (eigen site, gezien 30-10-2026)",
+        "en": "Daily; 1 Mar–31 Oct 09:00–18:00, 1 Nov–28 Feb 09:00–16:00 (last entry at that time, park open one more hour) (own website, seen 30-10-2026)"
+      },
+      "about": {
+        "nl": "Grootste dierentuin van Roemenië qua oppervlakte (ongeveer 42 ha), in het bos op Platoul Cornești, met o.a. olifanten en giraffen. Erkend door ANMAP; volgens Zoo Brașov (oktober 2025) kandidaat-lid van de EAZA. Een vrij levende bruine beer kwam enkele nachten het park in; die telt niet mee.",
+        "en": "Romania's largest zoo by area (about 42 ha), in the forest on Platoul Cornești, with elephants and giraffes among others. Licensed by ANMAP; according to Zoo Brașov (October 2025) an EAZA candidate member. A wild brown bear entered the park on several nights; it does not count."
+      },
+      "earlier": {
+        "nl": "Jaguar (3 mannen in 2016; in 2022 nog gemeld maar niet gezien), serval (1 man, 2015–2022) en Amoerluipaard (man uit Amsterdam, 2015; in 2022 niet gezien), alle volgens Zootierliste; geen recentere bron gevonden.",
+        "en": "Jaguar (3 males in 2016; still reported but not seen in 2022), serval (1 male, 2015–2022) and Amur leopard (male from Amsterdam, 2015; not seen in 2022), all according to Zootierliste; no more recent source found."
+      },
+      "katten": [
+        {
+          "soort": "Leeuw",
+          "ondersoort": "onbekend",
+          "status": "g",
+          "toelichting": {
+            "nl": "Leeuwen in het leeuwenverblijf; publieke voederingen tijdens de Museumnacht 2026. In oktober 2025 noemde het park de jonge mannen Koppa en Kion. In 2022 nam het park volgens Zootierliste negen leeuwen op uit het Biopark van Odesa (Oekraïne) en werden er twee welpen geboren.",
+            "en": "Lions in the lion enclosure; public feeding during Museum Night 2026. In October 2025 the zoo named the young males Koppa and Kion. In 2022, according to Zootierliste, the zoo took in nine lions from Odesa Biopark (Ukraine) and two cubs were born."
+          },
+          "aantal": {
+            "nl": "onbekend (o.a. de jonge mannen Koppa en Kion)",
+            "en": "unknown (including the young males Koppa and Kion)"
+          },
+          "bron": "Eigen site: ‘Realitatea de la Zoo’ 08-10-2025, Noaptea Muzeelor 2026 (18-05-2026), 62e verjaardag 21-08-2026; Zootierliste (Facebook 05/06-2022)"
+        },
+        {
+          "soort": "Tijger",
+          "ondersoort": "Bengaals, incl. witte tijger",
+          "status": "g",
+          "toelichting": {
+            "nl": "Witte Bengaalse tijgers: de zussen Indira en Adelina (2022) en Shasha (welp, mei 2023 uit Felsőlajos, Hongarije). De plattegrond (juni 2025) toont een witte tijger; het park houdt in oktober 2026 nog publieke tijgervoederingen.",
+            "en": "White Bengal tigers: the sisters Indira and Adelina (2022) and Shasha (cub, May 2023 from Felsőlajos, Hungary). The park map (June 2025) shows a white tiger; the zoo still holds public tiger feedings in October 2026."
+          },
+          "aantal": {
+            "nl": "onbekend (in 2023: Indira, Adelina en Shasha)",
+            "en": "unknown (in 2023: Indira, Adelina and Shasha)"
+          },
+          "bron": "Eigen site: ‘A sosit Shasha!’ 25-05-2023, plattegrond terkep-180625 (2025), ‘Magia de Halloween’ 19-10-2026; Zootierliste (bezoek 05-2022)"
+        },
+        {
+          "soort": "Tijger",
+          "ondersoort": "Amoer",
+          "status": "w",
+          "toelichting": {
+            "nl": "Het park had Siberische tijgers (fok in 2016; voedering ‘tigru siberian’ bij de Museumnacht mei 2024). Recentere berichten spreken alleen van ‘tijgers’.",
+            "en": "The zoo had Siberian tigers (breeding in 2016; ‘tigru siberian’ feeding at Museum Night May 2024). More recent posts only mention ‘tigers’."
+          },
+          "aantal": {
+            "nl": "onbekend",
+            "en": "unknown"
+          },
+          "bron": "Eigen site: Noaptea muzeelor 13-05-2024; Zootierliste (e-mail park 12-2016, bezoek 05-2022)",
+          "twijfel": {
+            "nl": "Laatste vermelding met ondersoort is mei 2024; niet duidelijk of naast de witte tijgers nog Amoertijgers aanwezig zijn.",
+            "en": "Last mention with subspecies is May 2024; unclear whether Amur tigers are still kept alongside the white tigers."
+          }
+        },
+        {
+          "soort": "Luipaard",
+          "ondersoort": "Noord-Chinees (P. p. japonensis)",
+          "status": "g",
+          "toelichting": {
+            "nl": "Nieuwe soort voor het park: een man kwam in juli 2025 uit Nyíregyháza (Hongarije), een wijfje in oktober 2025 uit Tierpark Hagenbeck (Hamburg); het park hoopt op fok. Schuw dier, het best te zien op rustige dagen tegen sluitingstijd. Let op: P. p. japonensis wordt sinds 2017 vaak bij de Amoerluipaard (P. p. orientalis) gerekend.",
+            "en": "New species for the zoo: a male arrived in July 2025 from Nyíregyháza (Hungary), a female in October 2025 from Tierpark Hagenbeck (Hamburg); the zoo hopes to breed. Shy, best seen on quiet days near closing time. Note: since 2017 P. p. japonensis is often included in the Amur leopard (P. p. orientalis)."
+          },
+          "aantal": {
+            "nl": "2 (1 man, 1 wijfje)",
+            "en": "2 (1 male, 1 female)"
+          },
+          "bron": "Eigen site 24-07-2025 en 02-10-2025; Zootierliste (Facebook park 10-2025)"
+        },
+        {
+          "soort": "Poema",
+          "ondersoort": "onbekend",
+          "status": "g",
+          "toelichting": {
+            "nl": "Een man kwam in juni 2024 (transport uit Zoo Boedapest en Gyöngyös); in maart 2026 kwam er een wijfje uit Szeged bij, zodat er nu een paar is.",
+            "en": "A male arrived in June 2024 (transport from Budapest Zoo and Gyöngyös); in March 2026 a female from Szeged joined him, forming a pair."
+          },
+          "aantal": {
+            "nl": "2 (1 man, 1 wijfje)",
+            "en": "2 (1 male, 1 female)"
+          },
+          "bron": "Eigen site 18-06-2024; Zile și Nopți 15-03-2026"
+        },
+        {
+          "soort": "Euraziatische lynx",
+          "ondersoort": "onbekend",
+          "status": "g",
+          "toelichting": {
+            "nl": "Lynx staat op de plattegrond van 2025 (en in het logo van het park); het park fokte er eerder mee (Zootierliste 2016). Geen recent nieuwsbericht.",
+            "en": "Lynx is shown on the 2025 park map (and in the zoo's logo); the zoo bred them earlier (Zootierliste 2016). No recent news item."
+          },
+          "aantal": {
+            "nl": "onbekend",
+            "en": "unknown"
+          },
+          "bron": "Eigen site plattegrond terkep-180625 (2025); Zootierliste (e-mail park 12-2016, bezoek 05-2022)"
+        }
+      ],
+      "geboortes": [],
+      "kleur": "witte tijger"
+    },
+    {
+      "naam": "Grădina Zoologică Sibiu",
+      "plaats": "Sibiu (Pădurea Dumbrava)",
+      "judet": "Sibiu",
+      "lon": 24.124,
+      "lat": 45.762,
+      "type": "Dierentuin",
+      "lidmaatschap": [
+        "EAZA (kandidaat-lid)"
+      ],
+      "url": "https://www.zoosibiu.ro/",
+      "uren": {
+        "nl": "Dagelijks, hoofdingang (Poarta 1): okt 09:30–17:30, nov–jan 09:30–16:00, feb 09:30–17:00, mrt 09:30–17:30, apr en sep 09:30–18:30, mei en aug 09:30–19:30, jun–jul 09:30–20:00 (eigen site, gezien 30-10-2026)",
+        "en": "Daily, main gate (Poarta 1): Oct 09:30–17:30, Nov–Jan 09:30–16:00, Feb 09:30–17:00, Mar 09:30–17:30, Apr and Sep 09:30–18:30, May and Aug 09:30–19:30, Jun–Jul 09:30–20:00 (own website, seen 30-10-2026)"
+      },
+      "about": {
+        "nl": "Oudste dierentuin van Roemenië (1929), in het Dumbrava-bos, beheerd door de stad Sibiu; in mei 2026 376 dieren van 87 soorten en een AI-gids via QR-codes. Erkend door ANMAP; volgens Zoo Brașov (oktober 2025) kandidaat-lid van de EAZA.",
+        "en": "Romania's oldest zoo (1929), in the Dumbrava forest, run by the city of Sibiu; in May 2026 376 animals of 87 species and an AI guide via QR codes. Licensed by ANMAP; according to Zoo Brașov (October 2025) an EAZA candidate member."
+      },
+      "earlier": {
+        "nl": "Bij de opening in 1929 kreeg het park een Europese wilde kat. In december 2011 ontsnapte een Siberische tijger die werd doodgeschoten. Witte tijgers zijn in 2016 en 2022 gemeld (Zootierliste), maar daarna niet meer bevestigd.",
+        "en": "At its opening in 1929 the zoo received a European wildcat. In December 2011 a Siberian tiger escaped and was shot. White tigers were reported in 2016 and 2022 (Zootierliste) but not confirmed since."
+      },
+      "katten": [
+        {
+          "soort": "Leeuw",
+          "ondersoort": "onbekend",
+          "status": "g",
+          "toelichting": {
+            "nl": "Genoemd in het persbericht van de stad (mei 2025) en op de soortenlijst ‘Carnivore’ van de eigen site.",
+            "en": "Mentioned in the city's press release (May 2025) and on the ‘Carnivore’ species list of the zoo's website."
+          },
+          "aantal": {
+            "nl": "onbekend (1 man en 2 wijfjes in mei 2022)",
+            "en": "unknown (1 male and 2 females in May 2022)"
+          },
+          "bron": "Primăria Sibiu / Agerpres 27-05-2025; eigen site soortenlijst (gezien 30-10-2026); Zootierliste (bezoek 05-2022)"
+        },
+        {
+          "soort": "Tijger",
+          "ondersoort": "Amoer",
+          "status": "g",
+          "toelichting": {
+            "nl": "Tijgers genoemd door de stad (mei 2025); de eigen site heeft een soortpagina ‘Tigrul siberian’. In 2022 waren er volgens Zootierliste ook witte tijgers; recente bevestiging ontbreekt.",
+            "en": "Tigers mentioned by the city (May 2025); the zoo's website has a ‘Tigrul siberian’ species page. According to Zootierliste there were also white tigers in 2022; recent confirmation is lacking."
+          },
+          "aantal": {
+            "nl": "onbekend",
+            "en": "unknown"
+          },
+          "bron": "Primăria Sibiu / Agerpres 27-05-2025; eigen site soortpagina (gezien 30-10-2026); Zootierliste (bezoek 05-2022)"
+        },
+        {
+          "soort": "Jaguar",
+          "ondersoort": "—",
+          "status": "g",
+          "toelichting": {
+            "nl": "Het park fokt al lang jaguars (in 2017 ging een welp naar Brașov). Tijdens bouwwerk tijdelijk in Târgu Mureș (2019–2021).",
+            "en": "The zoo has bred jaguars for a long time (a cub went to Brașov in 2017). Temporarily housed in Târgu Mureș during construction (2019–2021)."
+          },
+          "aantal": {
+            "nl": "onbekend (1 man en 1 wijfje in mei 2022)",
+            "en": "unknown (1 male and 1 female in May 2022)"
+          },
+          "bron": "Primăria Sibiu / Agerpres 27-05-2025; eigen site soortenlijst (gezien 30-10-2026); Zootierliste (bezoek 05-2022)"
+        },
+        {
+          "soort": "Luipaard",
+          "ondersoort": "Amoer (P. p. orientalis)",
+          "status": "w",
+          "toelichting": {
+            "nl": "Man, in België geboren, via Rotterdam in 2019 naar Sibiu gekomen; volgens de dierenarts in 2023 het enige Amoerluipaard van Roemenië (13 jaar).",
+            "en": "Male, born in Belgium, came to Sibiu via Rotterdam in 2019; according to the vet in 2023 the only Amur leopard in Romania (13 years old)."
+          },
+          "aantal": {
+            "nl": "1 (man)",
+            "en": "1 (male)"
+          },
+          "bron": "Agerpres/G4Media 05-02-2023; Fanatik 07-10-2023; ANMAP Raport anual zoo 2025 (gepubliceerd 06-2026)",
+          "twijfel": {
+            "nl": "Laatste bericht over Sibiu is van oktober 2023. Het ANMAP-rapport telt eind 2025 nog één Amoerluipaard in een Roemeense dierentuin, maar noemt geen park; vermoedelijk dit dier. Niet op de soortenlijst van de eigen site.",
+            "en": "Last report from Sibiu dates from October 2023. The ANMAP report still counts one Amur leopard in a Romanian zoo at the end of 2025 but names no zoo; probably this animal. Not on the zoo's own species list."
+          }
+        },
+        {
+          "soort": "Euraziatische lynx",
+          "ondersoort": "onbekend",
+          "status": "w",
+          "toelichting": {
+            "nl": "Soortpagina ‘Râs (Lynx lynx)’ in de lijst ‘Carnivore’ van de eigen site.",
+            "en": "Species page ‘Râs (Lynx lynx)’ in the ‘Carnivore’ list of the zoo's website."
+          },
+          "aantal": {
+            "nl": "onbekend",
+            "en": "unknown"
+          },
+          "bron": "Eigen site soortpagina (aangemaakt 2020, gezien 30-10-2026)",
+          "twijfel": {
+            "nl": "De soortpagina's dateren van 2020; het stadspersbericht van 2025 noemt geen lynx en Zootierliste vermeldt hier geen lynx.",
+            "en": "The species pages date from 2020; the city's 2025 press release does not mention lynx and Zootierliste lists no lynx here."
+          }
+        }
+      ],
+      "geboortes": [],
+      "kleur": ""
+    }
+  ],
+  "zonder_katten": [
+    {
+      "naam": "Rezervația naturală Vama Buzăului „Valea Zimbrilor”",
+      "plaats": "Vama Buzăului",
+      "reden": {
+        "nl": "wisentreservaat (ANMAP-erkend); geen katachtigen bekend (ANMAP-rapport 2025)",
+        "en": "European bison reserve (ANMAP-licensed); no cats known (ANMAP report 2025)"
+      }
+    },
+    {
+      "naam": "Libearty Bear Sanctuary Zărnești",
+      "plaats": "Zărnești",
+      "reden": {
+        "nl": "opvang voor bruine beren (ANMAP-erkend opvangcentrum); geen katachtigen bekend",
+        "en": "sanctuary for brown bears (ANMAP-licensed rescue centre); no cats known"
+      }
+    },
+    {
+      "naam": "Centrul de reabilitare urși orfani Bălan",
+      "plaats": "Bălan",
+      "reden": {
+        "nl": "opvang voor weesberen, niet open voor publiek (ANMAP-rapport 2025)",
+        "en": "rehabilitation centre for orphaned bears, not open to the public (ANMAP report 2025)"
+      }
+    },
+    {
+      "naam": "Centrul de reabilitare păsări sălbatice – Asociația Grupul Milvus",
+      "plaats": "Târgu Mureș (omgeving)",
+      "reden": {
+        "nl": "opvang voor wilde vogels (ANMAP-rapport 2025)",
+        "en": "rescue centre for wild birds (ANMAP report 2025)"
+      }
+    },
+    {
+      "naam": "Dracula's Reptiles",
+      "plaats": "Brașov",
+      "reden": {
+        "nl": "eerste erkende particuliere minizoo van Brașov (mei 2026), alleen reptielen (Romania Insider / G4Media 06-2026)",
+        "en": "Brașov's first licensed private mini zoo (May 2026), reptiles only (Romania Insider / G4Media 06-2026)"
+      }
+    },
+    {
+      "naam": "Babusgató állatsimogató és állatpark",
+      "plaats": "Zetea",
+      "reden": {
+        "nl": "kinderboerderij met boerderijdieren (Maszol, ca. 2021; niet recent gecontroleerd)",
+        "en": "petting farm with farm animals (Maszol, c. 2021; not recently checked)"
+      }
+    },
+    {
+      "naam": "Kinderboerderij Băile Bálványos",
+      "plaats": "Turia (Băile Bálványos)",
+      "reden": {
+        "nl": "alleen als ‘petting zoo’ bekend in OpenStreetMap; geen aanwijzing voor katachtigen",
+        "en": "known only as a ‘petting zoo’ in OpenStreetMap; no sign of cats"
+      }
+    },
+    {
+      "naam": "Casa Fluturilor",
+      "plaats": "Praid",
+      "reden": {
+        "nl": "vlinderhuis (OpenStreetMap)",
+        "en": "butterfly house (OpenStreetMap)"
+      }
+    }
+  ],
+  "open_punten": [
+    "Officiële lijst: ANMAP (Agenția Națională pentru Arii Naturale Protejate) publiceert de erkende dierentuinen. In regio Centru staan eind 2025 alleen Zoo Brașov, Zoo Sibiu, Zoo Târgu Mureș en het wisentreservaat Vama Buzăului als dierentuin geregistreerd, plus 3 opvangcentra (Libearty Zărnești, berenopvang Bălan, Grupul Milvus). Bronnen: https://anmap.gov.ro/wp-content/uploads/2026/06/Raport-anual-zoo_2025_FINAL.pdf en Situatie-zoo-14_noiembrie_2025.pdf. Het rapport geeft alleen landelijke soortentotalen, geen aantallen per park.",
+    "Geen dierentuin of minizoo gevonden in Miercurea Ciuc, Odorheiu Secuiesc, Sfântu Gheorghe, Reghin, Sighișoara, Mediaș of Alba Iulia (zoeken in het Roemeens en Hongaars, OpenStreetMap/Nominatim, ANMAP-lijst). In Alba Iulia stond in 2020 kort een tijdelijke ‘mini-zoo’ bij een circusbezoek (Ziarul Unirea); in Sighișoara en bij Odorheiu Secuiesc zijn alleen miniatuur- en insectenparken. Een niet-geregistreerde particuliere houder kan ontbreken.",
+    "Circussen: sinds de wijziging van Legea 205/2004 (aangenomen door de Kamer van Afgevaardigden op 13-06-2017) is het gebruik van wilde dieren in circussen en vergelijkbare shows in Roemenië verboden. Geen circus met katachtigen in de regio gevonden.",
+    "Geen politie- of inbeslagnamebericht over grote katten bij particulieren in Alba, Brașov, Covasna, Harghita, Mureș of Sibiu gevonden (wel in Suceava en Dâmbovița, buiten deze regio).",
+    "Zoo Brașov: witte leeuw (21 jaar in januari 2025, ex-Circul Globus) — niet bekend of hij nog leeft; de site heeft geen aparte pagina meer. De witte tijger (Zootierliste 2022) staat niet meer op de soortenlijst. Let op: een Agerpres-artikel uit 2023 over ‘tigrii bengalezi Taifun și Taiga’ en leeuw King Paraschiv gaat over Zoo Bârlad, niet Brașov.",
+    "Zoo Brașov sneeuwluipaarden (Amalia en Aslan): op de site ‘momentan indisponibil’ en de adoptiepagina is weg; reden (verbouwing, ziekte of vertrek) niet gevonden. Status y gekozen omdat ANMAP eind 2025 nog sneeuwluipaarden telt.",
+    "Zoo Brașov lynx: het park zegt ‘râs carpatin’ (Karpatisch), daarom ondersoort Karpatisch ingevuld; de soortpagina noemt alleen Lynx lynx en de dieren kwamen uit Hongarije (Kittenberger, 2021).",
+    "Zoo Sibiu: de soortpagina's dateren van 2020 en recente persberichten noemen alleen ‘tijgers, leeuwen, jaguars’. Amoerluipaard (laatste bericht 10-2023) en lynx daarom als w; witte tijgers (Zootierliste 2022, bezoekersreviews) niet bevestigd. Het ANMAP-rapport telt eind 2025 landelijk 1 Amoerluipaard.",
+    "Zoo Târgu Mureș: jaguar, serval en Amoerluipaard alleen in Zootierliste (laatst 2022) en daarom bij ‘Eerder hier’. Lynx alleen op de plattegrond van 2025 (bestandsnaam terkep-180625); de plattegrond toont ook een zwarte grote kat bovenaan (poema of zwarte panter/jaguar, niet te bepalen).",
+    "Zoo Târgu Mureș luipaard: het park noemt de ondersoort Panthera pardus japonensis (Noord-Chinese luipaard); dat label staat niet in taxonomie.md. Sinds Kitchener et al. 2017 valt japonensis vaak onder P. p. orientalis (Amoer). Graag beslissen welk label de gids gebruikt.",
+    "Lidmaatschap: Zoo Brașov is sinds september 2025 volwaardig EAZA-lid; Târgu Mureș en Sibiu zijn volgens Zoo Brașov (oktober 2025) kandidaat-lid. Târgu Mureș toont het logo van FGZAR (Federația Grădinilor Zoologice și Acvariilor din România); een AGZAR-ledenlijst is niet gevonden.",
+    "Geen recente geboortes van katachtigen (na 22-10-2024) gevonden in Brașov, Sibiu of Târgu Mureș."
+  ]
+}

@@ -1151,7 +1151,7 @@ function showLoc(i){
     const sub=[...new Set(rs.map(r=>r[1]).filter(s=>s&&s!=="—"&&s!=="onbekend"))].map(x=>trMap(R1EN,x)).join("; ");
     return `<li><span><b>${SP[sp]?`<a href="#soort/${slug(sp)}" data-loc="${i}">${esc(spName(sp))}</a>`:esc(spName(sp))}${hasYoung(l[0],sp)?YTAG():""}</b>${sub?` <small style="color:var(--muted)">${sci(esc(sub))}</small>`:""}</span><span>${codes.map(c=>`<span class="st st-${c}"><i></i>${LBL(c)}</span>`).join(" ")}</span></li>`;
   }).join("");
-  box.innerHTML=`<h3><a href="#locatie/${lslug(l[0])}">${esc(l[0])}</a></h3><p class="hu">${(LOCINFO[l[0]]&&LOCINFO[l[0]].type)?esc(pk(LOCINFO[l[0]].type))+" · ":""}${esc(l[1])} · ${bySp.size} ${bySp.size===1?T("soort","species","faj"):T("soorten","species","faj")}</p><ul>${items}</ul><p class="rp-cta"><a href="#rapporteer" data-rp-loc="${i}">${T(`Iets anders gezien bij ${esc(l[0])}? Rapporteer het`,`Seen something different at ${esc(l[0])}? Report it`,`${esc(l[0])}: mást láttál? Jelezd`)}</a></p>`;
+  box.innerHTML=`<h3><a href="#locatie/${lslug(l[0])}">${esc(l[0])}</a></h3><p class="pl">${(LOCINFO[l[0]]&&LOCINFO[l[0]].type)?esc(pk(LOCINFO[l[0]].type))+" · ":""}${esc(l[1])} · ${bySp.size} ${bySp.size===1?T("soort","species","faj"):T("soorten","species","faj")}</p><ul>${items}</ul><p class="rp-cta"><a href="#rapporteer" data-rp-loc="${i}">${T(`Iets anders gezien bij ${esc(l[0])}? Rapporteer het`,`Seen something different at ${esc(l[0])}? Report it`,`${esc(l[0])}: mást láttál? Jelezd`)}</a></p>`;
 }
 function buildMap(){
   const svg=document.getElementById("nlmap"), NS="http://www.w3.org/2000/svg";

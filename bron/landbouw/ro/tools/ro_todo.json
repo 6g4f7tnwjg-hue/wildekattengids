@@ -1,0 +1,595 @@
+{
+ "0000": {
+  "soort": "html",
+  "hu": "← Minden ország"
+ },
+ "0001": {
+  "soort": "html",
+  "hu": "Támogasd az útmutatót"
+ },
+ "0002": {
+  "soort": "html",
+  "hu": "Frissítve: 2026. október 16."
+ },
+ "0003": {
+  "soort": "html",
+  "hu": "Vadmacskák"
+ },
+ "0004": {
+  "soort": "html",
+  "hu": "magyar állatkertekben"
+ },
+ "0005": {
+  "soort": "html",
+  "hu": "Szervál · fotó: J. Gelens"
+ },
+ "0006": {
+  "soort": "html",
+  "hu": "Hol láthatsz oroszlánt, tigrist, ibériai hiúzt és más vadmacskákat Portugáliában? Ez az útmutató fajonként és parkonként megmutatja, melyik macska hol él, milyen kölykök születtek nemrég, és mi változik hamarosan. Azt is, milyen útvonalon láthatod az összes fajt."
+ },
+ "0007": {
+  "soort": "html",
+  "hu": "megerősített faj"
+ },
+ "0008": {
+  "soort": "html",
+  "hu": "macskás hely"
+ },
+ "0009": {
+  "soort": "html",
+  "hu": "Áttekintés"
+ },
+ "0010": {
+  "soort": "html",
+  "hu": "Helyszínek"
+ },
+ "0011": {
+  "soort": "html",
+  "hu": "Tervezd meg a látogatást"
+ },
+ "0012": {
+  "soort": "html",
+  "hu": "Főtáblázat"
+ },
+ "0013": {
+  "soort": "html",
+  "hu": "Hírek"
+ },
+ "0014": {
+  "soort": "html",
+  "hu": "Színváltozatok &amp; hibridek"
+ },
+ "0015": {
+  "soort": "html",
+  "hu": "Az útmutatóról"
+ },
+ "0016": {
+  "soort": "html",
+  "hu": "Bejelentés"
+ },
+ "0017": {
+  "soort": "html",
+  "hu": "Röviden"
+ },
+ "0018": {
+  "soort": "html",
+  "hu": "\n<div class=\"prose\">\n  <ul>\n    <li><strong>10 megerősített faj</strong> 6 helyen: 3 állatkert, 1 kis állatkert, 1 vadaspark és 1 szafaripark. Az Europaradise-ból (állatkert) csak egy bizonytalan bejegyzés van.</li>\n    <li><strong><a href=\"#locatie/jardim-zoologico-de-lisboa\">Jardim Zoológico de Lisboa</a></strong> messze a legtöbb fajjal büszkélkedhet: nyolccal, köztük szibériai és szumátrai tigrissel, perzsa leopárddal, jaguárral, ködfoltos párduccal és az egyetlen ibériai hiúzokkal, amelyeket Portugáliában láthatsz.</li>\n    <li><strong>Ibériai hiúz:</strong> csak Lisszabonban (Drago és Fábula, fajuk nagykövetei). A Silves melletti országos tenyésztőközpont nem látogatható; a Parque Biológico de Gaiában hiúzkifutó épül.</li>\n    <li><strong>Csak egy helyen:</strong> vörös hiúz a <a href=\"#locatie/zoo-de-lagos\">Zoo de Lagos</a> állatkertben, az Algarve egyetlen vadmacskás helyén.</li>\n    <li><strong>Kölykök:</strong> három perzsa leopárd Lisszabonban (2026. április).</li>\n    <li><strong>Nincs cirkusz és magántartó:</strong> a vadállatok cirkuszban tilosak (20/2019. törvény, átmeneti idő 2025 végéig); az utolsó cirkuszi tigris 2026-ban egy spanyolországi mentőközpontba került. 2018 óta magánszemélyek nem tarthatnak vadmacskát.</li>\n    <li><strong>Az Azori-szigeteken és Madeirán</strong> nem láthatsz vadmacskát.</li>\n  </ul>\n  </div>\n"
+ },
+ "0019": {
+  "soort": "html",
+  "hu": "Összkép"
+ },
+ "0020": {
+  "soort": "html",
+  "hu": "Kategória"
+ },
+ "0021": {
+  "soort": "html",
+  "hu": "Szám"
+ },
+ "0022": {
+  "soort": "html",
+  "hu": "Fajok"
+ },
+ "0023": {
+  "soort": "html",
+  "hu": "Megerősített"
+ },
+ "0024": {
+  "soort": "html",
+  "hu": "Oroszlán, Tigris, Leopárd, Jaguár, Ködfoltos párduc, Gepárd, Hiúz, Ibériai hiúz, Vörös hiúz, Szervál"
+ },
+ "0025": {
+  "soort": "html",
+  "hu": "Bizonytalan"
+ },
+ "0026": {
+  "soort": "html",
+  "hu": "bejegyzés"
+ },
+ "0027": {
+  "soort": "html",
+  "hu": "Ocelot"
+ },
+ "0028": {
+  "soort": "html",
+  "hu": "Áttekintés"
+ },
+ "0029": {
+  "soort": "html",
+  "hu": "Kattints egy fajra, és a főtáblázat rá szűr. A szám azt mutatja, a táblázat hány helyén él az adott faj."
+ },
+ "0030": {
+  "soort": "html",
+  "hu": "Pantherinae (nagymacskák)"
+ },
+ "0031": {
+  "soort": "html",
+  "hu": "Felinae (kismacskák)"
+ },
+ "0032": {
+  "soort": "html",
+  "hu": "bizonytalan"
+ },
+ "0033": {
+  "soort": "html",
+  "hu": "Magyarországon nem látható (32 faj)"
+ },
+ "0034": {
+  "soort": "html",
+  "hu": "Helyszínek szerint"
+ },
+ "0035": {
+  "soort": "html",
+  "hu": "Minden állatkert, vadaspark és szafaripark Magyarországon, ahol vadmacskát láthatsz. Kattints egy pontra, hogy lásd, milyen macskák élnek ott, vagy válassz lent egy régiót (2024-es NUTS-régiók). Az Azori-szigeteken és Madeirán nem láthatsz vadmacskát; Spanyolországnak (szürke a térképen) saját útmutatója van."
+ },
+ "0036": {
+  "soort": "html",
+  "hu": "legalább egy megerősített faj"
+ },
+ "0037": {
+  "soort": "html",
+  "hu": "csak bizonytalan bejegyzések"
+ },
+ "0038": {
+  "soort": "html",
+  "hu": "Vázlatos térkép"
+ },
+ "0039": {
+  "soort": "html",
+  "hu": "Vagy válassz helyet"
+ },
+ "0040": {
+  "soort": "html",
+  "hu": "Kattints egy helyre a térképen."
+ },
+ "0041": {
+  "soort": "html",
+  "hu": "Macskák (7 hely)"
+ },
+ "0042": {
+  "soort": "html",
+  "hu": "Norte"
+ },
+ "0043": {
+  "soort": "html",
+  "hu": "Oroszlán, tigris, hiúz, gepárd."
+ },
+ "0044": {
+  "soort": "html",
+  "hu": "Tigris, hiúz. Bizonytalan: oroszlán."
+ },
+ "0045": {
+  "soort": "html",
+  "hu": "Centro"
+ },
+ "0046": {
+  "soort": "html",
+  "hu": "Bizonytalan: tigris."
+ },
+ "0047": {
+  "soort": "html",
+  "hu": "Hiúz."
+ },
+ "0048": {
+  "soort": "html",
+  "hu": "Lisboa e Setúbal"
+ },
+ "0049": {
+  "soort": "html",
+  "hu": "Ibériai hiúz, hiúz, gepárd, oroszlán, tigris, leopárd, ködfoltos párduc, jaguár."
+ },
+ "0050": {
+  "soort": "html",
+  "hu": "Alentejo"
+ },
+ "0051": {
+  "soort": "html",
+  "hu": "Szervál."
+ },
+ "0052": {
+  "soort": "html",
+  "hu": "Algarve"
+ },
+ "0053": {
+  "soort": "html",
+  "hu": "Hiúz, vörös hiúz, szervál. Bizonytalan: ocelot."
+ },
+ "0054": {
+  "soort": "html",
+  "hu": "Nem találtunk macskát"
+ },
+ "0055": {
+  "soort": "html",
+  "hu": "\n<ul class=\"loclist\">\n    <li><b>Látogatók számára nem elérhető (ibériaihiúz-tenyésztőközpont):</b> Centro Nacional de Reprodução do Lince Ibérico (Silves, Faro)</li>\n    <li><b>Tervezett (ibériai hiúz):</b> Parque Biológico de Gaia (Avintes, Porto)</li>\n    <li><b>Korábban macskák (tigris, gepárd), most bezárt:</b> Omega Parque (Monchique, Faro)</li>\n    <li><b>Mentőközpontok, ahol nem láthatsz macskát:</b> CERAS (Castelo Branco), CERVAS (Gouveia, Guarda), CRASSA (Santo André, Setúbal), Centro de Recuperação do Lobo Ibérico (Mafra, Lisboa), LxCRAS (Lisboa), Pangea (Alandroal, Évora), RIAS (Olhão, Faro)</li>\n    <li><b>Bezárt:</b> Aquário do Porto Pim (Horta, Azori-szigetek), Mini-Zoo Parque Marechal Carmona (Cascais), Parque Zoológico da Povoação (São Miguel, Azori-szigetek), Zoo-Oeste (Torres Vedras)</li>\n    <li><b>Ellenőrizve, macska nélkül:</b> Aquamuseu do Rio Minho (Vila Nova de Cerveira), Aquário Vasco da Gama (Oeiras), Aquário da Madeira (Porto Moniz, Madeira), Aquashow Park (Quarteira), Borboletário Tropical (Constância), Castelo do Burro (Odemira), Centro de Educação Ambiental de Vinha de Mouros (Cabeceiras de Basto), Coudelaria de Alter (Alter do Chão), Estação Litoral da Aguda (Vila Nova de Gaia), Fluviário de Mora (Mora), Ilha das Aves (Ribeira Brava, Madeira), Jardim dos Loiros (Funchal, Madeira), Krazy World (Algoz, Silves), Mama-Adama Alpaca Farm (Grândola), Mini Zoo Queijaria Cachopas (Évora), Monte Palace Madeira (Funchal, Madeira), Monte Selvagem (Montemor-o-Novo), Oceanário de Lisboa (Lisboa), Parque Ambiental de Ribeira de Pena (Ribeira de Pena), Parque Biológico da Serra das Meadas (Lamego), Parque Biológico de Vinhais (Vinhais), Parque Biológico do Mezio (Arcos de Valdevez), Parque Ecológico de Gouveia (Gouveia), Parque Temático da Madeira (Santana, Madeira), Parque Terra Nostra (Furnas, Azori-szigetek), Parque da Mina (Monchique), Quinta Pedagógica de Braga (Braga), Quinta Pedagógica de Silves (Silves), Quinta Pedagógica dos Olivais (Lisboa), Quinta das Palmeiras (Porto Santo), SEA LIFE Porto (Porto), Tapada Nacional de Mafra (Mafra), Zoo de Lourosa (Santa Maria da Feira), Zoomarine (Guia, Albufeira)</li>\n  </ul>\n"
+ },
+ "0056": {
+  "soort": "html",
+  "hu": "Az állatkertek hivatalos listájáról"
+ },
+ "0057": {
+  "soort": "html",
+  "hu": "\n<p>Portugáliában minden állatkertnek engedély kell (59/2003. rendelet, módosította a 104/2012. rendelet). 2012 óta az engedélyeket a DGAV (Direção-Geral de Alimentação e Veterinária) adja ki; az ICNF felel a védett fajokért és a CITES-ügyekért. Az Azori-szigeteken és Madeirán a regionális hatóságok felelnek ezért.</p>\n    <p>A DGAV közzéteszi a „Parques Zoológicos Licenciados” listát 24 engedéllyel rendelkező parkkal, de ez 2021. április 28-i keltezésű (az interneten 2025 májusában jelent meg). A lista tehát <b>elavult</b>; újabb változatot nem találtunk.</p>\n    <p>Ezért az útmutató listája a Zootierliste (minden macska, jelenlegi és korábbi tartók), a DGAV-lista, az EAZA és az ibériai állatkerti szövetség, az AIZA taglistái, valamint helyi hírek alapján készült, majd helyről helyre ellenőriztük minden park hivatalos honlapján.</p>\n    <p>Hogy egy parkot ebben az útmutatóban állatkertnek vagy kis állatkertnek nevezünk, az az EAZA- vagy AIZA-tagságtól függ. A szafariparkok és vadasparkok megtartják saját típusukat.</p>\n"
+ },
+ "0058": {
+  "soort": "html",
+  "hu": "Tervezd meg a látogatást"
+ },
+ "0059": {
+  "soort": "html",
+  "hu": "Tervezd meg az útvonalat"
+ },
+ "0060": {
+  "soort": "html",
+  "hu": "Jelöld be a helyeket, amelyeket meg akarsz látogatni. Lent rögtön látod, milyen macskákkal találkozol ott, és melyek hiányoznak még."
+ },
+ "0061": {
+  "soort": "html",
+  "hu": "Útvonal: 2 park"
+ },
+ "0062": {
+  "soort": "html",
+  "hu": "Minden jelölés törlése"
+ },
+ "0063": {
+  "soort": "html",
+  "hu": "Helyszínek"
+ },
+ "0064": {
+  "soort": "html",
+  "hu": "Tippek"
+ },
+ "0065": {
+  "soort": "html",
+  "hu": "\n<ul class=\"prose\">\n    <li><strong>Mind a 10 faj két parkban:</strong>\n      <ul>\n        <li><strong>Jardim Zoológico de Lisboa</strong> (Lisszabon): oroszlán, tigris, leopárd, jaguár, ködfoltos párduc, gepárd, hiúz, ibériai hiúz</li>\n        <li><strong>Zoo de Lagos</strong> (Barão de São João, Algarve): vörös hiúz, szervál (és hiúz)</li>\n      </ul>\n    </li>\n    <li><strong>Szervált</strong> a Badoca Safari Parkban (Alentejo) is láthatsz, útközben Lisszabonból az Algarve felé. Északon a Zoo Santo Inácio (oroszlán, tigris, gepárd, hiúz) és a Zoo da Maia (fehér tigris, hiúz) jó alternatíva, de ott nem láthatsz ibériai hiúzt, jaguárt, ködfoltos párducot és vörös hiúzt.</li>\n    <li><strong>Ibériai hiúz:</strong> a lisszaboni kifutóban sok a búvóhely; szánj rá időt, és lehetőleg kora reggel vagy késő délután menj.</li>\n    <li><strong>A nyitvatartást</strong> minden park oldalán megtalálod: <a href=\"#locatie/jardim-zoologico-de-lisboa\">Jardim Zoológico de Lisboa</a>, <a href=\"#locatie/zoo-de-lagos\">Zoo de Lagos</a>, <a href=\"#locatie/badoca-safari-park\">Badoca Safari Park</a>, <a href=\"#locatie/zoo-santo-inacio\">Zoo Santo Inácio</a>.</li>\n    <li><strong>Nem vagy biztos egy állatban?</strong> Hívd fel vagy írj a parknak látogatás előtt. Az összes bizonytalan bejegyzést a <a href=\"#onzeker\">Bizonytalan esetek</a> részben találod.</li>\n  </ul>\n"
+ },
+ "0066": {
+  "soort": "html",
+  "hu": "Főtáblázat"
+ },
+ "0067": {
+  "soort": "html",
+  "hu": "Szűrők törlése"
+ },
+ "0068": {
+  "soort": "html",
+  "hu": "Macska"
+ },
+ "0069": {
+  "soort": "html",
+  "hu": "Alfaj"
+ },
+ "0070": {
+  "soort": "html",
+  "hu": "Hely"
+ },
+ "0071": {
+  "soort": "html",
+  "hu": "Település"
+ },
+ "0072": {
+  "soort": "html",
+  "hu": "Létszám"
+ },
+ "0073": {
+  "soort": "html",
+  "hu": "Forrás"
+ },
+ "0074": {
+  "soort": "html",
+  "hu": "Ellenőrizve"
+ },
+ "0075": {
+  "soort": "html",
+  "hu": "Görgesd oldalra a táblázatot, hogy minden oszlopot láss."
+ },
+ "0076": {
+  "soort": "html",
+  "hu": "Hírek"
+ },
+ "0077": {
+  "soort": "html",
+  "hu": "Új kölykök"
+ },
+ "0078": {
+  "soort": "html",
+  "hu": "Milyen kölyköket láthatsz most Magyarországon? A Felinae (kismacskák) kölykeit 1 éves korukig vesszük fel, a Pantherinae (nagymacskák) kölykeit 2 éves korukig, mert a nagymacskák lassabban nőnek. A kölykök az első hetekben gyakran bent vannak; kérdezd meg a parkot, láthatók-e már."
+ },
+ "0079": {
+  "soort": "html",
+  "hu": "Talán hamarosan"
+ },
+ "0080": {
+  "soort": "html",
+  "hu": "Tervezett, átmeneti vagy nem látható"
+ },
+ "0081": {
+  "soort": "html",
+  "hu": "\n<ul class=\"prose\">\n    <li><span class=\"st st-p\"><i></i></span> <strong>Parque Biológico de Gaia:</strong> 2023-ban bejelentették, hogy a silvesi tenyésztőközpontból két ibériai hiúz érkezik, és kifutó, valamint üvegfalú kilátópont épül nekik. 2024-ben az építkezés még tartott; a hiúzok érkezését nem erősítették meg.</li>\n    <li><span class=\"st st-w\"><i></i></span> <strong>Europaradise:</strong> a park 2026 májusában nyitott újra egy vihar okozta károk után; nem erősítették meg, hogy a tigrisek láthatók-e.</li>\n    <li><strong>Jardim Zoológico de Lisboa:</strong> új két szibériai tigriskölyök (2026 júniusa óta láthatók) és egy fiatal hím szumátrai tigris (2026. május); 2025 óta egy új jaguárpár is van ott (Pawa és Feliciana).</li>\n  </ul>\n  <p class=\"tlegend\"><span class=\"st st-p\"><i></i>Tervezett</span> · <span class=\"st st-w\"><i></i>Bizonytalan</span></p>\n"
+ },
+ "0082": {
+  "soort": "html",
+  "hu": "Színváltozatok és hibridek"
+ },
+ "0083": {
+  "soort": "html",
+  "hu": "Színváltozatok"
+ },
+ "0084": {
+  "soort": "html",
+  "hu": "\n<h3>Fehér tigris <a class=\"kv-sp\" href=\"#soort/tijger\">a tigris oldalára</a></h3>\n  <ul class=\"prose\">\n    <li><a href=\"#locatie/zoo-da-maia\">Zoo da Maia</a></li>\n  </ul>\n  <p class=\"prose\">A fehér tigrisnek recesszív mutációja van az SLC45A2 génben, és nem albínó. Az európai tenyészprogramban már nem tenyésztik őket; EAZA-n kívüli parkokban még élnek. A Zootierliste szerint a fekete leopárdok (Zoo da Maia) 2024 körül eltűntek.</p>\n"
+ },
+ "0085": {
+  "soort": "html",
+  "hu": "Hibridek"
+ },
+ "0086": {
+  "soort": "html",
+  "hu": "\n<p class=\"prose\">Nem találtunk ligert, tigont vagy más vadmacska-hibridet. 2018 óta Portugáliában magánszemélyek nem tarthatnak házi- és vadmacska keverékét (pl. savannah- vagy bengálmacskát), és parkokban sem találtunk ilyet.</p>\n"
+ },
+ "0087": {
+  "soort": "html",
+  "hu": "Erről az áttekintésről"
+ },
+ "0088": {
+  "soort": "html",
+  "hu": "\n<div id=\"werkwijze-ro\">\n  <h3>Hogyan készült ez az áttekintés</h3>\n<p class=\"prose\">Portugália összes macskás állatkertjében, vadasparkjában és szafariparkjában, valamint a mentőközpontokban is megnéztük, milyen vadmacskák láthatók. Az alaplista a Zootierliste (minden macska, jelenlegi és korábbi tartók), a DGAV engedélyezett állatkerteket tartalmazó listája (2021), valamint az EAZA és az AIZA taglistái alapján készült; ezután minden régióban macskás parkokat, tanyasi oktatóhelyeket és mentőközpontokat kerestünk. Minden helyet a hivatalos honlapján ellenőriztünk, és portugál hírekkel egészítettük ki az adatokat. Minden bejegyzésnek van forrása és dátuma.</p>\n  <p class=\"prose\">Egy macskát akkor számolunk, ha a látogató láthatja, akár csak bizonyos napokon is. Ezért a mentőközpontokat is felvesszük. Portugáliában a vadállatok cirkuszban tilosak (20/2019. törvény; az átmeneti idő 2025 végén lejárt), és 2018 óta magánszemélyek nem tarthatnak vadmacskát (86/2018. rendelet); nem találtunk olyan cirkuszt, mentőközpontot vagy magántartót, ahol a látogatók macskát láthatnának.</p>\n  <p class=\"prose\">A fajok az IUCN/SSC Cat Classification Task Force szabványát követik (Kitchener et al., 2017, <i>Cat News</i> Special Issue 11).</p>\n</div>\n<div id=\"statussen-ro\">\n  <h3>Mit jelentenek a státuszok</h3>\n<ul class=\"prose\">\n    <li><strong>Itt van:</strong> az állat itt él, és általában látható.</li>\n    <li><strong>Átmenetileg nem látható:</strong> az állat itt él, de nem mindig látható, pl. mert kánikulában bent marad.</li>\n    <li><strong>Elköltözése bejelentve:</strong> a park bejelentette, hogy az állat hamarosan elkerül.</li>\n    <li><strong>Tervezett:</strong> az állat érkezését bejelentették, de még nincs itt.</li>\n    <li><strong>Bizonytalan:</strong> nem biztos, hogy az állat (még) itt van, és hogy a látogatók láthatják-e.</li>\n    <li><strong>Csak vezetéssel:</strong> az állat olyan helyen él, ahová csak vezetett túrával jutsz be.</li>\n    <li><strong>Látogatók számára nem elérhető:</strong> az állat itt él, de a hely szabadon nem látogatható.</li>\n  </ul>\n  <p class=\"note prose\">A parkok ritkán adják meg pontosan, hány állatuk van. Ezért a legtöbb bejegyzésnél „ismeretlen” áll. Ha „dátum nélkül” áll, a forrásnak nem volt dátuma.</p>\n</div>\n<div id=\"onzeker-ro\">\n  <h3>Bizonytalan esetek</h3>\n<p class=\"prose\">A főtáblázat összes „bizonytalan” státuszú bejegyzése. A lista automatikusan készül a táblázatból.</p>\n  <ul class=\"prose tw-list\"></ul>\n  <p class=\"prose\">Ezeket a bejegyzéseket nem számoljuk megerősítettnek. Ha valamelyik állatot látni szeretnéd, látogatás előtt vedd fel a kapcsolatot a parkkal.</p>\n</div>\n<div id=\"namen-ro\">\n  <h3>Nevek és rendszertan</h3>\n<ul class=\"prose\">\n    <li>A <strong>lince-ibérico</strong> az ibériai hiúz, a <strong>lince-euroasiático</strong> (vagy <i>lince-dos-Cárpatos</i>) a hiúz, a <strong>lince-vermelho</strong> pedig a vörös hiúz.</li>\n    <li>A <strong>chita</strong> a gepárd, a <strong>pantera-nebulosa</strong> a ködfoltos párduc, a <strong>leopardo-da-pérsia</strong> pedig a perzsa leopárd.</li>\n    <li>A <strong>gato-bravo</strong> az (európai) vadmacska; Portugáliában vadon él, de egyetlen parkban sem láthatod.</li>\n    <li><strong>Oroszlán:</strong> 2017 óta két alfajt különítenek el: az északi oroszlánt (<i>P. l. leo</i>), ide tartozik az ázsiai oroszlán (Santo Inácio), és a déli oroszlánt (<i>P. l. melanochaita</i>), ide tartoznak a lisszaboni angolai oroszlánok.</li>\n    <li><strong>Ibériai hiúz:</strong> az országos tenyésztőközpont (CNRLI, Silves) nem látogatható. A vadon élő hiúzok, pl. a Vale do Guadiana környékiek, nem szerepelnek ebben az áttekintésben.</li>\n  </ul>\n</div>\n<div id=\"verdwenen-ro\">\n  <h3>Már nem láthatók</h3>\n<p class=\"prose\">Minden park oldalán a „Korábban itt” részben találod azokat a macskákat, amelyek ott éltek. Érdemes megemlíteni: a Zoo Santo Inácio hópárducait (2026-ban már nem láttuk őket), Sigli szumátrai tigrist Lisszabonból (Európa legidősebbje volt, 2025-ben pusztult el), valamint a Zoo da Maia leopárdjait, pumáit és jaguárjait. A bezárt macskás parkok közül említést érdemel a monchiquei Omega Parque (tigris, gepárd; 2007-ben zárt be). Az utolsó cirkuszi macskák 2022-ben és 2026-ban a spanyolországi AAP Primadomushoz kerültek.</p>\n</div>\n<div id=\"controle-ro\">\n  <h3>Források</h3>\n<p class=\"prose\"><strong>Hivatalos listák:</strong> a DGAV engedélyezett állatkertjeinek listája (2021-04-28), az EAZA és az AIZA taglistái (2026. október), valamint a Diário da República jogszabályai (59/2003. és 104/2012. rendelet, 20/2019. törvény, 86/2018. rendelet).</p>\n  <p class=\"prose\"><strong>Adatbázisok:</strong> Zootierliste (minden macska, jelenlegi és korábbi tartók), csak kiegészítő forrásként.</p>\n  <p class=\"prose\"><strong>A parkok honlapjai</strong> állatlistákkal, fajoldalakkal, térképekkel és hírekkel (többek között a Revista ZOO, a Jardim Zoológico de Lisboa magazinja).</p>\n  <p class=\"prose\"><strong>Hírek:</strong> többek között Público, NiT, Postal do Algarve, Sul Informação, Barlavento és ZooChat (csak kiegészítő forrásként).</p>\n</div>\n"
+ },
+ "0089": {
+  "soort": "html",
+  "hu": "Bejelentés"
+ },
+ "0090": {
+  "soort": "html",
+  "hu": "Olyan macskát látsz, amely nincs itt, egy állat elköltözött vagy elpusztult, vagy valami nem stimmel? Szólj nekünk. A bejelentések nem módosítják automatikusan az oldalt: előbb ellenőrizzük őket, aztán bekerülnek a következő változatba."
+ },
+ "0091": {
+  "soort": "html",
+  "hu": "Mit szeretnél bejelenteni?"
+ },
+ "0092": {
+  "soort": "html",
+  "hu": "Olyan állatot láttam, amely nincs itt"
+ },
+ "0093": {
+  "soort": "html",
+  "hu": "Az állatot áthelyezték, vagy elkerült a parkból"
+ },
+ "0094": {
+  "soort": "html",
+  "hu": "Az állat elpusztult"
+ },
+ "0095": {
+  "soort": "html",
+  "hu": "Kölyköket láttam"
+ },
+ "0096": {
+  "soort": "html",
+  "hu": "Hiányzó vagy hibás információ"
+ },
+ "0097": {
+  "soort": "html",
+  "hu": "Valami más"
+ },
+ "0098": {
+  "soort": "html",
+  "hu": "Hely"
+ },
+ "0099": {
+  "soort": "html",
+  "hu": "Faj"
+ },
+ "0100": {
+  "soort": "html",
+  "hu": "A látogatás dátuma"
+ },
+ "0101": {
+  "soort": "html",
+  "hu": "Megjegyzések"
+ },
+ "0102": {
+  "soort": "html",
+  "hu": "(nem kötelező)"
+ },
+ "0103": {
+  "soort": "html",
+  "hu": "A bejelentésed"
+ },
+ "0104": {
+  "soort": "html",
+  "hu": "Bejelentés küldése"
+ },
+ "0105": {
+  "soort": "html",
+  "hu": "Kattintás után megnyílik egy megjegyzésablak a bejelentéseddel. Onnan küldd el; még hozzá is írhatsz valamit. A bejelentésedet más látogatók is látják, és válaszolhatnak rá, ezért ne adj meg személyes adatokat. A bejelentéshez be kell jelentkezned a claude.ai-on."
+ },
+ "0106": {
+  "soort": "html",
+  "hu": "Állapot: 2026. október 15."
+ },
+ "0107": {
+  "soort": "html",
+  "hu": "Hasznos neked az útmutató?"
+ },
+ "0108": {
+  "soort": "html",
+  "hu": "Egy kis támogatással segítesz naprakészen tartani."
+ },
+ "0109": {
+  "soort": "html",
+  "hu": "Támogasd az útmutatót a Ko-fi-n"
+ },
+ "0110": {
+  "soort": "html",
+  "hu": "Vissza a tetejére"
+ },
+ "0111": {
+  "soort": "const:SPRO",
+  "hu": "{\"Leeuw\": [\"Oroszlán\", \"Afrikai oroszlán\", \"A Szaharától délre fekvő Afrika és egy kis állomány Indiában\", \"Szavannák, füves síkságok és nyílt erdők\", \"Főleg zebrák, gnúk, antilopok és más patások\", \"Társas, általában csoportban él\", \"Az egyetlen macska, amely természeténél fogva csoportban él.\", \"Az oroszlán naponta akár 20 órát is pihenhet vagy alhat.\"], \"Tijger\": [\"Tigris\", \"Bengáli tigris\", \"Ázsia\", \"Erdők, füves síkságok, mocsarak és mangroveerdők\", \"Főleg szarvasfélék, vaddisznók és más nagy patások\", \"Magányosan él\", \"Minden tigrisnek egyedi csíkmintázata van.\", \"A tigris bőre is csíkos: ha leborotválnád, a csíkok akkor is látszanának.\"], \"Luipaard\": [\"Leopárd\", \"Párduc\", \"Afrika és Ázsia egy része\", \"Erdők, szavannák, hegyek és félsivatagok\", \"Antilopok, majmok, rágcsálók és madarak\", \"Magányosan él\", \"A leopárd a saját testsúlyánál nehezebb zsákmányt is fel tud vonszolni a fára.\", \"A leopárdok kivételesen jól alkalmazkodnak, és nagyon különböző élőhelyeken élnek.\"], \"Jaguar\": [\"Jaguár\", \"\", \"Közép- és Dél-Amerika\", \"Esőerdők, mocsarak, szavannák és vizes élőhelyek\", \"Vízidisznók, kajmánok, pekarik, teknősök és halak\", \"Magányosan él\", \"Macskához képest a jaguár állkapcsa kivételesen erős.\", \"A jaguárok kiválóan úsznak, és gyakran a vízben vadásznak.\"], \"Sneeuwluipaard\": [\"Hópárduc\", \"Irbisz\", \"Közép- és Dél-Ázsia hegyei\", \"Magas, sziklás hegyek és alpesi területek\", \"Vadjuhok és vadkecskék, mormoták és kisemlősök\", \"Magányosan él\", \"Hatalmas farka segít az egyensúlyozásban, és meleg takaróként is szolgál.\", \"A hópárduc néha több mint 5.000 méteres magasságban él.\"], \"Nevelpanter\": [\"Ködfoltos párduc\", \"\", \"A Himalájától Délkelet-Ázsiáig\", \"Trópusi erdők\", \"Majmok, szarvasfélék, madarak és kisemlősök\", \"Magányosan él\", \"Méretéhez képest kivételesen hosszú szemfogai vannak.\", \"A ködfoltos párduc kiválóan mászik, és fejjel lefelé is tud közlekedni az ágak alatt.\"], \"Soenda-nevelpanter\": [\"Szundai ködfoltos párduc\", \"Borneói ködfoltos párduc\", \"Borneó és Szumátra\", \"Trópusi esőerdők\", \"Majmok, szarvasfélék, madarak és kisemlősök\", \"Magányosan él\", \"Foltjai jól láthatóan másmilyenek, mint a szárazföldi ködfoltos párducé.\", \"A szundai ködfoltos párducot csak 2006-ban ismerték el külön fajként.\"], \"Cheetah\": [\"Gepárd\", \"\", \"Főleg Afrika, egy kis állomány Iránban\", \"Szavannák, füves síkságok és félsivatagok\", \"Gazellák, nyulak, valamint kis és közepes antilopok\", \"Főleg magányosan él; a hímek néha szövetséget alkotnak\", \"A világ leggyorsabb szárazföldi állata.\", \"Vágtában a gepárd körülbelül 100 km/h sebességet is elérhet.\"], \"Poema\": [\"Puma\", \"Kuguár, hegyi oroszlán\", \"Észak-, Közép- és Dél-Amerika\", \"Erdők, hegyek, sivatagok és füves síkságok\", \"Főleg szarvasfélék, de kisebb emlősök is\", \"Magányosan él\", \"A pumának több neve van, mint szinte bármelyik más vadmacskának.\", \"A puma, a kuguár és a hegyi oroszlán ugyanannak a fajnak a nevei.\"], \"Jaguarundi\": [\"Jaguarundi\", \"\", \"Közép- és Dél-Amerika\", \"Erdők, bozótosok, szavannák és vizes élőhelyek\", \"Rágcsálók, madarak, hüllők és más kis állatok\", \"Főleg magányosan él\", \"Hosszú teste és rövid lábai vannak, kicsit olyan, mint egy nyest.\", \"A legtöbb macskával ellentétben a jaguarundi főleg nappal vadászik. Szürke és vörösesbarna színváltozata is van.\"], \"Euraziatische lynx\": [\"Hiúz\", \"Eurázsiai hiúz\", \"Európa és Ázsia nagy része\", \"Erdők, hegyek és tajga\", \"Főleg őzek, nyulak és kisebb emlősök\", \"Magányosan él\", \"A fülpamacs a hiúz legfeltűnőbb ismertetőjegye.\", \"Az eurázsiai hiúz a legnagyobb hiúzfaj.\"], \"Canadese lynx\": [\"Kanadai hiúz\", \"\", \"Kanada, Alaszka és az Egyesült Államok egy része\", \"Északi tűlevelű erdők és hegyi erdők\", \"Főleg hócipős nyúl\", \"Magányosan él\", \"Hatalmas mancsai hótalpként működnek.\", \"Ha kevés a hócipős nyúl, a kanadai hiúznak sokkal kevesebb kölyke születik.\"], \"Iberische lynx\": [\"Ibériai hiúz\", \"Párduchiúz\", \"Spanyolország és Portugália\", \"Mediterrán bozótosok és nyílt erdők\", \"Főleg üregi nyulak\", \"Magányosan él\", \"Specialista, amely nagyon függ az üregi nyúltól.\", \"Az ibériai hiúz egykor a világ egyik legveszélyeztetettebb macskája volt, de az utóbbi években az állománya erősen nőtt.\"], \"Rode lynx\": [\"Vörös hiúz\", \"Bobcat\", \"Észak-Amerika\", \"Erdők, sivatagok, mocsarak és füves síkságok\", \"Nyulak, rágcsálók, madarak és hüllők\", \"Magányosan él\", \"Rövid, sötét végű farka van.\", \"A vörös hiúz Észak-Amerika szinte minden élőhelyéhez alkalmazkodik.\"], \"Serval\": [\"Szervál\", \"\", \"Afrika\", \"Füves síkságok, szavannák és vizes élőhelyek\", \"Főleg rágcsálók, madarak és békák\", \"Magányosan él\", \"Nagyon hosszú lábai és nagyon nagy fülei vannak.\", \"Hosszú lábainak köszönhetően a szervál olyan magasra ugrik, hogy repülő madarakat is el tud kapni.\"], \"Caracal\": [\"Karakál\", \"Sivatagi hiúz\", \"Afrika, a Közel-Kelet és Ázsia egy része\", \"Szavannák, száraz erdők, félsivatagok és hegyek\", \"Madarak, rágcsálók, nyulak és kis antilopok\", \"Magányosan él\", \"Hosszú, fekete fülpamacsáról rögtön felismered.\", \"A karakál egyetlen ugrással több madarat is el tud kapni egy csapatból.\"], \"Afrikaanse goudkat\": [\"Afrikai aranymacska\", \"\", \"Közép- és Nyugat-Afrika\", \"Trópusi erdők és nedves erdőszélek\", \"Rágcsálók, madarak, majmok és kis patások\", \"Magányosan él\", \"A bundája nagyon változatos: a vörösesbarnától a szürkéig.\", \"Neve ellenére az afrikai aranymacska nem közeli rokona az ázsiai aranymacskának (Temminck-macskának).\"], \"Aziatische goudkat\": [\"Ázsiai aranymacska\", \"Temminck-macska\", \"Délkelet-Ázsia\", \"Trópusi és szubtrópusi erdők\", \"Rágcsálók, madarak, hüllők és kis patások\", \"Magányosan él\", \"Több színváltozatban is előfordul: aranyszínű, szürke és sötétbarna.\", \"Az ázsiai aranymacska a saját méreténél jóval nagyobb zsákmányt is el tud ejteni.\"], \"Borneo-goudkat\": [\"Borneói macska\", \"Borneói aranymacska\", \"Csak Borneón\", \"Trópusi esőerdők\", \"Kisemlősök, madarak és hüllők\", \"Valószínűleg magányosan él\", \"A világ egyik legkevésbé ismert vadmacskája.\", \"A faj olyan ritka, hogy a kutatók sokáig szinte semmit sem tudtak a vadonbeli életéről.\"], \"Marmerkat\": [\"Márványos macska\", \"\", \"A Kelet-Himalájától Délkelet-Ázsiáig\", \"Trópusi erdők\", \"Madarak, mókusok, rágcsálók és hüllők\", \"Magányosan él\", \"Márványos bundája és nagyon hosszú farka van.\", \"A márványos macska élete nagy részét magasan a fák lombkoronájában tölti.\"], \"Ocelot\": [\"Ocelot\", \"\", \"Közép- és Dél-Amerika\", \"Esőerdők, mangroveerdők, szavannák és bozótosok\", \"Rágcsálók, madarak, hüllők és halak\", \"Magányosan él\", \"Minden ocelotnak egyedi foltmintázata van.\", \"Az ocelotok kiválóan úsznak, bár főleg a földön és a fákon vadásznak.\"], \"Margay\": [\"Margay\", \"Hosszúfarkú macska\", \"Közép- és Dél-Amerika\", \"Főleg trópusi erdők\", \"Kisemlősök, madarak, hüllők és fán élő állatok\", \"Magányosan él\", \"A kismacskák egyik legjobb mászója.\", \"A margay annyira el tudja fordítani a bokáját, hogy fejjel lefelé mászik le a fatörzsön.\"], \"Noordelijke tijgerkat (oncilla)\": [\"Északi tigrismacska (oncilla)\", \"Szavannai tigrismacska\", \"Közép- és Északkelet-Brazília, valamint Dél-Amerika északi részének egy része\", \"Szavannák (cerrado), száraz erdők és bozótosok (caatinga)\", \"Rágcsálók, madarak, hüllők és kisemlősök\", \"Magányosan él\", \"Foltos bundájával egy kis leopárdra hasonlít.\", \"2024 óta az andoki tigrismacskákat külön fajnak, köderdei tigrismacskának tekintik. Ez a faj tehát főleg a szavannák és a száraz erdők macskája.\"], \"Zuidelijke tijgerkat\": [\"Déli tigrismacska\", \"Atlanti tigrismacska\", \"Dél- és Délkelet-Brazília, Paraguay és Északkelet-Argentína\", \"Atlanti-parti erdő és környéke\", \"Rágcsálók, madarak, hüllők és kisemlősök\", \"Magányosan él\", \"2013-ban DNS alapján választották le az északi tigrismacskáról.\", \"Dél-Brazíliában a déli tigrismacska néha kereszteződik a Geoffroy-macskával.\"], \"Oostelijke tijgerkat\": [\"Keleti tigrismacska\", \"Snethlage-tigrismacska\", \"Északkelet- és Közép-Brazília\", \"Caatinga (száraz tüskés erdő) és cerrado (szavanna)\", \"Rágcsálók, madarak, hüllők és kisemlősök\", \"Valószínűleg magányosan él\", \"Főleg Északkelet-Brazília száraz caatingájában él.\", \"Emilie Snethlage német–brazil ornitológusnőről kapta a nevét.\"], \"Wolkentijgerkat\": [\"Köderdei tigrismacska\", \"Andoki tigrismacska\", \"Costa Rica, Panama és az Andok Venezuelától Északnyugat-Argentínáig\", \"Köderdők és hegyi erdők, főleg 1.500 méter felett\", \"Kisemlősök, madarak és hüllők\", \"Valószínűleg magányosan él\", \"Különleges mintázatával a ködfoltos párducra emlékeztet.\", \"2024-ben ismerték el külön fajként.\"], \"Tilcayo\": [\"Tilcayo\", \"Tilcayo macska\", \"Bolíviai Yungas\", \"A Yungas köderdei\", \"Valószínűleg kis rágcsálók (ürülékben találták meg)\", \"Ismeretlen\", \"Világosbarna bundája és szabálytalan rozettái vannak.\", \"2026-ban írták le: 1923 óta az első új élő macskafaj.\"], \"Geoffroy’s kat\": [\"Geoffroy-macska\", \"\", \"Dél-Amerika\", \"Füves síkságok, bozótosok, erdők és vizes élőhelyek\", \"Rágcsálók, madarak, hüllők és halak\", \"Magányosan él\", \"Jól úszik.\", \"A Geoffroy-macska néha a hátsó lábaira áll, hogy átlásson a fű fölött.\"], \"Kodkod\": [\"Kodkod\", \"Chilei macska\", \"Chile és Argentína egy része\", \"Mérsékelt övi esőerdők és sűrű növényzet\", \"Rágcsálók, madarak, hüllők és kisemlősök\", \"Magányosan él\", \"Amerika legkisebb macskája.\", \"Kis füleinek és zömök testének köszönhetően a kodkod könnyen átjut a sűrű növényzeten.\"], \"Colocolo\": [\"Pampamacska\", \"Colocolo\", \"Dél-Amerika, az ecuadori Andoktól Patagóniáig és Brazíliáig\", \"Füves síkságok, bozótosok és nyílt hegyvidékek\", \"Rágcsálók, madarak és hüllők\", \"Magányosan él\", \"A pampamacskák a macskafélék családjának egyik legbonyolultabb csoportja.\", \"A kutatók nem értenek egyet abban, hány pampamacskafaj van. Egy 2020-as tanulmány ötöt javasolt.\"], \"Andesbergkat\": [\"Andoki macska\", \"Andoki hegyimacska\", \"Az Andok Argentínában, Bolíviában, Chilében és Peruban\", \"Magas Andok, sziklás területek és száraz füves síkságok\", \"Főleg hegyi viszkacsák, valamint kisemlősök és madarak\", \"Magányosan él\", \"Dél-Amerika egyik legritkább macskája.\", \"Az andoki macska nagyon függ a hegyi viszkacsáktól, a sziklás lejtőkön élő nagy rágcsálóktól.\"], \"Bengaalse kat\": [\"Bengáli macska\", \"Leopárdmacska\", \"Kelet-, Dél- és Délkelet-Ázsia\", \"Erdők, füves síkságok, szántóföldek és vizes élőhelyek\", \"Rágcsálók, madarak, hüllők, kétéltűek és halak\", \"Magányosan él\", \"Ázsia egyik legelterjedtebb kis vadmacskája.\", \"A bengáli macska a bengál házimacskafajta egyik őse.\"], \"Soendanese luipaardkat\": [\"Szundai bengáli macska\", \"\", \"Jáva, Bali, Szumátra, Borneó és a Fülöp-szigetek egy része\", \"Erdők, bozótosok és szántóföldek\", \"Rágcsálók, madarak, hüllők és kétéltűek\", \"Magányosan él\", \"Korábban a bengáli macska alfajának tartották.\", \"A szundai bengáli macska genetikailag és földrajzilag is jól elkülönül a szárazföldi bengáli macskától.\"], \"Vissende kat\": [\"Halászmacska\", \"\", \"Dél- és Délkelet-Ázsia\", \"Mocsarak, mangroveerdők, folyók és vizes élőhelyek\", \"Főleg halak, de békák, rákfélék és kisemlősök is\", \"Magányosan él\", \"Egyike azon kevés macskának, amelyek a vízben való vadászatra specializálódtak.\", \"A halászmacska víz alatt is tud vadászni, és ujjai között részleges úszóhártya van.\"], \"Platkopkat\": [\"Laposfejű macska\", \"\", \"Malajzia, Szumátra és Borneó\", \"Alföldi mocsarak, folyók és esőerdők\", \"Halak, békák, rákfélék és kisemlősök\", \"Magányosan él\", \"Feje nagyon lapos, pofája hosszú és keskeny.\", \"Szemei messze elöl vannak, így nagyon pontosan kapja ki a zsákmányt a vízből.\"], \"Roestkat\": [\"Rozsdás macska\", \"Rozsdafoltos macska\", \"India, Srí Lanka és Nepál\", \"Erdők, füves síkságok és száraz bozótosok\", \"Rágcsálók, madarak, gyíkok és rovarok\", \"Magányosan él\", \"A világ egyik legkisebb vadmacskája.\", \"Egy felnőtt rozsdás macska nagyjából fele annyit nyom, mint egy átlagos házimacska.\"], \"Manoel\": [\"Pusztai macska\", \"Manul, Pallas-macska\", \"Közép-Ázsia\", \"Sztyeppék, sziklás területek és hideg hegyvidékek\", \"Fütyülőnyulak, rágcsálók és kis madarak\", \"Magányosan él\", \"Kivételesen sűrű bundája és kerek pupillája van.\", \"Az állatkerti pusztaimacska-kölykök nagyon fogékonyak a toxoplazmózisra. Valószínűleg azért, mert hideg, száraz élőhelyükön szinte sosem találkoznak ezzel a parazitával.\"], \"Europese wilde kat\": [\"Európai vadmacska\", \"Vadmacska\", \"Európa, Nyugat-Ázsia egy része és a Kaukázus\", \"Erdők, bozótosok és hegyek\", \"Főleg egerek, patkányok és más kisemlősök\", \"Magányosan él\", \"Nagyon hasonlít egy nagy, zömök házimacskára.\", \"Az európai vadmacska kereszteződhet házimacskával. Egyes állományoknál ez komoly gond.\"], \"Afrikaanse wilde kat\": [\"Afrikai vadmacska\", \"Núbiai macska\", \"Afrika és a Közel-Kelet egy része\", \"Szavannák, sztyeppék, sivatagszélek és szántóföldek\", \"Főleg rágcsálók, madarak és hüllők\", \"Magányosan él\", \"A házimacska őse.\", \"Az első házimacskák valószínűleg körülbelül 10.000 éve az afrikai vadmacskától származnak.\"], \"Chinese bergkat\": [\"Kínai hegyi macska\", \"Kínai sivatagi macska\", \"Kína, főleg a Tibeti-fennsík\", \"Magasan fekvő füves síkságok, sztyeppék és sziklás területek\", \"Főleg fütyülőnyulak és rágcsálók\", \"Magányosan él\", \"Alkalmazkodott a magashoz és a hideghez.\", \"A kínai hegyi macskát sokáig a vadmacska alfajának tartották, ma azonban külön faj.\"], \"Zandkat\": [\"Homoki macska\", \"Sivatagi macska\", \"Észak-Afrika, a Közel-Kelet és Közép-Ázsia\", \"Sivatagok és száraz homokos területek\", \"Rágcsálók, gyíkok, madarak és rovarok\", \"Magányosan él\", \"Talpán sűrű szőr van, amely megvédi a forró homoktól.\", \"A homoki macska szinte sosem iszik, és vízszükségletének nagy részét a zsákmányából fedezi.\"], \"Zwartvoetkat\": [\"Feketelábú macska\", \"\", \"Dél-Afrika\", \"Száraz szavannák, füves síkságok és félsivatagok\", \"Rágcsálók, madarak, hüllők és rovarok\", \"Magányosan él\", \"A világ egyik legkisebb vadmacskája.\", \"Kis mérete ellenére a feketelábú macska egyetlen éjszaka alatt több zsákmányt is el tud kapni.\"], \"Moeraskat\": [\"Mocsári macska\", \"Nádi macska\", \"Egyiptom, a Közel-Kelet, valamint Dél- és Délkelet-Ázsia\", \"Mocsarak, nádasok, füves síkságok és szántóföldek\", \"Rágcsálók, madarak, halak, békák és hüllők\", \"Magányosan él\", \"Lábai elég hosszúak, fülei nagyok.\", \"A mocsári macska egyike azon kevés kismacskának, amelyek rendszeresen vadásznak nádasokban és mocsarakban.\"]}"
+ },
+ "0112": {
+  "soort": "const:RP_TYPE_RO",
+  "hu": "{\"Jonge katten gezien\": \"Kölyköket láttam\", \"Dier gezien dat hier niet staat\": \"Olyan állatot láttam, amely nincs itt\", \"Dier is verplaatst of vertrokken\": \"Az állatot áthelyezték, vagy elkerült a parkból\", \"Dier is overleden\": \"Az állat elpusztult\", \"Informatie ontbreekt of klopt niet\": \"Hiányzó vagy hibás információ\", \"Iets anders\": \"Valami más\"}"
+ },
+ "0113": {
+  "soort": "const:ROD",
+  "hu": "{\"Subspecies\": \"Alfaj\", \"Location\": \"Hely\", \"Town\": \"Település\", \"Number\": \"Létszám\", \"Source\": \"Forrás\", \"Checked\": \"Ellenőrizve\", \"No entries for this combination. Clear the filters to see everything.\": \"Ehhez a kombinációhoz nincs bejegyzés. Töröld a szűrőket, hogy mindent láss.\", \"no confirmed species\": \"nincs megerősített faj\", \" · uncertain: \": \" · bizonytalan: \", \" · possibly also: \": \" · talán még: \", \"location selected\": \"kiválasztott hely\", \"locations selected\": \"kiválasztott hely\", \"Pantherinae (big cats)\": \"Pantherinae (nagymacskák)\", \"Felinae (small cats)\": \"Felinae (kismacskák)\", \"Uncertain\": \"Bizonytalan\", \"Unknown\": \"Ismeretlen\", \"This species is currently not on view in Spain.\": \"Ezt a fajt jelenleg nem láthatod Magyarországon.\", \"Photo\": \"Fotó\", \" (zoo)\": \" (állatkert)\", \"public domain (CC0)\": \"közkincs (CC0)\", \"Photo coming soon\": \"Fotó hamarosan\", \"Back to the main table\": \"Vissza a főtáblázathoz\", \"Genus\": \"Nem\", \"Also known as\": \"Más néven\", \"Key facts\": \"Alapadatok\", \"Length (without tail)\": \"Hossz (farok nélkül)\", \"Weight\": \"Testtömeg\", \"Tail\": \"Farok\", \"Lifespan\": \"Élettartam\", \"In the wild (estimate)\": \"A vadonban (becslés)\", \"Estimated number of mature individuals in the wild according to the IUCN Red List (most recent assessment). “Unknown” means there is no reliable estimate.\": \"A vadonban élő ivarérett egyedek becsült száma az IUCN Vörös Listája szerint (legutóbbi értékelés). Az „Ismeretlen” azt jelenti, hogy nincs megbízható becslés.\", \"The IUCN gives no figure for the jaguar; this estimate comes from a 2018 study.\": \"Az IUCN nem ad meg számot a jaguárra; ez a becslés egy 2018-as tanulmányból származik.\", \"Way of life\": \"Életmód\", \"Range\": \"Elterjedés\", \"Habitat\": \"Élőhely\", \"Diet\": \"Táplálék\", \"Social behaviour\": \"Társas viselkedés\", \"Special features\": \"Különlegességek\", \"Characteristic\": \"Ismertetőjegy\", \"Did you know?\": \"Tudtad?\", \"Previously on view at\": \"Korábban látható volt itt\", \"Seen this species somewhere else, or is something wrong? Report it\": \"Máshol láttad ezt a fajt, vagy valami nem stimmel? Jelezd\", \"Other species\": \"További fajok\", \"Previous\": \"Előző\", \"Next\": \"Következő\", \"photo: J. Gelens\": \"fotó: J. Gelens\", \"Back to the map\": \"Vissza a térképre\", \"Back to the locations\": \"Vissza a helyszínekhez\", \"About this location\": \"Erről a helyről\", \"Cats here\": \"Macskák itt\", \"Visiting\": \"Látogatás\", \"Opening hours\": \"Nyitvatartás\", \"Previously here\": \"Korábban itt\", \"Other locations\": \"További helyszínek\", \"Not certain whether the animal is (still) there or can be seen.\": \"Nem biztos, hogy az állat (még) itt van, és hogy látható-e.\", \"There are no doubtful cases at the moment.\": \"Jelenleg nincs bizonytalan eset.\", \"I don’t know\": \"Nem tudom\", \"Choose a location…\": \"Válassz helyet…\", \"Other location…\": \"Másik hely…\", \"Name and town of the location\": \"A hely neve és települése\", \"Other location\": \"Másik hely\", \"For example: two animals, in the new enclosure near the entrance\": \"Például: két állat, az új kifutóban a bejárat mellett\", \"Reporting does not work in this view. Open the page on claude.ai and log in to submit a report.\": \"Ebben a nézetben a bejelentés nem működik. Nyisd meg az oldalt a claude.ai-on, és jelentkezz be a bejelentéshez.\", \"Choose above what you want to report and where.\": \"Fent válaszd ki, mit és hol szeretnél bejelenteni.\", \"Species unknown\": \"Ismeretlen faj\", \"Report\": \"Bejelentés\", \"visit\": \"látogatás\", \"Comment\": \"Megjegyzés\", \"First choose what you want to report.\": \"Előbb válaszd ki, mit szeretnél bejelenteni.\", \"Enter the name of the location.\": \"Írd be a hely nevét.\", \"First choose a location.\": \"Előbb válassz helyet.\", \"The report window is still loading. Please try again in a moment.\": \"A bejelentőablak még töltődik. Próbáld újra egy pillanat múlva.\", \"The comment window is open. Send your report from there. Thank you!\": \"A megjegyzésablak nyitva van. Onnan küldd el a bejelentésedet. Köszönjük!\", \"A comment window with text is already open. Send or close it first, then try again.\": \"Már nyitva van egy megjegyzésablak szöveggel. Előbb küldd el vagy zárd be, aztán próbáld újra.\", \"Too many attempts. Wait a minute and try again.\": \"Túl sok próbálkozás. Várj egy percet, és próbáld újra.\", \"Something went wrong opening the comment window. Please try again.\": \"Nem sikerült megnyitni a megjegyzésablakot. Próbáld újra.\", \"young\": \"kölyök\", \"less than a month old\": \"1 hónaposnál fiatalabb\", \"1 month old\": \"1 hónapos\", \"about \": \"kb. \", \"born\": \"született\", \"No young cats are currently known.\": \"Jelenleg nem tudunk friss kölykökről.\", \"Nothing has been announced at the moment.\": \"Jelenleg nincs semmi bejelentve.\", \"Search by species, location or town\": \"Keresés faj, hely vagy település szerint\", \"Search the table\": \"Keresés a táblázatban\", \"All statuses\": \"Minden státusz\", \"Where to see it in Spain\": \"Hol láthatod Magyarországon\", \" — Wild cats in Spain\": \" — Vadmacskák Magyarországon\", \"public domain\": \"közkincs\"}"
+ },
+ "0114": {
+  "soort": "const:LBL_RO",
+  "hu": "{g:\"Itt van\",y:\"Átmenetileg nem látható\",b:\"Elköltözése bejelentve\",p:\"Tervezett\",w:\"Bizonytalan\",r:\"Csak vezetéssel\",n:\"Látogatók számára nem elérhető\"}"
+ },
+ "0115": {
+  "soort": "const:TITLE_RO",
+  "hu": "\"Vadmacskák magyar állatkertekben — frissítve: 2026. október 23.\""
+ },
+ "0116": {
+  "soort": "const:MND_RO",
+  "hu": "[\"január\", \"február\", \"március\", \"április\", \"május\", \"június\", \"július\", \"augusztus\", \"szeptember\", \"október\", \"november\", \"december\"]"
+ },
+ "0117": {
+  "soort": "T`",
+  "hu": "${rows.length}/${R.length} bejegyzés",
+  "en": "${rows.length} of ${R.length} entries"
+ },
+ "0118": {
+  "soort": "T\"",
+  "hu": "faj",
+  "en": "species"
+ },
+ "0119": {
+  "soort": "T\"",
+  "hu": "faj",
+  "en": "species"
+ },
+ "0120": {
+  "soort": "T`",
+  "hu": "${esc(l[0])}: mást láttál? Jelezd",
+  "en": "Seen something different at ${esc(l[0])}? Report it"
+ },
+ "0121": {
+  "soort": "T`",
+  "hu": "/ ${confAll.length} megerősített faj",
+  "en": "of ${confAll.length} confirmed species"
+ },
+ "0122": {
+  "soort": "T\"",
+  "hu": "kiválasztott hely",
+  "en": "locations selected"
+ },
+ "0123": {
+  "soort": "T\"",
+  "hu": "Ezt a fajt jelenleg nem láthatod Magyarországon.",
+  "en": "This species is currently not on view in Portugal."
+ },
+ "0124": {
+  "soort": "T`",
+  "hu": "Vissza a térképre: ${esc(LOCS[BACK][0])}",
+  "en": "Back to ${esc(LOCS[BACK][0])} on the map"
+ },
+ "0125": {
+  "soort": "T\"",
+  "hu": "Hol láthatod Magyarországon",
+  "en": "Where to see it in Portugal"
+ },
+ "0126": {
+  "soort": "T\"",
+  "hu": "macskafaj",
+  "en": "cat species"
+ },
+ "0127": {
+  "soort": "T\"",
+  "hu": "macskafaj",
+  "en": "cat species"
+ },
+ "0128": {
+  "soort": "T\"",
+  "hu": "bizonytalan",
+  "en": "uncertain"
+ },
+ "0129": {
+  "soort": "T`",
+  "hu": "Ellenőrizve: ${inf.checked}. A nyitvatartás változhat; látogatás előtt nézd meg a park honlapját.",
+  "en": "Checked: ${inf.checked.replace(\"september\",\"September\")}. Times can change; check the park’s website before your visit."
+ },
+ "0130": {
+  "soort": "T`",
+  "hu": "${esc(l[0])}: mást láttál? Jelezd",
+  "en": "Seen something different at ${esc(l[0])}? Report it"
+ },
+ "0131": {
+  "soort": "T\"",
+  "hu": " — Vadmacskák Magyarországon",
+  "en": " — Wild cats in Portugal"
+ },
+ "0132": {
+  "soort": "T\"",
+  "hu": " — Vadmacskák Magyarországon",
+  "en": " — Wild cats in Portugal"
+ },
+ "0133": {
+  "soort": "T`",
+  "hu": "${m} hónapos",
+  "en": "${m} months old"
+ },
+ "0134": {
+  "soort": "T\"",
+  "hu": "Magyarország térképe a macskás helyekkel (7)",
+  "en": "Map of Portugal with 7 locations with cats"
+ },
+ "0135": {
+  "soort": "T\"",
+  "hu": "Szűrés státusz szerint",
+  "en": "Filter by status"
+ },
+ "0136": {
+  "soort": "T\"",
+  "hu": " — Vadmacskák Magyarországon",
+  "en": " — Wild cats in Portugal"
+ },
+ "0137": {
+  "soort": "T\"",
+  "hu": " — Vadmacskák Magyarországon",
+  "en": " — Wild cats in Portugal"
+ },
+ "0138": {
+  "soort": "T\"",
+  "hu": "Válassz régiót:",
+  "en": "Choose a region:"
+ },
+ "0139": {
+  "soort": "T\"",
+  "hu": "Szűrés régió szerint",
+  "en": "Filter by region"
+ },
+ "0140": {
+  "soort": "T\"",
+  "hu": "Minden régió",
+  "en": "All regions"
+ },
+ "0141": {
+  "soort": "T`",
+  "hu": "${n}/${LOCS.length} hely – ${RG_NAME(RG_F)}.",
+  "en": "${n} of ${LOCS.length} locations: ${RG_NAME(RG_F)}."
+ }
+}

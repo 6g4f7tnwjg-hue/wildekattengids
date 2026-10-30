@@ -7,7 +7,7 @@ def code():
     s = re.sub(r"\b(SP|R1|R5|R6|R7)PL\b", r"\1HU", s)
     s = re.sub(r"\bPL(D|M)\b", r"HU\1", s)
     s = re.sub(r"\b(RP_TYPE|ROUTENOTE|EARLIER|LBL|TITLE|MND)_PL(1?)\b", r"\1_HU\2", s)
-    s = s.replace("html:not(.pl)", "html:not(.hu)").replace('"pl"', '"hu"').replace("l-pl", "l-hu").replace("html.pl", "html.hu").replace('-pl"', '-hu"')
+    s = s.replace("html:not(.pl)", "html:not(.hu)").replace('"pl"', '"hu"').replace('<p class="hu">${(LOCINFO', '<p class="pl">${(LOCINFO')   # .pl = CSS-klasse 'place line', geen taal.replace("l-pl", "l-hu").replace("html.pl", "html.hu").replace('-pl"', '-hu"')
     s = re.sub(r"\bpl:\[", "hu:[", s); s = s.replace("pl:{get SP", "hu:{get SP")
     a = 'lang="hu">PL<'; assert s.count(a) == 1; s = s.replace(a, 'lang="hu">HU<')
     # datum: Hongaars "2026. október 23.", alleen maand: "2026. október"

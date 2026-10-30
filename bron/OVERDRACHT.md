@@ -8,6 +8,7 @@
 - Antwoord in het Nederlands, kort; bij “wat stel je voor” alleen een voorstel; na elke update de link.
 
 ## Eerstvolgende
+- **Werkplan (30-10-2026): `bron/PLAN.md`** — basisadres naar één instelling, backup, eigen domein, promotie, resterende landen in NL+EN, verbruik per land bijhouden, automatiseren. Nog niet begonnen; de gebruiker had eerst iets anders.
 - De gebruiker kiest het volgende land, of een **onderhoudsgesprek** voor `bron/OPEN.md` (open: “1 locaties”-vraag, Zoo Jihlava, nagaan-lijsten per land, WebKit, grijze buurlanden oostelijk op de Europakaart).
 - Nog niet gedaan: Slowakije, Slovenië/Kroatië, de Baltische staten, Bulgarije, Griekenland.
 

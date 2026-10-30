@@ -1,0 +1,1089 @@
+{
+ "officieel": [],
+ "officieel_toelichting": {
+  "nl": "Geen actuele openbare lijst kunnen inzien. Vergunningen (autorizație de funcționare, Legea 191/2002; procedure OM 1798/2007) worden per județ verleend door de Agenția pentru Protecția Mediului (APM, onder ANPM). Op data.gov.ro staat een dataset ‘Lista Zoo si Acvarii’ (ANPM, XLS, bron atlas.anpm.ro; resource-id 04d2b468-6954-4c19-8428-0d3236cf2ddc; laatst gearchiveerd 17-04-2025), maar data.gov.ro, anpm.ro/APM-sites en web.archive.org waren vanuit deze sessie niet bereikbaar. Oudere tellingen: 43 dierentuinen, waarvan 24 met vergunning in 2009 (Capital, 27-11-2010); ‘21 dierentuinen en 7 aquaria/vivaria met vergunning’ (Capital, ongedateerd, ANPM-cijfers); ‘32 vergunde dierentuinen en aquaria’ (Jurnalul, ANPM-rapport, ongedateerd).",
+  "en": "No current public list could be accessed. Licences (autorizație de funcționare, Law 191/2002; procedure OM 1798/2007) are issued per county by the Environmental Protection Agency (APM, under ANPM). data.gov.ro has a dataset 'Lista Zoo si Acvarii' (ANPM, XLS, source atlas.anpm.ro; resource id 04d2b468-6954-4c19-8428-0d3236cf2ddc; last archived 17-04-2025), but data.gov.ro, anpm.ro/APM sites and web.archive.org could not be reached from this session. Older counts: 43 zoos, 24 licensed in 2009 (Capital, 27-11-2010); '21 zoos and 7 aquaria/vivaria licensed' (Capital, undated, ANPM data); '32 licensed zoos and aquaria' (Jurnalul, ANPM report, undated)."
+ },
+ "agzar": [
+  {
+   "naam": "Grădina Zoologică Oradea",
+   "plaats": "Oradea",
+   "judet": "Bihor",
+   "bron": "zooradea.ro/universul-zoo/istoria-zoo: ‘reluarea statutului de membru în Federația Grădinilor Zoologice și Acvariilor din România’ (ongedateerd, gezien 30-10-2026)"
+  },
+  {
+   "naam": "Grădina Zoologică Pitești (Parcul Trivale)",
+   "plaats": "Pitești",
+   "judet": "Argeș",
+   "bron": "epitesti.ro ‘GramatiCA, CAlcata in picioare la Zoo’: lid van de federatie sinds 2000 (artikel ca. 2010; oud)"
+  },
+  {
+   "naam": "Grădina Zoologică Bucov (Ploiești)",
+   "plaats": "Bucov",
+   "judet": "Prahova",
+   "bron": "zooploiesti.ro (pagina informații de interes public) beschrijft FGZAR (opgericht 1997, gereorganiseerd 2007, sinds 2012 geassocieerd EAZA-lid); lidmaatschap van Ploiești zelf afgeleid, niet letterlijk bevestigd (gezien 30-10-2026)"
+  }
+ ],
+ "agzar_toelichting": {
+  "nl": "Een vereniging met de naam ‘AGZAR’ is niet gevonden. De landelijke koepel heet Federația Grădinilor Zoologice și Acvariilor din România (FGZAR): opgericht 1997, gereorganiseerd 2007, sinds 2012 geassocieerd lid van EAZA (bron: zooploiesti.ro). Facebook-pagina facebook.com/FGZAR (plaats Turda). Geen ledenlijst online gevonden; bovenstaande drie zijn losse vermeldingen.",
+  "en": "No association named 'AGZAR' was found. The national umbrella body is the Federația Grădinilor Zoologice și Acvariilor din România (FGZAR): founded 1997, reorganised 2007, associate member of EAZA since 2012 (source: zooploiesti.ro). Facebook page facebook.com/FGZAR (location Turda). No member list found online; the three entries above are individual mentions."
+ },
+ "eaza": [
+  {
+   "naam": "Grădina Zoologică Brașov",
+   "plaats": "Brașov",
+   "judet": "Brașov",
+   "lidmaatschap": "volwaardig lid (sinds september 2025; tijdelijk lid sinds oktober 2023)",
+   "bron": "Agerpres 06-10-2025; zoobrasov.ro/en"
+  },
+  {
+   "naam": "Grădina Zoologică Târgu Mureș",
+   "plaats": "Târgu Mureș",
+   "judet": "Mureș",
+   "lidmaatschap": "kandidaat-lid",
+   "bron": "Agerpres 06-10-2025 (aanvraag al sinds ca. 2015, Agerpres/Ziarul Evenimentul 18-10-2021)"
+  },
+  {
+   "naam": "Grădina Zoologică Sibiu",
+   "plaats": "Sibiu",
+   "judet": "Sibiu",
+   "lidmaatschap": "kandidaat-lid",
+   "bron": "Agerpres 06-10-2025"
+  },
+  {
+   "naam": "Federația Grădinilor Zoologice și Acvariilor din România (FGZAR)",
+   "plaats": "–",
+   "judet": "–",
+   "lidmaatschap": "geassocieerd lid (nationale vereniging), sinds 2012",
+   "bron": "zooploiesti.ro, gezien 30-10-2026"
+  }
+ ],
+ "zootierliste_bron": "zootierliste.de, soortpagina’s Kleinkatzen/Großkatzen (huidige + ‘Ehemalige Haltungen’), gezien 30-10-2026",
+ "zootierliste": {
+  "Euraziatische lynx": [
+   {
+    "naam": "CZITAS Vrancea (opvangcentrum voor wilde dieren)",
+    "plaats": "Petrești",
+    "judet": "Vrancea",
+    "status": "huidig",
+    "ztl_soort": "Karpatenluchs",
+    "ondersoort": "Karpatisch (L. l. carpathica) volgens ZTL",
+    "ztl_notitie": "Quellen/Nachweise: - Webseite (Abruf 08/2021)"
+   },
+   {
+    "naam": "Grădina Zoologică Brașov",
+    "plaats": "Brașov",
+    "judet": "Brașov",
+    "status": "huidig",
+    "ztl_soort": "Karpatenluchs",
+    "ondersoort": "Karpatisch (L. l. carpathica) volgens ZTL",
+    "ztl_notitie": "seit 2021 - 2021: Zugang 0,2 (von Kittenberger Kálmán Növény és Vadaspark erhalten) Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 03.12.2021) - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Bucov (Ploiești)",
+    "plaats": "Bucov",
+    "judet": "Prahova",
+    "status": "huidig",
+    "ztl_soort": "Eurasischer Luchs",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Quellen/Nachweise: - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică București (Băneasa)",
+    "plaats": "București",
+    "judet": "București",
+    "status": "huidig",
+    "ztl_soort": "Karpatenluchs",
+    "ondersoort": "Karpatisch (L. l. carpathica) volgens ZTL",
+    "ztl_notitie": "Bestand 10/2016: 1,1,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 2010 (gesehen) - Besuch 2011 (gesehen) - Besuch 04/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Călărași",
+    "plaats": "Călărași",
+    "judet": "Călărași",
+    "status": "huidig",
+    "ztl_soort": "Eurasischer Luchs",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Bestand 10/2016: 1,1,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 04/2022 (ausgeschildert, nicht gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Târgu Mureș",
+    "plaats": "Târgu Mureș",
+    "judet": "Mureș",
+    "status": "huidig",
+    "ztl_soort": "Eurasischer Luchs",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Zucht Bestand 10/2016: 3,1,1 05/2022: Teil des Raubtierhauses geschlossen Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 05/2022 (nicht ausgeschildert, nicht gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Târgu Mureș",
+    "plaats": "Târgu Mureș",
+    "judet": "Mureș",
+    "status": "huidig",
+    "ztl_soort": "Europäischer Luchs",
+    "ondersoort": "Noordelijk (L. l. lynx) volgens ZTL",
+    "ztl_notitie": "seit 2015 2015: 0.0.1 aus Amsterdam erhalten 05/2022: Raubtierhaus teilweise geschlossen Quellen/Nachweise: - Besuch 05/2022 (nicht ausgeschildert, nicht gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică București (Băneasa)",
+    "plaats": "București",
+    "judet": "București",
+    "status": "vroeger",
+    "ztl_soort": "Eurasischer Luchs",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Zucht - Bestand am 31.12.1992: 2,3,1 Quellen/Nachweise: - [EAZATS1993] The 1993 EEP Tag Survey (ohne UA-Angabe gelistet)"
+   },
+   {
+    "naam": "Grădina Zoologică Oradea",
+    "plaats": "Oradea",
+    "judet": "Bihor",
+    "status": "vroeger",
+    "ztl_soort": "Eurasischer Luchs",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Bestand 10/2016: 1,2,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 05/2022 (nicht ausgeschildert, nicht gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Piatra Neamț (gesloten 2021 volgens ZTL)",
+    "plaats": "Piatra Neamț",
+    "judet": "Neamț",
+    "status": "vroeger",
+    "ztl_soort": "Eurasischer Luchs",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Bestand 10/2016: 0,0,2 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016)"
+   },
+   {
+    "naam": "Grădina Zoologică Sibiu",
+    "plaats": "Sibiu",
+    "judet": "Sibiu",
+    "status": "vroeger",
+    "ztl_soort": "Eurasischer Luchs",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Bestand 10/2016: 1,0,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 05/2022 (nicht ausgeschildert, nicht gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Turda (gesloten 2021 volgens ZTL)",
+    "plaats": "Turda",
+    "judet": "Cluj",
+    "status": "vroeger",
+    "ztl_soort": "Eurasischer Luchs",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Quellen/Nachweise: http://www.zooland.ro/Gradina_Zoologica_Turda-5736.html"
+   }
+  ],
+  "Europese wilde kat": [
+   {
+    "naam": "Grădina Zoologică Bucov (Ploiești)",
+    "plaats": "Bucov",
+    "judet": "Prahova",
+    "status": "huidig",
+    "ztl_soort": "Europäische Wildkatze",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Quellen/Nachweise: - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică București (Băneasa)",
+    "plaats": "București",
+    "judet": "București",
+    "status": "huidig",
+    "ztl_soort": "Europäische Wildkatze",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Bestand 10/2016: 0,1,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 04/2022 (ausgeschildert, nicht gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Oradea",
+    "plaats": "Oradea",
+    "judet": "Bihor",
+    "status": "huidig",
+    "ztl_soort": "Europäische Wildkatze",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Bestand 10/2016: 2,1,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Parcul de Animale Moara de Vânt",
+    "plaats": "Sălicea",
+    "judet": "Cluj",
+    "status": "huidig",
+    "ztl_soort": "Europäische Wildkatze",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Quellen/Nachweise: - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Reșița",
+    "plaats": "Reșița",
+    "judet": "Caraș-Severin",
+    "status": "vroeger",
+    "ztl_soort": "Europäische Wildkatze",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Bestand 10/2016: 2,0,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 05/2022 (nicht ausgeschildert, nicht gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Timișoara (gesloten 2021 volgens ZTL)",
+    "plaats": "Timișoara",
+    "judet": "Timiș",
+    "status": "vroeger",
+    "ztl_soort": "Europäische Wildkatze",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) ---- - Besuch 31.03.2010 (gesehen)"
+   }
+  ],
+  "Poema": [
+   {
+    "naam": "Grădina Zoologică București (Băneasa)",
+    "plaats": "București",
+    "judet": "București",
+    "status": "huidig",
+    "ztl_soort": "Puma",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "- Bestand 31.12.1992: 1,1 - Bestand 31.10.2016: 1,0,0 Quellen/Nachweise: - [EAZATS1993] The 1993 EEP Tag Survey - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 2010 (gesehen) - Besuch 04/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Târgu Mureș",
+    "plaats": "Târgu Mureș",
+    "judet": "Mureș",
+    "status": "huidig",
+    "ztl_soort": "Puma",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Bestand 10/2016: 0,2,0 05/2022: Raubtierhaus teilweise geschlossen Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 05/2022 (nicht ausgeschildert, nicht gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Reșița",
+    "plaats": "Reșița",
+    "judet": "Caraș-Severin",
+    "status": "vroeger",
+    "ztl_soort": "Puma",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Quellen/Nachweise: - Besuch 05/2022 (auf altem Plan noch zu sehen; nicht ausgeschildert, nicht gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Sibiu",
+    "plaats": "Sibiu",
+    "judet": "Sibiu",
+    "status": "vroeger",
+    "ztl_soort": "Puma",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "- Bestand am 31.12.1992: 1,1 Quellen/Nachweise: - [EAZATS1993] The 1993 EEP Tag Survey"
+   }
+  ],
+  "Moeraskat": [
+   {
+    "naam": "Grădina Zoologică Târgu Mureș",
+    "plaats": "Târgu Mureș",
+    "judet": "Mureș",
+    "status": "vroeger",
+    "ztl_soort": "Rohrkatze",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "???? - 20?? Bestand 10/2016: 1,1,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - pers. Mitt. (E-Mail an ZTL v. 24.11.2021)"
+   }
+  ],
+  "Serval": [
+   {
+    "naam": "Grădina Zoologică București (Băneasa)",
+    "plaats": "București",
+    "judet": "București",
+    "status": "huidig",
+    "ztl_soort": "Serval",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Bestand 10/2016: 1,0,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 04/2022 (ausgeschildert, nicht gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Târgoviște",
+    "plaats": "Târgoviște",
+    "judet": "Dâmbovița",
+    "status": "huidig",
+    "ztl_soort": "Serval",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Quellen/Nachweise: Besuch 04/2026 (gesehen, ausgeschildert)"
+   },
+   {
+    "naam": "Grădina Zoologică Târgu Mureș",
+    "plaats": "Târgu Mureș",
+    "judet": "Mureș",
+    "status": "huidig",
+    "ztl_soort": "Serval",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "seit 2015 Bestand 10/2016: 1,0,0 05/2022: Raubtierhaus teilweise geschlossen Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 05/2022 (nicht ausgeschildert, nicht gesehen)"
+   },
+   {
+    "naam": "Parcul de Animale Moara de Vânt",
+    "plaats": "Sălicea",
+    "judet": "Cluj",
+    "status": "huidig",
+    "ztl_soort": "Serval",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Quellen/Nachweise: - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Șoimaru (gesloten volgens ZTL)",
+    "plaats": "Ilișești",
+    "judet": "Suceava",
+    "status": "vroeger",
+    "ztl_soort": "Serval",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Bestand 10/2016: 1,0,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016)"
+   }
+  ],
+  "Luipaard": [
+   {
+    "naam": "Grădina Zoologică Oradea",
+    "plaats": "Oradea",
+    "judet": "Bihor",
+    "status": "huidig",
+    "ztl_soort": "Leopard",
+    "ondersoort": "onbekend (ZTL: ondersoort niet vastgesteld)",
+    "ztl_notitie": "sehen sehr stark nach Persern aus Bestand 10/2016: 2,0,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Sibiu",
+    "plaats": "Sibiu",
+    "judet": "Sibiu",
+    "status": "huidig",
+    "ztl_soort": "Amurleopard",
+    "ondersoort": "Amoer (P. p. orientalis) volgens ZTL",
+    "ztl_notitie": "Quellen/Nachweise: - Besuch 05/2022 (ausgeschildert, nicht gesehen, gehört)"
+   },
+   {
+    "naam": "Grădina Zoologică Târgu Mureș",
+    "plaats": "Târgu Mureș",
+    "judet": "Mureș",
+    "status": "huidig",
+    "ztl_soort": "Amurleopard",
+    "ondersoort": "Amoer (P. p. orientalis) volgens ZTL",
+    "ztl_notitie": "Seit 2015 2015: 1,0 aus Amsterdam erhalten - 05/2022: Teile des Raubtierhauses waren gesperrt Quellen/Nachweise: - Besuch 05/2022 (nicht ausgeschildert, nicht gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Târgu Mureș",
+    "plaats": "Târgu Mureș",
+    "judet": "Mureș",
+    "status": "huidig",
+    "ztl_soort": "Chinaleopard",
+    "ondersoort": "Noord-Chinees (P. p. japonensis) volgens ZTL",
+    "ztl_notitie": "Seit ? - 10/25: 0,1 Nachzucht aus Tierpark Hagenbeck erhalten Bestand scheinbar 1,1 Quellen/Nachweise: Facebookseite Targu Mures Zoo"
+   },
+   {
+    "naam": "Grădina Zoologică București (Băneasa)",
+    "plaats": "București",
+    "judet": "București",
+    "status": "vroeger",
+    "ztl_soort": "Amurleopard",
+    "ondersoort": "Amoer (P. p. orientalis) volgens ZTL",
+    "ztl_notitie": "Bestand 10/2016: 1,0,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 04/2022 (nicht ausgeschildert, nicht gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică București (Băneasa)",
+    "plaats": "București",
+    "judet": "București",
+    "status": "vroeger",
+    "ztl_soort": "Chinaleopard",
+    "ondersoort": "Noord-Chinees (P. p. japonensis) volgens ZTL",
+    "ztl_notitie": "1983-x Ersttier: 1,0 aus Wassenaar, 74er Nachzucht aus Liberec Zweittier: 0,1 1985 aus Berlin TP, 83er Nachzucht Quellen/Nachweise: Shoemaker, A. H (1984): International studbook Panthera pardus. Shoemaker, A. H (1986): International studbook Panthera pardus"
+   },
+   {
+    "naam": "Grădina Zoologică București (Băneasa)",
+    "plaats": "București",
+    "judet": "București",
+    "status": "vroeger",
+    "ztl_soort": "Leopard",
+    "ondersoort": "onbekend (ZTL: ondersoort niet vastgesteld)",
+    "ztl_notitie": "Hybride Zucht - Bestand am 31.12.1992: 3,3 Quellen/Nachweise: - [EAZATS1993] The 1993 EEP Tag Survey"
+   },
+   {
+    "naam": "Grădina Zoologică Sibiu",
+    "plaats": "Sibiu",
+    "judet": "Sibiu",
+    "status": "vroeger",
+    "ztl_soort": "Leopard",
+    "ondersoort": "onbekend (ZTL: ondersoort niet vastgesteld)",
+    "ztl_notitie": "Hybrid oder Tiere unbekannter Herkunft - Bestand am 31.12.1992: 0,1 Quellen/Nachweise: - [EAZATS1993] The 1993 EEP Tag Survey"
+   },
+   {
+    "naam": "Grădina Zoologică Târgu Mureș",
+    "plaats": "Târgu Mureș",
+    "judet": "Mureș",
+    "status": "vroeger",
+    "ztl_soort": "Leopard",
+    "ondersoort": "onbekend (ZTL: ondersoort niet vastgesteld)",
+    "ztl_notitie": "Quellen/Nachweise: - http://www.katrina.ro/gradina-zoologica-din-targu-mures.htm"
+   }
+  ],
+  "Tijger": [
+   {
+    "naam": "Grădina Zoologică Brașov",
+    "plaats": "Brașov",
+    "judet": "Brașov",
+    "status": "huidig",
+    "ztl_soort": "Amurtiger",
+    "ondersoort": "Amoer (volgens ZTL)",
+    "ztl_notitie": "Bestand 10/2016: 2,3,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - EARAZA Yearbook 2017 - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Brașov",
+    "plaats": "Brașov",
+    "judet": "Brașov",
+    "status": "huidig",
+    "ztl_soort": "Tiger",
+    "ondersoort": "onbekend (ZTL: ondersoort niet vastgesteld)",
+    "ztl_notitie": "weiß Bestand 10/2016: 1,1,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Brăila",
+    "plaats": "Brăila",
+    "judet": "Brăila",
+    "status": "huidig",
+    "ztl_soort": "Amurtiger",
+    "ondersoort": "Amoer (volgens ZTL)",
+    "ztl_notitie": "Bestand 10/2016: 1,0,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 04/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Bucov (Ploiești)",
+    "plaats": "Bucov",
+    "judet": "Prahova",
+    "status": "huidig",
+    "ztl_soort": "Amurtiger",
+    "ondersoort": "Amoer (volgens ZTL)",
+    "ztl_notitie": "Bestand 10/2016: 0,2,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Bucov (Ploiești)",
+    "plaats": "Bucov",
+    "judet": "Prahova",
+    "status": "huidig",
+    "ztl_soort": "Tiger",
+    "ondersoort": "onbekend (ZTL: ondersoort niet vastgesteld)",
+    "ztl_notitie": "weiße + \"Bengalen\" Bestand 10/2016: 1,1,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică București (Băneasa)",
+    "plaats": "București",
+    "judet": "București",
+    "status": "huidig",
+    "ztl_soort": "Amurtiger",
+    "ondersoort": "Amoer (volgens ZTL)",
+    "ztl_notitie": "seit 1965 -u. a. 1,0 aus Shanghai Quellen/Nachweise: - IZY 14 S. 171 ff. - Besuch 2010 (gesehen) - Besuch 04/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică București (Băneasa)",
+    "plaats": "București",
+    "judet": "București",
+    "status": "huidig",
+    "ztl_soort": "Tiger",
+    "ondersoort": "onbekend (ZTL: ondersoort niet vastgesteld)",
+    "ztl_notitie": "+ Amurtiger Bestand 10/2016: 2,3,0 Bestand 04/2022: 2,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 04/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Bârlad",
+    "plaats": "Bârlad",
+    "judet": "Vaslui",
+    "status": "huidig",
+    "ztl_soort": "Tiger",
+    "ondersoort": "onbekend (ZTL: ondersoort niet vastgesteld)",
+    "ztl_notitie": "Weiße Bestand 10/2016: 1,1,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 04/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Craiova (Parcul Nicolae Romanescu)",
+    "plaats": "Craiova",
+    "judet": "Dolj",
+    "status": "huidig",
+    "ztl_soort": "Tiger",
+    "ondersoort": "onbekend (ZTL: ondersoort niet vastgesteld)",
+    "ztl_notitie": "Bestand 10/2016: 1,1,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Călărași",
+    "plaats": "Călărași",
+    "judet": "Călărași",
+    "status": "huidig",
+    "ztl_soort": "Tiger",
+    "ondersoort": "onbekend (ZTL: ondersoort niet vastgesteld)",
+    "ztl_notitie": "Bestand 10/2016: 2,3,0 2022: als Amurtiger ausgeschildert, Tier selber nur teilweise gesehen, daher kann das nicht beurteilt werden Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 04/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Galați (Gârboavele)",
+    "plaats": "Tulucești",
+    "judet": "Galați",
+    "status": "huidig",
+    "ztl_soort": "Amurtiger",
+    "ondersoort": "Amoer (volgens ZTL)",
+    "ztl_notitie": "Bestand 10/2016: 1,0,0 Bestand 04/2022: 1,2 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 04/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Galați (Gârboavele)",
+    "plaats": "Tulucești",
+    "judet": "Galați",
+    "status": "huidig",
+    "ztl_soort": "Tiger",
+    "ondersoort": "onbekend (ZTL: ondersoort niet vastgesteld)",
+    "ztl_notitie": "Bestand 10/2016: 1,2,0 04/2022: es waren nur Amurtiger ausgeschildert und die Tiere sahen auch danach aus. Herkunft jeweils nicht bekannt Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 04/2022 (nicht ausgeschildert, nicht gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Hunedoara",
+    "plaats": "Hunedoara",
+    "judet": "Hunedoara",
+    "status": "huidig",
+    "ztl_soort": "Tiger",
+    "ondersoort": "onbekend (ZTL: ondersoort niet vastgesteld)",
+    "ztl_notitie": "Bestand 10/2016: 1,1,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Oradea",
+    "plaats": "Oradea",
+    "judet": "Bihor",
+    "status": "huidig",
+    "ztl_soort": "Amurtiger",
+    "ondersoort": "Amoer (volgens ZTL)",
+    "ztl_notitie": "Bestand 10/2016: 1,0,0 Bestand 05/2022: 0,0,2 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Pitești (Parcul Trivale)",
+    "plaats": "Pitești",
+    "judet": "Argeș",
+    "status": "huidig",
+    "ztl_soort": "Amurtiger",
+    "ondersoort": "Amoer (volgens ZTL)",
+    "ztl_notitie": "Bestand 10/2016: 1,4,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) ---- - Besusch 2011 (gesehen) - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Reșița",
+    "plaats": "Reșița",
+    "judet": "Caraș-Severin",
+    "status": "huidig",
+    "ztl_soort": "Amurtiger",
+    "ondersoort": "Amoer (volgens ZTL)",
+    "ztl_notitie": "Quellen/Nachweise: - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Râmnicu Vâlcea",
+    "plaats": "Râmnicu Vâlcea",
+    "judet": "Vâlcea",
+    "status": "huidig",
+    "ztl_soort": "Amurtiger",
+    "ondersoort": "Amoer (volgens ZTL)",
+    "ztl_notitie": "Bestand 10/2016: 1,1,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) ---- - Besuch 8/2008 - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Rădăuți",
+    "plaats": "Rădăuți",
+    "judet": "Suceava",
+    "status": "huidig",
+    "ztl_soort": "Tiger",
+    "ondersoort": "onbekend (ZTL: ondersoort niet vastgesteld)",
+    "ztl_notitie": "möglich dass Amurtiger Bestand 10/2016: 1,1,0 Quellen/Nachweise: - http://www.inbucovina.ro/cazare/Gradina-Zoologica-din-Radauti_788.html - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 04/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Sibiu",
+    "plaats": "Sibiu",
+    "judet": "Sibiu",
+    "status": "huidig",
+    "ztl_soort": "Amurtiger",
+    "ondersoort": "Amoer (volgens ZTL)",
+    "ztl_notitie": "Quellen/Nachweise: - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Sibiu",
+    "plaats": "Sibiu",
+    "judet": "Sibiu",
+    "status": "huidig",
+    "ztl_soort": "Tiger",
+    "ondersoort": "onbekend (ZTL: ondersoort niet vastgesteld)",
+    "ztl_notitie": "Weiß Bestand 10/2016: 2,1,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Târgoviște",
+    "plaats": "Târgoviște",
+    "judet": "Dâmbovița",
+    "status": "huidig",
+    "ztl_soort": "Amurtiger",
+    "ondersoort": "Amoer (volgens ZTL)",
+    "ztl_notitie": "Bestand 10/2016: 1,1,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) ---- - Besuch 2011 (gesehen) - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Târgu Mureș",
+    "plaats": "Târgu Mureș",
+    "judet": "Mureș",
+    "status": "huidig",
+    "ztl_soort": "Amurtiger",
+    "ondersoort": "Amoer (volgens ZTL)",
+    "ztl_notitie": "Zucht Bestand 10/2016: 1,2,3 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Târgu Mureș",
+    "plaats": "Târgu Mureș",
+    "judet": "Mureș",
+    "status": "huidig",
+    "ztl_soort": "Tiger",
+    "ondersoort": "onbekend (ZTL: ondersoort niet vastgesteld)",
+    "ztl_notitie": "seit 2022 Weiße Tiger 2022: Ankunft 0,2, Geschwister Quellen/Nachweise: - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Arca lui Noe (gesloten 2025 volgens ZTL)",
+    "plaats": "Zaharești",
+    "judet": "Suceava",
+    "status": "vroeger",
+    "ztl_soort": "Tiger",
+    "ondersoort": "onbekend (ZTL: ondersoort niet vastgesteld)",
+    "ztl_notitie": "- Hybridzucht mit Löwen Quellen/Nachweise: - https://www.stern.de/panorama/liger--hybrid-aus-loewe-und-tiger-in-rumaenischem-zoo-geboren-35892844.html"
+   },
+   {
+    "naam": "Grădina Zoologică Baia Mare (gesloten 2013 volgens ZTL)",
+    "plaats": "Baia Mare",
+    "judet": "Maramureș",
+    "status": "vroeger",
+    "ztl_soort": "Amurtiger",
+    "ondersoort": "Amoer (volgens ZTL)",
+    "ztl_notitie": "Quellen/Nachweise: http://www.zooland.ro/Gradina_Zoologica_Baia_Mare-5737.html"
+   },
+   {
+    "naam": "Grădina Zoologică Baia Mare (gesloten 2013 volgens ZTL)",
+    "plaats": "Baia Mare",
+    "judet": "Maramureș",
+    "status": "vroeger",
+    "ztl_soort": "Tiger",
+    "ondersoort": "onbekend (ZTL: ondersoort niet vastgesteld)",
+    "ztl_notitie": "als Panthera tigris tigris benannt Quellen/Nachweise: http://www.zooland.ro/Gradina_Zoologica_Baia_Mare-5737.html"
+   },
+   {
+    "naam": "Grădina Zoologică Oradea",
+    "plaats": "Oradea",
+    "judet": "Bihor",
+    "status": "vroeger",
+    "ztl_soort": "Tiger",
+    "ondersoort": "onbekend (ZTL: ondersoort niet vastgesteld)",
+    "ztl_notitie": "Bestand 10/2016: 1,0,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 05/2022 (ausgeschildert, gesehen) => Amurtiger"
+   },
+   {
+    "naam": "Grădina Zoologică Reșița",
+    "plaats": "Reșița",
+    "judet": "Caraș-Severin",
+    "status": "vroeger",
+    "ztl_soort": "Tiger",
+    "ondersoort": "onbekend (ZTL: ondersoort niet vastgesteld)",
+    "ztl_notitie": "Bestand 10/2016: 0,1,0 Quellen/Nachweise: - http://apmcs.anpm.ro/gradina_zoologica_ion_crisan-7956 - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) => Amurtiger (2022)"
+   },
+   {
+    "naam": "Grădina Zoologică Turda (gesloten 2021 volgens ZTL)",
+    "plaats": "Turda",
+    "judet": "Cluj",
+    "status": "vroeger",
+    "ztl_soort": "Tiger",
+    "ondersoort": "onbekend (ZTL: ondersoort niet vastgesteld)",
+    "ztl_notitie": "Quellen/Nachweise: http://www.zooland.ro/Gradina_Zoologica_Turda-5736.html"
+   },
+   {
+    "naam": "Grădina Zoologică Târgoviște",
+    "plaats": "Târgoviște",
+    "judet": "Dâmbovița",
+    "status": "vroeger",
+    "ztl_soort": "Sumatratiger",
+    "ondersoort": "Sumatraans (volgens ZTL)",
+    "ztl_notitie": "Quellen/Nachweise: - Hersch, R. (2009): International studbook Panthera tigris sumatrae."
+   },
+   {
+    "naam": "Grădina Zoologică Șoimaru (gesloten volgens ZTL)",
+    "plaats": "Ilișești",
+    "judet": "Suceava",
+    "status": "vroeger",
+    "ztl_soort": "Tiger",
+    "ondersoort": "onbekend (ZTL: ondersoort niet vastgesteld)",
+    "ztl_notitie": "Bestand 10/2016: 1,1,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016)"
+   }
+  ],
+  "Jaguar": [
+   {
+    "naam": "Grădina Zoologică Brașov",
+    "plaats": "Brașov",
+    "judet": "Brașov",
+    "status": "huidig",
+    "ztl_soort": "Jaguar",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Bestand 10/2016: 1,0,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Bucov (Ploiești)",
+    "plaats": "Bucov",
+    "judet": "Prahova",
+    "status": "huidig",
+    "ztl_soort": "Jaguar",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Bestand 10/2016: 1,0,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) ---- - Besuch 2011 (gesehen) - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică București (Băneasa)",
+    "plaats": "București",
+    "judet": "București",
+    "status": "huidig",
+    "ztl_soort": "Jaguar",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Bestand 31.12.1992: 2,1 Bestand 31.10.2016: 1,0,0 Bestand 04/2022: 1,0 (evtl +0,1 sw) Quellen/Nachweise: - [EAZATS1993] The 1993 EEP Tag Survey - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 2011 (gesehen) - Besuch 04/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Călărași",
+    "plaats": "Călărași",
+    "judet": "Călărași",
+    "status": "huidig",
+    "ztl_soort": "Jaguar",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Bestand 10/2016: 2,0,0 Quellen/Nachweise: - http://georgia.sunphoto.ro/GRADINA_ZOOLOGICA_CALARASI - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 04/2022 (ausgeschildert, nicht gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Reșița",
+    "plaats": "Reșița",
+    "judet": "Caraș-Severin",
+    "status": "huidig",
+    "ztl_soort": "Jaguar",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Bestand 10/2016: 1,0,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Sibiu",
+    "plaats": "Sibiu",
+    "judet": "Sibiu",
+    "status": "huidig",
+    "ztl_soort": "Jaguar",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "seit 2021 mind seit 2005 bis 2019 vormalige Haltung: um 1992 - Bestand 31.12.1992: 1,0 - Bestand 31.10.2016: 2,1,0 - 2019 in Targu Mures wegen Bauarbeiten eingestellt - 2021 zurückgekehrt - Bestand 05/2022: 1,1 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - [EAZATS"
+   },
+   {
+    "naam": "Grădina Zoologică Târgu Mureș",
+    "plaats": "Târgu Mureș",
+    "judet": "Mureș",
+    "status": "huidig",
+    "ztl_soort": "Jaguar",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Bestand 10/2016: 3,0,0 05/2022: Raubtierhaus teilweise geschlossen Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - pers. Mitt. bei Besuch 05/2022 - Tiere da - Besuch 05/2022 (nicht ausgeschildert, nicht gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Baia Mare (gesloten 2013 volgens ZTL)",
+    "plaats": "Baia Mare",
+    "judet": "Maramureș",
+    "status": "vroeger",
+    "ztl_soort": "Jaguar",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Quellen/Nachweise: http://www.zooland.ro/Gradina_Zoologica_Baia_Mare-5737.html"
+   },
+   {
+    "naam": "Grădina Zoologică Bârlad",
+    "plaats": "Bârlad",
+    "judet": "Vaslui",
+    "status": "vroeger",
+    "ztl_soort": "Jaguar",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Bestand 10/2016: 0,1,0 04/2022: pers. Mitteilung, dass nicht mehr vorhanden Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 04/2022 (nicht ausgeschildert, nicht gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Craiova (Parcul Nicolae Romanescu)",
+    "plaats": "Craiova",
+    "judet": "Dolj",
+    "status": "vroeger",
+    "ztl_soort": "Jaguar",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Bestand 10/2016: 1,1,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 05/2022 (nicht ausgeschildert, nicht gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Galați (Gârboavele)",
+    "plaats": "Tulucești",
+    "judet": "Galați",
+    "status": "vroeger",
+    "ztl_soort": "Jaguar",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Quellen/Nachweise: http://www.zooland.ro/gradina-zoologica-galati-garboavele-2413"
+   },
+   {
+    "naam": "Grădina Zoologică Oradea",
+    "plaats": "Oradea",
+    "judet": "Bihor",
+    "status": "vroeger",
+    "ztl_soort": "Jaguar",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Bestand 10/2016: 1,0,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 05/2022 (nicht ausgeschildert, nicht gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Râmnicu Vâlcea",
+    "plaats": "Râmnicu Vâlcea",
+    "judet": "Vâlcea",
+    "status": "vroeger",
+    "ztl_soort": "Jaguar",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Bestand 10/2016: 1,0,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 05/2022 (nicht ausgeschildert, nicht gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Șoimaru (gesloten volgens ZTL)",
+    "plaats": "Ilișești",
+    "judet": "Suceava",
+    "status": "vroeger",
+    "ztl_soort": "Jaguar",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Bestand 10/2016: 1,0,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016)"
+   }
+  ],
+  "Leeuw": [
+   {
+    "naam": "Grădina Zoologică Brașov",
+    "plaats": "Brașov",
+    "judet": "Brașov",
+    "status": "huidig",
+    "ztl_soort": "Löwe",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Bestand 10/2016: 2,5,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - EARAZA Yearbook 2017 - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Brașov",
+    "plaats": "Brașov",
+    "judet": "Brașov",
+    "status": "huidig",
+    "ztl_soort": "Transvaal-Löwe",
+    "ondersoort": "Zuidelijk (P. l. melanochaita) – ZTL: Transvaal-leeuw, wit",
+    "ztl_notitie": "weiß Quellen/Nachweise: - Besuch 05/2022 (nicht genau ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Brăila",
+    "plaats": "Brăila",
+    "judet": "Brăila",
+    "status": "huidig",
+    "ztl_soort": "Löwe",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Bestand 10/2016: 3,3,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 04/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Bucov (Ploiești)",
+    "plaats": "Bucov",
+    "judet": "Prahova",
+    "status": "huidig",
+    "ztl_soort": "Löwe",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Bestand 10/2016: 1,3,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) ---- - Besuch 2011 (gesehen) - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică București (Băneasa)",
+    "plaats": "București",
+    "judet": "București",
+    "status": "huidig",
+    "ztl_soort": "Löwe",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Bestand am 31.12.1992: 1,2 Bestand am 31.10.2016: 1,1,0 Quellen/Nachweise: - [EAZATS1993] The 1993 EEP Tag Survey (ohne UA-Angabe gelistet) - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 2011 (gesehen) - Besuch 04/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Bârlad",
+    "plaats": "Bârlad",
+    "judet": "Vaslui",
+    "status": "huidig",
+    "ztl_soort": "Löwe",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Bestand 10/2016: 2,1,0 Bestand 04/2022: 2,1 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 04/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Craiova (Parcul Nicolae Romanescu)",
+    "plaats": "Craiova",
+    "judet": "Dolj",
+    "status": "huidig",
+    "ztl_soort": "Löwe",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Bestand 10/2016: 2,3,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Călărași",
+    "plaats": "Călărași",
+    "judet": "Călărași",
+    "status": "huidig",
+    "ztl_soort": "Löwe",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Bestand 10/2016: 1,2,0 Quellen/Nachweise: - http://georgia.sunphoto.ro/GRADINA_ZOOLOGICA_CALARASI - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 04/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Galați (Gârboavele)",
+    "plaats": "Tulucești",
+    "judet": "Galați",
+    "status": "huidig",
+    "ztl_soort": "Löwe",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Bestand 10/2016: 4,4,0 Bestand 04/2022: 1,1 Quellen/Nachweise: - http://www.zooland.ro/gradina-zoologica-galati-garboavele-2413 - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 04/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Hunedoara",
+    "plaats": "Hunedoara",
+    "judet": "Hunedoara",
+    "status": "huidig",
+    "ztl_soort": "Löwe",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Bestand 10/2016: 1,1,0 Bestand 05/2022: 0,1 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Oradea",
+    "plaats": "Oradea",
+    "judet": "Bihor",
+    "status": "huidig",
+    "ztl_soort": "Löwe",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "vsl. 1,0 P. l. kruegeri Bestand 10/2016: 1,1,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Pitești (Parcul Trivale)",
+    "plaats": "Pitești",
+    "judet": "Argeș",
+    "status": "huidig",
+    "ztl_soort": "Löwe",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Bestand 10/2016: 1,2,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) ---- - Besuch 2011 (gesehen) - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Reșița",
+    "plaats": "Reșița",
+    "judet": "Caraș-Severin",
+    "status": "huidig",
+    "ztl_soort": "Löwe",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Bestand 10/2016: 1,1,0 Bestands 05/222: 2,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Râmnicu Vâlcea",
+    "plaats": "Râmnicu Vâlcea",
+    "judet": "Vâlcea",
+    "status": "huidig",
+    "ztl_soort": "Löwe",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Bestand 10/2016: 3,2,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) ---- - Besuch 8/2008 - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Rădăuți",
+    "plaats": "Rădăuți",
+    "judet": "Suceava",
+    "status": "huidig",
+    "ztl_soort": "Löwe",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Bestand 10/2016: 0,1,4 Bestand 04/2022: 2,2 + 1,0 aus Ukraine eingestellt Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 04/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Sibiu",
+    "plaats": "Sibiu",
+    "judet": "Sibiu",
+    "status": "huidig",
+    "ztl_soort": "Löwe",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Bestand 10/2016: 1,1,0 Bestand 05/2022: 1,2 Quellen/Nachweise: - http://www.zooland.ro/Gradina_Zoologica_Sibiu-5987.html - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Târgoviște",
+    "plaats": "Târgoviște",
+    "judet": "Dâmbovița",
+    "status": "huidig",
+    "ztl_soort": "Löwe",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Bestand 10/2016: 2,1,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) ---- - Besuch 2011 (gesehen) - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Târgu Mureș",
+    "plaats": "Târgu Mureș",
+    "judet": "Mureș",
+    "status": "huidig",
+    "ztl_soort": "Löwe",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Zucht Bestand 10/2016: 6,5,0 2017: Nachzucht 05/2022: 0,0,9 Aufnahme aus Odesa Biopark 06/2022: 0,0,2 Nachzucht Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Facebook 05/2022 - Facebook 06/2022 - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Arca lui Noe (gesloten 2025 volgens ZTL)",
+    "plaats": "Zaharești",
+    "judet": "Suceava",
+    "status": "vroeger",
+    "ztl_soort": "Löwe",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "- Hybridzucht mit Tigern Quellen/Nachweise: - https://www.stern.de/panorama/liger--hybrid-aus-loewe-und-tiger-in-rumaenischem-zoo-geboren-35892844.html"
+   },
+   {
+    "naam": "Grădina Zoologică Baia Mare (gesloten 2013 volgens ZTL)",
+    "plaats": "Baia Mare",
+    "judet": "Maramureș",
+    "status": "vroeger",
+    "ztl_soort": "Löwe",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Quellen/Nachweise: http://www.zooland.ro/Gradina_Zoologica_Baia_Mare-5737.html"
+   },
+   {
+    "naam": "Grădina Zoologică Chiajna",
+    "plaats": "Chiajna",
+    "judet": "Ilfov",
+    "status": "vroeger",
+    "ztl_soort": "Löwe",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Quellen/Nachweise: Abruf städt. Webseite 03/2022 - Besuch 05/2022 (nicht ausgeschildert, nicht gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Piatra Neamț (gesloten 2021 volgens ZTL)",
+    "plaats": "Piatra Neamț",
+    "judet": "Neamț",
+    "status": "vroeger",
+    "ztl_soort": "Löwe",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Quellen/Nachweise: - http://www.piatra-neamt.info/galerie-piatra/gradina%20zoologica/gradina%20zoologica.html"
+   },
+   {
+    "naam": "Grădina Zoologică Timișoara (gesloten 2021 volgens ZTL)",
+    "plaats": "Timișoara",
+    "judet": "Timiș",
+    "status": "vroeger",
+    "ztl_soort": "Löwe",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "31.03.2010 Quellen/Nachweise: - FIŞA DE EVIDENŢĂ A GRĂDINII ZOOLOGICE DIN TIMIŞOARA (Schaublatt Zoo Timisoara)"
+   },
+   {
+    "naam": "Grădina Zoologică Turda (gesloten 2021 volgens ZTL)",
+    "plaats": "Turda",
+    "judet": "Cluj",
+    "status": "vroeger",
+    "ztl_soort": "Löwe",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Quellen/Nachweise: http://www.zooland.ro/Gradina_Zoologica_Turda-5736.html"
+   },
+   {
+    "naam": "Grădina Zoologică Șoimaru (gesloten volgens ZTL)",
+    "plaats": "Ilișești",
+    "judet": "Suceava",
+    "status": "vroeger",
+    "ztl_soort": "Löwe",
+    "ondersoort": "onbekend",
+    "ztl_notitie": "Bestand 10/2016: 2,2,0 Quellen/Nachweise: - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016)"
+   }
+  ],
+  "Sneeuwluipaard": [
+   {
+    "naam": "Grădina Zoologică Brașov",
+    "plaats": "Brașov",
+    "judet": "Brașov",
+    "status": "huidig",
+    "ztl_soort": "Schneeleopard",
+    "ondersoort": "—",
+    "ztl_notitie": "Bestand 10/2021: 1,1,0 Quellen/Nachweise: - Besuch 2016 (gesehen) - pers. Mitt. (E-Mail an ZTL v. 24.11.2021) - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică Oradea",
+    "plaats": "Oradea",
+    "judet": "Bihor",
+    "status": "huidig",
+    "ztl_soort": "Schneeleopard",
+    "ondersoort": "—",
+    "ztl_notitie": "Quellen/Nachweise: - Besuch 05/2022 (ausgeschildert, gesehen)"
+   },
+   {
+    "naam": "Grădina Zoologică București (Băneasa)",
+    "plaats": "București",
+    "judet": "București",
+    "status": "vroeger",
+    "ztl_soort": "Schneeleopard",
+    "ondersoort": "—",
+    "ztl_notitie": "Bestand 10/2016: 1,0,0 Quellen/Nachweise: - L. Blomqvist (1982): The 1981 Annual Report of the captive Snow Leopards (Panthera uncia) Population ---- - pers. Mitt. (E-Mail an ZTL v. 02.12.2016 / TBL III - 2016) - Besuch 04/2022 (nicht ausgeschildert, nicht gesehen)"
+   }
+  ]
+ },
+ "wetgeving": {
+  "nl": "Dierentuinen: Legea 191/2002 (grădini zoologice și acvarii publice) verplicht een exploitatievergunning (autorizație de funcționare) van de milieu-instantie (APM per județ, procedure OM 1798/2007). Particulieren: volgens art. 11 van Legea 205/2004 (dierenbescherming) mag een houder wilde dieren alleen houden met een vergunning van de veterinaire dienst van het județ (DSVSA); de voorwaarden staan in een ministerieel besluit op voorstel van ANSVSA. Er is dus geen absoluut verbod op grote katten bij particulieren, wel een vergunningplicht; zonder vergunning is houden en verhandelen strafbaar (dierentuinen uitgezonderd). Circussen: Legea 171/2017 vulde art. 17 van Legea 205/2004 aan met een verbod op gewervelde dieren in circussen, rondreizende circussen, karavanen en vergelijkbare shows (uitzonderingen: paarden, honden, sommige zaadetende exotische vogels, dieren in dolfinaria en aquaria). Aangenomen door de Kamer van Afgevaardigden op 13-06-2017, van kracht 22-07-2017 (geconsolideerde tekst Legea 205/2004). Sinds Legea 138/2022 (van kracht 19-05-2022) is het gebruik van wilde gewervelde dieren in circussen een misdrijf (art. 25 lid 2a): 1 tot 5 jaar cel of een boete. Aanleiding was de brand bij Circul Globus in Boekarest (januari 2017), waarbij 11 dieren omkwamen, onder wie twee Amoertijgers.",
+  "en": "Zoos: Law 191/2002 (zoos and public aquaria) requires an operating licence (autorizație de funcționare) from the environmental authority (county APM, procedure OM 1798/2007). Private keepers: under art. 11 of Law 205/2004 (animal protection), a keeper may hold wild animals only with a licence from the county veterinary service (DSVSA); conditions are set by a ministerial order on ANSVSA's proposal. So there is no outright ban on private big cats, but a licence is required; keeping or trading without one is an offence (zoos excepted). Circuses: Law 171/2017 added to art. 17 of Law 205/2004 a ban on vertebrate animals in circuses, travelling circuses, caravans and similar shows (exceptions: horses, dogs, some seed-eating exotic birds, animals in dolphinaria and aquaria). Passed by the Chamber of Deputies on 13-06-2017, in force 22-07-2017 (consolidated text of Law 205/2004). Since Law 138/2022 (in force 19-05-2022), using wild vertebrates in circuses is a criminal offence (art. 25(2)a): 1 to 5 years in prison or a fine. It followed the Circul Globus fire in Bucharest (January 2017), which killed 11 animals, including two Amur tigers.",
+  "bronnen": "Geconsolideerde tekst Legea 205/2004 per 25-06-2024 (snppc.ro PDF, art. 11, 17, 25); green-report.ro / evz.ro / radioromaniacultural.ro (juni 2017); Legea 191/2002 en OM 1798/2007 (legislatie.just.ro, faolex)."
+ },
+ "open_punten": [
+  "Officiële vergunningenlijst niet ingezien: data.gov.ro (‘Lista Zoo si Acvarii’, ANPM), anpm.ro/APM-sites en web.archive.org waren niet bereikbaar (503/geblokkeerd). Voor die hosts moet de netwerkinstelling van de sessie worden aangepast, of de gebruiker levert de XLS aan.",
+  "‘AGZAR’ niet gevonden; de vereniging heet waarschijnlijk FGZAR (Federația Grădinilor Zoologice și Acvariilor din România). Geen ledenlijst online gevonden.",
+  "EAZA: laatst gevonden stand is Agerpres 06-10-2025 (Brașov volwaardig; Târgu Mureș en Sibiu kandidaat). Of dat in 2026 veranderd is, niet bevestigd. Een oud epitesti.ro-artikel (ca. 2010) noemt Pitești ‘toegelaten tot EAZA’ in 2009. Dat is onwaarschijnlijk/niet bevestigd en staat in strijd met ‘Brașov als enige volwaardige lid’.",
+  "Zootierliste-gegevens zijn grotendeels gebaseerd op een enquête uit 2016 en bezoeken in 2022. Alleen Târgoviște/Serval (bezoek 04/2026) en Târgu Mureș/Chinese luipaard (Facebook 10/2025) zijn recenter. Dus nooit als enige bron voor ‘aanwezig’ gebruiken.",
+  "ZTL meldt bij Tijger soms ‘mogelijk Amoer’ (Rădăuți) of ‘als Amoertijger aangegeven’ (Călărași, Galați). Bij Bucov staan witte tijgers en ‘Bengalen’ op het bord. Bij Oradea lijken de luipaarden ‘sterk op Perzen’ (niet bevestigd). Bij Oradea is de leeuw ‘waarschijnlijk P. l. krugeri’.",
+  "Bij Brașov staat zowel ‘Löwe’ als ‘Transvaal-Löwe (wit)’, mogelijk dezelfde dieren.",
+  "Particuliere/illegale houders (niet in ZTL): ‘Liska Park’ in Șinteu (Bihor), met Bengaalse tijgers en een caracal, zonder milieu- of DSVSA-vergunning (G4Media 06-08-2025). Illegale dierentuin in Picior de Munte (gem. Dragodana, Dâmbovița), op 20-08-2026 gesloten door de Garda Națională de Mediu: 4 leeuwen (2,2) verdoofd en weggehaald (bestemming niet genoemd), 1 tijgerwelp dood gevonden, 1 tijgerwelp naar een kliniek (Agerpres 20-08-2026). Arca lui Noe (Zaharești, Suceava), met leeuw-tijger-hybriden, is volgens ZTL in 2025 gesloten.",
+  "Vroegere houders volgens ZTL: Baia Mare (gesloten 2013), Turda, Piatra Neamț en Timișoara (alle volgens ZTL gesloten 2021), Șoimaru/Ilișești (gesloten). Volgens Agerpres 13-06-2025 is Zoo Timișoara ‘zonder dieren’."
+ ]
+}

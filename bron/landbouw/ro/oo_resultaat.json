@@ -1,0 +1,402 @@
+{
+  "locaties": [
+    {
+      "naam": "Grădina Zoologică Bârlad",
+      "plaats": "Bârlad",
+      "judet": "Vaslui",
+      "lon": 27.675,
+      "lat": 46.244,
+      "type": "Dierentuin",
+      "lidmaatschap": [],
+      "url": "https://primariabarlad.ro/barlad/agrement/gradina-zoologica/",
+      "uren": {
+        "nl": "Openingstijden niet bevestigd (stadssite onbereikbaar); entree 11 lei voor volwassenen (Vremea Nouă, 05-07-2026).",
+        "en": "Opening hours not confirmed (city website unreachable); admission 11 lei for adults (Vremea Nouă, 05-07-2026)."
+      },
+      "about": {
+        "nl": "Gemeentelijke dierentuin (sinds 1959) naast de Grădina Publică van Bârlad, onderdeel van het stadhuis. Lokale pers meldt in 2026 achterstallig onderhoud en al ruim een jaar geen vaste directeur.",
+        "en": "Municipal zoo (since 1959) next to Bârlad's public garden, run by the city hall. Local press reported poor upkeep in 2026 and no permanent director for over a year."
+      },
+      "earlier": {
+        "nl": "Jaguar (vrouwtje; in 2016 aanwezig, in 2022 niet meer – Zootierliste).",
+        "en": "Jaguar (female; present in 2016, gone by 2022 – Zootierliste)."
+      },
+      "katten": [
+        {
+          "soort": "Leeuw",
+          "ondersoort": "onbekend",
+          "status": "g",
+          "toelichting": {
+            "nl": "Leeuwen worden gevoerd met paardenvlees dat de stad inkoopt (aankoop augustus 2026). In 2023 o.a. de mannetjesleeuw King Paraschiv.",
+            "en": "Lions are fed horse meat bought by the city (purchase August 2026). In 2023 the lions included the male King Paraschiv."
+          },
+          "aantal": {
+            "nl": "onbekend (2022: 2,1 volgens Zootierliste)",
+            "en": "unknown (2022: 2.1 according to Zootierliste)"
+          },
+          "bron": "Vremea Nouă 02-09-2026; Agerpres 18-04-2023; Zootierliste (bezoek 04/2022)"
+        },
+        {
+          "soort": "Tijger",
+          "ondersoort": "Bengaals, incl. witte tijger",
+          "status": "w",
+          "toelichting": {
+            "nl": "Paar witte Bengaalse tijgers Taifun en Taiga, gekocht in 2020; in 2023 nog aanwezig.",
+            "en": "Pair of white Bengal tigers, Taifun and Taiga, bought in 2020; still present in 2023."
+          },
+          "aantal": {
+            "nl": "2 (Taifun en Taiga, stand 2023)",
+            "en": "2 (Taifun and Taiga, as of 2023)"
+          },
+          "bron": "Agerpres 18-04-2023; Vremea Nouă 27-08-2023 en 02-09-2026 (lezersreactie); Zootierliste (bezoek 04/2022)",
+          "twijfel": {
+            "nl": "Laatste concrete bron 2023; in 2026 alleen een lezersreactie die 'leeuwen en tijgers' noemt. Geen bericht over vertrek gevonden.",
+            "en": "Last concrete source 2023; in 2026 only a reader comment mentioning 'lions and tigers'. No report of departure found."
+          }
+        }
+      ],
+      "geboortes": [],
+      "kleur": "witte tijger"
+    },
+    {
+      "naam": "Grădina Zoologică Brăila",
+      "plaats": "Brăila",
+      "judet": "Brăila",
+      "lon": 27.932,
+      "lat": 45.237,
+      "type": "Dierentuin",
+      "lidmaatschap": [],
+      "url": "",
+      "uren": {
+        "nl": "Mei–september dagelijks 9.00–19.00; volwassenen 12 lei, kinderen 5 lei (Obiectiv Vocea Brăilei, 06-06-2026).",
+        "en": "May–September daily 9:00–19:00; adults 12 lei, children 5 lei (Obiectiv Vocea Brăilei, 06-06-2026)."
+      },
+      "about": {
+        "nl": "Gemeentelijke dierentuin van 4,5 ha aan de rand van Brăila, beheerd door ECO S.A. In september 2026 keurde de gemeenteraad een nieuw reglement goed met twee leeuwenverblijven en één verblijf voor de Siberische tijger.",
+        "en": "Municipal zoo of 4.5 ha on the edge of Brăila, run by ECO S.A. In September 2026 the city council approved new rules listing two lion enclosures and one Siberian tiger enclosure."
+      },
+      "earlier": {
+        "nl": "",
+        "en": ""
+      },
+      "katten": [
+        {
+          "soort": "Leeuw",
+          "ondersoort": "onbekend",
+          "status": "g",
+          "toelichting": {
+            "nl": "Twee leeuwenverblijven in het reglement van 2026. In augustus 2022 werden hier drie welpen geboren.",
+            "en": "Two lion enclosures in the 2026 rules. Three cubs were born here in August 2022."
+          },
+          "aantal": {
+            "nl": "onbekend",
+            "en": "unknown"
+          },
+          "bron": "Obiectiv Vocea Brăilei 29-09-2026 (reglement); Obiectiv 27-08-2022"
+        },
+        {
+          "soort": "Tijger",
+          "ondersoort": "Amoer",
+          "status": "g",
+          "toelichting": {
+            "nl": "Verblijf 'Tigru Siberian' (1000 m² met bassin) in het reglement van 2026.",
+            "en": "'Siberian tiger' enclosure (1,000 m² with pool) in the 2026 rules."
+          },
+          "aantal": {
+            "nl": "onbekend (2016: 1 mannetje volgens Zootierliste)",
+            "en": "unknown (2016: 1 male according to Zootierliste)"
+          },
+          "bron": "Obiectiv Vocea Brăilei 29-09-2026 (reglement); Zootierliste (bezoek 04/2022)"
+        }
+      ],
+      "geboortes": [],
+      "kleur": ""
+    },
+    {
+      "naam": "Grădina Zoologică Galați (Pădurea Gârboavele)",
+      "plaats": "Tulucești (bij Galați)",
+      "judet": "Galați",
+      "lon": 28.01,
+      "lat": 45.565,
+      "type": "Dierentuin",
+      "lidmaatschap": [],
+      "url": "https://cmsngl.ro/",
+      "uren": {
+        "nl": "1 mei–31 oktober wo–zo 10.00–18.00; november–april wo–zo 9.00–17.00; volwassenen 7 lei (Monitorul de Galați, 16-03-2026 en 30-04-2026).",
+        "en": "1 May–31 October Wed–Sun 10:00–18:00; November–April Wed–Sun 9:00–17:00; adults 7 lei (Monitorul de Galați, 16-03-2026 and 30-04-2026)."
+      },
+      "about": {
+        "nl": "Dierentuin in het bos Gârboavele, onderdeel van het Complexul Muzeal de Științele Naturii 'Răsvan Angheluță' (provincie Galați). In augustus 2026 kondigde de Milieuwacht aan dat vier in beslag genomen leeuwen en een jonge Siberische tijger uit Dâmbovița hierheen gaan.",
+        "en": "Zoo in the Gârboavele forest, part of the 'Răsvan Angheluță' Natural Sciences Museum Complex (Galați county). In August 2026 the Environmental Guard announced that four seized lions and a young Siberian tiger from Dâmbovița would go here."
+      },
+      "earlier": {
+        "nl": "Jaguar (ongedateerd, vermeld door zooland.ro; volgens Zootierliste niet meer aanwezig).",
+        "en": "Jaguar (undated, listed by zooland.ro; no longer present according to Zootierliste)."
+      },
+      "katten": [
+        {
+          "soort": "Leeuw",
+          "ondersoort": "onbekend",
+          "status": "g",
+          "toelichting": {
+            "nl": "Leeuwen al langer aanwezig (2022: 1,1). Op 19-08-2026 werden vier in beslag genomen leeuwen (2 mannetjes, 2 vrouwtjes) uit een illegale menagerie in Picior de Munte (Dâmbovița) naar deze dierentuin overgebracht.",
+            "en": "Lions present for years (2022: 1.1). On 19-08-2026 four seized lions (2 males, 2 females) from an illegal menagerie in Picior de Munte (Dâmbovița) were transferred to this zoo."
+          },
+          "aantal": {
+            "nl": "onbekend (mogelijk 2 + 4 nieuwe)",
+            "en": "unknown (possibly 2 + 4 new)"
+          },
+          "bron": "Digi24 19-08-2026; Ziarul Profit 19-08-2026; Agerpres 20-08-2026; Zootierliste (bezoek 04/2022)"
+        },
+        {
+          "soort": "Tijger",
+          "ondersoort": "Amoer",
+          "status": "g",
+          "toelichting": {
+            "nl": "In 2022 als Amoertijgers aangegeven (1,2). Op 19-08-2026 werd een jonge Siberische tijger (mannetje) uit Dâmbovița naar Galați gestuurd; aankomst niet apart bevestigd.",
+            "en": "Signed as Amur tigers in 2022 (1.2). On 19-08-2026 a young male Siberian tiger from Dâmbovița was sent to Galați; arrival not separately confirmed."
+          },
+          "aantal": {
+            "nl": "onbekend",
+            "en": "unknown"
+          },
+          "bron": "Ziarul Profit 19-08-2026; Agerpres 20-08-2026 (GNM: 'Panthera tigris tigris', pui mascul); Zootierliste (bezoek 04/2022); YouTube-kanaal CMSN Galați 'Tigri și lei' (ongedateerd)"
+        }
+      ],
+      "geboortes": [],
+      "kleur": ""
+    },
+    {
+      "naam": "Parcul Zoologic Rădăuți",
+      "plaats": "Rădăuți",
+      "judet": "Suceava",
+      "lon": 25.907,
+      "lat": 47.842,
+      "type": "Dierentuin",
+      "lidmaatschap": [],
+      "url": "https://primariaradauti.ro/",
+      "uren": {
+        "nl": "Volgens een toeristensite dagelijks ca. 8.00–19.00 afhankelijk van het seizoen; volwassenen 15 lei (ongedateerd, niet op eigen site bevestigd).",
+        "en": "According to a tourist site daily approx. 8:00–19:00 depending on season; adults 15 lei (undated, not confirmed on own site)."
+      },
+      "about": {
+        "nl": "Gemeentelijke dierentuin (ca. 2,2 ha) van Rădăuți; de stad investeerde in 2025 in camerabewaking en herstel van verblijven. In 2022 kreeg het park een leeuw uit de dierentuin van Zaporizja (Oekraïne).",
+        "en": "Municipal zoo (approx. 2.2 ha) of Rădăuți; the city invested in CCTV and enclosure repairs in 2025. In 2022 the park received a lion from Zaporizhzhia zoo (Ukraine)."
+      },
+      "earlier": {
+        "nl": "Jaguar (in 2018 aangekomen uit Zoo Târgu Mureș, svnews.ro; geen latere vermelding). Tijgerwelpen geboren in 2013 (svnews.ro).",
+        "en": "Jaguar (arrived from Târgu Mureș Zoo in 2018, svnews.ro; no later mention). Tiger cubs born in 2013 (svnews.ro)."
+      },
+      "katten": [
+        {
+          "soort": "Leeuw",
+          "ondersoort": "onbekend",
+          "status": "w",
+          "toelichting": {
+            "nl": "Leeuw Simba met leeuwinnen; in juni 2022 ontsnapten twee leeuwen kort uit hun verblijf.",
+            "en": "Lion Simba with lionesses; in June 2022 two lions briefly escaped from their enclosure."
+          },
+          "aantal": {
+            "nl": "onbekend (04/2022: 2,2 plus 1 mannetje uit Oekraïne, Zootierliste)",
+            "en": "unknown (04/2022: 2.2 plus 1 male from Ukraine, Zootierliste)"
+          },
+          "bron": "suceava.online (site 2024–2026, ongedateerd); svnews.ro 09-06-2022; Zootierliste (bezoek 04/2022)",
+          "twijfel": {
+            "nl": "Geen gedateerde bron uit 2025–2026 gevonden; alleen een ongedateerde toeristenpagina (2024–2026) noemt leeuw Simba.",
+            "en": "No dated 2025–2026 source found; only an undated tourist page (2024–2026) mentions lion Simba."
+          }
+        },
+        {
+          "soort": "Tijger",
+          "ondersoort": "onbekend",
+          "status": "w",
+          "toelichting": {
+            "nl": "Twee tijgers, afkomstig van Circul Globus (Boekarest), aangekomen in 2018; als 'Siberische tijgers' aangeduid.",
+            "en": "Two tigers from Circul Globus (Bucharest), arrived in 2018; described as 'Siberian tigers'."
+          },
+          "aantal": {
+            "nl": "onbekend",
+            "en": "unknown"
+          },
+          "bron": "svnews.ro 2018; cevaltceva.ro 30-03-2021; suceava.online (ongedateerd); Zootierliste (bezoek 04/2022)",
+          "twijfel": {
+            "nl": "Geen gedateerde bron uit 2025–2026; ondersoort niet bevestigd (ex-circusdieren, Zootierliste: 'mogelijk Amoer').",
+            "en": "No dated 2025–2026 source; subspecies not confirmed (ex-circus animals; Zootierliste: 'possibly Amur')."
+          }
+        },
+        {
+          "soort": "Euraziatische lynx",
+          "ondersoort": "onbekend",
+          "status": "w",
+          "toelichting": {
+            "nl": "Lynx van ca. 1 jaar, door een particulier in Polen gekocht, ontsnapte in augustus 2025 in Fălticeni en werd daarna in deze dierentuin ondergebracht.",
+            "en": "Lynx of about 1 year, bought in Poland by a private owner, escaped in Fălticeni in August 2025 and was then placed in this zoo."
+          },
+          "aantal": {
+            "nl": "1",
+            "en": "1"
+          },
+          "bron": "Monitorul de Vrancea (Agerpres) 18-08-2025",
+          "twijfel": {
+            "nl": "Onbekend of de lynx blijvend in Rădăuți is gebleven en voor publiek te zien is.",
+            "en": "Unknown whether the lynx stayed permanently in Rădăuți and is on public view."
+          }
+        }
+      ],
+      "geboortes": [],
+      "kleur": ""
+    },
+    {
+      "naam": "Arca lui Noe",
+      "plaats": "Zaharești (gemeente Stroiești)",
+      "judet": "Suceava",
+      "lon": 26.15,
+      "lat": 47.601,
+      "type": "Particuliere houder",
+      "lidmaatschap": [],
+      "url": "",
+      "uren": {
+        "nl": "Gesloten voor publiek sinds september 2025 (Milieuwacht; geen milieuvergunning).",
+        "en": "Closed to the public since September 2025 (Environmental Guard; no environmental permit)."
+      },
+      "about": {
+        "nl": "Particuliere dierentuin met ca. 500 dieren, nooit vergund als dierentuin. Na bijtincidenten door een ligerwelp en een aap werd het park in september 2025 gesloten. Op 06-05-2026 stierf liger Goliath (geboren juni 2025) bij een brand. Een undercoveronderzoek (dec. 2025) beschrijft handel in leeuwen, tijgers en servals; de eigenaar zou ook dieren houden op een tweede, niet-officiële plek in Ilișești.",
+        "en": "Private zoo with about 500 animals, never licensed as a zoo. After bites by a liger cub and a monkey it was closed in September 2025. On 06-05-2026 the liger Goliath (born June 2025) died in a fire. An undercover investigation (Dec 2025) describes trade in lions, tigers and servals; the owner reportedly also keeps animals at a second, unofficial site in Ilișești."
+      },
+      "earlier": {
+        "nl": "Liger (leeuw × tijger) Goliath, geboren juni 2025, gestorven bij brand 06-05-2026 (Antena 3, svnews.ro).",
+        "en": "Liger (lion × tiger) Goliath, born June 2025, died in a fire on 06-05-2026 (Antena 3, svnews.ro)."
+      },
+      "katten": [
+        {
+          "soort": "Leeuw",
+          "ondersoort": "onbekend",
+          "status": "n",
+          "toelichting": {
+            "nl": "Particuliere houder; gesloten voor publiek. Bij de brand van mei 2026 waren er nog leeuwen.",
+            "en": "Private keeper; closed to the public. Lions were still present at the time of the May 2026 fire."
+          },
+          "aantal": {
+            "nl": "onbekend",
+            "en": "unknown"
+          },
+          "bron": "Antena 3 06-05-2026; Monitorul de Botoșani 01-12-2025; svnews.ro 05-09-2025"
+        },
+        {
+          "soort": "Tijger",
+          "ondersoort": "onbekend",
+          "status": "n",
+          "toelichting": {
+            "nl": "Particuliere houder; gesloten voor publiek. In 2025 te koop aangeboden: tijgers, een witte tijger en twee pasgeboren welpen.",
+            "en": "Private keeper; closed to the public. In 2025 tigers, a white tiger and two newborn cubs were offered for sale."
+          },
+          "aantal": {
+            "nl": "onbekend",
+            "en": "unknown"
+          },
+          "bron": "Antena 3 06-05-2026; Monitorul de Botoșani 01-12-2025"
+        },
+        {
+          "soort": "Serval",
+          "ondersoort": "—",
+          "status": "n",
+          "toelichting": {
+            "nl": "Twee servals werden in 2025 te koop aangeboden aan undercoverjournalisten.",
+            "en": "Two servals were offered for sale to undercover journalists in 2025."
+          },
+          "aantal": {
+            "nl": "onbekend (minstens 2 in 2025)",
+            "en": "unknown (at least 2 in 2025)"
+          },
+          "bron": "Monitorul de Botoșani 01-12-2025"
+        }
+      ],
+      "geboortes": [
+        {
+          "soort": "Tijger",
+          "geboren": "2025",
+          "n": {
+            "nl": "2 welpen (volgens verkoopaanbod)",
+            "en": "2 cubs (per sales offer)"
+          },
+          "x": {
+            "nl": "Niet geregistreerd; alleen bekend uit undercoveronderzoek. Niet te zien (park gesloten).",
+            "en": "Unregistered; known only from an undercover investigation. Not on view (park closed)."
+          },
+          "bron": "Monitorul de Botoșani 01-12-2025"
+        }
+      ],
+      "kleur": "witte tijger"
+    }
+  ],
+  "zonder_katten": [
+    {
+      "naam": "Microrezervația (Complexul Muzeal de Științe ale Naturii Constanța)",
+      "plaats": "Constanța",
+      "reden": {
+        "nl": "geen katachtigen; vogels, herten, zebra's (eigen site delfinariu.ro 30-10-2026; Euronews)",
+        "en": "no cats; birds, deer, zebras (own site delfinariu.ro 30-10-2026; Euronews)"
+      }
+    },
+    {
+      "naam": "Rezervația de Zimbri și Faună Carpatină Dragoș Vodă",
+      "plaats": "Vânători-Neamț",
+      "reden": {
+        "nl": "wisenten, herten en wolven; geen katachtigen genoemd (Agerpres 15-02-2025, visitneamt)",
+        "en": "bison, deer and wolves; no cats mentioned (Agerpres 15-02-2025, visitneamt)"
+      }
+    },
+    {
+      "naam": "Centrul pentru Reabilitarea Faunei Sălbatice Petrești (ACDB, voormalige zoo Focșani)",
+      "plaats": "Petrești (Focșani)",
+      "reden": {
+        "nl": "opvangcentrum zonder publiek; in 2015 lynxwelpen in opvang, daarna niets bekend (Monitorul de Vrancea 05-03-2020)",
+        "en": "rehab centre not open to the public; lynx cubs in care in 2015, nothing known since (Monitorul de Vrancea 05-03-2020)"
+      }
+    },
+    {
+      "naam": "Fosta Grădină Zoologică Cozla",
+      "plaats": "Piatra Neamț",
+      "reden": {
+        "nl": "gesloten in 2021; eerder leeuw en lynx (Monitorul de Neamț 26-04-2021, Zootierliste)",
+        "en": "closed in 2021; formerly lion and lynx (Monitorul de Neamț 26-04-2021, Zootierliste)"
+      }
+    },
+    {
+      "naam": "Fosta Grădină Zoologică Onești",
+      "plaats": "Onești",
+      "reden": {
+        "nl": "leeuwen en tijgers in 2013 naar LIONSROCK (Zuid-Afrika); geen dieren meer (Ziarul de Bacău 2013)",
+        "en": "lions and tigers moved to LIONSROCK (South Africa) in 2013; no animals left (Ziarul de Bacău 2013)"
+      }
+    },
+    {
+      "naam": "Zoo Park România (rondreizende dierenshow)",
+      "plaats": "–",
+      "reden": {
+        "nl": "alleen o.a. olifanten, zebra's, kangoeroes en zeeleeuwen; geen katachtigen (iasi4u 05-07-2026; ProTV 13-08-2026: 'lei de mare' = zeeleeuwen)",
+        "en": "only e.g. elephants, zebras, kangaroos and sea lions; no cats (iasi4u 05-07-2026; ProTV 13-08-2026: 'lei de mare' = sea lions)"
+      }
+    },
+    {
+      "naam": "Acvariul / Centrul Muzeal Eco-Turistic Delta Dunării",
+      "plaats": "Tulcea",
+      "reden": {
+        "nl": "aquarium, geen katachtigen (ZooChat-lijst)",
+        "en": "aquarium, no cats (ZooChat list)"
+      }
+    }
+  ],
+  "open_punten": [
+    "Iași heeft volgens lokale pers geen (gemeentelijke) dierentuin; 'Zoo Ciric' kon niet worden bevestigd. Kleine 'punct zoo'-locaties (Hadâmbu/Mironeasa, Miclești) en Arca Land (Sculeni) niet onderzocht.",
+    "Botoșani heeft geen dierentuin (alleen plannen voor een minizoo in Cornișa); Buzău idem (alleen vrije herten in Parcul Crâng).",
+    "Bacău: de stad zelf heeft geen dierentuin gevonden; status van de minizoo in Buhuși (Palatul Copiilor, leeuwen in 2003) en van Hemeiuș niet bevestigd.",
+    "Bârlad: stadssite (primariabarlad.ro) onbereikbaar door certificaatprobleem; tijgerstatus berust op bronnen uit 2023.",
+    "Rădăuți: geen gedateerde 2025–2026-bron voor leeuwen en tijgers; de lynx uit Fălticeni (aug. 2025) kan tijdelijk zijn ondergebracht.",
+    "Galați: aankomst van vier leeuwen en een jonge tijger uit Picior de Munte (Dâmbovița) in augustus 2026 aangekondigd maar niet apart bevestigd; tellingen onbekend.",
+    "Ilișești (Suceava): volgens een undercoveronderzoek (dec. 2025) houdt de eigenaar van Arca lui Noe ook dieren in kooien achter een supermarkt; voormalige 'Grădina Zoologică Șoimaru' had in 2016 leeuwen, tijgers, jaguar en serval (Zootierliste). Niet opgenomen: geen openbare toegang/bevestiging.",
+    "Fălticeni: particulier (uit Iași) met een tamme lynx (aug. 2025); dier naar Rădăuți gebracht; geen locatie.",
+    "Circusverbod: de Kamer van Afgevaardigden stemde op 13-06-2017 een verbod op wilde dieren in circussen (uitzonderingen o.a. honden, paarden, dolfijnen); promulgatie/wetsnummer niet nagegaan.",
+    "Geen openbare lijst van vergunde dierentuinen gevonden (anpm.ro onbereikbaar)."
+  ]
+}

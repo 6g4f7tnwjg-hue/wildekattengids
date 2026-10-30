@@ -3,7 +3,7 @@
 Lees eerst `bron/LEESMIJ.md` (opbouw, bouw, telregel en de lessen per land), **`bron/landbouw/LEESMIJ.md`** (zo maak je een nieuw land), `bron/OPEN.md` en bovenaan `VOORTGANG.md`. Gebruik de skill “wilde-katachtigen-gids”.
 
 ## Waar we staan
-- **19 landen** in de gids (met **HU**, Hongarije, 23-10-2026, NL/EN/HU: 20 locaties, 16 soorten; bron in `bron/landbouw/hu/`; met **PL**, Polen, 23-10-2026, NL/EN/PL: 30 locaties, 21 soorten; bron in `bron/landbouw/pl/`; met **FI**, Finland, 23-10-2026, NL/EN/FI: 5 locaties, 8 soorten; bron in `bron/landbouw/fi/`): NL, BE, LU, DE, FR, AT, CH, UK, IE, IT, ES, PT, DK, CZ, **SE** (Zweden, 23-10-2026, NL/EN/SV) en **NO** (Noorwegen, 23-10-2026, NL/EN/NB). Noorwegen: 6 locaties, 6 soorten; bron in `bron/landbouw/no/`.
+- **20 landen** in de gids (met **RO**, Roemenië, 30-10-2026, NL/EN/RO: 20 locaties, 16 bevestigd, 9 soorten; bron in `bron/landbouw/ro/`; met **HU**, Hongarije, 23-10-2026, NL/EN/HU: 20 locaties, 16 soorten; bron in `bron/landbouw/hu/`; met **PL**, Polen, 23-10-2026, NL/EN/PL: 30 locaties, 21 soorten; bron in `bron/landbouw/pl/`; met **FI**, Finland, 23-10-2026, NL/EN/FI: 5 locaties, 8 soorten; bron in `bron/landbouw/fi/`): NL, BE, LU, DE, FR, AT, CH, UK, IE, IT, ES, PT, DK, CZ, **SE** (Zweden, 23-10-2026, NL/EN/SV) en **NO** (Noorwegen, 23-10-2026, NL/EN/NB). Noorwegen: 6 locaties, 6 soorten; bron in `bron/landbouw/no/`.
 - Zweden: 11 locaties, 11 soorten; bron in `bron/landbouw/se/` (`patch.py` → `se_final.json`, `teksten.py`, `gen.py`). De Europakaart is naar het noorden vergroot (tot 69,4° N).
 - Open voor Zweden: zie `bron/OPEN.md` (Nordens Ark: Amoerluipaard en wilde kat; Öland: tijger).
 - Tsjechische gids: Iberische lynx “Španělsko a Česko” rechtgezet (23-10-2026).

@@ -2,6 +2,27 @@
 
 Bijgehouden door Claude. Nieuwste bovenaan.
 
+## 30 oktober 2026 – Roemenië
+
+Nieuwe landpagina `roemenie/` (bron: `bron/gidsen/ro.html`, gebouwd met `bron/landbouw/ro/gen.py`), in het Nederlands, Engels en Roemeens (land- en taalcode `ro`). Eén pagina met een filter per județ (17 met locaties), met kaart, routeplanner, recente geboortes, soortpagina’s, filters en het meldformulier. Hongarije, Servië, Bulgarije, Oekraïne en Moldavië staan grijs op de landkaart.
+
+**Aantallen**
+- **20 locaties, waarvan 16 met een bevestigde kat**: 13 vergunde dierentuinen, de dierentuin van Bârlad (vergunning aangevraagd) en 2 particuliere parken (Liska Park, Ținutul Cailor). Niet bevestigd: Călărași, Moara de Vânt en Rădăuți (alleen onzeker) en Arca lui Noe (gesloten voor publiek).
+- **9 soorten bevestigd**: leeuw, tijger, luipaard, jaguar, sneeuwluipaard (Brașov, sinds maart 2026 niet te zien), poema, Euraziatische lynx, serval, caracal. Europese wilde kat alleen onzeker.
+- 60 vermeldingen in de hoofdtabel.
+- Route met alle soorten: Zoo București (Băneasa), Zoo Brașov, Liska Park.
+- Recente geboortes: Amoertijgers in Oradea (ca. april 2026), leeuwen in Ploiești (maart 2025).
+
+**Werkwijze**
+- Officiële lijst: ANMAP-overzicht van 14-11-2025 (30 vergunde dierentuinen en aquaria, Bârlad in aanvraag, Timișoara tijdelijk dicht); bewaard in `bron/landbouw/ro/anmap_situatie2025.txt`. EAZA: Brașov lid, Sibiu en Târgu Mureș kandidaat. Zootierliste (meest 2016/2022).
+- **Type**: de zoobond FGZAR heeft geen openbare ledenlijst; daarom heet elk park met een ANMAP-vergunning hier dierentuin, Bârlad (in aanvraag) dierenpark, en particulieren zonder vergunning particuliere houder.
+- Afbakening zoals Tsjechië, Polen en Hongarije; geen namen van particulieren. Circusverbod sinds 22-07-2017 (wet 171/2017); geen circus met katten.
+- Zes onderzoeksagenten en één vervolgagent. Sjabloon afgeleid van het Hongaarse (`bron/landbouw/ro/tools/basis_omzetten.py`); Roemeense getallen met “de” vanaf 20 in de gedeelde lagen.
+
+**Gedeelde bestanden**: taal en land `ro` in alle gedeelde lagen; `bouw.py` en `nieuw_ontwerp.py`/`test_ontwerp.py` slaan een land over zolang de gids ontbreekt. Hoofdpagina: Roemenië in alle lijsten (nu 20 landen). Pijltjes van de schuifrijen blijven binnen de rand. Hongarije: CSS-klasse in het kaartvenster hersteld.
+
+**Gecontroleerd**: de Roemeense pagina in NL/EN/RO op 390 px (Chromium): geen fouten, geen horizontaal scrollen, geen Hongaarse resten. Overige pagina’s vergeleken met de vorige versie.
+
 ## 23 oktober 2026 – Hongarije
 
 Nieuwe landpagina `hongarije/` (bron: `bron/gidsen/hu.html`, gebouwd met `bron/landbouw/hu/gen.py`), in het Nederlands, Engels en Hongaars (land- en taalcode `hu`). Eén pagina met een filter per megye (13 met locaties), met kaart, routeplanner, recente geboortes, soortpagina’s, filters en het meldformulier. De buurlanden staan grijs op de kaart.

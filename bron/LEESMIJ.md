@@ -1,13 +1,13 @@
 # Bron van de Wilde katachtigen-gids
 
 Alles wordt uit deze map gebouwd. Pas nooit de gegenereerde bestanden in de hoofdmap aan
-(`index.html`, `soort/`, `top10/`, `nederland/`, `belgie/`, `luxemburg/`, `duitsland/`, `frankrijk/`, `oostenrijk/`, `zwitserland/`, `verenigd-koninkrijk/`, `italie/`, `spanje/`, `ierland/`, `portugal/`, `denemarken/`, `tsjechie/`, `zweden/`, `noorwegen/`, `finland/`, `polen/`, `hongarije/`, `sitemap.xml`): die worden bij elke bouw overschreven.
+(`index.html`, `soort/`, `top10/`, `nederland/`, `belgie/`, `luxemburg/`, `duitsland/`, `frankrijk/`, `oostenrijk/`, `zwitserland/`, `verenigd-koninkrijk/`, `italie/`, `spanje/`, `ierland/`, `portugal/`, `denemarken/`, `tsjechie/`, `zweden/`, `noorwegen/`, `finland/`, `polen/`, `hongarije/`, `roemenie/`, `sitemap.xml`): die worden bij elke bouw overschreven.
 
 ## Wat staat waar
 
 | Bestand | Inhoud |
 |---|---|
-| `gidsen/nl.html`, `be.html`, `lu.html`, `de.html`, `fr.html`, `at.html`, `ch.html`, `uk.html`, `it.html`, `es.html`, `ie.html`, `pt.html`, `dk.html`, `cz.html`, `se.html`, `no.html`, `fi.html`, `pl.html`, `hu.html` | De landengidsen. Alle gegevens (soorten, waarnemingen `R`, locaties `LOCS`, jongen `YOUNG`) staan in het script van de gids; Alle landen zijn één pagina; Duitsland, Frankrijk, Oostenrijk, Zwitserland, het VK, Italië, Spanje, Ierland en Portugal hebben een filter per deelstaat of regio (`REGIO`, `REGN`; Spanje per autonome gemeenschap, Ierland per provincie, Portugal per NUTS-regio). Talen (regel: Nederlands, Engels en de landstaal of -talen): NL/EN (Nederland, VK, Ierland), NL/EN/FR (België, Frankrijk), NL/EN/DE (Duitsland, Oostenrijk), NL/EN/FR/DE (Luxemburg), NL/EN/DE/FR/IT (Zwitserland), NL/EN/IT (Italië), NL/EN/ES (Spanje), NL/EN/PT (Portugal), NL/EN/DA (Denemarken; taalcode `da`, landcode `dk`), NL/EN/CS (Tsjechië; taalcode `cs`, landcode `cz`), NL/EN/SV (Zweden; taalcode `sv`, landcode `se`), NL/EN/NB (Noorwegen; taalcode `nb`, landcode `no`), NL/EN/FI (Finland; taal- en landcode `fi`), NL/EN/PL (Polen; taal- en landcode `pl`). Een gids met één derde taal gebruikt `T(nl,en,x)` en `l-x`-elementen; Zwitserland en Luxemburg gebruiken de taaltabel `LGS` (`T(nl,en,...)` in de volgorde van `LGS`, woordenlijsten per taal zoals `SPFR`, `R5IT`, `ITD`). Foto's staan erin als `@@IMGn@@`. |
+| `gidsen/nl.html`, `be.html`, `lu.html`, `de.html`, `fr.html`, `at.html`, `ch.html`, `uk.html`, `it.html`, `es.html`, `ie.html`, `pt.html`, `dk.html`, `cz.html`, `se.html`, `no.html`, `fi.html`, `pl.html`, `hu.html`, `ro.html` | De landengidsen. Alle gegevens (soorten, waarnemingen `R`, locaties `LOCS`, jongen `YOUNG`) staan in het script van de gids; Alle landen zijn één pagina; Duitsland, Frankrijk, Oostenrijk, Zwitserland, het VK, Italië, Spanje, Ierland en Portugal hebben een filter per deelstaat of regio (`REGIO`, `REGN`; Spanje per autonome gemeenschap, Ierland per provincie, Portugal per NUTS-regio). Talen (regel: Nederlands, Engels en de landstaal of -talen): NL/EN (Nederland, VK, Ierland), NL/EN/FR (België, Frankrijk), NL/EN/DE (Duitsland, Oostenrijk), NL/EN/FR/DE (Luxemburg), NL/EN/DE/FR/IT (Zwitserland), NL/EN/IT (Italië), NL/EN/ES (Spanje), NL/EN/PT (Portugal), NL/EN/DA (Denemarken; taalcode `da`, landcode `dk`), NL/EN/CS (Tsjechië; taalcode `cs`, landcode `cz`), NL/EN/SV (Zweden; taalcode `sv`, landcode `se`), NL/EN/NB (Noorwegen; taalcode `nb`, landcode `no`), NL/EN/FI (Finland; taal- en landcode `fi`), NL/EN/PL (Polen; taal- en landcode `pl`). Een gids met één derde taal gebruikt `T(nl,en,x)` en `l-x`-elementen; Zwitserland en Luxemburg gebruiken de taaltabel `LGS` (`T(nl,en,...)` in de volgorde van `LGS`, woordenlijsten per taal zoals `SPFR`, `R5IT`, `ITD`). Foto's staan erin als `@@IMGn@@`. |
 | `start.html` | De startpagina. De gegevens in `const D` (kaartstippen, aantallen, recente geboortes) worden bij elke bouw opnieuw berekend uit de gidsen. Kaartvormen en de deelstaat-notitie blijven staan. Talen: Nederlands, Engels, Frans, Duits, Italiaans en Spaans (`T(nl,en,fr,de,it,es)` en `l-fr`/`l-de`/`l-it`/`l-es`-elementen). Onder de titel staat een regel met aantallen (landen · locaties · soorten), berekend uit `D`. Opbouw (16-10-2026, stijl van de Spottersgids): bovenbalk met zoeken, taal en menu; tabbladen Kaart · Landen · Soorten (`#kaart`, `#landen`, `#soorten`); de kaart filtert op land, soort, type en recente geboortes (rode stip); het menu opent de top 10 en de losse pagina’s `#geboren`, `#perpark`, `#typen` en `#over`. |
 | `../img/` | Alle foto's; `n.webp` hoort bij `@@IMGn@@`. Nieuwe foto: volgend nummer toevoegen. |
 | `artifact_kop.html`, `web_kop.html` | Vaste kopjes voor de Claude-pagina en de website. |
@@ -144,6 +144,15 @@ Alleen de Claude-pagina bouwen: `python3 bron/bouw.py --geen-web`.
 - **Fins verbuigt**: een parknaam met link kan geen naamvalsuitgang krijgen (“Korkeasaari” + “ssa” geeft een verkeerde vorm). Schrijf Finse landteksten zo dat de naam los staat (“… : {park}”).
 - Datums: dag + maand in de partitief (“23. lokakuuta 2026”, `MND_FI`), alleen maand in de nominatief (“lokakuu 2026”, `MND_FI1`, eigen tak in `yDate`).
 - Na een getal ≥ 2 de partitief (“3 lajia”, “5 paikkaa”); `jungle.py` maakt “1 paikka / N paikkaa Suomessa”.
+
+## Roemenië toevoegen: lessen (oktober 2026)
+
+- Afgeleid van de Hongaarse gids (`bron/landbouw/ro/tools/basis_omzetten.py`).
+- **Let op bij `basis_omzetten.py`**: een `const`-stuk dat een string is (zoals `TITLE_RO`) moet in `<taal>_vast.json` mét aanhalingstekens staan (JSON-string), anders breekt de JS. Controleer na het invoegen alle scripts met `node --check`.
+- **`replace('"hu"', ...)` raakt ook `<p class="pl">`** (klasse ‘place line’ in het kaartvenster); in hu en ro hersteld.
+- **Roemeens getal**: vanaf 20 “de” (“20 de locații”); in de gedeelde lagen via `rd(n)`/`nw()` (`jungle.py`) en `PLV` (`nieuw_ontwerp.py`).
+- **Moldavië** zit niet in de NUTS-bestanden; voor de landkaart toegevoegd uit Natural Earth (`kaart/kaart.json`, `BUUR`).
+- **Type**: zonder ledenlijst van de zoobond geldt de vergunning (ANMAP) als criterium voor “dierentuin”.
 
 ## Hongarije toevoegen: lessen (oktober 2026)
 

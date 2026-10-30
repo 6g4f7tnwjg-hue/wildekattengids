@@ -4,6 +4,23 @@ Vermeldingen met de status “onzeker”: ze staan wel in de gids, maar tellen n
 
 Regel: bevestigd alleen met een recente bron (2025–2026); onzeker alleen met een concrete aanwijzing van na 2024; oudere aanwijzingen gaan naar “Eerder hier”.
 
+## Roemenië
+
+Stand 30 oktober 2026. Veel Roemeense dierentuinen hebben geen actuele dierenlijst online; zonder bron uit 2025–2026 staat een kat op onzeker.
+
+| Locatie | Soort | Waarom twijfel |
+|---|---|---|
+| Zoo Călărași | tijger, leeuw, jaguar | nieuwste dierenlijst van de eigen site is van begin 2024 |
+| Zoo Târgoviște | serval | alleen Zootierliste (bezoek 04-2026) |
+| Zoo Râmnicu Vâlcea | jaguar | alleen tegenstrijdige bezoekersreviews |
+| Zoo Sibiu | luipaard (Amoer), lynx | laatst gemeld 2023 en 2020 |
+| Zoo Oradea | leeuw (witte leeuw Macron?) | alleen een TikTok-zoekresultaat |
+| Zooparc Moara de Vânt | serval, Europese wilde kat | alleen soortpagina’s uit 2022 |
+| Zoo Rădăuți | leeuw, tijger, lynx | geen bron na 2024; lynx uit Fălticeni (2025) mogelijk niet te zien |
+| Zoo Bârlad | tijger (witte tijgers Taifun en Taiga) | laatste concrete bron 2023 |
+
+Aandachtspunten: Zoo Brașov (sneeuwluipaarden sinds 31-03-2026 ‘momentan indisponibil’, status y), Zoo Reșița (deel met gevaarlijke dieren tot ca. december 2026 dicht, status y), Zoo Galați (komst van de leeuwen en tijger uit Picior de Munte niet bevestigd), Liska Park en Ținutul Cailor (particulier, zonder vergunning), Arca lui Noe (gesloten, status n).
+
 ## Hongarije
 
 Stand 23 oktober 2026. Geen vermeldingen op onzeker. Aandachtspunten:

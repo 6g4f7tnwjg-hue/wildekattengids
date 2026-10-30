@@ -1,3 +1,16 @@
+# Overdracht (30 oktober 2026) — voor een nieuw gesprek
+
+**Werkwijze vanaf nu:** één land (of één onderhoudsklus) per gesprek. Volg **`bron/landbouw/CHECKLIST.md`** stap voor stap en vink af in `bron/landbouw/<code>/STAPPEN.md`. Onderzoeksagenten en vertaalagenten op het lichtere model (`sonnet`); redactie, teksten en controle zelf. Testscripts staan in `bron/controle/` (`servers.sh`, `landtest.py`, `jscheck.py`, `vergelijk.py`).
+
+## Waar we staan
+- **20 landen**, alles op `main` en live (https://yeetkitty.github.io/wildekattengids/). Laatste: Roemenië (30-10-2026), Hongarije, Polen, Finland, Noorwegen, Zweden (23-10-2026).
+- Afspraak: kleine opmaakfixes na testen meteen naar `main`; nieuwe landen en inhoud eerst vragen.
+- Antwoord in het Nederlands, kort; bij “wat stel je voor” alleen een voorstel; na elke update de link.
+
+## Eerstvolgende
+- De gebruiker kiest het volgende land, of een **onderhoudsgesprek** voor `bron/OPEN.md` (open: “1 locaties”-vraag, Zoo Jihlava, nagaan-lijsten per land, WebKit, grijze buurlanden oostelijk op de Europakaart).
+- Nog niet gedaan: Slowakije, Slovenië/Kroatië, de Baltische staten, Bulgarije, Griekenland.
+
 # Overdracht (23 oktober 2026, later) — voor een nieuwe chat
 
 Lees eerst `bron/LEESMIJ.md` (opbouw, bouw, telregel en de lessen per land), **`bron/landbouw/LEESMIJ.md`** (zo maak je een nieuw land), `bron/OPEN.md` en bovenaan `VOORTGANG.md`. Gebruik de skill “wilde-katachtigen-gids”.

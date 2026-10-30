@@ -18,6 +18,8 @@ Per land een map (`dk/`, `cz/`, `se/`, `no/`, `fi/`, `pl/`) met alles waaruit de
 | `gen.py` | Bouwt de gids: sjabloon + `_final.json` + `teksten.py` + vertaaltabellen + `kaart/kaart.json`. |
 | `kaart/kaart.json` | Kaart van de gids (`MAIN`, `ISLANDS`, `BUUR`, `LINES`), lengte/breedte; projectie staat in `gen.py` (`LON0`, `LAT0`, `KX`). |
 
+> **Gebruik voor een nieuw land de checklist: `bron/landbouw/CHECKLIST.md`** (zuiniger: drie agenten op `sonnet`, één keer bouwen en vergelijken). De lijst hieronder is de achtergrond.
+
 ## Een nieuw land (volgorde zoals bij Tsjechië, ±1 sessie)
 
 1. **Voorstel en akkoord** van de gebruiker (land, talen: NL + EN + landstaal).

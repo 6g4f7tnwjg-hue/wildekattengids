@@ -1,0 +1,163 @@
+{
+  "locaties": [
+    {
+      "naam": "Liska Park",
+      "plaats": "Valea Târnei (gemeente Șinteu)",
+      "judet": "Bihor",
+      "lon": 22.539,
+      "lat": 47.13,
+      "type": "Particuliere houder",
+      "lidmaatschap": [],
+      "url": "https://liskapark.ro/",
+      "uren": {
+        "nl": "Dagelijks 10–19 uur (eigen site, pagina Hartă, gezien 30-10-2026)",
+        "en": "Daily 10 am–7 pm (own website, map page, seen 30-10-2026)"
+      },
+      "about": {
+        "nl": "Particulier dierenpark met pension en restaurant, uitgebaat door Filonatura SRL, geopend begin augustus 2025. Volgens G4Media/eBihoreanul (06-08-2025) opende het park zonder milieu- en veterinaire vergunning; latere berichten over een vergunning zijn niet gevonden. Op de parkplattegrond (juni 2026) staan een tijgerverblijf en een caracalverblijf.",
+        "en": "Private animal park with guesthouse and restaurant, run by Filonatura SRL, opened in early August 2025. According to G4Media/eBihoreanul (06-08-2025) it opened without an environmental or veterinary permit; no later reports of a permit were found. The park map (June 2026) shows a tiger enclosure and a caracal enclosure."
+      },
+      "earlier": {
+        "nl": "",
+        "en": ""
+      },
+      "katten": [
+        {
+          "soort": "Tijger",
+          "ondersoort": "Bengaals",
+          "status": "g",
+          "toelichting": {
+            "nl": "Particuliere houder zonder bekende vergunning. Volwassen tijgers achter glas; aparte ingang 'Acces tigri' op de plattegrond.",
+            "en": "Private keeper without a known permit. Adult tigers behind glass; separate 'Acces tigri' entrance on the map."
+          },
+          "aantal": {
+            "nl": "onbekend (meerdere volwassen dieren)",
+            "en": "unknown (several adults)"
+          },
+          "bron": "Eigen site, parkplattegrond hARTA-lISKA (geüpload 06-2026, gezien 30-10-2026); G4Media 06-08-2025 (‘tigri bengalezi’)"
+        },
+        {
+          "soort": "Caracal",
+          "ondersoort": "onbekend",
+          "status": "g",
+          "toelichting": {
+            "nl": "Particuliere houder zonder bekende vergunning. In de pers 'linx african' genoemd (= caracal).",
+            "en": "Private keeper without a known permit. Called 'African lynx' in the press (= caracal)."
+          },
+          "aantal": {
+            "nl": "onbekend",
+            "en": "unknown"
+          },
+          "bron": "Eigen site, parkplattegrond (06-2026, gezien 30-10-2026); G4Media 06-08-2025"
+        }
+      ],
+      "geboortes": [],
+      "kleur": ""
+    },
+    {
+      "naam": "Arca lui Noe (particuliere menagerie Zaharești)",
+      "plaats": "Zaharești (gemeente Stroiești)",
+      "judet": "Suceava",
+      "lon": 26.152,
+      "lat": 47.591,
+      "type": "Particuliere houder",
+      "lidmaatschap": [],
+      "url": "",
+      "uren": {
+        "nl": "onbekend; bezoek in juli 2025 door de Garda Națională de Mediu stilgelegd, daarna nog kaartverkoop gemeld (september 2025)",
+        "en": "unknown; visits halted by the National Environmental Guard in July 2025, ticket sales still reported afterwards (September 2025)"
+      },
+      "about": {
+        "nl": "Niet-erkende particuliere menagerie met honderden dieren. In juli 2025 kreeg de uitbater een boete van 15.000 lei omdat een milieuvergunning ontbrak en werd bezoek stilgelegd; in september 2025 werden een kind door de liger en een ander kind door een aap gebeten. Hier werd in mei 2025 een liger (hybride leeuw × tijger, 'Goliath') geboren; hij stierf bij een brand op 06-05-2026.",
+        "en": "Unlicensed private menagerie with hundreds of animals. In July 2025 the operator was fined 15,000 lei for lacking an environmental permit and visits were halted; in September 2025 one child was bitten by the liger and another by a monkey. A liger (lion × tiger hybrid, 'Goliath') was born here in May 2025; it died in a fire on 06-05-2026."
+      },
+      "earlier": {
+        "nl": "Liger (hybride) Goliath, geboren half mei 2025, omgekomen bij brand 06-05-2026 (BZI 07-05-2026; Antena 3 06-05-2026).",
+        "en": "Liger (hybrid) Goliath, born mid-May 2025, died in a fire on 06-05-2026 (BZI 07-05-2026; Antena 3 06-05-2026)."
+      },
+      "katten": [
+        {
+          "soort": "Leeuw",
+          "ondersoort": "onbekend",
+          "status": "w",
+          "toelichting": {
+            "nl": "Particuliere houder zonder vergunning; toegang voor publiek onduidelijk.",
+            "en": "Private keeper without a permit; public access unclear."
+          },
+          "aantal": {
+            "nl": "3 (juli 2025)",
+            "en": "3 (July 2025)"
+          },
+          "bron": "dpa via Yahoo News 14-07-2025; Antena 3 06-05-2026 (‘lei și tigri’)",
+          "twijfel": {
+            "nl": "Leeuwen in mei 2026 nog genoemd, maar bezoek is sinds juli 2025 officieel stilgelegd; niet duidelijk of de locatie nu open is.",
+            "en": "Lions still mentioned in May 2026, but visits officially halted since July 2025; unclear whether the site is open now."
+          }
+        },
+        {
+          "soort": "Tijger",
+          "ondersoort": "onbekend",
+          "status": "w",
+          "toelichting": {
+            "nl": "Particuliere houder zonder vergunning; toegang voor publiek onduidelijk.",
+            "en": "Private keeper without a permit; public access unclear."
+          },
+          "aantal": {
+            "nl": "4 (juli 2025)",
+            "en": "4 (July 2025)"
+          },
+          "bron": "dpa via Yahoo News 14-07-2025; Antena 3 06-05-2026 (‘lei și tigri’)",
+          "twijfel": {
+            "nl": "Tijgers in mei 2026 nog genoemd, maar bezoek is sinds juli 2025 officieel stilgelegd; niet duidelijk of de locatie nu open is.",
+            "en": "Tigers still mentioned in May 2026, but visits officially halted since July 2025; unclear whether the site is open now."
+          }
+        }
+      ],
+      "geboortes": [],
+      "kleur": ""
+    }
+  ],
+  "zonder_katten": [
+    {
+      "naam": "Menagerie International Wildlife Foundation (IWF)",
+      "plaats": "Picior de Munte (gemeente Dragodana), Dâmbovița",
+      "reden": {
+        "nl": "Niet-erkende particuliere menagerie, op 19-08-2026 gesloten door de Garda Națională de Mediu (boete 220.000 lei). Eén jonge Siberische tijger en vier leeuwen zijn weggehaald, met als bestemming de dierentuin van Galați; de twee beren gingen naar Libearty Zărnești (Agerpres 20-08-2026; Ziarul Profit/Puterea 19-08-2026). Eerder: in 2021 haalde Four Paws hier zeven leeuwen weg (vijf naar LIONSROCK, Zuid-Afrika).",
+        "en": "Unlicensed private menagerie, closed by the National Environmental Guard on 19-08-2026 (fine 220,000 lei). One young Siberian tiger and four lions were removed, destined for Galați Zoo; the two bears went to Libearty Zărnești (Agerpres 20-08-2026; Ziarul Profit/Puterea 19-08-2026). Earlier: in 2021 Four Paws removed seven lions from here (five to LIONSROCK, South Africa)."
+      }
+    },
+    {
+      "naam": "Libearty Bear Sanctuary (Asociația Milioane de Prieteni)",
+      "plaats": "Zărnești, Brașov",
+      "reden": {
+        "nl": "Opvang voor beren (ca. 80–90 beren, ook een wolf); geen katachtigen gevonden (pers 2022–2026).",
+        "en": "Sanctuary for bears (about 80–90 bears, also a wolf); no cats found (press 2022–2026)."
+      }
+    },
+    {
+      "naam": "Circul Metropolitan București (Circul Globus)",
+      "plaats": "București",
+      "reden": {
+        "nl": "Geen wilde dieren meer: Boekarest verbood dierennummers vanaf 01-03-2017 en het parlement verbood wilde dieren in circussen in juni 2017. De resterende tijgers en een leeuw zouden in 2018 naar de dierentuin van Boekarest gaan (Mediafax 24-01-2018).",
+        "en": "No wild animals any more: Bucharest banned animal acts from 01-03-2017 and parliament banned wild animals in circuses in June 2017. The remaining tigers and a lion were to go to Bucharest Zoo in 2018 (Mediafax 24-01-2018)."
+      }
+    },
+    {
+      "naam": "Centrul de reabilitare Fundația Visul Luanei",
+      "plaats": "București",
+      "reden": {
+        "nl": "Opvang- en revalidatiecentrum voor inheemse wilde dieren (egels, vossen, reeën, uilen); niet open voor publiek, geen katachtigen gevonden.",
+        "en": "Rescue and rehabilitation centre for native wildlife (hedgehogs, foxes, roe deer, owls); not open to the public, no cats found."
+      }
+    }
+  ],
+  "open_punten": [
+    "Circusverbod: de Kamer van Afgevaardigden nam op 13-06-2017 een wijziging van Legea 205/2004 aan die wilde dieren in circussen en shows verbiedt (uitzonderingen o.a. honden, paarden, dolfijnen, sommige vogels); circussen kregen max. 18 maanden om de dieren over te dragen. Het exacte wetsnummer en de datum in het Monitorul Oficial zijn niet bevestigd (vermoedelijk Legea 166/2017). Geen Roemeens circus met katachtigen gevonden in 2024–2026.",
+    "Inbeslagname Picior de Munte (19-08-2026): één jonge Siberische tijger en vier leeuwen (2 mannen, 2 vrouwen) zouden naar de dierentuin van Galați (Gârboavele) gaan; aankomst daar niet bevestigd. Eerder (2025) waren er twee tijgerwelpen: één zou zonder melding naar een kliniek zijn gebracht, één werd dood in een vriezer gevonden. De leeuwen werden verdoofd met hulp van Fundația Visul Luanei.",
+    "Liska Park (Șinteu): geen bericht gevonden of het park inmiddels een vergunning heeft; aantal tijgers en caracals onbekend. De dierenlijst op de eigen site laadt maar half (A–G); tijger en caracal staan wel op de plattegrond van juni 2026.",
+    "Arca lui Noe (Zaharești): niet duidelijk of de menagerie na de stillegging (juli 2025) en de brand (mei 2026) open is, en hoeveel leeuwen en tijgers er nu zijn. Een Engelstalige samenvatting meldt dat de locatie gesloten is; niet te verifiëren.",
+    "Four Paws/Vier Pfoten heeft in Roemenië geen eigen opvang voor grote katten; eerdere reddingen gingen naar LIONSROCK (Zuid-Afrika) en FELIDA (Nederland). Geen Roemeense reddingen van katachtigen door Four Paws in 2024–2026 gevonden.",
+    "Geen andere inbeslagnames van grote katten in 2024–2026 gevonden dan Picior de Munte; de februari 2026 TikTok-video met een vrij lopende Siberische tijger hoort ook bij Picior de Munte (strafzaak politie Dâmbovița).",
+    "Andere particuliere minizoo's bij hotels/pensions met katachtigen niet gevonden met de beschikbare zoekopdrachten; het register van erkende dierentuinen is niet geraadpleegd."
+  ]
+}

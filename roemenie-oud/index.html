@@ -1227,7 +1227,7 @@ const lifeL=x=>{const w=LIFE[LANG];return w?x.replace(/^Ongeveer /,w[0]).replace
 const rowEN=r=>[SPEN[r[0]]?SPEN[r[0]][0]:"",R1EN[r[1]]||"",R5EN[r[5]]||"",R6EN[r[6]]||"",srcEN(r[7])].concat(LGS.slice(2).flatMap(l=>{const x=XT(l);return [x.SP[r[0]]?x.SP[r[0]][0]:"",x.R1[r[1]]||"",x.R5[r[5]]||"",x.R6[r[6]]||"",srcX(l,r[7])];})).join(" ");
 const TITLE_EN="Wild cats in Romanian zoos and animal parks — updated 30 October 2026";
 const TITLE_FR="Wild cats in Romanian zoos and animal parks — updated 16 October 2026";
-const TITLE_RO=Feline sălbatice în grădinile zoologice din România — actualizat: 23 octombrie 2026;
+const TITLE_RO="Feline sălbatice în grădinile zoologice din România — actualizat: 30 octombrie 2026";
 const MND_FR=["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
 const MND_RO=["ianuarie", "februarie", "martie", "aprilie", "mai", "iunie", "iulie", "august", "septembrie", "octombrie", "noiembrie", "decembrie"];
 const langSwHTML=()=>'<div class="langsw" role="group" aria-label="Taal / Language / Jazyk">'+LGS.map(c=>[c,c.toUpperCase()]).map(([c,t])=>'<button type="button" data-setlang="'+c+'" lang="'+c+'" aria-pressed="'+(LANG===c)+'">'+t+'</button>').join("")+'</div>';

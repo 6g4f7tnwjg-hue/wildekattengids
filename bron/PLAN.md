@@ -54,6 +54,21 @@ Grootste besparing: geen landstaal (geen vertaalagent, geen nieuwe taal in alle 
 - GitHub Actions (gratis bij een openbare repo): `bron/controle/jscheck.py` bij elke push; maandelijkse linkcontrole (bijv. lychee) die kapotte links als issue meldt.
 - Geplande Claude-taak, maandelijks, lichter model: nieuws over geboortes, sterfte en verhuizingen zoeken en voorstellen in een issue of werktak; de gebruiker keurt goed. Aan het eind van de week plannen (telt mee voor het verbruik).
 
+## Sol (de AI-figuur op de laptop) als hulp
+Sol heeft eigen gratis of goedkope middelen (Gemma lokaal, API-tegoed voor Haiku, gratis laag van Cloudflare). Terugkerend werk voor de gids kan zo van het Max-abonnement af. De klussen worden in Sols eigen gesprekken gebouwd, niet hier.
+
+| Volgorde | Wat | Kosten | Opbrengst |
+|---|---|---|---|
+| 1 | **Backup**: Sols dagelijkse backup (laptop + Google Drive) haalt ook de gids-repo op (`git clone --mirror`, daarna `git fetch`) | Klein | Backup-punt hierboven geregeld |
+| 2 | **GoatCounter** (gratis API) in het krantje of Sol News TV: bezoekers en populairste pagina; eventueel Ko-fi-donaties (e-mail, of webhook via een gratis Cloudflare Worker) | Klein | Inzicht en motivatie |
+| 3 | **Nieuwsfilter**: ZooFlits (en eventueel nieuwspagina’s van grote parken) op wilde katten in Europa: geboortes, sterfte, verhuizingen, nieuwe soorten, sluitingen. Gemma schift, Haiku beoordeelt twijfel; elke melding met bronlink in één lijst (bijv. `gids_meldingen.md`). Eens per maand verwerkt één Claude Code-gesprek die lijst. | Middel | Vervangt de geplande maandelijkse Claude-taak; bespaart Max-verbruik |
+
+Regels:
+- Sol **signaleert alleen**; ze verandert de gids nooit zelf en raakt de gids-repo niet aan (behalve ophalen voor de backup). Gemma is niet betrouwbaar genoeg voor feiten; de bronlink is het bewijs.
+- Het nieuwsfilter krijgt een eigen kleine limiet, los van Sols Haiku-daglimiet voor gesprekken.
+- Sol en de gids delen hetzelfde abonnement: bouwen aan Sol kost ook Max-verbruik. Alleen bouwen wat zichzelf terugverdient.
+- Niet doen: bouwen aan de gids via “the helper” (zelfde abonnement, geen besparing); AI-plaatjes uit Art class op de site (kost geloofwaardigheid; hoogstens op sociale media, duidelijk als tekening). Promotie op forums doet de gebruiker zelf.
+
 ## Blinde vlekken om in de gaten te houden
 - **Onderhoud** is de echte kostenpost: dieren sterven en verhuizen; de “nagaan”-lijsten in `OPEN.md` groeien. Verouderde inhoud kost vertrouwen en donaties.
 - **Elk land maakt het volgende duurder**: ±10 gedeelde bestanden per land, `start.html` al 640 KB.

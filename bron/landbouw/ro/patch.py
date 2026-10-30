@@ -122,7 +122,7 @@ for z in Z:
     seen.add(k); ZZ.append(z)
 M["zonder_katten"] = ZZ
 M["checked"] = "30-10-2026"
-M["route"] = ["Zoo București (Băneasa)", "Zoo Brașov", "Zoo Târgu Mureș"]
+M["route"] = ["Zoo București (Băneasa)", "Zoo Brașov", "Liska Park"]
 json.dump(M, open(D + "ro_final.json", "w", encoding="utf8"), ensure_ascii=False, indent=1)
 CONF = set("gybr")
 for l in sorted(L, key=lambda l: l["regio"]):

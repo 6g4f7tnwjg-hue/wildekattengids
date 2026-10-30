@@ -1,6 +1,6 @@
 # Onderzoek: wilde katachtigen in Roemeense dierenlocaties (stand oktober 2026)
 
-Doel: voor een gids "Wilde katachtigen in Hongaarse dierenlocaties" vastleggen welke wilde kattensoorten
+Doel: voor een gids "Wilde katachtigen in Roemeense dierenlocaties" vastleggen welke wilde kattensoorten
 (Felidae, NIET de huiskat, NIET huiskat-hybriden zoals Bengaal/Savannah) in welke Roemeense dierentuinen,
 dierenparken, wildparken, safariparken, attractieparken met dieren en opvangcentra te zien zijn.
 Alleen Roemenië (România). Vandaag is 30-10-2026. Roemeense dierentuinvereniging: Asociația Grădinilor Zoologice și Acvariilor din România (AGZAR). Dierentuinen hebben een vergunning (autorizație de funcționare) van het ministerie van Milieu; controleer of er een openbare lijst is.
@@ -36,7 +36,7 @@ Noteer bij elke vermelding de bron én de datum (ongedateerd = "ongedateerd").
 - Ondersoortlabels volgens taxonomie.md, bijv. "Amoer", "Bengaals", "Sumatraans", "Noordelijk (P. l. leo)",
   "Aziatisch (P. l. leo, voorheen P. l. persica)", "Zuidelijk (P. l. melanochaita)", "Amoer (P. p. orientalis)",
   "Noordelijk (L. l. lynx)", "Zuidelijk (A. j. jubatus)", anders "onbekend" of "—" als de soort geen ondersoort heeft.
-- Vul een ondersoort ALLEEN in als een bron (eigen site, nieuws, Zootierliste/stamboek) hem noemt; anders "onbekend". Niet afleiden uit het land (een Hongaarse lynx is niet automatisch "Karpatisch").
+- Vul een ondersoort ALLEEN in als een bron (eigen site, nieuws, Zootierliste/stamboek) hem noemt; anders "onbekend". Niet afleiden uit het land (een Roemeense lynx is niet automatisch "Karpatisch").
 - Geen persoonlijke gegevens meesturen in verzoeken (ook niet in een User-Agent).
 - Recente geboortes: kleine katten jonger dan 1 jaar, grote katten (Pantherinae) jonger dan 2 jaar (dus geboren na 22-10-2024).
 - Vrij levende wilde katten tellen niet mee (wel noemen in "about"). Huiskatten in het park: noemen in "about" als opvallend.

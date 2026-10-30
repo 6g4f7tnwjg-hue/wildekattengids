@@ -596,6 +596,8 @@ LIVE = ["nederland", "belgie", "luxemburg", "duitsland", "frankrijk", "oostenrij
 
 def maak_alles():
     for land in LIVE:
+        if not os.path.exists(os.path.join(ROOT, land + "-oud", "index.html")):   # land zonder gebouwde pagina (gids nog in bewerking): overslaan
+            continue
         maak(land)
     maak_los2()
     maak_europa()

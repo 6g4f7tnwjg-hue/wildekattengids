@@ -17,6 +17,7 @@
       "fi": "Eläintarha",
       "pl": "Ogród zoologiczny",
       "hu": "Állatkert",
+      "ro": "Grădină zoologică",
       "uitleg": "Wetenschappelijk geleide dierentuin, lid van EAZA of een landelijke zoobond (NVD, VdZ, UIZA, AIZA, BIAZA).",
       "uitleg_en": "Scientifically managed zoo, member of EAZA or a national zoo association (NVD, VdZ, UIZA, AIZA, BIAZA).",
       "uitleg_fr": "Zoo à gestion scientifique, membre de l’EAZA ou d’une association nationale de zoos (NVD, VdZ, UIZA, AIZA, BIAZA).",
@@ -30,7 +31,8 @@
       "uitleg_nb": "Vitenskapelig ledet dyrehage, medlem av EAZA eller en nasjonal dyrehageforening (NVD, VdZ, UIZA, AIZA, BIAZA).",
       "uitleg_fi": "Tieteellisesti johdettu eläintarha, joka on EAZAn tai kansallisen eläintarhayhdistyksen (kuten Suomen eläintarhayhdistyksen, NVD:n tai VdZ:n) jäsen.",
       "uitleg_pl": "Ogród zoologiczny prowadzony naukowo, członek EAZA lub krajowego stowarzyszenia ogrodów zoologicznych (jak polskie RDPOZiA, NVD, VdZ).",
-      "uitleg_hu": "Tudományosan vezetett állatkert, az EAZA vagy egy nemzeti állatkerti szövetség tagja (például a magyar MÁSZ, NVD, VdZ)."
+      "uitleg_hu": "Tudományosan vezetett állatkert, az EAZA vagy egy nemzeti állatkerti szövetség tagja (például a magyar MÁSZ, NVD, VdZ).",
+      "uitleg_ro": "Grădină zoologică administrată științific, membră a EAZA sau a unei asociații naționale de grădini zoologice (de exemplu AGZAR din România, NVD, VdZ)."
     },
     {
       "key": "dierenpark",
@@ -48,6 +50,7 @@
       "fi": "Eläinpuisto",
       "pl": "Park zwierząt",
       "hu": "Állatpark",
+      "ro": "Parc zoologic",
       "uitleg": "Kleinere dierentuin of Tierpark die niet bij zo'n bond is aangesloten, ook als het park bij een winkel of kinderboerderij hoort.",
       "uitleg_en": "Smaller zoo or Tierpark that is not a member of such an association, also when the park belongs to a shop or a children's farm.",
       "uitleg_fr": "Petit zoo ou Tierpark qui n’est pas membre d’une telle association, même lorsque le parc dépend d’un magasin ou d’une ferme pour enfants.",
@@ -61,7 +64,8 @@
       "uitleg_nb": "Dyrepark som ikke er med i en slik forening, også når parken hører til en butikk eller en barnegård.",
       "uitleg_fi": "Eläinpuisto, joka ei kuulu tällaiseen yhdistykseen, myös silloin kun puisto kuuluu kauppaan tai kotieläintilaan.",
       "uitleg_pl": "Mniejszy ogród zoologiczny lub park zwierząt, który nie należy do takiego stowarzyszenia, także gdy park należy do sklepu lub zagrody dla dzieci.",
-      "uitleg_hu": "Kisebb állatkert vagy állatpark, amely nem tagja ilyen szövetségnek, akkor sem, ha egy üzlethez vagy gyerekfarmhoz tartozik."
+      "uitleg_hu": "Kisebb állatkert vagy állatpark, amely nem tagja ilyen szövetségnek, akkor sem, ha egy üzlethez vagy gyerekfarmhoz tartozik.",
+      "uitleg_ro": "Grădină zoologică mai mică sau parc cu animale care nu este membru al unei astfel de asociații, chiar și atunci când parcul aparține unui magazin sau unei ferme pentru copii."
     },
     {
       "key": "wildpark",
@@ -79,6 +83,7 @@
       "fi": "Villieläinpuisto",
       "pl": "Park dzikich zwierząt",
       "hu": "Vadaspark",
+      "ro": "Parc cu animale sălbatice",
       "uitleg": "Vooral inheemse dieren, vaak in een bos of op een groot terrein. Hier zie je de meeste lynxen en wilde katten.",
       "uitleg_en": "Mostly native animals, often in a forest or on a large site. This is where you see most lynxes and wildcats.",
       "uitleg_fr": "Surtout des animaux indigènes, souvent en forêt ou sur un grand terrain. C’est là que l’on voit le plus de lynx et de chats sauvages.",
@@ -92,7 +97,8 @@
       "uitleg_nb": "Mest stedegne dyr, ofte i en skog eller på et stort område. Her ser du flest gauper og villkatter.",
       "uitleg_fi": "Enimmäkseen kotoperäisiä eläimiä, usein metsässä tai laajalla alueella. Täällä näet eniten ilveksiä ja villikissoja.",
       "uitleg_pl": "Głównie rodzime zwierzęta, często w lesie albo na dużym terenie. Tu zobaczysz najwięcej rysi i żbików.",
-      "uitleg_hu": "Főleg őshonos állatok, gyakran erdőben vagy nagy területen. Itt látod a legtöbb hiúzt és vadmacskát."
+      "uitleg_hu": "Főleg őshonos állatok, gyakran erdőben vagy nagy területen. Itt látod a legtöbb hiúzt és vadmacskát.",
+      "uitleg_ro": "Mai ales animale autohtone, adesea într-o pădure sau pe un teren mare. Aici vezi cei mai mulți râși și cele mai multe pisici sălbatice."
     },
     {
       "key": "safaripark",
@@ -110,6 +116,7 @@
       "fi": "Safaripuisto",
       "pl": "Park safari",
       "hu": "Szafaripark",
+      "ro": "Parc safari",
       "uitleg": "Je rijdt of vaart langs de dieren, met je eigen auto, een bus of een boot.",
       "uitleg_en": "You drive or sail past the animals, in your own car, a bus or a boat.",
       "uitleg_fr": "On passe devant les animaux en voiture, en bus ou en bateau.",
@@ -123,7 +130,8 @@
       "uitleg_nb": "Du kjører eller tar båten forbi dyrene, i din egen bil, en buss eller en båt.",
       "uitleg_fi": "Kuljet eläinten ohi omalla autolla, bussilla tai veneellä.",
       "uitleg_pl": "Przejeżdżasz albo przepływasz obok zwierząt, własnym autem, autobusem lub łodzią.",
-      "uitleg_hu": "Az állatok mellett haladsz el saját autóval, busszal vagy hajóval."
+      "uitleg_hu": "Az állatok mellett haladsz el saját autóval, busszal vagy hajóval.",
+      "uitleg_ro": "Treci pe lângă animale cu mașina ta, cu autobuzul sau cu barca."
     },
     {
       "key": "attractiepark",
@@ -141,6 +149,7 @@
       "fi": "Huvipuisto, jossa on eläimiä",
       "pl": "Park rozrywki ze zwierzętami",
       "hu": "Élménypark állatokkal",
+      "ro": "Parc de distracții cu animale",
       "uitleg": "Pretpark waar de dieren een deel van het aanbod zijn.",
       "uitleg_en": "Theme park where the animals are part of what's on offer.",
       "uitleg_fr": "Parc d’attractions où les animaux font partie de l’offre.",
@@ -154,7 +163,8 @@
       "uitleg_nb": "Fornøyelsespark der dyrene er en del av tilbudet.",
       "uitleg_fi": "Huvipuisto, jossa eläimet ovat osa tarjontaa.",
       "uitleg_pl": "Park rozrywki, w którym zwierzęta są częścią oferty.",
-      "uitleg_hu": "Élménypark, ahol az állatok a kínálat részei."
+      "uitleg_hu": "Élménypark, ahol az állatok a kínálat részei.",
+      "uitleg_ro": "Parc de distracții în care animalele fac parte din ofertă."
     },
     {
       "key": "natuurcentrum",
@@ -172,6 +182,7 @@
       "fi": "Luonto- ja kasvatuskeskus",
       "pl": "Ośrodek przyrodniczy i hodowlany",
       "hu": "Természetvédelmi és tenyészközpont",
+      "ro": "Centru de conservare și reproducere",
       "uitleg": "Werkt aan het behoud van een soort, bijvoorbeeld met kweek voor uitzetting of voorlichting over de wilde kat.",
       "uitleg_en": "Works to conserve a species, for example by breeding for release or teaching about the wildcat.",
       "uitleg_fr": "Œuvre à la conservation d’une espèce, par exemple par l’élevage en vue de réintroductions ou la sensibilisation au chat sauvage.",
@@ -185,7 +196,8 @@
       "uitleg_nb": "Jobber for å bevare en art, for eksempel med avl for utsetting eller formidling om villkatten.",
       "uitleg_fi": "Tekee työtä lajin suojelemiseksi, esimerkiksi kasvattamalla eläimiä luontoon palautettaviksi tai kertomalla villikissasta.",
       "uitleg_pl": "Pracuje na rzecz ochrony gatunku, na przykład przez hodowlę do wypuszczenia na wolność albo edukację o żbiku.",
-      "uitleg_hu": "A faj védelméért dolgozik, például szabadon engedésre szánt tenyésztéssel vagy a vadmacskáról szóló ismeretterjesztéssel."
+      "uitleg_hu": "A faj védelméért dolgozik, például szabadon engedésre szánt tenyésztéssel vagy a vadmacskáról szóló ismeretterjesztéssel.",
+      "uitleg_ro": "Lucrează pentru conservarea unei specii, de exemplu prin reproducere în vederea eliberării în natură sau prin educație despre pisica sălbatică."
     },
     {
       "key": "opvang",
@@ -203,6 +215,7 @@
       "fi": "Eläinten pelastuskeskus",
       "pl": "Azyl lub ośrodek ratunkowy",
       "hu": "Mentőközpont vagy menhely",
+      "ro": "Sanctuar sau centru de salvare",
       "uitleg": "Neemt afgestane of in beslag genomen katten op. Welke dieren er zitten, wisselt, en vaak is het maar beperkt open.",
       "uitleg_en": "Takes in surrendered or confiscated cats. The animals change, and it is often only open on a limited basis.",
       "uitleg_fr": "Accueille des félins cédés ou saisis. Les animaux changent et l’accès est souvent limité.",
@@ -216,7 +229,8 @@
       "uitleg_nb": "Tar imot innleverte eller beslaglagte katter. Dyrene skifter, og ofte er det bare begrenset åpent.",
       "uitleg_fi": "Ottaa vastaan luovutettuja tai takavarikoituja kissoja. Eläimet vaihtuvat, ja usein paikka on avoinna vain rajoitetusti.",
       "uitleg_pl": "Przyjmuje oddane lub skonfiskowane koty. Zwierzęta się zmieniają, a często jest otwarte tylko w ograniczonym zakresie.",
-      "uitleg_hu": "Leadott vagy elkobzott macskákat fogad be. Az állatok változnak, és gyakran csak korlátozottan látogatható."
+      "uitleg_hu": "Leadott vagy elkobzott macskákat fogad be. Az állatok változnak, és gyakran csak korlátozottan látogatható.",
+      "uitleg_ro": "Primește feline cedate sau confiscate. Animalele se schimbă, iar locul este adesea deschis doar limitat pentru vizitatori."
     },
     {
       "key": "particulier",
@@ -234,6 +248,7 @@
       "fi": "Yksityinen eläintenpitäjä",
       "pl": "Prywatny hodowca",
       "hu": "Magántartó",
+      "ro": "Deținător privat",
       "uitleg": "Circus, artiest of privépersoon die bezoekers ontvangt, bijvoorbeeld bij voorstellingen of op open dagen.",
       "uitleg_en": "Circus, performer or private person who receives visitors, for example at shows or on open days.",
       "uitleg_fr": "Cirque, dresseur ou particulier qui reçoit des visiteurs, par exemple lors de spectacles ou de journées portes ouvertes.",
@@ -247,7 +262,8 @@
       "uitleg_nb": "Sirkus, artist eller privatperson som tar imot besøkende, for eksempel ved forestillinger eller på åpne dager.",
       "uitleg_fi": "Sirkus, esiintyjä tai yksityishenkilö, joka ottaa vastaan kävijöitä, esimerkiksi esityksissä tai avoimien ovien päivinä.",
       "uitleg_pl": "Cyrk, treser lub osoba prywatna, która przyjmuje odwiedzających, na przykład podczas pokazów albo w dni otwarte.",
-      "uitleg_hu": "Cirkusz, idomár vagy magánszemély, aki fogad látogatókat, például bemutatókon vagy nyílt napokon."
+      "uitleg_hu": "Cirkusz, idomár vagy magánszemély, aki fogad látogatókat, például bemutatókon vagy nyílt napokon.",
+      "uitleg_ro": "Circ, dresor sau persoană privată care primește vizitatori, de exemplu la spectacole sau în zilele porților deschise."
     }
   ],
   "labels": [
@@ -267,7 +283,8 @@
       "nb": "Overnatting i parken",
       "fi": "Yöpyminen puistossa",
       "pl": "Nocleg w parku",
-      "hu": "Szállás a parkban"
+      "hu": "Szállás a parkban",
+      "ro": "Cazare în parc"
     },
     {
       "key": "rondleiding",
@@ -285,7 +302,8 @@
       "nb": "Bare med omvisning eller etter avtale",
       "fi": "Vain opastetulla kierroksella tai sopimuksesta",
       "pl": "Tylko z przewodnikiem lub po umówieniu",
-      "hu": "Csak vezetéssel vagy előzetes egyeztetéssel"
+      "hu": "Csak vezetéssel vagy előzetes egyeztetéssel",
+      "ro": "Doar cu tur ghidat sau cu programare"
     },
     {
       "key": "leden",
@@ -303,7 +321,8 @@
       "nb": "Bare for medlemmer",
       "fi": "Vain jäsenille",
       "pl": "Tylko dla członków",
-      "hu": "Csak tagoknak"
+      "hu": "Csak tagoknak",
+      "ro": "Doar pentru membri"
     },
     {
       "key": "bezoekdagen",
@@ -321,7 +340,8 @@
       "nb": "Bare på besøksdager",
       "fi": "Vain vierailupäivinä",
       "pl": "Tylko w dni otwarte",
-      "hu": "Csak nyílt napokon"
+      "hu": "Csak nyílt napokon",
+      "ro": "Doar în zilele de vizită"
     },
     {
       "key": "seizoen",
@@ -339,7 +359,8 @@
       "nb": "Sesongpark, stengt om vinteren",
       "fi": "Kausipuisto, suljettu talvella",
       "pl": "Park sezonowy, zimą zamknięty",
-      "hu": "Szezonális park, télen zárva"
+      "hu": "Szezonális park, télen zárva",
+      "ro": "Parc sezonier, închis iarna"
     },
     {
       "key": "nietdagelijks",
@@ -357,7 +378,8 @@
       "nb": "Ikke åpent hver dag",
       "fi": "Ei auki joka päivä",
       "pl": "Nie codziennie otwarte",
-      "hu": "Nem minden nap van nyitva"
+      "hu": "Nem minden nap van nyitva",
+      "ro": "Nu este deschis în fiecare zi"
     },
     {
       "key": "gratis",
@@ -375,7 +397,8 @@
       "nb": "Gratis inngang",
       "fi": "Vapaa pääsy",
       "pl": "Wstęp wolny",
-      "hu": "Ingyenes belépés"
+      "hu": "Ingyenes belépés",
+      "ro": "Intrare gratuită"
     },
     {
       "key": "reistrond",
@@ -393,7 +416,8 @@
       "nb": "Reiser rundt",
       "fi": "Kiertävä",
       "pl": "Objazdowy",
-      "hu": "Vándorló"
+      "hu": "Vándorló",
+      "ro": "Itinerant"
     }
   ],
   "beperkt_toegankelijk": [

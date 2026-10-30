@@ -454,6 +454,8 @@ MARK = 'id="nw-htxt"'
 
 def maak():
     for land in LANDEN:
+        if not os.path.exists(os.path.join(ROOT, land, "index.html")):   # land zonder gebouwde pagina (gids nog in bewerking): overslaan
+            continue
         maak_land(land)
 
 
